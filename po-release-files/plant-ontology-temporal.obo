@@ -1,7 +1,7 @@
 format-version: 1.0
-date: 08:03:2005 16:28
+date: 09:03:2005 14:06
 saved-by: pj37
-auto-generated-by: DAG-Edit 1.418
+auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_growth_and_development_stage
 
 [Term]
@@ -29,7 +29,7 @@ synonym: "oat principal growth stage 8.03" []
 synonym: "principal growth stage 8.03" []
 synonym: "rice growth stage-8.1" [GRO:0007152]
 synonym: "rice principal growth stage 8.03" []
-is_a: PO:0007010
+is_a: PO:0007010 ! 7 ripening
 
 [Term]
 id: PO:0007002
@@ -44,36 +44,36 @@ synonym: "oat principal growth stage 5.07" []
 synonym: "principal growth stage 5.07" []
 synonym: "rice principal growth stage 5.07" []
 synonym: "wheat principal growth stage 5.07" []
-is_a: PO:0007041
+is_a: PO:0007041 ! 4.02 inflorescence emergence from flag leaf sheath
 
 [Term]
 id: PO:0007003
 name: 4.09 full inflorescence length reached
 def: "The stage when the inflorescence reaches full length." [GR:anu]
 synonym: "4.04 full inflorescence length reached in soybean" [SOY:0000070]
-is_a: PO:0007047
+is_a: PO:0007047 ! 4 inflorescence visible
 
 [Term]
 id: PO:0007004
 name: 3 rapid growth stage
 def: "The stage at which the plant grows rapidly by acquiring either or both the  stem elongation and expansion of the rosette/foliage. " [GR:anu ""]
 comment: Many stages like leaf production PO\:0007112\, axillary shoot formation PO\:0007073\, inflorescence PO\:0007047 often overlap with this stage
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007005
 name: 4.05 1/2 inflorescence length reached
 def: "The stage when 1/2 Inflorescence is visible. " [GR:anu]
 synonym: "4.03 1/2 of inflorescence length reached in soybean" [SOY:0000069]
-is_a: PO:0007047
+is_a: PO:0007047 ! 4 inflorescence visible
 
 [Term]
 id: PO:0007006
 name: 4.01 inflorescence just visible
 def: "Inflorescence just visible to the naked eye." [Poc:curators]
 synonym: "4.01 Inflorescence just visible in soybean" [SOY:0000067]
-synonym: "visible flower buds" [TAIR:0000420]
-is_a: PO:0007047
+synonym: "visible flower buds in Arabidopsis" [TAIR:0000420]
+is_a: PO:0007047 ! 4 inflorescence visible
 
 [Term]
 id: PO:0007007
@@ -89,7 +89,7 @@ synonym: "late milk" [GRO:0007109]
 synonym: "oat principal growth stage 7.07" []
 synonym: "pricipal growth stage 7.07" []
 synonym: "wheat principal growth stage 7.07" []
-is_a: PO:0007042
+is_a: PO:0007042 ! 6 fruit formation
 
 [Term]
 id: PO:0007008
@@ -109,7 +109,7 @@ synonym: "principal growth stage 5.05" []
 synonym: "rice principal growth stage 5.05" []
 synonym: "sorghum growth stage-7" [GRO:0007131]
 synonym: "wheat principal growth stage 5.05" []
-is_a: PO:0007041
+is_a: PO:0007041 ! 4.02 inflorescence emergence from flag leaf sheath
 
 [Term]
 id: PO:0007009
@@ -131,7 +131,7 @@ synonym: "embryo stage 3 in maize" [MaizeGDB:67374]
 synonym: "oat principal growth stage 7.03" []
 synonym: "pricipal growth stage 7.03" []
 synonym: "wheat principal growth stage 7.03" []
-is_a: PO:0007042
+is_a: PO:0007042 ! 6 fruit formation
 
 [Term]
 id: PO:0007010
@@ -158,14 +158,14 @@ synonym: "oat principal growth stage 8" []
 synonym: "principal growth stage 8" []
 synonym: "rice growth stage-8" []
 synonym: "rice principal growth stage 8" []
-synonym: "silique ripening" [TAIR:0000034]
+synonym: "silique ripening in Arabidopsis" [TAIR:0000034]
 synonym: "sorghum principal growth stage 8" []
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007011
 name: root development
-is_a: PO:0007021
+is_a: PO:0007021 ! plant part development
 
 [Term]
 id: PO:0007012
@@ -173,7 +173,7 @@ name: 4 inflorescence visible (sensu Poaceae)
 def: "The stage at which grass plant is producing inflorescence(s)." [Poc:curators]
 comment: There is no one-to-one correspondence between growth stages of inflorescences formation in members of Poaceae with that of other families.
 synonym: "BBCH principal growth stage 4" [ISBN:3826331524]
-is_a: PO:0007047
+is_a: PO:0007047 ! 4 inflorescence visible
 
 [Term]
 id: PO:0007013
@@ -184,7 +184,7 @@ synonym: "5.2-late booting stage in rice" [GRO:0007150]
 synonym: "flag leaf sheath swollen" []
 synonym: "rice growth stage-5.2" [GRO:0007150]
 synonym: "rice principal growth stage 4.05" []
-is_a: PO:0007014
+is_a: PO:0007014 ! 4.01 booting
 
 [Term]
 id: PO:0007014
@@ -206,7 +206,7 @@ synonym: "rice principal growth stage 4" []
 synonym: "sorghum growth stage-6" [GRO:0007130]
 synonym: "sorghum principal growth stage 4" []
 synonym: "wheat principal growth stage 4" []
-is_a: PO:0007012
+is_a: PO:0007012 ! 4 inflorescence visible (sensu Poaceae)
 
 [Term]
 id: PO:0007015
@@ -216,11 +216,14 @@ synonym: "0.02-radicle emergence from seed in maize" [GRO:0007005]
 synonym: "0.2 radicle emergence from seed in maize" [MaizeGDB:67351]
 synonym: "05 radicle emergence from seed coat in soybean" [SOY:0000011]
 synonym: "1.04-radicle emerged from seed in Triticeae" [GRO:0007055]
+synonym: "1.04-radicle emerged from seed in barley" [GRO:0007055]
+synonym: "1.04-radicle emerged from seed in oat" [GRO:0007055]
+synonym: "1.04-radicle emerged from seed in wheat" [GRO:0007055]
 synonym: "BBCH growth stage 05" [ISBN:3826331524]
 synonym: "Zadok scale-5" [GRO:0007055]
 synonym: "maize growth stage-0.2" [GRO:0007005]
-synonym: "radicle emergence" [TAIR:T0000395]
-is_a: PO:0007057
+synonym: "radicle emergence in Arabidopsis" [TAIR:T0000395]
+is_a: PO:0007057 ! 0 germination
 
 [Term]
 id: PO:0007016
@@ -251,27 +254,48 @@ synonym: "principal growth stage 6" []
 synonym: "rice growth stage-6.1" [GRO:0007151]
 synonym: "rice principal growth stage 6" []
 synonym: "silk emergence in maize" [MaizeGDB:67362]
-synonym: "sorghum growth stage8" [GRO:0007153]
+synonym: "sorghum growth stage 8" [GRO:0007153]
 synonym: "sorghum principal growth stage 6" []
 synonym: "wheat principal growth stage 6" []
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007017
 name: 8 senescence
 def: "The beginning of death processes in plant or plant part(s). It includes the seed dormancy related stages.." [Poc:curators]
+synonym: "10.03-kernel loosening in daytime in Triticeae" [GRO:0007117]
+synonym: "10.03-kernel loosening in daytime in barley" [GRO:0007117]
+synonym: "10.03-kernel loosening in daytime in oat" [GRO:0007117]
+synonym: "10.03-kernel loosening in daytime in wheat" [GRO:0007117]
+synonym: "10.04-overripe\, straw dead and collapsing in Triticeae" [GRO:0007118]
+synonym: "10.04-overripe\, straw dead and collapsing in barley" [GRO:0007118]
+synonym: "10.04-overripe\, straw dead and collapsing in oat" [GRO:0007118]
+synonym: "10.04-overripe\, straw dead and collapsing in wheat" [GRO:0007118]
+synonym: "10.05-seed dormant in Triticeae" [GRO:0007119]
+synonym: "10.05-seed dormant in barley" [GRO:0007119]
+synonym: "10.05-seed dormant in oat" [GRO:0007119]
+synonym: "10.05-seed dormant in wheat" [GRO:0007119]
+synonym: "10.06-viable seed germination in Triticeae" [GRO:0007120]
+synonym: "10.06-viable seed germination in barley" [GRO:0007120]
+synonym: "10.06-viable seed germination in oat" [GRO:0007120]
+synonym: "10.06-viable seed germination in wheat" [GRO:0007120]
+synonym: "10.07-seed not dormant in Triticeae" [GRO:0007121]
+synonym: "10.07-seed not dormant in barley" [GRO:0007121]
+synonym: "10.07-seed not dormant in oat" [GRO:0007121]
+synonym: "10.07-seed not dormant in wheat" [GRO:0007121]
+synonym: "10.08-secondary dormancy induced in Triticeae" [GRO:0007122]
+synonym: "10.08-secondary dormancy induced in barley" [GRO:0007122]
+synonym: "10.08-secondary dormancy induced in oat" [GRO:0007122]
+synonym: "10.08-secondary dormancy induced in wheat" [GRO:0007122]
+synonym: "10.09-secondary dormancy lost in Triticeae" [GRO:0007123]
+synonym: "10.09-secondary dormancy lost in barley" [GRO:0007123]
+synonym: "10.09-secondary dormancy lost in oat" [GRO:0007123]
+synonym: "10.09-secondary dormancy lost in wheat" [GRO:0007123]
 synonym: "9 Senescence in soybean" [SOY:0000008]
 synonym: "BBCH principal growth stage 9" [ISBN:3826331524]
-synonym: "10.03-kernel loosening in daytime" [GRO:0007117]
-synonym: "10.04-overripe, straw dead and collapsing" [GRO:0007118]
-synonym: "10.05-seed dormant" [GRO:0007119]
-synonym: "10.06-viable seed germination" [GRO:0007120]
-synonym: "10.07-seed not dormant" [GRO:0007121]
-synonym: "10.08-secondary dormancy induced" [GRO:0007122]
-synonym: "10.09-secondary dormancy lost" [GRO:0007123]
-synonym: "principal growth stage 9" []
-synonym: "senescence" [TAIR:0000035]
-is_a: PO:0007033
+synonym: "principal growth stage" []
+synonym: "senescence in Arabidopsis" [TAIR:0000035]
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007018
@@ -289,7 +313,7 @@ synonym: "principal growth stage 4.01" []
 synonym: "rice growth stage-5.1" [GRO:0007149]
 synonym: "rice principal growth stage 4.01" []
 synonym: "wheat principal growth stage 4.01" []
-is_a: PO:0007014
+is_a: PO:0007014 ! 4.01 booting
 
 [Term]
 id: PO:0007019
@@ -303,17 +327,17 @@ synonym: "barley principal growth stage 4.09" []
 synonym: "first awns visible" [GRO:0007094]
 synonym: "oat principal growth stage 4.09" []
 synonym: "wheat principal growth stage 4.09" []
-is_a: PO:0007014
+is_a: PO:0007014 ! 4.01 booting
 
 [Term]
 id: PO:0007020
 name: embryo development
-is_a: PO:0007021
+is_a: PO:0007021 ! plant part development
 
 [Term]
 id: PO:0007021
 name: plant part development
-is_a: PO:0009012
+is_a: PO:0009012 ! plant growth and development
 
 [Term]
 id: PO:0007022
@@ -323,10 +347,16 @@ synonym: "0.1 imbibition in maize" [MaizeGDB:64054]
 synonym: "01 Beginning of seed imbibition in soybean" [SOY:0000090]
 synonym: "03 Seed imbibition complete in soybean" [SOY:0000091]
 synonym: "1.02-start of imbibition in Triticeae" [GRO:0007053]
+synonym: "1.02-start of imbibition in barley" [GRO:0007053]
+synonym: "1.02-start of imbibition in oat" [GRO:0007053]
+synonym: "1.02-start of imbibition in wheat" [GRO:0007053]
 synonym: "1.03-imbibition complete in Tricticeae" [GRO:0007054]
+synonym: "1.03-imbibition complete in barley" [GRO:0007054]
+synonym: "1.03-imbibition complete in oat" [GRO:0007054]
+synonym: "1.03-imbibition complete in wheat" [GRO:0007054]
 synonym: "BBCH growth stage 01" [ISBN:3826331524]
-synonym: "imbibition" [TAIR:0000394]
-is_a: PO:0007057
+synonym: "imbibition in Arabidopsis" [TAIR:0000394]
+is_a: PO:0007057 ! 0 germination
 
 [Term]
 id: PO:0007023
@@ -341,7 +371,7 @@ synonym: "oat principal growth stage 5.09" []
 synonym: "principal growth stage 5.09" []
 synonym: "rice principal growth stage 5.09" []
 synonym: "wheat principal growth stage 5.09" []
-is_a: PO:0007041
+is_a: PO:0007041 ! 4.02 inflorescence emergence from flag leaf sheath
 
 [Term]
 id: PO:0007024
@@ -363,7 +393,7 @@ synonym: "oat principal growth stage 6.09" []
 synonym: "principal growth stage 6.09" []
 synonym: "rice principal growth stage 6.09" []
 synonym: "wheat principal growth stage 6.09" []
-is_a: PO:0007016
+is_a: PO:0007016 ! 5 flowering
 
 [Term]
 id: PO:0007025
@@ -384,7 +414,7 @@ synonym: "oat principal growth stage 5.01" []
 synonym: "principal growth stage 5.01" []
 synonym: "visible flower buds" []
 synonym: "wheat principal growth stage 5.01" []
-is_a: PO:0007041
+is_a: PO:0007041 ! 4.02 inflorescence emergence from flag leaf sheath
 
 [Term]
 id: PO:0007026
@@ -393,10 +423,13 @@ def: "The stage at which the first flower(s) open." [GR:pj]
 comment: These first flowers are not necessarily the oldest flowers in the inflorescence. In some cereal plants the flowering starts in the middle of the inflorescence.
 synonym: "6.00 1st flowers on main stem open in soybean" [SOY:0000072]
 synonym: "7.01-anthesis beginning in Triticeae" [GRO:0007102]
+synonym: "7.01-anthesis beginning in barley" [GRO:0007102]
+synonym: "7.01-anthesis beginning in oat" [GRO:0007102]
+synonym: "7.01-anthesis beginning in wheat" [GRO:0007102]
 synonym: "Arabidopsis principal growth stage 6.00" []
 synonym: "Stage R1 Open flower at any node on the main stem" [SOY:0000072]
-synonym: "first open flower" [TAIR:0000421]
-is_a: PO:0007016
+synonym: "first open flower in Arabidopsis" [TAIR:0000421]
+is_a: PO:0007016 ! 5 flowering
 
 [Term]
 id: PO:0007027
@@ -405,7 +438,7 @@ def: "The stage when the size of the fruit has reached the final fruit size typi
 synonym: "7.09 Pod full size in soybean" [SOY:0000084]
 synonym: "Stage R4 Full pod in soybean" [SOY:0000084]
 synonym: "pricipal growth stage 7.09" []
-is_a: PO:0007042
+is_a: PO:0007042 ! 6 fruit formation
 
 [Term]
 id: PO:0007028
@@ -418,7 +451,7 @@ synonym: "Zadok scale-47" [GRO:0007093]
 synonym: "barley principal growth stage 4.07" []
 synonym: "oat principal growth stage 4.07" []
 synonym: "wheat principal growth stage 4.07" []
-is_a: PO:0007014
+is_a: PO:0007014 ! 4.01 booting
 
 [Term]
 id: PO:0007029
@@ -435,7 +468,7 @@ synonym: "milky ripe stage" []
 synonym: "oat principal growth stage 7.05" []
 synonym: "pricipal growth stage 7.05" []
 synonym: "wheat principal growth stage 7.05" []
-is_a: PO:0007042
+is_a: PO:0007042 ! 6 fruit formation
 
 [Term]
 id: PO:0007030
@@ -443,7 +476,7 @@ name: 0.7 shoot emergence
 def: "Shoot or leaf breaks through soil surface." [GR:anu, ISBN:3826331524]
 synonym: "07 shoot emergence in soybean" [SOY:0000012]
 synonym: "BBCH growth stage 09" [ISBN:3826331524]
-is_a: PO:0007057
+is_a: PO:0007057 ! 0 germination
 
 [Term]
 id: PO:0007031
@@ -473,7 +506,7 @@ synonym: "pricipal growth stage 8.05" []
 synonym: "soft dough" [GRO:0007112]
 synonym: "sorghum growth stage-9" []
 synonym: "sorghum principal growth stage 8.05" []
-is_a: PO:0007010
+is_a: PO:0007010 ! 7 ripening
 
 [Term]
 id: PO:0007032
@@ -495,7 +528,7 @@ synonym: "oat principal growth stage 7.01" []
 synonym: "pricipal growth stage 7.01" []
 synonym: "watery ripe" [GRO:0007106]
 synonym: "wheat principal growth stage 7.01" []
-is_a: PO:0007042
+is_a: PO:0007042 ! 6 fruit formation
 
 [Term]
 id: PO:0007033
@@ -508,7 +541,7 @@ synonym: "plant growth stage ontology" [GRO:0007199]
 synonym: "rice growth stage" [GRO:0007040]
 synonym: "sorghum growth stage" [GRO:0007124]
 synonym: "wheat\, barley and oat growth stage" [GRO:0007156]
-is_a: PO:0009012
+is_a: PO:0009012 ! plant growth and development
 
 [Term]
 id: PO:0007034
@@ -516,12 +549,12 @@ name: 5.02 1/4 of flowers open
 def: "The stage at which 1/4 of flowers open" [GR:anu]
 synonym: "6.02 1/4 of flowers open in soybean" [SOY:0000073]
 synonym: "principal growth stage 6.02" []
-is_a: PO:0007016
+is_a: PO:0007016 ! 5 flowering
 
 [Term]
 id: PO:0007035
 name: 7-8 fruit formation and maturation
-def: "This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit dvelopment\, maturation\, and provisioning. " [Poc:curators]
+def: "OBSOLETE\: This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit dvelopment\, maturation\, and provisioning. " [Poc:curators]
 comment: We have chosen to use fruit size as a marker of these physiological processes to represent the wholeplant growth stage.
 synonym: "06-post-flowering in maize" [GRO:0007025]
 synonym: "5.3 pollination in maize" [MaizeGDB:67364]
@@ -542,7 +575,7 @@ synonym: "kernel watery ripe" [GRO:0007106]
 synonym: "lag phase in maize" [MaizeGDB:67370]
 synonym: "post-flowering in maize" [MaizeGDB:67370]
 synonym: "proembryo in maize" [MaizeGDB:67370]
-is_a: PO:0007060
+is_obsolete: true
 
 [Term]
 id: PO:0007036
@@ -554,27 +587,30 @@ synonym: "Arabidopsis pricipal growth stage 8.01" []
 synonym: "begining of fruit coloration" []
 synonym: "first silique shattered" []
 synonym: "pricipal growth stage 8.01" []
-is_a: PO:0007010
+is_a: PO:0007010 ! 7 ripening
 
 [Term]
 id: PO:0007038
 name: 7.09 fruit ripening complete
 def: "The stage at which fruit ripening is complete." [GR:anu, ISBN:3826331524]
-synonym: "8.09 Final ripening in soybean" [SOY:0000089]
-synonym: "9.02 dry kernel in maize" [GRO:0007037]
+synonym: "10-ripening in Triticeae" [GRO:0007114]
+synonym: "10-ripening in barley" [GRO:0007114]
+synonym: "10-ripening in oat" [GRO:0007114]
+synonym: "10-ripening in wheat" [GRO:0007114]
 synonym: "10.01-kernel medium hard" [GRO:0007115]
 synonym: "10.02-kernel hard" [GRO:0007116]
-synonym: "10-ripening in Triticeae" [GRO:0007114]
+synonym: "8.09 Final ripening in soybean" [SOY:0000089]
+synonym: "9.02 dry kernel in maize" [GRO:0007037]
 synonym: "dry kernel in maize" [MaizeGDB:67381]
 synonym: "dry seed in maize" [MaizeGDB:67381]
 synonym: "fully ripe" []
 synonym: "pricipal growth stage 8.09" []
-is_a: PO:0007010
+is_a: PO:0007010 ! 7 ripening
 
 [Term]
 id: PO:0007040
 name: leaf development
-is_a: PO:0007021
+is_a: PO:0007021 ! plant part development
 
 [Term]
 id: PO:0007041
@@ -597,7 +633,7 @@ synonym: "sorghum growth stage-7" [GRO:0007131]
 synonym: "sorghum principal growth stage 5" []
 synonym: "tasseling" []
 synonym: "wheat principal growth stage 5" []
-is_a: PO:0007012
+is_a: PO:0007012 ! 4 inflorescence visible (sensu Poaceae)
 
 [Term]
 id: PO:0007042
@@ -625,7 +661,7 @@ synonym: "principal growth stage 7" []
 synonym: "proembryo in maize" [MaizeGDB:67371]
 synonym: "rice growth stage-7" [GRO:0007046]
 synonym: "transition stage in maize" [MaizeGDB:67369]
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007043
@@ -635,8 +671,8 @@ comment: Cotyledons are visible and often become photosynthetic.  Occurs in plan
 synonym: "0.07.01 Cotyledons and hypocotyl emerge in soybean" [SOY:0000013]
 synonym: "0.07.02 Hypocotyl emerges above soil in soybean" [SOY:0000092]
 synonym: "BBCH growth stage 08" [ISBN:3826331524]
-synonym: "hypocotyl and cotyledon emergence" [TAIR:0000396]
-is_a: PO:0007030
+synonym: "hypocotyl and cotyledon emergence in Arabidopsis" [TAIR:0000396]
+is_a: PO:0007030 ! 0.7 shoot emergence
 
 [Term]
 id: PO:0007044
@@ -652,7 +688,7 @@ synonym: "flag leaf sheath just visibly swollen" []
 synonym: "oat principal growth stage 4.03" []
 synonym: "rice principal growth stage 4.03" []
 synonym: "wheat principal growth stage 4.03" []
-is_a: PO:0007014
+is_a: PO:0007014 ! 4.01 booting
 
 [Term]
 id: PO:0007045
@@ -660,14 +696,14 @@ name: coleoptile emergence
 def: "Emergence of coleoptile above ground." [GR:anu, ISBN:3826331524]
 synonym: "0.3 coleoptile emergence from seed in maize" [MaizeGDB:67352]
 synonym: "BBCH growth stage 09" [ISBN:3826331524]
-is_a: PO:0007030
+is_a: PO:0007030 ! 0.7 shoot emergence
 
 [Term]
 id: PO:0007046
 name: 4.03 1/4 inflorescence length reached
 def: "The stage when 1/4 Inflorescence is visible. " [GR:anu]
 synonym: "4.02 1/4 of inflorescence length reached in soybean" [SOY:0000068]
-is_a: PO:0007047
+is_a: PO:0007047 ! 4 inflorescence visible
 
 [Term]
 id: PO:0007047
@@ -675,7 +711,7 @@ name: 4 inflorescence visible
 def: "The stage at which plant is producing inflorescence(s)." [Poc:curators]
 synonym: "4 Inflorescence Formation in soybean" [SOY:0000005]
 synonym: "BBCH principal growth stage 5" [ISBN:3826331524]
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007048
@@ -691,7 +727,7 @@ synonym: "oat principal growth stage 5.03" []
 synonym: "principal growth stage 5.03" []
 synonym: "rice principal growth stage 5.03" []
 synonym: "wheat principal growth stage 5.03" []
-is_a: PO:0007041
+is_a: PO:0007041 ! 4.02 inflorescence emergence from flag leaf sheath
 
 [Term]
 id: PO:0007049
@@ -699,8 +735,8 @@ name: cotyledon emergence
 def: "Emergence of cotyledons above ground." [GR:anu, ISBN:3826331524]
 comment: Except in plants with hypogeal germination.
 synonym: "BBCH growth stage 09" [ISBN:3826331524]
-synonym: "hypocotyl and cotyledon emergence" [TAIR:0000396]
-is_a: PO:0007030
+synonym: "hypocotyl and cotyledon emergence in Arabidopsis" [TAIR:0000396]
+is_a: PO:0007030 ! 0.7 shoot emergence
 
 [Term]
 id: PO:0007050
@@ -739,14 +775,14 @@ synonym: "rice principal growth stage 8.07" []
 synonym: "sorghum growth stage-10" [GRO:0007134]
 synonym: "sorghum principal growth stage 8.07" []
 synonym: "storage maturity in maize" [MaizeGDB:67381]
-is_a: PO:0007010
+is_a: PO:0007010 ! 7 ripening
 
 [Term]
 id: PO:0007051
 name: 4.011 booting begins
 def: "Booting has just begun." [ISBN:3826331524, GR:anu]
 synonym: "principal growth stage 4.00" []
-is_a: PO:0007014
+is_a: PO:0007014 ! 4.01 booting
 
 [Term]
 id: PO:0007052
@@ -755,7 +791,7 @@ def: "The stage at which 3/4 of flowers open." [GR:anu]
 synonym: "6.02 3/4 of flowers open in soybean" [SOY:0000074]
 synonym: "Stage R2 Open flower at one of the two uppermost nodes on the main stem with fully developed leaf in soybean" [SOY:0000074]
 synonym: "flowering finishing" []
-is_a: PO:0007016
+is_a: PO:0007016 ! 5 flowering
 
 [Term]
 id: PO:0007053
@@ -772,24 +808,24 @@ synonym: "oat principal growth stage 6.05" []
 synonym: "principal growth stage 6.05" []
 synonym: "rice principal growth stage 6.05" []
 synonym: "wheat principal growth stage 6.05" []
-is_a: PO:0007016
+is_a: PO:0007016 ! 5 flowering
 
 [Term]
 id: PO:0007054
 name: epicotyl emergence
 def: "Emergence of the epicotyl above ground." [ISBN:0306416875, GR:anu]
 comment: Only the first true foliage leaf or pair of leaves are visible.  Occurs in plants with hypogeal germination.
-is_a: PO:0007030
+is_a: PO:0007030 ! 0.7 shoot emergence
 
 [Term]
 id: PO:0007055
 name: 0.0 dry seed
 def: "Mature seed with low moisture content." [GR:anu, ISBN:0306416875]
 synonym: "00 Dry Seed in soybean" [SOY:0000009]
-synonym: "BBCH growth stage 00" [ISBN:3826331524]
 synonym: "1.01-dry seed in Tricticeae" [GRO:0007052]
-synonym: "dry seed" [TAIR:0000213]
-is_a: PO:0007057
+synonym: "BBCH growth stage 00" [ISBN:3826331524]
+synonym: "dry seed in Arabidopsis" [TAIR:0000213]
+is_a: PO:0007057 ! 0 germination
 
 [Term]
 id: PO:0007057
@@ -799,29 +835,36 @@ synonym: "0 Germination in soybean" [SOY:0000001]
 synonym: "0 germination in maize" [MaizeGDB:64055]
 synonym: "00-germination in maize" [GRO:0007003]
 synonym: "01-germination in Triticeae" [GRO:0007051]
+synonym: "01-germination in barley" [GRO:0007051]
+synonym: "01-germination in oat" [GRO:0007051]
 synonym: "01-germination in rice" [GRO:0007043]
+synonym: "01-germination in wheat" [GRO:0007051]
 synonym: "BBCH principal growth stage 0" [ISBN:3826331524]
 synonym: "axillary bud development" []
 synonym: "bud development" []
-synonym: "germination" [TAIR:0000393]
+synonym: "germination in Arabidopsis" [TAIR:0000393]
 synonym: "maize growth stage-0" [GR:GRO\:0007003]
 synonym: "principal growth stage 0" []
 synonym: "rice growth stage-1" [GRO:0007043]
 synonym: "sprouting" []
 synonym: "terminal bud development" []
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007060
 name: obsolete growth and development terms
-is_a: PO:0009012
+is_obsolete: true
 
 [Term]
 id: PO:0007061
 name: 2.00 main shoot only
+def: "OBSOLETE" [GR:anu]
 synonym: "3.01-main shoot only in Triticeae" [GRO:0007087]
+synonym: "3.01-main shoot only in barley" [GRO:0007087]
+synonym: "3.01-main shoot only in oat" [GRO:0007087]
+synonym: "3.01-main shoot only in wheat" [GRO:0007087]
 synonym: "Zadok scale-20" [GRO:0007087]
-is_a: PO:0007060
+is_obsolete: true
 
 [Term]
 id: PO:0007062
@@ -833,6 +876,7 @@ synonym: "4.07-sixth node detectable in barley" [GRO:0007087]
 synonym: "4.07-sixth node detectable in oat" [GRO:0007087]
 synonym: "4.07-sixth node detectable in wheat" [GRO:0007087]
 synonym: "BBCH growth stage 36" [ISBN:3826331524]
+synonym: "V11 in maize" []
 synonym: "Zadok scale-36" [GRO:0007087]
 synonym: "barley principal growth stage growth 3.06" []
 synonym: "late whorl stage of maize" []
@@ -843,7 +887,7 @@ synonym: "maize principal growth stage growth 3.06" []
 synonym: "oat principal growth stage growth 3.06" []
 synonym: "principal growth stage growth 3.06" []
 synonym: "wheat principal growth stage growth 3.06" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007063
@@ -851,12 +895,15 @@ name: 1.07 seven leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has seven true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.07 6th trifoliolate leaf unfolded in soybean" [SOY:0000021]
 synonym: "2.08-seven leaves unfolded in Triticeae" [GRO:0007066]
+synonym: "2.08-seven leaves unfolded in barley" [GRO:0007066]
+synonym: "2.08-seven leaves unfolded in oat" [GRO:0007066]
+synonym: "2.08-seven leaves unfolded in wheat" [GRO:0007066]
 synonym: "3.01-ear initiation" [GRO:0007013]
 synonym: "3.1 ear initiation/mid-whorl stage in maize" [MaizeGDB:67356]
 synonym: "6-8 leaves in maize" [MaizeGDB:67356]
 synonym: "6-leaf in maize" [MaizeGDB:67356]
 synonym: "7 leaves unfolded" []
-synonym: "7 rosette leaf" [TAIR:0000410]
+synonym: "7 rosette leaf in Arabidopsis" [TAIR:0000410]
 synonym: "7-leaf in maize" [MaizeGDB:67356]
 synonym: "Arabidopsis principal growth stage 1.07" []
 synonym: "BBCH growth stage 17" [ISBN:3826331524]
@@ -877,14 +924,14 @@ synonym: "seven leaves unfolded (sensu Oryza)" []
 synonym: "seven leaves unfolded (sensu Triticeae)" [GRO:0007066]
 synonym: "seven rosette leaves" []
 synonym: "seventh leaf unfolded" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007064
 name: 1.12 twelve leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has twelve true leaves\, leaf pairs or whorls of leaves visible above the ground. " [GR:anu]
 synonym: "1.12 11th trifoliolate leaf unfolded in soybean" [SOY:0000026]
-synonym: "12 rosette leaf" [TAIR:0000415]
+synonym: "12 rosette leaf in Arabidopsis" [TAIR:0000415]
 synonym: "3.03-mid-vegetative" [GRO:0007013]
 synonym: "3.3 mid-vegetative" [MaizeGDB:67359]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007013]
@@ -898,7 +945,7 @@ synonym: "maize principal growth stage 1.12" []
 synonym: "mid-vegetative in maize" [MaizeGDB:67359]
 synonym: "mid-vegetative stage of maize" [GRO:0007013]
 synonym: "twelve rosette leaves" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007065
@@ -908,17 +955,18 @@ synonym: "02-tassel initiation in maize" [GRO:0007011]
 synonym: "04-five leaf stage in sorghum" [GRO:0007127]
 synonym: "1.05 4th trifoliolate leaf unfolded in soybean" [SOY:0000019]
 synonym: "2 tassel initiation/early whorl stage in maize" [MaizeGDB:67306]
-synonym: "2.06-five leaves unfolded" [GRO:0007064]
+synonym: "2.06-five leaves unfolded in Triticeae" [GRO:0007064]
+synonym: "2.06-five leaves unfolded in barley" [GRO:0007064]
+synonym: "2.06-five leaves unfolded in oat" [GRO:0007064]
+synonym: "2.06-five leaves unfolded in wheat" [GRO:0007064]
 synonym: "4-6 leaves in maize" [MaizeGDB:67306]
 synonym: "5 leaves unfolded" []
-synonym: "5 rosette leaf" [TAIR:0000408]
+synonym: "5 rosette leaf in Arabidopsis" [TAIR:0000408]
 synonym: "Arabidopsis principal growth stage 1.05" []
 synonym: "BBCH growth stage 15" [ISBN:3826331524]
 synonym: "Stage V4 in soybean" [SOY:0000019]
 synonym: "V05 stage (sensu Zea)" []
-synonym: "V4 in maize" [MaizeGDB:67306]
 synonym: "V5 in maize" [MaizeGDB:67306]
-synonym: "V6 in maize" [MaizeGDB:67306]
 synonym: "Wheat principal growth stage 1.05" []
 synonym: "Zadok scale-15\, Haun scale-4.+" [GRO:0007064]
 synonym: "barley principal growth stage 1.05" []
@@ -938,7 +986,7 @@ synonym: "sorghum growth stage-3" [GRO:0007127]
 synonym: "sorghum principal growth stage 1.05" []
 synonym: "tassel differentiation in maize" [MaizeGDB:67306]
 synonym: "tassel initiation in maize" [MaizeGDB:67306]
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007066
@@ -947,13 +995,14 @@ def: "The stage at which the stem elongation proceeds with the nineth internode 
 synonym: "3.09 9 nodes/internodes visible in soybean" [SOY:0000058]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "BBCH growth stage 39" [ISBN:3826331524]
+synonym: "V14 in maize" []
 synonym: "maize V14 stage" [GRO:0007015]
 synonym: "maize growth stage-3.3" [GRO:0007015]
 synonym: "maize principal growth stage 1.14" []
 synonym: "maize principal growth stage growth 3.09" []
 synonym: "mid-vegetative stage of maize" [GRO:0007015]
 synonym: "principal growth stage growth 3.09" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007067
@@ -964,8 +1013,6 @@ synonym: "3.04-late vegetative" [GRO:0007016]
 synonym: "3.4 late vegetative in maize" [MaizeGDB:67360]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "Stage V16 in soybean" [SOY:0000031]
-synonym: "V15 in maize" [MaizeGDB:67360]
-synonym: "V16 in maize" [MaizeGDB:67360]
 synonym: "V17 in maize" [MaizeGDB:67360]
 synonym: "V17 stage (sensu Zea)" [GRO:0007016]
 synonym: "late vegetative in maize" [MaizeGDB:67360]
@@ -973,14 +1020,14 @@ synonym: "late vegetative stage of maize" [GRO:0007016]
 synonym: "maize V17 stage" [GRO:0007016]
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.17" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007068
 name: mid rosette growth
 def: "Rosette has reached approximately 50% of its final diameter." [Poc:curators]
-synonym: "mid rosette growth" [TAIR:0000044]
-is_a: PO:0007113
+synonym: "mid rosette growth in Arabidopsis" [TAIR:0000044]
+is_a: PO:0007113 ! 3 rosette growth
 
 [Term]
 id: PO:0007069
@@ -992,9 +1039,12 @@ synonym: "1.00 Cotyledon visible in soybean" [SOY:0000014]
 synonym: "1.00 imperfect leaf unrolled" []
 synonym: "1.01-seedling emergence" []
 synonym: "1.01-seedling emergence in maize" [GRO:0007008]
-synonym: "1.1 seedling emergence in maize" [GRO:0007008]
 synonym: "1.1 seedling emergence in maize" [MaizeGDB:64057]
+synonym: "1.1 seedling emergence in maize" [GRO:0007008]
 synonym: "2.01-first leaf through coleoptile in Triticeae" [GRO:0007059]
+synonym: "2.01-first leaf through coleoptile in barley" [GRO:0007059]
+synonym: "2.01-first leaf through coleoptile in oat" [GRO:0007059]
+synonym: "2.01-first leaf through coleoptile in wheat" [GRO:0007059]
 synonym: "Arabidopsis principal growth stage 1.0" []
 synonym: "BBCH growth stage 10" [ISBN:3826331524]
 synonym: "VE in maize" [MaizeGDB:64057]
@@ -1003,7 +1053,7 @@ synonym: "Wheat principal growth stage 1.0" []
 synonym: "Zadok scale-10\, Feekes scale-1" [GRO:0007059]
 synonym: "barley principal growth stage 1.0" []
 synonym: "cotyledons fully open" []
-synonym: "cotyledons fully open" [TAIR:0000397]
+synonym: "cotyledons fully open in Arabidopsis" [TAIR:0000397]
 synonym: "first leaf through coleoptile" []
 synonym: "first leaf through coleoptile (sensu Oryza)" []
 synonym: "first leaf through coleoptile (sensu Triticeae)" [GRO:0007059]
@@ -1015,7 +1065,7 @@ synonym: "seedling emergence (sensu Sorghum)" [GRO:0007125]
 synonym: "seedling emergence (sensu Zea)" []
 synonym: "sorghum growth stage-0" [GRO:0007125]
 synonym: "sorghum principal growth stage 1.0" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007070
@@ -1024,13 +1074,14 @@ def: "The stage at which the stem elongation proceeds and eigth nodes or interno
 synonym: "3.08 8 nodes/internodes visible in soybean" [SOY:0000057]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "BBCH growth stage 38" [ISBN:3826331524]
+synonym: "V13 in maize" []
 synonym: "maize V13 stage" [GRO:0007015]
 synonym: "maize growth stage-3.3" [GRO:0007015]
 synonym: "maize principal growth stage 1.13" []
 synonym: "maize principal growth stage growth 3.08" []
 synonym: "mid-vegetative stage of maize" [GRO:0007015]
 synonym: "principal growth stage growth 3.08" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007071
@@ -1047,7 +1098,7 @@ synonym: "main shoot and two tillers in oat" [GRO:0007072]
 synonym: "main shoot and two tillers in wheat" [GRO:0007072]
 synonym: "second axillary shoot detectable" []
 synonym: "second tiller detectable" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007072
@@ -1058,9 +1109,6 @@ synonym: "3.04-late vegetative" [GRO:0007016]
 synonym: "3.4 late vegetative in maize" [MaizeGDB:67360]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "Stage V17 in soybean" [SOY:0000032]
-synonym: "V15 in maize" [MaizeGDB:67360]
-synonym: "V16 in maize" [MaizeGDB:67360]
-synonym: "V17 in maize" [MaizeGDB:67360]
 synonym: "V18 in maize" [MaizeGDB:67360]
 synonym: "V18 stage (sensu Zea)" [GRO:0007016]
 synonym: "late vegetative in maize" [MaizeGDB:67360]
@@ -1068,7 +1116,7 @@ synonym: "late vegetative stage of maize" [GRO:0007016]
 synonym: "maize V18 stage" [GRO:0007016]
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.18" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007073
@@ -1088,7 +1136,7 @@ synonym: "rice growth stage-3" [GRO:0007049]
 synonym: "rice principal growth stage 2" []
 synonym: "tillering" []
 synonym: "wheat principal growth stage 2" []
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007074
@@ -1096,25 +1144,28 @@ name: 3.15 fifteen nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the fifteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.15 15 nodes/internodes visible in soybean" [SOY:0000064]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
+synonym: "V20 in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
+synonym: "late vegetative stage of maize" [MaizeGDB:67360]
 synonym: "maize V20 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.20" []
 synonym: "maize principal growth stage growth 3.15" []
 synonym: "principal growth stage growth 3.15" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007075
-name: 5.02 20% of inflorescence emerged
-is_a: PO:0007060
+name: 5.02 20% of inflorescence emerged.
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007076
 name: late rosette growth
 def: "Rosette has reached approximately 70% of its final diameter." [Poc:curators]
-synonym: "late rosette growth" [TAIR:0000045]
-is_a: PO:0007113
+synonym: "late rosette growth in Arabidopsis" [TAIR:0000045]
+is_a: PO:0007113 ! 3 rosette growth
 
 [Term]
 id: PO:0007077
@@ -1131,14 +1182,14 @@ synonym: "main shoot and eight tillers in barley" [GRO:0007078]
 synonym: "main shoot and eight tillers in oat" [GRO:0007078]
 synonym: "main shoot and eight tillers in wheat" [GRO:0007078]
 synonym: "main shoot and eighth tiller visible" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007078
 name: rosette growth complete
 def: "Stage at which leaf growth and expansion has ceased and rosette no longer increases in diameter." [Poc:curators]
-synonym: "complete rosette" [TAIR:0000418]
-is_a: PO:0007113
+synonym: "complete rosette in Arabidopsis" [TAIR:0000418]
+is_a: PO:0007113 ! 3 rosette growth
 
 [Term]
 id: PO:0007079
@@ -1148,9 +1199,9 @@ synonym: "3.00 stem elongation begins in soybean" [SOY:0000049]
 synonym: "4.01-pseudo stem erection in barley" [GRO:0007081]
 synonym: "4.01-pseudo stem erection in oat" [GRO:0007081]
 synonym: "4.01-pseudo stem erection in wheat" [GRO:0007081]
-synonym: "BBCH growth stage 30" [ISBN:3826331524]
 synonym: "4.1-panicle initiation stage" [GRO:0007147]
 synonym: "4.2-panicle differentiation stage" [GRO:0007041]
+synonym: "BBCH growth stage 30" [ISBN:3826331524]
 synonym: "barley principal growth stage growth 3.00" []
 synonym: "maize principal growth stage growth 3.00" []
 synonym: "oat principal growth stage growth 3.00" []
@@ -1162,7 +1213,7 @@ synonym: "rice panicle initiation" []
 synonym: "rice principal growth stage growth 3.00" []
 synonym: "sorghum principal growth stage growth 3.00" []
 synonym: "wheat principal growth stage growth 3.00" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007080
@@ -1179,14 +1230,14 @@ synonym: "main shoot and three tillers in oat" [GRO:0007073]
 synonym: "main shoot and three tillers in wheat" [GRO:0007073]
 synonym: "third axillary shoot detectable" []
 synonym: "third tiller detectable" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007081
 name: early rosette growth
 def: "Rosette has reached approximately 20% of its final diameter." [Poc:curators]
-synonym: "early rosette growth" [TAIR:0000043]
-is_a: PO:0007113
+synonym: "early rosette growth in Arabidopsis" [TAIR:0000043]
+is_a: PO:0007113 ! 3 rosette growth
 
 [Term]
 id: PO:0007082
@@ -1207,11 +1258,6 @@ synonym: "Stage V21 in soybean" [SOY:0000036]
 synonym: "Stage V22 in soybean" [SOY:0000037]
 synonym: "Stage V23 in soybean" [SOY:0000038]
 synonym: "Stage V25 in soybean" [SOY:0000039]
-synonym: "V15 in maize" [MaizeGDB:67360]
-synonym: "V16 in maize" [MaizeGDB:67360]
-synonym: "V17 in maize" [MaizeGDB:67360]
-synonym: "V18 in maize" [MaizeGDB:67360]
-synonym: "V19 in maize" [MaizeGDB:67360]
 synonym: "V20 in maize" [MaizeGDB:67360]
 synonym: "V20 stage (sensu Zea)" []
 synonym: "late vegetative in maize" [MaizeGDB:67360]
@@ -1219,20 +1265,19 @@ synonym: "late vegetative stage of maize" [GRO:0007016]
 synonym: "maize V20 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.20" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007083
 name: 1.13 thirteen leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has thirteen true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.13 12th trifoliolate leaf unfolded in soybean" [SOY:0000027]
-synonym: "13 rosette leaf" [TAIR:0000416]
+synonym: "13 rosette leaf in Arabidopsis" [TAIR:0000416]
 synonym: "3.03-mid-vegetative" [GRO:0007015]
 synonym: "3.3 mid-vegetative" [MaizeGDB:67359]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "Arabidopsis principal growth stage 1.13" []
 synonym: "Stage V12 in soybean" [SOY:0000027]
-synonym: "V12 in maize" [MaizeGDB:67359]
 synonym: "V13 in maize" [MaizeGDB:67359]
 synonym: "V13 stage (sensu Zea)" []
 synonym: "maize V13 stage" []
@@ -1241,7 +1286,7 @@ synonym: "maize principal growth stage 1.13" []
 synonym: "mid-vegetative in maize" [MaizeGDB:67359]
 synonym: "mid-vegetative stage of maize" [GRO:0007015]
 synonym: "thirteen rosette leaves" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007084
@@ -1249,31 +1294,34 @@ name: 3.10 ten nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the tenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.10 10 nodes/internodes visible in soybean" [SOY:0000059]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
+synonym: "V15 in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
+synonym: "late vegetative stage of maize" [MaizeGDB:67360]
 synonym: "maize V15 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.15" []
 synonym: "maize principal growth stage growth 3.10" []
 synonym: "principal growth stage growth 3.10" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007085
 name: 1.14 fourteen leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has fourteen true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.14 13th trifoliolate leaf unfolded in soybean" [SOY:0000028]
-synonym: "14 rosette leaf" [TAIR:0000417]
+synonym: "14 rosette leaf in Arabidopsis" [TAIR:0000417]
 synonym: "3.03-mid-vegetative" [GRO:0007015]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "Arabidopsis principal growth stage 1.14" []
 synonym: "Stage V13 in soybean" [SOY:0000028]
+synonym: "V14 in maize" []
 synonym: "V14 stage (sensu Zea)" []
 synonym: "fourteen rosette leaves" []
 synonym: "maize V14 stage" []
 synonym: "maize growth stage-3.3" [GRO:0007015]
 synonym: "maize principal growth stage 1.14" []
 synonym: "mid-vegetative stage of maize" [GRO:0007015]
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007086
@@ -1285,6 +1333,7 @@ synonym: "4.06-fifth node detectable in barley" [GRO:0007086]
 synonym: "4.06-fifth node detectable in oat" [GRO:0007086]
 synonym: "4.06-fifth node detectable in wheat" [GRO:0007086]
 synonym: "BBCH growth stage 35" [ISBN:3826331524]
+synonym: "V10 in maize" []
 synonym: "Zadok scale-35" [GRO:0007086]
 synonym: "barley principal growth stage growth 3.05" []
 synonym: "late whorl stage of maize" [GRO:0007014]
@@ -1295,7 +1344,7 @@ synonym: "maize principal growth stage growth 3.05" []
 synonym: "oat principal growth stage growth 3.05" []
 synonym: "principal growth stage growth 3.05" []
 synonym: "wheat principal growth stage growth 3.05" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007087
@@ -1312,7 +1361,7 @@ synonym: "main shoot and first tiller visible" []
 synonym: "main shoot and one tiller in barley" [GRO:0007071]
 synonym: "main shoot and one tiller in oat" [GRO:0007071]
 synonym: "main shoot and one tiller in wheat" [GRO:0007071]
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007088
@@ -1329,11 +1378,10 @@ synonym: "main shoot and four tillers in barley" [GRO:0007074]
 synonym: "main shoot and four tillers in oat" [GRO:0007074]
 synonym: "main shoot and four tillers in wheat" [GRO:0007074]
 synonym: "main shoot and fourth tiller visible" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007089
-name: 3 stem elongation
 name: 3 stem elongation
 def: "The stage at which the internodes present on the stem elongates\, but excludes the lower stem internodes and the coleoptilar internode that do not elongate. In grass plants the stem elongation often starts at the fourth or higher internode from the bottom of the plant and coincides with the onset of tillering stage (axillary shoot formation) and inflorescence initiation." [GR:pj ""]
 synonym: "04-stem elongation in barley" [GRO:0007080]
@@ -1349,7 +1397,6 @@ synonym: "barley principal growth stage growth 3" []
 synonym: "internode elongation" []
 synonym: "jointing stage" [GRO:0007048]
 synonym: "maize principal growth stage growth 3" []
-synonym: "mid-whorl stage in maize" [MaizeGDB:67358]
 synonym: "oat principal growth stage growth 3" []
 synonym: "principal growth stage growth 3" []
 synonym: "rapid stem elongation" []
@@ -1362,7 +1409,7 @@ synonym: "sorghum principal growth stage growth 3" []
 synonym: "stem elongation in maize" [MaizeGDB:67358]
 synonym: "telescoping in maize" [MaizeGDB:67358]
 synonym: "wheat principal growth stage growth 3" []
-is_a: PO:0007004
+is_a: PO:0007004 ! 3 rapid growth stage
 
 [Term]
 id: PO:0007090
@@ -1370,13 +1417,15 @@ name: 3.13 thirteen nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the thirteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.13 13 nodes/internodes visible in soybean" [SOY:0000062]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
+synonym: "V18 in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
+synonym: "late vegetative stage of maize" [MaizeGDB:67360]
 synonym: "maize V18 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.18" []
 synonym: "maize principal growth stage growth 3.13" []
 synonym: "principal growth stage growth 3.13" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007091
@@ -1387,6 +1436,7 @@ synonym: "4.02-first node detectable in barley" [GRO:0007082]
 synonym: "4.02-first node detectable in wheat" [GRO:0007082]
 synonym: "4.02-first node detectablein oat" [GRO:0007082]
 synonym: "BBCH growth stage 31" [ISBN:3826331524]
+synonym: "V6 in maize" []
 synonym: "Zadok scale-31\, Feekes scale-6" [GRO:0007082]
 synonym: "barley principal growth stage growth 3.01" []
 synonym: "ear initiation" []
@@ -1399,7 +1449,7 @@ synonym: "oat principal growth stage growth 3.01" []
 synonym: "principal growth stage growth 3.01" []
 synonym: "stem 10% of final length" []
 synonym: "wheat principal growth stage growth 3.01" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007092
@@ -1411,6 +1461,7 @@ synonym: "4.05-fourth node detectable in barley" [GRO:0007085]
 synonym: "4.05-fourth node detectable in oat" [GRO:0007085]
 synonym: "4.05-fourth node detectable in wheat" [GRO:0007085]
 synonym: "BBCH growth stage 34" [ISBN:3826331524]
+synonym: "V9 in maize" []
 synonym: "Zadok scale-34" [GRO:0007085]
 synonym: "barley principal growth stage growth 3.04" []
 synonym: "late whorl stage of maize" []
@@ -1421,7 +1472,7 @@ synonym: "maize principal growth stage growth 3.04" []
 synonym: "oat principal growth stage growth 3.04" []
 synonym: "principal growth stage growth 3.04" []
 synonym: "wheat principal growth stage growth 3.04" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007093
@@ -1429,6 +1480,9 @@ name: 2.05 main shoot and five axillary shoots visible
 def: "The stage at which main shoot and five or five pairs of axillary shoots are visible at five nodes." [GR:anu]
 synonym: "2.05 Main shoot and axilliary shoots visible at 5 nodes in soybean" [SOY:0000044]
 synonym: "3.06-main shoot and five tillers in Triticeae" [GRO:0007075]
+synonym: "3.06-main shoot and five tillers in barley" [GRO:0007075]
+synonym: "3.06-main shoot and five tillers in oat" [GRO:0007075]
+synonym: "3.06-main shoot and five tillers in wheat" [GRO:0007075]
 synonym: "BBCH growth stage 25" [ISBN:3826331524]
 synonym: "Zadok scale-25" [GRO:0007075]
 synonym: "fifth axillary shoot detectable" []
@@ -1438,7 +1492,7 @@ synonym: "main shoot and fifth tiller visible" []
 synonym: "main shoot and five tillers in barley" [GRO:0007075]
 synonym: "main shoot and five tillers in oat" [GRO:0007075]
 synonym: "main shoot and five tillers in wheat" [GRO:0007075]
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007094
@@ -1449,11 +1503,13 @@ synonym: "1-4 leaf stage in rice" [GRO:0007142]
 synonym: "1.01 Unifoliolate leaves unfolded in soybean" [SOY:0000015]
 synonym: "1.02-one to two leaves in maize" [GRO:0007009]
 synonym: "1.2 1-2 leaves in maize" [Maize:67353]
-synonym: "2.02-first leaf unfolded" [GRO:0007060]
+synonym: "2.02-first leaf unfolded in Triticeae" [GRO:0007060]
+synonym: "2.02-first leaf unfolded in barley" [GRO:0007060]
+synonym: "2.02-first leaf unfolded in oat" [GRO:0007060]
+synonym: "2.02-first leaf unfolded in wheat" [GRO:0007060]
 synonym: "BBCH growth stage 11" [ISBN:3826331524]
 synonym: "V01 stage (sensu Zea)" []
 synonym: "V1 in maize " [Maize:67353]
-synonym: "V2 in maize" [Maize:67353]
 synonym: "VC stage in soybean" [SOY:0000015]
 synonym: "Wheat principal growth stage 1.01" []
 synonym: "Zadok scale-11\, Haun scale-1.+" [GRO:0007060]
@@ -1467,7 +1523,7 @@ synonym: "oat principal growth stage 1.01" []
 synonym: "pre tillering" [GRO:0007142]
 synonym: "rice growth stage-2.1" [GRO:0007142]
 synonym: "rice principal growth stage 1.01" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007095
@@ -1475,6 +1531,9 @@ name: 1.08 eight leaves, leaf pairs or whorls unfolded.
 def: "The stage at which the plant has eight true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.08 7th trifoliolate leaf unfolded in soybean" [SOY:0000022]
 synonym: "2.09-eight leaves unfolded in Triticeae" [GRO:0007067]
+synonym: "2.09-eight leaves unfolded in barley" [GRO:0007067]
+synonym: "2.09-eight leaves unfolded in oat" [GRO:0007067]
+synonym: "2.09-eight leaves unfolded in wheat" [GRO:0007067]
 synonym: "3.01-ear initiation in Maize" [GRO:0007013]
 synonym: "3.1 ear initiation/mid-whorl stage in maize" [MaizeGDB:67356]
 synonym: "6-8 leaves in maize" [MaizeGDB:67356]
@@ -1501,7 +1560,7 @@ synonym: "maize principal growth stage 1.08" []
 synonym: "mid-whorl stage in maize" [MaizeGDB:67356]
 synonym: "oat principal growth stage 1.08" []
 synonym: "rice principal growth stage 1.08" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007096
@@ -1512,6 +1571,7 @@ synonym: "4.04-third node detectable in barley" [GRO:0007084]
 synonym: "4.04-third node detectable in oat" [GRO:0007084]
 synonym: "4.04-third node detectable in wheat" [GRO:0007084]
 synonym: "BBCH growth stage 33" [ISBN:3826331524]
+synonym: "V8 in maize" [MaizeGDB:67356]
 synonym: "Zadok scale-33" [GRO:0007084]
 synonym: "barley principal growth stage growth 3.03" []
 synonym: "ear initiation in maize" [GRO:0007013]
@@ -1523,7 +1583,7 @@ synonym: "mid-whorl stage" []
 synonym: "oat principal growth stage growth 3.03" []
 synonym: "principal growth stage growth 3.03" []
 synonym: "wheat principal growth stage growth 3.03" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007097
@@ -1531,13 +1591,15 @@ name: 3.14 fourteen nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the fourteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.14 14 nodes/internodes visible in soybean" [SOY:0000063]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
+synonym: "V19 in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
+synonym: "late vegetative stage of maize" [MaizeGDB:67360]
 synonym: "maize V19 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.19" []
 synonym: "maize principal growth stage growth 3.14" []
 synonym: "principal growth stage growth 3.14" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007098
@@ -1550,6 +1612,9 @@ synonym: "1.2 1-2 leaves in maize" [MaizeGDB:67353]
 synonym: "2 leaves unfolded" []
 synonym: "2 rosette leaves" []
 synonym: "2.03-two leaves unfolded in Triticeae" [GRO:0007061]
+synonym: "2.03-two leaves unfolded in barley" [GRO:0007061]
+synonym: "2.03-two leaves unfolded in oat" [GRO:0007061]
+synonym: "2.03-two leaves unfolded in wheat" [GRO:0007061]
 synonym: "Arabidopsis principal growth stage 1.02" []
 synonym: "BBCH growth stage 12" [ISBN:3826331524]
 synonym: "V02 stage (sensu Zea)" []
@@ -1558,6 +1623,7 @@ synonym: "Wheat principal growth stage 1.02" []
 synonym: "Zadok scale-12\, Haun scale-1.+" [GRO:0007061]
 synonym: "barley principal growth stage 1.02" []
 synonym: "maize V2 stage" []
+synonym: "V2 in maize" []
 synonym: "maize growth stage-1.2" [GRO:0007009]
 synonym: "maize principal growth stage 1.02" []
 synonym: "oat principal growth stage 1.02" []
@@ -1568,7 +1634,7 @@ synonym: "second leaf unfolded" []
 synonym: "two leaves unfolded (sensu Oryza)" []
 synonym: "two leaves unfolded (sensu Triticeae)" [GRO:0007061]
 synonym: "two rosette leaves" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007099
@@ -1583,7 +1649,7 @@ synonym: "barley principal growth stage growth 3.97" []
 synonym: "oat principal growth stage growth 3.97" []
 synonym: "principal growth stage growth 3.97" []
 synonym: "wheat principal growth stage growth 3.97" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007100
@@ -1591,7 +1657,7 @@ name: 3.16 sixteen or more nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the sixteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.16 16 or more nodes/internodes visible in soybean" [SOY:0000065]
 synonym: "principal growth stage growth 3.16" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007101
@@ -1600,10 +1666,13 @@ def: "The stage at which the plant has nine true leaves\, leaf pairs or whorls o
 synonym: "1.09 8th trifoliolate leaf unfolded in soybean" [SOY:0000023]
 synonym: "10-leaf in maize" [MaizeGDB:67357]
 synonym: "2.10 nine or more leaves unfolded in Triticeae" [GRO:0007068]
+synonym: "2.10 nine or more leaves unfolded in barley" [GRO:0007068]
+synonym: "2.10 nine or more leaves unfolded in oat" [GRO:0007068]
+synonym: "2.10 nine or more leaves unfolded in wheat" [GRO:0007068]
 synonym: "3.02-late whorl stage" [GRO:0007014]
 synonym: "3.2 late whorl stage in maize" [MaizeGDB:67357]
 synonym: "9 or more leaves unfolded" []
-synonym: "9 rosette leaf" [TAIR:0000412]
+synonym: "9 rosette leaf in Arabidopsis" [TAIR:0000412]
 synonym: "9-11 leaves in maize" [MaizeGDB:67357]
 synonym: "9-leaf in maize" [MaizeGDB:67357]
 synonym: "Arabidopsis principal growth stage 1.09" []
@@ -1624,31 +1693,30 @@ synonym: "nine rosette leaves" []
 synonym: "ninth leaf unfolded" []
 synonym: "oat principal growth stage 1.09" []
 synonym: "rice principal growth stage 1.09" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007102
 name: 5.04 40% of inflorescence emerged
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007103
 name: 1.10 ten leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has ten true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
-synonym: "10 rosette leaf" [TAIR:0000413]
+synonym: "10 rosette leaf in Arabidopsis" [TAIR:0000413]
 synonym: "10-leaf in maize" [MaizeGDB:67357]
 synonym: "3.02-late whorl stage" [GRO:0007014]
 synonym: "9-11 leaves in maize" [MaizeGDB:67357]
-synonym: "9-leaf in maize" [MaizeGDB:67357]
 synonym: "Arabidopsis principal growth stage 1.10" []
 synonym: "Stage V9 in soybean" [SOY:0000024]
 synonym: "V10 in maize" [MaizeGDB:67357]
 synonym: "V10 stage (sensu Zea)" []
-synonym: "V9 in maize" [MaizeGDB:67357]
 synonym: "maize V10 stage" []
 synonym: "maize growth stage-3.2" [GRO:0007014]
 synonym: "ten rosette leaves" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007104
@@ -1667,12 +1735,13 @@ synonym: "late vegetative stage of maize" []
 synonym: "maize V15 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.15" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007105
 name: 5.06 60% of inflorescence emerged
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007106
@@ -1685,7 +1754,7 @@ synonym: "1.03-three to four leaves in maize" [GRO:0007010]
 synonym: "1.3 3-4 leaves in maize" [Maize:25331]
 synonym: "2.04-three leaves unfolded" [GRO:0007062]
 synonym: "3 leaves unfolded" []
-synonym: "3 rosette leaf" [TAIR:0000407]
+synonym: "3 rosette leaf in Arabidopsis" [TAIR:0000407]
 synonym: "3-4 leaves in maize" [Maize:25331]
 synonym: "3-leaf stage in maize" [Maize:25331]
 synonym: "4-leaf stage in maize" [Maize:25331]
@@ -1694,7 +1763,6 @@ synonym: "BBCH growth stage 13" [ISBN:3826331524]
 synonym: "V03 stage (sensu Zea)" []
 synonym: "V2 stage in soybean" [SOY:0000017]
 synonym: "V3 in maize" [Maize:25331]
-synonym: "V4 in maize" [Maize:25331]
 synonym: "Wheat principal growth stage 1.03" []
 synonym: "Zadok scale-13\, Haun scale-2.+" [GRO:0007062]
 synonym: "barley principal growth stage 1.03" []
@@ -1712,12 +1780,13 @@ synonym: "three leaf stage (sensu Sorghum)" []
 synonym: "three leaves unfolded (sensu Oryza)" []
 synonym: "three leaves unfolded (sensu Triticeae)" []
 synonym: "three rosette leaves" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007107
 name: 5.08 80% of inflorescence emerged
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007108
@@ -1725,8 +1794,8 @@ name: 3.07 seven nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the seventh internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.07 7 nodes/internodes visible in soybean" [SOY:0000056]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
-synonym: "Arabidopsis principal growth stage 3.70" []
 synonym: "BBCH growth stage 37" [ISBN:3826331524]
+synonym: "V12 in maize" []
 synonym: "late rosette growth" []
 synonym: "maize V12 stage" []
 synonym: "maize growth stage-3.3" [GRO:0007015]
@@ -1734,7 +1803,7 @@ synonym: "maize principal growth stage 1.12" []
 synonym: "maize principal growth stage growth 3.07" []
 synonym: "mid-vegetative stage of maize" [GRO:0007015]
 synonym: "principal growth stage growth 3.07" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007109
@@ -1754,7 +1823,7 @@ synonym: "oat principal growth stage growth 3.99" []
 synonym: "principal growth stage growth 3.99" []
 synonym: "sorghum growth stage-5" [GRO:0007089]
 synonym: "wheat principal growth stage growth 3.99" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007110
@@ -1773,7 +1842,7 @@ synonym: "maximum number of tillers visible" []
 synonym: "maximum number of tillers visible in rice" []
 synonym: "mmain shoot and nine or more tillers in oat" []
 synonym: "nine or more axillary shoots detectable" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007111
@@ -1781,13 +1850,15 @@ name: 3.12 twelve nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the twelfth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.12 12 nodes/internodes visible in soybean" [SOY:0000061]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
+synonym: "V17 in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
+synonym: "late vegetative stage of maize" [MaizeGDB:67360]
 synonym: "maize V17 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.17" []
 synonym: "maize principal growth stage growth 3.12" []
 synonym: "principal growth stage growth 3.12" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007112
@@ -1808,14 +1879,14 @@ synonym: "oat principal growth stage 1" []
 synonym: "principal growth stage 1" []
 synonym: "sorghum principal growth stage 1" [GRO:0007126]
 synonym: "wheat principal growth stage 1" []
-is_a: PO:0007033
+is_a: PO:0007033 ! plant growth stage
 
 [Term]
 id: PO:0007113
 name: 3 rosette growth
-def: "Stages of growth based on expansion of the rosette" [TAIR:ki]
-synonym: "rosette growth" [TAIR:0000042]
-is_a: PO:0007004
+def: "Stages of growth based on expansion of the rosette in Arabidopsis" [TAIR:ki]
+synonym: "rosette growth in Arabidopsis" [TAIR:0000042]
+is_a: PO:0007004 ! 3 rapid growth stage
 
 [Term]
 id: PO:0007114
@@ -1823,13 +1894,15 @@ name: 3.11 eleven nodes or internodes visible
 def: "The stage at which the stem elongation proceeds with the eleventh internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.11 11 nodes/internodes visible in soybean" [SOY:0000060]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
+synonym: "V16 in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
+synonym: "late vegetative stage of maize" [MaizeGDB:67360]
 synonym: "maize V16 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.16" []
 synonym: "maize principal growth stage growth 3.11" []
 synonym: "principal growth stage growth 3.11" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007115
@@ -1843,15 +1916,13 @@ synonym: "1.04 3rd trifoliolate leaf unfolded in soybean" [SOY:0000018]
 synonym: "2 tassel initiation/early whorl stage in maize" [MaizeGDB:67306]
 synonym: "2.05-four leaves unfolded in Triticeae" [GRO:0007063]
 synonym: "4 leaves unfolded" []
-synonym: "4 rosette leaf" [TAIR:0000399]
+synonym: "4 rosette leaf in Arabidopsis" [TAIR:0000399]
 synonym: "4-6 leaves in maize" [MaizeGDB:67306]
 synonym: "Arabidopsis principal growth stage 1.04" []
 synonym: "BBCH growth stage 14" [ISBN:3826331524]
 synonym: "Stage V3 in soybean" [SOY:0000018]
 synonym: "V04 stage (sensu Zea)" []
 synonym: "V4 in maize" [MaizeGDB:67306]
-synonym: "V5 in maize" [MaizeGDB:67306]
-synonym: "V6 in maize" [MaizeGDB:67306]
 synonym: "Wheat principal growth stage 1.04" []
 synonym: "Zadok scale-14\, Haun scale-3.+" [GRO:0007063]
 synonym: "barley principal growth stage 1.04" []
@@ -1872,31 +1943,27 @@ synonym: "sorghum growth stage-2" [GRO:0007143]
 synonym: "sorghum principal growth stage 1.04" []
 synonym: "tassel differentiation in maize" [MaizeGDB:67306]
 synonym: "tassel initiation in maize" [MaizeGDB:67306]
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007116
 name: 1.11 eleven leaves, leaf pairs or whorls unfolded.
 def: "The stage at which the plant has eleven leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.11 10th trifoliolate leaf unfolded in soybean" [SOY:0000025]
-synonym: "10-leaf in maize" [MaizeGDB:67357]
 synonym: "11 rosette leaves" []
 synonym: "3.02-late whorl stage in maize" [GRO:0007014]
 synonym: "3.2 late whorl stage of maize" [GRO:0007014]
 synonym: "9-11 leaves in maize" [MaizeGDB:67357]
-synonym: "9-leaf in maize" [MaizeGDB:67357]
 synonym: "Arabidopsis principal growth stage 1.11" []
 synonym: "Stage V10 in soybean" [SOY:0000025]
-synonym: "V10 in maize" [MaizeGDB:67357]
 synonym: "V11 in maize" [MaizeGDB:67357]
 synonym: "V11 stage (sensu Zea)" []
-synonym: "V9 in maize" [MaizeGDB:67357]
 synonym: "eleven rosette leaves" []
 synonym: "late whorl stage of maize" [GRO:0007014]
 synonym: "maize V11 stage" []
 synonym: "maize growth stage-3.2" [GRO:0007014]
 synonym: "maize principal growth stage 1.11" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007117
@@ -1907,6 +1974,7 @@ synonym: "4.03-second node detectable in barley" [GRO:0007083]
 synonym: "4.03-second node detectable in oat" [GRO:0007083]
 synonym: "4.03-second node detectable in wheat" [GRO:0007083]
 synonym: "BBCH growth stage 32" [ISBN:3826331524]
+synonym: "V7 in maize" []
 synonym: "Zadok scale-32\, Feekes scale-7" [GRO:0007083]
 synonym: "barley principal growth stage growth 3.02" []
 synonym: "ear initiation" []
@@ -1918,7 +1986,7 @@ synonym: "mid-whorl stage in maize" [GRO:0007013]
 synonym: "oat principal growth stage growth 3.02" []
 synonym: "principal growth stage growth 3.02" []
 synonym: "wheat principal growth stage growth 3.02" []
-is_a: PO:0007089
+is_a: PO:0007089 ! 3 stem elongation
 
 [Term]
 id: PO:0007118
@@ -1935,27 +2003,26 @@ synonym: "main shoot and six tillers in oat" [GRO:0007076]
 synonym: "main shoot and six tillers in wheat" [GRO:0007076]
 synonym: "sixth axillary shoot detectable" []
 synonym: "sixth tiller detectable" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007119
 name: 1.16 sixteen leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has sixteen true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.16 15th trifoliolate leaf unfolded in soybean" [SOY:0000030]
-synonym: "16 rosette leaf" [TAIR:0000036]
+synonym: "16 rosette leaf in Arabidopsis" [TAIR:0000036]
 synonym: "3.04-late vegetative" [GRO:0007016]
 synonym: "3.4 late vegetative in maize" [MaizeGDB:67360]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "Arabidopsis principal growth stage 1.14" []
 synonym: "Stage V15 in soybean" [SOY:0000030]
-synonym: "V15 in maize" [MaizeGDB:67360]
 synonym: "V16 in maize" [MaizeGDB:67360]
 synonym: "late vegetative in maize" [MaizeGDB:67360]
 synonym: "late vegetative stage of maize" [GRO:0007016]
 synonym: "maize V16 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.16" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007120
@@ -1966,10 +2033,6 @@ synonym: "3.04-late vegetative" [GRO:0007016]
 synonym: "3.4 late vegetative in maize" [MaizeGDB:67360]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "Stage V18 in soybean" [SOY:0000033]
-synonym: "V15 in maize" [MaizeGDB:67360]
-synonym: "V16 in maize" [MaizeGDB:67360]
-synonym: "V17 in maize" [MaizeGDB:67360]
-synonym: "V18 in maize" [MaizeGDB:67360]
 synonym: "V19 in maize" [MaizeGDB:67360]
 synonym: "V19 stage (sensu Zea)" []
 synonym: "late vegetative in maize" [MaizeGDB:67360]
@@ -1977,12 +2040,13 @@ synonym: "late vegetative stage of maize" [GRO:0007016]
 synonym: "maize V19 stage" []
 synonym: "maize growth stage-3.4" [GRO:0007016]
 synonym: "maize principal growth stage 1.19" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007121
 name: 6.01 10% of flowers open
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007122
@@ -1999,7 +2063,7 @@ synonym: "main shoot and seven tillers in wheat" [GRO:0007077]
 synonym: "main shoot and seventh tiller visible" []
 synonym: "seventh axillary shoot detectable" []
 synonym: "seventh tiller detectable" []
-is_a: PO:0007073
+is_a: PO:0007073 ! 2 formation of axillary shoot
 
 [Term]
 id: PO:0007123
@@ -2013,7 +2077,7 @@ synonym: "3.01-ear initiation in maize" [GRO:0007013]
 synonym: "3.1 ear initiation/mid-whorl stage in maize" [MaizeGDB:67356]
 synonym: "4-6 leaves in maize" [MaizeGDB:67306]
 synonym: "6 leaves unfolded" []
-synonym: "6 rosette leaf" [TAIR:0000409]
+synonym: "6 rosette leaf in Arabidopsis" [TAIR:0000409]
 synonym: "6-8 leaves in maize" [MaizeGDB:67356]
 synonym: "6-leaf in maize" [MaizeGDB:67356]
 synonym: "Arabidopsis principal growth stage 1.06" []
@@ -2039,45 +2103,53 @@ synonym: "six leaves unfolded (sensu Oryza)" []
 synonym: "six leaves unfolded (sensu Triticeae)" [GRO:0007065]
 synonym: "six rosette leaves" []
 synonym: "sixth leaf unfolded" []
-is_a: PO:0007112
+is_a: PO:0007112 ! 1 leaf production
 
 [Term]
 id: PO:0007124
 name: 6.03 30% of flowers open
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007125
 name: 6.04 40% of flowers open
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007126
 name: 7.02 fruit size 20%
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007127
 name: 7.04 fruit size 40%
+def: "OBSOLETE" [GR:anu]
 synonym: "7.2 milk stage/embryo 2 in maize" [MaizeGDB:67373]
-is_a: PO:0007060
+is_obsolete: true
 
 [Term]
 id: PO:0007128
 name: 7.06 fruit size 60%
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0007129
 name: 7.08 fruit size 80%
-is_a: PO:0007060
+def: "OBSOLETE" [GR:anu]
+is_obsolete: true
 
 [Term]
 id: PO:0009012
 name: plant growth and development
-is_a: PO:0009075
+def: "OBSOLETE" [GR:anu]
+is_a: PO:0009075 ! plant ontology
 
 [Term]
 id: PO:0009075
 name: plant ontology
+def: "A controlled vocabulary to describe the various plant parts and the growth and developmental stages." [Poc:curators]
 
