@@ -1,6 +1,6 @@
 format-version: 1.0
-date: 07:03:2005 16:48
-saved-by: UMSL
+date: 08:03:2005 16:28
+saved-by: pj37
 auto-generated-by: DAG-Edit 1.418
 default-namespace: plant_growth_and_development_stage
 
@@ -259,10 +259,16 @@ is_a: PO:0007033
 [Term]
 id: PO:0007017
 name: 8 senescence
-def: "The beginning of death processes in plant or plant part(s)." [Poc:curators]
+def: "The beginning of death processes in plant or plant part(s). It includes the seed dormancy related stages.." [Poc:curators]
 synonym: "9 Senescence in soybean" [SOY:0000008]
 synonym: "BBCH principal growth stage 9" [ISBN:3826331524]
-synonym: "begining of dormancy" []
+synonym: "10.03-kernel loosening in daytime" [GRO:0007117]
+synonym: "10.04-overripe, straw dead and collapsing" [GRO:0007118]
+synonym: "10.05-seed dormant" [GRO:0007119]
+synonym: "10.06-viable seed germination" [GRO:0007120]
+synonym: "10.07-seed not dormant" [GRO:0007121]
+synonym: "10.08-secondary dormancy induced" [GRO:0007122]
+synonym: "10.09-secondary dormancy lost" [GRO:0007123]
 synonym: "principal growth stage 9" []
 synonym: "senescence" [TAIR:0000035]
 is_a: PO:0007033
@@ -316,6 +322,8 @@ def: "Absorption of water by the seed." [ISBN:0306416875, GR:anu]
 synonym: "0.1 imbibition in maize" [MaizeGDB:64054]
 synonym: "01 Beginning of seed imbibition in soybean" [SOY:0000090]
 synonym: "03 Seed imbibition complete in soybean" [SOY:0000091]
+synonym: "1.02-start of imbibition in Triticeae" [GRO:0007053]
+synonym: "1.03-imbibition complete in Tricticeae" [GRO:0007054]
 synonym: "BBCH growth stage 01" [ISBN:3826331524]
 synonym: "imbibition" [TAIR:0000394]
 is_a: PO:0007057
@@ -384,6 +392,7 @@ name: 5.00 first flower(s) open
 def: "The stage at which the first flower(s) open." [GR:pj]
 comment: These first flowers are not necessarily the oldest flowers in the inflorescence. In some cereal plants the flowering starts in the middle of the inflorescence.
 synonym: "6.00 1st flowers on main stem open in soybean" [SOY:0000072]
+synonym: "7.01-anthesis beginning in Triticeae" [GRO:0007102]
 synonym: "Arabidopsis principal growth stage 6.00" []
 synonym: "Stage R1 Open flower at any node on the main stem" [SOY:0000072]
 synonym: "first open flower" [TAIR:0000421]
@@ -440,7 +449,7 @@ is_a: PO:0007057
 id: PO:0007031
 name: 7.05 mid stage of fruit ripening
 def: "The stage when fruit ripening is midway." [GR:anu, ISBN:3826331524]
-synonym: "10.01-soft dough in sorghum" [GRO:0007115]
+synonym: "10.01-soft dough in sorghum" [GRO:0007133]
 synonym: "7 linear grain-filling in maize" [MaizeGDB:64632]
 synonym: "7.2 milk stage/embryo 2 in maize" [MaizeGDB:67373]
 synonym: "7.4 late dough stage/embryo 4 in maize" [MaizeGDB:67379]
@@ -553,7 +562,9 @@ name: 7.09 fruit ripening complete
 def: "The stage at which fruit ripening is complete." [GR:anu, ISBN:3826331524]
 synonym: "8.09 Final ripening in soybean" [SOY:0000089]
 synonym: "9.02 dry kernel in maize" [GRO:0007037]
-synonym: "beginning of fruit abscission" []
+synonym: "10.01-kernel medium hard" [GRO:0007115]
+synonym: "10.02-kernel hard" [GRO:0007116]
+synonym: "10-ripening in Triticeae" [GRO:0007114]
 synonym: "dry kernel in maize" [MaizeGDB:67381]
 synonym: "dry seed in maize" [MaizeGDB:67381]
 synonym: "fully ripe" []
@@ -776,6 +787,7 @@ name: 0.0 dry seed
 def: "Mature seed with low moisture content." [GR:anu, ISBN:0306416875]
 synonym: "00 Dry Seed in soybean" [SOY:0000009]
 synonym: "BBCH growth stage 00" [ISBN:3826331524]
+synonym: "1.01-dry seed in Tricticeae" [GRO:0007052]
 synonym: "dry seed" [TAIR:0000213]
 is_a: PO:0007057
 
@@ -814,7 +826,7 @@ is_a: PO:0007060
 [Term]
 id: PO:0007062
 name: 3.06 six nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and six nodes or internode above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the sixth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.02 late whorl stage of maize" [GRO:0007014]
 synonym: "3.06 6 nodes/internodes visible in soybean" [SOY:0000055]
 synonym: "4.07-sixth node detectable in barley" [GRO:0007087]
@@ -931,7 +943,7 @@ is_a: PO:0007112
 [Term]
 id: PO:0007066
 name: 3.09 nine nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and nine nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the nineth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.09 9 nodes/internodes visible in soybean" [SOY:0000058]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "BBCH growth stage 39" [ISBN:3826331524]
@@ -1081,7 +1093,7 @@ is_a: PO:0007033
 [Term]
 id: PO:0007074
 name: 3.15 fifteen nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and fifteen nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the fifteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.15 15 nodes/internodes visible in soybean" [SOY:0000064]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "late vegetative stage of maize" [GRO:0007016]
@@ -1131,12 +1143,14 @@ is_a: PO:0007113
 [Term]
 id: PO:0007079
 name: 3.00 stem elongation begins
-def: "The stage at which the stem elongation just starts." [Poc:curators]
+def: "The stage at which the internodes present on the stem just begin to elongate. This internode excludes the lower stem internodes and the coleoptilar internodes that do not elongate. In grass plants this stage often starts at the the fourth or higher internode from the bottom of the plant." [GR:pj ""]
 synonym: "3.00 stem elongation begins in soybean" [SOY:0000049]
 synonym: "4.01-pseudo stem erection in barley" [GRO:0007081]
 synonym: "4.01-pseudo stem erection in oat" [GRO:0007081]
 synonym: "4.01-pseudo stem erection in wheat" [GRO:0007081]
 synonym: "BBCH growth stage 30" [ISBN:3826331524]
+synonym: "4.1-panicle initiation stage" [GRO:0007147]
+synonym: "4.2-panicle differentiation stage" [GRO:0007041]
 synonym: "barley principal growth stage growth 3.00" []
 synonym: "maize principal growth stage growth 3.00" []
 synonym: "oat principal growth stage growth 3.00" []
@@ -1232,7 +1246,7 @@ is_a: PO:0007112
 [Term]
 id: PO:0007084
 name: 3.10 ten nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and ten nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the tenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.10 10 nodes/internodes visible in soybean" [SOY:0000059]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "late vegetative stage of maize" [GRO:0007016]
@@ -1264,7 +1278,7 @@ is_a: PO:0007112
 [Term]
 id: PO:0007086
 name: 3.05 five nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and five nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the fifth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.05 5 nodes/internodes visible in soybean" [SOY:0000054]
 synonym: "3.2 late whorl stage of maize" [GRO:0007014]
 synonym: "4.06-fifth node detectable in barley" [GRO:0007086]
@@ -1320,7 +1334,8 @@ is_a: PO:0007073
 [Term]
 id: PO:0007089
 name: 3 stem elongation
-def: "The stage at which the stem or culm elongates." [ISBN:0-8247-9250-5, GR:anu]
+name: 3 stem elongation
+def: "The stage at which the internodes present on the stem elongates\, but excludes the lower stem internodes and the coleoptilar internode that do not elongate. In grass plants the stem elongation often starts at the fourth or higher internode from the bottom of the plant and coincides with the onset of tillering stage (axillary shoot formation) and inflorescence initiation." [GR:pj ""]
 synonym: "04-stem elongation in barley" [GRO:0007080]
 synonym: "04-stem elongation in oat" [GRO:0007080]
 synonym: "04-stem elongation in wheat" [GRO:0007080]
@@ -1352,7 +1367,7 @@ is_a: PO:0007004
 [Term]
 id: PO:0007090
 name: 3.13 thirteen nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and thirteen nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the thirteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.13 13 nodes/internodes visible in soybean" [SOY:0000062]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "late vegetative stage of maize" [GRO:0007016]
@@ -1366,7 +1381,7 @@ is_a: PO:0007089
 [Term]
 id: PO:0007091
 name: 3.01 one node or internode visible
-def: "The stage at which the stem elongation proceeds  one node or internode above the cotyledons is visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the first internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.01 one node visible in soybean" [SOY:0000050]
 synonym: "4.02-first node detectable in barley" [GRO:0007082]
 synonym: "4.02-first node detectable in wheat" [GRO:0007082]
@@ -1389,7 +1404,7 @@ is_a: PO:0007089
 [Term]
 id: PO:0007092
 name: 3.04 four nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and four nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the fourth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.04 4 nodes/internodes visible in soybean" [SOY:0000053]
 synonym: "3.2 late whorl stage of maize" [GRO:0007014]
 synonym: "4.05-fourth node detectable in barley" [GRO:0007085]
@@ -1490,8 +1505,8 @@ is_a: PO:0007112
 
 [Term]
 id: PO:0007096
-name: 3.03 three nodesor internodes visible
-def: "The stage at which the stem elongation proceeds and three nodes or internodes above the cotyledons are visible." [GR:anu]
+name: 3.03 three nodes or internodes visible
+def: "The stage at which the stem elongation proceeds with the third internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.03 3 nodes/internodes visible in soybean" [SOY:0000052]
 synonym: "4.04-third node detectable in barley" [GRO:0007084]
 synonym: "4.04-third node detectable in oat" [GRO:0007084]
@@ -1513,7 +1528,7 @@ is_a: PO:0007089
 [Term]
 id: PO:0007097
 name: 3.14 fourteen nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and fourteen nodes or internodesabove the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the fourteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.14 14 nodes/internodes visible in soybean" [SOY:0000063]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "late vegetative stage of maize" [GRO:0007016]
@@ -1573,7 +1588,7 @@ is_a: PO:0007089
 [Term]
 id: PO:0007100
 name: 3.16 sixteen or more nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and sixteen nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the sixteenth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.16 16 or more nodes/internodes visible in soybean" [SOY:0000065]
 synonym: "principal growth stage growth 3.16" []
 is_a: PO:0007089
@@ -1707,7 +1722,7 @@ is_a: PO:0007060
 [Term]
 id: PO:0007108
 name: 3.07 seven nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and seven nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the seventh internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.07 7 nodes/internodes visible in soybean" [SOY:0000056]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "Arabidopsis principal growth stage 3.70" []
@@ -1763,7 +1778,7 @@ is_a: PO:0007073
 [Term]
 id: PO:0007111
 name: 3.12 twelve nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and tweleve nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the twelfth internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.12 12 nodes/internodes visible in soybean" [SOY:0000061]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "late vegetative stage of maize" [GRO:0007016]
@@ -1805,7 +1820,7 @@ is_a: PO:0007004
 [Term]
 id: PO:0007114
 name: 3.11 eleven nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and eleven nodes or internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the eleventh internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.11 11 nodes/internodes visible in soybean" [SOY:0000060]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
 synonym: "late vegetative stage of maize" [GRO:0007016]
@@ -1886,7 +1901,7 @@ is_a: PO:0007112
 [Term]
 id: PO:0007117
 name: 3.02 two nodes or internodes visible
-def: "The stage at which the stem elongation proceeds and two nodes/internodes above the cotyledons are visible." [GR:anu]
+def: "The stage at which the stem elongation proceeds with the second internode or node visible\, excluding the lower stem internodes and the coleoptilar internodes that do not elongate. " [GR:pj ""]
 synonym: "3.02 2 nodes/internode visible in soybean" [SOY:0000051]
 synonym: "4.03-second node detectable in barley" [GRO:0007083]
 synonym: "4.03-second node detectable in oat" [GRO:0007083]
