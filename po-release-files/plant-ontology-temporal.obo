@@ -1,6 +1,6 @@
 format-version: 1.0
-date: 01:03:2005 23:57
-saved-by: katica
+date: 02:03:2005 16:57
+saved-by: ap343
 auto-generated-by: DAG-Edit 1.418
 default-namespace: plant_growth_and_development_stage
 
@@ -54,6 +54,13 @@ synonym: "4.04 full inflorescence length reached in soybean" [SOY:0000070]
 is_a: PO:0007047
 
 [Term]
+id: PO:0007004
+name: 3 rapid growth stage
+def: "The stage at which the plant grows rapidly by acquiring either or both the  stem elongation and expansion of the rosette/foliage. " [GR:anu ""]
+comment: Many stages like leaf production PO\:0007112\, axillary shoot formation PO\:0007073\, inflorescence PO\:0007047 often overlap with this stage
+is_a: PO:0007033
+
+[Term]
 id: PO:0007005
 name: 4.05 1/2 inflorescence length reached
 def: "The stage when 1/2 Inflorescence is visible " [GR:anu]
@@ -65,6 +72,7 @@ id: PO:0007006
 name: 4.01 inflorescence just visible
 def: "Inflorescence just visible to the naked eye." [Poc:curators]
 synonym: "4.01 Inflorescence just visible in soybean" [SOY:0000067]
+synonym: "visible flower buds" [TAIR:0000420]
 is_a: PO:0007047
 
 [Term]
@@ -202,7 +210,7 @@ is_a: PO:0007012
 
 [Term]
 id: PO:0007015
-name: 05 radicle emergence from seed coat
+name: 0.5 radicle emergence from seed coat
 def: "Radicle or root emerged from seed" [ISBN:3826331524, GR:anu]
 synonym: "0.02-radicle emergence from seed in maize" [GRO:0007005]
 synonym: "0.2 radicle emergence from seed in maize" [MaizeGDB:67351]
@@ -303,7 +311,7 @@ is_a: PO:0009012
 
 [Term]
 id: PO:0007022
-name: 01 imbibition
+name: 0.1 imbibition
 def: "The uptake of water as an essential\, initial step towards germination." [ISBN:0306416875, GR:anu]
 synonym: "0.1 imbibition in maize" [MaizeGDB:64054]
 synonym: "01 Beginning of seed imbibition in soybean" [SOY:0000090]
@@ -423,7 +431,7 @@ is_a: PO:0007042
 
 [Term]
 id: PO:0007030
-name: 07 shoot emergence
+name: 0.7 shoot emergence
 def: "Shoot or leaf breaks through soil surface." [GR:anu, ISBN:3826331524]
 synonym: "07 shoot emergence in soybean" [SOY:0000012]
 synonym: "BBCH growth stage 09" [ISBN:3826331524]
@@ -435,17 +443,23 @@ name: 7.05 mid stage of fruit ripening
 def: "The stage when fruit ripening is midway." [GR:anu, ISBN:3826331524]
 synonym: "10.01-soft dough in sorghum" [GRO:0007115]
 synonym: "7 linear grain-filling in maize" [MaizeGDB:64632]
+synonym: "7.2 milk stage/embryo 2 in maize" [MaizeGDB:67373]
 synonym: "7.4 late dough stage/embryo 4 in maize" [MaizeGDB:67379]
 synonym: "8.05 Mid ripening in soybean" [SOY:0000087]
 synonym: "9.02-soft dough in barley" [GRO:0007112]
 synonym: "9.02-soft dough in oat" [GRO:0007112]
 synonym: "9.02-soft dough in wheat" [GRO:0007112]
+synonym: "DNA degradation (endosperm) in maize" [MaizeGDB:67373]
+synonym: "R3 in maize" [MaizeGDB:67373]
 synonym: "Stage R6 Full seed in soyean" [SOY:0000087]
 synonym: "Wheat principal growth stage 8.05" []
 synonym: "Zadok scale-85\, Feekes scale-11.2" [GRO:0007112]
 synonym: "barley principal growth stage 8.05" []
 synonym: "dough stage in maize" [MaizeGDB:67379]
+synonym: "embryo 2 in maize" [MaizeGDB:67373]
+synonym: "embryo stage 2 in maize" [MaizeGDB:67373]
 synonym: "embryo stage 4 in maize" [MaizeGDB:67379]
+synonym: "milk stage in maize" [MaizeGDB:67373]
 synonym: "oat principal growth stage 8.05" []
 synonym: "pricipal growth stage 8.05" []
 synonym: "soft dough" [GRO:0007112]
@@ -480,6 +494,12 @@ id: PO:0007033
 name: plant growth stage
 def: "An irreversible process of orderly succession of changes leading from the simple structure of embryo to the highly complex organization of the mature plant is commonly called growth stages. " [GR:pj ""]
 synonym: "Arabidopsis growth" [TAIR:0000205]
+synonym: "cereal plant ontology " [GRO:0080001]
+synonym: "maize growth stage" [GRO:0007002]
+synonym: "plant growth stage ontology" [GRO:0007199]
+synonym: "rice growth stage" [GRO:0007040]
+synonym: "sorghum growth stage" [GRO:0007124]
+synonym: "wheat\, barley and oat growth stage" [GRO:0007156]
 is_a: PO:0009012
 
 [Term]
@@ -751,7 +771,7 @@ is_a: PO:0007030
 
 [Term]
 id: PO:0007055
-name: 00 dry seed
+name: 0.0 dry seed
 def: "The normal final phase of seed maturation is drying and the seeds are said to be in 'dry' state or more correctly\, with low moisture content." [GR:anu, ISBN:0306416875]
 synonym: "00 Dry Seed in soybean" [SOY:0000009]
 synonym: "BBCH growth stage 00" [ISBN:3826331524]
@@ -824,7 +844,6 @@ synonym: "6-8 leaves in maize" [MaizeGDB:67356]
 synonym: "6-leaf in maize" [MaizeGDB:67356]
 synonym: "7 leaves unfolded" []
 synonym: "7 rosette leaf" [TAIR:0000410]
-synonym: "7 rosette leaf (sensu Arabidopsis)" []
 synonym: "7-leaf in maize" [MaizeGDB:67356]
 synonym: "Arabidopsis principal growth stage 1.07" []
 synonym: "BBCH growth stage 17" [ISBN:3826331524]
@@ -853,7 +872,6 @@ name: 1.12 twelve leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has twelve true leaves\, leaf pairs or whorls of leaves visible above the ground. " [GR:anu]
 synonym: "1.12 11th trifoliolate leaf unfolded in soybean" [SOY:0000026]
 synonym: "12 rosette leaf" [TAIR:0000415]
-synonym: "12 rosette stage (sensu Arabidopsis)" []
 synonym: "3.03-mid-vegetative" [GRO:0007013]
 synonym: "3.3 mid-vegetative" [MaizeGDB:67359]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007013]
@@ -881,7 +899,6 @@ synonym: "2.06-five leaves unfolded" [GRO:0007064]
 synonym: "4-6 leaves in maize" [MaizeGDB:67306]
 synonym: "5 leaves unfolded" []
 synonym: "5 rosette leaf" [TAIR:0000408]
-synonym: "5 rosette leaf (sensu Arabidopsis)" []
 synonym: "Arabidopsis principal growth stage 1.05" []
 synonym: "BBCH growth stage 15" [ISBN:3826331524]
 synonym: "Stage V4 in soybean" [SOY:0000019]
@@ -948,6 +965,7 @@ is_a: PO:0007112
 [Term]
 id: PO:0007068
 name: mid rosette growth
+def: "Rosette has reached approximately 50% of it's final diameter." [Poc:curators]
 synonym: "mid rosette growth" [TAIR:0000044]
 is_a: PO:0007113
 
@@ -973,7 +991,6 @@ synonym: "Zadok scale-10\, Feekes scale-1" [GRO:0007059]
 synonym: "barley principal growth stage 1.0" []
 synonym: "cotyledons fully open" []
 synonym: "cotyledons fully open" [TAIR:0000397]
-synonym: "cotyledons fully open (sensu Arabidopsis)" []
 synonym: "first leaf through coleoptile" []
 synonym: "first leaf through coleoptile (sensu Oryza)" []
 synonym: "first leaf through coleoptile (sensu Triticeae)" [GRO:0007059]
@@ -1082,6 +1099,7 @@ is_a: PO:0007060
 [Term]
 id: PO:0007076
 name: late rosette growth
+def: "Rosette has reached approximately 70% of it's final diameter." [Poc:curators]
 synonym: "late rosette growth" [TAIR:0000045]
 is_a: PO:0007113
 
@@ -1105,6 +1123,7 @@ is_a: PO:0007073
 [Term]
 id: PO:0007078
 name: rosette growth complete
+def: "Stage at which leaf growth and expansion has ceased and rosette no longer increases in diameter." [Poc:curators]
 synonym: "complete rosette" [TAIR:0000418]
 is_a: PO:0007113
 
@@ -1150,6 +1169,7 @@ is_a: PO:0007073
 [Term]
 id: PO:0007081
 name: early rosette growth
+def: "Def\: Rosette has reached approximately 20% of it's final diameter." [Poc:curators]
 synonym: "early rosette growth" [TAIR:0000043]
 is_a: PO:0007113
 
@@ -1192,7 +1212,6 @@ name: 1.13 thirteen leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has thirteen true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.13 12th trifoliolate leaf unfolded in soybean" [SOY:0000027]
 synonym: "13 rosette leaf" [TAIR:0000416]
-synonym: "13 rosette leaf (sensu Arabidopsis)" []
 synonym: "3.03-mid-vegetative" [GRO:0007015]
 synonym: "3.3 mid-vegetative" [MaizeGDB:67359]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
@@ -1229,7 +1248,6 @@ name: 1.14 fourteen leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has fourteen true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.14 13th trifoliolate leaf unfolded in soybean" [SOY:0000028]
 synonym: "14 rosette leaf" [TAIR:0000417]
-synonym: "14 rosette leaf (sensu Arabidopsis)" []
 synonym: "3.03-mid-vegetative" [GRO:0007015]
 synonym: "3.3 mid-vegetative stage of maize" [GRO:0007015]
 synonym: "Arabidopsis principal growth stage 1.14" []
@@ -1328,7 +1346,7 @@ synonym: "sorghum principal growth stage growth 3" []
 synonym: "stem elongation in maize" [MaizeGDB:67358]
 synonym: "telescoping in maize" [MaizeGDB:67358]
 synonym: "wheat principal growth stage growth 3" []
-is_a: PO:0007033
+is_a: PO:0007004
 
 [Term]
 id: PO:0007090
@@ -1446,7 +1464,6 @@ synonym: "3.1 ear initiation/mid-whorl stage in maize" [MaizeGDB:67356]
 synonym: "6-8 leaves in maize" [MaizeGDB:67356]
 synonym: "6-leaf in maize" [MaizeGDB:67356]
 synonym: "8 leaves unfolded" []
-synonym: "8 rosette leaf (sensu Arabidopsis)" []
 synonym: "8 rosette leaves" []
 synonym: "8-leaf in maize" [MaizeGDB:67356]
 synonym: "Arabidopsis principal growth stage 1.08" []
@@ -1515,7 +1532,6 @@ synonym: "1.02 First trifoliolate leaf unfolded in soybean" [SOY:0000016]
 synonym: "1.02-one to two leaves in maize" [GRO:0007009]
 synonym: "1.2 1-2 leaves in maize" [MaizeGDB:67353]
 synonym: "2 leaves unfolded" []
-synonym: "2 rosette leaf (sensu Arabidopsis)" []
 synonym: "2 rosette leaves" []
 synonym: "2.03-two leaves unfolded in Triticeae" [GRO:0007061]
 synonym: "Arabidopsis principal growth stage 1.02" []
@@ -1572,7 +1588,6 @@ synonym: "3.02-late whorl stage" [GRO:0007014]
 synonym: "3.2 late whorl stage in maize" [MaizeGDB:67357]
 synonym: "9 or more leaves unfolded" []
 synonym: "9 rosette leaf" [TAIR:0000412]
-synonym: "9 rosette leaf (sensu Arabidopsis)" []
 synonym: "9-11 leaves in maize" [MaizeGDB:67357]
 synonym: "9-leaf in maize" [MaizeGDB:67357]
 synonym: "Arabidopsis principal growth stage 1.09" []
@@ -1605,7 +1620,6 @@ id: PO:0007103
 name: 1.10 ten leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has ten true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "10 rosette leaf" [TAIR:0000413]
-synonym: "10 rosette leaf (sensu Arabidopsis)" []
 synonym: "10-leaf in maize" [MaizeGDB:67357]
 synonym: "3.02-late whorl stage" [GRO:0007014]
 synonym: "9-11 leaves in maize" [MaizeGDB:67357]
@@ -1656,7 +1670,6 @@ synonym: "1.3 3-4 leaves in maize" [Maize:25331]
 synonym: "2.04-three leaves unfolded" [GRO:0007062]
 synonym: "3 leaves unfolded" []
 synonym: "3 rosette leaf" [TAIR:0000407]
-synonym: "3 rosette leaf (sensu Arabidopsis)" []
 synonym: "3-4 leaves in maize" [Maize:25331]
 synonym: "3-leaf stage in maize" [Maize:25331]
 synonym: "4-leaf stage in maize" [Maize:25331]
@@ -1783,10 +1796,10 @@ is_a: PO:0007033
 
 [Term]
 id: PO:0007113
-name: 3A rosette growth
+name: 3 rosette growth
 def: "Stages of growth based on expansion of the rosette" [TAIR:ki]
 synonym: "rosette growth" [TAIR:0000042]
-is_a: PO:0007033
+is_a: PO:0007004
 
 [Term]
 id: PO:0007114
@@ -1815,7 +1828,6 @@ synonym: "2 tassel initiation/early whorl stage in maize" [MaizeGDB:67306]
 synonym: "2.05-four leaves unfolded in Triticeae" [GRO:0007063]
 synonym: "4 leaves unfolded" []
 synonym: "4 rosette leaf" [TAIR:0000399]
-synonym: "4 rosette leaf (sensu Arabidopsis)" []
 synonym: "4-6 leaves in maize" [MaizeGDB:67306]
 synonym: "Arabidopsis principal growth stage 1.04" []
 synonym: "BBCH growth stage 14" [ISBN:3826331524]
@@ -1852,7 +1864,6 @@ name: 1.11 eleven leaves, leaf pairs or whorls unfolded.
 def: "The stage at which the plant has eleven leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.11 10th trifoliolate leaf unfolded in soybean" [SOY:0000025]
 synonym: "10-leaf in maize" [MaizeGDB:67357]
-synonym: "11 rosette leaf (sensu Arabidopsis)" []
 synonym: "11 rosette leaves" []
 synonym: "3.02-late whorl stage in maize" [GRO:0007014]
 synonym: "3.2 late whorl stage of maize" [GRO:0007014]
@@ -1916,7 +1927,6 @@ name: 1.16 sixteen leaves, leaf pairs or whorls unfolded
 def: "The stage at which the plant has sixteen true leaves\, leaf pairs or whorls of leaves visible above the ground." [GR:anu]
 synonym: "1.16 15th trifoliolate leaf unfolded in soybean" [SOY:0000030]
 synonym: "16 rosette leaf" [TAIR:0000036]
-synonym: "16 rosette leaf (sensu Arabidopsis)" []
 synonym: "3.04-late vegetative" [GRO:0007016]
 synonym: "3.4 late vegetative in maize" [MaizeGDB:67360]
 synonym: "3.4 late vegetative stage of maize" [GRO:0007016]
@@ -1988,7 +1998,6 @@ synonym: "3.1 ear initiation/mid-whorl stage in maize" [MaizeGDB:67356]
 synonym: "4-6 leaves in maize" [MaizeGDB:67306]
 synonym: "6 leaves unfolded" []
 synonym: "6 rosette leaf" [TAIR:0000409]
-synonym: "6 rosette leaf (sensu Arabidopsis)" []
 synonym: "6-8 leaves in maize" [MaizeGDB:67356]
 synonym: "6-leaf in maize" [MaizeGDB:67356]
 synonym: "Arabidopsis principal growth stage 1.06" []
@@ -2029,12 +2038,6 @@ is_a: PO:0007060
 [Term]
 id: PO:0007126
 name: 7.02 fruit size 20%
-synonym: "7.2 milk stage/embryo 2 in maize" [MaizeGDB:67373]
-synonym: "DNA degradation (endosperm) in maize" [MaizeGDB:67373]
-synonym: "R3 in maize" [MaizeGDB:67373]
-synonym: "embryo 2 in maize" [MaizeGDB:67373]
-synonym: "embryo stage 2 in maize" [MaizeGDB:67373]
-synonym: "milk stage in maize" [MaizeGDB:67373]
 is_a: PO:0007060
 
 [Term]
