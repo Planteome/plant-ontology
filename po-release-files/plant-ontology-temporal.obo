@@ -3,12 +3,6 @@ date: 30:03:2005 16:23
 saved-by: ap343
 auto-generated-by: DAG-Edit 1.418
 default-namespace: plant_growth_and_development_stage
-subsetdef: NEWCAT "<new term category>"
-subsetdef: Arabidopsis "Ath growth stage"
-
-[Term]
-id: GO:0000000
-name: <new term>
 
 [Term]
 id: PO:0006300
@@ -44,6 +38,7 @@ relationship: part_of PO:0007057
 id: PO:0006304
 name: D dormancy
 def: "The processes by which a dormant state is induced and maintained. Dormancy is characterized by a suspension of physiological activity that can be reactivated once it is broken." [Poc:curators ""]
+synonym: "10.05-seed dormant in Triticeae" [GRO:0007119]
 synonym: "10.05-seed dormant in barley" [GRO:0007119]
 synonym: "10.05-seed dormant in oat" [GRO:0007119]
 synonym: "10.05-seed dormant in wheat" [GRO:0007119]
@@ -219,6 +214,7 @@ synonym: "05-booting in wheat" [GRO:0007090]
 synonym: "05-booting stage" [GRO:0007148]
 synonym: "07-boot stage in sorghum" [GRO:0007130]
 synonym: "BBCH growth stage 40" [ISBN:3826331524]
+synonym: "development of vegetatively propogated organs" []
 synonym: "rice growth stage-5" [GRO:0007148]
 synonym: "sorghum growth stage-6" [GRO:0007130]
 is_a: PO:0007012
@@ -303,9 +299,9 @@ id: PO:0007019
 name: BO.05 flag leaf sheath opened
 def: "The first awns are visible and the flag leaf sheath has opened. " [ISBN:3826331524, GR:ap]
 comment: Awns will be visible only in those species and varieties where they are known to be present.
-synonym: "5.04-flag leaf sheath extending in barley" []
-synonym: "5.04-flag leaf sheath extending in oat" []
-synonym: "5.04-flag leaf sheath extending in wheat" []
+synonym: "5.04-flag leaf sheath extending in barley" [GRO:0007094]
+synonym: "5.04-flag leaf sheath extending in oat" [GRO:0007094]
+synonym: "5.04-flag leaf sheath extending in wheat" [GRO:0007094]
 synonym: "first awns visible" [GRO:0007094]
 is_a: PO:0007014
 
@@ -368,7 +364,7 @@ is_a: PO:0007016
 id: PO:0007025
 name: IE.00 inflorescence tip just visible above flag leaf sheath
 def: "The stage at which the inflorescence tip is  just visible above flag leaf sheath" [GR:ap]
-synonym: "6.01-first spikelet of inflorescence visible in barley" [GRO:0007096]
+synonym: "6.01-first spikelet of inflorescence visible in barleyt" [GRO:0007096]
 synonym: "6.01-first spikelet of inflorescence visible in oat" [GRO:0007096]
 synonym: "6.01-first spikelet of inflorescence visible in wheat" [GRO:0007096]
 synonym: "Zadok scale-50\, Feekes scale-10.1\, Haun scale-10.2" [GRO:0007096]
@@ -435,7 +431,7 @@ synonym: "BBCH principal growth stage 71" [ISBN:3826331524]
 synonym: "R2 in maize" [MaizeGDB:67372]
 synonym: "Stage R4 Full pod in soybean" [SOY:0000081]
 synonym: "Zadok scale-71\, Feekes scale-10.54\, Haun scale-12.1" [GRO:0007106]
-synonym: "beginning of grain development\, kernels at blister stage\, 16% dry matter" [ISBN:3826331524]
+synonym: "begining of grain development\, kernels at blister stage\, 16% dry matter" [ISBN:3826331524]
 synonym: "blister stage in maize" [MaizeGDB:67372]
 synonym: "caryopsis watery ripe" [GRO:0007106]
 synonym: "kernel watery ripe" [GRO:0007106]
@@ -463,7 +459,7 @@ synonym: "9.02-soft dough in wheat" [GRO:0007112]
 synonym: "BBCH principal growth stage 85" [ISBN:3826331524]
 synonym: "DNA degradation (endosperm) in maize" [MaizeGDB:67373]
 synonym: "R3 in maize" [MaizeGDB:67373]
-synonym: "Stage R6 Full seed in soybean" [SOY:0000087]
+synonym: "Stage R6 Full seed in soyean" [SOY:0000087]
 synonym: "Zadok scale-85\, Feekes scale-11.2" [GRO:0007112]
 synonym: "dough stage in maize" [MaizeGDB:67379]
 synonym: "embryo stage 4 in maize" [MaizeGDB:67379]
@@ -496,14 +492,14 @@ id: PO:0007034
 name: FO.01 1/4 of flowers open
 def: "The stage at which 1/4 of flowers open" [GR:ap]
 comment: This stage refers to the whole plant.
-synonym: "6.02 1/4 of flowers on main stem open in soybean" [SOY:0000073]
+synonym: "6.02 1/4 of flowers open in soybean" [SOY:0000073]
 is_a: PO:0007016
 
 [Term]
 id: PO:0007035
 name: 7-8 fruit formation and maturation
-def: "OBSOLETE\: This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit development\, maturation\, and provisioning. " [Poc:curators]
-comment: We have chosen to use fruit size as a marker of these physiological processes to represent the whole plant growth stage.
+def: "OBSOLETE\: This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit dvelopment\, maturation\, and provisioning. " [Poc:curators]
+comment: We have chosen to use fruit size as a marker of these physiological processes to represent the wholeplant growth stage.
 synonym: "06-post-flowering in maize" [GRO:0007025]
 synonym: "5.3 pollination in maize" [MaizeGDB:67364]
 synonym: "5.4 fertilization in maize" [MaizeGDB:67365]
@@ -515,23 +511,23 @@ synonym: "7.01-blister stage in maize" [GRO:0007030]
 synonym: "BBCH principal growth stage 7" [ISBN:3826331524]
 synonym: "C-embryo stage in rice" [GRO:0007141]
 synonym: "R1in maize" [MaizeGDB:67370]
-synonym: "double fertilization in maize" [MaizeGDB:67365]
+synonym: "double fertilisation in maize" [MaizeGDB:67365]
 synonym: "effective filling period in maize" [MaizeGDB:64632]
 synonym: "first silique shattered" []
 synonym: "grain-filling in maize" [MaizeGDB:64632]
 synonym: "kernel watery ripe" [GRO:0007106]
 synonym: "lag phase in maize" [MaizeGDB:67370]
 synonym: "post-flowering in maize" [MaizeGDB:67370]
-synonym: "pro embryo in maize" [MaizeGDB:67370]
+synonym: "proembryo in maize" [MaizeGDB:67370]
 is_obsolete: true
 
 [Term]
 id: PO:0007036
-name: FR.00 beginning of fruit ripening
+name: FR.00 begining of fruit ripening
 def: "The stage at which fruit maturation begins." [GR:ap, ISBN:3826331524]
-synonym: "8.01 Beginning of bean ripening in soybean" [SOY:0000085]
+synonym: "8.01 Begining of bean ripening in soybean" [SOY:0000085]
 synonym: "Arabidopsis pricipal growth stage 8.00" []
-synonym: "beginning of fruit coloration" []
+synonym: "begining of fruit coloration" []
 synonym: "first silique shattered" []
 is_a: PO:0007010
 
@@ -597,7 +593,7 @@ synonym: "free nuclear in maize" [MaizeGDB:67371]
 synonym: "milk grain" []
 synonym: "milk stage in rice" [GRO:0007046]
 synonym: "mitotic in maize" [MaizeGDB:67369]
-synonym: "pro embryo in maize" [MaizeGDB:67371]
+synonym: "proembryo in maize" [MaizeGDB:67371]
 synonym: "rice growth stage-7" [GRO:0007046]
 synonym: "transition stage in maize" [MaizeGDB:67369]
 is_a: PO:0006302
@@ -706,7 +702,7 @@ synonym: "9.1 physiological maturity/embryo 6 in maize" [MaizeGDB:67380]
 synonym: "BBCH principal growth stage 87" [ISBN:3826331524]
 synonym: "R5 in maize" [MaizeGDB:67382]
 synonym: "R6 in maize" [MaizeGDB:67380]
-synonym: "Stage R7 Beginning maturity in soybean" [SOY:0000088]
+synonym: "Stage R7 Begining maturity in soybean" [SOY:0000088]
 synonym: "Zadok scale-87\, Haun scale-15" [GRO:0007113]
 synonym: "attenuative in maize" [MaizeGDB:67382]
 synonym: "black layer in maize" [MaizeGDB:67380]
@@ -744,7 +740,6 @@ id: PO:0007053
 name: FO.02 1/2 of flowers open
 def: "The stage at which 1/2 of flowers open." [GR:ap]
 comment: This stage refers to the whole plant.
-synonym: "6.02 1/2 of flowers on main stem open in soybean" [SOY:0000074]
 synonym: "7.02-anthesis half-way in barley" [GRO:0007103]
 synonym: "7.02-anthesis half-way in oat" [GRO:0007103]
 synonym: "7.02-anthesis half-way in wheat" [GRO:0007103]
@@ -785,7 +780,7 @@ synonym: "BBCH principal growth stage 0" [ISBN:3826331524]
 synonym: "axillary bud development" []
 synonym: "bud development" []
 synonym: "germination in Arabidopsis" [TAIR:0000393]
-synonym: "maize growth stage-0" [GRO\:0007003]
+synonym: "maize growth stage-0" [GR:GRO\:0007003]
 synonym: "rice growth stage-1" [GRO:0007043]
 synonym: "sprouting" []
 synonym: "terminal bud development" []
@@ -941,8 +936,8 @@ is_a: PO:0007089
 [Term]
 id: PO:0007071
 name: 2.02 main shoot and axillary shoots at two nodes visible
-def: "The stage at which two or two pairs of axillary shoots are visible at two nodes." [GR:ap]
-synonym: "2.02 Main shoot and axillaryshoots visible at 2 nodes in soybean" [SOY:0000041]
+def: "The stage at which two or two pairs of axillary shoots are visble at two nodes." [GR:ap]
+synonym: "2.02 Main shoot and axilliary shoots visible at 2 nodes in soybean" [SOY:0000041]
 synonym: "3.03-main shoot and two tillers" [GRO:0007072]
 synonym: "BBCH growth stage 22" [ISBN:3826331524]
 synonym: "Zadok scale-22" [GRO:0007072]
@@ -979,7 +974,7 @@ synonym: "03-tillering in barley" [GRO:0007069]
 synonym: "03-tillering in oat" [GRO:0007069]
 synonym: "03-tillering in wheat" [GRO:0007069]
 synonym: "03-tillering stage in rice" [GRO:0007049]
-synonym: "2 axillaryShoot Formation in soybean" [SOY:0000003]
+synonym: "2 Axilliary Shoot Formation in soybean" [SOY:0000003]
 synonym: "BBCH principal growth stage 2" [ISBN:3826331524]
 synonym: "formation of side shoot" []
 synonym: "rice growth stage-3" [GRO:0007049]
@@ -1012,7 +1007,7 @@ is_a: PO:0007113
 id: PO:0007077
 name: 2.08 main shoot and eight axillary shoots visible
 def: "The stage at which main shoot and eight or eight pairs of axillary shoots are visible at eight nodes." [GR:ap]
-synonym: "2.08 Main shoot and axillaryshoots visible at 8 nodes in soybean" [SOY:0000047]
+synonym: "2.08 Main shoot and axilliary shoots visible at 8 nodes in soybean" [SOY:0000047]
 synonym: "3.09-main shoot and eight tillers" [GRO:0007078]
 synonym: "BBCH growth stage 28" [ISBN:3826331524]
 synonym: "Zadok scale-28" [GRO:0007078]
@@ -1055,7 +1050,7 @@ is_a: PO:0007089
 id: PO:0007080
 name: 2.03 main shoot and three axillary shoots visible
 def: "The stage at which main shoot and three or three pairs of axillary shoots are visible at three nodes." [GR:ap]
-synonym: "2.03 Main shoot and axillaryshoots visible at 3 nodes in soybean" [SOY:0000042]
+synonym: "2.03 Main shoot and axilliary shoots visible at 3 nodes in soybean" [SOY:0000042]
 synonym: "3.04-main shoot and three tillers" [GRO:0007073]
 synonym: "BBCH growth stage 23" [ISBN:3826331524]
 synonym: "Zadok scale-23" [GRO:0007073]
@@ -1160,7 +1155,7 @@ is_a: PO:0007089
 id: PO:0007087
 name: 2.01 main shoot and axillary shoot(s) at one node visible
 def: "The stage at which one or a pair of axillary shoots are visible at one node." [Poc:curators]
-synonym: "2.01 Main shoot and axillaryshoot visible at one node in soybean" [SOY:0000040]
+synonym: "2.01 Main shoot and axilliary shoot visible at one node in soybean" [SOY:0000040]
 synonym: "3.02-main shoot and one tiller" [GRO:0007071]
 synonym: "BBCH growth stage 21" [ISBN:3826331524]
 synonym: "Zadok scale-21\, Feekes scale-2" [GRO:0007071]
@@ -1177,7 +1172,7 @@ is_a: PO:0007073
 id: PO:0007088
 name: 2.04 main shoot and four axillary shoots visible
 def: "The stage at which main shoot and four or four pairs of axillary shoots are visible at four nodes." [GR:ap]
-synonym: "2.04 Main shoot and axillaryshoots visible at 4 nodes in soybean" [SOY:0000043]
+synonym: "2.04 Main shoot and axilliary shoots visible at 4 nodes in soybean" [SOY:0000043]
 synonym: "3.05-main shoot and four tillers" [GRO:0007074]
 synonym: "BBCH growth stage 24" [ISBN:3826331524]
 synonym: "Zadok scale-24" [GRO:0007074]
@@ -1227,7 +1222,7 @@ comment: A measure of vegetative growth\, but leaf production is to be preferred
 synonym: "3.01 one node visible in soybean" [SOY:0000050]
 synonym: "4.02-first node detectable in barley" [GRO:0007082]
 synonym: "4.02-first node detectable in wheat" [GRO:0007082]
-synonym: "4.02-first node detectable in oat" [GRO:0007082]
+synonym: "4.02-first node detectablein oat" [GRO:0007082]
 synonym: "BBCH growth stage 31" [ISBN:3826331524]
 synonym: "Zadok scale-31\, Feekes scale-6" [GRO:0007082]
 is_a: PO:0007089
@@ -1249,7 +1244,7 @@ is_a: PO:0007089
 id: PO:0007093
 name: 2.05 main shoot and five axillary shoots visible
 def: "The stage at which main shoot and five or five pairs of axillary shoots are visible at five nodes." [GR:ap]
-synonym: "2.05 Main shoot and axillaryshoots visible at 5 nodes in soybean" [SOY:0000044]
+synonym: "2.05 Main shoot and axilliary shoots visible at 5 nodes in soybean" [SOY:0000044]
 synonym: "3.06-main shoot and five tillers in Triticeae" [GRO:0007075]
 synonym: "3.06-main shoot and five tillers in barley" [GRO:0007075]
 synonym: "3.06-main shoot and five tillers in oat" [GRO:0007075]
@@ -1309,7 +1304,7 @@ synonym: "Zadok scale-18\, Haun scale-7.+" [GRO:0007067]
 synonym: "ear initiation in maize" [MaizeGDB:67356]
 synonym: "eight leaves unfolded (sensu Triticeae)" [GRO:0007067]
 synonym: "eight rosette leaves" []
-synonym: "eight leaf unfolded" []
+synonym: "eigth leaf unfolded" []
 synonym: "maize growth stage-3.1" [GRO:0007013]
 synonym: "mid-whorl stage in maize" [MaizeGDB:67356]
 is_a: PO:0006301
@@ -1349,7 +1344,6 @@ synonym: "2.03-two leaves unfolded in Triticeae" [GRO:0007061]
 synonym: "2.03-two leaves unfolded in barley" [GRO:0007061]
 synonym: "2.03-two leaves unfolded in oat" [GRO:0007061]
 synonym: "2.03-two leaves unfolded in wheat" [GRO:0007061]
-synonym: "Arabidopsis principal growth stage 1.02" []
 synonym: "BBCH growth stage 12" [ISBN:3826331524]
 synonym: "V1 stage in soybean" [SOY:0000016]
 synonym: "V2 in maize" [MaizeGDB:67353]
@@ -1503,7 +1497,7 @@ is_a: PO:0007089
 id: PO:0007110
 name: 2.09 main shoot and nine or more axillary shoots visible
 def: "The stage at which main shoot and nine or nine pairs of axillary shoots are visible at nine or more nodes." [GR:ap]
-synonym: "2.09 Main shoot and axillaryshoots visible at 9 or more nodes in soybean" [SOY:0000048]
+synonym: "2.09 Main shoot and axilliary shoots visible at 9 or more nodes in soybean" [SOY:0000048]
 synonym: "3.1-maximum tillering" [GRO:0007144]
 synonym: "3.10-main shoot and nine or more tillers in Triticeae" [GRO:0007079]
 synonym: "BBCH growth stage 29" [ISBN:3826331524]
@@ -1514,7 +1508,7 @@ synonym: "main shoot and nine or more tillers in wheat" []
 synonym: "maximum number of tillers detectable in" []
 synonym: "maximum number of tillers visible" []
 synonym: "maximum number of tillers visible in rice" []
-synonym: "main shoot and nine or more tillers in oat" []
+synonym: "mmain shoot and nine or more tillers in oat" []
 synonym: "nine or more axillary shoots detectable" []
 is_a: PO:0007073
 
@@ -1548,7 +1542,6 @@ id: PO:0007113
 name: rosette growth
 def: "Stages of growth based on expansion of the rosette in Arabidopsis" [TAIR:ki]
 comment: A measure of vegetative growth\, but leaf production is to be preferred.
-subset: Arabidopsis
 synonym: "rosette growth in Arabidopsis" [TAIR:0000042]
 is_a: PO:0007112
 
@@ -1610,7 +1603,7 @@ id: PO:0007117
 name: SE.02 two nodes or internodes visible
 def: "The stage at which two nodes are visible." [GR:pj ""]
 comment: A measure of vegetative growth\, but leaf production is to be preferred.
-synonym: "3.02 2 nodes/internodes visible in soybean" [SOY:0000051]
+synonym: "3.02 2 nodes/internode visible in soybean" [SOY:0000051]
 synonym: "4.03-second node detectable in barley" [GRO:0007083]
 synonym: "4.03-second node detectable in oat" [GRO:0007083]
 synonym: "4.03-second node detectable in wheat" [GRO:0007083]
@@ -1623,7 +1616,7 @@ is_a: PO:0007089
 id: PO:0007118
 name: 2.06 main shoot and six axillary shoots visible
 def: "The stage at which main shoot and six or six pairs of axillary shoots are visible at six nodes." [GR:ap]
-synonym: "2.06 Main shoot and axillary shoots visible at 6 nodes in soybean" [SOY:0000045]
+synonym: "2.06 Main shoot and axilliary shoots visible at 6 nodes in soybean" [SOY:0000045]
 synonym: "3.07-main shoot and six tillers" [GRO:0007076]
 synonym: "BBCH growth stage 26" [ISBN:3826331524]
 synonym: "Zadok scale-26\, Feekes scale-3" [GRO:0007076]
@@ -1676,7 +1669,7 @@ is_obsolete: true
 id: PO:0007122
 name: 2.07 main shoot and seven axillary shoots visible
 def: "The stage at which main shoot and seven or seven pairs of axillary shoots are visible at seven nodes." [GR:ap]
-synonym: "2.07 Main shoot and axillaryshoots visible at 7 nodes in soybean" [SOY:0000046]
+synonym: "2.07 Main shoot and axilliary shoots visible at 7 nodes in soybean" [SOY:0000046]
 synonym: "3.08-main shoot and seven tillers" [GRO:0007077]
 synonym: "BBCH growth stage 27" [ISBN:3826331524]
 synonym: "Zadok scale-27" [GRO:0007077]
@@ -1766,7 +1759,7 @@ id: PO:0009075
 name: plant ontology
 def: "A controlled vocabulary to describe the various plant parts and the growth and developmental stages." [Poc:curators]
 
-[Type def]
+[Typedef]
 id: part_of
 name: part of
 
