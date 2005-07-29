@@ -1,9 +1,642 @@
 format-version: 1.0
-date: 27:04:2005 09:58
-version: $Revision: 1.18 $
-saved-by: pj37
+version: $Revision: 1.19 $
+date: 28:07:2005 17:29
+saved-by: katica
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
+
+[Term]
+id: PO:0001000
+name: meristem eloboration
+namespace: plant_growth_and_development_stage
+def: "OBSOLETE. the root meristem gets organized" [GR:ap]
+comment: This  term has been obsoleted to keep the structure simple.
+is_obsolete: true
+
+[Term]
+id: PO:0001002
+name: fruit development stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of a fruit defined by characteristic morphological\, structural\, histological or other visible features. " [POC:curators]
+synonym: "stage 17 flower in Arabidopsis" []
+synonym: "stage 18 flower in Arabidopsis" []
+is_a: PO:0007021 ! plant structure development stages
+
+[Term]
+id: PO:0001003
+name: formation of the leaf founder cells
+namespace: plant_growth_and_development_stage
+def: "The initial stage of leaf development  where cells in the SAM are already determined to form a leaf primordium\, but the primordium itself is not distinguishable morphologically." [TAIR:ki]
+synonym: "P0 stage" []
+is_a: PO:0001051 ! 1 leaf initiation stage
+
+[Term]
+id: PO:0001004
+name: anther developmental stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of the anther defined by characteristic morphological\, cytological\, histological or other visible features." [POC:fz]
+is_a: PO:0007605 ! androecium developmental stages
+
+[Term]
+id: PO:0001005
+name: A archesporial cells visible
+namespace: plant_growth_and_development_stage
+def: "An initial stage during which archesporial cells arise in four corners of L2 layer. Change in shape of primordia to more oval." [TAIR:ki]
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001006
+name: B enlarged microsporocyte stage
+namespace: plant_growth_and_development_stage
+def: "Stage during which the microsporocytes become conspicuous." [TAIR:ki]
+synonym: "pollen stage 2 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001007
+name: pollen developmental stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of the pollen defined by characteristic morphological\, cytological\, histological or other visible features." [POC:fz]
+synonym: "pollen development in Arabidopsis" []
+is_a: PO:0007605 ! androecium developmental stages
+
+[Term]
+id: PO:0001008
+name: C callose wall formation in pollen mother cells
+namespace: plant_growth_and_development_stage
+def: "Stage during which diploid pollen mother cells become separated from each other and from tapetum by a callose wall." [TAIR:ki]
+synonym: "pollen mother cell stage" []
+synonym: "pollen stage 3 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001009
+name: D pollen mother cell meiosis stage
+namespace: plant_growth_and_development_stage
+def: "Stage during which pollen mother cells undergo meiosis to form tetrads of microspores." [TAIR:ki]
+synonym: "pollen stage 4 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001010
+name: F microspore release stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the callose wall between the tetrads breaks down and haploid microspores are released and lie freely in locules. " [TAIR:ki]
+synonym: "pollen stage 5 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001011
+name: A microsporogenous mass stage
+namespace: plant_growth_and_development_stage
+def: "An initial stage during which the archesporial cells divide to give rise to primary parietal and sporogenous cells." [TAIR:ki]
+synonym: "pollen stage 1 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001012
+name: G early unicellular microspore stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the microspores round up and small vacuoles appear in their cytoplasm.  The microspore walls thicken due to the formation of the exine." [TAIR:ki]
+synonym: "pollen stage 6 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001013
+name: H late unicellular microspore stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which a large vacuole is formed in each microspore causing a rapid increase in size and a displacement of the nucleus to one side." [TAIR:ki]
+synonym: "pollen stage 7 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001014
+name: I first mitotic division stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the asymmetric\, first mitotic division of the microspores occurs producing a large vegetative cell and small generative cell\, located near pollen wall." [TAIR:ki]
+synonym: "pollen stage 8 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001015
+name: K second mitotic division stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the generative cell undergoes mitotic division to form two male gametes\, the sperm cells." [TAIR:ki]
+comment: In taxa with mature two-celled pollen\, the second mitotic division takes place after pollen germination\, in germinating pollen tube.
+synonym: "pollen stage 9 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001016
+name: L mature pollen stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the pollen reaches mature stage and desiccates. " [TAIR:ki]
+comment: Mature pollen stages is reached at three-celled pollen in some angiosperms (maize\, rice and Arabidopsis)\, while in others\, the maturepollen has  two haploid cells  (tobacco\, snapdragon).
+synonym: "pollen stage 10 in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001017
+name: M germinated pollen stage
+namespace: plant_growth_and_development_stage
+def: "The final stage in the life cycle of the male gametophyte. Upon rehydration\, mature pollen grain forms a tubular outgrowth\, the pollen tube\, which carries the male gametes." [TAIR:ki]
+synonym: "germinated pollen grain in Arabidopsis" []
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001018
+name: B formation of primary parietal and sporogenous cells
+namespace: plant_growth_and_development_stage
+def: "Stage during which the primary parietal and  primary sporogenous layers are derived from archesporial cells." [TAIR:ki]
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001019
+name: formation of leaf primordium
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development  when leaf primordium is formed as a small protrusion on the flank of SAM." [TAIR:ki]
+synonym: "P1 stage" []
+is_a: PO:0001052 ! 2 leaf expansion stage
+
+[Term]
+id: PO:0001020
+name: hood-shaped primordium
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development  when a hood-shaped  primordium is formed\, partially enclosing P1 and SAM\, as in Poaceae." [TAIR:ki]
+synonym: "P2 stage" []
+is_a: PO:0001052 ! 2 leaf expansion stage
+
+[Term]
+id: PO:0001021
+name: formation of ligule primordium
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development  when conical P3 leaf completely encloses SAM\, and the ligule primordium is visible\, as in Poaceae. " [TAIR:ki]
+synonym: "P3 stage" []
+is_a: PO:0001052 ! 2 leaf expansion stage
+
+[Term]
+id: PO:0001023
+name: rapid elongation of leaf blade
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development  during which a rapid elongation of the leaf blade occurs; the elongation of the leaf sheath has not started\, as in Poaceae." [TAIR:ki]
+synonym: "P4 stage" []
+is_a: PO:0001052 ! 2 leaf expansion stage
+
+[Term]
+id: PO:0001024
+name: rapid elongation of leaf sheath
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development  during which a rapid elongation of the leaf sheath occurs\, as in Poaceae." [TAIR:ki]
+synonym: "P5 stage" []
+is_a: PO:0001052 ! 2 leaf expansion stage
+
+[Term]
+id: PO:0001025
+name: C four anther lobes formed
+namespace: plant_growth_and_development_stage
+def: "Stage during which the four-lobed anther pattern with two developing stomium regions (notch) are formed." [TAIR:ki]
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001026
+name: D locules established
+namespace: plant_growth_and_development_stage
+def: "Stage during which the four clearly defined locules are established. All anther cell types present and microspore mother cells appear." [TAIR:ki]
+synonym: "stage 8 flower in Arabidopsis" []
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001027
+name: meristamtic zone formation
+namespace: plant_growth_and_development_stage
+def: "OBSOLETE. The meristematic zone is formed" [GR:ap ""]
+is_obsolete: true
+
+[Term]
+id: PO:0001028
+name: elongation zone formation
+namespace: plant_growth_and_development_stage
+def: "OBSOLETE. The cells of root primordium undergo elonagtion" [GR:ap ""]
+is_obsolete: true
+
+[Term]
+id: PO:0001029
+name: E tetrad stage
+namespace: plant_growth_and_development_stage
+def: "Stage immediately following meiosis\, during which the tetrads of microspores are still hold together\, enclosed by the callose wall. " [TAIR:ki]
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001030
+name: specialization zone formation
+namespace: plant_growth_and_development_stage
+def: "OBSOLETE. The cells develop their characteristic morphology." [GR:ap ""]
+is_obsolete: true
+
+[Term]
+id: PO:0001031
+name: 4 root elongation
+namespace: plant_growth_and_development_stage
+def: "The stage at which root is elongating." [POC:cuartors]
+comment: In some plant species this stage is subdivided into distal and proximal elonagting zones.
+synonym: "Benfey's stage 2 of root development" []
+is_a: PO:0007520 ! root development stages
+
+[Term]
+id: PO:0001032
+name: E tapetum degeneration initiated
+namespace: plant_growth_and_development_stage
+def: "Stage during which degeneration of the tapetum is initiated\, as the deposition on the surface of the microspore primexine proceeds." [TAIR:ki]
+comment: Microspores within single locule are at unicellular stage.
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001034
+name: F bilocular anther stage
+namespace: plant_growth_and_development_stage
+def: "Stage during which anther becomes bilocular\, after degeneration and breakage of septum below stomium." [TAIR:ki]
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001035
+name: G anther dehiscence
+namespace: plant_growth_and_development_stage
+def: "Stage during which the dehiscence of anthers occurs. Anther breaks along stomium and pollen is released." [TAIR:ki]
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001036
+name: H anther senescence
+namespace: plant_growth_and_development_stage
+def: "Stage during which the senescence of anther and stamen occurs. Shrinkage of cells and anther structure takes place." [TAIR:ki]
+is_a: PO:0001004 ! anther developmental stages
+
+[Term]
+id: PO:0001040
+name: dry seed stage
+alt_id: PO:0007055
+namespace: plant_growth_and_development_stage
+def: "Mature seed with low moisture content." [TAIR:ki]
+synonym: "00 Dry Seed in soybean" [SOY:0000009]
+synonym: "1.01-dry seed in Tricticeae" [GRO:0007052]
+synonym: "BBCH growth stage 00" [ISBN:3826331524]
+synonym: "dry seed in Arabidopsis" [TAIR:0000213]
+xref_unknown: GRO:0007052
+xref_unknown: ISBN:3826331524
+xref_unknown: SOY:0000009
+xref_unknown: TAIR:0000213
+is_a: PO:0001170 ! seed development stages
+relationship: part_of PO:0007057 ! 0 germination
+
+[Term]
+id: PO:0001041
+name: chalazal and micropylar domain establishment
+namespace: plant_growth_and_development_stage
+def: "The initial stage of endosperm development during which the chalazal and micropilar domains are established." [TAIR:ki]
+is_a: PO:0007633 ! endosperm development stages
+
+[Term]
+id: PO:0001042
+name: functional specialization of the endosperm
+namespace: plant_growth_and_development_stage
+def: "Stage of endosperm development during which the functional specialization of the maturing endosperm occurs." [TAIR:ki]
+is_a: PO:0007633 ! endosperm development stages
+
+[Term]
+id: PO:0001044
+name: sepal differentiation and expansion stage
+namespace: plant_growth_and_development_stage
+def: "Stage of calyx development defined by differentiation and expansion of sepal." [POC:fz]
+is_a: PO:0007603 ! calyx developmental stages
+
+[Term]
+id: PO:0001045
+name: fully expanded sepal
+namespace: plant_growth_and_development_stage
+def: "Stage of calyx development when sepal is fully expanded." [POC:fz]
+is_a: PO:0007603 ! calyx developmental stages
+
+[Term]
+id: PO:0001047
+name: lemma developmental stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of the lemma defined by characteristic morphological\, structural\, histological or other visible features." [GR:ap, POC:fz]
+is_a: PO:0007600 ! 3 floral organ development stages
+
+[Term]
+id: PO:0001048
+name: palea developmental stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of the palea defined by characteristic morphological\, structural\, histological or other visible features." [GR:ap, POC:fz]
+is_a: PO:0007600 ! 3 floral organ development stages
+
+[Term]
+id: PO:0001049
+name: lodicule developmental stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of the lodicule defined by characteristic morphological\, structural\, histological or other visible features." [GR:ap, POC:fz]
+is_a: PO:0007600 ! 3 floral organ development stages
+
+[Term]
+id: PO:0001050
+name: leaf development stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of a leaf defined by characteristic morphological\, structural\, histological or other visible features. " [TAIR:tb, POC:curators]
+synonym: "leaf development in Arabidopsis" []
+is_a: PO:0007021 ! plant structure development stages
+
+[Term]
+id: PO:0001051
+name: 1 leaf initiation stage
+alt_id: PO:0001003
+namespace: plant_growth_and_development_stage
+def: "The earliest histological evidence of leaf initiation\, i.e\, a change in the orientation of cell division both in the epidermis and in internal layers of the shoot meristem occurs at this stage (Poethig S\, 1997\, Plant Cell 9\:1077-1087)." [PMID:9254931]
+comment: Cells in the primordium are not yet differentiated.
+synonym: "leaf initiation in Arabidopsis" []
+is_a: PO:0001050 ! leaf development stages
+
+[Term]
+id: PO:0001052
+name: 2 leaf expansion stage
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development which begins when cell differentiation and cell expansion occurs and finishes when the leaf reaches its full size.\n" [TAIR:ki]
+synonym: "leaf expansion stage in Arabidopsis" []
+is_a: PO:0001050 ! leaf development stages
+
+[Term]
+id: PO:0001053
+name: 3 leaf fully expanded
+namespace: plant_growth_and_development_stage
+def: "Stage of leaf development when leaf is fully expanded." [TAIR:ki]
+synonym: "fully expanded leaf stage in Arabidopsis" []
+is_a: PO:0001050 ! leaf development stages
+
+[Term]
+id: PO:0001054
+name: 4 leaf senescence stage
+namespace: plant_growth_and_development_stage
+def: "The final stage of leaf development when the leaf ceases metabolic activity and senesces." [TAIR:tb]
+synonym: "leaf senescence stage in Arabidopsis" []
+is_a: PO:0001050 ! leaf development stages
+
+[Term]
+id: PO:0001055
+name: lemma primordia visible
+namespace: plant_growth_and_development_stage
+def: "Stage of lemma development that begins when the lemma primordia arise." [POC:fz]
+comment: The lemma primordium forms in 1/2 alternate phylotaxy in rice spikelet.
+is_a: PO:0001047 ! lemma developmental stages
+
+[Term]
+id: PO:0001056
+name: lemma differentiation and expansion stage
+namespace: plant_growth_and_development_stage
+def: "Stage of lemma development defined by differentiation and expansion of lemma." [POC:fz]
+is_a: PO:0001047 ! lemma developmental stages
+
+[Term]
+id: PO:0001057
+name: fully expanded lemma
+namespace: plant_growth_and_development_stage
+def: "Stage of lemma development when lemma is fully expanded." [POC:fz]
+is_a: PO:0001047 ! lemma developmental stages
+
+[Term]
+id: PO:0001058
+name: palea primordia visible
+namespace: plant_growth_and_development_stage
+def: "Stage of palea development that begins when the palea primordia arise." [POC:fz]
+comment: The palea primordium forms in 1/2 alternate phylotaxy in rice spikelet.
+is_a: PO:0001048 ! palea developmental stages
+
+[Term]
+id: PO:0001059
+name: J bicellular pollen stage
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the small generative cell moves inward\, becoming completely surrounded by the cytoplasm of the vegetative cell. " [TAIR:ki]
+is_a: PO:0001007 ! pollen developmental stages
+
+[Term]
+id: PO:0001070
+name: palea differentiation and expansion stage
+namespace: plant_growth_and_development_stage
+def: "Stage of palea development defined by differentiation and expansion of palea." [POC:fz]
+is_a: PO:0001048 ! palea developmental stages
+
+[Term]
+id: PO:0001071
+name: fully expanded palea
+namespace: plant_growth_and_development_stage
+def: "Stage of palea development when palea is fully expanded." [POC:fz]
+is_a: PO:0001048 ! palea developmental stages
+
+[Term]
+id: PO:0001072
+name: lodicule primordia visible
+namespace: plant_growth_and_development_stage
+def: "Stage of palea development that begins when the palea primordia arise." [POC:fz]
+comment: Two lodicules form on the side of the lemma in rice spikelet.
+is_a: PO:0001049 ! lodicule developmental stages
+
+[Term]
+id: PO:0001074
+name: N second mitotic division stage in germinating pollen
+namespace: plant_growth_and_development_stage
+def: "Stage of microgametophyte development during which the generative cell undergoes a mitotic division to form two male gametes\, the sperm cells." [TAIR:ki]
+is_a: PO:0001017 ! M germinated pollen stage
+
+[Term]
+id: PO:0001077
+name: lodicule differentiation and expansion stage
+namespace: plant_growth_and_development_stage
+def: "Stage of lodicule development defined by differentiation and expansion of lodicule." [POC:fz]
+is_a: PO:0001049 ! lodicule developmental stages
+
+[Term]
+id: PO:0001078
+name: E expanded cotyledon stage
+alt_id: PO:0001076
+namespace: plant_growth_and_development_stage
+def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:ki]
+synonym: "curled cotyledon stage in Arabidopsis" []
+synonym: "torpedo stage in Arabidopsis" []
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001079
+name: fully expanded lodicule
+namespace: plant_growth_and_development_stage
+def: "Stage of lodicule development when lodicule is fully expanded." [POC:fz]
+is_a: PO:0001049 ! lodicule developmental stages
+
+[Term]
+id: PO:0001081
+name: F mature embryo stage
+namespace: plant_growth_and_development_stage
+def: "Stage at which the embryo is fully developed. " [TAIR:ki, APWeb:glossary]
+comment: In some taxa\, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
+synonym: "mature (stage) in Arabidopsis" []
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001083
+name: inflorescence development stages
+namespace: plant_growth_and_development_stage
+def: "Stages of development of an inflorescence defined by characteristic morphological\, structural\, histological or other visible features. " [POC:curators]
+is_a: PO:0007021 ! plant structure development stages
+
+[Term]
+id: PO:0001094
+name: coleoptilar stage
+namespace: plant_growth_and_development_stage
+def: "The coleoptilar primordium\, SAM and radicle are formed in the embryo of grasses." [TAIR:ki]
+synonym: "SAM and radicle formation stage" []
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001095
+name: true leaf formation
+namespace: plant_growth_and_development_stage
+def: "During this stage\, the protrusion of the first leaf primordia takes place in succession." [TAIR:ki]
+comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001096
+name: primary endosperm cell stage
+namespace: plant_growth_and_development_stage
+def: "One cell stage that takes place following the fertilization\, produced by the fusion of sperm cell nucleus and one or more polar nuclei." [TAIR:ki]
+is_a: PO:0007633 ! endosperm development stages
+
+[Term]
+id: PO:0001097
+name: A zygote
+namespace: plant_growth_and_development_stage
+def: "One cell stage that results from fertilization." [PO:KI]
+synonym: "one cell stage" []
+synonym: "zygote in Arabidopsis" []
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001098
+name: formation of starchy endosperm
+namespace: plant_growth_and_development_stage
+def: "OBSOLETE. Stage of endosperm development during wich the formation of starchy endosperm occurs." [TAIR:ki]
+is_obsolete: true
+
+[Term]
+id: PO:0001099
+name: formation of aleurone and starchy layers
+namespace: plant_growth_and_development_stage
+def: "Differentiation of aleurone layer\, the outermost endosperm tissue\, and the internal starchy tissue." [TAIR:ki]
+is_a: PO:0001042 ! functional specialization of the endosperm
+
+[Term]
+id: PO:0001170
+name: seed development stages
+namespace: plant_growth_and_development_stage
+def: "Stages of seed development\, from fertilization to the dry or quiescent state." [TAIR:ki]
+synonym: "seed development in Arabidopsis" []
+is_a: PO:0007021 ! plant structure development stages
+
+[Term]
+id: PO:0001180
+name: B proembryo stage
+namespace: plant_growth_and_development_stage
+def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [TAIR:ki, APWeb:glossary]
+synonym: "eight-celled stage in Arabidopsis" []
+synonym: "two-celled stage in Arabidopsis" []
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001185
+name: C globular stage
+namespace: plant_growth_and_development_stage
+def: "During this stage the embryo proper retains radial symmetry (increasing in diameter)\, and three main tissue systems are established." [TAIR:ki]
+synonym: "dermatogen stage in Arabidopsis" []
+synonym: "globular stage in Arabidopsis" []
+synonym: "late globular stage in Arabidopsis" []
+synonym: "mid-globular stage in Arabidopsis" []
+is_a: PO:0007631 ! embryo development stages
+
+[Term]
+id: PO:0001378
+name: sepals enclosing meristem
+namespace: plant_growth_and_development_stage
+def: "Stage of calyx development that begins when the developing sepals overlie the floral meristem." [ISBN:0387940898]
+synonym: "stage 4 flower in Arabidopsis " []
+is_a: PO:0001044 ! sepal differentiation and expansion stage
+
+[Term]
+id: PO:0001380
+name: sepals enclosing floral bud
+namespace: plant_growth_and_development_stage
+def: "Stage of calyx development that begins when the sepals enclose the floral bud." [ISBN:0387940898]
+synonym: "stage 6 flower in Arabidopsis " []
+is_a: PO:0001044 ! sepal differentiation and expansion stage
+
+[Term]
+id: PO:0004500
+name: formation of leaflet primordia
+namespace: plant_growth_and_development_stage
+def: "Stage at which leaflet primordia are initiated on the leaf primordium of a compound leaf." [TAIR:ki]
+is_a: PO:0001052 ! 2 leaf expansion stage
+
+[Term]
+id: PO:0004501
+name: gynoecium differentiation and expansion
+namespace: plant_growth_and_development_stage
+def: "Stage of gynoecium development defined by differentiation and expansion of carpels." [TAIR:ki]
+is_a: PO:0007606 ! gynoecium developmental stages
+
+[Term]
+id: PO:0004502
+name: closure of carpel(s)
+namespace: plant_growth_and_development_stage
+def: "Stage of gynoecium development defined by the closure of the carpel(s).\n" [TAIR:ki]
+comment: Closure of the carpel can occur in various ways\, by fusion or secretion.
+is_a: PO:0007606 ! gynoecium developmental stages
+
+[Term]
+id: PO:0004503
+name: stigma cell differentiation
+namespace: plant_growth_and_development_stage
+def: "Epidermal cells at the top of developing style differentiate stigma." [TAIR:ki]
+is_a: PO:0007606 ! gynoecium developmental stages
+
+[Term]
+id: PO:0004504
+name: ovule differentiation and expansion
+namespace: plant_growth_and_development_stage
+def: "Stage of ovule development defined by differentiation and expansion of ovules." [TAIR:ki]
+is_a: PO:0007619 ! ovule developmental stages
+
+[Term]
+id: PO:0004505
+name: fertilized ovule stage
+namespace: plant_growth_and_development_stage
+def: "The earliest stage of seed development immediately following double fertilization." [TAIR:ki]
+is_a: PO:0001170 ! seed development stages
+
+[Term]
+id: PO:0004506
+name: developing seed stage
+namespace: plant_growth_and_development_stage
+def: "Stage of seed development characterized by seed growth and differentiation." [TAIR:ki]
+is_a: PO:0001170 ! seed development stages
+
+[Term]
+id: PO:0004507
+name: D bilateral stage
+alt_id: PO:0001043
+alt_id: PO:0001177
+namespace: plant_growth_and_development_stage
+def: "Change from radial to bilateral symmetry takes place during this embryonic stage." [TAIR:ki]
+synonym: "heart stage in Arabidopsis" []
+synonym: "heart-shape stage" []
+synonym: "transition stage in maize" []
+synonym: "triangle stage in Arabidopsis" []
+is_a: PO:0007631 ! embryo development stages
 
 [Term]
 id: PO:0007001
@@ -242,7 +875,7 @@ synonym: "10.04-overripe\, straw dead and collapsing in wheat" [GRO:0007118]
 synonym: "9 Senescence in soybean" [SOY:0000008]
 synonym: "BBCH principal growth stage 9" [ISBN:3826331524]
 synonym: "senescence in Arabidopsis" [TAIR:0000035]
-is_a: PO:0007033 ! whole plant growth stage
+is_a: PO:0007033 ! whole plant growth stages
 
 [Term]
 id: PO:0007018
@@ -279,10 +912,10 @@ is_obsolete: true
 
 [Term]
 id: PO:0007021
-name: plant part development stage
+name: plant structure development stages
 namespace: plant_growth_and_development_stage
 def: "The succession of changes during the development of plant parts." [POC:curators]
-is_a: PO:0009012 ! plant growth and development stage
+is_a: PO:0009012 ! plant growth and development stages
 
 [Term]
 id: PO:0007022
@@ -456,7 +1089,7 @@ is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
 id: PO:0007033
-name: whole plant growth stage
+name: whole plant growth stages
 namespace: plant_growth_and_development_stage
 def: "The succession of changes during the growth of the whole plant." [GR:pj ""]
 synonym: "cereal plant ontology " [GRO:0080001]
@@ -466,7 +1099,7 @@ synonym: "plant growth stages in Arabidopsis" [TAIR:0000021]
 synonym: "rice growth stage" [GRO:0007040]
 synonym: "sorghum growth stage" [GRO:0007124]
 synonym: "wheat\, barley and oat growth stage" [GRO:0007156]
-is_a: PO:0009012 ! plant growth and development stage
+is_a: PO:0009012 ! plant growth and development stages
 
 [Term]
 id: PO:0007034
@@ -754,17 +1387,6 @@ namespace: plant_growth_and_development_stage
 def: "Emergence of the epicotyl above ground." [ISBN:0306416875, GR:ap]
 comment: Only the first true foliage leaf or pair of leaves are visible.  Occurs in plants with hypogeal germination.
 is_a: PO:0007030 ! shoot emergence
-
-[Term]
-id: PO:0007055
-name: 0.0 dry seed
-namespace: plant_growth_and_development_stage
-def: "Mature seed with low moisture content." [GR:ap, ISBN:0306416875]
-synonym: "00 Dry Seed in soybean" [SOY:0000009]
-synonym: "1.01-dry seed in Tricticeae" [GRO:0007052]
-synonym: "BBCH growth stage 00" [ISBN:3826331524]
-synonym: "dry seed in Arabidopsis" [TAIR:0000213]
-relationship: part_of PO:0007057 ! 0 germination
 
 [Term]
 id: PO:0007057
@@ -1852,7 +2474,7 @@ namespace: plant_growth_and_development_stage
 def: "Stage of growth when reproductive structures are being produced." [Poc:curators ""]
 synonym: "B-reproductive stage in rice" [GRO:0007140]
 synonym: "reproductive in Arabidopsis" [TAIR:0000306]
-is_a: PO:0007033 ! whole plant growth stage
+is_a: PO:0007033 ! whole plant growth stages
 
 [Term]
 id: PO:0007131
@@ -1887,7 +2509,7 @@ synonym: "10.09-secondary dormancy lost in Triticeae" [GRO:0007123]
 synonym: "10.09-secondary dormancy lost in barley" [GRO:0007123]
 synonym: "10.09-secondary dormancy lost in oat" [GRO:0007123]
 synonym: "10.09-secondary dormancy lost in wheat" [GRO:0007123]
-is_a: PO:0007033 ! whole plant growth stage
+is_a: PO:0007033 ! whole plant growth stages
 
 [Term]
 id: PO:0007133
@@ -1904,638 +2526,7 @@ namespace: plant_growth_and_development_stage
 def: "Stage of growth when vegetative structures are being produced." [Poc:curators ""]
 synonym: "A-vegetative stage in rice" [GRO:0007139]
 synonym: "vegetative in Arabidopsis" [TAIR:0000305]
-is_a: PO:0007033 ! whole plant growth stage
-
-[Term]
-id: PO:0009012
-name: plant growth and development stage
-namespace: plant_growth_and_development_stage
-def: "The succession of changes leading from the zygote to the mature plant. " [Poc:curators ""]
-synonym: "Arabidopsis growth" [TAIR:0000205]
-
-[Term]
-id: PO:0001000
-name: meristem eloboration
-namespace: plant_growth_and_development_stage
-def: "OBSOLETE. the root meristem gets organized" [GR:ap]
-comment: This  term has been obsoleted to keep the structure simple.
-is_obsolete: true
-
-[Term]
-id: PO:0001002
-name: fruit development stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of a fruit defined by characteristic morphological\, structural\, histological or other visible features. " [POC:curators]
-synonym: "stage 17 flower in Arabidopsis" []
-synonym: "stage 18 flower in Arabidopsis" []
-is_a: PO:0007021 ! plant structure development stage
-
-[Term]
-id: PO:0001003
-name: formation of the leaf founder cells
-namespace: plant_growth_and_development_stage
-def: "The initial stage of leaf development  where cells in the SAM are already determined to form a leaf primordium\, but the primordium itself is not distinguishable morphologically." [TAIR:ki]
-synonym: "P0 stage" []
-is_a: PO:0001051 ! 1 leaf initiation stage
-
-[Term]
-id: PO:0001004
-name: anther developmental stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of the anther defined by characteristic morphological\, cytological\, histological or other visible features." [POC:fz]
-is_a: PO:0007605 ! androecium developmental stages
-
-[Term]
-id: PO:0001005
-name: A archesporial cells visible
-namespace: plant_growth_and_development_stage
-def: "An initial stage during which archesporial cells arise in four corners of L2 layer. Change in shape of primordia to more oval." [TAIR:ki]
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001006
-name: B enlarged microsporocyte stage
-namespace: plant_growth_and_development_stage
-def: "Stage during which the microsporocytes become conspicuous." [TAIR:ki]
-synonym: "pollen stage 2 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001007
-name: pollen developmental stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of the pollen defined by characteristic morphological\, cytological\, histological or other visible features." [POC:fz]
-synonym: "pollen development in Arabidopsis" []
-is_a: PO:0007605 ! androecium developmental stages
-
-[Term]
-id: PO:0001008
-name: C callose wall formation in pollen mother cells
-namespace: plant_growth_and_development_stage
-def: "Stage during which diploid pollen mother cells become separated from each other and from tapetum by a callose wall." [TAIR:ki]
-synonym: "pollen mother cell stage" []
-synonym: "pollen stage 3 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001009
-name: D pollen mother cell meiosis stage
-namespace: plant_growth_and_development_stage
-def: "Stage during which pollen mother cells undergo meiosis to form tetrads of microspores." [TAIR:ki]
-synonym: "pollen stage 4 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001010
-name: F microspore release stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the callose wall between the tetrads breaks down and haploid microspores are released and lie freely in locules. " [TAIR:ki]
-synonym: "pollen stage 5 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001011
-name: A microsporogenous mass stage
-namespace: plant_growth_and_development_stage
-def: "An initial stage during which the archesporial cells divide to give rise to primary parietal and sporogenous cells." [TAIR:ki]
-synonym: "pollen stage 1 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001012
-name: G early unicellular microspore stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the microspores round up and small vacuoles appear in their cytoplasm.  The microspore walls thicken due to the formation of the exine." [TAIR:ki]
-synonym: "pollen stage 6 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001013
-name: H late unicellular microspore stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which a large vacuole is formed in each microspore causing a rapid increase in size and a displacement of the nucleus to one side." [TAIR:ki]
-synonym: "pollen stage 7 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001014
-name: I first mitotic division stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the asymmetric\, first mitotic division of the microspores occurs producing a large vegetative cell and small generative cell\, located near pollen wall." [TAIR:ki]
-synonym: "pollen stage 8 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001015
-name: K second mitotic division stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the generative cell undergoes mitotic division to form two male gametes\, the sperm cells." [TAIR:ki]
-comment: In taxa with mature two-celled pollen\, the second mitotic division takes place after pollen germination\, in germinating pollen tube.
-synonym: "pollen stage 9 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001016
-name: L mature pollen stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the pollen reaches mature stage and desiccates. " [TAIR:ki]
-comment: Mature pollen stages is reached at three-celled pollen in some angiosperms (maize\, rice and Arabidopsis)\, while in others\, the maturepollen has  two haploid cells  (tobacco\, snapdragon).
-synonym: "pollen stage 10 in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001017
-name: M germinated pollen stage
-namespace: plant_growth_and_development_stage
-def: "The final stage in the life cycle of the male gametophyte. Upon rehydration\, mature pollen grain forms a tubular outgrowth\, the pollen tube\, which carries the male gametes." [TAIR:ki]
-synonym: "germinated pollen grain in Arabidopsis" []
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001018
-name: B formation of primary parietal and sporogenous cells
-namespace: plant_growth_and_development_stage
-def: "Stage during which the primary parietal and  primary sporogenous layers are derived from archesporial cells." [TAIR:ki]
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001019
-name: formation of leaf primordium
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development  when leaf primordium is formed as a small protrusion on the flank of SAM." [TAIR:ki]
-synonym: "P1 stage" []
-is_a: PO:0001052 ! 2 leaf expansion stage
-
-[Term]
-id: PO:0001020
-name: hood-shaped primordium
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development  when a hood-shaped  primordium is formed\, partially enclosing P1 and SAM\, as in Poaceae." [TAIR:ki]
-synonym: "P2 stage" []
-is_a: PO:0001052 ! 2 leaf expansion stage
-
-[Term]
-id: PO:0001021
-name: formation of ligule primordium
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development  when conical P3 leaf completely encloses SAM\, and the ligule primordium is visible\, as in Poaceae. " [TAIR:ki]
-synonym: "P3 stage" []
-is_a: PO:0001052 ! 2 leaf expansion stage
-
-[Term]
-id: PO:0001023
-name: rapid elongation of leaf blade
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development  during which a rapid elongation of the leaf blade occurs; the elongation of the leaf sheath has not started\, as in Poaceae." [TAIR:ki]
-synonym: "P4 stage" []
-is_a: PO:0001052 ! 2 leaf expansion stage
-
-[Term]
-id: PO:0001024
-name: rapid elongation of leaf sheath
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development  during which a rapid elongation of the leaf sheath occurs\, as in Poaceae." [TAIR:ki]
-synonym: "P5 stage" []
-is_a: PO:0001052 ! 2 leaf expansion stage
-
-[Term]
-id: PO:0001025
-name: C four anther lobes formed
-namespace: plant_growth_and_development_stage
-def: "Stage during which the four-lobed anther pattern with two developing stomium regions (notch) are formed." [TAIR:ki]
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001026
-name: D locules established
-namespace: plant_growth_and_development_stage
-def: "Stage during which the four clearly defined locules are established. All anther cell types present and microspore mother cells appear." [TAIR:ki]
-synonym: "stage 8 flower in Arabidopsis" []
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001027
-name: meristamtic zone formation
-namespace: plant_growth_and_development_stage
-def: "OBSOLETE. The meristematic zone is formed" [GR:ap ""]
-is_obsolete: true
-
-[Term]
-id: PO:0001028
-name: elongation zone formation
-namespace: plant_growth_and_development_stage
-def: "OBSOLETE. The cells of root primordium undergo elonagtion" [GR:ap ""]
-is_obsolete: true
-
-[Term]
-id: PO:0001029
-name: E tetrad stage
-namespace: plant_growth_and_development_stage
-def: "Stage immediately following meiosis\, during which the tetrads of microspores are still hold together\, enclosed by the callose wall. " [TAIR:ki]
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001030
-name: specialization zone formation
-namespace: plant_growth_and_development_stage
-def: "OBSOLETE. The cells develop their characteristic morphology." [GR:ap ""]
-is_obsolete: true
-
-[Term]
-id: PO:0001031
-name: 4 root elongation
-namespace: plant_growth_and_development_stage
-def: "The stage at which root is elongating." [POC:cuartors]
-comment: In some plant species this stage is subdivided into distal and proximal elonagting zones.
-synonym: "Benfey's stage 2 of root development" []
-is_a: PO:0007520 ! root development stages
-
-[Term]
-id: PO:0001032
-name: E tapetum degeneration initiated
-namespace: plant_growth_and_development_stage
-def: "Stage during which degeneration of the tapetum is initiated\, as the deposition on the surface of the microspore primexine proceeds." [TAIR:ki]
-comment: Microspores within single locule are at unicellular stage.
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001034
-name: F bilocular anther stage
-namespace: plant_growth_and_development_stage
-def: "Stage during which anther becomes bilocular\, after degeneration and breakage of septum below stomium." [TAIR:ki]
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001035
-name: G anther dehiscence
-namespace: plant_growth_and_development_stage
-def: "Stage during which the dehiscence of anthers occurs. Anther breaks along stomium and pollen is released." [TAIR:ki]
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001036
-name: H anther senescence
-namespace: plant_growth_and_development_stage
-def: "Stage during which the senescence of anther and stamen occurs. Shrinkage of cells and anther structure takes place." [TAIR:ki]
-is_a: PO:0001004 ! anther developmental stages
-
-[Term]
-id: PO:0001040
-name: dry seed stage
-namespace: plant_growth_and_development_stage
-def: "Mature seed with low moisture content." [TAIR:ki]
-synonym: "dry seed in Arabidopsis" []
-is_a: PO:0001170 ! seed development stages
-
-[Term]
-id: PO:0001041
-name: chalazal and micropylar domain establishment
-namespace: plant_growth_and_development_stage
-def: "The initial stage of endosperm development during which the chalazal and micropilar domains are established." [TAIR:ki]
-is_a: PO:0007633 ! endosperm development stages
-
-[Term]
-id: PO:0001042
-name: functional specialization of the endosperm
-namespace: plant_growth_and_development_stage
-def: "Stage of endosperm development during which the functional specialization of the maturing endosperm occurs." [TAIR:ki]
-is_a: PO:0007633 ! endosperm development stages
-
-[Term]
-id: PO:0001044
-name: sepal differentiation and expansion stage
-namespace: plant_growth_and_development_stage
-def: "Stage of calyx development defined by differentiation and expansion of sepal." [POC:fz]
-is_a: PO:0007603 ! calyx developmental stages
-
-[Term]
-id: PO:0001045
-name: fully expanded sepal
-namespace: plant_growth_and_development_stage
-def: "Stage of calyx development when sepal is fully expanded." [POC:fz]
-is_a: PO:0007603 ! calyx developmental stages
-
-[Term]
-id: PO:0001047
-name: lemma developmental stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of the lemma defined by characteristic morphological\, structural\, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
-
-[Term]
-id: PO:0001048
-name: palea developmental stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of the palea defined by characteristic morphological\, structural\, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
-
-[Term]
-id: PO:0001049
-name: lodicule developmental stages.
-namespace: plant_growth_and_development_stage
-def: "Stages of development of the lodicule defined by characteristic morphological\, structural\, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
-
-[Term]
-id: PO:0001050
-name: leaf development stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of a leaf defined by characteristic morphological\, structural\, histological or other visible features. " [TAIR:tb, POC:curators]
-synonym: "leaf development in Arabidopsis" []
-is_a: PO:0007021 ! plant structure development stage
-
-[Term]
-id: PO:0001051
-name: 1 leaf initiation stage
-alt_id: PO:0001003
-namespace: plant_growth_and_development_stage
-def: "The earliest histological evidence of leaf initiation\, i.e\, a change in the orientation of cell division both in the epidermis and in internal layers of the shoot meristem occurs at this stage (Poethig S\, 1997\, Plant Cell 9\:1077-1087)." [PMID:9254931]
-comment: Cells in the primordium are not yet differentiated.
-synonym: "leaf initiation in Arabidopsis" []
-is_a: PO:0001050 ! leaf development stages
-
-[Term]
-id: PO:0001052
-name: 2 leaf expansion stage
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development which begins when cell differentiation and cell expansion occurs and finishes when the leaf reaches its full size.\n" [TAIR:ki]
-synonym: "leaf expansion stage in Arabidopsis" []
-is_a: PO:0001050 ! leaf development stages
-
-[Term]
-id: PO:0001053
-name: 3 leaf fully expanded
-namespace: plant_growth_and_development_stage
-def: "Stage of leaf development when leaf is fully expanded." [TAIR:ki]
-synonym: "fully expanded leaf stage in Arabidopsis" []
-is_a: PO:0001050 ! leaf development stages
-
-[Term]
-id: PO:0001054
-name: 4 leaf senescence stage
-namespace: plant_growth_and_development_stage
-def: "The final stage of leaf development when the leaf ceases metabolic activity and senesces." [TAIR:tb]
-synonym: "leaf senescence stage in Arabidopsis" []
-is_a: PO:0001050 ! leaf development stages
-
-[Term]
-id: PO:0001055
-name: lemma primordia visible
-namespace: plant_growth_and_development_stage
-def: "Stage of lemma development that begins when the lemma primordia arise." [POC:fz]
-comment: The lemma primordium forms in 1/2 alternate phylotaxy in rice spikelet.
-is_a: PO:0001047 ! lemma developmental stages
-
-[Term]
-id: PO:0001056
-name: lemma differentiation and expansion stage
-namespace: plant_growth_and_development_stage
-def: "Stage of lemma development defined by differentiation and expansion of lemma." [POC:fz]
-is_a: PO:0001047 ! lemma developmental stages
-
-[Term]
-id: PO:0001057
-name: fully expanded lemma
-namespace: plant_growth_and_development_stage
-def: "Stage of lemma development when lemma is fully expanded." [POC:fz]
-is_a: PO:0001047 ! lemma developmental stages
-
-[Term]
-id: PO:0001058
-name: palea primordia visible
-namespace: plant_growth_and_development_stage
-def: "Stage of palea development that begins when the palea primordia arise." [POC:fz]
-comment: The palea primordium forms in 1/2 alternate phylotaxy in rice spikelet.
-is_a: PO:0001048 ! palea developmental stages
-
-[Term]
-id: PO:0001059
-name: J bicellular pollen stage
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the small generative cell moves inward\, becoming completely surrounded by the cytoplasm of the vegetative cell. " [TAIR:ki]
-is_a: PO:0001007 ! pollen developmental stages
-
-[Term]
-id: PO:0001070
-name: palea differentiation and expansion stage
-namespace: plant_growth_and_development_stage
-def: "Stage of palea development defined by differentiation and expansion of palea." [POC:fz]
-is_a: PO:0001048 ! palea developmental stages
-
-[Term]
-id: PO:0001071
-name: fully expanded palea
-namespace: plant_growth_and_development_stage
-def: "Stage of palea development when palea is fully expanded." [POC:fz]
-is_a: PO:0001048 ! palea developmental stages
-
-[Term]
-id: PO:0001072
-name: lodicule primordia visible
-namespace: plant_growth_and_development_stage
-def: "Stage of palea development that begins when the palea primordia arise." [POC:fz]
-comment: Two lodicules form on the side of the lemma in rice spikelet.
-is_a: PO:0001049 ! lodicule developmental stages.
-
-[Term]
-id: PO:0001074
-name: N second mitotic division stage in germinating pollen
-namespace: plant_growth_and_development_stage
-def: "Stage of microgametophyte development during which the generative cell undergoes a mitotic division to form two male gametes\, the sperm cells." [TAIR:ki]
-is_a: PO:0001017 ! M germinated pollen stage
-
-[Term]
-id: PO:0001077
-name: lodicule differentiation and expansion stage
-namespace: plant_growth_and_development_stage
-def: "Stage of lodicule development defined by differentiation and expansion of lodicule." [POC:fz]
-is_a: PO:0001049 ! lodicule developmental stages.
-
-[Term]
-id: PO:0001078
-name: E expanded cotyledon stage
-alt_id: PO:0001076
-namespace: plant_growth_and_development_stage
-def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:ki]
-synonym: "curled cotyledon stage in Arabidopsis" []
-synonym: "torpedo stage in Arabidopsis" []
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001079
-name: fully expanded lodicule
-namespace: plant_growth_and_development_stage
-def: "Stage of lodicule development when lodicule is fully expanded." [POC:fz]
-is_a: PO:0001049 ! lodicule developmental stages.
-
-[Term]
-id: PO:0001081
-name: F mature embryo stage
-namespace: plant_growth_and_development_stage
-def: "Stage at which the embryo is fully developed. " [TAIR:ki, APWeb:glossary]
-comment: In some taxa\, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
-synonym: "mature (stage) in Arabidopsis" []
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001083
-name: inflorescence development stages
-namespace: plant_growth_and_development_stage
-def: "Stages of development of an inflorescence defined by characteristic morphological\, structural\, histological or other visible features. " [POC:curators]
-is_a: PO:0007021 ! plant structure development stage
-
-[Term]
-id: PO:0001094
-name: coleoptilar stage
-namespace: plant_growth_and_development_stage
-def: "The coleoptilar primordium\, SAM and radicle are formed in the embryo of grasses." [TAIR:ki]
-synonym: "SAM and radicle formation stage" []
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001095
-name: true leaf formation
-namespace: plant_growth_and_development_stage
-def: "During this stage\, the protrusion of the first leaf primordia takes place in succession." [TAIR:ki]
-comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001096
-name: primary endosperm cell stage
-namespace: plant_growth_and_development_stage
-def: "One cell stage that takes place following the fertilization\, produced by the fusion of sperm cell nucleus and one or more polar nuclei." [TAIR:ki]
-is_a: PO:0007633 ! endosperm development stages
-
-[Term]
-id: PO:0001097
-name: A zygote
-namespace: plant_growth_and_development_stage
-def: "One cell stage that results from fertilization." [PO:KI]
-synonym: "one cell stage" []
-synonym: "zygote in Arabidopsis" []
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001098
-name: formation of starchy endosperm
-namespace: plant_growth_and_development_stage
-def: "OBSOLETE. Stage of endosperm development during wich the formation of starchy endosperm occurs." [TAIR:ki]
-is_obsolete: true
-
-[Term]
-id: PO:0001099
-name: formation of aleurone and starchy layers
-namespace: plant_growth_and_development_stage
-def: "Differentiation of aleurone layer\, the outermost endosperm tissue\, and the internal starchy tissue." [TAIR:ki]
-is_a: PO:0001042 ! functional specialization of the endosperm
-
-[Term]
-id: PO:0001170
-name: seed development stages
-namespace: plant_growth_and_development_stage
-def: "Stages of seed development\, from fertilization to the dry or quiescent state." [TAIR:ki]
-synonym: "seed development in Arabidopsis" []
-is_a: PO:0007021 ! plant structure development stage
-
-[Term]
-id: PO:0001180
-name: B proembryo stage
-namespace: plant_growth_and_development_stage
-def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [TAIR:ki, APWeb:glossary]
-synonym: "eight-celled stage in Arabidopsis" []
-synonym: "two-celled stage in Arabidopsis" []
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001185
-name: C globular stage
-namespace: plant_growth_and_development_stage
-def: "During this stage the embryo proper retains radial symmetry (increasing in diameter)\, and three main tissue systems are established." [TAIR:ki]
-synonym: "dermatogen stage in Arabidopsis" []
-synonym: "globular stage in Arabidopsis" []
-synonym: "late globular stage in Arabidopsis" []
-synonym: "mid-globular stage in Arabidopsis" []
-is_a: PO:0007631 ! embryo development stages
-
-[Term]
-id: PO:0001378
-name: sepals enclosing meristem
-namespace: plant_growth_and_development_stage
-def: "Stage of calyx development that begins when the developing sepals overlie the floral meristem." [ISBN:0387940898]
-synonym: "stage 4 flower in Arabidopsis " []
-is_a: PO:0001044 ! sepal differentiation and expansion stage
-
-[Term]
-id: PO:0001380
-name: sepals enclosing floral bud
-namespace: plant_growth_and_development_stage
-def: "Stage of calyx development that begins when the sepals enclose the floral bud." [ISBN:0387940898]
-synonym: "stage 6 flower in Arabidopsis " []
-is_a: PO:0001044 ! sepal differentiation and expansion stage
-
-[Term]
-id: PO:0004500
-name: formation of leaflet primordia
-namespace: plant_growth_and_development_stage
-def: "Stage at which leaflet primordia are initiated on the leaf primordium of a compound leaf." [TAIR:ki]
-is_a: PO:0001052 ! 2 leaf expansion stage
-
-[Term]
-id: PO:0004501
-name: gynoecium differentiation and expansion
-namespace: plant_growth_and_development_stage
-def: "Stage of gynoecium development defined by differentiation and expansion of carpels." [TAIR:ki]
-is_a: PO:0007606 ! gynoecium developmental stages
-
-[Term]
-id: PO:0004502
-name: closure of carpel(s)
-namespace: plant_growth_and_development_stage
-def: "Stage of gynoecium development defined by the closure of the carpel(s).\n" [TAIR:ki]
-comment: Closure of the carpel can occur in various ways\, by fusion or secretion. 
-is_a: PO:0007606 ! gynoecium developmental stages
-
-[Term]
-id: PO:0004503
-name: stigma cell differentiation
-namespace: plant_growth_and_development_stage
-def: "Epidermal cells at the top of developing style differentiate stigma." [TAIR:ki]
-is_a: PO:0007606 ! gynoecium developmental stages
-
-[Term]
-id: PO:0004504
-name: ovule differentiation and expansion
-namespace: plant_growth_and_development_stage
-def: "Stage of ovule development defined by differentiation and expansion of ovules." [TAIR:ki]
-is_a: PO:0007619 ! ovule developmental stages
-
-[Term]
-id: PO:0004505
-name: fertilized ovule stage
-namespace: plant_growth_and_development_stage
-def: "The earliest stage of seed development immediately following double fertilization." [TAIR:ki]
-is_a: PO:0001170 ! seed development stages
-
-[Term]
-id: PO:0004506
-name: developing seed stage
-namespace: plant_growth_and_development_stage
-def: "Stage of seed development characterized by seed growth and differentiation." [TAIR:ki]
-is_a: PO:0001170 ! seed development stages
-
-[Term]
-id: PO:0004507
-name: D bilateral stage
-alt_id: PO:0001043
-alt_id: PO:0001177
-namespace: plant_growth_and_development_stage
-def: "Change from radial to bilateral symmetry takes place during this embryonic stage." [TAIR:ki]
-synonym: "heart stage in Arabidopsis" []
-synonym: "heart-shape stage" []
-synonym: "transition stage in maize" []
-synonym: "triangle stage in Arabidopsis" []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007033 ! whole plant growth stages
 
 [Term]
 id: PO:0007501
@@ -2674,7 +2665,7 @@ name: root development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of a root defined by characteristic morphological\, structural\, histological or other visible features. " [GR:ap]
 comment: At present the stages are described for primary\, lateral and crown roots and stages for adventitious root formed by wounding or hormone treatment is not described. Finer resolution of root stages has been kept in the obsolete node as they are not consistently used in the consulted literature. These terms will be reintroduced into the ontology when there is a specific user request.
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0007021 ! plant structure development stages
 
 [Term]
 id: PO:0007521
@@ -2931,7 +2922,7 @@ name: flower development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of a flower defined by characteristic morphological\, structural\, histological or other visible features. " [POC:curators]
 synonym: "flower development in Arabidopsis" []
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0007021 ! plant structure development stages
 
 [Term]
 id: PO:0007616
@@ -3069,6 +3060,13 @@ name: endosperm development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the endosperm." [TAIR:ki]
 is_a: PO:0001170 ! seed development stages
+
+[Term]
+id: PO:0009012
+name: plant growth and development stages
+namespace: plant_growth_and_development_stage
+def: "The succession of changes leading from the zygote to the mature plant. " [Poc:curators ""]
+synonym: "Arabidopsis growth" [TAIR:0000205]
 
 [Term]
 id: PO:0009075
