@@ -1,6 +1,6 @@
 format-version: 1.0
-date: 21:09:2005 11:42
-saved-by: katica
+date: 18:10:2005 11:58
+saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 remark: this version is based on the GO-format files po_anatomy.ontology (ver 1.37 ) and po_anatomy.defs (ver 1.41).
@@ -42,6 +42,7 @@ def: "In vitro grown isolated cells and small cell aggregates that proliferate w
 comment: In cell cultures\, the cells are no longer organized into tissues.
 synonym: "cell suspension" []
 is_a: PO:0000004 ! in vitro cultured  cell, tissue and organ
+is_a: PO:0009002 ! cell
 
 [Term]
 id: PO:0000006
@@ -70,6 +71,7 @@ name: cultured callus
 namespace: plant_structure
 def: "In vitro grown cell aggregates that originated from isolated protoplasts\, cell suspensions\, or from callus that was induced in sterile medium the supplemented by plant growth regulators." [TAIR:ki]
 is_a: PO:0000004 ! in vitro cultured  cell, tissue and organ
+is_a: PO:0005052 ! callus
 
 [Term]
 id: PO:0000010
@@ -284,6 +286,7 @@ name: primary endosperm cell
 namespace: plant_structure
 def: "Cell produced by the fusion of sperm cell nucleus and two polar nuclei of the central cell (or diploid secondary endosperm nucleus\, in cases where two polar nuclei fuse together before double fertilization). The first cell of the endosperm\, often tripoid." [TAIR:ki]
 is_a: PO:0009002 ! cell
+relationship: part_of PO:0009089 ! endosperm
 
 [Term]
 id: PO:0000039
@@ -305,7 +308,7 @@ relationship: part_of PO:0000042 ! shoot borne root
 
 [Term]
 id: PO:0000041
-name: cork cell (sensu Poaceae)
+name: epidermal cork cell
 namespace: plant_structure
 def: "One of the two types of short cells in the epidermis of grasses and bamboos. It is usually paired with silica cell." [TAIR:ki]
 comment: Developmentally different from periderm cork cell (i.e.\, phellem)\, produced by cork cambium.\n
@@ -403,6 +406,7 @@ id: PO:0000053
 name: petiole cortex
 namespace: plant_structure
 def: "The primary tissue located between the vascular system and the epidermis of the petiole." [TAIR:ki]
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0020038 ! petiole
 
 [Term]
@@ -1213,6 +1217,7 @@ name: primary thickening meristem
 namespace: plant_structure
 def: "A meristem derived directly from the shoot apical meristem and responsible for the primary increase in thickness of the shoot axis." [ISSN:0669014893]
 comment: May appear as a distinct mantle like zone. Often found in monocotyledons
+is_a: PO:0009013 ! meristem
 relationship: develops_from PO:0000225 ! peripheral zone
 relationship: part_of PO:0020148 ! shoot apical meristem
 
@@ -1457,16 +1462,20 @@ relationship: part_of PO:0009025 ! leaf
 
 [Term]
 id: PO:0005647
-name: spongy parenchyma
+name: spongy mesophyll
 namespace: plant_structure
 def: "Leaf mesophyll parenchyma characterized by little elongated cells\, that are not closely packed and have conspicuous intercellular spaces." [GR:pj, ISBN:0080374913]
+synonym: "spongy parenchyma" []
+is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
 
 [Term]
 id: PO:0005648
-name: palisade parenchyma
+name: palisade mesophyll
 namespace: plant_structure
 def: "parenchyma containing closely packed elongated chlorenchymatous cells oriented perpendicular to the leaf surface and which are active in photosynthesis." [ISBN:0080374913, GR:pj]
+synonym: "palisade parenchyma" []
+is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
 
 [Term]
@@ -1774,6 +1783,7 @@ alt_id: PO:0006038
 namespace: plant_structure
 def: "The outer most cell layer of the adventitious root." [GR:pj]
 synonym: "crown root epidermis" []
+is_a: PO:0006036 ! root epidermis
 relationship: part_of PO:0000042 ! shoot borne root
 
 [Term]
@@ -1954,6 +1964,7 @@ name: petiole parenchyma
 namespace: plant_structure
 def: "Relatively unspecialized tissue present in the leaf petiole." [GR:pj]
 is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0020038 ! petiole
 
 [Term]
 id: PO:0006067
@@ -1992,6 +2003,7 @@ id: PO:0006071
 name: petal mesophyll
 namespace: plant_structure
 def: "The chloroplast-containing\, photosynthetic parenchymatous tissue situated between the two epidermal layers of the petal." [GR:pj]
+is_a: PO:0006069 ! petal parenchyma
 is_a: PO:0006070 ! mesophyll
 
 [Term]
@@ -1999,6 +2011,7 @@ id: PO:0006072
 name: sepal mesophyll
 namespace: plant_structure
 def: "The chloroplast-containing\, photosynthetic parenchymatous tissue situated between the two epidermal layers of the sepal." [GR:pj]
+is_a: PO:0006068 ! sepal parenchyma
 is_a: PO:0006070 ! mesophyll
 
 [Term]
@@ -2173,8 +2186,9 @@ name: spongy mesophyll cell
 namespace: plant_structure
 def: "Irregularly-shaped\, chlorenchymatous cell\, separated by large air spaces. " [GR:pj]
 comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a dorsiventral leaf\, but between two palisade parenchyma layers in an isobilateral leaf.
+synonym: "spongy parenchyma cell" []
 is_a: PO:0004006 ! mesophyll cell
-relationship: part_of PO:0005647 ! spongy parenchyma
+relationship: part_of PO:0005647 ! spongy mesophyll
 
 [Term]
 id: PO:0006206
@@ -2182,8 +2196,9 @@ name: palisade mesophyll cell
 namespace: plant_structure
 def: "Elongated chlorenchymatous cell oriented perpendicular to the leaf surface and which is active in photosynthesis." [GR:pj]
 comment: Usually found in the adaxil/upper part of the leaf mesophyll.
+synonym: "palisade parenchyma cell" []
 is_a: PO:0004006 ! mesophyll cell
-relationship: part_of PO:0005648 ! palisade parenchyma
+relationship: part_of PO:0005648 ! palisade mesophyll
 
 [Term]
 id: PO:0006207
@@ -2293,7 +2308,7 @@ namespace: plant_structure
 def: "Latex-containing cells in which the walls between contiguous cells may partly or completely disappear." [ISBN:0471245208, TAIR:ki]
 synonym: "laticiferous vessel" []
 is_a: PO:0009002 ! cell
-relationship: part_of PO:0005053 ! laticifer
+relationship: part_of PO:005006 ! articulated laticifer
 
 [Term]
 id: PO:0006222
@@ -2302,7 +2317,7 @@ namespace: plant_structure
 def: "Latex-containing cell that elongates indefinitely and grows intrusively between the walls of meristematic cells." [PMID:11732189]
 synonym: "simple laticifer" []
 is_a: PO:0009002 ! cell
-relationship: part_of PO:0005053 ! laticifer
+relationship: part_of PO:005007 ! non-articulated laticifer
 
 [Term]
 id: PO:0006300
@@ -2511,6 +2526,7 @@ id: PO:0006325
 name: inflorescence node
 namespace: plant_structure
 def: "The region of the inflorescence axis where the spikelet\, flower\, floret or the branch is attached." [GR:pj]
+is_a: PO:005004 ! shoot node
 relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
@@ -2518,6 +2534,7 @@ id: PO:0006326
 name: inflorescence internode
 namespace: plant_structure
 def: "The region of rachis present between the two nodes." [GR:pj]
+is_a: PO:005005 ! shoot internode
 relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
@@ -2558,6 +2575,7 @@ id: PO:0006331
 name: seed raphe
 namespace: plant_structure
 def: "The ridge along the body of the seed formed from the part of funiculus that was adnate to the ovule." [ISBN:047124529]
+relationship: develops_from PO:0020027 ! raphe
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -2565,6 +2583,7 @@ id: PO:0006332
 name: seed funicle
 namespace: plant_structure
 def: "Remnants of the funicle from ovary where it attaches the ovule to the placenta." [GR:pj]
+relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -2572,6 +2591,7 @@ id: PO:0006333
 name: seed chalaza
 namespace: plant_structure
 def: "Remnant of the ovular chalaza which is a region in the ovule where the integuments and the nucellus merge with the funiculus. " [GR:pj]
+relationship: develops_from PO:0020026 ! chalaza
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -2579,6 +2599,7 @@ id: PO:0006334
 name: seed micropyle
 namespace: plant_structure
 def: "A pore on the seed coat which is a remnant of the ovular micropyle." [GR:pj]
+relationship: develops_from PO:0020025 ! micropyle
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -2586,6 +2607,7 @@ id: PO:0006336
 name: seed obturator
 namespace: plant_structure
 def: "An outgrowth of the seed funicle\, that forms a bridge between the seed micropyle and other tissues. It is also a remnant form of the obturator found in the ovular funicle." [GR:pj]
+relationship: develops_from PO:0020029 ! obturator
 relationship: part_of PO:0006332 ! seed funicle
 
 [Term]
@@ -4053,6 +4075,7 @@ name: vascular tissue
 namespace: plant_structure
 def: "Conducting tissues made up of xylem and phloem." [APWeb:Glossary]
 comment: In the stem it is often found as a stele\, surrounded by the cortex and surrounding the pith.
+is_a: PO:0009007 ! tissue
 relationship: part_of PO:0000034 ! vascular system
 
 [Term]
@@ -5475,17 +5498,19 @@ is_a: PO:0020138 ! leaf vein
 
 [Term]
 id: PO:0020141
-name: node
+name: stem node
 namespace: plant_structure
 def: "The level (transverse plane) of a stem at which one or more leaves and associated axillary bud(s) arise." [APWeb:Glossary]
+is_a: PO:005004 ! shoot node
 relationship: part_of PO:0009047 ! stem
 
 [Term]
 id: PO:0020142
-name: internode
+name: stem internode
 namespace: plant_structure
 def: "The portion of a stem between the level of insertion of two successive leaves\, leaf pairs or leaf whorls\, or branches of an inflorescence\, i.e. between two nodes." [APWeb:Glossary]
 comment: see node.
+is_a: PO:005005 ! shoot internode
 relationship: part_of PO:0009047 ! stem
 
 [Term]
@@ -5531,6 +5556,32 @@ name: quiescent center
 namespace: plant_structure
 def: "Hemispherically shaped aggregation of mitotically and metabolically inactive cells positioned behind the root cap." [ISBN:0122151704]
 relationship: part_of PO:0006085 ! root meristem
+
+[Term]
+id: PO:005004
+name: shoot node
+namespace: plant_structure
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:005005
+name: shoot internode
+namespace: plant_structure
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:005006
+name: articulated laticifer
+namespace: plant_structure
+def: "A structure consisting of long multinucleate tubes in which latex is found\, having cross walls (articulated)." [GR:pj, APWeb:Glossary]
+is_a: PO:0005053 ! laticifer
+
+[Term]
+id: PO:005007
+name: non-articulated laticifer
+namespace: plant_structure
+def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls or is syncytial." [GR:pj, APWeb:Glossary]
+is_a: PO:0005053 ! laticifer
 
 [Typedef]
 id: develops_from
