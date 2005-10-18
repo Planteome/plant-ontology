@@ -2308,7 +2308,7 @@ namespace: plant_structure
 def: "Latex-containing cells in which the walls between contiguous cells may partly or completely disappear." [ISBN:0471245208, TAIR:ki]
 synonym: "laticiferous vessel" []
 is_a: PO:0009002 ! cell
-relationship: part_of PO:005006 ! articulated laticifer
+relationship: part_of PO:0005006 ! articulated laticifer
 
 [Term]
 id: PO:0006222
@@ -2317,7 +2317,7 @@ namespace: plant_structure
 def: "Latex-containing cell that elongates indefinitely and grows intrusively between the walls of meristematic cells." [PMID:11732189]
 synonym: "simple laticifer" []
 is_a: PO:0009002 ! cell
-relationship: part_of PO:005007 ! non-articulated laticifer
+relationship: part_of PO:0005007 ! non-articulated laticifer
 
 [Term]
 id: PO:0006300
@@ -2526,7 +2526,7 @@ id: PO:0006325
 name: inflorescence node
 namespace: plant_structure
 def: "The region of the inflorescence axis where the spikelet\, flower\, floret or the branch is attached." [GR:pj]
-is_a: PO:005004 ! shoot node
+is_a: PO:0005004 ! shoot node
 relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
@@ -2534,7 +2534,7 @@ id: PO:0006326
 name: inflorescence internode
 namespace: plant_structure
 def: "The region of rachis present between the two nodes." [GR:pj]
-is_a: PO:005005 ! shoot internode
+is_a: PO:0005005 ! shoot internode
 relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
@@ -5501,7 +5501,7 @@ id: PO:0020141
 name: stem node
 namespace: plant_structure
 def: "The level (transverse plane) of a stem at which one or more leaves and associated axillary bud(s) arise." [APWeb:Glossary]
-is_a: PO:005004 ! shoot node
+is_a: PO:0005004 ! shoot node
 relationship: part_of PO:0009047 ! stem
 
 [Term]
@@ -5510,7 +5510,7 @@ name: stem internode
 namespace: plant_structure
 def: "The portion of a stem between the level of insertion of two successive leaves\, leaf pairs or leaf whorls\, or branches of an inflorescence\, i.e. between two nodes." [APWeb:Glossary]
 comment: see node.
-is_a: PO:005005 ! shoot internode
+is_a: PO:0005005 ! shoot internode
 relationship: part_of PO:0009047 ! stem
 
 [Term]
@@ -5558,26 +5558,26 @@ def: "Hemispherically shaped aggregation of mitotically and metabolically inacti
 relationship: part_of PO:0006085 ! root meristem
 
 [Term]
-id: PO:005004
+id: PO:0005004
 name: shoot node
 namespace: plant_structure
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
-id: PO:005005
+id: PO:0005005
 name: shoot internode
 namespace: plant_structure
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
-id: PO:005006
+id: PO:0005006
 name: articulated laticifer
 namespace: plant_structure
 def: "A structure consisting of long multinucleate tubes in which latex is found\, having cross walls (articulated)." [GR:pj, APWeb:Glossary]
 is_a: PO:0005053 ! laticifer
 
 [Term]
-id: PO:005007
+id: PO:0005007
 name: non-articulated laticifer
 namespace: plant_structure
 def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls or is syncytial." [GR:pj, APWeb:Glossary]
