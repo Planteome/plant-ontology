@@ -1,6 +1,6 @@
 format-version: 1.0
-date: 10:24:2005 12:30
-saved-by: Pankaj Jaiswal
+date: 24:01:2006 17:00
+saved-by: katica
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 
@@ -722,10 +722,9 @@ is_a: PO:0009002 ! cell
 
 [Term]
 id: PO:0000274
-name: xylem fiber cell
+name: xylem fiber
 namespace: plant_structure
 def: "A fiber in xylem." [ISBN:0471245208]
-comment: Two types are recognized in the secondary xylem\: fiber tracheids and libriform fibers.
 is_a: PO:0000273 ! xylem element
 relationship: part_of PO:0005848 ! secondary xylem
 
@@ -859,7 +858,7 @@ id: PO:0000355
 name: fiber tracheid
 namespace: plant_structure
 def: "A fiber-like tracheid in the secondary xylem; commonly thick walled\, with pointed ends and bordered pits that have lenticular to slit-like apertures." [ISBN:0471245208]
-is_a: PO:0000274 ! xylem fiber cell
+is_a: PO:0000274 ! xylem fiber
 
 [Term]
 id: PO:0000372
@@ -878,11 +877,10 @@ is_obsolete: true
 
 [Term]
 id: PO:0000400
-name: phloem initial
+name: phloem mother cell
 namespace: plant_structure
-def: "A cambial cell that is the source of one or more cells that differentiate into phloem elements." [ISBN:0471245208]
+def: "A cell derived from vascular cambium which is destined to differentiate into secondary phloem." [POC:curators]
 comment: Phloem islands can be formed in the middle of the xylem.
-synonym: "phloem mother cell" []
 is_a: PO:0000295 ! cambial initial
 relationship: part_of PO:0005043 ! secondary phloem
 
@@ -1096,10 +1094,10 @@ is_obsolete: true
 
 [Term]
 id: PO:0004003
-name: cork cell
+name: phellem
 alt_id: PO:0005049
 namespace: plant_structure
-def: "A phellem cell derived from cork cambium\, nonliving at maturity\, and having suberized walls. " [ISBN:0471245208]
+def: "Tissue centrifugally derived from cork cambium\, nonliving at maturity\, and having suberized walls. " [ISBN:0471245208, POC:curators]
 comment: Protective in function because the walls are highly impervious to water.
 synonym: "cork" []
 synonym: "phellem" []
@@ -1186,11 +1184,289 @@ is_a: PO:0009002 ! cell
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
-id: PO:0004500
-name: floret (sensu Asteraceae)
+id: PO:0004501
+name: rhizome
 namespace: plant_structure
-def: "Small flowers of the capitula of Asteraceae." [Poc:curators]
-is_a: PO:0009082 ! floret
+def: "Underground shoot" [POC:curators]
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004502
+name: tuber
+namespace: plant_structure
+def: "Swollen storage shoot with determinate growth." [POC:curators]
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004503
+name: root borne shoot
+namespace: plant_structure
+def: "Shoot that is initiated from a root." [POC:curators]
+synonym: "sucker shoot" []
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004504
+name: shoot borne shoot
+namespace: plant_structure
+def: "Shoot that is initiated from a shoot." [POC:curators]
+synonym: "branch" []
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004505
+name: epicomic shoot
+namespace: plant_structure
+def: "Shoot developing from a trunk." [POC:curators]
+is_a: PO:0004504 ! shoot borne shoot
+
+[Term]
+id: PO:0004506
+name: subterranean tuber
+namespace: plant_structure
+def: "A swollen rhizome or a part of the rhizome with determinate growth." [POC:curator]
+comment: This has nothing to do with the underground swollen storage organ of Ipomoea which is swollen.
+is_a: PO:0004502 ! tuber
+relationship: part_of PO:0004501 ! rhizome
+
+[Term]
+id: PO:0004507
+name: aerial tuber
+namespace: plant_structure
+def: "An axillary shoot with a swollen stem.\n" [POC:curators]
+is_a: PO:0004502 ! tuber
+is_a: PO:0006343 ! axillary shoot
+
+[Term]
+id: PO:0004509
+name: secretory trichome
+namespace: plant_structure
+def: "A  trichome that secretes or sequesters a substance." [POC:curators]
+is_a: PO:0000282 ! trichome
+is_a: PO:0005656 ! secretory tissue
+
+[Term]
+id: PO:0004510
+name: non-secretory trichome
+namespace: plant_structure
+def: "Trichome that does not have secretory function." [POC:curators]
+is_a: PO:0000282 ! trichome
+
+[Term]
+id: PO:0004511
+name: seed hair
+namespace: plant_structure
+def: "Trichome that develops from seed coat epidermis and is often long with putative dispersal function. " [POC:curators]
+is_a: PO:0000282 ! trichome
+relationship: part_of PO:0006048 ! seed coat epidermis
+relationship: part_of PO:0020061 ! coma
+
+[Term]
+id: PO:0004512
+name: heartwood
+namespace: plant_structure
+def: "The inner layers of secondary xylem that have largely ceased to function in storage and conduction and in which reserve materials have been removed or converted into heartwood substances; generally darker colored than the functioning sapwood." [POC:curators, ISBN:0471245208]
+is_a: PO:0005848 ! secondary xylem
+
+[Term]
+id: PO:0004513
+name: sapwood
+namespace: plant_structure
+def: "Outer part of the wood of stem or root containing living cells and reserves and in which conduction of water takes place. Generally lighter colored than the heartwood" [POC:curators, ISBN:0471245208]
+is_a: PO:0005848 ! secondary xylem
+
+[Term]
+id: PO:0004514
+name: growth ring
+namespace: plant_structure
+def: "A growth layer of secondary xylem or secondary phloem as seen in transection of stem or root; may be an annual ring or a false annual ring." [POC:curators, ISBN:0471245208]
+is_a: PO:0005848 ! secondary xylem
+
+[Term]
+id: PO:0004515
+name: early wood
+namespace: plant_structure
+def: "The wood formed in first part of a growth ring and characterized by a lower density and larger cells than the late wood." [POC:curators, ISBN:0471245208]
+synonym: "spring wood" []
+is_a: PO:0004514 ! growth ring
+
+[Term]
+id: PO:0004516
+name: late wood
+namespace: plant_structure
+def: "The secondary xylem formed in the later part of a growth ring; denser and composed of smaller cells than the early wood. " [POC:curators]
+synonym: "summer wood" []
+is_a: PO:0004514 ! growth ring
+
+[Term]
+id: PO:0004517
+name: growth ring boundary
+namespace: plant_structure
+def: "Boundary between two growth rings." [POC:curators]
+is_a: PO:0004514 ! growth ring
+
+[Term]
+id: PO:0004518
+name: bark
+namespace: plant_structure
+def: "All tissues outside the vascular cambium or the xylem; in older trees may be divided into dead outer bark and living inner bark\, which consists of secondary phloem. " [POC:curators]
+is_a: PO:0005043 ! secondary phloem
+
+[Term]
+id: PO:0004519
+name: phloem fiber
+namespace: plant_structure
+def: "A fiber in phloem." [POC:curators]
+relationship: part_of PO:0005043 ! secondary phloem
+
+[Term]
+id: PO:0004520
+name: libriform fiber
+namespace: plant_structure
+def: "A xylem fiber commonly with thick walls and simple pits. " [POC:curators]
+is_a: PO:0000274 ! xylem fiber
+
+[Term]
+id: PO:0004521
+name: septate fiber
+namespace: plant_structure
+def: "A fiber with thin transverse walls (septa)\, which are formed after the cell develops a secondary wall thickening." [POC:curators]
+is_a: PO:0000274 ! xylem fiber
+
+[Term]
+id: PO:0004522
+name: outer vascular cambium
+namespace: plant_structure
+def: "Cambium at the outer margin of the xylem cylinder." [POC:curators]
+is_a: PO:0005598 ! vascular cambium
+
+[Term]
+id: PO:0004523
+name: included vascular cambium
+namespace: plant_structure
+def: "Cambium occurring within xylem." [POC:curators]
+is_a: PO:0005598 ! vascular cambium
+
+[Term]
+id: PO:0004524
+name: included phloem
+namespace: plant_structure
+def: "Phloem produced by included vascular cambium." [POC:curators]
+relationship: part_of PO:0005043 ! secondary phloem
+
+[Term]
+id: PO:0004525
+name: wood parenchyma cell
+namespace: plant_structure
+def: "Parenchyma cell occurring within secondary xylem." [POC:curators]
+is_a: PO:0000074 ! parenchyma cell
+
+[Term]
+id: PO:0004526
+name: axial wood parenchyma cell
+namespace: plant_structure
+def: "Parenchyma cell in the axial system of secondary xylem." [POC:curators]
+is_a: PO:0004525 ! wood parenchyma cell
+
+[Term]
+id: PO:0004527
+name: ray wood parenchyma cell
+namespace: plant_structure
+def: "Parenchyma cell of a ray in secondary xylem. " [POC:curators]
+is_a: PO:0004525 ! wood parenchyma cell
+
+[Term]
+id: PO:0004528
+name: upright wood ray parenchyma cell
+namespace: plant_structure
+def: "Ray cell in secondary xylem oriented axially (vertically in the axis) with its longest dimension." [POC:curators]
+is_a: PO:0004527 ! ray wood parenchyma cell
+
+[Term]
+id: PO:0004529
+name: procumbent wood ray parenchyma cell
+namespace: plant_structure
+def: "Ray cell within secondary xylem having its longest axis in radial direction." [POC:curators]
+is_a: PO:0004527 ! ray wood parenchyma cell
+
+[Term]
+id: PO:0004530
+name: tile  cell
+namespace: plant_structure
+def: "Empty upright ray cell of approximately the same height as the procumbent ray cell and occurring in indeterminate horizontal series usually  interspersed among the procumbent cells." [POC:curators]
+is_a: PO:0004528 ! upright wood ray parenchyma cell
+
+[Term]
+id: PO:0004531
+name: sheath cell
+namespace: plant_structure
+def: "Cell on the margin of\, and tending to form a sheath around\, the procumbent cells of a multi-seriate ray as seen in tangential section." [POC:curators]
+is_a: PO:0004528 ! upright wood ray parenchyma cell
+
+[Term]
+id: PO:0004532
+name: wood parenchyma
+namespace: plant_structure
+def: "Parenchymatous tissue occurring in the wood." [POC:curators]
+is_a: PO:0005848 ! secondary xylem
+
+[Term]
+id: PO:0004533
+name: axial wood parenchyma
+namespace: plant_structure
+def: "Parenchyma tissue in the axial system of secondary xylem." [POC:curators]
+is_a: PO:0004532 ! wood parenchyma
+
+[Term]
+id: PO:0004534
+name: ray wood parenchyma
+namespace: plant_structure
+def: "Radially oriented parenchyma tissue in secondary xylem. " [POC:curators]
+is_a: PO:0004532 ! wood parenchyma
+
+[Term]
+id: PO:0004535
+name: fruit placenta
+namespace: plant_structure
+def: "A more or less localized region within a fruit to which seeds are attached." [POC:curators]
+relationship: part_of PO:0009001 ! fruit
+
+[Term]
+id: PO:0004536
+name: fruit pedicel
+namespace: plant_structure
+def: "Basal part of the ultimate branch of the infructescence." [POC:curators]
+relationship: part_of PO:0009001 ! fruit
+
+[Term]
+id: PO:0004537
+name: adventitious embryo
+namespace: plant_structure
+def: "Embryo derived directly from nucelus cells without involving embryo sac cells." [POC:curators]
+is_a: PO:0009009 ! embryo
+
+[Term]
+id: PO:0004538
+name: indeterminate nodule
+namespace: plant_structure
+def: "Nodule characterized by a persistent meristem\, presence of vascular transfer cells\, and cell division in the inner cortex with non-dividing infected cells and bacteria. " [POC:curators, ISBN:1842460137]
+comment: Nodule is persistent and may continue to grow after a physiological stress.
+is_a: PO:0003023 ! root nodule
+
+[Term]
+id: PO:0004539
+name: determinate nodule
+namespace: plant_structure
+def: "Nodule characterized by a dividing infected cells and bacteria\, vascular transfer cells absent and cell division is in the outer cortex. " [POC:curators]
+comment: Nodules are not persistent.
+is_a: PO:0003023 ! root nodule
+
+[Term]
+id: PO:0004540
+name: fruit columella
+namespace: plant_structure
+def: "Central axis of the fruit." [POC:curators]
+relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0005001
@@ -1209,6 +1485,34 @@ def: "An axillary branch that forms from a leaf above the very base of the shoot
 comment: The genetic distinction between cauline axillary branches and tillers may or may not be unique to the Poaceae. There are no data for other plant families.
 synonym: "cauline axillary branch" []
 is_a: PO:0006343 ! axillary shoot
+
+[Term]
+id: PO:0005004
+name: shoot node
+namespace: plant_structure
+def: "The region of the shoot where the spikelet\, flower\, floret\, branch\, bud and/or leaves are attached." [GR:pj]
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:0005005
+name: shoot internode
+namespace: plant_structure
+def: "The region of the shoot present between the two shoot nodes." [GR:pj]
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:0005006
+name: articulated laticifer
+namespace: plant_structure
+def: "A structure consisting of long multinucleate tubes in which latex is found\, having cross walls (articulated)." [GR:pj, APWeb:Glossary]
+is_a: PO:0005053 ! laticifer
+
+[Term]
+id: PO:0005007
+name: non-articulated laticifer
+namespace: plant_structure
+def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls." [GR:pj, APWeb:Glossary]
+is_a: PO:0005053 ! laticifer
 
 [Term]
 id: PO:0005039
@@ -1243,6 +1547,7 @@ namespace: plant_structure
 def: "The phloem tissue formed by the activity of the vascular cambium." [ISBN:0122151704]
 comment: Part of the bark.
 is_a: PO:0005417 ! phloem
+relationship: part_of PO:0009007 ! tissue
 
 [Term]
 id: PO:0005046
@@ -1265,6 +1570,7 @@ name: stem periderm
 namespace: plant_structure
 def: "Secondary protective tissue that replaces the epidermis in stem." [GR:pj]
 is_a: PO:0005046 ! periderm
+relationship: part_of PO:0004518 ! bark
 relationship: part_of PO:0009047 ! stem
 
 [Term]
@@ -1411,7 +1717,7 @@ is_a: PO:0020145 ! lateral meristem
 id: PO:0005598
 name: vascular cambium
 namespace: plant_structure
-def: "A lateral meristem\, the cells of which give rise to secondary xylem and phloem\, leading to an increase in stem girth." [GR:pj]
+def: "A lateral meristem\, the cells of which give rise to secondary xylem and phloem\, leading to an increase in girth." [GR:pj]
 is_a: PO:0005597 ! cambium
 
 [Term]
@@ -1482,6 +1788,8 @@ id: PO:0005656
 name: secretory tissue
 namespace: plant_structure
 def: "Tissues that form specialized structures producing a secretion." [ISBN:047124529, GR:pj]
+comment: The synonym gland does not imply non-secretory 'glands'.
+synonym: "gland" []
 is_a: PO:0009007 ! tissue
 
 [Term]
@@ -2467,6 +2775,7 @@ id: PO:0006318
 name: floret (sensu Poaceae)
 namespace: plant_structure
 def: "Small flowers of the spikelets of Poaceae." [Poc:curators]
+comment: It is not clear what the lemma\, palea and lodicule correspond to in conventional flowers\, therefore we are not making any assumptions of homology at the present time.
 is_a: PO:0009082 ! floret
 relationship: part_of PO:0009051 ! spikelet
 
@@ -2664,7 +2973,7 @@ name: axillary shoot
 namespace: plant_structure
 def: "The shoot developing from the axillary bud meristem." [GR:pj]
 synonym: "axillary branch" []
-is_a: PO:0009006 ! shoot
+is_a: PO:0004504 ! shoot borne shoot
 
 [Term]
 id: PO:0006344
@@ -3593,10 +3902,10 @@ relationship: part_of PO:0006456 ! ovary (sensu Poaceae)
 
 [Term]
 id: PO:0006467
-name: placenta (sensu Poaceae)
+name: ovary placenta (sensu Poaceae)
 namespace: plant_structure
 def: "The region within an ovary to which ovules are attached in a grass carpel." [GR:pj]
-is_a: PO:0020001 ! placenta
+is_a: PO:0020001 ! ovary placenta
 relationship: part_of PO:0006456 ! ovary (sensu Poaceae)
 
 [Term]
@@ -3777,10 +4086,10 @@ relationship: part_of PO:0006486 ! ovary (sensu Zea)
 
 [Term]
 id: PO:0006490
-name: placenta (sensu Zea)
+name: ovary placenta (sensu Zea)
 namespace: plant_structure
 def: "The region within an ovary to which ovules are attached in a maize carpel." [GR:pj]
-is_a: PO:0006467 ! placenta (sensu Poaceae)
+is_a: PO:0006467 ! ovary placenta (sensu Poaceae)
 relationship: part_of PO:0006486 ! ovary (sensu Zea)
 
 [Term]
@@ -3969,6 +4278,7 @@ synonym: "loculicidal capsule" []
 synonym: "lomentum" []
 synonym: "nut" []
 synonym: "pod" []
+synonym: "pome" []
 synonym: "poricidal capsule" []
 synonym: "schizocarp" []
 synonym: "septicidal capsule" []
@@ -3989,7 +4299,7 @@ is_a: PO:0009011 ! plant structure
 id: PO:0009003
 name: sporophyte
 namespace: plant_structure
-def: "A diploid plant\, or phase of a life cycle\, that bears spores formed by meiosis." [APWeb:Glossary]
+def: "A plant or phase of a life cycle that bears spores formed by meiosis." [APWeb:Glossary]
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -4013,8 +4323,10 @@ relationship: part_of PO:0009003 ! sporophyte
 id: PO:0009006
 name: shoot
 namespace: plant_structure
-def: "All the parts developed that can trace their origin to the apical cell of the two celled embryo." [Poc:curators]
+def: "Part of the sporophyte composed of the stems and leaves\, and includes shoot apical meristems." [Poc:curators]
 synonym: "branch" []
+synonym: "crown (sensu Poaceae)" []
+narrow_synonym: "crown (sensu tree)" []
 relationship: part_of PO:0009003 ! sporophyte
 
 [Term]
@@ -4037,6 +4349,7 @@ id: PO:0009009
 name: embryo
 namespace: plant_structure
 def: "A young sporophyte contained within a seed." [APWeb:Glossary, GR:pj]
+synonym: "germ" []
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -4187,6 +4500,7 @@ id: PO:0009035
 name: nectary
 namespace: plant_structure
 def: "A multicellular glandular structure secreting a liquid containing organic substances especially sugars." [GR:pj]
+is_a: PO:0005656 ! secretory tissue
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -4272,9 +4586,12 @@ is_a: PO:0009054 ! inflorescence bract
 [Term]
 id: PO:0009046
 name: flower
+alt_id: PO:0004541
 namespace: plant_structure
 def: "A heterosporangiate strobilus\, typically consisting of androecium\, gynoecium\, usually surrounded by a perianth and borne on an axis or receptacle." [APWeb:Glossary, GR:pj]
 comment: The characteristic reproductive structure of angiosperms.
+synonym: "floret (sensu Asteraceae)" []
+is_a: PO:0009049 ! inflorescence
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -4286,6 +4603,7 @@ comment: It is usually above ground and more or less negatively geotropic\, is e
 synonym: "cane" []
 synonym: "culm" []
 synonym: "stalk" []
+synonym: "trunk" []
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -4307,6 +4625,7 @@ alt_id: PO:0020120
 namespace: plant_structure
 def: "That part of the axial system of plants above the uppermost foliage leaf/pair of foliage leaves that bears flowers." [APWeb:Glossary]
 comment: Some plants have only solitary flowers\, e.g. Magnolia.
+synonym: "catkin" []
 synonym: "cob (sensu Sorghum)" []
 synonym: "corymb" []
 synonym: "cyme" []
@@ -4484,7 +4803,7 @@ id: PO:0009072
 name: ovary
 namespace: plant_structure
 def: "The basal portion of a carpel or group of fused carpels\, that encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
-relationship: part_of PO:0009030 ! carpel
+relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
 id: PO:0009073
@@ -4543,8 +4862,8 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009082
 name: floret
 namespace: plant_structure
-def: "Small flowers\, esp. of the spikelets of Poaceae and Cyperaceae and the capitula of Asteraceae." [APWeb:Glossary]
-is_a: PO:0009046 ! flower
+def: "Small flowers\, esp. of the spikelets of Poaceae and Cyperaceae." [APWeb:Glossary]
+is_a: PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0009083
@@ -4662,7 +4981,7 @@ relationship: part_of PO:0009010 ! seed
 
 [Term]
 id: PO:0020001
-name: placenta
+name: ovary placenta
 namespace: plant_structure
 def: "A more or less localized region within an ovary to which ovules are attached." [APWeb:Glossary]
 relationship: part_of PO:0009072 ! ovary
@@ -5117,6 +5436,7 @@ id: PO:0020061
 name: coma
 namespace: plant_structure
 def: "A tuft of hairs at one end of a seed." [APWeb:Glossary]
+synonym: "brush" []
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -5555,34 +5875,6 @@ name: quiescent center
 namespace: plant_structure
 def: "Hemispherically shaped aggregation of mitotically and metabolically inactive cells positioned behind the root cap." [ISBN:0122151704]
 relationship: part_of PO:0006085 ! root meristem
-
-[Term]
-id: PO:0005004
-name: shoot node
-def: "The region of the shoot where the spikelet, flower, floret, branch, bud and/or leaves are attached." [GR:pj]
-namespace: plant_structure
-relationship: part_of PO:0009006 ! shoot
-
-[Term]
-id: PO:0005005
-name: shoot internode
-def: "The region of the shoot present between the two shoot nodes." [GR:pj]
-namespace: plant_structure
-relationship: part_of PO:0009006 ! shoot
-
-[Term]
-id: PO:0005006
-name: articulated laticifer
-namespace: plant_structure
-def: "A structure consisting of long multinucleate tubes in which latex is found\, having cross walls (articulated)." [GR:pj, APWeb:Glossary]
-is_a: PO:0005053 ! laticifer
-
-[Term]
-id: PO:0005007
-name: non-articulated laticifer
-namespace: plant_structure
-def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls." [GR:pj, APWeb:Glossary]
-is_a: PO:0005053 ! laticifer
 
 [Typedef]
 id: develops_from
