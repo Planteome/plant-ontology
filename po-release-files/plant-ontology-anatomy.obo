@@ -1184,21 +1184,21 @@ is_a: PO:0009002 ! cell
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
-id: PO:0004501
+id: PO:0004542
 name: rhizome
 namespace: plant_structure
 def: "Underground shoot" [POC:curators]
 is_a: PO:0009006 ! shoot
 
 [Term]
-id: PO:0004502
+id: PO:0004543
 name: tuber
 namespace: plant_structure
 def: "Swollen storage shoot with determinate growth." [POC:curators]
 is_a: PO:0009006 ! shoot
 
 [Term]
-id: PO:0004503
+id: PO:0004544
 name: root borne shoot
 namespace: plant_structure
 def: "Shoot that is initiated from a root." [POC:curators]
@@ -1206,7 +1206,7 @@ synonym: "sucker shoot" []
 is_a: PO:0009006 ! shoot
 
 [Term]
-id: PO:0004504
+id: PO:0004545
 name: shoot borne shoot
 namespace: plant_structure
 def: "Shoot that is initiated from a shoot." [POC:curators]
@@ -1214,27 +1214,27 @@ synonym: "branch" []
 is_a: PO:0009006 ! shoot
 
 [Term]
-id: PO:0004505
+id: PO:0004546
 name: epicomic shoot
 namespace: plant_structure
 def: "Shoot developing from a trunk." [POC:curators]
-is_a: PO:0004504 ! shoot borne shoot
+is_a: PO:0004545 ! shoot borne shoot
 
 [Term]
-id: PO:0004506
+id: PO:0004547
 name: subterranean tuber
 namespace: plant_structure
 def: "A swollen rhizome or a part of the rhizome with determinate growth." [POC:curator]
 comment: This has nothing to do with the underground swollen storage organ of Ipomoea which is swollen.
-is_a: PO:0004502 ! tuber
-relationship: part_of PO:0004501 ! rhizome
+is_a: PO:0004543 ! tuber
+relationship: part_of PO:0004542 ! rhizome
 
 [Term]
-id: PO:0004507
+id: PO:0004548
 name: aerial tuber
 namespace: plant_structure
 def: "An axillary shoot with a swollen stem.\n" [POC:curators]
-is_a: PO:0004502 ! tuber
+is_a: PO:0004543 ! tuber
 is_a: PO:0006343 ! axillary shoot
 
 [Term]
@@ -2973,7 +2973,7 @@ name: axillary shoot
 namespace: plant_structure
 def: "The shoot developing from the axillary bud meristem." [GR:pj]
 synonym: "axillary branch" []
-is_a: PO:0004504 ! shoot borne shoot
+is_a: PO:0004545 ! shoot borne shoot
 
 [Term]
 id: PO:0006344
