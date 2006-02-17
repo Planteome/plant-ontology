@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 24:01:2006 17:00
+date: 17:02:2006 12:45
 saved-by: katica
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -93,6 +93,7 @@ namespace: plant_structure
 def: "Hook-like structure which develops at the apical part of the hypocotyl in dark-grown seedlings in dicots. " [TAIR:ki]
 synonym: "hypocotyl hook" []
 relationship: part_of PO:0006341 ! primary shoot
+relationship: part_of PO:0020100 ! hypocotyl
 
 [Term]
 id: PO:0000013
@@ -172,8 +173,9 @@ is_a: PO:0004013 ! epidermal cell
 id: PO:0000023
 name: casparian strip
 namespace: plant_structure
-def: "A band-like wall formation within primary walls that contains suberin and lignin; typical of endodermal cells in roots\, in which it occurs in radial and transverse anticlinal walls." [ISBN:0471245208]
-relationship: part_of PO:0005059 ! root endodermis
+def: "OBSOLETE\: A band-like wall formation within primary walls that contains suberin and lignin; typical of endodermal cells in roots\, in which it occurs in radial and transverse anticlinal walls." [ISBN:0471245208]
+comment: Comment\: this term is available in the Cellular Component aspect of the Gene Ontology (GO\:0048226).
+is_obsolete: true
 
 [Term]
 id: PO:0000024
@@ -792,7 +794,7 @@ id: PO:0000295
 name: cambial initial
 alt_id: PO:0000080
 namespace: plant_structure
-def: "Cell localized in the vascular cambium or phellogen that their periclinal divisions can contribute cells either to the outside or to the inside of the axis; in vascular cambium\, classified into fusiform initials (source of axial cells of xylem and phloem) and ray initials (source of the ray cells)." [ISBN:0471245208]
+def: "Cell in the vascular or cork cambium which by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
 synonym: "cambial cell" []
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0005598 ! vascular cambium
@@ -1184,60 +1186,6 @@ is_a: PO:0009002 ! cell
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
-id: PO:0004542
-name: rhizome
-namespace: plant_structure
-def: "Underground shoot" [POC:curators]
-is_a: PO:0009006 ! shoot
-
-[Term]
-id: PO:0004543
-name: tuber
-namespace: plant_structure
-def: "Swollen storage shoot with determinate growth." [POC:curators]
-is_a: PO:0009006 ! shoot
-
-[Term]
-id: PO:0004544
-name: root borne shoot
-namespace: plant_structure
-def: "Shoot that is initiated from a root." [POC:curators]
-synonym: "sucker shoot" []
-is_a: PO:0009006 ! shoot
-
-[Term]
-id: PO:0004545
-name: shoot borne shoot
-namespace: plant_structure
-def: "Shoot that is initiated from a shoot." [POC:curators]
-synonym: "branch" []
-is_a: PO:0009006 ! shoot
-
-[Term]
-id: PO:0004546
-name: epicomic shoot
-namespace: plant_structure
-def: "Shoot developing from a trunk." [POC:curators]
-is_a: PO:0004545 ! shoot borne shoot
-
-[Term]
-id: PO:0004547
-name: subterranean tuber
-namespace: plant_structure
-def: "A swollen rhizome or a part of the rhizome with determinate growth." [POC:curator]
-comment: This has nothing to do with the underground swollen storage organ of Ipomoea which is swollen.
-is_a: PO:0004543 ! tuber
-relationship: part_of PO:0004542 ! rhizome
-
-[Term]
-id: PO:0004548
-name: aerial tuber
-namespace: plant_structure
-def: "An axillary shoot with a swollen stem.\n" [POC:curators]
-is_a: PO:0004543 ! tuber
-is_a: PO:0006343 ! axillary shoot
-
-[Term]
 id: PO:0004509
 name: secretory trichome
 namespace: plant_structure
@@ -1467,6 +1415,83 @@ name: fruit columella
 namespace: plant_structure
 def: "Central axis of the fruit." [POC:curators]
 relationship: part_of PO:0009001 ! fruit
+
+[Term]
+id: PO:0004542
+name: rhizome
+namespace: plant_structure
+def: "Underground shoot" [POC:curators]
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004543
+name: tuber
+namespace: plant_structure
+def: "Swollen storage shoot with determinate growth." [POC:curators]
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004544
+name: root borne shoot
+namespace: plant_structure
+def: "Shoot that is initiated from a root." [POC:curators]
+synonym: "sucker shoot" []
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004545
+name: shoot borne shoot
+namespace: plant_structure
+def: "Shoot that is initiated from a shoot." [POC:curators]
+synonym: "branch" []
+is_a: PO:0009006 ! shoot
+
+[Term]
+id: PO:0004546
+name: epicomic shoot
+namespace: plant_structure
+def: "Shoot developing from a trunk." [POC:curators]
+is_a: PO:0004545 ! shoot borne shoot
+
+[Term]
+id: PO:0004547
+name: subterranean tuber
+namespace: plant_structure
+def: "A swollen rhizome or a part of the rhizome with determinate growth." [POC:curator]
+comment: This has nothing to do with the underground swollen storage organ of Ipomoea which is swollen.
+is_a: PO:0004543 ! tuber
+relationship: part_of PO:0004542 ! rhizome
+
+[Term]
+id: PO:0004548
+name: aerial tuber
+namespace: plant_structure
+def: "An axillary shoot with a swollen stem.\n" [POC:curators]
+is_a: PO:0004543 ! tuber
+is_a: PO:0006343 ! axillary shoot
+
+[Term]
+id: PO:0004700
+name: middle layer
+namespace: plant_structure
+def: "Usually a single cell layer between tapetum and endothecium which almost invariably degenerates early during angiosperm anther  development and is eventually absorbed by adjacent cells." [POC:curators]
+relationship: part_of PO:0000002 ! anther wall
+
+[Term]
+id: PO:0004701
+name: short shoot
+namespace: plant_structure
+def: "Shoot in which the internodes elongate little or at all\, bearing reproductive structures and/or leaves." [APWeb:Glossary]
+synonym: "brachyblast" []
+synonym: "bud spur" []
+is_a: PO:0006343 ! axillary shoot
+
+[Term]
+id: PO:0004702
+name: long shoot
+namespace: plant_structure
+def: "Shoot in which all or most of the internodes elongate." [APWeb:Glossary]
+is_a: PO:0006343 ! axillary shoot
 
 [Term]
 id: PO:0005001
@@ -4340,9 +4365,9 @@ is_a: PO:0009011 ! plant structure
 id: PO:0009008
 name: organ
 namespace: plant_structure
-def: "OBSOLETE. A natural part or structure in a plant\, capable of performing some special action (termed its function)\, which is essential to the life or well-being of the whole." [MaizeGDB:lv]
+def: "A natural part or structure in a plant\, capable of performing some special action (termed its function)\, which is essential to the life or well-being of the whole." [MaizeGDB:lv]
 comment: All organs are represented under sporophyte.
-is_obsolete: true
+is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0009009
@@ -5558,9 +5583,9 @@ relationship: part_of PO:0020096 ! egg apparatus
 id: PO:0020095
 name: polar nucleus
 namespace: plant_structure
-def: "Usually two nuclei in the center of the eight-nucleate embryo sac that fuse\, and subsequently fuse with one of the male gametes to produce the endosperm." [APWeb:Glossary]
-comment: see endosperm.
-relationship: part_of PO:0020090 ! central cell
+def: "OBSOLETE\: Usually two nuclei in the center of the eight-nucleate embryo sac that fuse\, and subsequently fuse with one of the male gametes to produce the endosperm." [APWeb:Glossary]
+comment: Comment\: this term is available in the Cellular Component aspect of the Gene Ontology (GO\:0043078).
+is_obsolete: true
 
 [Term]
 id: PO:0020096
