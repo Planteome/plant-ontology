@@ -1,5 +1,5 @@
 format-version: 1.0
-date: 17:02:2006 12:45
+date: 21:03:2006 17:40
 saved-by: katica
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -1103,7 +1103,7 @@ def: "Tissue centrifugally derived from cork cambium\, nonliving at maturity\, a
 comment: Protective in function because the walls are highly impervious to water.
 synonym: "cork" []
 synonym: "phellem" []
-is_a: PO:0009002 ! cell
+is_a: PO:0009007 ! tissue
 relationship: develops_from PO:0005599 ! cork cambium
 
 [Term]
@@ -1258,7 +1258,8 @@ id: PO:0004518
 name: bark
 namespace: plant_structure
 def: "All tissues outside the vascular cambium or the xylem; in older trees may be divided into dead outer bark and living inner bark\, which consists of secondary phloem. " [POC:curators]
-is_a: PO:0005043 ! secondary phloem
+is_a: PO:0009007 ! tissue
+relationship: develops_from PO:0005043 ! secondary phloem
 
 [Term]
 id: PO:0004519
@@ -1492,6 +1493,104 @@ name: long shoot
 namespace: plant_structure
 def: "Shoot in which all or most of the internodes elongate." [APWeb:Glossary]
 is_a: PO:0006343 ! axillary shoot
+
+[Term]
+id: PO:0004703
+name: carpel primordium
+namespace: plant_structure
+def: "The very first appearance of a carpel." [POC:curators]
+is_a: PO:0009030 ! carpel
+
+[Term]
+id: PO:0004704
+name: sepal primordium
+namespace: plant_structure
+def: "The very first appearance of a sepal." [POC:curators]
+is_a: PO:0009031 ! sepal
+
+[Term]
+id: PO:0004705
+name: stamen primodium
+namespace: plant_structure
+def: "The very first appearance of a stamen." [POC:curators]
+is_a: PO:0009029 ! stamen
+
+[Term]
+id: PO:0004706
+name: flower primordium
+namespace: plant_structure
+def: "The very first appearance of a flower." [POC:curators]
+is_a: PO:0009046 ! flower
+
+[Term]
+id: PO:0004707
+name: fruit dehiscence zone
+namespace: plant_structure
+def: "A narrow band of cells that extends along the entire length of the fruit. Upon fruit maturation\, cell separation within the dehiscence zone allows the valves to detach from the replum and for the seeds to be dispersed." [TAIR:ki]
+relationship: part_of PO:0009001 ! fruit
+
+[Term]
+id: PO:0004708
+name: scutellar node
+namespace: plant_structure
+def: "The region in the embryo between the primary root (enclosed in the coleorhiza) and the plumule (enclosed in the coleoptile) to which the scutellum is attached." [MaizeGDB:lv]
+relationship: part_of PO:0009009 ! embryo
+
+[Term]
+id: PO:0004709
+name: axillary bud
+namespace: plant_structure
+def: "Bud formed in the axil of a leaf or shoot." [POC:curators]
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:0004710
+name: axillary floral bud
+namespace: plant_structure
+def: "Bud formed in the axil of a leaf or shoot that develops into a flower." [POC:curators]
+relationship: part_of PO:0004709 ! axillary bud
+
+[Term]
+id: PO:0004711
+name: axillary inflorescence bud
+namespace: plant_structure
+def: "Bud formed in the axil of the a leaf or shoot that develops into an inflorescence." [POC:curators]
+relationship: part_of PO:0004709 ! axillary bud
+
+[Term]
+id: PO:0004712
+name: axillary vegetative bud
+namespace: plant_structure
+def: "Bud formed in the axil of the a leaf or shoot that develops into a long or short shoot and/or leaf(s). " [POC:curators]
+relationship: part_of PO:0004709 ! axillary bud
+
+[Term]
+id: PO:0004713
+name: terminal bud
+namespace: plant_structure
+def: "Bud formed at the apex of shoot." [POC:curators]
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:0004714
+name: terminal floral bud
+namespace: plant_structure
+def: "Bud formed at the apex of shoot that develops into a flower." [POC:curators]
+relationship: part_of PO:0004713 ! terminal bud
+
+[Term]
+id: PO:0004715
+name: terminal inflorescence bud
+namespace: plant_structure
+def: "Bud formed at the apex of shoot that develops into an inflorescence." [POC:curators]
+relationship: part_of PO:0004713 ! terminal bud
+
+[Term]
+id: PO:0004716
+name: terminal vegetative bud
+namespace: plant_structure
+def: "Bud formed at the apex of shoot that develops into a long or short shoot." [POC:curators]
+relationship: part_of PO:0004713 ! terminal bud
 
 [Term]
 id: PO:0005001
@@ -4351,7 +4450,7 @@ namespace: plant_structure
 def: "Part of the sporophyte composed of the stems and leaves\, and includes shoot apical meristems." [Poc:curators]
 synonym: "branch" []
 synonym: "crown (sensu Poaceae)" []
-narrow_synonym: "crown (sensu tree)" []
+narrow_synonym: "tree crown" []
 relationship: part_of PO:0009003 ! sporophyte
 
 [Term]
