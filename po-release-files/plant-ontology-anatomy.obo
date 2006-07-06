@@ -1,6 +1,6 @@
 format-version: 1.0
-version: $Revision: 1.24 $
-date: 06:07:2006 11:18
+version: $Revision: 1.25 $
+date: 06:07:2006 11:40
 saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -69,7 +69,7 @@ is_a: PO:0000005 ! cultured cell
 id: PO:0000009
 name: cultured callus
 namespace: plant_structure
-def: "In vitro grown cell aggregates that originated from isolated protoplasts\, cell suspensions\, or from callus that was induced in sterile medium the supplemented by plant growth regulators." [TAIR:ki]
+def: "In vitro grown cell aggregates that originated from isolated protoplasts\, cell suspensions\, or from callus that was induced in sterile medium supplemented by plant growth regulators." [TAIR:ki]
 is_a: PO:0000004 ! in vitro cultured  cell, tissue and organ
 is_a: PO:0005052 ! callus
 
@@ -86,6 +86,7 @@ name: somatic embryo
 namespace: plant_structure
 def: "An embryo arising from previously differentiated somatic cells in vitro\, rather than from fused haploid gametes\, i.e.\, zygote." [TAIR:ki]
 is_a: PO:0000010 ! cultured embryo
+relationship: develops_from PO:0006091 ! embryogenic callus
 
 [Term]
 id: PO:0000012
@@ -2747,6 +2748,21 @@ name: anther primordium
 namespace: plant_structure
 def: "An organized group of cells that will differentiate into anther. " [GR:pj]
 is_a: PO:0009066 ! anther
+
+[Term]
+id: PO:0006090
+name: organogenic callus
+namespace: plant_structure
+def: "A type of cultured callus that has competence to form any organ such as root\, leaf\, shoot\, leafless\nshoot/bare stem\, etc." [POC:curators]
+synonym: "meristematic callus" []
+is_a: PO:0000009 ! cultured callus
+
+[Term]
+id: PO:0006091
+name: embryogenic callus
+namespace: plant_structure
+def: "A type of cultured callus that form embryo-like structures such as somatic embryos." [POC:curators]
+is_a: PO:0000009 ! cultured callus
 
 [Term]
 id: PO:0006109
