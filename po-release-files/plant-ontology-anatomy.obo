@@ -1,6 +1,6 @@
 format-version: 1.0
-version: $Revision: 1.23 $
-date: 22:06:2006 13:13
+version: $Revision: 1.24 $
+date: 06:07:2006 11:18
 saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -349,13 +349,18 @@ name: embryonic root
 namespace: plant_structure
 def: "Root that is initiated in developing embryo." [TAIR:ki]
 is_a: PO:0009005 ! root
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0000046
 name: seminal root
 namespace: plant_structure
-def: "Root formed at the scutelar node of the embryo in some monocotyledonous plants." [TAIR:ki]
+def: "Root formed within the scutelar node of the embryo in some monocotyledonous plants." [TAIR:ki]
+synonym: "lateral seminal root" []
+synonym: "scutellar nodal root" []
+synonym: "secondary root" []
 is_a: PO:0000045 ! embryonic root
+is_a: PO:0003005 ! nodal root
 
 [Term]
 id: PO:0000047
@@ -2277,11 +2282,12 @@ is_a: PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006020
-name: apical meristem of lateral root
+name: lateral root apical meristem
 alt_id: PO:0003013
 namespace: plant_structure
 def: "Meristem found in the apex of the lateral root." [GR:pj]
 comment: This is different from root lateral meristem.
+synonym: "apical meristem of lateral root" []
 synonym: "lateral root meristem" []
 is_a: PO:0020147 ! root apical meristem
 relationship: part_of PO:0000027 ! lateral root tip
@@ -2670,9 +2676,10 @@ is_obsolete: true
 
 [Term]
 id: PO:0006081
-name: apical meristem of primary root
+name: primary root apical meristem
 namespace: plant_structure
 def: "Meristem found in the apex of the primary root." [GR:pj]
+synonym: "apical meristem of primary root" []
 synonym: "embryonic root meristem" []
 is_a: PO:0020147 ! root apical meristem
 relationship: part_of PO:0000026 ! primary root tip
@@ -5599,7 +5606,7 @@ id: PO:0020031
 name: radicle
 namespace: plant_structure
 def: "The radicle is the basal continuation of the hypocotyl in an embryo and gives rise to the root system of the adult plant; sometimes more or less abortive." [APWeb:Glossary]
-is_a: PO:0020127 ! primary root
+is_a: PO:0000045 ! embryonic root
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
@@ -6107,7 +6114,8 @@ alt_id: PO:0020089
 namespace: plant_structure
 def: "The root which develops directly from the embryonic radicle." [ISBN:0122151704]
 synonym: "tap root" []
-is_a: PO:0000045 ! embryonic root
+is_a: PO:0009005 ! root
+relationship: develops_from PO:0020031 ! radicle
 
 [Term]
 id: PO:0020128
