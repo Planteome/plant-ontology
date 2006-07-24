@@ -1,9 +1,16 @@
 format-version: 1.0
-version: $Revision: 1.26 $
-date: 06:07:2006 15:16
+version: $Revision: 1.27 $
+date: 20:07:2006 16:31
 saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
+subsetdef: Rice "Term used for rice"
+subsetdef: Maize "Term used for maize"
+subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
+subsetdef: Arabidopsis "Term used for Arabidopsis"
+subsetdef: Poaceae "Term used for grasses"
+subsetdef: reference "reference plant structure term"
 
 [Term]
 id: PO:0000001
@@ -17,6 +24,7 @@ id: PO:0000002
 name: anther wall
 namespace: plant_structure
 def: "A multicellular layer with outer epidermis and an inner endothecium." [GR:pj]
+subset: reference
 relationship: part_of PO:0009070 ! microsporangium
 
 [Term]
@@ -25,6 +33,7 @@ name: whole plant
 namespace: plant_structure
 def: "The entire plant\, including roots\, shoots and leaves\, at any stage of its life cycle." [TAIR:ki]
 comment: This term is so general that it should be avoided whenever possible.
+subset: reference
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -93,6 +102,7 @@ id: PO:0000012
 name: apical hook
 namespace: plant_structure
 def: "Hook-like structure which develops at the apical part of the hypocotyl in dark-grown seedlings in dicots. " [TAIR:ki]
+subset: reference
 synonym: "hypocotyl hook" []
 relationship: develops_from PO:0020100 ! hypocotyl
 relationship: part_of PO:0006341 ! primary shoot
@@ -184,6 +194,7 @@ id: PO:0000024
 name: filiform apparatus
 namespace: plant_structure
 def: "A complex of cell wall invaginations in a synergid cell similar to those in transfer cells." [ISBN:0471245208]
+subset: reference
 relationship: part_of PO:0000191 ! synergid
 
 [Term]
@@ -228,6 +239,7 @@ id: PO:0000030
 name: septum
 namespace: plant_structure
 def: "A thin partition or membrane that divides a cavity or a mass of tissue\, e.g.\, in anther\, ovary or fruit." [APWeb:Glossary]
+subset: Arabidopsis
 relationship: part_of PO:0009001 ! fruit
 relationship: part_of PO:0009030 ! carpel
 relationship: part_of PO:0009066 ! anther
@@ -244,13 +256,15 @@ id: PO:0000032
 name: tetrad of microspores
 namespace: plant_structure
 def: "A group of four haploid cells that remained joined together shortly after meiosis. Each cell will give rise to the male gametophyte." [TAIR:ki]
+subset: reference
 relationship: develops_from PO:0020047 ! microsporocyte
 
 [Term]
 id: PO:0000033
 name: valve
 namespace: plant_structure
-def: " Portion of an organ that is fragmented; in capsule\, theportions into which the pericarp splits at maturity." [APWeb:Glossary]
+def: "Portion of an organ that is fragmented; in capsule\, the portions into which the pericarp splits at maturity." [APWeb:Glossary]
+subset: Arabidopsis
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -281,6 +295,7 @@ id: PO:0000037
 name: shoot apex
 namespace: plant_structure
 def: "The topmost part of the shoot\, situated at the distal extremity of the shoot axis\, consists of apical meristem and the youngest leaf primordia." [TAIR:ki]
+subset: reference
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -323,7 +338,8 @@ name: shoot borne root
 alt_id: PO:0003007
 alt_id: PO:0020129
 namespace: plant_structure
-def: "Post-embryonic root developed from stem." [TAIR:ki]
+def: "Post-embryonic root developed from shoot tissue." [TAIR:ki, GR:pj]
+subset: reference
 synonym: "adventitious root" []
 synonym: "stilt root" []
 is_a: PO:0009005 ! root
@@ -333,6 +349,7 @@ id: PO:0000043
 name: crown root
 namespace: plant_structure
 def: "Adventitious root formed at the base of the growing stem (known as a crown)." [TAIR:ki]
+subset: reference
 is_a: PO:0003005 ! nodal root
 
 [Term]
@@ -341,6 +358,7 @@ name: prop root
 namespace: plant_structure
 def: "Adventitious root formed at stem nodes above the ground and growing directly into the soil." [TAIR:ki]
 comment: This term is perhaps best defined functionally to prop the plant up.
+subset: reference
 synonym: "brace root" []
 is_a: PO:0003005 ! nodal root
 
@@ -349,6 +367,7 @@ id: PO:0000045
 name: embryonic root
 namespace: plant_structure
 def: "Root that is initiated in developing embryo." [TAIR:ki]
+subset: reference
 is_a: PO:0009005 ! root
 relationship: part_of PO:0009009 ! embryo
 
@@ -357,6 +376,7 @@ id: PO:0000046
 name: seminal root
 namespace: plant_structure
 def: "Root formed within the scutelar node of the embryo in some monocotyledonous plants." [TAIR:ki]
+subset: reference
 synonym: "lateral seminal root" []
 synonym: "scutellar nodal root" []
 synonym: "secondary root" []
@@ -514,6 +534,7 @@ name: sperm cell
 alt_id: PO:0020098
 namespace: plant_structure
 def: "A haploid male reproductive cell (usually two in number); during double fertilization\, one fuses with the female gamete (egg cell) to produce a zygote while another fusses with the two polar nuclei of the central cell to give rise to endosperm." [TAIR:ki]
+subset: reference
 synonym: "sperm nucleus" []
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0020097 ! generative cell
@@ -549,6 +570,7 @@ id: PO:0000191
 name: synergid
 namespace: plant_structure
 def: "Cell\, usually two in number\, in the micropylar end of the embryo sac of angiosperms associated with the egg in the egg apparatus." [ISBN:047125208, TAIR:ki]
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020096 ! egg apparatus
 
@@ -927,6 +949,7 @@ id: PO:0002001
 name: papillae
 namespace: plant_structure
 def: "A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
+subset: reference
 relationship: part_of PO:0006061 ! stigma epidermis
 
 [Term]
@@ -952,6 +975,7 @@ id: PO:0003000
 name: transition zone
 namespace: plant_structure
 def: "A region of the root between the meristem and the region of rapid elongation in which isodiametric growth (cell expansion) occurs." [Agricola:IND23249552, http://search.epnet.com/direct.asp?an=IND23249552&db=agr]
+subset: reference
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -977,6 +1001,7 @@ alt_id: PO:0003008
 alt_id: PO:0003009
 namespace: plant_structure
 def: "Adventitious root that forms at a shoot node." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/]
+subset: reference
 is_a: PO:0000042 ! shoot borne root
 
 [Term]
@@ -1072,6 +1097,7 @@ id: PO:0003024
 name: stolon
 namespace: plant_structure
 def: "A slender\, prostrate or trailing above-ground stem which produces roots and sometimes erect shoots at its nodes." [APWeb:Glossary]
+subset: reference
 synonym: "runner" []
 is_a: PO:0009006 ! shoot
 
@@ -1387,6 +1413,7 @@ id: PO:0004535
 name: fruit placenta
 namespace: plant_structure
 def: "A more or less localized region within a fruit to which seeds are attached." [POC:curators]
+subset: Tomato
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -1394,6 +1421,7 @@ id: PO:0004536
 name: fruit pedicel
 namespace: plant_structure
 def: "Basal part of the ultimate branch of the infructescence." [POC:curators]
+subset: Tomato
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -1424,6 +1452,7 @@ id: PO:0004540
 name: fruit columella
 namespace: plant_structure
 def: "Central axis of the fruit." [POC:curators]
+subset: Tomato
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -1431,6 +1460,7 @@ id: PO:0004542
 name: rhizome
 namespace: plant_structure
 def: "Underground shoot" [POC:curators]
+subset: reference
 is_a: PO:0009006 ! shoot
 
 [Term]
@@ -1438,6 +1468,7 @@ id: PO:0004543
 name: tuber
 namespace: plant_structure
 def: "Swollen storage shoot with determinate growth." [POC:curators]
+subset: reference
 is_a: PO:0009006 ! shoot
 
 [Term]
@@ -1453,6 +1484,7 @@ id: PO:0004545
 name: shoot borne shoot
 namespace: plant_structure
 def: "Shoot that is initiated from a shoot." [POC:curators]
+subset: reference
 synonym: "branch" []
 is_a: PO:0009006 ! shoot
 
@@ -1485,6 +1517,7 @@ id: PO:0004700
 name: middle layer
 namespace: plant_structure
 def: "Usually a single cell layer between tapetum and endothecium which almost invariably degenerates early during angiosperm anther  development and is eventually absorbed by adjacent cells." [POC:curators]
+subset: reference
 relationship: develops_from PO:0006008 ! inner secondary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
@@ -1538,6 +1571,7 @@ id: PO:0004707
 name: fruit dehiscence zone
 namespace: plant_structure
 def: "A narrow band of cells that extends along the entire length of the fruit. Upon fruit maturation\, cell separation within the dehiscence zone allows the valves to detach from the replum and for the seeds to be dispersed." [TAIR:ki]
+subset: Arabidopsis
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -1552,6 +1586,7 @@ id: PO:0004709
 name: axillary bud
 namespace: plant_structure
 def: "Bud formed in the axil of a leaf or shoot." [POC:curators]
+subset: reference
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -1559,27 +1594,28 @@ id: PO:0004710
 name: axillary floral bud
 namespace: plant_structure
 def: "Bud formed in the axil of a leaf or shoot that develops into a flower." [POC:curators]
-relationship: part_of PO:0004709 ! axillary bud
+is_a: PO:0004709 ! axillary bud
 
 [Term]
 id: PO:0004711
 name: axillary inflorescence bud
 namespace: plant_structure
 def: "Bud formed in the axil of the a leaf or shoot that develops into an inflorescence." [POC:curators]
-relationship: part_of PO:0004709 ! axillary bud
+is_a: PO:0004709 ! axillary bud
 
 [Term]
 id: PO:0004712
 name: axillary vegetative bud
 namespace: plant_structure
 def: "Bud formed in the axil of the a leaf or shoot that develops into a long or short shoot and/or leaf(s). " [POC:curators]
-relationship: part_of PO:0004709 ! axillary bud
+is_a: PO:0004709 ! axillary bud
 
 [Term]
 id: PO:0004713
 name: terminal bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot." [POC:curators]
+subset: reference
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -1587,21 +1623,21 @@ id: PO:0004714
 name: terminal floral bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into a flower." [POC:curators]
-relationship: part_of PO:0004713 ! terminal bud
+is_a: PO:0004713 ! terminal bud
 
 [Term]
 id: PO:0004715
 name: terminal inflorescence bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into an inflorescence." [POC:curators]
-relationship: part_of PO:0004713 ! terminal bud
+is_a: PO:0004713 ! terminal bud
 
 [Term]
 id: PO:0004716
 name: terminal vegetative bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into a long or short shoot." [POC:curators]
-relationship: part_of PO:0004713 ! terminal bud
+is_a: PO:0004713 ! terminal bud
 
 [Term]
 id: PO:0004717
@@ -1660,6 +1696,7 @@ id: PO:0004724
 name: hypocotyl-root junction
 namespace: plant_structure
 def: "Junction point of the embryonic root and hypocotyl." [TAIR:ki]
+subset: reference
 relationship: part_of PO:0009006 ! shoot
 relationship: part_of PO:0019018 ! embryo axis
 
@@ -1700,6 +1737,7 @@ id: PO:0005004
 name: shoot node
 namespace: plant_structure
 def: "The region of the shoot where the spikelet\, flower\, floret\, branch\, bud and/or leaves are attached." [GR:pj]
+subset: reference
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -1707,6 +1745,7 @@ id: PO:0005005
 name: shoot internode
 namespace: plant_structure
 def: "The region of the shoot present between the two shoot nodes." [GR:pj]
+subset: reference
 relationship: part_of PO:0009006 ! shoot
 
 [Term]
@@ -2113,6 +2152,9 @@ id: PO:0006000
 name: hull (sensu Poaceae)
 namespace: plant_structure
 def: "A leaf like structure often found enclosing\nthe grass fruit\, caryopsis. It is derived from the dried lemma (PO\:0009037) and palea (PO\:0009038) floral bracts found in the grass floret (PO\:0006318)." [GR:pj]
+subset: Maize
+subset: Poaceae
+subset: Rice
 relationship: develops_from PO:0009037 ! lemma
 relationship: develops_from PO:0009038 ! palea
 relationship: part_of PO:0006342 ! infructescence
@@ -2122,6 +2164,7 @@ id: PO:0006001
 name: phyllome
 namespace: plant_structure
 def: "A collective term for all the different types of leaves appearing on plants." [ISBN:0080374913]
+subset: reference
 is_a: PO:0009008 ! organ
 relationship: part_of PO:0009006 ! shoot
 
@@ -2145,6 +2188,7 @@ name: scale leaf
 namespace: plant_structure
 def: "A reduced and more or less non-photosynthetic leaf\, often associated with a vegetatively propagating organ such as a rhizome or perennating bud." [ISBN:0080374913]
 comment: Sometimes referring specifically to such leaves on a seedling.
+subset: reference
 synonym: "cataphyll" []
 is_a: PO:0006001 ! phyllome
 
@@ -2174,6 +2218,7 @@ id: PO:0006006
 name: primary parietal cell layer
 namespace: plant_structure
 def: "The primary parietal cell and adjacent cells together form this cell layer." [PMID:2476454, GR:pj]
+subset: reference
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -2181,6 +2226,7 @@ id: PO:0006007
 name: secondary parietal cell layer
 namespace: plant_structure
 def: "The cells of the primary parietal cell layer undergo a periclinal division resulting in the formation of the two secondary parietal layers." [PMID:2476454, GR:pj]
+subset: reference
 relationship: develops_from PO:0006006 ! primary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
@@ -2226,6 +2272,7 @@ id: PO:0006013
 name: juice sac
 namespace: plant_structure
 def: "As found in citrus the mature juice sac is a swollen sac with a slender stalk and a sac wall lined with layers of tightly arranged cells. It develops from a single cell of the endocarp. Endocarp develops from the carpellary inner epidermis." [GR:pj, web:http\://www.chineseplantscience.com/earticle_read.asp?id=12171]
+subset: Citrus
 synonym: "juice vesicle" []
 relationship: part_of PO:0009086 ! endocarp
 
@@ -2339,6 +2386,7 @@ id: PO:0006032
 name: awn
 namespace: plant_structure
 def: "A long bristle-like appendage found on the tip or back of various parts of the grass spikelet." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009037 ! lemma
 
 [Term]
@@ -2346,6 +2394,7 @@ id: PO:0006033
 name: paleal apiculus
 namespace: plant_structure
 def: "A short\, abrupt\, flexible point present at the apex of the palea" [GR:pj]
+subset: reference
 synonym: "apiculus" []
 relationship: part_of PO:0009038 ! palea
 
@@ -2801,6 +2850,7 @@ id: PO:0006203
 name: pericycle
 namespace: plant_structure
 def: "Part of the tissue of the stele located between the phloem and endodermis." [ISBN:047124529]
+subset: reference
 is_a: PO:0009007 ! tissue
 relationship: part_of PO:0020124 ! root stele
 
@@ -3100,6 +3150,7 @@ name: floret (sensu Poaceae)
 namespace: plant_structure
 def: "Small flowers of the spikelets of Poaceae." [Poc:curators]
 comment: It is not clear what the lemma\, palea and lodicule correspond to in conventional flowers\, therefore we are not making any assumptions of homology at the present time.
+subset: reference
 is_a: PO:0009082 ! floret
 relationship: part_of PO:0009051 ! spikelet
 
@@ -3183,7 +3234,7 @@ name: spikelet pair meristem
 namespace: plant_structure
 def: "The meristem that produces two spikelet meristems\, each of which produces two floral meristems." [GR:pj]
 comment: Found in some grass inflorescences.
-is_a: PO:0000230 ! inflorescence meristem
+is_a: PO:0006327 ! spikelet meristem
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -3200,6 +3251,7 @@ name: gynophore
 namespace: plant_structure
 def: "The stalk at the base of the ovary." [Poc:curators]
 comment: Typically receptacular in origin.
+subset: reference
 relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
@@ -3312,6 +3364,7 @@ id: PO:0006345
 name: pollen tube
 namespace: plant_structure
 def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
+subset: reference
 relationship: part_of PO:0020091 ! male gametophyte
 
 [Term]
@@ -4517,6 +4570,10 @@ id: PO:0006503
 name: fruit abscission zone
 namespace: plant_structure
 def: "Zone at base of the fruit that contains an abscission (or separation) layer and a protective layer\, both involved in the abscission of the fruit." [GR:pj]
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: Tomato
 is_a: PO:0000146 ! abscission zone
 relationship: part_of PO:0009001 ! fruit
 
@@ -4570,6 +4627,7 @@ id: PO:0008001
 name: fruit distal end
 namespace: plant_structure
 def: "The end distal from the fruit pedicel." [GR:ap "", (SGN:nm)]
+subset: Tomato
 synonym: "blossom end" []
 relationship: part_of PO:0009001 ! fruit
 
@@ -4578,6 +4636,7 @@ id: PO:0008002
 name: fruit proximal end
 namespace: plant_structure
 def: "The stem end of the fruit." [GR:ap "", (SGN:nm)]
+subset: Tomato
 synonym: "fruit shoulders" []
 relationship: part_of PO:0009001 ! fruit
 
@@ -4586,6 +4645,11 @@ id: PO:0008003
 name: fruit vascular system
 namespace: plant_structure
 def: "Vascular system of the fruit." [GR:ap "", (SGN:nm)]
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: Tomato
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0009001 ! fruit
 
@@ -4601,6 +4665,8 @@ id: PO:0008005
 name: fruit nucellus
 namespace: plant_structure
 def: "Subepidermal tissue in the grass caryopsis." [GR:ap ""]
+subset: Poaceae
+subset: Rice
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -4608,6 +4674,8 @@ id: PO:0008006
 name: nucellar epidermis
 namespace: plant_structure
 def: "The morphologically distinct outer layer of the nucellus. " [GR:ap ""]
+subset: Poaceae
+subset: Rice
 relationship: part_of PO:0008005 ! fruit nucellus
 
 [Term]
@@ -4615,6 +4683,8 @@ id: PO:0008007
 name: nucellar projection
 namespace: plant_structure
 def: "The morphologically distinct portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap ""]
+subset: Poaceae
+subset: Rice
 relationship: part_of PO:0008005 ! fruit nucellus
 
 [Term]
@@ -4622,6 +4692,8 @@ id: PO:0008008
 name: modified aleurone
 namespace: plant_structure
 def: "The morphologically distinct aleurone layer located adjacent to the nucellar projection." [GR:ap ""]
+subset: Poaceae
+subset: Rice
 relationship: part_of PO:0008004 ! fruit aleurone layer
 
 [Term]
@@ -4629,6 +4701,8 @@ id: PO:0008009
 name: abaxial nucellar projection
 namespace: plant_structure
 def: "The abaxial/lower portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap ""]
+subset: Poaceae
+subset: Rice
 relationship: part_of PO:0008007 ! nucellar projection
 
 [Term]
@@ -4636,6 +4710,8 @@ id: PO:0008010
 name: adaxial nucellar projection
 namespace: plant_structure
 def: "The adaxial/upper portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap ""]
+subset: Poaceae
+subset: Rice
 relationship: part_of PO:0008007 ! nucellar projection
 
 [Term]
@@ -4660,6 +4736,10 @@ alt_id: PO:0020087
 alt_id: PO:0020107
 namespace: plant_structure
 def: "The seed-bearing structure in angiosperms\, formed from the ovary after flowering." [Poc:curators, APWeb:Glossary]
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "achene" []
 synonym: "berry" []
 synonym: "capsule" []
@@ -4690,6 +4770,7 @@ id: PO:0009002
 name: plant cell
 namespace: plant_structure
 def: "Structural and physiological unit of a plant consisting of the cytoplasm\, protoplast and cell wall; in nonliving state\, of cell wall only\, or cell wall and some nonliving inclusions." [ISBN:0471245208, GR:pj]
+subset: reference
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -4697,6 +4778,7 @@ id: PO:0009003
 name: sporophyte
 namespace: plant_structure
 def: "A plant or phase of a life cycle that bears spores formed by meiosis." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -4704,6 +4786,7 @@ id: PO:0009004
 name: gametophyte
 namespace: plant_structure
 def: "A haploid plant\, or phase of a plant's life cycle\, that bears gametes after mitotic events." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -4713,6 +4796,7 @@ alt_id: PO:0003006
 namespace: plant_structure
 def: "An axial system which is usually underground and more or less positively geotropic\, does not bear leaves and only rarely shoots\, is endogenous in origin\, indeterminate in growth and often with secondary thickening." [APWeb:Glossary]
 comment: Commonly thought of as one of the three basic parts of the seed plant body.
+subset: reference
 synonym: "aerial root" []
 is_a: PO:0009008 ! organ
 relationship: part_of PO:0009003 ! sporophyte
@@ -4722,6 +4806,7 @@ id: PO:0009006
 name: shoot
 namespace: plant_structure
 def: "Part of the sporophyte composed of the stems and leaves\, and includes shoot apical meristems." [Poc:curators]
+subset: reference
 synonym: "branch" []
 synonym: "crown (sensu Poaceae)" []
 narrow_synonym: "tree crown" []
@@ -4732,6 +4817,7 @@ id: PO:0009007
 name: tissue
 namespace: plant_structure
 def: "Group of cells organized into a structural and functional unit; the component cells may be alike (simple tissue) or varied (complex tissue)." [TAIR:lr]
+subset: reference
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -4740,6 +4826,7 @@ name: organ
 namespace: plant_structure
 def: "A natural part or structure in a plant\, capable of performing some special action (termed its function)\, which is essential to the life or well-being of the whole." [MaizeGDB:lv]
 comment: All organs are represented under sporophyte.
+subset: reference
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -4756,6 +4843,12 @@ name: seed
 namespace: plant_structure
 def: "A propagating organ formed in the reproductive cycle of gymnosperms and angiosperms\, derived from the ovule and enclosing an embryo." [APWeb:Glossary, GR:pj]
 comment: The seed is representative of a next generation of sporophyte.
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: Tomato
 is_a: PO:0009003 ! sporophyte
 relationship: part_of PO:0009001 ! fruit
 
@@ -4822,6 +4915,7 @@ id: PO:0009025
 name: leaf
 namespace: plant_structure
 def: "Commonly thought of as one of the three basic parts of the seed plant body\, a structure usually of determinate growth\, without secondary thickening\, and of superficial origin\, often flattened and photosynthetic in part\, and in the axil of which is found a bud." [APWeb:Glossary]
+subset: reference
 synonym: "foliage leaf" []
 is_a: PO:0006001 ! phyllome
 
@@ -4830,6 +4924,7 @@ id: PO:0009026
 name: sporophyll
 namespace: plant_structure
 def: "A leaf-like organ on which one or more sporangia are borne." [APWeb:Glossary]
+subset: reference
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -4851,6 +4946,7 @@ id: PO:0009029
 name: stamen
 namespace: plant_structure
 def: "A microsporophyll bearing one or more microsporangia." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009028 ! microsporophyll
 relationship: part_of PO:0009061 ! androecium
 
@@ -4860,6 +4956,7 @@ name: carpel
 namespace: plant_structure
 def: "A megasporophyll\, almost always at the center of a flower\, its margins more or less fused together or with other carpels to enclose the ovule(s).\n" [APWeb:Glossary]
 comment: If carpels are fused\, the gynoecium is a syncarpous gynoecium\, as in Poaceae\, Brassicaceae and Solanaceae.  If carpels are free\, the gynoecium is an apocarpous gynoecium\, as in Fabaceae.
+subset: reference
 is_a: PO:0009027 ! megasporophyll
 relationship: part_of PO:0009062 ! gynoecium
 
@@ -4868,6 +4965,7 @@ id: PO:0009031
 name: sepal
 namespace: plant_structure
 def: "A member of the (usually green) outer whorl of non-fertile parts surrounding the fertile organs of a flower." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009008 ! organ
 relationship: part_of PO:0009060 ! calyx
 
@@ -4876,6 +4974,7 @@ id: PO:0009032
 name: petal
 namespace: plant_structure
 def: "A member of the corolla\, the inner whorl of non-fertile parts surrounding the fertile organs of a flower\, usually soft and colored conspicuously." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009008 ! organ
 relationship: part_of PO:0009059 ! corolla
 
@@ -4884,6 +4983,7 @@ id: PO:0009033
 name: tepal
 namespace: plant_structure
 def: "A perianth segment in a flower in which there are two whorls of such segments\, but all are similar in appearance." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009058 ! perianth
 
 [Term]
@@ -4891,6 +4991,7 @@ id: PO:0009034
 name: floral bract
 namespace: plant_structure
 def: "Leaf like structure subtending a flower." [Poc:curators]
+subset: reference
 synonym: "chaff" []
 is_a: PO:0009008 ! organ
 is_a: PO:0009055 ! bract
@@ -4901,6 +5002,7 @@ id: PO:0009035
 name: nectary
 namespace: plant_structure
 def: "A multicellular glandular structure secreting a liquid containing organic substances especially sugars." [GR:pj]
+subset: reference
 is_a: PO:0005656 ! secretory tissue
 relationship: part_of PO:0009006 ! shoot
 
@@ -4909,6 +5011,7 @@ id: PO:0009036
 name: lodicule
 namespace: plant_structure
 def: "In a grass floret\, one of two or three tiny scales or flaps of tissue outside the stamens\, possibly representing reduced perianth segments." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0006318 ! floret (sensu Poaceae)
 
 [Term]
@@ -4916,6 +5019,7 @@ id: PO:0009037
 name: lemma
 namespace: plant_structure
 def: "In a grass floret\, the lower of two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
+subset: reference
 is_a: PO:0009034 ! floral bract
 relationship: part_of PO:0006318 ! floret (sensu Poaceae)
 
@@ -4925,6 +5029,7 @@ name: palea
 namespace: plant_structure
 def: "In a grass floret\, the upper of the two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
 comment: Possibly a prophyll/bracteole.
+subset: reference
 is_a: PO:0009034 ! floral bract
 relationship: part_of PO:0006318 ! floret (sensu Poaceae)
 
@@ -4934,6 +5039,7 @@ name: glume
 alt_id: PO:0006026
 namespace: plant_structure
 def: "A \"bract\" in the inflorescence of a grass\, sedge or similar plant." [APWeb:Glossary, GR:pj]
+subset: reference
 synonym: "rudimentary glume" []
 is_a: PO:0009054 ! inflorescence bract
 relationship: part_of PO:0009051 ! spikelet
@@ -4945,6 +5051,7 @@ alt_id: PO:0006029
 namespace: plant_structure
 def: "A bract in the position of a lemma\, but not enclosing floral organs" [UMSL:tk]
 comment: An undeveloped androecium or gynoecium may or may not be detectable.
+subset: reference
 synonym: "empty glume" []
 is_a: PO:0009037 ! lemma
 
@@ -4953,6 +5060,7 @@ id: PO:0009041
 name: fertile lemma
 namespace: plant_structure
 def: "A lemma that encloses a functional flower\, with androecium\, gynoecium or both." [UMSL:tk]
+subset: reference
 is_a: PO:0009037 ! lemma
 
 [Term]
@@ -4960,6 +5068,7 @@ id: PO:0009042
 name: prophyll
 namespace: plant_structure
 def: "The first leaf or two leaves formed at the base of an axillary shoot\, often smaller and/or in a distinctively different position from those formed subsequently." [APWeb:Glossary]
+subset: reference
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -4982,6 +5091,7 @@ id: PO:0009045
 name: phyllary
 namespace: plant_structure
 def: "Equals inflorescence bract of an involucre\, as in Asteraceae." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009054 ! inflorescence bract
 
 [Term]
@@ -4991,6 +5101,7 @@ alt_id: PO:0004541
 namespace: plant_structure
 def: "A heterosporangiate strobilus\, typically consisting of androecium\, gynoecium\, usually surrounded by a perianth and borne on an axis or receptacle." [APWeb:Glossary, GR:pj]
 comment: The characteristic reproductive structure of angiosperms.
+subset: reference
 synonym: "floret (sensu Asteraceae)" []
 relationship: part_of PO:0009049 ! inflorescence
 
@@ -5000,6 +5111,7 @@ name: stem
 namespace: plant_structure
 def: "The axial system of plants that bears leaves and buds.\n" [APWeb:Glossary]
 comment: It is usually above ground and more or less negatively geotropic\, is exogenous in origin\, often indeterminate in growth and with secondary thickening.
+subset: reference
 synonym: "cane" []
 synonym: "culm" []
 synonym: "stalk" []
@@ -5025,6 +5137,7 @@ alt_id: PO:0020120
 namespace: plant_structure
 def: "That part of the axial system of plants above the uppermost foliage leaf/pair of foliage leaves that bears flowers." [APWeb:Glossary]
 comment: Some plants have only solitary flowers\, e.g. Magnolia.
+subset: reference
 synonym: "catkin" []
 synonym: "cob (sensu Sorghum)" []
 synonym: "corymb" []
@@ -5048,6 +5161,7 @@ name: spikelet
 namespace: plant_structure
 def: "Ultimate and congested inflorescence branch of the grasses." [APWeb:Glossary]
 comment: It consists of one to many closely-packed flowers and associated glumes etc.
+subset: reference
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -5056,6 +5170,7 @@ name: pedicel
 namespace: plant_structure
 def: "Basal part of the ultimate branch of the inflorescence." [APWeb:Glossary]
 comment: The bracteoles are borne on the pedicel\, which terminates in a flower.
+subset: reference
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -5063,6 +5178,7 @@ id: PO:0009053
 name: peduncle
 namespace: plant_structure
 def: "The stalk of an inflorescence; that part of the inflorescence below the first flower or inflorescence branch and above the last foliage leaf/pair of foliage leaves." [APWeb:Glossary]
+subset: reference
 synonym: "inflorescence stem " []
 relationship: part_of PO:0009049 ! inflorescence
 
@@ -5071,6 +5187,7 @@ id: PO:0009054
 name: inflorescence bract
 namespace: plant_structure
 def: "A leaf\, modified or not\, subtending a branch of the inflorescence or borne on the inflorescence axis below any branches or flowers." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009008 ! organ
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0009049 ! inflorescence
@@ -5081,6 +5198,7 @@ name: bract
 namespace: plant_structure
 def: "A leaf\, usually different in form from the foliage leaves\, subtending a flower or inflorescence." [APWeb:Glossary]
 comment: Often used to refer to what is called here floral bract.
+subset: reference
 synonym: "hypsophyll" []
 is_a: PO:0006001 ! phyllome
 
@@ -5089,6 +5207,7 @@ id: PO:0009056
 name: floral nectary
 namespace: plant_structure
 def: "A multicellular glandular structure found in the flower secreting a liquid containing organic substances especially sugars." [ISBN:047124529]
+subset: reference
 is_a: PO:0009035 ! nectary
 relationship: part_of PO:0009046 ! flower
 
@@ -5104,6 +5223,7 @@ id: PO:0009058
 name: perianth
 namespace: plant_structure
 def: "Non-fertile parts of a flower surrounding the fertile organs\, collectively the calyx and corolla of a flower\, or only a singe whorl." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -5111,6 +5231,7 @@ id: PO:0009059
 name: corolla
 namespace: plant_structure
 def: "The petals of a flower collectively." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009058 ! perianth
 
 [Term]
@@ -5118,6 +5239,7 @@ id: PO:0009060
 name: calyx
 namespace: plant_structure
 def: "The sepals of one flower collectively." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009058 ! perianth
 
 [Term]
@@ -5125,6 +5247,7 @@ id: PO:0009061
 name: androecium
 namespace: plant_structure
 def: "Collectively the stamens of one flower." [APWeb:Glossary, GR:pj]
+subset: reference
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -5132,6 +5255,7 @@ id: PO:0009062
 name: gynoecium
 namespace: plant_structure
 def: "Collectively the carpels of a flower." [APWeb:Glossary, GR:pj, TAIR:lr, MaizeGDB:lv]
+subset: reference
 synonym: "pistil" []
 relationship: part_of PO:0009046 ! flower
 
@@ -5140,6 +5264,7 @@ id: PO:0009063
 name: epicalyx
 namespace: plant_structure
 def: "A whorl of structures immediately outside the calyx whorl." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -5147,6 +5272,7 @@ id: PO:0009064
 name: receptacle
 namespace: plant_structure
 def: "The region at end of pedicel or axis to which parts of flower are attached." [Poc:curators, APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -5154,6 +5280,7 @@ id: PO:0009065
 name: hypanthium
 namespace: plant_structure
 def: "A cup- or tube-like structure bearing perianth and stamens on its rim\, so these arise above the base\, and often above the top\, of the ovary of a flower." [Poc:curators, APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -5161,6 +5288,7 @@ id: PO:0009066
 name: anther
 namespace: plant_structure
 def: "The pollen-bearing part of a stamen." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009029 ! stamen
 
 [Term]
@@ -5168,6 +5296,7 @@ id: PO:0009067
 name: filament
 namespace: plant_structure
 def: "The stalk of a stamen." [GR:pj, MaizeGDB:lv]
+subset: reference
 relationship: part_of PO:0009029 ! stamen
 
 [Term]
@@ -5175,6 +5304,7 @@ id: PO:0009068
 name: connective
 namespace: plant_structure
 def: "The part of the stamen that connects the microsporangia/pollen sacs." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009066 ! anther
 
 [Term]
@@ -5182,6 +5312,7 @@ id: PO:0009069
 name: theca
 namespace: plant_structure
 def: "A part of the anther consisting of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009070 ! microsporangium
 
 [Term]
@@ -5189,6 +5320,7 @@ id: PO:0009070
 name: microsporangium
 namespace: plant_structure
 def: "Sporangium producing microspores\, usually many in number." [APWeb:Glossary]
+subset: reference
 synonym: "anther lobe" []
 synonym: "pollen sac" []
 relationship: part_of PO:0009066 ! anther
@@ -5198,6 +5330,7 @@ id: PO:0009071
 name: tapetum
 namespace: plant_structure
 def: "Innermost part of the anther wall\, involved in the nutrition of the pollen." [APWeb:Glossary, TAIR:lr]
+subset: reference
 relationship: develops_from PO:0006008 ! inner secondary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
@@ -5206,6 +5339,7 @@ id: PO:0009072
 name: ovary
 namespace: plant_structure
 def: "The basal portion of a carpel or group of fused carpels\, that encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
+subset: reference
 relationship: part_of PO:0009030 ! carpel
 
 [Term]
@@ -5213,6 +5347,7 @@ id: PO:0009073
 name: stigma
 namespace: plant_structure
 def: "Part of a carpel or group of fused carpels on which the pollen germinates\, usually apical." [APWeb:Glossary, TAIR:lr]
+subset: reference
 relationship: part_of PO:0009030 ! carpel
 
 [Term]
@@ -5220,6 +5355,7 @@ id: PO:0009074
 name: style
 namespace: plant_structure
 def: "An elongated part of a carpel or group of fused carpels between the ovary and the stigma\, and through which the pollen tube grows." [APWeb:Glossary, TAIR:lr]
+subset: reference
 synonym: "silk" []
 relationship: part_of PO:0009030 ! carpel
 
@@ -5243,6 +5379,7 @@ id: PO:0009078
 name: pistillode
 namespace: plant_structure
 def: "A sterile pistil\, often rudimentary." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009062 ! gynoecium
 
 [Term]
@@ -5266,6 +5403,7 @@ id: PO:0009082
 name: floret
 namespace: plant_structure
 def: "Small flowers\, esp. of the spikelets of Poaceae and Cyperaceae." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009046 ! flower
 
 [Term]
@@ -5280,6 +5418,12 @@ id: PO:0009084
 name: pericarp
 namespace: plant_structure
 def: "The wall of a fruit\, developed from the ovary or carpel wall." [APWeb:Glossary, GR:pj, TAIR:lr]
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: Tomato
 synonym: "fruit peel" []
 synonym: "fruit rind" []
 relationship: part_of PO:0009001 ! fruit
@@ -5291,6 +5435,8 @@ alt_id: PO:0006046
 alt_id: PO:0006217
 namespace: plant_structure
 def: "The outer layer of the fruit wall or pericarp." [GR:pj]
+subset: Citrus
+subset: Tomato
 synonym: "ectocarp" []
 synonym: "epicarp" []
 synonym: "exocarp" []
@@ -5305,6 +5451,12 @@ name: endocarp
 alt_id: PO:0006047
 namespace: plant_structure
 def: "The innermost differentiated layer of the fruit wall or pericarp." [GR:pj]
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: Tomato
 synonym: "endocarp" []
 synonym: "flesh (sensu Citrus)" []
 synonym: "inner epidermis of pericarp" []
@@ -5316,6 +5468,8 @@ id: PO:0009087
 name: mesocarp
 namespace: plant_structure
 def: "Middle layer of the fruit wall or pericarp." [GR:pj]
+subset: Citrus
+subset: Tomato
 synonym: "albedo" []
 relationship: part_of PO:0009084 ! pericarp
 
@@ -5341,6 +5495,7 @@ name: aril
 namespace: plant_structure
 def: "A structure associated with and often partly or wholly covering a seed and developed from the funicle or raphe." [APWeb:Glossary]
 comment: Also used more generally to refer to a similar structure derived from any part of the ovule - there has been much and sometimes acrimonious debate over the correct definition of the term\, so when used the origin of the aril should generally be given for clarity.
+subset: reference
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
@@ -5371,6 +5526,7 @@ id: PO:0019023
 name: strophiole
 namespace: plant_structure
 def: "An outgrowth occurring on the raphe." [ISBN:0080280293]
+subset: reference
 is_a: PO:0019022 ! arilloid
 relationship: part_of PO:0020027 ! raphe
 
@@ -5393,6 +5549,7 @@ id: PO:0020001
 name: ovary placenta
 namespace: plant_structure
 def: "A more or less localized region within an ovary to which ovules are attached." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009072 ! ovary
 
 [Term]
@@ -5400,6 +5557,7 @@ id: PO:0020002
 name: endothecium
 namespace: plant_structure
 def: "The hypodermis of an anther sac with distinctively thickened walls and involved in its dehiscence\, especially when this is by slits." [APWeb:Glossary]
+subset: reference
 synonym: "anther sac hypodermis" []
 is_a: PO:0005051 ! hypodermis
 relationship: develops_from PO:0006009 ! outer secondary parietal cell layer
@@ -5410,6 +5568,7 @@ id: PO:0020003
 name: ovule
 namespace: plant_structure
 def: "A stalked or sessile structure in a seed plant within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009072 ! ovary
 
 [Term]
@@ -5418,6 +5577,7 @@ name: exothecium
 alt_id: PO:0006059
 namespace: plant_structure
 def: "The epidermis of an anther sac\, sometimes with distinctively thickened walls and involved in its dehiscence\, usually only when this is poricidal." [APWeb:Glossary]
+subset: reference
 synonym: "anther epidermis" []
 synonym: "anther sac epidermis" []
 is_a: PO:0006035 ! shoot epidermis
@@ -5428,6 +5588,7 @@ id: PO:0020005
 name: placentoid
 namespace: plant_structure
 def: "An inpushing of the anther wall." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -5435,6 +5596,7 @@ id: PO:0020006
 name: funicle
 namespace: plant_structure
 def: "The stalk which attaches the ovule to the placenta." [APWeb:Glossary, GR:pj]
+subset: reference
 synonym: "funiculus" []
 relationship: part_of PO:0009072 ! ovary
 
@@ -5443,6 +5605,7 @@ id: PO:0020008
 name: exine
 namespace: plant_structure
 def: "The outer layer of the pollen grain wall\, highly resistant to strong acids and bases\, and composed primarily of sporopollenin." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0020059 ! pollen wall
 
 [Term]
@@ -5451,6 +5614,7 @@ name: ectexine
 namespace: plant_structure
 def: "The outer part of the exine\, which stains positively with basic fuchsin in optical microscopy and has higher electron density in conventionally prepared TEM sections." [APWeb:Glossary]
 comment: Although the term endexine as originally defined (see APWeb) was more or less synonymous with nexine it no longer is because endexine is now invariably used in the sense of F?gri (see APWeb). Nexine and sexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties.
+subset: reference
 relationship: part_of PO:0020008 ! exine
 
 [Term]
@@ -5459,6 +5623,7 @@ name: endexine
 namespace: plant_structure
 def: "The inner part of the exine\, which stains." [APWeb:Glossary]
 comment: Although the term endexine as originally defined (see APWeb) was more or less synonymous with nexine it no longer is because endexine is now invariably used in the sense of F?gri (see APWeb). Nexine and sexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties.
+subset: reference
 relationship: part_of PO:0020008 ! exine
 
 [Term]
@@ -5467,6 +5632,7 @@ name: nexine
 namespace: plant_structure
 def: "The inner\, non-sculptured part of the exine which lies below the sexine." [APWeb:Glossary]
 comment: Although the term endexine as originally defined (see APWeb) was more or less synonymous with nexine it no longer is because endexine is now invariably used in the sense of F?gri (see APWeb). Nexine and sexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties.
+subset: reference
 relationship: part_of PO:0020008 ! exine
 
 [Term]
@@ -5475,6 +5641,7 @@ name: sexine
 namespace: plant_structure
 def: "The outer\, sculptured layer of the exine\, which lies above the nexine." [APWeb:Glossary]
 comment: Although the term ectexine as originally defined (see APWeb) was more or less synonymous with sexine\, it no longer is because ectexine is now invariably used in the redefined sense (see APWeb). Unlike ectexine\, sexine does not include the foot layer. Sexine and nexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties. The two sets of terms are therefore suited for slightly different applications.  A system of sexine stratification in which sexine 1 is the innermost and sexine 5 is the outermost layer of the sexine. Comment\: Usually the sexine consists of 3 layers (sexine 1 = columellae; sexine 2 = tectum; sexine 3 = sculpture elements).
+subset: reference
 relationship: part_of PO:0020008 ! exine
 
 [Term]
@@ -5482,6 +5649,7 @@ id: PO:0020013
 name: tectum
 namespace: plant_structure
 def: "The layer of sexine\, which forms a roof over the columellae\, granules or other infratectal elements." [APWeb:Glossary]
+subset: reference
 synonym: "sexine 2" []
 relationship: part_of PO:0020012 ! sexine
 
@@ -5490,6 +5658,7 @@ id: PO:0020014
 name: columella
 namespace: plant_structure
 def: "A rod-like element of the sexine/ectexine\, either supporting the tectum or a caput." [APWeb:Glossary]
+subset: reference
 synonym: "sexine 1" []
 relationship: part_of PO:0020012 ! sexine
 
@@ -5498,6 +5667,7 @@ id: PO:0020015
 name: sculpture elements
 namespace: plant_structure
 def: "Third layer of sexine." [APWeb:Glossary]
+subset: reference
 synonym: "sexine 3" []
 relationship: part_of PO:0020012 ! sexine
 
@@ -5514,6 +5684,7 @@ id: PO:0020017
 name: intine
 namespace: plant_structure
 def: "The innermost of the major layers of the pollen grain wall\, underlies the exine and borders the cytoplasm\, not acetolysis resistant and is therefore absent in conventionally prepared palynological material." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0020059 ! pollen wall
 
 [Term]
@@ -5521,6 +5692,7 @@ id: PO:0020018
 name: germination pore
 namespace: plant_structure
 def: "Area through which the pollen imports the nutrition during its development\, at the time of pollen germination\, the pollen tube emerges through it." [GR:pj]
+subset: reference
 synonym: "pollen pore" []
 relationship: part_of PO:0020059 ! pollen wall
 
@@ -5537,6 +5709,7 @@ id: PO:0020020
 name: nucellus
 namespace: plant_structure
 def: "Subepidermal tissue in the ovule surrounding the megasporocyte." [APWeb:Glossary]
+subset: reference
 synonym: "megasporangium" []
 relationship: part_of PO:0020003 ! ovule
 
@@ -5545,6 +5718,7 @@ id: PO:0020021
 name: integument
 namespace: plant_structure
 def: "One of the layers of tissue that usually covers the ovule\, enveloping the nucellus and forming the micropyle at the apex." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -5574,6 +5748,7 @@ name: micropyle
 namespace: plant_structure
 def: "A small canal or opening through the integument(s) at the apex of an ovule." [APWeb:Glossary]
 comment: In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated. The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac.
+subset: reference
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -5582,6 +5757,7 @@ name: chalaza
 namespace: plant_structure
 def: "Region in the ovule where the integuments and the nucellus join with the funiculus. " [ISBN:047124529]
 comment: The chalaza is recognized as the region which initiates the two integuments at its flank.
+subset: reference
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -5590,6 +5766,7 @@ name: raphe
 namespace: plant_structure
 def: "That part of the funiculus that is adnate to the ovule." [APWeb:Glossary, ISBN:047124529]
 comment: see antiraphe.
+subset: reference
 relationship: part_of PO:0020003 ! ovule
 relationship: part_of PO:0020006 ! funicle
 
@@ -5599,6 +5776,7 @@ name: antiraphe
 namespace: plant_structure
 def: "The region on the other side of the ovule from the raphe." [APWeb:Glossary]
 comment: see raphe.
+subset: reference
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -5607,6 +5785,7 @@ name: obturator
 namespace: plant_structure
 def: "An outgrowth of the funicle\, that forms a bridge between the micropyle and other tissues." [APWeb:Glossary]
 comment: Most commonly arising from the funicle\, also developing from placenta\, integument\, etc.
+subset: reference
 relationship: develops_from PO:0020006 ! funicle
 
 [Term]
@@ -5614,6 +5793,7 @@ id: PO:0020030
 name: cotyledon
 namespace: plant_structure
 def: "A leaf or leaves formed at the first node of a sporophyte." [APWeb:Glossary, GR:pj]
+subset: reference
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009009 ! embryo
 
@@ -5622,6 +5802,7 @@ id: PO:0020031
 name: radicle
 namespace: plant_structure
 def: "The radicle is the basal continuation of the hypocotyl in an embryo and gives rise to the root system of the adult plant; sometimes more or less abortive." [APWeb:Glossary]
+subset: reference
 is_a: PO:0000045 ! embryonic root
 relationship: part_of PO:0019018 ! embryo axis
 
@@ -5741,6 +5922,7 @@ id: PO:0020047
 name: microsporocyte
 namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores." [ISBN:0878934030]
+subset: reference
 synonym: "PMC" []
 synonym: "microspore mother cell" []
 synonym: "pollen mother cell" []
@@ -5753,6 +5935,7 @@ id: PO:0020048
 name: microspore
 namespace: plant_structure
 def: "The smaller\, in general\, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant\, and on germination giving rise to the male gametophyte." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000032 ! tetrad of microspores
 
@@ -5834,6 +6017,7 @@ id: PO:0020059
 name: pollen wall
 namespace: plant_structure
 def: "Complex wall surrounding the micrsopore." [UMSL:fz]
+subset: reference
 relationship: part_of PO:0020091 ! male gametophyte
 
 [Term]
@@ -5926,6 +6110,7 @@ id: PO:0020090
 name: central cell
 namespace: plant_structure
 def: "The largest cell of the mature embryo sac. Contains two polar nuclei\, which (after double fertilization) will develop into the endosperm." [TAIR:ki]
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020092 ! female gametophyte
 
@@ -5935,6 +6120,7 @@ name: male gametophyte
 alt_id: PO:0020007
 namespace: plant_structure
 def: "A plant body or cell lineage formed by vegetative growth of the microspore\, producing male gametes." [APWeb:Glossary]
+subset: reference
 synonym: "microgametophyte" []
 synonym: "pollen" []
 synonym: "pollen grain" []
@@ -5945,6 +6131,7 @@ id: PO:0020092
 name: female gametophyte
 namespace: plant_structure
 def: "Embryo sac in flowering plants." [APWeb:Glossary]
+subset: reference
 synonym: "embryo sac" []
 synonym: "megagametophyte" []
 is_a: PO:0009004 ! gametophyte
@@ -5955,6 +6142,7 @@ name: antipodal cell
 namespace: plant_structure
 def: "Cell\, commonly three in number as in the eight-nucleate embryo sac\, located at the other end of the embryo sac from the female gamete. " [APWeb:Glossary]
 comment: More or less persistent\, multiplicative or not.
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020092 ! female gametophyte
 
@@ -5963,6 +6151,7 @@ id: PO:0020094
 name: egg cell
 namespace: plant_structure
 def: "A non motile cell at the apex of the embryo sac immediately adjacent to the micropyle and associated with the synergid cells." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020096 ! egg apparatus
 
@@ -5979,6 +6168,7 @@ id: PO:0020096
 name: egg apparatus
 namespace: plant_structure
 def: "The egg cell and two synergids located at the micropylar end of the female gametophyte\, or the embryo sac\, in angiosperms." [TAIR:lr]
+subset: reference
 relationship: part_of PO:0020092 ! female gametophyte
 
 [Term]
@@ -5986,6 +6176,7 @@ id: PO:0020097
 name: generative cell
 namespace: plant_structure
 def: "A cell of the male gametophyte of angiosperms that divides to produce two male gametes or sperm cells." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020091 ! male gametophyte
 
@@ -5994,6 +6185,7 @@ id: PO:0020099
 name: vegetative cell
 namespace: plant_structure
 def: "The larger cell of the male gametophyte of angiosperms that does not divide further." [APWeb:Glossary]
+subset: reference
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020091 ! male gametophyte
 
@@ -6009,6 +6201,7 @@ id: PO:0020101
 name: stomium
 namespace: plant_structure
 def: "A fissure or pore in the anther lobe through which the pollen is released." [GR:pj]
+subset: reference
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -6016,6 +6209,7 @@ id: PO:0020102
 name: transmitting tissue
 namespace: plant_structure
 def: "Tissue in the style of a carpel through which the pollen tube grows; it connects the stigma and the inside of ovary." [GR:pj, ISBN:0080374913]
+subset: reference
 synonym: "transmitting tract" []
 is_a: PO:0009007 ! tissue
 relationship: part_of PO:0009074 ! style
@@ -6094,6 +6288,7 @@ id: PO:0020123
 name: root cap
 namespace: plant_structure
 def: "A group of cells that covers the apical meristem of the root." [APWeb:Glossary]
+subset: reference
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -6103,6 +6298,7 @@ alt_id: PO:0003012
 namespace: plant_structure
 def: "The central column of primary vascular tissue in the root and any tissue that it surrounds." [APWeb:Glossary]
 comment: Includes the pericycle as the outermost layer of the stele
+subset: reference
 synonym: "root vascular cylinder" []
 relationship: part_of PO:0009005 ! root
 
@@ -6111,6 +6307,7 @@ id: PO:0020125
 name: elongation zone
 namespace: plant_structure
 def: "The portion of the root that includes small\, densely cytoplasmic cells that are dividing and expanding in size." [GR:pj]
+subset: reference
 synonym: "region of cell elongation" []
 synonym: "region of radial enlargement" []
 relationship: part_of PO:0009005 ! root
@@ -6121,6 +6318,8 @@ name: tassel
 namespace: plant_structure
 def: "The functionally-staminate flowering structure that terminates the stem of a Zea mays plant." [MaizeGDB:lv]
 comment: Branched inflorescence with a central axis and about 10-50 lateral branches.
+subset: Maize
+subset: reference
 is_a: PO:0009049 ! inflorescence
 
 [Term]
@@ -6187,6 +6386,7 @@ name: differentiation zone
 alt_id: PO:0003002
 namespace: plant_structure
 def: "The portion of the root located behind the elongation zone containing cells that are differentiating into their final form and function." [GR:pj]
+subset: reference
 synonym: "maturation zone" []
 synonym: "specialization zone" []
 relationship: part_of PO:0009005 ! root
@@ -6196,6 +6396,8 @@ id: PO:0020136
 name: ear (sensu Zea)
 namespace: plant_structure
 def: "The distal part of a lateral (axillary) branch in Zea that bears the functionally-carpellate florets in a highly contracted inflorescence." [MaizeGDB:lv]
+subset: Maize
+subset: reference
 is_a: PO:0009049 ! inflorescence
 
 [Term]
