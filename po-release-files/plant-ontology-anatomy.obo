@@ -1,7 +1,7 @@
 format-version: 1.0
-version: $Revision: 1.27 $
-date: 20:07:2006 16:31
-saved-by: Pankaj Jaiswal
+version: $Revision: 1.28 $
+date: 25:08:2006 16:20
+saved-by: katica ilic
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
@@ -186,16 +186,17 @@ id: PO:0000023
 name: casparian strip
 namespace: plant_structure
 def: "OBSOLETE\: A band-like wall formation within primary walls that contains suberin and lignin; typical of endodermal cells in roots\, in which it occurs in radial and transverse anticlinal walls." [ISBN:0471245208]
-comment: Comment\: this term is available in the Cellular Component aspect of the Gene Ontology (GO\:0048226).
+comment: Comment\: this term is now available in the cellular_component aspect of the Gene Ontology (GO\:0048226).
 is_obsolete: true
 
 [Term]
 id: PO:0000024
 name: filiform apparatus
 namespace: plant_structure
-def: "A complex of cell wall invaginations in a synergid cell similar to those in transfer cells." [ISBN:0471245208]
+def: "OBSOLETE\: A complex of cell wall invaginations in a synergid cell similar to those in transfer cells." [ISBN:0471245208]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043680.
 subset: reference
-relationship: part_of PO:0000191 ! synergid
+is_obsolete: true
 
 [Term]
 id: PO:0000025
@@ -436,6 +437,65 @@ namespace: plant_structure
 def: "The primary tissue located between the vascular system and the epidermis of the petiole." [TAIR:ki]
 is_a: PO:0005708 ! cortex
 relationship: part_of PO:0020038 ! petiole
+
+[Term]
+id: PO:0000054
+name: petal vascular system
+namespace: plant_structure
+def: "Vascular system of the petal." [POC:curators]
+relationship: part_of PO:0009032 ! petal
+
+[Term]
+id: PO:0000055
+name: bud
+namespace: plant_structure
+def: "Undeveloped shoot." [POC:curators]
+relationship: part_of PO:0009006 ! shoot
+
+[Term]
+id: PO:0000056
+name: floral bud
+namespace: plant_structure
+def: "Bud that develops into a flower." [POC:curators]
+is_a: PO:0000055 ! bud
+
+[Term]
+id: PO:0000057
+name: inflorescence bud
+namespace: plant_structure
+def: "Bud that develops into an inflorescence." [POC:curators]
+is_a: PO:0000055 ! bud
+
+[Term]
+id: PO:0000058
+name: vegetative bud 
+namespace: plant_structure
+def: "Bud that develops into a long or short shoot." [POC:curators]
+is_a: PO:0000055 ! bud
+
+[Term]
+id: PO:0000059
+name: root initial cell
+namespace: plant_structure
+def: "Cell in the root apical meristem that by division gives rise to two cells one of which remains in the meristem\, the other is added produces different root cells." [TAIR:ki]
+synonym: "root stem cell" []
+is_a: PO:0004011 ! initial cell
+
+[Term]
+id: PO:0000060
+name: root cortex-endodermis initial cell
+namespace: plant_structure
+def: "Cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:ki]
+synonym: "root cortex-endodermis stem cell" []
+is_a: PO:0000059 ! root initial cell
+
+[Term]
+id: PO:0000061
+name: lateral root-cap-epidermal initial
+namespace: plant_structure
+def: "Cell that produces lateral root-cap cells and root epidermis. " [POC:curators]
+synonym: "lateral root-cap-epidermal stem cell" []
+is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0000066
@@ -1587,13 +1647,14 @@ name: axillary bud
 namespace: plant_structure
 def: "Bud formed in the axil of a leaf or shoot." [POC:curators]
 subset: reference
-relationship: part_of PO:0009006 ! shoot
+is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0004710
 name: axillary floral bud
 namespace: plant_structure
 def: "Bud formed in the axil of a leaf or shoot that develops into a flower." [POC:curators]
+is_a: PO:0000056 ! floral bud
 is_a: PO:0004709 ! axillary bud
 
 [Term]
@@ -1601,6 +1662,7 @@ id: PO:0004711
 name: axillary inflorescence bud
 namespace: plant_structure
 def: "Bud formed in the axil of the a leaf or shoot that develops into an inflorescence." [POC:curators]
+is_a: PO:0000057 ! inflorescence bud
 is_a: PO:0004709 ! axillary bud
 
 [Term]
@@ -1608,6 +1670,7 @@ id: PO:0004712
 name: axillary vegetative bud
 namespace: plant_structure
 def: "Bud formed in the axil of the a leaf or shoot that develops into a long or short shoot and/or leaf(s). " [POC:curators]
+is_a: PO:0000058 ! vegetative bud 
 is_a: PO:0004709 ! axillary bud
 
 [Term]
@@ -1616,13 +1679,14 @@ name: terminal bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot." [POC:curators]
 subset: reference
-relationship: part_of PO:0009006 ! shoot
+is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0004714
 name: terminal floral bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into a flower." [POC:curators]
+is_a: PO:0000056 ! floral bud
 is_a: PO:0004713 ! terminal bud
 
 [Term]
@@ -1630,6 +1694,7 @@ id: PO:0004715
 name: terminal inflorescence bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into an inflorescence." [POC:curators]
+is_a: PO:0000057 ! inflorescence bud
 is_a: PO:0004713 ! terminal bud
 
 [Term]
@@ -1637,6 +1702,7 @@ id: PO:0004716
 name: terminal vegetative bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into a long or short shoot." [POC:curators]
+is_a: PO:0000058 ! vegetative bud 
 is_a: PO:0004713 ! terminal bud
 
 [Term]
@@ -2859,6 +2925,7 @@ id: PO:0006204
 name: sporocyte
 namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) spores." [GR:pj]
+synonym: "meiocyte" []
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -5604,97 +5671,104 @@ relationship: part_of PO:0009072 ! ovary
 id: PO:0020008
 name: exine
 namespace: plant_structure
-def: "The outer layer of the pollen grain wall\, highly resistant to strong acids and bases\, and composed primarily of sporopollenin." [APWeb:Glossary]
+def: "OBSOLETE\: The outer layer of the pollen grain wall\, highly resistant to strong acids and bases\, and composed primarily of sporopollenin." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043668.
 subset: reference
-relationship: part_of PO:0020059 ! pollen wall
+is_obsolete: true
 
 [Term]
 id: PO:0020009
 name: ectexine
 namespace: plant_structure
-def: "The outer part of the exine\, which stains positively with basic fuchsin in optical microscopy and has higher electron density in conventionally prepared TEM sections." [APWeb:Glossary]
-comment: Although the term endexine as originally defined (see APWeb) was more or less synonymous with nexine it no longer is because endexine is now invariably used in the sense of F?gri (see APWeb). Nexine and sexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties.
+def: "OBSOLETE\: The outer part of the exine\, which stains positively with basic fuchsin in optical microscopy and has higher electron density in conventionally prepared TEM sections." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043669.
 subset: reference
-relationship: part_of PO:0020008 ! exine
+is_obsolete: true
 
 [Term]
 id: PO:0020010
 name: endexine
 namespace: plant_structure
-def: "The inner part of the exine\, which stains." [APWeb:Glossary]
-comment: Although the term endexine as originally defined (see APWeb) was more or less synonymous with nexine it no longer is because endexine is now invariably used in the sense of F?gri (see APWeb). Nexine and sexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties.
+def: "OBSOLETE\: The inner part of the exine\, which stains." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043671.
 subset: reference
-relationship: part_of PO:0020008 ! exine
+is_obsolete: true
 
 [Term]
 id: PO:0020011
 name: nexine
 namespace: plant_structure
-def: "The inner\, non-sculptured part of the exine which lies below the sexine." [APWeb:Glossary]
-comment: Although the term endexine as originally defined (see APWeb) was more or less synonymous with nexine it no longer is because endexine is now invariably used in the sense of F?gri (see APWeb). Nexine and sexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties.
+def: "OBSOLETE\: The inner\, non-sculptured part of the exine which lies below the sexine." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043672.
 subset: reference
-relationship: part_of PO:0020008 ! exine
+is_obsolete: true
 
 [Term]
 id: PO:0020012
 name: sexine
 namespace: plant_structure
-def: "The outer\, sculptured layer of the exine\, which lies above the nexine." [APWeb:Glossary]
-comment: Although the term ectexine as originally defined (see APWeb) was more or less synonymous with sexine\, it no longer is because ectexine is now invariably used in the redefined sense (see APWeb). Unlike ectexine\, sexine does not include the foot layer. Sexine and nexine are distinguished on purely morphological criteria\, whereas ectexine and endexine differ in their staining properties. The two sets of terms are therefore suited for slightly different applications.  A system of sexine stratification in which sexine 1 is the innermost and sexine 5 is the outermost layer of the sexine. Comment\: Usually the sexine consists of 3 layers (sexine 1 = columellae; sexine 2 = tectum; sexine 3 = sculpture elements).
+def: "OBSOLETE\: The outer\, sculptured layer of the exine\, which lies above the nexine." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043673.
 subset: reference
-relationship: part_of PO:0020008 ! exine
+is_obsolete: true
 
 [Term]
 id: PO:0020013
 name: tectum
 namespace: plant_structure
-def: "The layer of sexine\, which forms a roof over the columellae\, granules or other infratectal elements." [APWeb:Glossary]
+def: "OBSOLETE\: The layer of sexine\, which forms a roof over the columellae\, granules or other infratectal elements." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043676\,
 subset: reference
 synonym: "sexine 2" []
-relationship: part_of PO:0020012 ! sexine
+is_obsolete: true
 
 [Term]
 id: PO:0020014
 name: columella
 namespace: plant_structure
-def: "A rod-like element of the sexine/ectexine\, either supporting the tectum or a caput." [APWeb:Glossary]
+def: "OBSOLETE\: A rod-like element of the sexine/ectexine\, either supporting the tectum or a caput." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043674.
 subset: reference
 synonym: "sexine 1" []
-relationship: part_of PO:0020012 ! sexine
+is_obsolete: true
 
 [Term]
 id: PO:0020015
 name: sculpture elements
 namespace: plant_structure
-def: "Third layer of sexine." [APWeb:Glossary]
+def: "OBSOLETE\: Third layer of sexine." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043675.
 subset: reference
 synonym: "sexine 3" []
-relationship: part_of PO:0020012 ! sexine
+is_obsolete: true
 
 [Term]
 id: PO:0020016
 name: foot layer
 namespace: plant_structure
-def: "The inner layer of the ectexine." [APWeb:Glossary]
+def: "OBSOLETE\: The inner layer of the ectexine." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043670.
 synonym: "nexine 1" []
-relationship: part_of PO:0020009 ! ectexine
+is_obsolete: true
 
 [Term]
 id: PO:0020017
 name: intine
 namespace: plant_structure
-def: "The innermost of the major layers of the pollen grain wall\, underlies the exine and borders the cytoplasm\, not acetolysis resistant and is therefore absent in conventionally prepared palynological material." [APWeb:Glossary]
+def: "OBSOLETE\: The innermost of the major layers of the pollen grain wall\, underlies the exine and borders the cytoplasm\, not acetolysis resistant and is therefore absent in conventionally prepared palynological material." [APWeb:Glossary]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043678.
 subset: reference
-relationship: part_of PO:0020059 ! pollen wall
+is_obsolete: true
 
 [Term]
 id: PO:0020018
 name: germination pore
 namespace: plant_structure
-def: "Area through which the pollen imports the nutrition during its development\, at the time of pollen germination\, the pollen tube emerges through it." [GR:pj]
+def: "OBSOLETE\: Area through which the pollen imports the nutrition during its development\, at the time of pollen germination\, the pollen tube emerges through it." [GR:pj]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043677.
 subset: reference
 synonym: "pollen pore" []
-relationship: part_of PO:0020059 ! pollen wall
+is_obsolete: true
 
 [Term]
 id: PO:0020019
@@ -6016,9 +6090,10 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0020059
 name: pollen wall
 namespace: plant_structure
-def: "Complex wall surrounding the micrsopore." [UMSL:fz]
+def: "OBSOLETE\: Complex wall surrounding the micrsopore." [UMSL:fz]
+comment: This term is now available in the cellular_component aspect of the Gene Ontology\, GO\:0043667.
 subset: reference
-relationship: part_of PO:0020091 ! male gametophyte
+is_obsolete: true
 
 [Term]
 id: PO:0020060
@@ -6160,7 +6235,7 @@ id: PO:0020095
 name: polar nucleus
 namespace: plant_structure
 def: "OBSOLETE\: Usually two nuclei in the center of the eight-nucleate embryo sac that fuse\, and subsequently fuse with one of the male gametes to produce the endosperm." [APWeb:Glossary]
-comment: Comment\: this term is available in the Cellular Component aspect of the Gene Ontology (GO\:0043078).
+comment: Comment\: this term is now available in the cellular_component aspect of the Gene Ontology (GO\:0043078).
 is_obsolete: true
 
 [Term]
@@ -6370,7 +6445,7 @@ name: columella root cap initial
 namespace: plant_structure
 def: "Cell that produces columella cells in the root cap. In direct contact with quiescent center." [TAIR:ki, ISBN:0471245208]
 synonym: "columella root cap stem cell" []
-is_a: PO:0004011 ! initial cell
+is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0020134
