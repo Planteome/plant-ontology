@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.28 $
-date: 25:08:2006 16:20
+version: $Revision: 1.29 $
+date: 25:08:2006 17:18
 saved-by: katica ilic
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Tomato "Term used for tomato"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Tomato "Term used for tomato"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -468,7 +468,7 @@ is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0000058
-name: vegetative bud 
+name: vegetative bud
 namespace: plant_structure
 def: "Bud that develops into a long or short shoot." [POC:curators]
 is_a: PO:0000055 ! bud
@@ -479,7 +479,7 @@ name: root initial cell
 namespace: plant_structure
 def: "Cell in the root apical meristem that by division gives rise to two cells one of which remains in the meristem\, the other is added produces different root cells." [TAIR:ki]
 synonym: "root stem cell" []
-is_a: PO:0004011 ! initial cell
+is_a: PO:0020147 ! root apical meristem
 
 [Term]
 id: PO:0000060
@@ -491,7 +491,7 @@ is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0000061
-name: lateral root-cap-epidermal initial
+name: lateral root-cap-epidermal initial cell
 namespace: plant_structure
 def: "Cell that produces lateral root-cap cells and root epidermis. " [POC:curators]
 synonym: "lateral root-cap-epidermal stem cell" []
@@ -1670,7 +1670,7 @@ id: PO:0004712
 name: axillary vegetative bud
 namespace: plant_structure
 def: "Bud formed in the axil of the a leaf or shoot that develops into a long or short shoot and/or leaf(s). " [POC:curators]
-is_a: PO:0000058 ! vegetative bud 
+is_a: PO:0000058 ! vegetative bud
 is_a: PO:0004709 ! axillary bud
 
 [Term]
@@ -1702,7 +1702,7 @@ id: PO:0004716
 name: terminal vegetative bud
 namespace: plant_structure
 def: "Bud formed at the apex of shoot that develops into a long or short shoot." [POC:curators]
-is_a: PO:0000058 ! vegetative bud 
+is_a: PO:0000058 ! vegetative bud
 is_a: PO:0004713 ! terminal bud
 
 [Term]
@@ -6437,11 +6437,11 @@ name: columella root cap cell
 namespace: plant_structure
 def: "Cell that constitutes the central part of the root cap\, arranged in longitudinal files." [TAIR:ki, PMID:9384380]
 is_a: PO:0009002 ! plant cell
-relationship: develops_from PO:0020133 ! columella root cap initial
+relationship: develops_from PO:0020133 ! columella root cap initial cell
 
 [Term]
 id: PO:0020133
-name: columella root cap initial
+name: columella root cap initial cell
 namespace: plant_structure
 def: "Cell that produces columella cells in the root cap. In direct contact with quiescent center." [TAIR:ki, ISBN:0471245208]
 synonym: "columella root cap stem cell" []
