@@ -1,7 +1,7 @@
 format-version: 1.0
-version: $Revision: 1.29 $
-date: 25:08:2006 17:18
-saved-by: katica ilic
+version: $Revision: 1.30 $
+date: 29:08:2006 13:44
+saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
@@ -5155,11 +5155,13 @@ is_a: PO:0009042 ! prophyll
 
 [Term]
 id: PO:0009045
-name: phyllary
+name: involucral bract
 namespace: plant_structure
-def: "Equals inflorescence bract of an involucre\, as in Asteraceae." [APWeb:Glossary]
+def: "Equals inflorescence bract of an involucre\, as in Asteraceae or Compositeae." [APWeb:Glossary]
 subset: reference
+synonym: "phyllary" []
 is_a: PO:0009054 ! inflorescence bract
+relationship: part_of PO:0009100 ! involucre
 
 [Term]
 id: PO:0009046
@@ -5205,6 +5207,7 @@ namespace: plant_structure
 def: "That part of the axial system of plants above the uppermost foliage leaf/pair of foliage leaves that bears flowers." [APWeb:Glossary]
 comment: Some plants have only solitary flowers\, e.g. Magnolia.
 subset: reference
+synonym: "capitulum" []
 synonym: "catkin" []
 synonym: "cob (sensu Sorghum)" []
 synonym: "corymb" []
@@ -5572,6 +5575,14 @@ name: mature dispersal unit
 namespace: plant_structure
 def: "OBSOLETE. provisional term" [Poc:curators]
 is_obsolete: true
+
+[Term]
+id: PO:0009100
+name: involucre
+namespace: plant_structure
+def: "A whorl of bracts at the base of a cluster of flowers as found in Asteraceae or Compositae." [POC:curators]
+comment: The burs or bristles in Cenchrus and Pennisetum are not involucres because the fused structures are branches and not bracts.
+relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0019018
