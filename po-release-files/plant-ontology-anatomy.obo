@@ -1,13 +1,12 @@
 format-version: 1.0
-version: $Revision: 1.32 $
-date: 31:08:2006 16:04
-saved-by: katica
+date: 16:01:2007 14:18
+saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Tomato "Term used for tomato"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Tomato "Term used for tomato"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -339,7 +338,7 @@ name: shoot borne root
 alt_id: PO:0003007
 alt_id: PO:0020129
 namespace: plant_structure
-def: "Post-embryonic root developed from shoot tissue." [TAIR:ki, GR:pj]
+def: "Post-embryonic root developed from shoot tissue." [GR:pj, TAIR:ki]
 subset: reference
 synonym: "adventitious root" []
 synonym: "stilt root" []
@@ -501,7 +500,7 @@ is_a: PO:0000059 ! root initial cell
 id: PO:0000066
 name: epithem cell
 namespace: plant_structure
-def: "Cell of the mesophyll of a hydathode found between the xylem endings and the epidermis." [PMID:12662305, ISBN:0471245208]
+def: "Cell of the mesophyll of a hydathode found between the xylem endings and the epidermis." [ISBN:0471245208, PMID:12662305]
 comment: Proposed to be involved in the retrieval of solutes from the xylem sap.
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005660 ! hydathode
@@ -510,7 +509,7 @@ relationship: part_of PO:0005660 ! hydathode
 id: PO:0000070
 name: meristemoid
 namespace: plant_structure
-def: "A cell or a group of cells constituting an active locus of meristematic activity in a tissue composed of somewhat older\, differentiating cells." [PO:syr, ISBN:0471245208]
+def: "A cell or a group of cells constituting an active locus of meristematic activity in a tissue composed of somewhat older\, differentiating cells." [ISBN:0471245208, PO:syr]
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -663,7 +662,7 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000201
 name: chalazal cyst
 namespace: plant_structure
-def: "The part of the endosperm nearest the chalazal region of the ovule and forming a cyst-like structure." [TAIR:lr, ISBN:047124529]
+def: "The part of the endosperm nearest the chalazal region of the ovule and forming a cyst-like structure." [ISBN:047124529, TAIR:lr]
 comment: Not in current literature. More like an attribute.
 synonym: "chalazal endosperm cyst" []
 relationship: part_of PO:0009089 ! endosperm
@@ -688,7 +687,7 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0000224
 name: central zone
 namespace: plant_structure
-def: "An area of densely packed cells in the shoot apex that divide infrequently." [TAIR:lr, ISBN:0521288959]
+def: "An area of densely packed cells in the shoot apex that divide infrequently." [ISBN:0521288959, TAIR:lr]
 comment: Functions as a population of stem cells that replenishes the meristem.
 synonym: "central initiation zone" []
 relationship: part_of PO:0020148 ! shoot apical meristem
@@ -697,7 +696,7 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 id: PO:0000225
 name: peripheral zone
 namespace: plant_structure
-def: "Organogenic region of the meristem\,  characterized by higher rates of cell division." [TAIR:lr, ISBN:0521288959]
+def: "Organogenic region of the meristem\,  characterized by higher rates of cell division." [ISBN:0521288959, TAIR:lr]
 synonym: "peripheral meristem" []
 relationship: part_of PO:0020148 ! shoot apical meristem
 
@@ -715,7 +714,7 @@ name: floral meristem
 namespace: plant_structure
 def: "Meristem that gives rise to the floral organs." [GR:pj]
 synonym: "floral apical meristem" []
-is_a: PO:0020148 ! shoot apical meristem
+is_a: PO:0009013 ! meristem
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -723,7 +722,7 @@ id: PO:0000230
 name: inflorescence meristem
 namespace: plant_structure
 def: "Meristem that gives rise to the inflorescence." [GR:pj]
-is_a: PO:0020148 ! shoot apical meristem
+is_a: PO:0009013 ! meristem
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -771,7 +770,7 @@ id: PO:0000258
 name: root cortex
 alt_id: PO:0003010
 namespace: plant_structure
-def: "The primary tissue located between the vascular system and the epidermis of the root." [ISBN:047125208, GR:pj]
+def: "The primary tissue located between the vascular system and the epidermis of the root." [GR:pj, ISBN:047125208]
 comment: In dicots and gymnosperms\, the cortex consists of mainly parenchyma cells. In monocots sclerenchyma develops in addition to parenchyma.
 is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009005 ! root
@@ -1068,7 +1067,7 @@ is_a: PO:0000042 ! shoot borne root
 id: PO:0003011
 name: root vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangements in the root." [TAIR:ki, ISBN:0471245208]
+def: "Total of the vascular tissues in their specific arrangements in the root." [ISBN:0471245208, TAIR:ki]
 comment: This term was brought back from OBSOLETE node (original reason for OBSOLETE\: synonym of term stele). Since stele encompasses both\, vascular system and the pith\, in roots with pith\, vascular system and stele are not synonymous.
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0020124 ! root stele
@@ -1308,28 +1307,28 @@ relationship: part_of PO:0020061 ! coma
 id: PO:0004512
 name: heartwood
 namespace: plant_structure
-def: "The inner layers of secondary xylem that have largely ceased to function in storage and conduction and in which reserve materials have been removed or converted into heartwood substances; generally darker colored than the functioning sapwood." [POC:curators, ISBN:0471245208]
+def: "The inner layers of secondary xylem that have largely ceased to function in storage and conduction and in which reserve materials have been removed or converted into heartwood substances; generally darker colored than the functioning sapwood." [ISBN:0471245208, POC:curators]
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
 id: PO:0004513
 name: sapwood
 namespace: plant_structure
-def: "Outer part of the wood of stem or root containing living cells and reserves and in which conduction of water takes place. Generally lighter colored than the heartwood" [POC:curators, ISBN:0471245208]
+def: "Outer part of the wood of stem or root containing living cells and reserves and in which conduction of water takes place. Generally lighter colored than the heartwood" [ISBN:0471245208, POC:curators]
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
 id: PO:0004514
 name: growth ring
 namespace: plant_structure
-def: "A growth layer of secondary xylem or secondary phloem as seen in transection of stem or root; may be an annual ring or a false annual ring." [POC:curators, ISBN:0471245208]
+def: "A growth layer of secondary xylem or secondary phloem as seen in transection of stem or root; may be an annual ring or a false annual ring." [ISBN:0471245208, POC:curators]
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
 id: PO:0004515
 name: early wood
 namespace: plant_structure
-def: "The wood formed in first part of a growth ring and characterized by a lower density and larger cells than the late wood." [POC:curators, ISBN:0471245208]
+def: "The wood formed in first part of a growth ring and characterized by a lower density and larger cells than the late wood." [ISBN:0471245208, POC:curators]
 synonym: "spring wood" []
 is_a: PO:0004514 ! growth ring
 
@@ -1495,7 +1494,7 @@ is_a: PO:0009009 ! embryo
 id: PO:0004538
 name: indeterminate nodule
 namespace: plant_structure
-def: "Nodule characterized by a persistent meristem\, presence of vascular transfer cells\, and cell division in the inner cortex with non-dividing infected cells and bacteria. " [POC:curators, ISBN:1842460137]
+def: "Nodule characterized by a persistent meristem\, presence of vascular transfer cells\, and cell division in the inner cortex with non-dividing infected cells and bacteria. " [ISBN:1842460137, POC:curators]
 comment: Nodule is persistent and may continue to grow after a physiological stress.
 is_a: PO:0003023 ! root nodule
 
@@ -1601,7 +1600,7 @@ is_a: PO:0006343 ! axillary shoot
 id: PO:0004703
 name: carpel primordium
 namespace: plant_structure
-def: "The very first appearance of a carpel. It initiates from the carpel anlagen region of the floral meristem." [POC:curators, GR:pj]
+def: "The very first appearance of a carpel. It initiates from the carpel anlagen region of the floral meristem." [GR:pj, POC:curators]
 is_a: PO:0009030 ! carpel
 relationship: develops_from PO:0006005 ! carpel anlagen
 
@@ -1818,14 +1817,14 @@ relationship: part_of PO:0009006 ! shoot
 id: PO:0005006
 name: articulated laticifer
 namespace: plant_structure
-def: "A structure consisting of long multinucleate tubes in which latex is found\, having cross walls (articulated)." [GR:pj, APWeb:Glossary]
+def: "A structure consisting of long multinucleate tubes in which latex is found\, having cross walls (articulated)." [APWeb:Glossary, GR:pj]
 is_a: PO:0005053 ! laticifer
 
 [Term]
 id: PO:0005007
 name: non-articulated laticifer
 namespace: plant_structure
-def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls." [GR:pj, APWeb:Glossary]
+def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls." [APWeb:Glossary, GR:pj]
 is_a: PO:0005053 ! laticifer
 
 [Term]
@@ -1867,7 +1866,7 @@ relationship: part_of PO:0009007 ! tissue
 id: PO:0005046
 name: periderm
 namespace: plant_structure
-def: "Secondary protective tissue that replaces the epidermis in stems and root\, rarely in other organs. " [ISBN:047124529, GR:pj]
+def: "Secondary protective tissue that replaces the epidermis in stems and root\, rarely in other organs. " [GR:pj, ISBN:047124529]
 is_a: PO:0009014 ! dermal tissue
 
 [Term]
@@ -1899,7 +1898,7 @@ relationship: part_of PO:0005048 ! stem periderm
 id: PO:0005051
 name: hypodermis
 namespace: plant_structure
-def: "A layer or layers of cells beneath the epidermis that is distinct in appearance from adjacent tissues. It is the outermost layer or layers of cells of the cortex." [ISBN:0080374913, GR:pj]
+def: "A layer or layers of cells beneath the epidermis that is distinct in appearance from adjacent tissues. It is the outermost layer or layers of cells of the cortex." [GR:pj, ISBN:0080374913]
 relationship: part_of PO:0005708 ! cortex
 
 [Term]
@@ -1955,7 +1954,7 @@ relationship: part_of PO:0009025 ! leaf
 id: PO:0005349
 name: schizo-lysigenous aerenchyma
 namespace: plant_structure
-def: "OBSOLETE. Aerenchyma\, originating by a combination of two processes\, separation and degradation of cell walls." [ISBN:0080374913, GR:pj]
+def: "OBSOLETE. Aerenchyma\, originating by a combination of two processes\, separation and degradation of cell walls." [GR:pj, ISBN:0080374913]
 comment: The term was made obsolete because schizo-lysigenous form is an attribute of regular aerenchyma.
 is_obsolete: true
 
@@ -1971,7 +1970,7 @@ is_a: PO:0009015 ! vascular tissue
 id: PO:0005360
 name: aleurone layer
 namespace: plant_structure
-def: "The outermost endosperm tissue of the seeds\, its cells being characterized by presence of protein bodies containing seed storage proteins." [ISBN:0080374913, GR:pj]
+def: "The outermost endosperm tissue of the seeds\, its cells being characterized by presence of protein bodies containing seed storage proteins." [GR:pj, ISBN:0080374913]
 relationship: part_of PO:0009089 ! endosperm
 
 [Term]
@@ -2063,7 +2062,7 @@ is_obsolete: true
 id: PO:0005633
 name: lamellar collenchyma
 namespace: plant_structure
-def: "OBSOLETE. A collenchyma in which cell wall thickenings are deposited mainly on tangential walls." [ISBN:0080374913, GR:pj]
+def: "OBSOLETE. A collenchyma in which cell wall thickenings are deposited mainly on tangential walls." [GR:pj, ISBN:0080374913]
 comment: The term was made obsolete because lamellar form is an attribute of regular collenchyma.
 synonym: "plate collenchyma" []
 synonym: "tangential collenchyma" []
@@ -2092,7 +2091,7 @@ relationship: part_of PO:0005645 ! leaf mesophyll
 id: PO:0005648
 name: palisade mesophyll
 namespace: plant_structure
-def: "parenchyma containing closely packed elongated chlorenchymatous cells oriented perpendicular to the leaf surface and which are active in photosynthesis." [ISBN:0080374913, GR:pj]
+def: "parenchyma containing closely packed elongated chlorenchymatous cells oriented perpendicular to the leaf surface and which are active in photosynthesis." [GR:pj, ISBN:0080374913]
 synonym: "palisade parenchyma" []
 is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
@@ -2101,7 +2100,7 @@ relationship: part_of PO:0005645 ! leaf mesophyll
 id: PO:0005656
 name: secretory tissue
 namespace: plant_structure
-def: "Tissues that form specialized structures producing a secretion." [ISBN:047124529, GR:pj]
+def: "Tissues that form specialized structures producing a secretion." [GR:pj, ISBN:047124529]
 comment: The synonym gland does not imply non-secretory 'glands'.
 synonym: "gland" []
 is_a: PO:0009007 ! tissue
@@ -2110,7 +2109,7 @@ is_a: PO:0009007 ! tissue
 id: PO:0005660
 name: hydathode
 namespace: plant_structure
-def: "A structural modification of vascular and non-vascular tissues\, usually in a leaf\, that permits the release of water through a pore in the epidermis." [ISBN:0080374913, GR:pj]
+def: "A structural modification of vascular and non-vascular tissues\, usually in a leaf\, that permits the release of water through a pore in the epidermis." [GR:pj, ISBN:0080374913]
 is_a: PO:0005656 ! secretory tissue
 is_a: PO:0009015 ! vascular tissue
 
@@ -2126,7 +2125,7 @@ is_a: PO:0005656 ! secretory tissue
 id: PO:0005665
 name: resin canal
 namespace: plant_structure
-def: "A duct of schizogenous origin lined with resin-secreting cells and containing resin" [ISBN:0080374913, GR:pj]
+def: "A duct of schizogenous origin lined with resin-secreting cells and containing resin" [GR:pj, ISBN:0080374913]
 synonym: "resin duct" []
 is_a: PO:0005656 ! secretory tissue
 
@@ -2152,7 +2151,7 @@ is_a: PO:0009014 ! dermal tissue
 id: PO:0005702
 name: aerenchyma
 namespace: plant_structure
-def: "Parenchyma tissue containing particularly large intercellular spaces of schizogenous or lysigenous origin." [ISBN:0080374913, GR:pj]
+def: "Parenchyma tissue containing particularly large intercellular spaces of schizogenous or lysigenous origin." [GR:pj, ISBN:0080374913]
 comment: As applied to an intercellular space\, originating by one or a combination of two processes\, separation and degradation of cell walls.
 synonym: "aerenchyma tissue" []
 is_a: PO:0005421 ! parenchyma
@@ -2209,7 +2208,7 @@ is_a: PO:0005352 ! xylem
 id: PO:0005849
 name: primary xylem
 namespace: plant_structure
-def: "The xylem of the primary plant body. " [ISBN:0471245194, GR:pj, ISBN:0122151704]
+def: "The xylem of the primary plant body. " [GR:pj, ISBN:0122151704, ISBN:0471245194]
 comment: In stem or root it is differentiated behind the apical meristem.
 is_a: PO:0005352 ! xylem
 
@@ -2283,7 +2282,7 @@ relationship: part_of PO:0000229 ! floral meristem
 id: PO:0006006
 name: primary parietal cell layer
 namespace: plant_structure
-def: "The primary parietal cell and adjacent cells together form this cell layer." [PMID:2476454, GR:pj]
+def: "The primary parietal cell and adjacent cells together form this cell layer." [GR:pj, PMID:2476454]
 subset: reference
 relationship: part_of PO:0000002 ! anther wall
 
@@ -2291,7 +2290,7 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0006007
 name: secondary parietal cell layer
 namespace: plant_structure
-def: "The cells of the primary parietal cell layer undergo a periclinal division resulting in the formation of the two secondary parietal layers." [PMID:2476454, GR:pj]
+def: "The cells of the primary parietal cell layer undergo a periclinal division resulting in the formation of the two secondary parietal layers." [GR:pj, PMID:2476454]
 subset: reference
 relationship: develops_from PO:0006006 ! primary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
@@ -2300,14 +2299,14 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0006008
 name: inner secondary parietal cell layer
 namespace: plant_structure
-def: "One of the secondary parietal layer formed towards inner side after the cells of the primary parietal cell layer undergo a periclinal division. It divides periclinally to form the middle layer externally and the tapetum internally." [PMID:2476454, GR:pj]
+def: "One of the secondary parietal layer formed towards inner side after the cells of the primary parietal cell layer undergo a periclinal division. It divides periclinally to form the middle layer externally and the tapetum internally." [GR:pj, PMID:2476454]
 is_a: PO:0006007 ! secondary parietal cell layer
 
 [Term]
 id: PO:0006009
 name: outer secondary parietal cell layer
 namespace: plant_structure
-def: "One of the secondary parietal layer formed towards outside after the cells of the primary parietal cell layer undergo a periclinal division. It differentiates into the endothecium." [PMID:2476454, GR:pj]
+def: "One of the secondary parietal layer formed towards outside after the cells of the primary parietal cell layer undergo a periclinal division. It differentiates into the endothecium." [GR:pj, PMID:2476454]
 is_a: PO:0006007 ! secondary parietal cell layer
 
 [Term]
@@ -2346,7 +2345,7 @@ relationship: part_of PO:0009086 ! endocarp
 id: PO:0006014
 name: male archesporial cell
 namespace: plant_structure
-def: "It undergoes periclinal divisions\, giving rise to an inner primary sporogenous cell (PSC) layer and an outer primary parietal cell (PPC)" [PMID:10465788, GR:pj]
+def: "It undergoes periclinal divisions\, giving rise to an inner primary sporogenous cell (PSC) layer and an outer primary parietal cell (PPC)" [GR:pj, PMID:10465788]
 synonym: "anther archesporial cell" []
 synonym: "male archesporial initial" []
 is_a: PO:0009002 ! plant cell
@@ -2805,14 +2804,14 @@ relationship: part_of PO:0020031 ! radicle
 id: PO:0006082
 name: abaxial protoderm
 namespace: plant_structure
-def: "The outermost layer of the shoot apical meristem which gives rise to the abaxial/lower leaf epidermis. " [ISBN:0080374913, GR:pj]
+def: "The outermost layer of the shoot apical meristem which gives rise to the abaxial/lower leaf epidermis. " [GR:pj, ISBN:0080374913]
 is_a: PO:0006210 ! protoderm
 
 [Term]
 id: PO:0006083
 name: adaxial protoderm
 namespace: plant_structure
-def: "The outermost layer of the shoot apical meristem which gives rise to the adaxial/upper leaf epidermis." [ISBN:0080374913, GR:pj]
+def: "The outermost layer of the shoot apical meristem which gives rise to the adaxial/upper leaf epidermis." [GR:pj, ISBN:0080374913]
 is_a: PO:0006210 ! protoderm
 
 [Term]
@@ -2952,7 +2951,7 @@ relationship: part_of PO:0005648 ! palisade mesophyll
 id: PO:0006207
 name: exodermal passage cell
 namespace: plant_structure
-def: "A short cell in the dimorphic type of exodermis with cell wall that remains non-thickened." [TAIR:ki, PMID:11709575]
+def: "A short cell in the dimorphic type of exodermis with cell wall that remains non-thickened." [PMID:11709575, TAIR:ki]
 is_a: PO:0000353 ! passage cell
 relationship: part_of PO:0005772 ! exodermis
 
@@ -2975,7 +2974,7 @@ is_obsolete: true
 id: PO:0006210
 name: protoderm
 namespace: plant_structure
-def: "The undifferentiated surface cell layer of the primary plant body\, which gives rise to epidermis." [ISBN:047124529, GR:pj]
+def: "The undifferentiated surface cell layer of the primary plant body\, which gives rise to epidermis." [GR:pj, ISBN:047124529]
 comment: It may or may not arise from independent initials.  Some researchers also call it an epidermis in meristematic state.
 relationship: part_of PO:0009013 ! meristem
 
@@ -3078,7 +3077,7 @@ is_obsolete: true
 id: PO:0006301
 name: corpus
 namespace: plant_structure
-def: "OBSOLETE. Group of cells located beneath anticlinally dividing peripheral layers (tunica) and dividing in many planes. In apical shoot meristem. Such division cause the increase in the volume of shoot." [ISBN:0080374913, GR:pj]
+def: "OBSOLETE. Group of cells located beneath anticlinally dividing peripheral layers (tunica) and dividing in many planes. In apical shoot meristem. Such division cause the increase in the volume of shoot." [GR:pj, ISBN:0080374913]
 comment: The term has been made obsolete because this concept is used in a very loose sense.
 is_obsolete: true
 
@@ -3086,7 +3085,7 @@ is_obsolete: true
 id: PO:0006302
 name: tunica
 namespace: plant_structure
-def: "OBSOLETE. The outermost layer or layers in the shoot apical meristem of the Angiosperms in which the plane of division is almost anticlinal. This layer contributes to surface growth." [ISBN:047124529, GR:pj]
+def: "OBSOLETE. The outermost layer or layers in the shoot apical meristem of the Angiosperms in which the plane of division is almost anticlinal. This layer contributes to surface growth." [GR:pj, ISBN:047124529]
 comment: The term has been made obsolete because this concept is used in a very loose sense.
 is_obsolete: true
 
@@ -3145,7 +3144,9 @@ id: PO:0006309
 name: tassel spikelet
 namespace: plant_structure
 def: "Ultimate inflorescence branch of the maize tassel." [GR:pj]
+subset: Maize
 is_a: PO:0009051 ! spikelet
+relationship: develops_from PO:0006358 ! tassel spikelet pair meristem
 relationship: part_of PO:0020126 ! tassel
 
 [Term]
@@ -3153,6 +3154,7 @@ id: PO:0006310
 name: tassel floret
 namespace: plant_structure
 def: "Flowers of the spikelets of maize tassel." [GR:pj]
+subset: Maize
 is_a: PO:0006318 ! floret (sensu Poaceae)
 relationship: part_of PO:0006309 ! tassel spikelet
 
@@ -3161,6 +3163,7 @@ id: PO:0006311
 name: tassel sessile spikelet
 namespace: plant_structure
 def: "Ultimate inflorescence branch of the maize tassel without a pedicel\, developing from the spikelet pair meristem." [GR:pj]
+subset: Maize
 is_a: PO:0006309 ! tassel spikelet
 
 [Term]
@@ -3168,6 +3171,7 @@ id: PO:0006312
 name: tassel pedicellate spikelet
 namespace: plant_structure
 def: "Ultimate inflorescence branch of the maize tassel with a pedicel\, developing from the spikelet pair meristem." [GR:pj]
+subset: Maize
 is_a: PO:0006309 ! tassel spikelet
 
 [Term]
@@ -3259,7 +3263,7 @@ id: PO:0006323
 name: tassel branch
 namespace: plant_structure
 def: "Any branch forming from the primary or higher order tassel axes." [GR:pj]
-is_a: PO:0006321 ! second order inflorescence branch
+is_a: PO:0009081 ! inflorescence branch
 relationship: part_of PO:0020126 ! tassel
 
 [Term]
@@ -3292,7 +3296,7 @@ id: PO:0006327
 name: spikelet meristem
 namespace: plant_structure
 def: "Apical meristem that gives rise to the two or more florets of a grass inflorescence." [GR:pj]
-is_a: PO:0000230 ! inflorescence meristem
+is_a: PO:0009108 ! inflorescence apical meristem
 relationship: part_of PO:0009051 ! spikelet
 
 [Term]
@@ -3383,7 +3387,7 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0006339
 name: juvenile leaf
 namespace: plant_structure
-def: "Distinct from adult leaves\, being characterized by particular anatomical traits namely\, wax and trichome distribution\, presence or absence of epidermal cell types\, cell wall shape and biochemistry." [MaizeGDB:lv, GR:pj]
+def: "Distinct from adult leaves\, being characterized by particular anatomical traits namely\, wax and trichome distribution\, presence or absence of epidermal cell types\, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
 comment: The first juvenile leaves are e.g. the embryonic leaves found in the grass kernel (caryopsis).
 is_a: PO:0009025 ! leaf
 
@@ -3534,8 +3538,11 @@ is_a: PO:0006384 ! gynoecium (sensu Poaceae)
 id: PO:0006358
 name: tassel spikelet pair meristem
 namespace: plant_structure
-def: "The meristem that produces two spikelet meristems\, each of which produces two floral meristems in a maize tassel." [GR:pj]
+def: "The meristem present on short tassel branch that produces two spikelet meristems\, each of which produces two floral meristems in a maize tassel." [GR:pj]
+subset: Maize
 is_a: PO:0006328 ! spikelet pair meristem
+is_a: PO:0009107 ! tassel lateral meristem
+relationship: part_of PO:0009102 ! short tassel branch
 
 [Term]
 id: PO:0006359
@@ -3549,8 +3556,9 @@ relationship: part_of PO:0006310 ! tassel floret
 id: PO:0006360
 name: ear spikelet pair meristem
 namespace: plant_structure
-def: "Apical meristem that produces two spikelet meristems\, each of which produces two floral meristems in a maize ear." [GR:pj]
+def: "A meristem that produces two spikelet meristems\, each of which produces two floral meristems in a maize ear." [GR:pj]
 is_a: PO:0006328 ! spikelet pair meristem
+is_a: PO:0009110 ! ear lateral meristem
 
 [Term]
 id: PO:0006361
@@ -3645,7 +3653,9 @@ id: PO:0006373
 name: ear floret meristem
 namespace: plant_structure
 def: "Apical shoot meristem that gives rise to the organs of a maize ear floret." [GR:pj]
+subset: Maize
 is_a: PO:0006329 ! floret meristem (sensu Poaceae)
+is_a: PO:0009109 ! ear meristem
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -3653,24 +3663,30 @@ id: PO:0006374
 name: tassel floret meristem
 namespace: plant_structure
 def: "Apical meristem that gives rise to the organs of a maize tassel floret." [GR:pj]
+subset: Maize
 is_a: PO:0006329 ! floret meristem (sensu Poaceae)
+is_a: PO:0009106 ! tassel meristem
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0006375
-name: ear meristem
+name: ear apical meristem
 namespace: plant_structure
 def: "Apical shoot meristem that gives rise to the maize ear." [GR:pj]
-is_a: PO:0000230 ! inflorescence meristem
-relationship: part_of PO:0020136 ! ear (sensu Zea)
+subset: Maize
+is_a: PO:0009108 ! inflorescence apical meristem
+is_a: PO:0009109 ! ear meristem
+relationship: part_of PO:0006505 ! central spike of ear
 
 [Term]
 id: PO:0006376
-name: tassel meristem
+name: tassel apical meristem
 namespace: plant_structure
-def: "Apical meristem that gives rise to the tassel inflorescence." [GR:pj]
-is_a: PO:0000230 ! inflorescence meristem
-relationship: part_of PO:0020126 ! tassel
+def: "Apical shoot meristem that gives rise to the maize tassel." [GR:pj]
+subset: Maize
+is_a: PO:0009106 ! tassel meristem
+is_a: PO:0009108 ! inflorescence apical meristem
+relationship: part_of PO:0006324 ! central spike of tassel
 
 [Term]
 id: PO:0006377
@@ -3678,14 +3694,16 @@ name: tassel spikelet meristem
 namespace: plant_structure
 def: "Apical meristem that gives rise to the upper and lower florets of the maize tassel spikelets. " [GR:pj]
 is_a: PO:0006327 ! spikelet meristem
-relationship: part_of PO:0020126 ! tassel
+is_a: PO:0009106 ! tassel meristem
 
 [Term]
 id: PO:0006378
 name: ear spikelet meristem
 namespace: plant_structure
 def: "Apical meristem that gives rise to the upper and lower florets of the maize ear spikelets." [GR:pj]
+subset: Maize
 is_a: PO:0006327 ! spikelet meristem
+is_a: PO:0009109 ! ear meristem
 relationship: part_of PO:0020136 ! ear (sensu Zea)
 
 [Term]
@@ -3693,6 +3711,8 @@ id: PO:0006379
 name: tassel spikelet rachilla
 namespace: plant_structure
 def: "The axis of the tassel spikelet\, above the glumes." [GR:pj]
+subset: Maize
+is_a: PO:0006323 ! tassel branch
 is_a: PO:0009080 ! spikelet rachilla
 relationship: part_of PO:0006309 ! tassel spikelet
 
@@ -4693,7 +4713,7 @@ relationship: part_of PO:0006465 ! integument (sensu Poaceae)
 id: PO:0008001
 name: fruit distal end
 namespace: plant_structure
-def: "The end distal from the fruit pedicel." [GR:ap "", (SGN:nm)]
+def: "The end distal from the fruit pedicel." [(SGN:nm), GR:ap]
 subset: Tomato
 synonym: "blossom end" []
 relationship: part_of PO:0009001 ! fruit
@@ -4702,7 +4722,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008002
 name: fruit proximal end
 namespace: plant_structure
-def: "The stem end of the fruit." [GR:ap "", (SGN:nm)]
+def: "The stem end of the fruit." [(SGN:nm), GR:ap]
 subset: Tomato
 synonym: "fruit shoulders" []
 relationship: part_of PO:0009001 ! fruit
@@ -4711,7 +4731,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008003
 name: fruit vascular system
 namespace: plant_structure
-def: "Vascular system of the fruit." [GR:ap "", (SGN:nm)]
+def: "Vascular system of the fruit." [(SGN:nm), GR:ap]
 subset: Arabidopsis
 subset: Maize
 subset: Poaceae
@@ -4724,14 +4744,14 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008004
 name: fruit aleurone layer
 namespace: plant_structure
-def: "The outermost endosperm tissue of the grass caryopsis\, its cells being characterized by presence of protein bodies containing seed storage proteins." [GR:ap ""]
+def: "The outermost endosperm tissue of the grass caryopsis\, its cells being characterized by presence of protein bodies containing seed storage proteins." [GR:ap]
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0008005
 name: fruit nucellus
 namespace: plant_structure
-def: "Subepidermal tissue in the grass caryopsis." [GR:ap ""]
+def: "Subepidermal tissue in the grass caryopsis." [GR:ap]
 subset: Poaceae
 subset: Rice
 relationship: part_of PO:0009001 ! fruit
@@ -4740,7 +4760,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008006
 name: nucellar epidermis
 namespace: plant_structure
-def: "The morphologically distinct outer layer of the nucellus. " [GR:ap ""]
+def: "The morphologically distinct outer layer of the nucellus. " [GR:ap]
 subset: Poaceae
 subset: Rice
 relationship: part_of PO:0008005 ! fruit nucellus
@@ -4749,7 +4769,7 @@ relationship: part_of PO:0008005 ! fruit nucellus
 id: PO:0008007
 name: nucellar projection
 namespace: plant_structure
-def: "The morphologically distinct portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap ""]
+def: "The morphologically distinct portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap]
 subset: Poaceae
 subset: Rice
 relationship: part_of PO:0008005 ! fruit nucellus
@@ -4758,7 +4778,7 @@ relationship: part_of PO:0008005 ! fruit nucellus
 id: PO:0008008
 name: modified aleurone
 namespace: plant_structure
-def: "The morphologically distinct aleurone layer located adjacent to the nucellar projection." [GR:ap ""]
+def: "The morphologically distinct aleurone layer located adjacent to the nucellar projection." [GR:ap]
 subset: Poaceae
 subset: Rice
 relationship: part_of PO:0008004 ! fruit aleurone layer
@@ -4767,7 +4787,7 @@ relationship: part_of PO:0008004 ! fruit aleurone layer
 id: PO:0008009
 name: abaxial nucellar projection
 namespace: plant_structure
-def: "The abaxial/lower portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap ""]
+def: "The abaxial/lower portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap]
 subset: Poaceae
 subset: Rice
 relationship: part_of PO:0008007 ! nucellar projection
@@ -4776,7 +4796,7 @@ relationship: part_of PO:0008007 ! nucellar projection
 id: PO:0008010
 name: adaxial nucellar projection
 namespace: plant_structure
-def: "The adaxial/upper portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap ""]
+def: "The adaxial/upper portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap]
 subset: Poaceae
 subset: Rice
 relationship: part_of PO:0008007 ! nucellar projection
@@ -4802,7 +4822,7 @@ alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
 namespace: plant_structure
-def: "The seed-bearing structure in angiosperms\, formed from the ovary after flowering." [Poc:curators, APWeb:Glossary]
+def: "The seed-bearing structure in angiosperms\, formed from the ovary after flowering." [APWeb:Glossary, Poc:curators]
 subset: Arabidopsis
 subset: Maize
 subset: Poaceae
@@ -4836,7 +4856,7 @@ relationship: part_of PO:0006342 ! infructescence
 id: PO:0009002
 name: plant cell
 namespace: plant_structure
-def: "Structural and physiological unit of a plant consisting of the cytoplasm\, protoplast and cell wall; in nonliving state\, of cell wall only\, or cell wall and some nonliving inclusions." [ISBN:0471245208, GR:pj]
+def: "Structural and physiological unit of a plant consisting of the cytoplasm\, protoplast and cell wall; in nonliving state\, of cell wall only\, or cell wall and some nonliving inclusions." [GR:pj, ISBN:0471245208]
 subset: reference
 is_a: PO:0009011 ! plant structure
 
@@ -4960,21 +4980,21 @@ is_obsolete: true
 id: PO:0009020
 name: meristem L1
 namespace: plant_structure
-def: "The outermost layer of the shoot apical meristem which gives rise to the shoot epidermis." [PMID:12221985, GR:pj]
+def: "The outermost layer of the shoot apical meristem which gives rise to the shoot epidermis." [GR:pj, PMID:12221985]
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0009021
 name: meristem L2
 namespace: plant_structure
-def: "The cell layer beneath the L1 layer in the shoot meristem which gives rise to subepidermal tissue." [PMID:12221985, GR:pj]
+def: "The cell layer beneath the L1 layer in the shoot meristem which gives rise to subepidermal tissue." [GR:pj, PMID:12221985]
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0009022
 name: meristem L3
 namespace: plant_structure
-def: "The multicellular layer beneath the L2 layer in the shoot meristem which gives rise to internal tissues of leaf and stem." [PMID:12221985, GR:pj]
+def: "The multicellular layer beneath the L2 layer in the shoot meristem which gives rise to internal tissues of leaf and stem." [GR:pj, PMID:12221985]
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -5324,7 +5344,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009062
 name: gynoecium
 namespace: plant_structure
-def: "Collectively the carpels of a flower." [APWeb:Glossary, GR:pj, TAIR:lr, MaizeGDB:lv]
+def: "Collectively the carpels of a flower." [APWeb:Glossary, GR:pj, MaizeGDB:lv, TAIR:lr]
 subset: reference
 synonym: "pistil" []
 relationship: part_of PO:0009046 ! flower
@@ -5341,7 +5361,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009064
 name: receptacle
 namespace: plant_structure
-def: "The region at end of pedicel or axis to which parts of flower are attached." [Poc:curators, APWeb:Glossary]
+def: "The region at end of pedicel or axis to which parts of flower are attached." [APWeb:Glossary, Poc:curators]
 subset: reference
 relationship: part_of PO:0009046 ! flower
 
@@ -5349,7 +5369,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009065
 name: hypanthium
 namespace: plant_structure
-def: "A cup- or tube-like structure bearing perianth and stamens on its rim\, so these arise above the base\, and often above the top\, of the ovary of a flower." [Poc:curators, APWeb:Glossary]
+def: "A cup- or tube-like structure bearing perianth and stamens on its rim\, so these arise above the base\, and often above the top\, of the ovary of a flower." [APWeb:Glossary, Poc:curators]
 subset: reference
 relationship: part_of PO:0009046 ! flower
 
@@ -5547,7 +5567,7 @@ relationship: part_of PO:0009084 ! pericarp
 id: PO:0009088
 name: seed coat
 namespace: plant_structure
-def: "Covering of seed derived from ovular - mainly integumentary - tissue." [APWeb:Glossary, TAIR:lr, GR:pj]
+def: "Covering of seed derived from ovular - mainly integumentary - tissue." [APWeb:Glossary, GR:pj, TAIR:lr]
 comment: Used only when not specified more precisely; see testa\, tegmen.
 relationship: part_of PO:0009010 ! seed
 
@@ -5555,7 +5575,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0009089
 name: endosperm
 namespace: plant_structure
-def: "Nutritive tissue in a seed\, in angiosperms usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus\, sometimes diploid or polyploid. " [GR:pj, APWeb:Glossary]
+def: "Nutritive tissue in a seed\, in angiosperms usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus\, sometimes diploid or polyploid. " [APWeb:Glossary, GR:pj]
 is_a: PO:0009007 ! tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -5583,6 +5603,101 @@ namespace: plant_structure
 def: "A whorl of bracts at the base of a cluster of flowers as found in Asteraceae or Compositae." [POC:curators]
 comment: The burs or bristles in Cenchrus and Pennisetum are not involucres because the fused structures are branches and not bracts.
 relationship: part_of PO:0009049 ! inflorescence
+
+[Term]
+id: PO:0009101
+name: long lateral tassel branch
+namespace: plant_structure
+def: "The long branch that  arise from the central spike of tassel in maize." [MaizeGDB:lv, GR:pj]
+subset: Maize
+synonym: "second order tassel branch" []
+is_a: PO:0006323 ! tassel branch
+relationship: develops_from PO:0009104 ! long lateral tassel branch meristem
+
+[Term]
+id: PO:0009102
+name: short tassel branch
+namespace: plant_structure
+def: "The very short branch that may arise from either or both the long lateral branch and the central spike of tassel in maize." [MaizeGDB:lv, GR:pj]
+subset: Maize
+synonym: "third order tassel branch" []
+is_a: PO:0006323 ! tassel branch
+relationship: develops_from PO:0009103 ! short tassel branch meristem
+
+[Term]
+id: PO:0009103
+name: short tassel branch meristem
+namespace: plant_structure
+def: "The meristem present on either or both the long lateral branch and central spike of a maize tassel that gives rise to short tassel branch." [MaizeGDB:lv, GR:pj]
+subset: Maize
+synonym: "short branch meristem" []
+synonym: "third order tassel branch meristem" []
+is_a: PO:0009107 ! tassel lateral meristem
+relationship: part_of PO:0006324 ! central spike of tassel
+relationship: part_of PO:0009101 ! long lateral tassel branch
+
+[Term]
+id: PO:0009104
+name: long lateral tassel branch meristem
+namespace: plant_structure
+def: "The meristem that gives rise to the long lateral branch in the maize tassel." [MaizeGDB:lv]
+subset: Maize
+synonym: "long lateral branch meristem" []
+synonym: "second order tassel branch meristem" []
+is_a: PO:0009107 ! tassel lateral meristem
+relationship: part_of PO:0006324 ! central spike of tassel
+
+[Term]
+id: PO:0009105
+name: inflorescence lateral meristem
+namespace: plant_structure
+def: "The meristem which gives rise to the lateral structures of the inflorescence and contributes to their apical growth." [MaizeGDB:lv, GR:pj]
+is_a: PO:0000230 ! inflorescence meristem
+is_a: PO:0006344 ! shoot lateral meristem
+
+[Term]
+id: PO:0009106
+name: tassel meristem
+namespace: plant_structure
+def: "Meristem that gives rise to the apical and lateral structures of the tassel inflorescence in maize." [GR:pj]
+subset: Maize
+is_a: PO:0000230 ! inflorescence meristem
+relationship: part_of PO:0020126 ! tassel
+
+[Term]
+id: PO:0009107
+name: tassel lateral meristem
+namespace: plant_structure
+def: "The meristem that gives rise to the long lateral branch\, short branch and spikelets in maize tassel." [MaizeGDB:lv]
+subset: Maize
+is_a: PO:0009105 ! inflorescence lateral meristem
+is_a: PO:0009106 ! tassel meristem
+
+[Term]
+id: PO:0009108
+name: inflorescence apical meristem
+namespace: plant_structure
+def: "The meristem which gives rise to the apical growth of the inflorescence. It develops from the shoot apical meristem (SAM) after it undergoes transition from vegetative to reproductive phase." [MaizeGDB:lv, GR:pj]
+is_a: PO:0000230 ! inflorescence meristem
+is_a: PO:0020148 ! shoot apical meristem
+
+[Term]
+id: PO:0009109
+name: ear meristem
+namespace: plant_structure
+def: "The meristem which gives rise to the female inflorescence or ear in maize." [MaizeGDB:lv]
+subset: Maize
+is_a: PO:0000230 ! inflorescence meristem
+relationship: part_of PO:0020136 ! ear (sensu Zea)
+
+[Term]
+id: PO:0009110
+name: ear lateral meristem
+namespace: plant_structure
+def: "The meristem that gives rise to the lateral structures of a maize ear." [GR:pj]
+subset: Maize
+is_a: PO:0009105 ! inflorescence lateral meristem
+is_a: PO:0009109 ! ear meristem
 
 [Term]
 id: PO:0019018
@@ -6446,7 +6561,7 @@ relationship: part_of PO:0020123 ! root cap
 id: PO:0020132
 name: columella root cap cell
 namespace: plant_structure
-def: "Cell that constitutes the central part of the root cap\, arranged in longitudinal files." [TAIR:ki, PMID:9384380]
+def: "Cell that constitutes the central part of the root cap\, arranged in longitudinal files." [PMID:9384380, TAIR:ki]
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0020133 ! columella root cap initial cell
 
@@ -6454,7 +6569,7 @@ relationship: develops_from PO:0020133 ! columella root cap initial cell
 id: PO:0020133
 name: columella root cap initial cell
 namespace: plant_structure
-def: "Cell that produces columella cells in the root cap. In direct contact with quiescent center." [TAIR:ki, ISBN:0471245208]
+def: "Cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR:ki]
 synonym: "columella root cap stem cell" []
 is_a: PO:0000059 ! root initial cell
 
@@ -6554,7 +6669,7 @@ is_a: PO:0009013 ! meristem
 id: PO:0020147
 name: root apical meristem
 namespace: plant_structure
-def: "Meristem at the root apex." [UMSL:fz, GR:pj]
+def: "Meristem at the root apex." [GR:pj, UMSL:fz]
 comment: In most cases it is involved in root elongation.
 synonym: "promeristem" []
 is_a: PO:0006085 ! root meristem
@@ -6584,5 +6699,5 @@ name: develops from
 
 [Typedef]
 id: part_of
-name: part of
+name: part_of
 
