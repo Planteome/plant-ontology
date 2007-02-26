@@ -1,13 +1,13 @@
 format-version: 1.0
-date: 16:01:2007 14:18
-version: $Revision: 1.34 $
+version: $Revision: 1.35 $
+date: 26:02:2007 13:53
 saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -1300,6 +1300,7 @@ id: PO:0004511
 name: seed hair
 namespace: plant_structure
 def: "Trichome that develops from seed coat epidermis and is often long with putative dispersal function. " [POC:curators]
+synonym: "seed trichome" []
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0006048 ! seed coat epidermis
 relationship: part_of PO:0020061 ! coma
@@ -1797,6 +1798,13 @@ def: "An axillary branch that forms from a leaf above the very base of the shoot
 comment: The genetic distinction between cauline axillary branches and tillers may or may not be unique to the Poaceae. There are no data for other plant families.
 synonym: "cauline axillary branch" []
 is_a: PO:0006343 ! axillary shoot
+
+[Term]
+id: PO:0005003
+name: stem trichome
+namespace: plant_structure
+def: "Trichome on/from the epidermis of the stem." [TAIR:Donghiu, PMID:17217456]
+is_a: PO:0000282 ! trichome
 
 [Term]
 id: PO:0005004
