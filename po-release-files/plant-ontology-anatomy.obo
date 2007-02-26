@@ -1,6 +1,6 @@
 format-version: 1.0
-version: $Revision: 1.35 $
-date: 26:02:2007 13:53
+version: $Revision: 1.36 $
+date: 26:02:2007 16:32
 saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -240,10 +240,7 @@ id: PO:0000030
 name: septum
 namespace: plant_structure
 def: "A thin partition or membrane that divides a cavity or a mass of tissue\, e.g.\, in anther\, ovary or fruit." [APWeb:Glossary]
-subset: Arabidopsis
-relationship: part_of PO:0009001 ! fruit
-relationship: part_of PO:0009030 ! carpel
-relationship: part_of PO:0009066 ! anther
+is_a: PO:0009007 ! tissue
 
 [Term]
 id: PO:0000031
@@ -442,7 +439,8 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000054
 name: petal vascular system
 namespace: plant_structure
-def: "Vascular system of the petal." [POC:curators]
+def: "Total of the vascular tissues in their specific arrangement in the petal." [POC:curators]
+is_a: PO:0005017 ! flower vascular system
 relationship: part_of PO:0009032 ! petal
 
 [Term]
@@ -613,7 +611,8 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0000115
 name: socket cell
 namespace: plant_structure
-def: "Cell that surrounds a trichome and provides its support." [ISBN:0471245208]
+def: "Cell that surrounds a trichome and provides its support." [ISBN:0471245208, PMID:15319479]
+synonym: "trichome support cell" []
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
@@ -1631,7 +1630,8 @@ is_a: PO:0009046 ! flower
 id: PO:0004707
 name: fruit dehiscence zone
 namespace: plant_structure
-def: "A narrow band of cells that extends along the entire length of the fruit. Upon fruit maturation\, cell separation within the dehiscence zone allows the valves to detach from the replum and for the seeds to be dispersed." [TAIR:ki]
+def: "A narrow band of cells that extends along the dehiscent fruit's dehiscence region which upon fruit maturation by drying\, undergoes cell separation. This allows the valves to detach from the replum and for the seeds to be dispersed." [TAIR:ki, GR:pj]
+comment: Found in dehiscent fruit.
 subset: Arabidopsis
 relationship: part_of PO:0009001 ! fruit
 
@@ -1755,7 +1755,8 @@ is_a: PO:0009052 ! pedicel
 id: PO:0004723
 name: sepal vascular system
 namespace: plant_structure
-def: "Vascular system of the sepal." [TAIR:ki]
+def: "Total of the vascular tissues in their specific arrangement in the sepal." [TAIR:ki]
+is_a: PO:0005017 ! flower vascular system
 relationship: part_of PO:0009031 ! sepal
 
 [Term]
@@ -1805,6 +1806,7 @@ name: stem trichome
 namespace: plant_structure
 def: "Trichome on/from the epidermis of the stem." [TAIR:Donghiu, PMID:17217456]
 is_a: PO:0000282 ! trichome
+relationship: part_of PO:0000112 ! stem epidermis
 
 [Term]
 id: PO:0005004
@@ -1835,6 +1837,149 @@ name: non-articulated laticifer
 namespace: plant_structure
 def: "A structure consisting of long multinucleate tubes in which latex is found\, having no cross walls." [APWeb:Glossary, GR:pj]
 is_a: PO:0005053 ! laticifer
+
+[Term]
+id: PO:0005008
+name: fruit septum
+namespace: plant_structure
+def: "A thin partition or membrane that divides a cavity or a mass of tissue in the fruit. IT is derived from the carpel septum." [GR:cwt]
+subset: Arabidopsis
+is_a: PO:0000030 ! septum
+relationship: develops_from PO:0005009 ! carpel septum
+relationship: part_of PO:0009001 ! fruit
+
+[Term]
+id: PO:0005009
+name: carpel septum
+namespace: plant_structure
+def: "A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [GR:cwt, GR:pj]
+subset: Arabidopsis
+is_a: PO:0000030 ! septum
+relationship: part_of PO:0009030 ! carpel
+
+[Term]
+id: PO:0005010
+name: anther septum
+namespace: plant_structure
+def: "A thin partition or stretch of cells that are present in the anther dehiscence zone." [GR:pj, GR:cwt]
+is_a: PO:0000030 ! septum
+relationship: part_of PO:0005011 ! anther dehiscence zone
+
+[Term]
+id: PO:0005011
+name: anther dehiscence zone
+namespace: plant_structure
+def: "A narrow band of cells that extends along the entire length of the anther. This site is observed as an indentation between the locules of each theca. Upon anther maturation\, cell separation within the dehiscence zone allows the anther wall to break and for pollen to be released.\n" [PMID:15319479]
+relationship: part_of PO:0009066 ! anther
+
+[Term]
+id: PO:0005012
+name: pedicel vascular system
+namespace: plant_structure
+def: "Total of the vascular tissues in their specific arrangement in the pedicel." [TAIR:Donghui, PMID:17217456]
+is_a: PO:0000034 ! vascular system
+relationship: part_of PO:0009052 ! pedicel
+
+[Term]
+id: PO:0005013
+name: hypocotyl epidermis
+namespace: plant_structure
+def: "The outermost primary cell layer of the hypocotyl." [TAIR:Donghui, PMID:15368128]
+is_a: PO:0006035 ! shoot epidermis
+relationship: part_of PO:0020100 ! hypocotyl
+
+[Term]
+id: PO:0005014
+name: embryo cortex
+namespace: plant_structure
+def: "Tissue between the vascular system and the epidermis of hypocotyl and root in the embryo.\n" [TAIR:Donghui, PMID:16543410]
+is_a: PO:0005708 ! cortex
+relationship: part_of PO:0009009 ! embryo
+
+[Term]
+id: PO:0005015
+name: embryo endodermis
+namespace: plant_structure
+def: "The innermost layer of the cortex in the embryos of seed plants." [TAIR:Donghui, PMID:16543410]
+is_a: PO:0000252 ! endodermis
+relationship: part_of PO:0009009 ! embryo
+
+[Term]
+id: PO:0005016
+name: replum
+namespace: plant_structure
+def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMID:15035986]
+is_a: PO:0009007 ! tissue
+relationship: develops_from PO:0020001 ! ovary placenta
+relationship: part_of PO:0009001 ! fruit
+
+[Term]
+id: PO:0005017
+name: flower vascular system
+namespace: plant_structure
+def: "Total of the vascular tissues in their specific arrangement in the flower and its parts." [GR:pj]
+is_a: PO:0000034 ! vascular system
+is_a: PO:0009046 ! flower
+
+[Term]
+id: PO:0005018
+name: stamen vascular system
+namespace: plant_structure
+def: "Total of the vascular tissues in their specific arrangement in the stamen." [GR:pj]
+is_a: PO:0005017 ! flower vascular system
+relationship: part_of PO:0009029 ! stamen
+
+[Term]
+id: PO:0005019
+name: carpel vascular system
+namespace: plant_structure
+def: "Total of the vascular tissues in their specific arrangement in the carpel." [GR:pj]
+is_a: PO:0005017 ! flower vascular system
+relationship: part_of PO:0009030 ! carpel
+
+[Term]
+id: PO:0005020
+name: vascular bundle
+namespace: plant_structure
+def: "A unit strand of the vascular system containing the vascular tissues\, xylem and phloem. In addition vascular cambium is often present. " [GR:pj]
+relationship: part_of PO:0000034 ! vascular system
+
+[Term]
+id: PO:0005021
+name: sepal margin
+namespace: plant_structure
+def: "The margin or edge of the sepal." [TAIR:donghui, PMID:15269176]
+relationship: part_of PO:0009031 ! sepal
+
+[Term]
+id: PO:0005022
+name: ovary wall
+namespace: plant_structure
+def: "The wall of the ovary that is composed of abaxial (outer) and adaxial (inner) epidermis and a middel layer\,  composed of mesophyll cells and a distinct subepidermal adaxial cell layer (as found in Arabidopsis)." [GR:pj, PMID:10332605]
+synonym: "valve (sensu Brassicaceae)" []
+relationship: part_of PO:0009072 ! ovary
+
+[Term]
+id: PO:0005023
+name: abaxial epidermis of ovary
+namespace: plant_structure
+def: "The epidermal cell layer of the abaxial/outer surface of the ovary." [GR:pj]
+is_a: PO:0006063 ! ovary epidermis
+
+[Term]
+id: PO:0005024
+name: adaxial epidermis of ovary
+namespace: plant_structure
+def: "The epidermal cell layer of the adaxial/inner surface of the ovary." [GR:pj]
+is_a: PO:0006063 ! ovary epidermis
+
+[Term]
+id: PO:0005025
+name: middle layer of ovary wall
+namespace: plant_structure
+def: "The middel layer is composed of one or more mesophyll layers composed chlorencymatous cell. It may have a distinct subepidermal adaxial cell layer (as found in Arabidopsis)." [GR:pj, PMID:10332605]
+comment: The cells in the mesophyll layer(s) may not differentiate similar to the spongy and palisade cells found in the leaf mesophyll.
+relationship: part_of PO:0005022 ! ovary wall
 
 [Term]
 id: PO:0005039
@@ -2041,6 +2186,7 @@ name: vascular cambium
 namespace: plant_structure
 def: "A lateral meristem\, the cells of which give rise to secondary xylem and phloem\, leading to an increase in girth." [GR:pj]
 is_a: PO:0005597 ! cambium
+relationship: part_of PO:0005020 ! vascular bundle
 
 [Term]
 id: PO:0005599
@@ -2672,7 +2818,7 @@ name: ovary epidermis
 namespace: plant_structure
 def: "The epidermal cell layer of the ovary." [GR:pj]
 is_a: PO:0006035 ! shoot epidermis
-relationship: part_of PO:0009072 ! ovary
+relationship: part_of PO:0005022 ! ovary wall
 
 [Term]
 id: PO:0006065
@@ -4975,7 +5121,7 @@ namespace: plant_structure
 def: "Conducting tissues made up of xylem and phloem." [APWeb:Glossary]
 comment: In the stem it is often found as a stele\, surrounded by the cortex and surrounding the pith.
 is_a: PO:0009007 ! tissue
-relationship: part_of PO:0000034 ! vascular system
+relationship: part_of PO:0005020 ! vascular bundle
 
 [Term]
 id: PO:0009016
@@ -6413,6 +6559,7 @@ namespace: plant_structure
 def: "A fissure or pore in the anther lobe through which the pollen is released." [GR:pj]
 subset: reference
 relationship: part_of PO:0000002 ! anther wall
+relationship: part_of PO:0005011 ! anther dehiscence zone
 
 [Term]
 id: PO:0020102
