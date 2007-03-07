@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.37 $
-date: 27:02:2007 15:45
+version: $Revision: 1.38 $
+date: 06:03:2007 16:16
 saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -997,6 +997,8 @@ id: PO:0002000
 name: stomatal complex
 namespace: plant_structure
 def: "An opening in the epidermis of leaves and stems bordered by two guard cells and serving in gas exchange." [ISBN:0471245208]
+synonym: "stoma" []
+synonym: "stomata" []
 relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
 relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
 relationship: part_of PO:0000051 ! petiole epidermis
@@ -1788,6 +1790,7 @@ name: basal axillary shoot
 namespace: plant_structure
 def: "A branch that forms from a leaf at the very base of the shoot." [GR:ap]
 synonym: "basal axillary branch" []
+synonym: "ratoon" []
 synonym: "tiller" []
 is_a: PO:0006343 ! axillary shoot
 
