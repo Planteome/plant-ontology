@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.38 $
-date: 06:03:2007 16:16
-saved-by: Pankaj Jaiswal
+version: $Revision: 1.39 $
+date: 08:03:2007 13:57
+saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Tomato "Term used for tomato"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Tomato "Term used for tomato"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -501,6 +501,7 @@ name: epithem cell
 namespace: plant_structure
 def: "Cell of the mesophyll of a hydathode found between the xylem endings and the epidermis." [ISBN:0471245208, PMID:12662305]
 comment: Proposed to be involved in the retrieval of solutes from the xylem sap.
+xref_analog: CL:0000074
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005660 ! hydathode
 
@@ -509,6 +510,7 @@ id: PO:0000070
 name: meristemoid
 namespace: plant_structure
 def: "A cell or a group of cells constituting an active locus of meristematic activity in a tissue composed of somewhat older\, differentiating cells." [ISBN:0471245208, PO:syr]
+xref_analog: CL:0000266
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -516,6 +518,7 @@ id: PO:0000071
 name: companion cell
 namespace: plant_structure
 def: "A specialized parenchyma cell associated with a sieve-tube member in angiosperm phloem and arising from the same mother cell as the sieve-tube member." [ISBN:0879015322]
+xref_analog: CL:0000284
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0006075 ! primary phloem
@@ -541,6 +544,7 @@ id: PO:0000076
 name: chlorenchyma cell
 namespace: plant_structure
 def: "Parenchyma cell containing chloroplasts; a component of leaf mesophyll and other green parenchyma tissue." [ISBN:0471245208]
+xref_analog: CL:0000472
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005426 ! chlorenchyma
 
@@ -549,6 +553,7 @@ id: PO:0000077
 name: sclerenchyma cell
 namespace: plant_structure
 def: "Usually dead cell variable in form and size\, with more or less thick\, often lignified\, secondary walls." [ISBN:0471245208]
+xref_analog: CL:0000276
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005427 ! sclerenchyma
 
@@ -558,6 +563,7 @@ name: transfer cell
 namespace: plant_structure
 def: "A cell with wall ingrowths (or invaginations) that increase the surface of the plasmalemma. " [ISBN:0471245208]
 comment: Appears to be specialized for short-distance transfer of solutes.
+xref_analog: CL:0000370
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -568,6 +574,7 @@ namespace: plant_structure
 def: "An elongated cell with approximately wedge-shaped ends\, found in the vascular cambium\, which gives rise to the elements of the axial system in the secondary vascular tissues." [ISBN:0471245208]
 synonym: "xylem initial" []
 synonym: "xylem mother cell" []
+xref_analog: CL:0000009
 is_a: PO:0000295 ! cambial initial
 
 [Term]
@@ -576,6 +583,7 @@ name: axial cell
 namespace: plant_structure
 def: "A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
 comment: These cells make up the axial system\, also known as vertical or longitudinal system.
+xref_analog: CL:0000363
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000079 ! fusiform initial
 
@@ -584,6 +592,7 @@ id: PO:0000082
 name: ray initial
 namespace: plant_structure
 def: "A cell in the vascular cambium that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
+xref_analog: CL:0000316
 is_a: PO:0000295 ! cambial initial
 
 [Term]
@@ -613,6 +622,7 @@ name: socket cell
 namespace: plant_structure
 def: "Cell that surrounds a trichome and provides its support." [ISBN:0471245208, PMID:15319479]
 synonym: "trichome support cell" []
+xref_analog: CL:0000297
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
@@ -630,6 +640,7 @@ name: synergid
 namespace: plant_structure
 def: "Cell\, usually two in number\, in the micropylar end of the embryo sac of angiosperms associated with the egg in the egg apparatus." [ISBN:047125208, TAIR:ki]
 subset: reference
+xref_analog: CL:0000288
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020096 ! egg apparatus
 
@@ -738,6 +749,7 @@ id: PO:0000244
 name: functional megaspore
 namespace: plant_structure
 def: "The megaspore(s) that forms the embryo sac." [TAIR:lr]
+xref_analog: CL:0000433
 is_a: PO:0020019 ! megaspore
 
 [Term]
@@ -745,6 +757,7 @@ id: PO:0000245
 name: degenerate megaspore
 namespace: plant_structure
 def: "In monosporic and bisporic megasporogenesis\: the megaspore(s) that would not participate in megagametogenesis." [TAIR:lr]
+xref_analog: CL:0000475
 is_a: PO:0020019 ! megaspore
 
 [Term]
@@ -781,6 +794,7 @@ name: trichoblast
 namespace: plant_structure
 def: "The smaller cell produced by the asymmetric division of a root epidermal cell that gives rise to a root hair." [ISBN:0471245208]
 synonym: "hair cell" []
+xref_analog: CL:0000299
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0006036 ! root epidermis
@@ -791,6 +805,7 @@ name: atrichoblast
 namespace: plant_structure
 def: "A cell formed after asymmetric division of root epidermal cell that does not give rise to a root hair." [ISBN:0387987819]
 synonym: "non-hair cell" []
+xref_analog: CL:0000332
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0006036 ! root epidermis
@@ -807,6 +822,7 @@ id: PO:0000273
 name: xylem element
 namespace: plant_structure
 def: "A cell making up xylem tissue." [ISBN:0471245208]
+xref_analog: CL:0000298
 is_a: PO:0000081 ! axial cell
 is_a: PO:0009002 ! plant cell
 
@@ -824,6 +840,7 @@ name: trichome
 namespace: plant_structure
 def: "An outgrowth from the epidermis varying in size and complexity and including hairs\, scales\, and other structures; may be glandular." [ISBN:0471245208, TAIR:ki]
 comment: In Arabidopsis\, patterning of trichome development is not random but does not appear to be lineage-based like stomata.
+xref_analog: CL:0000282
 is_a: PO:0004013 ! epidermal cell
 
 [Term]
@@ -841,6 +858,7 @@ alt_id: PO:0000296
 namespace: plant_structure
 def: "An epidermal cell associated with a stoma and at least morphologically distinguishable from the other epidermal cells." [ISBN:047124520]
 synonym: "accessory cell" []
+xref_analog: CL:0000270
 is_a: PO:0004013 ! epidermal cell
 relationship: part_of PO:0002000 ! stomatal complex
 
@@ -853,6 +871,8 @@ def: "One of the series of cells that make up a sieve tube; it shows a more or l
 comment: Also sieve tube element and the obsolete sieve tube segment.
 synonym: "sieve element" []
 synonym: "sieve tube element" []
+xref_analog: CL:0000268
+xref_analog: CL:0000543
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0006075 ! primary phloem
@@ -862,6 +882,7 @@ id: PO:0000290
 name: tracheary element
 namespace: plant_structure
 def: "General term for any water conducting cell\, tracheid or vessel member." [ISBN:0471245208]
+xref_analog: CL:0000672
 is_a: PO:0000273 ! xylem element
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005848 ! secondary xylem
@@ -873,6 +894,7 @@ name: guard cell
 namespace: plant_structure
 def: "One of a pair of cells flanking the stomatal pore." [ISBN:0471245208]
 comment: They cause the opening and closing of the pore by changes in turgor.
+xref_analog: CL:0000292
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000351 ! guard mother cell
 relationship: part_of PO:0002000 ! stomatal complex
@@ -884,6 +906,7 @@ alt_id: PO:0000080
 namespace: plant_structure
 def: "Cell in the vascular or cork cambium which by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
 synonym: "cambial cell" []
+xref_analog: CL:0000272
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0005598 ! vascular cambium
 
@@ -892,6 +915,7 @@ id: PO:0000301
 name: tracheid
 namespace: plant_structure
 def: "In the xylem\, a dead elongated water-conducting cell in which at least the middle lamella of the end walls remains intact." [APWeb:Glossary]
+xref_analog: CL:0000331
 is_a: PO:0000290 ! tracheary element
 
 [Term]
@@ -906,6 +930,7 @@ id: PO:0000332
 name: pavement cell
 namespace: plant_structure
 def: "Epidermal cell with characteristic sinuous anticlinal cell walls that overall give a jigsaw like appearance to the leaf epidermis." [ISBN:087694289]
+xref_analog: CL:0000400
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
@@ -918,6 +943,7 @@ id: PO:0000349
 name: epidermal initial
 namespace: plant_structure
 def: "A relatively unspecialized cell that will give rise to specialized cell types of the epidermis." [TAIR:lr]
+xref_analog: CL:0000538
 is_a: PO:0004011 ! initial cell
 
 [Term]
@@ -925,6 +951,7 @@ id: PO:0000351
 name: guard mother cell
 namespace: plant_structure
 def: "Epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
+xref_analog: CL:0000262
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000070 ! meristemoid
 relationship: develops_from PO:0000349 ! epidermal initial
@@ -934,6 +961,7 @@ id: PO:0000352
 name: myrosin cell
 namespace: plant_structure
 def: "Cell containing glucosinolates (\"mustard oil glucosides\") and myrosinases\, enzymes hydrolyzing the glucosinolates." [ISBN:0471245208]
+xref_analog: CL:0000368
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -941,6 +969,7 @@ id: PO:0000353
 name: passage cell
 namespace: plant_structure
 def: "Cell in exodermis or endodermis that remains thin walled when the associated cells develop thick secondary walls." [ISBN:0471245208]
+xref_analog: CL:0000245
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -948,6 +977,7 @@ id: PO:0000355
 name: fiber tracheid
 namespace: plant_structure
 def: "A fiber-like tracheid in the secondary xylem; commonly thick walled\, with pointed ends and bordered pits that have lenticular to slit-like apertures." [ISBN:0471245208]
+xref_analog: CL:0000258
 is_a: PO:0000274 ! xylem fiber
 
 [Term]
@@ -971,6 +1001,7 @@ name: phloem mother cell
 namespace: plant_structure
 def: "A cell derived from vascular cambium which is destined to differentiate into secondary phloem." [POC:curators]
 comment: Phloem islands can be formed in the middle of the xylem.
+xref_analog: CL:0000264
 is_a: PO:0000295 ! cambial initial
 relationship: part_of PO:0005043 ! secondary phloem
 
@@ -979,6 +1010,7 @@ id: PO:0000423
 name: zygote
 namespace: plant_structure
 def: "Diploid cell produced by the fusion of sperm cell nucleus and egg cell." [TAIR:ki]
+xref_analog: CL:0000365
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -988,6 +1020,7 @@ namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores." [ISBN:0471245208]
 synonym: "MMC" []
 synonym: "megaspore mother cell" []
+xref_analog: CL:0000320
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006015 ! female archesporial cell
 relationship: part_of PO:0020020 ! nucellus
@@ -1018,6 +1051,7 @@ id: PO:0002002
 name: basal cell
 namespace: plant_structure
 def: "The lowermost cell formed after the first division of the zygote." [ISBN:0471245208]
+xref_analog: CL:0000646
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000423 ! zygote
 relationship: part_of PO:0009009 ! embryo
@@ -1254,6 +1288,7 @@ id: PO:0004010
 name: meristematic cell
 namespace: plant_structure
 def: "A cell synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
+xref_analog: CL:0000685
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0009013 ! meristem
 
@@ -1263,6 +1298,7 @@ name: initial cell
 namespace: plant_structure
 def: "Cell in a meristem that by division gives rise to two cells one of which remains in the meristem\, the other is added to the plant body." [ISBN:0471245208]
 broad_synonym: "stem cell" []
+xref_analog: CL:0000034
 is_a: PO:0004010 ! meristematic cell
 
 [Term]
@@ -1278,6 +1314,7 @@ id: PO:0004013
 name: epidermal cell
 namespace: plant_structure
 def: "Cell that constitutes dermal tissue." [TAIR:ki]
+xref_analog: CL:0000362
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005679 ! epidermis
 
@@ -1447,6 +1484,7 @@ id: PO:0004531
 name: sheath cell
 namespace: plant_structure
 def: "Cell on the margin of\, and tending to form a sheath around\, the procumbent cells of a multi-seriate ray as seen in tangential section." [POC:curators]
+xref_analog: CL:0000618
 is_a: PO:0004528 ! upright wood ray parenchyma cell
 
 [Term]
@@ -5034,6 +5072,7 @@ name: plant cell
 namespace: plant_structure
 def: "Structural and physiological unit of a plant consisting of the cytoplasm\, protoplast and cell wall; in nonliving state\, of cell wall only\, or cell wall and some nonliving inclusions." [GR:pj, ISBN:0471245208]
 subset: reference
+xref_analog: CL:0000610
 is_a: PO:0009011 ! plant structure
 
 [Term]
@@ -6077,6 +6116,7 @@ id: PO:0020019
 name: megaspore
 namespace: plant_structure
 def: "The larger\, in general\, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant\, and on germination giving rise to the female gametophyte (embryo sac)." [APWeb:Glossary]
+xref_analog: CL:0000250
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000431 ! megasporocyte
 
@@ -6302,6 +6342,7 @@ subset: reference
 synonym: "PMC" []
 synonym: "microspore mother cell" []
 synonym: "pollen mother cell" []
+xref_analog: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
 relationship: part_of PO:0009070 ! microsporangium
@@ -6312,6 +6353,7 @@ name: microspore
 namespace: plant_structure
 def: "The smaller\, in general\, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant\, and on germination giving rise to the male gametophyte." [APWeb:Glossary]
 subset: reference
+xref_analog: CL:0000252
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000032 ! tetrad of microspores
 
@@ -6488,6 +6530,7 @@ name: central cell
 namespace: plant_structure
 def: "The largest cell of the mature embryo sac. Contains two polar nuclei\, which (after double fertilization) will develop into the endosperm." [TAIR:ki]
 subset: reference
+xref_analog: CL:0000278
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020092 ! female gametophyte
 
@@ -6520,6 +6563,7 @@ namespace: plant_structure
 def: "Cell\, commonly three in number as in the eight-nucleate embryo sac\, located at the other end of the embryo sac from the female gamete. " [APWeb:Glossary]
 comment: More or less persistent\, multiplicative or not.
 subset: reference
+xref_analog: CL:0000537
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020092 ! female gametophyte
 
@@ -6529,6 +6573,7 @@ name: egg cell
 namespace: plant_structure
 def: "A non motile cell at the apex of the embryo sac immediately adjacent to the micropyle and associated with the synergid cells." [APWeb:Glossary]
 subset: reference
+xref_analog: CL:0000254
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020096 ! egg apparatus
 
@@ -6554,6 +6599,7 @@ name: generative cell
 namespace: plant_structure
 def: "A cell of the male gametophyte of angiosperms that divides to produce two male gametes or sperm cells." [APWeb:Glossary]
 subset: reference
+xref_analog: CL:0000280
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020091 ! male gametophyte
 
@@ -6563,6 +6609,7 @@ name: vegetative cell
 namespace: plant_structure
 def: "The larger cell of the male gametophyte of angiosperms that does not divide further." [APWeb:Glossary]
 subset: reference
+xref_analog: CL:0000296
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020091 ! male gametophyte
 
