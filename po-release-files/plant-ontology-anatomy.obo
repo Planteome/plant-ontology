@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.39 $
-date: 08:03:2007 13:57
+version: $Revision: 1.40 $
+date: 08:03:2007 15:58
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -603,6 +603,7 @@ namespace: plant_structure
 def: "A haploid male reproductive cell (usually two in number); during double fertilization\, one fuses with the female gamete (egg cell) to produce a zygote while another fusses with the two polar nuclei of the central cell to give rise to endosperm." [TAIR:ki]
 subset: reference
 synonym: "sperm nucleus" []
+xref_analog: CL:0000366
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0020097 ! generative cell
 relationship: part_of PO:0020091 ! male gametophyte
