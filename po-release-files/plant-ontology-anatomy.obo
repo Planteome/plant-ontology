@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.40 $
-date: 08:03:2007 15:58
+version: $Revision: 1.41 $
+date: 25:04:2007 12:40
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Tomato "Term used for tomato"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Tomato "Term used for tomato"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -5017,6 +5017,13 @@ subset: Rice
 relationship: part_of PO:0008007 ! nucellar projection
 
 [Term]
+id: PO:0009000
+name: pulvinus
+namespace: plant_structure
+def: " a more or less abrupt swelling\, especially at the apex or base of a petiole or leaf sheath\, often glandular and/or being the place where a plant responds to touch\, gravity or light\, in panicoid grasses a swollen region in the stem above the intercalary meristem - such a definition would also include stems of Chloranthaceae\, Acanthaceae\, Caryophyllaceae\, Amaranthaceae\, etc.\, cf. articulation.\n" [APWeb:Glossary]
+is_a: PO:0009008 ! organ
+
+[Term]
 id: PO:0009001
 name: fruit
 alt_id: PO:0020067
@@ -5162,6 +5169,14 @@ namespace: plant_structure
 def: "Any morphological or anatomical feature of a plant." [Poc:curators]
 
 [Term]
+id: PO:0009012
+name: petiole pulvinus
+namespace: plant_structure
+def: "Pulvinus of the petiole" [GR:cwt]
+is_a: PO:0009000 ! pulvinus
+relationship: part_of PO:0020038 ! petiole
+
+[Term]
 id: PO:0009013
 name: meristem
 namespace: plant_structure
@@ -5191,6 +5206,29 @@ namespace: plant_structure
 def: "OBSOLETE. Tissues other than the vascular tissues\, epidermis and the periderm." [GR:pj]
 comment: Uninformative definition. Check it again.
 is_obsolete: true
+
+[Term]
+id: PO:0009017
+name: inflorescence branch pulvinus
+namespace: plant_structure
+def: "Pulvinus of inflorescence branch" [GR:cwt]
+is_a: PO:0009000 ! pulvinus
+relationship: part_of PO:0009081 ! inflorescence branch
+
+[Term]
+id: PO:0009018
+name: basal endosperm transfer cell
+namespace: plant_structure
+def: "transfer cell found in endosperm\, responsible for passing through all nutrients entering the seeds by symplastic or apoplastic methods" [GR:cwt]
+is_a: PO:0000078 ! transfer cell
+relationship: part_of PO:0009089 ! endosperm
+
+[Term]
+id: PO:0009019
+name: basal endosperm transfer layer
+namespace: plant_structure
+def: "the cell layer found in basal endosperm transfer cell" [GR:cwt]
+relationship: part_of PO:0009018 ! basal endosperm transfer cell
 
 [Term]
 id: PO:0009020
