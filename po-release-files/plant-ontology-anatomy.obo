@@ -1,6 +1,6 @@
 format-version: 1.0
-version: $Revision: 1.41 $
-date: 25:04:2007 12:40
+version: $Revision: 1.42 $
+date: 01:05:2007 15:58
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -5252,6 +5252,19 @@ def: "The multicellular layer beneath the L2 layer in the shoot meristem which g
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
+id: PO:0009023
+name: leaf axil
+namespace: plant_structure
+def: "The angle between the petiole of a leaf and the stem to which it is attached.\n" [GR:cwt]
+relationship: part_of PO:0020040 ! leaf base
+
+[Term]
+id: PO:0009024
+name: stylar ridge of lower floret of pedicellate spikelet of ear
+namespace: plant_structure
+relationship: part_of PO:0006424 ! gynoecium of lower floret of pedicellate spikelet of ear
+
+[Term]
 id: PO:0009025
 name: leaf
 namespace: plant_structure
@@ -5711,6 +5724,12 @@ def: "OBSOLETE. A controlled vocabulary to describe the various plant parts and 
 is_obsolete: true
 
 [Term]
+id: PO:0009076
+name: stylar ridge of lower floret of sessile spikelet of ear
+namespace: plant_structure
+relationship: part_of PO:0006423 ! gynoecium of lower floret of sessile spikelet of ear
+
+[Term]
 id: PO:0009077
 name: staminode
 namespace: plant_structure
@@ -5725,6 +5744,12 @@ namespace: plant_structure
 def: "A sterile pistil\, often rudimentary." [APWeb:Glossary]
 subset: reference
 is_a: PO:0009062 ! gynoecium
+
+[Term]
+id: PO:0009079
+name: stylar ridge of upper floret of pedicellate spikelet of ear
+namespace: plant_structure
+relationship: part_of PO:0006426 ! gynoecium of upper floret of pedicellate spikelet of ear
 
 [Term]
 id: PO:0009080
@@ -5849,6 +5874,12 @@ name: mature dispersal unit
 namespace: plant_structure
 def: "OBSOLETE. provisional term" [Poc:curators]
 is_obsolete: true
+
+[Term]
+id: PO:0009092
+name: stylar ridge of upper floret of sessile spikelet of ear
+namespace: plant_structure
+relationship: part_of PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
 
 [Term]
 id: PO:0009100
