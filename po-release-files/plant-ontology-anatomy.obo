@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.43 $
-date: 01:05:2007 15:58
-saved-by: cwt6
+version: $Revision: 1.44 $
+date: 30:05:2007 10:19
+saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -5169,14 +5169,6 @@ namespace: plant_structure
 def: "Any morphological or anatomical feature of a plant." [Poc:curators]
 
 [Term]
-id: PO:0009012
-name: petiole pulvinus
-namespace: plant_structure
-def: "Pulvinus of the petiole" [GR:cwt]
-is_a: PO:0009000 ! pulvinus
-relationship: part_of PO:0020038 ! petiole
-
-[Term]
 id: PO:0009013
 name: meristem
 namespace: plant_structure
@@ -5983,6 +5975,14 @@ def: "The meristem that gives rise to the lateral structures of a maize ear." [G
 subset: Maize
 is_a: PO:0009105 ! inflorescence lateral meristem
 is_a: PO:0009109 ! ear meristem
+
+[Term]
+id: PO:0009111
+name: petiole pulvinus
+namespace: plant_structure
+def: "Pulvinus of the petiole" [GR:cwt]
+is_a: PO:0009000 ! pulvinus
+relationship: part_of PO:0020038 ! petiole
 
 [Term]
 id: PO:0019018
