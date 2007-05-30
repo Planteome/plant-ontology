@@ -1,7 +1,7 @@
 format-version: 1.0
-version: $Revision: 1.44 $
-date: 30:05:2007 10:19
-saved-by: Pankaj Jaiswal
+version: $Revision: 1.45 $
+date: 30:05:2007 14:55
+saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
@@ -1065,6 +1065,14 @@ def: "One of the cellular components of a vessel\, a dead cell with the wall bet
 synonym: "vessel element" []
 synonym: "vessel segment" []
 is_a: PO:0000290 ! tracheary element
+
+[Term]
+id: PO:0002004
+name: silk scar
+namespace: plant_structure
+def: "The silk scar is composed of the shrivelled remains of the intercalary region of the silk\, together with the base of the silk which is the true stylar tissue of the silk arising from the distal end of the developing kernel (caryopsis). " [GR:cwt6]
+is_a: PO:0008001 ! fruit distal end
+relationship: part_of PO:0009084 ! pericarp
 
 [Term]
 id: PO:0003000
@@ -5169,6 +5177,12 @@ namespace: plant_structure
 def: "Any morphological or anatomical feature of a plant." [Poc:curators]
 
 [Term]
+id: PO:0009012
+name: <new term>
+namespace: plant_structure
+is_obsolete: true
+
+[Term]
 id: PO:0009013
 name: meristem
 namespace: plant_structure
@@ -5872,6 +5886,12 @@ id: PO:0009092
 name: stylar ridge of upper floret of sessile spikelet of ear
 namespace: plant_structure
 relationship: part_of PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
+
+[Term]
+id: PO:0009093
+name: <new term>
+namespace: plant_structure
+is_obsolete: true
 
 [Term]
 id: PO:0009100
