@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.48 $
-date: 14:08:2007 14:40
+version: $Revision: 1.49 $
+date: 14:08:2007 15:56
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -394,6 +394,7 @@ id: PO:0000048
 name: leaf lamina vascular system
 namespace: plant_structure
 def: "Vascular system of the leaf lamina." [TAIR:ki]
+is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0000036 ! leaf vascular system
 relationship: part_of PO:0020039 ! leaf lamina
 
@@ -424,6 +425,7 @@ id: PO:0000052
 name: petiole vascular system
 namespace: plant_structure
 def: "Vascular system of the leaf petiole." [TAIR:ki]
+is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0000036 ! leaf vascular system
 relationship: part_of PO:0020038 ! petiole
 
@@ -5037,6 +5039,8 @@ id: PO:0008012
 name: stigma vascular system
 namespace: plant_structure
 def: "Vascular system of stigma" [GR:cwt]
+synonym: "stigma vein" []
+is_a: PO:0005017 ! flower vascular system
 relationship: part_of PO:0005019 ! carpel vascular system
 
 [Term]
@@ -5044,6 +5048,7 @@ id: PO:0008013
 name: anther vascular system
 namespace: plant_structure
 def: "Vascular system of the anther" [GR:cwt]
+is_a: PO:0005017 ! flower vascular system
 relationship: part_of PO:0005018 ! stamen vascular system
 
 [Term]
@@ -5051,6 +5056,7 @@ id: PO:0008014
 name: filament vascular system
 namespace: plant_structure
 def: "Vascular system of filament in the stamen" [GR:cwt]
+is_a: PO:0005017 ! flower vascular system
 relationship: part_of PO:0005018 ! stamen vascular system
 
 [Term]
