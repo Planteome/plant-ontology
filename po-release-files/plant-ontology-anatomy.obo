@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.50 $
-date: 14:08:2007 16:33
+version: $Revision: 1.51 $
+date: 25:01:2008 13:05
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -5069,6 +5069,20 @@ namespace: plant_structure
 def: "Vascular system of the hypocotyl" [GR:cwt]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0020100 ! hypocotyl
+
+[Term]
+id: PO:0008016
+name: <new term>
+namespace: plant_structure
+is_obsolete: true
+
+[Term]
+id: PO:0008017
+name: leaf sheath pulvinus
+namespace: plant_structure
+def: "A more or less abrupt swelling\, especially at the apex or base of a leaf sheath" [GR:cwt]
+is_a: PO:0009000 ! pulvinus
+relationship: part_of PO:0020104 ! leaf sheath
 
 [Term]
 id: PO:0009000
