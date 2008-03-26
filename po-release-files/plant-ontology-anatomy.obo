@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.55 $
-date: 07:02:2008 15:06
-saved-by: cwt6
+version: $Revision: 1.56 $
+date: 26:03:2008 09:47
+saved-by: Pankaj Jaiswal
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Tomato "Term used for tomato"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Tomato "Term used for tomato"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -135,6 +135,7 @@ id: PO:0000016
 name: lateral root primordium
 namespace: plant_structure
 def: "An organized group of cells derived from the root pericycle that will differentiate into a new root. " [TAIR:ki]
+is_a: PO:0005029 ! root primordium
 is_a: PO:0020121 ! lateral root
 
 [Term]
@@ -2053,6 +2054,21 @@ def: "Multinucleate cell developed by a series of events involving fusion with t
 subset: Arabidopsis
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0003011 ! root vascular system
+
+[Term]
+id: PO:0005028
+name: inflorescence vascular system
+namespace: plant_structure
+def: "Total of the vascular tissues in their specific arrangement in the inflorescence." [GR:pj]
+is_a: PO:0000034 ! vascular system
+relationship: part_of PO:0009049 ! inflorescence
+
+[Term]
+id: PO:0005029
+name: root primordium
+namespace: plant_structure
+def: "An organized group of cells that will differentiate into a new root. " [GR:pj]
+is_a: PO:0009005 ! root
 
 [Term]
 id: PO:0005039
@@ -5070,7 +5086,6 @@ namespace: plant_structure
 def: "Vascular system of the hypocotyl" [GR:cwt]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0020100 ! hypocotyl
-
 
 [Term]
 id: PO:0008017
