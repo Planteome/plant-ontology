@@ -1,6 +1,6 @@
 format-version: 1.0
-version: $Revision: 1.32 $
-date: 28:06:2007 11:25
+version: $Revision: 1.33 $
+date: 10:06:2008 14:21
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
@@ -1194,6 +1194,13 @@ synonym: "tomato fully red ripe fruit" [SGN:0000051]
 is_a: PO:0007010 ! 6 ripening
 
 [Term]
+id: PO:0007039
+name: leaf trichome development stage
+namespace: plant_growth_and_development_stage
+def: "Stages of development of a trichome defined by characteristic morphological\, structural\, histological or other visible features" [GR:cwt]
+is_a: PO:0001050 ! leaf development stages
+
+[Term]
 id: PO:0007041
 name: inflorescence emergence from flag leaf sheath
 namespace: plant_growth_and_development_stage
@@ -1414,6 +1421,13 @@ comment: Only the first true foliage leaf or pair of leaves are visible.  Occurs
 is_a: PO:0007030 ! shoot emergence
 
 [Term]
+id: PO:0007056
+name: 1 pattern formation 
+namespace: plant_growth_and_development_stage
+def: "trichome initiation stage that determine numbers of trichome are formed" [GR:cwt]
+relationship: part_of PO:0007039 ! leaf trichome development stage
+
+[Term]
 id: PO:0007057
 name: 0 germination
 namespace: plant_growth_and_development_stage
@@ -1432,6 +1446,20 @@ synonym: "germination in Arabidopsis" [TAIR:0000393]
 synonym: "maize growth stage-0" [GRO:0007003]
 synonym: "rice growth stage-1" [GRO:0007043]
 is_a: PO:0007134 ! A vegetative growth
+
+[Term]
+id: PO:0007058
+name: 2 endoreduplication
+namespace: plant_growth_and_development_stage
+def: "the stage trichome nuclei continue to replicate their DNA after mitosis and cytokinesis have ceased\, and as a consequence have a DNA content much greater than 2C" [GR:cwt]
+relationship: part_of PO:0007039 ! leaf trichome development stage
+
+[Term]
+id: PO:0007059
+name: 3 branch formation
+namespace: plant_growth_and_development_stage
+def: "ths stage trichome develops branches " [GR:cwt]
+relationship: part_of PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007060
@@ -2576,6 +2604,13 @@ synonym: "A vegetative growth in Solanaceae" [SGN:0000002]
 synonym: "A-vegetative stage in rice" [GRO:0007139]
 synonym: "vegetative in Arabidopsis" [TAIR:0000305]
 is_a: PO:0007033 ! whole plant growth stages
+
+[Term]
+id: PO:0007135
+name: 4 growth directionality
+namespace: plant_growth_and_development_stage
+def: "the stage involved in the directionality of expansion growth" [GR:cwt]
+relationship: part_of PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007501
