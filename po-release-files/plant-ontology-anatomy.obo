@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.56 $
-date: 26:03:2008 09:47
-saved-by: Pankaj Jaiswal
+version: $Revision: 1.57 $
+date: 10:06:2008 14:36
+saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Citrus "Term used for citrus"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: Citrus "Term used for citrus"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -3817,7 +3817,7 @@ id: PO:0006362
 name: embryonic shoot apical meristem
 namespace: plant_structure
 def: "Meristem at the apex of the embryonic axis." [GR:pj]
-is_a: PO:0020148 ! shoot apical meristem
+is_a: PO:0008016 ! vegatative shoot apical meristem
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
@@ -5088,6 +5088,14 @@ is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0020100 ! hypocotyl
 
 [Term]
+id: PO:0008016
+name: vegatative shoot apical meristem
+namespace: plant_structure
+def: "the meristem which gives rise to the apical growth of vegetative tissues and organs.\n" [GR:cwt]
+synonym: "vegetative meristem" []
+is_a: PO:0020148 ! shoot apical meristem
+
+[Term]
 id: PO:0008017
 name: leaf sheath pulvinus
 namespace: plant_structure
@@ -5169,6 +5177,13 @@ name: petiole adaxial epidermis
 namespace: plant_structure
 def: "The epidermal layer of adaxial/upper surface of the petiole" [GR:cwt]
 relationship: part_of PO:0000051 ! petiole epidermis
+
+[Term]
+id: PO:0008028
+name: reproductive shoot apical meristem
+namespace: plant_structure
+def: "the meristem which gives rise to the apical growth of reproductive tissues and organs.\n" [GR:cwt]
+is_a: PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0008029
@@ -6154,7 +6169,8 @@ name: inflorescence apical meristem
 namespace: plant_structure
 def: "The meristem which gives rise to the apical growth of the inflorescence. It develops from the shoot apical meristem (SAM) after it undergoes transition from vegetative to reproductive phase." [MaizeGDB:lv, GR:pj]
 is_a: PO:0000230 ! inflorescence meristem
-is_a: PO:0020148 ! shoot apical meristem
+is_a: PO:0008028 ! reproductive shoot apical meristem
+relationship: develops_from PO:0008016 ! vegatative shoot apical meristem
 
 [Term]
 id: PO:0009109
