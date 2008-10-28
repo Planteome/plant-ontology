@@ -1,13 +1,13 @@
 format-version: 1.0
-version: $Revision: 1.60 $
-date: 29:08:2008 11:25
+version: $Revision: 1.61 $
+date: 28:10:2008 14:23
 saved-by: cwt6
 auto-generated-by: DAG-Edit 1.419 rev 3
 default-namespace: plant_ontology
 subsetdef: Rice "Term used for rice"
 subsetdef: Maize "Term used for maize"
-subsetdef: Tomato "Term used for tomato"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Tomato "Term used for tomato"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: reference "reference plant structure term"
@@ -3617,6 +3617,7 @@ name: inflorescence bract of ear
 namespace: plant_structure
 def: "The leaf subtending an ear of corn and acting as outer envelope of the ear." [GR:pj]
 synonym: "corn husk" []
+synonym: "husk" []
 synonym: "husk leaf" []
 is_a: PO:0009054 ! inflorescence bract
 relationship: part_of PO:0020136 ! ear (sensu Zea)
@@ -5247,6 +5248,13 @@ def: "The meristem forming the cortex" [ISBN:0471245208 "Anatomy of seed plants 
 is_a: PO:0009013 ! meristem
 
 [Term]
+id: PO:0008037
+name: seedling
+namespace: plant_structure
+def: "A young plant derived from a newly germinated seed" [GR:cwt]
+relationship: develops_from PO:0009009 ! embryo
+
+[Term]
 id: PO:0008038
 name: adventitious root primordium
 namespace: plant_structure
@@ -5484,6 +5492,7 @@ id: PO:0009013
 name: meristem
 namespace: plant_structure
 def: "Regions of a plant in which cells that have retained their embryonic characteristics\, or have reverted to them secondarily\, and that divide to produce new cells that can undergo differentiation to form mature tissues\, i.e. they have a capacity for morphogenesis and growth." [APWeb:Glossary, GR:pj]
+synonym: "meristematic tissue" []
 is_a: PO:0009007 ! tissue
 
 [Term]
@@ -6302,7 +6311,7 @@ name: embryo axis
 namespace: plant_structure
 def: "Axial part of the young sporophyte comprising the hypocotyl\, and the root meristem\, or the radicle if one is present." [ISBN:0471245208]
 synonym: "hypocotyl-root axis" []
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0008037 ! seedling
 
 [Term]
 id: PO:0019022
@@ -6593,7 +6602,7 @@ namespace: plant_structure
 def: "A leaf or leaves formed at the first node of a sporophyte." [APWeb:Glossary, GR:pj]
 subset: reference
 is_a: PO:0006001 ! phyllome
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0008037 ! seedling
 
 [Term]
 id: PO:0020031
@@ -7205,6 +7214,7 @@ namespace: plant_structure
 def: "The distal part of a lateral (axillary) branch in Zea that bears the functionally-carpellate florets in a highly contracted inflorescence." [MaizeGDB:lv]
 subset: Maize
 subset: reference
+synonym: "Cob" []
 is_a: PO:0009049 ! inflorescence
 
 [Term]
