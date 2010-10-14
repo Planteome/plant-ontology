@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 13:10:2010 15:44
-auto-generated-by: OBO-Edit 2.1-beta1
+date: 14:10:2010 13:52
+auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
 subsetdef: Maize "Term used for maize"
@@ -86,7 +86,6 @@ name: cutured callus
 namespace: plant_structure
 def: "In vitro grown cell aggregates that originated from isolated protoplasts, cell suspensions, or from callus that was induced in sterile medium supplemented by plant growth regulators." [TAIR:ki]
 is_a: PO:0000004 ! <i>in vitro</i> plant structure
-is_a: PO:0005052 ! callus
 
 [Term]
 id: PO:0000010
@@ -8750,6 +8749,7 @@ namespace: plant_structure
 alt_id: PO:0003006
 def: "A plant axis that is part of a root system." [POC:curators]
 comment: Commonly thought of as one of the three basic parts of the seed plant body. A plant stucture that is usually underground and does not bear leaves and only rarely shoots, is usually more or less positively geotropic, is endogenous in origin, indeterminate in growth and often with secondary thickening.
+subset: Maize
 subset: reference
 synonym: "aerial root" NARROW []
 is_a: PO:0025004 ! plant axis
@@ -9308,6 +9308,8 @@ name: androecium
 namespace: plant_structure
 def: "A collective phyllome structure composed of two or more stamens." [POC:curators]
 comment: In some cases the androecium may consist of only one stamen.
+subset: Maize
+subset: Poaceae
 subset: reference
 xref: SF:2971891
 xref: SF:2988258
@@ -10597,6 +10599,7 @@ namespace: plant_structure
 alt_id: PO:0003012
 def: "The central column of primary vascular tissue in the root and any tissue that it surrounds." [APWeb:Glossary]
 comment: Includes the pericycle as the outermost layer of the stele.
+subset: Maize
 subset: reference
 synonym: "root vascular cylinder" RELATED []
 relationship: part_of PO:0009005 ! root
@@ -11722,7 +11725,7 @@ creation_date: 2010-09-17T09:49:10Z
 
 [Term]
 id: PO:0025083
-name: stobilus
+name: strobilus
 namespace: plant_structure
 def: "A reproductive shoot system consisting of a number of modified leaves (sporophylls) or ovule-bearing scales grouped terminally on a stem." [POC:curators, Raven:et al]
 synonym: "cone" RELATED []
@@ -11800,4 +11803,5 @@ name: has_part
 [Typedef]
 id: part_of
 name: part of
+is_transitive: true
 
