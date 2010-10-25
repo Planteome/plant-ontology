@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:10:2010 12:45
+date: 25:10:2010 15:31
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -8927,10 +8927,13 @@ relationship: part_of PO:0020040 ! leaf base
 
 [Term]
 id: PO:0009024
-name: stylar ridge of lower floret of pedicellate spikelet of ear
+name: gynoecial ridge of lower floret of pedicellate spikelet of ear
 namespace: plant_structure
+def: "A gynoecial ridge (sensu Zea) that is a gynoecium of a lower floret of a pedicellate spikelet of ear in the early stages of development." [POC:curators]
+synonym: "stylar ridge of lower floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
 xref: OBO_SF_PO:2959654
-relationship: part_of PO:0006424 ! gynoecium of lower floret of pedicellate spikelet of ear
+is_a: PO:0006424 ! gynoecium of lower floret of pedicellate spikelet of ear
+is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
 
 [Term]
 id: PO:0009025
@@ -9460,10 +9463,14 @@ is_obsolete: true
 
 [Term]
 id: PO:0009076
-name: stylar ridge of lower floret of sessile spikelet of ear
+name: gynoecial ridge of lower floret of sessile spikelet of ear
 namespace: plant_structure
+def: "A gynoecial ridge (sensu Zea) that is a gynoecium of a lower floret of sessile spikelet of ear in the early stages of development." [POC:curators]
+comment: Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
+synonym: "stylar ridge of lower floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
 xref: OBO_SF_PO:2959654
-relationship: part_of PO:0006423 ! gynoecium of lower floret of sessile spikelet of ear
+is_a: PO:0006423 ! gynoecium of lower floret of sessile spikelet of ear
+is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
 
 [Term]
 id: PO:0009077
@@ -9483,10 +9490,13 @@ is_a: PO:0009062 ! gynoecium
 
 [Term]
 id: PO:0009079
-name: stylar ridge of upper floret of pedicellate spikelet of ear
+name: gynoecial ridge of upper floret of pedicellate spikelet of ear
 namespace: plant_structure
+def: "A gynoecial ridge (sensu Zea) that is a gynoecium of an upper floret of pedicellate spikelet of ear in the early stages of development." [POC:curators]
+synonym: "stylar ridge of upper floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
 xref: OBO_SF_PO:2959654
-relationship: part_of PO:0006426 ! gynoecium of upper floret of pedicellate spikelet of ear
+is_a: PO:0006426 ! gynoecium of upper floret of pedicellate spikelet of ear
+is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
 
 [Term]
 id: PO:0009080
@@ -9620,10 +9630,13 @@ is_obsolete: true
 
 [Term]
 id: PO:0009092
-name: stylar ridge of upper floret of sessile spikelet of ear
+name: gynoecial ridge of upper floret of sessile spikelet of ear
 namespace: plant_structure
+def: "A gynoecial ridge (sensu Zea) that is a gynoecium of an upper floret of sessile spikelet of ear in the early stages of development." [POC:curators]
+synonym: "stylar ridge of upper floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy Chapter"]
 xref: OBO_SF_PO:2959654
-relationship: part_of PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
+is_a: PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
+is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
 
 [Term]
 id: PO:0009100
@@ -11749,6 +11762,27 @@ def: "A bud that develops into a strobilus." [POC:curators]
 is_a: PO:0025084 ! reproductive bud
 created_by: Ramona
 creation_date: 2010-09-17T01:54:02Z
+
+[Term]
+id: PO:0025086
+name: gynoecial ridge (sensu Poaceae)
+namespace: plant_structure
+def: "A gynoecium (sensu Poaceae) in the early stages of development, characterized as a ridge on the abaxial surface of the floret meristem that develops_from a gynoecium primordium." [PMID:10077498]
+synonym: "stylar ridge (sensu Poaceae)" EXACT []
+is_a: PO:0006384 ! gynoecium (sensu Poaceae)
+created_by: Ramona
+creation_date: 2010-10-25T02:21:15Z
+
+[Term]
+id: PO:0025087
+name: gynoecial ridge (sensu Zea)
+namespace: plant_structure
+def: "A gynoecial ridge (sensu Poaceae) that is a gynoecium of an ear floret in the early stages of development." [POC:curators]
+synonym: "stylar ridge (sensu Zea)" EXACT [ISBN-13:978-0387947358 "Chang and Pareddy chapter"]
+is_a: PO:0006365 ! gynoecium of ear floret
+is_a: PO:0025086 ! gynoecial ridge (sensu Poaceae)
+created_by: Ramona
+creation_date: 2010-10-25T02:24:40Z
 
 [Term]
 id: PO:0028001
