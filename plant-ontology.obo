@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:10:2010 15:31
+date: 27:10:2010 14:38
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -663,9 +663,12 @@ relationship: develops_from PO:0000349 ! epidermal initial
 id: PO:0000146
 name: abscission zone
 namespace: plant_structure
-def: "Zone at base of leaf, flower, fruit, or other plant part that contains an abscission (or separation) layer and a protective layer, both involved in the abscission of the plant part." [ISBN:047124529]
+def: "A portion of plant tissue that is part of a plant structure that has as parts a separation layer and a protective layer and is involved in the abscission of the structure." [ISBN:047124529, POC:curators]
 synonym: "abscission layer" RELATED []
+xref: GO:0009838 "abscission"
 is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0006211 ! separation layer
+relationship: has_part PO:0006212 ! protective layer
 
 [Term]
 id: PO:0000191
@@ -1702,7 +1705,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0003003
 name: primary root elongation zone
 namespace: plant_structure
-def: "A zone of small, densely cytoplasmic cells that are dividing and expanding in size located behind the zone of cell division in the primary root." [TAIR:ki]
+def: "A zone of small, densely cytoplasmic cells that are dividing and expanding in size located behind the zone of cell division in the primary root." [RW:test]
 is_a: PO:0020125 ! elongation zone
 relationship: part_of PO:0020127 ! primary root
 
@@ -1738,7 +1741,7 @@ relationship: part_of PO:0020124 ! root stele
 id: PO:0003014
 name: lateral root elongation zone
 namespace: plant_structure
-def: "The portion of the lateral root located behind the zone of cell division that includes small, densely cytoplasmic cells that are dividing and expanding in size." [TAIR:ki]
+def: "An elongation zone that is part of a lateral root." [RW:test]
 is_a: PO:0020125 ! elongation zone
 relationship: part_of PO:0020121 ! lateral root
 
@@ -1747,7 +1750,7 @@ id: PO:0003015
 name: primary root differentiation zone
 namespace: plant_structure
 def: "A zone of cells that are differentiating into their final form and function located behind the elongation zone of the portion of the primary root." [TAIR:ki]
-is_a: PO:0020135 ! differentiation zone
+is_a: PO:0020135 ! root differentiation zone
 relationship: part_of PO:0020127 ! primary root
 
 [Term]
@@ -1755,14 +1758,14 @@ id: PO:0003016
 name: lateral root differentiation zone
 namespace: plant_structure
 def: "The portion of the lateral root located behind the elongation zone containing cells that are differentiating into their final form and function." [TAIR:ki]
-is_a: PO:0020135 ! differentiation zone
+is_a: PO:0020135 ! root differentiation zone
 relationship: part_of PO:0020121 ! lateral root
 
 [Term]
 id: PO:0003017
 name: root cap of the primary root
 namespace: plant_structure
-def: "A group of cells that covers the apical meristem of the primary root." [TAIR:ki]
+def: "A root cap that is part of a primary root tip." [RW:test, TAIR:ki]
 is_a: PO:0020123 ! root cap
 relationship: part_of PO:0000026 ! primary root tip
 
@@ -1770,7 +1773,7 @@ relationship: part_of PO:0000026 ! primary root tip
 id: PO:0003018
 name: root cap of the lateral root
 namespace: plant_structure
-def: "A group of cells that covers the apical meristem of the lateral root." [TAIR:ki]
+def: "A root cap that is part of a lateral root tip." [RW:test, TAIR:ki]
 is_a: PO:0020123 ! root cap
 relationship: part_of PO:0000027 ! lateral root tip
 
@@ -1778,7 +1781,7 @@ relationship: part_of PO:0000027 ! lateral root tip
 id: PO:0003019
 name: central root cap of the lateral root
 namespace: plant_structure
-def: "The central part of a root cap of a lateral root in which the cells are arranged in longitudinal files." [TAIR:ki]
+def: "A central root cap that is part of a root cap of a lateral root." [POC:curators, TAIR:ki]
 is_a: PO:0020130 ! central root cap
 relationship: part_of PO:0003018 ! root cap of the lateral root
 
@@ -1786,7 +1789,7 @@ relationship: part_of PO:0003018 ! root cap of the lateral root
 id: PO:0003020
 name: lateral root cap of the lateral root
 namespace: plant_structure
-def: "In the lateral root, the part of the root cap that is parallel to the sides of the axis." [TAIR:ki]
+def: "A lateral root cap that is part of a root cap of a lateral root." [POC:curators, TAIR:ki]
 is_a: PO:0020131 ! lateral root cap
 relationship: part_of PO:0003018 ! root cap of the lateral root
 
@@ -1794,7 +1797,7 @@ relationship: part_of PO:0003018 ! root cap of the lateral root
 id: PO:0003021
 name: central root cap of the primary root
 namespace: plant_structure
-def: "The central part of a root cap of the primary root in which the cells are arranged in longitudinal files." [TAIR:ki]
+def: "A central root cap that is part of a root cap of the primary root." [POC:curators, TAIR:ki]
 is_a: PO:0020130 ! central root cap
 relationship: part_of PO:0003017 ! root cap of the primary root
 
@@ -1802,7 +1805,7 @@ relationship: part_of PO:0003017 ! root cap of the primary root
 id: PO:0003022
 name: lateral root cap of the primary root
 namespace: plant_structure
-def: "In the primary root, the part of the root cap that is parallel to the sides of the axis." [TAIR:ki]
+def: "A central root cap that is part of a root cap of the primary root." [POC:curators, TAIR:ki]
 is_a: PO:0020131 ! lateral root cap
 relationship: part_of PO:0003017 ! root cap of the primary root
 
@@ -2370,9 +2373,10 @@ is_a: PO:0009046 ! flower
 id: PO:0004707
 name: fruit dehiscence zone
 namespace: plant_structure
-def: "A narrow band of cells that extends along the dehiscent fruit's dehiscence region which upon fruit maturation by drying, undergoes cell separation. This allows the valves to detach from the replum and for the seeds to be dispersed." [GR:pj, TAIR:ki]
-comment: Found in dehiscent fruit.
+def: "A dehiscence zone that is part of a fruit." [POC:curators]
+comment: Upon fruit maturation by drying, undergoes cell separation, allowing the valves to detach from the replum and seeds to be dispersed.
 subset: Arabidopsis
+is_a: PO:0025092 ! dehiscence zone
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -2627,7 +2631,9 @@ relationship: part_of PO:0005011 ! anther dehiscence zone
 id: PO:0005011
 name: anther dehiscence zone
 namespace: plant_structure
-def: "A narrow band of cells that extends along the entire length of the anther. This site is observed as an indentation between the locules of each theca. Upon anther maturation, cell separation within the dehiscence zone allows the anther wall to break and for pollen to be released." [PMID:15319479]
+def: "A dehiscence zone that is part of an anther." [POC:curators]
+comment: Extends along the entire length of the anther and is observed as an indentation between the locules of each theca. Upon anther maturation, cell separation within the dehiscence zone allows the anther wall to break open and pollen to be released.
+is_a: PO:0025092 ! dehiscence zone
 relationship: part_of PO:0009066 ! anther
 
 [Term]
@@ -3991,7 +3997,8 @@ is_a: PO:0009013 ! meristem
 id: PO:0006211
 name: separation layer
 namespace: plant_structure
-def: "A portion of plant tissue containing cells that develop an abnormal wall chemistry and swelling resulting in easily being pulled apart along the pectin-rich middle lamella; directly involved in the weakening process of abscission." [ISBN:0122151704]
+def: "A portion of plant tissue that is part of an abscission zone and contains cells that develop an abnormal wall chemistry and swelling resulting in their easily being pulled apart along the pectin-rich middle lamella." [ISBN:0122151704]
+comment: Directly involved in the weakening process of abscission.
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000146 ! abscission zone
 
@@ -3999,7 +4006,8 @@ relationship: part_of PO:0000146 ! abscission zone
 id: PO:0006212
 name: protective layer
 namespace: plant_structure
-def: "The layer of cells in the abscission zone that have lignin and suberin depositions and are found on the axial side of the break or exposed surface of abscission." [ISBN:0122151704]
+def: "A portion of plant tissue composed of a layer of cells that is part of the abscission zone that have lignin and suberin depositions and are found on the axial side of the break or exposed surface of abscission." [ISBN:0122151704]
+is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000146 ! abscission zone
 
 [Term]
@@ -4166,7 +4174,7 @@ name: tassel floret
 namespace: plant_structure
 def: "Flowers of the spikelets of maize tassel." [GR:pj]
 subset: Maize
-is_a: PO:0006318 ! floret (sensu Poaceae)
+is_a: PO:0025090 ! Poaceae floret
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -4223,7 +4231,7 @@ name: gynoecium of tassel floret
 namespace: plant_structure
 def: "Collectively the carpels of a maize tassel floret." [GR:pj]
 comment: The development of the gynoecium in the tassel floret of a normal maize plant is aborted and is present in a rudimentary state.
-is_a: PO:0006357 ! gynoecium (sensu Zea)
+is_a: PO:0025089 ! Poaceae gynoecium
 relationship: part_of PO:0006310 ! tassel floret
 
 [Term]
@@ -4231,10 +4239,10 @@ id: PO:0006318
 name: floret (sensu Poaceae)
 namespace: plant_structure
 def: "Small flowers of the spikelets of Poaceae." [Poc:curators]
-comment: It is not clear what the lemma, palea and lodicule correspond to in conventional flowers, therefore we are not making any assumptions of homology at the present time.
+comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replace by PO:0025090 Poaceae floret.
 subset: reference
-is_a: PO:0009082 ! floret
-relationship: part_of PO:0009051 ! spikelet
+is_obsolete: true
+replaced_by: PO:0025090
 
 [Term]
 id: PO:0006319
@@ -4323,8 +4331,9 @@ id: PO:0006329
 name: floret meristem (sensu Poaceae)
 namespace: plant_structure
 def: "Meristem that gives rise to the organs of a floret of a grass plant." [GR:pj]
-is_a: PO:0000229 ! floral meristem
-relationship: part_of PO:0009051 ! spikelet
+comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replaced by PO:0025091 Poaceae floret meristem.
+is_obsolete: true
+replaced_by: PO:0025091
 
 [Term]
 id: PO:0006330
@@ -4526,7 +4535,7 @@ id: PO:0006354
 name: ear floret
 namespace: plant_structure
 def: "Small flowers of the spikelets of maize ear." [GR:pj]
-is_a: PO:0006318 ! floret (sensu Poaceae)
+is_a: PO:0025090 ! Poaceae floret
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -4551,7 +4560,9 @@ id: PO:0006357
 name: gynoecium (sensu Zea)
 namespace: plant_structure
 def: "Collectively the carpels of a maize floret." [GR:pj]
-is_a: PO:0006384 ! gynoecium (sensu Poaceae)
+comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replace by PO:0025089 Poaceae gynoecium, since the Zea gynoecium is not structurally distinct from the Poaceae gynoecium. Hierarchy for gynoecium now matches floret and spikelet.
+is_obsolete: true
+replaced_by: PO:0025089
 
 [Term]
 id: PO:0006358
@@ -4608,7 +4619,7 @@ id: PO:0006365
 name: gynoecium of ear floret
 namespace: plant_structure
 def: "Collectively the carpels of a maize ear floret." [GR:pj]
-is_a: PO:0006357 ! gynoecium (sensu Zea)
+is_a: PO:0025089 ! Poaceae gynoecium
 relationship: part_of PO:0006354 ! ear floret
 
 [Term]
@@ -4673,8 +4684,8 @@ name: ear floret meristem
 namespace: plant_structure
 def: "Apical shoot meristem that gives rise to the organs of a maize ear floret." [GR:pj]
 subset: Maize
-is_a: PO:0006329 ! floret meristem (sensu Poaceae)
 is_a: PO:0009109 ! ear meristem
+is_a: PO:0025091 ! Poaceae floret meristem
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -4683,8 +4694,8 @@ name: tassel floret meristem
 namespace: plant_structure
 def: "Apical meristem that gives rise to the organs of a maize tassel floret." [GR:pj]
 subset: Maize
-is_a: PO:0006329 ! floret meristem (sensu Poaceae)
 is_a: PO:0009106 ! tassel meristem
+is_a: PO:0025091 ! Poaceae floret meristem
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -4764,15 +4775,16 @@ name: androecium (sensu Poaceae)
 namespace: plant_structure
 def: "Collectively the stamens of one grass floret." [GR:pj]
 is_a: PO:0009061 ! androecium
-relationship: part_of PO:0006318 ! floret (sensu Poaceae)
+relationship: part_of PO:0025090 ! Poaceae floret
 
 [Term]
 id: PO:0006384
 name: gynoecium (sensu Poaceae)
 namespace: plant_structure
 def: "Collectively the carpels of a grass floret." [GR:pj]
-is_a: PO:0009062 ! gynoecium
-relationship: part_of PO:0006318 ! floret (sensu Poaceae)
+comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replace by PO:0025089 Poaceae gynoecium.
+is_obsolete: true
+replaced_by: PO:0025089
 
 [Term]
 id: PO:0006385
@@ -5292,7 +5304,7 @@ name: carpel (sensu Poaceae)
 namespace: plant_structure
 def: "A megasporophyll at the center of a grass floret enclosing the ovule." [GR:pj]
 is_a: PO:0009030 ! carpel
-relationship: part_of PO:0006384 ! gynoecium (sensu Poaceae)
+relationship: part_of PO:0025089 ! Poaceae gynoecium
 
 [Term]
 id: PO:0006456
@@ -8927,13 +8939,15 @@ relationship: part_of PO:0020040 ! leaf base
 
 [Term]
 id: PO:0009024
-name: gynoecial ridge of lower floret of pedicellate spikelet of ear
+name: gynoecium ridge of lower floret of pedicellate spikelet of ear
 namespace: plant_structure
-def: "A gynoecial ridge (sensu Zea) that is a gynoecium of a lower floret of a pedicellate spikelet of ear in the early stages of development." [POC:curators]
+def: "A Zea gynoecium ridge that is a gynoecium of a lower floret of a pedicellate spikelet of ear in the early stages of development." [POC:curators]
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. While the development of this stylar ridge is very similar to that of the upper florets, the development does not proceed beyond the early ridge stage.
+synonym: "gynoecial ridge of lower floret of pedicellate spikelet of ear" EXACT []
 synonym: "stylar ridge of lower floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006424 ! gynoecium of lower floret of pedicellate spikelet of ear
-is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
+is_a: PO:0025087 ! Zea gynoecium ridge
 
 [Term]
 id: PO:0009025
@@ -9041,7 +9055,7 @@ name: lodicule
 namespace: plant_structure
 def: "In a grass floret, one of two or three tiny scales or flaps of tissue outside the stamens, possibly representing reduced perianth segments." [APWeb:Glossary]
 subset: reference
-relationship: part_of PO:0006318 ! floret (sensu Poaceae)
+relationship: part_of PO:0025090 ! Poaceae floret
 
 [Term]
 id: PO:0009037
@@ -9050,7 +9064,7 @@ namespace: plant_structure
 def: "In a grass floret, the lower of two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
 subset: reference
 is_a: PO:0009034 ! floral bract
-relationship: part_of PO:0006318 ! floret (sensu Poaceae)
+relationship: part_of PO:0025090 ! Poaceae floret
 
 [Term]
 id: PO:0009038
@@ -9060,7 +9074,7 @@ def: "In a grass floret, the upper of the two bracts enclosing a flower." [APWeb
 comment: Possibly a prophyll/bracteole.
 subset: reference
 is_a: PO:0009034 ! floral bract
-relationship: part_of PO:0006318 ! floret (sensu Poaceae)
+relationship: part_of PO:0025090 ! Poaceae floret
 
 [Term]
 id: PO:0009039
@@ -9463,14 +9477,15 @@ is_obsolete: true
 
 [Term]
 id: PO:0009076
-name: gynoecial ridge of lower floret of sessile spikelet of ear
+name: gynoecium ridge of lower floret of sessile spikelet of ear
 namespace: plant_structure
-def: "A gynoecial ridge (sensu Zea) that is a gynoecium of a lower floret of sessile spikelet of ear in the early stages of development." [POC:curators]
-comment: Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
+def: "A Zea gynoecium ridge that is a gynoecium of a lower floret of sessile spikelet of ear in the early stages of development." [POC:curators]
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
+synonym: "gynoecial ridge of lower floret of sessile spikelet of ear" EXACT []
 synonym: "stylar ridge of lower floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006423 ! gynoecium of lower floret of sessile spikelet of ear
-is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
+is_a: PO:0025087 ! Zea gynoecium ridge
 
 [Term]
 id: PO:0009077
@@ -9490,13 +9505,15 @@ is_a: PO:0009062 ! gynoecium
 
 [Term]
 id: PO:0009079
-name: gynoecial ridge of upper floret of pedicellate spikelet of ear
+name: gynoecium ridge of upper floret of pedicellate spikelet of ear
 namespace: plant_structure
-def: "A gynoecial ridge (sensu Zea) that is a gynoecium of an upper floret of pedicellate spikelet of ear in the early stages of development." [POC:curators]
+def: "A Zea gynoecium ridge that is a gynoecium of an upper floret of pedicellate spikelet of ear in the early stages of development." [POC:curators]
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
+synonym: "gynoecial ridge of upper floret of pedicellate spikelet of ear" EXACT []
 synonym: "stylar ridge of upper floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006426 ! gynoecium of upper floret of pedicellate spikelet of ear
-is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
+is_a: PO:0025087 ! Zea gynoecium ridge
 
 [Term]
 id: PO:0009080
@@ -9630,13 +9647,15 @@ is_obsolete: true
 
 [Term]
 id: PO:0009092
-name: gynoecial ridge of upper floret of sessile spikelet of ear
+name: gynoecium ridge of upper floret of sessile spikelet of ear
 namespace: plant_structure
-def: "A gynoecial ridge (sensu Zea) that is a gynoecium of an upper floret of sessile spikelet of ear in the early stages of development." [POC:curators]
+def: "A Zea gynoecium ridge that is a gynoecium of an upper floret of sessile spikelet of ear in the early stages of development." [POC:curators]
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
+synonym: "gynoecial ridge of upper floret of sessile spikelet of ear" EXACT []
 synonym: "stylar ridge of upper floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy Chapter"]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
-is_a: PO:0025087 ! gynoecial ridge (sensu Zea)
+is_a: PO:0025087 ! Zea gynoecium ridge
 
 [Term]
 id: PO:0009100
@@ -10480,7 +10499,7 @@ namespace: plant_structure
 def: "A cell of the male gametophyte of angiosperms that divides to produce two male gametes or sperm cells." [APWeb:Glossary]
 subset: reference
 xref: CL:0000280
-is_a: PO:0025027 ! microgametophytic cell
+is_a: PO:0009002 ! plant cell
 
 [Term]
 id: PO:0020099
@@ -10489,7 +10508,7 @@ namespace: plant_structure
 def: "The larger cell of the male gametophyte of angiosperms that does not divide further." [APWeb:Glossary]
 subset: reference
 xref: CL:0000296
-is_a: PO:0025027 ! microgametophytic cell
+is_a: PO:0009002 ! plant cell
 
 [Term]
 id: PO:0020100
@@ -10599,9 +10618,12 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0020123
 name: root cap
 namespace: plant_structure
-def: "A group of cells that covers the apical meristem of the root." [APWeb:Glossary]
+def: "A portion of parenchyma tissue that covers the root apical meristem." [ISBN:0716710072]
+comment: Protects the root apical meristem.
 subset: reference
-relationship: part_of PO:0009005 ! root
+synonym: "rootcap" EXACT [ISBN:0716710072]
+is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0000025 ! root tip
 
 [Term]
 id: PO:0020124
@@ -10619,10 +10641,11 @@ relationship: part_of PO:0009005 ! root
 id: PO:0020125
 name: elongation zone
 namespace: plant_structure
-def: "The portion of the root that includes small, densely cytoplasmic cells that are dividing and expanding in size." [GR:pj]
+def: "A cardinal organ part that is part of a root that is located directly behind a root apical meristem, in which the cells are undergoing longitudinal expansion." [RW:test]
 subset: reference
-synonym: "region of cell elongation" RELATED []
-synonym: "region of radial enlargement" RELATED []
+synonym: "region of cell elongation" EXACT [ISBN:0716710072]
+synonym: "region of elongation" EXACT [ISBN:0716710072]
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -10659,16 +10682,19 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020130
 name: central root cap
 namespace: plant_structure
-def: "The central part of a root cap in which the cells are arranged in longitudinal files." [GR:pj]
-synonym: "columella cells" RELATED []
+def: "A portion of parenchyma tissue that is the central part of a root cap in which the cells are arranged in longitudinal files." [ISBN:0878938567]
+synonym: "columella cells" EXACT []
+synonym: "columella rootcap" EXACT [ISBN:0716710072]
+is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0020123 ! root cap
 
 [Term]
 id: PO:0020131
 name: lateral root cap
 namespace: plant_structure
-def: "The part of the root cap that is parallel to the sides of the axis." [ISBN:0122151704]
+def: "A portion of parenchyma tissue that is part of a root cap and is parallel to the sides of a root axis." [ISBN:0878938567]
 synonym: "peripheral cells" RELATED []
+is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0020123 ! root cap
 
 [Term]
@@ -10698,13 +10724,16 @@ is_obsolete: true
 
 [Term]
 id: PO:0020135
-name: differentiation zone
+name: root differentiation zone
 namespace: plant_structure
 alt_id: PO:0003002
-def: "The portion of the root located behind the elongation zone containing cells that are differentiating into their final form and function." [GR:pj]
+def: "A cardinal organ part that is the part of a root and is located behind the elongation zone and contains cells that are differentiating into their final form and function." [RW:test]
+comment: Most of the primary tissue of a root mature in the differentiation zone. This zone is where root hairs are produced.
 subset: reference
-synonym: "maturation zone" RELATED []
-synonym: "specialization zone" RELATED []
+synonym: "region of root maturation" EXACT [ISBN:0716710072]
+synonym: "root maturation zone" EXACT []
+synonym: "root specialization zone" EXACT []
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -11117,8 +11146,8 @@ id: PO:0025027
 name: microgametophytic cell
 namespace: plant_structure
 def: "A plant cell that is part of a male gametophyte." [POC:rw]
-is_a: PO:0009002 ! plant cell
-relationship: part_of PO:0020091 ! male gametophyte
+comment: This term was made obsolete because it is not appropriate for non-seed plants.
+is_obsolete: true
 created_by: Ramona
 creation_date: 2010-05-07T02:36:55Z
 
@@ -11765,24 +11794,110 @@ creation_date: 2010-09-17T01:54:02Z
 
 [Term]
 id: PO:0025086
-name: gynoecial ridge (sensu Poaceae)
+name: Poaceae gynoecium ridge
 namespace: plant_structure
-def: "A gynoecium (sensu Poaceae) in the early stages of development, characterized as a ridge on the abaxial surface of the floret meristem that develops_from a gynoecium primordium." [PMID:10077498]
-synonym: "stylar ridge (sensu Poaceae)" EXACT []
-is_a: PO:0006384 ! gynoecium (sensu Poaceae)
+def: "A gynoecium ridge that is a Poaceae gynoecium in the early stages of development and is characterized as a ridge on the abaxial surface of the Poaceae floret meristem." [PMID:10077498]
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
+subset: Maize
+subset: Poaceae
+synonym: "Poaceae gynoecial ridge" EXACT []
+synonym: "Poaceae stylar ridge" EXACT []
+is_a: PO:0025088 ! gynoecium ridge
+is_a: PO:0025089 ! Poaceae gynoecium
 created_by: Ramona
 creation_date: 2010-10-25T02:21:15Z
 
 [Term]
 id: PO:0025087
-name: gynoecial ridge (sensu Zea)
+name: Zea gynoecium ridge
 namespace: plant_structure
-def: "A gynoecial ridge (sensu Poaceae) that is a gynoecium of an ear floret in the early stages of development." [POC:curators]
-synonym: "stylar ridge (sensu Zea)" EXACT [ISBN-13:978-0387947358 "Chang and Pareddy chapter"]
+def: "A Poaceae gynoecium ridge that is a gynoecium of an ear floret in the early stages of development and is characterized as a ridge on the abaxial surface of the ear floret." [POC:curators]
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
+synonym: "Zea gynoecial ridge" EXACT []
+synonym: "Zea stylar ridge" EXACT [ISBN-13:978-0387947358 "Chang and Pareddy chapter"]
 is_a: PO:0006365 ! gynoecium of ear floret
-is_a: PO:0025086 ! gynoecial ridge (sensu Poaceae)
+is_a: PO:0025086 ! Poaceae gynoecium ridge
 created_by: Ramona
 creation_date: 2010-10-25T02:24:40Z
+
+[Term]
+id: PO:0025088
+name: gynoecium ridge
+namespace: plant_structure
+def: "A gynoecium in the early stages of development, characterized as a ridge on the abaxial surface of the floral meristem that develops from a gynoecium primordium." [POC:curators]
+synonym: "gynoecial ridge" EXACT []
+synonym: "stylar ridge" EXACT []
+is_a: PO:0009062 ! gynoecium
+relationship: develops_from PO:0000019 ! gynoecium primordium
+created_by: Ramona
+creation_date: 2010-10-27T09:19:35Z
+
+[Term]
+id: PO:0025089
+name: Poaceae gynoecium
+namespace: plant_structure
+def: "A gynoecium that is part of a Poaceae floret." [RW:test]
+subset: Maize
+subset: Poaceae
+is_a: PO:0009062 ! gynoecium
+relationship: part_of PO:0025090 ! Poaceae floret
+created_by: Ramona
+creation_date: 2010-10-27T09:24:52Z
+
+[Term]
+id: PO:0025090
+name: Poaceae floret
+namespace: plant_structure
+def: "A floret that is part of a spikelet." [RW:test]
+comment: Found in Poaceae. It is not clear what the lemma, palea and lodicule correspond to in conventional flowers, therefore we are not making any assumptions of homology at the present time.
+subset: Maize
+subset: Poaceae
+is_a: PO:0009082 ! floret
+relationship: part_of PO:0009051 ! spikelet
+created_by: Ramona
+creation_date: 2010-10-27T09:30:54Z
+
+[Term]
+id: PO:0025091
+name: Poaceae floret meristem
+namespace: plant_structure
+def: "A floral meristem that is part of a spikelet." [RW:test]
+comment: Found in Poaceae.
+subset: Maize
+subset: Poaceae
+is_a: PO:0000229 ! floral meristem
+is_a: PO:0009051 ! spikelet
+created_by: Ramona
+creation_date: 2010-10-27T10:34:10Z
+
+[Term]
+id: PO:0025092
+name: dehiscence zone
+namespace: plant_structure
+def: "A portion of plant tissue that is part of a plant structure and consists of a narrow band of cells that undergoes dehiscence upon\nmaturation of the structure." [POC:curators]
+xref: GO:0009900 "dehiscence"
+is_a: PO:0009007 ! portion of plant tissue
+created_by: Ramona
+creation_date: 2010-10-27T11:07:17Z
+
+[Term]
+id: PO:0025093
+name: capsule annulus
+namespace: plant_structure
+def: "A dehiscence zone that is part of a capsule." [POC:curators]
+comment: The capsule annulus is located at the base of an operculum. Upon capsule maturation, cell separation in the annulus allows the operculum to separate from the capsule, aiding in spore dispersal.
+synonym: "capsule dehiscence zone" EXACT []
+is_a: PO:0025092 ! dehiscence zone
+created_by: Ramona
+creation_date: 2010-10-27T11:16:33Z
+
+[Term]
+id: PO:0025094
+name: sporangium
+namespace: plant_structure
+is_a: PO:0009011 ! plant structure
+created_by: Ramona
+creation_date: 2010-10-27T11:28:21Z
 
 [Term]
 id: PO:0028001
