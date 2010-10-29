@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:10:2010 14:38
+date: 28:10:2010 21:20
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -972,8 +972,9 @@ is_a: PO:0000290 ! tracheary element
 id: PO:0000309
 name: nectary parenchyma
 namespace: plant_structure
-def: "Relatively unspecialized tissue present in the nectary." [TAIR:lr]
-is_a: PO:0005421 ! parenchyma
+def: "A portion of parenchyma tissue that is part of a nectary." [POC:rw]
+is_a: PO:0009035 ! nectary
+relationship: part_of PO:0005421 ! parenchyma
 
 [Term]
 id: PO:0000332
@@ -1763,7 +1764,7 @@ relationship: part_of PO:0020121 ! lateral root
 
 [Term]
 id: PO:0003017
-name: root cap of the primary root
+name: root cap of primary root
 namespace: plant_structure
 def: "A root cap that is part of a primary root tip." [RW:test, TAIR:ki]
 is_a: PO:0020123 ! root cap
@@ -1771,7 +1772,7 @@ relationship: part_of PO:0000026 ! primary root tip
 
 [Term]
 id: PO:0003018
-name: root cap of the lateral root
+name: root cap of lateral root
 namespace: plant_structure
 def: "A root cap that is part of a lateral root tip." [RW:test, TAIR:ki]
 is_a: PO:0020123 ! root cap
@@ -1779,35 +1780,35 @@ relationship: part_of PO:0000027 ! lateral root tip
 
 [Term]
 id: PO:0003019
-name: central root cap of the lateral root
+name: central root cap of lateral root
 namespace: plant_structure
 def: "A central root cap that is part of a root cap of a lateral root." [POC:curators, TAIR:ki]
 is_a: PO:0020130 ! central root cap
-relationship: part_of PO:0003018 ! root cap of the lateral root
+relationship: part_of PO:0003018 ! root cap of lateral root
 
 [Term]
 id: PO:0003020
-name: lateral root cap of the lateral root
+name: lateral root cap of lateral root
 namespace: plant_structure
 def: "A lateral root cap that is part of a root cap of a lateral root." [POC:curators, TAIR:ki]
 is_a: PO:0020131 ! lateral root cap
-relationship: part_of PO:0003018 ! root cap of the lateral root
+relationship: part_of PO:0003018 ! root cap of lateral root
 
 [Term]
 id: PO:0003021
-name: central root cap of the primary root
+name: central root cap of primary root
 namespace: plant_structure
 def: "A central root cap that is part of a root cap of the primary root." [POC:curators, TAIR:ki]
 is_a: PO:0020130 ! central root cap
-relationship: part_of PO:0003017 ! root cap of the primary root
+relationship: part_of PO:0003017 ! root cap of primary root
 
 [Term]
 id: PO:0003022
-name: lateral root cap of the primary root
+name: lateral root cap of primary root
 namespace: plant_structure
 def: "A central root cap that is part of a root cap of the primary root." [POC:curators, TAIR:ki]
 is_a: PO:0020131 ! lateral root cap
-relationship: part_of PO:0003017 ! root cap of the primary root
+relationship: part_of PO:0003017 ! root cap of primary root
 
 [Term]
 id: PO:0003023
@@ -3685,7 +3686,7 @@ relationship: part_of PO:0020100 ! hypocotyl
 id: PO:0006066
 name: petiole parenchyma
 namespace: plant_structure
-def: "Relatively unspecialized tissue present in the leaf petiole." [GR:pj]
+def: "A portion of parenchyma tissue that is part of a petiole." [POC:rw]
 is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0020038 ! petiole
 
@@ -3704,15 +3705,17 @@ is_obsolete: true
 id: PO:0006068
 name: sepal parenchyma
 namespace: plant_structure
-def: "Relatively unspecialized tissue present in the sepals." [GR:pj]
+def: "A portion of parenchyma tissue that is part of a sepal." [POC:rw]
 is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0009031 ! sepal
 
 [Term]
 id: PO:0006069
 name: petal parenchyma
 namespace: plant_structure
-def: "Relatively unspecialized tissue present in the petals." [GR:pj]
+def: "A portion of parenchyma tissue that is part of a petal." [POC:rw]
 is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0009032 ! petal
 
 [Term]
 id: PO:0006070
@@ -10618,11 +10621,11 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0020123
 name: root cap
 namespace: plant_structure
-def: "A portion of parenchyma tissue that covers the root apical meristem." [ISBN:0716710072]
-comment: Protects the root apical meristem.
+def: "A portion of parenchyma tissue that is part of the root tip and covers the root apical meristem." [ISBN:0716710072]
+comment: Often composed of living and dead parenchyma cells. Protects the root apical meristem.
 subset: reference
 synonym: "rootcap" EXACT [ISBN:0716710072]
-is_a: PO:0005421 ! parenchyma
+is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0000025 ! root tip
 
 [Term]
@@ -10642,6 +10645,7 @@ id: PO:0020125
 name: elongation zone
 namespace: plant_structure
 def: "A cardinal organ part that is part of a root that is located directly behind a root apical meristem, in which the cells are undergoing longitudinal expansion." [RW:test]
+comment: The elongation zone is only a few millimeters in length and is the only portion of the root in which cell elongation generally occurs. Root hairs are not yet produced in this region.
 subset: reference
 synonym: "region of cell elongation" EXACT [ISBN:0716710072]
 synonym: "region of elongation" EXACT [ISBN:0716710072]
@@ -10685,7 +10689,7 @@ namespace: plant_structure
 def: "A portion of parenchyma tissue that is the central part of a root cap in which the cells are arranged in longitudinal files." [ISBN:0878938567]
 synonym: "columella cells" EXACT []
 synonym: "columella rootcap" EXACT [ISBN:0716710072]
-is_a: PO:0005421 ! parenchyma
+is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0020123 ! root cap
 
 [Term]
@@ -10694,7 +10698,7 @@ name: lateral root cap
 namespace: plant_structure
 def: "A portion of parenchyma tissue that is part of a root cap and is parallel to the sides of a root axis." [ISBN:0878938567]
 synonym: "peripheral cells" RELATED []
-is_a: PO:0005421 ! parenchyma
+is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0020123 ! root cap
 
 [Term]
@@ -10728,7 +10732,7 @@ name: root differentiation zone
 namespace: plant_structure
 alt_id: PO:0003002
 def: "A cardinal organ part that is the part of a root and is located behind the elongation zone and contains cells that are differentiating into their final form and function." [RW:test]
-comment: Most of the primary tissue of a root mature in the differentiation zone. This zone is where root hairs are produced.
+comment: Most of the primary tissues of a root mature in the differentiation zone. This zone is where root hairs are produced.
 subset: reference
 synonym: "region of root maturation" EXACT [ISBN:0716710072]
 synonym: "root maturation zone" EXACT []
@@ -10838,8 +10842,9 @@ relationship: part_of PO:0000037 ! shoot apex
 id: PO:0020149
 name: quiescent center
 namespace: plant_structure
-def: "Hemispherically shaped aggregation of mitotically and metabolically inactive cells positioned behind the root cap." [ISBN:0122151704]
-relationship: part_of PO:0006085 ! root meristem
+def: "A hemispherically shaped portion of meristem tissue consisting of mitotically and metabolically inactive cells that is part of the root apical meristem and is positioned behind the root cap." [ISBN:0122151704, RW:test]
+is_a: PO:0009013 ! meristem
+relationship: part_of PO:0020147 ! root apical meristem
 
 [Term]
 id: PO:0021002
@@ -11874,7 +11879,7 @@ creation_date: 2010-10-27T10:34:10Z
 id: PO:0025092
 name: dehiscence zone
 namespace: plant_structure
-def: "A portion of plant tissue that is part of a plant structure and consists of a narrow band of cells that undergoes dehiscence upon\nmaturation of the structure." [POC:curators]
+def: "A portion of plant tissue that is part of a plant structure and consists of a narrow band of cells that undergoes dehiscence upon maturation of the structure." [POC:curators]
 xref: GO:0009900 "dehiscence"
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
@@ -11898,6 +11903,16 @@ namespace: plant_structure
 is_a: PO:0009011 ! plant structure
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
+
+[Term]
+id: PO:0025095
+name: root parenchyma
+namespace: plant_structure
+def: "A portion of parenchyma tissue that is part of a root." [POC:rw]
+is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0009005 ! root
+created_by: Ramona
+creation_date: 2010-10-28T05:14:26Z
 
 [Term]
 id: PO:0028001
