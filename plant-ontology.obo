@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:10:2010 21:20
+date: 31:10:2010 17:45
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -10,6 +10,7 @@ subsetdef: Potato "Term used for potato"
 subsetdef: reference "reference plant structure term"
 subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
+subsetdef: TraitNet "Plant Functional Traits"
 default-namespace: plant_ontology
 
 [Term]
@@ -35,6 +36,7 @@ namespace: plant_structure
 def: "A plant structure which is a whole organism." [POC:curators]
 comment: Examples include seed PO:0009010 and embryo PO:0009009.
 subset: reference
+subset: TraitNet
 synonym: "gametophyte" NARROW []
 synonym: "seedling" NARROW []
 synonym: "sporophyte" NARROW []
@@ -260,6 +262,7 @@ name: lenticel
 namespace: plant_structure
 def: "A portion of ground tissue composed of a loosely-packed mass of cork cells occurring especially in the young stem, bark or even leaf of a plant, visible on the surface as a raised, often powdery-appearing spot." [ISBN:0471245208]
 comment: Gas can be exchanged through the lenticel.
+subset: TraitNet
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0025029 ! shoot axis
 
@@ -285,6 +288,7 @@ name: vascular system
 namespace: plant_structure
 def: "A plant structure that includes the totality of the portions of vascular tissue in their specific arrangement in a whole plant or in a constituent part thereof." [ISBN:0-7167-1007-2, ISBN:0471245208, POC:curators]
 comment: The vascular system may also contain portions of ground tissue.
+subset: TraitNet
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
 
@@ -359,6 +363,7 @@ alt_id: PO:0003007
 alt_id: PO:0020129
 def: "A post-embryonic root that develops from shoot tissue." [GR:pj, TAIR:ki]
 subset: reference
+subset: TraitNet
 synonym: "adventitious root" BROAD []
 synonym: "aerial root" NARROW []
 synonym: "stilt root" NARROW []
@@ -379,6 +384,7 @@ namespace: plant_structure
 def: "Adventitious root formed at stem nodes above the ground and growing directly into the soil." [TAIR:ki]
 comment: This term is perhaps best defined functionally to prop the plant up.
 subset: reference
+subset: TraitNet
 synonym: "brace root" RELATED []
 is_a: PO:0003005 ! nodal root
 
@@ -473,6 +479,7 @@ id: PO:0000055
 name: bud
 namespace: plant_structure
 def: "An undeveloped shoot system." [POC:curators]
+subset: TraitNet
 xref: OBO_SF_PO:3016634
 is_a: PO:0009006 ! shoot system
 
@@ -481,6 +488,7 @@ id: PO:0000056
 name: floral bud
 namespace: plant_structure
 def: "A bud that develops into a flower." [POC:curators]
+subset: TraitNet
 is_a: PO:0025084 ! reproductive bud
 
 [Term]
@@ -545,6 +553,7 @@ id: PO:0000071
 name: companion cell
 namespace: plant_structure
 def: "A specialized parenchyma cell associated with a sieve-tube member in angiosperm phloem and arising from the same mother cell as the sieve-tube member." [ISBN:0879015322]
+subset: TraitNet
 xref: CL:0000284
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005043 ! secondary phloem
@@ -555,6 +564,7 @@ id: PO:0000074
 name: parenchyma cell
 namespace: plant_structure
 def: "A relatively unspecialized cell with a nucleate protoplast." [ISBN:0471245208]
+subset: TraitNet
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005421 ! parenchyma
 
@@ -563,6 +573,7 @@ id: PO:0000075
 name: collenchyma cell
 namespace: plant_structure
 def: "Elongated living cells with unevenly thickened nonlignified primary walls." [ISBN:0471245208]
+subset: TraitNet
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005423 ! collenchyma
 
@@ -571,6 +582,7 @@ id: PO:0000076
 name: chlorenchyma cell
 namespace: plant_structure
 def: "Parenchyma cell containing chloroplasts; a component of leaf mesophyll and other green parenchyma tissue." [ISBN:0471245208]
+subset: TraitNet
 xref: CL:0000472
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005426 ! chlorenchyma
@@ -580,6 +592,7 @@ id: PO:0000077
 name: sclerenchyma cell
 namespace: plant_structure
 def: "Usually dead cell variable in form and size, with more or less thick, often lignified, secondary walls." [ISBN:0471245208]
+subset: TraitNet
 xref: CL:0000276
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005427 ! sclerenchyma
@@ -610,6 +623,7 @@ name: axial cell
 namespace: plant_structure
 def: "A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
 comment: These cells make up the axial system, also known as vertical or longitudinal system.
+subset: TraitNet
 xref: CL:0000363
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000079 ! fusiform initial
@@ -730,6 +744,7 @@ name: shoot axis cortex
 namespace: plant_structure
 def: "A portion of ground tissue that is part of a cortex and part of a shoot axis." [ISBN:047124529, POC:curators]
 comment: Can occur in a stem or branch.
+subset: TraitNet
 synonym: "branch cortex" NARROW []
 synonym: "stem cortex" NARROW []
 is_a: PO:0025059 ! portion of ground tissue
@@ -822,6 +837,7 @@ id: PO:0000256
 name: root hair
 namespace: plant_structure
 def: "A root epidermal cell with a simple extension that is concerned with absorption of soil solution." [ISBN:0471245208]
+subset: TraitNet
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000262 ! trichoblast
 relationship: part_of PO:0006036 ! root epidermis
@@ -833,6 +849,7 @@ namespace: plant_structure
 alt_id: PO:0003010
 def: "A portion of ground tissue that is part of a cortex and part of a root." [ISBN:047125208, POC:curators]
 comment: In dicots and gymnosperms, the cortex consists of mainly parenchyma cells. In monocots sclerenchyma develops in addition to parenchyma.
+subset: TraitNet
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0009005 ! root
@@ -873,6 +890,7 @@ name: xylem element
 namespace: plant_structure
 def: "A cell making up xylem tissue." [ISBN:0471245208]
 comment: Occurs in the sporophytic phase of a plant life cycle.
+subset: TraitNet
 xref: CL:0000298
 is_a: PO:0000081 ! axial cell
 
@@ -881,6 +899,7 @@ id: PO:0000274
 name: xylem fiber
 namespace: plant_structure
 def: "A fiber in xylem." [ISBN:0471245208]
+subset: TraitNet
 is_a: PO:0000273 ! xylem element
 relationship: part_of PO:0005848 ! secondary xylem
 
@@ -890,6 +909,7 @@ name: trichome
 namespace: plant_structure
 def: "An outgrowth from the epidermis varying in size and complexity and including hairs, scales, and other structures; may be glandular." [ISBN:0471245208, TAIR:ki]
 comment: In Arabidopsis, patterning of trichome development is not random but does not appear to be lineage-based like stomata.
+subset: TraitNet
 xref: CL:0000282
 is_a: PO:0004013 ! epidermal cell
 
@@ -919,6 +939,7 @@ namespace: plant_structure
 alt_id: PO:0000286
 def: "One of the series of cells that make up a sieve tube; it shows a more or less pronounced differentiation between sieve plates (wide pores) and lateral sieve areas (narrow pores)." [ISBN:0471245208]
 comment: Also sieve tube element and the obsolete sieve tube segment. Occurs in the sporophytic phase of a plant life cycle.
+subset: TraitNet
 synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
 xref: CL:0000268
@@ -933,6 +954,7 @@ name: tracheary element
 namespace: plant_structure
 def: "General term for any water conducting cell, tracheid or vessel member." [ISBN:0471245208]
 comment: Occurs in the sporophytic phase of a plant life cycle.
+subset: TraitNet
 xref: CL:0000672
 is_a: PO:0000273 ! xylem element
 relationship: part_of PO:0005848 ! secondary xylem
@@ -944,6 +966,7 @@ name: guard cell
 namespace: plant_structure
 def: "One of a pair of cells flanking the stomatal pore." [ISBN:0471245208]
 comment: They cause the opening and closing of the pore by changes in turgor.
+subset: TraitNet
 xref: CL:0000292
 is_a: PO:0004013 ! epidermal cell
 relationship: develops_from PO:0000351 ! guard mother cell
@@ -965,6 +988,7 @@ id: PO:0000301
 name: tracheid
 namespace: plant_structure
 def: "In the xylem, a dead elongated water-conducting cell in which at least the middle lamella of the end walls remains intact." [APWeb:Glossary]
+subset: TraitNet
 xref: CL:0000331
 is_a: PO:0000290 ! tracheary element
 
@@ -1649,6 +1673,7 @@ id: PO:0002000
 name: stomatal complex
 namespace: plant_structure
 def: "An opening pore on the epidermis of leaves and stems bordered by two guard cells and serving in gas exchange." [ISBN:0471245208]
+subset: TraitNet
 synonym: "stoma" RELATED []
 synonym: "stomata" RELATED []
 relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
@@ -1680,6 +1705,7 @@ id: PO:0002003
 name: vessel member
 namespace: plant_structure
 def: "One of the cellular components of a vessel, a dead cell with the wall between adjacent members being variously perforated and the walls that persist variously thickened." [ISBN:0471245208]
+subset: TraitNet
 synonym: "vessel element" RELATED []
 synonym: "vessel segment" RELATED []
 is_a: PO:0000290 ! tracheary element
@@ -1726,6 +1752,7 @@ alt_id: PO:0003008
 alt_id: PO:0003009
 def: "Adventitious root that forms at a shoot node." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/]
 subset: reference
+subset: TraitNet
 is_a: PO:0000042 ! shoot-borne root
 
 [Term]
@@ -1815,6 +1842,7 @@ id: PO:0003023
 name: root nodule
 namespace: plant_structure
 def: "Enlargement or swelling on the roots of plants, particularly in the Fabaceae, inhabited by nitrogen-fixing bacteria." [ISBN:0471245208]
+subset: TraitNet
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -1823,6 +1851,7 @@ name: stolon
 namespace: plant_structure
 def: "A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 synonym: "runner" RELATED []
 is_a: PO:0025073 ! branch
 
@@ -1887,6 +1916,7 @@ id: PO:0004006
 name: mesophyll cell
 namespace: plant_structure
 def: "A chlorenchyma cell that is part of a mesophyll." [POC:curators, TAIR:ki]
+subset: TraitNet
 is_a: PO:0000076 ! chlorenchyma cell
 relationship: part_of PO:0006070 ! mesophyll
 
@@ -1945,6 +1975,7 @@ id: PO:0004013
 name: epidermal cell
 namespace: plant_structure
 def: "Cell that constitutes dermal tissue." [TAIR:ki]
+subset: TraitNet
 xref: CL:0000362
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005679 ! epidermis
@@ -2033,6 +2064,7 @@ id: PO:0004511
 name: seed hair
 namespace: plant_structure
 def: "Trichome that develops from seed coat epidermis and is often long with putative dispersal function." [POC:curators]
+subset: TraitNet
 synonym: "seed trichome" RELATED []
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0006048 ! seed coat epidermis
@@ -2043,6 +2075,7 @@ id: PO:0004512
 name: heartwood
 namespace: plant_structure
 def: "The inner layers of secondary xylem that have largely ceased to function in storage and conduction and in which reserve materials have been removed or converted into heartwood substances; generally darker colored than the functioning sapwood." [ISBN:0471245208, POC:curators]
+subset: TraitNet
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
@@ -2050,6 +2083,7 @@ id: PO:0004513
 name: sapwood
 namespace: plant_structure
 def: "Outer part of the wood of stem or root containing living cells and reserves and in which conduction of water takes place. Generally lighter colored than the heartwood." [ISBN:0471245208, POC:curators]
+subset: TraitNet
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
@@ -2057,6 +2091,8 @@ id: PO:0004514
 name: growth ring
 namespace: plant_structure
 def: "A growth layer of secondary xylem or secondary phloem as seen in transection of stem or root; may be an annual ring or a false annual ring." [ISBN:0471245208, POC:curators]
+subset: TraitNet
+synonym: "annual ring" EXACT []
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
@@ -2064,6 +2100,7 @@ id: PO:0004515
 name: early wood
 namespace: plant_structure
 def: "The wood formed in first part of a growth ring and characterized by a lower density and larger cells than the late wood." [ISBN:0471245208, POC:curators]
+subset: TraitNet
 synonym: "spring wood" RELATED []
 is_a: PO:0004514 ! growth ring
 
@@ -2072,6 +2109,8 @@ id: PO:0004516
 name: late wood
 namespace: plant_structure
 def: "The secondary xylem formed in the later part of a growth ring; denser and composed of smaller cells than the early wood." [POC:curators]
+subset: Citrus
+subset: TraitNet
 synonym: "summer wood" RELATED []
 is_a: PO:0004514 ! growth ring
 
@@ -2087,6 +2126,7 @@ id: PO:0004518
 name: bark
 namespace: plant_structure
 def: "All tissues outside the vascular cambium or the xylem; in older trees may be divided into dead outer bark and living inner bark, which consists of secondary phloem." [POC:curators]
+subset: TraitNet
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0005043 ! secondary phloem
 
@@ -2095,6 +2135,7 @@ id: PO:0004519
 name: phloem fiber
 namespace: plant_structure
 def: "A fiber in phloem." [POC:curators]
+subset: TraitNet
 is_a: PO:0000081 ! axial cell
 relationship: part_of PO:0005043 ! secondary phloem
 
@@ -2138,6 +2179,7 @@ id: PO:0004525
 name: wood parenchyma cell
 namespace: plant_structure
 def: "Parenchyma cell occurring within secondary xylem." [POC:curators]
+subset: TraitNet
 is_a: PO:0000074 ! parenchyma cell
 
 [Term]
@@ -2261,6 +2303,7 @@ namespace: plant_structure
 def: "A swollen shoot axis that grows horizontally at or below the substrate surface and produces shoots above and roots or rhizoids below." [POC:curators]
 comment: In ferns and many monocots, a rhizome is a primary axis (stem), while in other species, it is a branch. Usually produces scale-like leaves.
 subset: reference
+subset: TraitNet
 is_a: PO:0025029 ! shoot axis
 
 [Term]
@@ -2271,6 +2314,7 @@ def: "A swollen or enlarged storage branch." [POC:curators]
 comment: Found in potatoes.
 subset: Potato
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:3017726
 is_a: PO:0025073 ! branch
 
@@ -2279,6 +2323,7 @@ id: PO:0004544
 name: root-borne shoot system
 namespace: plant_structure
 def: "A shoot system that is initiated from a root." [POC:curators]
+subset: TraitNet
 synonym: "sucker shoot" RELATED []
 is_a: PO:0009006 ! shoot system
 
@@ -2563,6 +2608,7 @@ name: shoot axis trichome
 namespace: plant_structure
 def: "Trichome on/from the epidermis of the shoot axis." [PMID:17217456, TAIR:donghui]
 comment: Can occur on a stem or branch.
+subset: TraitNet
 synonym: "branch trichome" NARROW []
 synonym: "stem trichome" NARROW []
 is_a: PO:0000282 ! trichome
@@ -2574,6 +2620,7 @@ name: shoot node
 namespace: plant_structure
 def: "A cardinal organ part of a shoot axis where one or more spikelet, flower, floret, branch, bud, or leaf may arise." [GR:pj, POC:curators]
 subset: reference
+subset: TraitNet
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025029 ! shoot axis
 
@@ -2584,6 +2631,7 @@ namespace: plant_structure
 def: "A cardinal organ part of a shoot axis between two nodes of the axis." [GR:pj, POC:curators]
 subset: Potato
 subset: reference
+subset: TraitNet
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025029 ! shoot axis
 
@@ -2710,6 +2758,7 @@ namespace: plant_structure
 def: "A unit strand of the vascular system containing the vascular tissues, xylem and phloem. In addition vascular cambium is often present." [GR:pj]
 comment: May also contain portions of ground tissue.
 subset: Maize
+subset: TraitNet
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000034 ! vascular system
 
@@ -2803,6 +2852,7 @@ id: PO:0005040
 name: root pith
 namespace: plant_structure
 def: "A portion of pith that is part of a root." [ISBN:0080280307]
+subset: TraitNet
 is_a: PO:0006109 ! pith
 relationship: part_of PO:0020124 ! root stele
 
@@ -2812,6 +2862,7 @@ name: shoot axis pith
 namespace: plant_structure
 def: "A portion of pith that is part of a shoot axis." [ISBN:0080280307]
 comment: Can occur in a stem or branch.
+subset: TraitNet
 synonym: "branch pith" NARROW []
 synonym: "stem pith" NARROW []
 is_a: PO:0006109 ! pith
@@ -2823,6 +2874,7 @@ name: secondary phloem
 namespace: plant_structure
 def: "A portion of phloem tissue formed by the activity of the vascular cambium." [ISBN:0122151704]
 comment: Part of the bark.
+subset: TraitNet
 is_a: PO:0005417 ! phloem
 
 [Term]
@@ -2831,6 +2883,7 @@ name: periderm
 namespace: plant_structure
 def: "A peripheral portion of ground tissue in a plant axis that is composed of phellogen, phellem, and phelloderm." [ISBN:047124529, POC:curators]
 comment: May replace the epidermis in stems and roots, rarely in other organs. In some cases, the epidermis is retained after periderm development. Periderm is derived from lateral meristerm and may contain secondary phloem.
+subset: TraitNet
 xref: OBO_SF_PO:3008013
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0025004 ! plant axis
@@ -2944,6 +2997,7 @@ name: xylem
 namespace: plant_structure
 def: "A portion of vascular tissue composed of xylem elements." [GR:pj]
 comment: The principal function is the upward translocation of water and solutes. See also primary xylem and secondary xylem.
+subset: TraitNet
 is_a: PO:0009015 ! portion of vascular tissue
 
 [Term]
@@ -2969,6 +3023,7 @@ id: PO:0005417
 name: phloem
 namespace: plant_structure
 def: "A portion of vascular tissue whose principal function is conducting organic substances." [GR:pj]
+subset: TraitNet
 is_a: PO:0009015 ! portion of vascular tissue
 
 [Term]
@@ -2977,6 +3032,7 @@ name: parenchyma
 namespace: plant_structure
 def: "A portion of ground tissue composed of polyhedral cells typically with thin, non-lignified cellulosic cell walls and nucleate living protoplasts." [POC:curators]
 comment: Parenchyma contains relatively unspecialized cells.
+subset: TraitNet
 synonym: "portion of parenchyma tissue" EXACT []
 xref: OBO_SF_PO:3007987
 is_a: PO:0025059 ! portion of ground tissue
@@ -2986,6 +3042,7 @@ id: PO:0005423
 name: collenchyma
 namespace: plant_structure
 def: "Living tissue composed of more or less elongated cells with thick nonlignified primary cell walls." [GR:pj]
+subset: TraitNet
 synonym: "supporting tissue" RELATED []
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -2994,6 +3051,7 @@ id: PO:0005426
 name: chlorenchyma
 namespace: plant_structure
 def: "Chloroplast-containing parenchyma tissue." [ISBN:0080374913]
+subset: TraitNet
 synonym: "portion of chlorenchyma tissue" EXACT []
 is_a: PO:0005421 ! parenchyma
 
@@ -3002,6 +3060,7 @@ id: PO:0005427
 name: sclerenchyma
 namespace: plant_structure
 def: "A supporting tissue composed of fibers or sclereids." [ISBN:0080374913]
+subset: TraitNet
 is_a: PO:0025059 ! portion of ground tissue
 
 [Term]
@@ -3009,6 +3068,7 @@ id: PO:0005597
 name: cambium
 namespace: plant_structure
 def: "A lateral meristem, the cells of which divide mostly periclinally." [ISBN:0080374913]
+subset: TraitNet
 is_a: PO:0020145 ! lateral meristem
 
 [Term]
@@ -3016,6 +3076,7 @@ id: PO:0005598
 name: vascular cambium
 namespace: plant_structure
 def: "A lateral meristem, the cells of which give rise to secondary xylem and phloem, leading to an increase in girth." [GR:pj]
+subset: TraitNet
 is_a: PO:0005597 ! cambium
 relationship: part_of PO:0005020 ! vascular bundle
 
@@ -3024,6 +3085,7 @@ id: PO:0005599
 name: cork cambium
 namespace: plant_structure
 def: "Lateral meristem which produces the phellem (cork) and the phelloderm." [ISBN:0080374913]
+subset: TraitNet
 synonym: "phellogen" RELATED []
 is_a: PO:0005597 ! cambium
 relationship: part_of PO:0005048 ! shoot axis periderm
@@ -3059,6 +3121,7 @@ id: PO:0005645
 name: leaf mesophyll
 namespace: plant_structure
 def: "The chloroplast-containing, photosynthetic parenchymatous tissue situated between the two epidermal layers of the foliage leaf." [GR:pj, ISBN:0080374913]
+subset: TraitNet
 synonym: "foliage leaf mesophyll" RELATED []
 synonym: "leaf parenchyma" RELATED []
 is_a: PO:0006070 ! mesophyll
@@ -3069,6 +3132,7 @@ id: PO:0005647
 name: spongy mesophyll
 namespace: plant_structure
 def: "Leaf mesophyll parenchyma characterized by little elongated cells, that are not closely packed and have conspicuous intercellular spaces." [GR:pj, ISBN:0080374913]
+subset: TraitNet
 synonym: "spongy parenchyma" RELATED []
 is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
@@ -3078,6 +3142,7 @@ id: PO:0005648
 name: palisade mesophyll
 namespace: plant_structure
 def: "Parenchyma containing closely packed elongated chlorenchymatous cells oriented perpendicular to the leaf surface and which are active in photosynthesis." [GR:pj, ISBN:0080374913]
+subset: TraitNet
 synonym: "palisade parenchyma" RELATED []
 is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
@@ -3088,6 +3153,7 @@ name: portion of secretory tissue
 namespace: plant_structure
 def: "Tissues that form specialized structures producing a secretion." [GR:pj, ISBN:047124529]
 comment: The synonym gland does not imply non-secretory 'glands'.
+subset: TraitNet
 synonym: "gland" RELATED []
 is_a: PO:0009007 ! portion of plant tissue
 
@@ -3130,6 +3196,7 @@ name: epidermis
 namespace: plant_structure
 def: "A portion of plant tissue composed of epidermal cells that develops from the protoderm and covers the surface of a plant structure." [POC:curators]
 comment: The epidermis can be composed of one or more layers of cells. In some species, the epidermis is replaced by periderm.
+subset: TraitNet
 synonym: "dermal tissue" EXACT []
 synonym: "epidermal layer" EXACT []
 synonym: "multiseriate epidermis" RELATED []
@@ -3143,6 +3210,7 @@ name: aerenchyma
 namespace: plant_structure
 def: "A portion of parenchyma tissue containing particularly large intercellular spaces of schizogenous or lysigenous origin." [GR:pj, ISBN:0080374913]
 comment: As applied to an intercellular space, originating by one or a combination of two processes, separation and degradation of cell walls.
+subset: TraitNet
 synonym: "portion of aerenchyma tissue" RELATED []
 is_a: PO:0005421 ! parenchyma
 
@@ -3167,6 +3235,7 @@ id: PO:0005708
 name: cortex
 namespace: plant_structure
 def: "A maximal portion of ground tissue between the vascular system and the epidermis in a plant." [POC:curators]
+subset: TraitNet
 xref: OBO_SF_PO:3011071
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3193,6 +3262,7 @@ name: secondary xylem
 namespace: plant_structure
 def: "A portion of xylem tissue that develops from a vascular cambium." [ISBN:0471245194, POC:curators]
 comment: Absent in some dicots and most monocots. The "wood" of gymnosperm and dicot angiosperm trees, shrubs, and lianas.
+subset: TraitNet
 synonym: "wood" EXACT []
 is_a: PO:0005352 ! xylem
 relationship: develops_from PO:0005598 ! vascular cambium
@@ -3203,6 +3273,7 @@ name: primary xylem
 namespace: plant_structure
 def: "A portion of xylem tissue of the primary plant body." [GR:pj, ISBN:0122151704, ISBN:0471245194]
 comment: In stem or root it is differentiated behind the apical meristem.
+subset: TraitNet
 is_a: PO:0005352 ! xylem
 
 [Term]
@@ -3223,6 +3294,7 @@ name: phyllome
 namespace: plant_structure
 def: "A lateral plant organ produced by a shoot apical meristem." [POC:curators]
 subset: reference
+subset: TraitNet
 is_a: PO:0009008 ! plant organ
 relationship: part_of PO:0009006 ! shoot system
 
@@ -3247,6 +3319,7 @@ namespace: plant_structure
 def: "A reduced and more or less non-photosynthetic leaf, often associated with a vegetatively propagating organ such as a rhizome or perennating bud." [ISBN:0080374913]
 comment: Sometimes referring specifically to such leaves on a seedling.
 subset: reference
+subset: TraitNet
 synonym: "cataphyll" RELATED []
 is_a: PO:0006001 ! phyllome
 
@@ -3722,6 +3795,7 @@ id: PO:0006070
 name: mesophyll
 namespace: plant_structure
 def: "The chloroplast-containing, photosynthetic parenchymatous tissue situated between the two epidermal layers of the leaf or leaf like organs." [GR:pj]
+subset: TraitNet
 is_a: PO:0005426 ! chlorenchyma
 
 [Term]
@@ -3745,6 +3819,7 @@ id: PO:0006073
 name: intercalary meristem
 namespace: plant_structure
 def: "A shoot meristem separated from the apical meristem in the primary body by more or less mature tissues." [ISBN:0080374913, ISBN:0122151704]
+subset: TraitNet
 is_a: PO:0006079 ! shoot meristem
 
 [Term]
@@ -3761,6 +3836,7 @@ name: primary phloem
 namespace: plant_structure
 def: "A portion of phloem tissue of the primary plant body." [ISBN:0122151704]
 comment: In stem or root it is differentiated behind the apical meristem.
+subset: TraitNet
 is_a: PO:0005417 ! phloem
 
 [Term]
@@ -3792,6 +3868,7 @@ id: PO:0006079
 name: shoot meristem
 namespace: plant_structure
 def: "A meristem that is part of a shoot system." [GR:pj]
+subset: TraitNet
 is_a: PO:0009013 ! meristem
 relationship: part_of PO:0009006 ! shoot system
 
@@ -3896,6 +3973,7 @@ id: PO:0006109
 name: pith
 namespace: plant_structure
 def: "A maximal portion of parenchyma in the center of a shoot axis or root." [ISBN:0080280307]
+subset: TraitNet
 synonym: "medulla" EXACT [ISBN:0471244554 "Esau 1965"]
 xref: OBO_SF_PO:3011068
 is_a: PO:0005421 ! parenchyma
@@ -3949,6 +4027,7 @@ name: spongy mesophyll cell
 namespace: plant_structure
 def: "Irregularly-shaped, chlorenchymatous cell, separated by large air spaces." [GR:pj]
 comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a dorsiventral leaf, but between two palisade parenchyma layers in an isobilateral leaf.
+subset: TraitNet
 synonym: "spongy parenchyma cell" RELATED []
 is_a: PO:0004006 ! mesophyll cell
 relationship: part_of PO:0005647 ! spongy mesophyll
@@ -3959,6 +4038,7 @@ name: palisade mesophyll cell
 namespace: plant_structure
 def: "Elongated chlorenchymatous cell oriented perpendicular to the leaf surface and which is active in photosynthesis." [GR:pj]
 comment: Usually found in the adaxil/upper part of the leaf mesophyll.
+subset: TraitNet
 synonym: "palisade parenchyma cell" RELATED []
 is_a: PO:0004006 ! mesophyll cell
 relationship: part_of PO:0005648 ! palisade mesophyll
@@ -4018,6 +4098,7 @@ id: PO:0006213
 name: root aerenchyma
 namespace: plant_structure
 def: "Parenchyma tissue containing particularly large intercellular spaces in the tissue of roots." [GR:pj]
+subset: TraitNet
 is_a: PO:0005702 ! aerenchyma
 relationship: part_of PO:0009005 ! root
 
@@ -4026,6 +4107,7 @@ id: PO:0006214
 name: stem aerenchyma
 namespace: plant_structure
 def: "A portion of aerenchyma that is part of a stem." [POC:curators]
+subset: TraitNet
 is_a: PO:0005702 ! aerenchyma
 relationship: part_of PO:0009047 ! stem
 
@@ -4380,6 +4462,7 @@ id: PO:0006334
 name: seed micropyle
 namespace: plant_structure
 def: "A pore on the seed coat which is a remnant of the ovular micropyle." [GR:pj]
+subset: TraitNet
 relationship: develops_from PO:0020025 ! micropyle
 relationship: part_of PO:0009010 ! seed
 
@@ -4466,6 +4549,7 @@ name: pollen tube
 namespace: plant_structure
 def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
 subset: reference
+subset: TraitNet
 relationship: part_of PO:0020091 ! male gametophyte
 
 [Term]
@@ -5702,6 +5786,7 @@ id: PO:0006504
 name: leaf trichome
 namespace: plant_structure
 def: "Trichome on/from the epidermis of a leaf." [GR:pj]
+subset: TraitNet
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
 relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
@@ -6207,6 +6292,7 @@ id: PO:0007033
 name: whole plant growth stage
 namespace: plant_growth_and_development_stage
 def: "The succession of changes during the growth of the whole plant." [GR:pj]
+subset: TraitNet
 synonym: "cereal plant ontology " RELATED [GRO:0080001]
 synonym: "maize growth stage" RELATED [GRO:0007002]
 synonym: "plant growth stage ontology" RELATED [GRO:0007199]
@@ -8530,6 +8616,7 @@ id: PO:0008032
 name: stomatal pore
 namespace: plant_structure
 def: "The space of variable size controlled by stomatal guard cells in response to environmental clues." [GR:cwt]
+subset: TraitNet
 synonym: "stomatal aperture" RELATED []
 relationship: part_of PO:0002000 ! stomatal complex
 
@@ -8693,6 +8780,7 @@ subset: Arabidopsis
 subset: Maize
 subset: Poaceae
 subset: Rice
+subset: TraitNet
 synonym: "achene" NARROW []
 synonym: "berry" NARROW []
 synonym: "capsule" NARROW []
@@ -8727,6 +8815,7 @@ namespace: plant_structure
 def: "A cell that is part of a plant and that has as its parts a plant cell wall." [GO:0005623, GR:pj, ISBN:0471245208, POC:curators]
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid). Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". See definition of plant-type cell wall GO:0009505. Egg and sperm cells lack the cell wall.
 subset: reference
+subset: TraitNet
 xref: CL:0000610
 xref: OBO_SF_PO:2932524
 is_a: PO:0009011 ! plant structure
@@ -8765,6 +8854,7 @@ def: "A plant axis that is part of a root system." [POC:curators]
 comment: Commonly thought of as one of the three basic parts of the seed plant body. A plant stucture that is usually underground and does not bear leaves and only rarely shoots, is usually more or less positively geotropic, is endogenous in origin, indeterminate in growth and often with secondary thickening.
 subset: Maize
 subset: reference
+subset: TraitNet
 synonym: "aerial root" NARROW []
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0025025 ! root system
@@ -8776,6 +8866,7 @@ namespace: plant_structure
 def: "A collective plant structure that produces shoot apical meristems and the plant structures that arise from them." [POC:curators]
 comment: Generally the above ground portion of a plant.
 subset: reference
+subset: TraitNet
 synonym: "crown (sensu Poaceae)" RELATED []
 synonym: "shoot" RELATED []
 synonym: "tree crown" NARROW []
@@ -8789,6 +8880,7 @@ namespace: plant_structure
 def: "A plant structure that has as its parts multiple cells and is a proper part of an organ." [POC:curators, TAIR:lr]
 comment: These cells are organized into a structural unit, and may include an intercellular matrix.
 subset: reference
+subset: TraitNet
 synonym: "plant tissue" RELATED []
 xref: OBO_SF_PO:2944945
 is_a: PO:0009011 ! plant structure
@@ -8800,6 +8892,7 @@ name: plant organ
 namespace: plant_structure
 def: "A plant structure that is a functional unit, is a proper part of a plant, and includes portions of tissues of at least two different types that derive from a common developmental path." [POC:curators]
 comment: Examples: stem, leaf, root. May include individual cell types that are not part of tissues (e.g.:  idioblasts).
+subset: TraitNet
 synonym: "compound plant organ" RELATED []
 synonym: "simple plant organ" RELATED [PATO:01503]
 xref: OBO_SF_PO:2932521
@@ -8828,6 +8921,7 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 subset: Tomato
+subset: TraitNet
 is_a: PO:0000003 ! whole plant
 relationship: part_of PO:0009001 ! fruit
 
@@ -8837,6 +8931,7 @@ name: plant structure
 namespace: plant_structure
 def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [Poc:curators]
 comment: 'Part' includes both proper parts and the whole plant.
+subset: TraitNet
 xref: CARO:0000003 "<a href=\"http://www.ebi.ac.uk/ontology-lookup/init.do?termId=CARO%3A0000003\">anatomical structure</a>"
 xref: OBO_SF_PO:2932527
 
@@ -8845,6 +8940,7 @@ id: PO:0009012
 name: plant growth and development stage
 namespace: plant_growth_and_development_stage
 def: "The succession of changes leading from the zygote to the mature plant." [Poc:curators]
+subset: TraitNet
 synonym: "Arabidopsis growth" RELATED [TAIR:0000205]
 
 [Term]
@@ -8852,6 +8948,7 @@ id: PO:0009013
 name: meristem
 namespace: plant_structure
 def: "A portion of plant tissue in which cells have retained their embryonic characteristics, or have reverted to them secondarily, and that divide to produce new cells that can undergo differentiation to form mature tissues, i.e. they have a capacity for morphogenesis and growth." [APWeb:Glossary, GR:pj]
+subset: TraitNet
 synonym: "meristematic tissue" EXACT []
 synonym: "portion of meristem tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
@@ -8872,6 +8969,7 @@ name: portion of vascular tissue
 namespace: plant_structure
 def: "A portion of plant tissue that has parts xylem and phloem." [APweb:Glossary]
 comment: Functions in conduction and support. In the stem it is often found as a stele, surrounded by the cortex and surrounding the pith.
+subset: TraitNet
 synonym: "vascular system" RELATED []
 xref: BTO:0001432 "vascular tissue"
 is_a: PO:0009007 ! portion of plant tissue
@@ -8959,6 +9057,7 @@ namespace: plant_structure
 def: "A leaf in a vascular plant." [POC:curators]
 comment: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud (APweb Glossary). Occurs in the sporophytic phase of a plant life cycle.
 subset: reference
+subset: TraitNet
 synonym: "foliage leaf" RELATED []
 is_a: PO:0025034 ! leaf
 
@@ -8968,6 +9067,7 @@ name: sporophyll
 namespace: plant_structure
 def: "A leaf-like organ on which one or more sporangia are borne." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -8975,6 +9075,7 @@ id: PO:0009027
 name: megasporophyll
 namespace: plant_structure
 def: "A structure upon which (or in the axil of which) one or more megasporangia are borne; in flowering plants, a carpel." [APWeb:Glossary]
+subset: TraitNet
 is_a: PO:0009026 ! sporophyll
 
 [Term]
@@ -8982,6 +9083,7 @@ id: PO:0009028
 name: microsporophyll
 namespace: plant_structure
 def: "A structure on which one or more microsporangia are borne; in flowering plants, the stamen." [APWeb:Glossary]
+subset: TraitNet
 is_a: PO:0009026 ! sporophyll
 
 [Term]
@@ -8990,6 +9092,7 @@ name: stamen
 namespace: plant_structure
 def: "A microsporophyll bearing one or more microsporangia." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 is_a: PO:0009028 ! microsporophyll
 relationship: part_of PO:0009061 ! androecium
 
@@ -9000,6 +9103,7 @@ namespace: plant_structure
 def: "A megasporophyll, almost always at the center of a flower, its margins more or less fused together or with other carpels to enclose the ovule(s)." [APWeb:Glossary]
 comment: If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Poaceae, Brassicaceae and Solanaceae.  If carpels are free, the gynoecium is an apocarpous gynoecium, as in Fabaceae.
 subset: reference
+subset: TraitNet
 is_a: PO:0009027 ! megasporophyll
 relationship: part_of PO:0009062 ! gynoecium
 
@@ -9009,6 +9113,7 @@ name: sepal
 namespace: plant_structure
 def: "A member of the (usually green) outer whorl of non-fertile parts surrounding the fertile organs of a flower." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009060 ! calyx
 
@@ -9018,6 +9123,7 @@ name: petal
 namespace: plant_structure
 def: "A member of the corolla, the inner whorl of non-fertile parts surrounding the fertile organs of a flower, usually soft and colored conspicuously." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009059 ! corolla
 
@@ -9027,6 +9133,7 @@ name: tepal
 namespace: plant_structure
 def: "A phyllome that is part of a perianth in which all parts are similar in appearance and are neither petals nor sepals." [POC:curators]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2972262
 xref: PlantSystematics.org:<a href=\\\"http\://www.plantsystematics.org/cgi-bin/dol/dol_keywords.pl?keywords=tepal&startat=0&endat=79\\\">tepal images</a>
 is_a: PO:0006001 ! phyllome
@@ -9038,6 +9145,7 @@ name: floral bract
 namespace: plant_structure
 def: "A bract subtending a flower." [Poc:curators]
 subset: reference
+subset: TraitNet
 synonym: "chaff" RELATED []
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
@@ -9049,6 +9157,7 @@ name: nectary
 namespace: plant_structure
 def: "A multicellular glandular structure secreting a liquid containing organic substances especially sugars." [GR:pj]
 subset: reference
+subset: TraitNet
 is_a: PO:0005656 ! portion of secretory tissue
 relationship: part_of PO:0009006 ! shoot system
 
@@ -9150,6 +9259,7 @@ alt_id: PO:0004541
 def: "A determinate reproductive shoot system that has as part at least one carpel or at least one stamen and does not contain any other determinate shoot system as a part." [POC:curators]
 comment: The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain pistillode or staminode or other aborted organs that don't show up in mature form.
 subset: reference
+subset: TraitNet
 synonym: "diclinous flower" NARROW []
 synonym: "double flower" NARROW []
 synonym: "imperfect flower" NARROW []
@@ -9167,6 +9277,7 @@ namespace: plant_structure
 def: "A shoot axis that is the primary axis of a plant." [POC:curators]
 comment: Often bears leaves and buds. It is usually above ground, more or less negatively geotropic, and exogenous in origin.
 subset: reference
+subset: TraitNet
 synonym: "cane" NARROW []
 synonym: "culm" EXACT []
 synonym: "primary axis" EXACT []
@@ -9196,6 +9307,7 @@ alt_id: PO:0020120
 def: "That part of the axial system of plants above the uppermost foliage leaf/pair of foliage leaves that bears flowers." [APWeb:Glossary]
 comment: Some plants have only solitary flowers, e.g.<i> Magnolia</i>.
 subset: reference
+subset: TraitNet
 synonym: "capitulum" NARROW []
 synonym: "catkin" NARROW []
 synonym: "cob (sensu Sorghum)" NARROW []
@@ -9258,6 +9370,7 @@ name: inflorescence bract
 namespace: plant_structure
 def: "A bract subtending a branch of the inflorescence or borne on the inflorescence axis below any branches or flowers." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0009049 ! inflorescence
@@ -9269,6 +9382,7 @@ namespace: plant_structure
 def: "A leaf, usually different from foliage leaves, subtending a reproductive structure." [POC:curators]
 comment: Often used to refer to what is called here floral bract.
 subset: reference
+subset: TraitNet
 synonym: "hypsophyll" RELATED []
 is_a: PO:0025034 ! leaf
 
@@ -9286,6 +9400,7 @@ id: PO:0009057
 name: extrafloral nectary
 namespace: plant_structure
 def: "A multicellular glandular structure found in places other than flower secreting a liquid containing organic substances especially sugar." [ISBN:047124529]
+subset: TraitNet
 is_a: PO:0009035 ! nectary
 
 [Term]
@@ -9294,6 +9409,7 @@ name: perianth
 namespace: plant_structure
 def: "A collective phyllome structure composed of two or more petals, sepals, or tepals." [POC:curators]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -9305,6 +9421,7 @@ name: corolla
 namespace: plant_structure
 def: "A collective phyllome structure composed of two or more petals." [POC:curators]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -9316,6 +9433,7 @@ name: calyx
 namespace: plant_structure
 def: "A collective phyllome structure composed of two or more sepals." [POC:curators]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -9330,6 +9448,7 @@ comment: In some cases the androecium may consist of only one stamen.
 subset: Maize
 subset: Poaceae
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -9342,6 +9461,7 @@ namespace: plant_structure
 def: "A collective phyllome structure composed of two or more carpels." [POC:curators]
 comment: In some cases the gynoecium may consist of only one carpel.
 subset: reference
+subset: TraitNet
 synonym: "pistil" RELATED []
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
@@ -9388,6 +9508,7 @@ name: anther
 namespace: plant_structure
 def: "The pollen-bearing part of a stamen." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009029 ! stamen
@@ -9398,6 +9519,7 @@ name: filament
 namespace: plant_structure
 def: "A stalk of a stamen." [GR:pj, MaizeGDB:lv]
 subset: reference
+subset: TraitNet
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0009029 ! stamen
 
@@ -9425,6 +9547,7 @@ name: microsporangium
 namespace: plant_structure
 def: "A sporangium producing microspores, usually many in number." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 synonym: "anther lobe" RELATED []
 synonym: "pollen sac" RELATED []
 relationship: part_of PO:0009066 ! anther
@@ -9446,6 +9569,7 @@ namespace: plant_structure
 def: "The basal portion of a carpel or group of fused carpels, that encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
 subset: Maize
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
@@ -9456,6 +9580,7 @@ name: stigma
 namespace: plant_structure
 def: "Part of a carpel or group of fused carpels on which the pollen germinates, usually apical." [APWeb:Glossary, TAIR:lr]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
@@ -9466,6 +9591,7 @@ name: style
 namespace: plant_structure
 def: "An elongated part of a carpel or group of fused carpels between the ovary and the stigma, and through which the pollen tube grows." [APWeb:Glossary, TAIR:lr]
 subset: reference
+subset: TraitNet
 synonym: "silk" RELATED []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
@@ -9619,6 +9745,7 @@ name: seed coat
 namespace: plant_structure
 def: "A portion of plant tissue that is the covering of a seed derived from ovular - mainly integumentary - tissue." [APWeb:Glossary, GR:pj, TAIR:lr]
 comment: Used only when not specified more precisely; see testa, tegmen.
+subset: TraitNet
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -9628,6 +9755,7 @@ name: endosperm
 namespace: plant_structure
 def: "A maximal portion of nutritive plant tissue in a seed." [APWeb:Glossary, GR:pj]
 comment: In angiosperms endosperm is usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus; sometimes diploid or polyploid.
+subset: TraitNet
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -9638,6 +9766,7 @@ namespace: plant_structure
 def: "A structure associated with and often partly or wholly covering a seed and developed from the funicle or raphe." [APWeb:Glossary]
 comment: Also used more generally to refer to a similar structure derived from any part of the ovule - there has been much and sometimes acrimonious debate over the correct definition of the term, so when used the origin of the aril should generally be given for clarity.
 subset: reference
+subset: TraitNet
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
@@ -9789,6 +9918,7 @@ id: PO:0019022
 name: arilloid
 namespace: plant_structure
 def: "An outgrowth from parts of the seed other than from the funiculus or raphe." [ISBN:0080280293]
+subset: TraitNet
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -9842,6 +9972,7 @@ name: ovule
 namespace: plant_structure
 def: "A stalked or sessile structure in a seed plant within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009072 ! ovary
@@ -9994,6 +10125,7 @@ name: nucellus
 namespace: plant_structure
 def: "A portion of subepidermal tissue in the ovule surrounding the megasporocyte." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 synonym: "megasporangium" RELATED []
 xref: OBO_SF_PO:2903966
 is_a: PO:0009007 ! portion of plant tissue
@@ -10005,6 +10137,7 @@ name: integument
 namespace: plant_structure
 def: "One of the layers of tissue that usually covers an ovule, enveloping a nucellus and forming the micropyle at the apex." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
@@ -10037,6 +10170,7 @@ namespace: plant_structure
 def: "A small canal or opening through the integument(s) at the apex of an ovule." [APWeb:Glossary]
 comment: In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated. The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac.
 subset: reference
+subset: TraitNet
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -10088,6 +10222,7 @@ name: cotyledon
 namespace: plant_structure
 def: "A leaf formed at the first node of a sporophyte." [APWeb:Glossary, GR:pj]
 subset: reference
+subset: TraitNet
 is_a: PO:0009025 ! vascular leaf
 
 [Term]
@@ -10153,6 +10288,7 @@ id: PO:0020038
 name: petiole
 namespace: plant_structure
 def: "A stalk of a leaf." [APWeb:Glossary, GR:pj]
+subset: TraitNet
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0009025 ! vascular leaf
 
@@ -10162,6 +10298,7 @@ name: leaf lamina
 namespace: plant_structure
 def: "The lamina of a leaf, usually dorsiventrally flattened and expanded." [APWeb:Glossary]
 comment: Reference lamina in CARO.
+subset: TraitNet
 synonym: "leaf blade" RELATED []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025060 ! lamina
@@ -10183,6 +10320,7 @@ name: stipule
 namespace: plant_structure
 def: "One of (usually) a pair of appendages at the bases of leaves in many broad-leaved angiosperms." [APWeb:Glossary]
 comment: The term not used for monocot leaves.
+subset: TraitNet
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009025 ! vascular leaf
 
@@ -10253,6 +10391,7 @@ id: PO:0020049
 name: leaflet
 namespace: plant_structure
 def: "One of the ultimate segments of a compound leaf." [APWeb:Glossary]
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020043 ! compound leaf
@@ -10300,6 +10439,7 @@ id: PO:0020055
 name: leaf rachis
 namespace: plant_structure
 def: "A stalk that is the main axis of a pinnate or more highly compound leaf, that bears leaflets or divisions of the axis." [APWeb:Glossary]
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2972235
 is_a: PO:0025066 ! stalk
@@ -10352,6 +10492,7 @@ id: PO:0020061
 name: coma
 namespace: plant_structure
 def: "A tuft of hairs at one end of a seed." [APWeb:Glossary]
+subset: TraitNet
 synonym: "brush" RELATED []
 relationship: part_of PO:0009010 ! seed
 
@@ -10360,6 +10501,7 @@ id: PO:0020062
 name: elaiosome
 namespace: plant_structure
 def: "An appendage of a seed, usually rich in oil, attractive to animals, especially ants." [APWeb:Glossary]
+subset: TraitNet
 is_a: PO:0019022 ! arilloid
 
 [Term]
@@ -10443,6 +10585,7 @@ namespace: plant_structure
 alt_id: PO:0020007
 def: "A gametophyte that produces male gametes." [APWeb:Glossary]
 subset: reference
+subset: TraitNet
 synonym: "microgametophyte" RELATED []
 synonym: "pollen" RELATED []
 synonym: "pollen grain" RELATED []
@@ -10610,8 +10753,9 @@ is_a: PO:0009005 ! root
 id: PO:0020122
 name: inflorescence axis
 namespace: plant_structure
-def: "The central supporting structure around which flowers are born." [UMSL:fz]
+def: "A shoot axis that is part of an inflorescence." [POC:rw]
 comment: Cob (sensu Zea) is different from the cob inflorescence found in Sorghum.
+subset: TraitNet
 synonym: "first order inflorescence branch" RELATED []
 synonym: "inflorescence rachis" RELATED []
 is_a: PO:0025029 ! shoot axis
@@ -10637,6 +10781,7 @@ def: "The central column of primary vascular tissue in the root and any tissue t
 comment: Includes the pericycle as the outermost layer of the stele.
 subset: Maize
 subset: reference
+subset: TraitNet
 synonym: "root vascular cylinder" RELATED []
 relationship: part_of PO:0009005 ! root
 
@@ -10669,6 +10814,7 @@ namespace: plant_structure
 alt_id: PO:0020089
 def: "A root that develops directly from a embryonic radicle." [ISBN:0122151704, POC:curators]
 comment: Often the central axis of a root system.
+subset: TraitNet
 synonym: "tap root" EXACT []
 is_a: PO:0009005 ! root
 relationship: develops_from PO:0020031 ! radicle
@@ -10678,6 +10824,7 @@ id: PO:0020128
 name: leaf margin
 namespace: plant_structure
 def: "The margin of any flattened part of a leaf." [POC:curators]
+subset: TraitNet
 xref: OBO_SF_PO:2972280
 is_a: PO:0025018 ! phyllome margin
 relationship: part_of PO:0009025 ! vascular leaf
@@ -10765,6 +10912,7 @@ id: PO:0020138
 name: leaf vein
 namespace: plant_structure
 def: "A strand of vascular tissue in the leaf blade." [APWeb:Glossary]
+subset: TraitNet
 is_a: PO:0009015 ! portion of vascular tissue
 relationship: part_of PO:0009025 ! vascular leaf
 
@@ -10806,6 +10954,7 @@ id: PO:0020144
 name: apical meristem
 namespace: plant_structure
 def: "A maximal portion of meristem tissue located at an apex of a shoot system or root system." [GR:pj, POC:curators]
+subset: TraitNet
 synonym: "primary meristem" RELATED []
 is_a: PO:0009013 ! meristem
 
@@ -10814,6 +10963,7 @@ id: PO:0020145
 name: lateral meristem
 namespace: plant_structure
 def: "A meristem containing cells along the stem or root that first differentiate and function as members of a mature tissue system but then again take up meristematic activity." [APWeb:Glossary]
+subset: TraitNet
 synonym: "secondary meristem" RELATED []
 is_a: PO:0009013 ! meristem
 
@@ -10823,6 +10973,7 @@ name: root apical meristem
 namespace: plant_structure
 def: "An apical meristem of the root system." [GR:pj, UMSL:fz]
 comment: In most cases it is involved in root elongation.
+subset: TraitNet
 synonym: "promeristem" RELATED []
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
@@ -10832,6 +10983,7 @@ id: PO:0020148
 name: shoot apical meristem
 namespace: plant_structure
 def: "A shoot meristem formed in the apex of the shoot, including meristems originating as axillary shoot meristems." [UMSL:fz]
+subset: TraitNet
 synonym: "apical meristem" RELATED []
 synonym: "primary shoot meristem" RELATED []
 is_a: PO:0006079 ! shoot meristem
@@ -10874,6 +11026,7 @@ namespace: plant_structure
 def: "A plant structure that is a proper part of an organ and includes portions of tissues of at least two different types." [POC:curators]
 comment: Cardinal refers to the fact that these are biologically meaningful parts, not arbitrary. Examples include lobe (PO TBD), operculum (PO TBD), neck (PO TBD), petiole PO:0020038, leaflet PO:0020049.
 subset: Arabidopsis
+subset: TraitNet
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2945268
 is_a: PO:0009011 ! plant structure
@@ -10886,6 +11039,7 @@ id: PO:0025002
 name: basal root
 namespace: plant_structure
 def: "A root that arises from a part of the hypocotyl." [POC:curators]
+subset: TraitNet
 synonym: "adventitious root" BROAD []
 is_a: PO:0009005 ! root
 created_by: Ramona
@@ -10906,6 +11060,7 @@ name: plant axis
 namespace: plant_structure
 def: "An axial plant organ." [POC:curators]
 comment: Includes roots and shoots.
+subset: TraitNet
 is_a: PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-07-01T03:44:41Z
@@ -10916,6 +11071,7 @@ name: organ margin
 namespace: plant_structure
 def: "The edge of an organ and the area immediately internally adjacent to it." [POC:curators "Ithaca meeting, 12/2009"]
 comment: Only flattened or laminar organs or organ parts will have a margin.
+subset: TraitNet
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2971897
@@ -10939,6 +11095,7 @@ name: collective plant structure
 namespace: plant_structure
 def: "A plant structure that is a proper part of a plant and is composed of two or more organs and any associated portions of plant tissue." [POC:curators]
 comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049.
+subset: TraitNet
 xref: OBO_SF_PO:2954382
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
@@ -11050,6 +11207,7 @@ id: PO:0025018
 name: phyllome margin
 namespace: plant_structure
 def: "The margin of a phyllome." [POC:curators]
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025005 ! organ margin
 created_by: Ramona
@@ -11106,6 +11264,7 @@ name: collective phyllome structure
 namespace: plant_structure
 alt_id: PO:0008033
 def: "A collective plant structure that consists of two or more phyllomes originating from the same node or from one or more adjacent nodes with compressed internodes." [POC:Curators]
+subset: TraitNet
 synonym: "floral whorl" NARROW [GO:0048438 "floral whorl development", GO:0048457 "floral whorl morphogenisis", GO:0048458 "floral whorl formation", GO:0048459 "floral whorl structural organization"]
 synonym: "phyllome whorl" RELATED []
 synonym: "whorl" NARROW []
@@ -11131,6 +11290,7 @@ name: root system
 namespace: plant_structure
 def: "A collective plant structure that produces root apical meristems and the plant structures that arise from them." [POC:curators]
 comment: Generally the below ground portion of a vascular plant.
+subset: TraitNet
 is_a: PO:0025007 ! collective plant structure
 disjoint_from: PO:0009006 ! shoot system
 created_by: Ramona
@@ -11170,6 +11330,7 @@ name: shoot axis
 namespace: plant_structure
 def: "A plant axis that is part of a shoot system." [POC:curators]
 comment: Often bears leaves and branches. In vascular plants, has at least one node and one internode.
+subset: TraitNet
 synonym: "shoot" RELATED []
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009006 ! shoot system
@@ -11180,6 +11341,7 @@ creation_date: 2010-07-01T03:46:35Z
 id: PO:0025030
 name: ground tissue cell
 namespace: plant_structure
+subset: TraitNet
 is_a: PO:0009002 ! plant cell
 created_by: Ramona
 creation_date: 2010-05-07T02:47:45Z
@@ -11218,6 +11380,7 @@ id: PO:0025034
 name: leaf
 namespace: plant_structure
 def: "A phyllome that is not part of a flower." [POC:curators]
+subset: TraitNet
 is_a: PO:0006001 ! phyllome
 created_by: Ramona
 creation_date: 2010-07-12T01:31:44Z
@@ -11515,6 +11678,7 @@ name: portion of ground tissue
 namespace: plant_structure
 def: "Any portion of plant tissue other than epidermis or vascular tissue." [ISBN:0-7167-1007-2, ISBN:0471244554]
 comment: Develops from the ground meristem (eg, meristem L2 and meristem L3).
+subset: TraitNet
 synonym: "fundamental tissue" EXACT [ISBN:0471244554 "Esau Plant Anatomy"]
 xref: OBO_SF_PO:3007983
 is_a: PO:0009007 ! portion of plant tissue
@@ -11526,6 +11690,7 @@ id: PO:0025060
 name: lamina
 namespace: plant_structure
 def: "A regional part of an anatomical structure that is enlarged through lateral growth." [POCXX:curaors]
+subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 created_by: cooperl
@@ -11592,6 +11757,7 @@ name: stalk
 namespace: plant_structure
 def: "A cardinal organ part that is elongated and sub-cylindrical to cylindrical and supports another cardinal organ part." [POC:curators]
 comment: Some stalks may be ridged or grooved.
+subset: TraitNet
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2972224
 xref: PATO:0001873 "cylindrical"
@@ -11671,9 +11837,11 @@ name: branch
 namespace: plant_structure
 def: "A shoot axis that develops from an axillary meristem or from equal divisions of the shoot apical meristem." [POC:curators]
 comment: Branches arise from axillary meristems in vascular plants and from divisions of the shoot apical meristem in non-vascular plants.
+subset: TraitNet
 synonym: "higher order axis" NARROW []
 synonym: "secondary axis" NARROW []
 synonym: "tertiary axis" NARROW []
+synonym: "twig" NARROW []
 is_a: PO:0025029 ! shoot axis
 created_by: Ramona
 creation_date: 2010-07-01T04:21:46Z
@@ -11693,6 +11861,7 @@ name: non-vascular leaf
 namespace: plant_structure
 def: "A leaf in a non-vascular plant." [POC:curators]
 comment: Include moss and liverwort leaves. Occurs in the gametophytic phase of a plant life cycle.
+subset: TraitNet
 synonym: "gametophyte leaf" EXACT []
 is_a: PO:0025034 ! leaf
 created_by: Ramona
@@ -11764,6 +11933,7 @@ id: PO:0025082
 name: reproductive shoot system
 namespace: plant_structure
 def: "A shoot system that occurs in the sporophytic phase and has as part at least one sporangium." [POC:curators]
+subset: TraitNet
 is_a: PO:0009006 ! shoot system
 created_by: Ramona
 creation_date: 2010-09-17T09:49:10Z
@@ -11773,6 +11943,7 @@ id: PO:0025083
 name: strobilus
 namespace: plant_structure
 def: "A reproductive shoot system consisting of a number of modified leaves (sporophylls) or ovule-bearing scales grouped terminally on a stem." [ISBN:0716710072, POC:curators]
+subset: TraitNet
 synonym: "cone" RELATED []
 is_a: PO:0025082 ! reproductive shoot system
 created_by: Ramona
@@ -11783,6 +11954,7 @@ id: PO:0025084
 name: reproductive bud
 namespace: plant_structure
 def: "A bud that develops into a reproductive shoot system." [POC:curators]
+subset: TraitNet
 is_a: PO:0000055 ! bud
 is_a: PO:0025082 ! reproductive shoot system
 created_by: Ramona
@@ -11900,6 +12072,7 @@ creation_date: 2010-10-27T11:16:33Z
 id: PO:0025094
 name: sporangium
 namespace: plant_structure
+subset: TraitNet
 is_a: PO:0009011 ! plant structure
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
@@ -11930,6 +12103,7 @@ name: sporophytic phase
 namespace: plant_growth_and_development_stage
 def: "A plant life cycle phase that is the product of fertilization." [POC:rw]
 comment: During the sporophtyic phase, a plant may produce meiospores by meiosis.
+subset: TraitNet
 synonym: "sporophyte phase" EXACT []
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
@@ -11941,6 +12115,7 @@ name: gametophytic phase
 namespace: plant_growth_and_development_stage
 def: "A plant life cycle phase that arises through meiosis." [POC:rw]
 comment: During the gametophytic phase, a plant may produce gametes by mitosis.
+subset: TraitNet
 synonym: "gametophyte phase" EXACT []
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
