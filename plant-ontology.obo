@@ -1,5 +1,6 @@
 format-version: 1.2
-date: 04:11:2010 14:41
+date: 05:11:2010 17:10
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -41,7 +42,7 @@ synonym: "gametophyte" NARROW []
 synonym: "seedling" NARROW []
 synonym: "sporophyte" NARROW []
 xref: OBO_SF_PO:2968335
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 
 [Term]
 id: PO:0000004
@@ -288,7 +289,7 @@ namespace: plant_structure
 def: "A plant structure that includes the totality of the portions of vascular tissue in their specific arrangement in a whole plant or in a constituent part thereof." [ISBN:0-7167-1007-2, ISBN:0471245208, POC:curators]
 comment: The vascular system may also contain portions of ground tissue.
 subset: TraitNet
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -501,7 +502,7 @@ is_a: PO:0025084 ! reproductive bud
 id: PO:0000058
 name: vegetative bud
 namespace: plant_structure
-def: "A bud that develops into a vegetative shoot system." [POC:curators]
+def: "A bud that develops into a shoot system that has as organ parts only vegetative organs." [POC:curators]
 xref: OBO_SF_PO:3020771
 is_a: PO:0000055 ! bud
 
@@ -2462,7 +2463,7 @@ is_a: PO:0025072 ! axillary reproductive bud
 id: PO:0004712
 name: axillary vegetative bud
 namespace: plant_structure
-def: "An axillary bud that develops into a long or short shoot or a leaf." [POC:curators]
+def: "An axillary bud that develops into a long or short shoot." [POC:curators]
 xref: OBO_SF_PO:3020771
 is_a: PO:0000058 ! vegetative bud
 is_a: PO:0004709 ! axillary bud
@@ -4523,7 +4524,7 @@ name: infructescence
 namespace: plant_structure
 def: "The grouping or arrangement in which fruits are borne on a plant." [GR:pj]
 xref: OBO_SF_PO:2971891
-is_a: PO:0009006 ! shoot system
+is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
 
 [Term]
@@ -4549,7 +4550,7 @@ namespace: plant_structure
 def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
 subset: reference
 subset: TraitNet
-relationship: part_of PO:0020091 ! male gametophyte
+relationship: part_of PO:0020091 ! microgametophyte
 
 [Term]
 id: PO:0006346
@@ -8817,7 +8818,7 @@ subset: reference
 subset: TraitNet
 xref: CL:0000610
 xref: OBO_SF_PO:2932524
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -8882,7 +8883,7 @@ subset: reference
 subset: TraitNet
 synonym: "plant tissue" RELATED []
 xref: OBO_SF_PO:2944945
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -8895,7 +8896,7 @@ subset: TraitNet
 synonym: "compound plant organ" RELATED []
 synonym: "simple plant organ" RELATED [PATO:01503]
 xref: OBO_SF_PO:2932521
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -9693,7 +9694,7 @@ relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0009085
-name: epicarp
+name: exocarp
 namespace: plant_structure
 alt_id: PO:0006046
 alt_id: PO:0006217
@@ -9701,7 +9702,7 @@ def: "A portion of plant tissue that is the outer layer of a pericarp." [GR:pj]
 subset: Citrus
 subset: Tomato
 synonym: "ectocarp" EXACT []
-synonym: "exocarp" EXACT []
+synonym: "epicarp" EXACT []
 synonym: "flavedo" EXACT []
 synonym: "outer epidermis of pericarp" RELATED []
 synonym: "pericarp epidermis" RELATED []
@@ -10579,25 +10580,25 @@ relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
 id: PO:0020091
-name: male gametophyte
+name: microgametophyte
 namespace: plant_structure
 alt_id: PO:0020007
 def: "A gametophyte that produces male gametes." [APWeb:Glossary]
 subset: reference
 subset: TraitNet
-synonym: "microgametophyte" RELATED []
+synonym: "male gametophyte" RELATED []
 synonym: "pollen" RELATED []
 synonym: "pollen grain" RELATED []
 is_a: PO:0000003 ! whole plant
 
 [Term]
 id: PO:0020092
-name: female gametophyte
+name: megagametophyte
 namespace: plant_structure
 def: "A gametophyte that produces eggs." [APWeb:Glossary]
 subset: reference
 synonym: "embryo sac" RELATED []
-synonym: "megagametophyte" RELATED []
+synonym: "female gametophyte" RELATED []
 is_a: PO:0000003 ! whole plant
 
 [Term]
@@ -11096,7 +11097,7 @@ def: "A plant structure that is a proper part of a plant and is composed of two 
 comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049.
 subset: TraitNet
 xref: OBO_SF_PO:2954382
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 relationship: part_of PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
@@ -11301,7 +11302,7 @@ name: megagametophytic cell
 namespace: plant_structure
 def: "A plant cell that is part of a female gametophyte." [POC:rw]
 is_a: PO:0009002 ! plant cell
-relationship: part_of PO:0020092 ! female gametophyte
+relationship: part_of PO:0020092 ! megagametophyte
 created_by: Ramona
 creation_date: 2010-05-07T02:36:24Z
 
@@ -11850,7 +11851,7 @@ id: PO:0025074
 name: embryo sac
 namespace: plant_structure
 def: "A female gametophyte in angiosperms." [POC:curators]
-is_a: PO:0020092 ! female gametophyte
+is_a: PO:0020092 ! megagametophyte
 created_by: Ramona
 creation_date: 2010-07-01T02:50:36Z
 
@@ -11931,7 +11932,7 @@ creation_date: 2010-09-16T03:18:48Z
 id: PO:0025082
 name: reproductive shoot system
 namespace: plant_structure
-def: "A shoot system that occurs in the sporophytic phase and has as part at least one sporangium." [POC:curators]
+def: "A shoot system in the sporophytic phase that has as part at least one sporangium." [POC:curators]
 subset: TraitNet
 is_a: PO:0009006 ! shoot system
 created_by: Ramona
@@ -12072,7 +12073,7 @@ id: PO:0025094
 name: sporangium
 namespace: plant_structure
 subset: TraitNet
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
 
@@ -12085,6 +12086,156 @@ is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0009005 ! root
 created_by: Ramona
 creation_date: 2010-10-28T05:14:26Z
+
+[Term]
+id: PO:0025096
+name: mature plant structure
+namespace: plant_structure
+is_a: PO:0009011 ! plant structure
+created_by: Ramona
+creation_date: 2010-11-05T01:27:08Z
+
+[Term]
+id: PO:0025097
+name: immature plant structure
+namespace: plant_structure
+is_a: PO:0009011 ! plant structure
+created_by: Ramona
+creation_date: 2010-11-05T01:27:08Z
+
+[Term]
+id: PO:0025098
+name: immature organ structure
+namespace: plant_structure
+is_a: PO:0025097 ! immature plant structure
+created_by: Ramona
+creation_date: 2010-11-05T01:36:12Z
+
+[Term]
+id: PO:0025099
+name: embryonic structure
+namespace: plant_structure
+is_a: PO:0025097 ! immature plant structure
+created_by: Ramona
+creation_date: 2010-11-05T01:36:24Z
+
+[Term]
+id: PO:0025100
+name: plant life cycle process
+created_by: Ramona
+creation_date: 2010-11-05T02:24:10Z
+
+[Term]
+id: PO:0025101
+name: plant structure development
+is_a: PO:0025100 ! plant life cycle process
+created_by: Ramona
+creation_date: 2010-11-05T02:26:05Z
+
+[Term]
+id: PO:0025102
+name: whole plant development
+is_a: PO:0025101 ! plant structure development
+created_by: Ramona
+creation_date: 2010-11-05T02:26:05Z
+
+[Term]
+id: PO:0025103
+name: plant organ development
+is_a: PO:0025101 ! plant structure development
+created_by: Ramona
+creation_date: 2010-11-05T02:26:05Z
+
+[Term]
+id: PO:0025104
+name: sporophyte development
+is_a: PO:0025102 ! whole plant development
+created_by: Ramona
+creation_date: 2010-11-05T02:28:56Z
+
+[Term]
+id: PO:0025105
+name: gametophyte development
+is_a: PO:0025102 ! whole plant development
+created_by: Ramona
+creation_date: 2010-11-05T02:28:56Z
+
+[Term]
+id: PO:0025106
+name: plant life cycle phase
+is_a: PO:0025100 ! plant life cycle process
+created_by: Ramona
+creation_date: 2010-11-05T02:29:21Z
+
+[Term]
+id: PO:0025107
+name: plant life cycle phase transition
+is_a: PO:0025100 ! plant life cycle process
+created_by: Ramona
+creation_date: 2010-11-05T02:29:52Z
+
+[Term]
+id: PO:0025108
+name: gametophytic phase
+is_a: PO:0025106 ! plant life cycle phase
+created_by: Ramona
+creation_date: 2010-11-05T02:30:24Z
+
+[Term]
+id: PO:0025109
+name: sporophytic phase
+is_a: PO:0025106 ! plant life cycle phase
+created_by: Ramona
+creation_date: 2010-11-05T02:30:24Z
+
+[Term]
+id: PO:0025110
+name: meiosis
+is_a: PO:0025107 ! plant life cycle phase transition
+created_by: Ramona
+creation_date: 2010-11-05T02:31:29Z
+
+[Term]
+id: PO:0025111
+name: fertilzation
+is_a: PO:0025107 ! plant life cycle phase transition
+created_by: Ramona
+creation_date: 2010-11-05T02:31:29Z
+
+[Term]
+id: PO:0025112
+name: cell division of zygote
+is_a: PO:0025107 ! plant life cycle phase transition
+created_by: Ramona
+creation_date: 2010-11-05T02:31:29Z
+
+[Term]
+id: PO:0025113
+name: seed germination
+is_a: PO:0025107 ! plant life cycle phase transition
+created_by: Ramona
+creation_date: 2010-11-05T02:31:58Z
+
+[Term]
+id: PO:0025114
+name: spore germination
+is_a: PO:0025107 ! plant life cycle phase transition
+created_by: Ramona
+creation_date: 2010-11-05T02:33:13Z
+
+[Term]
+id: PO:0025115
+name: spore cell division  
+is_a: PO:0025107 ! plant life cycle phase transition
+created_by: Ramona
+creation_date: 2010-11-05T02:34:15Z
+
+[Term]
+id: PO:0025116
+name: pollen development
+is_a: PO:0025105 ! gametophyte development
+created_by: Ramona
+creation_date: 2010-11-05T02:38:50Z
 
 [Term]
 id: PO:0028001
