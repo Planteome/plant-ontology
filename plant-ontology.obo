@@ -1,6 +1,5 @@
 format-version: 1.2
-date: 05:11:2010 17:10
-saved-by: Ramona
+date: 10:11:2010 14:56
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -8618,6 +8617,7 @@ namespace: plant_structure
 def: "The space of variable size controlled by stomatal guard cells in response to environmental clues." [GR:cwt]
 subset: TraitNet
 synonym: "stomatal aperture" RELATED []
+is_a: PO:0025118 ! pore
 relationship: part_of PO:0002000 ! stomatal complex
 
 [Term]
@@ -9422,6 +9422,7 @@ namespace: plant_structure
 def: "A collective phyllome structure composed of two or more petals." [POC:curators]
 subset: reference
 subset: TraitNet
+synonym: "angiosperm calyptra" NARROW [POC:curators "In angiosperms, the petals may be fused into a calyptra, which is different than a calytra in mosses"]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -10171,7 +10172,8 @@ def: "A small canal or opening through the integument(s) at the apex of an ovule
 comment: In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated. The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac.
 subset: reference
 subset: TraitNet
-relationship: part_of PO:0020003 ! ovule
+is_a: PO:0025118 ! pore
+relationship: part_of PO:0020021 ! integument
 
 [Term]
 id: PO:0020026
@@ -10671,8 +10673,8 @@ name: stomium
 namespace: plant_structure
 def: "A fissure or pore in the anther lobe through which the pollen is released." [GR:pj]
 subset: reference
+is_a: PO:0025119 ! slit
 relationship: part_of PO:0000002 ! anther wall
-relationship: part_of PO:0005011 ! anther dehiscence zone
 
 [Term]
 id: PO:0020102
@@ -12197,7 +12199,7 @@ creation_date: 2010-11-05T02:31:29Z
 
 [Term]
 id: PO:0025111
-name: fertilzation
+name: fertilization
 is_a: PO:0025107 ! plant life cycle phase transition
 created_by: Ramona
 creation_date: 2010-11-05T02:31:29Z
@@ -12225,7 +12227,7 @@ creation_date: 2010-11-05T02:33:13Z
 
 [Term]
 id: PO:0025115
-name: spore cell division  
+name: spore cell division
 is_a: PO:0025107 ! plant life cycle phase transition
 created_by: Ramona
 creation_date: 2010-11-05T02:34:15Z
@@ -12236,6 +12238,33 @@ name: pollen development
 is_a: PO:0025105 ! gametophyte development
 created_by: Ramona
 creation_date: 2010-11-05T02:38:50Z
+
+[Term]
+id: PO:0025117
+name: plant anatomical space
+namespace: plant_structure
+def: "An anatomical space that is part of a plant." [POC:curators]
+xref: CARO:0000005
+created_by: Ramona
+creation_date: 2010-11-10T11:57:16Z
+
+[Term]
+id: PO:0025118
+name: pore
+namespace: plant_structure
+def: "A plant anatomical space that is roughly circular and forms an opening in a plant structure." [POC:curators]
+is_a: PO:0025117 ! plant anatomical space
+created_by: Ramona
+creation_date: 2010-11-10T11:58:34Z
+
+[Term]
+id: PO:0025119
+name: slit
+namespace: plant_structure
+def: "A plant anatomical space that is roughly linear and forms an opening in a plant structure." [POC:curators]
+is_a: PO:0025117 ! plant anatomical space
+created_by: Ramona
+creation_date: 2010-11-10T11:58:34Z
 
 [Term]
 id: PO:0028001
