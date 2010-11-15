@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:11:2010 14:56
+date: 15:11:2010 14:45
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -45,7 +45,7 @@ is_a: PO:0025096 ! mature plant structure
 
 [Term]
 id: PO:0000004
-name: <i>in vitro</i> plant structure
+name: in vitro plant structure
 namespace: plant_structure
 def: "A plant structure that was derived from part of a plant and involves microbe-free growth in a sterile environment." [POC:curators]
 comment: An example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with <i>Agrobacterium</i>.
@@ -59,7 +59,7 @@ namespace: plant_structure
 def: "In vitro grown isolated cells and small cell aggregates that proliferate while suspended in liquid sterile medium or spread on a solid agar medium." [TAIR:ki]
 comment: In cell cultures, the cells are no longer organized into tissues.
 synonym: "cell suspension" RELATED []
-is_a: PO:0000004 ! <i>in vitro</i> plant structure
+is_a: PO:0000004 ! in vitro plant structure
 
 [Term]
 id: PO:0000006
@@ -87,14 +87,14 @@ id: PO:0000009
 name: cutured callus
 namespace: plant_structure
 def: "In vitro grown cell aggregates that originated from isolated protoplasts, cell suspensions, or from callus that was induced in sterile medium supplemented by plant growth regulators." [TAIR:ki]
-is_a: PO:0000004 ! <i>in vitro</i> plant structure
+is_a: PO:0000004 ! in vitro plant structure
 
 [Term]
 id: PO:0000010
 name: cultured embryo
 namespace: plant_structure
 def: "In vitro isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte)." [TAIR:ki]
-is_a: PO:0000004 ! <i>in vitro</i> plant structure
+is_a: PO:0000004 ! in vitro plant structure
 
 [Term]
 id: PO:0000011
@@ -136,39 +136,39 @@ is_a: PO:0009025 ! vascular leaf
 id: PO:0000015
 name: cotyledon primordium
 namespace: plant_structure
-def: "An organized group of cells that will differentiate into a cotyledon." [TAIR:ki]
-is_a: PO:0020030 ! cotyledon
+def: "A phyllome primordium that will develop into a cotyledon." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 
 [Term]
 id: PO:0000016
 name: lateral root primordium
 namespace: plant_structure
-def: "An organized group of cells derived from the root pericycle that will differentiate into a new root." [TAIR:ki]
+def: "A root primordium that is derived from a root pericycle and will develop into a lateral root." [POC:curators]
 is_a: PO:0005029 ! root primordium
-is_a: PO:0020121 ! lateral root
+relationship: derives_from PO:0006203 ! pericycle
 
 [Term]
 id: PO:0000017
 name: leaf primordium
 namespace: plant_structure
-def: "An organized group of cells that will differentiate into leaf that are emerging as an outgrowth in the shoot apex (flanking the meristem)." [TAIR:ki]
-synonym: "leaf meristem" RELATED []
-is_a: PO:0009025 ! vascular leaf
+def: "A phyllome primordium that will develop into a leaf." [POC:curators]
+comment: Emerges as an outgrowth in the shoot apex (flanking the meristem).
+is_a: PO:0025128 ! phyllome primordium
 relationship: part_of PO:0000037 ! shoot apex
 
 [Term]
 id: PO:0000018
 name: ovule primordium
 namespace: plant_structure
-def: "An organized group of cells that will differentiate into ovule." [TAIR:ki]
-is_a: PO:0020003 ! ovule
+def: "A primordium that will develop into an ovule." [POC:curators]
+is_a: PO:0025127 ! primordium
 
 [Term]
 id: PO:0000019
 name: gynoecium primordium
 namespace: plant_structure
-def: "The very first appearance of gynoecium." [TAIR:ki]
-is_a: PO:0009062 ! gynoecium
+def: "A primordium that will develop into a gynoecium." [POC:curators]
+is_a: PO:0025127 ! primordium
 
 [Term]
 id: PO:0000020
@@ -182,8 +182,8 @@ is_obsolete: true
 id: PO:0000021
 name: petal primordium
 namespace: plant_structure
-def: "The very first appearance of a petal." [TAIR:ki]
-is_a: PO:0009032 ! petal
+def: "A phyllome primordium that will develop into a petal." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 
 [Term]
 id: PO:0000022
@@ -412,7 +412,7 @@ is_a: PO:0003005 ! nodal root
 id: PO:0000047
 name: leaf lamina epidermis
 namespace: plant_structure
-def: "Epidermal layer of a leaf blade." [TAIR:ki]
+def: "A portion of leaf epidermis that covers the leaf lamina." [POC:curators]
 is_a: PO:0006016 ! leaf epidermis
 relationship: part_of PO:0020039 ! leaf lamina
 
@@ -429,14 +429,14 @@ relationship: part_of PO:0020039 ! leaf lamina
 id: PO:0000049
 name: leaf lamina abaxial epidermis
 namespace: plant_structure
-def: "The epidermal layer of the abaxial/lower surface of the leaf blade." [TAIR:ki]
+def: "A portion of leaf lamina epidermis that covers the abaxial/lower surface of a leaf lamina." [POC:rw]
 is_a: PO:0000047 ! leaf lamina epidermis
 
 [Term]
 id: PO:0000050
 name: leaf lamina adaxial epidermis
 namespace: plant_structure
-def: "The epidermal layer of the adaxial/upper surface of the leaf blade." [TAIR:ki]
+def: "A portion of leaf lamina epidermis that covers the adaxial/upper surface of a leaf lamina." [POC:rw]
 is_a: PO:0000047 ! leaf lamina epidermis
 
 [Term]
@@ -640,9 +640,10 @@ id: PO:0000084
 name: sperm cell
 namespace: plant_structure
 alt_id: PO:0020098
-def: "A gamete produced by an antheridium or a male gametophyte." [POC:curators]
-comment: In angiosperms, sperm cells are usually two in number; during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
+def: "A gamete produced by an antheridium or a microgametophyte." [POC:curators]
+comment: The sperm (microgamete) is usually larger than the egg (megagamete). In angiosperms, sperm cells are usually two in number; during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm. Male gametes may be defined as the motile gamete, rather than the smaller gamete.
 subset: reference
+synonym: "male gamete" EXACT []
 synonym: "microgamete" EXACT []
 synonym: "sperm nucleus" RELATED []
 xref: CL:0000366
@@ -2373,46 +2374,46 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0004701
 name: short shoot
 namespace: plant_structure
-def: "Shoot in which the internodes elongate little or at all, bearing reproductive structures and/or leaves." [APWeb:Glossary]
+def: "Shoot system in which the internodes elongate little or at all, bearing reproductive structures and/or leaves." [APWeb:Glossary]
 synonym: "brachyblast" RELATED []
 synonym: "bud spur" RELATED []
-is_a: PO:0006343 ! axillary shoot
+is_a: PO:0006343 ! axillary shoot system
 
 [Term]
 id: PO:0004702
 name: long shoot
 namespace: plant_structure
-def: "Shoot in which all or most of the internodes elongate." [APWeb:Glossary]
-is_a: PO:0006343 ! axillary shoot
+def: "Shoot system in which all or most of the internodes elongate." [APWeb:Glossary]
+is_a: PO:0006343 ! axillary shoot system
 
 [Term]
 id: PO:0004703
 name: carpel primordium
 namespace: plant_structure
-def: "The very first appearance of a carpel. It initiates from the carpel anlagen region of the floral meristem." [GR:pj, POC:curators]
-is_a: PO:0009030 ! carpel
+def: "A phyllome primordium that develops into a carpel. It initiates from the carpel anlagen region of the floral meristem." [GR:pj, POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 relationship: develops_from PO:0006005 ! carpel anlagen
 
 [Term]
 id: PO:0004704
 name: sepal primordium
 namespace: plant_structure
-def: "The very first appearance of a sepal." [POC:curators]
-is_a: PO:0009031 ! sepal
+def: "A phyllome primordium that will devlop into a sepal." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 
 [Term]
 id: PO:0004705
 name: stamen primordium
 namespace: plant_structure
-def: "The very first appearance of a stamen." [POC:curators]
-is_a: PO:0009029 ! stamen
+def: "A phyllome primordium that will develop into a stamen." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 
 [Term]
 id: PO:0004706
 name: flower primordium
 namespace: plant_structure
-def: "The very first appearance of a flower." [POC:curators]
-is_a: PO:0009046 ! flower
+def: "A primordium that will develop into a flower." [POC:curators]
+is_a: PO:0025127 ! primordium
 
 [Term]
 id: PO:0004707
@@ -2565,21 +2566,22 @@ name: hypocotyl-root junction
 namespace: plant_structure
 def: "Junction point of the embryonic root and hypocotyl." [TAIR:ki]
 subset: reference
-relationship: part_of PO:0009006 ! shoot system
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
 id: PO:0004725
 name: abaxial side of leaf primordium
 namespace: plant_structure
-def: "The abaxial/outer side of the leaf primordium that becomes the abaxial/lower leaf blade." [TAIR:ki]
+def: "A portion of phyllome primordium tissue that is the abaxial/outer side of a leaf primordium and develops into the abaxial/lower leaf blade." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 relationship: part_of PO:0000017 ! leaf primordium
 
 [Term]
 id: PO:0004726
 name: adaxial side of leaf primordium
 namespace: plant_structure
-def: "The adaxial/inner side of the leaf primordium that becomes adaxial/upper leaf blade." [TAIR:ki]
+def: "A portion of phyllome primordium tissue that is the adaxial/inner side of the leaf primordium develops into the adaxial/upper leaf blade." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
 relationship: part_of PO:0000017 ! leaf primordium
 
 [Term]
@@ -2590,7 +2592,7 @@ def: "A branch that forms from a leaf at the very base of the shoot." [GR:ap]
 synonym: "basal axillary branch" RELATED []
 synonym: "ratoon" RELATED []
 synonym: "tiller" RELATED []
-is_a: PO:0006343 ! axillary shoot
+is_a: PO:0006343 ! axillary shoot system
 
 [Term]
 id: PO:0005002
@@ -2599,13 +2601,13 @@ namespace: plant_structure
 def: "An axillary branch that forms from a leaf above the very base of the shoot." [GR:ap]
 comment: The genetic distinction between cauline axillary branches and tillers may or may not be unique to the Poaceae. There are no data for other plant families.
 synonym: "cauline axillary branch" RELATED []
-is_a: PO:0006343 ! axillary shoot
+is_a: PO:0006343 ! axillary shoot system
 
 [Term]
 id: PO:0005003
 name: shoot axis trichome
 namespace: plant_structure
-def: "Trichome on/from the epidermis of the shoot axis." [PMID:17217456, TAIR:donghui]
+def: "A trichome that is part of a shoot axis." [PMID:17217456, POC:curators]
 comment: Can occur on a stem or branch.
 subset: TraitNet
 synonym: "branch trichome" NARROW []
@@ -2833,8 +2835,8 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0005029
 name: root primordium
 namespace: plant_structure
-def: "An organized group of cells that will differentiate into a new root." [GR:pj]
-is_a: PO:0009005 ! root
+def: "A primordium that will develop into a root." [POC:curators]
+is_a: PO:0025127 ! primordium
 
 [Term]
 id: PO:0005039
@@ -3426,8 +3428,8 @@ id: PO:0006015
 name: female archesporial cell
 namespace: plant_structure
 def: "In the majority of flowering plants including <i>Arabidopsis<\\i>, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell (MMC). In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte." [PMID:10465788]
-synonym: "female archesporial initial" RELATED []
-synonym: "ovule archesporial cell" RELATED []
+synonym: "female archesporial initial" EXACT []
+synonym: "ovule archesporial cell" EXACT []
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0000018 ! ovule primordium
 
@@ -3435,9 +3437,9 @@ relationship: part_of PO:0000018 ! ovule primordium
 id: PO:0006016
 name: leaf epidermis
 namespace: plant_structure
-def: "A portion of shoot epidermis that is part of a leaf." [POC:curators]
+def: "A portion of phyllome epidermis that is part of a leaf." [POC:curators]
 synonym: "foliage leaf epidermis" RELATED []
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0025157 ! phyllome epidermis
 relationship: part_of PO:0025034 ! leaf
 
 [Term]
@@ -3451,19 +3453,19 @@ is_a: PO:0009089 ! endosperm
 id: PO:0006018
 name: leaf adaxial epidermis
 namespace: plant_structure
-def: "A portion of shoot epidermis that covers the adaxial/upper surface of a leaf." [ISBN:0080374913]
+def: "A portion of shoot epidermis that covers the adaxial/upper surface of a leaf." [POC:rw]
+comment: Used to refer to an adaxial epidermis of an entire leaf. More specific terms exist for leaf lamina adaxial epidermis and petiole adaxial epidermis.
 synonym: "upper epidermis" RELATED []
-is_a: PO:0006035 ! shoot epidermis
-relationship: part_of PO:0006016 ! leaf epidermis
+is_a: PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006019
 name: leaf abaxial epidermis
 namespace: plant_structure
-def: "A portion of shoot epidermis that covers the abaxial/lower surface of a leaf." [ISBN:0080374913]
+def: "A portion of leaf epidermis that covers the abaxial/lower surface of a leaf." [POC:curators]
+comment: Used to refer to an abaxial epidermis of an entire leaf. More specific terms exist for leaf lamina abaxial epidermis and petiole abaxial epidermis.
 synonym: "lower epidermis" RELATED []
-is_a: PO:0006035 ! shoot epidermis
-relationship: part_of PO:0006016 ! leaf epidermis
+is_a: PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006020
@@ -3949,8 +3951,8 @@ relationship: develops_from PO:0006014 ! male archesporial cell
 id: PO:0006089
 name: anther primordium
 namespace: plant_structure
-def: "An organized group of cells that will differentiate into anther." [GR:pj]
-is_a: PO:0009066 ! anther
+def: "A primordium that will develop into anther." [POC:curators]
+is_a: PO:0025127 ! primordium
 
 [Term]
 id: PO:0006090
@@ -4007,7 +4009,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0006203
 name: pericycle
 namespace: plant_structure
-def: "Part of the tissue of the stele located between the phloem and endodermis." [ISBN:047124529]
+def: "A portion of ground tissue that is part of a root stele located between the phloem and endodermis." [ISBN:047124529]
 subset: reference
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0020124 ! root stele
@@ -4528,7 +4530,7 @@ relationship: has_part PO:0009001 ! fruit
 
 [Term]
 id: PO:0006343
-name: axillary shoot
+name: axillary shoot system
 namespace: plant_structure
 def: "A shoot-borne shoot system that develops from an axillary vegetative bud." [POC:curators]
 synonym: "axillary branch" RELATED []
@@ -8577,8 +8579,7 @@ id: PO:0008027
 name: petiole adaxial epidermis
 namespace: plant_structure
 def: "A portion of leaf epidermis that covers the adaxial/upper surface of the petiole." [GR:cwt]
-is_a: PO:0006016 ! leaf epidermis
-relationship: part_of PO:0000051 ! petiole epidermis
+is_a: PO:0000051 ! petiole epidermis
 
 [Term]
 id: PO:0008028
@@ -8591,9 +8592,8 @@ is_a: PO:0020148 ! shoot apical meristem
 id: PO:0008029
 name: petiole abaxial epidermis
 namespace: plant_structure
-def: "A portion of leaf epidermis that covers the abaxial/lower surface of the petiole." [GR:cwt]
-is_a: PO:0006016 ! leaf epidermis
-relationship: part_of PO:0000051 ! petiole epidermis
+def: "A portion of petiole epidermis that covers the abaxial/lower surface of a petiole." [GR:cwt]
+is_a: PO:0000051 ! petiole epidermis
 
 [Term]
 id: PO:0008030
@@ -8658,7 +8658,7 @@ replaced_by: PO:0000003
 id: PO:0008038
 name: adventitious root primordium
 namespace: plant_structure
-def: "An organized group of cells that will differentiate into adventitious root." [GR:cwt]
+def: "A root primordium that will develop into an adventitious root." [POC:curators]
 is_a: PO:0005029 ! root primordium
 
 [Term]
@@ -8673,8 +8673,8 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0008040
 name: lodicule primordium
 namespace: plant_structure
-def: "The primordium will differentiat into lodicule." [GR:cwt]
-is_a: PO:0009036 ! lodicule
+def: "A primordium that will develop into a lodicule." [POC:curators]
+is_a: PO:0025127 ! primordium
 
 [Term]
 id: PO:0008041
@@ -8857,6 +8857,7 @@ subset: reference
 subset: TraitNet
 synonym: "aerial root" NARROW []
 is_a: PO:0025004 ! plant axis
+relationship: develops_from PO:0005029 ! root primordium
 relationship: part_of PO:0025025 ! root system
 
 [Term]
@@ -8929,11 +8930,11 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0009011
 name: plant structure
 namespace: plant_structure
-def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [Poc:curators]
+def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003 "anatomical structure", POC:curators]
 comment: 'Part' includes both proper parts and the whole plant.
 subset: TraitNet
-xref: CARO:0000003 "<a href=\"http://www.ebi.ac.uk/ontology-lookup/init.do?termId=CARO%3A0000003\">anatomical structure</a>"
 xref: OBO_SF_PO:2932527
+is_a: PO:0025131 ! plant anatomical entity
 
 [Term]
 id: PO:0009012
@@ -9094,6 +9095,7 @@ def: "A microsporophyll bearing one or more microsporangia." [APWeb:Glossary]
 subset: reference
 subset: TraitNet
 is_a: PO:0009028 ! microsporophyll
+relationship: develops_from PO:0004705 ! stamen primordium
 relationship: part_of PO:0009061 ! androecium
 
 [Term]
@@ -9105,6 +9107,7 @@ comment: If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Po
 subset: reference
 subset: TraitNet
 is_a: PO:0009027 ! megasporophyll
+relationship: develops_from PO:0004703 ! carpel primordium
 relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
@@ -9115,6 +9118,7 @@ def: "A member of the (usually green) outer whorl of non-fertile parts surroundi
 subset: reference
 subset: TraitNet
 is_a: PO:0006001 ! phyllome
+relationship: develops_from PO:0004704 ! sepal primordium
 relationship: part_of PO:0009060 ! calyx
 
 [Term]
@@ -9125,6 +9129,7 @@ def: "A member of the corolla, the inner whorl of non-fertile parts surrounding 
 subset: reference
 subset: TraitNet
 is_a: PO:0006001 ! phyllome
+relationship: develops_from PO:0000021 ! petal primordium
 relationship: part_of PO:0009059 ! corolla
 
 [Term]
@@ -9167,6 +9172,7 @@ name: lodicule
 namespace: plant_structure
 def: "In a grass floret, one of two or three tiny scales or flaps of tissue outside the stamens, possibly representing reduced perianth segments." [APWeb:Glossary]
 subset: reference
+relationship: develops_from PO:0008040 ! lodicule primordium
 relationship: part_of PO:0025090 ! Poaceae floret
 
 [Term]
@@ -9262,13 +9268,17 @@ subset: reference
 subset: TraitNet
 synonym: "diclinous flower" NARROW []
 synonym: "double flower" NARROW []
+synonym: "female flower" NARROW [CGP:curators]
+synonym: "hermaphrodite flower" NARROW [CGP:curators]
 synonym: "imperfect flower" NARROW []
+synonym: "male flower" NARROW [CGP:curators]
 synonym: "monoclinous flower" NARROW []
 synonym: "perfect flower" NARROW []
 synonym: "pistillate flower" NARROW []
 synonym: "staminate flower" NARROW []
 xref: OBO_SF_PO:2971891
 is_a: PO:0025082 ! reproductive shoot system
+relationship: develops_from PO:0004706 ! flower primordium
 
 [Term]
 id: PO:0009047
@@ -9358,6 +9368,7 @@ id: PO:0009053
 name: peduncle
 namespace: plant_structure
 def: "A branch of an inflorescence or an individual flower." [ISBN:0-7167-1007-2]
+subset: Musa
 subset: reference
 synonym: "inflorescence stem " RELATED []
 xref: OBO_SF_PO:2972231
@@ -9467,6 +9478,7 @@ synonym: "pistil" RELATED []
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
+relationship: develops_from PO:0000019 ! gynoecium primordium
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -9512,6 +9524,7 @@ subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
+relationship: develops_from PO:0006089 ! anther primordium
 relationship: part_of PO:0009029 ! stamen
 
 [Term]
@@ -9976,6 +9989,7 @@ subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
+relationship: develops_from PO:0000018 ! ovule primordium
 relationship: part_of PO:0009072 ! ovary
 
 [Term]
@@ -10226,6 +10240,7 @@ def: "A leaf formed at the first node of a sporophyte." [APWeb:Glossary, GR:pj]
 subset: reference
 subset: TraitNet
 is_a: PO:0009025 ! vascular leaf
+relationship: develops_from PO:0000015 ! cotyledon primordium
 
 [Term]
 id: PO:0020031
@@ -10298,7 +10313,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020039
 name: leaf lamina
 namespace: plant_structure
-def: "The lamina of a leaf, usually dorsiventrally flattened and expanded." [APWeb:Glossary]
+def: "A lamina that is part of a leaf, usually dorsiventrally flattened and expanded." [APWeb:Glossary]
 comment: Reference lamina in CARO.
 subset: TraitNet
 synonym: "leaf blade" RELATED []
@@ -10310,11 +10325,11 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020040
 name: leaf base
 namespace: plant_structure
-def: "The bottom part of a leaf where it attaches to the stem." [APWeb:Glossary]
+def: "A phyllome base that is part of a leaf." [POC:rw]
 synonym: "leaf sheath base" RELATED []
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0009025 ! vascular leaf
+is_a: PO:0025140 ! phyllome base
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0020041
@@ -10585,19 +10600,19 @@ id: PO:0020091
 name: microgametophyte
 namespace: plant_structure
 alt_id: PO:0020007
-def: "A gametophyte that produces male gametes." [APWeb:Glossary]
+def: "A gametophyte that produces pollen sperm cells." [POC:curators]
 subset: reference
 subset: TraitNet
-synonym: "male gametophyte" RELATED []
+synonym: "male gametophyte" EXACT []
 synonym: "pollen" RELATED []
-synonym: "pollen grain" RELATED []
+synonym: "pollen grain" EXACT []
 is_a: PO:0000003 ! whole plant
 
 [Term]
 id: PO:0020092
 name: megagametophyte
 namespace: plant_structure
-def: "A gametophyte that produces eggs." [APWeb:Glossary]
+def: "A gametophyte that produces female gametes." [APweb:glossary]
 subset: reference
 synonym: "embryo sac" RELATED []
 synonym: "female gametophyte" RELATED []
@@ -10607,7 +10622,7 @@ is_a: PO:0000003 ! whole plant
 id: PO:0020093
 name: antipodal cell
 namespace: plant_structure
-def: "Cell, commonly three in number as in the eight-nucleate embryo sac, located at the other end of the embryo sac from the female gamete." [APWeb:Glossary]
+def: "Cell, commonly three in number as in the eight-nucleate embryo sac, located at the other end of the embryo sac from the egg cell." [APWeb:Glossary]
 comment: More or less persistent, multiplicative or not.
 subset: reference
 xref: CL:0000537
@@ -10619,7 +10634,9 @@ id: PO:0020094
 name: egg cell
 namespace: plant_structure
 def: "A gamete produced by an archegonium or an embryo sac." [POC:curators]
+comment: The egg (megagamete) is usually larger than the sperm (microgamete). Female gametes may be defined as the non-motile gamete, rather than the larger gamete.
 subset: reference
+synonym: "female gamete" EXACT []
 synonym: "megagamete" EXACT []
 xref: CL:0000254
 is_a: PO:0025006 ! gamete
@@ -10748,8 +10765,9 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0020121
 name: lateral root
 namespace: plant_structure
-def: "Root developing from the pericycle layer of the primary root." [ISBN:0122151704]
+def: "A root that develops from a lateral root primordium located in the pericycle layer of a primary root." [ISBN:0122151704]
 is_a: PO:0009005 ! root
+relationship: develops_from PO:0000016 ! lateral root primordium
 
 [Term]
 id: PO:0020122
@@ -10903,11 +10921,12 @@ is_a: PO:0009049 ! inflorescence
 id: PO:0020137
 name: leaf apex
 namespace: plant_structure
-def: "The top part of the leaf, usually the apex of the leaf blade." [UMSL:fz]
+def: "A phyllome apex that is part of a leaf." [POC:rw, UMSL:fz]
+comment: It is not precisely defined how far toward the base from the tip a leaf apex extends. For the apical most portion of a leaf, use the term leaf tip.
 synonym: "leaf tip" RELATED []
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0020039 ! leaf lamina
+is_a: PO:0025139 ! phyllome apex
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0020138
@@ -11031,7 +11050,7 @@ subset: Arabidopsis
 subset: TraitNet
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2945268
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025096 ! mature plant structure
 relationship: part_of PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-11T01:18:24Z
@@ -11052,7 +11071,7 @@ id: PO:0025003
 name: tuber axillary shoot
 namespace: plant_structure
 def: "An axillary shoot that develops from a tuber axillary bud." [POC:curators]
-is_a: PO:0006343 ! axillary shoot
+is_a: PO:0006343 ! axillary shoot system
 created_by: Ramona
 creation_date: 2010-09-16T03:17:06Z
 
@@ -11129,8 +11148,10 @@ id: PO:0025010
 name: petiole margin
 namespace: plant_structure
 def: "The margin of a flattened petiole." [POC:curators]
+comment: Petiole margins may be found in flattened (laminar) petioles, but may also occur in laminar extensions of petioles that are rounded or c-shaped in cross section.
+subset: Musa
 is_a: PO:0020128 ! leaf margin
-relationship: part_of PO:0020038 ! petiole
+relationship: part_of PO:0025129 ! petiole lamina
 created_by: Ramona
 creation_date: 2010-03-25T10:04:37Z
 
@@ -11302,7 +11323,7 @@ creation_date: 2010-07-01T02:11:26Z
 id: PO:0025026
 name: megagametophytic cell
 namespace: plant_structure
-def: "A plant cell that is part of a female gametophyte." [POC:rw]
+def: "A plant cell that is part of an embryo sac." [POC:rw]
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020092 ! megagametophyte
 created_by: Ramona
@@ -11384,6 +11405,7 @@ namespace: plant_structure
 def: "A phyllome that is not part of a flower." [POC:curators]
 subset: TraitNet
 is_a: PO:0006001 ! phyllome
+relationship: develops_from PO:0000017 ! leaf primordium
 created_by: Ramona
 creation_date: 2010-07-12T01:31:44Z
 
@@ -12243,8 +12265,8 @@ creation_date: 2010-11-05T02:38:50Z
 id: PO:0025117
 name: plant anatomical space
 namespace: plant_structure
-def: "An anatomical space that is part of a plant." [POC:curators]
-xref: CARO:0000005
+def: "An anatomical space that is part of a plant." [CARO:0000005 "anatomical space", POC:curators]
+is_a: PO:0025131 ! plant anatomical entity
 created_by: Ramona
 creation_date: 2010-11-10T11:57:16Z
 
@@ -12265,6 +12287,437 @@ def: "A plant anatomical space that is roughly linear and forms an opening in a 
 is_a: PO:0025117 ! plant anatomical space
 created_by: Ramona
 creation_date: 2010-11-10T11:58:34Z
+
+[Term]
+id: PO:0025120
+name: antheridium sperm cell
+namespace: plant_structure
+def: "A sperm cell that is produced by an antheridium." [POC:curators]
+is_a: PO:0000084 ! sperm cell
+relationship: part_of PO:0025125 ! antheridium
+created_by: Ramona
+creation_date: 2010-11-15T08:05:46Z
+
+[Term]
+id: PO:0025121
+name: pollen sperm cell
+namespace: plant_structure
+def: "A sperm cell that is produced by a microgametophyte." [POC:curators]
+is_a: PO:0000084 ! sperm cell
+relationship: part_of PO:0020091 ! microgametophyte
+created_by: Ramona
+creation_date: 2010-11-15T08:05:46Z
+
+[Term]
+id: PO:0025122
+name: archegonium egg cell
+namespace: plant_structure
+def: "An egg cell that is produced by an archegonium." [POC:curators]
+is_a: PO:0020094 ! egg cell
+relationship: part_of PO:0025126 ! archegonium
+created_by: Ramona
+creation_date: 2010-11-15T08:14:32Z
+
+[Term]
+id: PO:0025123
+name: embryo sac egg cell
+namespace: plant_structure
+def: "An egg cell that is produced by a megagametophyte." [POC:curators]
+is_a: PO:0020094 ! egg cell
+relationship: part_of PO:0025074 ! embryo sac
+created_by: Ramona
+creation_date: 2010-11-15T08:14:32Z
+
+[Term]
+id: PO:0025124
+name: gametangium
+namespace: plant_structure
+def: "A cardinal organ part that is part of a whole plant in the gametophytic phase and produces gametes." [POC:rw]
+is_a: PO:0025001 ! cardinal organ part
+created_by: Ramona
+creation_date: 2010-11-15T08:57:32Z
+
+[Term]
+id: PO:0025125
+name: antheridium
+namespace: plant_structure
+def: "A gametangium that produces antheridium sperm cells." [POC:rw]
+is_a: PO:0025124 ! gametangium
+created_by: Ramona
+creation_date: 2010-11-15T08:58:31Z
+
+[Term]
+id: PO:0025126
+name: archegonium
+namespace: plant_structure
+def: "A gametangium that produces archegonium egg cells." [POC:rw]
+is_a: PO:0025124 ! gametangium
+created_by: Ramona
+creation_date: 2010-11-15T08:58:31Z
+
+[Term]
+id: PO:0025127
+name: primordium
+namespace: plant_structure
+def: "A portion of plant tissue that differentiates and develops from meristem tissue into a new plant structure." [POC:curators]
+comment: A visible primordium of an organ is the first distinct stage of the respective plant structure development.
+is_a: PO:0009007 ! portion of plant tissue
+created_by: Ramona
+creation_date: 2010-11-15T09:10:22Z
+
+[Term]
+id: PO:0025128
+name: phyllome primordium
+namespace: plant_structure
+def: "A primordium that will develop into a phyllome." [POC:rw]
+is_a: PO:0025127 ! primordium
+created_by: Ramona
+creation_date: 2010-11-15T09:27:11Z
+
+[Term]
+id: PO:0025129
+name: petiole lamina
+namespace: plant_structure
+def: "A lamina that is part of a petiole." [GCP:curators, POC:curators]
+comment: The entire petiole may be laminar, or the petiole may be more or less rounded in cross section with laminar extensions.
+subset: Musa
+synonym: "petiole wing" NARROW []
+is_a: PO:0020039 ! leaf lamina
+relationship: part_of PO:0020038 ! petiole
+created_by: Ramona
+creation_date: 2010-11-15T10:28:38Z
+
+[Term]
+id: PO:0025130
+name: cigar leaf
+namespace: plant_structure
+def: "A leaf near the apex of a stem that is still rolled into a cylinder." [POC:curators]
+comment: Describes the phenotype of a vascular leaf during a leaf development phase in Musa and other monocots.
+subset: Musa
+is_a: PO:0009025 ! vascular leaf
+created_by: Ramona
+creation_date: 2010-11-15T11:29:28Z
+
+[Term]
+id: PO:0025131
+name: plant anatomical entity
+namespace: plant_structure
+def: "An anatomical entity that is or was part of a plant." [CARO:0000000 "anatomical entity", POC:rw]
+comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces.
+created_by: Ramona
+creation_date: 2010-11-15T11:41:38Z
+
+[Term]
+id: PO:0025132
+name: canal
+namespace: plant_structure
+def: "An anatomical space that is roughly linear or cylindrical in shape." [POC:rw]
+comment: May be enclosed within a plant structure or on the surface of a plant structure and open on one side.
+is_a: PO:0025117 ! plant anatomical space
+created_by: Ramona
+creation_date: 2010-11-15T11:47:42Z
+
+[Term]
+id: PO:0025133
+name: petiole canal
+namespace: plant_structure
+def: "A canal on the adaxial side of a petiole, formed by the curved cross-sectional shape of the petiole." [GCP:curators, POC:rw]
+subset: Musa
+is_a: PO:0025132 ! canal
+created_by: Ramona
+creation_date: 2010-11-15T11:54:00Z
+
+[Term]
+id: PO:0025134
+name: Musa crown
+namespace: plant_structure
+def: "A shoot system that forms the basal part of an inflorescence in Musa species to which the pedicels are attached and in which the internodes do not elongate, giving the appearance of a ridge of raised tissue." [GCP:curators, POC:rw]
+subset: Musa
+is_a: PO:0009006 ! shoot system
+relationship: part_of PO:0009049 ! inflorescence
+created_by: Ramona
+creation_date: 2010-11-15T12:54:56Z
+
+[Term]
+id: PO:0025135
+name: cigar leaf lamina abaxial epidermis
+namespace: plant_structure
+def: "A portion of leaf lamina abaxial epidermis that covers the abaxial surface of a cigar leaf." [CGP:curators, POC:rw]
+synonym: "cigar leaf dorsal surface" EXACT []
+is_a: PO:0000049 ! leaf lamina abaxial epidermis
+relationship: part_of PO:0025130 ! cigar leaf
+created_by: Ramona
+creation_date: 2010-11-15T12:05:45Z
+
+[Term]
+id: PO:0025136
+name: free tepal
+namespace: plant_structure
+def: "A tepal that is not fused to any other tepals." [GCP:curators, POC:phenotype]
+comment: This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0001505 (separated from).
+subset: Musa
+is_a: PO:0009033 ! tepal
+created_by: Ramona
+creation_date: 2010-11-15T01:06:51Z
+
+[Term]
+id: PO:0025137
+name: fused tepal
+namespace: plant_structure
+def: "A tepal that is fused to another tepal." [GCP:curators, POC:phenotype]
+comment: May be fused to two tepals (one on either side). This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0000642 (fused with).
+subset: Musa
+is_a: PO:0009033 ! tepal
+created_by: Ramona
+creation_date: 2010-11-15T01:12:18Z
+
+[Term]
+id: PO:0025138
+name: compound collective tepal structure
+namespace: plant_structure
+def: "A collective tepal structure in which the tepals are fused." [GCP:curators, POC:phenotype]
+comment: This is a phenotype that is a cross-product of PO:0025021 (collective tepal structure) and PATO:0000642 (fused with). In Musa, there are there are 5 fused tepals which form 3 major lobes and 2 minor lobes.
+subset: Musa
+synonym: "compound tepals" RELATED []
+is_a: PO:0025021 ! collective tepal structure
+relationship: has_part PO:0025137 ! fused tepal
+created_by: Ramona
+creation_date: 2010-11-15T01:18:23Z
+
+[Term]
+id: PO:0025139
+name: phyllome apex
+namespace: plant_structure
+def: "The apical portion of a phyllome." [POC:rw]
+comment: It is not precisely defined how far toward the base from the tip a phyllome apex extends. For the apical most portion of a phyllome, use the term phyllome tip.
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0006001 ! phyllome
+created_by: Ramona
+creation_date: 2010-11-15T01:25:20Z
+
+[Term]
+id: PO:0025140
+name: phyllome base
+namespace: plant_structure
+def: "The basal part of a phyllome, where it attaches to a shoot axis." [POC:rw]
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0006001 ! phyllome
+created_by: Ramona
+creation_date: 2010-11-15T01:25:26Z
+
+[Term]
+id: PO:0025141
+name: phyllome tip
+namespace: plant_structure
+def: "The apical most portion of a phyllome apex." [POC:rw]
+comment: This term is to be used for only the apical most portion of a phyllome. For a larger area, use the term phyllome apex. Use this term when describing the shape of a phyllome tip.
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025139 ! phyllome apex
+created_by: Ramona
+creation_date: 2010-11-15T01:34:53Z
+
+[Term]
+id: PO:0025142
+name: leaf tip
+namespace: plant_structure
+def: "A phyllome tip that is part of a leaf apex." [POC:rw]
+comment: This term is to be used for only the apical most portion of a leaf. For a larger area, use the term leaf apex. Use this term when describing the shape of a leaf tip.
+is_a: PO:0025141 ! phyllome tip
+relationship: part_of PO:0020137 ! leaf apex
+created_by: Ramona
+creation_date: 2010-11-15T01:36:13Z
+
+[Term]
+id: PO:0025143
+name: tepal apex
+namespace: plant_structure
+def: "A phyllome apex that is part of a tepal." [POC:rw]
+comment: It is not precisely defined how far toward the base from the tip a tepal apex extends. For the apical most portion of a tepal, use the term tepal tip.
+subset: Musa
+is_a: PO:0025139 ! phyllome apex
+relationship: part_of PO:0009033 ! tepal
+created_by: Ramona
+creation_date: 2010-11-15T01:42:08Z
+
+[Term]
+id: PO:0025144
+name: petal apex
+namespace: plant_structure
+def: "A phyllome apex that is part of a petal." [POC:rw]
+comment: It is not precisely defined how far toward the base from the tip a petal apex extends. For the apical most portion of a petal, use the term petal tip.
+is_a: PO:0025139 ! phyllome apex
+relationship: part_of PO:0009032 ! petal
+created_by: Ramona
+creation_date: 2010-11-15T01:43:22Z
+
+[Term]
+id: PO:0025145
+name: sepal apex
+namespace: plant_structure
+def: "A phyllome apex that is part of a sepal." [POC:rw]
+comment: It is not precisely defined how far toward the base from the tip a sepal apex extends. For the apical most portion of a sepal, use the term sepal tip.
+is_a: PO:0025139 ! phyllome apex
+relationship: part_of PO:0009031 ! sepal
+created_by: Ramona
+creation_date: 2010-11-15T01:43:23Z
+
+[Term]
+id: PO:0025146
+name: petal base
+namespace: plant_structure
+def: "A phyllome base that is part of a petal." [POC:rw]
+is_a: PO:0025140 ! phyllome base
+relationship: part_of PO:0009032 ! petal
+created_by: Ramona
+creation_date: 2010-11-15T01:47:57Z
+
+[Term]
+id: PO:0025147
+name: sepal base
+namespace: plant_structure
+def: "A phyllome base that is part of a sepal." [POC:rw]
+is_a: PO:0025140 ! phyllome base
+relationship: part_of PO:0009031 ! sepal
+created_by: Ramona
+creation_date: 2010-11-15T01:47:58Z
+
+[Term]
+id: PO:0025148
+name: tepal base
+namespace: plant_structure
+def: "A phyllome base that is part of a tepal." [POC:rw]
+is_a: PO:0025140 ! phyllome base
+relationship: part_of PO:0009033 ! tepal
+created_by: Ramona
+creation_date: 2010-11-15T01:47:58Z
+
+[Term]
+id: PO:0025149
+name: petal tip
+namespace: plant_structure
+def: "A phyllome tip that is part of a petal apex." [POC:rw]
+comment: This term is to be used for only the apical most portion of a petal. For a larger area, use the term petal apex. Use this term when describing the shape of a petal tip.
+is_a: PO:0025141 ! phyllome tip
+relationship: part_of PO:0025144 ! petal apex
+created_by: Ramona
+creation_date: 2010-11-15T01:49:36Z
+
+[Term]
+id: PO:0025150
+name: sepal tip
+namespace: plant_structure
+def: "A phyllome tip that is part of a sepal apex." [POC:rw]
+comment: This term is to be used for only the apical most portion of a sepal. For a larger area, use the term sepal apex. Use this term when describing the shape of a sepal tip.
+is_a: PO:0025141 ! phyllome tip
+relationship: part_of PO:0025145 ! sepal apex
+created_by: Ramona
+creation_date: 2010-11-15T01:49:36Z
+
+[Term]
+id: PO:0025151
+name: tepal tip
+namespace: plant_structure
+def: "A phyllome tip that is part of a tepal apex." [POC:rw]
+comment: This term is to be used for only the apical most portion of a tepal. For a larger area, use the term tepal apex. Use this term when describing the shape of a tepal tip.
+is_a: PO:0025141 ! phyllome tip
+relationship: part_of PO:0025143 ! tepal apex
+created_by: Ramona
+creation_date: 2010-11-15T01:49:37Z
+
+[Term]
+id: PO:0025152
+name: peduncle epidermis
+namespace: plant_structure
+def: "A portion of shoot axis epidermis that is part of a peduncle." [CGP:curators, POC:curators]
+is_a: PO:0000112 ! shoot axis epidermis
+relationship: part_of PO:0009053 ! peduncle
+created_by: Ramona
+creation_date: 2010-11-15T02:08:11Z
+
+[Term]
+id: PO:0025153
+name: peduncle trichome
+namespace: plant_structure
+def: "A shoot axis trichome that is part of a peduncle." [POC:rw]
+subset: Musa
+synonym: "peduncle hair" EXACT []
+is_a: PO:0005003 ! shoot axis trichome
+created_by: Ramona
+creation_date: 2010-11-15T02:14:05Z
+
+[Term]
+id: PO:0025154
+name: bract apex
+namespace: plant_structure
+def: "A phyllome apex that is part of a bract." [POC:rw]
+comment: It is not precisely defined how far toward the base from the tip a bract apex extends. For the apical most portion of a bract, use the term bract tip.
+subset: Musa
+is_a: PO:0025139 ! phyllome apex
+relationship: part_of PO:0009055 ! bract
+created_by: Ramona
+creation_date: 2010-11-15T02:21:05Z
+
+[Term]
+id: PO:0025155
+name: bract base
+namespace: plant_structure
+def: "A phyllome base that is part of a bract." [POC:rw]
+subset: Musa
+is_a: PO:0025140 ! phyllome base
+relationship: part_of PO:0009055 ! bract
+created_by: Ramona
+creation_date: 2010-11-15T02:22:45Z
+
+[Term]
+id: PO:0025156
+name: bract tip
+namespace: plant_structure
+def: "A phyllome tip that is part of a bract apex." [POC:rw]
+comment: This term is to be used for only the apical most portion of a bract. For a larger area, use the term bract apex. Use this term when describing the shape of a bract tip.
+is_a: PO:0025141 ! phyllome tip
+created_by: Ramona
+creation_date: 2010-11-15T02:23:56Z
+
+[Term]
+id: PO:0025157
+name: phyllome epidermis
+namespace: plant_structure
+def: "A portion of shoot epidermis that is part of a phyllome." [POC:curators]
+is_a: PO:0006035 ! shoot epidermis
+created_by: Ramona
+creation_date: 2010-11-15T02:32:53Z
+
+[Term]
+id: PO:0025158
+name: bract epidermis
+namespace: plant_structure
+def: "A leaf epidermis that is part of a bract." [POC:rw]
+is_a: PO:0006016 ! leaf epidermis
+relationship: part_of PO:0009055 ! bract
+created_by: Ramona
+creation_date: 2010-11-15T02:34:14Z
+
+[Term]
+id: PO:0025159
+name: bract abaxial epidermis
+namespace: plant_structure
+def: "A bract epidermis that covers the abaxial/lower surface of a bract." [POC:rw]
+subset: Musa
+synonym: "bract external face" EXACT [CGP:curators]
+is_a: PO:0025158 ! bract epidermis
+created_by: Ramona
+creation_date: 2010-11-15T02:35:37Z
+
+[Term]
+id: PO:0025160
+name: bract adaxial epidermis
+namespace: plant_structure
+def: "A bract epidermis that covers the adaxial/upper surface of a bract." [POC:rw]
+subset: Musa
+synonym: "bract internal face" EXACT [CGP:curators]
+is_a: PO:0025158 ! bract epidermis
+created_by: Ramona
+creation_date: 2010-11-15T02:35:37Z
 
 [Term]
 id: PO:0028001
