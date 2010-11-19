@@ -1,5 +1,6 @@
 format-version: 1.2
-date: 15:11:2010 14:45
+date: 18:11:2010 20:18
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -190,7 +191,7 @@ id: PO:0000022
 name: cuticle
 namespace: plant_structure
 def: "A layer of fatty material, cutin, rather impervious to water, located on the outer walls of epidermal cells." [ISBN:0471245208]
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025161 ! portion of plant substance
 
 [Term]
 id: PO:0000023
@@ -246,7 +247,7 @@ id: PO:0000029
 name: root hair tip
 namespace: plant_structure
 def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
-relationship: part_of PO:0000256 ! root hair
+relationship: part_of PO:0000256 ! root hair cell
 
 [Term]
 id: PO:0000030
@@ -307,7 +308,6 @@ namespace: plant_structure
 def: "Vascular system of the leaf." [TAIR:ki]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0009025 ! vascular leaf
-relationship: part_of PO:0020138 ! leaf vein
 
 [Term]
 id: PO:0000037
@@ -670,7 +670,7 @@ def: "Cell that surrounds a trichome and provides its support." [ISBN:0471245208
 synonym: "cell located at the base of the trichome" RELATED []
 synonym: "trichome support cell" RELATED []
 xref: CL:0000297
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
 [Term]
@@ -834,13 +834,12 @@ relationship: part_of PO:0005708 ! cortex
 
 [Term]
 id: PO:0000256
-name: root hair
+name: root hair cell
 namespace: plant_structure
 def: "A root epidermal cell with a simple extension that is concerned with absorption of soil solution." [ISBN:0471245208]
 subset: TraitNet
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000262 ! trichoblast
-relationship: part_of PO:0006036 ! root epidermis
 
 [Term]
 id: PO:0000258
@@ -861,7 +860,7 @@ namespace: plant_structure
 def: "The smaller cell produced by the asymmetric division of a root epidermal cell that gives rise to a root hair." [ISBN:0471245208]
 synonym: "hair cell" RELATED []
 xref: CL:0000299
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0006036 ! root epidermis
 
@@ -907,11 +906,14 @@ relationship: part_of PO:0005848 ! secondary xylem
 id: PO:0000282
 name: trichome
 namespace: plant_structure
-def: "An outgrowth from the epidermis varying in size and complexity and including hairs, scales, and other structures; may be glandular." [ISBN:0471245208, TAIR:ki]
-comment: In Arabidopsis, patterning of trichome development is not random but does not appear to be lineage-based like stomata.
+alt_id: PO:0004510
+def: "A unicellular or multicellular plant structure that forms a non-sclerified outgrowth from the epidermis." [POC:curators]
+comment: This class is the union of unicellular trichome [narrow synonym of trichome cell (PO:0008030)] and multicellular trichome (PO:0025162).
 subset: TraitNet
+synonym: "non-secretory trichome" EXACT []
 xref: CL:0000282
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025096 ! mature plant structure
+relationship: part_of PO:0005679 ! epidermis
 
 [Term]
 id: PO:0000283
@@ -929,7 +931,7 @@ alt_id: PO:0000296
 def: "An epidermal cell associated with a stoma and at least morphologically distinguishable from the other epidermal cells." [ISBN:047124520]
 synonym: "accessory cell" RELATED []
 xref: CL:0000270
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025165 ! shoot epidermal cell
 relationship: part_of PO:0002000 ! stomatal complex
 
 [Term]
@@ -968,7 +970,7 @@ def: "One of a pair of cells flanking the stomatal pore." [ISBN:0471245208]
 comment: They cause the opening and closing of the pore by changes in turgor.
 subset: TraitNet
 xref: CL:0000292
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000351 ! guard mother cell
 relationship: part_of PO:0002000 ! stomatal complex
 
@@ -1006,7 +1008,7 @@ name: pavement cell
 namespace: plant_structure
 def: "Epidermal cell with characteristic sinuous anticlinal cell walls that overall give a jigsaw like appearance to the leaf epidermis." [ISBN:087694289]
 xref: CL:0000400
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
 relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
@@ -1027,7 +1029,7 @@ name: guard mother cell
 namespace: plant_structure
 def: "Epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
 xref: CL:0000262
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000070 ! meristemoid
 relationship: develops_from PO:0000349 ! epidermal initial
 
@@ -1687,8 +1689,12 @@ id: PO:0002001
 name: papillae
 namespace: plant_structure
 def: "A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
+comment: This terms was made obsolete because it is a sub-cellular compartment. Papilla, leaf papilla and stigma papilla have been requested in GO. To annotate to a cell that has a papilla, consider papilla cell (PO:0025166), leaf papilla cell (PO:0025167), or stigma papilla cell (PO:0025168).
 subset: reference
-relationship: part_of PO:0006061 ! stigma epidermis
+is_obsolete: true
+consider: PO:0025166
+consider: PO:0025167
+consider: PO:0025168
 
 [Term]
 id: PO:0002002
@@ -1871,7 +1877,7 @@ namespace: plant_structure
 def: "An enlarged more or less thin-walled epidermal cell present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
 comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves.
 synonym: "motor cell" RELATED []
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025165 ! shoot epidermal cell
 relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
@@ -2045,30 +2051,22 @@ is_a: PO:0007631 ! embryo development stages
 
 [Term]
 id: PO:0004509
-name: secretory trichome
+name: glandular trichome
 namespace: plant_structure
 def: "A  trichome that secretes or sequesters a substance." [POC:curators]
+synonym: "secretory trichome" EXACT []
 xref: OBO_SF_PO:2916424
-is_a: PO:0000282 ! trichome
-is_a: PO:0005656 ! portion of secretory tissue
-
-[Term]
-id: PO:0004510
-name: non-secretory trichome
-namespace: plant_structure
-def: "Trichome that does not have secretory function." [POC:curators]
 is_a: PO:0000282 ! trichome
 
 [Term]
 id: PO:0004511
-name: seed hair
+name: seed trichome
 namespace: plant_structure
-def: "Trichome that develops from seed coat epidermis and is often long with putative dispersal function." [POC:curators]
+def: "A trichome that develops from seed coat epidermis and is often long with putative dispersal function." [POC:curators]
 subset: TraitNet
-synonym: "seed trichome" RELATED []
+synonym: "seed hair" EXACT []
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0006048 ! seed coat epidermis
-relationship: part_of PO:0020061 ! coma
 
 [Term]
 id: PO:0004512
@@ -8599,8 +8597,12 @@ is_a: PO:0000051 ! petiole epidermis
 id: PO:0008030
 name: trichome cell
 namespace: plant_structure
-def: "A cell that is part of a trichome." [GR:cwt]
+def: "A cell that is part of a trichome." [POC:curators]
+comment: A branch of a unicellular trichome is a GO sub-cellular component.
+synonym: "non-glandular unicellular trichome" NARROW []
+synonym: "non-secretory unicellular trichome" NARROW []
 is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0004013 ! epidermal cell
 relationship: part_of PO:0000282 ! trichome
 
 [Term]
@@ -8608,7 +8610,9 @@ id: PO:0008031
 name: trichome branch
 namespace: plant_structure
 def: "The branch on a trichome." [GR:cwt]
-relationship: part_of PO:0000282 ! trichome
+comment: This term was made obsolete because it is a sub-cellular component. New term has been requested in GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
+is_obsolete: true
+consider: PO:0025163
 
 [Term]
 id: PO:0008032
@@ -10335,8 +10339,7 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0020041
 name: stipule
 namespace: plant_structure
-def: "One of (usually) a pair of appendages at the bases of leaves in many broad-leaved angiosperms." [APWeb:Glossary]
-comment: The term not used for monocot leaves.
+def: "A phyllome that is one of (usually) a pair of appendages at a leaf base." [POC:curators]
 subset: TraitNet
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009025 ! vascular leaf
@@ -10508,10 +10511,11 @@ is_a: PO:0019022 ! arilloid
 id: PO:0020061
 name: coma
 namespace: plant_structure
-def: "A tuft of hairs at one end of a seed." [APWeb:Glossary]
+def: "A portion of seed coat epidermis that consists of multiple seed trichomes at the micropyle." [POC:curators]
 subset: TraitNet
-synonym: "brush" RELATED []
-relationship: part_of PO:0009010 ! seed
+synonym: "brush" EXACT []
+is_a: PO:0006048 ! seed coat epidermis
+relationship: has_part PO:0004511 ! seed trichome
 
 [Term]
 id: PO:0020062
@@ -10935,7 +10939,7 @@ namespace: plant_structure
 def: "A strand of vascular tissue in the leaf blade." [APWeb:Glossary]
 subset: TraitNet
 is_a: PO:0009015 ! portion of vascular tissue
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0000036 ! leaf vascular system
 
 [Term]
 id: PO:0020139
@@ -12718,6 +12722,151 @@ synonym: "bract internal face" EXACT [CGP:curators]
 is_a: PO:0025158 ! bract epidermis
 created_by: Ramona
 creation_date: 2010-11-15T02:35:37Z
+
+[Term]
+id: PO:0025161
+name: portion of plant substance
+namespace: plant_structure
+def: "A portion of organism substance that is or was part of a plant." [CARO:0000004 "portion of organism substance", POC:rw]
+comment: Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin.
+is_a: PO:0025131 ! plant anatomical entity
+created_by: Ramona
+creation_date: 2010-11-18T07:32:44Z
+
+[Term]
+id: PO:0025162
+name: multicellular trichome
+namespace: plant_structure
+def: "A portion of plant tissue that forms a non-sclerified outgrowth from the epidermis." [POC:curators]
+comment: Can vary in size and complexity. May contain a secretory gland.
+synonym: "non-glandular multicelluar trichome" NARROW []
+synonym: "non-secretory multicellular trichome" NARROW []
+is_a: PO:0000282 ! trichome
+is_a: PO:0009007 ! portion of plant tissue
+relationship: develops_from PO:0004013 ! epidermal cell
+created_by: Ramona
+creation_date: 2010-11-18T07:46:34Z
+
+[Term]
+id: PO:0025163
+name: multicellular trichome branch cell
+namespace: plant_structure
+def: "A trichome cell that forms a branch of a multicellular trichome." [POC:curators]
+comment: For branches of a unicellular trichome, see unicellular trichome branch in GO (new GO term has been requested).
+is_a: PO:0008030 ! trichome cell
+relationship: part_of PO:0025162 ! multicellular trichome
+created_by: Ramona
+creation_date: 2010-11-18T08:01:29Z
+
+[Term]
+id: PO:0025164
+name: root epidermal cell
+namespace: plant_structure
+def: "An epidermal cell that is part of a root epidermis." [POC:curators]
+is_a: PO:0004013 ! epidermal cell
+relationship: part_of PO:0006036 ! root epidermis
+created_by: Ramona
+creation_date: 2010-11-18T10:29:44Z
+
+[Term]
+id: PO:0025165
+name: shoot epidermal cell
+namespace: plant_structure
+def: "An epidermal cell that is part of a shoot epidermis." [POC:curators]
+is_a: PO:0004013 ! epidermal cell
+relationship: part_of PO:0006035 ! shoot epidermis
+created_by: Ramona
+creation_date: 2010-11-18T10:29:44Z
+
+[Term]
+id: PO:0025166
+name: papilla cell
+namespace: plant_structure
+def: "A shoot epidermal cell with a short protuberance." [POC:curators]
+comment: See GO for the subcellular component papilla.
+is_a: PO:0025165 ! shoot epidermal cell
+created_by: Ramona
+creation_date: 2010-11-18T05:25:37Z
+
+[Term]
+id: PO:0025167
+name: leaf papilla cell
+namespace: plant_structure
+def: "A papilla cell that is part of a leaf epidermis." [POC:curators]
+comment: See GO for the subcellular component leaf papilla.
+is_a: PO:0025166 ! papilla cell
+relationship: part_of PO:0006016 ! leaf epidermis
+created_by: Ramona
+creation_date: 2010-11-18T05:37:23Z
+
+[Term]
+id: PO:0025168
+name: stigma papilla cell
+namespace: plant_structure
+def: "A papilla cell that is part of a stigma epidermis." [POC:curators]
+comment: See GO for the subcellular component stigma papilla.
+is_a: PO:0025166 ! papilla cell
+relationship: part_of PO:0006061 ! stigma epidermis
+created_by: Ramona
+creation_date: 2010-11-18T05:37:23Z
+
+[Term]
+id: PO:0025169
+name: prickle
+namespace: plant_structure
+def: "A portion of epidermis that is a sclerified outgrowth." [POC:curators]
+comment: Often found on stems and leaves.
+is_a: PO:0005679 ! epidermis
+created_by: Ramona
+creation_date: 2010-11-18T07:47:30Z
+
+[Term]
+id: PO:0025170
+name: root prickle
+namespace: plant_structure
+def: "A prickle that is part of a root epidermis." [POC:curators]
+is_a: PO:0025169 ! prickle
+relationship: part_of PO:0006036 ! root epidermis
+created_by: Ramona
+creation_date: 2010-11-18T07:47:30Z
+
+[Term]
+id: PO:0025171
+name: shoot axis prickle
+namespace: plant_structure
+is_a: PO:0025169 ! prickle
+created_by: Ramona
+creation_date: 2010-11-18T07:47:30Z
+
+[Term]
+id: PO:0025172
+name: thorn
+namespace: plant_structure
+def: "A branch that is a sclerified, pointed outgrowth." [POC:curators]
+comment: A thorn is a short, pointed (PATO:0002258) woody structure, may be branched.
+is_a: PO:0025073 ! branch
+created_by: Ramona
+creation_date: 2010-11-18T08:07:48Z
+
+[Term]
+id: PO:0025173
+name: leaf spine
+namespace: plant_structure
+def: "A leaf that is a sclerified and pointed and lacks a lamina." [PATO:0002258 "pointed", POC:curators]
+comment: See also stipule spine (PO:0025174).
+is_a: PO:0009025 ! vascular leaf
+created_by: Ramona
+creation_date: 2010-11-18T08:10:24Z
+
+[Term]
+id: PO:0025174
+name: stipule spine
+namespace: plant_structure
+def: "A stipule that is sclerified and pointed." [PATO:0002258 "pointed", POC:curators]
+comment: See also leaf spine (PO:0025173).
+is_a: PO:0020041 ! stipule
+created_by: Ramona
+creation_date: 2010-11-18T08:14:18Z
 
 [Term]
 id: PO:0028001
