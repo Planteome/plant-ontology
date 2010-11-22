@@ -1,7 +1,6 @@
 format-version: 1.2
-date: 19:11:2010 12:00
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta1
+date: 22:11:2010 14:31
+auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
 subsetdef: Maize "Term used for maize"
@@ -240,14 +239,18 @@ id: PO:0000028
 name: pollen tube tip
 namespace: plant_structure
 def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
-relationship: part_of PO:0006345 ! pollen tube
+comment: This term was made obsolete because it is a subcellular component. Will request pollen tube tip in GO.
+is_obsolete: true
+consider: PO:0006345
 
 [Term]
 id: PO:0000029
 name: root hair tip
 namespace: plant_structure
 def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
-relationship: part_of PO:0000256 ! root hair cell
+comment: This term was made obsolete because it is a subcellular component. Root hair tip has been requested in GO.
+is_obsolete: true
+consider: PO:0000256
 
 [Term]
 id: PO:0000030
@@ -2606,7 +2609,7 @@ is_a: PO:0006343 ! axillary shoot system
 id: PO:0005003
 name: shoot axis trichome
 namespace: plant_structure
-def: "A trichome that is part of a shoot axis." [PMID:17217456, POC:curators]
+def: "A trichome that is part of a shoot axis epidermis." [PMID:17217456, POC:curators]
 comment: Can occur on a stem or branch.
 subset: TraitNet
 synonym: "branch trichome" NARROW []
@@ -8602,6 +8605,8 @@ def: "A plant cell that is part of a trichome." [POC:curators]
 comment: A branch of a unicellular trichome is a GO sub-cellular component.
 synonym: "non-glandular unicellular trichome" NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
+synonym: "simple trichome" NARROW [PMID:19939948]
+synonym: "unicellular trichome" NARROW []
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0004013 ! epidermal cell
 relationship: part_of PO:0000282 ! trichome
@@ -12633,8 +12638,8 @@ creation_date: 2010-11-15T01:49:37Z
 id: PO:0025152
 name: peduncle epidermis
 namespace: plant_structure
-def: "A portion of shoot axis epidermis that is part of a peduncle." [CGP:curators, POC:curators]
-is_a: PO:0000112 ! shoot axis epidermis
+def: "A portion of branch epidermis that is part of a peduncle." [CGP:curators, POC:curators]
+is_a: PO:0025179 ! branch epidermis
 relationship: part_of PO:0009053 ! peduncle
 created_by: Ramona
 creation_date: 2010-11-15T02:08:11Z
@@ -12643,10 +12648,11 @@ creation_date: 2010-11-15T02:08:11Z
 id: PO:0025153
 name: peduncle trichome
 namespace: plant_structure
-def: "A shoot axis trichome that is part of a peduncle." [POC:rw]
+def: "A shoot axis trichome that is part of a peduncle epidermis." [POC:rw]
 subset: Musa
 synonym: "peduncle hair" EXACT []
 is_a: PO:0005003 ! shoot axis trichome
+relationship: part_of PO:0025152 ! peduncle epidermis
 created_by: Ramona
 creation_date: 2010-11-15T02:14:05Z
 
@@ -12835,7 +12841,9 @@ creation_date: 2010-11-18T07:47:30Z
 id: PO:0025171
 name: shoot axis prickle
 namespace: plant_structure
+def: "A prickle that is part of a shoot axis epidermis." [POC:curators]
 is_a: PO:0025169 ! prickle
+relationship: part_of PO:0000112 ! shoot axis epidermis
 created_by: Ramona
 creation_date: 2010-11-18T07:47:30Z
 
@@ -12868,6 +12876,58 @@ comment: See also leaf spine (PO:0025173).
 is_a: PO:0020041 ! stipule
 created_by: Ramona
 creation_date: 2010-11-18T08:14:18Z
+
+[Term]
+id: PO:0025175
+name: leaf prickle
+namespace: plant_structure
+def: "A prickle that is part of a leaf epidermis." [POC:curators]
+is_a: PO:0025169 ! prickle
+relationship: part_of PO:0006016 ! leaf epidermis
+created_by: Ramona
+creation_date: 2010-11-22T09:35:01Z
+
+[Term]
+id: PO:0025176
+name: stem trichome
+namespace: plant_structure
+def: "A shoot axis trichome that is part of a stem epidermis." [POC:rw]
+synonym: "stem hair" EXACT []
+is_a: PO:0005003 ! shoot axis trichome
+relationship: part_of PO:0025178 ! stem epidermis
+created_by: Ramona
+creation_date: 2010-11-22T09:54:46Z
+
+[Term]
+id: PO:0025177
+name: branch trichome
+namespace: plant_structure
+def: "A shoot axis trichome that is part of a branch epidermis." [POC:rw]
+synonym: "branch hair" EXACT []
+is_a: PO:0005003 ! shoot axis trichome
+relationship: part_of PO:0025179 ! branch epidermis
+created_by: Ramona
+creation_date: 2010-11-22T09:54:46Z
+
+[Term]
+id: PO:0025178
+name: stem epidermis
+namespace: plant_structure
+def: "A portion of shoot axis epidermis that is part of a stem." [POC:rw]
+is_a: PO:0000112 ! shoot axis epidermis
+relationship: part_of PO:0009047 ! stem
+created_by: Ramona
+creation_date: 2010-11-22T09:56:21Z
+
+[Term]
+id: PO:0025179
+name: branch epidermis
+namespace: plant_structure
+def: "A portion of shoot axis epidermis that is part of a branch." [POC:rw]
+is_a: PO:0000112 ! shoot axis epidermis
+relationship: part_of PO:0025073 ! branch
+created_by: Ramona
+creation_date: 2010-11-22T09:58:06Z
 
 [Term]
 id: PO:0028001
