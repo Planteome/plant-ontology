@@ -1,6 +1,7 @@
 format-version: 1.2
-date: 22:11:2010 14:31
-auto-generated-by: OBO-Edit 2.1-beta6
+date: 02:12:2010 09:54
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-beta1
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
 subsetdef: Maize "Term used for maize"
@@ -9400,12 +9401,12 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009055
 name: bract
 namespace: plant_structure
-def: "A leaf, usually different from foliage leaves, subtending a reproductive structure." [POC:curators]
+def: "A phyllome, usually different in form from the foliage leaves, subtending a reproductive structure." [POC:curators]
 comment: Often used to refer to what is called here floral bract.
 subset: reference
 subset: TraitNet
 synonym: "hypsophyll" RELATED []
-is_a: PO:0025034 ! leaf
+is_a: PO:0006001 ! phyllome
 
 [Term]
 id: PO:0009056
@@ -11412,7 +11413,7 @@ creation_date: 2010-05-12T04:49:59Z
 id: PO:0025034
 name: leaf
 namespace: plant_structure
-def: "A phyllome that is not part of a flower." [POC:curators]
+def: "A phyllome that is not associated with a reproductive structure." [POC:curators]
 subset: TraitNet
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0000017 ! leaf primordium
