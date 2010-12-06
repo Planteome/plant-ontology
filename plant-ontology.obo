@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:12:2010 10:52
+date: 06:12:2010 13:48
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -5790,9 +5790,9 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0006504
 name: leaf trichome
 namespace: plant_structure
-def: "Trichome on/from the epidermis of a leaf." [GR:pj]
+def: "A phyllome trichome that is part of a leaf epidermis." [POC:rw]
 subset: TraitNet
-is_a: PO:0000282 ! trichome
+is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
 relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
@@ -12708,6 +12708,7 @@ name: phyllome epidermis
 namespace: plant_structure
 def: "A portion of shoot epidermis that is part of a phyllome." [POC:curators]
 is_a: PO:0006035 ! shoot epidermis
+relationship: part_of PO:0006001 ! phyllome
 created_by: Ramona
 creation_date: 2010-11-15T02:32:53Z
 
@@ -12962,6 +12963,53 @@ is_a: PO:0025180 ! plant axis elongation zone
 relationship: part_of PO:0000025 ! root tip
 created_by: Ramona
 creation_date: 2010-12-03T08:54:52Z
+
+[Term]
+id: PO:0025182
+name: sepal trichome
+namespace: plant_structure
+def: "A phyllome trichome that is part of a sepal epidermis." [POC:rw]
+is_a: PO:0025186 ! phyllome trichome
+relationship: part_of PO:0006040 ! sepal epidermis
+created_by: Ramona
+creation_date: 2010-12-06T01:11:21Z
+
+[Term]
+id: PO:0025184
+name: tepal epidermis
+namespace: plant_structure
+def: "A portion of phyllome epidermis that is part of a tepal." [POC:rw]
+is_a: PO:0025157 ! phyllome epidermis
+created_by: Ramona
+creation_date: 2010-12-06T01:15:36Z
+
+[Term]
+id: PO:0025186
+name: phyllome trichome
+namespace: plant_structure
+def: "A trichome that is part of a phyllome epidermis." [POC:rw]
+is_a: PO:0000282 ! trichome
+created_by: Ramona
+creation_date: 2010-12-06T01:17:31Z
+
+[Term]
+id: PO:0025187
+name: petal trichome
+namespace: plant_structure
+def: "A phyllome trichome that is part of a petal epidermis." [POC:rw]
+is_a: PO:0025186 ! phyllome trichome
+relationship: part_of PO:0006041 ! petal epidermis
+created_by: Ramona
+creation_date: 2010-12-06T01:18:53Z
+
+[Term]
+id: PO:0025188
+name: tepal trichome
+namespace: plant_structure
+is_a: PO:0025186 ! phyllome trichome
+relationship: part_of PO:0025184 ! tepal epidermis
+created_by: Ramona
+creation_date: 2010-12-06T01:18:53Z
 
 [Term]
 id: PO:0028001
