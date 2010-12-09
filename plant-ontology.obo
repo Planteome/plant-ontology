@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:12:2010 13:48
+date: 09:12:2010 17:10
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -17,8 +17,9 @@ default-namespace: plant_ontology
 id: PO:0000001
 name: embryo proper
 namespace: plant_structure
-def: "The body of the developing embryo attached to the maternal tissue in the ovule by filamentous suspensor." [TAIR:ki]
-relationship: part_of PO:0009009 ! embryo
+def: "An embryonic plant structure that is the body of a developing embryo attached to the maternal tissue in an ovule by a suspensor." [POC:rw]
+comment: The entire embryo proper is the embryo exclusive of the suspensor.
+is_a: PO:0025099 ! embryonic plant structure
 
 [Term]
 id: PO:0000002
@@ -26,8 +27,8 @@ name: anther wall
 namespace: plant_structure
 def: "A multicellular layer with outer epidermis and an inner endothecium." [GR:pj]
 subset: reference
-is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0009070 ! microsporangium
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009070 ! pollen sac
 
 [Term]
 id: PO:0000003
@@ -241,7 +242,7 @@ namespace: plant_structure
 def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
 comment: This term was made obsolete because it is a subcellular component. Will request pollen tube tip in GO.
 is_obsolete: true
-consider: PO:0006345
+consider: PO:0025195
 
 [Term]
 id: PO:0000029
@@ -273,16 +274,19 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0000032
 name: tetrad of microspores
 namespace: plant_structure
-def: "A group of four haploid cells that remained joined together shortly after meiosis. Each cell will give rise to the male gametophyte." [TAIR:ki]
+def: "A portion of plant tissue consisting of four haploid cells that remained joined together shortly after meiosis. Each cell will give rise to a male gametophyte." [POC:rw]
 subset: reference
+is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020047 ! microsporocyte
 
 [Term]
 id: PO:0000033
-name: valve
+name: fruit valve
 namespace: plant_structure
-def: "Portion of an organ that is fragmented; in capsule, the portions into which the pericarp splits at maturity." [APWeb:Glossary]
+def: "A cardinal organ part that is a part of a fruit that splits apart when the fruit dehisces." [POC:rw]
+comment: A valve may develop from an entire carpel (as in Brassicaceae) or from part of a carpel (as in Fabaceae).
 subset: Arabidopsis
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -1677,15 +1681,13 @@ is_a: PO:0001044 ! sepal differentiation and expansion stage
 id: PO:0002000
 name: stomatal complex
 namespace: plant_structure
-def: "An opening pore on the epidermis of leaves and stems bordered by two guard cells and serving in gas exchange." [ISBN:0471245208]
+def: "A portion of shoot epidermis that has as parts two guard cells and a stomatal pore. May also contain subsidiary cells." [ISBN:0471245208]
 subset: TraitNet
-synonym: "stoma" RELATED []
-synonym: "stomata" RELATED []
-relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
-relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
-relationship: part_of PO:0000051 ! petiole epidermis
-relationship: part_of PO:0006018 ! leaf adaxial epidermis
-relationship: part_of PO:0006019 ! leaf abaxial epidermis
+synonym: "stoma" BROAD []
+synonym: "stomata" BROAD []
+is_a: PO:0006035 ! shoot epidermis
+relationship: has_part PO:0000293 ! guard cell
+relationship: has_part PO:0008032 ! stomatal pore
 
 [Term]
 id: PO:0002001
@@ -1850,8 +1852,11 @@ relationship: part_of PO:0003017 ! root cap of primary root
 id: PO:0003023
 name: root nodule
 namespace: plant_structure
-def: "Enlargement or swelling on the roots of plants, particularly in the Fabaceae, inhabited by nitrogen-fixing bacteria." [ISBN:0471245208]
+def: "A cardinal organ part that is an outgrowth of a root and is inhabited by nitrogen-fixing bacteria." [POC:rw]
+comment: Root nodules are a symbiosis between a plant (often, but not exclusively, of the Fabaceae) and bacteria of the genus Rhizobium, Bradyrhizobium, or Azorhizobium.
 subset: TraitNet
+is_a: PO:0025001 ! cardinal organ part
+relationship: develops_from PO:0025194 ! root nodule meristem
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -2278,7 +2283,7 @@ is_a: PO:0009009 ! embryo
 id: PO:0004538
 name: indeterminate nodule
 namespace: plant_structure
-def: "Nodule characterized by a persistent meristem, presence of vascular transfer cells, and cell division in the inner cortex with non-dividing infected cells and bacteria." [ISBN:1842460137, POC:curators]
+def: "A root nodule characterized by a persistent meristem, presence of vascular transfer cells, and cell division in the inner cortex with non-dividing infected cells and bacteria." [ISBN:1842460137, POC:curators]
 comment: Nodule is persistent and may continue to grow after a physiological stress.
 is_a: PO:0003023 ! root nodule
 
@@ -2286,7 +2291,7 @@ is_a: PO:0003023 ! root nodule
 id: PO:0004539
 name: determinate nodule
 namespace: plant_structure
-def: "Nodule characterized by a dividing infected cells and bacteria, vascular transfer cells absent and cell division is in the outer cortex." [POC:curators]
+def: "A root nodule characterized by a dividing infected cells and bacteria, vascular transfer cells absent and cell division is in the outer cortex." [POC:curators]
 comment: Nodules are not persistent.
 is_a: PO:0003023 ! root nodule
 
@@ -2294,8 +2299,9 @@ is_a: PO:0003023 ! root nodule
 id: PO:0004540
 name: fruit columella
 namespace: plant_structure
-def: "Central axis of the fruit." [POC:curators]
+def: "A portion of plant tissue that forms the central axis of a fruit." [POC:curators]
 subset: Tomato
+is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -2566,8 +2572,9 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0004724
 name: hypocotyl-root junction
 namespace: plant_structure
-def: "Junction point of the embryonic root and hypocotyl." [TAIR:ki]
+def: "An embryonic plant structure that is the part of an embryonic axis where the radicle joins the hypocotyl." [POC:rw]
 subset: reference
+is_a: PO:0025099 ! embryonic plant structure
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
@@ -3281,12 +3288,13 @@ is_a: PO:0005352 ! xylem
 
 [Term]
 id: PO:0006000
-name: hull (sensu Poaceae)
+name: Poaceae hull
 namespace: plant_structure
-def: "A leaf like structure often found enclosing the grass fruit, caryopsis. It is derived from the dried lemma (PO:0009037) and palea (PO:0009038) floral bracts found in the grass floret (PO:0006318)." [GR:pj]
+def: "A collective phyllome structure that encloses a fruit of the Poaceae (caryopsis) that develops from the dried lemma and palea." [POC:rw]
 subset: Maize
 subset: Poaceae
 subset: Rice
+is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0009037 ! lemma
 relationship: develops_from PO:0009038 ! palea
 relationship: part_of PO:0006342 ! infructescence
@@ -4552,9 +4560,11 @@ id: PO:0006345
 name: pollen tube
 namespace: plant_structure
 def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
+comment: This term was made obsolete because it is a subcellular component. Will request pollen tube in GO.
 subset: reference
 subset: TraitNet
-relationship: part_of PO:0020091 ! microgametophyte
+is_obsolete: true
+consider: PO:0025195
 
 [Term]
 id: PO:0006346
@@ -5306,7 +5316,7 @@ id: PO:0006444
 name: microsporangium (sensu Poaceae)
 namespace: plant_structure
 def: "Sporangium in the anther of a grass stamen producing microspores, usually many in number." [GR:pj]
-is_a: PO:0009070 ! microsporangium
+is_a: PO:0009070 ! pollen sac
 relationship: part_of PO:0006442 ! anther (sensu Poaceae)
 
 [Term]
@@ -8629,6 +8639,8 @@ namespace: plant_structure
 def: "A plant anatomical space that forms an opening in an epidermis, flanked by two guard cells." [POC:curators]
 comment: The size of the stomatal pore is variable and controlled by movement of the guard cells in response to environmental cues.
 subset: TraitNet
+synonym: "stoma" BROAD []
+synonym: "stomata" BROAD []
 synonym: "stomatal aperture" RELATED []
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0002000 ! stomatal complex
@@ -8907,7 +8919,7 @@ id: PO:0009008
 name: plant organ
 namespace: plant_structure
 def: "A plant structure that is a functional unit, is a proper part of a plant, and includes portions of tissues of at least two different types that derive from a common developmental path." [POC:curators]
-comment: Examples: stem, leaf, root. May include individual cell types that are not part of tissues (e.g.:  idioblasts).
+comment: Examples: stem, leaf, root. May include individual cell types that are not part of tissues (e.g.: idioblasts).
 subset: TraitNet
 synonym: "compound plant organ" RELATED []
 synonym: "simple plant organ" RELATED [PATO:01503]
@@ -9011,16 +9023,18 @@ relationship: part_of PO:0009081 ! inflorescence branch
 id: PO:0009018
 name: basal endosperm transfer cell
 namespace: plant_structure
-def: "A transfer cell found in endosperm, responsible for passing through all nutrients entering the seeds by symplastic or apoplastic methods." [GR:cwt]
+def: "A transfer cell that is part of a basal endosperm transfer layer." [POC:rw]
+comment: Responsible for transferring nutrients to a seed by symplastic or apoplastic methods.
 is_a: PO:0000078 ! transfer cell
-relationship: part_of PO:0009089 ! endosperm
+relationship: part_of PO:0025196 ! basal endosperm transfer layer
 
 [Term]
 id: PO:0009019
 name: basal endosperm transfer layer
 namespace: plant_structure
 def: "A cell layer found in basal endosperm transfer cell." [GR:cwt]
-relationship: part_of PO:0009018 ! basal endosperm transfer cell
+comment: This term was made obsolete because the definition was wrong. Replace by new term with same name but corrected definition.
+is_obsolete: true
 
 [Term]
 id: PO:0009020
@@ -9568,17 +9582,17 @@ name: theca
 namespace: plant_structure
 def: "A part of the anther consisting of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
 subset: reference
-is_a: PO:0009070 ! microsporangium
+is_a: PO:0009070 ! pollen sac
 
 [Term]
 id: PO:0009070
-name: microsporangium
+name: pollen sac
 namespace: plant_structure
-def: "A sporangium producing microspores, usually many in number." [APWeb:Glossary]
+def: "A microsporangium in an angiosperm that is a cavity in an anther that contains pollen grains." [ISBN:0716710072]
 subset: reference
 subset: TraitNet
 synonym: "anther lobe" RELATED []
-synonym: "pollen sac" RELATED []
+is_a: PO:0025202 ! microsporangium
 relationship: part_of PO:0009066 ! anther
 
 [Term]
@@ -9792,10 +9806,11 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0009090
 name: aril
 namespace: plant_structure
-def: "A structure associated with and often partly or wholly covering a seed and developed from the funicle or raphe." [APWeb:Glossary]
-comment: Also used more generally to refer to a similar structure derived from any part of the ovule - there has been much and sometimes acrimonious debate over the correct definition of the term, so when used the origin of the aril should generally be given for clarity.
+def: "A cardinal organ part that is a fleshy outgrowth of the funicle or raphe, covering all or most of the seed." [ISBN-13:978-0-88192-850-1]
+comment: A fleshy outgrowth from another part of a seed is an arilloid.
 subset: reference
 subset: TraitNet
+is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
@@ -9946,8 +9961,11 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0019022
 name: arilloid
 namespace: plant_structure
-def: "An outgrowth from parts of the seed other than from the funiculus or raphe." [ISBN:0080280293]
+def: "A cardinal organ part that is a fleshy outgrowth of a seed and does not cover the entire seed and develops from a part of the seed other than a funicle or raphe." [ISBN-13:978-0-88192-850-1]
 subset: TraitNet
+synonym: "caruncle" NARROW [ISBN-13:978-0-88192-850-1 "an arilloid near the micropyle"]
+synonym: "strophiole" NARROW [ISBN-13:978-0-88192-850-1 "an arilloid on the raphe"]
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -10023,8 +10041,9 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0020005
 name: placentoid
 namespace: plant_structure
-def: "An inpushing of the anther wall." [APWeb:Glossary]
+def: "A cardinal organ part that is an inpushing of the anther wall." [POC:rw]
 subset: reference
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -10153,12 +10172,13 @@ relationship: develops_from PO:0000431 ! megasporocyte
 id: PO:0020020
 name: nucellus
 namespace: plant_structure
-def: "A portion of subepidermal tissue in the ovule surrounding the megasporocyte." [APWeb:Glossary]
+def: "A megasporangium in a seed plant, composed of fleshy subepidermal tissue inside an ovule and surrounding a megasporocyte." [POC:rw]
+comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus.
 subset: reference
 subset: TraitNet
 synonym: "megasporangium" RELATED []
 xref: OBO_SF_PO:2903966
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025201 ! megasporangium
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -10406,7 +10426,7 @@ synonym: "pollen mother cell" RELATED []
 xref: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
-relationship: part_of PO:0009070 ! microsporangium
+relationship: part_of PO:0009070 ! pollen sac
 
 [Term]
 id: PO:0020048
@@ -10686,7 +10706,7 @@ is_a: PO:0009002 ! plant cell
 id: PO:0020099
 name: vegetative cell
 namespace: plant_structure
-def: "The larger cell of the male gametophyte of angiosperms that does not divide further." [APWeb:Glossary]
+def: "A plant cell that is the larger cell of a male gametophyte in seed plants. It does not divide further and develops into a pollen tube cell." [POC:rw]
 subset: reference
 xref: CL:0000296
 is_a: PO:0009002 ! plant cell
@@ -10758,9 +10778,9 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020108
 name: suspensor
 namespace: plant_structure
-def: "A nearly always single file of cells at the base of the embryo derived from the basal cell." [GR:pj]
-comment: It anchors the embryo in the embryo sac and pushes it into the endosperm.
-relationship: part_of PO:0009009 ! embryo
+def: "An embryonic plant structure at the base of an embryo that develops from a basal cell and connects an embryo proper to the wall of a megagametophyte." [POC:rw]
+comment: The suspensor often allows the embryo to penetrate deep into the endosperm. Across plant species, suspensors are morphologically diverse and may be single- or multicellular, undifferentiated or highly differentiated, and variously shaped.
+is_a: PO:0025099 ! embryonic plant structure
 
 [Term]
 id: PO:0020109
@@ -10774,9 +10794,10 @@ relationship: part_of PO:0020108 ! suspensor
 id: PO:0020110
 name: scutellum
 namespace: plant_structure
-def: "A more or less shield-shaped and absorptive portion of an embryo of grasses, probably a modified cotyledon." [APWeb:Glossary]
+def: "An embryonic plant structure that is a more or less shield-shaped and absorptive portion of an embryo of Poaceae." [APWeb:Glossary, POC:rw]
+comment: Probably a modified cotyledon.
 synonym: "haustorial cotyledon" RELATED []
-relationship: part_of PO:0009009 ! embryo
+is_a: PO:0025099 ! embryonic plant structure
 
 [Term]
 id: PO:0020121
@@ -10814,12 +10835,13 @@ id: PO:0020124
 name: root stele
 namespace: plant_structure
 alt_id: PO:0003012
-def: "The central column of primary vascular tissue in the root and any tissue that it surrounds." [APWeb:Glossary]
+def: "A stele that is part of a root." [POC:rw]
 comment: Includes the pericycle as the outermost layer of the stele.
 subset: Maize
 subset: reference
 subset: TraitNet
 synonym: "root vascular cylinder" RELATED []
+is_a: PO:0025197 ! stele
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -12113,8 +12135,10 @@ creation_date: 2010-10-27T11:16:33Z
 id: PO:0025094
 name: sporangium
 namespace: plant_structure
+def: "A hollow cardinal organ part in which spores are produced." [ISBN:0716710072]
+comment: May be multicellular or unicellular.
 subset: TraitNet
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0025001 ! cardinal organ part
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
 
@@ -12154,9 +12178,12 @@ creation_date: 2010-11-05T01:36:12Z
 
 [Term]
 id: PO:0025099
-name: embryonic structure
+name: embryonic plant structure
 namespace: plant_structure
+def: "A plant structure that is a proper part of an embryo." [POC:rw]
+comment: Includes organs, tissues and cell types that are unique to embryos. Cell or tissue types that can occur in both embryos and mature plant structures are children of mature plant structure.
 is_a: PO:0025097 ! immature plant structure
+relationship: part_of PO:0009009 ! embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
 
@@ -12975,6 +13002,16 @@ created_by: Ramona
 creation_date: 2010-12-06T01:11:21Z
 
 [Term]
+id: PO:0025183
+name: leaf stomatal complex
+namespace: plant_structure
+def: "A stomatal complex that is part of a leaf epidermis." [POC:rw]
+is_a: PO:0002000 ! stomatal complex
+relationship: part_of PO:0006016 ! leaf epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:47:55Z
+
+[Term]
 id: PO:0025184
 name: tepal epidermis
 namespace: plant_structure
@@ -12982,6 +13019,16 @@ def: "A portion of phyllome epidermis that is part of a tepal." [POC:rw]
 is_a: PO:0025157 ! phyllome epidermis
 created_by: Ramona
 creation_date: 2010-12-06T01:15:36Z
+
+[Term]
+id: PO:0025185
+name: leaf lamina stomatal complex
+namespace: plant_structure
+def: "A leaf stomatal complex that is part of a leaf lamina epidermis." [POC:rw]
+is_a: PO:0025183 ! leaf stomatal complex
+relationship: part_of PO:0000047 ! leaf lamina epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:49:35Z
 
 [Term]
 id: PO:0025186
@@ -13010,6 +13057,146 @@ is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0025184 ! tepal epidermis
 created_by: Ramona
 creation_date: 2010-12-06T01:18:53Z
+
+[Term]
+id: PO:0025189
+name: petiole stomatal complex
+namespace: plant_structure
+def: "A leaf stomatal complex that is part of a petiole epidermis." [POC:rw]
+is_a: PO:0025183 ! leaf stomatal complex
+relationship: part_of PO:0000051 ! petiole epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:49:35Z
+
+[Term]
+id: PO:0025190
+name: leaf lamina abaxial stomatal complex
+namespace: plant_structure
+def: "A leaf lamina stomatal complex that is part of a leaf lamina abaxial epidermis." [POC:rw]
+is_a: PO:0025185 ! leaf lamina stomatal complex
+relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:52:45Z
+
+[Term]
+id: PO:0025191
+name: leaf lamina adaxial stomatal complex
+namespace: plant_structure
+def: "A leaf lamina stomatal complex that is part of a leaf lamina adaxial epidermis." [POC:rw]
+is_a: PO:0025185 ! leaf lamina stomatal complex
+relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:52:45Z
+
+[Term]
+id: PO:0025192
+name: petiole abaxial stomatal complex
+namespace: plant_structure
+def: "A petiole stomatal complex that is part of a petiole abaxial epidermis." [POC:rw]
+is_a: PO:0025189 ! petiole stomatal complex
+relationship: part_of PO:0008029 ! petiole abaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:53:34Z
+
+[Term]
+id: PO:0025193
+name: petiole adaxial stomatal complex
+namespace: plant_structure
+def: "A petiole stomatal complex that is part of a petiole adaxial epidermis." [POC:rw]
+is_a: PO:0025189 ! petiole stomatal complex
+relationship: part_of PO:0008027 ! petiole adaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-09T11:53:34Z
+
+[Term]
+id: PO:0025194
+name: root nodule meristem
+namespace: plant_structure
+def: "A root meristem that gives rise to a root nodule." [POC:rw]
+xref: PMID:1809347
+is_a: PO:0006085 ! root meristem
+created_by: Ramona
+creation_date: 2010-12-09T01:39:55Z
+
+[Term]
+id: PO:0025195
+name: pollen tube cell
+namespace: plant_structure
+def: "A plant cell that develops from a vegetative cell and forms a tubular extension of the pollen grain." [POC:rw]
+comment: Carries the male gametes to into or near the ovule. May be branched in gymnosperms. See GO:xxxxxxx for pollen tube and GO:xxxxxxx for pollen tube tip.
+is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0020099 ! vegetative cell
+created_by: Ramona
+creation_date: 2010-12-09T02:11:17Z
+
+[Term]
+id: PO:0025196
+name: basal endosperm transfer layer
+namespace: plant_structure
+def: "A portion of plant tissue that is part of an endosperm and is composed of basal endosperm transfer cells." [POC:rw]
+comment: Involved in transferring nutrients to a seed.
+is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0009018 ! basal endosperm transfer cell
+relationship: part_of PO:0009089 ! endosperm
+created_by: Ramona
+creation_date: 2010-12-09T02:23:04Z
+
+[Term]
+id: PO:0025197
+name: stele
+namespace: plant_structure
+def: "A cardinal organ part that is the central column of a plant axis that consists of the primary vascular tissue and the ground tissue it surrounds." [POC:rw]
+is_a: PO:0025001 ! cardinal organ part
+created_by: Ramona
+creation_date: 2010-12-09T03:56:19Z
+
+[Term]
+id: PO:0025198
+name: shoot axis stele
+namespace: plant_structure
+def: "A stele that is part of a shoot axis." [POC:rw]
+is_a: PO:0025197 ! stele
+relationship: part_of PO:0025029 ! shoot axis
+created_by: Ramona
+creation_date: 2010-12-09T03:58:34Z
+
+[Term]
+id: PO:0025199
+name: branch stele
+namespace: plant_structure
+def: "A shoot axis stele that is part of a branch." [POC:rw]
+is_a: PO:0025073 ! branch
+is_a: PO:0025198 ! shoot axis stele
+created_by: Ramona
+creation_date: 2010-12-09T03:59:35Z
+
+[Term]
+id: PO:0025200
+name: stem stele
+namespace: plant_structure
+def: "A shoot axis stele that is part of a stem." [POC:rw]
+is_a: PO:0025198 ! shoot axis stele
+relationship: part_of PO:0009047 ! stem
+created_by: Ramona
+creation_date: 2010-12-09T03:59:35Z
+
+[Term]
+id: PO:0025201
+name: megasporangium
+namespace: plant_structure
+def: "A sporangium in which megaspores are produced." [ISBN:0716710072]
+is_a: PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2010-12-09T04:05:41Z
+
+[Term]
+id: PO:0025202
+name: microsporangium
+namespace: plant_structure
+def: "A sporangium in which microspores are produced." [ISBN:0716710072]
+is_a: PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2010-12-09T04:05:41Z
 
 [Term]
 id: PO:0028001
