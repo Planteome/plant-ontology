@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:12:2010 11:18
+date: 17:12:2010 15:05
 auto-generated-by: OBO-Edit 2.1-beta6
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -42,7 +42,7 @@ synonym: "gametophyte" NARROW []
 synonym: "seedling" NARROW []
 synonym: "sporophyte" NARROW []
 xref: OBO_SF_PO:2968335
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0000004
@@ -296,7 +296,7 @@ namespace: plant_structure
 def: "A plant structure that includes the totality of the portions of vascular tissue in their specific arrangement in a whole plant or in a constituent part thereof." [ISBN:0-7167-1007-2, ISBN:0471245208, POC:curators]
 comment: The vascular system may also contain portions of ground tissue.
 subset: TraitNet
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -312,8 +312,8 @@ relationship: part_of PO:0020030 ! cotyledon
 id: PO:0000036
 name: leaf vascular system
 namespace: plant_structure
-def: "Vascular system of the leaf." [TAIR:ki]
-is_a: PO:0000034 ! vascular system
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf." [POC:rw]
+is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
@@ -336,12 +336,13 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000039
 name: shoot axis vascular system
 namespace: plant_structure
-def: "A vascular system that is part of a shoot axis." [POC:curators]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a a shoot axis." [POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch vascular system" NARROW []
 synonym: "stem vascular system" NARROW []
 is_a: PO:0000034 ! vascular system
-relationship: part_of PO:0025029 ! shoot axis
+relationship: part_of PO:0025198 ! shoot axis stele
+relationship: part_of PO:0025205 ! shoot system vascular system
 
 [Term]
 id: PO:0000040
@@ -419,7 +420,7 @@ is_a: PO:0003005 ! nodal root
 id: PO:0000047
 name: leaf lamina epidermis
 namespace: plant_structure
-def: "A portion of leaf epidermis that covers the leaf lamina." [POC:curators]
+def: "A portion of leaf epidermis that is part of a leaf lamina." [POC:curators]
 is_a: PO:0006016 ! leaf epidermis
 relationship: part_of PO:0020039 ! leaf lamina
 
@@ -427,7 +428,7 @@ relationship: part_of PO:0020039 ! leaf lamina
 id: PO:0000048
 name: leaf lamina vascular system
 namespace: plant_structure
-def: "Vascular system of the leaf lamina." [TAIR:ki]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf lamina." [POC:rw]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0000036 ! leaf vascular system
 relationship: part_of PO:0020039 ! leaf lamina
@@ -438,6 +439,7 @@ name: leaf lamina abaxial epidermis
 namespace: plant_structure
 def: "A portion of leaf lamina epidermis that covers the abaxial/lower surface of a leaf lamina." [POC:rw]
 is_a: PO:0000047 ! leaf lamina epidermis
+is_a: PO:0006019 ! leaf abaxial epidermis
 
 [Term]
 id: PO:0000050
@@ -445,12 +447,13 @@ name: leaf lamina adaxial epidermis
 namespace: plant_structure
 def: "A portion of leaf lamina epidermis that covers the adaxial/upper surface of a leaf lamina." [POC:rw]
 is_a: PO:0000047 ! leaf lamina epidermis
+is_a: PO:0006018 ! leaf adaxial epidermis
 
 [Term]
 id: PO:0000051
 name: petiole epidermis
 namespace: plant_structure
-def: "A portion of leaf epidermis that is part of a leaf petiole." [TAIR:ki]
+def: "A portion of leaf epidermis that is part of a petiole." [POC:rw, TAIR:ki]
 is_a: PO:0006016 ! leaf epidermis
 relationship: part_of PO:0020038 ! petiole
 
@@ -458,7 +461,7 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000052
 name: petiole vascular system
 namespace: plant_structure
-def: "Vascular system of the leaf petiole." [TAIR:ki]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf petiole." [POC:rw]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0000036 ! leaf vascular system
 relationship: part_of PO:0020038 ! petiole
@@ -476,8 +479,9 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000054
 name: petal vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the petal." [POC:curators]
-is_a: PO:0005017 ! flower vascular system
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a petal." [POC:rw]
+is_a: PO:0025206 ! phyllome vascular system
+relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009032 ! petal
 
 [Term]
@@ -741,7 +745,7 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000207
 name: nectary epidermis
 namespace: plant_structure
-def: "A portion of shoot epidermis that is part of the nectary." [TAIR:lr]
+def: "A portion of shoot epidermis that is part of the nectary." [POC:rw]
 is_a: PO:0006035 ! shoot epidermis
 relationship: part_of PO:0009035 ! nectary
 
@@ -869,16 +873,15 @@ synonym: "hair cell" RELATED []
 xref: CL:0000299
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
-relationship: part_of PO:0006036 ! root epidermis
 
 [Term]
 id: PO:0000263
 name: atrichoblast
 namespace: plant_structure
-def: "A cell formed after asymmetric division of root epidermal cell that does not give rise to a root hair." [ISBN:0387987819]
+def: "A root epidermal cell that is formed after asymmetric division of an epidermal initial and does not give rise to a root hair." [ISBN:0387987819]
 synonym: "non-hair cell" RELATED []
 xref: CL:0000332
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0006036 ! root epidermis
 
@@ -919,7 +922,7 @@ comment: This class is the union of unicellular trichome [narrow synonym of tric
 subset: TraitNet
 synonym: "non-secretory trichome" EXACT []
 xref: CL:0000282
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -1013,14 +1016,10 @@ relationship: part_of PO:0005421 ! parenchyma
 id: PO:0000332
 name: pavement cell
 namespace: plant_structure
-def: "Epidermal cell with characteristic sinuous anticlinal cell walls that overall give a jigsaw like appearance to the leaf epidermis." [ISBN:087694289]
+def: "An epidermal cell that is not associated with a stomatal complex or trichome." [POC:rw]
 xref: CL:0000400
 is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
-relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
-relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
-relationship: part_of PO:0006018 ! leaf adaxial epidermis
-relationship: part_of PO:0006019 ! leaf abaxial epidermis
 
 [Term]
 id: PO:0000349
@@ -1770,7 +1769,7 @@ is_a: PO:0000042 ! shoot-borne root
 id: PO:0003011
 name: root vascular system
 namespace: plant_structure
-def: "A vascular system that is part of a root." [ISBN:0471245208, POC:curators]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a root." [ISBN:0471245208, POC:curators]
 comment: This term was brought back from OBSOLETE node (original reason for OBSOLETE: synonym of term stele). Since stele encompasses both vascular system and the pith, in roots with pith, vascular system and stele are not synonymous.
 synonym: "root vein" RELATED []
 is_a: PO:0000034 ! vascular system
@@ -1882,7 +1881,7 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0004001
 name: bulliform cell
 namespace: plant_structure
-def: "An enlarged more or less thin-walled epidermal cell present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
+def: "An enlarged more or less thin-walled epidermal cell, present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
 comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves.
 synonym: "motor cell" RELATED []
 is_a: PO:0025165 ! shoot epidermal cell
@@ -2513,17 +2512,17 @@ is_a: PO:0004713 ! terminal bud
 id: PO:0004717
 name: long cell
 namespace: plant_structure
-def: "A more or less rectangular epidermal cell in which the proximo-distal dimension is several times longer than the transverse dimension." [POC:curators]
-comment: The leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows.
-is_a: PO:0004013 ! epidermal cell
+def: "A more or less rectangular leaf pavement cell in which the proximo-distal dimension is several times longer than the transverse dimension." [POC:curators]
+comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows.
+is_a: PO:0025212 ! leaf pavement cell
 
 [Term]
 id: PO:0004718
 name: short cell
 namespace: plant_structure
-def: "An isodiametric epidermal cell." [POC:curators]
-comment: The leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows.
-is_a: PO:0004013 ! epidermal cell
+def: "An isodiametric leaf pavement cell." [POC:curators]
+comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows.
+is_a: PO:0025212 ! leaf pavement cell
 
 [Term]
 id: PO:0004719
@@ -2564,8 +2563,9 @@ relationship: part_of PO:0009052 ! pedicel
 id: PO:0004723
 name: sepal vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the sepal." [TAIR:ki]
-is_a: PO:0005017 ! flower vascular system
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a sepal." [POC:rw]
+is_a: PO:0025206 ! phyllome vascular system
+relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009031 ! sepal
 
 [Term]
@@ -2638,7 +2638,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0005005
 name: shoot internode
 namespace: plant_structure
-def: "A cardinal organ part of a shoot axis between two nodes of the axis." [GR:pj, POC:curators]
+def: "A cardinal organ part that is the part of a shoot axis between two nodes of the axis." [POC:curators]
 subset: Potato
 subset: reference
 subset: TraitNet
@@ -2699,8 +2699,8 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0005012
 name: pedicel vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the pedicel." [PMID:17217456, TAIR:donghui]
-is_a: PO:0000034 ! vascular system
+def: "A shoot axis vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a pedicel." [PMID:17217456, POC:rw]
+is_a: PO:0000039 ! shoot axis vascular system
 relationship: part_of PO:0009052 ! pedicel
 
 [Term]
@@ -2741,24 +2741,26 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0005017
 name: flower vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the flower and its parts." [GR:pj]
-is_a: PO:0000034 ! vascular system
+def: "A shoot system vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a flower." [POC:rw]
+comment: Because a vascular system is defined as the totality of the portions of vascular tissue in a plant structure, the vascular systems of floral parts are part of the flower vascular system.
+is_a: PO:0025205 ! shoot system vascular system
 relationship: part_of PO:0009046 ! flower
 
 [Term]
 id: PO:0005018
 name: stamen vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the stamen." [GR:pj]
-is_a: PO:0005017 ! flower vascular system
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a stamen." [POC:rw]
+is_a: PO:0025206 ! phyllome vascular system
+relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009029 ! stamen
 
 [Term]
 id: PO:0005019
 name: carpel vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the carpel." [GR:pj]
-is_a: PO:0005017 ! flower vascular system
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a carpel." [POC:rw]
+is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0009030 ! carpel
 
 [Term]
@@ -2836,8 +2838,8 @@ relationship: part_of PO:0003011 ! root vascular system
 id: PO:0005028
 name: inflorescence vascular system
 namespace: plant_structure
-def: "Total of the vascular tissues in their specific arrangement in the inflorescence." [GR:pj]
-is_a: PO:0000034 ! vascular system
+def: "A shoot system vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in an inflorescence." [POC:rw]
+is_a: PO:0025205 ! shoot system vascular system
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -3587,7 +3589,7 @@ id: PO:0006039
 name: adventitious root epidermis
 namespace: plant_structure
 alt_id: PO:0006038
-def: "The outer most cell layer of the adventitious root." [GR:pj]
+def: "A portion of root epidermis that is part of an adventitious root." [POC:rw]
 synonym: "crown root epidermis" RELATED []
 is_a: PO:0006036 ! root epidermis
 relationship: part_of PO:0000042 ! shoot-borne root
@@ -3596,16 +3598,16 @@ relationship: part_of PO:0000042 ! shoot-borne root
 id: PO:0006040
 name: sepal epidermis
 namespace: plant_structure
-def: "The outermost cell layer of the sepal." [GR:pj]
-is_a: PO:0008043 ! floral epidermis
+def: "A portion of phyllome epidermis that is part of a sepal." [POC:curators]
+is_a: PO:0025157 ! phyllome epidermis
 relationship: part_of PO:0009031 ! sepal
 
 [Term]
 id: PO:0006041
 name: petal epidermis
 namespace: plant_structure
-def: "The epidermal layer of the petal." [GR:pj]
-is_a: PO:0008043 ! floral epidermis
+def: "A portion of phyllome epidermis that is part of a petal." [POC:curators]
+is_a: PO:0025157 ! phyllome epidermis
 relationship: part_of PO:0009032 ! petal
 
 [Term]
@@ -3620,8 +3622,8 @@ is_a: PO:0006036 ! root epidermis
 id: PO:0006043
 name: integument epidermis
 namespace: plant_structure
-def: "A portion of shoot epidermis that is part of an integument in an ovule." [GR:pj]
-is_a: PO:0006035 ! shoot epidermis
+def: "A portion epidermis that is part of an integument." [GR:pj, POC:rw]
+is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0020021 ! integument
 
 [Term]
@@ -3644,7 +3646,7 @@ relationship: part_of PO:0020023 ! outer integument
 id: PO:0006048
 name: seed coat epidermis
 namespace: plant_structure
-def: "An epidermis that is part of a seed coat." [GR:pj]
+def: "A portion of epidermis that is part of a seed coat." [POC:rw]
 xref: OBO_SF_PO:3008016
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0009088 ! seed coat
@@ -3729,33 +3731,33 @@ is_a: PO:0006056 ! cotyledon epidermis
 id: PO:0006060
 name: filament epidermis
 namespace: plant_structure
-def: "A portion of shoot epidermis that is part of the stamen filament." [GR:pj]
-is_a: PO:0006035 ! shoot epidermis
+def: "A portion of stamen epidermis that is part of a filament." [POC:rw]
+is_a: PO:0025097 ! stamen epidermis
 relationship: part_of PO:0009067 ! filament
 
 [Term]
 id: PO:0006061
 name: stigma epidermis
 namespace: plant_structure
-def: "The epidermal cell layer of the stigma." [GR:pj, PMID:11951033]
-is_a: PO:0008043 ! floral epidermis
+def: "A portion of carpel epidermis that is part of a stigma." [PMID:11951033, POC:rw]
+is_a: PO:0025096 ! carpel epidermis
 relationship: part_of PO:0009073 ! stigma
 
 [Term]
 id: PO:0006062
 name: style epidermis
 namespace: plant_structure
-def: "The epidermal cell layer of the style." [GR:pj]
+def: "A portion of carpel epidermis that is part of a style." [POC:rw]
 synonym: "transmitting tract epidermis" RELATED []
-is_a: PO:0008043 ! floral epidermis
+is_a: PO:0025096 ! carpel epidermis
 relationship: part_of PO:0009074 ! style
 
 [Term]
 id: PO:0006063
 name: ovary epidermis
 namespace: plant_structure
-def: "The epidermal cell layer of the ovary." [GR:pj]
-is_a: PO:0008043 ! floral epidermis
+def: "A portion of epidermis that is part of an ovary." [POC:rw]
+is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0005022 ! ovary wall
 
 [Term]
@@ -4580,7 +4582,6 @@ name: stem intercalary meristem
 namespace: plant_structure
 def: "An intercalary meristem in the primary body of stem separated from the apical meristem by more or less mature tissues." [GR:pj]
 is_a: PO:0006073 ! intercalary meristem
-relationship: part_of PO:0009047 ! stem
 relationship: part_of PO:0020142 ! stem internode
 
 [Term]
@@ -5803,10 +5804,7 @@ namespace: plant_structure
 def: "A phyllome trichome that is part of a leaf epidermis." [POC:rw]
 subset: TraitNet
 is_a: PO:0025186 ! phyllome trichome
-relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
-relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
-relationship: part_of PO:0006018 ! leaf adaxial epidermis
-relationship: part_of PO:0006019 ! leaf abaxial epidermis
+relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006505
@@ -8374,7 +8372,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008003
 name: fruit vascular system
 namespace: plant_structure
-def: "Vascular system of the fruit." [(SGN:nm), GR:ap]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a fruit." [GR:ap, POC:rw]
 subset: Arabidopsis
 subset: Maize
 subset: Poaceae
@@ -8465,27 +8463,30 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0008012
 name: stigma vascular system
 namespace: plant_structure
-def: "Vascular system of stigma." [GR:cwt]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a stigma." [POC:rw]
 synonym: "stigma vein" RELATED []
-is_a: PO:0005017 ! flower vascular system
+is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0005019 ! carpel vascular system
+relationship: part_of PO:0009073 ! stigma
 
 [Term]
 id: PO:0008013
 name: anther vascular system
 namespace: plant_structure
-def: "Vascular system of the anther." [GR:cwt]
-is_a: PO:0005017 ! flower vascular system
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a anther." [POC:rw]
+is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0005018 ! stamen vascular system
+relationship: part_of PO:0009066 ! anther
 
 [Term]
 id: PO:0008014
 name: filament vascular system
 namespace: plant_structure
-def: "Vascular system of filament in the stamen." [GR:cwt]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a filament." [POC:rw]
 synonym: "filament vein" RELATED []
-is_a: PO:0005017 ! flower vascular system
+is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0005018 ! stamen vascular system
+relationship: part_of PO:0009067 ! filament
 
 [Term]
 id: PO:0008015
@@ -8493,6 +8494,7 @@ name: hypocotyl vascular system
 namespace: plant_structure
 def: "Vascular system of the hypocotyl." [GR:cwt]
 is_a: PO:0000034 ! vascular system
+relationship: part_of PO:0008011 ! embryo vascular system
 relationship: part_of PO:0020100 ! hypocotyl
 
 [Term]
@@ -8592,7 +8594,7 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0008027
 name: petiole adaxial epidermis
 namespace: plant_structure
-def: "A portion of leaf epidermis that covers the adaxial/upper surface of the petiole." [GR:cwt]
+def: "A portion of petiole epidermis that covers the adaxial/upper surface of a petiole." [POC:rw]
 is_a: PO:0000051 ! petiole epidermis
 
 [Term]
@@ -8606,7 +8608,7 @@ is_a: PO:0020148 ! shoot apical meristem
 id: PO:0008029
 name: petiole abaxial epidermis
 namespace: plant_structure
-def: "A portion of petiole epidermis that covers the abaxial/lower surface of a petiole." [GR:cwt]
+def: "A portion of petiole epidermis that covers the abaxial/lower surface of a petiole." [POC:rw]
 is_a: PO:0000051 ! petiole epidermis
 
 [Term]
@@ -8723,15 +8725,15 @@ id: PO:0008043
 name: floral epidermis
 namespace: plant_structure
 def: "A portion of shoot epidermis that is part of the floral organs." [GR:cwt]
-is_a: PO:0006035 ! shoot epidermis
-relationship: part_of PO:0009046 ! flower
+comment: This term was made obsolete. Its former children were classified as children of either epidermis, phyllome epidermis or shoot epidermis.
+is_obsolete: true
 
 [Term]
 id: PO:0008044
 name: floral stomatal complex
 namespace: plant_structure
 def: "An opening pore on the epidermis of floral organs bordered by two guard cells and serving in gas exchange." [GR:cwt]
-relationship: part_of PO:0008043 ! floral epidermis
+is_a: PO:0002000 ! stomatal complex
 
 [Term]
 id: PO:0008045
@@ -8845,7 +8847,7 @@ subset: reference
 subset: TraitNet
 xref: CL:0000610
 xref: OBO_SF_PO:2932524
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -8911,7 +8913,7 @@ subset: reference
 subset: TraitNet
 synonym: "plant tissue" RELATED []
 xref: OBO_SF_PO:2944945
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -8924,7 +8926,7 @@ subset: TraitNet
 synonym: "compound plant organ" RELATED []
 synonym: "simple plant organ" RELATED [PATO:01503]
 xref: OBO_SF_PO:2932521
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -8957,7 +8959,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0009011
 name: plant structure
 namespace: plant_structure
-def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003 "anatomical structure", POC:curators]
+def: "An anatomical structure (CARO:0000003) that is or was part of a plant, or was derived from a part of a plant." [POC:curators]
 comment: 'Part' includes both proper parts and the whole plant.
 subset: TraitNet
 xref: OBO_SF_PO:2932527
@@ -9537,6 +9539,7 @@ id: PO:0009065
 name: hypanthium
 namespace: plant_structure
 def: "A cup- or tube-shaped cardinal organ part, bearing perianth and stamens on its rim, so these arise above the base, and often above the top, of the ovary." [ISBN:0521251346]
+comment: Only bears stamens or perianth segments if they are present in the flower (e.g., no stamens in a carpellate flower).
 subset: reference
 xref: OBO_SF_PO:2972200
 xref: PATO:0001873 "tube-shaped (synonym of cylindrical)"
@@ -10030,11 +10033,11 @@ id: PO:0020004
 name: exothecium
 namespace: plant_structure
 alt_id: PO:0006059
-def: "The epidermis of an anther sac, sometimes with distinctively thickened walls and involved in its dehiscence, usually only when this is poricidal." [APWeb:Glossary]
+def: "A portion of stamen epidermis that is part of an anther sac, sometimes with distinctively thickened walls and involved in its dehiscence, usually only when this is poricidal." [APWeb:Glossary]
 subset: reference
 synonym: "anther epidermis" RELATED []
 synonym: "anther sac epidermis" RELATED []
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0025097 ! stamen epidermis
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -11089,7 +11092,7 @@ subset: Arabidopsis
 subset: TraitNet
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2945268
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-11T01:18:24Z
@@ -11157,7 +11160,7 @@ def: "A plant structure that is a proper part of a plant and is composed of two 
 comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049.
 subset: TraitNet
 xref: OBO_SF_PO:2954382
-is_a: PO:0025096 ! mature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
@@ -11975,6 +11978,7 @@ name: branch internode
 namespace: plant_structure
 def: "A shoot internode that is part of a branch." [POC:curators]
 is_a: PO:0005005 ! shoot internode
+relationship: part_of PO:0025073 ! branch
 created_by: Ramona
 creation_date: 2010-07-16T10:12:21Z
 
@@ -12154,27 +12158,33 @@ creation_date: 2010-10-28T05:14:26Z
 
 [Term]
 id: PO:0025096
-name: mature plant structure
+name: carpel epidermis
 namespace: plant_structure
-is_a: PO:0009011 ! plant structure
+def: "A portion of phyllome epidermis that is part of a carpel." [POC:rw]
+is_a: PO:0025157 ! phyllome epidermis
+relationship: part_of PO:0009030 ! carpel
 created_by: Ramona
-creation_date: 2010-11-05T01:27:08Z
+creation_date: 2010-12-17T12:36:46Z
 
 [Term]
 id: PO:0025097
-name: immature plant structure
+name: stamen epidermis
 namespace: plant_structure
-is_a: PO:0009011 ! plant structure
+def: "A portion of phyllome epidermis that is part of a stamen." [POC:rw]
+is_a: PO:0025157 ! phyllome epidermis
+relationship: part_of PO:0009029 ! stamen
 created_by: Ramona
-creation_date: 2010-11-05T01:27:08Z
+creation_date: 2010-12-17T12:36:46Z
 
 [Term]
 id: PO:0025098
-name: immature organ structure
+name: bract trichome
 namespace: plant_structure
-is_a: PO:0025097 ! immature plant structure
+def: "A phyllome trichome that is part of a bract epidermis." [POC:rw]
+is_a: PO:0025186 ! phyllome trichome
+relationship: part_of PO:0025158 ! bract epidermis
 created_by: Ramona
-creation_date: 2010-11-05T01:36:12Z
+creation_date: 2010-12-17T02:04:06Z
 
 [Term]
 id: PO:0025099
@@ -12182,7 +12192,7 @@ name: embryonic plant structure
 namespace: plant_structure
 def: "A plant structure that is a proper part of an embryo." [POC:rw]
 comment: Includes organs, tissues and cell types that are unique to embryos. Cell or tissue types that can occur in both embryos and mature plant structures are children of mature plant structure.
-is_a: PO:0025097 ! immature plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0009009 ! embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
@@ -12743,8 +12753,8 @@ creation_date: 2010-11-15T02:32:53Z
 id: PO:0025158
 name: bract epidermis
 namespace: plant_structure
-def: "A leaf epidermis that is part of a bract." [POC:rw]
-is_a: PO:0006016 ! leaf epidermis
+def: "A portion of phyllome epidermis that is part of a bract." [POC:rw]
+is_a: PO:0025157 ! phyllome epidermis
 relationship: part_of PO:0009055 ! bract
 created_by: Ramona
 creation_date: 2010-11-15T02:34:14Z
@@ -12753,7 +12763,7 @@ creation_date: 2010-11-15T02:34:14Z
 id: PO:0025159
 name: bract abaxial epidermis
 namespace: plant_structure
-def: "A bract epidermis that covers the abaxial/lower surface of a bract." [POC:rw]
+def: "A portion of bract epidermis that covers the abaxial/lower surface of a bract." [POC:rw]
 subset: Musa
 synonym: "bract external face" EXACT [CGP:curators]
 is_a: PO:0025158 ! bract epidermis
@@ -12764,7 +12774,7 @@ creation_date: 2010-11-15T02:35:37Z
 id: PO:0025160
 name: bract adaxial epidermis
 namespace: plant_structure
-def: "A bract epidermis that covers the adaxial/upper surface of a bract." [POC:rw]
+def: "A portion of bract epidermis that covers the adaxial/upper surface of a bract." [POC:rw]
 subset: Musa
 synonym: "bract internal face" EXACT [CGP:curators]
 is_a: PO:0025158 ! bract epidermis
@@ -12775,7 +12785,7 @@ creation_date: 2010-11-15T02:35:37Z
 id: PO:0025161
 name: portion of plant substance
 namespace: plant_structure
-def: "A portion of organism substance that is or was part of a plant." [POC:curators]
+def: "A portion of organism substance (CARO:0000004) that is or was part of a plant." [POC:curators]
 comment: Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin.
 xref: CARO:0000004 "portion of organism substance"
 is_a: PO:0025131 ! plant anatomical entity
@@ -12831,9 +12841,9 @@ creation_date: 2010-11-18T10:29:44Z
 id: PO:0025166
 name: papilla cell
 namespace: plant_structure
-def: "A shoot epidermal cell with a short protuberance." [POC:curators]
+def: "A pavement cell with a short protuberance." [POC:curators]
 comment: See GO for the subcellular component papilla.
-is_a: PO:0025165 ! shoot epidermal cell
+is_a: PO:0000332 ! pavement cell
 created_by: Ramona
 creation_date: 2010-11-18T05:25:37Z
 
@@ -13017,6 +13027,7 @@ name: tepal epidermis
 namespace: plant_structure
 def: "A portion of phyllome epidermis that is part of a tepal." [POC:rw]
 is_a: PO:0025157 ! phyllome epidermis
+relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
 creation_date: 2010-12-06T01:15:36Z
 
@@ -13053,6 +13064,7 @@ creation_date: 2010-12-06T01:18:53Z
 id: PO:0025188
 name: tepal trichome
 namespace: plant_structure
+def: "A phyllome trichome that is part of a tepal epidermis." [POC:rw]
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0025184 ! tepal epidermis
 created_by: Ramona
@@ -13070,43 +13082,23 @@ creation_date: 2010-12-09T11:49:35Z
 
 [Term]
 id: PO:0025190
-name: leaf lamina abaxial stomatal complex
+name: leaf abaxial stomatal complex
 namespace: plant_structure
-def: "A leaf lamina stomatal complex that is part of a leaf lamina abaxial epidermis." [POC:rw]
-is_a: PO:0025185 ! leaf lamina stomatal complex
-relationship: part_of PO:0000049 ! leaf lamina abaxial epidermis
+def: "A leaf stomatal complex that is part of a leaf abaxial epidermis." [POC:rw]
+is_a: PO:0025183 ! leaf stomatal complex
+relationship: part_of PO:0006019 ! leaf abaxial epidermis
 created_by: Ramona
-creation_date: 2010-12-09T11:52:45Z
+creation_date: 2010-12-17T03:01:55Z
 
 [Term]
 id: PO:0025191
-name: leaf lamina adaxial stomatal complex
+name: leaf adaxial stomatal complex
 namespace: plant_structure
-def: "A leaf lamina stomatal complex that is part of a leaf lamina adaxial epidermis." [POC:rw]
-is_a: PO:0025185 ! leaf lamina stomatal complex
-relationship: part_of PO:0000050 ! leaf lamina adaxial epidermis
+def: "A leaf stomatal complex that is part of a leaf adaxial epidermis." [POC:rw]
+is_a: PO:0025183 ! leaf stomatal complex
+relationship: part_of PO:0006018 ! leaf adaxial epidermis
 created_by: Ramona
-creation_date: 2010-12-09T11:52:45Z
-
-[Term]
-id: PO:0025192
-name: petiole abaxial stomatal complex
-namespace: plant_structure
-def: "A petiole stomatal complex that is part of a petiole abaxial epidermis." [POC:rw]
-is_a: PO:0025189 ! petiole stomatal complex
-relationship: part_of PO:0008029 ! petiole abaxial epidermis
-created_by: Ramona
-creation_date: 2010-12-09T11:53:34Z
-
-[Term]
-id: PO:0025193
-name: petiole adaxial stomatal complex
-namespace: plant_structure
-def: "A petiole stomatal complex that is part of a petiole adaxial epidermis." [POC:rw]
-is_a: PO:0025189 ! petiole stomatal complex
-relationship: part_of PO:0008027 ! petiole adaxial epidermis
-created_by: Ramona
-creation_date: 2010-12-09T11:53:34Z
+creation_date: 2010-12-17T03:01:55Z
 
 [Term]
 id: PO:0025194
@@ -13165,8 +13157,8 @@ id: PO:0025199
 name: branch stele
 namespace: plant_structure
 def: "A shoot axis stele that is part of a branch." [POC:rw]
-is_a: PO:0025073 ! branch
 is_a: PO:0025198 ! shoot axis stele
+relationship: part_of PO:0025073 ! branch
 created_by: Ramona
 creation_date: 2010-12-09T03:59:35Z
 
@@ -13197,6 +13189,130 @@ def: "A sporangium in which microspores are produced." [ISBN:0716710072]
 is_a: PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2010-12-09T04:05:41Z
+
+[Term]
+id: PO:0025203
+name: pericarp vascular bundle
+namespace: plant_structure
+def: "A vascular bundle that is part of a pericarp." [POC:rw]
+is_a: PO:0005020 ! vascular bundle
+relationship: part_of PO:0009084 ! pericarp
+created_by: Ramona
+creation_date: 2010-12-17T08:16:40Z
+
+[Term]
+id: PO:0025204
+name: rhizome internode
+namespace: plant_structure
+def: "A shoot axis internode that is part of a rhizome." [POC:rw]
+xref: OBO_SF_PO:1766539
+is_a: PO:0005005 ! shoot internode
+relationship: part_of PO:0004542 ! rhizome
+created_by: Ramona
+creation_date: 2010-12-17T09:22:47Z
+
+[Term]
+id: PO:0025205
+name: shoot system vascular system
+namespace: plant_structure
+def: "A vascular system that is part of a shoot system." [POC:rw]
+xref: OBO_SF_PO:2285839
+is_a: PO:0000034 ! vascular system
+relationship: part_of PO:0009006 ! shoot system
+created_by: Ramona
+creation_date: 2010-12-17T09:34:58Z
+
+[Term]
+id: PO:0025206
+name: phyllome vascular system
+namespace: plant_structure
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a phyllome." [POC:rw]
+is_a: PO:0000034 ! vascular system
+relationship: part_of PO:0006001 ! phyllome
+relationship: part_of PO:0025205 ! shoot system vascular system
+created_by: Ramona
+creation_date: 2010-12-17T10:11:07Z
+
+[Term]
+id: PO:0025207
+name: tepal vascular system
+namespace: plant_structure
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a tepal." [POC:rw]
+is_a: PO:0025206 ! phyllome vascular system
+relationship: part_of PO:0005017 ! flower vascular system
+relationship: part_of PO:0009033 ! tepal
+created_by: Ramona
+creation_date: 2010-12-17T10:28:52Z
+
+[Term]
+id: PO:0025208
+name: carpel trichome
+namespace: plant_structure
+def: "A phyllome trichome that is part of a bract epidermis." [POC:rw]
+is_a: PO:0025186 ! phyllome trichome
+relationship: part_of PO:0025096 ! carpel epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:04:36Z
+
+[Term]
+id: PO:0025209
+name: stamen trichome
+namespace: plant_structure
+def: "A phyllome trichome that is part of a stamen epidermis." [POC:rw]
+is_a: PO:0025186 ! phyllome trichome
+relationship: part_of PO:0025097 ! stamen epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:04:36Z
+
+[Term]
+id: PO:0025210
+name: leaf abaxial trichome
+namespace: plant_structure
+def: "A leaf trichome that is part of a leaf abaxial epidermis." [POC:rw]
+is_a: PO:0006504 ! leaf trichome
+relationship: part_of PO:0006019 ! leaf abaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:08:36Z
+
+[Term]
+id: PO:0025211
+name: leaf adaxial trichome
+namespace: plant_structure
+def: "A leaf trichome that is part of a leaf adaxial epidermis." [POC:rw]
+is_a: PO:0006504 ! leaf trichome
+relationship: part_of PO:0006018 ! leaf adaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:08:37Z
+
+[Term]
+id: PO:0025212
+name: leaf pavement cell
+namespace: plant_structure
+def: "A pavement cell that is part of a leaf epidermis." [POC:rw]
+is_a: PO:0000332 ! pavement cell
+relationship: part_of PO:0006016 ! leaf epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:47:25Z
+
+[Term]
+id: PO:0025213
+name: leaf abaxial pavement cell
+namespace: plant_structure
+def: "A leaf pavement cell that is part of a leaf abaxial epidermis." [POC:rw]
+is_a: PO:0025212 ! leaf pavement cell
+relationship: part_of PO:0006019 ! leaf abaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:52:02Z
+
+[Term]
+id: PO:0025214
+name: leaf adaxial pavement cell
+namespace: plant_structure
+def: "A leaf pavement cell that is part of a leaf adaxial epidermis." [POC:rw]
+is_a: PO:0025212 ! leaf pavement cell
+relationship: part_of PO:0006018 ! leaf adaxial epidermis
+created_by: Ramona
+creation_date: 2010-12-17T02:52:02Z
 
 [Term]
 id: PO:0028001
