@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 20:12:2010 15:11
-auto-generated-by: OBO-Edit 2.1-beta6
-ontology: po
+date: 22:12:2010 10:44
+auto-generated-by: OBO-Edit 2.1-beta7
+subsetdef: Angiosperm "Terms for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
 subsetdef: Maize "Term used for maize"
@@ -13,6 +13,7 @@ subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 default-namespace: plant_ontology
+ontology: po
 
 [Term]
 id: PO:0000001
@@ -705,6 +706,7 @@ id: PO:0000191
 name: synergid
 namespace: plant_structure
 def: "Cell, usually two in number, in the micropylar end of the embryo sac of angiosperms associated with the egg in the egg apparatus." [ISBN:047125208, TAIR:ki]
+subset: Angiosperm
 subset: reference
 xref: CL:0000288
 is_a: PO:0025026 ! megagametophytic cell
@@ -4541,6 +4543,7 @@ id: PO:0006342
 name: infructescence
 namespace: plant_structure
 def: "The grouping or arrangement in which fruits are borne on a plant." [GR:pj]
+subset: Angiosperm
 xref: OBO_SF_PO:2971891
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
@@ -8355,6 +8358,7 @@ id: PO:0008001
 name: fruit distal end
 namespace: plant_structure
 def: "The end distal from the fruit pedicel." [(SGN:nm), GR:ap]
+subset: Angiosperm
 subset: Tomato
 synonym: "blossom end" RELATED []
 xref: OBO_SF_PO:2971884
@@ -8366,6 +8370,7 @@ id: PO:0008002
 name: fruit proximal end
 namespace: plant_structure
 def: "The stem end of the fruit." [(SGN:nm), GR:ap]
+subset: Angiosperm
 subset: Tomato
 synonym: "fruit shoulders" RELATED []
 xref: OBO_SF_PO:2971884
@@ -8822,6 +8827,7 @@ alt_id: PO:0020087
 alt_id: PO:0020107
 def: "A collective plant structure containing one or more embryos, which as a whole, develops from a gynoecium." [POC:curators]
 comment: A fruit may contain additional plant structures that were part of the flower that mature along with the gynoecium, such as a receptacle. A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions. Fruits only occur in angiosperms.
+subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
 subset: Poaceae
@@ -9316,6 +9322,7 @@ namespace: plant_structure
 alt_id: PO:0004541
 def: "A determinate reproductive shoot system that has as part at least one carpel or at least one stamen and does not contain any other determinate shoot system as a part." [POC:curators]
 comment: The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain pistillode or staminode or other aborted organs that don't show up in mature form.
+subset: Angiosperm
 subset: reference
 subset: TraitNet
 synonym: "diclinous flower" NARROW []
@@ -9368,6 +9375,7 @@ alt_id: PO:0020119
 alt_id: PO:0020120
 def: "That part of the axial system of plants above the uppermost foliage leaf/pair of foliage leaves that bears flowers." [APWeb:Glossary]
 comment: Some plants have only solitary flowers, e.g.<i> Magnolia</i>.
+subset: Angiosperm
 subset: reference
 subset: TraitNet
 synonym: "capitulum" NARROW []
@@ -10278,6 +10286,7 @@ id: PO:0020028
 name: antiraphe
 namespace: plant_structure
 def: "A cardinal organ part that is the part of an ovule on the opposite side from a raphe." [POC:curators]
+subset: Angiosperm
 subset: reference
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2972168
@@ -10712,6 +10721,7 @@ name: egg apparatus
 namespace: plant_structure
 def: "A cardinal organ part that has as parts an egg cell and two synergids and is located at the micropylar end of the embryo sac." [POC:rw]
 comment: Found in angiosperms.
+subset: Angiosperm
 subset: reference
 is_a: PO:0025001 ! cardinal organ part
 relationship: has_part PO:0000191 ! synergid
@@ -12411,6 +12421,7 @@ id: PO:0025123
 name: embryo sac egg cell
 namespace: plant_structure
 def: "An egg cell that is produced by a megagametophyte." [POC:curators]
+subset: Angiosperm
 is_a: PO:0020094 ! egg cell
 relationship: part_of PO:0020096 ! egg apparatus
 created_by: Ramona
