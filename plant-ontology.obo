@@ -1,5 +1,6 @@
 format-version: 1.2
-date: 22:12:2010 10:44
+date: 30:12:2010 16:49
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta7
 subsetdef: Angiosperm "Terms for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -512,6 +513,7 @@ id: PO:0000057
 name: inflorescence bud
 namespace: plant_structure
 def: "A bud that develops into an inflorescence." [POC:curators]
+synonym: "male bud" NARROW [CO_125:0000049 "Term used for Musa to describe the usually persistent bud when it is only composed of bracts with male flowers."]
 is_a: PO:0025084 ! reproductive bud
 
 [Term]
@@ -688,6 +690,7 @@ synonym: "cell located at the base of the trichome" RELATED []
 synonym: "trichome support cell" RELATED []
 xref: CL:0000297
 is_a: PO:0025165 ! shoot epidermal cell
+disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
 [Term]
@@ -949,6 +952,7 @@ def: "An epidermal cell associated with a stoma and at least morphologically dis
 synonym: "accessory cell" RELATED []
 xref: CL:0000270
 is_a: PO:0025165 ! shoot epidermal cell
+disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: part_of PO:0002000 ! stomatal complex
 
 [Term]
@@ -988,6 +992,7 @@ comment: They cause the opening and closing of the pore by changes in turgor.
 subset: TraitNet
 xref: CL:0000292
 is_a: PO:0025165 ! shoot epidermal cell
+disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0000351 ! guard mother cell
 relationship: part_of PO:0002000 ! stomatal complex
 
@@ -1021,11 +1026,16 @@ relationship: part_of PO:0005421 ! parenchyma
 
 [Term]
 id: PO:0000332
-name: pavement cell
+name: epidermal pavement cell
 namespace: plant_structure
-def: "An epidermal cell that is not associated with a stomatal complex or trichome." [POC:rw]
+def: "A shoot epidermal cell that is relatively unspecialized at maturity." [POC:curators]
+comment: May have sinuous anticlinal cell walls that overall give a jigsaw like appearance to the epidermis. Pavement cells are epidermal cells that are not directly associated with a stomatal complex or trichome at maturity, but they share similar developmental origins.
 xref: CL:0000400
 is_a: PO:0025165 ! shoot epidermal cell
+disjoint_from: PO:0000115 ! socket cell
+disjoint_from: PO:0000284 ! subsidiary cell
+disjoint_from: PO:0000293 ! guard cell
+disjoint_from: PO:0008030 ! trichome cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
 [Term]
@@ -1886,10 +1896,10 @@ relationship: develops_from PO:0000423 ! zygote
 id: PO:0004001
 name: bulliform cell
 namespace: plant_structure
-def: "An enlarged more or less thin-walled epidermal cell, present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
+def: "An enlarged more or less thin-walled leaf pavement cell, present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
 comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves.
 synonym: "motor cell" RELATED []
-is_a: PO:0025165 ! shoot epidermal cell
+is_a: PO:0025212 ! leaf pavement cell
 relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
@@ -2337,6 +2347,7 @@ name: root-borne shoot system
 namespace: plant_structure
 def: "A shoot system that is initiated from a root." [POC:curators]
 subset: TraitNet
+synonym: "sucker" BROAD []
 synonym: "sucker shoot" RELATED []
 is_a: PO:0009006 ! shoot system
 
@@ -2347,6 +2358,7 @@ namespace: plant_structure
 def: "A shoot system that is initiated from a shoot." [POC:curators]
 subset: reference
 synonym: "branch" RELATED []
+synonym: "sucker" BROAD []
 is_a: PO:0009006 ! shoot system
 
 [Term]
@@ -2578,7 +2590,7 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0004724
 name: hypocotyl-root junction
 namespace: plant_structure
-def: "An embryonic plant structure that is the part of an embryonic axis where the radicle joins the hypocotyl." [POC:rw]
+def: "A cardinal organ part that is the part of an embryonic axis where the radicle joins the hypocotyl." [POC:rw]
 subset: reference
 xref: OBO_SF_PO:3132568
 is_a: PO:0025099 ! embryonic plant structure
@@ -2722,7 +2734,7 @@ relationship: part_of PO:0020100 ! hypocotyl
 id: PO:0005014
 name: embryo cortex
 namespace: plant_structure
-def: "A cortex that is part of the embryo." [PMID:16543410, POC:curators, TAIR:donghui]
+def: "A cortex that is part of an embryo." [PMID:16543410, POC:curators, TAIR:donghui]
 comment: Can occur in the hypocotyl and root.
 is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009009 ! embryo
@@ -2794,7 +2806,6 @@ id: PO:0005022
 name: ovary wall
 namespace: plant_structure
 def: "A wall of an ovary that is composed of abaxial (outer) and adaxial (inner) epidermis and a middle layer,  composed of mesophyll cells and a distinct subepidermal adaxial cell layer (as found in Arabidopsis)." [GR:pj, PMID:10332605]
-synonym: "valve (sensu Brassicaceae)" RELATED []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009072 ! ovary
 
@@ -4364,7 +4375,7 @@ name: ear spikelet
 namespace: plant_structure
 def: "Ultimate inflorescence branch of the maize ear." [GR:pj]
 is_a: PO:0009051 ! spikelet
-relationship: part_of PO:0020136 ! ear (sensu Zea)
+relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006321
@@ -4505,7 +4516,7 @@ synonym: "corn husk" RELATED []
 synonym: "husk" RELATED []
 synonym: "husk leaf" RELATED []
 is_a: PO:0009054 ! inflorescence bract
-relationship: part_of PO:0020136 ! ear (sensu Zea)
+relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006338
@@ -4542,10 +4553,14 @@ is_a: PO:0009006 ! shoot system
 id: PO:0006342
 name: infructescence
 namespace: plant_structure
-def: "The grouping or arrangement in which fruits are borne on a plant." [GR:pj]
+def: "A reproductive shoot system that develops from an inflorescence and has as parts all of the shoot axes distal to the most distal foliage leaf of a shoot axis and all of the fruits borne by those axes." [POC:rw]
 subset: Angiosperm
+subset: Musa
+synonym: "banana bunch" NARROW [CO_125:0000014]
+synonym: "fruit bunch" RELATED []
 xref: OBO_SF_PO:2971891
 is_a: PO:0025082 ! reproductive shoot system
+relationship: develops_from PO:0009049 ! inflorescence
 relationship: has_part PO:0009001 ! fruit
 
 [Term]
@@ -4554,6 +4569,7 @@ name: axillary shoot system
 namespace: plant_structure
 def: "A shoot-borne shoot system that develops from an axillary vegetative bud." [POC:curators]
 synonym: "axillary branch" RELATED []
+synonym: "Musa sucker" NARROW [CO_125:0000042]
 is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
@@ -4653,7 +4669,7 @@ name: androecium of ear floret
 namespace: plant_structure
 def: "Collectively the stamens of maize ear floret." [GR:pj]
 comment: The development of the androecium in the ear floret of a normal maize plant is aborted and is present in a rudimentary state.
-is_a: PO:0006471 ! androecium (sensu Zea)
+is_a: PO:0006471 ! Zea androecium
 relationship: part_of PO:0006354 ! ear floret
 
 [Term]
@@ -4736,7 +4752,7 @@ id: PO:0006366
 name: androecium of tassel floret
 namespace: plant_structure
 def: "Collectively the stamens of one floret of a tassel inflorescence of maize." [GR:pj]
-is_a: PO:0006471 ! androecium (sensu Zea)
+is_a: PO:0006471 ! Zea androecium
 relationship: part_of PO:0006310 ! tassel floret
 
 [Term]
@@ -4880,7 +4896,7 @@ relationship: part_of PO:0006354 ! ear floret
 
 [Term]
 id: PO:0006383
-name: androecium (sensu Poaceae)
+name: Poaceae androecium
 namespace: plant_structure
 def: "Collectively the stamens of one grass floret." [GR:pj]
 is_a: PO:0009061 ! androecium
@@ -5107,10 +5123,10 @@ id: PO:0006418
 name: ear peduncle
 namespace: plant_structure
 def: "The stalk of a maize ear below the lowest ear node." [GR:pj]
-synonym: "lateral branch (sensu Zea)" RELATED []
 synonym: "shank" RELATED []
+synonym: "Zea lateral branch" RELATED []
 is_a: PO:0009053 ! peduncle
-relationship: part_of PO:0020136 ! ear (sensu Zea)
+relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006419
@@ -5297,119 +5313,119 @@ relationship: part_of PO:0006349 ! ear sessile spikelet
 
 [Term]
 id: PO:0006441
-name: stamen (sensu Poaceae)
+name: Poaceae stamen
 namespace: plant_structure
 def: "A microsporophyll, bearing four microsporangia in a grass floret." [GR:pj]
 is_a: PO:0009029 ! stamen
-relationship: part_of PO:0006383 ! androecium (sensu Poaceae)
+relationship: part_of PO:0006383 ! Poaceae androecium
 
 [Term]
 id: PO:0006442
-name: anther (sensu Poaceae)
+name: Poaceae anther
 namespace: plant_structure
 def: "The pollen-bearing part of a stamen of a grass floret." [GR:pj]
 is_a: PO:0009066 ! anther
-relationship: part_of PO:0006441 ! stamen (sensu Poaceae)
+relationship: part_of PO:0006441 ! Poaceae stamen
 
 [Term]
 id: PO:0006443
-name: connective (sensu Poaceae)
+name: Poaceae connective
 namespace: plant_structure
 def: "The part of the stamen of a grass floret, that connects the microsporangia/pollen sacs." [GR:pj]
 is_a: PO:0009068 ! connective
-relationship: part_of PO:0006442 ! anther (sensu Poaceae)
+relationship: part_of PO:0006442 ! Poaceae anther
 
 [Term]
 id: PO:0006444
-name: microsporangium (sensu Poaceae)
+name: Poaceae microsporangium
 namespace: plant_structure
 def: "Sporangium in the anther of a grass stamen producing microspores, usually many in number." [GR:pj]
 is_a: PO:0009070 ! pollen sac
-relationship: part_of PO:0006442 ! anther (sensu Poaceae)
+relationship: part_of PO:0006442 ! Poaceae anther
 
 [Term]
 id: PO:0006445
-name: anther wall (sensu Poaceae)
+name: Poaceae anther wall
 namespace: plant_structure
 def: "A multicellular layer with outer epidermis and an inner endothecium of an anther of a grass stamen." [GR:pj]
 is_a: PO:0000002 ! anther wall
-relationship: part_of PO:0006444 ! microsporangium (sensu Poaceae)
+relationship: part_of PO:0006444 ! Poaceae microsporangium
 
 [Term]
 id: PO:0006446
-name: endothecium (sensu Poaceae)
+name: Poaceae endothecium
 namespace: plant_structure
 def: "The hypodermis of an anther sac of a grass stamen with distinctively thickened walls and involved in its dehiscence." [GR:pj]
 is_a: PO:0020002 ! endothecium
-relationship: part_of PO:0006445 ! anther wall (sensu Poaceae)
+relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
 id: PO:0006447
-name: exothecium (sensu Poaceae)
+name: Poaceae exothecium
 namespace: plant_structure
 def: "The epidermis of an anther sac of a grass stamen." [GR:pj]
 is_a: PO:0020004 ! exothecium
-relationship: part_of PO:0006445 ! anther wall (sensu Poaceae)
+relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
 id: PO:0006448
-name: placentoid (sensu Poaceae)
+name: Poaceae placentoid
 namespace: plant_structure
 def: "An inpushing of the anther wall of a grass stamen." [GR:pj]
 is_a: PO:0020005 ! placentoid
-relationship: part_of PO:0006445 ! anther wall (sensu Poaceae)
+relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
 id: PO:0006449
-name: stomium (sensu Poaceae)
+name: Poaceae stomium
 namespace: plant_structure
 def: "A stomium that is part of an anther wall (sensu Poaceae)." [POC:rw]
 is_a: PO:0020101 ! stomium
-relationship: part_of PO:0006445 ! anther wall (sensu Poaceae)
+relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
 id: PO:0006450
-name: tapetum (sensu Poaceae)
+name: Poaceae tapetum
 namespace: plant_structure
 def: "Innermost part of the anther wall, involved in the nutrition of the pollen in grasses." [GR:pj]
 is_a: PO:0009071 ! tapetum
-relationship: part_of PO:0006445 ! anther wall (sensu Poaceae)
+relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
 id: PO:0006451
-name: microsporocyte (sensu Poaceae)
+name: Poaceae microsporocyte
 namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores in a grass plant." [GR:pj]
 is_a: PO:0020047 ! microsporocyte
-relationship: part_of PO:0006444 ! microsporangium (sensu Poaceae)
+relationship: part_of PO:0006444 ! Poaceae microsporangium
 
 [Term]
 id: PO:0006452
-name: microspore (sensu Poaceae)
+name: Poaceae microspore
 namespace: plant_structure
 def: "The smaller, in general, of the two kinds of spores produced in the life cycle of a grass plant. It gives rise to the male gametophyte." [GR:pj]
 is_a: PO:0020048 ! microspore
-relationship: develops_from PO:0006451 ! microsporocyte (sensu Poaceae)
+relationship: develops_from PO:0006451 ! Poaceae microsporocyte
 
 [Term]
 id: PO:0006453
-name: theca (sensu Poaceae)
+name: Poaceae theca
 namespace: plant_structure
 def: "A part of the anther of a grass stamen consisting of paired sporangia that dehisce down a common slit." [GR:pj]
-is_a: PO:0006444 ! microsporangium (sensu Poaceae)
+is_a: PO:0006444 ! Poaceae microsporangium
 is_a: PO:0009069 ! theca
 
 [Term]
 id: PO:0006454
-name: filament (sensu Poaceae)
+name: Poaceae filament
 namespace: plant_structure
 def: "The stalk of the stamen of a grass floret." [GR:pj]
 is_a: PO:0009067 ! filament
-relationship: part_of PO:0006441 ! stamen (sensu Poaceae)
+relationship: part_of PO:0006441 ! Poaceae stamen
 
 [Term]
 id: PO:0006455
-name: carpel (sensu Poaceae)
+name: Poaceae carpel
 namespace: plant_structure
 def: "A megasporophyll at the center of a grass floret enclosing the ovule." [GR:pj]
 is_a: PO:0009030 ! carpel
@@ -5417,364 +5433,364 @@ relationship: part_of PO:0025089 ! Poaceae gynoecium
 
 [Term]
 id: PO:0006456
-name: ovary (sensu Poaceae)
+name: Poaceae ovary
 namespace: plant_structure
 def: "The basal portion of a carpel that encloses the ovule(s) in a grass floret." [GR:pj]
 is_a: PO:0009072 ! ovary
-relationship: part_of PO:0006455 ! carpel (sensu Poaceae)
+relationship: part_of PO:0006455 ! Poaceae carpel
 
 [Term]
 id: PO:0006457
-name: ovule (sensu Poaceae)
+name: Poaceae ovule
 namespace: plant_structure
 def: "A stalked or sessile structure in a grass carpel within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [GR:pj]
 is_a: PO:0020003 ! ovule
-relationship: part_of PO:0006456 ! ovary (sensu Poaceae)
+relationship: part_of PO:0006456 ! Poaceae ovary
 
 [Term]
 id: PO:0006458
-name: chalaza (sensu Poaceae)
+name: Poaceae chalaza
 namespace: plant_structure
 def: "Region in the grass ovule where the integuments and the nucellus merge with the funiculus." [GR:pj]
 is_a: PO:0020026 ! chalaza
-relationship: part_of PO:0006457 ! ovule (sensu Poaceae)
+relationship: part_of PO:0006457 ! Poaceae ovule
 
 [Term]
 id: PO:0006459
-name: outer integumet (sensu Poaceae)
+name: Poaceae outer integumet
 namespace: plant_structure
 def: "One of the two layers of tissue that usually covers the ovule of a grass, contiguous to the inner integument and usually involved in forming the micropyle at the apex." [GR:pj]
 is_a: PO:0020023 ! outer integument
-relationship: part_of PO:0006465 ! integument (sensu Poaceae)
+relationship: part_of PO:0006465 ! Poaceae integument
 
 [Term]
 id: PO:0006460
-name: inner integument (sensu Poaceae)
+name: Poaceae inner integument
 namespace: plant_structure
 def: "The innermost of the two layers of tissue that cover the ovule of a grass, contiguous to the nucellus and usually involved in forming the micropyle at the apex." [GR:pj]
 is_a: PO:0020022 ! inner integument
-relationship: part_of PO:0006465 ! integument (sensu Poaceae)
+relationship: part_of PO:0006465 ! Poaceae integument
 
 [Term]
 id: PO:0006461
-name: micropyle (sensu Poaceae)
+name: Poaceae micropyle
 namespace: plant_structure
 def: "A micropyle at the apex of a grass ovule." [GR:pj]
 is_a: PO:0020025 ! micropyle
-relationship: part_of PO:0006457 ! ovule (sensu Poaceae)
+relationship: part_of PO:0006457 ! Poaceae ovule
 
 [Term]
 id: PO:0006462
-name: nucellus (sensu Poaceae)
+name: Poaceae nucellus
 namespace: plant_structure
 def: "Subepidermal tissue in the ovule of a grass plant surrounding the megasporocyte." [GR:pj]
 is_a: PO:0020020 ! nucellus
-relationship: part_of PO:0006457 ! ovule (sensu Poaceae)
+relationship: part_of PO:0006457 ! Poaceae ovule
 
 [Term]
 id: PO:0006463
-name: megasporocyte (sensu Poaceae)
+name: Poaceae megasporocyte
 namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores in a grass plant." [GR:pj]
 is_a: PO:0000431 ! megasporocyte
-relationship: part_of PO:0006462 ! nucellus (sensu Poaceae)
+relationship: part_of PO:0006462 ! Poaceae nucellus
 
 [Term]
 id: PO:0006464
-name: megaspore (sensu Poaceae)
+name: Poaceae megaspore
 namespace: plant_structure
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a grass plant, and on germination giving rise to the female gametophyte (embryo sac)." [GR:pj]
 is_a: PO:0020019 ! megaspore
-relationship: develops_from PO:0006463 ! megasporocyte (sensu Poaceae)
+relationship: develops_from PO:0006463 ! Poaceae megasporocyte
 
 [Term]
 id: PO:0006465
-name: integument (sensu Poaceae)
+name: Poaceae integument
 namespace: plant_structure
 def: "One of the layers of tissue that covers the ovule of a grass carpel, enveloping the nucellus and forming the micropyle at the apex." [GR:pj]
 is_a: PO:0020021 ! integument
-relationship: part_of PO:0006457 ! ovule (sensu Poaceae)
+relationship: part_of PO:0006457 ! Poaceae ovule
 
 [Term]
 id: PO:0006466
-name: funicle (sensu Poaceae)
+name: Poaceae funicle
 namespace: plant_structure
 def: "A stalk that attaches an ovule to a placenta in a grass carpel." [GR:pj]
 is_a: PO:0020006 ! funicle
-relationship: part_of PO:0006456 ! ovary (sensu Poaceae)
+relationship: part_of PO:0006456 ! Poaceae ovary
 
 [Term]
 id: PO:0006467
-name: ovary placenta (sensu Poaceae)
+name: Poaceae ovary placenta
 namespace: plant_structure
 def: "The region within an ovary to which ovules are attached in a grass carpel." [GR:pj]
 is_a: PO:0020001 ! ovary placenta
-relationship: part_of PO:0006456 ! ovary (sensu Poaceae)
+relationship: part_of PO:0006456 ! Poaceae ovary
 
 [Term]
 id: PO:0006468
-name: stigma (sensu Poaceae)
+name: Poaceae stigma
 namespace: plant_structure
 def: "The apical part of a carpel of a grass floret on which the pollen germinates." [GR:pj]
 is_a: PO:0009073 ! stigma
-relationship: part_of PO:0006455 ! carpel (sensu Poaceae)
+relationship: part_of PO:0006455 ! Poaceae carpel
 
 [Term]
 id: PO:0006469
-name: style (sensu Poaceae)
+name: Poaceae style
 namespace: plant_structure
 def: "An elongated part of a carpel between the ovary and the stigma of a grass floret, through which the pollen tube grows." [GR:pj]
 is_a: PO:0009074 ! style
-relationship: part_of PO:0006455 ! carpel (sensu Poaceae)
+relationship: part_of PO:0006455 ! Poaceae carpel
 
 [Term]
 id: PO:0006470
-name: carpel (sensu Zea)
+name: Zea carpel
 namespace: plant_structure
 def: "A megasporophyll at the center of a maize floret enclosing the ovule." [GR:pj]
-is_a: PO:0006455 ! carpel (sensu Poaceae)
+is_a: PO:0006455 ! Poaceae carpel
 relationship: part_of PO:0006365 ! gynoecium of ear floret
 
 [Term]
 id: PO:0006471
-name: androecium (sensu Zea)
+name: Zea androecium
 namespace: plant_structure
 def: "Collectively the stamens of one floret of a maize plant." [GR:pj]
-is_a: PO:0006383 ! androecium (sensu Poaceae)
+is_a: PO:0006383 ! Poaceae androecium
 
 [Term]
 id: PO:0006472
-name: stamen (sensu Zea)
+name: Zea stamen
 namespace: plant_structure
 def: "A microsporophyll bearing four microsporangia in a maize floret." [GR:pj]
-is_a: PO:0006441 ! stamen (sensu Poaceae)
+is_a: PO:0006441 ! Poaceae stamen
 relationship: part_of PO:0006366 ! androecium of tassel floret
 
 [Term]
 id: PO:0006473
-name: anther (sensu Zea)
+name: Zea anther
 namespace: plant_structure
 def: "The pollen-bearing part of a stamen of a maize floret." [GR:pj]
-is_a: PO:0006442 ! anther (sensu Poaceae)
-relationship: part_of PO:0006472 ! stamen (sensu Zea)
+is_a: PO:0006442 ! Poaceae anther
+relationship: part_of PO:0006472 ! Zea stamen
 
 [Term]
 id: PO:0006474
-name: filament (sensu Zea)
+name: Zea filament
 namespace: plant_structure
 def: "The stalk of the stamen of a maize floret." [GR:pj]
-is_a: PO:0006454 ! filament (sensu Poaceae)
-relationship: part_of PO:0006472 ! stamen (sensu Zea)
+is_a: PO:0006454 ! Poaceae filament
+relationship: part_of PO:0006472 ! Zea stamen
 
 [Term]
 id: PO:0006475
-name: connective (sensu Zea)
+name: Zea connective
 namespace: plant_structure
 def: "The part of the stamen of a maize floret, that connects the microsporangia or pollen sacs." [GR:pj]
-is_a: PO:0006443 ! connective (sensu Poaceae)
-relationship: part_of PO:0006473 ! anther (sensu Zea)
+is_a: PO:0006443 ! Poaceae connective
+relationship: part_of PO:0006473 ! Zea anther
 
 [Term]
 id: PO:0006476
-name: microsporangium (sensu Zea)
+name: Zea microsporangium
 namespace: plant_structure
 def: "Sporangium in the anther of a maize stamen producing microspores, usually many in number ." [GR:pj]
-is_a: PO:0006444 ! microsporangium (sensu Poaceae)
-relationship: part_of PO:0006473 ! anther (sensu Zea)
+is_a: PO:0006444 ! Poaceae microsporangium
+relationship: part_of PO:0006473 ! Zea anther
 
 [Term]
 id: PO:0006477
-name: anther wall (sensu Zea)
+name: Zea anther wall
 namespace: plant_structure
 def: "A multicellular layer with outer epidermis and an inner endothecium of an anther of a maize stamen." [GR:pj]
-is_a: PO:0006445 ! anther wall (sensu Poaceae)
-relationship: part_of PO:0006476 ! microsporangium (sensu Zea)
+is_a: PO:0006445 ! Poaceae anther wall
+relationship: part_of PO:0006476 ! Zea microsporangium
 
 [Term]
 id: PO:0006478
-name: theca (sensu Zea)
+name: Zea theca
 namespace: plant_structure
 def: "A part of the anther of a maize stamen consisting of paired sporangia that dehisce down a common slit." [GR:pj]
-is_a: PO:0006453 ! theca (sensu Poaceae)
-is_a: PO:0006476 ! microsporangium (sensu Zea)
+is_a: PO:0006453 ! Poaceae theca
+is_a: PO:0006476 ! Zea microsporangium
 
 [Term]
 id: PO:0006479
-name: microsporocyte (sensu Zea)
+name: Zea microsporocyte
 namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores in a maize plant." [GR:pj]
-is_a: PO:0006451 ! microsporocyte (sensu Poaceae)
-relationship: part_of PO:0006476 ! microsporangium (sensu Zea)
+is_a: PO:0006451 ! Poaceae microsporocyte
+relationship: part_of PO:0006476 ! Zea microsporangium
 
 [Term]
 id: PO:0006480
-name: microspore (sensu Zea)
+name: Zea microspore
 namespace: plant_structure
 def: "The smaller, in general, of the two kinds of spores produced in the life cycle of a maize plant. It gives rise to the male gametophyte." [GR:pj]
-is_a: PO:0006452 ! microspore (sensu Poaceae)
-relationship: develops_from PO:0006479 ! microsporocyte (sensu Zea)
+is_a: PO:0006452 ! Poaceae microspore
+relationship: develops_from PO:0006479 ! Zea microsporocyte
 
 [Term]
 id: PO:0006481
-name: endothecium (sensu Zea)
+name: Zea endothecium
 namespace: plant_structure
 def: "The hypodermis of an anther sac of a maize stamen with distinctively thickened walls and involved in its dehiscence." [GR:pj]
-is_a: PO:0006446 ! endothecium (sensu Poaceae)
-relationship: part_of PO:0006477 ! anther wall (sensu Zea)
+is_a: PO:0006446 ! Poaceae endothecium
+relationship: part_of PO:0006477 ! Zea anther wall
 
 [Term]
 id: PO:0006482
-name: exothecium (sensu Zea)
+name: Zea exothecium
 namespace: plant_structure
 def: "The epidermis of an anther sac of a maize stamen." [GR:pj]
-is_a: PO:0006447 ! exothecium (sensu Poaceae)
-relationship: part_of PO:0006477 ! anther wall (sensu Zea)
+is_a: PO:0006447 ! Poaceae exothecium
+relationship: part_of PO:0006477 ! Zea anther wall
 
 [Term]
 id: PO:0006483
-name: placentoid (sensu Zea)
+name: Zea placentoid
 namespace: plant_structure
 def: "An inpushing of the anther wall of a maize stamen." [GR:pj]
-is_a: PO:0006448 ! placentoid (sensu Poaceae)
-relationship: part_of PO:0006477 ! anther wall (sensu Zea)
+is_a: PO:0006448 ! Poaceae placentoid
+relationship: part_of PO:0006477 ! Zea anther wall
 
 [Term]
 id: PO:0006484
-name: tapetum (sensu Zea)
+name: Zea tapetum
 namespace: plant_structure
 def: "Innermost part of the anther wall, involved in the nutrition of the pollen in maize." [GR:pj]
-is_a: PO:0006450 ! tapetum (sensu Poaceae)
-relationship: part_of PO:0006477 ! anther wall (sensu Zea)
+is_a: PO:0006450 ! Poaceae tapetum
+relationship: part_of PO:0006477 ! Zea anther wall
 
 [Term]
 id: PO:0006485
-name: stomium (sensu Zea)
+name: Zea stomium
 namespace: plant_structure
 def: "A stomium that is part of an anther wall (sensu Zea)." [POC:rw]
 subset: Maize
-is_a: PO:0006449 ! stomium (sensu Poaceae)
-relationship: part_of PO:0006477 ! anther wall (sensu Zea)
+is_a: PO:0006449 ! Poaceae stomium
+relationship: part_of PO:0006477 ! Zea anther wall
 
 [Term]
 id: PO:0006486
-name: ovary (sensu Zea)
+name: Zea ovary
 namespace: plant_structure
 def: "The basal portion of a carpel that encloses the ovule(s) in a maize floret." [GR:pj]
-is_a: PO:0006456 ! ovary (sensu Poaceae)
-relationship: part_of PO:0006470 ! carpel (sensu Zea)
+is_a: PO:0006456 ! Poaceae ovary
+relationship: part_of PO:0006470 ! Zea carpel
 
 [Term]
 id: PO:0006487
-name: stigma (sensu Zea)
+name: Zea stigma
 namespace: plant_structure
 def: "The apical part of a carpel of a maize floret on which the pollen germinates." [GR:pj]
-is_a: PO:0006468 ! stigma (sensu Poaceae)
-relationship: part_of PO:0006470 ! carpel (sensu Zea)
+is_a: PO:0006468 ! Poaceae stigma
+relationship: part_of PO:0006470 ! Zea carpel
 
 [Term]
 id: PO:0006488
 name: silk
 namespace: plant_structure
 def: "The style of a maize floret." [GR:pj]
-synonym: "style (sensu Zea)" RELATED []
-is_a: PO:0006469 ! style (sensu Poaceae)
-relationship: part_of PO:0006470 ! carpel (sensu Zea)
+synonym: "Zea style" RELATED []
+is_a: PO:0006469 ! Poaceae style
+relationship: part_of PO:0006470 ! Zea carpel
 
 [Term]
 id: PO:0006489
-name: funicle (sensu Zea)
+name: Zea funicle
 namespace: plant_structure
 def: "A stalk that attaches an ovule to a placenta in a maize carpel." [GR:pj]
-is_a: PO:0006466 ! funicle (sensu Poaceae)
-relationship: part_of PO:0006486 ! ovary (sensu Zea)
+is_a: PO:0006466 ! Poaceae funicle
+relationship: part_of PO:0006486 ! Zea ovary
 
 [Term]
 id: PO:0006490
-name: ovary placenta (sensu Zea)
+name: Zea ovary placenta
 namespace: plant_structure
 def: "The region within an ovary to which ovules are attached in a maize carpel." [GR:pj]
-is_a: PO:0006467 ! ovary placenta (sensu Poaceae)
-relationship: part_of PO:0006486 ! ovary (sensu Zea)
+is_a: PO:0006467 ! Poaceae ovary placenta
+relationship: part_of PO:0006486 ! Zea ovary
 
 [Term]
 id: PO:0006491
-name: ovule (sensu Zea)
+name: Zea ovule
 namespace: plant_structure
 def: "A stalked or sessile structure in a maize carpel within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [GR:pj]
-is_a: PO:0006457 ! ovule (sensu Poaceae)
-relationship: part_of PO:0006486 ! ovary (sensu Zea)
+is_a: PO:0006457 ! Poaceae ovule
+relationship: part_of PO:0006486 ! Zea ovary
 
 [Term]
 id: PO:0006492
-name: nucellus (sensu Zea)
+name: Zea nucellus
 namespace: plant_structure
 def: "Subepidermal tissue in the ovule of a maize plant surrounding the megasporocyte." [GR:pj]
-is_a: PO:0006462 ! nucellus (sensu Poaceae)
-relationship: part_of PO:0006491 ! ovule (sensu Zea)
+is_a: PO:0006462 ! Poaceae nucellus
+relationship: part_of PO:0006491 ! Zea ovule
 
 [Term]
 id: PO:0006493
-name: megasporocyte (sensu Zea)
+name: Zea megasporocyte
 namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores in a maize plant." [GR:pj]
-is_a: PO:0006463 ! megasporocyte (sensu Poaceae)
-relationship: part_of PO:0006492 ! nucellus (sensu Zea)
+is_a: PO:0006463 ! Poaceae megasporocyte
+relationship: part_of PO:0006492 ! Zea nucellus
 
 [Term]
 id: PO:0006494
-name: megaspore (sensu Zea)
+name: Zea megaspore
 namespace: plant_structure
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a maize plant, and on germination giving rise to the female gametophyte (embryo sac)." [GR:pj]
-is_a: PO:0006464 ! megaspore (sensu Poaceae)
-relationship: develops_from PO:0006493 ! megasporocyte (sensu Zea)
+is_a: PO:0006464 ! Poaceae megaspore
+relationship: develops_from PO:0006493 ! Zea megasporocyte
 
 [Term]
 id: PO:0006495
-name: degenerate megaspore (sensu Poaceae)
+name: Poaceae degenerate megaspore
 namespace: plant_structure
 def: "The megaspores in a grass plant that would not participate in megagametogenesis." [GR:pj]
 is_a: PO:0000245 ! degenerate megaspore
-is_a: PO:0006464 ! megaspore (sensu Poaceae)
+is_a: PO:0006464 ! Poaceae megaspore
 
 [Term]
 id: PO:0006496
-name: functional megaspore (sensu Poaceae)
+name: Poaceae functional megaspore
 namespace: plant_structure
 def: "The megaspore that forms the embryo sac in grasses." [GR:pj]
 is_a: PO:0000244 ! functional megaspore
-is_a: PO:0006464 ! megaspore (sensu Poaceae)
+is_a: PO:0006464 ! Poaceae megaspore
 
 [Term]
 id: PO:0006497
-name: stigma epidermis (sensu Poaceae)
+name: Poaceae stigma epidermis
 namespace: plant_structure
 def: "The epidermal cell layer of the grass stigma." [GR:pj]
 is_a: PO:0006061 ! stigma epidermis
-relationship: part_of PO:0006468 ! stigma (sensu Poaceae)
+relationship: part_of PO:0006468 ! Poaceae stigma
 
 [Term]
 id: PO:0006498
-name: style epidermis (sensu Poaceae)
+name: Poaceae style epidermis
 namespace: plant_structure
 def: "The epidermal cell layer of the style of a grass carpel." [GR:pj]
 is_a: PO:0006062 ! style epidermis
-relationship: part_of PO:0006469 ! style (sensu Poaceae)
+relationship: part_of PO:0006469 ! Poaceae style
 
 [Term]
 id: PO:0006499
-name: transmitting tissue (sensu Poaceae)
+name: Poaceae transmitting tissue
 namespace: plant_structure
 def: "Tissue in the style of a grass carpel, through which the pollen tube grows; it connects the stigma and the inside of ovary." [GR:pj]
 is_a: PO:0020102 ! portion of transmitting tissue
-relationship: part_of PO:0006469 ! style (sensu Poaceae)
+relationship: part_of PO:0006469 ! Poaceae style
 
 [Term]
 id: PO:0006500
-name: ovary epidermis (sensu Poaceae)
+name: Poaceae ovary epidermis
 namespace: plant_structure
 def: "The epidermal cell layer of the ovary of a grass carpel." [GR:pj]
 is_a: PO:0006063 ! ovary epidermis
-relationship: part_of PO:0006456 ! ovary (sensu Poaceae)
+relationship: part_of PO:0006456 ! Poaceae ovary
 
 [Term]
 id: PO:0006501
@@ -5818,34 +5834,35 @@ id: PO:0006505
 name: central spike of ear
 namespace: plant_structure
 def: "The inflorescence axis of the ear." [GR:pj]
-synonym: "cob (sensu zea)" RELATED []
+comment: Zea cob is different from the cob inflorescence found in Sorghum.
 synonym: "ear rachis" RELATED []
+synonym: "Zea cob" RELATED []
 is_a: PO:0020122 ! inflorescence axis
-relationship: part_of PO:0020136 ! ear (sensu Zea)
+relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006506
-name: chalaza (sensu Zea)
+name: Zea chalaza
 namespace: plant_structure
 def: "Region in the maize ovule where the integuments and the nucellus merge with the funiculus." [GR:pj]
-is_a: PO:0006458 ! chalaza (sensu Poaceae)
-relationship: part_of PO:0006491 ! ovule (sensu Zea)
+is_a: PO:0006458 ! Poaceae chalaza
+relationship: part_of PO:0006491 ! Zea ovule
 
 [Term]
 id: PO:0006507
-name: integument (sensu Zea)
+name: Zea integument
 namespace: plant_structure
 def: "One of the layers of tissue that covers the ovule of a maize carpel, enveloping the nucellus and forming the micropyle at the apex." [GR:pj]
-is_a: PO:0006465 ! integument (sensu Poaceae)
-relationship: part_of PO:0006491 ! ovule (sensu Zea)
+is_a: PO:0006465 ! Poaceae integument
+relationship: part_of PO:0006491 ! Zea ovule
 
 [Term]
 id: PO:0006508
-name: integument epidermis (sensu Poaceae)
+name: Poaceae integument epidermis
 namespace: plant_structure
 def: "The epidermis of an integument in a grass ovule." [GR:pj]
 is_a: PO:0006043 ! integument epidermis
-relationship: part_of PO:0006465 ! integument (sensu Poaceae)
+relationship: part_of PO:0006465 ! Poaceae integument
 
 [Term]
 id: PO:0007001
@@ -5987,7 +6004,7 @@ is_a: PO:0007130 ! B reproductive growth
 
 [Term]
 id: PO:0007012
-name: inflorescence visible (sensu Poaceae)
+name: Poaceae inflorescence visible
 namespace: plant_growth_and_development_stage
 def: "The stage at which grass plant is producing inflorescence(s)." [Poc:curators]
 comment: There is no one-to-one correspondence between growth stages of inflorescences formation in members of Poaceae with that of other families.
@@ -6019,7 +6036,7 @@ synonym: "BBCH growth stage 40" RELATED [ISBN:3826331524]
 synonym: "development of vegetatively propogated organs" RELATED []
 synonym: "rice growth stage-5" RELATED [GRO:0007148]
 synonym: "sorghum growth stage-6" RELATED [GRO:0007130]
-is_a: PO:0007012 ! inflorescence visible (sensu Poaceae)
+is_a: PO:0007012 ! Poaceae inflorescence visible
 
 [Term]
 id: PO:0007015
@@ -6424,7 +6441,7 @@ synonym: "heading" RELATED [GRO:0007095]
 synonym: "rice growth stage-6" RELATED [GRO:0007044]
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
 synonym: "tasseling" RELATED []
-is_a: PO:0007012 ! inflorescence visible (sensu Poaceae)
+is_a: PO:0007012 ! Poaceae inflorescence visible
 
 [Term]
 id: PO:0007042
@@ -6538,13 +6555,13 @@ synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
 synonym: "BBCH growth stage 10" RELATED [ISBN:3826331524]
 synonym: "cotyledon emergence in Solanaceae" RELATED [SGN:0000008]
 synonym: "cotyledons fully open in Arabidopsis" RELATED [TAIR:0000397]
-synonym: "first leaf through coleoptile (sensu Oryza)" RELATED []
-synonym: "first leaf through coleoptile (sensu Triticeae)" RELATED [GRO:0007059]
 synonym: "hypocotyl and cotyledon emergence in Arabidopsis" RELATED [TAIR:0000396]
 synonym: "LP.00 cotyledon visible" RELATED []
 synonym: "maize growth stage-1.1" RELATED [GRO:0007008]
-synonym: "seedling emergence (sensu Sorghum)" RELATED [GRO:0007125]
+synonym: "Oryza first leaf through coleoptile" RELATED []
 synonym: "sorghum growth stage-0" RELATED [GRO:0007125]
+synonym: "Sorghum seedling emergence" RELATED [GRO:0007125]
+synonym: "Triticeae first leaf through coleoptile" RELATED [GRO:0007059]
 synonym: "VE in maize" RELATED [MaizeGDB:64057]
 synonym: "VE stage in soybean" RELATED [SOY:0000014]
 synonym: "Zadok scale-10, Feekes scale-1" RELATED [GRO:0007059]
@@ -6634,7 +6651,7 @@ id: PO:0007056
 name: 1 pattern formation
 namespace: plant_growth_and_development_stage
 def: "Trichome initiation stage that determine numbers of trichome are formed." [GR:cwt]
-relationship: part_of PO:0007039 ! leaf trichome development stage
+is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007057
@@ -6661,14 +6678,14 @@ id: PO:0007058
 name: 2 endoreduplication
 namespace: plant_growth_and_development_stage
 def: "The stage trichome nuclei continue to replicate their DNA after mitosis and cytokinesis have ceased, and as a consequence have a DNA content much greater than 2C." [GR:cwt]
-relationship: part_of PO:0007039 ! leaf trichome development stage
+is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007059
 name: 3 branch formation
 namespace: plant_growth_and_development_stage
 def: "The stage trichome develops branches." [GR:cwt]
-relationship: part_of PO:0007039 ! leaf trichome development stage
+is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007060
@@ -6724,10 +6741,10 @@ synonym: "ear initiation in maize" RELATED [MaizeGDB:67356]
 synonym: "LP.07 seven leaves visible in Solanaceae" RELATED [SGN:0000019]
 synonym: "maize growth stage-3.1" RELATED [GRO:0007013]
 synonym: "mid-whorl stage in maize" RELATED [MaizeGDB:67356]
-synonym: "seven leaves unfolded (sensu Triticeae)" RELATED [GRO:0007066]
 synonym: "seven rosette leaves" RELATED []
 synonym: "seventh leaf unfolded" RELATED []
 synonym: "Stage V6 in soybean" RELATED [SOY:0000021]
+synonym: "Triticeae seven leaves unfolded" RELATED [GRO:0007066]
 synonym: "V7 in maize" RELATED [MaizeGDB:67356]
 synonym: "Zadok scale-, Haun scale-6.+" RELATED [GRO:0007066]
 is_a: PO:0007133 ! leaf production
@@ -6772,16 +6789,16 @@ synonym: "5 rosette leaf in Arabidopsis" RELATED [TAIR:0000408]
 synonym: "BBCH growth stage 15" RELATED [ISBN:3826331524]
 synonym: "early whorl stage in maize" RELATED [MaizeGDB:67306]
 synonym: "fifth leaf unfolded" RELATED []
-synonym: "five leaf stage (sensu Sorghum)" RELATED [GRO:0007127]
-synonym: "five leaves unfolded (sensu Triticeae)" RELATED [GRO:0007064]
 synonym: "five rosette leaves" RELATED []
 synonym: "LP.05 five leaves visible in Solanaceae" RELATED [SGN:0000017]
 synonym: "maize growth stage-2" RELATED [GRO:0007011]
 synonym: "rice growth stage-3" RELATED [GRO:0007049]
+synonym: "Sorghum five leaf stage" RELATED [GRO:0007127]
 synonym: "sorghum growth stage-3" RELATED [GRO:0007127]
 synonym: "Stage V4 in soybean" RELATED [SOY:0000019]
 synonym: "tassel differentiation in maize" RELATED [MaizeGDB:67306]
 synonym: "tassel initiation in maize" RELATED [MaizeGDB:67306]
+synonym: "Triticeae five leaves unfolded" RELATED [GRO:0007064]
 synonym: "V5 in maize" RELATED [MaizeGDB:67306]
 synonym: "Zadok scale-15, Haun scale-4.+" RELATED [GRO:0007064]
 is_a: PO:0007133 ! leaf production
@@ -7220,10 +7237,10 @@ synonym: "LP.01 one leaf visible in Solanaceae" RELATED [SGN:0000013]
 synonym: "maize growth stage-1.2" RELATED [GRO:0007009]
 synonym: "pre tillering" RELATED [GRO:0007142]
 synonym: "rice growth stage-2.1" RELATED [GRO:0007142]
-synonym: "V01 stage (sensu Zea)" RELATED []
 synonym: "V1 in maize " RELATED [Maize:67353]
 synonym: "VC stage in soybean" RELATED [SOY:0000015]
 synonym: "Zadok scale-11, Haun scale-1.+" RELATED [GRO:0007060]
+synonym: "Zea V01 stage" RELATED []
 is_a: PO:0007133 ! leaf production
 
 [Term]
@@ -7245,12 +7262,12 @@ synonym: "8-leaf in maize" RELATED [MaizeGDB:67356]
 synonym: "BBCH growth stage 18" RELATED [ISBN:3826331524]
 synonym: "ear initiation in maize" RELATED [MaizeGDB:67356]
 synonym: "eight leaf unfolded" RELATED []
-synonym: "eight leaves unfolded (sensu Triticeae)" RELATED [GRO:0007067]
 synonym: "eight rosette leaves" RELATED []
 synonym: "LP.08 eight leaves visible in Solanaceae" RELATED [SGN:0000020]
 synonym: "maize growth stage-3.1" RELATED [GRO:0007013]
 synonym: "mid-whorl stage in maize" RELATED [MaizeGDB:67356]
 synonym: "Stage V7 in soybean" RELATED [SOY:0000022]
+synonym: "Triticeae eight leaves unfolded" RELATED [GRO:0007067]
 synonym: "V8 in maize" RELATED [MaizeGDB:67356]
 synonym: "Zadok scale-18, Haun scale-7.+" RELATED [GRO:0007067]
 is_a: PO:0007133 ! leaf production
@@ -7299,7 +7316,7 @@ synonym: "LP.02 two leaves visible in Solanaceae" RELATED [SGN:0000014]
 synonym: "maize growth stage-1.2" RELATED [GRO:0007009]
 synonym: "pre tillering" RELATED [GRO:0007142]
 synonym: "rice growth stage-2.1" RELATED [GRO:0007142]
-synonym: "two leaves unfolded (sensu Triticeae)" RELATED [GRO:0007061]
+synonym: "Triticeae two leaves unfolded" RELATED [GRO:0007061]
 synonym: "two rosette leaves" RELATED []
 synonym: "V1 stage in soybean" RELATED [SOY:0000016]
 synonym: "V2 in maize" RELATED [MaizeGDB:67353]
@@ -7697,10 +7714,10 @@ synonym: "LP.06 six leaves visible in Solanaceae" RELATED [SGN:0000018]
 synonym: "maize growth stage-3.1" RELATED [GRO:0007012]
 synonym: "mid-whorl stage in maize" RELATED [MaizeGDB:67356]
 synonym: "rice growth stage-3" RELATED [GRO:0007049]
-synonym: "six leaves unfolded (sensu Triticeae)" RELATED [GRO:0007065]
 synonym: "six rosette leaves" RELATED []
 synonym: "sixth leaf unfolded" RELATED []
 synonym: "Stage V5 in soybean" RELATED [SOY:0000020]
+synonym: "Triticeae six leaves unfolded" RELATED [GRO:0007065]
 synonym: "V6 in maize" RELATED [MaizeGDB:67306]
 synonym: "Zadok scale-16, Haun scale-5.+" RELATED [GRO:0007065]
 is_a: PO:0007133 ! leaf production
@@ -7819,7 +7836,7 @@ id: PO:0007135
 name: 4 growth directionality
 namespace: plant_growth_and_development_stage
 def: "The stage involved in the directionality of expansion growth." [GR:cwt]
-relationship: part_of PO:0007039 ! leaf trichome development stage
+is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007501
@@ -8631,6 +8648,7 @@ synonym: "non-secretory unicellular trichome" NARROW []
 synonym: "simple trichome" NARROW [PMID:19939948]
 synonym: "unicellular trichome" NARROW []
 is_a: PO:0009002 ! plant cell
+disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0004013 ! epidermal cell
 relationship: part_of PO:0000282 ! trichome
 
@@ -8920,7 +8938,7 @@ def: "A collective plant structure that produces shoot apical meristems and the 
 comment: Generally the above ground portion of a plant.
 subset: reference
 subset: TraitNet
-synonym: "crown (sensu Poaceae)" RELATED []
+synonym: "Poaceae crown" RELATED []
 synonym: "shoot" RELATED []
 synonym: "tree crown" NARROW []
 xref: OBO_SF_PO:3011039
@@ -9325,6 +9343,7 @@ comment: The characteristic reproductive structure of angiosperms. May have as p
 subset: Angiosperm
 subset: reference
 subset: TraitNet
+synonym: "basal flower" NARROW [CO_125:0000019]
 synonym: "diclinous flower" NARROW []
 synonym: "double flower" NARROW []
 synonym: "female flower" NARROW [CGP:curators]
@@ -9373,26 +9392,26 @@ alt_id: PO:0020117
 alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
-def: "That part of the axial system of plants above the uppermost foliage leaf/pair of foliage leaves that bears flowers." [APWeb:Glossary]
+def: "A reproductive shoot system that has as parts all of the shoot axes distal to the most distal foliage leaf of a shoot axis and all of the flowers borne by those axes. Must have two or more flowers as parts." [POC:rw]
 comment: Some plants have only solitary flowers, e.g.<i> Magnolia</i>.
 subset: Angiosperm
 subset: reference
 subset: TraitNet
+synonym: "Asteraceae floret" NARROW []
 synonym: "capitulum" NARROW []
 synonym: "catkin" NARROW []
-synonym: "cob (sensu Sorghum)" NARROW []
 synonym: "corymb" NARROW []
 synonym: "cyme" NARROW []
 synonym: "dichasium" NARROW []
 synonym: "drepanium" NARROW []
-synonym: "floret (sensu Asteraceae)" NARROW []
 synonym: "helicoid cyme" NARROW []
 synonym: "monochasium" NARROW []
 synonym: "panicle" NARROW []
 synonym: "raceme" NARROW []
 synonym: "rhipidium" NARROW []
 synonym: "scorpioid cyme" NARROW []
-synonym: "spike (sensu Triticeae)" NARROW []
+synonym: "Sorghum cob" NARROW []
+synonym: "Triticeae spike" NARROW []
 synonym: "umbel" NARROW []
 synonym: "verticillaster" NARROW []
 xref: OBO_SF_PO:2971891
@@ -9734,7 +9753,7 @@ name: inflorescence branch
 namespace: plant_structure
 def: "Any branch forming from the primary or the higher order inflorescence axis." [Poc:curators]
 synonym: "coflorescence" RELATED []
-is_a: PO:0025073 ! branch
+is_a: PO:0020122 ! inflorescence axis
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -9797,10 +9816,10 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 subset: Tomato
+synonym: "citrus flesh" RELATED []
+synonym: "citrus pulp" RELATED []
 synonym: "endocarp" RELATED []
-synonym: "flesh (sensu Citrus)" RELATED []
 synonym: "inner epidermis of pericarp" RELATED []
-synonym: "pulp (sensu Citrus)" RELATED []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -9962,7 +9981,7 @@ namespace: plant_structure
 def: "The meristem which gives rise to the female inflorescence or ear in maize." [MaizeGDB:lv]
 subset: Maize
 is_a: PO:0000230 ! inflorescence meristem
-relationship: part_of PO:0020136 ! ear (sensu Zea)
+relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0009110
@@ -9988,6 +10007,8 @@ namespace: plant_structure
 def: "An axial part of an embryo that has as parts a hypocotyl and a root meristem or, if present, a radicle." [ISBN:0471245208, POC:rw]
 synonym: "hypocotyl-root axis" RELATED []
 is_a: PO:0025099 ! embryonic plant structure
+relationship: has_part PO:0006085 ! root meristem
+relationship: has_part PO:0020100 ! hypocotyl
 
 [Term]
 id: PO:0019022
@@ -10326,7 +10347,7 @@ relationship: part_of PO:0019018 ! embryo axis
 id: PO:0020032
 name: plumule
 namespace: plant_structure
-def: "The somewhat differentiated terminal bud in several embryo types above the cotyledonary node, in which one or more internodes and leaves or scales can be discerned in a primordial stage." [APWeb:Glossary]
+def: "A somewhat differentiated terminal bud in several embryo types above the cotyledonary node, in which one or more internodes and leaves or scales can be discerned in a primordial stage." [APWeb:Glossary]
 synonym: "embryonic shoot" RELATED []
 is_a: PO:0025099 ! embryonic plant structure
 
@@ -10342,6 +10363,7 @@ id: PO:0020034
 name: coleorhiza
 namespace: plant_structure
 def: "A portion of embryonic plant tissue surrounding the radicle in the embryo or seedling of some monocots." [APWeb:Glossary]
+comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage.
 is_a: PO:0025233 ! embryonic plant tissue
 
 [Term]
@@ -10356,6 +10378,7 @@ id: PO:0020036
 name: epiblast
 namespace: plant_structure
 def: "A portion of embryonic plant tissue that is a flap-like projection of the coleorhiza, inserted opposite the scutellum." [ISBN:0471244554]
+comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage. Some researchers consider the epiblast and coleorhiza independent structures that differentiate from the same proembryonic tissue.
 is_a: PO:0025233 ! embryonic plant tissue
 relationship: part_of PO:0020034 ! coleorhiza
 
@@ -10754,7 +10777,6 @@ namespace: plant_structure
 def: "The part of the stem below the cotyledonary node and transitional to a root, found in a young sporophyte." [APWeb:Glossary]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
 id: PO:0020101
@@ -10850,7 +10872,6 @@ id: PO:0020122
 name: inflorescence axis
 namespace: plant_structure
 def: "A shoot axis that is part of an inflorescence." [POC:rw]
-comment: Cob (sensu Zea) is different from the cob inflorescence found in Sorghum.
 subset: TraitNet
 synonym: "first order inflorescence branch" RELATED []
 synonym: "inflorescence rachis" RELATED []
@@ -10985,7 +11006,7 @@ relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0020136
-name: ear (sensu Zea)
+name: Zea ear
 namespace: plant_structure
 def: "The distal part of a lateral (axillary) branch in Zea that bears the functionally-carpellate florets in a highly contracted inflorescence." [MaizeGDB:lv]
 subset: Maize
@@ -11420,7 +11441,7 @@ creation_date: 2010-05-07T02:36:55Z
 id: PO:0025028
 name: embryonic plant cell
 namespace: plant_structure
-def: "A plant cell that is part of an embryo." [POC:rw]
+def: "An embryonic plant structure that is a plant cell that is found only in an embryo." [POC:rw]
 is_a: PO:0025099 ! embryonic plant structure
 created_by: Ramona
 creation_date: 2010-05-07T02:41:17Z
@@ -12237,124 +12258,6 @@ created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
 
 [Term]
-id: PO:0025100
-name: plant life cycle process
-created_by: Ramona
-creation_date: 2010-11-05T02:24:10Z
-
-[Term]
-id: PO:0025101
-name: plant structure development
-is_a: PO:0025100 ! plant life cycle process
-created_by: Ramona
-creation_date: 2010-11-05T02:26:05Z
-
-[Term]
-id: PO:0025102
-name: whole plant development
-is_a: PO:0025101 ! plant structure development
-created_by: Ramona
-creation_date: 2010-11-05T02:26:05Z
-
-[Term]
-id: PO:0025103
-name: plant organ development
-is_a: PO:0025101 ! plant structure development
-created_by: Ramona
-creation_date: 2010-11-05T02:26:05Z
-
-[Term]
-id: PO:0025104
-name: sporophyte development
-is_a: PO:0025102 ! whole plant development
-created_by: Ramona
-creation_date: 2010-11-05T02:28:56Z
-
-[Term]
-id: PO:0025105
-name: gametophyte development
-is_a: PO:0025102 ! whole plant development
-created_by: Ramona
-creation_date: 2010-11-05T02:28:56Z
-
-[Term]
-id: PO:0025106
-name: plant life cycle phase
-is_a: PO:0025100 ! plant life cycle process
-created_by: Ramona
-creation_date: 2010-11-05T02:29:21Z
-
-[Term]
-id: PO:0025107
-name: plant life cycle phase transition
-is_a: PO:0025100 ! plant life cycle process
-created_by: Ramona
-creation_date: 2010-11-05T02:29:52Z
-
-[Term]
-id: PO:0025108
-name: gametophytic phase
-is_a: PO:0025106 ! plant life cycle phase
-created_by: Ramona
-creation_date: 2010-11-05T02:30:24Z
-
-[Term]
-id: PO:0025109
-name: sporophytic phase
-is_a: PO:0025106 ! plant life cycle phase
-created_by: Ramona
-creation_date: 2010-11-05T02:30:24Z
-
-[Term]
-id: PO:0025110
-name: meiosis
-is_a: PO:0025107 ! plant life cycle phase transition
-created_by: Ramona
-creation_date: 2010-11-05T02:31:29Z
-
-[Term]
-id: PO:0025111
-name: fertilization
-is_a: PO:0025107 ! plant life cycle phase transition
-created_by: Ramona
-creation_date: 2010-11-05T02:31:29Z
-
-[Term]
-id: PO:0025112
-name: cell division of zygote
-is_a: PO:0025107 ! plant life cycle phase transition
-created_by: Ramona
-creation_date: 2010-11-05T02:31:29Z
-
-[Term]
-id: PO:0025113
-name: seed germination
-is_a: PO:0025107 ! plant life cycle phase transition
-created_by: Ramona
-creation_date: 2010-11-05T02:31:58Z
-
-[Term]
-id: PO:0025114
-name: spore germination
-is_a: PO:0025107 ! plant life cycle phase transition
-created_by: Ramona
-creation_date: 2010-11-05T02:33:13Z
-
-[Term]
-id: PO:0025115
-name: spore cell division
-is_a: PO:0025107 ! plant life cycle phase transition
-created_by: Ramona
-creation_date: 2010-11-05T02:34:15Z
-
-[Term]
-id: PO:0025116
-name: pollen development
-is_a: PO:0025105 ! gametophyte development
-created_by: Ramona
-creation_date: 2010-11-05T02:38:50Z
-
-[Term]
 id: PO:0025117
 name: plant anatomical space
 namespace: plant_structure
@@ -12511,8 +12414,8 @@ creation_date: 2010-11-15T11:41:38Z
 id: PO:0025132
 name: canal
 namespace: plant_structure
-def: "An anatomical space that is roughly linear or cylindrical in shape." [POC:rw]
-comment: May be enclosed within a plant structure or on the surface of a plant structure and open on one side.
+def: "A plant anatomical space that is either a groove on the surface or a tube in the interior of a plant structure." [POC:curators]
+comment: May be cylindrical (PATO:0001203) in shape, with a circular, D-shaped or other irregularly-shaped cross-section.
 is_a: PO:0025117 ! plant anatomical space
 created_by: Ramona
 creation_date: 2010-11-15T11:47:42Z
@@ -12521,18 +12424,23 @@ creation_date: 2010-11-15T11:47:42Z
 id: PO:0025133
 name: petiole canal
 namespace: plant_structure
-def: "A canal space that is on the adaxial side of a petiole, formed by the curved cross-sectional shape of the petiole." [GCP:curators, POC:rw]
+def: "A canal that is part of a petiole." [POC:curators]
+comment: May occur on the surface or be internal.
 subset: Musa
 is_a: PO:0025132 ! canal
+relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
 creation_date: 2010-11-15T11:54:00Z
 
 [Term]
 id: PO:0025134
-name: Musa crown
+name: inflorescence branch crown
 namespace: plant_structure
-def: "A shoot system that forms the basal part of an inflorescence in Musa species to which the pedicels are attached and in which the internodes do not elongate, giving the appearance of a ridge of raised tissue." [GCP:curators, POC:rw]
+def: "A shoot system that forms the basal part of an inflorescence to which the pedicels are attached and in which the internodes do not elongate, giving the appearance of a ridge of raised tissue." [POC:curators]
 subset: Musa
+synonym: "banana crown" NARROW []
+synonym: "Musa crown" NARROW []
+xref: CO_125:0000023
 is_a: PO:0009006 ! shoot system
 relationship: part_of PO:0009049 ! inflorescence
 created_by: Ramona
@@ -12553,10 +12461,12 @@ creation_date: 2010-11-15T12:05:45Z
 id: PO:0025136
 name: free tepal
 namespace: plant_structure
-def: "A tepal that is not fused to any other tepals." [GCP:curators, POC:phenotype]
+def: "A tepal that is separate from all other tepals." [POC:phenotype]
 comment: This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0001505 (separated from).
 subset: Musa
+xref: CO_125:0000020
 is_a: PO:0009033 ! tepal
+disjoint_from: PO:0025137 ! fused tepal
 created_by: Ramona
 creation_date: 2010-11-15T01:06:51Z
 
@@ -12564,10 +12474,11 @@ creation_date: 2010-11-15T01:06:51Z
 id: PO:0025137
 name: fused tepal
 namespace: plant_structure
-def: "A tepal that is fused to another tepal." [GCP:curators, POC:phenotype]
+def: "A tepal that is fused to another tepal." [POC:phenotype]
 comment: May be fused to two tepals (one on either side). This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0000642 (fused with).
 subset: Musa
 is_a: PO:0009033 ! tepal
+disjoint_from: PO:0025136 ! free tepal
 created_by: Ramona
 creation_date: 2010-11-15T01:12:18Z
 
@@ -12575,10 +12486,12 @@ creation_date: 2010-11-15T01:12:18Z
 id: PO:0025138
 name: fused collective tepal structure
 namespace: plant_structure
-def: "A collective tepal structure in which the tepals are fused." [GCP:curators, POC:phenotype]
+def: "A collective tepal structure that has as parts at least two fused tepals." [POC:phenotype]
 comment: This is a phenotype that is a cross-product of PO:0025021 (collective tepal structure) and PATO:0000642 (fused with). In Musa, there are there are 5 fused tepals which form 3 major lobes and 2 minor lobes.
 subset: Musa
 synonym: "compound tepals" RELATED []
+synonym: "syntepalous perianth" EXACT []
+xref: CO_125:0000021
 is_a: PO:0025021 ! collective tepal structure
 relationship: has_part PO:0025137 ! fused tepal
 created_by: Ramona
@@ -12881,9 +12794,9 @@ creation_date: 2010-11-18T10:29:44Z
 id: PO:0025166
 name: papilla cell
 namespace: plant_structure
-def: "A pavement cell with a short protuberance." [POC:curators]
+def: "An epidermal pavement cell with a short protuberance." [POC:curators]
 comment: See GO for the subcellular component papilla.
-is_a: PO:0000332 ! pavement cell
+is_a: PO:0000332 ! epidermal pavement cell
 created_by: Ramona
 creation_date: 2010-11-18T05:25:37Z
 
@@ -13057,6 +12970,8 @@ name: leaf stomatal complex
 namespace: plant_structure
 def: "A phyllome stomatal complex that is part of a leaf epidermis." [POC:rw]
 is_a: PO:0025215 ! phyllome stomatal complex
+relationship: has_part PO:0025235 ! leaf stomatal pore
+relationship: has_part PO:0025237 ! leaf guard cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
 creation_date: 2010-12-09T11:47:55Z
@@ -13352,8 +13267,8 @@ creation_date: 2010-12-17T02:08:37Z
 id: PO:0025212
 name: leaf pavement cell
 namespace: plant_structure
-def: "A pavement cell that is part of a leaf epidermis." [POC:rw]
-is_a: PO:0000332 ! pavement cell
+def: "An epidermal pavement cell that is part of a leaf epidermis." [POC:rw]
+is_a: PO:0000332 ! epidermal pavement cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
 creation_date: 2010-12-17T02:47:25Z
@@ -13384,6 +13299,8 @@ name: phyllome stomatal complex
 namespace: plant_structure
 def: "A stomatal complex that is part of a phyllome epidermis." [POC:rw]
 is_a: PO:0002000 ! stomatal complex
+relationship: has_part PO:0025234 ! phyllome stomatal pore
+relationship: has_part PO:0025236 ! phyllome guard cell
 relationship: part_of PO:0025157 ! phyllome epidermis
 created_by: Ramona
 creation_date: 2010-12-20T08:23:11Z
@@ -13565,9 +13482,201 @@ id: PO:0025233
 name: embryonic plant tissue
 namespace: plant_structure
 def: "A portion of plant tissue that is part of an embryo." [POC:rw]
+comment: This class is for tissues that only occur as part of an embryo.
 is_a: PO:0025099 ! embryonic plant structure
 created_by: Ramona
 creation_date: 2010-12-20T12:27:10Z
+
+[Term]
+id: PO:0025234
+name: phyllome stomatal pore
+namespace: plant_structure
+def: "A stomatal pore that is part of a phyllome stomatal complex." [POC:curators]
+is_a: PO:0008032 ! stomatal pore
+relationship: part_of PO:0025215 ! phyllome stomatal complex
+created_by: Ramona
+creation_date: 2010-12-29T01:33:50Z
+
+[Term]
+id: PO:0025235
+name: leaf stomatal pore
+namespace: plant_structure
+def: "A phyllome stomatal pore that is part of a leaf stomatal complex." [POC:rw]
+is_a: PO:0025234 ! phyllome stomatal pore
+relationship: part_of PO:0025183 ! leaf stomatal complex
+created_by: Ramona
+creation_date: 2010-12-29T01:38:03Z
+
+[Term]
+id: PO:0025236
+name: phyllome guard cell
+namespace: plant_structure
+def: "A guard cell that is part of a phyllome stomatal complex." [POC:curators]
+is_a: PO:0000293 ! guard cell
+relationship: part_of PO:0025215 ! phyllome stomatal complex
+created_by: Ramona
+creation_date: 2010-12-29T01:40:14Z
+
+[Term]
+id: PO:0025237
+name: leaf guard cell
+namespace: plant_structure
+def: "A phyllome guard cell that is part of a leaf stomatal complex." [POC:rw]
+is_a: PO:0025236 ! phyllome guard cell
+relationship: part_of PO:0025183 ! leaf stomatal complex
+created_by: Ramona
+creation_date: 2010-12-29T01:44:27Z
+
+[Term]
+id: PO:0025238
+name: abaxial petiole canal
+namespace: plant_structure
+def: "A petiole canal on the abaxial side of a petiole." [POC:rw]
+is_a: PO:0025133 ! petiole canal
+created_by: Ramona
+creation_date: 2010-12-30T02:09:39Z
+
+[Term]
+id: PO:0025239
+name: adaxial petiole canal
+namespace: plant_structure
+def: "A petiole canal on the adaxial side of a petiole." [POC:rw]
+xref: CO_125:0000012
+is_a: PO:0025133 ! petiole canal
+created_by: Ramona
+creation_date: 2010-12-30T02:09:39Z
+
+[Term]
+id: PO:0025240
+name: secondary inflorescence
+namespace: plant_structure
+def: "A reproductive shoot system that is part of an inflorescence and has a parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:rw]
+comment: This a branch of the inflorescence that arises from the main axis.
+is_a: PO:0025082 ! reproductive shoot system
+relationship: has_part PO:0009046 ! flower
+relationship: has_part PO:0009081 ! inflorescence branch
+relationship: part_of PO:0009049 ! inflorescence
+created_by: Ramona
+creation_date: 2010-12-30T03:31:29Z
+
+[Term]
+id: PO:0025241
+name: secondary infructescence
+namespace: plant_structure
+def: "A reproductive shoot system that is part of an infructescence and has as parts a second order infructescence branch and any shoot axes and fruits that arise from that branch." [POC:rw]
+is_a: PO:0025082 ! reproductive shoot system
+relationship: has_part PO:0009001 ! fruit
+relationship: has_part PO:0025243 ! infructescence branch
+relationship: part_of PO:0006342 ! infructescence
+created_by: Ramona
+creation_date: 2010-12-30T03:31:29Z
+
+[Term]
+id: PO:0025242
+name: infructescence axis
+namespace: plant_structure
+def: "A shoot axis that is part of an infructescence." [POC:rw]
+is_a: PO:0025029 ! shoot axis
+relationship: develops_from PO:0020122 ! inflorescence axis
+relationship: part_of PO:0006342 ! infructescence
+created_by: Ramona
+creation_date: 2010-12-30T03:34:07Z
+
+[Term]
+id: PO:0025243
+name: infructescence branch
+namespace: plant_structure
+def: "An infructescence axis that is a branch from a primary or higher order infructescence axis." [POC:rw]
+is_a: PO:0025242 ! infructescence axis
+created_by: Ramona
+creation_date: 2010-12-30T03:37:08Z
+
+[Term]
+id: PO:0025244
+name: primary infructescence axis
+namespace: plant_structure
+def: "The main axis of an infructescence, from which al infructescence branches arise." [POC:rw]
+synonym: "infructescence rachis" EXACT []
+is_a: PO:0025242 ! infructescence axis
+created_by: Ramona
+creation_date: 2010-12-30T03:38:25Z
+
+[Term]
+id: PO:0025245
+name: persistent sepal
+namespace: plant_structure
+def: "A phyllome that develops from a sepal and remains attached to a fruit at maturity." [POC:rw]
+comment: May be alive or dead at maturity.
+synonym: "flower relic" BROAD []
+is_a: PO:0006001 ! phyllome
+relationship: develops_from PO:0009031 ! sepal
+created_by: Ramona
+creation_date: 2010-12-30T03:47:08Z
+
+[Term]
+id: PO:0025246
+name: persistent tepal
+namespace: plant_structure
+def: "A phyllome that develops from a tepal and remains attached to a fruit at maturity." [POC:rw]
+comment: May be alive or dead at maturity.
+synonym: "flower relic" BROAD []
+is_a: PO:0006001 ! phyllome
+relationship: develops_from PO:0009033 ! tepal
+created_by: Ramona
+creation_date: 2010-12-30T03:47:08Z
+
+[Term]
+id: PO:0025247
+name: persistent stamen
+namespace: plant_structure
+def: "A phyllome that develops from a stamen and remains attached to a fruit at maturity." [POC:rw]
+comment: May be alive or dead at maturity.
+synonym: "flower relic" BROAD []
+is_a: PO:0006001 ! phyllome
+relationship: develops_from PO:0009029 ! stamen
+created_by: Ramona
+creation_date: 2010-12-30T03:47:08Z
+
+[Term]
+id: PO:0025248
+name: pseudostem
+namespace: plant_structure
+def: "A collective plant structure that forms a cylindrical false stem composed concentric leaf sheaths." [POC:rw]
+comment: The peduncle later grows up through the psuedostem.
+subset: Musa
+xref: CO_125:0000046
+is_a: PO:0025007 ! collective plant structure
+created_by: Ramona
+creation_date: 2010-12-30T03:53:09Z
+
+[Term]
+id: PO:0025249
+name: leaf sheath epidermis
+namespace: plant_structure
+def: "A portion of leaf epidermis that is part of a leaf sheath." [POC:rw]
+is_a: PO:0006016 ! leaf epidermis
+relationship: part_of PO:0020104 ! leaf sheath
+created_by: Ramona
+creation_date: 2010-12-30T03:58:22Z
+
+[Term]
+id: PO:0025250
+name: leaf sheath abaxial epidermis
+namespace: plant_structure
+def: "A portion of leaf sheath epidermis that covers the abaxial/lower surface of a leaf sheath." [POC:rw]
+synonym: "psuedostem underlayers" NARROW [CO_125:0000047]
+is_a: PO:0025249 ! leaf sheath epidermis
+created_by: Ramona
+creation_date: 2010-12-30T04:02:50Z
+
+[Term]
+id: PO:0025251
+name: leaf sheath adaxial epidermis
+namespace: plant_structure
+def: "A portion of leaf sheath epidermis that covers the adaxial/upper surface of a leaf sheath." [POC:rw]
+is_a: PO:0025249 ! leaf sheath epidermis
+created_by: Ramona
+creation_date: 2010-12-30T04:02:50Z
 
 [Term]
 id: PO:0028001
