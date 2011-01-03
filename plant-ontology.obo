@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:12:2010 16:49
+date: 03:01:2011 15:21
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta7
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -513,6 +513,7 @@ id: PO:0000057
 name: inflorescence bud
 namespace: plant_structure
 def: "A bud that develops into an inflorescence." [POC:curators]
+subset: Musa
 synonym: "male bud" NARROW [CO_125:0000049 "Term used for Musa to describe the usually persistent bud when it is only composed of bracts with male flowers."]
 is_a: PO:0025084 ! reproductive bud
 
@@ -807,7 +808,6 @@ namespace: plant_structure
 def: "A portion of meristem tissue that gives rise to the floral organs." [GR:pj]
 synonym: "floral apical meristem" RELATED []
 is_a: PO:0009013 ! meristem
-relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0000230
@@ -4568,8 +4568,9 @@ id: PO:0006343
 name: axillary shoot system
 namespace: plant_structure
 def: "A shoot-borne shoot system that develops from an axillary vegetative bud." [POC:curators]
+subset: Musa
 synonym: "axillary branch" RELATED []
-synonym: "Musa sucker" NARROW [CO_125:0000042]
+synonym: "Musa sucker" NARROW [CO_125:0000042 "A shoot system arrising form an axillary bud at the base of a Musa plant."]
 is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
@@ -8734,17 +8735,17 @@ is_a: PO:0025127 ! primordium
 id: PO:0008041
 name: stem internode elongation zone
 namespace: plant_structure
-def: "A plant axis elongation zone that is part of a stem internode." [POC:curators]
-is_a: PO:0025180 ! plant axis elongation zone
+def: "A shoot internode elongation zone that is part of a stem internode." [POC:curators]
+is_a: PO:0025100 ! shoot internode elongation zone
 relationship: part_of PO:0020142 ! stem internode
 
 [Term]
 id: PO:0008042
 name: stem internode differentiation zone
 namespace: plant_structure
-def: "A plant axis differentiation zone that is part of a stem internode." [POC:rw "PMID:14520573"]
+def: "A shoot internode differentiation zone that is part of a stem internode." [POC:rw "PMID:14520573"]
 comment: Primary, not secondary, tissue differentiation occurs in a differentiation zone.
-is_a: PO:0025119 ! plant axis differentiation zone
+is_a: PO:0025102 ! shoot internode differentiation zone
 relationship: part_of PO:0020142 ! stem internode
 
 [Term]
@@ -9346,8 +9347,8 @@ subset: TraitNet
 synonym: "basal flower" NARROW [CO_125:0000019]
 synonym: "diclinous flower" NARROW []
 synonym: "double flower" NARROW []
-synonym: "female flower" NARROW [CGP:curators]
-synonym: "hermaphrodite flower" NARROW [CGP:curators]
+synonym: "female flower" NARROW [CO_125:0000050]
+synonym: "hermaphrodite flower" NARROW [CO_125:0000028]
 synonym: "imperfect flower" NARROW []
 synonym: "male flower" NARROW [CGP:curators]
 synonym: "monoclinous flower" NARROW []
@@ -11248,6 +11249,8 @@ namespace: plant_structure
 def: "The margin of a flattened petiole." [POC:curators]
 comment: Petiole margins may be found in flattened (laminar) petioles, but may also occur in laminar extensions of petioles that are rounded or c-shaped in cross section.
 subset: Musa
+xref: CO_125:0000006
+xref: CO_125:0000016
 is_a: PO:0020128 ! leaf margin
 relationship: part_of PO:0025129 ! petiole lamina
 created_by: Ramona
@@ -12137,7 +12140,7 @@ creation_date: 2010-10-27T09:19:35Z
 id: PO:0025089
 name: Poaceae gynoecium
 namespace: plant_structure
-def: "A gynoecium that is part of a Poaceae floret." [RW:test]
+def: "A gynoecium that is part of a Poaceae floret." [POC:rw]
 subset: Maize
 subset: Poaceae
 is_a: PO:0009062 ! gynoecium
@@ -12149,11 +12152,12 @@ creation_date: 2010-10-27T09:24:52Z
 id: PO:0025090
 name: Poaceae floret
 namespace: plant_structure
-def: "A floret that is part of a spikelet." [RW:test]
+def: "A floret that is part of a spikelet." [POC:rw]
 comment: Found in Poaceae. It is not clear what the lemma, palea and lodicule correspond to in conventional flowers, therefore we are not making any assumptions of homology at the present time.
 subset: Maize
 subset: Poaceae
 is_a: PO:0009082 ! floret
+relationship: develops_from PO:0025091 ! Poaceae floret meristem
 relationship: part_of PO:0009051 ! spikelet
 created_by: Ramona
 creation_date: 2010-10-27T09:30:54Z
@@ -12162,12 +12166,12 @@ creation_date: 2010-10-27T09:30:54Z
 id: PO:0025091
 name: Poaceae floret meristem
 namespace: plant_structure
-def: "A floral meristem that is part of a spikelet." [RW:test]
+def: "A floral meristem that is part of a spikelet." [POC:rw]
 comment: Found in Poaceae.
 subset: Maize
 subset: Poaceae
 is_a: PO:0000229 ! floral meristem
-is_a: PO:0009051 ! spikelet
+relationship: part_of PO:0009051 ! spikelet
 created_by: Ramona
 creation_date: 2010-10-27T10:34:10Z
 
@@ -12256,6 +12260,46 @@ is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0009009 ! embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
+
+[Term]
+id: PO:0025100
+name: shoot internode elongation zone
+namespace: plant_structure
+def: "A plant axis elongation zone that is part of a shoot axis internode." [POC:rw]
+is_a: PO:0025180 ! plant axis elongation zone
+relationship: part_of PO:0005005 ! shoot internode
+created_by: Ramona
+creation_date: 2011-01-03T11:39:43Z
+
+[Term]
+id: PO:0025101
+name: branch internode elongation zone
+namespace: plant_structure
+def: "A shoot axis internode elongation zone that is part of a branch internode." [POC:rw]
+is_a: PO:0025100 ! shoot internode elongation zone
+relationship: part_of PO:0025080 ! branch internode
+created_by: Ramona
+creation_date: 2011-01-03T11:43:48Z
+
+[Term]
+id: PO:0025102
+name: shoot internode differentiation zone
+namespace: plant_structure
+def: "A plant axis differentiation zone that is part of a shoot axis." [POC:rw]
+is_a: PO:0025119 ! plant axis differentiation zone
+relationship: part_of PO:0005005 ! shoot internode
+created_by: Ramona
+creation_date: 2011-01-03T12:05:20Z
+
+[Term]
+id: PO:0025103
+name: branch internode differentiation zone
+namespace: plant_structure
+def: "A shoot internode differentiation zone that is part of a branch internode." [POC:rw]
+is_a: PO:0025102 ! shoot internode differentiation zone
+relationship: part_of PO:0025080 ! branch internode
+created_by: Ramona
+creation_date: 2011-01-03T12:06:50Z
 
 [Term]
 id: PO:0025117
@@ -12380,10 +12424,10 @@ creation_date: 2010-11-15T09:27:11Z
 id: PO:0025129
 name: petiole lamina
 namespace: plant_structure
-def: "A lamina that is part of a petiole." [GCP:curators, POC:curators]
+def: "A lamina that is part of a petiole." [POC:curators]
 comment: The entire petiole may be laminar, or the petiole may be more or less rounded in cross section with laminar extensions.
 subset: Musa
-synonym: "petiole wing" NARROW []
+synonym: "petiole wing" NARROW [CO_125:0000005]
 is_a: PO:0020039 ! leaf lamina
 relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
@@ -12396,6 +12440,7 @@ namespace: plant_structure
 def: "A leaf near the apex of a stem that is still rolled into a cylinder." [POC:curators]
 comment: Describes the phenotype of a vascular leaf during a leaf development phase in Musa and other monocots.
 subset: Musa
+xref: CO_125:0000008
 is_a: PO:0009025 ! vascular leaf
 created_by: Ramona
 creation_date: 2010-11-15T11:29:28Z
@@ -12439,8 +12484,7 @@ namespace: plant_structure
 def: "A shoot system that forms the basal part of an inflorescence to which the pedicels are attached and in which the internodes do not elongate, giving the appearance of a ridge of raised tissue." [POC:curators]
 subset: Musa
 synonym: "banana crown" NARROW []
-synonym: "Musa crown" NARROW []
-xref: CO_125:0000023
+synonym: "Musa crown" NARROW [CO_125:0000023]
 is_a: PO:0009006 ! shoot system
 relationship: part_of PO:0009049 ! inflorescence
 created_by: Ramona
@@ -12451,7 +12495,7 @@ id: PO:0025135
 name: cigar leaf lamina abaxial epidermis
 namespace: plant_structure
 def: "A portion of leaf lamina abaxial epidermis that covers the abaxial surface of a cigar leaf." [CGP:curators, POC:rw]
-synonym: "cigar leaf dorsal surface" EXACT []
+synonym: "cigar leaf dorsal surface" EXACT [CO_125:0000017]
 is_a: PO:0000049 ! leaf lamina abaxial epidermis
 relationship: part_of PO:0025130 ! cigar leaf
 created_by: Ramona
@@ -12489,9 +12533,8 @@ namespace: plant_structure
 def: "A collective tepal structure that has as parts at least two fused tepals." [POC:phenotype]
 comment: This is a phenotype that is a cross-product of PO:0025021 (collective tepal structure) and PATO:0000642 (fused with). In Musa, there are there are 5 fused tepals which form 3 major lobes and 2 minor lobes.
 subset: Musa
-synonym: "compound tepals" RELATED []
+synonym: "compound tepal" RELATED [CO_125:0000021]
 synonym: "syntepalous perianth" EXACT []
-xref: CO_125:0000021
 is_a: PO:0025021 ! collective tepal structure
 relationship: has_part PO:0025137 ! fused tepal
 created_by: Ramona
@@ -12547,6 +12590,8 @@ namespace: plant_structure
 def: "A phyllome apex that is part of a tepal." [POC:rw]
 comment: It is not precisely defined how far toward the base from the tip a tepal apex extends. For the apical most portion of a tepal, use the term tepal tip.
 subset: Musa
+synonym: "compound tepal lobe" NARROW [CO_125:0000031]
+synonym: "free tepal apex" NARROW [CO_125:0000025]
 is_a: PO:0025139 ! phyllome apex
 relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
@@ -12641,7 +12686,9 @@ creation_date: 2010-11-15T01:49:37Z
 id: PO:0025152
 name: peduncle epidermis
 namespace: plant_structure
-def: "A portion of branch epidermis that is part of a peduncle." [CGP:curators, POC:curators]
+def: "A portion of branch epidermis that is part of a peduncle." [POC:curators]
+subset: Musa
+synonym: "peduncle surface" RELATED [CO_125:0000036]
 is_a: PO:0025179 ! branch epidermis
 relationship: part_of PO:0009053 ! peduncle
 created_by: Ramona
@@ -12653,7 +12700,7 @@ name: peduncle trichome
 namespace: plant_structure
 def: "A shoot axis trichome that is part of a peduncle epidermis." [POC:rw]
 subset: Musa
-synonym: "peduncle hair" EXACT []
+synonym: "peduncle hair" EXACT [CO_125:0000051]
 is_a: PO:0005003 ! shoot axis trichome
 relationship: part_of PO:0025152 ! peduncle epidermis
 created_by: Ramona
@@ -12666,6 +12713,7 @@ namespace: plant_structure
 def: "A phyllome apex that is part of a bract." [POC:rw]
 comment: It is not precisely defined how far toward the base from the tip a bract apex extends. For the apical most portion of a bract, use the term bract tip.
 subset: Musa
+xref: CO_125:0000053
 is_a: PO:0025139 ! phyllome apex
 relationship: part_of PO:0009055 ! bract
 created_by: Ramona
@@ -12677,6 +12725,7 @@ name: bract base
 namespace: plant_structure
 def: "A phyllome base that is part of a bract." [POC:rw]
 subset: Musa
+xref: CO_125:0000056
 is_a: PO:0025140 ! phyllome base
 relationship: part_of PO:0009055 ! bract
 created_by: Ramona
@@ -12718,7 +12767,7 @@ name: bract abaxial epidermis
 namespace: plant_structure
 def: "A portion of bract epidermis that covers the abaxial/lower surface of a bract." [POC:rw]
 subset: Musa
-synonym: "bract external face" EXACT [CGP:curators]
+synonym: "bract external face" EXACT [CO_125:0000054]
 is_a: PO:0025158 ! bract epidermis
 created_by: Ramona
 creation_date: 2010-11-15T02:35:37Z
@@ -12729,7 +12778,7 @@ name: bract adaxial epidermis
 namespace: plant_structure
 def: "A portion of bract epidermis that covers the adaxial/upper surface of a bract." [POC:rw]
 subset: Musa
-synonym: "bract internal face" EXACT [CGP:curators]
+synonym: "bract internal face" EXACT [CO_125:0000055]
 is_a: PO:0025158 ! bract epidermis
 created_by: Ramona
 creation_date: 2010-11-15T02:35:37Z
@@ -12938,8 +12987,9 @@ creation_date: 2010-11-22T09:58:06Z
 id: PO:0025180
 name: plant axis elongation zone
 namespace: plant_structure
-def: "A cardinal organ part that is part of a shoot axis that is located directly behind an apical meristem, in which the cells are undergoing longitudinal expansion." [POC:curators]
+def: "A cardinal organ part that is part of a plant axis that is located directly behind an apical meristem, in which the cells are undergoing longitudinal expansion." [POC:curators]
 is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025004 ! plant axis
 created_by: Ramona
 creation_date: 2010-12-03T08:50:10Z
 
@@ -13531,7 +13581,7 @@ creation_date: 2010-12-29T01:44:27Z
 id: PO:0025238
 name: abaxial petiole canal
 namespace: plant_structure
-def: "A petiole canal on the abaxial side of a petiole." [POC:rw]
+def: "A petiole canal on the abaxial surface of a petiole." [POC:rw]
 is_a: PO:0025133 ! petiole canal
 created_by: Ramona
 creation_date: 2010-12-30T02:09:39Z
@@ -13540,7 +13590,7 @@ creation_date: 2010-12-30T02:09:39Z
 id: PO:0025239
 name: adaxial petiole canal
 namespace: plant_structure
-def: "A petiole canal on the adaxial side of a petiole." [POC:rw]
+def: "A petiole canal on the adaxial surface of a petiole." [POC:rw]
 xref: CO_125:0000012
 is_a: PO:0025133 ! petiole canal
 created_by: Ramona
@@ -13552,6 +13602,9 @@ name: secondary inflorescence
 namespace: plant_structure
 def: "A reproductive shoot system that is part of an inflorescence and has a parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:rw]
 comment: This a branch of the inflorescence that arises from the main axis.
+subset: Musa
+synonym: "hand of bananas" NARROW [CO_125:.0000037]
+synonym: "hand of fruit" EXACT [CO_125:.0000037]
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009046 ! flower
 relationship: has_part PO:0009081 ! inflorescence branch
@@ -13607,7 +13660,8 @@ name: persistent sepal
 namespace: plant_structure
 def: "A phyllome that develops from a sepal and remains attached to a fruit at maturity." [POC:rw]
 comment: May be alive or dead at maturity.
-synonym: "flower relic" BROAD []
+subset: Musa
+synonym: "flower relic" BROAD [CO_125:0000045]
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009031 ! sepal
 created_by: Ramona
@@ -13619,7 +13673,8 @@ name: persistent tepal
 namespace: plant_structure
 def: "A phyllome that develops from a tepal and remains attached to a fruit at maturity." [POC:rw]
 comment: May be alive or dead at maturity.
-synonym: "flower relic" BROAD []
+subset: Musa
+synonym: "flower relic" BROAD [CO_125:0000045]
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009033 ! tepal
 created_by: Ramona
@@ -13631,7 +13686,8 @@ name: persistent stamen
 namespace: plant_structure
 def: "A phyllome that develops from a stamen and remains attached to a fruit at maturity." [POC:rw]
 comment: May be alive or dead at maturity.
-synonym: "flower relic" BROAD []
+subset: Musa
+synonym: "flower relic" BROAD [CO_125:0000045]
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009029 ! stamen
 created_by: Ramona
@@ -13664,7 +13720,8 @@ id: PO:0025250
 name: leaf sheath abaxial epidermis
 namespace: plant_structure
 def: "A portion of leaf sheath epidermis that covers the abaxial/lower surface of a leaf sheath." [POC:rw]
-synonym: "psuedostem underlayers" NARROW [CO_125:0000047]
+subset: Musa
+synonym: "pseudostem underlayers" NARROW [CO_125:0000047]
 is_a: PO:0025249 ! leaf sheath epidermis
 created_by: Ramona
 creation_date: 2010-12-30T04:02:50Z
