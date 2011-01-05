@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:01:2011 15:21
+date: 05:01:2011 13:26
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta7
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -1758,9 +1758,10 @@ relationship: part_of PO:0009005 ! root
 id: PO:0003003
 name: primary root elongation zone
 namespace: plant_structure
-def: "An root elongation zone that is part of a primary root tip." [POC:rw]
-is_a: PO:0025181 ! root elongation zone
-relationship: part_of PO:0000026 ! primary root tip
+def: "A zone of small, densely cytoplasmic cells that are dividing and expanding in size located behind the zone of cell division in the primary root." [TAIR:ki]
+comment: This term was made obsolete because the definition was not correct. A new term with the same name and correct definitions was created to replace it.
+is_obsolete: true
+replaced_by: PO:0025257
 
 [Term]
 id: PO:0003004
@@ -1795,9 +1796,10 @@ relationship: part_of PO:0020124 ! root stele
 id: PO:0003014
 name: lateral root elongation zone
 namespace: plant_structure
-def: "A root elongation zone that is part of a lateral root tip." [POC:rw]
-is_a: PO:0025181 {namespace="plant_growth_and_development_stage"} ! root elongation zone
-relationship: part_of PO:0000027 ! lateral root tip
+def: "The portion of the lateral root located behind the zone of cell division that includes small, densely cytoplasmic cells that are dividing and expanding in size." [TAIR:ki]
+comment: This term was made obsolete because the definition was not correct. A new term with the same name and correct definitions was created to replace it.
+is_obsolete: true
+replaced_by: PO:0025256
 
 [Term]
 id: PO:0003015
@@ -2280,10 +2282,11 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004536
 name: fruit pedicel
 namespace: plant_structure
-def: "A pedicel that is part of an infructescence." [POC:curators]
+def: "An infructescence branch that supports an individual fruit." [POC:rw]
+comment: The ultimate branch in an infructescence.
 subset: Tomato
 xref: OBO_SF_PO:2903966
-is_a: PO:0009052 ! pedicel
+is_a: PO:0025243 ! infructescence branch
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -2333,8 +2336,8 @@ is_a: PO:0025029 ! shoot axis
 id: PO:0004543
 name: tuber
 namespace: plant_structure
-def: "A swollen or enlarged storage branch." [POC:curators]
-comment: Found in potatoes.
+def: "An enlarged storage branch." [POC:curators]
+comment: Found in potatoes and other species.
 subset: Potato
 subset: reference
 subset: TraitNet
@@ -2373,7 +2376,6 @@ id: PO:0004547
 name: subterranean tuber
 namespace: plant_structure
 def: "A tuber that is below ground." [POC:curators]
-comment: This has nothing to do with the underground swollen storage organ of Ipomoea which is swollen.
 subset: Potato
 is_a: PO:0004543 ! tuber
 
@@ -2555,8 +2557,9 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0004720
 name: paraclade
 namespace: plant_structure
-def: "A lateral branch that ends in an inflorescence that repeats the main inflorescence." [APWeb:Glossary, ISBN:0521251346]
-is_a: PO:0025073 ! branch
+def: "An inflorescence branch that ends in an inflorescence that repeats the main inflorescence." [APWeb:Glossary, ISBN:0521251346]
+subset: Angiosperm
+is_a: PO:0009081 ! inflorescence branch
 
 [Term]
 id: PO:0004721
@@ -4290,7 +4293,7 @@ name: tassel floret
 namespace: plant_structure
 def: "Flowers of the spikelets of maize tassel." [GR:pj]
 subset: Maize
-is_a: PO:0025090 ! Poaceae floret
+is_a: PO:0006318 ! Poaceae floret
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -4347,18 +4350,23 @@ name: gynoecium of tassel floret
 namespace: plant_structure
 def: "Collectively the carpels of a maize tassel floret." [GR:pj]
 comment: The development of the gynoecium in the tassel floret of a normal maize plant is aborted and is present in a rudimentary state.
-is_a: PO:0025089 ! Poaceae gynoecium
+is_a: PO:0006384 ! Poaceae gynoecium
 relationship: part_of PO:0006310 ! tassel floret
 
 [Term]
 id: PO:0006318
-name: floret (sensu Poaceae)
+name: Poaceae floret
 namespace: plant_structure
-def: "Small flowers of the spikelets of Poaceae." [Poc:curators]
-comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replace by PO:0025090 Poaceae floret.
+alt_id: PO:0025090
+def: "A floret that is part of a spikelet." [Poc:curators]
+comment: Found in Poaceae. It is not clear what the lemma, palea and lodicule correspond to in conventional flowers, therefore we are not making any assumptions of homology at the present time.
+subset: Maize
+subset: Poaceae
 subset: reference
-is_obsolete: true
-replaced_by: PO:0025090
+synonym: "Poaceae floret" EXACT []
+is_a: PO:0009082 ! floret
+relationship: develops_from PO:0006329 ! Poaceae floret meristem
+relationship: part_of PO:0009051 ! spikelet
 
 [Term]
 id: PO:0006319
@@ -4379,18 +4387,21 @@ relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006321
-name: second order inflorescence branch
+name: second order inflorescence axis
 namespace: plant_structure
-def: "Any branch forming from the primary or first order inflorescence branch." [GR:pj]
-synonym: "primary branch" RELATED []
+def: "An inflorescence branch arising from a first order inflorescence axis." [POC:rw]
+subset: Angiosperm
+synonym: "primary inflorescence branch" EXACT []
+synonym: "second order inflorescence branch" RELATED [POC:rw "This is the old name for this term. It was renamed for clarity."]
 is_a: PO:0009081 ! inflorescence branch
 
 [Term]
 id: PO:0006322
-name: third order inflorescence branch
+name: third order inflorescence axis
 namespace: plant_structure
-def: "Any branch forming from the second order inflorescence branch." [GR:pj]
-synonym: "secondary inflorescence branch" RELATED []
+def: "An inflorescence branch arising from a second order inflorescence axis." [POC:rw]
+synonym: "secondary inflorescence branch" EXACT []
+synonym: "third order inflorescence branch" RELATED [POC:rw "This is the old name for this term. It was renamed for clarity."]
 is_a: PO:0009081 ! inflorescence branch
 
 [Term]
@@ -4405,9 +4416,9 @@ relationship: part_of PO:0020126 ! tassel
 id: PO:0006324
 name: central spike of tassel
 namespace: plant_structure
-def: "The inflorescence axis of the tassel." [GR:pj]
+def: "A first order inflorescence axis that is the central axis of a tassel." [POC:rw]
 synonym: "tassel rachis" RELATED []
-is_a: PO:0020122 ! inflorescence axis
+is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020126 ! tassel
 
 [Term]
@@ -4444,12 +4455,16 @@ is_a: PO:0006327 ! spikelet meristem
 
 [Term]
 id: PO:0006329
-name: floret meristem (sensu Poaceae)
+name: Poaceae floret meristem
 namespace: plant_structure
-def: "Meristem that gives rise to the organs of a floret of a grass plant." [GR:pj]
-comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replaced by PO:0025091 Poaceae floret meristem.
-is_obsolete: true
-replaced_by: PO:0025091
+alt_id: PO:0025091
+def: "A floral meristem that is part of a spikelet." [POC:rw]
+comment: Found in Poaceae.
+subset: Maize
+subset: Poaceae
+synonym: "Poaceae floret meristem" EXACT []
+is_a: PO:0000229 ! floral meristem
+relationship: part_of PO:0009051 ! spikelet
 
 [Term]
 id: PO:0006330
@@ -4661,7 +4676,7 @@ id: PO:0006354
 name: ear floret
 namespace: plant_structure
 def: "Small flowers of the spikelets of maize ear." [GR:pj]
-is_a: PO:0025090 ! Poaceae floret
+is_a: PO:0006318 ! Poaceae floret
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -4680,15 +4695,6 @@ namespace: plant_structure
 def: "The lower of the two bracts enclosing a flower in a maize tassel floret." [GR:pj]
 is_a: PO:0009037 ! lemma
 relationship: part_of PO:0006310 ! tassel floret
-
-[Term]
-id: PO:0006357
-name: gynoecium (sensu Zea)
-namespace: plant_structure
-def: "Collectively the carpels of a maize floret." [GR:pj]
-comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replace by PO:0025089 Poaceae gynoecium, since the Zea gynoecium is not structurally distinct from the Poaceae gynoecium. Hierarchy for gynoecium now matches floret and spikelet.
-is_obsolete: true
-replaced_by: PO:0025089
 
 [Term]
 id: PO:0006358
@@ -4745,7 +4751,7 @@ id: PO:0006365
 name: gynoecium of ear floret
 namespace: plant_structure
 def: "Collectively the carpels of a maize ear floret." [GR:pj]
-is_a: PO:0025089 ! Poaceae gynoecium
+is_a: PO:0006384 ! Poaceae gynoecium
 relationship: part_of PO:0006354 ! ear floret
 
 [Term]
@@ -4810,8 +4816,8 @@ name: ear floret meristem
 namespace: plant_structure
 def: "Apical shoot meristem that gives rise to the organs of a maize ear floret." [GR:pj]
 subset: Maize
+is_a: PO:0006329 ! Poaceae floret meristem
 is_a: PO:0009109 ! ear meristem
-is_a: PO:0025091 ! Poaceae floret meristem
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -4820,8 +4826,8 @@ name: tassel floret meristem
 namespace: plant_structure
 def: "Apical meristem that gives rise to the organs of a maize tassel floret." [GR:pj]
 subset: Maize
+is_a: PO:0006329 ! Poaceae floret meristem
 is_a: PO:0009106 ! tassel meristem
-is_a: PO:0025091 ! Poaceae floret meristem
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -4901,16 +4907,21 @@ name: Poaceae androecium
 namespace: plant_structure
 def: "Collectively the stamens of one grass floret." [GR:pj]
 is_a: PO:0009061 ! androecium
-relationship: part_of PO:0025090 ! Poaceae floret
+relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
 id: PO:0006384
-name: gynoecium (sensu Poaceae)
+name: Poaceae gynoecium
 namespace: plant_structure
-def: "Collectively the carpels of a grass floret." [GR:pj]
-comment: This term was made obsolete to discontinue the use of the word sensu in term names. Replace by PO:0025089 Poaceae gynoecium.
-is_obsolete: true
-replaced_by: PO:0025089
+alt_id: PO:0006357
+alt_id: PO:0025089
+def: "A gynoecium that is part of a Poaceae floret." [POC:rw]
+comment: Gynoecium (sensu Zea) was merged with Poaceae gynoecium, because the Zea gynoecium is not structurally distinct from the Poaceae gynoecium. Hierarchy for gynoecium now matches floret and spikelet.
+subset: Maize
+subset: Poaceae
+synonym: "Zea gynoecium" NARROW []
+is_a: PO:0009062 ! gynoecium
+relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
 id: PO:0006385
@@ -5430,7 +5441,7 @@ name: Poaceae carpel
 namespace: plant_structure
 def: "A megasporophyll at the center of a grass floret enclosing the ovule." [GR:pj]
 is_a: PO:0009030 ! carpel
-relationship: part_of PO:0025089 ! Poaceae gynoecium
+relationship: part_of PO:0006384 ! Poaceae gynoecium
 
 [Term]
 id: PO:0006456
@@ -5834,11 +5845,11 @@ relationship: part_of PO:0006016 ! leaf epidermis
 id: PO:0006505
 name: central spike of ear
 namespace: plant_structure
-def: "The inflorescence axis of the ear." [GR:pj]
+def: "A first order inflorescence axis that is the central axis of an ear." [POC:rw]
 comment: Zea cob is different from the cob inflorescence found in Sorghum.
 synonym: "ear rachis" RELATED []
 synonym: "Zea cob" RELATED []
-is_a: PO:0020122 ! inflorescence axis
+is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
@@ -9250,7 +9261,7 @@ subset: reference
 xref: OBO_SF_PO:3132537
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0008040 ! lodicule primordium
-relationship: part_of PO:0025090 ! Poaceae floret
+relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
 id: PO:0009037
@@ -9259,7 +9270,7 @@ namespace: plant_structure
 def: "In a grass floret, the lower of two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
 subset: reference
 is_a: PO:0009034 ! floral bract
-relationship: part_of PO:0025090 ! Poaceae floret
+relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
 id: PO:0009038
@@ -9269,7 +9280,7 @@ def: "In a grass floret, the upper of the two bracts enclosing a flower." [APWeb
 comment: Possibly a prophyll/bracteole.
 subset: reference
 is_a: PO:0009034 ! floral bract
-relationship: part_of PO:0025090 ! Poaceae floret
+relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
 id: PO:0009039
@@ -9435,12 +9446,13 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009052
 name: pedicel
 namespace: plant_structure
-def: "A branch that supports an individual flower in an inflorescence that contains more than one flower." [ISBN:0-7167-1007-2]
-comment: The bracteoles are borne on the pedicel, which terminates in a flower.
+def: "An inflorescence branch that supports an individual flower in an inflorescence that contains more than one flower." [ISBN:0-7167-1007-2]
+comment: The bracteoles are borne on the pedicel, which terminates in a flower. A pedicel is the ultimate branch in an inflorescence.
+subset: Angiosperm
 subset: reference
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2975275
-is_a: PO:0025073 ! branch
+is_a: PO:0009081 ! inflorescence branch
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -9452,7 +9464,7 @@ subset: Musa
 subset: reference
 synonym: "inflorescence stem " RELATED []
 xref: OBO_SF_PO:2972231
-is_a: PO:0025073 ! branch
+is_a: PO:0025029 ! shoot axis
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -9641,6 +9653,7 @@ id: PO:0009070
 name: pollen sac
 namespace: plant_structure
 def: "A microsporangium in an angiosperm that is a cavity in an anther that contains pollen grains." [ISBN:0716710072]
+subset: Angiosperm
 subset: reference
 subset: TraitNet
 synonym: "anther lobe" RELATED []
@@ -9752,7 +9765,8 @@ relationship: part_of PO:0009051 ! spikelet
 id: PO:0009081
 name: inflorescence branch
 namespace: plant_structure
-def: "Any branch forming from the primary or the higher order inflorescence axis." [Poc:curators]
+def: "An inflorescence axis that is a branch forming from a primary or higher order inflorescence axis." [Poc:curators]
+subset: Angiosperm
 synonym: "coflorescence" RELATED []
 is_a: PO:0020122 ! inflorescence axis
 relationship: part_of PO:0009049 ! inflorescence
@@ -9890,7 +9904,7 @@ is_a: PO:0025087 ! Zea gynoecium ridge
 id: PO:0009100
 name: involucre
 namespace: plant_structure
-def: "A collective phyllome structure composed of two or more bracts at the base of a cluster of flowers, as found in Asteraceae or Compositae." [POC:curators]
+def: "A collective phyllome structure composed of two or more involucral bracts at the base of a cluster of flowers, as found in Asteraceae or Compositae." [POC:curators]
 comment: The burs or bristles in Cenchrus and Pennisetum are not involucres because the fused structures are branches and not bracts.
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2997165
@@ -10873,6 +10887,7 @@ id: PO:0020122
 name: inflorescence axis
 namespace: plant_structure
 def: "A shoot axis that is part of an inflorescence." [POC:rw]
+subset: Angiosperm
 subset: TraitNet
 synonym: "first order inflorescence branch" RELATED []
 synonym: "inflorescence rachis" RELATED []
@@ -12106,8 +12121,8 @@ subset: Maize
 subset: Poaceae
 synonym: "Poaceae gynoecial ridge" EXACT []
 synonym: "Poaceae stylar ridge" EXACT []
+is_a: PO:0006384 ! Poaceae gynoecium
 is_a: PO:0025088 ! gynoecium ridge
-is_a: PO:0025089 ! Poaceae gynoecium
 created_by: Ramona
 creation_date: 2010-10-25T02:21:15Z
 
@@ -12135,45 +12150,6 @@ is_a: PO:0009062 ! gynoecium
 relationship: develops_from PO:0000019 ! gynoecium primordium
 created_by: Ramona
 creation_date: 2010-10-27T09:19:35Z
-
-[Term]
-id: PO:0025089
-name: Poaceae gynoecium
-namespace: plant_structure
-def: "A gynoecium that is part of a Poaceae floret." [POC:rw]
-subset: Maize
-subset: Poaceae
-is_a: PO:0009062 ! gynoecium
-relationship: part_of PO:0025090 ! Poaceae floret
-created_by: Ramona
-creation_date: 2010-10-27T09:24:52Z
-
-[Term]
-id: PO:0025090
-name: Poaceae floret
-namespace: plant_structure
-def: "A floret that is part of a spikelet." [POC:rw]
-comment: Found in Poaceae. It is not clear what the lemma, palea and lodicule correspond to in conventional flowers, therefore we are not making any assumptions of homology at the present time.
-subset: Maize
-subset: Poaceae
-is_a: PO:0009082 ! floret
-relationship: develops_from PO:0025091 ! Poaceae floret meristem
-relationship: part_of PO:0009051 ! spikelet
-created_by: Ramona
-creation_date: 2010-10-27T09:30:54Z
-
-[Term]
-id: PO:0025091
-name: Poaceae floret meristem
-namespace: plant_structure
-def: "A floral meristem that is part of a spikelet." [POC:rw]
-comment: Found in Poaceae.
-subset: Maize
-subset: Poaceae
-is_a: PO:0000229 ! floral meristem
-relationship: part_of PO:0009051 ! spikelet
-created_by: Ramona
-creation_date: 2010-10-27T10:34:10Z
 
 [Term]
 id: PO:0025092
@@ -12300,6 +12276,130 @@ is_a: PO:0025102 ! shoot internode differentiation zone
 relationship: part_of PO:0025080 ! branch internode
 created_by: Ramona
 creation_date: 2011-01-03T12:06:50Z
+
+[Term]
+id: PO:0025104
+name: first order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence axis that is the primary or main axis of an inflorescence." [POC:rw]
+comment: A first order inflorescence axis consists of either a peduncle alone or a peduncle plus its continuation, depending on the form of the inflorescence.
+subset: Angiosperm
+synonym: "inflorescence rachis" EXACT []
+synonym: "primary inflorescence axis" EXACT []
+is_a: PO:0020122 ! inflorescence axis
+relationship: has_part PO:0009053 ! peduncle
+created_by: Ramona
+creation_date: 2011-01-05T08:41:49Z
+
+[Term]
+id: PO:0025105
+name: forth order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from a third order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:56:27Z
+
+[Term]
+id: PO:0025106
+name: fifth order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from a forth order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:57:49Z
+
+[Term]
+id: PO:0025107
+name: sixth order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from a fifth order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:57:49Z
+
+[Term]
+id: PO:0025108
+name: seventh order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from a sixth order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:57:49Z
+
+[Term]
+id: PO:0025109
+name: eighth order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from a seventh order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:57:49Z
+
+[Term]
+id: PO:0025110
+name: ninth order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from an eighth order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:57:49Z
+
+[Term]
+id: PO:0025111
+name: tenth or higher order inflorescence axis
+namespace: plant_structure
+def: "An inflorescence branch arising from a ninth or higher order inflorescence axis." [POC:rw]
+is_a: PO:0009081 ! inflorescence branch
+created_by: Ramona
+creation_date: 2011-01-05T08:57:49Z
+
+[Term]
+id: PO:0025112
+name: second order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a first order infructescence axis." [POC:rw]
+synonym: "primary infructescence branch" EXACT []
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025113
+name: third order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a second order infructescence axis." [POC:rw]
+synonym: "secondary infructescence branch" EXACT []
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025114
+name: forth order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a third order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025115
+name: fifth order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a forth order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025116
+name: sixth order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a fifth order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025117
@@ -12998,7 +13098,7 @@ id: PO:0025181
 name: root elongation zone
 namespace: plant_structure
 def: "A plant axis elongation zone that is part of a root tip and located directly behind the root apical meristem." [POC:curators]
-comment: The root elongation zone is only a few millimeters in length and is the only portion of the root in which cell elongation generally occurs. Root hairs are not yet produced in this region. Primary root tissues begin to differentiate in the root elongation zone.
+comment: The root elongation zone is only a few millimeters in length and is the only portion of the root in which cell elongation generally occurs. Root hairs are not yet produced in this region. Primary root tissues begin to differentiate in the root elongation zone. This term replaces elongation zone (PO:0020125).
 is_a: PO:0025180 ! plant axis elongation zone
 relationship: part_of PO:0000025 ! root tip
 created_by: Ramona
@@ -13602,24 +13702,28 @@ name: secondary inflorescence
 namespace: plant_structure
 def: "A reproductive shoot system that is part of an inflorescence and has a parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:rw]
 comment: This a branch of the inflorescence that arises from the main axis.
-subset: Musa
-synonym: "hand of bananas" NARROW [CO_125:.0000037]
-synonym: "hand of fruit" EXACT [CO_125:.0000037]
+subset: Angiosperm
+synonym: "secondary inflorescence" EXACT []
 is_a: PO:0025082 ! reproductive shoot system
+relationship: has_part PO:0006321 ! second order inflorescence axis
 relationship: has_part PO:0009046 ! flower
-relationship: has_part PO:0009081 ! inflorescence branch
 relationship: part_of PO:0009049 ! inflorescence
 created_by: Ramona
 creation_date: 2010-12-30T03:31:29Z
 
 [Term]
 id: PO:0025241
-name: secondary infructescence
+name: second order infructescence
 namespace: plant_structure
-def: "A reproductive shoot system that is part of an infructescence and has as parts a second order infructescence branch and any shoot axes and fruits that arise from that branch." [POC:rw]
+def: "A reproductive shoot system that is part of an infructescence and has as parts a second order infructescence axis and any infructescence axes and fruits that arise from it." [POC:rw]
+subset: Angiosperm
+subset: Musa
+synonym: "hand of bananas" NARROW []
+synonym: "hand of fruit" EXACT [CO_125:.0000037]
+synonym: "secondary infructescence" EXACT []
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
-relationship: has_part PO:0025243 ! infructescence branch
+relationship: has_part PO:0025112 ! second order infructescence axis
 relationship: part_of PO:0006342 ! infructescence
 created_by: Ramona
 creation_date: 2010-12-30T03:31:29Z
@@ -13646,9 +13750,9 @@ creation_date: 2010-12-30T03:37:08Z
 
 [Term]
 id: PO:0025244
-name: primary infructescence axis
+name: first order infructescence axis
 namespace: plant_structure
-def: "The main axis of an infructescence, from which al infructescence branches arise." [POC:rw]
+def: "An infructescence axis that is the primary or main axis of an infructescence." [POC:rw]
 synonym: "infructescence rachis" EXACT []
 is_a: PO:0025242 ! infructescence axis
 created_by: Ramona
@@ -13734,6 +13838,62 @@ def: "A portion of leaf sheath epidermis that covers the adaxial/upper surface o
 is_a: PO:0025249 ! leaf sheath epidermis
 created_by: Ramona
 creation_date: 2010-12-30T04:02:50Z
+
+[Term]
+id: PO:0025252
+name: seventh order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a sixth order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025253
+name: eighth order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a seventh order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025254
+name: ninth order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from an eight order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025255
+name: tenth or higher order infructescence axis
+namespace: plant_structure
+def: "An infructescence branch arising from a ninth or higher order infructescence axis." [POC:rw]
+is_a: PO:0025243 ! infructescence branch
+created_by: Ramona
+creation_date: 2011-01-05T09:16:29Z
+
+[Term]
+id: PO:0025256
+name: lateral root elongation zone
+namespace: plant_structure
+def: "A root elongation zone that is part of a lateral root tip." [POC:rw]
+is_a: PO:0025181 ! root elongation zone
+relationship: part_of PO:0000027 ! lateral root tip
+created_by: Ramona
+creation_date: 2011-01-05T12:05:43Z
+
+[Term]
+id: PO:0025257
+name: primary root elongation zone
+namespace: plant_structure
+def: "A root elongation zone that is part of a primary root tip." [POC:rw]
+is_a: PO:0025181 ! root elongation zone
+relationship: part_of PO:0000026 ! primary root tip
+created_by: Ramona
+creation_date: 2011-01-05T12:05:43Z
 
 [Term]
 id: PO:0028001
