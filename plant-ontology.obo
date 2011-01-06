@@ -1,6 +1,5 @@
 format-version: 1.2
-date: 05:01:2011 13:26
-saved-by: Ramona
+date: 06:01:2011 07:26
 auto-generated-by: OBO-Edit 2.1-beta7
 subsetdef: Angiosperm "Terms for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -244,7 +243,7 @@ id: PO:0000028
 name: pollen tube tip
 namespace: plant_structure
 def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
-comment: This term was made obsolete because it is a subcellular component. Will request pollen tube tip in GO.
+comment: This term was made obsolete because it is a subcellular component. Have requested pollen tube tip in GO.
 is_obsolete: true
 consider: PO:0025195
 
@@ -253,7 +252,7 @@ id: PO:0000029
 name: root hair tip
 namespace: plant_structure
 def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
-comment: This term was made obsolete because it is a subcellular component. Root hair tip has been requested in GO.
+comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO.
 is_obsolete: true
 consider: PO:0000256
 
@@ -858,6 +857,7 @@ id: PO:0000256
 name: root hair cell
 namespace: plant_structure
 def: "A root epidermal cell with a simple extension that is concerned with absorption of soil solution." [ISBN:0471245208]
+comment: This terms is for the entire epidermal cell that contains the root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
 subset: TraitNet
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000262 ! trichoblast
@@ -1710,7 +1710,7 @@ id: PO:0002001
 name: papillae
 namespace: plant_structure
 def: "A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
-comment: This terms was made obsolete because it is a sub-cellular compartment. Papilla, leaf papilla and stigma papilla have been requested in GO. To annotate to a cell that has a papilla, consider papilla cell (PO:0025166), leaf papilla cell (PO:0025167), or stigma papilla cell (PO:0025168).
+comment: This terms was made obsolete because it is a sub-cellular compartment. Plant cell papilla (GO:0090395), leaf papilla (GO:0090396), and stigma papilla (GO:0090397) have been added to GO. To annotate to a cell that has a papilla, consider papilla cell (PO:0025166), leaf papilla cell (PO:0025167), or stigma papilla cell (PO:0025168).
 subset: reference
 is_obsolete: true
 consider: PO:0025166
@@ -1756,7 +1756,7 @@ relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0003003
-name: primary root elongation zone
+name: obsolete primary root elongation zone
 namespace: plant_structure
 def: "A zone of small, densely cytoplasmic cells that are dividing and expanding in size located behind the zone of cell division in the primary root." [TAIR:ki]
 comment: This term was made obsolete because the definition was not correct. A new term with the same name and correct definitions was created to replace it.
@@ -1794,7 +1794,7 @@ relationship: part_of PO:0020124 ! root stele
 
 [Term]
 id: PO:0003014
-name: lateral root elongation zone
+name: obsolete lateral root elongation zone
 namespace: plant_structure
 def: "The portion of the lateral root located behind the zone of cell division that includes small, densely cytoplasmic cells that are dividing and expanding in size." [TAIR:ki]
 comment: This term was made obsolete because the definition was not correct. A new term with the same name and correct definitions was created to replace it.
@@ -4601,7 +4601,7 @@ id: PO:0006345
 name: pollen tube
 namespace: plant_structure
 def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
-comment: This term was made obsolete because it is a subcellular component. Will request pollen tube in GO.
+comment: This term was made obsolete because it is a subcellular component. Have requested pollen tube in GO.
 subset: reference
 subset: TraitNet
 is_obsolete: true
@@ -8669,7 +8669,7 @@ id: PO:0008031
 name: trichome branch
 namespace: plant_structure
 def: "The branch on a trichome." [GR:cwt]
-comment: This term was made obsolete because it is a sub-cellular component. New term has been requested in GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
+comment: This term was made obsolete because it is a sub-cellular component. New term unicellular trichome branch has been requested in GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
 is_obsolete: true
 consider: PO:0025163
 
@@ -12944,7 +12944,7 @@ id: PO:0025166
 name: papilla cell
 namespace: plant_structure
 def: "An epidermal pavement cell with a short protuberance." [POC:curators]
-comment: See GO for the subcellular component papilla.
+comment: See plant cell papilla (GO:0090395) for the subcellular component papilla.
 is_a: PO:0000332 ! epidermal pavement cell
 created_by: Ramona
 creation_date: 2010-11-18T05:25:37Z
@@ -12954,7 +12954,7 @@ id: PO:0025167
 name: leaf papilla cell
 namespace: plant_structure
 def: "A papilla cell that is part of a leaf epidermis." [POC:curators]
-comment: See GO for the subcellular component leaf papilla.
+comment: See leaf papilla (GO:0090396) for the subcellular component leaf papilla.
 is_a: PO:0025166 ! papilla cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
@@ -12965,7 +12965,7 @@ id: PO:0025168
 name: stigma papilla cell
 namespace: plant_structure
 def: "A papilla cell that is part of a stigma epidermis." [POC:curators]
-comment: See GO for the subcellular component stigma papilla.
+comment: See stigma papilla (GO:0090397) for the subcellular component stigma papilla.
 is_a: PO:0025166 ! papilla cell
 relationship: part_of PO:0006061 ! stigma epidermis
 created_by: Ramona
@@ -13698,7 +13698,7 @@ creation_date: 2010-12-30T02:09:39Z
 
 [Term]
 id: PO:0025240
-name: secondary inflorescence
+name: second order inflorescence
 namespace: plant_structure
 def: "A reproductive shoot system that is part of an inflorescence and has a parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:rw]
 comment: This a branch of the inflorescence that arises from the main axis.
