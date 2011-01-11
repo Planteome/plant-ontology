@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:01:2011 13:02
+date: 11:01:2011 14:33
 auto-generated-by: OBO-Edit 2.1-beta7
 subsetdef: Angiosperm "Terms for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -243,7 +243,7 @@ id: PO:0000028
 name: pollen tube tip
 namespace: plant_structure
 def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
-comment: This term was made obsolete because it is a subcellular component. Have requested pollen tube tip in GO.
+comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube tip (GO:0090404). Since a pollen tube tip is part_of a pollen tube, which is part of a pollen cell, annotations for pollen tube tip may also go to the more general term pollen tube cell (PO:0025195).
 is_obsolete: true
 consider: PO:0025195
 
@@ -857,7 +857,7 @@ id: PO:0000256
 name: root hair cell
 namespace: plant_structure
 def: "A root epidermal cell with a simple extension that is concerned with absorption of soil solution." [ISBN:0471245208]
-comment: This terms is for the entire epidermal cell that contains the root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
+comment: This term is for an entire epidermal cell that contains a root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
 subset: TraitNet
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000262 ! trichoblast
@@ -4601,7 +4601,7 @@ id: PO:0006345
 name: pollen tube
 namespace: plant_structure
 def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
-comment: This term was made obsolete because it is a subcellular component. Have requested pollen tube in GO.
+comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube (GO:0090406). Since a pollen tube is part_of a pollen tube cell, annotations for pollen tube may also go to the more general term pollen tube cell (PO:0025195).
 subset: reference
 subset: TraitNet
 is_obsolete: true
@@ -8669,7 +8669,7 @@ id: PO:0008031
 name: trichome branch
 namespace: plant_structure
 def: "The branch on a trichome." [GR:cwt]
-comment: This term was made obsolete because it is a sub-cellular component. New term unicellular trichome branch has been requested in GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
+comment: This term was made obsolete because it is a sub-cellular component. New term unicellular trichome branch (GO:0090405) has been added to GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
 is_obsolete: true
 consider: PO:0025163
 
@@ -12914,7 +12914,7 @@ id: PO:0025163
 name: multicellular trichome branch cell
 namespace: plant_structure
 def: "A trichome cell that forms a branch of a multicellular trichome." [POC:curators]
-comment: For branches of a unicellular trichome, see unicellular trichome branch in GO (new GO term has been requested).
+comment: For branches of a unicellular trichome, see unicellular trichome branch (GO:0090405) in GO.
 is_a: PO:0008030 ! trichome cell
 relationship: part_of PO:0025162 ! multicellular trichome
 created_by: Ramona
@@ -13239,7 +13239,7 @@ id: PO:0025195
 name: pollen tube cell
 namespace: plant_structure
 def: "A plant cell that develops from a vegetative cell and forms a tubular extension of the pollen grain." [POC:rw]
-comment: Carries the male gametes to into or near the ovule. May be branched in gymnosperms. See GO for pollen tube and pollen tube tip.
+comment: Carries the male gametes to into or near the ovule. May be branched in gymnosperms. See GO for pollen tube (GO:0090406) or pollen tube tip (GO:0090404).
 xref: OBO_SF_PO:3093226
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0020099 ! vegetative cell
