@@ -1,6 +1,7 @@
 format-version: 1.2
-date: 11:01:2011 14:33
-auto-generated-by: OBO-Edit 2.1-beta7
+date: 02:02:2011 12:25
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta9
 subsetdef: Angiosperm "Terms for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -260,8 +261,9 @@ consider: PO:0000256
 id: PO:0000030
 name: septum
 namespace: plant_structure
-def: "A thin partition or membrane that divides a cavity or a mass of tissue, e.g., in anther, ovary or fruit." [APWeb:Glossary]
-is_a: PO:0009007 ! portion of plant tissue
+def: "A plant structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
+comment: A septum is formed by the fusion of the walls of two adjacent organ parts (carpel walls or anther walls), for example, the partition between two sections of an orange, seen in cross-section.
+is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0000031
@@ -528,25 +530,71 @@ is_a: PO:0000055 ! bud
 id: PO:0000059
 name: root initial cell
 namespace: plant_structure
-def: "Cell in the root apical meristem that by division gives rise to two cells one of which remains in the meristem, the other is added produces different root cells." [TAIR:ki]
-synonym: "root stem cell" RELATED []
-is_a: PO:0020147 ! root apical meristem
+def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
+synonym: "root stem cell" EXACT []
+is_a: PO:0004011 ! initial cell
+relationship: part_of PO:0020147 ! root apical meristem
 
 [Term]
 id: PO:0000060
 name: root cortex-endodermis initial cell
 namespace: plant_structure
-def: "Cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:ki]
-synonym: "root cortex-endodermis stem cell" RELATED []
+def: "A root initial cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:ki]
+synonym: "root cortex-endodermis stem cell" EXACT []
 is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0000061
 name: lateral root-cap-epidermal initial cell
 namespace: plant_structure
-def: "Cell that produces lateral root-cap cells and root epidermis." [POC:curators]
-synonym: "lateral root-cap-epidermal stem cell" RELATED []
+def: "A root initial cell that produces lateral root-cap cells and root epidermis." [POC:curators]
+synonym: "lateral root-cap-epidermal stem cell" EXACT []
 is_a: PO:0000059 ! root initial cell
+
+[Term]
+id: PO:0000062
+name: stomatal initial
+namespace: plant_structure
+def: "An epidermal initial that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell differentiates into a guard mother cell." [POC:rw]
+synonym: "stomatal initial cell" EXACT []
+synonym: "stomatal meristemoid" EXACT []
+is_a: PO:0000349 ! epidermal initial
+created_by: Ramona
+creation_date: 2011-02-02T09:01:50Z
+
+[Term]
+id: PO:0000063
+name: leaf procambial cell
+namespace: plant_structure
+def: "A procambial cell that is part of a leaf procambium." [POC:rw]
+comment: Leaf procambial cells may be derived from the shoot apical meristem or can arise throughout the mesophyll of a developing leaf.
+synonym: "dispersed meristematic cell" EXACT [PMCID:PMC1550771]
+synonym: "DMC" EXACT [PMCID:PMC1550771]
+synonym: "leaf procambium cell" EXACT []
+is_a: PO:0025258 ! procambial cell
+relationship: part_of PO:0025259 ! leaf procambium
+created_by: Ramona
+creation_date: 2011-02-02T11:45:49Z
+
+[Term]
+id: PO:0000064
+name: xylem pole pericycle cell
+namespace: plant_structure
+def: "A pericycle cell that is adjacent to a xylem cell." [PMID:17993548]
+comment: Xylem pole pericycle cells may retain some meristematic activity and are the site of lateral root initiation.
+is_a: PO:0025261 ! pericycle cell
+created_by: Ramona
+creation_date: 2011-02-02T11:52:34Z
+
+[Term]
+id: PO:0000065
+name: phloem pole pericycle cell
+namespace: plant_structure
+def: "A pericycle cell that is adjacent to a phloem cell." [PMID:17993548]
+comment: Phloem pole pericycle cells are distinct from xylem pole pericycle cells in that they display cytoplasmic characteristics of a more differentiated status.
+is_a: PO:0025261 ! pericycle cell
+created_by: Ramona
+creation_date: 2011-02-02T11:55:06Z
 
 [Term]
 id: PO:0000066
@@ -557,14 +605,6 @@ comment: Proposed to be involved in the retrieval of solutes from the xylem sap.
 xref: CL:0000074
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005660 ! hydathode
-
-[Term]
-id: PO:0000070
-name: meristemoid
-namespace: plant_structure
-def: "A cell or a group of cells constituting an active locus of meristematic activity in a tissue composed of somewhat older, differentiating cells." [ISBN:0471245208, PO:syr]
-xref: CL:0000266
-is_a: PO:0009002 ! plant cell
 
 [Term]
 id: PO:0000071
@@ -581,7 +621,7 @@ relationship: part_of PO:0006075 ! primary phloem
 id: PO:0000074
 name: parenchyma cell
 namespace: plant_structure
-def: "A relatively unspecialized cell with a nucleate protoplast." [ISBN:0471245208]
+def: "A relatively unspecialized ground tissue cell with a nucleate protoplast." [ISBN:0471245208]
 subset: TraitNet
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005421 ! parenchyma
@@ -629,7 +669,8 @@ id: PO:0000079
 name: fusiform initial
 namespace: plant_structure
 alt_id: PO:0000275
-def: "An elongated cell with approximately wedge-shaped ends, found in the vascular cambium, which gives rise to the elements of the axial system in the secondary vascular tissues." [ISBN:0471245208]
+def: "An elongated cambial initial cell with approximately wedge-shaped ends that is part of the vascular cambium and gives rise to axial cells." [ISBN:0471245208]
+synonym: "fusiform initial cell" EXACT []
 synonym: "xylem initial" RELATED []
 synonym: "xylem mother cell" RELATED []
 xref: CL:0000009
@@ -650,7 +691,8 @@ relationship: develops_from PO:0000079 ! fusiform initial
 id: PO:0000082
 name: ray initial
 namespace: plant_structure
-def: "A cell in the vascular cambium that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
+def: "A cambial initial cell that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
+synonym: "ray initial cell" EXACT []
 xref: CL:0000316
 is_a: PO:0000295 ! cambial initial
 
@@ -685,7 +727,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0000115
 name: socket cell
 namespace: plant_structure
-def: "Cell that surrounds a trichome and provides its support." [ISBN:0471245208, PMID:15319479]
+def: "A shoot epidermal cell that surrounds a trichome and provides its support." [ISBN:0471245208, PMID:15319479]
 synonym: "cell located at the base of the trichome" RELATED []
 synonym: "trichome support cell" RELATED []
 xref: CL:0000297
@@ -878,7 +920,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0000262
 name: trichoblast
 namespace: plant_structure
-def: "The smaller cell produced by the asymmetric division of a root epidermal cell that gives rise to a root hair." [ISBN:0471245208]
+def: "A root epidermal cell that is the smaller cell produced by the asymmetric division of an epidermal intial and gives rise to a root hair." [ISBN:0471245208]
 synonym: "hair cell" RELATED []
 xref: CL:0000299
 is_a: PO:0025164 ! root epidermal cell
@@ -893,7 +935,6 @@ synonym: "non-hair cell" RELATED []
 xref: CL:0000332
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
-relationship: part_of PO:0006036 ! root epidermis
 
 [Term]
 id: PO:0000272
@@ -1001,8 +1042,9 @@ id: PO:0000295
 name: cambial initial
 namespace: plant_structure
 alt_id: PO:0000080
-def: "Cell in the vascular or cork cambium which by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
-synonym: "cambial cell" RELATED []
+def: "An initial cell that is par of the vascular or cork cambium and by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
+synonym: "cambial cell" EXACT []
+synonym: "cambial initial cell" EXACT []
 xref: CL:0000272
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0005598 ! vascular cambium
@@ -1042,7 +1084,8 @@ relationship: develops_from PO:0000349 ! epidermal initial
 id: PO:0000349
 name: epidermal initial
 namespace: plant_structure
-def: "A relatively unspecialized cell that will give rise to specialized cell types of the epidermis." [TAIR:lr]
+def: "An initial cell that is part of an epidermis and gives rise to specialized cell types of the epidermis." [TAIR:lr]
+synonym: "epidermal initial cell" EXACT []
 xref: CL:0000538
 is_a: PO:0004011 ! initial cell
 
@@ -1050,17 +1093,16 @@ is_a: PO:0004011 ! initial cell
 id: PO:0000351
 name: guard mother cell
 namespace: plant_structure
-def: "Epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
+def: "A shoot epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
 xref: CL:0000262
 is_a: PO:0025165 ! shoot epidermal cell
-relationship: develops_from PO:0000070 ! meristemoid
-relationship: develops_from PO:0000349 ! epidermal initial
+relationship: develops_from PO:0000062 ! stomatal initial
 
 [Term]
 id: PO:0000352
 name: myrosin cell
 namespace: plant_structure
-def: "Cell containing glucosinolates (\"mustard oil glucosides\") and myrosinases, enzymes hydrolyzing the glucosinolates." [ISBN:0471245208]
+def: "A cell containing glucosinolates (\"mustard oil glucosides\") and myrosinases, enzymes hydrolyzing the glucosinolates." [ISBN:0471245208]
 xref: CL:0000368
 is_a: PO:0025030 ! ground tissue cell
 
@@ -1068,7 +1110,7 @@ is_a: PO:0025030 ! ground tissue cell
 id: PO:0000353
 name: passage cell
 namespace: plant_structure
-def: "Cell in exodermis or endodermis that remains thin walled when the associated cells develop thick secondary walls." [ISBN:0471245208]
+def: "A ground tissue cell that is part of an exodermis or an endodermis and remains thin walled when the associated cells develop thick secondary walls." [ISBN:0471245208]
 xref: CL:0000245
 is_a: PO:0025030 ! ground tissue cell
 
@@ -1100,7 +1142,7 @@ is_obsolete: true
 id: PO:0000400
 name: phloem mother cell
 namespace: plant_structure
-def: "A cell derived from vascular cambium which is destined to differentiate into secondary phloem." [POC:curators]
+def: "A cambial initial cell which is destined to differentiate into secondary phloem." [POC:curators]
 comment: Phloem islands can be formed in the middle of the xylem.
 xref: CL:0000264
 is_a: PO:0000295 ! cambial initial
@@ -1902,7 +1944,6 @@ def: "An enlarged more or less thin-walled leaf pavement cell, present, with oth
 comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves.
 synonym: "motor cell" RELATED []
 is_a: PO:0025212 ! leaf pavement cell
-relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0004002
@@ -1978,18 +2019,21 @@ is_a: PO:0004718 ! short cell
 id: PO:0004010
 name: meristematic cell
 namespace: plant_structure
-def: "A cell synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
+def: "A plant cell synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
 xref: CL:0000685
 is_a: PO:0009002 ! plant cell
-relationship: part_of PO:0009013 ! meristem
 
 [Term]
 id: PO:0004011
 name: initial cell
 namespace: plant_structure
-def: "Cell in a meristem that by division gives rise to two cells one of which remains in the meristem, the other is added to the plant body." [ISBN:0471245208]
+alt_id: PO:0000070
+def: "A meristematic cell that by division gives rise to two cells, one of which remains meristematic, while the other is added to the plant body." [ISBN:0471245208]
+comment: Initial cells are often part of a portion of tissue that is composed mostly of somewhat older, differentiating cells. The division of an initial cell is often uneven, with the smaller daughter cell remaining meristematic.
+synonym: "meristemoid" EXACT []
 synonym: "stem cell" BROAD []
 xref: CL:0000034
+xref: CL:0000266
 is_a: PO:0004010 ! meristematic cell
 
 [Term]
@@ -2685,26 +2729,28 @@ is_a: PO:0005053 ! laticifer
 id: PO:0005008
 name: fruit septum
 namespace: plant_structure
-def: "A thin partition or membrane that divides a cavity or a mass of tissue in the fruit that is derived from the carpel septum." [GR:cwt]
+def: "A septum that divides a cavity or a mass of tissue in a fruit and is derived from an ovary septum." [POC:rw]
 subset: Arabidopsis
 is_a: PO:0000030 ! septum
-relationship: develops_from PO:0005009 ! carpel septum
+relationship: develops_from PO:0005009 ! ovary septum
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0005009
-name: carpel septum
+name: ovary septum
 namespace: plant_structure
-def: "A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [GR:cwt, GR:pj]
+def: "A septum that divides a multilocular ovary." [POC:rw]
+comment: Found in species with syncarpous gynoecia (fused carpels).
 subset: Arabidopsis
+synonym: "carpel septum" RELATED []
 is_a: PO:0000030 ! septum
-relationship: part_of PO:0009030 ! carpel
+relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
 id: PO:0005010
 name: anther septum
 namespace: plant_structure
-def: "A thin partition or stretch of cells that are present in the anther dehiscence zone." [GR:cwt, GR:pj]
+def: "A septum that is present in an anther dehiscence zone." [GR:cwt, GR:pj]
 is_a: PO:0000030 ! septum
 relationship: part_of PO:0005011 ! anther dehiscence zone
 
@@ -3860,9 +3906,9 @@ is_a: PO:0006079 ! shoot meristem
 id: PO:0006074
 name: procambium
 namespace: plant_structure
-def: "A portion of primary cambium that undergoes differentiation to form the primary vascular tissue." [ISBN:0080374913]
-is_a: PO:0005597 ! cambium
-relationship: part_of PO:0020144 ! apical meristem
+def: "A portion of meristem tissue that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
+comment: May occur in an apical meristem or in a developing phyllome.
+is_a: PO:0009013 ! meristem
 
 [Term]
 id: PO:0006075
@@ -4030,7 +4076,7 @@ is_a: PO:0005598 ! vascular cambium
 id: PO:0006202
 name: interfascicular region
 namespace: plant_structure
-def: "A portion of ground tissue located between vascular bundles in a shoot axis." [ISBN: 0716710072, ISBN:0471244554]
+def: "A portion of ground tissue located between vascular bundles in a shoot axis." [ISBN:0471244554, ISBN:0716710072]
 comment: Inapplicable for nearly all monocots.
 synonym: "medullary ray" EXACT [ISBN:0471244554 "Esau 1965. Plant Anatomy, second edition"]
 synonym: "pith ray" EXACT [ISBN:0-7167-1007-2 "Raven et al. 2005"]
@@ -4104,7 +4150,7 @@ is_obsolete: true
 id: PO:0006210
 name: protoderm
 namespace: plant_structure
-def: "A meristem that develops from the outer layer of an apical meristem and gives rise to a portion of epidermis." [ISBN:047124529, POC:curators]
+def: "A portion of meristem tissue that develops from the outer layer of an apical meristem and gives rise to a portion of epidermis." [ISBN:047124529, POC:curators]
 comment: It may or may not arise from independent initials.  Some researchers also call it an epidermis in meristematic state.
 synonym: "dermatogen cell" RELATED []
 xref: OBO_SF_PO:3016651
@@ -4255,17 +4301,17 @@ is_obsolete: true
 id: PO:0006306
 name: shoot procambium
 namespace: plant_structure
-def: "A derivative of the apical meristem which undergoes differentiation to form the primary vascular tissue of a shoot." [GR:pj]
+def: "A portion of procambium tissue that is part of a shoot system." [POC:rw]
 is_a: PO:0006074 ! procambium
-relationship: part_of PO:0020148 ! shoot apical meristem
+relationship: part_of PO:0009006 ! shoot system
 
 [Term]
 id: PO:0006307
 name: root procambium
 namespace: plant_structure
-def: "A derivative of the apical meristem which undergoes differentiation to form the primary vascular tissue of a root." [GR:pj]
+def: "A portion of procambium tissue that undergoes differentiation to form the primary vascular tissue of a root." [POC:rw]
 is_a: PO:0006074 ! procambium
-relationship: part_of PO:0006085 ! root meristem
+relationship: part_of PO:0020147 ! root apical meristem
 
 [Term]
 id: PO:0006308
@@ -8707,7 +8753,7 @@ is_a: PO:0009013 ! meristem
 id: PO:0008036
 name: periblem
 namespace: plant_structure
-def: "A meristem that forms the cortex." [ISBN:0471245208 "Anatomy of seed plants by K. Esau [2nd edition]"]
+def: "A portion of meristem tissue that forms the cortex." [ISBN:0471245208 "Anatomy of seed plants by K. Esau [2nd edition]"]
 is_a: PO:0009013 ! meristem
 
 [Term]
@@ -9035,6 +9081,7 @@ subset: TraitNet
 synonym: "meristematic tissue" EXACT []
 synonym: "portion of meristem tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0004010 ! meristematic cell
 
 [Term]
 id: PO:0009014
@@ -9079,7 +9126,7 @@ id: PO:0009018
 name: basal endosperm transfer cell
 namespace: plant_structure
 def: "A transfer cell that is part of a basal endosperm transfer layer." [POC:rw]
-comment: Responsible for transferring nutrients to an embry by symplastic or apoplastic methods.
+comment: Responsible for transferring nutrients to an embryo by symplastic or apoplastic methods.
 xref: OBO_SF_PO:3132534
 is_a: PO:0000078 ! transfer cell
 relationship: part_of PO:0025196 ! basal endosperm transfer layer
@@ -10994,9 +11041,9 @@ relationship: develops_from PO:0020133 ! columella root cap initial cell
 id: PO:0020133
 name: columella root cap initial cell
 namespace: plant_structure
-def: "Cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR:ki]
-synonym: "columella root cap stem cell" RELATED []
-synonym: "columella stem cell" RELATED []
+def: "A root initial cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR:ki]
+synonym: "columella root cap stem cell" EXACT []
+synonym: "columella stem cell" EXACT []
 is_a: PO:0000059 ! root initial cell
 
 [Term]
@@ -11500,7 +11547,7 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_structure
-def: "An elongate, water conducting cell that is dead at maturity, with tapered ends that are thin and partially hydrolyzed, that lacks specialized wall thickenings or lignin." [ISBN:0-9620733-4-2, ISBN:13- 978-0-7178-1007-3]
+def: "An elongate, water conducting cell that is dead at maturity, with tapered ends that are thin and partially hydrolyzed, that lacks specialized wall thickenings or lignin." [ISBN:0962073342, ISBN:9780717810073]
 comment: Occurs in the gametophytic phase of a plant life cycle.
 is_a: PO:0000081 ! axial cell
 created_by: Ramona
@@ -11510,7 +11557,7 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_structure
-def: "A food conducting cell associated with hydroids that resembles the sieve elements of some seedless vascular plants." [ISBN: 0-9620733-4-2, ISBN13:978-0-7178-1007-3]
+def: "A food conducting cell associated with hydroids that resembles the sieve elements of some seedless vascular plants." [ISBN:962073342, ISBN:9780717810073]
 comment: Occurs in the gametophytic phase of a plant life cycle.
 is_a: PO:0000081 ! axial cell
 created_by: Ramona
@@ -13895,6 +13942,45 @@ is_a: PO:0025181 ! root elongation zone
 relationship: part_of PO:0000026 ! primary root tip
 created_by: Ramona
 creation_date: 2011-01-05T12:05:43Z
+
+[Term]
+id: PO:0025258
+name: procambial cell
+namespace: plant_structure
+def: "A meristematic cell that is part of a portion of procambium." [POC:rw]
+synonym: "procambium cell" EXACT []
+is_a: PO:0004010 ! meristematic cell
+relationship: part_of PO:0006074 ! procambium
+created_by: Ramona
+creation_date: 2011-02-02T09:46:46Z
+
+[Term]
+id: PO:0025259
+name: leaf procambium
+namespace: plant_structure
+def: "A portion of shoot procambium tissue that is part of a leaf." [POC:rw]
+is_a: PO:0006306 ! shoot procambium
+created_by: Ramona
+creation_date: 2011-02-02T11:16:33Z
+
+[Term]
+id: PO:0025260
+name: shoot axis procambium
+namespace: plant_structure
+def: "A portion of shoot procambium that is part of a shoot apical meristem and gives rise to the primary vascular tissue of a shoot axis." [POC:rw]
+is_a: PO:0006306 ! shoot procambium
+created_by: Ramona
+creation_date: 2011-02-02T11:16:33Z
+
+[Term]
+id: PO:0025261
+name: pericycle cell
+namespace: plant_structure
+def: "A ground tissue cell that is part of a portion of pericycle." [POC:rw]
+is_a: PO:0025030 ! ground tissue cell
+relationship: part_of PO:0006203 ! pericycle
+created_by: Ramona
+creation_date: 2011-02-02T11:52:49Z
 
 [Term]
 id: PO:0028001
