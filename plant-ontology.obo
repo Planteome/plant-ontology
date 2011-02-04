@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:02:2011 12:25
+date: 04:02:2011 08:55
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta9
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -3274,7 +3274,7 @@ id: PO:0005679
 name: epidermis
 namespace: plant_structure
 def: "A portion of plant tissue composed of epidermal cells that develops from the protoderm and covers the surface of a plant structure." [POC:curators]
-comment: The epidermis can be composed of one or more layers of cells. In some species, the epidermis is replaced by periderm.\nEpidermis can also include trichomes and stomatal pores.
+comment: The epidermis can be composed of one or more layers of cells. In some species, the epidermis is replaced by periderm. Epidermis can also include trichomes and stomatal pores.
 subset: TraitNet
 synonym: "dermal tissue" EXACT []
 synonym: "epidermal layer" EXACT []
@@ -5172,7 +5172,7 @@ relationship: part_of PO:0006312 ! tassel pedicellate spikelet
 id: PO:0006417
 name: tassel peduncle
 namespace: plant_structure
-def: "The axis of a maize tassel below the lowest tassel node." [GR:pj]
+def: "A peduncle of a maize tassel, below the lowest tassel node." [GR:pj]
 is_a: PO:0009053 ! peduncle
 relationship: part_of PO:0020126 ! tassel
 
@@ -5180,7 +5180,7 @@ relationship: part_of PO:0020126 ! tassel
 id: PO:0006418
 name: ear peduncle
 namespace: plant_structure
-def: "The stalk of a maize ear below the lowest ear node." [GR:pj]
+def: "A peduncle of a maize ear, below the lowest ear node." [GR:pj]
 synonym: "shank" RELATED []
 synonym: "Zea lateral branch" RELATED []
 is_a: PO:0009053 ! peduncle
@@ -9507,7 +9507,9 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009053
 name: peduncle
 namespace: plant_structure
-def: "A branch of an inflorescence or an individual flower." [ISBN:0-7167-1007-2]
+def: "A shoot axis that extends from the last foliage leaf on a stem or branch until the next distal node." [ISBN:9781842464229, POC:curators]
+comment: In plants with single flowers, the peduncle ends with a flower. In plants with inflorescences, the peduncle is the basal end of the primary\ninflorescence axis, and it ends where the inflorescence begins to branch.\nThe peduncle marks the axial transition from vegetative to reproductive\ngrowth. In branching inflorescences, the second order inflorescence axis from the point at which it leaves the main axis up to the point at which it branches again may be called the second order peduncle. Higher order peduncles are also possible.
+subset: Angiosperm
 subset: Musa
 subset: reference
 synonym: "inflorescence stem " RELATED []
@@ -13850,7 +13852,7 @@ id: PO:0025248
 name: pseudostem
 namespace: plant_structure
 def: "A collective plant structure that forms a cylindrical false stem composed concentric leaf sheaths." [POC:rw]
-comment: The peduncle later grows up through the psuedostem.
+comment: The peduncle later grows up through the psuedostem. Common in Musa species and some other monocots.
 subset: Musa
 xref: CO_125:0000046
 is_a: PO:0025007 ! collective plant structure
