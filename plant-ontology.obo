@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:02:2011 08:55
+date: 09:02:2011 15:05
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta9
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -261,9 +261,9 @@ consider: PO:0000256
 id: PO:0000030
 name: septum
 namespace: plant_structure
-def: "A plant structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
+def: "A collective organ part structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
 comment: A septum is formed by the fusion of the walls of two adjacent organ parts (carpel walls or anther walls), for example, the partition between two sections of an orange, seen in cross-section.
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025269 ! collective organ part structure
 
 [Term]
 id: PO:0000031
@@ -531,7 +531,7 @@ id: PO:0000059
 name: root initial cell
 namespace: plant_structure
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
-synonym: "root stem cell" EXACT []
+synonym: "root stem cell" RELATED []
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0020147 ! root apical meristem
 
@@ -1042,7 +1042,7 @@ id: PO:0000295
 name: cambial initial
 namespace: plant_structure
 alt_id: PO:0000080
-def: "An initial cell that is par of the vascular or cork cambium and by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
+def: "An initial cell that is part of the vascular or cork cambium and by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
 synonym: "cambial cell" EXACT []
 synonym: "cambial initial cell" EXACT []
 xref: CL:0000272
@@ -2031,7 +2031,7 @@ alt_id: PO:0000070
 def: "A meristematic cell that by division gives rise to two cells, one of which remains meristematic, while the other is added to the plant body." [ISBN:0471245208]
 comment: Initial cells are often part of a portion of tissue that is composed mostly of somewhat older, differentiating cells. The division of an initial cell is often uneven, with the smaller daughter cell remaining meristematic.
 synonym: "meristemoid" EXACT []
-synonym: "stem cell" BROAD []
+synonym: "stem cell" RELATED []
 xref: CL:0000034
 xref: CL:0000266
 is_a: PO:0004010 ! meristematic cell
@@ -2317,7 +2317,7 @@ is_a: PO:0004532 ! wood parenchyma
 id: PO:0004535
 name: fruit placenta
 namespace: plant_structure
-def: "A placenta that is part of a fruit and to which seeds are attached." [POC:curators]
+def: "A portion of placenta tissue that is part of a fruit and to which seeds are attached." [POC:curators]
 subset: Tomato
 is_a: PO:0025078 ! placenta
 relationship: part_of PO:0009001 ! fruit
@@ -2727,24 +2727,23 @@ is_a: PO:0005053 ! laticifer
 
 [Term]
 id: PO:0005008
-name: fruit septum
+name: obsolete fruit septum
 namespace: plant_structure
-def: "A septum that divides a cavity or a mass of tissue in a fruit and is derived from an ovary septum." [POC:rw]
-subset: Arabidopsis
-is_a: PO:0000030 ! septum
-relationship: develops_from PO:0005009 ! ovary septum
-relationship: part_of PO:0009001 ! fruit
+def: "A thin partition or membrane that divides a cavity or a mass of tissue in the fruit that is derived from the carpel septum." [GR:cwt]
+comment: This term was made obsolete because it was ambiguous. It has been replaced by the more precise terms fruit septum (PO:0025268) and fruit replum (PO:0025267). Annotations for Arabidopsis should go to fruit replum.
+is_obsolete: true
+consider: PO:0025267
+consider: PO:0025268
 
 [Term]
 id: PO:0005009
-name: ovary septum
+name: carpel septum
 namespace: plant_structure
-def: "A septum that divides a multilocular ovary." [POC:rw]
-comment: Found in species with syncarpous gynoecia (fused carpels).
-subset: Arabidopsis
-synonym: "carpel septum" RELATED []
-is_a: PO:0000030 ! septum
-relationship: part_of PO:0009062 ! gynoecium
+def: "A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [GR:cwt, GR:pj]
+comment: Carpel septum was made obsolete because it was ambiguous. It has been replaced by the more precise terms ovary septum (PO:0025262) and replum (PO:0005016). Annotations for Arabidopsis should go to replum.
+is_obsolete: true
+consider: PO:0005016
+consider: PO:0025262
 
 [Term]
 id: PO:0005010
@@ -2752,7 +2751,7 @@ name: anther septum
 namespace: plant_structure
 def: "A septum that is present in an anther dehiscence zone." [GR:cwt, GR:pj]
 is_a: PO:0000030 ! septum
-relationship: part_of PO:0005011 ! anther dehiscence zone
+relationship: part_of PO:0009061 ! androecium
 
 [Term]
 id: PO:0005011
@@ -2800,9 +2799,12 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0005016
 name: replum
 namespace: plant_structure
-def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMID:15035986]
-is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0020001 ! ovary placenta
+def: "A portion of ovary placenta tissue that divides an ovary into two or more chambers and develops from contact of the placental tissue from opposite sides of the ovary early in gynoecium development." [ISBN:0387940898, POC:curators]
+comment: A replum develops along with the ovary and has no suture line in its center, while a true ovary septum (PO:0025262) is derived from the fusion two adjacent carpel walls. Common in Brassicaceae. Annotations for Arabidopsis should go here, and not under ovary septum.
+subset: Arabidopsis
+synonym: "false ovary septum" EXACT []
+synonym: "placental septum" EXACT []
+is_a: PO:0020001 ! ovary placenta
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -9662,7 +9664,7 @@ relationship: part_of PO:0009064 ! receptacle
 id: PO:0009066
 name: anther
 namespace: plant_structure
-def: "The pollen-bearing part of a stamen." [APWeb:Glossary]
+def: "A cardinal organ part that is the pollen-bearing part of a stamen." [APWeb:Glossary]
 subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2971884
@@ -9725,13 +9727,14 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0009072
 name: ovary
 namespace: plant_structure
-def: "The basal portion of a carpel or group of fused carpels, that encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
+def: "A plant structure that is the basal portion of a carpel or group of fused carpels and encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
+comment: An ovary may not contain ovules, in the case of sterile fruits.
 subset: Maize
 subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0009030 ! carpel
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
 id: PO:0009073
@@ -10115,7 +10118,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0020001
 name: ovary placenta
 namespace: plant_structure
-def: "A placenta that is part of an ovary and to which ovules are attached." [APWeb:Glossary]
+def: "A portion of placenta tissue that is part of an ovary and to which ovules are attached." [APWeb:Glossary]
 subset: reference
 is_a: PO:0025078 ! placenta
 relationship: part_of PO:0009072 ! ovary
@@ -11279,8 +11282,9 @@ id: PO:0025007
 name: collective plant structure
 namespace: plant_structure
 def: "A plant structure that is a proper part of a plant and is composed of two or more organs and any associated portions of plant tissue." [POC:curators]
-comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049.
+comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049. See also collective organ part structure, for plant structures composed of parts of multiple organs, but no complete organs.
 subset: TraitNet
+synonym: "collective plant organ structure" RELATED []
 xref: OBO_SF_PO:2954382
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
@@ -12082,7 +12086,7 @@ creation_date: 2010-07-12T02:31:42Z
 id: PO:0025078
 name: placenta
 namespace: plant_structure
-def: "A portion of plant tissue to which ovules or seed are attached." [ISBN:0-7167-1007-2]
+def: "A portion of plant tissue to which ovules or seeds are attached." [ISBN:0-7167-1007-2]
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
 creation_date: 2010-07-13T04:36:23Z
@@ -13851,11 +13855,11 @@ creation_date: 2010-12-30T03:47:08Z
 id: PO:0025248
 name: pseudostem
 namespace: plant_structure
-def: "A collective plant structure that forms a cylindrical false stem composed concentric leaf sheaths." [POC:rw]
+def: "A collective organ part structure that forms a cylindrical false stem composed concentric leaf sheaths." [POC:rw]
 comment: The peduncle later grows up through the psuedostem. Common in Musa species and some other monocots.
 subset: Musa
 xref: CO_125:0000046
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025269 ! collective organ part structure
 created_by: Ramona
 creation_date: 2010-12-30T03:53:09Z
 
@@ -13983,6 +13987,94 @@ is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0006203 ! pericycle
 created_by: Ramona
 creation_date: 2011-02-02T11:52:49Z
+
+[Term]
+id: PO:0025262
+name: ovary septum
+namespace: plant_structure
+def: "A septum that divides a multilocular ovary." [POC:curators]
+comment: Found in species with syncarpous gynoecia (fused carpels). An ovary septum is derived from the fused walls of two adjacent carpels, while a replum (PO:0005016) develops from early contact of placental tissue from opposite sides of the ovary. Annotations for Arabidopsis should go under replum, not under ovary septum.
+is_a: PO:0000030 ! septum
+relationship: develops_from PO:0005022 ! ovary wall
+relationship: part_of PO:0009062 ! gynoecium
+created_by: Ramona
+creation_date: 2011-02-09T10:31:04Z
+
+[Term]
+id: PO:0025263
+name: locule
+namespace: plant_structure
+def: "A plant anatomical space that is a cavity a reproductive structure." [POC:curators]
+comment: May be a cavitiy in a sporophyll, within several fused sporophylls, or within a sporangium. In many instances, the locules are filled with seeds or other plant structures.
+synonym: "loculus" EXACT []
+is_a: PO:0025117 ! plant anatomical space
+created_by: Ramona
+creation_date: 2011-02-09T10:43:49Z
+
+[Term]
+id: PO:0025264
+name: anther locule
+namespace: plant_structure
+def: "A sporangium locule that is part of an anther and is a cavity within a single pollen sac or two or more fused pollen sacs." [POC:curators]
+is_a: PO:0025265 ! sporangium locule
+relationship: part_of PO:0009066 ! anther
+created_by: Ramona
+creation_date: 2011-02-09T01:37:34Z
+
+[Term]
+id: PO:0025265
+name: sporangium locule
+namespace: plant_structure
+def: "A locule that is a cavity in a sporangium or several fused sporangia." [POC:curators]
+is_a: PO:0025263 ! locule
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-02-09T10:44:53Z
+
+[Term]
+id: PO:0025266
+name: ovary locule
+namespace: plant_structure
+def: "A locule that is a cavity in an ovary." [POC:curators]
+comment: Generally contains at least one ovule, buy ovules may be absent in sterile fruits. An ovary locule may be part of a single carpel, in the case of unicarpellate flowers. An ovary that is part of a syncarpous gynoecium may have multiple locules, or the anatomical spaces of multiple carpels may be fused to form a single locule.
+is_a: PO:0025263 ! locule
+relationship: part_of PO:0020003 ! ovule
+created_by: Ramona
+creation_date: 2011-02-09T01:39:52Z
+
+[Term]
+id: PO:0025267
+name: fruit replum
+namespace: plant_structure
+def: "A portion of fruit placenta tissue that divides a fruit into two or more chambers and develops from a replum." [POC:rw]
+subset: Arabidopsis
+is_a: PO:0004535 ! fruit placenta
+relationship: develops_from PO:0005016 ! replum
+created_by: Ramona
+creation_date: 2011-02-09T02:16:55Z
+
+[Term]
+id: PO:0025268
+name: fruit septum
+namespace: plant_structure
+def: "A septum that divides a cavity or mass of tissue in a fruit and develops from an ovary septum." [POC:rw]
+comment: Annotations for Arabidopsis should go under fruit replum (PO:0025267), not under fruit septum. The partition between two sections of an orange is a fruit septum.
+is_a: PO:0000030 ! septum
+relationship: develops_from PO:0025262 ! ovary septum
+relationship: part_of PO:0009001 ! fruit
+created_by: Ramona
+creation_date: 2011-02-09T02:30:21Z
+
+[Term]
+id: PO:0025269
+name: collective organ part structure
+namespace: plant_structure
+def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:rw]
+comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths.
+is_a: PO:0009011 ! plant structure
+relationship: has_part PO:0025001 ! cardinal organ part
+created_by: Ramona
+creation_date: 2011-02-09T02:57:59Z
 
 [Term]
 id: PO:0028001
