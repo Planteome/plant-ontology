@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:02:2011 12:45
+date: 17:02:2011 12:56
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta9
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -533,7 +533,7 @@ namespace: plant_structure
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
 synonym: "root stem cell" RELATED []
 is_a: PO:0004011 ! initial cell
-relationship: part_of PO:0020147 ! root apical meristem
+relationship: part_of PO:0020149 ! quiescent center
 
 [Term]
 id: PO:0000060
@@ -580,8 +580,8 @@ creation_date: 2011-02-02T11:45:49Z
 id: PO:0000064
 name: xylem pole pericycle cell
 namespace: plant_structure
-def: "A pericycle cell that is adjacent to a xylem cell." [PMID:17993548]
-comment: Xylem pole pericycle cells may retain some meristematic activity and are the site of lateral root initiation.
+def: "A pericycle cell that is adjacent to the protoxylem of a vascular bundle." [PMID:17993548]
+comment: Xylem pole pericycle cells are cells in the pericycle that are adjacent to the protoxylem pole of a vascular bundle. Pericycle cells that are adjacent to other xylem cells in the vascular bundle are not considered xylem pole pericycle cells. Xylem pole pericycle cells may retain some meristematic activity and are the site of lateral root initiation.
 is_a: PO:0025261 ! pericycle cell
 created_by: Ramona
 creation_date: 2011-02-02T11:52:34Z
@@ -590,8 +590,8 @@ creation_date: 2011-02-02T11:52:34Z
 id: PO:0000065
 name: phloem pole pericycle cell
 namespace: plant_structure
-def: "A pericycle cell that is adjacent to a phloem cell." [PMID:17993548]
-comment: Phloem pole pericycle cells are distinct from xylem pole pericycle cells in that they display cytoplasmic characteristics of a more differentiated status.
+def: "A pericycle cell that is adjacent to the protophloem of a vascular bundle." [PMID:17993548]
+comment: Phloem pole pericycle cells are cells in the pericycle that are adjacent to the protophloem pole of a vascular bundle. Pericycle cells that are adjacent to other phloem cells in the vascular bundle are not considered phloem pole pericycle cells. Phloem pole pericycle cells are distinct from xylem pole pericycle cells in that they display cytoplasmic characteristics of a more differentiated status.
 is_a: PO:0025261 ! pericycle cell
 created_by: Ramona
 creation_date: 2011-02-02T11:55:06Z
@@ -2319,7 +2319,8 @@ name: fruit placenta
 namespace: plant_structure
 def: "A portion of placenta tissue that is part of a fruit and to which seeds are attached." [POC:curators]
 subset: Tomato
-is_a: PO:0025078 ! placenta
+is_a: PO:0020001 ! ovary placenta
+relationship: develops_from PO:0025078 ! placenta
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -2740,10 +2741,10 @@ id: PO:0005009
 name: carpel septum
 namespace: plant_structure
 def: "A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [GR:cwt, GR:pj]
-comment: Carpel septum was made obsolete because it was ambiguous. It has been replaced by the more precise terms ovary septum (PO:0025262) and replum (PO:0005016). Annotations for Arabidopsis should go to replum.
+comment: Carpel septum was made obsolete because it was ambiguous. It has been replaced by the more precise terms ovary septum (PO:0025262) and ovary replum (PO:0025272). Annotations for Arabidopsis should go to ovary replum (PO:0025272).
 is_obsolete: true
-consider: PO:0005016
 consider: PO:0025262
+consider: PO:0025272
 
 [Term]
 id: PO:0005010
@@ -2799,12 +2800,10 @@ relationship: part_of PO:0009009 ! embryo
 id: PO:0005016
 name: replum
 namespace: plant_structure
-def: "A portion of ovary placenta tissue that divides an ovary into two or more chambers and develops from contact of the placental tissue from opposite sides of the ovary early in gynoecium development." [ISBN:0387940898, POC:curators]
-comment: A replum develops along with the ovary and has no suture line in its center, while a true ovary septum (PO:0025262) is derived from the fusion two adjacent carpel walls. Common in Brassicaceae. Annotations for Arabidopsis should go here, and not under ovary septum.
-subset: Arabidopsis
-synonym: "false ovary septum" EXACT []
-synonym: "placental septum" EXACT []
-is_a: PO:0020001 ! ovary placenta
+def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMIS:15035986]
+is_obsolete: true
+consider: PO:0025267
+consider: PO:0025272
 
 [Term]
 id: PO:0005017
@@ -3908,7 +3907,8 @@ id: PO:0006074
 name: procambium
 namespace: plant_structure
 def: "A portion of meristem tissue that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
-comment: May occur in an apical meristem or in a developing phyllome.
+comment: May occur in an apical meristem or in a developing phyllome. Gives rise to the primary xylem and primary phloem.
+xref: OBO_SF_PO:3184905
 is_a: PO:0009013 ! meristem
 
 [Term]
@@ -4303,6 +4303,7 @@ id: PO:0006306
 name: shoot procambium
 namespace: plant_structure
 def: "A portion of procambium tissue that is part of a shoot system." [POC:rw]
+xref: OBO-SF-PO:3184921
 is_a: PO:0006074 ! procambium
 relationship: part_of PO:0009006 ! shoot system
 
@@ -4410,7 +4411,6 @@ comment: Found in Poaceae. It is not clear what the lemma, palea and lodicule co
 subset: Maize
 subset: Poaceae
 subset: reference
-synonym: "Poaceae floret" EXACT []
 is_a: PO:0009082 ! floret
 relationship: develops_from PO:0006329 ! Poaceae floret meristem
 relationship: part_of PO:0009051 ! spikelet
@@ -4509,7 +4509,6 @@ def: "A floral meristem that is part of a spikelet." [POC:rw]
 comment: Found in Poaceae.
 subset: Maize
 subset: Poaceae
-synonym: "Poaceae floret meristem" EXACT []
 is_a: PO:0000229 ! floral meristem
 relationship: part_of PO:0009051 ! spikelet
 
@@ -8433,7 +8432,7 @@ is_a: PO:0001170 ! seed development stages
 id: PO:0008001
 name: fruit distal end
 namespace: plant_structure
-def: "The end distal from the fruit pedicel." [(SGN:nm), GR:ap]
+def: "The end distal from the fruit pedicel." [GR:ap, SGN:nm]
 subset: Angiosperm
 subset: Tomato
 synonym: "blossom end" RELATED []
@@ -8445,7 +8444,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008002
 name: fruit proximal end
 namespace: plant_structure
-def: "The stem end of the fruit." [(SGN:nm), GR:ap]
+def: "The stem end of the fruit." [GR:ap, SGN:nm]
 subset: Angiosperm
 subset: Tomato
 synonym: "fruit shoulders" RELATED []
@@ -9190,10 +9189,11 @@ id: PO:0009025
 name: vascular leaf
 namespace: plant_structure
 def: "A leaf in a vascular plant." [POC:curators]
-comment: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud (APweb Glossary). Occurs in the sporophytic phase of a plant life cycle.
+comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud. Occurs in the sporophytic phase of a plant life cycle.
 subset: reference
 subset: TraitNet
-synonym: "foliage leaf" RELATED []
+synonym: "foliage leaf" EXACT []
+synonym: "leaf, vascular" EXACT []
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -9274,7 +9274,6 @@ def: "A phyllome that is part of a perianth in which all parts are similar in ap
 subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2972262
-xref: PlantSystematics.org:<a href=\\\"http\://www.plantsystematics.org/cgi-bin/dol/dol_keywords.pl?keywords=tepal&startat=0&endat=79\\\">tepal images</a>
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0025021 ! collective tepal structure
 
@@ -9365,8 +9364,10 @@ is_a: PO:0009037 ! lemma
 id: PO:0009042
 name: prophyll
 namespace: plant_structure
-def: "The first leaf or two leaves formed at the base of an axillary shoot, often smaller and/or in a distinctively different position from those formed subsequently." [APWeb:Glossary]
+def: "A phyllome that is the first organ or two organs formed at the base of an axillary shoot, often smaller and/or in a distinctively different position from leaves formed subsequently." [APWeb:Glossary]
+comment: A prophyll may not have a fully developed vascular system, thus it is not classified as a vascular leaf.
 subset: reference
+xref: OBO-SF-PO:3167323
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -9502,7 +9503,6 @@ subset: reference
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2975275
 is_a: PO:0009081 ! inflorescence branch
-relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0009053
@@ -9727,7 +9727,7 @@ id: PO:0009072
 name: ovary
 namespace: plant_structure
 def: "A plant structure that is the basal portion of a carpel or group of fused carpels and encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
-comment: An ovary may not contain ovules, in the case of sterile fruits.
+subset: Angiosperm
 subset: Maize
 subset: reference
 subset: TraitNet
@@ -9821,7 +9821,6 @@ def: "An inflorescence axis that is a branch forming from a primary or higher or
 subset: Angiosperm
 synonym: "coflorescence" RELATED []
 is_a: PO:0020122 ! inflorescence axis
-relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0009082
@@ -11283,9 +11282,11 @@ namespace: plant_structure
 def: "A plant structure that is a proper part of a plant and is composed of two or more organs and any associated portions of plant tissue." [POC:curators]
 comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049. See also collective organ part structure, for plant structures composed of parts of multiple organs, but no complete organs.
 subset: TraitNet
-synonym: "collective plant organ structure" RELATED []
+synonym: "collective plant organ structure" EXACT []
 xref: OBO_SF_PO:2954382
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0025269 ! collective organ part structure
+relationship: has_part PO:0009008 ! plant organ
 relationship: part_of PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
@@ -13068,8 +13069,9 @@ creation_date: 2010-11-18T08:07:48Z
 id: PO:0025173
 name: leaf spine
 namespace: plant_structure
-def: "A leaf that is a sclerified and pointed and lacks a lamina." [PATO:0002258 "pointed", POC:curators]
+def: "A leaf that is a sclerified and pointed and lacks a lamina." [POC:curators]
 comment: See also stipule spine (PO:0025174).
+xref: PATO:0002258 "pointed"
 is_a: PO:0009025 ! vascular leaf
 created_by: Ramona
 creation_date: 2010-11-18T08:10:24Z
@@ -13974,6 +13976,7 @@ name: shoot axis procambium
 namespace: plant_structure
 def: "A portion of shoot procambium that is part of a shoot apical meristem and gives rise to the primary vascular tissue of a shoot axis." [POC:rw]
 is_a: PO:0006306 ! shoot procambium
+relationship: part_of PO:0020148 ! shoot apical meristem
 created_by: Ramona
 creation_date: 2011-02-02T11:16:33Z
 
@@ -13993,6 +13996,7 @@ name: ovary septum
 namespace: plant_structure
 def: "A septum that divides a multilocular ovary." [POC:curators]
 comment: Found in species with syncarpous gynoecia (fused carpels). An ovary septum is derived from the fused walls of two adjacent carpels, while a replum (PO:0005016) develops from early contact of placental tissue from opposite sides of the ovary. Annotations for Arabidopsis should go under replum, not under ovary septum.
+synonym: "carpel synonym" RELATED []
 is_a: PO:0000030 ! septum
 relationship: develops_from PO:0005022 ! ovary wall
 relationship: part_of PO:0009062 ! gynoecium
@@ -14004,8 +14008,10 @@ id: PO:0025263
 name: locule
 namespace: plant_structure
 def: "A plant anatomical space that is a cavity a reproductive structure." [POC:curators]
-comment: May be a cavitiy in a sporophyll, within several fused sporophylls, or within a sporangium. In many instances, the locules are filled with seeds or other plant structures.
+comment: May be a cavity in a sporophyll, within several fused sporophylls, or within a sporangium. In many instances, the locules are filled with seeds or other plant structures.
 synonym: "loculus" EXACT []
+xref: OBO_SF_PO:3040048
+xref: OBO_SF_PO:3166008
 is_a: PO:0025117 ! plant anatomical space
 created_by: Ramona
 creation_date: 2011-02-09T10:43:49Z
@@ -14015,6 +14021,8 @@ id: PO:0025264
 name: anther locule
 namespace: plant_structure
 def: "A sporangium locule that is part of an anther and is a cavity within a single pollen sac or two or more fused pollen sacs." [POC:curators]
+synonym: "pollen sac locule" EXACT []
+synonym: "sporophyll locule" BROAD []
 is_a: PO:0025265 ! sporangium locule
 relationship: part_of PO:0009066 ! anther
 created_by: Ramona
@@ -14035,9 +14043,10 @@ id: PO:0025266
 name: ovary locule
 namespace: plant_structure
 def: "A locule that is a cavity in an ovary." [POC:curators]
-comment: Generally contains at least one ovule, buy ovules may be absent in sterile fruits. An ovary locule may be part of a single carpel, in the case of unicarpellate flowers. An ovary that is part of a syncarpous gynoecium may have multiple locules, or the anatomical spaces of multiple carpels may be fused to form a single locule.
+comment: Generally contains at least one ovule. An ovary locule may be part of a single carpel, in the case of unicarpellate flowers. An ovary that is part of a syncarpous gynoecium may have multiple locules, or the anatomical spaces of multiple carpels may be fused to form a single locule.
+synonym: "sporophyll locule" BROAD []
 is_a: PO:0025263 ! locule
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0009072 ! ovary
 created_by: Ramona
 creation_date: 2011-02-09T01:39:52Z
 
@@ -14046,9 +14055,10 @@ id: PO:0025267
 name: fruit replum
 namespace: plant_structure
 def: "A portion of fruit placenta tissue that divides a fruit into two or more chambers and develops from a replum." [POC:rw]
+comment: An fruit replum develops from the ovary replum and has no suture line in its center, while a fruit septum (PO:0025262) develops from an ovary septum via the fusion of two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis fruit should go here, and not under fruit septum.
 subset: Arabidopsis
 is_a: PO:0004535 ! fruit placenta
-relationship: develops_from PO:0005016 ! replum
+relationship: develops_from PO:0025272 ! ovary replum
 created_by: Ramona
 creation_date: 2011-02-09T02:16:55Z
 
@@ -14069,11 +14079,67 @@ id: PO:0025269
 name: collective organ part structure
 namespace: plant_structure
 def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:rw]
-comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths.
+comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths. Unlike a collective plant structure, a collective organ part structure does not contain any complete organs.
+xref: OBO_SF_PO:3175301
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0025007 ! collective plant structure
 relationship: has_part PO:0025001 ! cardinal organ part
+relationship: part_of PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2011-02-09T02:57:59Z
+
+[Term]
+id: PO:0025270
+name: fruit locule
+namespace: plant_structure
+def: "A locule that is a cavity in a fruit and develops from an ovary locule." [POC:curators]
+is_a: PO:0025263 ! locule
+relationship: develops_from PO:0025266 ! ovary locule
+relationship: part_of PO:0009001 ! fruit
+created_by: Ramona
+creation_date: 2011-02-17T07:17:12Z
+
+[Term]
+id: PO:0025271
+name: spore capsule locule
+namespace: plant_structure
+def: "A locule that is a cavity in a spore capsule." [POC:rw]
+comment: May be filled with spores.
+is_a: PO:0025265 ! sporangium locule
+relationship: part_of PO:0025232 ! moss capsule
+created_by: Ramona
+creation_date: 2011-02-17T07:19:40Z
+
+[Term]
+id: PO:0025272
+name: ovary replum
+namespace: plant_structure
+def: "A portion of ovary placenta tissue that divides an ovary into two or more chambers and develops from contact of the placental tissue from opposite sides of the ovary early in gynoecium development." [ISBN:0387940898, POC:curators]
+comment: An ovary replum develops along with the ovary and has no suture line in its center, while a true ovary septum (PO:0025262) is derived from the fusion two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis should go here, and not under ovary septum.
+subset: Arabidopsis
+synonym: "false ovary septum" EXACT []
+synonym: "placental septum" EXACT []
+is_a: PO:0020001 ! ovary placenta
+created_by: Ramona
+creation_date: 2011-02-17T08:29:21Z
+
+[Term]
+id: PO:0025273
+name: stem procambium
+namespace: plant_structure
+def: "A portion of shoot procambium gives rise to the primary vascular tissue of a stem." [POC:rw]
+is_a: PO:0025260 ! shoot axis procambium
+created_by: Ramona
+creation_date: 2011-02-17T09:48:05Z
+
+[Term]
+id: PO:0025274
+name: branch procambium
+namespace: plant_structure
+def: "A portion of shoot procambium gives rise to the primary vascular tissue of a branch." [POC:rw]
+is_a: PO:0025260 ! shoot axis procambium
+created_by: Ramona
+creation_date: 2011-02-17T09:48:05Z
 
 [Term]
 id: PO:0028001
