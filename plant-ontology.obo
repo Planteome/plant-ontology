@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:02:2011 12:56
+date: 25:02:2011 10:05
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta9
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -32,7 +32,7 @@ namespace: plant_structure
 def: "A multicellular layer with outer epidermis and an inner endothecium." [GR:pj]
 subset: reference
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0009070 ! pollen sac
+relationship: part_of PO:0025277 ! pollen sac
 
 [Term]
 id: PO:0000003
@@ -3396,8 +3396,8 @@ is_a: PO:0009039 ! glume
 id: PO:0006003
 name: scale leaf
 namespace: plant_structure
-def: "A reduced and more or less non-photosynthetic leaf, often associated with a vegetatively propagating organ such as a rhizome or perennating bud." [ISBN:0080374913]
-comment: Sometimes referring specifically to such leaves on a seedling.
+def: "A phyllome that is reduced in size relative to a vascular leaf on the same plant and is often associated with a perennating or dormant bud or a vegetatively propagating organ such as a rhizome." [ISBN:0080374913]
+comment: May be photosynthetic or non-photosynthetic. Some species have vascular leaves that are scale-like (such as Juniperus, Thuja, and Chamaecyparis). Annotations for scale-like leaves should go under vascular\nleaf (PO:0009025), not scale leaf.
 subset: reference
 subset: TraitNet
 synonym: "cataphyll" RELATED []
@@ -3904,12 +3904,13 @@ is_a: PO:0006079 ! shoot meristem
 
 [Term]
 id: PO:0006074
-name: procambium
+name: obsolete procambium
 namespace: plant_structure
-def: "A portion of meristem tissue that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
-comment: May occur in an apical meristem or in a developing phyllome. Gives rise to the primary xylem and primary phloem.
+def: "A portion of primary cambium that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
+comment: This term was made obsolete because the parentage and definition changed slightly. It is replaced by PO:0025275.
 xref: OBO_SF_PO:3184905
-is_a: PO:0009013 ! meristem
+is_obsolete: true
+replaced_by: PO:0025275
 
 [Term]
 id: PO:0006075
@@ -4300,19 +4301,20 @@ is_obsolete: true
 
 [Term]
 id: PO:0006306
-name: shoot procambium
+name: obsolete shoot procambium
 namespace: plant_structure
-def: "A portion of procambium tissue that is part of a shoot system." [POC:rw]
-xref: OBO-SF-PO:3184921
-is_a: PO:0006074 ! procambium
-relationship: part_of PO:0009006 ! shoot system
+def: "A derivative of the apical meristem which undergoes differentiation to form the primary vascular tissue of a shoot." [GR:pj]
+comment: This term was made obsolete because the definition was changed. It was replaced by PO:0025276.
+xref: OBO_SF_PO:3184921
+is_obsolete: true
+replaced_by: PO:0025276
 
 [Term]
 id: PO:0006307
 name: root procambium
 namespace: plant_structure
 def: "A portion of procambium tissue that undergoes differentiation to form the primary vascular tissue of a root." [POC:rw]
-is_a: PO:0006074 ! procambium
+is_a: PO:0025275 ! procambium
 relationship: part_of PO:0020147 ! root apical meristem
 
 [Term]
@@ -5398,7 +5400,7 @@ id: PO:0006444
 name: Poaceae microsporangium
 namespace: plant_structure
 def: "Sporangium in the anther of a grass stamen producing microspores, usually many in number." [GR:pj]
-is_a: PO:0009070 ! pollen sac
+is_a: PO:0025277 ! pollen sac
 relationship: part_of PO:0006442 ! Poaceae anther
 
 [Term]
@@ -8746,14 +8748,14 @@ replaced_by: PO:0025022
 id: PO:0008035
 name: plerome
 namespace: plant_structure
-def: "A meristem forming the core of the axis composed of the primary vascular tissues and associated ground tissue, such as pith and interfascicular regions." [ISBN:0471245208 "Anatomy of seed plants by K.Esau [2nd Edition]"]
+def: "A meristem forming the core of the axis composed of the primary vascular tissues and associated ground tissue, such as pith and interfascicular regions." [ISBN:0471245208 "Anatomy of seed plants by K.Esau 2nd Edition"]
 is_a: PO:0009013 ! meristem
 
 [Term]
 id: PO:0008036
 name: periblem
 namespace: plant_structure
-def: "A portion of meristem tissue that forms the cortex." [ISBN:0471245208 "Anatomy of seed plants by K. Esau [2nd edition]"]
+def: "A portion of meristem tissue that forms the cortex." [ISBN:0471245208 "Anatomy of seed plants by K. Esau 2nd edition"]
 is_a: PO:0009013 ! meristem
 
 [Term]
@@ -9194,6 +9196,7 @@ subset: reference
 subset: TraitNet
 synonym: "foliage leaf" EXACT []
 synonym: "leaf, vascular" EXACT []
+synonym: "scale-like leaf" NARROW []
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -9364,10 +9367,10 @@ is_a: PO:0009037 ! lemma
 id: PO:0009042
 name: prophyll
 namespace: plant_structure
-def: "A phyllome that is the first organ or two organs formed at the base of an axillary shoot, often smaller and/or in a distinctively different position from leaves formed subsequently." [APWeb:Glossary]
-comment: A prophyll may not have a fully developed vascular system, thus it is not classified as a vascular leaf.
+def: "A phyllome that is the first organ or one of the first two organs formed at the base of an axillary shoot, often smaller and/or in a distinctively different position from leaves formed subsequently." [POC:curators]
+comment: A prophyll is not classified as a vascular leaf, because it may not have a fully developed vascular system.
 subset: reference
-xref: OBO-SF-PO:3167323
+xref: OBO_SF_PO:3167323
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -9697,20 +9700,21 @@ name: theca
 namespace: plant_structure
 def: "A part of the anther consisting of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
 subset: reference
-is_a: PO:0009070 ! pollen sac
+is_a: PO:0025277 ! pollen sac
 
 [Term]
 id: PO:0009070
-name: pollen sac
+name: obsolete pollen sac
 namespace: plant_structure
 def: "A microsporangium in an angiosperm that is a cavity in an anther that contains pollen grains." [ISBN:0716710072]
+comment: This term was made obsolete because the definition was incorrect. Replaced by PO:0025277.
 subset: Angiosperm
 subset: reference
 subset: TraitNet
 synonym: "anther lobe" RELATED []
 xref: OBO_SF_PO:3132610
-is_a: PO:0025202 ! microsporangium
-relationship: part_of PO:0009066 ! anther
+is_obsolete: true
+replaced_by: PO:0025277
 
 [Term]
 id: PO:0009071
@@ -10545,7 +10549,7 @@ synonym: "pollen mother cell" RELATED []
 xref: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
-relationship: part_of PO:0009070 ! pollen sac
+relationship: part_of PO:0025277 ! pollen sac
 
 [Term]
 id: PO:0020048
@@ -10600,9 +10604,10 @@ is_obsolete: true
 
 [Term]
 id: PO:0020054
-name: bud scale
+name: bud scale leaf
 namespace: plant_structure
-def: "A reduced leaf surrounding a dormant bud." [UMSL:tk]
+def: "A scale leaf that surrounds a dormant or perennating bud." [UMSL:tk]
+synonym: "bud scale" EXACT []
 is_a: PO:0006003 ! scale leaf
 
 [Term]
@@ -11255,7 +11260,7 @@ creation_date: 2010-07-01T03:44:41Z
 id: PO:0025005
 name: organ margin
 namespace: plant_structure
-def: "The edge of an organ and the area immediately internally adjacent to it." [POC:curators "Ithaca meeting, 12/2009"]
+def: "The edge of an organ and the area immediately internally adjacent to it." [POC:curators "Ithaca meeting, Dec. 2009"]
 comment: Only flattened or laminar organs or organ parts will have a margin.
 subset: TraitNet
 xref: OBO_SF_PO:2903994
@@ -11514,6 +11519,7 @@ id: PO:0025028
 name: embryonic plant cell
 namespace: plant_structure
 def: "An embryonic plant structure that is a plant cell that is found only in an embryo." [POC:rw]
+is_a: PO:0009002 ! plant cell
 is_a: PO:0025099 ! embryonic plant structure
 created_by: Ramona
 creation_date: 2010-05-07T02:41:17Z
@@ -11834,7 +11840,7 @@ creation_date: 2010-06-02T02:51:28Z
 id: PO:0025056
 name: aerial tuber cortex
 namespace: plant_structure
-def: "Aportion of tuber cortex that is part of an aerial tuber storage parenchyma." [POC:curators]
+def: "A portion of tuber cortex that is part of an aerial tuber storage parenchyma." [POC:curators]
 is_a: PO:0025055 ! tuber cortex
 intersection_of: PO:0025055 ! tuber cortex
 intersection_of: part_of PO:0025039 ! aerial tuber storage parenchyma
@@ -13957,7 +13963,7 @@ namespace: plant_structure
 def: "A meristematic cell that is part of a portion of procambium." [POC:rw]
 synonym: "procambium cell" EXACT []
 is_a: PO:0004010 ! meristematic cell
-relationship: part_of PO:0006074 ! procambium
+relationship: part_of PO:0025275 ! procambium
 created_by: Ramona
 creation_date: 2011-02-02T09:46:46Z
 
@@ -13966,7 +13972,7 @@ id: PO:0025259
 name: leaf procambium
 namespace: plant_structure
 def: "A portion of shoot procambium tissue that is part of a leaf." [POC:rw]
-is_a: PO:0006306 ! shoot procambium
+is_a: PO:0025276 ! shoot procambium
 created_by: Ramona
 creation_date: 2011-02-02T11:16:33Z
 
@@ -13975,7 +13981,7 @@ id: PO:0025260
 name: shoot axis procambium
 namespace: plant_structure
 def: "A portion of shoot procambium that is part of a shoot apical meristem and gives rise to the primary vascular tissue of a shoot axis." [POC:rw]
-is_a: PO:0006306 ! shoot procambium
+is_a: PO:0025276 ! shoot procambium
 relationship: part_of PO:0020148 ! shoot apical meristem
 created_by: Ramona
 creation_date: 2011-02-02T11:16:33Z
@@ -14127,7 +14133,7 @@ creation_date: 2011-02-17T08:29:21Z
 id: PO:0025273
 name: stem procambium
 namespace: plant_structure
-def: "A portion of shoot procambium gives rise to the primary vascular tissue of a stem." [POC:rw]
+def: "A portion of shoot axis procambium gives rise to the primary vascular tissue of a stem." [POC:rw]
 is_a: PO:0025260 ! shoot axis procambium
 created_by: Ramona
 creation_date: 2011-02-17T09:48:05Z
@@ -14136,10 +14142,55 @@ creation_date: 2011-02-17T09:48:05Z
 id: PO:0025274
 name: branch procambium
 namespace: plant_structure
-def: "A portion of shoot procambium gives rise to the primary vascular tissue of a branch." [POC:rw]
+def: "A portion of shoot axis procambium gives rise to the primary vascular tissue of a branch." [POC:rw]
 is_a: PO:0025260 ! shoot axis procambium
 created_by: Ramona
 creation_date: 2011-02-17T09:48:05Z
+
+[Term]
+id: PO:0025275
+name: procambium
+namespace: plant_structure
+def: "A portion of meristem tissue that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
+comment: May occur in an apical meristem or in a developing phyllome. Gives rise to the primary xylem and primary phloem. This term replaces PO:0006074.
+xref: OBO_SF_PO:3184905
+is_a: PO:0009013 ! meristem
+created_by: Ramona
+creation_date: 2011-02-24T01:10:38Z
+
+[Term]
+id: PO:0025276
+name: shoot procambium
+namespace: plant_structure
+def: "A portion of procambium tissue that is part of a shoot system." [POC:rw]
+xref: OBO_SF_PO:3184921
+is_a: PO:0025275 ! procambium
+relationship: part_of PO:0009006 ! shoot system
+created_by: Ramona
+creation_date: 2011-02-25T08:50:03Z
+
+[Term]
+id: PO:0025277
+name: pollen sac
+namespace: plant_structure
+def: "A microsporangium that is part of a sporophyll where the pollen grains developed and are contained after they develop." [POC:curators]
+comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule.
+subset: reference
+subset: TraitNet
+xref: OBO_SF_PO:3132610
+is_a: PO:0025202 ! microsporangium
+relationship: part_of PO:0009066 ! anther
+created_by: Ramona
+creation_date: 2011-02-25T09:17:11Z
+
+[Term]
+id: PO:0025278
+name: rhizome scale leaf
+namespace: plant_structure
+def: "A scale leaf that grows from a rhizome." [POC:rw]
+is_a: PO:0006003 ! scale leaf
+created_by: Ramona
+creation_date: 2011-02-25T09:59:47Z
 
 [Term]
 id: PO:0028001
