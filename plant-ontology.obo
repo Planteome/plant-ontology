@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:02:2011 10:05
+date: 25:02:2011 10:30
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta9
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -15,6 +15,7 @@ subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 default-namespace: plant_ontology
 ontology: po
+treat-xrefs-as-is_a: CARO
 
 [Term]
 id: PO:0000001
@@ -3083,7 +3084,10 @@ is_a: PO:0009015 ! portion of vascular tissue
 id: PO:0005360
 name: aleurone layer
 namespace: plant_structure
+alt_id: PO:0008004
 def: "A portion of plant tissue that is the outermost layer of endosperm in a seed, its cells being characterized by presence of protein bodies containing seed storage proteins." [GR:pj, ISBN:0080374913]
+subset: Angiosperm
+synonym: "fruit aleurone layer" EXACT []
 xref: OBO_SF_PO:2903966
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
@@ -8468,15 +8472,6 @@ is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
-id: PO:0008004
-name: fruit aleurone layer
-namespace: plant_structure
-def: "An aleurone layer of the grass caryopsis, its cells being characterized by presence of protein bodies containing seed storage proteins." [GR:ap]
-xref: OBO_SF_PO:2903966
-is_a: PO:0005360 ! aleurone layer
-relationship: part_of PO:0009001 ! fruit
-
-[Term]
 id: PO:0008005
 name: fruit nucellus
 namespace: plant_structure
@@ -8515,7 +8510,6 @@ def: "A morphologically distinct aleurone layer located adjacent to the nucellar
 subset: Poaceae
 subset: Rice
 is_a: PO:0005360 ! aleurone layer
-relationship: part_of PO:0008004 ! fruit aleurone layer
 
 [Term]
 id: PO:0008009
@@ -9063,6 +9057,7 @@ namespace: plant_structure
 def: "An anatomical structure (CARO:0000003) that is or was part of a plant, or was derived from a part of a plant." [POC:curators]
 comment: 'Part' includes both proper parts and the whole plant.
 subset: TraitNet
+xref: CARO:0000003
 xref: OBO_SF_PO:2932527
 is_a: PO:0025131 ! plant anatomical entity
 
@@ -10473,7 +10468,6 @@ id: PO:0020039
 name: leaf lamina
 namespace: plant_structure
 def: "A lamina that is part of a leaf, usually dorsiventrally flattened and expanded." [APWeb:Glossary]
-comment: Reference lamina in CARO.
 subset: TraitNet
 synonym: "leaf blade" RELATED []
 xref: OBO_SF_PO:2971884
