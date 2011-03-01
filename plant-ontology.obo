@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 25:02:2011 10:30
+date: 01:03:2011 11:13
 saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta9
+auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Terms for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Citrus "Term used for citrus"
@@ -13,6 +13,7 @@ subsetdef: reference "reference plant structure term"
 subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
+synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 ontology: po
 treat-xrefs-as-is_a: CARO
@@ -8936,11 +8937,13 @@ relationship: develops_from PO:0009062 ! gynoecium
 id: PO:0009002
 name: plant cell
 namespace: plant_structure
-def: "A cell that is part of a plant and that has as its parts a plant cell wall." [GO:0005623, GR:pj, ISBN:0471245208, POC:curators]
+def: "A cell that is part of a plant and that has as its parts a plant cell wall." [:, GR:pj, ISBN:0471245208, POC:curators]
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid). Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". See definition of plant-type cell wall GO:0009505. Egg and sperm cells lack the cell wall.
 subset: reference
 subset: TraitNet
+synonym: "célula de planta" EXACT Spanish []
 xref: CL:0000610
+xref: GO:0005623
 xref: OBO_SF_PO:2932524
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000003 ! whole plant
@@ -9030,6 +9033,7 @@ name: embryo
 namespace: plant_structure
 def: "A whole plant in the post-zygotic stage that does not yet consist of fully differentiated tissues." [POC:curators]
 comment: Adventitious embryos and somatic embryos do not arise from zygotes. Cultured embryos (PO:0000010), including haploid embryos, are <i>in vitro</i> plant structures. Embryos occur prior to germination in vascular plants.
+synonym: "embrión de planta" EXACT Spanish []
 synonym: "germ" RELATED []
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
