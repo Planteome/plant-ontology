@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:03:2011 09:55
+date: 09:03:2011 17:57
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -4107,6 +4107,7 @@ namespace: plant_structure
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) spores." [GR:pj]
 synonym: "meiocyte" RELATED []
 is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025094 ! sporangium
 
 [Term]
 id: PO:0006205
@@ -9194,7 +9195,9 @@ comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thou
 subset: reference
 subset: TraitNet
 synonym: "foliage leaf" EXACT []
+synonym: "frond" NARROW []
 synonym: "leaf, vascular" EXACT []
+synonym: "needle-like leaf" NARROW []
 synonym: "scale-like leaf" NARROW []
 is_a: PO:0025034 ! leaf
 
@@ -9697,9 +9700,11 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0009069
 name: theca
 namespace: plant_structure
-def: "A part of the anther consisting of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
+def: "A collective organ part structure that is part of an anther and consists of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
 subset: reference
-is_a: PO:0025277 ! pollen sac
+is_a: PO:0025269 ! collective organ part structure
+relationship: has_part PO:0025277 ! pollen sac
+relationship: part_of PO:0009066 ! anther
 
 [Term]
 id: PO:0009070
@@ -10547,7 +10552,7 @@ synonym: "pollen mother cell" RELATED []
 xref: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
-relationship: part_of PO:0025277 ! pollen sac
+relationship: part_of PO:0025202 ! microsporangium
 
 [Term]
 id: PO:0020048
@@ -12061,7 +12066,10 @@ namespace: plant_structure
 def: "A leaf in a non-vascular plant." [POC:curators]
 comment: Include moss and liverwort leaves. Occurs in the gametophytic phase of a plant life cycle.
 subset: TraitNet
+synonym: "gametophyll" EXACT []
 synonym: "gametophyte leaf" EXACT []
+synonym: "gametophytic leaf" EXACT []
+synonym: "phyllid" EXACT []
 is_a: PO:0025034 ! leaf
 created_by: Ramona
 creation_date: 2010-07-12T01:31:59Z
@@ -14175,6 +14183,7 @@ def: "A microsporangium that is part of a sporophyll where the pollen grains dev
 comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule.
 subset: reference
 subset: TraitNet
+synonym: "anther lobe" NARROW []
 xref: OBO_SF_PO:3132610
 is_a: PO:0025202 ! microsporangium
 relationship: part_of PO:0009066 ! anther
