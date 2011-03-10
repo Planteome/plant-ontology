@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:03:2011 17:57
+date: 10:03:2011 13:10
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -13,6 +13,7 @@ subsetdef: reference "reference plant structure term"
 subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
+synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 ontology: po
@@ -641,7 +642,7 @@ relationship: part_of PO:0005423 ! collenchyma
 id: PO:0000076
 name: chlorenchyma cell
 namespace: plant_structure
-def: "Parenchyma cell containing chloroplasts; a component of leaf mesophyll and other green parenchyma tissue." [ISBN:0471245208]
+def: "A parenchyma cell containing chloroplasts; a component of leaf mesophyll and other green parenchyma tissue." [ISBN:0471245208]
 subset: TraitNet
 xref: CL:0000472
 is_a: PO:0000074 ! parenchyma cell
@@ -662,8 +663,9 @@ id: PO:0000078
 name: transfer cell
 namespace: plant_structure
 def: "A cell with wall ingrowths (or invaginations) that increase the surface of the plasmalemma." [ISBN:0471245208]
-comment: Appears to be specialized for short-distance transfer of solutes.
+comment: Appear to be specialized for short-distance transfer of solutes. Transfer cells can occur anywhere there is a junction between two individuals, such as between a sporophyte and a gametophyte, or between a parasitic plant and its host.
 xref: CL:0000370
+xref: OBO_SF_PO:3172685
 is_a: PO:0025030 ! ground tissue cell
 
 [Term]
@@ -892,6 +894,8 @@ alt_id: PO:0006064
 def: "A portion of ground tissue that is the inner most layer of a cortex and has a casparian strip in its anticlinal cell walls." [ISBN:047124529, POC:curators]
 comment: Forms a sheath around the vascular system. It may have secondary walls later, part_of cortex.
 synonym: "endodermoid" RELATED []
+synonym: "portion of epidermal tissue" EXACT []
+synonym: "portion of epidermis tissue" EXACT []
 xref: SGF:3016668
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
@@ -2963,7 +2967,7 @@ id: PO:0005046
 name: periderm
 namespace: plant_structure
 def: "A peripheral portion of ground tissue in a plant axis that is composed of phellogen, phellem, and phelloderm." [ISBN:047124529, POC:curators]
-comment: May replace the epidermis in stems and roots, rarely in other organs. In some cases, the epidermis is retained after periderm development. Periderm is derived from lateral meristerm and may contain secondary phloem.
+comment: After secondary growth, the periderm may replace the epidermis in stems and roots, rarely in other organs. In some cases, the epidermis is retained after periderm development. Periderm is derived from lateral meristem and may contain secondary phloem.
 subset: TraitNet
 xref: OBO_SF_PO:3008013
 is_a: PO:0025059 ! portion of ground tissue
@@ -3127,6 +3131,7 @@ name: collenchyma
 namespace: plant_structure
 def: "Living tissue composed of more or less elongated cells with thick nonlignified primary cell walls." [GR:pj]
 subset: TraitNet
+synonym: "portion of chollenchyma tissue" RELATED []
 synonym: "supporting tissue" RELATED []
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3209,7 +3214,7 @@ subset: TraitNet
 synonym: "foliage leaf mesophyll" RELATED []
 synonym: "leaf parenchyma" RELATED []
 is_a: PO:0006070 ! mesophyll
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0005647
@@ -3279,7 +3284,7 @@ id: PO:0005679
 name: epidermis
 namespace: plant_structure
 def: "A portion of plant tissue composed of epidermal cells that develops from the protoderm and covers the surface of a plant structure." [POC:curators]
-comment: The epidermis can be composed of one or more layers of cells. In some species, the epidermis is replaced by periderm. Epidermis can also include trichomes and stomatal pores.
+comment: The epidermis can be composed of one or more layers of cells. In some\nspecies of vascular plants, the epidermis, which is a primary tissue, is\nreplaced by periderm, which is secondary tissue, later in development. The\nepidermis can also include trichomes, stomatal pores, root hairs, and\nrhizoids.
 subset: TraitNet
 synonym: "dermal tissue" EXACT []
 synonym: "epidermal layer" EXACT []
@@ -4205,7 +4210,7 @@ name: leaf aerenchyma
 namespace: plant_structure
 def: "Spongy parenchyma tissue containing particularly large intercellular spaces in the leaf mesophyll." [GR:pj]
 is_a: PO:0005702 ! aerenchyma
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0006216
@@ -4600,7 +4605,7 @@ name: juvenile leaf
 namespace: plant_structure
 def: "Distinct from adult leaves, being characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
 comment: The first juvenile leaves are e.g. the embryonic leaves found in the grass kernel (caryopsis).
-is_a: PO:0009025 ! vascular leaf
+is_a: PO:0025034 ! leaf
 
 [Term]
 id: PO:0006340
@@ -4608,7 +4613,7 @@ name: adult leaf
 namespace: plant_structure
 def: "Adult leaves are characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
 comment: The adult leaves are placed above the juvenile (oldest) leaves. However in some plants the juvenile leaves may go on to establish as adult leaves.
-is_a: PO:0009025 ! vascular leaf
+is_a: PO:0025034 ! leaf
 
 [Term]
 id: PO:0006341
@@ -4667,7 +4672,7 @@ name: leaf intercalary meristem
 namespace: plant_structure
 def: "An intercalary meristem in the primary body of the leaf separated from the apical meristem by non-meristematic tissues." [GR:pj]
 is_a: PO:0006073 ! intercalary meristem
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0006347
@@ -8600,7 +8605,7 @@ id: PO:0008018
 name: transition leaf
 namespace: plant_structure
 def: "A leaf that is part of an heteroblastic series, and is characterized by anatomical features that are intermediate between juvenile and adult leaves." [GR:cwt]
-is_a: PO:0009025 ! vascular leaf
+is_a: PO:0025034 ! leaf
 
 [Term]
 id: PO:0008019
@@ -10481,7 +10486,7 @@ subset: TraitNet
 synonym: "leaf blade" RELATED []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025060 ! lamina
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0020040
@@ -10886,7 +10891,7 @@ namespace: plant_structure
 def: "Any tubular portion of the leaf surrounding the stem, as in the Poaceae." [GR:pj]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0020105
@@ -11018,7 +11023,7 @@ def: "The margin of any flattened part of a leaf." [POC:curators]
 subset: TraitNet
 xref: OBO_SF_PO:2972280
 is_a: PO:0025018 ! phyllome margin
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0020130
@@ -12229,13 +12234,13 @@ creation_date: 2010-10-27T11:07:17Z
 
 [Term]
 id: PO:0025093
-name: moss capsule annulus
+name: spore capsule annulus
 namespace: plant_structure
-def: "A dehiscence zone that is part of a moss capsule." [POC:curators]
-comment: The capsule annulus is located at the base of an operculum. Upon capsule maturation, cell separation in the annulus allows the operculum to separate from the capsule, aiding in spore dispersal.
+def: "A dehiscence zone that is part of a spore capsule." [POC:curators]
+comment: Found in bryophytes. The capsule annulus is located at the base of an operculum. Upon capsule maturation, cell separation in the annulus allows the operculum to separate from the capsule, aiding in spore dispersal.
 synonym: "capsule dehiscence zone" EXACT []
 is_a: PO:0025092 ! dehiscence zone
-relationship: part_of PO:0025232 ! moss capsule
+relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2010-10-27T11:16:33Z
 
@@ -12243,10 +12248,14 @@ creation_date: 2010-10-27T11:16:33Z
 id: PO:0025094
 name: sporangium
 namespace: plant_structure
+alt_id: PO:0025232
 def: "A hollow cardinal organ part in which spores are produced." [ISBN:0716710072]
-comment: May be multicellular or unicellular.
+comment: May be multicellular or unicellular. In bryophytes, particularly in mosses, a sporangium is referred to as a capsule.
 subset: TraitNet
+synonym: "moss capsule" EXACT []
+synonym: "spore capsule" EXACT []
 xref: OBO_SF_PO:3132600
+xref: OBO_SF_PO:3140824
 is_a: PO:0025001 ! cardinal organ part
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
@@ -13653,13 +13662,13 @@ creation_date: 2010-12-20T09:21:21Z
 
 [Term]
 id: PO:0025229
-name: moss capsule valve
+name: spore capsule valve
 namespace: plant_structure
-def: "A valve that is a part of a moss capsule that splits apart when the moss capsule dehisces." [POC:rw]
-comment: A moss capsule may dehisce ongitudinally, forming evenely sized valves, or it may dehisce at the capsule annulus, forming the operculum, which is a specialized type of valve.
+def: "A valve that is a part of a spore capsule that splits apart when the spore capsule dehisces." [POC:rw]
+comment: Found in bryophytes. A spore capsule may dehisce ongitudinally, forming evenely sized valves, or it may dehisce at the capsule annulus, forming the operculum, which is a specialized type of valve.
 xref: OBO_SF_PO:3132512
 is_a: PO:0025228 ! valve
-relationship: part_of PO:0025232 ! moss capsule
+relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2010-12-20T09:25:07Z
 
@@ -13675,24 +13684,15 @@ creation_date: 2010-12-20T09:32:11Z
 
 [Term]
 id: PO:0025231
-name: moss capsule columella
+name: spore capsule columella
 namespace: plant_structure
-def: "A columella that forms the central axis of a moss capsule." [POC:rw]
+def: "A columella that forms the central axis of a spore capsule." [POC:rw]
+comment: Found in bryophytes.
 xref: OBO_SF_PO:3132522
 is_a: PO:0025230 ! columella
-relationship: part_of PO:0025232 ! moss capsule
+relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2010-12-20T09:34:34Z
-
-[Term]
-id: PO:0025232
-name: moss capsule
-namespace: plant_structure
-def: "A sporangium in mosses." [POC:rw]
-xref: OBO_SF_PO:3140824
-is_a: PO:0025094 ! sporangium
-created_by: Ramona
-creation_date: 2010-12-20T09:39:26Z
 
 [Term]
 id: PO:0025233
@@ -13767,8 +13767,8 @@ creation_date: 2010-12-30T02:09:39Z
 id: PO:0025240
 name: second order inflorescence
 namespace: plant_structure
-def: "A reproductive shoot system that is part of an inflorescence and has a parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:rw]
-comment: This a branch of the inflorescence that arises from the main axis.
+def: "A reproductive shoot system that is part of an inflorescence and has as parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:rw]
+comment: This a sub-inflorescence that arises from the main inflorescence axis.
 subset: Angiosperm
 synonym: "secondary inflorescence" EXACT []
 is_a: PO:0025082 ! reproductive shoot system
@@ -14044,7 +14044,10 @@ creation_date: 2011-02-09T01:37:34Z
 id: PO:0025265
 name: sporangium locule
 namespace: plant_structure
+alt_id: PO:0025271
 def: "A locule that is a cavity in a sporangium or several fused sporangia." [POC:curators]
+comment: May be filled with spores.
+synonym: "spore capsule locule" EXACT []
 is_a: PO:0025263 ! locule
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -14110,17 +14113,6 @@ relationship: develops_from PO:0025266 ! ovary locule
 relationship: part_of PO:0009001 ! fruit
 created_by: Ramona
 creation_date: 2011-02-17T07:17:12Z
-
-[Term]
-id: PO:0025271
-name: spore capsule locule
-namespace: plant_structure
-def: "A locule that is a cavity in a spore capsule." [POC:rw]
-comment: May be filled with spores.
-is_a: PO:0025265 ! sporangium locule
-relationship: part_of PO:0025232 ! moss capsule
-created_by: Ramona
-creation_date: 2011-02-17T07:19:40Z
 
 [Term]
 id: PO:0025272
@@ -14232,6 +14224,76 @@ synonym: "gametophyte phase" EXACT []
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
+
+[Term]
+id: PO:0030001
+name: chloronema cell
+namespace: plant_structure
+def: "A chlorenchyma cell that is part of a chloronema and has cross walls of adjacent cells that are perpendicular to the protonema axis." [POC:rw]
+comment: A chloronema cell contains many well-developed chloroplasts.
+is_a: PO:0000076 ! chlorenchyma cell
+relationship: part_of PO:0030004 ! chloronema
+created_by: Ramona
+creation_date: 2011-03-10T10:51:12Z
+
+[Term]
+id: PO:0030002
+name: caulonema cell
+namespace: plant_structure
+def: "A plant cell that is part of a caulonema and has cross walls of adjacent cells that are oblique to the protonema axis." [POC:rw]
+comment: A caulonema cell contains fewer, less well-developed chloroplasts\nthan a chloronema cell.
+is_a: PO:0000076 ! chlorenchyma cell
+relationship: part_of PO:0030005 ! caulonema
+created_by: Ramona
+creation_date: 2011-03-10T10:51:12Z
+
+[Term]
+id: PO:0030003
+name: protonema
+namespace: plant_structure
+def: "A portion of chlorenchyma tissue that develops directly from a spore and grows by division of an apical cell to form filaments that are one cell wide and dicotomously branching." [POC:rw]
+comment: The protonema is the first structure that develops in the gametophytic phase of mosses, some other bryophytes, and leptosporangiate ferns. The term protonema is also used to refer to the phase of development in which protonemal tissue is produced (see PO:xxxxxxx protonema phase). In some species of moss, the protonema is perennial. A protonema may develop from sporophytic tissue during apospory.
+synonym: "portion of protonema tissue" EXACT []
+synonym: "protonemata" EXACT Plural []
+is_a: PO:0005426 ! chlorenchyma
+created_by: Ramona
+creation_date: 2011-03-10T11:00:03Z
+
+[Term]
+id: PO:0030004
+name: chloronema
+namespace: plant_structure
+def: "A portion of protonema tissue that consists of only chloronema cells." [POC:rw]
+comment: Generally, the development of chloronema precedes the development of caulonema. Only the caulonema, and not the chloronema, initiates\ngametophore buds.
+synonym: "chloronemata" EXACT Plural []
+synonym: "portion of chloronema tissue" EXACT []
+is_a: PO:0030003 ! protonema
+created_by: Ramona
+creation_date: 2011-03-10T11:00:03Z
+
+[Term]
+id: PO:0030005
+name: caulonema
+namespace: plant_structure
+def: "A portion of protonema tissue that consists of only caulonema cells." [POC:rw]
+comment: Generally, the development of caulonema follows the development\nof chloronema. Only the caulonema, and not the chloronema, initiates gametophore buds.
+synonym: "caulonemata" EXACT Plural []
+synonym: "portion of caulonema tissue" EXACT []
+is_a: PO:0030003 ! protonema
+created_by: Ramona
+creation_date: 2011-03-10T11:00:03Z
+
+[Term]
+id: PO:0030006
+name: protonema phase
+namespace: plant_growth_and_development_stage
+def: "A whole plant growth stage that is a sub-phase of a gametophytic phase in which protonema tissue is produced." [POC:rw]
+comment: The protonema phase follows spore germination and precedes the development of gametophores in mosses, some other bryophytes, and leptosporangiate ferns.
+synonym: "protonemal phase" EXACT []
+is_a: PO:0007033 ! whole plant growth stage
+relationship: part_of PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-03-10T11:37:59Z
 
 [Typedef]
 id: derives_from
