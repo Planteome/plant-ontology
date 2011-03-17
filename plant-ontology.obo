@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:03:2011 13:10
+date: 17:03:2011 07:47
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -333,8 +333,6 @@ namespace: plant_structure
 def: "A shoot axis that is the most distal part of a shoot system and has as parts a shoot apical meristem and the youngest leaf primordia." [POC:curators]
 subset: reference
 is_a: PO:0025029 ! shoot axis
-relationship: has_part PO:0000017 ! leaf primordium
-relationship: has_part PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0000038
@@ -747,8 +745,6 @@ def: "A portion of plant tissue that is part of a plant structure that has as pa
 synonym: "abscission layer" RELATED []
 xref: GO:0009838 "abscission"
 is_a: PO:0009007 ! portion of plant tissue
-relationship: has_part PO:0006211 ! separation layer
-relationship: has_part PO:0006212 ! protective layer
 
 [Term]
 id: PO:0000191
@@ -1750,8 +1746,6 @@ subset: TraitNet
 synonym: "stoma" BROAD []
 synonym: "stomata" BROAD []
 is_a: PO:0006035 ! shoot epidermis
-relationship: has_part PO:0000293 ! guard cell
-relationship: has_part PO:0008032 ! stomatal pore
 
 [Term]
 id: PO:0002001
@@ -8591,6 +8585,7 @@ namespace: plant_structure
 def: "A shoot apical meristem that gives rise to the apical growth of vegetative tissues and organs." [GR:cwt]
 synonym: "vegetative meristem" RELATED []
 is_a: PO:0020148 ! shoot apical meristem
+relationship: part_of PO:0025223 ! vegetative shoot apex
 
 [Term]
 id: PO:0008017
@@ -8690,6 +8685,7 @@ name: reproductive shoot apical meristem
 namespace: plant_structure
 def: "A shoot apical meristem that gives rise to the apical growth of reproductive tissues and organs." [GR:cwt]
 is_a: PO:0020148 ! shoot apical meristem
+relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0008029
@@ -10299,7 +10295,6 @@ namespace: plant_structure
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant, and on germination giving rise to the female gametophyte (embryo sac)." [APWeb:Glossary]
 xref: CL:0000250
 is_a: PO:0025017 ! spore
-relationship: develops_from PO:0025227 ! tetrad of megaspores
 
 [Term]
 id: PO:0020020
@@ -10567,7 +10562,6 @@ def: "The smaller, in general, of the two kinds of spores produced after meiosis
 subset: reference
 xref: CL:0000252
 is_a: PO:0025017 ! spore
-relationship: develops_from PO:0000032 ! tetrad of microspores
 
 [Term]
 id: PO:0020049
@@ -10826,8 +10820,6 @@ comment: Found in angiosperms.
 subset: Angiosperm
 subset: reference
 is_a: PO:0025001 ! cardinal organ part
-relationship: has_part PO:0000191 ! synergid
-relationship: has_part PO:0025123 ! embryo sac egg cell
 relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
@@ -12698,6 +12690,7 @@ comment: May be fused to two tepals (one on either side). This is a phenotype th
 subset: Musa
 is_a: PO:0009033 ! tepal
 disjoint_from: PO:0025136 ! free tepal
+relationship: part_of PO:0025138 ! fused collective tepal structure
 created_by: Ramona
 creation_date: 2010-11-15T01:12:18Z
 
@@ -12711,7 +12704,6 @@ subset: Musa
 synonym: "compound tepal" RELATED [CO_125:0000021]
 synonym: "syntepalous perianth" EXACT []
 is_a: PO:0025021 ! collective tepal structure
-relationship: has_part PO:0025137 ! fused tepal
 created_by: Ramona
 creation_date: 2010-11-15T01:18:23Z
 
@@ -13196,8 +13188,6 @@ name: leaf stomatal complex
 namespace: plant_structure
 def: "A phyllome stomatal complex that is part of a leaf epidermis." [POC:rw]
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: has_part PO:0025235 ! leaf stomatal pore
-relationship: has_part PO:0025237 ! leaf guard cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
 creation_date: 2010-12-09T11:47:55Z
@@ -13329,7 +13319,6 @@ def: "A portion of plant tissue that is part of an endosperm and is composed of 
 comment: Involved in transferring nutrients to an embryo.
 xref: OBO_SF_PO:3132534
 is_a: PO:0009007 ! portion of plant tissue
-relationship: has_part PO:0009018 ! basal endosperm transfer cell
 relationship: part_of PO:0009089 ! endosperm
 created_by: Ramona
 creation_date: 2010-12-09T02:23:04Z
@@ -13525,8 +13514,6 @@ name: phyllome stomatal complex
 namespace: plant_structure
 def: "A stomatal complex that is part of a phyllome epidermis." [POC:rw]
 is_a: PO:0002000 ! stomatal complex
-relationship: has_part PO:0025234 ! phyllome stomatal pore
-relationship: has_part PO:0025236 ! phyllome guard cell
 relationship: part_of PO:0025157 ! phyllome epidermis
 created_by: Ramona
 creation_date: 2010-12-20T08:23:11Z
@@ -13597,7 +13584,6 @@ name: reproductive shoot apex
 namespace: plant_structure
 def: "A shoot apex that has as part a reproductive shoot apical meristem." [POC:rw]
 is_a: PO:0000037 ! shoot apex
-relationship: has_part PO:0008028 ! reproductive shoot apical meristem
 created_by: Ramona
 creation_date: 2010-12-20T08:47:03Z
 
@@ -13607,7 +13593,6 @@ name: vegetative shoot apex
 namespace: plant_structure
 def: "A shoot apex that has as part a vegetative shoot apical meristem." [POC:rw]
 is_a: PO:0000037 ! shoot apex
-relationship: has_part PO:0008016 ! vegetative shoot apical meristem
 created_by: Ramona
 creation_date: 2010-12-20T08:47:03Z
 
