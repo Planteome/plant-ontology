@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:03:2011 07:47
+date: 18:03:2011 11:51
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Terms for angiosperms"
@@ -3057,10 +3057,10 @@ relationship: part_of PO:0000258 ! root cortex
 id: PO:0005060
 name: leaf endodermis
 namespace: plant_structure
-def: "A portion of endodermis that is part of a leaf." [POC:curators]
+def: "A portion of endodermis that is part of a vascular leaf." [POC:curators]
 comment: Often found in the leaf of Gymnosperms and elsewhere.
 is_a: PO:0000252 ! endodermis
-relationship: part_of PO:0025034 ! leaf
+relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
 id: PO:0005349
@@ -10820,6 +10820,7 @@ comment: Found in angiosperms.
 subset: Angiosperm
 subset: reference
 is_a: PO:0025001 ! cardinal organ part
+relationship: has_part PO:0025123 ! embryo sac egg cell
 relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
