@@ -1,14 +1,17 @@
 format-version: 1.2
-date: 18:03:2011 11:51
+date: 23:03:2011 13:16
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
-subsetdef: Angiosperm "Terms for angiosperms"
+subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
+subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Gymnosperms "Term used for gymnosperms"
 subsetdef: Maize "Term used for maize"
 subsetdef: Musa "Terms used for banana"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: Potato "Term used for potato"
+subsetdef: Pteridophytes "Term used for ferns and allies"
 subsetdef: reference "reference plant structure term"
 subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
@@ -8971,8 +8974,8 @@ subset: reference
 xref: OBO_SF_PO:2968330
 is_obsolete: true
 consider: PO:0000003
-consider: PO:0020091
-consider: PO:0020092
+consider: PO:0025279
+consider: PO:0025280
 
 [Term]
 id: PO:0009005
@@ -10759,26 +10762,30 @@ relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
 id: PO:0020091
-name: microgametophyte
+name: obsolete microgametophyte
 namespace: plant_structure
 alt_id: PO:0020007
 def: "A gametophyte that produces pollen sperm cells." [POC:curators]
+comment: This term was made obsolete because it only applied to angiosperms. Replaced by a new term microgametophyte that can apply to all plants.
 subset: reference
 subset: TraitNet
 synonym: "male gametophyte" EXACT []
 synonym: "pollen" RELATED []
 synonym: "pollen grain" EXACT []
-is_a: PO:0000003 ! whole plant
+is_obsolete: true
+replaced_by: PO:0025280
 
 [Term]
 id: PO:0020092
-name: megagametophyte
+name: obsolete megagametophyte
 namespace: plant_structure
 def: "A gametophyte that produces female gametes." [APweb:glossary]
+comment: This term was made obsolete because it only applied to angiosperms. Replaced by a new term megagametophyte that can apply to all plants.
 subset: reference
 synonym: "embryo sac" RELATED []
 synonym: "female gametophyte" RELATED []
-is_a: PO:0000003 ! whole plant
+is_obsolete: true
+replaced_by: PO:0025279
 
 [Term]
 id: PO:0020093
@@ -11501,7 +11508,6 @@ name: megagametophytic cell
 namespace: plant_structure
 def: "A plant cell that is part of an embryo sac." [POC:rw]
 is_a: PO:0009002 ! plant cell
-relationship: part_of PO:0020092 ! megagametophyte
 created_by: Ramona
 creation_date: 2010-05-07T02:36:24Z
 
@@ -12052,8 +12058,9 @@ creation_date: 2010-07-01T04:21:46Z
 id: PO:0025074
 name: embryo sac
 namespace: plant_structure
-def: "A female gametophyte in angiosperms." [POC:curators]
-is_a: PO:0020092 ! megagametophyte
+def: "A megagametophyte that is located in a nucellus." [POC:curators]
+comment: Produces an embryo sac egg cell.
+is_a: PO:0025279 ! megagametophyte
 created_by: Ramona
 creation_date: 2010-07-01T02:50:36Z
 
@@ -12517,7 +12524,6 @@ name: pollen sperm cell
 namespace: plant_structure
 def: "A sperm cell that is produced by a microgametophyte." [POC:curators]
 is_a: PO:0000084 ! sperm cell
-relationship: part_of PO:0020091 ! microgametophyte
 created_by: Ramona
 creation_date: 2010-11-15T08:05:46Z
 
@@ -12544,10 +12550,14 @@ creation_date: 2010-11-15T08:14:32Z
 
 [Term]
 id: PO:0025124
-name: gametangium
+name: plant gametangium
 namespace: plant_structure
-def: "A cardinal organ part that is part of a whole plant in the gametophytic phase and produces gametes." [POC:rw]
-is_a: PO:0025001 ! cardinal organ part
+def: "A plant organ that produces one or more gametes that are located in it and is part of a whole plant in the gametophytic phase." [POC:curators]
+subset: Bryophytes
+subset: Gymnosperms
+subset: Pteridophytes
+is_a: PO:0009008 ! plant organ
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2010-11-15T08:57:32Z
 
@@ -12555,8 +12565,11 @@ creation_date: 2010-11-15T08:57:32Z
 id: PO:0025125
 name: antheridium
 namespace: plant_structure
-def: "A gametangium that produces antheridium sperm cells." [POC:rw]
-is_a: PO:0025124 ! gametangium
+def: "A plant gametangium that produces antheridium sperm cells that are located in it." [POC:curators]
+comment: An antheridium has a sterile jacket layer that does not produce sperm cells.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025124 ! plant gametangium
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
 
@@ -12564,8 +12577,11 @@ creation_date: 2010-11-15T08:58:31Z
 id: PO:0025126
 name: archegonium
 namespace: plant_structure
-def: "A gametangium that produces archegonium egg cells." [POC:rw]
-is_a: PO:0025124 ! gametangium
+def: "A plant gametangium that produces an archegonium egg cell that is located in it." [POC:curators]
+subset: Bryophytes
+subset: Gymnosperms
+subset: Pteridophytes
+is_a: PO:0025124 ! plant gametangium
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
 
@@ -14178,6 +14194,28 @@ created_by: Ramona
 creation_date: 2011-02-25T09:59:47Z
 
 [Term]
+id: PO:0025279
+name: megagametophyte
+namespace: plant_structure
+def: "A whole plant in the gametophytic phase that produces only egg cells." [POC:curators]
+comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In angiosperms and gnetophytes (Gnetum and Weltwischia) the megagametophyte is reduced to an embryo sac.
+synonym: "female gametophyte" EXACT []
+is_a: PO:0000003 ! whole plant
+created_by: Ramona
+creation_date: 2011-03-23T11:32:19Z
+
+[Term]
+id: PO:0025280
+name: microgametophyte
+namespace: plant_structure
+def: "A whole plant in the gametophytic phase that produces only sperm cells." [POC:curators]
+comment: Microgametophytes in bryophytes only produce sperm cells, but do not develop from microspores, because there is no heterospory in bryophytes. In seed plants the male gametophyte is reduced to a pollen grain.
+synonym: "male gametophyte" EXACT []
+is_a: PO:0000003 ! whole plant
+created_by: Ramona
+creation_date: 2011-03-23T11:32:19Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -14301,4 +14339,11 @@ name: has_part
 id: part_of
 name: part_of
 is_transitive: true
+
+[Typedef]
+id: participates_in
+name: participates_in
+comment: A special case of inheres_in. Used with a plant anatomical entity as the child and a plant growth and development stage as the parent. For example, plant gametangium participates_in gametophytic phase.
+created_by: Ramona
+creation_date: 2011-03-23T10:52:56Z
 
