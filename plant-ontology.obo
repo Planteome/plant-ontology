@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:03:2011 15:29
+date: 27:03:2011 19:35
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Term for angiosperms"
@@ -12079,7 +12079,7 @@ synonym: "gametophyte leaf" EXACT []
 synonym: "gametophytic leaf" EXACT []
 synonym: "phyllid" EXACT []
 is_a: PO:0025034 ! leaf
-relationship: part_of PO:0030017 ! non-vascular shoot system
+relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2010-07-12T01:31:59Z
 
@@ -14392,7 +14392,6 @@ namespace: plant_structure
 def: "A leaf apical cell that is part of the leaf apex of a vascular leaf." [RW:test]
 comment: Occurs in vascular leaves of some ferns in their sporophytic phase.
 is_a: PO:0030011 ! leaf apical cell
-intersection_of: PO:0030015 ! sporophytic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: Ramona
 creation_date: 2011-03-25T09:44:45Z
@@ -14405,7 +14404,6 @@ def: "A leaf apical cell that is part of a leaf apex of a non-vascular leaf." [P
 comment: Occurs in the non-vascular leaves of bryophytes, which grow by division of a single, wedge-shaped apical cell with two cutting faces.
 synonym: "phyllid apical cell" EXACT []
 is_a: PO:0030011 ! leaf apical cell
-intersection_of: PO:0030019 ! gametophore apical cell
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
 creation_date: 2011-03-25T09:44:45Z
@@ -14417,7 +14415,8 @@ namespace: plant_structure
 def: "An apical cell that is part of a whole plant in the gametophytic phase." [RW:test]
 comment: Occurs in mosses and other bryophytes.
 is_a: PO:0030007 ! apical cell
-relationship: participates_in PO:0028003 ! gametophytic phase
+intersection_of: PO:0030007 ! apical cell
+intersection_of: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-03-25T10:00:48Z
 
@@ -14428,7 +14427,8 @@ namespace: plant_structure
 def: "An apical cell that is part of a whole plant in the sporophytic phase." [RW:test]
 comment: Occurs in pteridophytes and the sporophyte of bryophytes.
 is_a: PO:0030007 ! apical cell
-relationship: participates_in PO:0028002 ! sporophytic phase
+intersection_of: PO:0030007 ! apical cell
+intersection_of: participates_in PO:0028002 ! sporophytic phase
 created_by: Ramona
 creation_date: 2011-03-25T10:00:48Z
 
@@ -14475,6 +14475,8 @@ namespace: plant_structure
 def: "A shoot apical cell that is part of a gametophore." [RW:test]
 comment: Occurs in the non-vascular shoot system of the gametophyte of mosses.
 is_a: PO:0030009 ! shoot apical cell
+intersection_of: PO:0030009 ! shoot apical cell
+intersection_of: part_of PO:0030018 ! gametophore
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T10:45:12Z
@@ -14488,7 +14490,8 @@ comment: A stem or branch of the leafy part of a bryophyte.
 synonym: "cauloid" EXACT []
 synonym: "non-vascular shoot axis" EXACT []
 is_a: PO:0025029 ! shoot axis
-relationship: participates_in PO:0028003 ! gametophytic phase
+intersection_of: PO:0025029 ! shoot axis
+intersection_of: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T10:57:31Z
 
@@ -14499,7 +14502,6 @@ namespace: plant_structure
 def: "A branch that is part of a gametophore." [RW:test]
 comment: A branch of the leafy part of a bryophyte shoot system.
 is_a: PO:0025073 ! branch
-intersection_of: PO:0030020 ! gametophore axis
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T11:13:48Z
@@ -14511,7 +14513,7 @@ namespace: plant_structure
 def: "A stem that is part of a gametophore." [RW:test]
 comment: A stem (the primary axis) of the leafy part of a bryophyte shoot system.
 is_a: PO:0009047 ! stem
-intersection_of: PO:0030020 ! gametophore axis
+relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T11:17:24Z
 
@@ -14524,7 +14526,6 @@ comment: Occurs at the tips of the stems and branches of bryophytes.
 synonym: "cauloid apical cell" EXACT []
 synonym: "non-vascular shoot axis apical cell" EXACT []
 is_a: PO:0030010 ! shoot axis apical cell
-intersection_of: PO:0030019 ! gametophore apical cell
 relationship: part_of PO:0030020 ! gametophore axis
 created_by: Ramona
 creation_date: 2011-03-25T11:41:09Z
@@ -14537,7 +14538,6 @@ def: "A shoot axis apical cell at the tip of a shoot apical meristem in a vascul
 comment: Occurs in some ferns in their sporophytic phase.
 synonym: "fern shoot axis apical cell" EXACT []
 is_a: PO:0030010 ! shoot axis apical cell
-intersection_of: PO:0030015 ! sporophytic apical cell
 relationship: part_of PO:0030016 ! vascular shoot system
 created_by: Ramona
 creation_date: 2011-03-25T11:46:56Z
