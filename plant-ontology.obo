@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:03:2011 19:35
+date: 28:03:2011 10:08
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta10
 subsetdef: Angiosperm "Term for angiosperms"
@@ -268,7 +268,7 @@ id: PO:0000030
 name: septum
 namespace: plant_structure
 def: "A collective organ part structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
-comment: A septum is formed by the fusion of the walls of two adjacent organs\n(ovary walls or anther walls), for example, the partition between two\nsections of an orange, seen in cross-section.
+comment: A septum is formed by the fusion of the walls of two adjacent organs (ovary walls or anther walls), for example, the partition between two sections of an orange, seen in cross-section.
 is_a: PO:0025269 ! collective organ part structure
 
 [Term]
@@ -1935,9 +1935,11 @@ is_a: PO:0025073 ! branch
 id: PO:0004000
 name: embryonic apical cell
 namespace: plant_structure
-def: "An embryonic plant cell that is the uppermost cell formed after the first division of the zygote." [ISBN:0471245208]
-is_a: PO:0025028 ! embryonic plant cell
+def: "A shoot axis apical cell that is part of an embryo and is the uppermost cell formed after the first division of the zygote." [RW:test]
+comment: For plants that grow via an apical cell in their sporophytic phase, the embryonic apical cell may remain an apical cell throughout the plant's life.
+is_a: PO:0030010 ! shoot axis apical cell
 relationship: develops_from PO:0000423 ! zygote
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0004001
@@ -8946,7 +8948,7 @@ def: "A cell that is part of a plant and that has as its parts a plant cell wall
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid). Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". See definition of plant-type cell wall GO:0009505. Egg and sperm cells lack the cell wall.
 subset: reference
 subset: TraitNet
-synonym: "c\\élula de planta" EXACT Spanish []
+synonym: "celula de planta" EXACT Spanish []
 xref: CL:0000610
 xref: GO:0005623
 xref: OBO_SF_PO:2932524
@@ -9038,10 +9040,11 @@ name: embryo
 namespace: plant_structure
 def: "A whole plant in the post-zygotic stage that does not yet consist of fully differentiated tissues." [POC:curators]
 comment: Adventitious embryos and somatic embryos do not arise from zygotes. Cultured embryos (PO:0000010), including haploid embryos, are <i>in vitro</i> plant structures. Embryos occur prior to germination in vascular plants.
-synonym: "embri\\ón de planta" EXACT Spanish []
+synonym: "embrion de planta" EXACT Spanish []
 synonym: "germ" RELATED []
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
+relationship: participates_in PO:0028002 ! sporophytic phase
 
 [Term]
 id: PO:0009010
@@ -14477,7 +14480,6 @@ comment: Occurs in the non-vascular shoot system of the gametophyte of mosses.
 is_a: PO:0030009 ! shoot apical cell
 intersection_of: PO:0030009 ! shoot apical cell
 intersection_of: part_of PO:0030018 ! gametophore
-relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T10:45:12Z
 
@@ -14546,9 +14548,9 @@ creation_date: 2011-03-25T11:46:56Z
 id: PO:0030025
 name: thallus apical cell
 namespace: plant_structure
-def: "A gametophytic apical cell that is part of a thallus." [RW:test]
+def: "A shoot apical cell that is part of a thallus." [RW:test]
 comment: We still need to add the term thallus.
-is_a: PO:0030014 ! gametophytic apical cell
+is_a: PO:0030009 ! shoot apical cell
 created_by: Ramona
 creation_date: 2011-03-25T12:09:10Z
 
@@ -14576,8 +14578,8 @@ is_transitive: true
 [Typedef]
 id: participates_in
 name: participates_in
-comment: A special case of inheres_in. Used with a plant anatomical entity as the child and a plant growth and development stage as the parent. For example, plant gametangium participates_in gametophytic phase.
-is_transitive: true
+comment: Used with a plant anatomical entity as the child and a plant growth and development stage as the parent. For example, plant gametangium participates_in gametophytic phase.
+holds_over_chain: part_of participates_in
 created_by: Ramona
 creation_date: 2011-03-23T10:52:56Z
 
