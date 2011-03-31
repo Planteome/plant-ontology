@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:03:2011 15:59
+date: 31:03:2011 13:58
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
@@ -318,7 +318,6 @@ name: cotyledon vascular system
 namespace: plant_structure
 def: "A vascular system that is part of a cotyledon." [TAIR:ki]
 is_a: PO:0000034 ! vascular system
-relationship: part_of PO:0008011 ! embryo vascular system
 relationship: part_of PO:0020030 ! cotyledon
 
 [Term]
@@ -412,15 +411,15 @@ is_a: PO:0003005 ! nodal root
 id: PO:0000045
 name: embryonic root
 namespace: plant_structure
-def: "An embryonic plant structure that is a root that is initiated in a developing embryo." [POC:rw, TAIR:ki]
+def: "A root that is initiated in a developing embryo." [POC:rw, TAIR:ki]
 subset: reference
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0009005 ! root
 
 [Term]
 id: PO:0000046
 name: seminal root
 namespace: plant_structure
-def: "Root formed within the scutelar node of the embryo in some monocotyledonous plants." [TAIR:ki]
+def: "A root formed within the scutellar node of the embryo in some monocotyledonous plants." [TAIR:ki]
 subset: reference
 synonym: "lateral seminal root" RELATED []
 synonym: "scutellar nodal root" RELATED []
@@ -1764,12 +1763,13 @@ consider: PO:0025168
 
 [Term]
 id: PO:0002002
-name: basal cell
+name: embryonic basal cell
 namespace: plant_structure
-def: "An embryonic plant cell that is the lower-most cell formed after the first division of the zygote." [ISBN:0471245208]
+def: "A plant cell that is the lower-most cell formed after the first division of the zygote and is part of an embryo." [ISBN:0471245208]
 xref: CL:0000646
-is_a: PO:0025028 ! embryonic plant cell
+is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000423 ! zygote
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0002003
@@ -1935,9 +1935,9 @@ is_a: PO:0025073 ! branch
 id: PO:0004000
 name: embryonic apical cell
 namespace: plant_structure
-def: "A shoot axis apical cell that is part of an embryo and is the uppermost cell formed after the first division of the zygote." [RW:test]
+def: "An apcial cell that is part of an embryo and is the uppermost cell formed after the first division of the zygote." [RW:test]
 comment: For plants that grow via an apical cell in their sporophytic phase, the embryonic apical cell may remain an apical cell throughout the plant's life.
-is_a: PO:0030010 ! shoot axis apical cell
+is_a: PO:0030007 ! apical cell
 relationship: develops_from PO:0000423 ! zygote
 relationship: part_of PO:0009009 ! embryo
 
@@ -2506,8 +2506,9 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004708
 name: scutellar node
 namespace: plant_structure
-def: "An embryonic plant structure that is the region in of an embryo axis between the primary root (enclosed in the coleorhiza) and the plumule (enclosed in the coleoptile) to which the scutellum is attached." [MaizeGDB:lv, POC:rw]
-is_a: PO:0025099 ! embryonic plant structure
+def: "A stem node that is the part of an embryo axis where the scutellum is attached." [MaizeGDB:lv, POC:rw]
+comment: A scutellum is attached to an embryo axis between the primary root (enclosed in the coleorhiza) and the plumule (enclosed in the coleoptile).
+is_a: PO:0020141 ! stem node
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
@@ -2646,7 +2647,7 @@ namespace: plant_structure
 def: "A cardinal organ part that is the part of an embryonic axis where the radicle joins the hypocotyl." [POC:rw]
 subset: reference
 xref: OBO_SF_PO:3132568
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
@@ -4595,8 +4596,9 @@ relationship: part_of PO:0020136 ! Zea ear
 id: PO:0006338
 name: embryonic leaf
 namespace: plant_structure
-def: "An embryonic plant structure that is one of the first few leaves to develop from the embryonic shoot apical meristem." [GR:pj]
-is_a: PO:0025099 ! embryonic plant structure
+def: "A vascular leaf that is one of the first few leaves to develop from the embryonic shoot apical meristem and is part of an embryo." [GR:pj]
+is_a: PO:0009025 ! vascular leaf
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0006339
@@ -9039,7 +9041,7 @@ id: PO:0009009
 name: embryo
 namespace: plant_structure
 def: "A whole plant in the post-zygotic stage that does not yet consist of fully differentiated tissues." [POC:curators]
-comment: Adventitious embryos and somatic embryos do not arise from zygotes. Cultured embryos (PO:0000010), including haploid embryos, are <i>in vitro</i> plant structures. Embryos occur prior to germination in vascular plants.
+comment: Adventitious embryos and somatic embryos do not arise from zygotes. Cultured embryos (PO:0000010), including haploid embryos, are in vitro</i> plant structures. Embryos occur prior to germination in vascular plants.
 synonym: "embrion de planta" EXACT Spanish []
 synonym: "germ" RELATED []
 xref: OBO_SF_PO:2982384
@@ -10087,9 +10089,11 @@ name: embryo axis
 namespace: plant_structure
 def: "An axial part of an embryo that has as parts a hypocotyl and a root meristem or, if present, a radicle." [ISBN:0471245208, POC:rw]
 synonym: "hypocotyl-root axis" RELATED []
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0025004 ! plant axis
 relationship: has_part PO:0006085 ! root meristem
+relationship: has_part PO:0020031 ! radicle
 relationship: has_part PO:0020100 ! hypocotyl
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0019022
@@ -10418,10 +10422,10 @@ relationship: develops_from PO:0000015 ! cotyledon primordium
 id: PO:0020031
 name: radicle
 namespace: plant_structure
-def: "The radicle is the basal continuation of the hypocotyl in an embryo and gives rise to the root system of the adult plant; sometimes more or less abortive." [APWeb:Glossary]
+def: "A root that is the basal continuation of a hypocotyl in an embryo and may develop into the root system of an adult plant." [APWeb:Glossary, POC:rw]
+comment: Sometimes abortive.
 subset: reference
 is_a: PO:0000045 ! embryonic root
-relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
 id: PO:0020032
@@ -10429,7 +10433,8 @@ name: plumule
 namespace: plant_structure
 def: "A somewhat differentiated terminal bud in several embryo types above the cotyledonary node, in which one or more internodes and leaves or scales can be discerned in a primordial stage." [APWeb:Glossary]
 synonym: "embryonic shoot" RELATED []
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0004713 ! terminal bud
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0020033
@@ -10442,24 +10447,25 @@ is_a: PO:0025099 ! embryonic plant structure
 id: PO:0020034
 name: coleorhiza
 namespace: plant_structure
-def: "A portion of embryonic plant tissue surrounding the radicle in the embryo or seedling of some monocots." [APWeb:Glossary]
+def: "A portion of plant tissue surrounding the radicle in the embryo or seedling of some monocots." [APWeb:Glossary]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage.
-is_a: PO:0025233 ! embryonic plant tissue
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0020035
 name: epicotyl
 namespace: plant_structure
-def: "The first internode of a stem above the hypocotyl. In literature also used for the entire embryonic axis, consisting of several internodes, above the cotyledonary node." [APWeb:Glossary]
-is_a: PO:0025099 ! embryonic plant structure
+def: "The first stem internode above a hypocotyl." [POC:rw]
+is_a: PO:0020142 ! stem internode
 
 [Term]
 id: PO:0020036
 name: epiblast
 namespace: plant_structure
-def: "A portion of embryonic plant tissue that is a flap-like projection of the coleorhiza, inserted opposite the scutellum." [ISBN:0471244554]
+def: "A portion of plant tissue that is a flap-like projection of the coleorhiza, inserted opposite the scutellum." [ISBN:0471244554]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage. Some researchers consider the epiblast and coleorhiza independent structures that differentiate from the same proembryonic tissue.
-is_a: PO:0025233 ! embryonic plant tissue
+is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020034 ! coleorhiza
 
 [Term]
@@ -10467,7 +10473,7 @@ id: PO:0020037
 name: mesocotyl
 namespace: plant_structure
 def: "The internode between the cotyledon or cotyledons and the leaf or leaves at the next node of a young sporophyte." [APWeb:Glossary]
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0020142 ! stem internode
 
 [Term]
 id: PO:0020038
@@ -10769,26 +10775,30 @@ name: obsolete microgametophyte
 namespace: plant_structure
 alt_id: PO:0020007
 def: "A gametophyte that produces pollen sperm cells." [POC:curators]
-comment: This term was made obsolete because it only applied to angiosperms. Replaced by a new term microgametophyte that can apply to all plants.
+comment: This term was made obsolete because it only applied to angiosperms. Consider new term microgametophyte (PO:0025280) that can apply to all plants. Also consider pollen (PO:0025281) or antheridial microgametophyte (PO:0025283).
 subset: reference
 subset: TraitNet
 synonym: "male gametophyte" EXACT []
 synonym: "pollen" RELATED []
 synonym: "pollen grain" EXACT []
 is_obsolete: true
-replaced_by: PO:0025280
+consider: PO:0025280
+consider: PO:0025281
+consider: PO:0025283
 
 [Term]
 id: PO:0020092
 name: obsolete megagametophyte
 namespace: plant_structure
 def: "A gametophyte that produces female gametes." [APweb:glossary]
-comment: This term was made obsolete because it only applied to angiosperms. Replaced by a new term megagametophyte that can apply to all plants.
+comment: This term was made obsolete because it only applied to angiosperms. Consider new term megagametophyte (PO:0025280) that can apply to all plants. Also consider embryo sac (PO:0025074) or archegonial megagametophyte (PO:0025282).
 subset: reference
 synonym: "embryo sac" RELATED []
 synonym: "female gametophyte" RELATED []
 is_obsolete: true
-replaced_by: PO:0025279
+consider: PO:0025074
+consider: PO:0025279
+consider: PO:0025282
 
 [Term]
 id: PO:0020093
@@ -10855,9 +10865,9 @@ is_a: PO:0009002 ! plant cell
 id: PO:0020100
 name: hypocotyl
 namespace: plant_structure
-def: "The part of the stem below the cotyledonary node and transitional to a root, found in a young sporophyte." [APWeb:Glossary]
+def: "A shoot axis that is the part of a stem below the cotyledonary node and transitional to a root." [APWeb:Glossary, POC:curators]
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0020142 ! stem internode
 
 [Term]
 id: PO:0020101
@@ -10921,13 +10931,15 @@ def: "An embryonic plant structure at the base of an embryo that develops from a
 comment: The suspensor often allows the embryo to penetrate deep into the endosperm. Across plant species, suspensors are morphologically diverse and may be single- or multicellular, undifferentiated or highly differentiated, and variously shaped.
 xref: OBO_SF_PO:3132565
 is_a: PO:0025099 ! embryonic plant structure
+relationship: develops_from PO:0002002 ! embryonic basal cell
+relationship: part_of PO:0009009 ! embryo
 
 [Term]
 id: PO:0020109
-name: hypophysis
+name: embryonic hypophysis
 namespace: plant_structure
-def: "An embryonic plant cell that is the uppermost cell of the suspensor from which part of the root and root cap in the embryo of angiosperms are derived." [ISBN:047124529]
-is_a: PO:0025028 ! embryonic plant cell
+def: "A plant cell that is the uppermost cell of the suspensor from which part of the root and root cap in the embryo of angiosperms are derived." [ISBN:047124529]
+is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020108 ! suspensor
 
 [Term]
@@ -12063,9 +12075,11 @@ creation_date: 2010-07-01T04:21:46Z
 id: PO:0025074
 name: embryo sac
 namespace: plant_structure
-def: "A megagametophyte that is located in a nucellus." [POC:curators]
+def: "A megagametophyte that is located in an ovule in an ovary." [POC:curators]
 comment: Produces an embryo sac egg cell.
+subset: Angiosperm
 is_a: PO:0025279 ! megagametophyte
+relationship: develops_from PO:0020019 ! megaspore
 created_by: Ramona
 creation_date: 2010-07-01T02:50:36Z
 
@@ -12310,11 +12324,11 @@ creation_date: 2010-12-17T02:04:06Z
 id: PO:0025099
 name: embryonic plant structure
 namespace: plant_structure
-def: "A plant structure that is a proper part of an embryo." [POC:rw]
-comment: Includes organs, tissues and cell types that are unique to embryos, not cell or tissue types that can occur in both embryos and mature plant structures.
+def: "A plant structure that is part of an embryo." [POC:rw]
+comment: Includes organs, tissues and cell types that are unique to embryos, not plant structures that can occur in both embryos and mature plant structures.
 xref: OBO_SF_PO:3132547
 is_a: PO:0009011 ! plant structure
-relationship: part_of PO:0009009 ! embryo
+intersection_of: part_of PO:0009009 ! embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
 
@@ -12516,11 +12530,12 @@ creation_date: 2010-12-02T09:04:09Z
 
 [Term]
 id: PO:0025120
-name: antheridium sperm cell
+name: antheridial sperm cell
 namespace: plant_structure
 def: "A sperm cell that is produced by and located in an antheridium." [POC:curators]
 subset: Bryophytes
 subset: Pteridophytes
+synonym: "antheridium sperm cell" EXACT []
 is_a: PO:0000084 ! sperm cell
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -12531,20 +12546,23 @@ id: PO:0025121
 name: pollen sperm cell
 namespace: plant_structure
 def: "A sperm cell that is produced by and located in a pollen grain." [POC:curators]
+comment: A pollen sperm cell consists of a nucleus without a cell wall.
 subset: Angiosperm
 subset: Gymnosperms
 is_a: PO:0000084 ! sperm cell
+relationship: part_of PO:0025281 ! pollen
 created_by: Ramona
 creation_date: 2010-11-15T08:05:46Z
 
 [Term]
 id: PO:0025122
-name: archegonium egg cell
+name: archegonial egg cell
 namespace: plant_structure
 def: "An egg cell that is produced by and located in an archegonium." [POC:curators]
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
+synonym: "archegonium egg call" EXACT []
 is_a: PO:0020094 ! egg cell
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -13714,6 +13732,8 @@ namespace: plant_structure
 def: "A portion of plant tissue that is part of an embryo." [POC:rw]
 comment: This class is for tissues that only occur as part of an embryo.
 is_a: PO:0025099 ! embryonic plant structure
+intersection_of: PO:0009007 ! portion of plant tissue
+intersection_of: part_of PO:0009009 ! embryo
 created_by: Ramona
 creation_date: 2010-12-20T12:27:10Z
 
@@ -14209,7 +14229,7 @@ id: PO:0025279
 name: megagametophyte
 namespace: plant_structure
 def: "A whole plant in the gametophytic phase that produces only egg cells." [POC:curators]
-comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In angiosperms and gnetophytes (Gnetum and Weltwischia) the megagametophyte is reduced to an embryo sac.
+comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In some pteridophytes, megagametophytes develop from megaspores. In angiosperms, Gnetum, and Weltwischia, the megagametophyte is greatly reduced. The megagametophyte in angiosperms is an embryo sac.
 synonym: "female gametophyte" EXACT []
 is_a: PO:0000003 ! whole plant
 created_by: Ramona
@@ -14225,6 +14245,45 @@ synonym: "male gametophyte" EXACT []
 is_a: PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2011-03-23T11:32:19Z
+
+[Term]
+id: PO:0025281
+name: pollen
+namespace: plant_structure
+def: "A microgametophyte that is located in a pollen sac." [POC:curators]
+comment: Produces pollen sperm cells.
+subset: Angiosperm
+subset: Gymnosperms
+synonym: "pollen grain" EXACT []
+is_a: PO:0025280 ! microgametophyte
+created_by: Ramona
+creation_date: 2011-03-31T07:05:48Z
+
+[Term]
+id: PO:0025282
+name: archegonial megagametophyte
+namespace: plant_structure
+def: "A megagametophyte that has as parts one or more archegonia." [POC:curators]
+comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In some pteridophytes, megagametophytes develop from megaspores.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025279 ! megagametophyte
+relationship: has_part PO:0025126 ! archegonium
+created_by: Ramona
+creation_date: 2011-03-31T07:08:48Z
+
+[Term]
+id: PO:0025283
+name: antheridial microgametophyte
+namespace: plant_structure
+def: "A microgametophyte that has as parts one or more antheridia." [POC:curators]
+comment: Microgametophytes in bryophytes only produce sperm cells, but do not develop from microspores, because there is no heterospory in bryophytes. In some pteridophytes, microgametophytes develop from microspores.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025280 ! microgametophyte
+relationship: has_part PO:0025125 ! antheridium
+created_by: Ramona
+creation_date: 2011-03-31T07:12:52Z
 
 [Term]
 id: PO:0028001
