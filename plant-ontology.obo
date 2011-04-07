@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:04:2011 13:55
+date: 07:04:2011 16:22
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
@@ -25,7 +25,7 @@ treat-xrefs-as-is_a: CARO
 [Term]
 id: PO:0000001
 name: embryo proper
-namespace: plant_structure
+namespace: plant_anatomy
 def: "An embryonic plant structure that is the body of a developing embryo attached to the maternal tissue in an ovule by a suspensor." [POC:rw]
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 xref: OBO_SF_PO:3132560
@@ -56,61 +56,62 @@ is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0000004
-name: in vitro plant structure
+name: <i>in vitro </i> plant structure
 namespace: plant_structure
-def: "A plant structure that is grown or maintained in vitro." [POC:curators]
-comment: In vitro growth is defined as microbe-free growth in a sterile, culture environment, usually in the laboratory.\nAn example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish, culture flask or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with <i>Agrobacterium</i>.
+def: "A plant structure that is grown or maintained <i>in vitro </i>." [POC:curators]
+comment: <i>In vitro </i> growth is defined as microbe-free growth in a sterile, culture environment, usually in the laboratory. An example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish, culture flask or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with <i>Agrobacterium</i>.
 xref: OBO_SF_PO:2958948
 is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0000005
 name: cultured plant cell
-namespace: plant_structure
+namespace: plant_anatomy
 def: "A plant cell that is grown or maintained in vitro." [POC:Curators]
 comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium. In cell cultures, the cells are no longer organized into tissues.
 synonym: "cell suspension" RELATED []
-is_a: PO:0000004 ! in vitro plant structure
+is_a: PO:0000004 ! <i>in vitro </i> plant structure
 is_a: PO:0009002 ! plant cell
 
 [Term]
 id: PO:0000006
 name: plant protoplast
 namespace: plant_structure
-def: "An in vitro plant structure that is derived from a cultured plant cell from which the entire plant cell wall has been removed." [POC:Curators]
+def: "An <i>in vitro </i> plant structure that is derived from a cultured plant cell from which the entire plant cell wall has been removed." [POC:Curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
-is_a: PO:0000004 ! in vitro plant structure
+is_a: PO:0000004 ! <i>in vitro </i> plant structure
 relationship: derives_from PO:0000005 ! cultured plant cell
 
 [Term]
 id: PO:0000007
-name: cultured leaf cell
-namespace: plant_structure
-def: "In vitro grown isolated cells and small cell aggregates that originated from isolated leaf protoplasts (after they re-established cell wall, or from callus that was induced from leaf tissue)." [TAIR:ki]
+name: leaf-derived cultured plant cell
+namespace: plant_anatomy
+def: "A cultured plant cell that was derived from leaf tissue." [POC:Curators, TAIR:ki]
+comment: May be derived from an isolated protoplast after the cell wall is re-established or from cultured callus that was induced from a segment of leaf.
 is_a: PO:0000005 ! cultured plant cell
 
 [Term]
 id: PO:0000008
 name: root-derived cultured plant cell
-namespace: plant_structure
-def: "A cultured plant cell that was derived from root tissue." [TAIR:ki]
-comment: The root-derived cultured plant cell may be derived from isolated protoplasts after they re-established cell wall, or from callus that was induced from segment of root.
+namespace: plant_anatomy
+def: "A cultured plant cell that was derived from root tissue." [POC:curators, TAIR:ki]
+comment: The root-derived cultured plant cell may be derived from an isolated protoplast after the cell wall is re-established or from callus that was induced from a segment of root.
 is_a: PO:0000005 ! cultured plant cell
 
 [Term]
 id: PO:0000009
 name: cultured callus
-namespace: plant_structure
+namespace: plant_anatomy
 def: "In vitro grown cell aggregates that originated from isolated protoplasts, cell suspensions, or from callus that was induced in sterile medium supplemented by plant growth regulators." [TAIR:ki]
-is_a: PO:0000004 ! in vitro plant structure
+is_a: PO:0000004 ! <i>in vitro </i> plant structure
 is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
 id: PO:0000010
 name: cultured embryo
-namespace: plant_structure
+namespace: plant_anatomy
 def: "In vitro isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte)." [TAIR:ki]
-is_a: PO:0000004 ! in vitro plant structure
+is_a: PO:0000004 ! <i>in vitro </i> plant structure
 is_a: PO:0009009 ! embryo
 
 [Term]
@@ -4062,7 +4063,7 @@ is_a: PO:0000009 ! cultured callus
 [Term]
 id: PO:0006091
 name: embryogenic callus
-namespace: plant_structure
+namespace: plant_anatomy
 def: "A type of cultured callus that form embryo-like structures such as somatic embryos." [POC:curators]
 is_a: PO:0000009 ! cultured callus
 
@@ -8951,8 +8952,8 @@ relationship: develops_from PO:0009062 ! gynoecium
 [Term]
 id: PO:0009002
 name: plant cell
-namespace: plant_structure
-def: "A cell that is part of a plant and that has as its parts a plant cell wall." [GO:0005623 "cell", ISBN:0471245208, POC:curators]
+namespace: plant_anatomy
+def: "A plant structure which has as its parts a maximally connected lumen and the contents of this lumen and any external encapsulating structures (if present) such as the plasma membrane and the plant cell wall." [GO:0005623 "cell", LC:test]
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid). Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". See definition of plant-type cell wall GO:0009505. Egg and sperm cells lack the cell wall.
 subset: reference
 subset: TraitNet
@@ -9073,7 +9074,7 @@ relationship: part_of PO:0009001 ! fruit
 [Term]
 id: PO:0009011
 name: plant structure
-namespace: plant_structure
+namespace: plant_anatomy
 def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003 "anatomical structure", POC:curators]
 comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 anatomical structure is defined as: Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome.
 subset: TraitNet
@@ -11906,7 +11907,7 @@ creation_date: 2010-06-03T12:52:12Z
 [Term]
 id: PO:0025059
 name: portion of ground tissue
-namespace: plant_structure
+namespace: plant_anatomy
 def: "Any portion of plant tissue other than epidermis or vascular tissue." [ISBN:0-7167-1007-2, ISBN:0471244554]
 comment: Develops from the ground meristem (eg, meristem L2 and meristem L3).
 subset: TraitNet
@@ -12505,7 +12506,7 @@ creation_date: 2011-01-05T09:16:29Z
 [Term]
 id: PO:0025117
 name: plant anatomical space
-namespace: plant_structure
+namespace: plant_anatomy
 def: "An anatomical space (CARO:) that is part of a plant." [CARO:0000005 "anatomical space", POC:curators]
 comment: CARO:0000005 anatomical space is defined as: Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.
 is_a: PO:0025131 ! plant anatomical entity
@@ -12669,7 +12670,7 @@ creation_date: 2010-11-15T11:29:28Z
 [Term]
 id: PO:0025131
 name: plant anatomical entity
-namespace: plant_structure
+namespace: plant_anatomy
 def: "An anatomical entity that is or was part of a plant." [CARO:0000000 "anatomical entity", POC:curators]
 comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 anatomical entity is defined as: Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
 created_by: Ramona
