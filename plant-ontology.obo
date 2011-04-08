@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:04:2011 13:13
-saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta12
+date: 08:04:2011 16:05
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -67,8 +67,8 @@ is_a: PO:0009011 ! plant structure
 id: PO:0000005
 name: cultured plant cell
 namespace: plant_anatomy
-def: "A plant cell that is grown or maintained in vitro." [POC:Curators]
-comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium. In cell cultures, the cells are no longer organized into tissues.
+def: "A plant cell that is grown or maintained <i>in vitro <i/>." [POC:Curators]
+comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium.
 synonym: "cell suspension" RELATED []
 is_a: PO:0000004 ! <i>in vitro </i> plant structure
 is_a: PO:0009002 ! plant cell
@@ -77,10 +77,10 @@ is_a: PO:0009002 ! plant cell
 id: PO:0000006
 name: plant protoplast
 namespace: plant_structure
-def: "An <i>in vitro </i> plant structure that is derived from a cultured plant cell from which the entire plant cell wall has been removed." [POC:Curators]
+def: "A cultured plant cell from which the entire plant cell wall has been removed." [LC:test, POC:Curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
 is_a: PO:0000004 ! <i>in vitro </i> plant structure
-relationship: derives_from PO:0000005 ! cultured plant cell
+is_a: PO:0000005 ! cultured plant cell
 
 [Term]
 id: PO:0000007
