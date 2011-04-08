@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 07:04:2011 16:22
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta11
+date: 08:04:2011 13:13
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -112,7 +112,7 @@ name: cultured embryo
 namespace: plant_anatomy
 def: "In vitro isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte)." [TAIR:ki]
 is_a: PO:0000004 ! <i>in vitro </i> plant structure
-is_a: PO:0009009 ! embryo
+is_a: PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0000011
@@ -1776,7 +1776,7 @@ def: "A plant cell that is the lower-most cell formed after the first division o
 xref: CL:0000646
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000423 ! zygote
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0002003
@@ -1946,7 +1946,7 @@ def: "An apcial cell that is part of an embryo and is the uppermost cell formed 
 comment: For plants that grow via an apical cell in their sporophytic phase, the embryonic apical cell may remain an apical cell throughout the plant's life.
 is_a: PO:0030007 ! apical cell
 relationship: develops_from PO:0000423 ! zygote
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0004001
@@ -2351,7 +2351,7 @@ id: PO:0004537
 name: adventitious embryo
 namespace: plant_structure
 def: "Embryo derived directly from nucellus cells without involving embryo sac cells." [POC:curators]
-is_a: PO:0009009 ! embryo
+is_a: PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0004538
@@ -2799,7 +2799,7 @@ namespace: plant_structure
 def: "A cortex that is part of an embryo." [PMID:16543410, POC:curators, TAIR:donghui]
 comment: Can occur in the hypocotyl and root.
 is_a: PO:0005708 ! cortex
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0005015
@@ -2807,7 +2807,7 @@ name: embryo endodermis
 namespace: plant_structure
 def: "A portion of endodermis that is part of an embryo." [PMID:16543410]
 is_a: PO:0000252 ! endodermis
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0005016
@@ -4605,7 +4605,7 @@ name: embryonic leaf
 namespace: plant_structure
 def: "A vascular leaf that is one of the first few leaves to develop from the embryonic shoot apical meristem and is part of an embryo." [GR:pj]
 is_a: PO:0009025 ! vascular leaf
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0006339
@@ -8552,7 +8552,7 @@ name: embryo vascular system
 namespace: plant_structure
 def: "Vascular system of embryo." [GR:cwt]
 is_a: PO:0000034 ! vascular system
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0008012
@@ -8957,7 +8957,7 @@ def: "A plant structure which has as its parts a maximally connected lumen and t
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid). Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". See definition of plant-type cell wall GO:0009505. Egg and sperm cells lack the cell wall.
 subset: reference
 subset: TraitNet
-synonym: "celula de planta" EXACT Spanish []
+synonym: "c&#233lula de planta" EXACT Spanish []
 xref: CL:0000610
 xref: GO:0005623
 xref: OBO_SF_PO:2932524
@@ -9045,11 +9045,11 @@ relationship: part_of PO:0000003 ! whole plant
 
 [Term]
 id: PO:0009009
-name: embryo
+name: plant embryo
 namespace: plant_structure
 def: "A whole plant in the post-zygotic stage that does not yet consist of fully differentiated tissues." [POC:curators]
 comment: Adventitious embryos and somatic embryos do not arise from zygotes. Cultured embryos (PO:0000010), including haploid embryos, are in vitro</i> plant structures. Embryos occur prior to germination in vascular plants.
-synonym: "embrion de planta" EXACT Spanish []
+synonym: "embri&#243n de planta" EXACT Spanish []
 synonym: "germ" RELATED []
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
@@ -10100,7 +10100,7 @@ is_a: PO:0025004 ! plant axis
 relationship: has_part PO:0006085 ! root meristem
 relationship: has_part PO:0020031 ! radicle
 relationship: has_part PO:0020100 ! hypocotyl
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0019022
@@ -10441,7 +10441,7 @@ namespace: plant_structure
 def: "A somewhat differentiated terminal bud in several embryo types above the cotyledonary node, in which one or more internodes and leaves or scales can be discerned in a primordial stage." [APWeb:Glossary]
 synonym: "embryonic shoot" RELATED []
 is_a: PO:0004713 ! terminal bud
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020033
@@ -10457,7 +10457,7 @@ namespace: plant_structure
 def: "A portion of plant tissue surrounding the radicle in the embryo or seedling of some monocots." [APWeb:Glossary]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage.
 is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020035
@@ -10939,7 +10939,7 @@ comment: The suspensor often allows the embryo to penetrate deep into the endosp
 xref: OBO_SF_PO:3132565
 is_a: PO:0025099 ! embryonic plant structure
 relationship: develops_from PO:0002002 ! embryonic basal cell
-relationship: part_of PO:0009009 ! embryo
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020109
@@ -11551,7 +11551,7 @@ namespace: plant_structure
 def: "An embryonic plant structure that is a plant cell that is found only in an embryo." [POC:rw]
 is_a: PO:0025099 ! embryonic plant structure
 intersection_of: PO:0009002 ! plant cell
-intersection_of: part_of PO:0009009 ! embryo
+intersection_of: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-05-07T02:41:17Z
 
@@ -11572,8 +11572,10 @@ creation_date: 2010-07-01T03:46:35Z
 id: PO:0025030
 name: ground tissue cell
 namespace: plant_structure
+def: "A plant cell that is part of a portion of ground tissue." [POC:curators]
 subset: TraitNet
 is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025059 ! portion of ground tissue
 created_by: Ramona
 creation_date: 2010-05-07T02:47:45Z
 
@@ -12335,7 +12337,7 @@ def: "A plant structure that is part of an embryo." [POC:rw]
 comment: Includes organs, tissues and cell types that are unique to embryos, not plant structures that can occur in both embryos and mature plant structures.
 xref: OBO_SF_PO:3132547
 is_a: PO:0009011 ! plant structure
-intersection_of: part_of PO:0009009 ! embryo
+intersection_of: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
 
@@ -13740,7 +13742,7 @@ def: "A portion of plant tissue that is part of an embryo." [POC:rw]
 comment: This class is for tissues that only occur as part of an embryo.
 is_a: PO:0025099 ! embryonic plant structure
 intersection_of: PO:0009007 ! portion of plant tissue
-intersection_of: part_of PO:0009009 ! embryo
+intersection_of: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-12-20T12:27:10Z
 
