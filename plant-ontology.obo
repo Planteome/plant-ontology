@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:04:2011 16:05
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta11
+date: 11:04:2011 11:32
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -30,6 +30,7 @@ def: "An embryonic plant structure that is the body of a developing embryo attac
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 xref: OBO_SF_PO:3132560
 is_a: PO:0025099 ! embryonic plant structure
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0000002
@@ -77,7 +78,7 @@ is_a: PO:0009002 ! plant cell
 id: PO:0000006
 name: plant protoplast
 namespace: plant_structure
-def: "A cultured plant cell from which the entire plant cell wall has been removed." [LC:test, POC:Curators]
+def: "A cultured plant cell from which the entire plant cell wall has been removed." [LC:test, POC:curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
 is_a: PO:0000004 ! <i>in vitro </i> plant structure
 is_a: PO:0000005 ! cultured plant cell
@@ -86,7 +87,7 @@ is_a: PO:0000005 ! cultured plant cell
 id: PO:0000007
 name: leaf-derived cultured plant cell
 namespace: plant_anatomy
-def: "A cultured plant cell that was derived from leaf tissue." [POC:Curators, TAIR:ki]
+def: "A plant cell that is grown or maintained <i>in vitro <i/>." [POC:Curators]
 comment: May be derived from an isolated protoplast after the cell wall is re-established or from cultured callus that was induced from a segment of leaf.
 is_a: PO:0000005 ! cultured plant cell
 
@@ -489,6 +490,7 @@ id: PO:0000053
 name: petiole cortex
 namespace: plant_structure
 def: "A portion of ground tissue that is part of a cortex and part of the petiole." [POC:curators, TAIR:ki]
+synonym: "portion of petiole corex tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0020038 ! petiole
@@ -789,6 +791,7 @@ name: micropylar endosperm
 namespace: plant_structure
 def: "A portion of plant tissue that is the region of the endosperm closest to the micropyle of the seed." [TAIR:lr]
 synonym: "micropylar region" RELATED []
+synonym: "portion of micropylar endosperm" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -799,6 +802,7 @@ namespace: plant_structure
 def: "A portion of plant tissue that is the part of the endosperm nearest the chalazal region of the ovule and forming a cyst-like structure." [ISBN:047124529, TAIR:lr]
 comment: Not in current literature. More like an attribute.
 synonym: "chalazal endosperm cyst" RELATED []
+synonym: "portion of chalazal cyst" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -818,6 +822,7 @@ def: "A portion of ground tissue that is part of a cortex and part of a shoot ax
 comment: Can occur in a stem or branch.
 subset: TraitNet
 synonym: "branch cortex" NARROW []
+synonym: "portion of shoot axis cortex tissue" EXACT []
 synonym: "stem cortex" NARROW []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
@@ -899,7 +904,7 @@ alt_id: PO:0006064
 def: "A portion of ground tissue that is the inner most layer of a cortex and has a casparian strip in its anticlinal cell walls." [ISBN:047124529, POC:curators]
 comment: Forms a sheath around the vascular system. It may have secondary walls later, part_of cortex.
 synonym: "endodermoid" RELATED []
-synonym: "portion of epidermal tissue" EXACT []
+synonym: "portion of endodermal tissue" EXACT []
 synonym: "portion of epidermis tissue" EXACT []
 xref: SGF:3016668
 is_a: PO:0025059 ! portion of ground tissue
@@ -923,6 +928,7 @@ alt_id: PO:0003010
 def: "A portion of ground tissue that is part of a cortex and part of a root." [ISBN:047125208, POC:curators]
 comment: In dicots and gymnosperms, the cortex consists of mainly parenchyma cells. In monocots sclerenchyma develops in addition to parenchyma.
 subset: TraitNet
+synonym: "portion of root cortex tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0009005 ! root
@@ -1973,7 +1979,7 @@ alt_id: PO:0005049
 def: "A portion of ground issue centrifugally derived from cork cambium, non-living at maturity, and having suberized walls." [ISBN:0471245208, POC:curators]
 comment: Protective in function because the walls are highly impervious to water.
 synonym: "cork" RELATED []
-synonym: "phellem" RELATED []
+synonym: "portion of phellem tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
 relationship: part_of PO:0005048 ! shoot axis periderm
@@ -2060,7 +2066,7 @@ is_obsolete: true
 id: PO:0004013
 name: epidermal cell
 namespace: plant_structure
-def: "Cell that constitutes dermal tissue." [TAIR:ki]
+def: "A plant cell that is part of a portion of epidermis." [POC:curators]
 subset: TraitNet
 xref: CL:0000362
 is_a: PO:0009002 ! plant cell
@@ -2206,6 +2212,7 @@ name: bark
 namespace: plant_structure
 def: "All tissues outside the vascular cambium or the xylem; in older trees may be divided into dead outer bark and living inner bark, which consists of secondary phloem." [POC:curators]
 subset: TraitNet
+synonym: "portion of bark tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0005043 ! secondary phloem
 
@@ -2624,6 +2631,7 @@ id: PO:0004721
 name: paraclade cortex
 namespace: plant_structure
 def: "A portion of ground tissue that is part of a cortex and part of a paraclade." [POC:curators, TAIR:ki]
+synonym: "portion of paraclade cortex tissue" EXACT []
 xref: OBO_SF_PO:2903966
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0004720 ! paraclade
@@ -2634,6 +2642,7 @@ id: PO:0004722
 name: pedicel cortex
 namespace: plant_structure
 def: "A portion of ground tissue that is part of a cortex and part of a pedicel." [POC:curators, TAIR:ki]
+synonym: "portion of pedicel cortex tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0009052 ! pedicel
@@ -2976,6 +2985,8 @@ namespace: plant_structure
 def: "A peripheral portion of ground tissue in a plant axis that is composed of phellogen, phellem, and phelloderm." [ISBN:047124529, POC:curators]
 comment: After secondary growth, the periderm may replace the epidermis in stems and roots, rarely in other organs. In some cases, the epidermis is retained after periderm development. Periderm is derived from lateral meristem and may contain secondary phloem.
 subset: TraitNet
+synonym: "portion of periderm tissue" EXACT []
+synonym: "portion of peridermal tissue" EXACT []
 xref: OBO_SF_PO:3008013
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0025004 ! plant axis
@@ -3008,6 +3019,7 @@ name: phelloderm
 namespace: plant_structure
 def: "A portion of ground tissue often resembling cortical parenchyma produced centripetally by the cork cambium." [ISBN:0080374913]
 subset: Rice
+synonym: "portion of phelloderm tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
 relationship: part_of PO:0005048 ! shoot axis periderm
@@ -3018,6 +3030,7 @@ name: hypodermis
 namespace: plant_structure
 def: "A portion of ground tissue that is the outermost layer of a portion of cortex." [POC:curators]
 comment: A layer or layers of cells beneath the epidermis that is distinct in appearance from adjacent tissues.
+synonym: "portion of hypodermal tissue" EXACT []
 xref: OBO_SF_PO:3016668
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
@@ -3027,6 +3040,7 @@ id: PO:0005052
 name: callus
 namespace: plant_structure
 def: "A tissue formed as a result of wounding, or a tissue developing in a tissue culture." [GR:pj]
+synonym: "portion of callus tissue" EXACT []
 is_a: PO:0005421 ! parenchyma
 
 [Term]
@@ -3129,6 +3143,7 @@ def: "A portion of ground tissue composed of polyhedral cells typically with thi
 comment: Parenchyma contains relatively unspecialized cells.
 subset: TraitNet
 synonym: "portion of parenchyma tissue" EXACT []
+synonym: "portion of parenchymatous tissue" EXACT []
 xref: OBO_SF_PO:3007987
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3136,9 +3151,9 @@ is_a: PO:0025059 ! portion of ground tissue
 id: PO:0005423
 name: collenchyma
 namespace: plant_structure
-def: "Living tissue composed of more or less elongated cells with thick nonlignified primary cell walls." [GR:pj]
+def: "Living tissue composed of more or less elongated cells with thick non-lignified primary cell walls." [GR:pj]
 subset: TraitNet
-synonym: "portion of chollenchyma tissue" RELATED []
+synonym: "portion of collenchyma tissue" EXACT []
 synonym: "supporting tissue" RELATED []
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3157,6 +3172,8 @@ name: sclerenchyma
 namespace: plant_structure
 def: "A supporting tissue composed of fibers or sclereids." [ISBN:0080374913]
 subset: TraitNet
+synonym: "portion of sclerenchyma tissue" EXACT []
+synonym: "portion of sclerenchymatous tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 
 [Term]
@@ -3296,6 +3313,7 @@ subset: TraitNet
 synonym: "dermal tissue" EXACT []
 synonym: "epidermal layer" EXACT []
 synonym: "multiseriate epidermis" RELATED []
+synonym: "portion of epidermal tissue" EXACT []
 xref: OBO_SF_PO:3008011
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0006210 ! protoderm
@@ -3332,6 +3350,7 @@ name: cortex
 namespace: plant_structure
 def: "A maximal portion of ground tissue between the vascular system and the epidermis in a plant." [POC:curators]
 subset: TraitNet
+synonym: "portion of cortex tissue" EXACT []
 xref: OBO_SF_PO:3011071
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3740,7 +3759,7 @@ id: PO:0006049
 name: scutellum epidermis
 namespace: plant_structure
 def: "A portion of shoot epidermis that is part of the scutellum." [GR:pj]
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0020110 ! scutellum
 
 [Term]
@@ -3748,6 +3767,7 @@ id: PO:0006050
 name: exotesta
 namespace: plant_structure
 def: "That part of the seed coat that develops from the outer surface of the outer integument." [GR:pj]
+synonym: "portion of exotesta tissue" EXACT []
 synonym: "seed coat outer epidermis" RELATED []
 is_a: PO:0006048 ! seed coat epidermis
 relationship: part_of PO:0020057 ! testa
@@ -3757,6 +3777,7 @@ id: PO:0006051
 name: endotesta
 namespace: plant_structure
 def: "That part of the seed coat that develops from the inner epidermis of the outer integument." [GR:pj]
+synonym: "portion of endotesta tissue" EXACT []
 synonym: "seed coat inner epidermis" RELATED []
 is_a: PO:0006048 ! seed coat epidermis
 relationship: part_of PO:0020057 ! testa
@@ -4109,6 +4130,8 @@ name: pericycle
 namespace: plant_structure
 def: "A portion of ground tissue that is part of a root stele located between the phloem and endodermis." [ISBN:047124529]
 subset: reference
+synonym: "portion of pericycle tissue" EXACT []
+synonym: "portion of pericyclic tissue" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0020124 ! root stele
 
@@ -4249,6 +4272,7 @@ name: central endosperm
 namespace: plant_structure
 def: "A portion of plant tissue that is the central region of an endosperm, composed of cells that are significantly larger than those at the periphery, especially the aleurone and sub-aleurone layers." [TAIR:ki]
 comment: Also called starchy endosperm region (characteristic of some grasses).
+synonym: "portion of central endosperm tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -4565,6 +4589,7 @@ id: PO:0006333
 name: seed chalaza
 namespace: plant_structure
 def: "A remnant of the ovular chalaza that is part of the seed." [POC:curators]
+synonym: "portion of seed chalaza" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020026 ! chalaza
 relationship: part_of PO:0009010 ! seed
@@ -4584,6 +4609,7 @@ id: PO:0006336
 name: seed obturator
 namespace: plant_structure
 def: "An outgrowth of the seed funicle, that forms a bridge between the seed micropyle and other tissues. It is also a remnant form of the obturator found in the ovular funicle." [GR:pj]
+synonym: "portion of seed obturator tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020029 ! obturator
 relationship: part_of PO:0006332 ! seed funicle
@@ -8504,6 +8530,7 @@ namespace: plant_structure
 def: "A portion of plant tissue that is the morphologically distinct outer layer of the nucellus." [GR:ap]
 subset: Poaceae
 subset: Rice
+synonym: "portion of nucellar epidermis" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020020 ! nucellus
 
@@ -8514,6 +8541,7 @@ namespace: plant_structure
 def: "A portion of plant tissue that is the morphologically distinct portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:ap]
 subset: Poaceae
 subset: Rice
+synonym: "<new synonym>" RELATED []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020020 ! nucellus
 
@@ -8877,7 +8905,8 @@ id: PO:0008048
 name: scutellar epithelium
 namespace: plant_structure
 def: "A continuous layer of cylindrical cells covering the endosperm side of the scutellum. Thought to act as a secretory and absortive organ." [GR:cwt]
-synonym: "scutellum epithelium" RELATED []
+synonym: "portion of scutellar epithelium" EXACT []
+synonym: "scutellum epithelium" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020110 ! scutellum
 
@@ -9742,6 +9771,8 @@ name: tapetum
 namespace: plant_structure
 def: "Innermost part of the anther wall, involved in the nutrition of the pollen." [APWeb:Glossary, TAIR:lr]
 subset: reference
+synonym: "portion of tapetal tissue" EXACT []
+synonym: "portion of tapetum tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0006008 ! inner secondary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
@@ -9874,6 +9905,7 @@ subset: Rice
 subset: Tomato
 synonym: "fruit peel" RELATED []
 synonym: "fruit rind" RELATED []
+synonym: "portion of pericarp tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009001 ! fruit
 
@@ -9891,6 +9923,7 @@ synonym: "epicarp" EXACT []
 synonym: "flavedo" EXACT []
 synonym: "outer epidermis of pericarp" RELATED []
 synonym: "pericarp epidermis" RELATED []
+synonym: "portion of exocarp tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -9908,8 +9941,8 @@ subset: Rice
 subset: Tomato
 synonym: "citrus flesh" RELATED []
 synonym: "citrus pulp" RELATED []
-synonym: "endocarp" RELATED []
 synonym: "inner epidermis of pericarp" RELATED []
+synonym: "portion of endocarp tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -9921,6 +9954,7 @@ def: "A portion of plant tissue that is the middle layer of a pericarp." [GR:pj]
 subset: Citrus
 subset: Tomato
 synonym: "albedo" RELATED []
+synonym: "portion of mesocarp tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -9931,6 +9965,7 @@ namespace: plant_structure
 def: "A portion of plant tissue that is the covering of a seed derived from ovular - mainly integumentary - tissue." [APWeb:Glossary, GR:pj, TAIR:lr]
 comment: Used only when not specified more precisely; see testa, tegmen.
 subset: TraitNet
+synonym: "portion of seed coat tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -9941,6 +9976,7 @@ namespace: plant_structure
 def: "A maximal portion of nutritive plant tissue in a seed." [APWeb:Glossary, GR:pj]
 comment: In angiosperms endosperm is usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus; sometimes diploid or polyploid.
 subset: TraitNet
+synonym: "<new synonym>" RELATED []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -10127,6 +10163,7 @@ id: PO:0019024
 name: seed operculum
 namespace: plant_structure
 def: "A plug-like structure formed in the micropylar region of the seed coat." [ISBN:0080280293]
+synonym: "portion of seed operculum tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -10334,6 +10371,7 @@ namespace: plant_structure
 def: "One of the layers of tissue that usually covers an ovule, enveloping a nucellus and forming the micropyle at the apex." [APWeb:Glossary]
 subset: reference
 subset: TraitNet
+synonym: "portion of integument tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
@@ -10355,7 +10393,8 @@ is_a: PO:0020021 ! integument
 id: PO:0020024
 name: endothelium
 namespace: plant_structure
-def: "Cells of the inner epidermis of the inner (or only) integument of the ovule that are radially elongated and metabolically very active." [APWeb:Glossary]
+def: "A portion of plant tissue composed of cells of the inner epidermis of the inner (or only) integument of the ovule that are radially elongated and metabolically very active." [APWeb:Glossary]
+synonym: "portion of endothelium" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020022 ! inner integument
 
@@ -10379,6 +10418,7 @@ def: "Region in the ovule where the integuments and the nucellus join with the f
 comment: The chalaza is recognized as the region which initiates the two integuments at its flank.
 subset: reference
 synonym: "ovular chlaza" EXACT []
+synonym: "portion of chalaza tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
@@ -10412,6 +10452,7 @@ namespace: plant_structure
 def: "An outgrowth of the funicle, that forms a bridge between the micropyle and other tissues." [APWeb:Glossary]
 comment: Most commonly arising from the funicle, also developing from placenta, integument, etc.
 subset: reference
+synonym: "portion of obturator tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020006 ! funicle
 
@@ -10449,6 +10490,7 @@ name: coleoptile
 namespace: plant_structure
 def: "A tubular embryonic structure developed at the junction of the cotyledonary sheath with the seedling axis, and surrounding the plumule of a monocot embryo or seedling." [APWeb:Glossary]
 is_a: PO:0025099 ! embryonic plant structure
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020034
@@ -10456,6 +10498,7 @@ name: coleorhiza
 namespace: plant_structure
 def: "A portion of plant tissue surrounding the radicle in the embryo or seedling of some monocots." [APWeb:Glossary]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage.
+synonym: "portion of coleorhiza tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -10647,6 +10690,7 @@ id: PO:0020056
 name: tegmen
 namespace: plant_structure
 def: "That part of the seed coat that develops from the inner integument." [APWeb:Glossary, ISBN:0080374913]
+synonym: "portion of tegmen tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009088 ! seed coat
 
@@ -10655,6 +10699,7 @@ id: PO:0020057
 name: testa
 namespace: plant_structure
 def: "That part of the seed coat that develops from the outer integument, or from the single integument when there is only one." [APWeb:Glossary, ISBN:0080374913]
+synonym: "portion of testa tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009088 ! seed coat
 
@@ -10664,6 +10709,7 @@ name: perisperm
 namespace: plant_structure
 alt_id: PO:0006335
 def: "Diploid nutritive tissue in an angiosperm seed derived from nucellar tissue." [APWeb:Glossary]
+synonym: "portion of perisperm tissue" EXACT []
 synonym: "seed nucellus" RELATED []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
@@ -10958,6 +11004,7 @@ comment: Probably a modified cotyledon.
 synonym: "haustorial cotyledon" RELATED []
 xref: OBO_SF_PO:3132566
 is_a: PO:0025099 ! embryonic plant structure
+relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020121
@@ -11573,7 +11620,9 @@ id: PO:0025030
 name: ground tissue cell
 namespace: plant_structure
 def: "A plant cell that is part of a portion of ground tissue." [POC:curators]
+comment: Includes parenchyma, collenchyma and sclerenchyma cells.
 subset: TraitNet
+synonym: "fundamental tissue cell" EXACT []
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025059 ! portion of ground tissue
 created_by: Ramona
@@ -11627,6 +11676,7 @@ def: "A portion of parenchyma specialized for carbohydrate storage." [POC:curato
 comment: This tissue could be found in any organ, but often occurs in fruits or tubers. New GO term carbohydrate storage has been requested.
 synonym: "flesh" EXACT []
 synonym: "fleshy tissue" EXACT []
+synonym: "portion of storage parenchyma" EXACT []
 xref: CHEBI:23008 "carbohydrate"
 is_a: PO:0005421 ! parenchyma
 created_by: Ramona
@@ -12133,6 +12183,7 @@ id: PO:0025078
 name: placenta
 namespace: plant_structure
 def: "A portion of plant tissue to which ovules or seeds are attached." [ISBN:0-7167-1007-2]
+synonym: "portion of placenta tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
 creation_date: 2010-07-13T04:36:23Z
@@ -12631,6 +12682,8 @@ name: primordium
 namespace: plant_structure
 def: "A portion of plant tissue that differentiates and develops from meristem tissue into a new plant structure." [POC:curators]
 comment: The primordium is the first distinct form in the development of a plant structure.
+synonym: "portion of primordial tissue" EXACT []
+synonym: "portion of primordium tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
 creation_date: 2010-11-15T09:10:22Z
@@ -13717,6 +13770,7 @@ id: PO:0025230
 name: columella
 namespace: plant_structure
 def: "A portion of plant tissue that forms the central axis of a plant structure such as a fruit or moss capsule." [POC:curators]
+synonym: "portion of columella tissue" EXACT []
 xref: OBO_SF_PO:3132522
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
