@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 11:04:2011 11:36
+date: 12:04:2011 12:56
 saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta12
+auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -50,6 +50,7 @@ comment: Examples include seed PO:0009010 and embryo PO:0009009.
 subset: reference
 subset: TraitNet
 synonym: "gametophyte" NARROW []
+synonym: "prothallium" NARROW []
 synonym: "seedling" NARROW []
 synonym: "sporophyte" NARROW []
 xref: OBO_SF_PO:2968335
@@ -1946,13 +1947,12 @@ is_a: PO:0025073 ! branch
 
 [Term]
 id: PO:0004000
-name: embryonic apical cell
+name: obsolete apical cell
 namespace: plant_structure
-def: "An apcial cell that is part of an embryo and is the uppermost cell formed after the first division of the zygote." [RW:test]
-comment: For plants that grow via an apical cell in their sporophytic phase, the embryonic apical cell may remain an apical cell throughout the plant's life.
-is_a: PO:0030007 ! apical cell
-relationship: develops_from PO:0000423 ! zygote
-relationship: part_of PO:0009009 ! plant embryo
+def: "An embryonic plant cell that is the uppermost cell formed after the first division of the zygote." [ISBN:0471245208]
+comment: This term was originally named apical cell. It was made obsolete to avoid confusion with the new term apical cell (PO:0030007). This term is replaced by embryonic apical cell (PO:0025284).
+is_obsolete: true
+replaced_by: PO:0025284
 
 [Term]
 id: PO:0004001
@@ -3542,7 +3542,7 @@ relationship: part_of PO:0006089 ! anther primordium
 id: PO:0006015
 name: female archesporial cell
 namespace: plant_structure
-def: "In the majority of flowering plants including <i>Arabidopsis<\\i>, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell (MMC). In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte." [PMID:10465788]
+def: "In the majority of flowering plants including <i>Arabidopsis</i>, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell (MMC). In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte." [PMID:10465788]
 synonym: "female archesporial initial" EXACT []
 synonym: "ovule archesporial cell" EXACT []
 is_a: PO:0009002 ! plant cell
@@ -5518,7 +5518,7 @@ name: Poaceae theca
 namespace: plant_structure
 def: "A part of the anther of a grass stamen consisting of paired sporangia that dehisce down a common slit." [GR:pj]
 is_a: PO:0006444 ! Poaceae microsporangium
-is_a: PO:0009069 ! theca
+is_a: PO:0009069 ! anther theca
 
 [Term]
 id: PO:0006454
@@ -9617,6 +9617,7 @@ subset: TraitNet
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
+disjoint_from: PO:0030031 ! gametophytic perianth
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -9743,9 +9744,10 @@ relationship: part_of PO:0009066 ! anther
 
 [Term]
 id: PO:0009069
-name: theca
+name: anther theca
 namespace: plant_structure
 def: "A collective organ part structure that is part of an anther and consists of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
+subset: Angiosperm
 subset: reference
 is_a: PO:0025269 ! collective organ part structure
 relationship: has_part PO:0025277 ! pollen sac
@@ -10132,10 +10134,6 @@ name: embryo axis
 namespace: plant_structure
 def: "An axial part of an embryo that has as parts a hypocotyl and a root meristem or, if present, a radicle." [ISBN:0471245208, POC:rw]
 synonym: "hypocotyl-root axis" RELATED []
-is_a: PO:0025004 ! plant axis
-relationship: has_part PO:0006085 ! root meristem
-relationship: has_part PO:0020031 ! radicle
-relationship: has_part PO:0020100 ! hypocotyl
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -12337,6 +12335,7 @@ synonym: "spore capsule" EXACT []
 xref: OBO_SF_PO:3132600
 xref: OBO_SF_PO:3140824
 is_a: PO:0025001 ! cardinal organ part
+relationship: participates_in PO:0028002 ! sporophytic phase
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
 
@@ -14349,6 +14348,21 @@ created_by: Ramona
 creation_date: 2011-03-31T07:12:52Z
 
 [Term]
+id: PO:0025284
+name: embryonic apical cell
+namespace: plant_structure
+def: "An apical cell that is part of an embryo and is the uppermost cell formed after the first division of a zygote." [RW:test]
+subset: Angiosperm
+subset: Bryophytes
+subset: Gymnosperms
+subset: Pteridophytes
+is_a: PO:0030007 ! apical cell
+relationship: develops_from PO:0000423 ! zygote
+relationship: part_of PO:0009009 ! plant embryo
+created_by: Ramona
+creation_date: 2011-04-12T09:05:04Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -14457,8 +14471,10 @@ creation_date: 2011-03-10T11:37:59Z
 id: PO:0030007
 name: apical cell
 namespace: plant_structure
-def: "A single meristematic cell at the tip of a shoot apex or root apex." [RW:test]
-comment: Occurs in bryophytes and some pteridophytes, where apical growth results from division of a single meristematic cell located at the tip of the apical meristem, rather than from a population of meristematic cells located at the tip of the apical meristem. Apical cells also occur in leaves of bryophytes and some ferns. May be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge shaped with two cutting faces (in non-vascular leaves). The apical cell is established upon the first cell division of an embryo or germination of a spore.
+def: "A single meristematic cell at the tip of a shoot axis apex, leaf apex, root apex, or thallus apex." [RW:test]
+comment: Occurs in bryophytes and some pteridophytes, where apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. May be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge shaped with two cutting faces (in non-vascular leaves or thalli). An apical cell maybe established upon germination of a spore or upon the first cell division of an embryo or later.
+subset: Bryophytes
+subset: Pteridophytes
 is_a: PO:0004010 ! meristematic cell
 created_by: Ramona
 creation_date: 2011-03-25T09:35:20Z
@@ -14468,8 +14484,9 @@ id: PO:0030008
 name: root apical cell
 namespace: plant_structure
 def: "A sporophytic apical cell that is part of a root apical meristem." [RW:test]
-comment: Only occurs in the sporophytic phase of vascular plants.
-is_a: PO:0030007 ! apical cell
+comment: Occurs in the sporophytic phase of pteridophytes.
+subset: Pteridophytes
+is_a: PO:0030015 ! sporophytic apical cell
 relationship: part_of PO:0020147 ! root apical meristem
 created_by: Ramona
 creation_date: 2011-03-25T09:39:59Z
@@ -14480,6 +14497,8 @@ name: shoot apical cell
 namespace: plant_structure
 def: "An apical cell that is part of a shoot system." [RW:test]
 comment: May occur in shoot axes or leaves of bryophytes or ferns.
+subset: Bryophytes
+subset: Pteridophytes
 is_a: PO:0030007 ! apical cell
 relationship: part_of PO:0009006 ! shoot system
 created_by: Ramona
@@ -14491,6 +14510,8 @@ name: shoot axis apical cell
 namespace: plant_structure
 def: "A shoot apical cell at the tip of a shoot apical meristem." [POC:rw]
 comment: Divides to produces leaf initial cells and other stem tissues.
+subset: Bryophytes
+subset: Pteridophytes
 is_a: PO:0030009 ! shoot apical cell
 relationship: part_of PO:0020148 ! shoot apical meristem
 created_by: Ramona
@@ -14501,7 +14522,9 @@ id: PO:0030011
 name: leaf apical cell
 namespace: plant_structure
 def: "A shoot apical cell that is part of a leaf apex." [RW:test]
-comment: Occurs in the non-vascular leaves of bryophytes and the vascular leaves of some mosses. Only in plants where leaf growth is apical.
+comment: Occurs in the non-vascular leaves of bryophytes and the vascular leaves of some ferns. Only in plants where leaf growth is apical.
+subset: Bryophytes
+subset: Pteridophytes
 is_a: PO:0030009 ! shoot apical cell
 relationship: part_of PO:0020137 ! leaf apex
 created_by: Ramona
@@ -14524,6 +14547,7 @@ name: non-vascular leaf apical cell
 namespace: plant_structure
 def: "A leaf apical cell that is part of a leaf apex of a non-vascular leaf." [POC:rw]
 comment: Occurs in the non-vascular leaves of bryophytes, which grow by division of a single, wedge-shaped apical cell with two cutting faces.
+subset: Bryophytes
 synonym: "phyllid apical cell" EXACT []
 is_a: PO:0030011 ! leaf apical cell
 relationship: part_of PO:0025075 ! non-vascular leaf
@@ -14535,7 +14559,9 @@ id: PO:0030014
 name: gametophytic apical cell
 namespace: plant_structure
 def: "An apical cell that is part of a whole plant in the gametophytic phase." [RW:test]
-comment: Occurs in mosses and other bryophytes.
+comment: Occurs bryophytes and pteridophytes.
+subset: Bryophytes
+subset: Pteridophytes
 is_a: PO:0030007 ! apical cell
 intersection_of: PO:0030007 ! apical cell
 intersection_of: participates_in PO:0028003 ! gametophytic phase
@@ -14548,6 +14574,7 @@ name: sporophytic apical cell
 namespace: plant_structure
 def: "An apical cell that is part of a whole plant in the sporophytic phase." [RW:test]
 comment: Occurs in pteridophytes and the sporophyte of bryophytes.
+subset: Pteridophytes
 is_a: PO:0030007 ! apical cell
 intersection_of: PO:0030007 ! apical cell
 intersection_of: participates_in PO:0028002 ! sporophytic phase
@@ -14558,7 +14585,7 @@ creation_date: 2011-03-25T10:00:48Z
 id: PO:0030016
 name: vascular shoot system
 namespace: plant_structure
-def: "A shoot system that has as part a vascular system." [RW:test]
+def: "A shoot system that has as part vascular tissue." [RW:test]
 comment: Has xylem and/or phloem. Occurs only in the sporophytic phase of vascular plants.
 subset: Angiosperm
 subset: Gymnosperms
@@ -14585,7 +14612,9 @@ name: gametophore
 namespace: plant_structure
 def: "A non-vascular shoot system that consists of the shoot axes and non-vascular leaves of a plant in the gametophytic phase." [RW:test]
 comment: A gametophore is the leafy part of a moss gametophyte, without the protonema. Gametophores develop from buds that form on the caulonema.
+subset: Bryophytes
 is_a: PO:0030017 ! non-vascular shoot system
+relationship: develops_from PO:0030026 ! gametophore bud
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-03-25T10:28:20Z
@@ -14596,6 +14625,7 @@ name: gametophore apical cell
 namespace: plant_structure
 def: "A shoot apical cell that is part of a gametophore." [RW:test]
 comment: Occurs in the non-vascular shoot system of the gametophyte of mosses.
+subset: Bryophytes
 is_a: PO:0030009 ! shoot apical cell
 intersection_of: PO:0030009 ! shoot apical cell
 intersection_of: part_of PO:0030018 ! gametophore
@@ -14608,6 +14638,7 @@ name: gametophore axis
 namespace: plant_structure
 def: "A shoot axis that is part of a gametophore." [RW:test]
 comment: A stem or branch of the leafy part of a bryophyte.
+subset: Bryophytes
 synonym: "cauloid" EXACT []
 synonym: "non-vascular shoot axis" EXACT []
 is_a: PO:0025029 ! shoot axis
@@ -14644,6 +14675,7 @@ name: gametophore axis apical cell
 namespace: plant_structure
 def: "A shoot axis apical cell at the tip of a gametophore axis." [RW:test]
 comment: Occurs at the tips of the stems and branches of bryophytes.
+subset: Bryophytes
 synonym: "cauloid apical cell" EXACT []
 synonym: "non-vascular shoot axis apical cell" EXACT []
 is_a: PO:0030010 ! shoot axis apical cell
@@ -14667,11 +14699,262 @@ creation_date: 2011-03-25T11:46:56Z
 id: PO:0030025
 name: thallus apical cell
 namespace: plant_structure
-def: "A shoot apical cell that is part of a thallus." [RW:test]
-comment: We still need to add the term thallus.
-is_a: PO:0030009 ! shoot apical cell
+def: "An apical cell that is part of a thallus." [RW:test]
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0030007 ! apical cell
+relationship: part_of PO:0030027 ! thallus
 created_by: Ramona
 creation_date: 2011-03-25T12:09:10Z
+
+[Term]
+id: PO:0030026
+name: gametophore bud
+namespace: plant_structure
+def: "A vegetative bud that develops into a gametophore." [ISBN:9780473067304]
+comment: Occurs in mosses and leafy liverworts. Develops from a caulonema cell in mosses.
+subset: Bryophytes
+synonym: "brown bud" EXACT []
+is_a: PO:0000058 ! vegetative bud
+relationship: has_part PO:0030019 ! gametophore apical cell
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T08:22:35Z
+
+[Term]
+id: PO:0030027
+name: thallus
+namespace: plant_structure
+def: "A whole plant in the gametophytic phase that has a flat growth form and no distinct organs." [RW:test]
+comment: A thallus is a gametophyte of liverworts and pteridophytes and develops from a short-lived protonema. Roughly two dimensional growth results from division of a single apical cell. Thalli may be ribbon or heart shaped or almost filamentous. Although there are no distinct organs, there may be tissue differentiation and dichotomous branching.
+subset: Bryophytes
+subset: Pteridophytes
+synonym: "prothallium" BROAD []
+is_a: PO:0000003 ! whole plant
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T08:35:16Z
+
+[Term]
+id: PO:0030028
+name: perigonial bract
+namespace: plant_structure
+def: "A bract that subtends an antheridium." [ISBN:9780473067304, RW:test]
+comment: When an antheridium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perigonial bracts. If an antheridium occurs on a main axis of the gametophore, usually only the terminal phyllomes are perigonial bracts.
+subset: Bryophytes
+is_a: PO:0009055 ! bract
+relationship: part_of PO:0030018 ! gametophore
+created_by: Ramona
+creation_date: 2011-04-12T09:56:04Z
+
+[Term]
+id: PO:0030029
+name: sporophyte foot
+namespace: plant_structure
+def: "A plant organ that is the base of a whole plant in the sporophytic phase and attaches it to the gametophore." [RW:crum, RW:schofeld]
+comment: Found in bryophytes and some pteridophytes. In mosses, the foot is located below the seta. In ferns, the foot is formed from the upper hypobasal quandrant of the embryo. The sporophyte foot serves for both attachment and absorption. The outer portion of the foot is composed of absorptive transfer cells.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0009008 ! plant organ
+relationship: has_part PO:0000078 ! transfer cell
+relationship: participates_in PO:0028002 ! sporophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T10:01:12Z
+
+[Term]
+id: PO:0030030
+name: perichaetal bract
+namespace: plant_structure
+def: "A bract that subtends an archegonium." [RW:crum]
+comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually parichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually parichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
+subset: Bryophytes
+is_a: PO:0009055 ! bract
+relationship: part_of PO:0030018 ! gametophore
+created_by: Ramona
+creation_date: 2011-04-12T10:07:51Z
+
+[Term]
+id: PO:0030031
+name: gametophytic perianth
+namespace: plant_structure
+def: "A collective phyllome structure that consists of two or more of the most distal perichaetal bracts on a gametophore axis and surround a capsule." [RW:test]
+comment: The perichaetal bracts may fuse laterally in the gametophytic perianth. The gametophytic perianth is not the same structure as a perianth (PO:0009058) in angiosperms.
+subset: Bryophytes
+is_a: PO:0025023 ! collective phyllome structure
+disjoint_from: PO:0009058 ! perianth
+relationship: has_part PO:0030030 ! perichaetal bract
+relationship: part_of PO:0030018 ! gametophore
+created_by: Ramona
+creation_date: 2011-04-12T10:16:51Z
+
+[Term]
+id: PO:0030032
+name: seta
+namespace: plant_structure
+def: "A plant axis that holds up a spore capsule." [RW:test]
+comment: Found in some bryophytes, especially mosses.
+subset: Bryophytes
+is_a: PO:0025004 ! plant axis
+relationship: participates_in PO:0028002 ! sporophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T10:25:45Z
+
+[Term]
+id: PO:0030033
+name: antheridiophore
+namespace: plant_structure
+def: "A plant axis that bears two or more antheridia." [RW:crum]
+comment: Antheridia are borne on a disk-shaped archegonial head. Found in Marchantiales.
+subset: Bryophytes
+is_a: PO:0025004 ! plant axis
+relationship: participates_in PO:0028002 ! sporophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T10:29:01Z
+
+[Term]
+id: PO:0030034
+name: archegoniophore
+namespace: plant_structure
+def: "A plant axis that bears two or more archegonia." [RW:crum]
+comment: Archegonia are borne on an umbrella-shaped archegonial head. Found in Marchantiales.
+subset: Bryophytes
+is_a: PO:0025004 ! plant axis
+relationship: participates_in PO:0028002 ! sporophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T10:29:01Z
+
+[Term]
+id: PO:0030035
+name: antheridium stalk
+namespace: plant_structure
+def: "A stalk that is the basal part of an antheridium." [RW:test]
+comment: Raises the antheridium/venter above the rest of the gametophyte.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025066 ! stalk
+relationship: part_of PO:0025125 ! antheridium
+created_by: Ramona
+creation_date: 2011-04-12T10:39:46Z
+
+[Term]
+id: PO:0030036
+name: archegonium stalk
+namespace: plant_structure
+def: "A stalk that the basal part of an archegonium." [RW:test]
+comment: Raises the venter above the rest of the gametophyte.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025066 ! stalk
+relationship: part_of PO:0025126 ! archegonium
+created_by: Ramona
+creation_date: 2011-04-12T10:39:46Z
+
+[Term]
+id: PO:0030037
+name: spore capsule calyptra
+namespace: plant_structure
+def: "A cardinal organ part that develops from the wall of an archegonium and surrounds a sporangium." [RW:parihar, RW:test]
+comment: Found in bryophytes and pteridophytes. The calyptra is a membranous or hairy cap or hood composed of gametophytic tissue that protects the embryonic sporophyte within the archegonium. In some species, the calyptra may persist after the sporophyte develops and gets carried upward as the seta elongates.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025001 ! cardinal organ part
+relationship: develops_from PO:0025126 ! archegonium
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-12T10:53:45Z
+
+[Term]
+id: PO:0030038
+name: venter
+namespace: plant_structure
+def: "A cardinal organ part that is the enlarged basal part of an archegonium and has an egg cell located in it." [RW:test]
+subset: Bryophytes
+subset: Gymnosperms
+subset: Pteridophytes
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025126 ! archegonium
+created_by: Ramona
+creation_date: 2011-04-12T11:00:43Z
+
+[Term]
+id: PO:0030039
+name: archegonium neck
+namespace: plant_structure
+def: "A cardinal organ part that is the elongated apical part of an archegonium." [RW:test]
+comment: Early in development, the neck is occluded by a single row of neck canal cells. At maturity, the neck canal cells disintegrate, creating a canal for the sperm to enter the archegonium.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025126 ! archegonium
+created_by: Ramona
+creation_date: 2011-04-12T11:04:46Z
+
+[Term]
+id: PO:0030040
+name: sporangium base
+namespace: plant_structure
+def: "A cardinal organ part that is the basal part of a sporangium." [ISBN:9780473067304]
+comment: Term used for bryophytes and pteridophytes. The sporangium base is the sterile part of the sporangium below the theca. If swollen and distinct from the rest of the sporangium, it is called an apophysis or hypophysis.
+subset: Bryophytes
+subset: Pteridophytes
+synonym: "apophysis" NARROW []
+synonym: "hypophysis" NARROW []
+synonym: "sporangium neck" EXACT []
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-04-12T11:57:20Z
+
+[Term]
+id: PO:0030041
+name: sporangium theca
+namespace: plant_structure
+def: "A cardinal organ part that is the main body of a sporangium and has spores located in it." [RW:test]
+comment: Term used for bryophytes and pteridophytes.
+subset: Bryophytes
+subset: Pteridophytes
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-04-12T12:04:42Z
+
+[Term]
+id: PO:0030042
+name: peristome
+namespace: plant_structure
+def: "A cardinal organ part that is a single or double circle of teeth inside a spore capsule mouth." [ISBN:9780473067304]
+comment: The peristome is located under the operculum, if an operculum is present. Upon maturity of a capsule, the teeth of the peristome open to release the spores.
+subset: Bryophytes
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-04-12T12:47:52Z
+
+[Term]
+id: PO:0030043
+name: peristome tooth
+namespace: plant_structure
+def: "A cardinal organ part that is a single lobe or tooth of a peristome." [RW:test]
+comment: Peristome teeth may be simple or compound, and may be attached by their tips to the epiphragm.
+subset: Bryophytes
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0030042 ! peristome
+created_by: Ramona
+creation_date: 2011-04-12T12:50:17Z
+
+[Term]
+id: PO:0030044
+name: spore capsule operculum
+namespace: plant_structure
+def: "A cardinal organ part that is the apical part of a spore capsule that separates from the rest of the capsule during dehiscence." [RW:test]
+comment: Found in mosses. May remain partly attached to the rest of the capsule.
+subset: Bryophytes
+synonym: "sporangium lid" EXACT []
+synonym: "spore capsule lid" EXACT []
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-04-12T12:53:17Z
 
 [Typedef]
 id: derives_from
