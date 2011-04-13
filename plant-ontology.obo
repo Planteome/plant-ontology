@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:04:2011 19:33
+date: 12:04:2011 19:56
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -100,6 +100,7 @@ namespace: plant_anatomy
 def: "A cultured plant cell that was derived from root tissue." [LC:test, POC:curators]
 comment: The root-derived cultured plant cell may be derived from an isolated protoplast after the cell wall is re-established or from callus that was induced from a segment of root.
 is_a: PO:0000005 ! cultured plant cell
+relationship: derives_from PO:0025095 ! root parenchyma
 
 [Term]
 id: PO:0000009
@@ -360,7 +361,7 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000039
 name: shoot axis vascular system
 namespace: plant_structure
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a a shoot axis." [POC:curators]
+def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a shoot axis." [POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch vascular system" NARROW []
 synonym: "stem vascular system" NARROW []
@@ -8919,7 +8920,7 @@ id: PO:0009000
 name: pulvinus
 namespace: plant_structure
 def: "A cardinal organ part at the apex or base of a petiole, petiolule, leaf sheath, or branch that is differentiated from the remaining organ parts by its enlarged cross section." [POC:curators]
-comment: Often glandular. Often involved in movement of a plant structure in response to touch, gravity or light. In panicoid grasses a swollen region in the stem above the intercalary meristem. Such a definition would also include stems of Chloranthaceae, Acanthaceae, Caryophyllaceae, Amaranthaceae, etc.,  [source: APWeb:Glossary].
+comment: Often glandular. Often involved in movement of a plant structure in response to touch, gravity or light. In panicoid grasses a swollen region in the stem above the intercalary meristem. Such a definition would also include stems of Chloranthaceae, Acanthaceae, Carpels, Amaranthaceae, etc. [source: APWeb:Glossary].
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2972236
 xref: PATO:0000586 "increased size, enlarged"
