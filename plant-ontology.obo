@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:04:2011 12:56
-saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta11
+date: 12:04:2011 17:48
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -58,7 +58,7 @@ is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0000004
-name: <i>in vitro </i> plant structure
+name: in vitro plant structure
 namespace: plant_structure
 def: "A plant structure that is grown or maintained <i>in vitro </i>." [POC:curators]
 comment: <i>In vitro </i> growth is defined as microbe-free growth in a sterile, culture environment, usually in the laboratory. An example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish, culture flask or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with <i>Agrobacterium</i>.
@@ -72,7 +72,7 @@ namespace: plant_anatomy
 def: "A plant cell that is grown or maintained <i>in vitro <i/>." [POC:Curators]
 comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium.
 synonym: "cell suspension" RELATED []
-is_a: PO:0000004 ! <i>in vitro </i> plant structure
+is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -81,7 +81,7 @@ name: plant protoplast
 namespace: plant_structure
 def: "A cultured plant cell from which the entire plant cell wall has been removed." [LC:test, POC:curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
-is_a: PO:0000004 ! <i>in vitro </i> plant structure
+is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0000005 ! cultured plant cell
 
 [Term]
@@ -102,18 +102,20 @@ is_a: PO:0000005 ! cultured plant cell
 
 [Term]
 id: PO:0000009
-name: cultured callus
+name: cultured plant callus
 namespace: plant_anatomy
-def: "In vitro grown cell aggregates that originated from isolated protoplasts, cell suspensions, or from callus that was induced in sterile medium supplemented by plant growth regulators." [TAIR:ki]
-is_a: PO:0000004 ! <i>in vitro </i> plant structure
-is_a: PO:0009007 ! portion of plant tissue
+def: "A plant callus grown or maintained <i> in vitro<i/>." [POC:curators]
+comment: Cultured plant callus may induced to form from plant protoplasts or cultured plant cells in suspension culture. After supplementation with the appropriate plant growth regulators, further differentiation may lead to the development of plant tissues and ultimately a whole plant.
+is_a: PO:0000004 ! in vitro plant structure
+is_a: PO:0005052 ! plant callus
+relationship: has_part PO:0000005 ! cultured plant cell
 
 [Term]
 id: PO:0000010
 name: cultured embryo
 namespace: plant_anatomy
 def: "In vitro isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte)." [TAIR:ki]
-is_a: PO:0000004 ! <i>in vitro </i> plant structure
+is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0009009 ! plant embryo
 
 [Term]
@@ -3037,11 +3039,12 @@ relationship: part_of PO:0005708 ! cortex
 
 [Term]
 id: PO:0005052
-name: callus
+name: plant callus
 namespace: plant_structure
-def: "A tissue formed as a result of wounding, or a tissue developing in a tissue culture." [GR:pj]
+def: "A portion of plant tissue that consists of mass of undifferentiated plant cells." [GR:pj, POC:curators]
+comment: May be formed as a result of wounding or may develop in <i> in vitro<i/> culture.
 synonym: "portion of callus tissue" EXACT []
-is_a: PO:0005421 ! parenchyma
+is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
 id: PO:0005053
@@ -4079,14 +4082,14 @@ name: organogenic callus
 namespace: plant_structure
 def: "A type of cultured callus that has competence to form any organ such as root, leaf, shoot, leafless shoot or bare stem, etc." [POC:curators]
 synonym: "meristematic callus" RELATED []
-is_a: PO:0000009 ! cultured callus
+is_a: PO:0000009 ! cultured plant callus
 
 [Term]
 id: PO:0006091
 name: embryogenic callus
 namespace: plant_anatomy
 def: "A type of cultured callus that form embryo-like structures such as somatic embryos." [POC:curators]
-is_a: PO:0000009 ! cultured callus
+is_a: PO:0000009 ! cultured plant callus
 
 [Term]
 id: PO:0006109
@@ -8982,8 +8985,8 @@ relationship: develops_from PO:0009062 ! gynoecium
 id: PO:0009002
 name: plant cell
 namespace: plant_anatomy
-def: "A plant structure which has as its parts a maximally connected lumen and the contents of this lumen and any external encapsulating structures (if present) such as the plasma membrane and the plant cell wall." [GO:0005623 "cell", LC:test]
-comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid). Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". See definition of plant-type cell wall GO:0009505. Egg and sperm cells lack the cell wall.
+def: "A cell which is a plant structure." [GO:0005623 "cell", POC:Curators]
+comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if\npresent) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505.  Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
 subset: reference
 subset: TraitNet
 synonym: "c&#233lula de planta" EXACT Spanish []
@@ -9051,13 +9054,14 @@ is_a: PO:0025007 ! collective plant structure
 id: PO:0009007
 name: portion of plant tissue
 namespace: plant_structure
-def: "A plant structure that has as its parts multiple cells and is a proper part of an organ." [POC:curators, TAIR:lr]
-comment: These cells are organized into a structural unit, and may include an intercellular matrix.
+def: "A multicellular plant structure which consists predominantly of similarly specialized cells of one or more types." [POC:curators, TAIR:lr]
+comment: May contain one or several types of cells, organized into a structural unit and may include an intercellular matrix. May also include other types of isolated cells, such as idioblasts in parenchyma tissue.
 subset: reference
 subset: TraitNet
 synonym: "plant tissue" RELATED []
 xref: OBO_SF_PO:2944945
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0025001 ! cardinal organ part
 
 [Term]
 id: PO:0009008
