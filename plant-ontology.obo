@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:04:2011 13:29
-saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta11
+date: 18:04:2011 15:47
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -323,6 +323,7 @@ def: "A plant structure that includes the totality of the portions of vascular t
 comment: The vascular system may also contain portions of ground tissue.
 subset: TraitNet
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0000003 ! whole plant
 relationship: part_of PO:0000003 ! whole plant
 
 [Term]
@@ -8996,6 +8997,9 @@ xref: CL:0000610
 xref: GO:0005623
 xref: OBO_SF_PO:2932524
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0000034 ! vascular system
+disjoint_from: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0009008 ! plant organ
 
 [Term]
 id: PO:0009003
@@ -9056,13 +9060,15 @@ is_a: PO:0025007 ! collective plant structure
 id: PO:0009007
 name: portion of plant tissue
 namespace: plant_structure
-def: "A multicellular plant structure which consists predominantly of similarly specialized cells of one or more types." [POC:curators, TAIR:lr]
-comment: May contain one or several types of cells, organized into a structural unit and may include an intercellular matrix. May also include other types of isolated cells, such as idioblasts in parenchyma tissue.
+def: "A plant structure that consists predominantly of similarly specialized cells of one or more types." [POC:curators, TAIR:lr]
+comment: A portion of plant tissue may contain one or several types of cells that are organized in a specific spatial arrangement into a structural unit (which includes a mass of callus) and may include an intercellular matrix. May include other types of isolated cells, such as idioblasts.
 subset: reference
 subset: TraitNet
 synonym: "plant tissue" RELATED []
 xref: OBO_SF_PO:2944945
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0000003 ! whole plant
+disjoint_from: PO:0000034 ! vascular system
 disjoint_from: PO:0025001 ! cardinal organ part
 
 [Term]
@@ -9076,7 +9082,9 @@ synonym: "compound plant organ" RELATED []
 synonym: "simple plant organ" RELATED [PATO:01503]
 xref: OBO_SF_PO:2932521
 is_a: PO:0009011 ! plant structure
-relationship: part_of PO:0000003 ! whole plant
+disjoint_from: PO:0000003 ! whole plant
+disjoint_from: PO:0000034 ! vascular system
+disjoint_from: PO:0009007 ! portion of plant tissue
 
 [Term]
 id: PO:0009009
@@ -11305,6 +11313,10 @@ subset: TraitNet
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2945268
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0000003 ! whole plant
+disjoint_from: PO:0000034 ! vascular system
+disjoint_from: PO:0009002 ! plant cell
+disjoint_from: PO:0009008 ! plant organ
 relationship: part_of PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-11T01:18:24Z
@@ -11374,9 +11386,14 @@ subset: TraitNet
 synonym: "collective plant organ structure" EXACT []
 xref: OBO_SF_PO:2954382
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0000003 ! whole plant
+disjoint_from: PO:0000034 ! vascular system
+disjoint_from: PO:0009002 ! plant cell
+disjoint_from: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0009008 ! plant organ
+disjoint_from: PO:0025001 ! cardinal organ part
 disjoint_from: PO:0025269 ! collective organ part structure
 relationship: has_part PO:0009008 ! plant organ
-relationship: part_of PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
 
@@ -14201,9 +14218,14 @@ def: "A plant structure composed of two or more cardinal organ parts from adjace
 comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths. Unlike a collective plant structure, a collective organ part structure does not contain any complete organs.
 xref: OBO_SF_PO:3175301
 is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0000003 ! whole plant
+disjoint_from: PO:0000034 ! vascular system
+disjoint_from: PO:0009002 ! plant cell
+disjoint_from: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0009008 ! plant organ
+disjoint_from: PO:0025001 ! cardinal organ part
 disjoint_from: PO:0025007 ! collective plant structure
 relationship: has_part PO:0025001 ! cardinal organ part
-relationship: part_of PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2011-02-09T02:57:59Z
 
