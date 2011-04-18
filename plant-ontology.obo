@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:04:2011 19:56
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta12
+date: 18:04:2011 13:29
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -9149,12 +9149,15 @@ replaced_by: PO:0005679
 id: PO:0009015
 name: portion of vascular tissue
 namespace: plant_structure
-def: "A portion of plant tissue that has parts xylem and phloem." [APweb:Glossary]
-comment: Functions in conduction and support. In the stem it is often found as a stele, surrounded by the cortex and surrounding the pith.
+def: "A portion of axial tissue that has as part vascular axial cells." [RW:test]
+comment: Functions in conduction and support. In a shoot axis, vascular tissue is often found as part of a stele. May be associated with other types of tissue, such as fibers.
 subset: TraitNet
 synonym: "vascular system" RELATED []
 xref: BTO:0001432 "vascular tissue"
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0030046 ! portion of axial tissue
+disjoint_from: PO:0030047 ! hydrome
+disjoint_from: PO:0030048 ! leptome
+disjoint_from: PO:0030049 ! portion of plant fiber
 relationship: part_of PO:0005020 ! vascular bundle
 
 [Term]
@@ -14961,6 +14964,55 @@ is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2011-04-12T12:53:17Z
+
+[Term]
+id: PO:0030046
+name: portion of axial tissue
+namespace: plant_structure
+def: "A portion of plant tissue that has as parts axial cells." [RW:test]
+comment: Axial tissue occurs in elongated strands. In plant axes, the axial tissue runs parallel to the axis, but may have other orientations in organs such as phyllomes.
+is_a: PO:0009007 ! portion of plant tissue
+created_by: Ramona
+creation_date: 2011-04-18T09:30:35Z
+
+[Term]
+id: PO:0030047
+name: hydrome
+namespace: plant_structure
+def: "A portion of axial tissue that has as parts hyrdoids." [RW:test]
+comment: Found in bryophytes, in the center of a non-vascular shoot axis such as a gametophore or seta. Often surrounded by leptome. May function in water conduction and may provide support.
+is_a: PO:0030046 ! portion of axial tissue
+disjoint_from: PO:0009015 ! portion of vascular tissue
+disjoint_from: PO:0030048 ! leptome
+disjoint_from: PO:0030049 ! portion of plant fiber
+created_by: Ramona
+creation_date: 2011-04-18T09:34:43Z
+
+[Term]
+id: PO:0030048
+name: leptome
+namespace: plant_structure
+def: "A portion of axial tissue that has as parts leptoids." [RW:test]
+comment: Found in bryophytes, in non-vascular shoot axes such as a gametophore or seta, often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
+is_a: PO:0030046 ! portion of axial tissue
+disjoint_from: PO:0009015 ! portion of vascular tissue
+disjoint_from: PO:0030047 ! hydrome
+disjoint_from: PO:0030049 ! portion of plant fiber
+created_by: Ramona
+creation_date: 2011-04-18T09:34:43Z
+
+[Term]
+id: PO:0030049
+name: portion of plant fiber
+namespace: plant_structure
+def: "A portion axial tissue that has as parts fiber cells." [RW:test]
+comment: Contains elongated, lignified fiber cells that are dead at maturity.
+is_a: PO:0030046 ! portion of axial tissue
+disjoint_from: PO:0009015 ! portion of vascular tissue
+disjoint_from: PO:0030047 ! hydrome
+disjoint_from: PO:0030048 ! leptome
+created_by: Ramona
+creation_date: 2011-04-18T09:34:43Z
 
 [Typedef]
 id: derives_from
