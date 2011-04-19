@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:04:2011 15:47
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta12
+date: 19:04:2011 10:03
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -618,10 +618,10 @@ creation_date: 2011-02-02T11:55:06Z
 id: PO:0000066
 name: epithem cell
 namespace: plant_structure
-def: "Cell of the mesophyll of a hydathode found between the xylem endings and the epidermis." [ISBN:0471245208, PMID:12662305]
+def: "A parenchyma cell of the mesophyll of a hydathode found between the xylem endings and the epidermis." [ISBN:0471245208, PMID:12662305]
 comment: Proposed to be involved in the retrieval of solutes from the xylem sap.
 xref: CL:0000074
-is_a: PO:0025030 ! ground tissue cell
+is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005660 ! hydathode
 
 [Term]
@@ -964,6 +964,7 @@ id: PO:0000272
 name: protoxylem
 namespace: plant_structure
 def: "A portion of xylem tissue composed of any of the first formed elements of the primary xylem." [ISBN:047125208]
+synonym: "portion of protoxylem tissue" EXACT []
 is_a: PO:0005352 ! xylem
 relationship: part_of PO:0005849 ! primary xylem
 
@@ -1150,6 +1151,7 @@ id: PO:0000372
 name: metaxylem
 namespace: plant_structure
 def: "A portion of xylem tissue that is part of the primary xylem and differentiates after the protoxylem and before the secondary xylem, if any of the latter is formed." [ISBN:047125208]
+synonym: "portion of metaxylem tissue" EXACT []
 is_a: PO:0005352 ! xylem
 relationship: part_of PO:0005849 ! primary xylem
 
@@ -2862,12 +2864,11 @@ relationship: part_of PO:0009030 ! carpel
 id: PO:0005020
 name: vascular bundle
 namespace: plant_structure
-def: "A unit strand of the vascular system containing the vascular tissues, xylem and phloem. In addition vascular cambium is often present." [GR:pj]
-comment: May also contain portions of ground tissue.
+def: "A portion of vascular tissue that is a unit strand of the vascular system and has as part xylem or phloem." [RW:test]
+comment: Usually contains both xylem or phloem. May also contain other types of tissue such as plant fibers or vascular cambium. May also contain portions of ground tissue.
 subset: Maize
 subset: TraitNet
-is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0000034 ! vascular system
+is_a: PO:0009015 ! portion of vascular tissue
 
 [Term]
 id: PO:0005021
@@ -2981,6 +2982,7 @@ namespace: plant_structure
 def: "A portion of phloem tissue formed by the activity of the vascular cambium." [ISBN:0122151704]
 comment: Part of the bark.
 subset: TraitNet
+synonym: "portion of secondary phloem tissue" EXACT []
 is_a: PO:0005417 ! phloem
 
 [Term]
@@ -3107,9 +3109,10 @@ is_obsolete: true
 id: PO:0005352
 name: xylem
 namespace: plant_structure
-def: "A portion of vascular tissue composed of xylem elements." [GR:pj]
+def: "A portion of vascular tissue that has as parts xylem elements." [GR:pj]
 comment: The principal function is the upward translocation of water and solutes. See also primary xylem and secondary xylem.
 subset: TraitNet
+synonym: "portion of xylem tissue" EXACT []
 is_a: PO:0009015 ! portion of vascular tissue
 
 [Term]
@@ -3137,8 +3140,10 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0005417
 name: phloem
 namespace: plant_structure
-def: "A portion of vascular tissue whose principal function is conducting organic substances." [GR:pj]
+def: "A portion of vascular tissue that has as parts sieve tube members." [RW:test]
+comment: Functions in the conduction of organic substances in vascular plants.
 subset: TraitNet
+synonym: "portion of phloem tissue" EXACT []
 is_a: PO:0009015 ! portion of vascular tissue
 
 [Term]
@@ -3280,9 +3285,9 @@ is_a: PO:0009007 ! portion of plant tissue
 id: PO:0005660
 name: hydathode
 namespace: plant_structure
-def: "A structural modification of vascular and non-vascular tissues, usually in a leaf, that permits the release of water through a pore in the epidermis." [GR:pj, ISBN:0080374913]
-is_a: PO:0005656 ! portion of secretory tissue
-is_a: PO:0009015 ! portion of vascular tissue
+def: "A cardinal organ part that releases water through a pore." [ISBN:0471244554]
+comment: Usually found on leaves. Hydathodes may have one or more pores, that appear to be incompletely developed stomata that lack the ability to open and close. Generally, hydathodes are located at the end of a minor vein. In many plants, hydathodes includes a portion of thin-walled parenchyma between the tracheary elements and the pore, known as an epithem. In some plants, hydathodes are associated with secretory tissue.
+is_a: PO:0025001 ! cardinal organ part
 
 [Term]
 id: PO:0005661
@@ -3384,6 +3389,7 @@ namespace: plant_structure
 def: "A portion of xylem tissue that develops from a vascular cambium." [ISBN:0471245194, POC:curators]
 comment: Absent in some dicots and most monocots. The "wood" of gymnosperm and dicot angiosperm trees, shrubs, and lianas.
 subset: TraitNet
+synonym: "portion of secondary xylem tissue" EXACT []
 synonym: "wood" EXACT []
 is_a: PO:0005352 ! xylem
 relationship: develops_from PO:0005598 ! vascular cambium
@@ -3395,6 +3401,7 @@ namespace: plant_structure
 def: "A portion of xylem tissue of the primary plant body." [GR:pj, ISBN:0122151704, ISBN:0471245194]
 comment: In stem or root it is differentiated behind the apical meristem.
 subset: TraitNet
+synonym: "portion of primary xylem tissue" EXACT []
 is_a: PO:0005352 ! xylem
 
 [Term]
@@ -3963,22 +3970,25 @@ namespace: plant_structure
 def: "A portion of phloem tissue of the primary plant body." [ISBN:0122151704]
 comment: In stem or root it is differentiated behind the apical meristem.
 subset: TraitNet
+synonym: "portion of primary phloem tissue" EXACT []
 is_a: PO:0005417 ! phloem
 
 [Term]
 id: PO:0006076
 name: metaphloem
 namespace: plant_structure
-def: "Part of the primary phloem that differentiates after the protophloem and before the secondary phloem, if any of the latter is formed." [ISBN:0471245194]
-is_a: PO:0009015 ! portion of vascular tissue
+def: "A portion of phloem tissue that is the part of a primary phloem that differentiates after the protophloem and before the secondary phloem, if any of the latter is formed." [ISBN:0471245194]
+synonym: "portion of metaphloem tissue" EXACT []
+is_a: PO:0005417 ! phloem
 relationship: part_of PO:0006075 ! primary phloem
 
 [Term]
 id: PO:0006077
 name: protophloem
 namespace: plant_structure
-def: "The first-formed elements of the primary phloem." [ISBN:0471245194]
-is_a: PO:0009015 ! portion of vascular tissue
+def: "A portion of phloem tissue that has as parts the first-formed elements of the primary phloem." [ISBN:0471245194]
+synonym: "portion of protophloem tissue" EXACT []
+is_a: PO:0005417 ! phloem
 relationship: part_of PO:0006075 ! primary phloem
 
 [Term]
@@ -9157,16 +9167,15 @@ replaced_by: PO:0005679
 id: PO:0009015
 name: portion of vascular tissue
 namespace: plant_structure
-def: "A portion of axial tissue that has as part vascular axial cells." [RW:test]
-comment: Functions in conduction and support. In a shoot axis, vascular tissue is often found as part of a stele. May be associated with other types of tissue, such as fibers.
+def: "A portion of axial tissue that has as parts tracheary elements or sieve tube members and is part of a vascular system." [RW:test]
+comment: Functions in conduction and support. In shoot axes, vascular tissue is often found as part of a stele or may occur as scattered vascular bundles. May include other types of tissue, such as fibers.
 subset: TraitNet
 synonym: "vascular system" RELATED []
 xref: BTO:0001432 "vascular tissue"
 is_a: PO:0030046 ! portion of axial tissue
 disjoint_from: PO:0030047 ! hydrome
 disjoint_from: PO:0030048 ! leptome
-disjoint_from: PO:0030049 ! portion of plant fiber
-relationship: part_of PO:0005020 ! vascular bundle
+relationship: part_of PO:0000034 ! vascular system
 
 [Term]
 id: PO:0009016
@@ -10186,8 +10195,8 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0019026
 name: tracheid bar
 namespace: plant_structure
-def: "A distinct ring-like structure, composed of tracheid cells, which surrounds the hilum of some taxa e.g., Phaseolus, and forms a groove in the surface of the pericarp (immediately adjacent to the hilum)." [ISBN:0080280293]
-is_a: PO:0009015 ! portion of vascular tissue
+def: "A portion of xylem tissue that is a distinct ring-like structure composed of tracheid cells that surrounds the hilum of some taxa e.g., Phaseolus, and forms a groove in the surface of the pericarp (immediately adjacent to the hilum)." [ISBN:0080280293]
+is_a: PO:0005352 ! xylem
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -15030,7 +15039,6 @@ namespace: plant_structure
 def: "A portion axial tissue that has as parts fiber cells." [RW:test]
 comment: Contains elongated, lignified fiber cells that are dead at maturity.
 is_a: PO:0030046 ! portion of axial tissue
-disjoint_from: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0030047 ! hydrome
 disjoint_from: PO:0030048 ! leptome
 created_by: Ramona
