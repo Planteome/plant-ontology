@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 19:04:2011 19:34
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta12
+date: 20:04:2011 14:42
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -21,16 +21,6 @@ synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 ontology: po
 treat-xrefs-as-is_a: CARO
-
-[Term]
-id: ID:0000000
-name: callus parenchyma
-namespace: plant_anatomy
-def: "A portion of parenchyma that is part of a plant callus." [POC:curators, XX:<new dbxref>]
-is_a: PO:0005421 ! parenchyma
-relationship: part_of PO:0005052 ! plant callus
-created_by: cooperl
-creation_date: 2011-04-19T06:13:18Z
 
 [Term]
 id: PO:0000001
@@ -2537,8 +2527,8 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004708
 name: scutellar node
 namespace: plant_structure
-def: "A stem node that is the part of an embryo axis where the scutellum is attached." [MaizeGDB:lv, POC:rw]
-comment: A scutellum is attached to an embryo axis between the primary root (enclosed in the coleorhiza) and the plumule (enclosed in the coleoptile).
+def: "A stem node that is the part of an embryo axis directly above the radicle where the scutellum is attached." [ISBN:0471244554]
+comment: Found in grasses where no hypocotyl is present. The scutellar node may represent a reduction of the hopocotyl and cotelydonary node.
 is_a: PO:0020141 ! stem node
 relationship: part_of PO:0019018 ! embryo axis
 
@@ -2677,8 +2667,9 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0004724
 name: hypocotyl-root junction
 namespace: plant_structure
-def: "A cardinal organ part that is the part of an embryonic axis where the radicle joins the hypocotyl." [POC:rw]
+def: "A cardinal organ part that is the part of an embryonic axis where the radicle joins the hypocotyl." [ISBN:9780881928501, POC:rw]
 subset: reference
+synonym: "embryo axis transition zone" EXACT [ISBN:9780881928501]
 xref: OBO_SF_PO:3132568
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0019018 ! embryo axis
@@ -4657,7 +4648,8 @@ relationship: part_of PO:0020136 ! Zea ear
 id: PO:0006338
 name: embryonic leaf
 namespace: plant_structure
-def: "A vascular leaf that is one of the first few leaves to develop from the embryonic shoot apical meristem and is part of an embryo." [GR:pj]
+def: "A vascular leaf that is part of an embryo and is one of the first few leaves to develop from the embryonic shoot apical meristem." [GR:pj]
+comment: This term is used to described not yet fully-developed leaves that are part of an embryo.
 is_a: PO:0009025 ! vascular leaf
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -10170,8 +10162,10 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0019018
 name: embryo axis
 namespace: plant_structure
-def: "An axial part of an embryo that has as parts a hypocotyl and a root meristem or, if present, a radicle." [ISBN:0471245208, POC:rw]
-synonym: "hypocotyl-root axis" RELATED []
+def: "A plant axis that is the axial part of an embryo." [ISBN:0471245208, POC:rw]
+comment: Has as parts a hypocotyl, a root meristem and a radicle, if any of these are present.
+synonym: "hypocotyl-root axis" EXACT []
+is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -10524,19 +10518,18 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020033
 name: coleoptile
 namespace: plant_structure
-def: "A tubular embryonic structure developed at the junction of the cotyledonary sheath with the seedling axis, and surrounding the plumule of a monocot embryo or seedling." [APWeb:Glossary]
-is_a: PO:0025099 ! embryonic plant structure
+def: "A phyllome that surrounds the plumule of an embryo or the emerging shoot apex of a seedling." [ISBN:0471244554, ISBN:9781842464229]
+comment: Found in Poaceae. Develops at the first node above the scutellum, and thus is often thought to be the first leaf. Protects the emerging shoot system as it grows through the soil.
+is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020034
 name: coleorhiza
 namespace: plant_structure
-def: "A portion of plant tissue surrounding the radicle in the embryo or seedling of some monocots." [APWeb:Glossary]
-comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage.
-synonym: "portion of coleorhiza tissue" EXACT []
-is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0009009 ! plant embryo
+def: "A plant organ that surrounds the radicle in the embryo and seedling." [ISBN:0471244554]
+comment: Found in Poaceae and some other monocots. Protects the emerging embryonic root. The parenchyma cells of both the coleorhiza and epiblast may function in storage.
+is_a: PO:0009008 ! plant organ
 
 [Term]
 id: PO:0020035
@@ -10954,7 +10947,7 @@ is_a: PO:0009002 ! plant cell
 id: PO:0020100
 name: hypocotyl
 namespace: plant_structure
-def: "A shoot axis that is the part of a stem below the cotyledonary node and transitional to a root." [APWeb:Glossary, POC:curators]
+def: "A stem internode that is the part of a stem below the cotyledonary node and transitional to a root." [APWeb:Glossary, RW:test]
 xref: OBO_SF_PO:2971884
 is_a: PO:0020142 ! stem internode
 
@@ -11412,8 +11405,6 @@ disjoint_from: PO:0000034 ! vascular system
 disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009008 ! plant organ
-disjoint_from: PO:0025001 ! cardinal organ part
-disjoint_from: PO:0025269 ! collective organ part structure
 relationship: has_part PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
@@ -12430,8 +12421,8 @@ creation_date: 2010-12-17T02:04:06Z
 id: PO:0025099
 name: embryonic plant structure
 namespace: plant_structure
-def: "A plant structure that is part of an embryo." [POC:rw]
-comment: Includes organs, tissues and cell types that are unique to embryos, not plant structures that can occur in both embryos and mature plant structures.
+def: "A plant structure that is part of an embryo." [POC:curators]
+comment: Includes plant structures that only occur in embryos (such as suspensor) as well as plant structures that are part of an embryo when a plant is in the embryonic phase (such as embryonic radicle).
 xref: OBO_SF_PO:3132547
 is_a: PO:0009011 ! plant structure
 intersection_of: part_of PO:0009009 ! plant embryo
@@ -14244,8 +14235,6 @@ disjoint_from: PO:0000034 ! vascular system
 disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009008 ! plant organ
-disjoint_from: PO:0025001 ! cardinal organ part
-disjoint_from: PO:0025007 ! collective plant structure
 relationship: has_part PO:0025001 ! cardinal organ part
 created_by: Ramona
 creation_date: 2011-02-09T02:57:59Z
@@ -14413,6 +14402,75 @@ relationship: develops_from PO:0000423 ! zygote
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-12T09:05:04Z
+
+[Term]
+id: PO:0025285
+name: callus parenchyma
+namespace: plant_structure
+def: "A portion of parenchyma that is part of a plant callus." [POC:curators]
+is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0005052 ! plant callus
+created_by: Ramona
+creation_date: 2011-04-20T02:00:16Z
+
+[Term]
+id: PO:0025286
+name: embryonic coleoptile
+namespace: plant_structure
+def: "A coleoptile that is part of an embryo." [POC:rw]
+synonym: "embryo coleoptile" EXACT []
+is_a: PO:0020033 ! coleoptile
+relationship: part_of PO:0009009 ! plant embryo
+created_by: Ramona
+creation_date: 2011-04-20T02:20:11Z
+
+[Term]
+id: PO:0025287
+name: seedling coleoptile
+namespace: plant_structure
+def: "A coleoptile that is part of a whole plant in the seedling phase." [POC:rw]
+is_a: PO:0020033 ! coleoptile
+created_by: Ramona
+creation_date: 2011-04-20T02:20:12Z
+
+[Term]
+id: PO:0025288
+name: embryonic coleorhiza
+namespace: plant_structure
+def: "A coleorhiza that is part of an embryo." [POC:rw]
+synonym: "embryo coleorhiza" EXACT []
+is_a: PO:0020034 ! coleorhiza
+relationship: part_of PO:0009009 ! plant embryo
+created_by: Ramona
+creation_date: 2011-04-20T02:34:16Z
+
+[Term]
+id: PO:0025289
+name: seedling coleorhiza
+namespace: plant_structure
+def: "A coleorhiza that is part of a whole plant in the seedling phase." [POC:rw]
+is_a: PO:0020034 ! coleorhiza
+created_by: Ramona
+creation_date: 2011-04-20T02:34:17Z
+
+[Term]
+id: PO:0025290
+name: embryonic hypocotyl
+namespace: plant_structure
+def: "A hypocotyl that is part of an embryo." [POC:rw]
+synonym: "embryo hypocotyl" EXACT []
+is_a: PO:0020100 ! hypocotyl
+created_by: Ramona
+creation_date: 2011-04-20T02:39:46Z
+
+[Term]
+id: PO:0025291
+name: seedling hypocotyl
+namespace: plant_structure
+def: "A hypocotyl that is part of a whole plant in the seedling phase." [POC:rw]
+is_a: PO:0020100 ! hypocotyl
+created_by: Ramona
+creation_date: 2011-04-20T02:39:56Z
 
 [Term]
 id: PO:0028001
