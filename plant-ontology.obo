@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 19:04:2011 10:03
-saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta11
+date: 19:04:2011 19:34
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -21,6 +21,16 @@ synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 ontology: po
 treat-xrefs-as-is_a: CARO
+
+[Term]
+id: ID:0000000
+name: callus parenchyma
+namespace: plant_anatomy
+def: "A portion of parenchyma that is part of a plant callus." [POC:curators, XX:<new dbxref>]
+is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0005052 ! plant callus
+created_by: cooperl
+creation_date: 2011-04-19T06:13:18Z
 
 [Term]
 id: PO:0000001
@@ -91,16 +101,16 @@ namespace: plant_anatomy
 def: "A cultured plant cell that was derived from leaf tissue." [LC:test, POC:Curators]
 comment: May be derived from cultured plant callus or plant protoplast that was induced from a segment of leaf. In the case of the plant protoplast, after the re-establishment cell walls.
 is_a: PO:0000005 ! cultured plant cell
-relationship: derives_from PO:0005645 ! leaf mesophyll
+relationship: derives_from PO:0025034 ! leaf
 
 [Term]
 id: PO:0000008
 name: root-derived cultured plant cell
 namespace: plant_anatomy
 def: "A cultured plant cell that was derived from root tissue." [LC:test, POC:curators]
-comment: The root-derived cultured plant cell may be derived from an isolated protoplast after the cell wall is re-established or from callus that was induced from a segment of root.
+comment: May be derived from cultured plant callus or plant protoplasts induced from a segment of root. In the case of the plant protoplast, after the re-establishment plant cell walls.
 is_a: PO:0000005 ! cultured plant cell
-relationship: derives_from PO:0025095 ! root parenchyma
+relationship: derives_from PO:0009005 ! root
 
 [Term]
 id: PO:0000009
@@ -3047,7 +3057,7 @@ id: PO:0005052
 name: plant callus
 namespace: plant_structure
 def: "A portion of plant tissue that consists of mass of undifferentiated plant cells." [GR:pj, POC:curators]
-comment: May be formed as a result of wounding or may develop in <i> in vitro<i/> culture.
+comment: Consists primarily of parenchyma cells but may contain other cell types as the callus begins to differentiate. May be formed as a result of wounding or may develop in culture.
 synonym: "portion of callus tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 
@@ -3150,7 +3160,7 @@ is_a: PO:0009015 ! portion of vascular tissue
 id: PO:0005421
 name: parenchyma
 namespace: plant_structure
-def: "A portion of ground tissue composed of polyhedral cells typically with thin, non-lignified cellulosic cell walls and nucleate living protoplasts." [POC:curators]
+def: "A portion of ground tissue composed of polyhedral cells typically with thin, non-lignified cellulosic cell walls and nucleate, living protoplasts." [POC:curators]
 comment: Parenchyma contains relatively unspecialized cells.
 subset: TraitNet
 synonym: "portion of parenchyma tissue" EXACT []
@@ -4093,7 +4103,8 @@ is_a: PO:0025127 ! primordium
 id: PO:0006090
 name: organogenic callus
 namespace: plant_structure
-def: "A type of cultured callus that has competence to form any organ such as root, leaf, shoot, leafless shoot or bare stem, etc." [POC:curators]
+def: "A cultured plant callus that is capable of forming plant organs." [POC:curators]
+comment: Plant organs may be formed after the cultured plant callus is treated with plant growth regulators.
 synonym: "meristematic callus" RELATED []
 is_a: PO:0000009 ! cultured plant callus
 
@@ -4101,7 +4112,8 @@ is_a: PO:0000009 ! cultured plant callus
 id: PO:0006091
 name: embryogenic callus
 namespace: plant_anatomy
-def: "A type of cultured callus that form embryo-like structures such as somatic embryos." [POC:curators]
+def: "A cultured plant callus that is capable of forming somatic embryos." [POC:curators]
+comment: Somatic embryos may be formed after the cultured plant callus is treated with plant growth regulators.
 is_a: PO:0000009 ! cultured plant callus
 
 [Term]
@@ -8999,7 +9011,7 @@ id: PO:0009002
 name: plant cell
 namespace: plant_anatomy
 def: "A cell which is a plant structure." [GO:0005623 "cell", POC:Curators]
-comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if\npresent) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505.  Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
+comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505.  Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
 subset: reference
 subset: TraitNet
 synonym: "c&#233lula de planta" EXACT Spanish []
@@ -9099,9 +9111,9 @@ disjoint_from: PO:0009007 ! portion of plant tissue
 [Term]
 id: PO:0009009
 name: plant embryo
-namespace: plant_structure
+namespace: plant_anatomy
 def: "A whole plant in the post-zygotic stage that does not yet consist of fully differentiated tissues." [POC:curators]
-comment: Adventitious embryos and somatic embryos do not arise from zygotes. Cultured embryos (PO:0000010), including haploid embryos, are in vitro</i> plant structures. Embryos occur prior to germination in vascular plants.
+comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryonic phase varies among taxa. In seed plants, the embryonic phase ends with germination. In pteridophytes, the embryonic phase ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryonic phase ends when the apical cell stops dividing, which is when the sporangium begins to develop.
 synonym: "embri&#243n de planta" EXACT Spanish []
 synonym: "germ" RELATED []
 xref: OBO_SF_PO:2982384
@@ -9716,7 +9728,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009064
 name: receptacle
 namespace: plant_structure
-def: "A cardinal organ part that is the region at the distal end of either a peduncle or a pedicel where the floral appendages (for example, sepals, petals, stamens, and pistils) are attached." [web:http\://www.bbg.org/gar2/topics/botany/parts_flowers.html]
+def: "A cardinal organ part that is the region at the distal end of either a peduncle or a pedicel where the floral appendages (e.g.: sepals, petals, stamens and pistils) are attached." [web:http\://www.bbg.org/gar2/topics/botany/parts_flowers.html]
 subset: reference
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2975273
