@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:04:2011 12:09
+date: 25:04:2011 14:58
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
@@ -648,7 +648,7 @@ relationship: part_of PO:0005421 ! parenchyma
 id: PO:0000075
 name: collenchyma cell
 namespace: plant_structure
-def: "Elongated living cells with unevenly thickened nonlignified primary walls." [ISBN:0471245208]
+def: "An elongated plant cell with unevenly thickened non-lignified primary walls that is alive at maturity." [ISBN:0471245208]
 subset: TraitNet
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005423 ! collenchyma
@@ -697,14 +697,13 @@ is_a: PO:0000295 ! cambial initial
 
 [Term]
 id: PO:0000081
-name: obsolete axial cell
+name: axial cell
 namespace: plant_structure
 def: "A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
-comment: These cells make up the axial system, also known as vertical or longitudinal system. This term was made obsolete because it did not encompass all of the types of axial cells found in plants, including hydroid, leptoids, and xylem and phloem cells in leaves of vascular plants. Replaced by PO:0025300.
+comment: These cells make up the axial system, also known as vertical or longitudinal system. This term was made obsolete because it cells of different origins that should not necessarily be grouped together.
 subset: TraitNet
 xref: CL:0000363
 is_obsolete: true
-replaced_by: PO:0025300
 
 [Term]
 id: PO:0000082
@@ -973,15 +972,9 @@ id: PO:0000273
 name: xylem element
 namespace: plant_structure
 def: "A cell making up xylem tissue." [ISBN:0471245208]
-comment: Occurs in the sporophytic phase of a plant life cycle.
 subset: TraitNet
 xref: CL:0000298
-is_a: PO:0025300 ! axial cell
-disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0004519 ! phloem fiber
-disjoint_from: PO:0025032 ! hydroid
-disjoint_from: PO:0025033 ! leptoid
-disjoint_from: PO:0030045 ! stereid
+is_a: PO:0009002 ! plant cell
 
 [Term]
 id: PO:0000274
@@ -989,7 +982,7 @@ name: xylem fiber
 namespace: plant_structure
 def: "A fiber in xylem." [ISBN:0471245208]
 subset: TraitNet
-is_a: PO:0000273 ! xylem element
+is_a: PO:0030053 ! fiber cell
 relationship: part_of PO:0005848 ! secondary xylem
 
 [Term]
@@ -1037,9 +1030,7 @@ synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
 xref: CL:0000268
 xref: CL:0000543
-is_a: PO:0025300 ! axial cell
-disjoint_from: PO:0000273 ! xylem element
-disjoint_from: PO:0004519 ! phloem fiber
+is_a: PO:0030052 ! vascular cell
 disjoint_from: PO:0025032 ! hydroid
 disjoint_from: PO:0025033 ! leptoid
 disjoint_from: PO:0030045 ! stereid
@@ -1054,7 +1045,7 @@ def: "General term for any water conducting cell, tracheid or vessel member." [I
 comment: Occurs in the sporophytic phase of a plant life cycle.
 subset: TraitNet
 xref: CL:0000672
-is_a: PO:0000273 ! xylem element
+is_a: PO:0030052 ! vascular cell
 relationship: part_of PO:0005848 ! secondary xylem
 relationship: part_of PO:0005849 ! primary xylem
 
@@ -2239,12 +2230,8 @@ name: phloem fiber
 namespace: plant_structure
 def: "A fiber in phloem." [POC:curators]
 subset: TraitNet
-is_a: PO:0025300 ! axial cell
-disjoint_from: PO:0000273 ! xylem element
+is_a: PO:0030053 ! fiber cell
 disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0025032 ! hydroid
-disjoint_from: PO:0025033 ! leptoid
-disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0005043 ! secondary phloem
 
 [Term]
@@ -11697,10 +11684,7 @@ name: hydroid
 namespace: plant_structure
 def: "An axial cell that is dead at maturity,lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
 comment: Hydroids are water conducting cells found in bryophytes in the gametophytic phase and in the seta in the sporophytic phase.
-is_a: PO:0025300 ! axial cell
-disjoint_from: PO:0000273 ! xylem element
-disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0004519 ! phloem fiber
+is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025033 ! leptoid
 disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0030047 ! hydrome
@@ -11713,10 +11697,8 @@ name: leptoid
 namespace: plant_structure
 def: "An axial cell that resembles in structure the sieve elements of some seedless vascular plants." [ISBN:376821110, ISBN:962073342]
 comment: A food conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Food conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, including many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
-is_a: PO:0025300 ! axial cell
-disjoint_from: PO:0000273 ! xylem element
+is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0004519 ! phloem fiber
 disjoint_from: PO:0025032 ! hydroid
 disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0030048 ! leptome
@@ -14570,14 +14552,6 @@ created_by: Ramona
 creation_date: 2011-04-25T10:41:48Z
 
 [Term]
-id: PO:0025300
-name: axial cell
-namespace: plant_anatomy
-is_a: PO:0009002 ! plant cell
-created_by: Ramona
-creation_date: 2011-04-25T11:27:15Z
-
-[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -15176,10 +15150,8 @@ id: PO:0030045
 name: stereid
 namespace: plant_anatomy
 def: "An axial cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
-is_a: PO:0025300 ! axial cell
-disjoint_from: PO:0000273 ! xylem element
+is_a: PO:0025030 ! ground tissue cell
 disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0004519 ! phloem fiber
 disjoint_from: PO:0025032 ! hydroid
 disjoint_from: PO:0025033 ! leptoid
 relationship: part_of PO:0030050 ! stereome
@@ -15206,6 +15178,7 @@ is_a: PO:0030046 ! portion of axial tissue
 disjoint_from: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0030048 ! leptome
 disjoint_from: PO:0030049 ! portion of plant fiber
+relationship: part_of PO:0030051 ! central strand
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
@@ -15219,6 +15192,7 @@ is_a: PO:0030046 ! portion of axial tissue
 disjoint_from: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0030047 ! hydrome
 disjoint_from: PO:0030049 ! portion of plant fiber
+relationship: part_of PO:0030051 ! central strand
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
@@ -15241,6 +15215,32 @@ namespace: plant_structure
 is_a: PO:0030046 ! portion of axial tissue
 created_by: Ramona
 creation_date: 2011-04-25T11:39:57Z
+
+[Term]
+id: PO:0030051
+name: central strand
+namespace: plant_structure
+def: "A unit strand of axial tissue that has as part hydrome or leptome." [ISBN:376821110]
+comment: Often contains both hydrome and leptome. Found in bryophytes located in the center of non-vascular shoot axes such as a gametophore axis or seta, or in the costa of a non-vascular leaf.
+is_a: PO:0030046 ! portion of axial tissue
+created_by: Ramona
+creation_date: 2011-04-25T01:04:07Z
+
+[Term]
+id: PO:0030052
+name: vascular cell
+namespace: plant_anatomy
+is_a: PO:0009002 ! plant cell
+created_by: Ramona
+creation_date: 2011-04-25T02:44:11Z
+
+[Term]
+id: PO:0030053
+name: fiber cell
+namespace: plant_anatomy
+is_a: PO:0009002 ! plant cell
+created_by: Ramona
+creation_date: 2011-04-25T02:48:24Z
 
 [Typedef]
 id: derives_from
