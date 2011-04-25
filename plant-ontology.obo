@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:04:2011 14:42
+date: 25:04:2011 12:09
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
@@ -425,7 +425,7 @@ is_a: PO:0003005 ! nodal root
 id: PO:0000045
 name: embryonic root
 namespace: plant_structure
-def: "A root that is initiated in a developing embryo." [POC:rw, TAIR:ki]
+def: "A root that is initiated in a developing embryo." [TAIR:ki]
 subset: reference
 is_a: PO:0009005 ! root
 
@@ -697,14 +697,14 @@ is_a: PO:0000295 ! cambial initial
 
 [Term]
 id: PO:0000081
-name: axial cell
+name: obsolete axial cell
 namespace: plant_structure
 def: "A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
-comment: These cells make up the axial system, also known as vertical or longitudinal system.
+comment: These cells make up the axial system, also known as vertical or longitudinal system. This term was made obsolete because it did not encompass all of the types of axial cells found in plants, including hydroid, leptoids, and xylem and phloem cells in leaves of vascular plants. Replaced by PO:0025300.
 subset: TraitNet
 xref: CL:0000363
-is_a: PO:0009002 ! plant cell
-relationship: develops_from PO:0000079 ! fusiform initial
+is_obsolete: true
+replaced_by: PO:0025300
 
 [Term]
 id: PO:0000082
@@ -976,7 +976,12 @@ def: "A cell making up xylem tissue." [ISBN:0471245208]
 comment: Occurs in the sporophytic phase of a plant life cycle.
 subset: TraitNet
 xref: CL:0000298
-is_a: PO:0000081 ! axial cell
+is_a: PO:0025300 ! axial cell
+disjoint_from: PO:0000289 ! sieve tube member
+disjoint_from: PO:0004519 ! phloem fiber
+disjoint_from: PO:0025032 ! hydroid
+disjoint_from: PO:0025033 ! leptoid
+disjoint_from: PO:0030045 ! stereid
 
 [Term]
 id: PO:0000274
@@ -1032,7 +1037,12 @@ synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
 xref: CL:0000268
 xref: CL:0000543
-is_a: PO:0000081 ! axial cell
+is_a: PO:0025300 ! axial cell
+disjoint_from: PO:0000273 ! xylem element
+disjoint_from: PO:0004519 ! phloem fiber
+disjoint_from: PO:0025032 ! hydroid
+disjoint_from: PO:0025033 ! leptoid
+disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0006075 ! primary phloem
 
@@ -2229,7 +2239,12 @@ name: phloem fiber
 namespace: plant_structure
 def: "A fiber in phloem." [POC:curators]
 subset: TraitNet
-is_a: PO:0000081 ! axial cell
+is_a: PO:0025300 ! axial cell
+disjoint_from: PO:0000273 ! xylem element
+disjoint_from: PO:0000289 ! sieve tube member
+disjoint_from: PO:0025032 ! hydroid
+disjoint_from: PO:0025033 ! leptoid
+disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0005043 ! secondary phloem
 
 [Term]
@@ -4650,6 +4665,7 @@ name: embryonic leaf
 namespace: plant_structure
 def: "A vascular leaf that is part of an embryo and is one of the first few leaves to develop from the embryonic shoot apical meristem." [GR:pj]
 comment: This term is used to described not yet fully-developed leaves that are part of an embryo.
+synonym: "embryo leaf" EXACT []
 is_a: PO:0009025 ! vascular leaf
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -10500,7 +10516,7 @@ relationship: develops_from PO:0000015 ! cotyledon primordium
 id: PO:0020031
 name: radicle
 namespace: plant_structure
-def: "A root that is the basal continuation of a hypocotyl in an embryo and may develop into the root system of an adult plant." [APWeb:Glossary, POC:rw]
+def: "An embryonic root that is the basal continuation of a hypocotyl in an embryo." [RW:test]
 comment: Sometimes abortive.
 subset: reference
 is_a: PO:0000045 ! embryonic root
@@ -10535,7 +10551,8 @@ is_a: PO:0009008 ! plant organ
 id: PO:0020035
 name: epicotyl
 namespace: plant_structure
-def: "The first stem internode above a hypocotyl." [POC:rw]
+def: "The first stem internode above a hypocotyl." [ISBN:0471244554]
+comment: The epicotyl is the first internode of a stem above the cotyledons.
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -10551,7 +10568,8 @@ relationship: part_of PO:0020034 ! coleorhiza
 id: PO:0020037
 name: mesocotyl
 namespace: plant_structure
-def: "The internode between the cotyledon or cotyledons and the leaf or leaves at the next node of a young sporophyte." [APWeb:Glossary]
+def: "A shoot internode that is the part of an embryo axis or the stem of a seedling above the scutellum and below the coleoptile." [ISBN:0471244554]
+comment: Occurs in grasses. In grasses, the hypocotyl and cotyledon may not be visible and may be represented by the scutellar node and scutellum, making the mesocotyl similar to the epicotyl in other taxa. Elongation of the mesocotyl during seedling growth pushes the coleoptile above the soil surface.
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -11105,7 +11123,7 @@ id: PO:0020127
 name: primary root
 namespace: plant_structure
 alt_id: PO:0020089
-def: "A root that develops directly from a embryonic radicle." [ISBN:0122151704, POC:curators]
+def: "A root that develops directly from an embryonic radicle." [ISBN:0122151704, POC:curators]
 comment: Often the central axis of a root system.
 subset: TraitNet
 synonym: "tap root" EXACT []
@@ -11677,9 +11695,15 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_structure
-def: "An elongate, water conducting cell that is dead at maturity, with tapered ends that are thin and partially hydrolyzed, that lacks specialized wall thickenings or lignin." [ISBN:0962073342, ISBN:9780717810073]
-comment: Occurs in the gametophytic phase of a plant life cycle.
-is_a: PO:0000081 ! axial cell
+def: "An axial cell that is dead at maturity,lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
+comment: Hydroids are water conducting cells found in bryophytes in the gametophytic phase and in the seta in the sporophytic phase.
+is_a: PO:0025300 ! axial cell
+disjoint_from: PO:0000273 ! xylem element
+disjoint_from: PO:0000289 ! sieve tube member
+disjoint_from: PO:0004519 ! phloem fiber
+disjoint_from: PO:0025033 ! leptoid
+disjoint_from: PO:0030045 ! stereid
+relationship: part_of PO:0030047 ! hydrome
 created_by: Ramona
 creation_date: 2010-05-12T04:46:21Z
 
@@ -11687,9 +11711,15 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_structure
-def: "A food conducting cell associated with hydroids that resembles the sieve elements of some seedless vascular plants." [ISBN:962073342, ISBN:9780717810073]
-comment: Occurs in the gametophytic phase of a plant life cycle.
-is_a: PO:0000081 ! axial cell
+def: "An axial cell that resembles in structure the sieve elements of some seedless vascular plants." [ISBN:376821110, ISBN:962073342]
+comment: A food conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Food conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, including many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+is_a: PO:0025300 ! axial cell
+disjoint_from: PO:0000273 ! xylem element
+disjoint_from: PO:0000289 ! sieve tube member
+disjoint_from: PO:0004519 ! phloem fiber
+disjoint_from: PO:0025032 ! hydroid
+disjoint_from: PO:0030045 ! stereid
+relationship: part_of PO:0030048 ! leptome
 created_by: Ramona
 creation_date: 2010-05-12T04:49:59Z
 
@@ -14417,7 +14447,7 @@ creation_date: 2011-04-20T02:00:16Z
 id: PO:0025286
 name: embryonic coleoptile
 namespace: plant_structure
-def: "A coleoptile that is part of an embryo." [POC:rw]
+def: "A coleoptile that is part of a plant embryo." [POC:rw]
 synonym: "embryo coleoptile" EXACT []
 is_a: PO:0020033 ! coleoptile
 relationship: part_of PO:0009009 ! plant embryo
@@ -14430,6 +14460,7 @@ name: seedling coleoptile
 namespace: plant_structure
 def: "A coleoptile that is part of a whole plant in the seedling phase." [POC:rw]
 is_a: PO:0020033 ! coleoptile
+relationship: develops_from PO:0025286 ! embryonic coleoptile
 created_by: Ramona
 creation_date: 2011-04-20T02:20:12Z
 
@@ -14437,7 +14468,7 @@ creation_date: 2011-04-20T02:20:12Z
 id: PO:0025288
 name: embryonic coleorhiza
 namespace: plant_structure
-def: "A coleorhiza that is part of an embryo." [POC:rw]
+def: "A coleorhiza that is part of a plant embryo." [POC:rw]
 synonym: "embryo coleorhiza" EXACT []
 is_a: PO:0020034 ! coleorhiza
 relationship: part_of PO:0009009 ! plant embryo
@@ -14450,6 +14481,7 @@ name: seedling coleorhiza
 namespace: plant_structure
 def: "A coleorhiza that is part of a whole plant in the seedling phase." [POC:rw]
 is_a: PO:0020034 ! coleorhiza
+relationship: develops_from PO:0025288 ! embryonic coleorhiza
 created_by: Ramona
 creation_date: 2011-04-20T02:34:17Z
 
@@ -14457,9 +14489,10 @@ creation_date: 2011-04-20T02:34:17Z
 id: PO:0025290
 name: embryonic hypocotyl
 namespace: plant_structure
-def: "A hypocotyl that is part of an embryo." [POC:rw]
+def: "A hypocotyl that is part of a plant embryo." [POC:rw]
 synonym: "embryo hypocotyl" EXACT []
 is_a: PO:0020100 ! hypocotyl
+relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-20T02:39:46Z
 
@@ -14471,6 +14504,78 @@ def: "A hypocotyl that is part of a whole plant in the seedling phase." [POC:rw]
 is_a: PO:0020100 ! hypocotyl
 created_by: Ramona
 creation_date: 2011-04-20T02:39:56Z
+
+[Term]
+id: PO:0025292
+name: embryonic epicotyl
+namespace: plant_structure
+def: "An epicotyl that is part of a plant embryo." [POC:rw]
+synonym: "embryo epicotyl" EXACT []
+is_a: PO:0020035 ! epicotyl
+relationship: part_of PO:0009009 ! plant embryo
+created_by: Ramona
+creation_date: 2011-04-25T10:13:08Z
+
+[Term]
+id: PO:0025293
+name: seedling epicotyl
+namespace: plant_structure
+def: "An epicotyl that is part of a whole plant in the seedling phase." [POC:rw]
+is_a: PO:0020035 ! epicotyl
+relationship: develops_from PO:0025292 ! embryonic epicotyl
+created_by: Ramona
+creation_date: 2011-04-25T10:13:08Z
+
+[Term]
+id: PO:0025294
+name: embryonic mesocotyl
+namespace: plant_structure
+def: "A mesocotyl that is part of a plant embryo." [POC:rw]
+synonym: "embryo mesocotyl" EXACT []
+is_a: PO:0020037 ! mesocotyl
+relationship: part_of PO:0009009 ! plant embryo
+created_by: Ramona
+creation_date: 2011-04-25T10:21:58Z
+
+[Term]
+id: PO:0025295
+name: seedling mesocotyl
+namespace: plant_structure
+def: "A mesocotyl that is part of a whole plant in the seedling phase." [POC:rw]
+is_a: PO:0020037 ! mesocotyl
+relationship: develops_from PO:0025294 ! embryonic mesocotyl
+created_by: Ramona
+creation_date: 2011-04-25T10:21:58Z
+
+[Term]
+id: PO:0025296
+name: embryonic radicle
+namespace: plant_structure
+def: "A radicle that is part of a plant embryo." [POC:rw]
+subset: Citrus
+synonym: "embryo radicle" EXACT []
+is_a: PO:0020031 ! radicle
+relationship: part_of PO:0009009 ! plant embryo
+created_by: Ramona
+creation_date: 2011-04-25T10:41:14Z
+
+[Term]
+id: PO:0025297
+name: seedling radicle
+namespace: plant_structure
+def: "A radicle that is part of a whole plant in the seedling phase." [POC:rw]
+is_a: PO:0020031 ! radicle
+relationship: develops_from PO:0025296 ! embryonic radicle
+created_by: Ramona
+creation_date: 2011-04-25T10:41:48Z
+
+[Term]
+id: PO:0025300
+name: axial cell
+namespace: plant_anatomy
+is_a: PO:0009002 ! plant cell
+created_by: Ramona
+creation_date: 2011-04-25T11:27:15Z
 
 [Term]
 id: PO:0028001
@@ -15067,6 +15172,21 @@ created_by: Ramona
 creation_date: 2011-04-12T12:53:17Z
 
 [Term]
+id: PO:0030045
+name: stereid
+namespace: plant_anatomy
+def: "An axial cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
+is_a: PO:0025300 ! axial cell
+disjoint_from: PO:0000273 ! xylem element
+disjoint_from: PO:0000289 ! sieve tube member
+disjoint_from: PO:0004519 ! phloem fiber
+disjoint_from: PO:0025032 ! hydroid
+disjoint_from: PO:0025033 ! leptoid
+relationship: part_of PO:0030050 ! stereome
+created_by: Ramona
+creation_date: 2011-04-25T11:33:34Z
+
+[Term]
 id: PO:0030046
 name: portion of axial tissue
 namespace: plant_structure
@@ -15113,6 +15233,14 @@ disjoint_from: PO:0030047 ! hydrome
 disjoint_from: PO:0030048 ! leptome
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
+
+[Term]
+id: PO:0030050
+name: stereome
+namespace: plant_structure
+is_a: PO:0030046 ! portion of axial tissue
+created_by: Ramona
+creation_date: 2011-04-25T11:39:57Z
 
 [Typedef]
 id: derives_from
