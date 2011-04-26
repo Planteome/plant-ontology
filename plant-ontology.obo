@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:04:2011 14:58
+date: 26:04:2011 09:12
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta11
 subsetdef: Angiosperm "Term for angiosperms"
@@ -9277,7 +9277,7 @@ synonym: "leaf, vascular" EXACT []
 synonym: "needle-like leaf" NARROW []
 synonym: "scale-like leaf" NARROW []
 is_a: PO:0025034 ! leaf
-relationship: part_of PO:0030016 ! vascular shoot system
+relationship: participates_in PO:0028002 ! sporophytic phase
 
 [Term]
 id: PO:0009026
@@ -14404,7 +14404,7 @@ creation_date: 2011-03-31T07:12:52Z
 id: PO:0025284
 name: embryonic apical cell
 namespace: plant_structure
-def: "An apical cell that is part of an embryo and is the uppermost cell formed after the first division of a zygote." [RW:test]
+def: "An apical cell that is part of a plant embryo and is the uppermost cell formed after the first division of a zygote." [RW:test]
 subset: Angiosperm
 subset: Bryophytes
 subset: Gymnosperms
@@ -14550,6 +14550,27 @@ is_a: PO:0020031 ! radicle
 relationship: develops_from PO:0025296 ! embryonic radicle
 created_by: Ramona
 creation_date: 2011-04-25T10:41:48Z
+
+[Term]
+id: PO:0025298
+name: fruit operculum
+namespace: plant_structure
+def: "A collective organ part structure that is the apical part of a circumsessile capsular fruit that separates from the rest of the capsule during dehiscence." [POC:curators]
+comment: Develops from the apical portion of a gynoecium. Found in Eucalyptus and other Myrtaceae.
+is_a: PO:0025269 ! collective organ part structure
+disjoint_from: PO:0030044 ! spore capsule operculum
+relationship: part_of PO:0009001 ! fruit
+created_by: Ramona
+creation_date: 2011-04-26T08:42:24Z
+
+[Term]
+id: PO:0025299
+name: perianth calyptra
+namespace: plant_structure
+def: "A perianth that is composed of fused perianth parts and located on top of a gynoecium that contains an inferior ovary." [POC:curators]
+is_a: PO:0009058 ! perianth
+created_by: Ramona
+creation_date: 2011-04-26T08:45:55Z
 
 [Term]
 id: PO:0028001
@@ -14698,7 +14719,7 @@ id: PO:0030010
 name: shoot axis apical cell
 namespace: plant_structure
 def: "A shoot apical cell at the tip of a shoot apical meristem." [POC:rw]
-comment: Divides to produces leaf initial cells and other stem tissues.
+comment: Divides to produces leaf initial cells (if leaves are present) and other stem or branch tissues.
 subset: Bryophytes
 subset: Pteridophytes
 is_a: PO:0030009 ! shoot apical cell
@@ -14772,37 +14793,34 @@ creation_date: 2011-03-25T10:00:48Z
 
 [Term]
 id: PO:0030016
-name: vascular shoot system
+name: seta apical cell
 namespace: plant_structure
-def: "A shoot system that has as part vascular tissue." [RW:test]
-comment: Has xylem and/or phloem. Occurs only in the sporophytic phase of vascular plants.
-subset: Angiosperm
-subset: Gymnosperms
-subset: Pteridophytes
-is_a: PO:0009006 ! shoot system
-relationship: participates_in PO:0028002 ! sporophytic phase
+def: "A shoot axis apical cell at the tip of a seta." [RW:test]
+comment: Ceases being an apical cell when the sporangium begins to develop.
+is_a: PO:0030010 ! shoot axis apical cell
+relationship: part_of PO:0030032 ! seta
 created_by: Ramona
-creation_date: 2011-03-25T10:07:47Z
+creation_date: 2011-04-26T07:56:36Z
 
 [Term]
 id: PO:0030017
-name: non-vascular shoot system
-namespace: plant_structure
-def: "A shoot system that does not contain vascular tissue." [RW:test]
-comment: Does not have any xylem of phloem, but may have other conducting cells, such hydroids or leptoids. Can occur in both the gametophytic and sporophytic phases of non-vascular plants.
+name: spore capsule mouth
+namespace: plant_anatomy
+def: "A plant anatomical space that is the opening on the apical end of a spore capsule." [POC:curators]
 subset: Bryophytes
-is_a: PO:0009006 ! shoot system
+is_a: PO:0025117 ! plant anatomical space
+relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
-creation_date: 2011-03-25T10:07:47Z
+creation_date: 2011-04-26T09:01:06Z
 
 [Term]
 id: PO:0030018
 name: gametophore
 namespace: plant_structure
-def: "A non-vascular shoot system that consists of the shoot axes and non-vascular leaves of a plant in the gametophytic phase." [RW:test]
+def: "A shoot system that consists of the shoot axes and non-vascular leaves of a plant in the gametophytic phase." [RW:test]
 comment: A gametophore is the leafy part of a moss gametophyte, without the protonema. Gametophores develop from buds that form on the caulonema.
 subset: Bryophytes
-is_a: PO:0030017 ! non-vascular shoot system
+is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0030026 ! gametophore bud
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
@@ -14813,7 +14831,7 @@ id: PO:0030019
 name: gametophore apical cell
 namespace: plant_structure
 def: "A shoot apical cell that is part of a gametophore." [RW:test]
-comment: Occurs in the non-vascular shoot system of the gametophyte of mosses.
+comment: Occurs in the non-vascular shoot system of the gametophyte of mosses and leafy liverworts.
 subset: Bryophytes
 is_a: PO:0030009 ! shoot apical cell
 intersection_of: PO:0030009 ! shoot apical cell
@@ -14876,11 +14894,11 @@ creation_date: 2011-03-25T11:41:09Z
 id: PO:0030024
 name: vascular shoot axis apical cell
 namespace: plant_structure
-def: "A shoot axis apical cell at the tip of a shoot apical meristem in a vascular shoot system." [RW:test]
+def: "A shoot axis apical cell at the tip of a shoot apical meristem in a shoot system that has as part vascular tissue." [RW:test]
 comment: Occurs in some ferns in their sporophytic phase.
 synonym: "fern shoot axis apical cell" EXACT []
 is_a: PO:0030010 ! shoot axis apical cell
-relationship: part_of PO:0030016 ! vascular shoot system
+relationship: participates_in PO:0028002 ! sporophytic phase
 created_by: Ramona
 creation_date: 2011-03-25T11:46:56Z
 
@@ -15141,6 +15159,7 @@ subset: Bryophytes
 synonym: "sporangium lid" EXACT []
 synonym: "spore capsule lid" EXACT []
 is_a: PO:0025001 ! cardinal organ part
+disjoint_from: PO:0025298 ! fruit operculum
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2011-04-12T12:53:17Z
@@ -15241,6 +15260,32 @@ namespace: plant_anatomy
 is_a: PO:0009002 ! plant cell
 created_by: Ramona
 creation_date: 2011-04-25T02:48:24Z
+
+[Term]
+id: PO:0030054
+name: epiphragm
+namespace: plant_structure
+def: "A portion of parenchyma tissue that forms a circular membrane extending from a spore capsule columella and attached to the ends of the peristome teeth that covers a spore capsule mouth." [RW:test]
+comment: Present in some moss species of the family Polytrichaceae.
+subset: Bryophytes
+synonym: "epiphram" EXACT []
+synonym: "tympanum" EXACT []
+is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-04-26T09:03:44Z
+
+[Term]
+id: PO:0030055
+name: pseudopodium
+namespace: plant_structure
+def: "A plant axis that is a leafless extension of a gametophore axis on which a sporophyte is borne." [RW:test]
+comment: Raises the sporophyte above the perichaetial bracts. Found in Sphagnum and Andreaea.
+subset: Bryophytes
+is_a: PO:0025004 ! plant axis
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-26T09:08:14Z
 
 [Typedef]
 id: derives_from
