@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:04:2011 10:54
+date: 27:04:2011 14:15
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -21,6 +21,16 @@ synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 ontology: po
 treat-xrefs-as-is_a: CARO
+
+[Term]
+id:  PO:0025302
+name: somatic plant embryo
+namespace: plant_anatomy
+def: "A plant embryo that arises from previously differentiated somatic cells, rather than from fused haploid gametes, i.e., the zygote." [POC:Curators]
+comment: Somatic plant embryos may arise where embryos normally would not arise and may be the product of apogamy or apomixis. They may occur on the edges of leaves on some species of Kalanchoe or some ferns.
+is_a: PO:0009009 ! plant embryo
+created_by: cooperl
+creation_date: 2011-04-27T11:46:50Z
 
 [Term]
 id: PO:0000001
@@ -125,7 +135,9 @@ is_a: PO:0009009 ! plant embryo
 id: PO:0000011
 name: cultured somatic plant embryo
 namespace: plant_anatomy
-def: "A somatic plant embryo arising from previously differentiated somatic cells and grown and maintained in vitro." [POC:curators, TAIR:ki]
+def: "A somatic plant embryo grown and maintained in vitro." [POC:curators, TAIR:ki]
+comment: Cultured somatic plant embryos are commonly induced after the formation of callus from an explant and treatment with plant growth regulators.
+is_a:  PO:0025302 ! somatic plant embryo
 is_a: PO:0000010 ! cultured plant embryo
 relationship: develops_from PO:0006091 ! embryogenic callus
 
@@ -2365,10 +2377,11 @@ relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0004537
-name: adventitious embryo
+name: adventitious plant embryo
 namespace: plant_anatomy
-def: "Embryo derived directly from nucellus cells without involving embryo sac cells." [POC:curators]
-is_a: PO:0009009 ! plant embryo
+def: "A somatic plant embryo derived directly from nucellus cells without involving embryo sac cells." [POC:curators]
+comment: Also known as apomitic plant embryo, common lin Citrus.
+is_a:  PO:0025302 ! somatic plant embryo
 
 [Term]
 id: PO:0004538
