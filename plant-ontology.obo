@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 26:04:2011 17:29
-saved-by: cooperl
+date: 27:04:2011 10:47
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -26,7 +26,7 @@ treat-xrefs-as-is_a: CARO
 id: PO:0000001
 name: embryo proper
 namespace: plant_anatomy
-def: "An embryonic plant structure that is the body of a developing embryo attached to the maternal tissue in an ovule by a suspensor." [POC:rw]
+def: "An embryonic plant structure that is the body of a developing plant embryo attached to the maternal tissue in an ovule by a suspensor." [POC:rw]
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 xref: OBO_SF_PO:3132560
 is_a: PO:0025099 ! embryonic plant structure
@@ -2531,7 +2531,7 @@ id: PO:0004708
 name: scutellar node
 namespace: plant_structure
 def: "A stem node that is the part of an embryo axis directly above the radicle where the scutellum is attached." [ISBN:0471244554]
-comment: Found in grasses where no hypocotyl is present. The scutellar node may represent a reduction of the hopocotyl and cotelydonary node.
+comment: Found in grasses where no hypocotyl is present. The scutellar node may represent a reduction of the hypocotyl and cotyledonary node.
 is_a: PO:0020141 ! stem node
 relationship: part_of PO:0019018 ! embryo axis
 
@@ -2673,6 +2673,7 @@ namespace: plant_structure
 def: "A cardinal organ part that is the part of an embryonic axis where the radicle joins the hypocotyl." [ISBN:9780881928501, POC:rw]
 subset: reference
 synonym: "embryo axis transition zone" EXACT [ISBN:9780881928501]
+synonym: "Poaceae crown" NARROW []
 xref: OBO_SF_PO:3132568
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0019018 ! embryo axis
@@ -4651,7 +4652,7 @@ relationship: part_of PO:0020136 ! Zea ear
 id: PO:0006338
 name: embryonic leaf
 namespace: plant_structure
-def: "A vascular leaf that is part of an embryo and is one of the first few leaves to develop from the embryonic shoot apical meristem." [GR:pj]
+def: "A vascular leaf that is part of a plant embryo and is one of the first few leaves to develop from the embryonic shoot apical meristem." [GR:pj]
 comment: This term is used to described not yet fully-developed leaves that are part of an embryo.
 synonym: "embryo leaf" EXACT []
 is_a: PO:0009025 ! vascular leaf
@@ -10166,9 +10167,10 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0019018
 name: embryo axis
 namespace: plant_structure
-def: "A plant axis that is the axial part of an embryo." [ISBN:0471245208, POC:rw]
+def: "A plant axis that is the axial part of a plant embryo." [ISBN:0471245208, POC:rw]
 comment: Has as parts a hypocotyl, a root meristem and a radicle, if any of these are present.
 synonym: "hypocotyl-root axis" EXACT []
+synonym: "zygotic plant embryo axis" NARROW []
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -10388,7 +10390,7 @@ is_a: PO:0025017 ! spore
 id: PO:0020020
 name: nucellus
 namespace: plant_structure
-def: "A megasporangium in a seed plant, composed of fleshy subepidermal tissue inside an ovule and surrounding a megasporocyte." [POC:rw]
+def: "A megasporangium in a seed plant, composed of fleshy subepidermal tissue that is located in an ovule and surrounding a megasporocyte." [POC:curators]
 comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus.
 subset: reference
 subset: TraitNet
@@ -10504,8 +10506,8 @@ relationship: develops_from PO:0000015 ! cotyledon primordium
 id: PO:0020031
 name: radicle
 namespace: plant_structure
-def: "An embryonic root that is the basal continuation of a hypocotyl in an embryo." [RW:test]
-comment: Sometimes abortive.
+def: "An embryonic root that is the basal continuation of a hypocotyl." [ISBN:0471245208]
+comment: Found in an embryo or a seedling. May develop into the root system of an adult plant. Sometimes abortive.
 subset: reference
 is_a: PO:0000045 ! embryonic root
 
@@ -10513,7 +10515,8 @@ is_a: PO:0000045 ! embryonic root
 id: PO:0020032
 name: plumule
 namespace: plant_structure
-def: "A somewhat differentiated terminal bud in several embryo types above the cotyledonary node, in which one or more internodes and leaves or scales can be discerned in a primordial stage." [APWeb:Glossary]
+def: "A somewhat differentiated terminal bud above the cotyledonary node, in which one or more internodes and leaves or scales can be discerned in a primordial stage." [APWeb:Glossary]
+comment: Occurs in several embryo types.
 synonym: "embryonic shoot" RELATED []
 is_a: PO:0004713 ! terminal bud
 relationship: part_of PO:0009009 ! plant embryo
@@ -10523,7 +10526,7 @@ id: PO:0020033
 name: coleoptile
 namespace: plant_structure
 def: "A phyllome that surrounds the plumule of an embryo or the emerging shoot apex of a seedling." [ISBN:0471244554, ISBN:9781842464229]
-comment: Found in Poaceae. Develops at the first node above the scutellum, and thus is often thought to be the first leaf. Protects the emerging shoot system as it grows through the soil.
+comment: Found in Poaceae. The coleoptile is the first phyllome formed from the embryonic shoot apical meristem. Protects the emerging shoot system as it grows through the soil.
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -10531,8 +10534,8 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020034
 name: coleorhiza
 namespace: plant_structure
-def: "A plant organ that surrounds the radicle in the embryo and seedling." [ISBN:0471244554]
-comment: Found in Poaceae and some other monocots. Protects the emerging embryonic root. The parenchyma cells of both the coleorhiza and epiblast may function in storage.
+def: "A plant organ that surrounds a radicle." [ISBN:0471244554]
+comment: Found in Poaceae and some other monocots. Protects the emerging radicle in a plant embryo or seedling. The parenchyma cells of both the coleorhiza and epiblast may function in storage.
 is_a: PO:0009008 ! plant organ
 
 [Term]
@@ -10953,7 +10956,7 @@ is_a: PO:0009002 ! plant cell
 id: PO:0020100
 name: hypocotyl
 namespace: plant_structure
-def: "A stem internode that is the part of a stem below the cotyledonary node and transitional to a root." [APWeb:Glossary, RW:test]
+def: "A stem internode that is the part of a stem below the cotyledonary node and transitional to a root." [APWeb:Glossary]
 xref: OBO_SF_PO:2971884
 is_a: PO:0020142 ! stem internode
 
@@ -11015,7 +11018,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020108
 name: suspensor
 namespace: plant_structure
-def: "An embryonic plant structure at the base of an embryo that develops from a basal cell and connects an embryo proper to the wall of a megagametophyte." [POC:rw]
+def: "An embryonic plant structure at the base of a plant embryo that develops from an embryonic basal cell and connects an embryo proper to the wall of a megagametophyte." [PMID:12271036]
 comment: The suspensor often allows the embryo to penetrate deep into the endosperm. Across plant species, suspensors are morphologically diverse and may be single- or multicellular, undifferentiated or highly differentiated, and variously shaped.
 xref: OBO_SF_PO:3132565
 is_a: PO:0025099 ! embryonic plant structure
@@ -11026,7 +11029,8 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020109
 name: embryonic hypophysis
 namespace: plant_structure
-def: "A plant cell that is the uppermost cell of the suspensor from which part of the root and root cap in the embryo of angiosperms are derived." [ISBN:047124529]
+def: "A plant cell that is the uppermost cell of a suspensor and from which part of the root and root cap in a plant embryo of angiosperms are derived." [ISBN:0471245208]
+subset: Angiosperm
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020108 ! suspensor
 
@@ -11034,8 +11038,8 @@ relationship: part_of PO:0020108 ! suspensor
 id: PO:0020110
 name: scutellum
 namespace: plant_structure
-def: "An embryonic plant structure that is a more or less shield-shaped and absorptive portion of an embryo of Poaceae." [APWeb:Glossary, POC:rw]
-comment: Probably a modified cotyledon.
+def: "An embryonic plant structure that is a more or less shield-shaped and absorptive portion of a plant embryo of Poaceae." [APWeb:Glossary, ISBN:0471244554]
+comment: May be a modified cotyledon.
 synonym: "haustorial cotyledon" RELATED []
 xref: OBO_SF_PO:3132566
 is_a: PO:0025099 ! embryonic plant structure
@@ -12378,14 +12382,14 @@ id: PO:0025094
 name: sporangium
 namespace: plant_structure
 alt_id: PO:0025232
-def: "A hollow cardinal organ part in which spores are produced." [ISBN:0716710072]
-comment: May be multicellular or unicellular. In bryophytes, particularly in mosses, a sporangium is referred to as a capsule.
+def: "A plant organ in which spores are produced." [ISBN:0716710072]
+comment: In bryophytes, particularly in mosses, a sporangium is referred to as a capsule. In seed plants, a sporangium is located in a sporophyll. In pteridophytes, a sporangium is located on the surface of a sporophyll or fertile leaf or borne on a sporangiophore. May be unicellular in some algae.
 subset: TraitNet
 synonym: "moss capsule" EXACT []
 synonym: "spore capsule" EXACT []
 xref: OBO_SF_PO:3132600
 xref: OBO_SF_PO:3140824
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0009008 ! plant organ
 relationship: participates_in PO:0028002 ! sporophytic phase
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
@@ -13840,9 +13844,9 @@ creation_date: 2010-12-20T09:34:34Z
 
 [Term]
 id: PO:0025233
-name: embryonic plant tissue
+name: portion of embryonic plant tissue
 namespace: plant_structure
-def: "A portion of plant tissue that is part of an embryo." [POC:rw]
+def: "A portion of plant tissue that is part of a plant embryo." [POC:curators]
 comment: This class is for tissues that only occur as part of an embryo.
 is_a: PO:0025099 ! embryonic plant structure
 intersection_of: PO:0009007 ! portion of plant tissue
@@ -14320,7 +14324,7 @@ creation_date: 2011-02-25T08:50:03Z
 id: PO:0025277
 name: pollen sac
 namespace: plant_structure
-def: "A microsporangium that is part of a sporophyll where the pollen grains developed and are contained after they develop." [POC:curators]
+def: "A microsporangium that is located in a sporophyll and where the pollen grains developed and are located after they develop." [POC:curators]
 comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule.
 subset: reference
 subset: TraitNet
@@ -14405,7 +14409,7 @@ creation_date: 2011-03-31T07:12:52Z
 id: PO:0025284
 name: embryonic apical cell
 namespace: plant_structure
-def: "An apical cell that is part of a plant embryo and is the uppermost cell formed after the first division of a zygote." [RW:test]
+def: "An apical cell that is part of a plant embryo and is the uppermost cell formed after the first division of a zygote." [ISBN:0471245208]
 subset: Angiosperm
 subset: Bryophytes
 subset: Gymnosperms
@@ -14430,7 +14434,7 @@ creation_date: 2011-04-20T02:00:16Z
 id: PO:0025286
 name: embryonic coleoptile
 namespace: plant_structure
-def: "A coleoptile that is part of a plant embryo." [POC:rw]
+def: "A coleoptile that is part of a plant embryo." [POC:curators]
 synonym: "embryo coleoptile" EXACT []
 is_a: PO:0020033 ! coleoptile
 relationship: part_of PO:0009009 ! plant embryo
@@ -14441,7 +14445,8 @@ creation_date: 2011-04-20T02:20:11Z
 id: PO:0025287
 name: seedling coleoptile
 namespace: plant_structure
-def: "A coleoptile that is part of a whole plant in the seedling phase." [POC:rw]
+def: "A coleoptile that develops from an embryonic coleoptile." [POC:curators]
+comment: A seedling coleoptile is an elongation of an embryonic coleoptile and is part of a whole plant in the seedling phase.
 is_a: PO:0020033 ! coleoptile
 relationship: develops_from PO:0025286 ! embryonic coleoptile
 created_by: Ramona
@@ -14451,7 +14456,7 @@ creation_date: 2011-04-20T02:20:12Z
 id: PO:0025288
 name: embryonic coleorhiza
 namespace: plant_structure
-def: "A coleorhiza that is part of a plant embryo." [POC:rw]
+def: "A coleorhiza that is part of a plant embryo." [POC:curators]
 synonym: "embryo coleorhiza" EXACT []
 is_a: PO:0020034 ! coleorhiza
 relationship: part_of PO:0009009 ! plant embryo
@@ -14462,7 +14467,8 @@ creation_date: 2011-04-20T02:34:16Z
 id: PO:0025289
 name: seedling coleorhiza
 namespace: plant_structure
-def: "A coleorhiza that is part of a whole plant in the seedling phase." [POC:rw]
+def: "A coleorhiza that develops from an embryonic coleorhiza." [POC:curators]
+comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020034 ! coleorhiza
 relationship: develops_from PO:0025288 ! embryonic coleorhiza
 created_by: Ramona
@@ -14472,7 +14478,7 @@ creation_date: 2011-04-20T02:34:17Z
 id: PO:0025290
 name: embryonic hypocotyl
 namespace: plant_structure
-def: "A hypocotyl that is part of a plant embryo." [POC:rw]
+def: "A hypocotyl that is part of a plant embryo." [POC:curators]
 synonym: "embryo hypocotyl" EXACT []
 is_a: PO:0020100 ! hypocotyl
 relationship: part_of PO:0009009 ! plant embryo
@@ -14483,8 +14489,10 @@ creation_date: 2011-04-20T02:39:46Z
 id: PO:0025291
 name: seedling hypocotyl
 namespace: plant_structure
-def: "A hypocotyl that is part of a whole plant in the seedling phase." [POC:rw]
+def: "A hypocotyl that develops from an embryonic hypocotyl." [POC:curators]
+comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020100 ! hypocotyl
+relationship: develops_from PO:0025290 ! embryonic hypocotyl
 created_by: Ramona
 creation_date: 2011-04-20T02:39:56Z
 
@@ -14492,7 +14500,7 @@ creation_date: 2011-04-20T02:39:56Z
 id: PO:0025292
 name: embryonic epicotyl
 namespace: plant_structure
-def: "An epicotyl that is part of a plant embryo." [POC:rw]
+def: "An epicotyl that is part of a plant embryo." [POC:curators]
 synonym: "embryo epicotyl" EXACT []
 is_a: PO:0020035 ! epicotyl
 relationship: part_of PO:0009009 ! plant embryo
@@ -14503,7 +14511,8 @@ creation_date: 2011-04-25T10:13:08Z
 id: PO:0025293
 name: seedling epicotyl
 namespace: plant_structure
-def: "An epicotyl that is part of a whole plant in the seedling phase." [POC:rw]
+def: "A epicotyl that develops from an embryonic epicotyl." [POC:curators]
+comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryonic epicotyl
 created_by: Ramona
@@ -14513,7 +14522,7 @@ creation_date: 2011-04-25T10:13:08Z
 id: PO:0025294
 name: embryonic mesocotyl
 namespace: plant_structure
-def: "A mesocotyl that is part of a plant embryo." [POC:rw]
+def: "A mesocotyl that is part of a plant embryo." [POC:curators]
 synonym: "embryo mesocotyl" EXACT []
 is_a: PO:0020037 ! mesocotyl
 relationship: part_of PO:0009009 ! plant embryo
@@ -14524,7 +14533,8 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025295
 name: seedling mesocotyl
 namespace: plant_structure
-def: "A mesocotyl that is part of a whole plant in the seedling phase." [POC:rw]
+def: "A mesocotyl that develops from an embryonic mesocotyl." [POC:curators]
+comment: A seedling mesocotyl is an elongation of and embryonic mesocotyl that is part of a whole plant in the seedling phase.
 is_a: PO:0020037 ! mesocotyl
 relationship: develops_from PO:0025294 ! embryonic mesocotyl
 created_by: Ramona
@@ -14534,7 +14544,7 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025296
 name: embryonic radicle
 namespace: plant_structure
-def: "A radicle that is part of a plant embryo." [POC:rw]
+def: "A radicle that is part of a plant embryo." [POC:curators]
 subset: Citrus
 synonym: "embryo radicle" EXACT []
 is_a: PO:0020031 ! radicle
@@ -14546,7 +14556,8 @@ creation_date: 2011-04-25T10:41:14Z
 id: PO:0025297
 name: seedling radicle
 namespace: plant_structure
-def: "A radicle that is part of a whole plant in the seedling phase." [POC:rw]
+def: "A radicle that develops from and embryonic radicle." [POC:curators]
+comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020031 ! radicle
 relationship: develops_from PO:0025296 ! embryonic radicle
 created_by: Ramona
@@ -14572,6 +14583,27 @@ def: "A perianth that is composed of fused perianth parts and located on top of 
 is_a: PO:0009058 ! perianth
 created_by: Ramona
 creation_date: 2011-04-26T08:45:55Z
+
+[Term]
+id: PO:0025300
+name: embryonic hypocotyl-root junction
+namespace: plant_structure
+def: "A hypocotyl-root junction that is part of an embryo axis." [POC:rw]
+is_a: PO:0004724 ! hypocotyl-root junction
+relationship: part_of PO:0019018 ! embryo axis
+created_by: Ramona
+creation_date: 2011-04-27T08:20:22Z
+
+[Term]
+id: PO:0025301
+name: seedling hypocotyl-root junction
+namespace: plant_structure
+def: "A hypocotyl-root junction that develops from an embryonic hypocotyl-root junction." [POC:curators]
+comment: Part of a whole plant in the seedling phase.
+is_a: PO:0004724 ! hypocotyl-root junction
+relationship: develops_from PO:0025300 ! embryonic hypocotyl-root junction
+created_by: Ramona
+creation_date: 2011-04-27T08:20:22Z
 
 [Term]
 id: PO:0028001
@@ -14818,8 +14850,8 @@ creation_date: 2011-04-26T09:01:06Z
 id: PO:0030018
 name: gametophore
 namespace: plant_structure
-def: "A shoot system that consists of the shoot axes and non-vascular leaves of a plant in the gametophytic phase." [RW:test]
-comment: A gametophore is the leafy part of a moss gametophyte, without the protonema. Gametophores develop from buds that form on the caulonema.
+def: "A shoot system that consists of the shoot axes and non-vascular leaves of a plant in the gametophytic phase." [ISBN:0962073342]
+comment: A gametophore is the leafy part of the gametophyte of mosses and leafy liverworts, excluding the protonema. Develop from buds that form on the protonema. Antheridia and archegonia arise on the gametophore.
 subset: Bryophytes
 is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0030026 ! gametophore bud
@@ -14933,7 +14965,7 @@ creation_date: 2011-04-12T08:22:35Z
 id: PO:0030027
 name: thallus
 namespace: plant_structure
-def: "A whole plant in the gametophytic phase that has a flat growth form and no distinct organs." [RW:test]
+def: "A whole plant in the gametophytic phase that has a flat growth form and no distinct organs." [ASIN:B002EO4VNW "N.S. Parihar 1967. Pteridophytes, 2nd Edition"]
 comment: A thallus is a gametophyte of liverworts and pteridophytes and develops from a short-lived protonema. Roughly two dimensional growth results from division of a single apical cell. Thalli may be ribbon or heart shaped or almost filamentous. Although there are no distinct organs, there may be tissue differentiation and dichotomous branching.
 subset: Bryophytes
 subset: Pteridophytes
