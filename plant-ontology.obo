@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 27:04:2011 20:45
-saved-by: cooperl
+date: 28:04:2011 09:28
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -1189,12 +1189,12 @@ id: PO:0000431
 name: megasporocyte
 namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores." [ISBN:0471245208]
-synonym: "megaspore mother cell" RELATED []
-synonym: "MMC" RELATED []
+synonym: "megaspore mother cell" EXACT []
+synonym: "MMC" EXACT []
 xref: CL:0000320
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006015 ! female archesporial cell
-relationship: part_of PO:0020020 ! nucellus
+relationship: part_of PO:0025201 ! megasporangium
 
 [Term]
 id: PO:0001000
@@ -3557,18 +3557,19 @@ namespace: plant_anatomy
 def: "It undergoes periclinal divisions, giving rise to an inner primary sporogenous cell (PSC) layer and an outer primary parietal cell (PPC)." [GR:pj, PMID:10465788]
 synonym: "anther archesporial cell" RELATED []
 synonym: "male archesporial initial" RELATED []
-is_a: PO:0009002 ! plant cell
-relationship: part_of PO:0006089 ! anther primordium
+is_a: PO:0030056 ! archesporial cell
+relationship: part_of PO:0025202 ! microsporangium
 
 [Term]
 id: PO:0006015
 name: female archesporial cell
 namespace: plant_anatomy
-def: "In the majority of flowering plants including <i>Arabidopsis</i>, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell (MMC). In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte." [PMID:10465788]
+def: "A plant cell that is part of a megasporangium and divides to give rise to a megasporocyte." [PMID:10465788]
+comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In the majority of flowering plants including <i>Arabidopsis</i>, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell (MMC). In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte.
 synonym: "female archesporial initial" EXACT []
-synonym: "ovule archesporial cell" EXACT []
-is_a: PO:0009002 ! plant cell
-relationship: part_of PO:0000018 ! ovule primordium
+synonym: "ovule archesporial cell" NARROW []
+is_a: PO:0030056 ! archesporial cell
+relationship: part_of PO:0025201 ! megasporangium
 
 [Term]
 id: PO:0006016
@@ -11344,7 +11345,6 @@ is_a: PO:0009011 ! plant structure
 disjoint_from: PO:0000003 ! whole plant
 disjoint_from: PO:0000034 ! vascular system
 disjoint_from: PO:0009002 ! plant cell
-disjoint_from: PO:0009008 ! plant organ
 relationship: part_of PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-11T01:18:24Z
@@ -11418,7 +11418,6 @@ disjoint_from: PO:0000003 ! whole plant
 disjoint_from: PO:0000034 ! vascular system
 disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009007 ! portion of plant tissue
-disjoint_from: PO:0009008 ! plant organ
 relationship: has_part PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
@@ -14425,10 +14424,10 @@ creation_date: 2011-04-12T09:05:04Z
 
 [Term]
 id: PO:0025285
-name: callus parenchyma
+name: callus parenchyma cell
 namespace: plant_anatomy
-def: "A portion of parenchyma that is part of a plant callus." [POC:curators]
-is_a: PO:0005421 ! parenchyma
+def: "A parenchyma cell that is part of a plant callus." [POC:curators]
+is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005052 ! plant callus
 created_by: Ramona
 creation_date: 2011-04-20T02:00:16Z
@@ -15362,6 +15361,56 @@ is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-26T09:08:14Z
+
+[Term]
+id: PO:0030056
+name: archesporial cell
+namespace: plant_anatomy
+def: "A plant cell that divides to gives rise to a sporocyte and is part of a sporangium." [RW:test]
+comment: May also give rise to sterile cells such as elators (in liverworts) or tapetal cells. In most species outside seed plants, multiple archesporial cells are part of an archesporium or sporogenous tissue.
+synonym: "sporogenous cell" EXACT []
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025094 ! sporangium
+created_by: Ramona
+creation_date: 2011-04-28T08:31:02Z
+
+[Term]
+id: PO:0030057
+name: alar cell
+namespace: plant_anatomy
+def: "A plant cell located at the base of a non-vascular leaf adjacent to where the leaf attaches to the stem." [ISBN:9780473067304]
+comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness or ornamentation from other cells in the leaf.
+subset: Bryophytes
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0020040 ! leaf base
+relationship: part_of PO:0025075 ! non-vascular leaf
+created_by: Ramona
+creation_date: 2011-04-28T08:50:00Z
+
+[Term]
+id: PO:0030058
+name: brachycyte
+namespace: plant_anatomy
+def: "A plant cell that develops from a cell in a protonema and has a thick cell wall." [ISBN:0962073342]
+comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema may develop into brachycytes under stress. May form a chain or be separated by tmema cells.
+subset: Bryophytes
+synonym: "brood cell" EXACT [ISBN:0962073342]
+is_a: PO:0009002 ! plant cell
+created_by: Ramona
+creation_date: 2011-04-28T09:14:10Z
+
+[Term]
+id: PO:0030059
+name: tmema cell
+namespace: plant_anatomy
+def: "A plant cell at the base of a gemma or adjacent to a brachycyte that breaks down to allow abscission of the gemma or brachycyte." [ISBN:0962073342]
+comment: May be a single cell adjacent to a brachycyte or part of a portion of tmema tissue.
+subset: Bryophytes
+synonym: "brachytmema cell" NARROW []
+synonym: "dlichotmema cell" NARROW []
+is_a: PO:0009002 ! plant cell
+created_by: Ramona
+creation_date: 2011-04-28T09:24:40Z
 
 [Typedef]
 id: derives_from
