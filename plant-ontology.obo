@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:04:2011 14:37
+date: 29:04:2011 10:51
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1034,9 +1034,7 @@ synonym: "sieve tube element" RELATED []
 xref: CL:0000268
 xref: CL:0000543
 is_a: PO:0000081 ! axial cell
-disjoint_from: PO:0025032 ! hydroid
 disjoint_from: PO:0025033 ! leptoid
-disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0006075 ! primary phloem
 
@@ -1049,6 +1047,7 @@ comment: Occurs in the sporophytic phase of a plant life cycle.
 subset: TraitNet
 xref: CL:0000672
 is_a: PO:0000273 ! xylem element
+disjoint_from: PO:0025032 ! hydroid
 relationship: part_of PO:0005848 ! secondary xylem
 relationship: part_of PO:0005849 ! primary xylem
 
@@ -1116,6 +1115,7 @@ def: "An initial cell that is part of an epidermis and gives rise to specialized
 synonym: "epidermal initial cell" EXACT []
 xref: CL:0000538
 is_a: PO:0004011 ! initial cell
+relationship: part_of PO:0005679 ! epidermis
 
 [Term]
 id: PO:0000351
@@ -11691,11 +11691,10 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_anatomy
-def: "An axial cell that is dead at maturity,lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
-comment: Hydroids are water conducting cells found in bryophytes in the gametophytic phase and in the seta in the sporophytic phase.
+def: "An axial cell that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
+comment: Hydroids are water and mineral conducting cells found in bryophytes, both in the gametophytic phase and in the seta in the sporophytic phase.
 is_a: PO:0009002 ! plant cell
-disjoint_from: PO:0025033 ! leptoid
-disjoint_from: PO:0030045 ! stereid
+disjoint_from: PO:0000290 ! tracheary element
 relationship: part_of PO:0030047 ! hydrome
 created_by: Ramona
 creation_date: 2010-05-12T04:46:21Z
@@ -11705,11 +11704,9 @@ id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
 def: "An axial cell that resembles in structure the sieve elements of some seedless vascular plants." [ISBN:376821110, ISBN:962073342]
-comment: A food conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Food conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, including many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+comment: A carbohydrate and amino acid conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0025032 ! hydroid
-disjoint_from: PO:0030045 ! stereid
 relationship: part_of PO:0030048 ! leptome
 created_by: Ramona
 creation_date: 2010-05-12T04:49:59Z
@@ -15244,11 +15241,9 @@ creation_date: 2011-04-12T12:53:17Z
 id: PO:0030045
 name: stereid
 namespace: plant_anatomy
-def: "An axial cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
+def: "An ground tissue cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
+comment: Found only in bryophytes in gametophore axes or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
 is_a: PO:0025030 ! ground tissue cell
-disjoint_from: PO:0000289 ! sieve tube member
-disjoint_from: PO:0025032 ! hydroid
-disjoint_from: PO:0025033 ! leptoid
 relationship: part_of PO:0030050 ! stereome
 created_by: Ramona
 creation_date: 2011-04-25T11:33:34Z
@@ -15320,6 +15315,35 @@ comment: Often contains both hydrome and leptome. Found in bryophytes located in
 is_a: PO:0030046 ! portion of axial tissue
 created_by: Ramona
 creation_date: 2011-04-25T01:04:07Z
+
+[Term]
+id: PO:0030052
+name: antheridium jacket layer cell
+namespace: plant_anatomy
+def: "A plant cell that is part of an antheridium jacket layer." [ISBN:9780473067304]
+subset: Bryophytes
+subset: Pteridophytes
+synonym: "antheridium wall cell" EXACT []
+synonym: "sterile jacket cell" EXACT []
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0030053 ! antheridium jacket layer
+created_by: Ramona
+creation_date: 2011-04-29T08:13:39Z
+
+[Term]
+id: PO:0030053
+name: antheridium jacket layer
+namespace: plant_anatomy
+def: "A portion of plant tissue that is a single layer of cells on the outside of an antheridium." [ISBN:9780473067304]
+comment: Cells in the antheridium jacket layer surround the inner spermatogenous cells and do not give rise to sperm cells.
+subset: Bryophytes
+subset: Pteridophytes
+synonym: "antheridium wall" EXACT []
+synonym: "sterile jacket layer" EXACT []
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0025125 ! antheridium
+created_by: Ramona
+creation_date: 2011-04-29T08:16:07Z
 
 [Term]
 id: PO:0030054
@@ -15396,6 +15420,107 @@ synonym: "dlichotmema cell" NARROW []
 is_a: PO:0009002 ! plant cell
 created_by: Ramona
 creation_date: 2011-04-28T09:24:40Z
+
+[Term]
+id: PO:0030060
+name: gametophore axillary hair
+namespace: plant_anatomy
+def: "A multicellular trichome consisting of one long terminal cell atop a basal stalk that grows in the leaf axil of a non-vascular leaf." [ISBN:0962073342, ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+synonym: "club hair" EXACT [ISBN:0962073342]
+is_a: PO:0025162 ! multicellular trichome
+relationship: part_of PO:0030018 ! gametophore
+created_by: Ramona
+creation_date: 2011-04-29T08:21:18Z
+
+[Term]
+id: PO:0030061
+name: tmema
+namespace: plant_anatomy
+def: "A portion of plant tissue that has as parts tmema cells." [ISBN:0962073342, ISBN:9780473067304]
+comment: Found in bryophytes at the base of a gemma. Participates in abscission of the gemma.
+subset: Bryophytes
+is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0030059 ! tmema cell
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-29T08:30:03Z
+
+[Term]
+id: PO:0030062
+name: gametophore axillary hair terminal cell
+namespace: plant_anatomy
+def: "A trichome cell that is the long terminal cell of an axillary hair." [ISBN:9780473067304, XX:xx "Lars Hedenas, The Bryologist 100(1): pp. 65-88"]
+is_a: PO:0008030 ! trichome cell
+relationship: part_of PO:0030060 ! gametophore axillary hair
+created_by: Ramona
+creation_date: 2011-04-29T08:39:12Z
+
+[Term]
+id: PO:0030063
+name: gametophore axillary hair base
+namespace: plant_anatomy
+def: "A portion of plant tissue that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+comment: Consists of two to a dozen cells.
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0030060 ! gametophore axillary hair
+created_by: Ramona
+creation_date: 2011-04-29T09:01:40Z
+
+[Term]
+id: PO:0030064
+name: gametophore axillary hair basal cell
+namespace: plant_anatomy
+def: "A trichome cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+is_a: PO:0008030 ! trichome cell
+relationship: part_of PO:0030063 ! gametophore axillary hair base
+created_by: Ramona
+creation_date: 2011-04-29T09:03:51Z
+
+[Term]
+id: PO:0030065
+name: archegonium neck canal cell
+namespace: plant_anatomy
+def: "A plant cell that is one of the axial row of cells in an immature archegonium neck." [ISBN:0962073342]
+comment: As the archegonium matures, the neck canal cells disintegrate to form the archegonium neck canal.
+synonym: "archegoni" RELATED []
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0030039 ! archegonium neck
+created_by: Ramona
+creation_date: 2011-04-29T09:13:40Z
+
+[Term]
+id: PO:0030066
+name: archegonium neck canal
+namespace: plant_anatomy
+def: "A canal in the center of an archegonium neck." [ISBN:0962073342]
+comment: Forms after the archegonium neck canal cells disintegrate.
+is_a: PO:0025132 ! canal
+relationship: part_of PO:0030039 ! archegonium neck
+created_by: Ramona
+creation_date: 2011-04-29T09:21:53Z
+
+[Term]
+id: PO:0030067
+name: protonema side branch initial
+namespace: plant_anatomy
+def: "An initial cell that is produced by division of a sub-apical cell of a protonema." [ISBN:9781405181891]
+comment: May give rise to a chloronema, a caulonema, a gametophore bud, or may not divide further.
+synonym: "side branch initial cell" EXACT []
+is_a: PO:0004011 ! initial cell
+relationship: part_of PO:0030003 ! protonema
+created_by: Ramona
+creation_date: 2011-04-29T09:25:26Z
+
+[Term]
+id: PO:0030068
+name: rhizoid initial
+namespace: plant_anatomy
+def: "An epidermal initial cell that gives rise to a rhizoid." [PMID:12917289]
+comment: Part of the epidermis of a bryophyte or pteridophyte in the gametophytic phase. May be part of a thallus or gametophore.
+is_a: PO:0000349 ! epidermal initial
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-29T09:33:11Z
 
 [Typedef]
 id: derives_from
