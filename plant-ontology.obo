@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 29:04:2011 10:51
-saved-by: Ramona
+date: 29:04:2011 09:39
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -2369,10 +2369,10 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004537
 name: nucellar plant embryo
 namespace: plant_anatomy
-def: "A somatic plant embryo derived directly from nucellus cells without involving embryo sac cells." [POC:curators]
-comment: Also known as apomitic plant embryo, common in Citrus.
+def: "A somatic plant embryo derived directly from nucellus cells." [POC:curators]
+comment: Common in Citrus.
+subset: Citrus
 synonym: "adventitious embryo" BROAD []
-synonym: "apomitic plant embryo" BROAD []
 is_a: PO:0025302 ! somatic plant embryo
 
 [Term]
@@ -14609,8 +14609,9 @@ creation_date: 2011-04-27T08:20:22Z
 id: PO:0025302
 name: somatic plant embryo
 namespace: plant_anatomy
-def: "A plant embryo that arises from previously differentiated somatic cells, rather than from fused haploid gametes, i.e., the zygote." [POC:Curators]
-comment: Somatic plant embryos may arise where embryos normally would not arise and may be the product of apogamy or apomixis. They may occur on the edges of leaves on some species of Kalanchoe or some ferns.
+def: "A plant embryo that arises from previously differentiated somatic cells, rather than from fused gametes, i.e. the zygote." [POC:Curators]
+comment: Somatic plant embryos may arise where embryos normally would not arise as a product of apomixis. They may occur on the edges of leaves on some species of Kalanchoe or some ferns.
+synonym: "apomictic plant embryo" EXACT []
 is_a: PO:0009009 ! plant embryo
 created_by: cooperl
 creation_date: 2011-04-27T11:46:50Z
@@ -14620,6 +14621,7 @@ id: PO:0025303
 name: zygotic plant embryo
 namespace: plant_anatomy
 def: "A plant embryo that forms as a result of the fusion of gametes." [POC:curators]
+synonym: "zygotic embryo" EXACT []
 is_a: PO:0009009 ! plant embryo
 created_by: cooperl
 creation_date: 2011-04-27T05:19:46Z
@@ -14628,7 +14630,7 @@ creation_date: 2011-04-27T05:19:46Z
 id: PO:0025304
 name: cultured zygote-derived plant embryo
 namespace: plant_anatomy
-def: "A zygotic plant embryo that is grown or maintained in culture." [POC:curators]
+def: "A zygotic plant embryo that is grown or maintained in vitro." [POC:curators]
 synonym: "cultured zygotic embryo" EXACT []
 is_a: PO:0000010 ! cultured plant embryo
 is_a: PO:0025303 ! zygotic plant embryo
@@ -14639,7 +14641,7 @@ creation_date: 2011-04-27T05:25:34Z
 id: PO:0025305
 name: microspore-derived cultured plant embryo
 namespace: plant_anatomy
-def: "A cultured plant embryo that develops from isolated microspores." [POC:curators]
+def: "A cultured somatic plant embryo that develops from isolated microspores." [POC:curators]
 synonym: "microspore-derived haploid embryo" EXACT []
 is_a: PO:0000011 ! cultured somatic plant embryo
 created_by: cooperl
