@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 29:04:2011 09:39
-saved-by: cooperl
+date: 29:04:2011 15:36
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -999,6 +999,7 @@ subset: TraitNet
 synonym: "non-secretory trichome" EXACT []
 xref: CL:0000282
 is_a: PO:0009011 ! plant structure
+relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -2874,11 +2875,11 @@ relationship: part_of PO:0009030 ! carpel
 id: PO:0005020
 name: vascular bundle
 namespace: plant_anatomy
-def: "A portion of vascular tissue that is a unit strand of the vascular system and has as part xylem or phloem." [RW:test]
-comment: Usually contains both xylem or phloem. May also contain other types of tissue such as plant fibers or vascular cambium. May also contain portions of ground tissue.
+def: "A unit strand of the vascular system containing the vascular tissues, xylem and phloem. In addition vascular cambium is often present." [GR:pj]
+comment: May also contain portions of ground tissue.
 subset: Maize
 subset: TraitNet
-is_a: PO:0009015 ! portion of vascular tissue
+is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
 id: PO:0005021
@@ -3124,6 +3125,7 @@ comment: The principal function is the upward translocation of water and solutes
 subset: TraitNet
 synonym: "portion of xylem tissue" EXACT []
 is_a: PO:0009015 ! portion of vascular tissue
+disjoint_from: PO:0030047 ! hydrome
 
 [Term]
 id: PO:0005360
@@ -3155,6 +3157,7 @@ comment: Functions in the conduction of organic substances in vascular plants.
 subset: TraitNet
 synonym: "portion of phloem tissue" EXACT []
 is_a: PO:0009015 ! portion of vascular tissue
+disjoint_from: PO:0030048 ! leptome
 
 [Term]
 id: PO:0005421
@@ -3988,18 +3991,18 @@ is_a: PO:0005417 ! phloem
 id: PO:0006076
 name: metaphloem
 namespace: plant_anatomy
-def: "A portion of phloem tissue that is the part of a primary phloem that differentiates after the protophloem and before the secondary phloem, if any of the latter is formed." [ISBN:0471245194]
+def: "Part of the primary phloem that differentiates after the protophloem and before the secondary phloem, if any of the latter is formed." [ISBN:0471245194]
 synonym: "portion of metaphloem tissue" EXACT []
-is_a: PO:0005417 ! phloem
+is_a: PO:0009015 ! portion of vascular tissue
 relationship: part_of PO:0006075 ! primary phloem
 
 [Term]
 id: PO:0006077
 name: protophloem
 namespace: plant_anatomy
-def: "A portion of phloem tissue that has as parts the first-formed elements of the primary phloem." [ISBN:0471245194]
+def: "The first-formed elements of the primary phloem." [ISBN:0471245194]
 synonym: "portion of protophloem tissue" EXACT []
-is_a: PO:0005417 ! phloem
+is_a: PO:0009015 ! portion of vascular tissue
 relationship: part_of PO:0006075 ! primary phloem
 
 [Term]
@@ -9182,14 +9185,12 @@ replaced_by: PO:0005679
 id: PO:0009015
 name: portion of vascular tissue
 namespace: plant_anatomy
-def: "A portion of axial tissue that has as parts tracheary elements or sieve tube members and is part of a vascular system." [RW:test]
-comment: Functions in conduction and support. In shoot axes, vascular tissue is often found as part of a stele or may occur as scattered vascular bundles. May include other types of tissue, such as fibers.
+def: "A portion of plant tissue that has parts xylem and phloem." [APWeb:Glossary]
+comment: Functions in conduction and support. In the stem it is often found as a stele, surrounded by the cortex and surrounding the pith.
 subset: TraitNet
 synonym: "vascular system" RELATED []
 xref: BTO:0001432 "vascular tissue"
-is_a: PO:0030046 ! portion of axial tissue
-disjoint_from: PO:0030047 ! hydrome
-disjoint_from: PO:0030048 ! leptome
+is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000034 ! vascular system
 
 [Term]
@@ -10213,8 +10214,8 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0019026
 name: tracheid bar
 namespace: plant_anatomy
-def: "A portion of xylem tissue that is a distinct ring-like structure composed of tracheid cells that surrounds the hilum of some taxa e.g., Phaseolus, and forms a groove in the surface of the pericarp (immediately adjacent to the hilum)." [ISBN:0080280293]
-is_a: PO:0005352 ! xylem
+def: "A distinct ring-like structure, composed of tracheid cells, which surrounds the hilum of some taxa e.g., Phaseolus, and forms a groove in the surface of the pericarp (immediately adjacent to the hilum)." [ISBN:0080280293]
+is_a: PO:0009015 ! portion of vascular tissue
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -15264,13 +15265,14 @@ creation_date: 2011-04-18T09:30:35Z
 id: PO:0030047
 name: hydrome
 namespace: plant_anatomy
-def: "A portion of axial tissue that has as parts hyrdoids." [RW:test]
+def: "A portion of plant tissue that has as parts hyrdoids." [ISBN:376821110]
 comment: Found in bryophytes, in the center of a non-vascular shoot axis such as a gametophore or seta. Often surrounded by leptome. May function in water conduction and may provide support.
-is_a: PO:0030046 ! portion of axial tissue
-disjoint_from: PO:0009015 ! portion of vascular tissue
-disjoint_from: PO:0030048 ! leptome
-disjoint_from: PO:0030049 ! portion of plant fiber
-relationship: part_of PO:0030051 ! central strand
+subset: Bryophytes
+synonym: "hydrom" EXACT []
+synonym: "leptoxylem" EXACT []
+is_a: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0005352 ! xylem
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
@@ -15278,25 +15280,14 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030048
 name: leptome
 namespace: plant_anatomy
-def: "A portion of axial tissue that has as parts leptoids." [RW:test]
-comment: Found in bryophytes, in non-vascular shoot axes such as a gametophore or seta, often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
-is_a: PO:0030046 ! portion of axial tissue
-disjoint_from: PO:0009015 ! portion of vascular tissue
-disjoint_from: PO:0030047 ! hydrome
-disjoint_from: PO:0030049 ! portion of plant fiber
-relationship: part_of PO:0030051 ! central strand
-created_by: Ramona
-creation_date: 2011-04-18T09:34:43Z
-
-[Term]
-id: PO:0030049
-name: portion of plant fiber
-namespace: plant_anatomy
-def: "A portion axial tissue that has as parts fiber cells." [RW:test]
-comment: Contains elongated, lignified fiber cells that are dead at maturity.
-is_a: PO:0030046 ! portion of axial tissue
-disjoint_from: PO:0030047 ! hydrome
-disjoint_from: PO:0030048 ! leptome
+def: "A portion of plant tissue that has as parts leptoids." [ISBN:376821110]
+comment: Found in bryophytes, in non-vascular shoot axes such as a gametophore axis or seta, or in the midrib of a non-vascular leaf. Often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
+subset: Bryophytes
+synonym: "leptom" EXACT []
+synonym: "leptophloem" EXACT []
+is_a: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0005417 ! phloem
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
@@ -15304,7 +15295,11 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030050
 name: stereome
 namespace: plant_anatomy
-is_a: PO:0030046 ! portion of axial tissue
+def: "A portion of ground tissue that has as parts stereids." [ISBN:376821110]
+comment: Found only in bryophytes in gametophore axes or non-vascular leaves. May function in support.
+subset: Bryophytes
+is_a: PO:0025059 ! portion of ground tissue
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-25T11:39:57Z
 
@@ -15312,9 +15307,12 @@ creation_date: 2011-04-25T11:39:57Z
 id: PO:0030051
 name: central strand
 namespace: plant_anatomy
-def: "A unit strand of axial tissue that has as part hydrome or leptome." [ISBN:376821110]
-comment: Often contains both hydrome and leptome. Found in bryophytes located in the center of non-vascular shoot axes such as a gametophore axis or seta, or in the costa of a non-vascular leaf.
-is_a: PO:0030046 ! portion of axial tissue
+def: "A portion of plant tissue that is an axial strand in the center of a gametophore axis and has as part hydrome or leptome." [ISBN:0029496608, ISBN:0962073342]
+comment: Often contains both hydrome and leptome. Found in bryophytes.
+synonym: "conducting cylinder" EXACT [ISBN:376821110]
+synonym: "conducting strand" EXACT [ISBN:376821110]
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0030020 ! gametophore axis
 created_by: Ramona
 creation_date: 2011-04-25T01:04:07Z
 
@@ -15523,6 +15521,61 @@ is_a: PO:0000349 ! epidermal initial
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-29T09:33:11Z
+
+[Term]
+id: PO:0030069
+name: paraphyllium
+namespace: plant_anatomy
+def: "A portion of epidermal tissue that is a small outgrowth from the epidermis between the leaves of a gametophore axis." [ISBN:0962073342]
+comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-like, or leaf-like. Found in pleurocarpous mosses and a few leafy liverworts.
+subset: Bryophytes
+synonym: "paraphyllia" EXACT Plural []
+is_a: PO:0005679 ! epidermis
+relationship: part_of PO:0030020 ! gametophore axis
+created_by: Ramona
+creation_date: 2011-04-29T01:01:17Z
+
+[Term]
+id: PO:0030070
+name: paraphysis
+namespace: plant_anatomy
+def: "A slender, usually uniseriate multicellular trichome that grows intermixed with the gametangia." [ISBN:0029496608]
+comment: Found in bryophytes and pteridophytes, especially in mosses.
+subset: Bryophytes
+subset: Pteridophytes
+synonym: "paraphyses" EXACT Plural []
+is_a: PO:0025162 ! multicellular trichome
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-29T01:05:26Z
+
+[Term]
+id: PO:0030071
+name: rhizoid
+namespace: plant_anatomy
+def: "A trichome that is part of a plant in the gametophytic phase and has positive gravitropism." [ISBN:12917289]
+comment: Found in bryophytes and pteridophytes growing from the epidermis of the lower surface of a gametophore or thallus. May be multicellular or unicellular. Usually serves to anchor the plant to the substrate.
+is_a: PO:0000282 ! trichome
+relationship: develops_from PO:0030068 ! rhizoid initial
+relationship: participates_in PO:0028003 ! gametophytic phase
+created_by: Ramona
+creation_date: 2011-04-29T01:15:05Z
+
+[Term]
+id: PO:0030072
+name: costa
+namespace: plant_anatomy
+def: "A portion of plant tissue that is a single or double strand in the center of a non-vascular leaf and has as part hydrome or leptome." [ISBN:376821110]
+comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid.
+synonym: "non-vascular leaf midrib" EXACT []
+synonym: "non-vascular leaf midvein" RELATED []
+synonym: "phyllid costa" EXACT []
+synonym: "phyllid midrib" EXACT []
+synonym: "phyllid midvein" RELATED []
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0025075 ! non-vascular leaf
+created_by: Ramona
+creation_date: 2011-04-29T02:30:17Z
 
 [Typedef]
 id: derives_from
