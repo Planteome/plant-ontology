@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:04:2011 15:36
+date: 02:05:2011 12:09
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -36,10 +36,12 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0000002
 name: anther wall
 namespace: plant_anatomy
-def: "A multicellular layer with outer epidermis and an inner endothecium." [GR:pj]
+def: "A sporangium wall that is part of an anther." [RW:test]
+comment: Has an outer epidermis (exothecium) and an inner endothecium and may have additional layers.
 subset: reference
-is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0025277 ! pollen sac
+synonym: "pollen sac wall" EXACT []
+is_a: PO:0025306 ! sporangium wall
+relationship: part_of PO:0009066 ! anther
 
 [Term]
 id: PO:0000003
@@ -2468,13 +2470,13 @@ is_a: PO:0004543 ! tuber
 
 [Term]
 id: PO:0004700
-name: middle layer
+name: anther wall middle layer
 namespace: plant_anatomy
 def: "Usually a single cell layer between tapetum and endothecium which almost invariably degenerates early during angiosperm anther  development and is eventually absorbed by adjacent cells." [POC:curators]
 subset: reference
 xref: OBO_SF_PO:2903966
 is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0006008 ! inner secondary parietal cell layer
+relationship: develops_from PO:0006008 ! anther wall inner secondary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -3489,36 +3491,40 @@ relationship: part_of PO:0000229 ! floral meristem
 
 [Term]
 id: PO:0006006
-name: primary parietal cell layer
+name: anther wall primary parietal cell layer
 namespace: plant_anatomy
 def: "A primary parietal cell and adjacent cells." [GR:pj, PMID:2476454]
 subset: reference
+synonym: "pollen sac primary parietal cell layer" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
 id: PO:0006007
-name: secondary parietal cell layer
+name: anther wall secondary parietal cell layer
 namespace: plant_anatomy
 def: "The cells of the primary parietal cell layer undergo a periclinal division resulting in the formation of the two secondary parietal layers." [GR:pj, PMID:2476454]
 subset: reference
+synonym: "pollen sac secondary parietal cell layer" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0006006 ! primary parietal cell layer
+relationship: develops_from PO:0006006 ! anther wall primary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
 id: PO:0006008
-name: inner secondary parietal cell layer
+name: anther wall inner secondary parietal cell layer
 namespace: plant_anatomy
 def: "One of the secondary parietal layer formed towards inner side after the cells of the primary parietal cell layer undergo a periclinal division. It divides periclinally to form the middle layer externally and the tapetum internally." [GR:pj, PMID:2476454]
-is_a: PO:0006007 ! secondary parietal cell layer
+synonym: "pollen sac inner secondary parietal cell layer" EXACT []
+is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
 [Term]
 id: PO:0006009
-name: outer secondary parietal cell layer
+name: anther wall outer secondary parietal cell layer
 namespace: plant_anatomy
 def: "One of the secondary parietal layer formed towards outside after the cells of the primary parietal cell layer undergo a periclinal division. It differentiates into the endothecium." [GR:pj, PMID:2476454]
-is_a: PO:0006007 ! secondary parietal cell layer
+synonym: "pollen sac outer secondary parietal cell layer" EXACT []
+is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
 [Term]
 id: PO:0006010
@@ -3527,7 +3533,7 @@ namespace: plant_anatomy
 def: "It is formed by the division of a archesporial cell." [PMID:2476454]
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
-relationship: part_of PO:0006006 ! primary parietal cell layer
+relationship: part_of PO:0006006 ! anther wall primary parietal cell layer
 
 [Term]
 id: PO:0006011
@@ -4009,7 +4015,7 @@ relationship: part_of PO:0006075 ! primary phloem
 id: PO:0006078
 name: primary vascular tissue
 namespace: plant_anatomy
-def: "OBSOLETE. The vascular tissue of the primary plant body at the embryonic stage. " [GR:pj]
+def: "OBSOLETE. The vascular tissue of the primary plant body at the embryonic stage." [GR:pj]
 comment: Redundant to sec ...
 is_obsolete: true
 
@@ -5495,7 +5501,7 @@ id: PO:0006446
 name: Poaceae endothecium
 namespace: plant_anatomy
 def: "The hypodermis of an anther sac of a grass stamen with distinctively thickened walls and involved in its dehiscence." [GR:pj]
-is_a: PO:0020002 ! endothecium
+is_a: PO:0020002 ! anther wall endothecium
 relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
@@ -5503,7 +5509,7 @@ id: PO:0006447
 name: Poaceae exothecium
 namespace: plant_anatomy
 def: "The epidermis of an anther sac of a grass stamen." [GR:pj]
-is_a: PO:0020004 ! exothecium
+is_a: PO:0020004 ! anther wall exothecium
 relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
@@ -5527,7 +5533,7 @@ id: PO:0006450
 name: Poaceae tapetum
 namespace: plant_anatomy
 def: "Innermost part of the anther wall, involved in the nutrition of the pollen in grasses." [GR:pj]
-is_a: PO:0009071 ! tapetum
+is_a: PO:0009071 ! anther wall tapetum
 relationship: part_of PO:0006445 ! Poaceae anther wall
 
 [Term]
@@ -9811,14 +9817,14 @@ replaced_by: PO:0025277
 
 [Term]
 id: PO:0009071
-name: tapetum
+name: anther wall tapetum
 namespace: plant_anatomy
 def: "Innermost part of the anther wall, involved in the nutrition of the pollen." [APWeb:Glossary, TAIR:lr]
 subset: reference
-synonym: "portion of tapetal tissue" EXACT []
-synonym: "portion of tapetum tissue" EXACT []
+synonym: "pollen sac tapetum" EXACT []
+synonym: "portion of anther wall tapetal tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0006008 ! inner secondary parietal cell layer
+relationship: develops_from PO:0006008 ! anther wall inner secondary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -10229,13 +10235,14 @@ relationship: part_of PO:0009072 ! ovary
 
 [Term]
 id: PO:0020002
-name: endothecium
+name: anther wall endothecium
 namespace: plant_anatomy
-def: "A portion of hypodermis of an anther sac with distinctively thickened walls and involved in its dehiscence, especially when this is by slits." [APWeb:Glossary]
+def: "An endothecium that part of an anther wall." [RW:test]
+comment: May have secondary thickening of walls of cells that are involved in anther dehiscence.
 subset: reference
 synonym: "anther sac hypodermis" RELATED []
-is_a: PO:0005051 ! hypodermis
-relationship: develops_from PO:0006009 ! outer secondary parietal cell layer
+synonym: "pollen sac endothecium" EXACT []
+is_a: PO:0030049 ! endothecium
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -10252,14 +10259,16 @@ relationship: part_of PO:0009072 ! ovary
 
 [Term]
 id: PO:0020004
-name: exothecium
+name: anther wall exothecium
 namespace: plant_anatomy
 alt_id: PO:0006059
-def: "A portion of stamen epidermis that is part of an anther sac, sometimes with distinctively thickened walls and involved in its dehiscence, usually only when this is poricidal." [APWeb:Glossary]
+def: "An exothecium that is part of an anther wall." [RW:test]
+comment: Often with thickened cell walls. Involved in anther dehiscence.
 subset: reference
-synonym: "anther epidermis" RELATED []
-synonym: "anther sac epidermis" RELATED []
-is_a: PO:0025097 ! stamen epidermis
+synonym: "anther epidermis" EXACT []
+synonym: "anther sac epidermis" EXACT []
+synonym: "pollen sac exothecium" EXACT []
+is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -14649,6 +14658,16 @@ created_by: cooperl
 creation_date: 2011-04-27T05:33:40Z
 
 [Term]
+id: PO:0025306
+name: sporangium wall
+namespace: plant_anatomy
+def: "A cardinal organ part that is the outer layers of a sporangium, external to the spores." [RW:test]
+comment: May have multiple layers such as exothecium, endothecium and tapetum.
+is_a: PO:0025001 ! cardinal organ part
+created_by: Ramona
+creation_date: 2011-05-02T09:14:26Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -15292,6 +15311,16 @@ created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
 [Term]
+id: PO:0030049
+name: endothecium
+namespace: plant_anatomy
+def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [RW:test]
+comment: The outermost of the parietal layers of a sporangium.
+is_a: PO:0025059 ! portion of ground tissue
+created_by: Ramona
+creation_date: 2011-05-02T09:46:49Z
+
+[Term]
 id: PO:0030050
 name: stereome
 namespace: plant_anatomy
@@ -15576,6 +15605,26 @@ is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
 creation_date: 2011-04-29T02:30:17Z
+
+[Term]
+id: PO:0030073
+name: exothecium
+namespace: plant_anatomy
+def: "A portion of epidermis that is the outermost layer of a sporangium." [ISBN:0962073342]
+synonym: "ampithecium" EXACT []
+synonym: "sporangium epidermis" EXACT []
+is_a: PO:0005679 ! epidermis
+relationship: part_of PO:0025306 ! sporangium wall
+created_by: Ramona
+creation_date: 2011-05-02T09:46:49Z
+
+[Term]
+id: PO:0030074
+name: archesporium
+namespace: plant_anatomy
+is_a: PO:0009007 ! portion of plant tissue
+created_by: Ramona
+creation_date: 2011-05-02T12:05:51Z
 
 [Typedef]
 id: derives_from
