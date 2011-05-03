@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 02:05:2011 11:40
-saved-by: cooperl
+date: 03:05:2011 12:22
+saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -36,11 +36,11 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0000002
 name: anther wall
 namespace: plant_anatomy
-def: "A sporangium wall that is part of an anther." [RW:test]
+def: "A microsporangium wall that is part of an anther." [RW:test]
 comment: Has an outer epidermis (exothecium) and an inner endothecium and may have additional layers.
 subset: reference
 synonym: "pollen sac wall" EXACT []
-is_a: PO:0025306 ! sporangium wall
+is_a: PO:0025307 ! microsporangium wall
 relationship: part_of PO:0009066 ! anther
 
 [Term]
@@ -8571,7 +8571,7 @@ def: "A portion of plant tissue that is the morphologically distinct outer layer
 subset: Poaceae
 subset: Rice
 synonym: "portion of nucellar epidermis" EXACT []
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025312 ! megasporangium exothecium
 relationship: part_of PO:0020020 ! nucellus
 
 [Term]
@@ -9768,6 +9768,7 @@ subset: TraitNet
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0006089 ! anther primordium
+relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009029 ! stamen
 
 [Term]
@@ -9819,12 +9820,12 @@ replaced_by: PO:0025277
 id: PO:0009071
 name: anther wall tapetum
 namespace: plant_anatomy
-def: "Innermost part of the anther wall, involved in the nutrition of the pollen." [APWeb:Glossary, TAIR:lr]
+def: "A microsporangium tapetum that is part of an anther wall." [RW:test]
+comment: Develops from a primary or secondary parietal cell layer.
 subset: reference
 synonym: "pollen sac tapetum" EXACT []
 synonym: "portion of anther wall tapetal tissue" EXACT []
-is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0006008 ! anther wall inner secondary parietal cell layer
+is_a: PO:0025314 ! microsporangium tapetum
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -10237,12 +10238,12 @@ relationship: part_of PO:0009072 ! ovary
 id: PO:0020002
 name: anther wall endothecium
 namespace: plant_anatomy
-def: "An endothecium that part of an anther wall." [RW:test]
+def: "An microsporangium endothecium that part of an anther wall." [RW:test]
 comment: May have secondary thickening of walls of cells that are involved in anther dehiscence.
 subset: reference
 synonym: "anther sac hypodermis" RELATED []
 synonym: "pollen sac endothecium" EXACT []
-is_a: PO:0030049 ! endothecium
+is_a: PO:0025309 ! microsporangium endothecium
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -10262,13 +10263,13 @@ id: PO:0020004
 name: anther wall exothecium
 namespace: plant_anatomy
 alt_id: PO:0006059
-def: "An exothecium that is part of an anther wall." [RW:test]
+def: "An microsporangium exothecium that is part of an anther wall." [RW:test]
 comment: Often with thickened cell walls. Involved in anther dehiscence.
 subset: reference
 synonym: "anther epidermis" EXACT []
 synonym: "anther sac epidermis" EXACT []
 synonym: "pollen sac exothecium" EXACT []
-is_a: PO:0030073 ! exothecium
+is_a: PO:0025311 ! microsporangium exothecium
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -14342,7 +14343,7 @@ subset: TraitNet
 synonym: "anther lobe" NARROW []
 xref: OBO_SF_PO:3132610
 is_a: PO:0025202 ! microsporangium
-relationship: part_of PO:0009066 ! anther
+relationship: part_of PO:0009028 ! microsporophyll
 created_by: Ramona
 creation_date: 2011-02-25T09:17:11Z
 
@@ -14665,8 +14666,98 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is the outer layers of a sporangium, external to the spores." [RW:test]
 comment: May have multiple layers such as exothecium, endothecium and tapetum.
 is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2011-05-02T09:14:26Z
+
+[Term]
+id: PO:0025307
+name: microsporangium wall
+namespace: plant_anatomy
+is_a: PO:0025306 ! sporangium wall
+relationship: part_of PO:0025202 ! microsporangium
+created_by: Ramona
+creation_date: 2011-05-03T09:42:36Z
+
+[Term]
+id: PO:0025308
+name: megasporangium wall
+namespace: plant_anatomy
+is_a: PO:0025306 ! sporangium wall
+relationship: part_of PO:0025201 ! megasporangium
+created_by: Ramona
+creation_date: 2011-05-03T09:42:36Z
+
+[Term]
+id: PO:0025309
+name: microsporangium endothecium
+namespace: plant_anatomy
+def: "An endothecium that is part of a microsporangium wall." [RW:test]
+is_a: PO:0030049 ! endothecium
+relationship: part_of PO:0025307 ! microsporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T11:13:31Z
+
+[Term]
+id: PO:0025310
+name: megasporangium endothecium
+namespace: plant_anatomy
+def: "An endothecium that is part of a megasporangium wall." [RW:test]
+is_a: PO:0030049 ! endothecium
+relationship: part_of PO:0025308 ! megasporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T11:13:31Z
+
+[Term]
+id: PO:0025311
+name: microsporangium exothecium
+namespace: plant_anatomy
+def: "An exothecium that is part of a microsporangium wall." [RW:test]
+is_a: PO:0030073 ! exothecium
+relationship: part_of PO:0025307 ! microsporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T11:19:36Z
+
+[Term]
+id: PO:0025312
+name: megasporangium exothecium
+namespace: plant_anatomy
+def: "An exothecium that is part of a megasporangium wall." [RW:test]
+is_a: PO:0030073 ! exothecium
+relationship: part_of PO:0025308 ! megasporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T11:19:36Z
+
+[Term]
+id: PO:0025313
+name: tapetum
+namespace: plant_anatomy
+def: "A portion of ground tissue that is the inner-most layer of a sporangium wall." [RW:test]
+comment: May function in providing nutrition to developing sporocytes. May have one or two layers of cells. May break down as spores mature. A tapetum does not develop in some plants, such as Psilotum. In angiosperms, the tapetum develops from one of the parietal layers. In non-seed plants, the tapetum may develop from the outer cells of archesporium or from other layers of the sporangium wall.
+is_a: PO:0025059 ! portion of ground tissue
+relationship: part_of PO:0025306 ! sporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T11:59:24Z
+
+[Term]
+id: PO:0025314
+name: microsporangium tapetum
+namespace: plant_anatomy
+def: "An tapetum that is part of a microsporangium wall." [RW:test]
+is_a: PO:0025313 ! tapetum
+relationship: part_of PO:0025307 ! microsporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T12:03:42Z
+
+[Term]
+id: PO:0025315
+name: megasporangium tapetum
+namespace: plant_anatomy
+def: "An tapetum that is part of a megasporangium wall." [RW:test]
+is_a: PO:0025313 ! tapetum
+relationship: part_of PO:0025308 ! megasporangium wall
+created_by: Ramona
+creation_date: 2011-05-03T12:03:42Z
 
 [Term]
 id: PO:0028001
@@ -15318,6 +15409,7 @@ namespace: plant_anatomy
 def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [RW:test]
 comment: The outermost of the parietal layers of a sporangium.
 is_a: PO:0025059 ! portion of ground tissue
+relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
 creation_date: 2011-05-02T09:46:49Z
 
@@ -15623,7 +15715,12 @@ creation_date: 2011-05-02T09:46:49Z
 id: PO:0030074
 name: archesporium
 namespace: plant_anatomy
+def: "A portion of plant tissue that is the internal part of a sporangium, inside the sporangium wall, and has as parts archesporial cells." [RW:test]
+comment: Gives rise to sporocytes and may give rise to other sterile cells such as elators.
+synonym: "sporogenous tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0030056 ! archesporial cell
+relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2011-05-02T12:05:51Z
 
