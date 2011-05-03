@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:05:2011 12:22
+date: 03:05:2011 15:20
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -11670,6 +11670,7 @@ namespace: plant_anatomy
 def: "A plant axis that is part of a shoot system." [POC:curators]
 comment: Often bears leaves and branches. In vascular plants, has at least one node and one internode.
 subset: TraitNet
+synonym: "caullome" EXACT []
 synonym: "shoot" RELATED []
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009006 ! shoot system
@@ -15030,9 +15031,10 @@ creation_date: 2011-03-25T10:45:12Z
 id: PO:0030020
 name: gametophore axis
 namespace: plant_anatomy
-def: "A shoot axis that is part of a gametophore." [RW:test]
-comment: A stem or branch of the leafy part of a bryophyte.
+def: "A shoot axis that is part of a gametophore." [ISBN:0962073342, POC:curators]
+comment: Found in mosses and leafy liverworts. A stem or branch of the leafy part of a bryophyte.
 subset: Bryophytes
+synonym: "caulid" EXACT []
 synonym: "cauloid" EXACT []
 synonym: "non-vascular shoot axis" EXACT []
 is_a: PO:0025029 ! shoot axis
@@ -15045,8 +15047,11 @@ creation_date: 2011-03-25T10:57:31Z
 id: PO:0030021
 name: gametophore branch
 namespace: plant_anatomy
-def: "A branch that is part of a gametophore." [RW:test]
+def: "A branch that is part of a gametophore." [POC:rw]
 comment: A branch of the leafy part of a bryophyte shoot system.
+subset: Bryophytes
+synonym: "caulid branch" EXACT []
+synonym: "cauloid branch" EXACT []
 is_a: PO:0025073 ! branch
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15056,8 +15061,11 @@ creation_date: 2011-03-25T11:13:48Z
 id: PO:0030022
 name: gametophore stem
 namespace: plant_anatomy
-def: "A stem that is part of a gametophore." [RW:test]
+def: "A stem that is part of a gametophore." [POC:rw]
 comment: A stem (the primary axis) of the leafy part of a bryophyte shoot system.
+subset: Bryophytes
+synonym: "caulid stem" EXACT []
+synonym: "cauloid stem" EXACT []
 is_a: PO:0009047 ! stem
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
