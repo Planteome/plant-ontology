@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:05:2011 15:20
+date: 04:05:2011 11:43
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3564,9 +3564,10 @@ relationship: part_of PO:0009086 ! endocarp
 id: PO:0006014
 name: male archesporial cell
 namespace: plant_anatomy
-def: "It undergoes periclinal divisions, giving rise to an inner primary sporogenous cell (PSC) layer and an outer primary parietal cell (PPC)." [GR:pj, PMID:10465788]
-synonym: "anther archesporial cell" RELATED []
-synonym: "male archesporial initial" RELATED []
+def: "An archesporial cell that is part of a microsporangium and divides to gives rise to a microsporocyte." [PMID:10465788, POC:curators]
+comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In seed plants, a male archesporial cell undergoes periclinal division, giving rise to an inner primary sporogenous cell layer and an outer primary parietal cell.
+synonym: "anther archesporial cell" NARROW []
+synonym: "male archesporial initial" EXACT []
 is_a: PO:0030056 ! archesporial cell
 relationship: part_of PO:0025202 ! microsporangium
 
@@ -3574,8 +3575,8 @@ relationship: part_of PO:0025202 ! microsporangium
 id: PO:0006015
 name: female archesporial cell
 namespace: plant_anatomy
-def: "A plant cell that is part of a megasporangium and divides to give rise to a megasporocyte." [PMID:10465788]
-comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In the majority of flowering plants including <i>Arabidopsis</i>, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell (MMC). In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte.
+def: "An archesporial cell that is part of a megasporangium and divides to give rise to a megasporocyte." [PMID:10465788, POC:curators]
+comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In the majority of flowering plants, including Arabidopsis, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell. In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte.
 synonym: "female archesporial initial" EXACT []
 synonym: "ovule archesporial cell" NARROW []
 is_a: PO:0030056 ! archesporial cell
@@ -9631,8 +9632,8 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009055
 name: bract
 namespace: plant_anatomy
-def: "A phyllome, usually different in form from the foliage leaves, subtending a reproductive structure." [POC:curators]
-comment: Often used to refer to what is called here floral bract.
+def: "A phyllome that subtends a reproductive structure." [POC:curators]
+comment: Usually different from leaves. Often used to refer to a floral bract, but includes other kinds of bracts.
 subset: reference
 subset: TraitNet
 synonym: "hypsophyll" RELATED []
@@ -12395,10 +12396,12 @@ id: PO:0025094
 name: sporangium
 namespace: plant_anatomy
 alt_id: PO:0025232
-def: "A plant organ in which spores are produced." [ISBN:0716710072]
+def: "A plant organ in which spores are produced." [ISBN:0716710072, POC:curators]
 comment: In bryophytes, particularly in mosses, a sporangium is referred to as a capsule. In seed plants, a sporangium is located in a sporophyll. In pteridophytes, a sporangium is located on the surface of a sporophyll or fertile leaf or borne on a sporangiophore. May be unicellular in some algae.
+subset: Potato
 subset: TraitNet
 synonym: "moss capsule" EXACT []
+synonym: "sporangia" EXACT Plural []
 synonym: "spore capsule" EXACT []
 xref: OBO_SF_PO:3132600
 xref: OBO_SF_PO:3140824
@@ -14593,7 +14596,11 @@ id: PO:0025299
 name: perianth calyptra
 namespace: plant_anatomy
 def: "A perianth that is composed of fused perianth parts and located on top of a gynoecium that contains an inferior ovary." [POC:curators]
+comment: May be composed of fused petals, sepals or tepals, but is generally formed from fused petals in Eucalyptus and other Myrtaceae. Sometimes erroneously referred to as part of a fruit. Not the same structure as a spore capsule calyptra.
+synonym: "floral calyptra" EXACT []
+synonym: "floral operculum" RELATED []
 is_a: PO:0009058 ! perianth
+disjoint_from: PO:0030037 ! spore capsule calyptra
 created_by: Ramona
 creation_date: 2011-04-26T08:45:55Z
 
@@ -14761,6 +14768,47 @@ created_by: Ramona
 creation_date: 2011-05-03T12:03:42Z
 
 [Term]
+id: PO:0025316
+name: axillary hair
+namespace: plant_anatomy
+def: "A multicellular trichome that has as parts a long terminal cell atop a basal stalk and grows in a leaf axil." [ISBN:0962073342, RW:test]
+comment: Found in monocots and mosses. The basal stalk may contain one or more cells.
+is_a: PO:0025162 ! multicellular trichome
+created_by: Ramona
+creation_date: 2011-05-04T11:08:44Z
+
+[Term]
+id: PO:0025317
+name: axillary hair terminal cell
+namespace: plant_anatomy
+def: "A trichome cell that is the long terminal cell of an axillary hair." [ISBN:9780473067304]
+is_a: PO:0008030 ! trichome cell
+relationship: part_of PO:0025316 ! axillary hair
+created_by: Ramona
+creation_date: 2011-05-04T11:15:11Z
+
+[Term]
+id: PO:0025318
+name: axillary hair base
+namespace: plant_anatomy
+def: "A portion of plant tissue that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304, RW:test]
+comment: Consists of two or more cells.
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0025316 ! axillary hair
+created_by: Ramona
+creation_date: 2011-05-04T11:18:18Z
+
+[Term]
+id: PO:0025319
+name: axillary hair basal cell
+namespace: plant_anatomy
+def: "A trichome cell that is part of an axillary hair base." [RW:test]
+is_a: PO:0008030 ! trichome cell
+relationship: part_of PO:0025318 ! axillary hair base
+created_by: Ramona
+creation_date: 2011-05-04T11:20:33Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -14809,8 +14857,8 @@ creation_date: 2011-03-10T10:51:12Z
 id: PO:0030002
 name: caulonema cell
 namespace: plant_anatomy
-def: "A plant cell that is part of a caulonema and has cross walls of adjacent cells that are oblique to the protonema axis." [POC:rw]
-comment: A caulonema cell contains fewer, less well-developed chloroplasts\nthan a chloronema cell.
+def: "A chlorenchyma cell that is part of a caulonema and has cross walls of adjacent cells that are oblique to the protonema axis." [POC:rw]
+comment: A caulonema cell contains fewer, less well-developed chloroplasts than a chloronema cell.
 is_a: PO:0000076 ! chlorenchyma cell
 relationship: part_of PO:0030005 ! caulonema
 created_by: Ramona
@@ -14994,8 +15042,9 @@ creation_date: 2011-04-26T07:56:36Z
 id: PO:0030017
 name: spore capsule mouth
 namespace: plant_anatomy
-def: "A plant anatomical space that is the opening on the apical end of a spore capsule." [POC:curators]
+def: "A plant anatomical space that is the opening on the apical end of a spore capsule." [POC:curators, RW:test]
 subset: Bryophytes
+subset: Poaceae
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15141,7 +15190,7 @@ creation_date: 2011-04-12T08:35:16Z
 id: PO:0030028
 name: perigonial bract
 namespace: plant_anatomy
-def: "A bract that subtends an antheridium." [ISBN:9780473067304, RW:test]
+def: "A bract that subtends an antheridium." [ISBN:9780473067304]
 comment: When an antheridium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perigonial bracts. If an antheridium occurs on a main axis of the gametophore, usually only the terminal phyllomes are perigonial bracts.
 subset: Bryophytes
 is_a: PO:0009055 ! bract
@@ -15153,9 +15202,10 @@ creation_date: 2011-04-12T09:56:04Z
 id: PO:0030029
 name: sporophyte foot
 namespace: plant_anatomy
-def: "A plant organ that is the base of a whole plant in the sporophytic phase and attaches it to the gametophore." [RW:crum, RW:schofeld]
+def: "A plant organ that is the base of a whole plant in the sporophytic phase and attaches it to the gametophore." [ISBN:0029496608, ISBN:0962073342]
 comment: Found in bryophytes and some pteridophytes. In mosses, the foot is located below the seta. In ferns, the foot is formed from the upper hypobasal quandrant of the embryo. The sporophyte foot serves for both attachment and absorption. The outer portion of the foot is composed of absorptive transfer cells.
 subset: Bryophytes
+subset: Citrus
 subset: Pteridophytes
 is_a: PO:0009008 ! plant organ
 relationship: has_part PO:0000078 ! transfer cell
@@ -15167,8 +15217,8 @@ creation_date: 2011-04-12T10:01:12Z
 id: PO:0030030
 name: perichaetal bract
 namespace: plant_anatomy
-def: "A bract that subtends an archegonium." [RW:crum]
-comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually parichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually parichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
+def: "A bract that subtends an archegonium." [ISBN:0962073342]
+comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually perichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
 subset: Bryophytes
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
@@ -15182,6 +15232,8 @@ namespace: plant_anatomy
 def: "A collective phyllome structure that consists of two or more of the most distal perichaetal bracts on a gametophore axis and surround a capsule." [RW:test]
 comment: The perichaetal bracts may fuse laterally in the gametophytic perianth. The gametophytic perianth is not the same structure as a perianth (PO:0009058) in angiosperms.
 subset: Bryophytes
+subset: Citrus
+subset: Pteridophytes
 is_a: PO:0025023 ! collective phyllome structure
 disjoint_from: PO:0009058 ! perianth
 relationship: has_part PO:0030030 ! perichaetal bract
@@ -15193,9 +15245,10 @@ creation_date: 2011-04-12T10:16:51Z
 id: PO:0030032
 name: seta
 namespace: plant_anatomy
-def: "A plant axis that holds up a spore capsule." [RW:test]
+def: "A plant axis that holds up a spore capsule." [ISBN:0962073342, POC:curators]
 comment: Found in some bryophytes, especially mosses.
 subset: Bryophytes
+subset: Gymnosperms
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028002 ! sporophytic phase
 created_by: Ramona
@@ -15205,11 +15258,11 @@ creation_date: 2011-04-12T10:25:45Z
 id: PO:0030033
 name: antheridiophore
 namespace: plant_anatomy
-def: "A plant axis that bears two or more antheridia." [RW:crum]
-comment: Antheridia are borne on a disk-shaped archegonial head. Found in Marchantiales.
+def: "A plant axis that bears two or more antheridia on an antheridial head." [ISBN:0962073342]
+comment: Found in Marchantiales.
 subset: Bryophytes
 is_a: PO:0025004 ! plant axis
-relationship: participates_in PO:0028002 ! sporophytic phase
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
 
@@ -15217,11 +15270,11 @@ creation_date: 2011-04-12T10:29:01Z
 id: PO:0030034
 name: archegoniophore
 namespace: plant_anatomy
-def: "A plant axis that bears two or more archegonia." [RW:crum]
-comment: Archegonia are borne on an umbrella-shaped archegonial head. Found in Marchantiales.
+def: "A plant axis that bears two or more archegonia on an archegonial head." [ISBN:0962073342]
+comment: Found in Marchantiales.
 subset: Bryophytes
 is_a: PO:0025004 ! plant axis
-relationship: participates_in PO:0028002 ! sporophytic phase
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
 
@@ -15230,7 +15283,7 @@ id: PO:0030035
 name: antheridium stalk
 namespace: plant_anatomy
 def: "A stalk that is the basal part of an antheridium." [RW:test]
-comment: Raises the antheridium/venter above the rest of the gametophyte.
+comment: Raises the antheridium above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
 is_a: PO:0025066 ! stalk
@@ -15255,11 +15308,10 @@ creation_date: 2011-04-12T10:39:46Z
 id: PO:0030037
 name: spore capsule calyptra
 namespace: plant_anatomy
-def: "A cardinal organ part that develops from the wall of an archegonium and surrounds a sporangium." [RW:parihar, RW:test]
-comment: Found in bryophytes and pteridophytes. The calyptra is a membranous or hairy cap or hood composed of gametophytic tissue that protects the embryonic sporophyte within the archegonium. In some species, the calyptra may persist after the sporophyte develops and gets carried upward as the seta elongates.
-subset: Bryophytes
-subset: Pteridophytes
+def: "A cardinal organ part that develops from the wall of an archegonium and surrounds a sporangium." [RW:test]
+comment: Found in bryophytes. The calyptra is a membranous or hairy cap or hood composed of gametophytic tissue that protects the embryonic sporophyte within the archegonium. In some species, the calyptra may persist after the sporophyte develops and gets carried upward as the seta elongates.
 is_a: PO:0025001 ! cardinal organ part
+disjoint_from: PO:0025299 ! perianth calyptra
 relationship: develops_from PO:0025126 ! archegonium
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
@@ -15269,7 +15321,7 @@ creation_date: 2011-04-12T10:53:45Z
 id: PO:0030038
 name: venter
 namespace: plant_anatomy
-def: "A cardinal organ part that is the enlarged basal part of an archegonium and has an egg cell located in it." [RW:test]
+def: "A cardinal organ part that is the enlarged basal part of an archegonium and has an archegonium egg cell located in it." [RW:test]
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
@@ -15285,7 +15337,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is the elongated apical part of an archegonium." [RW:test]
 comment: Early in development, the neck is occluded by a single row of neck canal cells. At maturity, the neck canal cells disintegrate, creating a canal for the sperm to enter the archegonium.
 subset: Bryophytes
-subset: Pteridophytes
+subset: Citrus
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15295,12 +15347,12 @@ creation_date: 2011-04-12T11:04:46Z
 id: PO:0030040
 name: sporangium base
 namespace: plant_anatomy
-def: "A cardinal organ part that is the basal part of a sporangium." [ISBN:9780473067304]
-comment: Term used for bryophytes and pteridophytes. The sporangium base is the sterile part of the sporangium below the theca. If swollen and distinct from the rest of the sporangium, it is called an apophysis or hypophysis.
+def: "A cardinal organ part that is the basal (distal) part of a sporangium." [ISBN:9780473067304]
+comment: Term used for bryophytes and pteridophytes. The sporangium base is the sterile part of the sporangium below the sporangium theca. If swollen and distinct from the rest of the sporangium, it is called an apophysis or hypophysis.
 subset: Bryophytes
 subset: Pteridophytes
-synonym: "apophysis" NARROW []
-synonym: "hypophysis" NARROW []
+synonym: "apophysis" NARROW [ISBN:0962073342]
+synonym: "hypophysis" NARROW [ISBN:0962073342]
 synonym: "sporangium neck" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
@@ -15314,7 +15366,9 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is the main body of a sporangium and has spores located in it." [RW:test]
 comment: Term used for bryophytes and pteridophytes.
 subset: Bryophytes
+subset: Citrus
 subset: Pteridophytes
+synonym: "sporangium urn" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15324,7 +15378,7 @@ creation_date: 2011-04-12T12:04:42Z
 id: PO:0030042
 name: peristome
 namespace: plant_anatomy
-def: "A cardinal organ part that is a single or double circle of teeth inside a spore capsule mouth." [ISBN:9780473067304]
+def: "A single or double circle of peristome teeth inside a sporangium mouth." [ISBN:9780473067304]
 comment: The peristome is located under the operculum, if an operculum is present. Upon maturity of a capsule, the teeth of the peristome open to release the spores.
 subset: Bryophytes
 is_a: PO:0025001 ! cardinal organ part
@@ -15336,8 +15390,8 @@ creation_date: 2011-04-12T12:47:52Z
 id: PO:0030043
 name: peristome tooth
 namespace: plant_anatomy
-def: "A cardinal organ part that is a single lobe or tooth of a peristome." [RW:test]
-comment: Peristome teeth may be simple or compound, and may be attached by their tips to the epiphragm.
+def: "A cardinal organ part that is a single lobe of a peristome." [ISBN:9780473067304]
+comment: Generally triangular. Peristome teeth may be simple or compound, and may be attached by their tips to the epiphragm.
 subset: Bryophytes
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030042 ! peristome
@@ -15481,6 +15535,7 @@ name: epiphragm
 namespace: plant_anatomy
 def: "A portion of parenchyma tissue that forms a circular membrane extending from a spore capsule columella and attached to the ends of the peristome teeth that covers a spore capsule mouth." [RW:test]
 comment: Present in some moss species of the family Polytrichaceae.
+subset: Arabidopsis
 subset: Bryophytes
 synonym: "epiphram" EXACT []
 synonym: "tympanum" EXACT []
@@ -15493,9 +15548,10 @@ creation_date: 2011-04-26T09:03:44Z
 id: PO:0030055
 name: pseudopodium
 namespace: plant_anatomy
-def: "A plant axis that is a leafless extension of a gametophore axis on which a sporophyte is borne." [RW:test]
+def: "A gametophore axis that is a leafless extension of a gametophore stem on which a sporophyte is borne." [ISBN:0029496608, ISBN:0962073342]
 comment: Raises the sporophyte above the perichaetial bracts. Found in Sphagnum and Andreaea.
 subset: Bryophytes
+synonym: "pseudopodia" EXACT Plural []
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
@@ -15507,6 +15563,7 @@ name: archesporial cell
 namespace: plant_anatomy
 def: "A plant cell that divides to gives rise to a sporocyte and is part of a sporangium." [RW:test]
 comment: May also give rise to sterile cells such as elators (in liverworts) or tapetal cells. In most species outside seed plants, multiple archesporial cells are part of an archesporium or sporogenous tissue.
+synonym: "archesporial initial" EXACT []
 synonym: "sporogenous cell" EXACT []
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025094 ! sporangium
@@ -15517,7 +15574,7 @@ creation_date: 2011-04-28T08:31:02Z
 id: PO:0030057
 name: alar cell
 namespace: plant_anatomy
-def: "A plant cell located at the base of a non-vascular leaf adjacent to where the leaf attaches to the stem." [ISBN:9780473067304]
+def: "A plant cell located at the base of a non-vascular leaf adjacent to where the leaf attaches to the stem." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
 comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness or ornamentation from other cells in the leaf.
 subset: Bryophytes
 is_a: PO:0009002 ! plant cell
@@ -15530,7 +15587,7 @@ creation_date: 2011-04-28T08:50:00Z
 id: PO:0030058
 name: brachycyte
 namespace: plant_anatomy
-def: "A plant cell that develops from a cell in a protonema and has a thick cell wall." [ISBN:0962073342]
+def: "A plant cell that develops from a cell in a protonema and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891]
 comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema may develop into brachycytes under stress. May form a chain or be separated by tmema cells.
 subset: Bryophytes
 synonym: "brood cell" EXACT [ISBN:0962073342]
@@ -15545,6 +15602,7 @@ namespace: plant_anatomy
 def: "A plant cell at the base of a gemma or adjacent to a brachycyte that breaks down to allow abscission of the gemma or brachycyte." [ISBN:0962073342]
 comment: May be a single cell adjacent to a brachycyte or part of a portion of tmema tissue.
 subset: Bryophytes
+subset: Maize
 synonym: "brachytmema cell" NARROW []
 synonym: "dlichotmema cell" NARROW []
 is_a: PO:0009002 ! plant cell
@@ -15555,9 +15613,11 @@ creation_date: 2011-04-28T09:24:40Z
 id: PO:0030060
 name: gametophore axillary hair
 namespace: plant_anatomy
-def: "A multicellular trichome consisting of one long terminal cell atop a basal stalk that grows in the leaf axil of a non-vascular leaf." [ISBN:0962073342, ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+def: "An axillary hair that grows in a leaf axil of a non-vascular leaf." [ISBN:0962073342, ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+comment: Found in pleurocarpous mosses. Form in the axils of leaf primordia and may disappear when the gametophore is mature.
+subset: Bryophytes
 synonym: "club hair" EXACT [ISBN:0962073342]
-is_a: PO:0025162 ! multicellular trichome
+is_a: PO:0025316 ! axillary hair
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-04-29T08:21:18Z
@@ -15579,8 +15639,9 @@ creation_date: 2011-04-29T08:30:03Z
 id: PO:0030062
 name: gametophore axillary hair terminal cell
 namespace: plant_anatomy
-def: "A trichome cell that is the long terminal cell of an axillary hair." [ISBN:9780473067304, XX:xx "Lars Hedenas, The Bryologist 100(1): pp. 65-88"]
-is_a: PO:0008030 ! trichome cell
+def: "An axillary hair terminal cell that is the long terminal cell of a gametophore axillary hair." [ISBN:9780473067304, XX:xx "Lars Hedenas, The Bryologist 100(1): pp. 65-88"]
+subset: Bryophytes
+is_a: PO:0025317 ! axillary hair terminal cell
 relationship: part_of PO:0030060 ! gametophore axillary hair
 created_by: Ramona
 creation_date: 2011-04-29T08:39:12Z
@@ -15589,9 +15650,9 @@ creation_date: 2011-04-29T08:39:12Z
 id: PO:0030063
 name: gametophore axillary hair base
 namespace: plant_anatomy
-def: "A portion of plant tissue that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+def: "A axillary hair base that is the basal part of a gametophore axillary hair, below the gametophore axillary hair terminal cell." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
 comment: Consists of two to a dozen cells.
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025318 ! axillary hair base
 relationship: part_of PO:0030060 ! gametophore axillary hair
 created_by: Ramona
 creation_date: 2011-04-29T09:01:40Z
@@ -15600,8 +15661,8 @@ creation_date: 2011-04-29T09:01:40Z
 id: PO:0030064
 name: gametophore axillary hair basal cell
 namespace: plant_anatomy
-def: "A trichome cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
-is_a: PO:0008030 ! trichome cell
+def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+is_a: PO:0025319 ! axillary hair basal cell
 relationship: part_of PO:0030063 ! gametophore axillary hair base
 created_by: Ramona
 creation_date: 2011-04-29T09:03:51Z
@@ -15611,7 +15672,7 @@ id: PO:0030065
 name: archegonium neck canal cell
 namespace: plant_anatomy
 def: "A plant cell that is one of the axial row of cells in an immature archegonium neck." [ISBN:0962073342]
-comment: As the archegonium matures, the neck canal cells disintegrate to form the archegonium neck canal.
+comment: As the archegonium matures, the archegonium neck canal cells disintegrate to form the archegonium neck canal.
 synonym: "archegoni" RELATED []
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0030039 ! archegonium neck
@@ -15731,6 +15792,32 @@ relationship: has_part PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
 creation_date: 2011-05-02T12:05:51Z
+
+[Term]
+id: PO:0030075
+name: antheridial head
+namespace: plant_anatomy
+def: "A disk-shaped cardinal organ part that is the apical portion of an antheridiophore and bears antheridia." [ISBN:0962073342]
+comment: Found in Marchantiales.
+subset: Bryophytes
+subset: Poaceae
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0030033 ! antheridiophore
+created_by: Ramona
+creation_date: 2011-05-04T07:26:51Z
+
+[Term]
+id: PO:0030076
+name: archegonial head
+namespace: plant_anatomy
+def: "An umbrella-shaped cardinal organ part that is the apical portion of an archegoniophore and bears archegonia." [ISBN:0962073342]
+comment: Found in Marchantiales.
+subset: Bryophytes
+subset: Poaceae
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0030034 ! archegoniophore
+created_by: Ramona
+creation_date: 2011-05-04T07:26:51Z
 
 [Typedef]
 id: derives_from
