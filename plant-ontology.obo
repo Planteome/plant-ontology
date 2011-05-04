@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:05:2011 11:43
+date: 04:05:2011 15:46
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -11717,7 +11717,7 @@ id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
 def: "An axial cell that resembles in structure the sieve elements of some seedless vascular plants." [ISBN:376821110, ISBN:962073342]
-comment: A carbohydrate and amino acid conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+comment: Leptoids have no nucleus at maturity. A carbohydrate and amino acid conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000289 ! sieve tube member
 relationship: part_of PO:0030048 ! leptome
@@ -15417,8 +15417,9 @@ creation_date: 2011-04-12T12:53:17Z
 id: PO:0030045
 name: stereid
 namespace: plant_anatomy
-def: "An ground tissue cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
-comment: Found only in bryophytes in gametophore axes or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
+def: "A ground tissue cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
+comment: Found only in bryophytes in gametophore axes, setas, or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
+subset: Bryophytes
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0030050 ! stereome
 created_by: Ramona
@@ -15692,11 +15693,11 @@ creation_date: 2011-04-29T09:21:53Z
 
 [Term]
 id: PO:0030067
-name: protonema side branch initial
+name: protonemal side branch initial
 namespace: plant_anatomy
 def: "An initial cell that is produced by division of a sub-apical cell of a protonema." [ISBN:9781405181891]
-comment: May give rise to a chloronema, a caulonema, a gametophore bud, or may not divide further.
-synonym: "side branch initial cell" EXACT []
+comment: May give rise to a chloronema, a caulonema, a gametophore bud, a protonemal rhizoid, or may not divide further.
+synonym: "protonemal side branch initial cell" EXACT []
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0030003 ! protonema
 created_by: Ramona
@@ -15704,12 +15705,12 @@ creation_date: 2011-04-29T09:25:26Z
 
 [Term]
 id: PO:0030068
-name: rhizoid initial
+name: epidermal rhizoid initial
 namespace: plant_anatomy
-def: "An epidermal initial cell that gives rise to a rhizoid." [PMID:12917289]
-comment: Part of the epidermis of a bryophyte or pteridophyte in the gametophytic phase. May be part of a thallus or gametophore.
+def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289, RW:test "need reference for moncot rhizoids"]
+comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
+synonym: "epidermal rhizoid initial cell" EXACT []
 is_a: PO:0000349 ! epidermal initial
-relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-29T09:33:11Z
 
@@ -15742,13 +15743,12 @@ creation_date: 2011-04-29T01:05:26Z
 
 [Term]
 id: PO:0030071
-name: rhizoid
+name: epidermal rhizoid
 namespace: plant_anatomy
-def: "A trichome that is part of a plant in the gametophytic phase and has positive gravitropism." [ISBN:12917289]
-comment: Found in bryophytes and pteridophytes growing from the epidermis of the lower surface of a gametophore or thallus. May be multicellular or unicellular. Usually serves to anchor the plant to the substrate.
-is_a: PO:0000282 ! trichome
-relationship: develops_from PO:0030068 ! rhizoid initial
-relationship: participates_in PO:0028003 ! gametophytic phase
+def: "A rhizoid that develops from an epidermal rhizoid initial." [ISBN:12917289]
+comment: Found in bryophytes and pteridophytes growing from the epidermis of a gametophore or the lower surface of a thallus and in some monocots growing from the stem at the cotyledonary node. May be considered a type of trichome.
+is_a: PO:0030078 ! rhizoid
+relationship: develops_from PO:0030068 ! epidermal rhizoid initial
 created_by: Ramona
 creation_date: 2011-04-29T01:15:05Z
 
@@ -15818,6 +15818,36 @@ is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030034 ! archegoniophore
 created_by: Ramona
 creation_date: 2011-05-04T07:26:51Z
+
+[Term]
+id: PO:0030077
+name: protonemal side branch rhizoid initial
+namespace: plant_anatomy
+def: "A protonemal side branch initial that gives rise to a protonemal rhizoid." [RW:test]
+synonym: "protonemal side branch rhizoid initial cell" EXACT []
+is_a: PO:0030067 ! protonemal side branch initial
+created_by: Ramona
+creation_date: 2011-05-04T02:38:25Z
+
+[Term]
+id: PO:0030078
+name: rhizoid
+namespace: plant_anatomy
+def: "A plant structure that is a uniseriate filament with positive geotropism and without chlorophyll that grows from an epidermis or protonema." [RW:test]
+comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, and protonemal rhizoids that branch from a protonema.
+is_a: PO:0009011 ! plant structure
+created_by: Ramona
+creation_date: 2011-05-04T03:03:32Z
+
+[Term]
+id: PO:0030079
+name: protonemal rhizoid
+namespace: plant_anatomy
+def: "A rhizoid that is part of a protonema and develops from a protonemal side branch rhizoid initial." [RW:test]
+is_a: PO:0030078 ! rhizoid
+relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
+created_by: Ramona
+creation_date: 2011-05-04T03:13:26Z
 
 [Typedef]
 id: derives_from
