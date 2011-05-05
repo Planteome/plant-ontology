@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:05:2011 15:46
+date: 05:05:2011 09:11
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -11706,6 +11706,7 @@ name: hydroid
 namespace: plant_anatomy
 def: "An axial cell that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
 comment: Hydroids are water and mineral conducting cells found in bryophytes, both in the gametophytic phase and in the seta in the sporophytic phase.
+synonym: "hydroid cell" EXACT []
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000290 ! tracheary element
 relationship: part_of PO:0030047 ! hydrome
@@ -11718,6 +11719,7 @@ name: leptoid
 namespace: plant_anatomy
 def: "An axial cell that resembles in structure the sieve elements of some seedless vascular plants." [ISBN:376821110, ISBN:962073342]
 comment: Leptoids have no nucleus at maturity. A carbohydrate and amino acid conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+synonym: "leptoid cell" EXACT []
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000289 ! sieve tube member
 relationship: part_of PO:0030048 ! leptome
@@ -14773,6 +14775,7 @@ name: axillary hair
 namespace: plant_anatomy
 def: "A multicellular trichome that has as parts a long terminal cell atop a basal stalk and grows in a leaf axil." [ISBN:0962073342, RW:test]
 comment: Found in monocots and mosses. The basal stalk may contain one or more cells.
+xref: OBO_SF_PO:3293292
 is_a: PO:0025162 ! multicellular trichome
 created_by: Ramona
 creation_date: 2011-05-04T11:08:44Z
@@ -14782,6 +14785,7 @@ id: PO:0025317
 name: axillary hair terminal cell
 namespace: plant_anatomy
 def: "A trichome cell that is the long terminal cell of an axillary hair." [ISBN:9780473067304]
+xref: OBO_SF_PO:3293292
 is_a: PO:0008030 ! trichome cell
 relationship: part_of PO:0025316 ! axillary hair
 created_by: Ramona
@@ -14793,6 +14797,7 @@ name: axillary hair base
 namespace: plant_anatomy
 def: "A portion of plant tissue that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304, RW:test]
 comment: Consists of two or more cells.
+xref: OBO_SF_PO:3293292
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0025316 ! axillary hair
 created_by: Ramona
@@ -14803,6 +14808,7 @@ id: PO:0025319
 name: axillary hair basal cell
 namespace: plant_anatomy
 def: "A trichome cell that is part of an axillary hair base." [RW:test]
+xref: OB_SF_PO:3293292
 is_a: PO:0008030 ! trichome cell
 relationship: part_of PO:0025318 ! axillary hair base
 created_by: Ramona
@@ -15418,8 +15424,9 @@ id: PO:0030045
 name: stereid
 namespace: plant_anatomy
 def: "A ground tissue cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
-comment: Found only in bryophytes in gametophore axes, setas, or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
+comment: Found only in bryophytes in gametophore axes, setae, or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
 subset: Bryophytes
+synonym: "stereid cell" EXACT []
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0030050 ! stereome
 created_by: Ramona
@@ -15439,14 +15446,14 @@ creation_date: 2011-04-18T09:30:35Z
 id: PO:0030047
 name: hydrome
 namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts hyrdoids." [ISBN:376821110]
-comment: Found in bryophytes, in the center of a non-vascular shoot axis such as a gametophore or seta. Often surrounded by leptome. May function in water conduction and may provide support.
+def: "A portion of plant tissue that has as parts hydroid cells and no other cell types." [ISBN:376821110]
+comment: A hydrome is composed of only hydroids. Found in bryophytes, in the center of a non-vascular shoot axis such as a gametophore or seta. Often surrounded by leptome. May function in water conduction and may provide support.
 subset: Bryophytes
 synonym: "hydrom" EXACT []
 synonym: "leptoxylem" EXACT []
+xref: OBO_SF_PO:3295055
 is_a: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0005352 ! xylem
-relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
@@ -15454,14 +15461,14 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030048
 name: leptome
 namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts leptoids." [ISBN:376821110]
-comment: Found in bryophytes, in non-vascular shoot axes such as a gametophore axis or seta, or in the midrib of a non-vascular leaf. Often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
+def: "A portion of plant tissue that has as parts leptoid cells and no other cell types." [ISBN:376821110]
+comment: A leptome is composed of only leptoids. Found in bryophytes, in non-vascular shoot axes such as a gametophore axis or seta, or in the midrib of a non-vascular leaf. Often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
 subset: Bryophytes
 synonym: "leptom" EXACT []
 synonym: "leptophloem" EXACT []
+xref: OBO_SF_PO:3295055
 is_a: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0005417 ! phloem
-relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-18T09:34:43Z
 
@@ -15480,11 +15487,11 @@ creation_date: 2011-05-02T09:46:49Z
 id: PO:0030050
 name: stereome
 namespace: plant_anatomy
-def: "A portion of ground tissue that has as parts stereids." [ISBN:376821110]
-comment: Found only in bryophytes in gametophore axes or non-vascular leaves. May function in support.
+def: "A portion of ground tissue that has as parts stereid cells and no other cell typse." [ISBN:376821110]
+comment: A stereome is composed of only stereids. Found only in bryophytes in gametophore axes or non-vascular leaves. May function in support.
 subset: Bryophytes
+xref: OBO_SF_PO:3295055
 is_a: PO:0025059 ! portion of ground tissue
-relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-25T11:39:57Z
 
@@ -15492,10 +15499,11 @@ creation_date: 2011-04-25T11:39:57Z
 id: PO:0030051
 name: central strand
 namespace: plant_anatomy
-def: "A portion of plant tissue that is an axial strand in the center of a gametophore axis and has as part hydrome or leptome." [ISBN:0029496608, ISBN:0962073342]
-comment: Often contains both hydrome and leptome. Found in bryophytes.
+def: "A portion of plant tissue that is an axial strand in the center of a gametophore axis or seta and has as part a hydrome or a leptome." [ISBN:0029496608, ISBN:0962073342]
+comment: Often contains both hydrome and leptome. Found in bryophytes. The term central strand is sometimes used to describe a protostele in vascular plants, but this ontology class should only be used for non-vascular plants. Analogous to a vein or vascular bundle in vascular plants.
 synonym: "conducting cylinder" EXACT [ISBN:376821110]
 synonym: "conducting strand" EXACT [ISBN:376821110]
+xref: OBO_SF_PO:3295058
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0030020 ! gametophore axis
 created_by: Ramona
@@ -15525,6 +15533,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridium wall" EXACT []
 synonym: "sterile jacket layer" EXACT []
+xref: OBO_SF_PO:3293931
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -15606,6 +15615,7 @@ subset: Bryophytes
 subset: Maize
 synonym: "brachytmema cell" NARROW []
 synonym: "dlichotmema cell" NARROW []
+xref: OBO_SF_PO:3293289
 is_a: PO:0009002 ! plant cell
 created_by: Ramona
 creation_date: 2011-04-28T09:24:40Z
@@ -15618,6 +15628,7 @@ def: "An axillary hair that grows in a leaf axil of a non-vascular leaf." [ISBN:
 comment: Found in pleurocarpous mosses. Form in the axils of leaf primordia and may disappear when the gametophore is mature.
 subset: Bryophytes
 synonym: "club hair" EXACT [ISBN:0962073342]
+xref: OBO_SF_PO:3293292
 is_a: PO:0025316 ! axillary hair
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15630,6 +15641,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that has as parts tmema cells." [ISBN:0962073342, ISBN:9780473067304]
 comment: Found in bryophytes at the base of a gemma. Participates in abscission of the gemma.
 subset: Bryophytes
+xref: OBO_SF_PO:3293289
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030059 ! tmema cell
 relationship: participates_in PO:0028003 ! gametophytic phase
@@ -15642,6 +15654,7 @@ name: gametophore axillary hair terminal cell
 namespace: plant_anatomy
 def: "An axillary hair terminal cell that is the long terminal cell of a gametophore axillary hair." [ISBN:9780473067304, XX:xx "Lars Hedenas, The Bryologist 100(1): pp. 65-88"]
 subset: Bryophytes
+xref: OBO_SF_PO:3293292
 is_a: PO:0025317 ! axillary hair terminal cell
 relationship: part_of PO:0030060 ! gametophore axillary hair
 created_by: Ramona
@@ -15653,6 +15666,7 @@ name: gametophore axillary hair base
 namespace: plant_anatomy
 def: "A axillary hair base that is the basal part of a gametophore axillary hair, below the gametophore axillary hair terminal cell." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
 comment: Consists of two to a dozen cells.
+xref: OBO_SF_PO:3293292
 is_a: PO:0025318 ! axillary hair base
 relationship: part_of PO:0030060 ! gametophore axillary hair
 created_by: Ramona
@@ -15663,6 +15677,7 @@ id: PO:0030064
 name: gametophore axillary hair basal cell
 namespace: plant_anatomy
 def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+xref: OBO_SF_PO:3293292
 is_a: PO:0025319 ! axillary hair basal cell
 relationship: part_of PO:0030063 ! gametophore axillary hair base
 created_by: Ramona
@@ -15710,6 +15725,7 @@ namespace: plant_anatomy
 def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289, RW:test "need reference for moncot rhizoids"]
 comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
 synonym: "epidermal rhizoid initial cell" EXACT []
+xref: OBO_SF_PO:3293302
 is_a: PO:0000349 ! epidermal initial
 created_by: Ramona
 creation_date: 2011-04-29T09:33:11Z
@@ -15718,10 +15734,11 @@ creation_date: 2011-04-29T09:33:11Z
 id: PO:0030069
 name: paraphyllium
 namespace: plant_anatomy
-def: "A portion of epidermal tissue that is a small outgrowth from the epidermis between the leaves of a gametophore axis." [ISBN:0962073342]
+def: "A portion of epidermal tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis." [ISBN:0962073342]
 comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-like, or leaf-like. Found in pleurocarpous mosses and a few leafy liverworts.
 subset: Bryophytes
 synonym: "paraphyllia" EXACT Plural []
+xref: OBO_SF_PO:3293886
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0030020 ! gametophore axis
 created_by: Ramona
@@ -15736,6 +15753,7 @@ comment: Found in bryophytes and pteridophytes, especially in mosses.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "paraphyses" EXACT Plural []
+xref: OB_SF_PO:3293891
 is_a: PO:0025162 ! multicellular trichome
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
@@ -15747,6 +15765,7 @@ name: epidermal rhizoid
 namespace: plant_anatomy
 def: "A rhizoid that develops from an epidermal rhizoid initial." [ISBN:12917289]
 comment: Found in bryophytes and pteridophytes growing from the epidermis of a gametophore or the lower surface of a thallus and in some monocots growing from the stem at the cotyledonary node. May be considered a type of trichome.
+xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030068 ! epidermal rhizoid initial
 created_by: Ramona
@@ -15757,12 +15776,13 @@ id: PO:0030072
 name: costa
 namespace: plant_anatomy
 def: "A portion of plant tissue that is a single or double strand in the center of a non-vascular leaf and has as part hydrome or leptome." [ISBN:376821110]
-comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid.
+comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
 synonym: "non-vascular leaf midrib" EXACT []
 synonym: "non-vascular leaf midvein" RELATED []
 synonym: "phyllid costa" EXACT []
 synonym: "phyllid midrib" EXACT []
 synonym: "phyllid midvein" RELATED []
+xref: OBO_SF_PO:3295062
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
@@ -15825,6 +15845,7 @@ name: protonemal side branch rhizoid initial
 namespace: plant_anatomy
 def: "A protonemal side branch initial that gives rise to a protonemal rhizoid." [RW:test]
 synonym: "protonemal side branch rhizoid initial cell" EXACT []
+xref: OBO_SF_PO:3293302
 is_a: PO:0030067 ! protonemal side branch initial
 created_by: Ramona
 creation_date: 2011-05-04T02:38:25Z
@@ -15835,6 +15856,7 @@ name: rhizoid
 namespace: plant_anatomy
 def: "A plant structure that is a uniseriate filament with positive geotropism and without chlorophyll that grows from an epidermis or protonema." [RW:test]
 comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, and protonemal rhizoids that branch from a protonema.
+xref: OBO_SF_PO:3293893
 is_a: PO:0009011 ! plant structure
 created_by: Ramona
 creation_date: 2011-05-04T03:03:32Z
@@ -15844,6 +15866,7 @@ id: PO:0030079
 name: protonemal rhizoid
 namespace: plant_anatomy
 def: "A rhizoid that is part of a protonema and develops from a protonemal side branch rhizoid initial." [RW:test]
+xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
 created_by: Ramona
