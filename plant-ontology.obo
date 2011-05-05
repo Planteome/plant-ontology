@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:05:2011 09:11
+date: 05:05:2011 13:12
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -37,7 +37,7 @@ id: PO:0000002
 name: anther wall
 namespace: plant_anatomy
 def: "A microsporangium wall that is part of an anther." [RW:test]
-comment: Has an outer epidermis (exothecium) and an inner endothecium and may have additional layers.
+comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers.
 subset: reference
 synonym: "pollen sac wall" EXACT []
 is_a: PO:0025307 ! microsporangium wall
@@ -10922,7 +10922,7 @@ relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
 id: PO:0020094
-name: egg cell
+name: plant egg cell
 namespace: plant_anatomy
 def: "A gamete produced by an archegonium or an embryo sac." [POC:curators]
 comment: The egg (megagamete) is usually larger than the sperm (microgamete). Female gametes may be defined as the non-motile gamete, rather than the larger gamete.
@@ -12664,7 +12664,7 @@ creation_date: 2010-12-02T09:04:09Z
 id: PO:0025120
 name: antheridial sperm cell
 namespace: plant_anatomy
-def: "A sperm cell that is produced by and located in an antheridium." [POC:curators]
+def: "A plant sperm cell that is produced by and located in an antheridium." [POC:curators]
 comment: Antheridial sperm cells are motile and lack a plasma membrane.
 subset: Bryophytes
 subset: Pteridophytes
@@ -12678,8 +12678,8 @@ creation_date: 2010-11-15T08:05:46Z
 id: PO:0025121
 name: pollen sperm cell
 namespace: plant_anatomy
-def: "A sperm cell that is produced by and located in a pollen grain." [POC:curators]
-comment: Pollen sperm cells are structurally simple, apparently nonmotile cells that contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
+def: "A plant sperm cell that is produced by and located in a pollen grain." [ISSN:1040-2519 "Russell, 1991 Annual Review of Plant Physiology and Plant Molecular Biology, 42, 189-204", POC:curators]
+comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
 subset: Angiosperm
 subset: Gymnosperms
 is_a: PO:0000084 ! plant sperm cell
@@ -12691,12 +12691,12 @@ creation_date: 2010-11-15T08:05:46Z
 id: PO:0025122
 name: archegonial egg cell
 namespace: plant_anatomy
-def: "An egg cell that is produced by and located in an archegonium." [POC:curators]
+def: "A plant egg cell that is produced by and located in an archegonium." [POC:curators]
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "archegonium egg call" EXACT []
-is_a: PO:0020094 ! egg cell
+is_a: PO:0020094 ! plant egg cell
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
 creation_date: 2010-11-15T08:14:32Z
@@ -12705,9 +12705,9 @@ creation_date: 2010-11-15T08:14:32Z
 id: PO:0025123
 name: embryo sac egg cell
 namespace: plant_anatomy
-def: "An egg cell that is produced by and located in an embryo sac." [POC:curators]
+def: "A plant egg cell that is produced by and located in an embryo sac." [POC:curators]
 subset: Angiosperm
-is_a: PO:0020094 ! egg cell
+is_a: PO:0020094 ! plant egg cell
 relationship: part_of PO:0020096 ! egg apparatus
 created_by: Ramona
 creation_date: 2010-11-15T08:14:32Z
