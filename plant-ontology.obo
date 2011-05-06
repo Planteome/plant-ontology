@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:05:2011 13:12
+date: 06:05:2011 10:54
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3587,7 +3587,8 @@ id: PO:0006016
 name: leaf epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a leaf." [POC:curators]
-synonym: "foliage leaf epidermis" RELATED []
+synonym: "foliage leaf epidermis" EXACT []
+synonym: "phyllid epidermis" EXACT []
 is_a: PO:0025157 ! phyllome epidermis
 relationship: part_of PO:0025034 ! leaf
 
@@ -4179,7 +4180,8 @@ id: PO:0006204
 name: sporocyte
 namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) spores." [GR:pj]
-synonym: "meiocyte" RELATED []
+synonym: "meiocyte" EXACT []
+synonym: "spore mother cell" EXACT []
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025094 ! sporangium
 
@@ -4680,6 +4682,7 @@ name: juvenile leaf
 namespace: plant_anatomy
 def: "Distinct from adult leaves, being characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
 comment: The first juvenile leaves are e.g. the embryonic leaves found in the grass kernel (caryopsis).
+synonym: "juvenile phyllid" NARROW []
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -4688,6 +4691,7 @@ name: adult leaf
 namespace: plant_anatomy
 def: "Adult leaves are characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
 comment: The adult leaves are placed above the juvenile (oldest) leaves. However in some plants the juvenile leaves may go on to establish as adult leaves.
+synonym: "adult phyllid" NARROW []
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -5972,6 +5976,7 @@ name: leaf trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a leaf epidermis." [POC:rw]
 subset: TraitNet
+synonym: "phyllid trichome" NARROW []
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006016 ! leaf epidermis
 
@@ -8860,6 +8865,7 @@ id: PO:0008039
 name: stem base
 namespace: plant_anatomy
 def: "The basal part of stem." [GR:cwt]
+synonym: "gametophore stem base" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009047 ! stem
 
@@ -9767,7 +9773,7 @@ def: "A cardinal organ part that is the pollen-bearing part of a stamen." [APWeb
 subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025007 ! collective plant structure
 relationship: develops_from PO:0006089 ! anther primordium
 relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009029 ! stamen
@@ -9799,7 +9805,7 @@ namespace: plant_anatomy
 def: "A collective organ part structure that is part of an anther and consists of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
 subset: Angiosperm
 subset: reference
-is_a: PO:0025269 ! collective organ part structure
+is_a: PO:0025007 ! collective plant structure
 relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009066 ! anther
 
@@ -10607,6 +10613,7 @@ name: leaf base
 namespace: plant_anatomy
 def: "A phyllome base that is part of a leaf." [POC:rw]
 synonym: "leaf sheath base" RELATED []
+synonym: "phyllid base" NARROW []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025140 ! phyllome base
 relationship: part_of PO:0025034 ! leaf
@@ -11225,7 +11232,7 @@ name: leaf apex
 namespace: plant_anatomy
 def: "A phyllome apex that is part of a leaf." [POC:rw, UMSL:fz]
 comment: It is not precisely defined how far toward the base from the tip a leaf apex extends. For the apical most portion of a leaf, use the term leaf tip.
-synonym: "leaf tip" RELATED []
+synonym: "phyllid apex" NARROW []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025139 ! phyllome apex
 relationship: part_of PO:0025034 ! leaf
@@ -12222,6 +12229,7 @@ synonym: "gametophyll" EXACT []
 synonym: "gametophyte leaf" EXACT []
 synonym: "gametophytic leaf" EXACT []
 synonym: "phyllid" EXACT []
+synonym: "phyllidium" EXACT []
 is_a: PO:0025034 ! leaf
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -12387,6 +12395,7 @@ name: spore capsule annulus
 namespace: plant_anatomy
 def: "A dehiscence zone that is part of a spore capsule." [POC:curators]
 comment: Found in bryophytes. The capsule annulus is located at the base of an operculum. Upon capsule maturation, cell separation in the annulus allows the operculum to separate from the capsule, aiding in spore dispersal.
+subset: Bryophytes
 synonym: "capsule dehiscence zone" EXACT []
 is_a: PO:0025092 ! dehiscence zone
 relationship: part_of PO:0025094 ! sporangium
@@ -12669,6 +12678,7 @@ comment: Antheridial sperm cells are motile and lack a plasma membrane.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridium sperm cell" EXACT []
+synonym: "spermatazoid" EXACT []
 is_a: PO:0000084 ! plant sperm cell
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -12745,6 +12755,7 @@ def: "A plant gametangium that produces an archegonium egg cell that is located 
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
+synonym: "archegonia" EXACT Plural []
 is_a: PO:0025124 ! plant gametangium
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
@@ -14773,7 +14784,7 @@ creation_date: 2011-05-03T12:03:42Z
 id: PO:0025316
 name: axillary hair
 namespace: plant_anatomy
-def: "A multicellular trichome that has as parts a long terminal cell atop a basal stalk and grows in a leaf axil." [ISBN:0962073342, RW:test]
+def: "A multicellular trichome that has as parts a long terminal cell atop a basal stalk and grows in a leaf axil." [ISBN:0962073342, RW:test "Need reference for monocot hairs"]
 comment: Found in monocots and mosses. The basal stalk may contain one or more cells.
 xref: OBO_SF_PO:3293292
 is_a: PO:0025162 ! multicellular trichome
@@ -14795,7 +14806,7 @@ creation_date: 2011-05-04T11:15:11Z
 id: PO:0025318
 name: axillary hair base
 namespace: plant_anatomy
-def: "A portion of plant tissue that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304, RW:test]
+def: "A portion of plant tissue that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304]
 comment: Consists of two or more cells.
 xref: OBO_SF_PO:3293292
 is_a: PO:0009007 ! portion of plant tissue
@@ -14808,6 +14819,7 @@ id: PO:0025319
 name: axillary hair basal cell
 namespace: plant_anatomy
 def: "A trichome cell that is part of an axillary hair base." [RW:test]
+synonym: "axillary hair base cell" EXACT []
 xref: OB_SF_PO:3293292
 is_a: PO:0008030 ! trichome cell
 relationship: part_of PO:0025318 ! axillary hair base
@@ -15107,6 +15119,7 @@ comment: A branch of the leafy part of a bryophyte shoot system.
 subset: Bryophytes
 synonym: "caulid branch" EXACT []
 synonym: "cauloid branch" EXACT []
+synonym: "non-vascular branch" EXACT []
 is_a: PO:0025073 ! branch
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15121,6 +15134,7 @@ comment: A stem (the primary axis) of the leafy part of a bryophyte shoot system
 subset: Bryophytes
 synonym: "caulid stem" EXACT []
 synonym: "cauloid stem" EXACT []
+synonym: "non-vascular stem" EXACT []
 is_a: PO:0009047 ! stem
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15199,6 +15213,7 @@ namespace: plant_anatomy
 def: "A bract that subtends an antheridium." [ISBN:9780473067304]
 comment: When an antheridium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perigonial bracts. If an antheridium occurs on a main axis of the gametophore, usually only the terminal phyllomes are perigonial bracts.
 subset: Bryophytes
+synonym: "perigonium bract" EXACT []
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15226,6 +15241,7 @@ namespace: plant_anatomy
 def: "A bract that subtends an archegonium." [ISBN:0962073342]
 comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually perichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
 subset: Bryophytes
+synonym: "perichaetum bract" EXACT []
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15255,6 +15271,7 @@ def: "A plant axis that holds up a spore capsule." [ISBN:0962073342, POC:curator
 comment: Found in some bryophytes, especially mosses.
 subset: Bryophytes
 subset: Gymnosperms
+synonym: "setae" EXACT Plural []
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028002 ! sporophytic phase
 created_by: Ramona
@@ -15602,6 +15619,7 @@ comment: Found in mosses. A brachycyte is a drought tolerant cell that can act a
 subset: Bryophytes
 synonym: "brood cell" EXACT [ISBN:0962073342]
 is_a: PO:0009002 ! plant cell
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-28T09:14:10Z
 
@@ -15676,7 +15694,8 @@ creation_date: 2011-04-29T09:01:40Z
 id: PO:0030064
 name: gametophore axillary hair basal cell
 namespace: plant_anatomy
-def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, XX:xx "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, RW:test "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+synonym: "gametophore axillary hair base cell" EXACT []
 xref: OBO_SF_PO:3293292
 is_a: PO:0025319 ! axillary hair basal cell
 relationship: part_of PO:0030063 ! gametophore axillary hair base
