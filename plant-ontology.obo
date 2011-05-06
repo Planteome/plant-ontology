@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:05:2011 10:54
+date: 06:05:2011 15:02
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -15201,6 +15201,7 @@ comment: A thallus is a gametophyte of liverworts and pteridophytes and develops
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "prothallium" BROAD []
+synonym: "thalli" EXACT Plural []
 is_a: PO:0000003 ! whole plant
 relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
@@ -15303,12 +15304,13 @@ creation_date: 2011-04-12T10:29:01Z
 
 [Term]
 id: PO:0030035
-name: antheridium stalk
+name: antheridial stalk
 namespace: plant_anatomy
 def: "A stalk that is the basal part of an antheridium." [RW:test]
 comment: Raises the antheridium above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
+synonym: "antheridium stalk" EXACT []
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -15316,12 +15318,13 @@ creation_date: 2011-04-12T10:39:46Z
 
 [Term]
 id: PO:0030036
-name: archegonium stalk
+name: archegonial stalk
 namespace: plant_anatomy
 def: "A stalk that the basal part of an archegonium." [RW:test]
 comment: Raises the venter above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
+synonym: "archegonium stalk" EXACT []
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15361,6 +15364,7 @@ def: "A cardinal organ part that is the elongated apical part of an archegonium.
 comment: Early in development, the neck is occluded by a single row of neck canal cells. At maturity, the neck canal cells disintegrate, creating a canal for the sperm to enter the archegonium.
 subset: Bryophytes
 subset: Citrus
+synonym: "archegonial neck" RELATED []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15450,16 +15454,6 @@ created_by: Ramona
 creation_date: 2011-04-25T11:33:34Z
 
 [Term]
-id: PO:0030046
-name: portion of axial tissue
-namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts axial cells." [RW:test]
-comment: Axial tissue occurs in elongated strands. In plant axes, the axial tissue runs parallel to the axis, but may have other orientations in organs such as phyllomes.
-is_a: PO:0009007 ! portion of plant tissue
-created_by: Ramona
-creation_date: 2011-04-18T09:30:35Z
-
-[Term]
 id: PO:0030047
 name: hydrome
 namespace: plant_anatomy
@@ -15504,7 +15498,7 @@ creation_date: 2011-05-02T09:46:49Z
 id: PO:0030050
 name: stereome
 namespace: plant_anatomy
-def: "A portion of ground tissue that has as parts stereid cells and no other cell typse." [ISBN:376821110]
+def: "A portion of ground tissue that has as parts stereid cells and no other cell types." [ISBN:376821110]
 comment: A stereome is composed of only stereids. Found only in bryophytes in gametophore axes or non-vascular leaves. May function in support.
 subset: Bryophytes
 xref: OBO_SF_PO:3295055
@@ -15548,6 +15542,7 @@ def: "A portion of plant tissue that is a single layer of cells on the outside o
 comment: Cells in the antheridium jacket layer surround the inner spermatogenous cells and do not give rise to sperm cells.
 subset: Bryophytes
 subset: Pteridophytes
+synonym: "antheridial jacket layer" EXACT []
 synonym: "antheridium wall" EXACT []
 synonym: "sterile jacket layer" EXACT []
 xref: OBO_SF_PO:3293931
@@ -15575,12 +15570,11 @@ creation_date: 2011-04-26T09:03:44Z
 id: PO:0030055
 name: pseudopodium
 namespace: plant_anatomy
-def: "A gametophore axis that is a leafless extension of a gametophore stem on which a sporophyte is borne." [ISBN:0029496608, ISBN:0962073342]
+def: "A gametophore axis that is a leafless extension of a gametophore stem or branch on which a sporophyte is borne." [ISBN:0029496608, ISBN:0962073342]
 comment: Raises the sporophyte above the perichaetial bracts. Found in Sphagnum and Andreaea.
 subset: Bryophytes
 synonym: "pseudopodia" EXACT Plural []
-is_a: PO:0025004 ! plant axis
-relationship: participates_in PO:0028003 ! gametophytic phase
+is_a: PO:0030020 ! gametophore axis
 created_by: Ramona
 creation_date: 2011-04-26T09:08:14Z
 
@@ -15635,6 +15629,7 @@ synonym: "brachytmema cell" NARROW []
 synonym: "dlichotmema cell" NARROW []
 xref: OBO_SF_PO:3293289
 is_a: PO:0009002 ! plant cell
+relationship: participates_in PO:0028003 ! gametophytic phase
 created_by: Ramona
 creation_date: 2011-04-28T09:24:40Z
 
@@ -15720,6 +15715,7 @@ name: archegonium neck canal
 namespace: plant_anatomy
 def: "A canal in the center of an archegonium neck." [ISBN:0962073342]
 comment: Forms after the archegonium neck canal cells disintegrate.
+synonym: "archegonial neck canal" EXACT []
 is_a: PO:0025132 ! canal
 relationship: part_of PO:0030039 ! archegonium neck
 created_by: Ramona
@@ -15840,6 +15836,7 @@ def: "A disk-shaped cardinal organ part that is the apical portion of an antheri
 comment: Found in Marchantiales.
 subset: Bryophytes
 subset: Poaceae
+synonym: "antheridium head" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030033 ! antheridiophore
 created_by: Ramona
@@ -15853,6 +15850,7 @@ def: "An umbrella-shaped cardinal organ part that is the apical portion of an ar
 comment: Found in Marchantiales.
 subset: Bryophytes
 subset: Poaceae
+synonym: "archegonium head" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030034 ! archegoniophore
 created_by: Ramona
