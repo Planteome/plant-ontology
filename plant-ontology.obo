@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:05:2011 15:02
+date: 09:05:2011 15:02
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -38,6 +38,7 @@ name: anther wall
 namespace: plant_anatomy
 def: "A microsporangium wall that is part of an anther." [RW:test]
 comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers.
+subset: Angiosperm
 subset: reference
 synonym: "pollen sac wall" EXACT []
 is_a: PO:0025307 ! microsporangium wall
@@ -451,6 +452,8 @@ name: leaf lamina epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that is part of a leaf lamina." [POC:curators]
 is_a: PO:0006016 ! leaf epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0020039 ! leaf lamina
 relationship: part_of PO:0020039 ! leaf lamina
 
 [Term]
@@ -484,6 +487,8 @@ name: petiole epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that is part of a petiole." [POC:rw, TAIR:ki]
 is_a: PO:0006016 ! leaf epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0020038 ! petiole
 relationship: part_of PO:0020038 ! petiole
 
 [Term]
@@ -820,7 +825,7 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000207
 name: nectary epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of the nectary." [POC:rw]
+def: "A portion of shoot epidermis that is part of a nectary." [POC:rw]
 is_a: PO:0006035 ! shoot epidermis
 relationship: part_of PO:0009035 ! nectary
 
@@ -2472,11 +2477,14 @@ is_a: PO:0004543 ! tuber
 id: PO:0004700
 name: anther wall middle layer
 namespace: plant_anatomy
-def: "Usually a single cell layer between tapetum and endothecium which almost invariably degenerates early during angiosperm anther  development and is eventually absorbed by adjacent cells." [POC:curators]
+def: "A portion of ground tissue directly internal to an anther endothecium that develops from an anther wall parietal cell layer." [ISBN:9780003686647, POC:curators]
+comment: May be a single or double layer. Usually crushed by the endothecium and therefore almost invariably degenerates early during anther development. In some angiosperms, including <i>Arabidopsis</i>, it develops from an anther wall outer secondary parietal cell layer. In other angiosperms, it develops directly from an anther wall primary parietal cell layer, while in still others, two layers of the middle layer may develop from both an anther wall outer secondary parietal cell layer and an anther wall inner secondary parietal cell layer.
+subset: Angiosperm
 subset: reference
 xref: OBO_SF_PO:2903966
-is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0006008 ! anther wall inner secondary parietal cell layer
+is_a: PO:0025059 ! portion of ground tissue
+relationship: adjacent_to PO:0020002 ! anther wall endothecium
+relationship: develops_from PO:0006007 ! anther wall secondary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -3493,20 +3501,23 @@ relationship: part_of PO:0000229 ! floral meristem
 id: PO:0006006
 name: anther wall primary parietal cell layer
 namespace: plant_anatomy
-def: "A primary parietal cell and adjacent cells." [GR:pj, PMID:2476454]
+def: "A portion of ground tissue that is part of an anther wall and has as parts a primary parietal cell and adjacent cells." [GR:pj, ISBN:9780003686647, PMID:2476454]
+subset: Angiosperm
 subset: reference
 synonym: "pollen sac primary parietal cell layer" EXACT []
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
 id: PO:0006007
 name: anther wall secondary parietal cell layer
 namespace: plant_anatomy
-def: "The cells of the primary parietal cell layer undergo a periclinal division resulting in the formation of the two secondary parietal layers." [GR:pj, PMID:2476454]
+def: "A portion of ground tissue that is part of an anther wall and develops from an anther wall primary parietal cell layer." [GR:pj, ISBN:9780003686647, PMID:2476454]
+comment: In many angiosperms, the cells of the anther wall primary parietal cell layer undergo a periclinal division, resulting in the formation of two anther wall secondary parietal layers.
+subset: Angiosperm
 subset: reference
 synonym: "pollen sac secondary parietal cell layer" EXACT []
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0006006 ! anther wall primary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
 
@@ -3514,7 +3525,9 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0006008
 name: anther wall inner secondary parietal cell layer
 namespace: plant_anatomy
-def: "One of the secondary parietal layer formed towards inner side after the cells of the primary parietal cell layer undergo a periclinal division. It divides periclinally to form the middle layer externally and the tapetum internally." [GR:pj, PMID:2476454]
+def: "An anther wall secondary parietal cell layer that is formed towards the inside after the cells of an anther wall primary parietal cell layer undergo a periclinal division." [GR:pj, ISBN:9780003686647, PMID:2476454]
+comment: In many angiosperms, including <i>Arabidopsis</i>, it divides periclinally to form an anther wall middle layer externally and an anther wall tapetum internally. Alternatively, it may differentiate into a tapetum.
+subset: Angiosperm
 synonym: "pollen sac inner secondary parietal cell layer" EXACT []
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
@@ -3522,7 +3535,9 @@ is_a: PO:0006007 ! anther wall secondary parietal cell layer
 id: PO:0006009
 name: anther wall outer secondary parietal cell layer
 namespace: plant_anatomy
-def: "One of the secondary parietal layer formed towards outside after the cells of the primary parietal cell layer undergo a periclinal division. It differentiates into the endothecium." [GR:pj, PMID:2476454]
+def: "An anther wall secondary parietal cell layer formed towards the outside after an anther wall primary parietal cell layer undergoes a periclinal division." [GR:pj, ISBN:9780003686647, PMID:2476454]
+comment: In many angiosperms, including <i>Arabidopsis</i>, it differentiates into the anther wall endothecium. Alternatively, it may divide periclinally to form an anther wall endothecium externally and an anther wall middle layer internally.
+subset: Angiosperm
 synonym: "pollen sac outer secondary parietal cell layer" EXACT []
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
@@ -3590,6 +3605,8 @@ def: "A portion of phyllome epidermis that is part of a leaf." [POC:curators]
 synonym: "foliage leaf epidermis" EXACT []
 synonym: "phyllid epidermis" EXACT []
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0025034 ! leaf
 relationship: part_of PO:0025034 ! leaf
 
 [Term]
@@ -3738,6 +3755,8 @@ name: sepal epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a sepal." [POC:curators]
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009031 ! sepal
 relationship: part_of PO:0009031 ! sepal
 
 [Term]
@@ -3746,6 +3765,8 @@ name: petal epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a petal." [POC:curators]
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009032 ! petal
 relationship: part_of PO:0009032 ! petal
 
 [Term]
@@ -3849,8 +3870,8 @@ is_a: PO:0006040 ! sepal epidermis
 id: PO:0006056
 name: cotyledon epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of the cotyledon." [GR:pj]
-is_a: PO:0006035 ! shoot epidermis
+def: "A leaf epidermis that is part of a cotyledon." [POC:rw]
+is_a: PO:0006016 ! leaf epidermis
 relationship: part_of PO:0020030 ! cotyledon
 
 [Term]
@@ -3873,6 +3894,8 @@ name: filament epidermis
 namespace: plant_anatomy
 def: "A portion of stamen epidermis that is part of a filament." [POC:rw]
 is_a: PO:0025097 ! stamen epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009067 ! filament
 relationship: part_of PO:0009067 ! filament
 
 [Term]
@@ -4183,6 +4206,7 @@ def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) 
 synonym: "meiocyte" EXACT []
 synonym: "spore mother cell" EXACT []
 is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
 
 [Term]
@@ -5498,6 +5522,7 @@ id: PO:0006445
 name: Poaceae anther wall
 namespace: plant_anatomy
 def: "A multicellular layer with outer epidermis and an inner endothecium of an anther of a grass stamen." [GR:pj]
+subset: Poaceae
 is_a: PO:0000002 ! anther wall
 relationship: part_of PO:0006444 ! Poaceae microsporangium
 
@@ -9827,8 +9852,9 @@ replaced_by: PO:0025277
 id: PO:0009071
 name: anther wall tapetum
 namespace: plant_anatomy
-def: "A microsporangium tapetum that is part of an anther wall." [RW:test]
-comment: Develops from a primary or secondary parietal cell layer.
+def: "A microsporangium tapetum that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
+comment: Develops from a primary or secondary parietal cell layer. Innermost part of the anther wall, involved in the nutrition of the pollen.
+subset: Angiosperm
 subset: reference
 synonym: "pollen sac tapetum" EXACT []
 synonym: "portion of anther wall tapetal tissue" EXACT []
@@ -10245,12 +10271,14 @@ relationship: part_of PO:0009072 ! ovary
 id: PO:0020002
 name: anther wall endothecium
 namespace: plant_anatomy
-def: "An microsporangium endothecium that part of an anther wall." [RW:test]
-comment: May have secondary thickening of walls of cells that are involved in anther dehiscence.
+def: "An microsporangium endothecium that part of an anther wall." [ISBN:9780003686647]
+comment: May have secondary thickening of walls of cells that are involved in anther dehiscence. There can be more than one layer in an anther endothecium.
+subset: Angiosperm
 subset: reference
 synonym: "anther sac hypodermis" RELATED []
 synonym: "pollen sac endothecium" EXACT []
 is_a: PO:0025309 ! microsporangium endothecium
+relationship: adjacent_to PO:0020004 ! anther wall exothecium
 relationship: part_of PO:0000002 ! anther wall
 
 [Term]
@@ -10270,8 +10298,9 @@ id: PO:0020004
 name: anther wall exothecium
 namespace: plant_anatomy
 alt_id: PO:0006059
-def: "An microsporangium exothecium that is part of an anther wall." [RW:test]
+def: "An microsporangium exothecium that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
 comment: Often with thickened cell walls. Involved in anther dehiscence.
+subset: Angiosperm
 subset: reference
 synonym: "anther epidermis" EXACT []
 synonym: "anther sac epidermis" EXACT []
@@ -12437,6 +12466,8 @@ name: carpel epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a carpel." [POC:rw]
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009030 ! carpel
 relationship: part_of PO:0009030 ! carpel
 created_by: Ramona
 creation_date: 2010-12-17T12:36:46Z
@@ -12447,6 +12478,8 @@ name: stamen epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a stamen." [POC:rw]
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009029 ! stamen
 relationship: part_of PO:0009029 ! stamen
 created_by: Ramona
 creation_date: 2010-12-17T12:36:46Z
@@ -13107,6 +13140,8 @@ name: phyllome epidermis
 namespace: plant_anatomy
 def: "A portion of shoot epidermis that is part of a phyllome." [POC:curators]
 is_a: PO:0006035 ! shoot epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0006001 ! phyllome
 created_by: Ramona
 creation_date: 2010-11-15T02:32:53Z
@@ -13117,6 +13152,8 @@ name: bract epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a bract." [POC:rw]
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009055 ! bract
 relationship: part_of PO:0009055 ! bract
 created_by: Ramona
 creation_date: 2010-11-15T02:34:14Z
@@ -13244,9 +13281,9 @@ creation_date: 2010-11-18T07:47:30Z
 id: PO:0025170
 name: root prickle
 namespace: plant_anatomy
-def: "A prickle that is part of a root epidermis." [POC:curators]
+def: "A prickle that is part of a root." [POC:curators]
 is_a: PO:0025169 ! prickle
-relationship: part_of PO:0006036 ! root epidermis
+relationship: part_of PO:0009005 ! root
 created_by: Ramona
 creation_date: 2010-11-18T07:47:30Z
 
@@ -13254,9 +13291,9 @@ creation_date: 2010-11-18T07:47:30Z
 id: PO:0025171
 name: shoot axis prickle
 namespace: plant_anatomy
-def: "A prickle that is part of a shoot axis epidermis." [POC:curators]
+def: "A prickle that is part of a shoot axis." [POC:curators]
 is_a: PO:0025169 ! prickle
-relationship: part_of PO:0000112 ! shoot axis epidermis
+relationship: part_of PO:0025029 ! shoot axis
 created_by: Ramona
 creation_date: 2010-11-18T07:47:30Z
 
@@ -13295,9 +13332,9 @@ creation_date: 2010-11-18T08:14:18Z
 id: PO:0025175
 name: leaf prickle
 namespace: plant_anatomy
-def: "A prickle that is part of a leaf epidermis." [POC:curators]
+def: "A prickle that is part of a leaf." [POC:curators]
 is_a: PO:0025169 ! prickle
-relationship: part_of PO:0006016 ! leaf epidermis
+relationship: part_of PO:0025034 ! leaf
 created_by: Ramona
 creation_date: 2010-11-22T09:35:01Z
 
@@ -13378,9 +13415,11 @@ creation_date: 2010-12-06T01:11:21Z
 id: PO:0025183
 name: leaf stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a leaf epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a leaf." [POC:rw]
+synonym: "leaf epidermal stomatal complex" EXACT []
+synonym: "leaf epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0006016 ! leaf epidermis
+relationship: part_of PO:0025034 ! leaf
 created_by: Ramona
 creation_date: 2010-12-09T11:47:55Z
 
@@ -13390,6 +13429,8 @@ name: tepal epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a tepal." [POC:rw]
 is_a: PO:0025157 ! phyllome epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009033 ! tepal
 relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
 creation_date: 2010-12-06T01:15:36Z
@@ -13398,9 +13439,11 @@ creation_date: 2010-12-06T01:15:36Z
 id: PO:0025185
 name: leaf lamina stomatal complex
 namespace: plant_anatomy
-def: "A leaf stomatal complex that is part of a leaf lamina epidermis." [POC:rw]
+def: "A leaf stomatal complex that is part of a leaf lamina." [POC:rw]
+synonym: "leaf lamina epidermal stomatal complex" EXACT []
+synonym: "leaf lamina epidermis stomatal complex" EXACT []
 is_a: PO:0025183 ! leaf stomatal complex
-relationship: part_of PO:0000047 ! leaf lamina epidermis
+relationship: part_of PO:0020039 ! leaf lamina
 created_by: Ramona
 creation_date: 2010-12-09T11:49:35Z
 
@@ -13437,9 +13480,11 @@ creation_date: 2010-12-06T01:18:53Z
 id: PO:0025189
 name: petiole stomatal complex
 namespace: plant_anatomy
-def: "A leaf stomatal complex that is part of a petiole epidermis." [POC:rw]
+def: "A leaf stomatal complex that is part of a petiole." [POC:rw]
+synonym: "petiole epidermal stomatal complex" EXACT []
+synonym: "petiole epidermis stomatal complex" EXACT []
 is_a: PO:0025183 ! leaf stomatal complex
-relationship: part_of PO:0000051 ! petiole epidermis
+relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
 creation_date: 2010-12-09T11:49:35Z
 
@@ -13448,6 +13493,8 @@ id: PO:0025190
 name: leaf abaxial stomatal complex
 namespace: plant_anatomy
 def: "A leaf stomatal complex that is part of a leaf abaxial epidermis." [POC:rw]
+synonym: "leaf abaxial epidermal stomatal complex" EXACT []
+synonym: "leaf abaxial epidermis stomatal complex" EXACT []
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0006019 ! leaf abaxial epidermis
 created_by: Ramona
@@ -13458,6 +13505,8 @@ id: PO:0025191
 name: leaf adaxial stomatal complex
 namespace: plant_anatomy
 def: "A leaf stomatal complex that is part of a leaf adaxial epidermis." [POC:rw]
+synonym: "leaf adaxial epidermal stomatal complex" EXACT []
+synonym: "leaf adaxial epidermis stomatal complex" EXACT []
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
 created_by: Ramona
@@ -13704,9 +13753,11 @@ creation_date: 2010-12-17T02:52:02Z
 id: PO:0025215
 name: phyllome stomatal complex
 namespace: plant_anatomy
-def: "A stomatal complex that is part of a phyllome epidermis." [POC:rw]
+def: "A stomatal complex that is part of a phyllome." [POC:rw]
+synonym: "phyllome epidermal stomatal complex" EXACT []
+synonym: "phyllome epidermis stomatal complex" EXACT []
 is_a: PO:0002000 ! stomatal complex
-relationship: part_of PO:0025157 ! phyllome epidermis
+relationship: part_of PO:0006001 ! phyllome
 created_by: Ramona
 creation_date: 2010-12-20T08:23:11Z
 
@@ -13714,9 +13765,11 @@ creation_date: 2010-12-20T08:23:11Z
 id: PO:0025216
 name: bract stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a bract epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a bract." [POC:rw]
+synonym: "bract epidermal stomatal complex" EXACT []
+synonym: "bract epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0025158 ! bract epidermis
+relationship: part_of PO:0009055 ! bract
 created_by: Ramona
 creation_date: 2010-12-20T08:27:52Z
 
@@ -13724,9 +13777,11 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025217
 name: carpel stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a carpel epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a carpel." [POC:rw]
+synonym: "carpel epidermal stomatal complex" EXACT []
+synonym: "carpel epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0025096 ! carpel epidermis
+relationship: part_of PO:0009030 ! carpel
 created_by: Ramona
 creation_date: 2010-12-20T08:27:52Z
 
@@ -13734,9 +13789,11 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025218
 name: petal stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a petal epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a petal." [POC:rw]
+synonym: "petal epidermal stomatal complex" EXACT []
+synonym: "petal epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0006041 ! petal epidermis
+relationship: part_of PO:0009032 ! petal
 created_by: Ramona
 creation_date: 2010-12-20T08:27:52Z
 
@@ -13744,9 +13801,11 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025219
 name: sepal stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a sepal epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a sepal." [POC:rw]
+synonym: "sepal epidermal stomatal complex" EXACT []
+synonym: "sepal epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0006040 ! sepal epidermis
+relationship: part_of PO:0009031 ! sepal
 created_by: Ramona
 creation_date: 2010-12-20T08:27:52Z
 
@@ -13754,9 +13813,11 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025220
 name: stamen stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a stamen epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a stamen." [POC:rw]
+synonym: "stamen epidermal stomatal complex" EXACT []
+synonym: "stamen epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0025097 ! stamen epidermis
+relationship: part_of PO:0009029 ! stamen
 created_by: Ramona
 creation_date: 2010-12-20T08:27:52Z
 
@@ -13764,9 +13825,11 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025221
 name: tepal stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a tepal epidermis." [POC:rw]
+def: "A phyllome stomatal complex that is part of a tepal." [POC:rw]
+synonym: "tepal epidermal stomatal complex" EXACT []
+synonym: "tepal epidermis stomatal complex" EXACT []
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0025184 ! tepal epidermis
+relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
 creation_date: 2010-12-20T08:27:52Z
 
@@ -14062,6 +14125,8 @@ name: leaf sheath epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that is part of a leaf sheath." [POC:rw]
 is_a: PO:0006016 ! leaf epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0020104 ! leaf sheath
 relationship: part_of PO:0020104 ! leaf sheath
 created_by: Ramona
 creation_date: 2010-12-30T03:58:22Z
@@ -14827,6 +14892,26 @@ created_by: Ramona
 creation_date: 2011-05-04T11:20:33Z
 
 [Term]
+id: PO:0025320
+name: cotyledonary node rhizoid
+namespace: plant_anatomy
+def: "An epidermal rhizoid that grows form a cotyldonary node." [POC:dws]
+comment: Found in some monocots.
+synonym: "wurtzelhalsrhizoid" EXACT []
+is_a: PO:0030071 ! epidermal rhizoid
+created_by: Ramona
+creation_date: 2011-05-09T01:26:21Z
+
+[Term]
+id: PO:0025321
+name: cotyledonary node
+namespace: plant_anatomy
+def: "A stem node from which one or more cotyledons grow." [POC:rw]
+is_a: PO:0020141 ! stem node
+created_by: Ramona
+creation_date: 2011-05-09T01:27:53Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -15457,7 +15542,7 @@ creation_date: 2011-04-25T11:33:34Z
 id: PO:0030047
 name: hydrome
 namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts hydroid cells and no other cell types." [ISBN:376821110]
+def: "A portion of plant tissue that has as parts hydroid cells and cells of no other types." [ISBN:376821110]
 comment: A hydrome is composed of only hydroids. Found in bryophytes, in the center of a non-vascular shoot axis such as a gametophore or seta. Often surrounded by leptome. May function in water conduction and may provide support.
 subset: Bryophytes
 synonym: "hydrom" EXACT []
@@ -15472,7 +15557,7 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030048
 name: leptome
 namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts leptoid cells and no other cell types." [ISBN:376821110]
+def: "A portion of plant tissue that has as parts leptoid cells and cells of no other types." [ISBN:376821110]
 comment: A leptome is composed of only leptoids. Found in bryophytes, in non-vascular shoot axes such as a gametophore axis or seta, or in the midrib of a non-vascular leaf. Often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
 subset: Bryophytes
 synonym: "leptom" EXACT []
@@ -15490,6 +15575,7 @@ namespace: plant_anatomy
 def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [RW:test]
 comment: The outermost of the parietal layers of a sporangium.
 is_a: PO:0025059 ! portion of ground tissue
+relationship: adjacent_to PO:0030073 ! exothecium
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
 creation_date: 2011-05-02T09:46:49Z
@@ -15516,7 +15602,6 @@ synonym: "conducting cylinder" EXACT [ISBN:376821110]
 synonym: "conducting strand" EXACT [ISBN:376821110]
 xref: OBO_SF_PO:3295058
 is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0030020 ! gametophore axis
 created_by: Ramona
 creation_date: 2011-04-25T01:04:07Z
 
@@ -15737,7 +15822,7 @@ creation_date: 2011-04-29T09:25:26Z
 id: PO:0030068
 name: epidermal rhizoid initial
 namespace: plant_anatomy
-def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289, RW:test "need reference for moncot rhizoids"]
+def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289]
 comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
 synonym: "epidermal rhizoid initial cell" EXACT []
 xref: OBO_SF_PO:3293302
@@ -15871,8 +15956,8 @@ creation_date: 2011-05-04T02:38:25Z
 id: PO:0030078
 name: rhizoid
 namespace: plant_anatomy
-def: "A plant structure that is a uniseriate filament with positive geotropism and without chlorophyll that grows from an epidermis or protonema." [RW:test]
-comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, and protonemal rhizoids that branch from a protonema.
+def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [RW:test]
+comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, and protonemal rhizoids that branch from a protonema.
 xref: OBO_SF_PO:3293893
 is_a: PO:0009011 ! plant structure
 created_by: Ramona
@@ -15888,6 +15973,13 @@ is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
 created_by: Ramona
 creation_date: 2011-05-04T03:13:26Z
+
+[Typedef]
+id: adjacent_to
+name: adjacent_to
+comment: Used when a plant structure (the child) is permanently in contact with another plant structure (the parent).
+created_by: Ramona
+creation_date: 2011-05-09T11:54:22Z
 
 [Typedef]
 id: derives_from
