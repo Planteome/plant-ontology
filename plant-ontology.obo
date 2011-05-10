@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:05:2011 15:02
+date: 10:05:2011 09:54
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -36,7 +36,7 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0000002
 name: anther wall
 namespace: plant_anatomy
-def: "A microsporangium wall that is part of an anther." [RW:test]
+def: "A microsporangium wall that is part of an anther." [ISBN:0471244554, ISBN:9780003686647]
 comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers.
 subset: Angiosperm
 subset: reference
@@ -14749,8 +14749,8 @@ creation_date: 2011-04-27T05:33:40Z
 id: PO:0025306
 name: sporangium wall
 namespace: plant_anatomy
-def: "A cardinal organ part that is the outer layers of a sporangium, external to the spores." [RW:test]
-comment: May have multiple layers such as exothecium, endothecium and tapetum.
+def: "A cardinal organ part that is composed of the outer layers of a sporangium and bounds the archesporium or spores." [RW:test]
+comment: May have multiple layers such as exothecium, endothecium and tapetum. Early in development, the sporangium wall bounds the archesporium. Later, after spores develop from the archesporium, it bounds the spore or spores.
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -14799,6 +14799,8 @@ id: PO:0025311
 name: microsporangium exothecium
 namespace: plant_anatomy
 def: "An exothecium that is part of a microsporangium wall." [RW:test]
+synonym: "microsporangial exothecium" EXACT []
+synonym: "microsporangium epidermis" EXACT []
 is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0025307 ! microsporangium wall
 created_by: Ramona
@@ -14809,6 +14811,8 @@ id: PO:0025312
 name: megasporangium exothecium
 namespace: plant_anatomy
 def: "An exothecium that is part of a megasporangium wall." [RW:test]
+synonym: "megapsorangial exothecium" EXACT []
+synonym: "megasporangium epidermis" EXACT []
 is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0025308 ! megasporangium wall
 created_by: Ramona
@@ -14818,8 +14822,8 @@ creation_date: 2011-05-03T11:19:36Z
 id: PO:0025313
 name: tapetum
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the inner-most layer of a sporangium wall." [RW:test]
-comment: May function in providing nutrition to developing sporocytes. May have one or two layers of cells. May break down as spores mature. A tapetum does not develop in some plants, such as Psilotum. In angiosperms, the tapetum develops from one of the parietal layers. In non-seed plants, the tapetum may develop from the outer cells of archesporium or from other layers of the sporangium wall.
+def: "A portion of ground tissue that is the inner-most layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647, ISBN:9780070588493]
+comment: May function in providing nutrition to developing sporocytes or pollen. May have one or more layers of cells. May break down as spores mature. A tapetum does not develop in some plants, such as Psilotum. In angiosperms, the tapetum develops from one of the parietal layers. In non-seed plants, the tapetum may develop from the outer cells of archesporium or from the inner-most layer of the sporangium wall.
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
@@ -15572,8 +15576,8 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030049
 name: endothecium
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [RW:test]
-comment: The outermost of the parietal layers of a sporangium.
+def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647, ISBN:9780070588493]
+comment: The outermost layer of a sporangium wall, internal to the exothecium.
 is_a: PO:0025059 ! portion of ground tissue
 relationship: adjacent_to PO:0030073 ! exothecium
 relationship: part_of PO:0025306 ! sporangium wall
@@ -15892,8 +15896,9 @@ creation_date: 2011-04-29T02:30:17Z
 id: PO:0030073
 name: exothecium
 namespace: plant_anatomy
-def: "A portion of epidermis that is the outermost layer of a sporangium." [ISBN:0962073342]
+def: "A portion of epidermis that is the outermost layer of a sporangium wall." [ISBN:0962073342, ISBN:9780003686647]
 synonym: "ampithecium" EXACT []
+synonym: "epithecium" EXACT []
 synonym: "sporangium epidermis" EXACT []
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0025306 ! sporangium wall
@@ -15904,8 +15909,11 @@ creation_date: 2011-05-02T09:46:49Z
 id: PO:0030074
 name: archesporium
 namespace: plant_anatomy
-def: "A portion of plant tissue that is the internal part of a sporangium, inside the sporangium wall, and has as parts archesporial cells." [RW:test]
+def: "A portion of plant tissue that is the internal part of a sporangium, bounded by the sporangium wall, and has as parts archesporial cells." [ISBN:8122407927, ISBN:9780003686647]
 comment: Gives rise to sporocytes and may give rise to other sterile cells such as elators.
+subset: Bryophytes
+subset: Gymnosperms
+subset: Pteridophytes
 synonym: "sporogenous tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030056 ! archesporial cell
