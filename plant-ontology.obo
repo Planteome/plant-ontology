@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:05:2011 15:20
+date: 12:05:2011 09:05
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -29,7 +29,7 @@ namespace: plant_anatomy
 def: "An embryonic plant structure that is the body of a developing plant embryo attached to the maternal tissue in an ovule by a suspensor." [POC:rw]
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 xref: OBO_SF_PO:3132560
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -360,7 +360,7 @@ id: PO:0000038
 name: primary endosperm cell
 namespace: plant_anatomy
 def: "Cell produced by the fusion of sperm cell nucleus and two polar nuclei of the central cell (or diploid secondary endosperm nucleus, in cases where two polar nuclei fuse together before double fertilization). The first cell of the endosperm, often tripoid." [TAIR:ki]
-is_a: PO:0025026 ! megagametophytic cell
+is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0009089 ! endosperm
 
 [Term]
@@ -428,10 +428,11 @@ is_a: PO:0003005 ! nodal root
 
 [Term]
 id: PO:0000045
-name: embryonic root
+name: embryo root
 namespace: plant_anatomy
 def: "A root that is initiated in a developing embryo." [TAIR:ki]
 subset: reference
+synonym: "embryonic root" EXACT []
 is_a: PO:0009005 ! root
 
 [Term]
@@ -443,7 +444,7 @@ subset: reference
 synonym: "lateral seminal root" RELATED []
 synonym: "scutellar nodal root" RELATED []
 synonym: "secondary root" RELATED []
-is_a: PO:0000045 ! embryonic root
+is_a: PO:0000045 ! embryo root
 is_a: PO:0003005 ! nodal root
 
 [Term]
@@ -530,10 +531,11 @@ is_a: PO:0009006 ! shoot system
 
 [Term]
 id: PO:0000056
-name: floral bud
+name: flower bud
 namespace: plant_anatomy
 def: "A bud that develops into a flower." [POC:curators]
 subset: TraitNet
+synonym: "floral bud" EXACT []
 is_a: PO:0025084 ! reproductive bud
 
 [Term]
@@ -780,7 +782,7 @@ def: "Cell, usually two in number, in the micropylar end of the embryo sac of an
 subset: Angiosperm
 subset: reference
 xref: CL:0000288
-is_a: PO:0025026 ! megagametophytic cell
+is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0020096 ! egg apparatus
 
 [Term]
@@ -873,10 +875,11 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0000229
-name: floral meristem
+name: flower meristem
 namespace: plant_anatomy
 def: "A portion of meristem tissue that gives rise to the floral organs." [GR:pj]
 synonym: "floral apical meristem" RELATED []
+synonym: "floral meristem" EXACT []
 is_a: PO:0009013 ! meristem
 
 [Term]
@@ -1516,21 +1519,21 @@ id: PO:0001047
 name: lemma developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the lemma defined by characteristic morphological, structural, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001048
 name: palea developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the palea defined by characteristic morphological, structural, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001049
 name: lodicule developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the lodicule defined by characteristic morphological, structural, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001050
@@ -1766,9 +1769,10 @@ is_a: PO:0001044 ! sepal differentiation and expansion stage
 
 [Term]
 id: PO:0001380
-name: sepals enclosing floral bud
+name: sepals enclosing flower bud
 namespace: plant_growth_and_development_stage
 def: "Stage of calyx development that begins when the sepals enclose the floral bud." [ISBN:0387940898]
+synonym: "sepals enclosing floral bud" EXACT []
 synonym: "stage 6 flower in Arabidopsis " RELATED []
 is_a: PO:0001044 ! sepal differentiation and expansion stage
 
@@ -1796,9 +1800,10 @@ consider: PO:0025168
 
 [Term]
 id: PO:0002002
-name: embryonic basal cell
+name: embryo basal cell
 namespace: plant_anatomy
 def: "A plant cell that is the lower-most cell formed after the first division of the zygote and is part of an embryo." [ISBN:0471245208]
+synonym: "embryonic basal cell" EXACT []
 xref: CL:0000646
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000423 ! zygote
@@ -2562,10 +2567,11 @@ is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0004710
-name: axillary floral bud
+name: axillary flower bud
 namespace: plant_anatomy
 def: "An axillary bud that develops into a flower." [POC:curators]
-is_a: PO:0000056 ! floral bud
+synonym: "axillary floral bud" EXACT []
+is_a: PO:0000056 ! flower bud
 is_a: PO:0025072 ! axillary reproductive bud
 
 [Term]
@@ -2597,10 +2603,11 @@ is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0004714
-name: terminal floral bud
+name: terminal flower bud
 namespace: plant_anatomy
 def: "A terminal bud that develops into a flower." [POC:curators]
-is_a: PO:0000056 ! floral bud
+synonym: "terminal floral bud" EXACT []
+is_a: PO:0000056 ! flower bud
 is_a: PO:0025071 ! terminal reproductive bud
 
 [Term]
@@ -3495,7 +3502,7 @@ name: carpel anlagen
 namespace: plant_anatomy
 def: "A portion of meristem tissue that is a presumptive region on a floral meristem where carpel primordia would initiate." [PMID:14729915]
 is_a: PO:0009013 ! meristem
-relationship: part_of PO:0000229 ! floral meristem
+relationship: part_of PO:0000229 ! flower meristem
 
 [Term]
 id: PO:0006006
@@ -4618,7 +4625,7 @@ def: "A floral meristem that is part of a spikelet." [POC:rw]
 comment: Found in Poaceae.
 subset: Maize
 subset: Poaceae
-is_a: PO:0000229 ! floral meristem
+is_a: PO:0000229 ! flower meristem
 relationship: part_of PO:0009051 ! spikelet
 
 [Term]
@@ -4692,11 +4699,11 @@ relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006338
-name: embryonic leaf
+name: embryo leaf
 namespace: plant_anatomy
 def: "A vascular leaf that is part of a plant embryo and is one of the first few leaves to develop from the embryonic shoot apical meristem." [GR:pj]
 comment: This term is used to described not yet fully-developed leaves that are part of an embryo.
-synonym: "embryo leaf" EXACT []
+synonym: "embryonic leaf" EXACT []
 is_a: PO:0009025 ! vascular leaf
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -4894,9 +4901,10 @@ relationship: part_of PO:0006354 ! ear floret
 
 [Term]
 id: PO:0006362
-name: embryonic shoot apical meristem
+name: embryo shoot apical meristem
 namespace: plant_anatomy
 def: "A vegetative shoot apical meristem at the apex of the embryonic axis." [GR:pj]
+synonym: "embryonic shoot apical meristem" EXACT []
 is_a: PO:0008016 ! vegetative shoot apical meristem
 relationship: part_of PO:0019018 ! embryo axis
 
@@ -8293,24 +8301,27 @@ is_obsolete: true
 
 [Term]
 id: PO:0007600
-name: 3 floral organ development stages
+name: 3 flower organ development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of floral organs defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
+synonym: "3 floral organ development stages" RELATED []
 is_a: PO:0007615 ! flower development stages
 
 [Term]
 id: PO:0007601
-name: 1 floral meristem visible
+name: 1 flower meristem visible
 namespace: plant_growth_and_development_stage
 def: "Stage of flower development marked by the emergence of the floral meristem on the flank of the inflorescence meristem." [POC:curators]
+synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stages
 
 [Term]
 id: PO:0007602
-name: 2 floral meristem notched
+name: 2 flower meristem notched
 namespace: plant_growth_and_development_stage
 def: "Stage of floral development that begins when the floral meristem becomes demarcated from the inflorescence meristem by a slight indentation." [POC:curators]
+synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stages
 
@@ -8319,28 +8330,28 @@ id: PO:0007603
 name: calyx developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the calyx defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007604
 name: corolla developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the corolla defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007605
 name: androecium developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the androecium defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007606
 name: gynoecium developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the gynoecium defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007607
@@ -9407,12 +9418,13 @@ relationship: part_of PO:0025021 ! collective tepal structure
 
 [Term]
 id: PO:0009034
-name: floral bract
+name: flower bract
 namespace: plant_anatomy
-def: "A bract subtending a flower." [Poc:curators]
+def: "A bract subtending a flower." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "chaff" RELATED []
+synonym: "floral bract" EXACT []
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0009049 ! inflorescence
@@ -9445,7 +9457,7 @@ name: lemma
 namespace: plant_anatomy
 def: "In a grass floret, the lower of two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
 subset: reference
-is_a: PO:0009034 ! floral bract
+is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
@@ -9455,7 +9467,7 @@ namespace: plant_anatomy
 def: "In a grass floret, the upper of the two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
 comment: Possibly a prophyll/bracteole.
 subset: reference
-is_a: PO:0009034 ! floral bract
+is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0006318 ! Poaceae floret
 
 [Term]
@@ -9670,19 +9682,21 @@ is_a: PO:0006001 ! phyllome
 
 [Term]
 id: PO:0009056
-name: floral nectary
+name: flower nectary
 namespace: plant_anatomy
 def: "A multicellular glandular structure found in the flower secreting a liquid containing organic substances especially sugars." [ISBN:047124529]
 subset: reference
+synonym: "floral nectary" EXACT []
 is_a: PO:0009035 ! nectary
 relationship: part_of PO:0009046 ! flower
 
 [Term]
 id: PO:0009057
-name: extrafloral nectary
+name: extraflower nectary
 namespace: plant_anatomy
 def: "A multicellular glandular structure found in places other than flower secreting a liquid containing organic substances especially sugar." [ISBN:047124529]
 subset: TraitNet
+synonym: "extrafloral nectary" EXACT []
 is_a: PO:0009035 ! nectary
 
 [Term]
@@ -10559,7 +10573,7 @@ namespace: plant_anatomy
 def: "An embryonic root that is the basal continuation of a hypocotyl." [ISBN:0471245208]
 comment: Found in an embryo or a seedling. May develop into the root system of an adult plant. Sometimes abortive.
 subset: reference
-is_a: PO:0000045 ! embryonic root
+is_a: PO:0000045 ! embryo root
 
 [Term]
 id: PO:0020032
@@ -10908,7 +10922,7 @@ namespace: plant_anatomy
 def: "The largest cell of the mature embryo sac. Contains two polar nuclei, which (after double fertilization) will develop into the endosperm." [TAIR:ki]
 subset: reference
 xref: CL:0000278
-is_a: PO:0025026 ! megagametophytic cell
+is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
@@ -10950,7 +10964,7 @@ def: "Cell, commonly three in number as in the eight-nucleate embryo sac, locate
 comment: More or less persistent, multiplicative or not.
 subset: reference
 xref: CL:0000537
-is_a: PO:0025026 ! megagametophytic cell
+is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
@@ -11072,16 +11086,17 @@ namespace: plant_anatomy
 def: "An embryonic plant structure at the base of a plant embryo that develops from an embryonic basal cell and connects an embryo proper to the wall of a megagametophyte." [PMID:12271036]
 comment: The suspensor often allows the embryo to penetrate deep into the endosperm. Across plant species, suspensors are morphologically diverse and may be single- or multicellular, undifferentiated or highly differentiated, and variously shaped.
 xref: OBO_SF_PO:3132565
-is_a: PO:0025099 ! embryonic plant structure
-relationship: develops_from PO:0002002 ! embryonic basal cell
+is_a: PO:0025099 ! embryo plant structure
+relationship: develops_from PO:0002002 ! embryo basal cell
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020109
-name: embryonic hypophysis
+name: embryo hypophysis
 namespace: plant_anatomy
 def: "A plant cell that is the uppermost cell of a suspensor and from which part of the root and root cap in a plant embryo of angiosperms are derived." [ISBN:0471245208]
 subset: Angiosperm
+synonym: "embryonic hypophysis" EXACT []
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020108 ! suspensor
 
@@ -11093,7 +11108,7 @@ def: "An embryonic plant structure that is a more or less shield-shaped and abso
 comment: May be a modified cotyledon.
 synonym: "haustorial cotyledon" RELATED []
 xref: OBO_SF_PO:3132566
-is_a: PO:0025099 ! embryonic plant structure
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -11669,9 +11684,11 @@ creation_date: 2010-07-01T02:11:26Z
 
 [Term]
 id: PO:0025026
-name: megagametophytic cell
+name: megagametophyte cell
 namespace: plant_anatomy
 def: "A plant cell that is part of an embryo sac." [POC:rw]
+synonym: "embryo sac cell" RELATED []
+synonym: "megagametophytic cell" EXACT []
 is_a: PO:0009002 ! plant cell
 created_by: Ramona
 creation_date: 2010-05-07T02:36:24Z
@@ -11688,10 +11705,11 @@ creation_date: 2010-05-07T02:36:55Z
 
 [Term]
 id: PO:0025028
-name: embryonic plant cell
+name: embryo plant cell
 namespace: plant_anatomy
 def: "An embryonic plant structure that is a plant cell that is found only in an embryo." [POC:rw]
-is_a: PO:0025099 ! embryonic plant structure
+synonym: "embryonic plant cell" EXACT []
+is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009002 ! plant cell
 intersection_of: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -12493,10 +12511,11 @@ creation_date: 2010-12-17T02:04:06Z
 
 [Term]
 id: PO:0025099
-name: embryonic plant structure
+name: embryo plant structure
 namespace: plant_anatomy
 def: "A plant structure that is part of an embryo." [POC:curators]
 comment: Includes plant structures that only occur in embryos (such as suspensor) as well as plant structures that are part of an embryo when a plant is in the embryonic phase (such as embryonic radicle).
+synonym: "embryonic plant structure" EXACT []
 xref: OBO_SF_PO:3132547
 is_a: PO:0009011 ! plant structure
 intersection_of: part_of PO:0009009 ! plant embryo
@@ -12701,13 +12720,13 @@ creation_date: 2010-12-02T09:04:09Z
 
 [Term]
 id: PO:0025120
-name: antheridial sperm cell
+name: antheridium sperm cell
 namespace: plant_anatomy
 def: "A plant sperm cell that is produced by and located in an antheridium." [POC:curators]
 comment: Antheridial sperm cells are motile and lack a plasma membrane.
 subset: Bryophytes
 subset: Pteridophytes
-synonym: "antheridium sperm cell" EXACT []
+synonym: "antheridial sperm cell" EXACT []
 synonym: "spermatazoid" EXACT []
 is_a: PO:0000084 ! plant sperm cell
 relationship: part_of PO:0025125 ! antheridium
@@ -12729,13 +12748,13 @@ creation_date: 2010-11-15T08:05:46Z
 
 [Term]
 id: PO:0025122
-name: archegonial egg cell
+name: archegonium egg cell
 namespace: plant_anatomy
 def: "A plant egg cell that is produced by and located in an archegonium." [POC:curators]
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
-synonym: "archegonium egg call" EXACT []
+synonym: "archegonial egg call" EXACT []
 is_a: PO:0020094 ! plant egg cell
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -13934,11 +13953,12 @@ creation_date: 2010-12-20T09:34:34Z
 
 [Term]
 id: PO:0025233
-name: portion of embryonic plant tissue
+name: portion of embryo plant tissue
 namespace: plant_anatomy
 def: "A portion of plant tissue that is part of a plant embryo." [POC:curators]
 comment: This class is for tissues that only occur as part of an embryo.
-is_a: PO:0025099 ! embryonic plant structure
+synonym: "portion of embryonic plant tissue" EXACT []
+is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009007 ! portion of plant tissue
 intersection_of: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14472,12 +14492,13 @@ creation_date: 2011-03-31T07:05:48Z
 
 [Term]
 id: PO:0025282
-name: archegonial megagametophyte
+name: archegonium megagametophyte
 namespace: plant_anatomy
 def: "A megagametophyte that has as parts one or more archegonia." [POC:curators]
 comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In some pteridophytes, megagametophytes develop from megaspores.
 subset: Bryophytes
 subset: Pteridophytes
+synonym: "archegonial megagametophyte" EXACT []
 is_a: PO:0025279 ! megagametophyte
 relationship: has_part PO:0025126 ! archegonium
 created_by: Ramona
@@ -14485,12 +14506,13 @@ creation_date: 2011-03-31T07:08:48Z
 
 [Term]
 id: PO:0025283
-name: antheridial microgametophyte
+name: antheridium microgametophyte
 namespace: plant_anatomy
 def: "A microgametophyte that has as parts one or more antheridia." [POC:curators]
 comment: Microgametophytes in bryophytes only produce sperm cells, but do not develop from microspores, because there is no heterospory in bryophytes. In some pteridophytes, microgametophytes develop from microspores.
 subset: Bryophytes
 subset: Pteridophytes
+synonym: "antheridial microgametophyte" EXACT []
 is_a: PO:0025280 ! microgametophyte
 relationship: has_part PO:0025125 ! antheridium
 created_by: Ramona
@@ -14520,10 +14542,10 @@ creation_date: 2011-04-20T02:00:16Z
 
 [Term]
 id: PO:0025286
-name: embryonic coleoptile
+name:  embryo coleoptile
 namespace: plant_anatomy
 def: "A coleoptile that is part of a plant embryo." [POC:curators]
-synonym: "embryo coleoptile" EXACT []
+synonym: "embryonic coleoptile" EXACT []
 is_a: PO:0020033 ! coleoptile
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14536,16 +14558,16 @@ namespace: plant_anatomy
 def: "A coleoptile that develops from an embryonic coleoptile." [POC:curators]
 comment: A seedling coleoptile is an elongation of an embryonic coleoptile and is part of a whole plant in the seedling phase.
 is_a: PO:0020033 ! coleoptile
-relationship: develops_from PO:0025286 ! embryonic coleoptile
+relationship: develops_from PO:0025286 !  embryo coleoptile
 created_by: Ramona
 creation_date: 2011-04-20T02:20:12Z
 
 [Term]
 id: PO:0025288
-name: embryonic coleorhiza
+name: embryo coleorhiza
 namespace: plant_anatomy
 def: "A coleorhiza that is part of a plant embryo." [POC:curators]
-synonym: "embryo coleorhiza" EXACT []
+synonym: "embryonic coleorhiza" EXACT []
 is_a: PO:0020034 ! coleorhiza
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14558,16 +14580,16 @@ namespace: plant_anatomy
 def: "A coleorhiza that develops from an embryonic coleorhiza." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020034 ! coleorhiza
-relationship: develops_from PO:0025288 ! embryonic coleorhiza
+relationship: develops_from PO:0025288 ! embryo coleorhiza
 created_by: Ramona
 creation_date: 2011-04-20T02:34:17Z
 
 [Term]
 id: PO:0025290
-name: embryonic hypocotyl
+name: embryo hypocotyl
 namespace: plant_anatomy
 def: "A hypocotyl that is part of a plant embryo." [POC:curators]
-synonym: "embryo hypocotyl" EXACT []
+synonym: "embryonic hypocotyl" EXACT []
 is_a: PO:0020100 ! hypocotyl
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14580,16 +14602,16 @@ namespace: plant_anatomy
 def: "A hypocotyl that develops from an embryonic hypocotyl." [POC:curators]
 comment: Part of a whole plant in the seedling phase. This term should only be used for seed plants.
 is_a: PO:0020100 ! hypocotyl
-relationship: develops_from PO:0025290 ! embryonic hypocotyl
+relationship: develops_from PO:0025290 ! embryo hypocotyl
 created_by: Ramona
 creation_date: 2011-04-20T02:39:56Z
 
 [Term]
 id: PO:0025292
-name: embryonic epicotyl
+name: embryo epicotyl
 namespace: plant_anatomy
 def: "An epicotyl that is part of a plant embryo." [POC:curators]
-synonym: "embryo epicotyl" EXACT []
+synonym: "embryonic epicotyl" EXACT []
 is_a: PO:0020035 ! epicotyl
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14602,16 +14624,16 @@ namespace: plant_anatomy
 def: "A epicotyl that develops from an embryonic epicotyl." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020035 ! epicotyl
-relationship: develops_from PO:0025292 ! embryonic epicotyl
+relationship: develops_from PO:0025292 ! embryo epicotyl
 created_by: Ramona
 creation_date: 2011-04-25T10:13:08Z
 
 [Term]
 id: PO:0025294
-name: embryonic mesocotyl
+name: embryo mesocotyl
 namespace: plant_anatomy
 def: "A mesocotyl that is part of a plant embryo." [POC:curators]
-synonym: "embryo mesocotyl" EXACT []
+synonym: "embryonic mesocotyl" EXACT []
 is_a: PO:0020037 ! mesocotyl
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14624,17 +14646,17 @@ namespace: plant_anatomy
 def: "A mesocotyl that develops from an embryonic mesocotyl." [POC:curators]
 comment: A seedling mesocotyl is an elongation of and embryonic mesocotyl that is part of a whole plant in the seedling phase.
 is_a: PO:0020037 ! mesocotyl
-relationship: develops_from PO:0025294 ! embryonic mesocotyl
+relationship: develops_from PO:0025294 ! embryo mesocotyl
 created_by: Ramona
 creation_date: 2011-04-25T10:21:58Z
 
 [Term]
 id: PO:0025296
-name: embryonic radicle
+name: embryo radicle
 namespace: plant_anatomy
 def: "A radicle that is part of a plant embryo." [POC:curators]
 subset: Citrus
-synonym: "embryo radicle" EXACT []
+synonym: "embryonic radicle" EXACT []
 is_a: PO:0020031 ! radicle
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -14647,7 +14669,7 @@ namespace: plant_anatomy
 def: "A radicle that develops from an embryonic radicle." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
 is_a: PO:0020031 ! radicle
-relationship: develops_from PO:0025296 ! embryonic radicle
+relationship: develops_from PO:0025296 ! embryo radicle
 created_by: Ramona
 creation_date: 2011-04-25T10:41:48Z
 
@@ -14679,9 +14701,10 @@ creation_date: 2011-04-26T08:45:55Z
 
 [Term]
 id: PO:0025300
-name: embryonic hypocotyl-root junction
+name: embryo hypocotyl-root junction
 namespace: plant_anatomy
 def: "A hypocotyl-root junction that is part of an embryo axis." [POC:rw]
+synonym: "embryonic hypocotyl-root junction" EXACT []
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: part_of PO:0019018 ! embryo axis
 created_by: Ramona
@@ -14694,7 +14717,7 @@ namespace: plant_anatomy
 def: "A hypocotyl-root junction that develops from an embryonic hypocotyl-root junction." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
 is_a: PO:0004724 ! hypocotyl-root junction
-relationship: develops_from PO:0025300 ! embryonic hypocotyl-root junction
+relationship: develops_from PO:0025300 ! embryo hypocotyl-root junction
 created_by: Ramona
 creation_date: 2011-04-27T08:20:22Z
 
@@ -15178,9 +15201,11 @@ creation_date: 2011-04-26T07:56:36Z
 id: PO:0030017
 name: spore capsule mouth
 namespace: plant_anatomy
-def: "A plant anatomical space that is the opening on the apical end of a spore capsule." [POC:curators, RW:test]
+def: "A plant anatomical space that is the opening on the apical end of a spore capsule." [POC:curators]
+comment: May be covered by a peristome.
 subset: Bryophytes
 subset: Poaceae
+synonym: "sporangium mouth" EXACT []
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15431,13 +15456,13 @@ creation_date: 2011-04-12T10:29:01Z
 
 [Term]
 id: PO:0030035
-name: antheridial stalk
+name: antheridium stalk
 namespace: plant_anatomy
-def: "A stalk that is the basal part of an antheridium." [RW:test]
+def: "A stalk that is the basal part of an antheridium." [ISBN:9780070588493]
 comment: Raises the antheridium above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
-synonym: "antheridium stalk" EXACT []
+synonym: "antheridial stalk" EXACT []
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -15445,13 +15470,13 @@ creation_date: 2011-04-12T10:39:46Z
 
 [Term]
 id: PO:0030036
-name: archegonial stalk
+name: archegonium stalk
 namespace: plant_anatomy
-def: "A stalk that the basal part of an archegonium." [RW:test]
+def: "A stalk that the basal part of an archegonium." [ISBN:9780070588493]
 comment: Raises the venter above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
-synonym: "archegonium stalk" EXACT []
+synonym: "archegonial stalk" EXACT []
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15517,7 +15542,7 @@ creation_date: 2011-04-12T11:57:20Z
 id: PO:0030041
 name: sporangium theca
 namespace: plant_anatomy
-def: "A cardinal organ part that is the main body of a sporangium and has spores located in it." [RW:test]
+def: "A cardinal organ part that is the main body of a sporangium and has spores located in it." [ISBN:9780473067304]
 comment: Term used for bryophytes and pteridophytes.
 subset: Bryophytes
 subset: Citrus
@@ -15973,13 +15998,13 @@ creation_date: 2011-05-02T12:05:51Z
 
 [Term]
 id: PO:0030075
-name: antheridial head
+name: antheridium head
 namespace: plant_anatomy
 def: "A disk-shaped cardinal organ part that is the apical portion of an antheridiophore and bears antheridia." [ISBN:0962073342]
 comment: Found in Marchantiales.
 subset: Bryophytes
 subset: Poaceae
-synonym: "antheridium head" EXACT []
+synonym: "antheridial head" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030033 ! antheridiophore
 created_by: Ramona
@@ -15987,13 +16012,13 @@ creation_date: 2011-05-04T07:26:51Z
 
 [Term]
 id: PO:0030076
-name: archegonial head
+name: archegonium head
 namespace: plant_anatomy
 def: "An umbrella-shaped cardinal organ part that is the apical portion of an archegoniophore and bears archegonia." [ISBN:0962073342]
 comment: Found in Marchantiales.
 subset: Bryophytes
 subset: Poaceae
-synonym: "archegonium head" EXACT []
+synonym: "archegonial head" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030034 ! archegoniophore
 created_by: Ramona
@@ -16003,7 +16028,7 @@ creation_date: 2011-05-04T07:26:51Z
 id: PO:0030077
 name: protonemal side branch rhizoid initial
 namespace: plant_anatomy
-def: "A protonemal side branch initial that gives rise to a protonemal rhizoid." [RW:test]
+def: "A protonemal side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
 synonym: "protonemal side branch rhizoid initial cell" EXACT []
 xref: OBO_SF_PO:3293302
 is_a: PO:0030067 ! protonemal side branch initial
@@ -16025,7 +16050,7 @@ creation_date: 2011-05-04T03:03:32Z
 id: PO:0030079
 name: protonemal rhizoid
 namespace: plant_anatomy
-def: "A rhizoid that is part of a protonema and develops from a protonemal side branch rhizoid initial." [RW:test]
+def: "A rhizoid that is part of a protonema and develops from a protonemal side branch rhizoid initial." [ISBN:0962073342]
 xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
