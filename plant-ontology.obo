@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:05:2011 09:05
+date: 13:05:2011 08:37
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1016,9 +1016,8 @@ relationship: part_of PO:0005679 ! epidermis
 id: PO:0000283
 name: idioblast
 namespace: plant_anatomy
-def: "OBSOLETE. A cell in a tissue that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
-comment: This term was made obsolete because its a kind of attribute for a cell type.
-is_obsolete: true
+def: "A plant cell that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
+comment: Often contains deposit of minerals or products of secondary metabolism. May have a specialized function.
 
 [Term]
 id: PO:0000284
@@ -4428,6 +4427,7 @@ id: PO:0006307
 name: root procambium
 namespace: plant_anatomy
 def: "A portion of procambium tissue that undergoes differentiation to form the primary vascular tissue of a root." [POC:rw]
+comment: A derivative of the root apical meristem.
 is_a: PO:0025275 ! procambium
 relationship: part_of PO:0020147 ! root apical meristem
 
@@ -9692,11 +9692,10 @@ relationship: part_of PO:0009046 ! flower
 
 [Term]
 id: PO:0009057
-name: extraflower nectary
+name: extrafloral nectary
 namespace: plant_anatomy
 def: "A multicellular glandular structure found in places other than flower secreting a liquid containing organic substances especially sugar." [ISBN:047124529]
 subset: TraitNet
-synonym: "extrafloral nectary" EXACT []
 is_a: PO:0009035 ! nectary
 
 [Term]
@@ -14542,7 +14541,7 @@ creation_date: 2011-04-20T02:00:16Z
 
 [Term]
 id: PO:0025286
-name:  embryo coleoptile
+name: embryo coleoptile
 namespace: plant_anatomy
 def: "A coleoptile that is part of a plant embryo." [POC:curators]
 synonym: "embryonic coleoptile" EXACT []
@@ -14558,7 +14557,7 @@ namespace: plant_anatomy
 def: "A coleoptile that develops from an embryonic coleoptile." [POC:curators]
 comment: A seedling coleoptile is an elongation of an embryonic coleoptile and is part of a whole plant in the seedling phase.
 is_a: PO:0020033 ! coleoptile
-relationship: develops_from PO:0025286 !  embryo coleoptile
+relationship: develops_from PO:0025286 ! embryo coleoptile
 created_by: Ramona
 creation_date: 2011-04-20T02:20:12Z
 
