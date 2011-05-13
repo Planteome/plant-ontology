@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:05:2011 09:01
+date: 13:05:2011 09:39
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta12
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2693,13 +2693,12 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0004724
 name: hypocotyl-root junction
 namespace: plant_anatomy
-def: "A cardinal organ part that is the part of an embryonic axis where the radicle joins the hypocotyl." [ISBN:9780881928501, POC:rw]
+def: "A cardinal organ part that is the part of a plant axis where a radicle joins a hypocotyl." [ISBN:9780881928501, POC:rw]
 subset: reference
 synonym: "embryo axis transition zone" EXACT [ISBN:9780881928501]
 synonym: "Poaceae crown" NARROW []
 xref: OBO_SF_PO:3132568
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
 id: PO:0004725
@@ -9073,7 +9072,6 @@ subset: TraitNet
 xref: CL:0000610
 xref: GO:0005623
 xref: OBO_SF_PO:2932524
-is_a: PO:0000283 ! idioblast
 is_a: PO:0009011 ! plant structure
 disjoint_from: PO:0000034 ! vascular system
 disjoint_from: PO:0009007 ! portion of plant tissue
@@ -10593,7 +10591,6 @@ namespace: plant_anatomy
 def: "A phyllome that surrounds the plumule of an embryo or the emerging shoot apex of a seedling." [ISBN:0471244554, ISBN:9781842464229]
 comment: Found in Poaceae. The coleoptile is the first phyllome formed from the embryonic shoot apical meristem. Protects the emerging shoot system as it grows through the soil.
 is_a: PO:0006001 ! phyllome
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020034
@@ -11349,7 +11346,6 @@ subset: TraitNet
 synonym: "promeristem" RELATED []
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
-relationship: part_of PO:0025025 ! root system
 
 [Term]
 id: PO:0020148
@@ -12420,7 +12416,6 @@ def: "A gynoecium in the early stages of development, characterized as a ridge o
 synonym: "gynoecial ridge" EXACT []
 synonym: "stylar ridge" EXACT []
 is_a: PO:0009062 ! gynoecium
-relationship: develops_from PO:0000019 ! gynoecium primordium
 created_by: Ramona
 creation_date: 2010-10-27T09:19:35Z
 
