@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 13:05:2011 14:45
+date: 17:05:2011 10:46
 saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta12
+auto-generated-by: OBO-Edit 2.1-beta13
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -2858,7 +2858,8 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0005016
 name: replum
 namespace: plant_anatomy
-def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMIS:15035986]
+def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMID:15035986]
+comment: This term was made obsolete to avoid confusion with the new terms fruit replum and ovary replum. Consider ovary replum (PO:0025272) or fruit replum (PO:0025267).
 is_obsolete: true
 consider: PO:0025267
 consider: PO:0025272
@@ -2936,6 +2937,7 @@ namespace: plant_anatomy
 def: "A portion of chlorencyma tissue that is composed of one or more mesophyll layers. It may have a distinct subepidermal adaxial cell layer (as found in <i>Arabidopsis</i>)." [GR:pj, PMID:10332605]
 comment: The cells in the mesophyll layer(s) may not differentiate similar to the spongy and palisade cells found in the leaf mesophyll.
 subset: Poaceae
+synonym: "ovary wall middle layer" EXACT []
 xref: OBO_SF_PO:2903966
 is_a: PO:0005426 ! chlorenchyma
 relationship: part_of PO:0005022 ! ovary wall
@@ -8886,7 +8888,7 @@ id: PO:0008037
 name: seedling
 namespace: plant_anatomy
 def: "A young plant derived from a newly germinated seed." [GR:cwt]
-comment: Replaced by whole plant growth stage 'seedling growth stage' (PO:0007131), and whole plant (PO:0000003).
+comment: This term was made obsolete. Replaced by whole plant growth stage seedling growth (PO:0007131) and whole plant (PO:0000003).
 xref: OBO_SF_PO:2972241
 is_obsolete: true
 replaced_by: PO:0000003
@@ -11706,7 +11708,7 @@ creation_date: 2010-05-07T02:36:55Z
 id: PO:0025028
 name: embryo plant cell
 namespace: plant_anatomy
-def: "An embryonic plant structure that is a plant cell that is found only in an embryo." [POC:rw]
+def: "A plant cell that is part of a plant embryo." [POC:curators]
 synonym: "embryonic plant cell" EXACT []
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009002 ! plant cell
@@ -12271,6 +12273,7 @@ subset: TraitNet
 synonym: "gametophyll" EXACT []
 synonym: "gametophyte leaf" EXACT []
 synonym: "gametophytic leaf" EXACT []
+synonym: "leaflet" RELATED []
 synonym: "phyllid" EXACT []
 synonym: "phyllidium" EXACT []
 is_a: PO:0025034 ! leaf
@@ -12516,6 +12519,7 @@ comment: Includes plant structures that only occur in embryos (such as suspensor
 synonym: "embryonic plant structure" EXACT []
 xref: OBO_SF_PO:3132547
 is_a: PO:0009011 ! plant structure
+intersection_of: PO:0009011 ! plant structure
 intersection_of: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
@@ -14767,6 +14771,7 @@ name: sporangium wall
 namespace: plant_anatomy
 def: "A cardinal organ part that is composed of the outer layers of a sporangium and bounds the archesporium or spores." [ISBN:9780070588493]
 comment: May have multiple layers such as exothecium, endothecium and tapetum. Early in development, the sporangium wall bounds the archesporium. Later, after spores develop from the archesporium, it bounds the spore or spores.
+synonym: "sporangium jacket layers" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -14795,7 +14800,7 @@ id: PO:0025309
 name: microsporangium endothecium
 namespace: plant_anatomy
 def: "An endothecium that is part of a microsporangium wall." [POC:curators]
-is_a: PO:0030049 ! endothecium
+is_a: PO:0030049 ! sporangium wall endothecium
 relationship: part_of PO:0025307 ! microsporangium wall
 created_by: Ramona
 creation_date: 2011-05-03T11:13:31Z
@@ -14805,7 +14810,7 @@ id: PO:0025310
 name: megasporangium endothecium
 namespace: plant_anatomy
 def: "An endothecium that is part of a megasporangium wall." [POC:curators]
-is_a: PO:0030049 ! endothecium
+is_a: PO:0030049 ! sporangium wall endothecium
 relationship: part_of PO:0025308 ! megasporangium wall
 created_by: Ramona
 creation_date: 2011-05-03T11:13:31Z
@@ -15337,6 +15342,7 @@ comment: Occurs in mosses and leafy liverworts. Develops from a caulonema cell i
 subset: Bryophytes
 synonym: "brown bud" EXACT []
 is_a: PO:0000058 ! vegetative bud
+relationship: develops_from PO:0030083 ! gametophore bud initial
 relationship: has_part PO:0030019 ! gametophore meristematic apical cell
 relationship: participates_in PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15648,11 +15654,13 @@ creation_date: 2011-04-18T09:34:43Z
 
 [Term]
 id: PO:0030049
-name: endothecium
+name: sporangium wall endothecium
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647, ISBN:9780070588493]
-comment: The outermost layer of a sporangium wall, internal to the exothecium.
+def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647]
+comment: Term used for vascular plants to describe the outermost layer of a sporangium wall that is internal to the exothecium.
+synonym: "endothecium of sporangium wall" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
+disjoint_from: PO:0030085 ! early sporangium endothecium
 relationship: adjacent_to PO:0030073 ! exothecium
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
@@ -15955,6 +15963,7 @@ name: costa
 namespace: plant_anatomy
 def: "A portion of plant tissue that is a single or double strand in the center of a non-vascular leaf and has as part hydrome or leptome." [ISBN:376821110]
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
+synonym: "leaflet midrib" RELATED []
 synonym: "non-vascular leaf midrib" EXACT []
 synonym: "non-vascular leaf midvein" RELATED []
 synonym: "phyllid costa" EXACT []
@@ -15971,7 +15980,7 @@ id: PO:0030073
 name: exothecium
 namespace: plant_anatomy
 def: "A portion of epidermis that is the outermost layer of a sporangium wall." [ISBN:0962073342, ISBN:9780003686647]
-synonym: "ampithecium" EXACT []
+comment: Develops from the outermost layer of an amphithecium in bryophytes.
 synonym: "epithecium" EXACT []
 synonym: "sporangium epidermis" EXACT []
 is_a: PO:0005679 ! epidermis
@@ -16055,6 +16064,72 @@ is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
 created_by: Ramona
 creation_date: 2011-05-04T03:13:26Z
+
+[Term]
+id: PO:0030080
+name: rhizoid meristematic apical cell
+namespace: plant_anatomy
+def: "A gametophyte meristematic apical cell that is part of a rhizoid." [POC:curators]
+synonym: "rhizoid apical cell" EXACT []
+synonym: "rhizoid apical initial" EXACT []
+is_a: PO:0030014 ! gametophyte meristematic apical cell
+relationship: part_of PO:0030078 ! rhizoid
+created_by: Ramona
+creation_date: 2011-05-17T09:04:15Z
+
+[Term]
+id: PO:0030081
+name: caulonema meristematic apical cell
+namespace: plant_anatomy
+def: "A protonema meristematic apical cell that is part of a caulonema." [POC:curators]
+synonym: "caulonema apical cell" EXACT []
+synonym: "caulonema apical initial" EXACT []
+is_a: PO:0030046 ! protonema meristematic apical cell
+created_by: Ramona
+creation_date: 2011-05-17T09:06:26Z
+
+[Term]
+id: PO:0030082
+name: chloronema meristematic apical cell
+namespace: plant_anatomy
+def: "A protonema meristematic apical cell that is part of a chloronema." [POC:curators]
+synonym: "chloronema apical cell" EXACT []
+synonym: "chloronema apical initial" EXACT []
+is_a: PO:0030046 ! protonema meristematic apical cell
+created_by: Ramona
+creation_date: 2011-05-17T09:06:26Z
+
+[Term]
+id: PO:0030083
+name: gametophore bud initial
+namespace: plant_anatomy
+def: "A protonemal side branch initial that gives rise to a gametophore bud." [POC:curators]
+synonym: "gametophore bud initial cell" EXACT []
+is_a: PO:0030067 ! protonemal side branch initial
+created_by: Ramona
+creation_date: 2011-05-17T09:10:08Z
+
+[Term]
+id: PO:0030084
+name: amphithecium
+namespace: plant_anatomy
+def: "A portion of plant tissue that is the outer layer or layers of a sporangium early in sporangium development." [ISBN:0962073342]
+comment: Term used for bryophytes. May have one or more layers. An amphithecium may give rise to an exothecium and other layer of a sporangium wall (jacket layer or layers). In true mosses, the amphithecium gives rise to the sporangium wall and the peristome. In hornworts and peat mosses, it gives rise to the sporangium wall and sporogenous tissue.
+is_a: PO:0009007 ! portion of plant tissue
+created_by: Ramona
+creation_date: 2011-05-17T10:28:55Z
+
+[Term]
+id: PO:0030085
+name: early sporangium endothecium
+namespace: plant_anatomy
+def: "A portion of ground tissue that is the tissue internal to an amphithecium early in sporangium development." [ISBN:0962073342, POC:9780070588493, POC:curators]
+comment: Term used for bryophytes. In liverworts an early sporangium endothecium produces sporogenous tissue. In Sphagnum, Andreaea, and hornworts, it produces columella and sporogenous tissue.
+synonym: "endothecium of early sporangium" EXACT []
+is_a: PO:0025059 ! portion of ground tissue
+disjoint_from: PO:0030049 ! sporangium wall endothecium
+created_by: Ramona
+creation_date: 2011-05-17T10:31:21Z
 
 [Typedef]
 id: adjacent_to
