@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:05:2011 10:46
+date: 17:05:2011 14:18
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta13
 subsetdef: Angiosperm "Term for angiosperms"
@@ -288,7 +288,6 @@ name: septum
 namespace: plant_anatomy
 def: "A collective organ part structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
 comment: A septum is formed by the fusion of the walls of two adjacent organs (ovary walls or anther walls), for example, the partition between two sections of an orange, seen in cross-section.
-xref: Plantsystematics.org:septum "http://www.plantsystematics.org/cgi-bin/dol/dol_show_link.pl?/imgs/kcn2/r/Rubiaceae_Cubanola_domingensis_1597.html"
 is_a: PO:0025269 ! collective organ part structure
 
 [Term]
@@ -12273,7 +12272,7 @@ subset: TraitNet
 synonym: "gametophyll" EXACT []
 synonym: "gametophyte leaf" EXACT []
 synonym: "gametophytic leaf" EXACT []
-synonym: "leaflet" RELATED []
+synonym: "non-vascular leaflet" RELATED []
 synonym: "phyllid" EXACT []
 synonym: "phyllidium" EXACT []
 is_a: PO:0025034 ! leaf
@@ -14771,6 +14770,7 @@ name: sporangium wall
 namespace: plant_anatomy
 def: "A cardinal organ part that is composed of the outer layers of a sporangium and bounds the archesporium or spores." [ISBN:9780070588493]
 comment: May have multiple layers such as exothecium, endothecium and tapetum. Early in development, the sporangium wall bounds the archesporium. Later, after spores develop from the archesporium, it bounds the spore or spores.
+synonym: "sporangium jacket layer" EXACT []
 synonym: "sporangium jacket layers" EXACT []
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
@@ -15660,7 +15660,7 @@ def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium
 comment: Term used for vascular plants to describe the outermost layer of a sporangium wall that is internal to the exothecium.
 synonym: "endothecium of sporangium wall" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
-disjoint_from: PO:0030085 ! early sporangium endothecium
+disjoint_from: PO:0030085 ! protosporangium endothecium
 relationship: adjacent_to PO:0030073 ! exothecium
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
@@ -15963,9 +15963,9 @@ name: costa
 namespace: plant_anatomy
 def: "A portion of plant tissue that is a single or double strand in the center of a non-vascular leaf and has as part hydrome or leptome." [ISBN:376821110]
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
-synonym: "leaflet midrib" RELATED []
 synonym: "non-vascular leaf midrib" EXACT []
 synonym: "non-vascular leaf midvein" RELATED []
+synonym: "non-vascular leaflet midrib" RELATED []
 synonym: "phyllid costa" EXACT []
 synonym: "phyllid midrib" EXACT []
 synonym: "phyllid midvein" RELATED []
@@ -16121,11 +16121,11 @@ creation_date: 2011-05-17T10:28:55Z
 
 [Term]
 id: PO:0030085
-name: early sporangium endothecium
+name: protosporangium endothecium
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the tissue internal to an amphithecium early in sporangium development." [ISBN:0962073342, POC:9780070588493, POC:curators]
+def: "A portion of ground tissue that is the tissue internal to an amphithecium early in sporangium development." [ISBN:0962073342, ISBN:9780070588493, POC:curators]
 comment: Term used for bryophytes. In liverworts an early sporangium endothecium produces sporogenous tissue. In Sphagnum, Andreaea, and hornworts, it produces columella and sporogenous tissue.
-synonym: "endothecium of early sporangium" EXACT []
+synonym: "endothecium of protosporangium" EXACT []
 is_a: PO:0025059 ! portion of ground tissue
 disjoint_from: PO:0030049 ! sporangium wall endothecium
 created_by: Ramona
