@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:05:2011 14:18
+date: 23:05:2011 09:48
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta13
 subsetdef: Angiosperm "Term for angiosperms"
@@ -278,7 +278,7 @@ id: PO:0000029
 name: root hair tip
 namespace: plant_anatomy
 def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
-comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO.
+comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO. To annotate to a cell that has a root hair tip, consider root hair cell (PO:0000256).
 is_obsolete: true
 consider: PO:0000256
 
@@ -563,6 +563,9 @@ namespace: plant_anatomy
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
 synonym: "root stem cell" RELATED []
 is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000295 ! cambial initial
+disjoint_from: PO:0000349 ! epidermal initial
+disjoint_from: PO:0030067 ! protonema side branch initial
 relationship: part_of PO:0020149 ! quiescent center
 
 [Term]
@@ -1086,6 +1089,9 @@ synonym: "cambial cell" EXACT []
 synonym: "cambial initial cell" EXACT []
 xref: CL:0000272
 is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000059 ! root initial cell
+disjoint_from: PO:0000349 ! epidermal initial
+disjoint_from: PO:0030067 ! protonema side branch initial
 relationship: part_of PO:0005598 ! vascular cambium
 
 [Term]
@@ -1127,6 +1133,9 @@ def: "An initial cell that is part of an epidermis and gives rise to specialized
 synonym: "epidermal initial cell" EXACT []
 xref: CL:0000538
 is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000059 ! root initial cell
+disjoint_from: PO:0000295 ! cambial initial
+disjoint_from: PO:0030067 ! protonema side branch initial
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -4398,6 +4407,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The outer layer of the tunica." [GR:pj]
 comment: A similar term L1 meristem (PO:0009020) occurs.
 is_obsolete: true
+replaced_by: PO:0009020
 
 [Term]
 id: PO:0006304
@@ -4406,6 +4416,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The second layer of the tunica." [GR:pj]
 comment: A similar term L2 meristem (PO:0009021) occurs.
 is_obsolete: true
+replaced_by: PO:0009021
 
 [Term]
 id: PO:0006305
@@ -4414,6 +4425,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The innermost layer of the tunica." [GR:pj]
 comment: A similar term L3 meristem (PO:0009022) occurs.
 is_obsolete: true
+replaced_by: PO:0009022
 
 [Term]
 id: PO:0006306
@@ -8891,6 +8903,7 @@ comment: This term was made obsolete. Replaced by whole plant growth stage seedl
 xref: OBO_SF_PO:2972241
 is_obsolete: true
 replaced_by: PO:0000003
+replaced_by: PO:0007131
 
 [Term]
 id: PO:0008038
@@ -8963,7 +8976,7 @@ id: PO:0008045
 name: floral guard cell
 namespace: plant_anatomy
 def: "One of a pair of cells flanking the stomatal pore of floral organs." [GR:cwt]
-comment: This term was made obsolete and replaced by the guard cells of individual floral organs, such as petal guard cell or sepal guard cell.
+comment: This term was made obsolete and replaced by guard cell (PO:0000293) which can be post-composed with individual floral organs, such as petal or sepal.
 is_obsolete: true
 consider: PO:0000293
 
@@ -8972,7 +8985,7 @@ id: PO:0008046
 name: floral stomatal pore
 namespace: plant_anatomy
 def: "A stomatal pore that is part of a floral stomatal complex." [POC:curators]
-comment: This term was made obsolete and replaced by the stomatal pores of individual floral organs, such as petal stomatal pore or sepal stomatal pore.
+comment: This term was made obsolete and replaced by stomatal pore (PO:0008032), which can be post-composed with individual floral organs, such as petal or sepal.
 is_obsolete: true
 consider: PO:0008032
 
@@ -9085,19 +9098,19 @@ id: PO:0009003
 name: sporophyte
 namespace: plant_anatomy
 def: "A plant structure that is a product of fertilization and produces spores through meiosis." [POC:curators]
-comment: Replaced_by sporophytic phase (PO:0028003).  Structures that only occur in sporophyte should have participates_in relation to sporophytic phase.
+comment: Replace_by whole plant in the sporophyte phase (PO:0028003).  Structures that only occur in sporophyte should have participates_in relation to sporophytic phase.
 subset: reference
 xref: OBO_SF_PO:2968332
 is_obsolete: true
+replaced_by: PO:0000003
 replaced_by: PO:0028002
-consider: PO:0000003
 
 [Term]
 id: PO:0009004
 name: gametophyte
 namespace: plant_anatomy
 def: "A plant structure that arises through meiosis and may produce gametes by mitosis." [POC:curators]
-comment: Replace_by gametophytic phase (PO:0028002). The gametophyte arises from the product of meiosis (the spore). Structures that occur only in gametophytes should have a participates_in relation to the gametophytic phase.
+comment: Replace_by whole plant in the gametophyte phase (PO:0028002). The gametophyte arises from the product of meiosis (the spore). Structures that occur only in gametophytes should have a participates_in relation to the gametophyte phase.
 subset: reference
 xref: OBO_SF_PO:2968330
 is_obsolete: true
@@ -9248,8 +9261,9 @@ id: PO:0009016
 name: ground tissue
 namespace: plant_anatomy
 def: "OBSOLETE. Tissues other than the vascular tissues, epidermis and the periderm." [GR:pj]
-comment: Uninformative definition. Check it again.
+comment: Replaced by portion of ground tissue (). Uninformative definition. Check it again.
 is_obsolete: true
+replaced_by: PO:0025059
 
 [Term]
 id: PO:0009017
@@ -11162,7 +11176,7 @@ id: PO:0020125
 name: elongation zone
 namespace: plant_anatomy
 def: "The portion of the root that includes small, densely cytoplasmic cells that are dividing and expanding in size." [GR:pj]
-comment: This term was made obsolete because the definition was not correct. A new term, root elongation zone, was created instead.
+comment: This term was made obsolete because the definition was not correct. A new term, root elongation zone (PO:0025181), was created instead.
 subset: reference
 is_obsolete: true
 replaced_by: PO:0025181
@@ -14333,7 +14347,7 @@ id: PO:0025267
 name: fruit replum
 namespace: plant_anatomy
 def: "A portion of fruit placenta tissue that divides a fruit into two or more chambers and develops from a replum." [POC:rw]
-comment: An fruit replum develops from the ovary replum and has no suture line in its center, while a fruit septum (PO:0025262) develops from an ovary septum via the fusion of two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis fruit should go here, and not under fruit septum.
+comment: A fruit replum develops from the ovary replum and has no suture line in its center, while a fruit septum (PO:0025262) develops from an ovary septum via the fusion of two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis fruit should go here, and not under fruit septum.
 subset: Arabidopsis
 is_a: PO:0004535 ! fruit placenta
 relationship: develops_from PO:0025272 ! ovary replum
@@ -14356,7 +14370,7 @@ creation_date: 2011-02-09T02:30:21Z
 id: PO:0025269
 name: collective organ part structure
 namespace: plant_anatomy
-def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:rw]
+def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:curators]
 comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths. Unlike a collective plant structure, a collective organ part structure does not contain any complete organs.
 xref: OBO_SF_PO:3175301
 is_a: PO:0009011 ! plant structure
@@ -15058,7 +15072,7 @@ id: PO:0030007
 name: meristematic apical cell
 namespace: plant_anatomy
 def: "A single meristematic cell at the tip of a plant structure where apical growth occurs." [ISBN:0962073342, ISBN:9780473067304]
-comment: Apical cells occur only at the tip of a shoot axis apex, leaf apex, root apex, thallus apex, or protonema in bryophytes and some pteridophytes. Apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. The apical cell may be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge-shaped with two cutting faces (in non-vascular leaves or thalli). An apical cell may be established upon germination of a spore or upon the first cell division of an embryo, or later.
+comment: Apical cells occur only at the tip of a shoot axis apex, leaf apex, root apex, thallus apex, or protonema in bryophytes and some pteridophytes. Apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. The apical cell may be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge-shaped (lenticular) with two cutting faces (in non-vascular leaves or thalli). An apical cell may be established upon germination of a spore or upon the first cell division of an embryo, or later.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "apical cell" EXACT []
@@ -15151,6 +15165,7 @@ synonym: "non-vascular leaf apical initial" EXACT []
 synonym: "phyllid apical cell" EXACT []
 synonym: "phyllid apical initial" EXACT []
 is_a: PO:0030011 ! leaf meristematic apical cell
+relationship: develops_from PO:0030087 ! non-vascular leaf initial
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
 creation_date: 2011-03-25T09:44:45Z
@@ -15894,12 +15909,14 @@ creation_date: 2011-04-29T09:21:53Z
 
 [Term]
 id: PO:0030067
-name: protonemal side branch initial
+name: protonema side branch initial
 namespace: plant_anatomy
-def: "An initial cell that is produced by division of a sub-apical cell of a protonema." [ISBN:9781405181891]
-comment: May give rise to a chloronema, a caulonema, a gametophore bud, a protonemal rhizoid, or may not divide further.
+def: "An protonema sub-apical initial that gives rise to a branch of a protonema." [ISBN:9781405181891]
+comment: May give rise to a chloronema, caulonema, protonema rhizoid, tmema cell, or brachycyte.
+synonym: "protonema side branch initial cell" EXACT []
 synonym: "protonemal side branch initial cell" EXACT []
-is_a: PO:0004011 ! initial cell
+xref: OBO_SF_PO:3293302
+is_a: PO:0030086 ! protonema sub-apical initial
 relationship: part_of PO:0030003 ! protonema
 created_by: Ramona
 creation_date: 2011-04-29T09:25:26Z
@@ -16036,10 +16053,11 @@ creation_date: 2011-05-04T07:26:51Z
 id: PO:0030077
 name: protonemal side branch rhizoid initial
 namespace: plant_anatomy
-def: "A protonemal side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
+def: "A protonema side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
+synonym: "protonema side branch rhizoid initial cell" EXACT []
 synonym: "protonemal side branch rhizoid initial cell" EXACT []
 xref: OBO_SF_PO:3293302
-is_a: PO:0030067 ! protonemal side branch initial
+is_a: PO:0030067 ! protonema side branch initial
 created_by: Ramona
 creation_date: 2011-05-04T02:38:25Z
 
@@ -16047,8 +16065,8 @@ creation_date: 2011-05-04T02:38:25Z
 id: PO:0030078
 name: rhizoid
 namespace: plant_anatomy
-def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes."]
-comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, and protonemal rhizoids that branch from a protonema.
+def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:unknown "Parihar 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes."]
+comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, protonemal rhizoids that branch from a protonema, and rhizoids that develop from a basal cell of a gametophore bud.
 xref: OBO_SF_PO:3293893
 is_a: PO:0009011 ! plant structure
 created_by: Ramona
@@ -16103,9 +16121,10 @@ creation_date: 2011-05-17T09:06:26Z
 id: PO:0030083
 name: gametophore bud initial
 namespace: plant_anatomy
-def: "A protonemal side branch initial that gives rise to a gametophore bud." [POC:curators]
+def: "A protonema sub-apical initial hat gives rise to a gametophore bud." [POC:curators]
+comment: In Physcomitrella patens, a gametophore bud initial typically is\nmore bulbous than a protonema side branch initial, and its plane of first\ncell division is oblique, rather than perpendicular, to the plane of growth.
 synonym: "gametophore bud initial cell" EXACT []
-is_a: PO:0030067 ! protonemal side branch initial
+is_a: PO:0030086 ! protonema sub-apical initial
 created_by: Ramona
 creation_date: 2011-05-17T09:10:08Z
 
@@ -16130,6 +16149,34 @@ is_a: PO:0025059 ! portion of ground tissue
 disjoint_from: PO:0030049 ! sporangium wall endothecium
 created_by: Ramona
 creation_date: 2011-05-17T10:31:21Z
+
+[Term]
+id: PO:0030086
+name: protonema sub-apical initial
+namespace: plant_anatomy
+def: "An initial cell that is produced by longitudinal division of a sub-apical cell of a protonema." [POC:rw]
+comment: May give rise to a branch of the protonema (including a protonema rhizoid, tmema cell or brachycyte), a gametophore bud, or may not divide further.
+synonym: "protonema sub-apical initial cell" EXACT []
+synonym: "protonemal sub-apical initial cell" RELATED []
+is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000059 ! root initial cell
+disjoint_from: PO:0000295 ! cambial initial
+disjoint_from: PO:0000349 ! epidermal initial
+created_by: Ramona
+creation_date: 2011-05-23T08:31:30Z
+
+[Term]
+id: PO:0030087
+name: non-vascular leaf initial
+namespace: plant_anatomy
+def: "An initial cell that is part of a gametophore and gives rise to a non-vascular leaf." [PMID:19303301]
+comment: In Physcomitrella patens, non-vascular leaf initials arise from the daughter cells of a gametophore axis apical cell. Subsequent division of a non-vascular leaf initial establishes a non-vascular leaf apical cell.
+synonym: "non-vascular leaf initial cell" EXACT []
+xref: OBO_SF_PO:3304575
+is_a: PO:0004011 ! initial cell
+relationship: part_of PO:0030018 ! gametophore
+created_by: Ramona
+creation_date: 2011-05-23T09:00:21Z
 
 [Typedef]
 id: adjacent_to
