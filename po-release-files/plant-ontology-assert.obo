@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:05:2011 14:43
+date: 25:05:2011 17:26
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta13
 subsetdef: Angiosperm "Term for angiosperms"
@@ -76,6 +76,7 @@ namespace: plant_anatomy
 def: "A plant cell that is grown or maintained in vitro." [POC:Curators]
 comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium.
 synonym: "cell suspension" RELATED []
+xref: OBO_SF_PO:3289997
 is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0009002 ! plant cell
 
@@ -85,6 +86,7 @@ name: plant protoplast
 namespace: plant_anatomy
 def: "A cultured plant cell from which the entire plant cell wall has been removed." [POC:curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
+xref: OBO_SF_PO:3279819
 is_a: PO:0000005 ! cultured plant cell
 
 [Term]
@@ -111,6 +113,8 @@ name: cultured plant callus
 namespace: plant_anatomy
 def: "A plant callus grown or maintained in vitro." [POC:curators]
 comment: Cultured plant callus may induced to form from plant protoplasts or cultured plant cells in suspension culture. After supplementation with the appropriate plant growth regulators, further differentiation may lead to the development of plant tissues, plant organs and ultimately, a whole plant.
+xref: OBO_SF_PO:3280004
+xref: OBO_SF_PO:3286242
 is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0005052 ! plant callus
 relationship: has_part PO:0000005 ! cultured plant cell
@@ -121,6 +125,7 @@ name: cultured plant embryo
 namespace: plant_anatomy
 def: "A plant embryo that is grown or maintained in vitro." [POC:curators, TAIR:ki]
 comment: Includes isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte).
+xref: OBO_SF_PO:3289110
 is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0009009 ! plant embryo
 
@@ -152,6 +157,7 @@ name: cauline leaf
 namespace: plant_anatomy
 def: "Leaf or pairs/whorls of leaves borne on the stem." [TAIR:ki]
 comment: In Arabidopsis, refers to the leaves that are borne on the elongated inflorescence branches.
+xref: OBO_SF_PO:3205381
 is_a: PO:0009025 ! vascular leaf
 
 [Term]
@@ -160,6 +166,7 @@ name: rosette leaf
 namespace: plant_anatomy
 def: "One of multiple leaves borne in a rosette - a group of leaves, generally borne at the base of the plant, that are separated by very short internodes." [TAIR:ki]
 comment: Arabidopsis, vegetative development is characterized by the production of the rosette leaves.
+xref: OBO_SF_PO:3205381
 is_a: PO:0009025 ! vascular leaf
 
 [Term]
@@ -270,6 +277,7 @@ name: pollen tube tip
 namespace: plant_anatomy
 def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
 comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube tip (GO:0090404). Since a pollen tube tip is part_of a pollen tube, which is part of a pollen cell, annotations for pollen tube tip may also go to the more general term pollen tube cell (PO:0025195).
+xref: OBO_SF_PO:3115812
 is_obsolete: true
 consider: PO:0025195
 
@@ -278,7 +286,8 @@ id: PO:0000029
 name: root hair tip
 namespace: plant_anatomy
 def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
-comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO.
+comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO. To annotate to a cell that has a root hair tip, consider root hair cell (PO:0000256).
+xref: OBO_SF_PO:3115810
 is_obsolete: true
 consider: PO:0000256
 
@@ -288,6 +297,7 @@ name: septum
 namespace: plant_anatomy
 def: "A collective organ part structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
 comment: A septum is formed by the fusion of the walls of two adjacent organs (ovary walls or anther walls), for example, the partition between two sections of an orange, seen in cross-section.
+xref: OBO_SF_PO:3177333
 is_a: PO:0025269 ! collective organ part structure
 
 [Term]
@@ -306,6 +316,7 @@ name: tetrad of microspores
 namespace: plant_anatomy
 def: "A portion of plant tissue consisting of four microspores that remained joined together shortly after meiosis. Each cell will give rise to a male gametophyte." [POC:rw]
 subset: reference
+xref: OBO_SF_PO:3132503
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020047 ! microsporocyte
 relationship: has_part PO:0020048 ! microspore
@@ -354,6 +365,7 @@ name: shoot apex
 namespace: plant_anatomy
 def: "A shoot axis that is the most distal part of a shoot system and has as parts a shoot apical meristem and the youngest leaf primordia." [POC:curators]
 subset: reference
+xref: OBO_SF_PO:3132475
 is_a: PO:0025029 ! shoot axis
 
 [Term]
@@ -383,6 +395,7 @@ namespace: plant_anatomy
 def: "Enlargement or swelling at position of dormant adventitious root primordium (on the stem), inhabited by nitrogen-fixing bacteria." [TAIR:ki]
 comment: Unlike the root nodules, these contain functioning chloroplasts in the nodule cortex and are therefore capable of carbon fixation. Note: stem nodule is commonly used term for this structure, although the nodules are formed at positions of dormant adventitious root primordia.
 synonym: "stem primordium" RELATED []
+xref: OBO_SF_PO:3132479
 is_a: PO:0003023 ! root nodule
 relationship: part_of PO:0000042 ! shoot-borne root
 
@@ -391,7 +404,8 @@ id: PO:0000041
 name: epidermal cork cell
 namespace: plant_anatomy
 def: "One of the two types of short cells in the epidermis of grasses and bamboos. It is usually paired with silica cell." [TAIR:ki]
-comment: Developmentally different from periderm cork cell (i.e., phellem), produced by cork cambium.
+comment: Developmentally different from periderm cork cell (i.e., phellem), produced by cork cambium. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025).
+subset: Poaceae
 is_a: PO:0004718 ! short cell
 
 [Term]
@@ -453,6 +467,7 @@ id: PO:0000047
 name: leaf lamina epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that is part of a leaf lamina." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0006016 ! leaf epidermis
 intersection_of: PO:0005679 ! epidermis
 intersection_of: part_of PO:0020039 ! leaf lamina
@@ -472,6 +487,7 @@ id: PO:0000049
 name: leaf lamina abaxial epidermis
 namespace: plant_anatomy
 def: "A portion of leaf lamina epidermis that covers the abaxial/lower surface of a leaf lamina." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0000047 ! leaf lamina epidermis
 is_a: PO:0006019 ! leaf abaxial epidermis
 
@@ -480,6 +496,7 @@ id: PO:0000050
 name: leaf lamina adaxial epidermis
 namespace: plant_anatomy
 def: "A portion of leaf lamina epidermis that covers the adaxial/upper surface of a leaf lamina." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0000047 ! leaf lamina epidermis
 is_a: PO:0006018 ! leaf adaxial epidermis
 
@@ -488,6 +505,7 @@ id: PO:0000051
 name: petiole epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that is part of a petiole." [POC:rw, TAIR:ki]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0006016 ! leaf epidermis
 intersection_of: PO:0005679 ! epidermis
 intersection_of: part_of PO:0020038 ! petiole
@@ -546,6 +564,7 @@ namespace: plant_anatomy
 def: "A bud that develops into an inflorescence." [POC:curators]
 subset: Musa
 synonym: "male bud" NARROW [CO_125:0000049 "Term used for Musa to describe the usually persistent bud when it is only composed of bracts with male flowers."]
+xref: OBO_SF_PO:3147067
 is_a: PO:0025084 ! reproductive bud
 
 [Term]
@@ -563,6 +582,9 @@ namespace: plant_anatomy
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
 synonym: "root stem cell" RELATED []
 is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000295 ! cambial initial
+disjoint_from: PO:0000349 ! epidermal initial
+disjoint_from: PO:0030067 ! protonema side branch initial
 relationship: part_of PO:0020149 ! quiescent center
 
 [Term]
@@ -588,6 +610,7 @@ namespace: plant_anatomy
 def: "An epidermal initial that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell differentiates into a guard mother cell." [POC:rw]
 synonym: "stomatal initial cell" EXACT []
 synonym: "stomatal meristemoid" EXACT []
+xref: OBO_SF_PO:3112108
 is_a: PO:0000349 ! epidermal initial
 created_by: Ramona
 creation_date: 2011-02-02T09:01:50Z
@@ -612,6 +635,7 @@ name: xylem pole pericycle cell
 namespace: plant_anatomy
 def: "A pericycle cell that is adjacent to the protoxylem of a vascular bundle." [PMID:17993548]
 comment: Xylem pole pericycle cells are cells in the pericycle that are adjacent to the protoxylem pole of a vascular bundle. Pericycle cells that are adjacent to other xylem cells in the vascular bundle are not considered xylem pole pericycle cells. Xylem pole pericycle cells may retain some meristematic activity and are the site of lateral root initiation.
+xref: OBO_SF_PO:3124791
 is_a: PO:0025261 ! pericycle cell
 created_by: Ramona
 creation_date: 2011-02-02T11:52:34Z
@@ -622,6 +646,7 @@ name: phloem pole pericycle cell
 namespace: plant_anatomy
 def: "A pericycle cell that is adjacent to the protophloem of a vascular bundle." [PMID:17993548]
 comment: Phloem pole pericycle cells are cells in the pericycle that are adjacent to the protophloem pole of a vascular bundle. Pericycle cells that are adjacent to other phloem cells in the vascular bundle are not considered phloem pole pericycle cells. Phloem pole pericycle cells are distinct from xylem pole pericycle cells in that they display cytoplasmic characteristics of a more differentiated status.
+xref: OBO_SF_PO:3124791
 is_a: PO:0025261 ! pericycle cell
 created_by: Ramona
 creation_date: 2011-02-02T11:55:06Z
@@ -1019,6 +1044,7 @@ name: idioblast
 namespace: plant_anatomy
 def: "A plant cell that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
 comment: Often contains deposit of minerals or products of secondary metabolism. May have a specialized function.
+xref: OBO_SF_PO:3301116
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -1086,6 +1112,9 @@ synonym: "cambial cell" EXACT []
 synonym: "cambial initial cell" EXACT []
 xref: CL:0000272
 is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000059 ! root initial cell
+disjoint_from: PO:0000349 ! epidermal initial
+disjoint_from: PO:0030067 ! protonema side branch initial
 relationship: part_of PO:0005598 ! vascular cambium
 
 [Term]
@@ -1112,6 +1141,7 @@ namespace: plant_anatomy
 def: "A shoot epidermal cell that is relatively unspecialized at maturity." [POC:curators]
 comment: May have sinuous anticlinal cell walls that overall give a jigsaw like appearance to the epidermis. Pavement cells are epidermal cells that are not directly associated with a stomatal complex or trichome at maturity, but they share similar developmental origins.
 xref: CL:0000400
+xref: OBO_SF_PO:3139280
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000115 ! socket cell
 disjoint_from: PO:0000284 ! subsidiary cell
@@ -1127,6 +1157,9 @@ def: "An initial cell that is part of an epidermis and gives rise to specialized
 synonym: "epidermal initial cell" EXACT []
 xref: CL:0000538
 is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000059 ! root initial cell
+disjoint_from: PO:0000295 ! cambial initial
+disjoint_from: PO:0030067 ! protonema side branch initial
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -1785,6 +1818,7 @@ def: "A portion of shoot epidermis that has as parts two guard cells and a stoma
 subset: TraitNet
 synonym: "stoma" BROAD []
 synonym: "stomata" BROAD []
+xref: OBO_SF_PO:3132410
 is_a: PO:0006035 ! shoot epidermis
 
 [Term]
@@ -1794,6 +1828,7 @@ namespace: plant_anatomy
 def: "A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
 comment: This terms was made obsolete because it is a sub-cellular compartment. Plant cell papilla (GO:0090395), leaf papilla (GO:0090396), and stigma papilla (GO:0090397) have been added to GO. To annotate to a cell that has a papilla, consider papilla cell (PO:0025166), leaf papilla cell (PO:0025167), or stigma papilla cell (PO:0025168).
 subset: reference
+xref: OBO_SF_PO:3115430
 is_obsolete: true
 consider: PO:0025166
 consider: PO:0025167
@@ -1957,6 +1992,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is an outgrowth of a root and is inhabited by nitrogen-fixing bacteria." [POC:rw]
 comment: Root nodules are a symbiosis between a plant (often, but not exclusively, of the Fabaceae) and bacteria of the genus Rhizobium, Bradyrhizobium, or Azorhizobium.
 subset: TraitNet
+xref: OBO_SF_PO:3132479
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0025194 ! root nodule meristem
 relationship: part_of PO:0009005 ! root
@@ -1985,7 +2021,7 @@ id: PO:0004001
 name: bulliform cell
 namespace: plant_anatomy
 def: "An enlarged more or less thin-walled leaf pavement cell, present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
-comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves.
+comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "motor cell" RELATED []
 is_a: PO:0025212 ! leaf pavement cell
 
@@ -2056,7 +2092,8 @@ id: PO:0004009
 name: silica cell
 namespace: plant_anatomy
 def: "Cells with deposits of silica in them. One of the two types of short cells in the epidermis of grasses and bamboos. It is usually paired with epidermal cork cell." [ISBN:0471245208]
-comment: One of two types of short cells in the epidermis of grasses.
+comment: One of two types of short cells in the epidermis of grasses. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025).
+subset: Poaceae
 is_a: PO:0004718 ! short cell
 
 [Term]
@@ -2078,6 +2115,7 @@ synonym: "meristemoid" EXACT []
 synonym: "stem cell" RELATED []
 xref: CL:0000034
 xref: CL:0000266
+xref: OBO_SF_PO:3166706
 is_a: PO:0004010 ! meristematic cell
 
 [Term]
@@ -2388,6 +2426,7 @@ def: "A somatic plant embryo derived directly from nucellus cells." [POC:curator
 comment: Common in Citrus.
 subset: Citrus
 synonym: "adventitious embryo" BROAD []
+xref: OBO_SF_PO:3293415
 is_a: PO:0025302 ! somatic plant embryo
 
 [Term]
@@ -2489,6 +2528,7 @@ comment: May be a single or double layer. Usually crushed by the endothecium and
 subset: Angiosperm
 subset: reference
 xref: OBO_SF_PO:2903966
+xref: OBO_SF_PO:3298007
 is_a: PO:0025059 ! portion of ground tissue
 relationship: adjacent_to PO:0020002 ! anther wall endothecium
 relationship: develops_from PO:0006007 ! anther wall secondary parietal cell layer
@@ -2634,7 +2674,7 @@ id: PO:0004717
 name: long cell
 namespace: plant_anatomy
 def: "A more or less rectangular leaf pavement cell in which the proximo-distal dimension is several times longer than the transverse dimension." [POC:curators]
-comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows.
+comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025212 ! leaf pavement cell
 
 [Term]
@@ -2642,7 +2682,7 @@ id: PO:0004718
 name: short cell
 namespace: plant_anatomy
 def: "An isodiametric leaf pavement cell." [POC:curators]
-comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows.
+comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025212 ! leaf pavement cell
 
 [Term]
@@ -2863,6 +2903,7 @@ name: replum
 namespace: plant_anatomy
 def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMID:15035986]
 comment: This term was made obsolete to avoid confusion with the new terms fruit replum and ovary replum. Consider ovary replum (PO:0025272) or fruit replum (PO:0025267).
+xref: OBO_SF_PO:3177363
 is_obsolete: true
 consider: PO:0025267
 consider: PO:0025272
@@ -3083,6 +3124,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that consists of mass of undifferentiated plant cells." [GR:pj, POC:curators]
 comment: Consists primarily of parenchyma cells but may contain other cell types as the callus begins to differentiate. May be formed as a result of wounding or may develop in culture.
 synonym: "portion of callus tissue" EXACT []
+xref: OBO_SF_PO:3280004
 is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
@@ -3159,6 +3201,8 @@ def: "A portion of plant tissue that is the outermost layer of endosperm in a se
 subset: Angiosperm
 synonym: "fruit aleurone layer" EXACT []
 xref: OBO_SF_PO:2903966
+xref: OBO_SF_PO:3184958
+xref: OBO_SF_PO:3185054
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -3281,6 +3325,7 @@ id: PO:0005645
 name: leaf mesophyll
 namespace: plant_anatomy
 def: "The chloroplast-containing, photosynthetic parenchymatous tissue situated between the two epidermal layers of the foliage leaf." [GR:pj, ISBN:0080374913]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "foliage leaf mesophyll" RELATED []
 synonym: "leaf parenchyma" RELATED []
@@ -3292,6 +3337,7 @@ id: PO:0005647
 name: spongy mesophyll
 namespace: plant_anatomy
 def: "Leaf mesophyll parenchyma characterized by little elongated cells, that are not closely packed and have conspicuous intercellular spaces." [GR:pj, ISBN:0080374913]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "spongy parenchyma" RELATED []
 is_a: PO:0006070 ! mesophyll
@@ -3302,6 +3348,7 @@ id: PO:0005648
 name: palisade mesophyll
 namespace: plant_anatomy
 def: "Parenchyma containing closely packed elongated chlorenchymatous cells oriented perpendicular to the leaf surface and which are active in photosynthesis." [GR:pj, ISBN:0080374913]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "palisade parenchyma" RELATED []
 is_a: PO:0006070 ! mesophyll
@@ -3323,6 +3370,7 @@ name: hydathode
 namespace: plant_anatomy
 def: "A cardinal organ part that releases water through a hydathode pore." [ISBN:0471244554]
 comment: Hydathodes may have one or more pores that are similar to stomata but lack the ability to open and close. Hydathodes are involved in the release of water or xylem sap through pores via guttation or secretion. Generally, hydathodes are located at the end of a minor vein in a phyllome. In many plants, hydathodes includes a portion of thin-walled parenchyma between the tracheary elements and the pore, known as an epithem. In some plants, hydathodes are associated with secretory tissue.
+xref: OBO_SF_PO:3289531
 is_a: PO:0025001 ! cardinal organ part
 
 [Term]
@@ -3448,6 +3496,7 @@ def: "A collective phyllome structure that encloses a fruit of the Poaceae (cary
 subset: Maize
 subset: Poaceae
 subset: Rice
+xref: OBO_SF_PO:3132525
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0009037 ! lemma
 relationship: develops_from PO:0009038 ! palea
@@ -3486,6 +3535,7 @@ comment: May be photosynthetic or non-photosynthetic. Some species have vascular
 subset: reference
 subset: TraitNet
 synonym: "cataphyll" RELATED []
+xref: OBO_SF_PO:3167323
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -3518,6 +3568,7 @@ def: "A portion of ground tissue that is part of an anther wall and has as parts
 subset: Angiosperm
 subset: reference
 synonym: "pollen sac primary parietal cell layer" EXACT []
+xref: OBO_SF_PO:3298010
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0000002 ! anther wall
 
@@ -3530,6 +3581,7 @@ comment: In many angiosperms, the cells of the anther wall primary parietal cell
 subset: Angiosperm
 subset: reference
 synonym: "pollen sac secondary parietal cell layer" EXACT []
+xref: OBO_SF_PO:3298010
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0006006 ! anther wall primary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
@@ -3542,6 +3594,7 @@ def: "An anther wall secondary parietal cell layer that is formed towards the in
 comment: In many angiosperms, including <i>Arabidopsis</i>, it divides periclinally to form an anther wall middle layer externally and an anther wall tapetum internally. Alternatively, it may differentiate into a tapetum.
 subset: Angiosperm
 synonym: "pollen sac inner secondary parietal cell layer" EXACT []
+xref: OBO_SF_PO:3298010
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
 [Term]
@@ -3552,6 +3605,7 @@ def: "An anther wall secondary parietal cell layer formed towards the outside af
 comment: In many angiosperms, including <i>Arabidopsis</i>, it differentiates into the anther wall endothecium. Alternatively, it may divide periclinally to form an anther wall endothecium externally and an anther wall middle layer internally.
 subset: Angiosperm
 synonym: "pollen sac outer secondary parietal cell layer" EXACT []
+xref: OBO_SF_PO:3298010
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
 [Term]
@@ -3615,6 +3669,7 @@ id: PO:0006016
 name: leaf epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis that is part of a leaf." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "foliage leaf epidermis" EXACT []
 synonym: "phyllid epidermis" EXACT []
 is_a: PO:0025157 ! phyllome epidermis
@@ -3634,7 +3689,7 @@ id: PO:0006018
 name: leaf adaxial epidermis
 namespace: plant_anatomy
 def: "A portion of shoot epidermis that covers the adaxial/upper surface of a leaf." [POC:rw]
-comment: Used to refer to an adaxial epidermis of an entire leaf. More specific terms exist for leaf lamina adaxial epidermis and petiole adaxial epidermis.
+comment: Used to refer to an adaxial epidermis of an entire leaf. More specific terms exist for leaf lamina adaxial epidermis and petiole adaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "upper epidermis" RELATED []
 is_a: PO:0006016 ! leaf epidermis
 
@@ -3643,7 +3698,7 @@ id: PO:0006019
 name: leaf abaxial epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that covers the abaxial/lower surface of a leaf." [POC:curators]
-comment: Used to refer to an abaxial epidermis of an entire leaf. More specific terms exist for leaf lamina abaxial epidermis and petiole abaxial epidermis.
+comment: Used to refer to an abaxial epidermis of an entire leaf. More specific terms exist for leaf lamina abaxial epidermis and petiole abaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "lower epidermis" RELATED []
 is_a: PO:0006016 ! leaf epidermis
 
@@ -3726,6 +3781,7 @@ id: PO:0006034
 name: leaflet margin
 namespace: plant_anatomy
 def: "The margin of the leaflet." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0020128 ! leaf margin
 relationship: part_of PO:0020049 ! leaflet
 
@@ -4155,6 +4211,7 @@ namespace: plant_anatomy
 def: "A cultured plant callus that is capable of forming plant organs." [POC:curators]
 comment: Plant organs may be formed after the cultured plant callus is treated with plant growth regulators.
 synonym: "meristematic callus" RELATED []
+xref: OBO_SF_PO:3286242
 is_a: PO:0000009 ! cultured plant callus
 
 [Term]
@@ -4163,6 +4220,7 @@ name: embryogenic callus
 namespace: plant_anatomy
 def: "A cultured plant callus that is capable of forming somatic embryos." [POC:curators]
 comment: Somatic embryos may be formed after the cultured plant callus is treated with plant growth regulators.
+xref: OBO_SF_PO:3286242
 is_a: PO:0000009 ! cultured plant callus
 
 [Term]
@@ -4219,6 +4277,7 @@ namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) spores." [GR:pj]
 synonym: "meiocyte" EXACT []
 synonym: "spore mother cell" EXACT []
+xref: OBO_SF_PO:3299941
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
@@ -4228,7 +4287,7 @@ id: PO:0006205
 name: spongy mesophyll cell
 namespace: plant_anatomy
 def: "Irregularly-shaped, chlorenchymatous cell, separated by large air spaces." [GR:pj]
-comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a dorsiventral leaf, but between two palisade parenchyma layers in an isobilateral leaf.
+comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a dorsiventral leaf, but between two palisade parenchyma layers in an isobilateral leaf. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "spongy parenchyma cell" RELATED []
 is_a: PO:0004006 ! mesophyll cell
@@ -4239,7 +4298,7 @@ id: PO:0006206
 name: palisade mesophyll cell
 namespace: plant_anatomy
 def: "Elongated chlorenchymatous cell oriented perpendicular to the leaf surface and which is active in photosynthesis." [GR:pj]
-comment: Usually found in the adaxil/upper part of the leaf mesophyll.
+comment: Usually found in the adaxil/upper part of the leaf mesophyll. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "palisade parenchyma cell" RELATED []
 is_a: PO:0004006 ! mesophyll cell
@@ -4317,7 +4376,8 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0006215
 name: leaf aerenchyma
 namespace: plant_anatomy
-def: "Spongy parenchyma tissue containing particularly large intercellular spaces in the leaf mesophyll." [GR:pj]
+def: "A portion of parenchyma tissue containing particularly large intercellular spaces in the leaf mesophyll." [GR:pj, POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0005702 ! aerenchyma
 relationship: part_of PO:0025034 ! leaf
 
@@ -4403,6 +4463,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The outer layer of the tunica." [GR:pj]
 comment: A similar term L1 meristem (PO:0009020) occurs.
 is_obsolete: true
+replaced_by: PO:0009020
 
 [Term]
 id: PO:0006304
@@ -4411,6 +4472,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The second layer of the tunica." [GR:pj]
 comment: A similar term L2 meristem (PO:0009021) occurs.
 is_obsolete: true
+replaced_by: PO:0009021
 
 [Term]
 id: PO:0006305
@@ -4419,6 +4481,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The innermost layer of the tunica." [GR:pj]
 comment: A similar term L3 meristem (PO:0009022) occurs.
 is_obsolete: true
+replaced_by: PO:0009022
 
 [Term]
 id: PO:0006306
@@ -4564,6 +4627,7 @@ def: "An inflorescence branch arising from a first order inflorescence axis." [P
 subset: Angiosperm
 synonym: "primary inflorescence branch" EXACT []
 synonym: "second order inflorescence branch" RELATED [POC:rw "This is the old name for this term. It was renamed for clarity."]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 
 [Term]
@@ -4573,6 +4637,7 @@ namespace: plant_anatomy
 def: "An inflorescence branch arising from a second order inflorescence axis." [POC:rw]
 synonym: "secondary inflorescence branch" EXACT []
 synonym: "third order inflorescence branch" RELATED [POC:rw "This is the old name for this term. It was renamed for clarity."]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 
 [Term]
@@ -4721,7 +4786,7 @@ id: PO:0006339
 name: juvenile leaf
 namespace: plant_anatomy
 def: "Distinct from adult leaves, being characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
-comment: The first juvenile leaves are e.g. the embryonic leaves found in the grass kernel (caryopsis).
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf. The first juvenile leaves in Poaceae are e.g. the embryonic leaves found in the grass kernel (caryopsis).
 synonym: "juvenile phyllid" NARROW []
 is_a: PO:0025034 ! leaf
 
@@ -4730,7 +4795,7 @@ id: PO:0006340
 name: adult leaf
 namespace: plant_anatomy
 def: "Adult leaves are characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
-comment: The adult leaves are placed above the juvenile (oldest) leaves. However in some plants the juvenile leaves may go on to establish as adult leaves.
+comment: The adult leaves are placed above the juvenile (oldest) leaves. However in some plants the juvenile leaves may go on to establish as adult leaves. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "adult phyllid" NARROW []
 is_a: PO:0025034 ! leaf
 
@@ -4752,6 +4817,8 @@ subset: Musa
 synonym: "banana bunch" NARROW [CO_125:0000014]
 synonym: "fruit bunch" RELATED []
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3147080
+xref: OBO_SF_PO:3147085
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0009049 ! inflorescence
 relationship: has_part PO:0009001 ! fruit
@@ -4764,6 +4831,7 @@ def: "A shoot-borne shoot system that develops from an axillary vegetative bud."
 subset: Musa
 synonym: "axillary branch" RELATED []
 synonym: "Musa sucker" NARROW [CO_125:0000042 "A shoot system arrising form an axillary bud at the base of a Musa plant."]
+xref: OBO_SF_PO:3147109
 is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
@@ -4790,6 +4858,7 @@ id: PO:0006346
 name: leaf intercalary meristem
 namespace: plant_anatomy
 def: "An intercalary meristem in the primary body of the leaf separated from the apical meristem by non-meristematic tissues." [GR:pj]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0006073 ! intercalary meristem
 relationship: part_of PO:0025034 ! leaf
 
@@ -6019,8 +6088,10 @@ id: PO:0006504
 name: leaf trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a leaf epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "phyllid trichome" NARROW []
+xref: OBO_SF_PO:3132414
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006016 ! leaf epidermis
 
@@ -8646,6 +8717,7 @@ namespace: plant_anatomy
 def: "A morphologically distinct aleurone layer located adjacent to the nucellar projection." [GR:ap]
 subset: Poaceae
 subset: Rice
+xref: OBO_SF_PO:3192383
 is_a: PO:0005360 ! aleurone layer
 
 [Term]
@@ -8712,6 +8784,7 @@ name: hypocotyl vascular system
 namespace: plant_anatomy
 def: "Vascular system of the hypocotyl." [GR:cwt]
 is_a: PO:0000034 ! vascular system
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0008011 ! embryo vascular system
 relationship: part_of PO:0020100 ! hypocotyl
 
@@ -8729,6 +8802,7 @@ id: PO:0008017
 name: leaf sheath pulvinus
 namespace: plant_anatomy
 def: "A more or less abrupt swelling, especially at the apex or base of a leaf sheath." [GR:cwt]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0009000 ! pulvinus
 relationship: part_of PO:0020104 ! leaf sheath
 
@@ -8737,6 +8811,7 @@ id: PO:0008018
 name: transition leaf
 namespace: plant_anatomy
 def: "A leaf that is part of an heteroblastic series, and is characterized by anatomical features that are intermediate between juvenile and adult leaves." [GR:cwt]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -8744,6 +8819,7 @@ id: PO:0008019
 name: leaf lamina base
 namespace: plant_anatomy
 def: "The region of the leaf lamina proximal to the stem and usually connected to it by means of a petiole." [GR:cwt]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020039 ! leaf lamina
 
@@ -8752,6 +8828,7 @@ id: PO:0008020
 name: central zone of the leaf lamina
 namespace: plant_anatomy
 def: "Region that includes the widest or majority portion of leaf lamina and that does not include leaf apex and leaf lamina base." [GR:cwt]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020039 ! leaf lamina
@@ -8814,6 +8891,7 @@ id: PO:0008027
 name: petiole adaxial epidermis
 namespace: plant_anatomy
 def: "A portion of petiole epidermis that covers the adaxial/upper surface of a petiole." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0000051 ! petiole epidermis
 
 [Term]
@@ -8829,6 +8907,7 @@ id: PO:0008029
 name: petiole abaxial epidermis
 namespace: plant_anatomy
 def: "A portion of petiole epidermis that covers the abaxial/lower surface of a petiole." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0000051 ! petiole epidermis
 
 [Term]
@@ -8901,6 +8980,7 @@ comment: This term was made obsolete. Replaced by whole plant growth stage seedl
 xref: OBO_SF_PO:2972241
 is_obsolete: true
 replaced_by: PO:0000003
+replaced_by: PO:0007131
 
 [Term]
 id: PO:0008038
@@ -8961,6 +9041,7 @@ name: floral stomatal complex
 namespace: plant_anatomy
 def: "An opening pore on the epidermis of floral organs bordered by two guard cells and serving in gas exchange." [GR:cwt]
 comment: This term was made obsolete and replaced by the stomatal complexes of individual floral organs, such as petal stomatal complex or sepal stomatal complex.
+xref: OBO_SF_PO:3132417
 is_obsolete: true
 consider: PO:0025217
 consider: PO:0025218
@@ -8973,7 +9054,7 @@ id: PO:0008045
 name: floral guard cell
 namespace: plant_anatomy
 def: "One of a pair of cells flanking the stomatal pore of floral organs." [GR:cwt]
-comment: This term was made obsolete and replaced by the guard cells of individual floral organs, such as petal guard cell or sepal guard cell.
+comment: This term was made obsolete and replaced by guard cell (PO:0000293) which can be post-composed with individual floral organs, such as petal or sepal.
 is_obsolete: true
 consider: PO:0000293
 
@@ -8982,7 +9063,7 @@ id: PO:0008046
 name: floral stomatal pore
 namespace: plant_anatomy
 def: "A stomatal pore that is part of a floral stomatal complex." [POC:curators]
-comment: This term was made obsolete and replaced by the stomatal pores of individual floral organs, such as petal stomatal pore or sepal stomatal pore.
+comment: This term was made obsolete and replaced by stomatal pore (PO:0008032), which can be post-composed with individual floral organs, such as petal or sepal.
 is_obsolete: true
 consider: PO:0008032
 
@@ -9096,19 +9177,19 @@ id: PO:0009003
 name: sporophyte
 namespace: plant_anatomy
 def: "A plant structure that is a product of fertilization and produces spores through meiosis." [POC:curators]
-comment: Replaced_by sporophytic phase (PO:0028003).  Structures that only occur in sporophyte should have participates_in relation to sporophytic phase.
+comment: Replace_by whole plant in the sporophyte phase (PO:0028003).  Structures that only occur in sporophyte should have participates_in relation to sporophytic phase.
 subset: reference
 xref: OBO_SF_PO:2968332
 is_obsolete: true
+replaced_by: PO:0000003
 replaced_by: PO:0028002
-consider: PO:0000003
 
 [Term]
 id: PO:0009004
 name: gametophyte
 namespace: plant_anatomy
 def: "A plant structure that arises through meiosis and may produce gametes by mitosis." [POC:curators]
-comment: Replace_by gametophytic phase (PO:0028002). The gametophyte arises from the product of meiosis (the spore). Structures that occur only in gametophytes should have a participates_in relation to the gametophytic phase.
+comment: Replace_by whole plant in the gametophyte phase (PO:0028002). The gametophyte arises from the product of meiosis (the spore). Structures that occur only in gametophytes should have a participates_in relation to the gametophyte phase.
 subset: reference
 xref: OBO_SF_PO:2968330
 is_obsolete: true
@@ -9259,8 +9340,9 @@ id: PO:0009016
 name: ground tissue
 namespace: plant_anatomy
 def: "OBSOLETE. Tissues other than the vascular tissues, epidermis and the periderm." [GR:pj]
-comment: Uninformative definition. Check it again.
+comment: Replaced by portion of ground tissue (). Uninformative definition. Check it again.
 is_obsolete: true
+replaced_by: PO:0025059
 
 [Term]
 id: PO:0009017
@@ -9339,6 +9421,9 @@ name: vascular leaf
 namespace: plant_anatomy
 def: "A leaf in a vascular plant." [POC:curators]
 comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud. Occurs in the sporophytic phase of a plant life cycle.
+subset: Angiosperm
+subset: Gymnosperms
+subset: Pteridophytes
 subset: reference
 subset: TraitNet
 synonym: "foliage leaf" EXACT []
@@ -9571,6 +9656,7 @@ synonym: "perfect flower" NARROW []
 synonym: "pistillate flower" NARROW []
 synonym: "staminate flower" NARROW []
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3147067
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0004706 ! flower primordium
 
@@ -9631,6 +9717,7 @@ synonym: "Triticeae spike" NARROW []
 synonym: "umbel" NARROW []
 synonym: "verticillaster" NARROW []
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3147080
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009046 ! flower
 
@@ -9869,6 +9956,7 @@ subset: reference
 subset: TraitNet
 synonym: "anther lobe" RELATED []
 xref: OBO_SF_PO:3132610
+xref: OBO_SF_PO:3195056
 is_obsolete: true
 replaced_by: PO:0025277
 
@@ -9882,6 +9970,7 @@ subset: Angiosperm
 subset: reference
 synonym: "pollen sac tapetum" EXACT []
 synonym: "portion of anther wall tapetal tissue" EXACT []
+xref: OBO_SF_PO:3298006
 is_a: PO:0025314 ! microsporangium tapetum
 relationship: part_of PO:0000002 ! anther wall
 
@@ -9895,6 +9984,7 @@ subset: Maize
 subset: reference
 subset: TraitNet
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3177370
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0009062 ! gynoecium
 
@@ -9983,6 +10073,7 @@ namespace: plant_anatomy
 def: "An inflorescence axis that is a branch forming from a primary or higher order inflorescence axis." [Poc:curators]
 subset: Angiosperm
 synonym: "coflorescence" RELATED []
+xref: OBO_SF_PO:3150504
 is_a: PO:0020122 ! inflorescence axis
 
 [Term]
@@ -10096,6 +10187,7 @@ def: "A cardinal organ part that is a fleshy outgrowth of the funicle, covering 
 comment: A fleshy outgrowth from another part of a seed is an arilloid. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.
 subset: reference
 subset: TraitNet
+xref: OBO_SF_PO:3132538
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
@@ -10254,6 +10346,7 @@ def: "A cardinal organ part that is a fleshy outgrowth of a seed and does not co
 subset: TraitNet
 synonym: "caruncle" NARROW [ISBN-13:978-0-88192-850-1 "an arilloid near the micropyle"]
 synonym: "strophiole" NARROW [ISBN-13:9780881928501 "an arilloid on the raphe"]
+xref: OBO_SF_PO:3132539
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009010 ! seed
 
@@ -10302,6 +10395,7 @@ subset: Angiosperm
 subset: reference
 synonym: "anther sac hypodermis" RELATED []
 synonym: "pollen sac endothecium" EXACT []
+xref: OBO_SF_PO:3298006
 is_a: PO:0025309 ! microsporangium endothecium
 relationship: adjacent_to PO:0020004 ! anther wall exothecium
 relationship: part_of PO:0000002 ! anther wall
@@ -10330,6 +10424,7 @@ subset: reference
 synonym: "anther epidermis" EXACT []
 synonym: "anther sac epidermis" EXACT []
 synonym: "pollen sac exothecium" EXACT []
+xref: OBO_SF_PO:3297999
 is_a: PO:0025097 ! stamen epidermis
 is_a: PO:0025311 ! microsporangium exothecium
 relationship: part_of PO:0000002 ! anther wall
@@ -10588,6 +10683,7 @@ namespace: plant_anatomy
 def: "An embryonic root that is the basal continuation of a hypocotyl." [ISBN:0471245208]
 comment: Found in an embryo or a seedling. May develop into the root system of an adult plant. Sometimes abortive.
 subset: reference
+xref: OBO_SF_PO:3293781
 is_a: PO:0000045 ! embryo root
 
 [Term]
@@ -10607,6 +10703,7 @@ name: coleoptile
 namespace: plant_anatomy
 def: "A phyllome that surrounds the plumule of an embryo or the emerging shoot apex of a seedling." [ISBN:0471244554, ISBN:9781842464229]
 comment: Found in Poaceae. The coleoptile is the first phyllome formed from the embryonic shoot apical meristem. Protects the emerging shoot system as it grows through the soil.
+xref: OBO_SF_PO:3192359
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -10615,6 +10712,7 @@ name: coleorhiza
 namespace: plant_anatomy
 def: "A plant organ that surrounds a radicle." [ISBN:0471244554, ISSN:0006-8101 "Robertse et al. 2001, Botanical Review 77(1):1=10"]
 comment: Found in Poaceae and some other monocots as well as some gymnosperms. Protects the emerging radicle in a plant embryo or seedling. The parenchyma cells of both the coleorhiza and epiblast may function in storage.
+xref: OBO_SF_PO:3293771
 is_a: PO:0009008 ! plant organ
 
 [Term]
@@ -10623,6 +10721,7 @@ name: epicotyl
 namespace: plant_anatomy
 def: "The first stem internode above a hypocotyl." [ISBN:0471244554]
 comment: The epicotyl is the first internode of a stem above the cotyledons.
+xref: OBO_SF_PO:3293774
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -10631,6 +10730,7 @@ name: epiblast
 namespace: plant_anatomy
 def: "A portion of plant tissue that is a flap-like projection of the coleorhiza, inserted opposite the scutellum." [ISBN:0471244554]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage. Some researchers consider the epiblast and coleorhiza independent structures that differentiate from the same proembryonic tissue.
+xref: OBO_SF_PO:3140942
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020034 ! coleorhiza
 
@@ -10640,6 +10740,7 @@ name: mesocotyl
 namespace: plant_anatomy
 def: "A shoot internode that is the part of an embryo axis or the stem of a seedling above the scutellum and below the coleoptile." [ISBN:0471244554]
 comment: Occurs in grasses. In grasses, the hypocotyl and cotyledon may not be visible and may be represented by the scutellar node and scutellum, making the mesocotyl similar to the epicotyl in other taxa. Elongation of the mesocotyl during seedling growth pushes the coleoptile above the soil surface.
+xref: OBO_SF_PO:3293779
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -10656,6 +10757,7 @@ id: PO:0020039
 name: leaf lamina
 namespace: plant_anatomy
 def: "A lamina that is part of a leaf, usually dorsiventrally flattened and expanded." [APWeb:Glossary]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "leaf blade" RELATED []
 xref: OBO_SF_PO:2971884
@@ -10667,9 +10769,11 @@ id: PO:0020040
 name: leaf base
 namespace: plant_anatomy
 def: "A phyllome base that is part of a leaf." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "leaf sheath base" RELATED []
 synonym: "phyllid base" NARROW []
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3177673
 is_a: PO:0025140 ! phyllome base
 relationship: part_of PO:0025034 ! leaf
 
@@ -10679,6 +10783,7 @@ name: stipule
 namespace: plant_anatomy
 def: "A phyllome that is one of (usually) a pair of appendages at a leaf base." [POC:curators]
 subset: TraitNet
+xref: OBO_SF_PO:3115551
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009025 ! vascular leaf
 
@@ -10855,6 +10960,7 @@ namespace: plant_anatomy
 def: "A portion of seed coat epidermis that consists of multiple seed trichomes at the micropyle." [POC:curators]
 subset: TraitNet
 synonym: "brush" EXACT []
+xref: OBO_SF_PO:3115428
 is_a: PO:0006048 ! seed coat epidermis
 relationship: has_part PO:0004511 ! seed trichome
 
@@ -10952,6 +11058,8 @@ subset: TraitNet
 synonym: "male gametophyte" EXACT []
 synonym: "pollen" RELATED []
 synonym: "pollen grain" EXACT []
+xref: OBO_SF_PO:3257959
+xref: OBO_SF_PO:3257963
 is_obsolete: true
 consider: PO:0025280
 consider: PO:0025281
@@ -10966,6 +11074,7 @@ comment: This term was made obsolete because it only applied to angiosperms. Con
 subset: reference
 synonym: "embryo sac" RELATED []
 synonym: "female gametophyte" RELATED []
+xref: OBO_SF_PO:3257959
 is_obsolete: true
 consider: PO:0025074
 consider: PO:0025279
@@ -11010,6 +11119,7 @@ def: "A cardinal organ part that has as parts an egg cell and two synergids and 
 comment: Found in angiosperms.
 subset: Angiosperm
 subset: reference
+xref: OBO_SF_PO:3132564
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025074 ! embryo sac
 
@@ -11038,6 +11148,7 @@ name: hypocotyl
 namespace: plant_anatomy
 def: "A stem internode that is the part of a stem below the cotyledonary node and transitional to a root." [APWeb:Glossary]
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3293772
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -11065,6 +11176,7 @@ id: PO:0020103
 name: flag leaf
 namespace: plant_anatomy
 def: "The last mature leaf before the inflorescence in a cereal crop plant." [GR:pj]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025).
 is_a: PO:0006340 ! adult leaf
 
 [Term]
@@ -11072,6 +11184,7 @@ id: PO:0020104
 name: leaf sheath
 namespace: plant_anatomy
 def: "Any tubular portion of the leaf surrounding the stem, as in the Poaceae." [GR:pj]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025034 ! leaf
@@ -11177,7 +11290,7 @@ id: PO:0020125
 name: elongation zone
 namespace: plant_anatomy
 def: "The portion of the root that includes small, densely cytoplasmic cells that are dividing and expanding in size." [GR:pj]
-comment: This term was made obsolete because the definition was not correct. A new term, root elongation zone, was created instead.
+comment: This term was made obsolete because the definition was not correct. A new term, root elongation zone (PO:0025181), was created instead.
 subset: reference
 is_obsolete: true
 replaced_by: PO:0025181
@@ -11209,6 +11322,7 @@ id: PO:0020128
 name: leaf margin
 namespace: plant_anatomy
 def: "The margin of any flattened part of a leaf." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 xref: OBO_SF_PO:2972280
 is_a: PO:0025018 ! phyllome margin
@@ -11288,9 +11402,10 @@ id: PO:0020137
 name: leaf apex
 namespace: plant_anatomy
 def: "A phyllome apex that is part of a leaf." [POC:rw, UMSL:fz]
-comment: It is not precisely defined how far toward the base from the tip a leaf apex extends. For the apical most portion of a leaf, use the term leaf tip.
+comment: It is not precisely defined how far toward the base from the tip a leaf apex extends. For the apical most portion of a leaf, use the term leaf tip. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "phyllid apex" NARROW []
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3177673
 is_a: PO:0025139 ! phyllome apex
 relationship: part_of PO:0025034 ! leaf
 
@@ -11513,6 +11628,7 @@ id: PO:0025009
 name: leaf lamina margin
 namespace: plant_anatomy
 def: "The margin of a leaf lamina." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0020128 ! leaf margin
 relationship: part_of PO:0020039 ! leaf lamina
 created_by: Ramona
@@ -11523,7 +11639,7 @@ id: PO:0025010
 name: petiole margin
 namespace: plant_anatomy
 def: "The margin of a flattened petiole." [POC:curators]
-comment: Petiole margins may be found in flattened (laminar) petioles, but may also occur in laminar extensions of petioles that are rounded or c-shaped in cross section.
+comment: Petiole margins may be found in flattened (laminar) petioles, but may also occur in laminar extensions of petioles that are rounded or c-shaped in cross section. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: Musa
 xref: CO_125:0000006
 xref: CO_125:0000016
@@ -11724,6 +11840,7 @@ name: embryo plant cell
 namespace: plant_anatomy
 def: "A plant cell that is part of a plant embryo." [POC:curators]
 synonym: "embryonic plant cell" EXACT []
+xref: OBO_SF_PO:3177665
 is_a: PO:0009002 ! plant cell
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009002 ! plant cell
@@ -11753,6 +11870,7 @@ def: "A plant cell that is part of a portion of ground tissue." [POC:curators]
 comment: Includes parenchyma, collenchyma and sclerenchyma cells.
 subset: TraitNet
 synonym: "fundamental tissue cell" EXACT []
+xref: OBO_SF_PO:3274184
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025059 ! portion of ground tissue
 created_by: Ramona
@@ -11771,8 +11889,9 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_anatomy
-def: "An axial cell that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
-comment: Hydroids are water and mineral conducting cells found in bryophytes, both in the gametophytic phase and in the seta in the sporophytic phase.
+def: "A plant cell that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
+comment: Hydroids are water and mineral conducting cells found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase.
+subset: Bryophytes
 synonym: "hydroid cell" EXACT []
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000290 ! tracheary element
@@ -11784,8 +11903,9 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
-def: "An axial cell that resembles in structure the sieve elements of some seedless vascular plants." [ISBN:376821110, ISBN:962073342]
-comment: Leptoids have no nucleus at maturity. A carbohydrate and amino acid conducting cell found in bryophytes in the gametophytic phase and in the seta of in the sporophytic phase. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+def: "A plant that resembles in structure the sieve elements of vascular plants." [ISBN:376821110, ISBN:962073342]
+comment: A carbohydrate and amino acid conducting cell found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase. Leptoids have no nucleus at maturity. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+subset: Bryophytes
 synonym: "leptoid cell" EXACT []
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000289 ! sieve tube member
@@ -11799,6 +11919,8 @@ name: leaf
 namespace: plant_anatomy
 def: "A phyllome that is not associated with a reproductive structure." [POC:curators]
 subset: TraitNet
+xref: OBO_SF_PO:3167333
+xref: OBO_SF_PO:3205370
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0000017 ! leaf primordium
 created_by: Ramona
@@ -12284,6 +12406,7 @@ name: non-vascular leaf
 namespace: plant_anatomy
 def: "A leaf in a non-vascular plant." [POC:curators]
 comment: Include moss and liverwort leaves. Occurs in the gametophytic phase of a plant life cycle.
+subset: Bryophytes
 subset: TraitNet
 synonym: "gametophyll" EXACT []
 synonym: "gametophyte leaf" EXACT []
@@ -12533,6 +12656,7 @@ def: "A plant structure that is part of an embryo." [POC:curators]
 comment: Includes plant structures that only occur in embryos (such as suspensor) as well as plant structures that are part of an embryo when a plant is in the embryonic phase (such as embryonic radicle).
 synonym: "embryonic plant structure" EXACT []
 xref: OBO_SF_PO:3132547
+xref: OBO_SF_PO:3293758
 is_a: PO:0009011 ! plant structure
 intersection_of: PO:0009011 ! plant structure
 intersection_of: part_of PO:0009009 ! plant embryo
@@ -12662,6 +12786,7 @@ name: second order infructescence axis
 namespace: plant_anatomy
 def: "An infructescence branch arising from a first order infructescence axis." [POC:rw]
 synonym: "primary infructescence branch" EXACT []
+xref: OBO_SF_PO:3150504
 is_a: PO:0025243 ! infructescence branch
 created_by: Ramona
 creation_date: 2011-01-05T09:16:29Z
@@ -12672,6 +12797,7 @@ name: third order infructescence axis
 namespace: plant_anatomy
 def: "An infructescence branch arising from a second order infructescence axis." [POC:rw]
 synonym: "secondary infructescence branch" EXACT []
+xref: OBO_SF_PO:3150504
 is_a: PO:0025243 ! infructescence branch
 created_by: Ramona
 creation_date: 2011-01-05T09:16:29Z
@@ -12852,7 +12978,7 @@ id: PO:0025129
 name: petiole lamina
 namespace: plant_anatomy
 def: "A lamina that is part of a petiole." [POC:curators]
-comment: The entire petiole may be laminar, or the petiole may be more or less rounded in cross section with laminar extensions.
+comment: The entire petiole may be laminar, or the petiole may be more or less rounded in cross section with laminar extensions. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: Musa
 synonym: "petiole wing" NARROW [CO_125:0000005]
 is_a: PO:0020039 ! leaf lamina
@@ -12878,6 +13004,7 @@ name: plant anatomical entity
 namespace: plant_anatomy
 def: "An anatomical entity that is or was part of a plant." [CARO:0000000 "anatomical entity", POC:curators]
 comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 anatomical entity is defined as: Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
+xref: OBO_SF_PO:3115810
 created_by: Ramona
 creation_date: 2010-11-15T11:41:38Z
 
@@ -12911,6 +13038,7 @@ def: "A shoot system that forms the basal part of an inflorescence to which the 
 subset: Musa
 synonym: "banana crown" NARROW []
 synonym: "Musa crown" NARROW [CO_125:0000023]
+xref: OBO_SF_PO:3147067
 is_a: PO:0009006 ! shoot system
 relationship: part_of PO:0009049 ! inflorescence
 created_by: Ramona
@@ -13003,7 +13131,8 @@ id: PO:0025142
 name: leaf tip
 namespace: plant_anatomy
 def: "A phyllome tip that is part of a leaf apex." [POC:rw]
-comment: This term is to be used for only the apical most portion of a leaf. For a larger area, use the term leaf apex. Use this term when describing the shape of a leaf tip.
+comment: This term is to be used for only the apical most portion of a leaf. For a larger area, use the term leaf apex. Use this term when describing the shape of a leaf tip. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3298269
 is_a: PO:0025141 ! phyllome tip
 relationship: part_of PO:0020137 ! leaf apex
 created_by: Ramona
@@ -13274,6 +13403,7 @@ name: papilla cell
 namespace: plant_anatomy
 def: "An epidermal pavement cell with a short protuberance." [POC:curators]
 comment: See plant cell papilla (GO:0090395) for the subcellular component papilla.
+xref: OBO_SF_PO:3115430
 is_a: PO:0000332 ! epidermal pavement cell
 created_by: Ramona
 creation_date: 2010-11-18T05:25:37Z
@@ -13283,7 +13413,8 @@ id: PO:0025167
 name: leaf papilla cell
 namespace: plant_anatomy
 def: "A papilla cell that is part of a leaf epidermis." [POC:curators]
-comment: See leaf papilla (GO:0090396) for the subcellular component leaf papilla.
+comment: See leaf papilla (GO:0090396) for the subcellular component leaf papilla. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3115430
 is_a: PO:0025166 ! papilla cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
@@ -13295,6 +13426,7 @@ name: stigma papilla cell
 namespace: plant_anatomy
 def: "A papilla cell that is part of a stigma epidermis." [POC:curators]
 comment: See stigma papilla (GO:0090397) for the subcellular component stigma papilla.
+xref: OBO_SF_PO:3115430
 is_a: PO:0025166 ! papilla cell
 relationship: part_of PO:0006061 ! stigma epidermis
 created_by: Ramona
@@ -13306,6 +13438,7 @@ name: prickle
 namespace: plant_anatomy
 def: "A portion of epidermis that is a sclerified outgrowth." [POC:curators]
 comment: Often found on stems and leaves.
+xref: OBO_SF_PO:3115540
 is_a: PO:0005679 ! epidermis
 created_by: Ramona
 creation_date: 2010-11-18T07:47:30Z
@@ -13315,6 +13448,7 @@ id: PO:0025170
 name: root prickle
 namespace: plant_anatomy
 def: "A prickle that is part of a root." [POC:curators]
+xref: OBO_SF_PO:3115540
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0009005 ! root
 created_by: Ramona
@@ -13325,6 +13459,7 @@ id: PO:0025171
 name: shoot axis prickle
 namespace: plant_anatomy
 def: "A prickle that is part of a shoot axis." [POC:curators]
+xref: OBO_SF_PO:3115540
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0025029 ! shoot axis
 created_by: Ramona
@@ -13336,6 +13471,7 @@ name: thorn
 namespace: plant_anatomy
 def: "A branch that is a sclerified, pointed outgrowth." [POC:curators]
 comment: A thorn is a short, pointed (PATO:0002258) woody structure, may be branched.
+xref: OBO_SF_PO:3115545
 is_a: PO:0025073 ! branch
 created_by: Ramona
 creation_date: 2010-11-18T08:07:48Z
@@ -13357,6 +13493,7 @@ name: stipule spine
 namespace: plant_anatomy
 def: "A stipule that is sclerified and pointed." [PATO:0002258 "pointed", POC:curators]
 comment: See also leaf spine (PO:0025173).
+xref: OBO_SF_PO:3115550
 is_a: PO:0020041 ! stipule
 created_by: Ramona
 creation_date: 2010-11-18T08:14:18Z
@@ -13366,6 +13503,8 @@ id: PO:0025175
 name: leaf prickle
 namespace: plant_anatomy
 def: "A prickle that is part of a leaf." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3115540
 is_a: PO:0006016 ! leaf epidermis
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0025034 ! leaf
@@ -13440,6 +13579,7 @@ id: PO:0025182
 name: sepal trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a sepal epidermis." [POC:rw]
+xref: OBO_SF_PO:3112828
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006040 ! sepal epidermis
 created_by: Ramona
@@ -13450,6 +13590,7 @@ id: PO:0025183
 name: leaf stomatal complex
 namespace: plant_anatomy
 def: "A phyllome stomatal complex that is part of a leaf." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "leaf epidermal stomatal complex" EXACT []
 synonym: "leaf epidermis stomatal complex" EXACT []
 is_a: PO:0006016 ! leaf epidermis
@@ -13475,6 +13616,7 @@ id: PO:0025185
 name: leaf lamina stomatal complex
 namespace: plant_anatomy
 def: "A leaf stomatal complex that is part of a leaf lamina." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "leaf lamina epidermal stomatal complex" EXACT []
 synonym: "leaf lamina epidermis stomatal complex" EXACT []
 is_a: PO:0000047 ! leaf lamina epidermis
@@ -13517,6 +13659,7 @@ id: PO:0025189
 name: petiole stomatal complex
 namespace: plant_anatomy
 def: "A leaf stomatal complex that is part of a petiole." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "petiole epidermal stomatal complex" EXACT []
 synonym: "petiole epidermis stomatal complex" EXACT []
 is_a: PO:0000051 ! petiole epidermis
@@ -13530,6 +13673,7 @@ id: PO:0025190
 name: leaf abaxial stomatal complex
 namespace: plant_anatomy
 def: "A leaf stomatal complex that is part of a leaf abaxial epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "leaf abaxial epidermal stomatal complex" EXACT []
 synonym: "leaf abaxial epidermis stomatal complex" EXACT []
 is_a: PO:0025183 ! leaf stomatal complex
@@ -13542,6 +13686,7 @@ id: PO:0025191
 name: leaf adaxial stomatal complex
 namespace: plant_anatomy
 def: "A leaf stomatal complex that is part of a leaf adaxial epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "leaf adaxial epidermal stomatal complex" EXACT []
 synonym: "leaf adaxial epidermis stomatal complex" EXACT []
 is_a: PO:0025183 ! leaf stomatal complex
@@ -13741,6 +13886,7 @@ id: PO:0025210
 name: leaf abaxial trichome
 namespace: plant_anatomy
 def: "A leaf trichome that is part of a leaf abaxial epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0006504 ! leaf trichome
 relationship: part_of PO:0006019 ! leaf abaxial epidermis
 created_by: Ramona
@@ -13751,6 +13897,7 @@ id: PO:0025211
 name: leaf adaxial trichome
 namespace: plant_anatomy
 def: "A leaf trichome that is part of a leaf adaxial epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0006504 ! leaf trichome
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
 created_by: Ramona
@@ -13761,6 +13908,8 @@ id: PO:0025212
 name: leaf pavement cell
 namespace: plant_anatomy
 def: "An epidermal pavement cell that is part of a leaf epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3139280
 is_a: PO:0000332 ! epidermal pavement cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
@@ -13771,6 +13920,7 @@ id: PO:0025213
 name: leaf abaxial pavement cell
 namespace: plant_anatomy
 def: "A leaf pavement cell that is part of a leaf abaxial epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025212 ! leaf pavement cell
 relationship: part_of PO:0006019 ! leaf abaxial epidermis
 created_by: Ramona
@@ -13781,6 +13931,7 @@ id: PO:0025214
 name: leaf adaxial pavement cell
 namespace: plant_anatomy
 def: "A leaf pavement cell that is part of a leaf adaxial epidermis." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025212 ! leaf pavement cell
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
 created_by: Ramona
@@ -13986,6 +14137,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that is part of a plant embryo." [POC:curators]
 comment: This class is for tissues that only occur as part of an embryo.
 synonym: "portion of embryonic plant tissue" EXACT []
+xref: OBO_SF_PO:3293751
 is_a: PO:0009007 ! portion of plant tissue
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009007 ! portion of plant tissue
@@ -14008,6 +14160,7 @@ id: PO:0025235
 name: leaf stomatal pore
 namespace: plant_anatomy
 def: "A phyllome stomatal pore that is part of a leaf stomatal complex." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025234 ! phyllome stomatal pore
 relationship: part_of PO:0025183 ! leaf stomatal complex
 created_by: Ramona
@@ -14028,6 +14181,7 @@ id: PO:0025237
 name: leaf guard cell
 namespace: plant_anatomy
 def: "A phyllome guard cell that is part of a leaf stomatal complex." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025236 ! phyllome guard cell
 relationship: part_of PO:0025183 ! leaf stomatal complex
 created_by: Ramona
@@ -14077,6 +14231,7 @@ subset: Musa
 synonym: "hand of bananas" NARROW []
 synonym: "hand of fruit" EXACT [CO_125:.0000037]
 synonym: "secondary infructescence" EXACT []
+xref: OBO_SF_PO:3147085
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
 relationship: has_part PO:0025112 ! second order infructescence axis
@@ -14100,6 +14255,8 @@ id: PO:0025243
 name: infructescence branch
 namespace: plant_anatomy
 def: "An infructescence axis that is a branch from a primary or higher order infructescence axis." [POC:rw]
+xref: OBO_SF_PO:3150504
+xref: OBO_SF_PO:3151857
 is_a: PO:0025242 ! infructescence axis
 created_by: Ramona
 creation_date: 2010-12-30T03:37:08Z
@@ -14122,6 +14279,7 @@ def: "A phyllome that develops from a sepal and remains attached to a fruit at m
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relic" BROAD [CO_125:0000045]
+xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009031 ! sepal
 created_by: Ramona
@@ -14135,6 +14293,7 @@ def: "A phyllome that develops from a tepal and remains attached to a fruit at m
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relic" BROAD [CO_125:0000045]
+xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009033 ! tepal
 created_by: Ramona
@@ -14148,6 +14307,7 @@ def: "A phyllome that develops from a stamen and remains attached to a fruit at 
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relic" BROAD [CO_125:0000045]
+xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009029 ! stamen
 created_by: Ramona
@@ -14161,6 +14321,7 @@ def: "A collective organ part structure that forms a cylindrical false stem comp
 comment: The peduncle later grows up through the psuedostem. Common in Musa species and some other monocots.
 subset: Musa
 xref: CO_125:0000046
+xref: OBO_SF_PO:3147109
 is_a: PO:0025269 ! collective organ part structure
 created_by: Ramona
 creation_date: 2010-12-30T03:53:09Z
@@ -14170,6 +14331,7 @@ id: PO:0025249
 name: leaf sheath epidermis
 namespace: plant_anatomy
 def: "A portion of leaf epidermis that is part of a leaf sheath." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0006016 ! leaf epidermis
 intersection_of: PO:0005679 ! epidermis
 intersection_of: part_of PO:0020104 ! leaf sheath
@@ -14182,8 +14344,10 @@ id: PO:0025250
 name: leaf sheath abaxial epidermis
 namespace: plant_anatomy
 def: "A portion of leaf sheath epidermis that covers the abaxial/lower surface of a leaf sheath." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: Musa
 synonym: "pseudostem underlayers" NARROW [CO_125:0000047]
+xref: OBO_SF_PO:3147109
 is_a: PO:0025249 ! leaf sheath epidermis
 created_by: Ramona
 creation_date: 2010-12-30T04:02:50Z
@@ -14193,6 +14357,7 @@ id: PO:0025251
 name: leaf sheath adaxial epidermis
 namespace: plant_anatomy
 def: "A portion of leaf sheath epidermis that covers the adaxial/upper surface of a leaf sheath." [POC:rw]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 is_a: PO:0025249 ! leaf sheath epidermis
 created_by: Ramona
 creation_date: 2010-12-30T04:02:50Z
@@ -14278,6 +14443,7 @@ id: PO:0025260
 name: shoot axis procambium
 namespace: plant_anatomy
 def: "A portion of shoot procambium that is part of a shoot apical meristem and gives rise to the primary vascular tissue of a shoot axis." [POC:rw]
+xref: OBO_SF_PO:3184921
 is_a: PO:0025276 ! shoot procambium
 relationship: part_of PO:0020148 ! shoot apical meristem
 created_by: Ramona
@@ -14288,6 +14454,7 @@ id: PO:0025261
 name: pericycle cell
 namespace: plant_anatomy
 def: "A ground tissue cell that is part of a portion of pericycle." [POC:rw]
+xref: OBO_SF_PO:3124791
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0006203 ! pericycle
 created_by: Ramona
@@ -14300,6 +14467,7 @@ namespace: plant_anatomy
 def: "A septum that divides a multilocular ovary." [POC:curators]
 comment: Found in species with syncarpous gynoecia (fused carpels). An ovary septum is derived from the fused walls of two adjacent carpels, while a replum (PO:0005016) develops from early contact of placental tissue from opposite sides of the ovary. Annotations for Arabidopsis should go under replum, not under ovary septum.
 synonym: "carpel synonym" RELATED []
+xref: OBO_SF_PO:3177333
 is_a: PO:0000030 ! septum
 relationship: develops_from PO:0005022 ! ovary wall
 relationship: part_of PO:0009062 ! gynoecium
@@ -14351,6 +14519,7 @@ namespace: plant_anatomy
 def: "A locule that is a cavity in an ovary." [POC:curators]
 comment: Generally contains at least one ovule. An ovary locule may be part of a single carpel, in the case of unicarpellate flowers. An ovary that is part of a syncarpous gynoecium may have multiple locules, or the anatomical spaces of multiple carpels may be fused to form a single locule.
 synonym: "sporophyll locule" BROAD []
+xref: OBO_SF_PO:3166008
 is_a: PO:0025263 ! locule
 relationship: part_of PO:0009072 ! ovary
 created_by: Ramona
@@ -14361,8 +14530,9 @@ id: PO:0025267
 name: fruit replum
 namespace: plant_anatomy
 def: "A portion of fruit placenta tissue that divides a fruit into two or more chambers and develops from a replum." [POC:rw]
-comment: An fruit replum develops from the ovary replum and has no suture line in its center, while a fruit septum (PO:0025262) develops from an ovary septum via the fusion of two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis fruit should go here, and not under fruit septum.
+comment: A fruit replum develops from the ovary replum and has no suture line in its center, while a fruit septum (PO:0025262) develops from an ovary septum via the fusion of two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis fruit should go here, and not under fruit septum.
 subset: Arabidopsis
+xref: OBO_SF_PO:3177363
 is_a: PO:0004535 ! fruit placenta
 relationship: develops_from PO:0025272 ! ovary replum
 created_by: Ramona
@@ -14374,6 +14544,7 @@ name: fruit septum
 namespace: plant_anatomy
 def: "A septum that divides a cavity or mass of tissue in a fruit and develops from an ovary septum." [POC:rw]
 comment: Annotations for Arabidopsis should go under fruit replum (PO:0025267), not under fruit septum. The partition between two sections of an orange is a fruit septum.
+xref: OBO_SF_PO:3177333
 is_a: PO:0000030 ! septum
 relationship: develops_from PO:0025262 ! ovary septum
 relationship: part_of PO:0009001 ! fruit
@@ -14384,7 +14555,7 @@ creation_date: 2011-02-09T02:30:21Z
 id: PO:0025269
 name: collective organ part structure
 namespace: plant_anatomy
-def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:rw]
+def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:curators]
 comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths. Unlike a collective plant structure, a collective organ part structure does not contain any complete organs.
 xref: OBO_SF_PO:3175301
 is_a: PO:0009011 ! plant structure
@@ -14401,6 +14572,7 @@ id: PO:0025270
 name: fruit locule
 namespace: plant_anatomy
 def: "A locule that is a cavity in a fruit and develops from an ovary locule." [POC:curators]
+xref: OBO_SF_PO:3166008
 is_a: PO:0025263 ! locule
 relationship: develops_from PO:0025266 ! ovary locule
 relationship: part_of PO:0009001 ! fruit
@@ -14416,6 +14588,7 @@ comment: An ovary replum develops along with the ovary and has no suture line in
 subset: Arabidopsis
 synonym: "false ovary septum" EXACT []
 synonym: "placental septum" EXACT []
+xref: OBO_SF_PO:3177363
 is_a: PO:0020001 ! ovary placenta
 created_by: Ramona
 creation_date: 2011-02-17T08:29:21Z
@@ -14425,6 +14598,7 @@ id: PO:0025273
 name: stem procambium
 namespace: plant_anatomy
 def: "A portion of shoot axis procambium gives rise to the primary vascular tissue of a stem." [POC:rw]
+xref: OBO_SF_PO:3184921
 is_a: PO:0025260 ! shoot axis procambium
 created_by: Ramona
 creation_date: 2011-02-17T09:48:05Z
@@ -14434,6 +14608,7 @@ id: PO:0025274
 name: branch procambium
 namespace: plant_anatomy
 def: "A portion of shoot axis procambium gives rise to the primary vascular tissue of a branch." [POC:rw]
+xref: OBO_SF_PO:3184921
 is_a: PO:0025260 ! shoot axis procambium
 created_by: Ramona
 creation_date: 2011-02-17T09:48:05Z
@@ -14470,6 +14645,7 @@ subset: reference
 subset: TraitNet
 synonym: "anther lobe" NARROW []
 xref: OBO_SF_PO:3132610
+xref: OBO_SF_PO:3195056
 is_a: PO:0025202 ! microsporangium
 relationship: part_of PO:0009028 ! microsporophyll
 created_by: Ramona
@@ -14491,6 +14667,7 @@ namespace: plant_anatomy
 def: "A whole plant in the gametophytic phase that produces only egg cells." [POC:curators]
 comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In some pteridophytes, megagametophytes develop from megaspores. In angiosperms, Gnetum, and Weltwischia, the megagametophyte is greatly reduced. The megagametophyte in angiosperms is an embryo sac.
 synonym: "female gametophyte" EXACT []
+xref: OBO_SF_PO:3257959
 is_a: PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2011-03-23T11:32:19Z
@@ -14502,6 +14679,7 @@ namespace: plant_anatomy
 def: "A whole plant in the gametophytic phase that produces only sperm cells." [POC:curators]
 comment: Microgametophytes in bryophytes only produce sperm cells, but do not develop from microspores, because there is no heterospory in bryophytes. In seed plants the male gametophyte is reduced to a pollen grain.
 synonym: "male gametophyte" EXACT []
+xref: OBO_SF_PO:3257959
 is_a: PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2011-03-23T11:32:19Z
@@ -14515,6 +14693,7 @@ comment: Produces pollen sperm cells.
 subset: Angiosperm
 subset: Gymnosperms
 synonym: "pollen grain" EXACT []
+xref: OBO_SF_PO:3257963
 is_a: PO:0025280 ! microgametophyte
 created_by: Ramona
 creation_date: 2011-03-31T07:05:48Z
@@ -14577,6 +14756,7 @@ name: embryo coleoptile
 namespace: plant_anatomy
 def: "A coleoptile that is part of a plant embryo." [POC:curators]
 synonym: "embryonic coleoptile" EXACT []
+xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -14589,6 +14769,7 @@ name: seedling coleoptile
 namespace: plant_anatomy
 def: "A coleoptile that develops from an embryonic coleoptile." [POC:curators]
 comment: A seedling coleoptile is an elongation of an embryonic coleoptile and is part of a whole plant in the seedling phase.
+xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
 relationship: develops_from PO:0025286 ! embryo coleoptile
 created_by: Ramona
@@ -14600,6 +14781,7 @@ name: embryo coleorhiza
 namespace: plant_anatomy
 def: "A coleorhiza that is part of a plant embryo." [POC:curators]
 synonym: "embryonic coleorhiza" EXACT []
+xref: OBO_SF_PO:3293771
 is_a: PO:0020034 ! coleorhiza
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -14612,6 +14794,7 @@ name: seedling coleorhiza
 namespace: plant_anatomy
 def: "A coleorhiza that develops from an embryonic coleorhiza." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
+xref: OBO_SF_PO:3293771
 is_a: PO:0020034 ! coleorhiza
 relationship: develops_from PO:0025288 ! embryo coleorhiza
 created_by: Ramona
@@ -14623,6 +14806,7 @@ name: embryo hypocotyl
 namespace: plant_anatomy
 def: "A hypocotyl that is part of a plant embryo." [POC:curators]
 synonym: "embryonic hypocotyl" EXACT []
+xref: OBO_SF_PO:3293772
 is_a: PO:0020100 ! hypocotyl
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -14635,6 +14819,7 @@ name: seedling hypocotyl
 namespace: plant_anatomy
 def: "A hypocotyl that develops from an embryonic hypocotyl." [POC:curators]
 comment: Part of a whole plant in the seedling phase. This term should only be used for seed plants.
+xref: OBO_SF_PO:3293772
 is_a: PO:0020100 ! hypocotyl
 relationship: develops_from PO:0025290 ! embryo hypocotyl
 created_by: Ramona
@@ -14646,6 +14831,7 @@ name: embryo epicotyl
 namespace: plant_anatomy
 def: "An epicotyl that is part of a plant embryo." [POC:curators]
 synonym: "embryonic epicotyl" EXACT []
+xref: OBO_SF_PO:3293774
 is_a: PO:0020035 ! epicotyl
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -14658,6 +14844,7 @@ name: seedling epicotyl
 namespace: plant_anatomy
 def: "A epicotyl that develops from an embryonic epicotyl." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
+xref: OBO_SF_PO:3293774
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryo epicotyl
 created_by: Ramona
@@ -14669,6 +14856,7 @@ name: embryo mesocotyl
 namespace: plant_anatomy
 def: "A mesocotyl that is part of a plant embryo." [POC:curators]
 synonym: "embryonic mesocotyl" EXACT []
+xref: OBO_SF_PO:3293779
 is_a: PO:0020037 ! mesocotyl
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -14681,6 +14869,7 @@ name: seedling mesocotyl
 namespace: plant_anatomy
 def: "A mesocotyl that develops from an embryonic mesocotyl." [POC:curators]
 comment: A seedling mesocotyl is an elongation of and embryonic mesocotyl that is part of a whole plant in the seedling phase.
+xref: OBO_SF_PO:3293779
 is_a: PO:0020037 ! mesocotyl
 relationship: develops_from PO:0025294 ! embryo mesocotyl
 created_by: Ramona
@@ -14693,6 +14882,7 @@ namespace: plant_anatomy
 def: "A radicle that is part of a plant embryo." [POC:curators]
 subset: Citrus
 synonym: "embryonic radicle" EXACT []
+xref: OBO_SF_PO:3293781
 is_a: PO:0020031 ! radicle
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -14705,6 +14895,7 @@ name: seedling radicle
 namespace: plant_anatomy
 def: "A radicle that develops from an embryonic radicle." [POC:curators]
 comment: Part of a whole plant in the seedling phase.
+xref: OBO_SF_PO:3293781
 is_a: PO:0020031 ! radicle
 relationship: develops_from PO:0025296 ! embryo radicle
 created_by: Ramona
@@ -14731,6 +14922,7 @@ comment: May be composed of fused petals, sepals or tepals, but is generally for
 synonym: "angiosperm calyptra" EXACT []
 synonym: "floral calyptra" EXACT []
 synonym: "floral operculum" RELATED []
+xref: OBO_SF_PO:3241802
 is_a: PO:0009058 ! perianth
 disjoint_from: PO:0030037 ! spore capsule calyptra
 created_by: Ramona
@@ -14765,6 +14957,7 @@ namespace: plant_anatomy
 def: "A plant embryo that arises from previously differentiated somatic cells, rather than from fused gametes, i.e. the zygote." [POC:Curators]
 comment: Somatic plant embryos may arise where embryos normally would not arise as a product of apomixis. They may occur on the edges of leaves on some species of Kalanchoe or some ferns.
 synonym: "apomictic plant embryo" EXACT []
+xref: OBO_SF_PO:3293415
 is_a: PO:0009009 ! plant embryo
 created_by: cooperl
 creation_date: 2011-04-27T11:46:50Z
@@ -14836,6 +15029,7 @@ id: PO:0025309
 name: microsporangium endothecium
 namespace: plant_anatomy
 def: "An endothecium that is part of a microsporangium wall." [POC:curators]
+xref: OBO_SF_PO:3298006
 is_a: PO:0030049 ! sporangium wall endothecium
 relationship: part_of PO:0025307 ! microsporangium wall
 created_by: Ramona
@@ -14846,6 +15040,7 @@ id: PO:0025310
 name: megasporangium endothecium
 namespace: plant_anatomy
 def: "An endothecium that is part of a megasporangium wall." [POC:curators]
+xref: OBO_SF_PO:3298006
 is_a: PO:0030049 ! sporangium wall endothecium
 relationship: part_of PO:0025308 ! megasporangium wall
 created_by: Ramona
@@ -14858,6 +15053,7 @@ namespace: plant_anatomy
 def: "An exothecium that is part of a microsporangium wall." [POC:curators]
 synonym: "microsporangial exothecium" EXACT []
 synonym: "microsporangium epidermis" EXACT []
+xref: OBO_SF_PO:3297999
 is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0025307 ! microsporangium wall
 created_by: Ramona
@@ -14870,6 +15066,7 @@ namespace: plant_anatomy
 def: "An exothecium that is part of a megasporangium wall." [POC:curators]
 synonym: "megapsorangial exothecium" EXACT []
 synonym: "megasporangium epidermis" EXACT []
+xref: OBO_SF_PO:3297999
 is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0025308 ! megasporangium wall
 created_by: Ramona
@@ -14881,6 +15078,7 @@ name: tapetum
 namespace: plant_anatomy
 def: "A portion of ground tissue that is the inner-most layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647, ISBN:9780070588493]
 comment: May function in providing nutrition to developing sporocytes or pollen. May have one or more layers of cells. May break down as spores mature. A tapetum does not develop in some plants, such as Psilotum. In angiosperms, the tapetum develops from one of the parietal layers. In non-seed plants, the tapetum may develop from the outer cells of archesporium or from the inner-most layer of the sporangium wall.
+xref: OBO_SF_PO:3298006
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
@@ -14891,6 +15089,7 @@ id: PO:0025314
 name: microsporangium tapetum
 namespace: plant_anatomy
 def: "An tapetum that is part of a microsporangium wall." [POC:curators]
+xref: OBO_SF_PO:3298006
 is_a: PO:0025313 ! tapetum
 relationship: part_of PO:0025307 ! microsporangium wall
 created_by: Ramona
@@ -14901,6 +15100,7 @@ id: PO:0025315
 name: megasporangium tapetum
 namespace: plant_anatomy
 def: "An tapetum that is part of a megasporangium wall." [POC:curators]
+xref: OBO_SF_PO:3298006
 is_a: PO:0025313 ! tapetum
 relationship: part_of PO:0025308 ! megasporangium wall
 created_by: Ramona
@@ -14956,9 +15156,9 @@ creation_date: 2011-05-04T11:20:33Z
 id: PO:0025320
 name: cotyledonary node rhizoid
 namespace: plant_anatomy
-def: "An epidermal rhizoid that grows form a cotyledonary node." [ISBN:3540640606]
+def: "An epidermal rhizoid that grows form a cotyledonary node." [ISBN:3540640606, PMID:17933843]
 comment: Found in some monocots.
-synonym: "collar rhizome" EXACT []
+synonym: "collar rhizoid" EXACT []
 synonym: "wurtzelhalsrhizoid" EXACT []
 is_a: PO:0030071 ! epidermal rhizoid
 created_by: Ramona
@@ -14979,6 +15179,7 @@ name: hydathode pore
 namespace: plant_anatomy
 def: "A plant anatomical space that is an opening in a hydathode." [PMID:18450784, POC:curators]
 comment: Similar to a stomatal pore, but lacks the ability to open and close. Involved in the release water or xylem sap through guttation or secretion.
+xref: OBO_SF_PO:3289531
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0005660 ! hydathode
 created_by: Ramona
@@ -15024,6 +15225,8 @@ name: chloronema cell
 namespace: plant_anatomy
 def: "A chlorenchyma cell that is part of a chloronema and has cross walls of adjacent cells that are perpendicular to the protonema axis." [POC:rw]
 comment: A chloronema cell contains many well-developed chloroplasts.
+subset: Bryophytes
+xref: OBO_SF_PO:3199622
 is_a: PO:0000076 ! chlorenchyma cell
 relationship: part_of PO:0030004 ! chloronema
 created_by: Ramona
@@ -15035,6 +15238,8 @@ name: caulonema cell
 namespace: plant_anatomy
 def: "A chlorenchyma cell that is part of a caulonema and has cross walls of adjacent cells that are oblique to the protonema axis." [POC:rw]
 comment: A caulonema cell contains fewer, less well-developed chloroplasts than a chloronema cell.
+subset: Bryophytes
+xref: OBO_SF_PO:3199622
 is_a: PO:0000076 ! chlorenchyma cell
 relationship: part_of PO:0030005 ! caulonema
 created_by: Ramona
@@ -15046,8 +15251,11 @@ name: protonema
 namespace: plant_anatomy
 def: "A portion of chlorenchyma tissue that develops directly from a spore and grows by division of an apical cell to form filaments that are one cell wide and dicotomously branching." [POC:rw]
 comment: The protonema is the first structure that develops in the gametophytic phase of mosses, some other bryophytes, and leptosporangiate ferns. The term protonema is also used to refer to the phase of development in which protonemal tissue is produced (see PO:0030006 protonema phase). In some species of moss, the protonema is perennial. A protonema may develop from sporophytic tissue during apospory.
+subset: Bryophytes
+subset: Pteridophytes
 synonym: "portion of protonema tissue" EXACT []
 synonym: "protonemata" EXACT Plural []
+xref: OBO_SF_PO:3199622
 is_a: PO:0005426 ! chlorenchyma
 relationship: participates_in PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15058,9 +15266,11 @@ id: PO:0030004
 name: chloronema
 namespace: plant_anatomy
 def: "A portion of protonema tissue that consists of only chloronema cells." [POC:rw]
-comment: Generally, the development of chloronema precedes the development of caulonema. Only the caulonema, and not the chloronema, initiates\ngametophore buds.
+comment: Generally, the development of chloronema precedes the development of caulonema. Only the caulonema, and not the chloronema, initiates gametophore buds.
+subset: Bryophytes
 synonym: "chloronemata" EXACT Plural []
 synonym: "portion of chloronema tissue" EXACT []
+xref: OBO_SF_PO:3199622
 is_a: PO:0030003 ! protonema
 created_by: Ramona
 creation_date: 2011-03-10T11:00:03Z
@@ -15071,8 +15281,10 @@ name: caulonema
 namespace: plant_anatomy
 def: "A portion of protonema tissue that consists of only caulonema cells." [POC:rw]
 comment: Generally, the development of caulonema follows the development\nof chloronema. Only the caulonema, and not the chloronema, initiates gametophore buds.
+subset: Bryophytes
 synonym: "caulonemata" EXACT Plural []
 synonym: "portion of caulonema tissue" EXACT []
+xref: OBO_SF_PO:3199622
 is_a: PO:0030003 ! protonema
 created_by: Ramona
 creation_date: 2011-03-10T11:00:03Z
@@ -15083,7 +15295,10 @@ name: protonema phase
 namespace: plant_growth_and_development_stage
 def: "A whole plant growth stage that is a sub-phase of a gametophytic phase in which protonema tissue is produced." [POC:rw]
 comment: The protonema phase follows spore germination and precedes the development of gametophores in mosses, some other bryophytes, and leptosporangiate ferns.
+subset: Bryophytes
+subset: Pteridophytes
 synonym: "protonemal phase" EXACT []
+xref: OBO_SF_PO:3199622
 is_a: PO:0007033 ! whole plant growth stage
 relationship: part_of PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15094,11 +15309,12 @@ id: PO:0030007
 name: meristematic apical cell
 namespace: plant_anatomy
 def: "A single meristematic cell at the tip of a plant structure where apical growth occurs." [ISBN:0962073342, ISBN:9780473067304]
-comment: Apical cells occur only at the tip of a shoot axis apex, leaf apex, root apex, thallus apex, or protonema in bryophytes and some pteridophytes. Apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. The apical cell may be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge-shaped with two cutting faces (in non-vascular leaves or thalli). An apical cell may be established upon germination of a spore or upon the first cell division of an embryo, or later.
+comment: Apical cells occur only at the tip of a shoot axis apex, leaf apex, root apex, thallus apex, or protonema in bryophytes and some pteridophytes. Apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. The apical cell may be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge-shaped (lenticular) with two cutting faces (in non-vascular leaves or thalli). An apical cell may be established upon germination of a spore or upon the first cell division of an embryo, or later.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "apical cell" EXACT []
 synonym: "apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0004010 ! meristematic cell
 created_by: Ramona
 creation_date: 2011-03-25T09:35:20Z
@@ -15112,6 +15328,7 @@ comment: Occurs in the sporophytic phase of pteridophytes.
 subset: Pteridophytes
 synonym: "root apical cell" EXACT []
 synonym: "root apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0000025 ! root tip
 created_by: Ramona
@@ -15127,6 +15344,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "shoot apical cell" EXACT []
 synonym: "shoot apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 relationship: part_of PO:0009006 ! shoot system
 created_by: Ramona
@@ -15142,6 +15360,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "shoot axis apical cell" EXACT []
 synonym: "shoot axis apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 relationship: part_of PO:0000037 ! shoot apex
 created_by: Ramona
@@ -15157,6 +15376,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "leaf apical cell" EXACT []
 synonym: "leaf apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 relationship: part_of PO:0020137 ! leaf apex
 created_by: Ramona
@@ -15168,8 +15388,10 @@ name: vascular leaf meristematic apical cell
 namespace: plant_anatomy
 def: "A leaf meristematic apical cell that is part of the leaf apex of a vascular leaf." [ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes.", POC:curators]
 comment: Occurs in vascular leaves of some ferns in their sporophytic phase.
+subset: Pteridophytes
 synonym: "vascular leaf apical cell" EXACT []
 synonym: "vascular leaf apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
@@ -15187,8 +15409,10 @@ synonym: "non-vascular leaf apical cell" EXACT []
 synonym: "non-vascular leaf apical initial" EXACT []
 synonym: "phyllid apical cell" EXACT []
 synonym: "phyllid apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
 is_a: PO:0030019 ! gametophore meristematic apical cell
+relationship: develops_from PO:0030087 ! non-vascular leaf initial
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
 creation_date: 2011-03-25T09:44:45Z
@@ -15204,6 +15428,7 @@ subset: Pteridophytes
 synonym: "gametophyte apical cell" EXACT []
 synonym: "gametophyte apical initial" EXACT []
 synonym: "gametophytic meristematic apical cell" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
 intersection_of: participates_in PO:0028003 ! gametophyte phase
@@ -15216,10 +15441,12 @@ name: sporophyte meristematic apical cell
 namespace: plant_anatomy
 def: "A meristematic apical cell that is part of a whole plant in the sporophytic phase." [POC:curators]
 comment: Occurs in pteridophytes and the sporophyte of bryophytes.
+subset: Bryophytes
 subset: Pteridophytes
 synonym: "sporophyte apical cell" RELATED []
 synonym: "sporophyte apical initial" RELATED []
 synonym: "sporophytic meristematic apical cell" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
 intersection_of: participates_in PO:0028002 ! sporophyte phase
@@ -15232,8 +15459,10 @@ name: seta meristematic apical cell
 namespace: plant_anatomy
 def: "A shoot axis meristematic apical cell at the tip of a seta." [ISBN:0962073342, POC:curators]
 comment: Ceases being an apical cell when the sporangium begins to develop.
+subset: Bryophytes
 synonym: "seta apical cell" EXACT []
 synonym: "seta apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0030032 ! seta
@@ -15247,8 +15476,8 @@ namespace: plant_anatomy
 def: "A plant anatomical space that is the opening on the apical end of a spore capsule." [POC:curators]
 comment: May be covered by a peristome.
 subset: Bryophytes
-subset: Poaceae
 synonym: "sporangium mouth" EXACT []
+xref: OBO_SF_PO:3241816
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15261,6 +15490,7 @@ namespace: plant_anatomy
 def: "A shoot system that consists of the shoot axes and non-vascular leaves of a plant in the gametophytic phase." [ISBN:0962073342]
 comment: A gametophore is the leafy part of the gametophyte of mosses and leafy liverworts, excluding the protonema. Develop from buds that form on the protonema. Antheridia and archegonia arise on the gametophore.
 subset: Bryophytes
+xref: OBO_SF_PO:3185093
 is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0030026 ! gametophore bud
 relationship: participates_in PO:0028003 ! gametophyte phase
@@ -15276,6 +15506,7 @@ comment: Occurs in the non-vascular shoot system of the gametophyte of mosses an
 subset: Bryophytes
 synonym: "gametophore apical cell" EXACT []
 synonym: "gametophore apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 intersection_of: PO:0030009 ! shoot meristematic apical cell
@@ -15293,6 +15524,7 @@ subset: Bryophytes
 synonym: "caulid" EXACT []
 synonym: "cauloid" EXACT []
 synonym: "non-vascular shoot axis" EXACT []
+xref: OBO_SF_PO:3185162
 is_a: PO:0025029 ! shoot axis
 intersection_of: PO:0025029 ! shoot axis
 intersection_of: part_of PO:0030018 ! gametophore
@@ -15309,6 +15541,7 @@ subset: Bryophytes
 synonym: "caulid branch" EXACT []
 synonym: "cauloid branch" EXACT []
 synonym: "non-vascular branch" EXACT []
+xref: OBO_SF_PO:3185162
 is_a: PO:0025073 ! branch
 is_a: PO:0030020 ! gametophore axis
 relationship: part_of PO:0030018 ! gametophore
@@ -15325,6 +15558,7 @@ subset: Bryophytes
 synonym: "caulid stem" EXACT []
 synonym: "cauloid stem" EXACT []
 synonym: "non-vascular stem" EXACT []
+xref: OBO_SF_PO:3185162
 is_a: PO:0009047 ! stem
 is_a: PO:0030020 ! gametophore axis
 relationship: part_of PO:0030018 ! gametophore
@@ -15342,6 +15576,7 @@ synonym: "cauloid apical cell" EXACT []
 synonym: "gametophore axis apical cell" EXACT []
 synonym: "gametophore axis apical initial" EXACT []
 synonym: "non-vascular shoot axis apical cell" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 is_a: PO:0030019 ! gametophore meristematic apical cell
 relationship: part_of PO:0030020 ! gametophore axis
@@ -15354,9 +15589,11 @@ name: vascular shoot axis meristematic apical cell
 namespace: plant_anatomy
 def: "A shoot axis meristematic apical cell at the tip of a shoot apex in a shoot system that has as part vascular tissue." [ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes.", POC:curators]
 comment: Occurs in some ferns in their sporophytic phase.
+subset: Pteridophytes
 synonym: "fern shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: participates_in PO:0028002 ! sporophyte phase
@@ -15372,6 +15609,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "thallus apical cell" EXACT []
 synonym: "thallus apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030027 ! thallus
 created_by: Ramona
@@ -15385,6 +15623,7 @@ def: "A vegetative bud that develops into a gametophore." [ISBN:9780473067304]
 comment: Occurs in mosses and leafy liverworts. Develops from a caulonema cell in mosses.
 subset: Bryophytes
 synonym: "brown bud" EXACT []
+xref: OBO_SF_PO:3185097
 is_a: PO:0000058 ! vegetative bud
 relationship: develops_from PO:0030083 ! gametophore bud initial
 relationship: has_part PO:0030019 ! gametophore meristematic apical cell
@@ -15402,6 +15641,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "prothallium" BROAD []
 synonym: "thalli" EXACT Plural []
+xref: OBO_SF_PO:3257063
 is_a: PO:0000003 ! whole plant
 relationship: participates_in PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15415,6 +15655,7 @@ def: "A bract that subtends an antheridium." [ISBN:9780473067304]
 comment: When an antheridium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perigonial bracts. If an antheridium occurs on a main axis of the gametophore, usually only the terminal phyllomes are perigonial bracts.
 subset: Bryophytes
 synonym: "perigonium bract" EXACT []
+xref: OBO_SF_PO:3185168
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15429,6 +15670,7 @@ comment: Found in bryophytes and some pteridophytes. In mosses, the foot is loca
 subset: Bryophytes
 subset: Citrus
 subset: Pteridophytes
+xref: OBO_SF_PO:3234965
 is_a: PO:0009008 ! plant organ
 relationship: has_part PO:0000078 ! transfer cell
 relationship: participates_in PO:0028002 ! sporophyte phase
@@ -15443,6 +15685,7 @@ def: "A bract that subtends an archegonium." [ISBN:0962073342]
 comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually perichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
 subset: Bryophytes
 synonym: "perichaetum bract" EXACT []
+xref: OBO_SF_PO:3185168
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -15472,8 +15715,8 @@ namespace: plant_anatomy
 def: "A plant axis that holds up a spore capsule." [ISBN:0962073342, POC:curators]
 comment: Found in some bryophytes, especially mosses.
 subset: Bryophytes
-subset: Gymnosperms
 synonym: "setae" EXACT Plural []
+xref: OBO_SF_PO:3185175
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028002 ! sporophyte phase
 created_by: Ramona
@@ -15486,6 +15729,7 @@ namespace: plant_anatomy
 def: "A plant axis that bears two or more antheridia on an antheridial head." [ISBN:0962073342]
 comment: Found in Marchantiales.
 subset: Bryophytes
+xref: OBO_SF_PO:3272612
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15498,6 +15742,7 @@ namespace: plant_anatomy
 def: "A plant axis that bears two or more archegonia on an archegonial head." [ISBN:0962073342]
 comment: Found in Marchantiales.
 subset: Bryophytes
+xref: OB_SF_PO:3272612
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15512,6 +15757,7 @@ comment: Raises the antheridium above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridial stalk" EXACT []
+xref: OBO_SF_PO:3272612
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -15526,6 +15772,7 @@ comment: Raises the venter above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "archegonial stalk" EXACT []
+xref: OBO_SF_PO:3272612
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15537,6 +15784,8 @@ name: spore capsule calyptra
 namespace: plant_anatomy
 def: "A cardinal organ part that develops from the wall of an archegonium and surrounds a sporangium." [ISBN:0962073342, ISBN:9780473067304]
 comment: Found in bryophytes. The calyptra is a membranous or hairy cap or hood composed of gametophytic tissue that protects the embryonic sporophyte within the archegonium. In some species, the calyptra may persist after the sporophyte develops and gets carried upward as the seta elongates.
+subset: Bryophytes
+xref: OBO_SF_PO:3234979
 is_a: PO:0025001 ! cardinal organ part
 disjoint_from: PO:0025299 ! calyptra perianth
 relationship: develops_from PO:0025126 ! archegonium
@@ -15552,6 +15801,7 @@ def: "A cardinal organ part that is the enlarged basal part of an archegonium an
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
+xref: OBO_SF_PO:3234981
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15564,8 +15814,9 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is the elongated apical part of an archegonium." [ISBN:0962073342, ISBN:9780070588493]
 comment: Early in development, the neck is occluded by a single row of neck canal cells. At maturity, the neck canal cells disintegrate, creating a canal for the sperm to enter the archegonium.
 subset: Bryophytes
-subset: Citrus
+subset: Pteridophytes
 synonym: "archegonial neck" RELATED []
+xref: OBO_SF_PO:3234985
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025126 ! archegonium
 created_by: Ramona
@@ -15582,6 +15833,7 @@ subset: Pteridophytes
 synonym: "apophysis" NARROW [ISBN:0962073342]
 synonym: "hypophysis" NARROW [ISBN:0962073342]
 synonym: "sporangium neck" EXACT []
+xref: OBO_SF_PO:3241725
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15597,6 +15849,7 @@ subset: Bryophytes
 subset: Citrus
 subset: Pteridophytes
 synonym: "sporangium urn" EXACT []
+xref: OBO_SF_PO:3241737
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15609,6 +15862,7 @@ namespace: plant_anatomy
 def: "A single or double circle of peristome teeth inside a sporangium mouth." [ISBN:9780473067304]
 comment: The peristome is located under the operculum, if an operculum is present. Upon maturity of a capsule, the teeth of the peristome open to release the spores.
 subset: Bryophytes
+xref: OBO_SF_PO:3241747
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15621,6 +15875,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is a single lobe of a peristome." [ISBN:9780473067304]
 comment: Generally triangular. Peristome teeth may be simple or compound, and may be attached by their tips to the epiphragm.
 subset: Bryophytes
+xref: OBO_SF_PO:3241747
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030042 ! peristome
 created_by: Ramona
@@ -15635,6 +15890,7 @@ comment: Found in mosses. May remain partly attached to the rest of the capsule.
 subset: Bryophytes
 synonym: "sporangium lid" EXACT []
 synonym: "spore capsule lid" EXACT []
+xref: OBO_SF_PO:3241767
 is_a: PO:0025001 ! cardinal organ part
 disjoint_from: PO:0025298 ! fruit operculum
 relationship: part_of PO:0025094 ! sporangium
@@ -15649,6 +15905,7 @@ def: "A ground tissue cell with thickened cell walls." [ISBN:0962073342, ISBN:37
 comment: Found only in bryophytes in gametophore axes, setae, or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
 subset: Bryophytes
 synonym: "stereid cell" EXACT []
+xref: OBO_SF_PO:3293311
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0030050 ! stereome
 created_by: Ramona
@@ -15659,8 +15916,11 @@ id: PO:0030046
 name: protonema meristematic apical cell
 namespace: plant_anatomy
 def: "A gametophyte meristematic apical cell that is part of a protonema." [POC:curators]
+subset: Bryophytes
+subset: Pteridophytes
 synonym: "protonema apical cell" EXACT []
 synonym: "protonema apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030003 ! protonema
 created_by: Ramona
@@ -15703,6 +15963,7 @@ namespace: plant_anatomy
 def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647]
 comment: Term used for vascular plants to describe the outermost layer of a sporangium wall that is internal to the exothecium.
 synonym: "endothecium of sporangium wall" EXACT []
+xref: OBO_SF_PO:3298004
 is_a: PO:0025059 ! portion of ground tissue
 disjoint_from: PO:0030085 ! protosporangium endothecium
 relationship: adjacent_to PO:0030073 ! exothecium
@@ -15728,6 +15989,7 @@ name: central strand
 namespace: plant_anatomy
 def: "A portion of plant tissue that is an axial strand in the center of a gametophore axis or seta and has as part a hydrome or a leptome." [ISBN:0029496608, ISBN:0962073342]
 comment: Often contains both hydrome and leptome. Found in bryophytes. The term central strand is sometimes used to describe a protostele in vascular plants, but this ontology class should only be used for non-vascular plants. Analogous to a vein or vascular bundle in vascular plants.
+subset: Bryophytes
 synonym: "conducting cylinder" EXACT [ISBN:376821110]
 synonym: "conducting strand" EXACT [ISBN:376821110]
 xref: OBO_SF_PO:3295058
@@ -15744,6 +16006,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridium wall cell" EXACT []
 synonym: "sterile jacket cell" EXACT []
+xref: OBO_SF_PO:3293290
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0030053 ! antheridium jacket layer
 created_by: Ramona
@@ -15776,6 +16039,7 @@ subset: Arabidopsis
 subset: Bryophytes
 synonym: "epiphram" EXACT []
 synonym: "tympanum" EXACT []
+xref: OBO_SF_PO:3241820
 is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15789,6 +16053,7 @@ def: "A gametophore axis that is a leafless extension of a gametophore stem or b
 comment: Raises the sporophyte above the perichaetial bracts. Found in Sphagnum and Andreaea.
 subset: Bryophytes
 synonym: "pseudopodia" EXACT Plural []
+xref: OBO_SF_PO:3241827
 is_a: PO:0030020 ! gametophore axis
 created_by: Ramona
 creation_date: 2011-04-26T09:08:14Z
@@ -15801,6 +16066,7 @@ def: "A plant cell that divides to gives rise to a sporocyte and is part of a sp
 comment: May also give rise to sterile cells such as elators (in liverworts) or tapetal cells. In most species outside seed plants, multiple archesporial cells are part of an archesporium or sporogenous tissue.
 synonym: "archesporial initial" EXACT []
 synonym: "sporogenous cell" EXACT []
+xref: OBO_SF_PO:3293208
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15811,8 +16077,9 @@ id: PO:0030057
 name: alar cell
 namespace: plant_anatomy
 def: "A plant cell located at the base of a non-vascular leaf adjacent to where the leaf attaches to the stem." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
-comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness or ornamentation from other cells in the leaf.
+comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness, or ornamentation from other cells in the leaf.
 subset: Bryophytes
+xref: OBO_SF_PO:3293209
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0020040 ! leaf base
 relationship: part_of PO:0025075 ! non-vascular leaf
@@ -15827,6 +16094,7 @@ def: "A plant cell that develops from a cell in a protonema and has a thick cell
 comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema may develop into brachycytes under stress. May form a chain or be separated by tmema cells.
 subset: Bryophytes
 synonym: "brood cell" EXACT [ISBN:0962073342]
+xref: OBO_SF_PO:3293213
 is_a: PO:0009002 ! plant cell
 relationship: participates_in PO:0028003 ! gametophyte phase
 created_by: Ramona
@@ -15839,7 +16107,6 @@ namespace: plant_anatomy
 def: "A plant cell at the base of a gemma or adjacent to a brachycyte that breaks down to allow abscission of the gemma or brachycyte." [ISBN:0962073342]
 comment: May be a single cell adjacent to a brachycyte or part of a portion of tmema tissue.
 subset: Bryophytes
-subset: Maize
 synonym: "brachytmema cell" NARROW []
 synonym: "dlichotmema cell" NARROW []
 xref: OBO_SF_PO:3293289
@@ -15894,6 +16161,7 @@ name: gametophore axillary hair base
 namespace: plant_anatomy
 def: "A axillary hair base that is the basal part of a gametophore axillary hair, below the gametophore axillary hair terminal cell." [ISBN:9780473067304, POC:curators "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
 comment: Consists of two to a dozen cells.
+subset: Bryophytes
 xref: OBO_SF_PO:3293292
 is_a: PO:0025318 ! axillary hair base
 relationship: part_of PO:0030060 ! gametophore axillary hair
@@ -15905,6 +16173,7 @@ id: PO:0030064
 name: gametophore axillary hair basal cell
 namespace: plant_anatomy
 def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, POC:curators "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+subset: Bryophytes
 synonym: "gametophore axillary hair base cell" EXACT []
 xref: OBO_SF_PO:3293292
 is_a: PO:0025319 ! axillary hair basal cell
@@ -15918,7 +16187,8 @@ name: archegonium neck canal cell
 namespace: plant_anatomy
 def: "A plant cell that is one of the axial row of cells in an immature archegonium neck." [ISBN:0962073342]
 comment: As the archegonium matures, the archegonium neck canal cells disintegrate to form the archegonium neck canal.
-synonym: "archegoni" RELATED []
+synonym: "archegonial neck canal cell" EXACT []
+xref: OBO_SF_PO:3234985
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0030039 ! archegonium neck
 created_by: Ramona
@@ -15930,7 +16200,10 @@ name: archegonium neck canal
 namespace: plant_anatomy
 def: "A canal in the center of an archegonium neck." [ISBN:0962073342]
 comment: Forms after the archegonium neck canal cells disintegrate.
+subset: Bryophytes
+subset: Pteridophytes
 synonym: "archegonial neck canal" EXACT []
+xref: OBO_SF_PO:3234985
 is_a: PO:0025132 ! canal
 relationship: part_of PO:0030039 ! archegonium neck
 created_by: Ramona
@@ -15938,12 +16211,16 @@ creation_date: 2011-04-29T09:21:53Z
 
 [Term]
 id: PO:0030067
-name: protonemal side branch initial
+name: protonema side branch initial
 namespace: plant_anatomy
-def: "An initial cell that is produced by division of a sub-apical cell of a protonema." [ISBN:9781405181891]
-comment: May give rise to a chloronema, a caulonema, a gametophore bud, a protonemal rhizoid, or may not divide further.
+def: "An protonema sub-apical initial that gives rise to a branch of a protonema." [ISBN:9781405181891]
+comment: May give rise to a chloronema, caulonema, protonema rhizoid, tmema cell, or brachycyte.
+subset: Bryophytes
+synonym: "protonema side branch initial cell" EXACT []
 synonym: "protonemal side branch initial cell" EXACT []
-is_a: PO:0004011 ! initial cell
+xref: OBO_SF_PO:3293297
+xref: OBO_SF_PO:3293302
+is_a: PO:0030086 ! protonema sub-apical initial
 relationship: part_of PO:0030003 ! protonema
 created_by: Ramona
 creation_date: 2011-04-29T09:25:26Z
@@ -16007,6 +16284,7 @@ name: costa
 namespace: plant_anatomy
 def: "A portion of plant tissue that is a single or double strand in the center of a non-vascular leaf and has as part hydrome or leptome." [ISBN:376821110]
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
+subset: Bryophytes
 synonym: "non-vascular leaf midrib" EXACT []
 synonym: "non-vascular leaf midvein" RELATED []
 synonym: "non-vascular leaflet midrib" RELATED []
@@ -16027,6 +16305,9 @@ def: "A portion of epidermis that is the outermost layer of a sporangium wall." 
 comment: Develops from the outermost layer of an amphithecium in bryophytes.
 synonym: "epithecium" EXACT []
 synonym: "sporangium epidermis" EXACT []
+synonym: "sporangium wall exothecium" EXACT []
+xref: OBO_SF_PO:3241820
+xref: OBO_SF_PO:3297999
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: Ramona
@@ -16042,6 +16323,7 @@ subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "sporogenous tissue" EXACT []
+xref: OBO_SF_PO:3296935
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
@@ -16057,6 +16339,7 @@ comment: Found in Marchantiales.
 subset: Bryophytes
 subset: Poaceae
 synonym: "antheridial head" EXACT []
+xref: OB_SF_PO:3272612
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030033 ! antheridiophore
 created_by: Ramona
@@ -16071,6 +16354,7 @@ comment: Found in Marchantiales.
 subset: Bryophytes
 subset: Poaceae
 synonym: "archegonial head" EXACT []
+xref: OB_SF_PO:3272612
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0030034 ! archegoniophore
 created_by: Ramona
@@ -16080,10 +16364,13 @@ creation_date: 2011-05-04T07:26:51Z
 id: PO:0030077
 name: protonemal side branch rhizoid initial
 namespace: plant_anatomy
-def: "A protonemal side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
+def: "A protonema side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
+subset: Bryophytes
+synonym: "protonema side branch rhizoid initial cell" EXACT []
 synonym: "protonemal side branch rhizoid initial cell" EXACT []
+xref: OBO_PO_SF:3293297
 xref: OBO_SF_PO:3293302
-is_a: PO:0030067 ! protonemal side branch initial
+is_a: PO:0030067 ! protonema side branch initial
 created_by: Ramona
 creation_date: 2011-05-04T02:38:25Z
 
@@ -16091,8 +16378,8 @@ creation_date: 2011-05-04T02:38:25Z
 id: PO:0030078
 name: rhizoid
 namespace: plant_anatomy
-def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes."]
-comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, and protonemal rhizoids that branch from a protonema.
+def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:unknown "Parihar 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes."]
+comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, protonemal rhizoids that branch from a protonema, and rhizoids that develop from a basal cell of a gametophore bud.
 xref: OBO_SF_PO:3293893
 is_a: PO:0009011 ! plant structure
 created_by: Ramona
@@ -16103,6 +16390,7 @@ id: PO:0030079
 name: protonemal rhizoid
 namespace: plant_anatomy
 def: "A rhizoid that is part of a protonema and develops from a protonemal side branch rhizoid initial." [ISBN:0962073342]
+subset: Bryophytes
 xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
@@ -16114,8 +16402,10 @@ id: PO:0030080
 name: rhizoid meristematic apical cell
 namespace: plant_anatomy
 def: "A gametophyte meristematic apical cell that is part of a rhizoid." [POC:curators]
+subset: Bryophytes
 synonym: "rhizoid apical cell" EXACT []
 synonym: "rhizoid apical initial" EXACT []
+xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030078 ! rhizoid
 created_by: Ramona
@@ -16126,6 +16416,7 @@ id: PO:0030081
 name: caulonema meristematic apical cell
 namespace: plant_anatomy
 def: "A protonema meristematic apical cell that is part of a caulonema." [POC:curators]
+subset: Bryophytes
 synonym: "caulonema apical cell" EXACT []
 synonym: "caulonema apical initial" EXACT []
 is_a: PO:0030046 ! protonema meristematic apical cell
@@ -16137,8 +16428,10 @@ id: PO:0030082
 name: chloronema meristematic apical cell
 namespace: plant_anatomy
 def: "A protonema meristematic apical cell that is part of a chloronema." [POC:curators]
+subset: Bryophytes
 synonym: "chloronema apical cell" EXACT []
 synonym: "chloronema apical initial" EXACT []
+xref: OBOS_SF_PO:3234956
 is_a: PO:0030046 ! protonema meristematic apical cell
 created_by: Ramona
 creation_date: 2011-05-17T09:06:26Z
@@ -16147,9 +16440,12 @@ creation_date: 2011-05-17T09:06:26Z
 id: PO:0030083
 name: gametophore bud initial
 namespace: plant_anatomy
-def: "A protonemal side branch initial that gives rise to a gametophore bud." [POC:curators]
+def: "A protonema sub-apical initial hat gives rise to a gametophore bud." [POC:curators]
+comment: In Physcomitrella patens, a gametophore bud initial typically is\nmore bulbous than a protonema side branch initial, and its plane of first\ncell division is oblique, rather than perpendicular, to the plane of growth.
+subset: Bryophytes
 synonym: "gametophore bud initial cell" EXACT []
-is_a: PO:0030067 ! protonemal side branch initial
+xref: OBO_SF_PO:3293297
+is_a: PO:0030086 ! protonema sub-apical initial
 created_by: Ramona
 creation_date: 2011-05-17T09:10:08Z
 
@@ -16159,6 +16455,8 @@ name: amphithecium
 namespace: plant_anatomy
 def: "A portion of plant tissue that is the outer layer or layers of a sporangium early in sporangium development." [ISBN:0962073342]
 comment: Term used for bryophytes. May have one or more layers. An amphithecium may give rise to an exothecium and other layer of a sporangium wall (jacket layer or layers). In true mosses, the amphithecium gives rise to the sporangium wall and the peristome. In hornworts and peat mosses, it gives rise to the sporangium wall and sporogenous tissue.
+subset: Bryophytes
+xref: OBO_SF_PO:3302899
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
 creation_date: 2011-05-17T10:28:55Z
@@ -16169,11 +16467,44 @@ name: protosporangium endothecium
 namespace: plant_anatomy
 def: "A portion of ground tissue that is the tissue internal to an amphithecium early in sporangium development." [ISBN:0962073342, ISBN:9780070588493, POC:curators]
 comment: Term used for bryophytes. In liverworts an early sporangium endothecium produces sporogenous tissue. In Sphagnum, Andreaea, and hornworts, it produces columella and sporogenous tissue.
+subset: Bryophytes
 synonym: "endothecium of protosporangium" EXACT []
+xref: OBO_SF_PO:3298004
 is_a: PO:0025059 ! portion of ground tissue
 disjoint_from: PO:0030049 ! sporangium wall endothecium
 created_by: Ramona
 creation_date: 2011-05-17T10:31:21Z
+
+[Term]
+id: PO:0030086
+name: protonema sub-apical initial
+namespace: plant_anatomy
+def: "An initial cell that is produced by longitudinal division of a sub-apical cell of a protonema." [POC:rw]
+comment: May give rise to a branch of the protonema (including a protonema rhizoid, tmema cell or brachycyte), a gametophore bud, or may not divide further.
+subset: Bryophytes
+synonym: "protonema sub-apical initial cell" EXACT []
+synonym: "protonemal sub-apical initial cell" RELATED []
+xref: OBO_SF_PO:3293297
+is_a: PO:0004011 ! initial cell
+disjoint_from: PO:0000059 ! root initial cell
+disjoint_from: PO:0000295 ! cambial initial
+disjoint_from: PO:0000349 ! epidermal initial
+created_by: Ramona
+creation_date: 2011-05-23T08:31:30Z
+
+[Term]
+id: PO:0030087
+name: non-vascular leaf initial
+namespace: plant_anatomy
+def: "An initial cell that is part of a gametophore and gives rise to a non-vascular leaf." [PMID:19303301]
+comment: In Physcomitrella patens, non-vascular leaf initials arise from the daughter cells of a gametophore axis apical cell. Subsequent division of a non-vascular leaf initial establishes a non-vascular leaf apical cell.
+subset: Bryophytes
+synonym: "non-vascular leaf initial cell" EXACT []
+xref: OBO_SF_PO:3304575
+is_a: PO:0004011 ! initial cell
+relationship: part_of PO:0030018 ! gametophore
+created_by: Ramona
+creation_date: 2011-05-23T09:00:21Z
 
 [Typedef]
 id: adjacent_to
