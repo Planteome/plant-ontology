@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:05:2011 13:57
+date: 25:05:2011 17:13
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta13
 subsetdef: Angiosperm "Term for angiosperms"
@@ -277,6 +277,7 @@ name: pollen tube tip
 namespace: plant_anatomy
 def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
 comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube tip (GO:0090404). Since a pollen tube tip is part_of a pollen tube, which is part of a pollen cell, annotations for pollen tube tip may also go to the more general term pollen tube cell (PO:0025195).
+xref: OBO_SF_PO:3115812
 is_obsolete: true
 consider: PO:0025195
 
@@ -286,6 +287,7 @@ name: root hair tip
 namespace: plant_anatomy
 def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
 comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO. To annotate to a cell that has a root hair tip, consider root hair cell (PO:0000256).
+xref: OBO_SF_PO:3115810
 is_obsolete: true
 consider: PO:0000256
 
@@ -314,6 +316,7 @@ name: tetrad of microspores
 namespace: plant_anatomy
 def: "A portion of plant tissue consisting of four microspores that remained joined together shortly after meiosis. Each cell will give rise to a male gametophyte." [POC:rw]
 subset: reference
+xref: OBO_SF_PO:3132503
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020047 ! microsporocyte
 relationship: has_part PO:0020048 ! microspore
@@ -362,6 +365,7 @@ name: shoot apex
 namespace: plant_anatomy
 def: "A shoot axis that is the most distal part of a shoot system and has as parts a shoot apical meristem and the youngest leaf primordia." [POC:curators]
 subset: reference
+xref: OBO_SF_PO:3132475
 is_a: PO:0025029 ! shoot axis
 
 [Term]
@@ -391,6 +395,7 @@ namespace: plant_anatomy
 def: "Enlargement or swelling at position of dormant adventitious root primordium (on the stem), inhabited by nitrogen-fixing bacteria." [TAIR:ki]
 comment: Unlike the root nodules, these contain functioning chloroplasts in the nodule cortex and are therefore capable of carbon fixation. Note: stem nodule is commonly used term for this structure, although the nodules are formed at positions of dormant adventitious root primordia.
 synonym: "stem primordium" RELATED []
+xref: OBO_SF_PO:3132479
 is_a: PO:0003023 ! root nodule
 relationship: part_of PO:0000042 ! shoot-borne root
 
@@ -559,6 +564,7 @@ namespace: plant_anatomy
 def: "A bud that develops into an inflorescence." [POC:curators]
 subset: Musa
 synonym: "male bud" NARROW [CO_125:0000049 "Term used for Musa to describe the usually persistent bud when it is only composed of bracts with male flowers."]
+xref: OBO_SF_PO:3147067
 is_a: PO:0025084 ! reproductive bud
 
 [Term]
@@ -604,6 +610,7 @@ namespace: plant_anatomy
 def: "An epidermal initial that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell differentiates into a guard mother cell." [POC:rw]
 synonym: "stomatal initial cell" EXACT []
 synonym: "stomatal meristemoid" EXACT []
+xref: OBO_SF_PO:3112108
 is_a: PO:0000349 ! epidermal initial
 created_by: Ramona
 creation_date: 2011-02-02T09:01:50Z
@@ -628,6 +635,7 @@ name: xylem pole pericycle cell
 namespace: plant_anatomy
 def: "A pericycle cell that is adjacent to the protoxylem of a vascular bundle." [PMID:17993548]
 comment: Xylem pole pericycle cells are cells in the pericycle that are adjacent to the protoxylem pole of a vascular bundle. Pericycle cells that are adjacent to other xylem cells in the vascular bundle are not considered xylem pole pericycle cells. Xylem pole pericycle cells may retain some meristematic activity and are the site of lateral root initiation.
+xref: OBO_SF_PO:3124791
 is_a: PO:0025261 ! pericycle cell
 created_by: Ramona
 creation_date: 2011-02-02T11:52:34Z
@@ -638,6 +646,7 @@ name: phloem pole pericycle cell
 namespace: plant_anatomy
 def: "A pericycle cell that is adjacent to the protophloem of a vascular bundle." [PMID:17993548]
 comment: Phloem pole pericycle cells are cells in the pericycle that are adjacent to the protophloem pole of a vascular bundle. Pericycle cells that are adjacent to other phloem cells in the vascular bundle are not considered phloem pole pericycle cells. Phloem pole pericycle cells are distinct from xylem pole pericycle cells in that they display cytoplasmic characteristics of a more differentiated status.
+xref: OBO_SF_PO:3124791
 is_a: PO:0025261 ! pericycle cell
 created_by: Ramona
 creation_date: 2011-02-02T11:55:06Z
@@ -1132,6 +1141,7 @@ namespace: plant_anatomy
 def: "A shoot epidermal cell that is relatively unspecialized at maturity." [POC:curators]
 comment: May have sinuous anticlinal cell walls that overall give a jigsaw like appearance to the epidermis. Pavement cells are epidermal cells that are not directly associated with a stomatal complex or trichome at maturity, but they share similar developmental origins.
 xref: CL:0000400
+xref: OBO_SF_PO:3139280
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000115 ! socket cell
 disjoint_from: PO:0000284 ! subsidiary cell
@@ -1808,6 +1818,7 @@ def: "A portion of shoot epidermis that has as parts two guard cells and a stoma
 subset: TraitNet
 synonym: "stoma" BROAD []
 synonym: "stomata" BROAD []
+xref: OBO_SF_PO:3132410
 is_a: PO:0006035 ! shoot epidermis
 
 [Term]
@@ -1817,6 +1828,7 @@ namespace: plant_anatomy
 def: "A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
 comment: This terms was made obsolete because it is a sub-cellular compartment. Plant cell papilla (GO:0090395), leaf papilla (GO:0090396), and stigma papilla (GO:0090397) have been added to GO. To annotate to a cell that has a papilla, consider papilla cell (PO:0025166), leaf papilla cell (PO:0025167), or stigma papilla cell (PO:0025168).
 subset: reference
+xref: OBO_SF_PO:3115430
 is_obsolete: true
 consider: PO:0025166
 consider: PO:0025167
@@ -1979,6 +1991,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is an outgrowth of a root and is inhabited by nitrogen-fixing bacteria." [POC:rw]
 comment: Root nodules are a symbiosis between a plant (often, but not exclusively, of the Fabaceae) and bacteria of the genus Rhizobium, Bradyrhizobium, or Azorhizobium.
 subset: TraitNet
+xref: OBO_SF_PO:3132479
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0025194 ! root nodule meristem
 relationship: part_of PO:0009005 ! root
@@ -3479,6 +3492,7 @@ def: "A collective phyllome structure that encloses a fruit of the Poaceae (cary
 subset: Maize
 subset: Poaceae
 subset: Rice
+xref: OBO_SF_PO:3132525
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0009037 ! lemma
 relationship: develops_from PO:0009038 ! palea
@@ -4797,6 +4811,8 @@ subset: Musa
 synonym: "banana bunch" NARROW [CO_125:0000014]
 synonym: "fruit bunch" RELATED []
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3147080
+xref: OBO_SF_PO:3147085
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0009049 ! inflorescence
 relationship: has_part PO:0009001 ! fruit
@@ -4809,6 +4825,7 @@ def: "A shoot-borne shoot system that develops from an axillary vegetative bud."
 subset: Musa
 synonym: "axillary branch" RELATED []
 synonym: "Musa sucker" NARROW [CO_125:0000042 "A shoot system arrising form an axillary bud at the base of a Musa plant."]
+xref: OBO_SF_PO:3147109
 is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
@@ -6066,6 +6083,7 @@ def: "A phyllome trichome that is part of a leaf epidermis." [POC:rw]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "phyllid trichome" NARROW []
+xref: OBO_SF_PO:3132414
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006016 ! leaf epidermis
 
@@ -9012,6 +9030,7 @@ name: floral stomatal complex
 namespace: plant_anatomy
 def: "An opening pore on the epidermis of floral organs bordered by two guard cells and serving in gas exchange." [GR:cwt]
 comment: This term was made obsolete and replaced by the stomatal complexes of individual floral organs, such as petal stomatal complex or sepal stomatal complex.
+xref: OBO_SF_PO:3132417
 is_obsolete: true
 consider: PO:0025217
 consider: PO:0025218
@@ -9625,6 +9644,7 @@ synonym: "perfect flower" NARROW []
 synonym: "pistillate flower" NARROW []
 synonym: "staminate flower" NARROW []
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3147067
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0004706 ! flower primordium
 
@@ -9685,6 +9705,7 @@ synonym: "Triticeae spike" NARROW []
 synonym: "umbel" NARROW []
 synonym: "verticillaster" NARROW []
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3147080
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009046 ! flower
 
@@ -10154,6 +10175,7 @@ def: "A cardinal organ part that is a fleshy outgrowth of the funicle, covering 
 comment: A fleshy outgrowth from another part of a seed is an arilloid. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.
 subset: reference
 subset: TraitNet
+xref: OBO_SF_PO:3132538
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
@@ -10311,6 +10333,7 @@ def: "A cardinal organ part that is a fleshy outgrowth of a seed and does not co
 subset: TraitNet
 synonym: "caruncle" NARROW [ISBN-13:978-0-88192-850-1 "an arilloid near the micropyle"]
 synonym: "strophiole" NARROW [ISBN-13:9780881928501 "an arilloid on the raphe"]
+xref: OBO_SF_PO:3132539
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009010 ! seed
 
@@ -10692,6 +10715,7 @@ name: epiblast
 namespace: plant_anatomy
 def: "A portion of plant tissue that is a flap-like projection of the coleorhiza, inserted opposite the scutellum." [ISBN:0471244554]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage. Some researchers consider the epiblast and coleorhiza independent structures that differentiate from the same proembryonic tissue.
+xref: OBO_SF_PO:3140942
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020034 ! coleorhiza
 
@@ -10744,6 +10768,7 @@ name: stipule
 namespace: plant_anatomy
 def: "A phyllome that is one of (usually) a pair of appendages at a leaf base." [POC:curators]
 subset: TraitNet
+xref: OBO_SF_PO:3115551
 is_a: PO:0006001 ! phyllome
 relationship: part_of PO:0009025 ! vascular leaf
 
@@ -10920,6 +10945,7 @@ namespace: plant_anatomy
 def: "A portion of seed coat epidermis that consists of multiple seed trichomes at the micropyle." [POC:curators]
 subset: TraitNet
 synonym: "brush" EXACT []
+xref: OBO_SF_PO:3115428
 is_a: PO:0006048 ! seed coat epidermis
 relationship: has_part PO:0004511 ! seed trichome
 
@@ -11078,6 +11104,7 @@ def: "A cardinal organ part that has as parts an egg cell and two synergids and 
 comment: Found in angiosperms.
 subset: Angiosperm
 subset: reference
+xref: OBO_SF_PO:3132564
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025074 ! embryo sac
 
@@ -12960,6 +12987,7 @@ name: plant anatomical entity
 namespace: plant_anatomy
 def: "An anatomical entity that is or was part of a plant." [CARO:0000000 "anatomical entity", POC:curators]
 comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 anatomical entity is defined as: Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
+xref: OBO_SF_PO:3115810
 created_by: Ramona
 creation_date: 2010-11-15T11:41:38Z
 
@@ -12993,6 +13021,7 @@ def: "A shoot system that forms the basal part of an inflorescence to which the 
 subset: Musa
 synonym: "banana crown" NARROW []
 synonym: "Musa crown" NARROW [CO_125:0000023]
+xref: OBO_SF_PO:3147067
 is_a: PO:0009006 ! shoot system
 relationship: part_of PO:0009049 ! inflorescence
 created_by: Ramona
@@ -13357,6 +13386,7 @@ name: papilla cell
 namespace: plant_anatomy
 def: "An epidermal pavement cell with a short protuberance." [POC:curators]
 comment: See plant cell papilla (GO:0090395) for the subcellular component papilla.
+xref: OBO_SF_PO:3115430
 is_a: PO:0000332 ! epidermal pavement cell
 created_by: Ramona
 creation_date: 2010-11-18T05:25:37Z
@@ -13367,6 +13397,7 @@ name: leaf papilla cell
 namespace: plant_anatomy
 def: "A papilla cell that is part of a leaf epidermis." [POC:curators]
 comment: See leaf papilla (GO:0090396) for the subcellular component leaf papilla. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3115430
 is_a: PO:0025166 ! papilla cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
@@ -13378,6 +13409,7 @@ name: stigma papilla cell
 namespace: plant_anatomy
 def: "A papilla cell that is part of a stigma epidermis." [POC:curators]
 comment: See stigma papilla (GO:0090397) for the subcellular component stigma papilla.
+xref: OBO_SF_PO:3115430
 is_a: PO:0025166 ! papilla cell
 relationship: part_of PO:0006061 ! stigma epidermis
 created_by: Ramona
@@ -13389,6 +13421,7 @@ name: prickle
 namespace: plant_anatomy
 def: "A portion of epidermis that is a sclerified outgrowth." [POC:curators]
 comment: Often found on stems and leaves.
+xref: OBO_SF_PO:3115540
 is_a: PO:0005679 ! epidermis
 created_by: Ramona
 creation_date: 2010-11-18T07:47:30Z
@@ -13398,6 +13431,7 @@ id: PO:0025170
 name: root prickle
 namespace: plant_anatomy
 def: "A prickle that is part of a root." [POC:curators]
+xref: OBO_SF_PO:3115540
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0009005 ! root
 created_by: Ramona
@@ -13408,6 +13442,7 @@ id: PO:0025171
 name: shoot axis prickle
 namespace: plant_anatomy
 def: "A prickle that is part of a shoot axis." [POC:curators]
+xref: OBO_SF_PO:3115540
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0025029 ! shoot axis
 created_by: Ramona
@@ -13419,6 +13454,7 @@ name: thorn
 namespace: plant_anatomy
 def: "A branch that is a sclerified, pointed outgrowth." [POC:curators]
 comment: A thorn is a short, pointed (PATO:0002258) woody structure, may be branched.
+xref: OBO_SF_PO:3115545
 is_a: PO:0025073 ! branch
 created_by: Ramona
 creation_date: 2010-11-18T08:07:48Z
@@ -13440,6 +13476,7 @@ name: stipule spine
 namespace: plant_anatomy
 def: "A stipule that is sclerified and pointed." [PATO:0002258 "pointed", POC:curators]
 comment: See also leaf spine (PO:0025173).
+xref: OBO_SF_PO:3115550
 is_a: PO:0020041 ! stipule
 created_by: Ramona
 creation_date: 2010-11-18T08:14:18Z
@@ -13450,6 +13487,7 @@ name: leaf prickle
 namespace: plant_anatomy
 def: "A prickle that is part of a leaf." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3115540
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0025034 ! leaf
 created_by: Ramona
@@ -13523,6 +13561,7 @@ id: PO:0025182
 name: sepal trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a sepal epidermis." [POC:rw]
+xref: OBO_SF_PO:3112828
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006040 ! sepal epidermis
 created_by: Ramona
@@ -13849,6 +13888,7 @@ name: leaf pavement cell
 namespace: plant_anatomy
 def: "An epidermal pavement cell that is part of a leaf epidermis." [POC:rw]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+xref: OBO_SF_PO:3139280
 is_a: PO:0000332 ! epidermal pavement cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: Ramona
@@ -14162,6 +14202,7 @@ subset: Musa
 synonym: "hand of bananas" NARROW []
 synonym: "hand of fruit" EXACT [CO_125:.0000037]
 synonym: "secondary infructescence" EXACT []
+xref: OBO_SF_PO:3147085
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
 relationship: has_part PO:0025112 ! second order infructescence axis
@@ -14209,6 +14250,7 @@ def: "A phyllome that develops from a sepal and remains attached to a fruit at m
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relic" BROAD [CO_125:0000045]
+xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009031 ! sepal
 created_by: Ramona
@@ -14222,6 +14264,7 @@ def: "A phyllome that develops from a tepal and remains attached to a fruit at m
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relic" BROAD [CO_125:0000045]
+xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009033 ! tepal
 created_by: Ramona
@@ -14235,6 +14278,7 @@ def: "A phyllome that develops from a stamen and remains attached to a fruit at 
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relic" BROAD [CO_125:0000045]
+xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009029 ! stamen
 created_by: Ramona
@@ -14248,6 +14292,7 @@ def: "A collective organ part structure that forms a cylindrical false stem comp
 comment: The peduncle later grows up through the psuedostem. Common in Musa species and some other monocots.
 subset: Musa
 xref: CO_125:0000046
+xref: OBO_SF_PO:3147109
 is_a: PO:0025269 ! collective organ part structure
 created_by: Ramona
 creation_date: 2010-12-30T03:53:09Z
@@ -14273,6 +14318,7 @@ def: "A portion of leaf sheath epidermis that covers the abaxial/lower surface o
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: Musa
 synonym: "pseudostem underlayers" NARROW [CO_125:0000047]
+xref: OBO_SF_PO:3147109
 is_a: PO:0025249 ! leaf sheath epidermis
 created_by: Ramona
 creation_date: 2010-12-30T04:02:50Z
@@ -14379,6 +14425,7 @@ id: PO:0025261
 name: pericycle cell
 namespace: plant_anatomy
 def: "A ground tissue cell that is part of a portion of pericycle." [POC:rw]
+xref: OBO_SF_PO:3124791
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0006203 ! pericycle
 created_by: Ramona
@@ -15182,7 +15229,7 @@ id: PO:0030004
 name: chloronema
 namespace: plant_anatomy
 def: "A portion of protonema tissue that consists of only chloronema cells." [POC:rw]
-comment: Generally, the development of chloronema precedes the development of caulonema. Only the caulonema, and not the chloronema, initiates\ngametophore buds.
+comment: Generally, the development of chloronema precedes the development of caulonema. Only the caulonema, and not the chloronema, initiates gametophore buds.
 subset: Bryophytes
 synonym: "chloronemata" EXACT Plural []
 synonym: "portion of chloronema tissue" EXACT []
