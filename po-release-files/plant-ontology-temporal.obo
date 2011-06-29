@@ -1,19 +1,28 @@
 format-version: 1.2
-date: 13:01:2011 17:22
-auto-generated-by: OBO-Edit 2.1-beta7
-subsetdef: Angiosperm "Terms for angiosperms"
+date: 29:06:2011 13:17
+saved-by: Ramona
+auto-generated-by: OBO-Edit 2.1-beta13
+subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
+subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: Gymnosperms "Term used for gymnosperms"
 subsetdef: Maize "Term used for maize"
 subsetdef: Musa "Terms used for banana"
 subsetdef: Poaceae "Term used for grasses"
 subsetdef: Potato "Term used for potato"
+subsetdef: Pteridophytes "Term used for ferns and allies"
 subsetdef: reference "reference plant structure term"
 subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
+synonymtypedef: Japanese "Japanese synonym" EXACT
+synonymtypedef: Plural "Plural" EXACT
+synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
+remark: Derived from plant_ontology.obo version 15.
 ontology: po
+treat-xrefs-as-is_a: CARO
 
 [Term]
 id: PO:0001000
@@ -326,21 +335,21 @@ id: PO:0001047
 name: lemma developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the lemma defined by characteristic morphological, structural, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001048
 name: palea developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the palea defined by characteristic morphological, structural, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001049
 name: lodicule developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the lodicule defined by characteristic morphological, structural, histological or other visible features." [GR:ap, POC:fz]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001050
@@ -576,9 +585,10 @@ is_a: PO:0001044 ! sepal differentiation and expansion stage
 
 [Term]
 id: PO:0001380
-name: sepals enclosing floral bud
+name: sepals enclosing flower bud
 namespace: plant_growth_and_development_stage
 def: "Stage of calyx development that begins when the sepals enclose the floral bud." [ISBN:0387940898]
+synonym: "sepals enclosing floral bud" EXACT []
 synonym: "stage 6 flower in Arabidopsis " RELATED []
 is_a: PO:0001044 ! sepal differentiation and expansion stage
 
@@ -2898,24 +2908,27 @@ is_obsolete: true
 
 [Term]
 id: PO:0007600
-name: 3 floral organ development stages
+name: 3 flower organ development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of floral organs defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
+synonym: "3 floral organ development stages" RELATED []
 is_a: PO:0007615 ! flower development stages
 
 [Term]
 id: PO:0007601
-name: 1 floral meristem visible
+name: 1 flower meristem visible
 namespace: plant_growth_and_development_stage
 def: "Stage of flower development marked by the emergence of the floral meristem on the flank of the inflorescence meristem." [POC:curators]
+synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stages
 
 [Term]
 id: PO:0007602
-name: 2 floral meristem notched
+name: 2 flower meristem notched
 namespace: plant_growth_and_development_stage
 def: "Stage of floral development that begins when the floral meristem becomes demarcated from the inflorescence meristem by a slight indentation." [POC:curators]
+synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stages
 
@@ -2924,28 +2937,28 @@ id: PO:0007603
 name: calyx developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the calyx defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007604
 name: corolla developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the corolla defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007605
 name: androecium developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the androecium defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007606
 name: gynoecium developmental stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of the gynoecium defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 floral organ development stages
+is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007607
@@ -3192,27 +3205,61 @@ creation_date: 2010-07-15T02:54:57Z
 
 [Term]
 id: PO:0028002
-name: sporophytic phase
+name: sporophyte phase
 namespace: plant_growth_and_development_stage
-def: "A plant life cycle phase that is the product of fertilization." [POC:rw]
-comment: During the sporophtyic phase, a plant may produce meiospores by meiosis.
+def: "A whole plant growth stage that begins with fertilization or apogamy." [POC:curators]
+comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy both naturally occurring instances (such sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such haploid embryo\nculture or in vitro fusion of non-gamete cells or protoplasts).
 subset: TraitNet
-synonym: "sporophyte phase" EXACT []
+synonym: "sporophytic phase" EXACT []
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
 
 [Term]
 id: PO:0028003
-name: gametophytic phase
+name: gametophyte phase
 namespace: plant_growth_and_development_stage
-def: "A plant life cycle phase that arises through meiosis." [POC:rw]
-comment: During the gametophytic phase, a plant may produce gametes by mitosis.
+def: "A whole plant growth stage that begins with meiosis or apospory." [POC:curators]
+comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory.
 subset: TraitNet
-synonym: "gametophyte phase" EXACT []
+synonym: "gametophytic phase" EXACT []
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
+
+[Term]
+id: PO:0030006
+name: protonema phase
+namespace: plant_growth_and_development_stage
+def: "A whole plant growth stage that is a sub-phase of a gametophytic phase in which protonema tissue is produced." [POC:rw]
+comment: The protonema phase follows spore germination and precedes the development of gametophores in mosses, some other bryophytes, and leptosporangiate ferns.
+subset: Bryophytes
+subset: Pteridophytes
+synonym: "protonemal phase" EXACT []
+xref: OBO_SF_PO:3199622
+is_a: PO:0007033 ! whole plant growth stage
+relationship: part_of PO:0028003 ! gametophyte phase
+created_by: Ramona
+creation_date: 2011-03-10T11:37:59Z
+
+[Typedef]
+id: adjacent_to
+name: adjacent_to
+comment: Used when a plant structure (the child) is permanently in contact with another plant structure (the parent).
+created_by: Ramona
+creation_date: 2011-05-09T11:54:22Z
+
+[Typedef]
+id: derives_from
+name: derives_from
+namespace: plant_anatomy
+created_by: Ramona
+creation_date: 2010-07-01T02:45:12Z
+
+[Typedef]
+id: develops_from
+name: develops_from
+namespace: plant_anatomy
 
 [Typedef]
 id: has_part
@@ -3222,4 +3269,12 @@ name: has_part
 id: part_of
 name: part_of
 is_transitive: true
+
+[Typedef]
+id: participates_in
+name: participates_in
+comment: Used with a plant anatomical entity as the child and a plant growth and development stage as the parent. For example, plant gametangium participates_in gametophytic phase.
+holds_over_chain: part_of participates_in
+created_by: Ramona
+creation_date: 2011-03-23T10:52:56Z
 
