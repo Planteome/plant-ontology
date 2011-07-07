@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:06:2011 07:25
+date: 07:07:2011 12:44
 saved-by: Ramona
 auto-generated-by: OBO-Edit 2.1-beta13
 subsetdef: Angiosperm "Term for angiosperms"
@@ -234,7 +234,7 @@ is_a: PO:0025161 ! portion of plant substance
 id: PO:0000023
 name: casparian strip
 namespace: plant_anatomy
-def: "OBSOLETE: A band-like wall formation within primary walls that contains suberin and lignin; typical of endodermal cells in roots, in which it occurs in radial and transverse anticlinal walls." [ISBN:0471245208]
+def: "OBSOLETE. A band-like wall formation within primary walls that contains suberin and lignin; typical of endodermal cells in roots, in which it occurs in radial and transverse anticlinal walls." [ISBN:0471245208]
 comment: Comment: this term is now available in the cellular_component aspect of the Gene Ontology (GO:0048226).
 is_obsolete: true
 
@@ -242,7 +242,7 @@ is_obsolete: true
 id: PO:0000024
 name: filiform apparatus
 namespace: plant_anatomy
-def: "OBSOLETE: A complex of cell wall invaginations in a synergid cell similar to those in transfer cells." [ISBN:0471245208]
+def: "OBSOLETE. A complex of cell wall invaginations in a synergid cell similar to those in transfer cells." [ISBN:0471245208]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043680.
 subset: reference
 is_obsolete: true
@@ -276,7 +276,7 @@ relationship: part_of PO:0020121 ! lateral root
 id: PO:0000028
 name: pollen tube tip
 namespace: plant_anatomy
-def: "Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
+def: "OBSOLETE. Tip portion of the pollen tube that is rapidly growing." [TAIR:ki]
 comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube tip (GO:0090404). Since a pollen tube tip is part_of a pollen tube, which is part of a pollen cell, annotations for pollen tube tip may also go to the more general term pollen tube cell (PO:0025195).
 xref: OBO_SF_PO:3115812
 is_obsolete: true
@@ -286,7 +286,7 @@ consider: PO:0025195
 id: PO:0000029
 name: root hair tip
 namespace: plant_anatomy
-def: "Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
+def: "OBSOLETE. Tip portion of an outgrowth of a root epidermal cell." [TAIR:ki]
 comment: This term was made obsolete because it is a subcellular component. Root hair tip (GO:0035619) has been added to GO. To annotate to a cell that has a root hair tip, consider root hair cell (PO:0000256).
 xref: OBO_SF_PO:3115810
 is_obsolete: true
@@ -1826,7 +1826,7 @@ is_a: PO:0006035 ! shoot epidermis
 id: PO:0002001
 name: papillae
 namespace: plant_anatomy
-def: "A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
+def: "OBSOLETE. A soft protuberance on an epidermal cell of the stigma." [ISBN:0471245208]
 comment: This terms was made obsolete because it is a sub-cellular compartment. Plant cell papilla (GO:0090395), leaf papilla (GO:0090396), and stigma papilla (GO:0090397) have been added to GO. To annotate to a cell that has a papilla, consider papilla cell (PO:0025166), leaf papilla cell (PO:0025167), or stigma papilla cell (PO:0025168).
 subset: reference
 xref: OBO_SF_PO:3115430
@@ -1840,6 +1840,7 @@ id: PO:0002002
 name: embryo basal cell
 namespace: plant_anatomy
 def: "A plant cell that is the lower-most cell formed after the first division of the zygote and is part of an embryo." [ISBN:0471245208]
+comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
 synonym: "embryonic basal cell" EXACT []
 xref: CL:0000646
 is_a: PO:0009002 ! plant cell
@@ -1878,7 +1879,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0003003
 name: obsolete primary root elongation zone
 namespace: plant_anatomy
-def: "A zone of small, densely cytoplasmic cells that are dividing and expanding in size located behind the zone of cell division in the primary root." [TAIR:ki]
+def: "OBSOLETE. A zone of small, densely cytoplasmic cells that are dividing and expanding in size located behind the zone of cell division in the primary root." [TAIR:ki]
 comment: This term was made obsolete because the definition was not correct. A new term with the same name and correct definitions was created to replace it.
 is_obsolete: true
 replaced_by: PO:0025257
@@ -1916,7 +1917,7 @@ relationship: part_of PO:0020124 ! root stele
 id: PO:0003014
 name: obsolete lateral root elongation zone
 namespace: plant_anatomy
-def: "The portion of the lateral root located behind the zone of cell division that includes small, densely cytoplasmic cells that are dividing and expanding in size." [TAIR:ki]
+def: "OBSOLETE. The portion of the lateral root located behind the zone of cell division that includes small, densely cytoplasmic cells that are dividing and expanding in size." [TAIR:ki]
 comment: This term was made obsolete because the definition was not correct. A new term with the same name and correct definitions was created to replace it.
 is_obsolete: true
 replaced_by: PO:0025256
@@ -2011,7 +2012,7 @@ is_a: PO:0025073 ! branch
 id: PO:0004000
 name: obsolete apical cell
 namespace: plant_anatomy
-def: "An embryonic plant cell that is the uppermost cell formed after the first division of the zygote." [ISBN:0471245208]
+def: "OBSOLETE. An embryonic plant cell that is the uppermost cell formed after the first division of the zygote." [ISBN:0471245208]
 comment: This term was originally named apical cell. It was made obsolete to avoid confusion with the new term apical cell (PO:0030007). This term is replaced by embryonic apical cell (PO:0025284).
 is_obsolete: true
 replaced_by: PO:0025284
@@ -2828,7 +2829,7 @@ is_a: PO:0005053 ! laticifer
 id: PO:0005008
 name: obsolete fruit septum
 namespace: plant_anatomy
-def: "A thin partition or membrane that divides a cavity or a mass of tissue in the fruit that is derived from the carpel septum." [GR:cwt]
+def: "OBSOLETE. A thin partition or membrane that divides a cavity or a mass of tissue in the fruit that is derived from the carpel septum." [GR:cwt]
 comment: This term was made obsolete because it was ambiguous. It has been replaced by the more precise terms fruit septum (PO:0025268) and fruit replum (PO:0025267). Annotations for Arabidopsis should go to fruit replum.
 is_obsolete: true
 consider: PO:0025267
@@ -2838,7 +2839,7 @@ consider: PO:0025268
 id: PO:0005009
 name: carpel septum
 namespace: plant_anatomy
-def: "A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [GR:cwt, GR:pj]
+def: "OBSOLETE. A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [GR:cwt, GR:pj]
 comment: Carpel septum was made obsolete because it was ambiguous. It has been replaced by the more precise terms ovary septum (PO:0025262) and ovary replum (PO:0025272). Annotations for Arabidopsis should go to ovary replum (PO:0025272).
 is_obsolete: true
 consider: PO:0025262
@@ -2898,7 +2899,7 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0005016
 name: replum
 namespace: plant_anatomy
-def: "A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMID:15035986]
+def: "OBSOLETE. A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [GR:pj, PMID:13678595, PMID:15035986]
 comment: This term was made obsolete to avoid confusion with the new terms fruit replum and ovary replum. Consider ovary replum (PO:0025272) or fruit replum (PO:0025267).
 xref: OBO_SF_PO:3177363
 is_obsolete: true
@@ -4068,7 +4069,7 @@ is_a: PO:0006079 ! shoot meristem
 id: PO:0006074
 name: obsolete procambium
 namespace: plant_anatomy
-def: "A portion of primary cambium that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
+def: "OBSOLETE. A portion of primary cambium that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
 comment: This term was made obsolete because the parentage and definition changed slightly. It is replaced by PO:0025275.
 xref: OBO_SF_PO:3184905
 is_obsolete: true
@@ -4483,7 +4484,7 @@ replaced_by: PO:0009022
 id: PO:0006306
 name: obsolete shoot procambium
 namespace: plant_anatomy
-def: "A derivative of the apical meristem which undergoes differentiation to form the primary vascular tissue of a shoot." [GR:pj]
+def: "OBSOLETE. A derivative of the apical meristem which undergoes differentiation to form the primary vascular tissue of a shoot." [GR:pj]
 comment: This term was made obsolete because the definition was changed. It was replaced by PO:0025276.
 xref: OBO_SF_PO:3184921
 is_obsolete: true
@@ -6172,7 +6173,7 @@ is_a: PO:0007047 ! 3 inflorescence visible
 id: PO:0007004
 name: 3 rapid growth stage
 namespace: plant_growth_and_development_stage
-def: "OBSOLETE.The stage at which the plant grows rapidly by either or both stem elongation and expansion of the rosette/foliage. " [GR:ap]
+def: "OBSOLETE.The stage at which the plant grows rapidly by either or both stem elongation and expansion of the rosette/foliage." [GR:ap]
 comment: Many stages like leaf production PO:0007112, axillary shoot formation PO:0007073, inflorescence PO:0007047 often overlap with this stage
 is_obsolete: true
 
@@ -6613,7 +6614,7 @@ is_a: PO:0007016 ! 4 flowering
 id: PO:0007035
 name: 7-8 fruit formation and maturation
 namespace: plant_growth_and_development_stage
-def: "OBSOLETE: This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit development, maturation, and provisioning. " [Poc:curators]
+def: "OBSOLETE. This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit development, maturation, and provisioning." [Poc:curators]
 comment: We have chosen to use fruit size as a marker of these physiological processes to represent the whole plant growth stage.
 synonym: "06-post-flowering in maize" RELATED [GRO:0007025]
 synonym: "5.3 pollination in maize" RELATED [MaizeGDB:67364]
@@ -8164,7 +8165,7 @@ is_a: PO:0007505 ! 1 root primordium formation
 id: PO:0007512
 name: A2 root initials differentiation stage
 namespace: plant_growth_and_development_stage
-def: "OBSOLETE. The root initials differentiate by cell division and cell expansion. " [GR:ap]
+def: "OBSOLETE. The root initials differentiate by cell division and cell expansion." [GR:ap]
 comment: Crown root stages are based on rice plant. This  term has been obsoleted to keep the structure simple.
 is_obsolete: true
 
@@ -8345,7 +8346,7 @@ is_obsolete: true
 id: PO:0007535
 name: A1 root initials formation stage
 namespace: plant_growth_and_development_stage
-def: "OBSOLETE. After the formation of the apical-basal axis in the young embryo, the central and basal portion give rise to the root meristem. " [GR:ap]
+def: "OBSOLETE. After the formation of the apical-basal axis in the young embryo, the central and basal portion give rise to the root meristem." [GR:ap]
 comment: Endogenously formed embryonic roots are exclusive to Poaceae.\nThis  term has been obsoleted to keep the structure simple.
 is_obsolete: true
 
@@ -8919,7 +8920,7 @@ relationship: part_of PO:0000282 ! trichome
 id: PO:0008031
 name: trichome branch
 namespace: plant_anatomy
-def: "The branch on a trichome." [GR:cwt]
+def: "OBSOLETE. The branch on a trichome." [GR:cwt]
 comment: This term was made obsolete because it is a sub-cellular component. New term unicellular trichome branch (GO:0090405) has been added to GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
 is_obsolete: true
 consider: PO:0025163
@@ -8941,7 +8942,7 @@ relationship: part_of PO:0002000 ! stomatal complex
 id: PO:0008034
 name: leaf whorl
 namespace: plant_anatomy
-def: "A cluster of leaves in crowded circles or spirals arising basally from a crown." [GR:cwt]
+def: "OBSOLETE. A cluster of leaves in crowded circles or spirals arising basally from a crown." [GR:cwt]
 comment: This term was made obsolete, because its definition did not match the new ontology structure as a child of collective phyllome structure. Annotations for this term are now associated with the new term collective leaf structure (PO:0025022).
 synonym: "rosette" RELATED []
 is_obsolete: true
@@ -8965,7 +8966,7 @@ is_a: PO:0009013 ! meristem
 id: PO:0008037
 name: seedling
 namespace: plant_anatomy
-def: "A young plant derived from a newly germinated seed." [GR:cwt]
+def: "OBSOLETE. A young plant derived from a newly germinated seed." [GR:cwt]
 comment: This term was made obsolete. Replaced by whole plant growth stage seedling growth (PO:0007131) and whole plant (PO:0000003).
 xref: OBO_SF_PO:2972241
 is_obsolete: true
@@ -9016,7 +9017,7 @@ relationship: part_of PO:0020142 ! stem internode
 id: PO:0008043
 name: floral epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of the floral organs." [GR:cwt]
+def: "OBSOLETE. A portion of shoot epidermis that is part of the floral organs." [GR:cwt]
 comment: This term was made obsolete. Its former children were classified as children of either epidermis, phyllome epidermis or shoot epidermis.
 is_obsolete: true
 consider: PO:0006040
@@ -9029,7 +9030,7 @@ consider: PO:0025184
 id: PO:0008044
 name: floral stomatal complex
 namespace: plant_anatomy
-def: "An opening pore on the epidermis of floral organs bordered by two guard cells and serving in gas exchange." [GR:cwt]
+def: "OBSOLETE. An opening pore on the epidermis of floral organs bordered by two guard cells and serving in gas exchange." [GR:cwt]
 comment: This term was made obsolete and replaced by the stomatal complexes of individual floral organs, such as petal stomatal complex or sepal stomatal complex.
 xref: OBO_SF_PO:3132417
 is_obsolete: true
@@ -9043,7 +9044,7 @@ consider: PO:0025221
 id: PO:0008045
 name: floral guard cell
 namespace: plant_anatomy
-def: "One of a pair of cells flanking the stomatal pore of floral organs." [GR:cwt]
+def: "OBSOLETE. One of a pair of cells flanking the stomatal pore of floral organs." [GR:cwt]
 comment: This term was made obsolete and replaced by guard cell (PO:0000293) which can be post-composed with individual floral organs, such as petal or sepal.
 is_obsolete: true
 consider: PO:0000293
@@ -9052,7 +9053,7 @@ consider: PO:0000293
 id: PO:0008046
 name: floral stomatal pore
 namespace: plant_anatomy
-def: "A stomatal pore that is part of a floral stomatal complex." [POC:curators]
+def: "OBSOLETE. A stomatal pore that is part of a floral stomatal complex." [POC:curators]
 comment: This term was made obsolete and replaced by stomatal pore (PO:0008032), which can be post-composed with individual floral organs, such as petal or sepal.
 is_obsolete: true
 consider: PO:0008032
@@ -9165,7 +9166,7 @@ disjoint_from: PO:0009008 ! plant organ
 id: PO:0009003
 name: sporophyte
 namespace: plant_anatomy
-def: "A plant structure that is a product of fertilization and produces spores through meiosis." [POC:curators]
+def: "OBSOLETE. A plant structure that is a product of fertilization and produces spores through meiosis." [POC:curators]
 comment: Replace_by whole plant in the sporophyte phase (PO:0028003).  Structures that only occur in sporophyte should have participates_in relation to sporophytic phase.
 subset: reference
 xref: OBO_SF_PO:2968332
@@ -9177,7 +9178,7 @@ replaced_by: PO:0028002
 id: PO:0009004
 name: gametophyte
 namespace: plant_anatomy
-def: "A plant structure that arises through meiosis and may produce gametes by mitosis." [POC:curators]
+def: "OBSOLETE. A plant structure that arises through meiosis and may produce gametes by mitosis." [POC:curators]
 comment: Replace_by whole plant in the gametophyte phase (PO:0028002). The gametophyte arises from the product of meiosis (the spore). Structures that occur only in gametophytes should have a participates_in relation to the gametophyte phase.
 subset: reference
 xref: OBO_SF_PO:2968330
@@ -9306,7 +9307,7 @@ relationship: has_part PO:0004010 ! meristematic cell
 id: PO:0009014
 name: dermal tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue that covers the surface of the plant." [GR:pj, ISBN:0122151704]
+def: "OBSOLETE. A portion of plant tissue that covers the surface of the plant." [GR:pj, ISBN:0122151704]
 comment: This term is redundant with epidermis and will be obsoleted.\nMove annotations to epidermis.
 xref: OBO_SF_PO:3008008
 is_obsolete: true
@@ -9355,7 +9356,7 @@ relationship: part_of PO:0025196 ! basal endosperm transfer layer
 id: PO:0009019
 name: obsolete basal endosperm transfer layer
 namespace: plant_anatomy
-def: "A cell layer found in basal endosperm transfer cell." [GR:cwt]
+def: "OBSOLETE. A cell layer found in basal endosperm transfer cell." [GR:cwt]
 comment: This term was made obsolete because the definition was wrong. Replace by new term with same name but corrected definition.
 is_obsolete: true
 replaced_by: PO:0025196
@@ -9938,7 +9939,7 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0009070
 name: obsolete pollen sac
 namespace: plant_anatomy
-def: "A microsporangium in an angiosperm that is a cavity in an anther that contains pollen grains." [ISBN:0716710072]
+def: "OBSOLETE. A microsporangium in an angiosperm that is a cavity in an anther that contains pollen grains." [ISBN:0716710072]
 comment: This term was made obsolete because the definition was incorrect. Replaced by PO:0025277.
 subset: Angiosperm
 subset: reference
@@ -10440,7 +10441,7 @@ relationship: part_of PO:0009072 ! ovary
 id: PO:0020008
 name: exine
 namespace: plant_anatomy
-def: "OBSOLETE: The outer layer of the pollen grain wall, highly resistant to strong acids and bases, and composed primarily of sporopollenin." [APWeb:Glossary]
+def: "OBSOLETE. The outer layer of the pollen grain wall, highly resistant to strong acids and bases, and composed primarily of sporopollenin." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043668.
 subset: reference
 is_obsolete: true
@@ -10449,7 +10450,7 @@ is_obsolete: true
 id: PO:0020009
 name: ectexine
 namespace: plant_anatomy
-def: "OBSOLETE: The outer part of the exine, which stains positively with basic fuchsin in optical microscopy and has higher electron density in conventionally prepared TEM sections." [APWeb:Glossary]
+def: "OBSOLETE. The outer part of the exine, which stains positively with basic fuchsin in optical microscopy and has higher electron density in conventionally prepared TEM sections." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043669.
 subset: reference
 is_obsolete: true
@@ -10458,7 +10459,7 @@ is_obsolete: true
 id: PO:0020010
 name: endexine
 namespace: plant_anatomy
-def: "OBSOLETE: The inner part of the exine, which stains." [APWeb:Glossary]
+def: "OBSOLETE. The inner part of the exine, which stains." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043671.
 subset: reference
 is_obsolete: true
@@ -10467,7 +10468,7 @@ is_obsolete: true
 id: PO:0020011
 name: nexine
 namespace: plant_anatomy
-def: "OBSOLETE: The inner, non-sculptured part of the exine which lies below the sexine." [APWeb:Glossary]
+def: "OBSOLETE. The inner, non-sculptured part of the exine which lies below the sexine." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043672.
 subset: reference
 is_obsolete: true
@@ -10476,7 +10477,7 @@ is_obsolete: true
 id: PO:0020012
 name: sexine
 namespace: plant_anatomy
-def: "OBSOLETE: The outer, sculptured layer of the exine, which lies above the nexine." [APWeb:Glossary]
+def: "OBSOLETE. The outer, sculptured layer of the exine, which lies above the nexine." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043673.
 subset: reference
 is_obsolete: true
@@ -10485,7 +10486,7 @@ is_obsolete: true
 id: PO:0020013
 name: tectum
 namespace: plant_anatomy
-def: "OBSOLETE: The layer of sexine, which forms a roof over the columellae, granules or other infratectal elements." [APWeb:Glossary]
+def: "OBSOLETE. The layer of sexine, which forms a roof over the columellae, granules or other infratectal elements." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043676,
 subset: reference
 synonym: "sexine 2" RELATED []
@@ -10495,7 +10496,7 @@ is_obsolete: true
 id: PO:0020014
 name: columella
 namespace: plant_anatomy
-def: "OBSOLETE: A rod-like element of the sexine/ectexine, either supporting the tectum or a caput." [APWeb:Glossary]
+def: "OBSOLETE. A rod-like element of the sexine/ectexine, either supporting the tectum or a caput." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043674.
 subset: reference
 synonym: "sexine 1" RELATED []
@@ -10505,7 +10506,7 @@ is_obsolete: true
 id: PO:0020015
 name: sculpture elements
 namespace: plant_anatomy
-def: "OBSOLETE: Third layer of sexine." [APWeb:Glossary]
+def: "OBSOLETE. Third layer of sexine." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043675.
 subset: reference
 synonym: "sexine 3" RELATED []
@@ -10515,7 +10516,7 @@ is_obsolete: true
 id: PO:0020016
 name: foot layer
 namespace: plant_anatomy
-def: "OBSOLETE: The inner layer of the ectexine." [APWeb:Glossary]
+def: "OBSOLETE. The inner layer of the ectexine." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043670.
 synonym: "nexine 1" RELATED []
 is_obsolete: true
@@ -10524,7 +10525,7 @@ is_obsolete: true
 id: PO:0020017
 name: intine
 namespace: plant_anatomy
-def: "OBSOLETE: The innermost of the major layers of the pollen grain wall, underlies the exine and borders the cytoplasm, not acetolysis resistant and is therefore absent in conventionally prepared palynological material." [APWeb:Glossary]
+def: "OBSOLETE. The innermost of the major layers of the pollen grain wall, underlies the exine and borders the cytoplasm, not acetolysis resistant and is therefore absent in conventionally prepared palynological material." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043678.
 subset: reference
 is_obsolete: true
@@ -10533,7 +10534,7 @@ is_obsolete: true
 id: PO:0020018
 name: germination pore
 namespace: plant_anatomy
-def: "OBSOLETE: Area through which the pollen imports the nutrition during its development, at the time of pollen germination, the pollen tube emerges through it." [GR:pj]
+def: "OBSOLETE. Area through which the pollen imports the nutrition during its development, at the time of pollen germination, the pollen tube emerges through it." [GR:pj]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043677.
 subset: reference
 synonym: "pollen pore" RELATED []
@@ -10927,7 +10928,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0020059
 name: pollen wall
 namespace: plant_anatomy
-def: "OBSOLETE: Complex wall surrounding the micrsopore." [UMSL:fz]
+def: "OBSOLETE. Complex wall surrounding the micrsopore." [UMSL:fz]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043667.
 subset: reference
 is_obsolete: true
@@ -11037,7 +11038,7 @@ id: PO:0020091
 name: obsolete microgametophyte
 namespace: plant_anatomy
 alt_id: PO:0020007
-def: "A gametophyte that produces pollen sperm cells." [POC:curators]
+def: "OBSOLETE. A gametophyte that produces pollen sperm cells." [POC:curators]
 comment: This term was made obsolete because it only applied to angiosperms. Consider new term microgametophyte (PO:0025280) that can apply to all plants. Also consider pollen (PO:0025281) or antheridial microgametophyte (PO:0025283).
 subset: reference
 subset: TraitNet
@@ -11055,7 +11056,7 @@ consider: PO:0025283
 id: PO:0020092
 name: obsolete megagametophyte
 namespace: plant_anatomy
-def: "A gametophyte that produces female gametes." [APweb:glossary]
+def: "OBSOLETE. A gametophyte that produces female gametes." [APweb:glossary]
 comment: This term was made obsolete because it only applied to angiosperms. Consider new term megagametophyte (PO:0025280) that can apply to all plants. Also consider embryo sac (PO:0025074) or archegonial megagametophyte (PO:0025282).
 subset: reference
 synonym: "embryo sac" RELATED []
@@ -11093,7 +11094,7 @@ is_a: PO:0025006 ! gamete
 id: PO:0020095
 name: polar nucleus
 namespace: plant_anatomy
-def: "OBSOLETE: Usually two nuclei in the center of the eight-nucleate embryo sac that fuse, and subsequently fuse with one of the male gametes to produce the endosperm." [APWeb:Glossary]
+def: "OBSOLETE. Usually two nuclei in the center of the eight-nucleate embryo sac that fuse, and subsequently fuse with one of the male gametes to produce the endosperm." [APWeb:Glossary]
 comment: Comment: this term is now available in the cellular_component aspect of the Gene Ontology (GO:0043078).
 is_obsolete: true
 
@@ -11274,7 +11275,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0020125
 name: elongation zone
 namespace: plant_anatomy
-def: "The portion of the root that includes small, densely cytoplasmic cells that are dividing and expanding in size." [GR:pj]
+def: "OBSOLETE. The portion of the root that includes small, densely cytoplasmic cells that are dividing and expanding in size." [GR:pj]
 comment: This term was made obsolete because the definition was not correct. A new term, root elongation zone (PO:0025181), was created instead.
 subset: reference
 is_obsolete: true
@@ -11813,7 +11814,7 @@ creation_date: 2010-05-07T02:36:24Z
 id: PO:0025027
 name: microgametophytic cell
 namespace: plant_anatomy
-def: "A plant cell that is part of a male gametophyte." [POC:rw]
+def: "OBSOLETE. A plant cell that is part of a male gametophyte." [POC:rw]
 comment: This term was made obsolete because it is not appropriate for non-seed plants.
 is_obsolete: true
 created_by: Ramona
@@ -14702,9 +14703,10 @@ creation_date: 2011-03-31T07:12:52Z
 id: PO:0025284
 name: embryo apical cell
 namespace: plant_anatomy
-def: "A meristematic apical cell that is part of a plant embryo and is the uppermost cell formed after the first division of a zygote." [ISBN:0471245208, ISBN:9780070588493]
+def: "A sporophyte meristematic apical cell that is part of a plant embryo and is the uppermost cell formed after the first division of a zygote." [ISBN:0471245208, ISBN:9780070588493]
+comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
 synonym: "embryonic meristematic apical cell" EXACT []
-is_a: PO:0030007 ! meristematic apical cell
+is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: develops_from PO:0000423 ! zygote
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
@@ -15150,10 +15152,22 @@ created_by: Ramona
 creation_date: 2011-05-11T01:48:37Z
 
 [Term]
+id: PO:0025323
+name: flower fascicle
+namespace: plant_anatomy
+def: "A reproductive shoot system that is a second or higher order inflorescence in which the second or higher order inflorescence branch bears two or more flowers but is not elongated." [PMID:12644644]
+comment: A fascicle appears to be a cluster of flowers in an axil of a single bract of the main inflorescence. Fascicles are common in some sections of the Fabaceae, where they are second order inflorescences.
+synonym: "floral fascicle" EXACT []
+xref: OBO_SF_PO:3165981
+is_a: PO:0025082 ! reproductive shoot system
+created_by: Ramona
+creation_date: 2011-07-07T10:52:27Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
-def: "A plant growth and development phase that begins with either meiosis or fertilization." [POC:curators]
+def: "OBSOLETE. A plant growth and development phase that begins with either meiosis or fertilization." [POC:curators]
 comment: The life cycle of all plants is characterized by the alternation of phases (or generations). The sporophytic phase has twice the chromosome complement of the gametophytic phase.
 is_obsolete: true
 created_by: Ramona
