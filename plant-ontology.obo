@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 07:07:2011 12:44
-saved-by: Ramona
-auto-generated-by: OBO-Edit 2.1-beta13
+date: 05:08:2011 12:49
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1-beta16
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -45,7 +45,6 @@ subset: Angiosperm
 subset: reference
 synonym: "pared de la antera" EXACT Spanish [POC:mag]
 synonym: "pollen sac wall" EXACT []
-synonym: "pared de la antera" EXACT Spanish [POC:mag]
 is_a: PO:0025307 ! microsporangium wall
 relationship: part_of PO:0009066 ! anther
 
@@ -62,7 +61,6 @@ synonym: "planta entera" EXACT Spanish [POC:mag]
 synonym: "prothallium" NARROW []
 synonym: "seedling" NARROW []
 synonym: "sporophyte" NARROW []
-synonym: "planta entera" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2968335
 is_a: PO:0009011 ! plant structure
 
@@ -84,7 +82,6 @@ def: "A plant cell that is grown or maintained in vitro." [POC:Curators]
 comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium.
 synonym: "c&#233lula cultivada" EXACT Spanish [POC:mag]
 synonym: "cell suspension" RELATED []
-synonym: "c&#233lula cultivada" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3289997
 is_a: PO:0000004 ! in vitro plant structure
 is_a: PO:0009002 ! plant cell
@@ -162,7 +159,6 @@ def: "Hook-like structure which develops at the apical part of the hypocotyl in 
 subset: reference
 synonym: "gancho apical" EXACT Spanish [POC:mag]
 synonym: "hypocotyl hook" RELATED []
-synonym: "gancho apical" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020100 ! hypocotyl
@@ -428,7 +424,6 @@ comment: Can occur in a stem or branch.
 synonym: "branch vascular system" NARROW []
 synonym: "sistema vascular del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "stem vascular system" NARROW []
-synonym: "sistema vascular del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0025198 ! shoot axis stele
 relationship: part_of PO:0025205 ! shoot system vascular system
@@ -441,7 +436,6 @@ def: "Enlargement or swelling at position of dormant adventitious root primordiu
 comment: Unlike the root nodules, these contain functioning chloroplasts in the nodule cortex and are therefore capable of carbon fixation. Note: stem nodule is commonly used term for this structure, although the nodules are formed at positions of dormant adventitious root primordia.
 synonym: "n&#243dulo de la ra&#237z adventicia" EXACT Spanish [POC:mag]
 synonym: "stem primordium" RELATED []
-synonym: "n&#243dulo de la ra&#237z adventicia" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132479
 is_a: PO:0003023 ! root nodule
 relationship: part_of PO:0000042 ! shoot-borne root
@@ -469,7 +463,6 @@ synonym: "adventitious root" BROAD []
 synonym: "aerial root" NARROW []
 synonym: "epiblasto (epiblastema) que se origina en la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "stilt root" NARROW []
-synonym: "epiblasto (epiblastema) que se origina en la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0009005 ! root
 
 [Term]
@@ -513,7 +506,6 @@ synonym: "lateral seminal root" RELATED []
 synonym: "ra&#237z seminal" EXACT Spanish [POC:mag]
 synonym: "scutellar nodal root" RELATED []
 synonym: "secondary root" RELATED []
-synonym: "ra&#237z seminal" EXACT Spanish [POC:mag]
 is_a: PO:0000045 ! embryo root
 is_a: PO:0003005 ! nodal root
 
@@ -588,7 +580,6 @@ namespace: plant_anatomy
 def: "A portion of ground tissue that is part of a cortex and part of the petiole." [POC:curators, TAIR:ki]
 synonym: "cortex (corteza) del pec&#237olo   " EXACT Spanish [POC:mag]
 synonym: "portion of petiole corex tissue" EXACT []
-synonym: "cortex (corteza) del pec&#237olo   " EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0020038 ! petiole
@@ -629,7 +620,7 @@ name: inflorescence bud
 namespace: plant_anatomy
 def: "A bud that develops into an inflorescence." [POC:curators]
 subset: Musa
-synonym: "male bud" NARROW [CO_125:0000049 "Term used for Musa to describe the usually persistent bud when it is only composed of bracts with male flowers."]
+synonym: "male bud" NARROW [CO_125:0000049]
 synonym: "yema de inflorescencia" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3147067
 is_a: PO:0025084 ! reproductive bud
@@ -650,7 +641,6 @@ namespace: plant_anatomy
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
 synonym: "c&#233lula inicial de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "root stem cell" RELATED []
-synonym: "c&#233lula inicial de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000295 ! cambial initial
 disjoint_from: PO:0000349 ! epidermal initial
@@ -664,7 +654,6 @@ namespace: plant_anatomy
 def: "A root initial cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:ki]
 synonym: "c&#233lula inicial del cortex/endodermis de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "root cortex-endodermis stem cell" EXACT []
-synonym: "c&#233lula inicial del cortex/endodermis de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0000059 ! root initial cell
 
 [Term]
@@ -674,7 +663,6 @@ namespace: plant_anatomy
 def: "A root initial cell that produces lateral root-cap cells and root epidermis." [POC:curators]
 synonym: "c&#233lula inicial del caliptra de la ra&#237z lateral" EXACT Spanish [POC:mag]
 synonym: "lateral root-cap-epidermal stem cell" EXACT []
-synonym: "c&#233lula inicial del caliptra de la ra&#237z lateral" EXACT Spanish [POC:mag]
 is_a: PO:0000059 ! root initial cell
 
 [Term]
@@ -685,7 +673,6 @@ def: "An epidermal initial that undergoes several rounds of uneven division, eac
 synonym: "inicial estom&#225tica (meristemoide inicial)" EXACT Spanish [POC:mag]
 synonym: "stomatal initial cell" EXACT []
 synonym: "stomatal meristemoid" EXACT []
-synonym: "inicial estom&#225tica (meristemoide inicial)" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3112108
 is_a: PO:0000349 ! epidermal initial
 created_by: Ramona
@@ -701,7 +688,6 @@ synonym: "c&#233lula procambial de la hoja" EXACT Spanish [POC:mag]
 synonym: "dispersed meristematic cell" EXACT [PMCID:PMC1550771]
 synonym: "DMC" EXACT [PMCID:PMC1550771]
 synonym: "leaf procambium cell" EXACT []
-synonym: "c&#233lula procambial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025258 ! procambial cell
 relationship: part_of PO:0025259 ! leaf procambium
 created_by: Ramona
@@ -817,7 +803,6 @@ synonym: "c&#233lula inicial fusiforme" EXACT Spanish [POC:mag]
 synonym: "fusiform initial cell" EXACT []
 synonym: "xylem initial" RELATED []
 synonym: "xylem mother cell" RELATED []
-synonym: "c&#233lula inicial fusiforme" EXACT Spanish [POC:mag]
 xref: CL:0000009
 is_a: PO:0000295 ! cambial initial
 
@@ -840,7 +825,6 @@ namespace: plant_anatomy
 def: "A cambial initial cell that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
 synonym: "c&#233lula inicial de rayo" EXACT Spanish [POC:mag]
 synonym: "ray initial cell" EXACT []
-synonym: "c&#233lula inicial de rayo" EXACT Spanish [POC:mag]
 xref: CL:0000316
 is_a: PO:0000295 ! cambial initial
 
@@ -856,7 +840,6 @@ synonym: "c&#233lula esperm&#225tica o esperma" EXACT Spanish [POC:mag]
 synonym: "male gamete" EXACT []
 synonym: "microgamete" EXACT []
 synonym: "sperm nucleus" RELATED []
-synonym: "c&#233lula esperm&#225tica o esperma" EXACT Spanish [POC:mag]
 xref: CL:0000366
 is_a: PO:0025006 ! gamete
 relationship: develops_from PO:0020097 ! generative cell
@@ -871,7 +854,6 @@ synonym: "branch epidermis" NARROW []
 synonym: "culm epidermis" RELATED []
 synonym: "epidermis del eje del tallo" EXACT Spanish [POC:mag]
 synonym: "stem epidermis" NARROW []
-synonym: "epidermis del eje del tallo" EXACT Spanish [POC:mag]
 is_a: PO:0006035 ! shoot epidermis
 relationship: part_of PO:0025029 ! shoot axis
 
@@ -883,7 +865,6 @@ def: "A shoot epidermal cell that surrounds a trichome and provides its support.
 synonym: "c&#233lula de encaje" EXACT Spanish [POC:mag]
 synonym: "cell located at the base of the trichome" RELATED []
 synonym: "trichome support cell" RELATED []
-synonym: "c&#233lula de encaje" EXACT Spanish [POC:mag]
 xref: CL:0000297
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
@@ -896,7 +877,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that is part of a plant structure that has as parts a separation layer and a protective layer and is involved in the abscission of the structure." [ISBN:047124529, POC:curators]
 synonym: "abscission layer" RELATED []
 synonym: "zona de absici&#243n   " EXACT Spanish [POC:mag]
-xref: GO:0009838 "abscission"
+xref: GO:0009838
 is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
@@ -920,7 +901,6 @@ synonym: "cenocytic endosperm" RELATED []
 synonym: "coenocytic endosperm" RELATED []
 synonym: "endosperma con núcleos libres" EXACT Spanish [POC:mag]
 synonym: "nuclear endosperm" RELATED []
-synonym: "endosperma con núcleos libres" EXACT Spanish [POC:mag]
 is_a: PO:0009089 ! endosperm
 
 [Term]
@@ -939,7 +919,6 @@ def: "A portion of plant tissue that is the region of the endosperm closest to t
 synonym: "endosperma micr&#243pilar" EXACT Spanish [POC:mag]
 synonym: "micropylar region" RELATED []
 synonym: "portion of micropylar endosperm" EXACT []
-synonym: "endosperma micr&#243pilar" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -952,7 +931,6 @@ comment: Not in current literature. More like an attribute.
 synonym: "chalazal endosperm cyst" RELATED []
 synonym: "ciste calazal" EXACT Spanish [POC:mag]
 synonym: "portion of chalazal cyst" EXACT []
-synonym: "ciste calazal" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -976,7 +954,6 @@ synonym: "branch cortex" NARROW []
 synonym: "cortex del eje del epiblasto (epiblastema) del tallo" EXACT Spanish [POC:mag]
 synonym: "portion of shoot axis cortex tissue" EXACT []
 synonym: "stem cortex" NARROW []
-synonym: "cortex del eje del epiblasto (epiblastema) del tallo" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0025029 ! shoot axis
@@ -1037,7 +1014,7 @@ name: axillary bud meristem
 namespace: plant_anatomy
 def: "A shoot meristem formed in the axil of the leaf." [TAIR:lr]
 synonym: "axillary meristem" RELATED []
-synonym: "meristema  de yema axilar" EXACT Spanish [POC:mag]
+synonym: "meristema de yema axilar" EXACT Spanish [POC:mag]
 is_a: PO:0006079 ! shoot meristem
 
 [Term]
@@ -1069,7 +1046,6 @@ synonym: "endodermis" EXACT Spanish [POC:mag]
 synonym: "endodermoid" RELATED []
 synonym: "portion of endodermal tissue" EXACT []
 synonym: "portion of epidermis tissue" EXACT []
-synonym: "endodermis" EXACT Spanish [POC:mag]
 xref: SGF:3016668
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
@@ -1095,7 +1071,6 @@ comment: In dicots and gymnosperms, the cortex consists of mainly parenchyma cel
 subset: TraitNet
 synonym: "cortex de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "portion of root cortex tissue" EXACT []
-synonym: "cortex de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0009005 ! root
@@ -1118,7 +1093,6 @@ namespace: plant_anatomy
 def: "A root epidermal cell that is formed after asymmetric division of an epidermal initial and does not give rise to a root hair." [ISBN:0387987819]
 synonym: "atricoblasto" EXACT Spanish [POC:mag]
 synonym: "non-hair cell" RELATED []
-synonym: "atricoblasto" EXACT Spanish [POC:mag]
 xref: CL:0000332
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
@@ -1202,7 +1176,6 @@ subset: TraitNet
 synonym: "miembro del tubo criboso" EXACT Spanish [POC:mag]
 synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
-synonym: "miembro del tubo criboso" EXACT Spanish [POC:mag]
 xref: CL:0000268
 xref: CL:0000543
 is_a: PO:0000081 ! axial cell
@@ -1247,7 +1220,6 @@ def: "An initial cell that is part of the vascular or cork cambium and by pericl
 synonym: "c&#233lula inicial del cambium" EXACT Spanish [POC:mag]
 synonym: "cambial cell" EXACT []
 synonym: "cambial initial cell" EXACT []
-synonym: "c&#233lula inicial del cambium" EXACT Spanish [POC:mag]
 xref: CL:0000272
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000059 ! root initial cell
@@ -1297,7 +1269,6 @@ namespace: plant_anatomy
 def: "An initial cell that is part of an epidermis and gives rise to specialized cell types of the epidermis." [TAIR:lr]
 synonym: "c&#233lula inicial de la epidermis" EXACT Spanish [POC:mag]
 synonym: "epidermal initial cell" EXACT []
-synonym: "c&#233lula inicial de la epidermis" EXACT Spanish [POC:mag]
 xref: CL:0000538
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000059 ! root initial cell
@@ -1349,7 +1320,6 @@ namespace: plant_anatomy
 def: "A portion of xylem tissue that is part of the primary xylem and differentiates after the protoxylem and before the secondary xylem, if any of the latter is formed." [ISBN:047125208]
 synonym: "metaxilema" EXACT Spanish [POC:mag]
 synonym: "portion of metaxylem tissue" EXACT []
-synonym: "metaxilema" EXACT Spanish [POC:mag]
 is_a: PO:0005352 ! xylem
 relationship: part_of PO:0005849 ! primary xylem
 
@@ -1390,7 +1360,6 @@ def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) 
 synonym: "megaspore mother cell" EXACT []
 synonym: "megasporocito" EXACT Spanish [POC:mag]
 synonym: "MMC" EXACT []
-synonym: "megasporocito" EXACT Spanish [POC:mag]
 xref: CL:0000320
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006015 ! female archesporial cell
@@ -1973,7 +1942,6 @@ subset: TraitNet
 synonym: "complejo estom&#225tico" EXACT Spanish [POC:mag]
 synonym: "stoma" BROAD []
 synonym: "stomata" BROAD []
-synonym: "complejo estom&#225tico" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132410
 is_a: PO:0006035 ! shoot epidermis
 
@@ -1999,7 +1967,6 @@ def: "A plant cell that is the lower-most cell formed after the first division o
 comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
 synonym: "c&#233lula basal" EXACT Spanish [POC:mag]
 synonym: "embryonic basal cell" EXACT []
-synonym: "c&#233lula basal" EXACT Spanish [POC:mag]
 xref: CL:0000646
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000423 ! zygote
@@ -2014,7 +1981,6 @@ subset: TraitNet
 synonym: "miembro de vaso" EXACT Spanish [POC:mag]
 synonym: "vessel element" RELATED []
 synonym: "vessel segment" RELATED []
-synonym: "miembro de vaso" EXACT Spanish [POC:mag]
 is_a: PO:0000290 ! tracheary element
 
 [Term]
@@ -2183,7 +2149,6 @@ subset: reference
 subset: TraitNet
 synonym: "estol&#243n" EXACT Spanish [POC:mag]
 synonym: "runner" RELATED []
-synonym: "estol&#243n" EXACT Spanish [POC:mag]
 is_a: PO:0025073 ! branch
 
 [Term]
@@ -2204,7 +2169,6 @@ def: "An enlarged more or less thin-walled leaf pavement cell, present, with oth
 comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "c&#233lula bulliforme" EXACT Spanish [POC:mag]
 synonym: "motor cell" RELATED []
-synonym: "c&#233lula bulliforme" EXACT Spanish [POC:mag]
 is_a: PO:0025212 ! leaf pavement cell
 
 [Term]
@@ -2226,7 +2190,6 @@ comment: Protective in function because the walls are highly impervious to water
 synonym: "cork" RELATED []
 synonym: "felema" EXACT Spanish [POC:mag]
 synonym: "portion of phellem tissue" EXACT []
-synonym: "felema" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
 relationship: part_of PO:0005048 ! shoot axis periderm
@@ -2306,7 +2269,6 @@ comment: Initial cells are often part of a portion of tissue that is composed mo
 synonym: "c&#233lula inicial" EXACT Spanish [POC:mag]
 synonym: "meristemoid" EXACT []
 synonym: "stem cell" RELATED []
-synonym: "c&#233lula inicial" EXACT Spanish [POC:mag]
 xref: CL:0000034
 xref: CL:0000266
 xref: OBO_SF_PO:3166706
@@ -2443,7 +2405,6 @@ def: "A growth layer of secondary xylem or secondary phloem as seen in transecti
 subset: TraitNet
 synonym: "anillo de crecimiento" EXACT Spanish [POC:mag]
 synonym: "annual ring" EXACT []
-synonym: "anillo de crecimiento" EXACT Spanish [POC:mag]
 is_a: PO:0005848 ! secondary xylem
 
 [Term]
@@ -2454,7 +2415,6 @@ def: "The wood formed in first part of a growth ring and characterized by a lowe
 subset: TraitNet
 synonym: "madera temprana" EXACT Spanish [POC:mag]
 synonym: "spring wood" RELATED []
-synonym: "madera temprana" EXACT Spanish [POC:mag]
 is_a: PO:0004514 ! growth ring
 
 [Term]
@@ -2466,7 +2426,6 @@ subset: Citrus
 subset: TraitNet
 synonym: "madera tard&#237a" EXACT Spanish [POC:mag]
 synonym: "summer wood" RELATED []
-synonym: "madera tard&#237a" EXACT Spanish [POC:mag]
 is_a: PO:0004514 ! growth ring
 
 [Term]
@@ -2485,7 +2444,6 @@ def: "All tissues outside the vascular cambium or the xylem; in older trees may 
 subset: TraitNet
 synonym: "corteza" EXACT Spanish [POC:mag]
 synonym: "portion of bark tissue" EXACT []
-synonym: "corteza" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0005043 ! secondary phloem
 
@@ -2547,7 +2505,7 @@ name: wood parenchyma cell
 namespace: plant_anatomy
 def: "Parenchyma cell occurring within secondary xylem." [POC:curators]
 subset: TraitNet
-synonym: "c&#233lula parenquim&#225tica  de la madera" EXACT Spanish [POC:mag]
+synonym: "c&#233lula parenquim&#225tica de la madera" EXACT Spanish [POC:mag]
 is_a: PO:0000074 ! parenchyma cell
 
 [Term]
@@ -2720,7 +2678,6 @@ subset: TraitNet
 synonym: "sistema de epiblasto (epiblastema) que nace en la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "sucker" BROAD []
 synonym: "sucker shoot" RELATED []
-synonym: "sistema de epiblasto (epiblastema) que nace en la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0009006 ! shoot system
 
 [Term]
@@ -2732,7 +2689,6 @@ subset: reference
 synonym: "branch" RELATED []
 synonym: "sistema de epiblasto (epiblastema) que nace en el epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "sucker" BROAD []
-synonym: "sistema de epiblasto (epiblastema) que nace en el epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0009006 ! shoot system
 
 [Term]
@@ -2970,7 +2926,6 @@ namespace: plant_anatomy
 def: "A portion of ground tissue that is part of a cortex and part of a paraclade." [POC:curators, TAIR:ki]
 synonym: "cortex (corteza) del paraclado" EXACT Spanish [POC:mag]
 synonym: "portion of paraclade cortex tissue" EXACT []
-synonym: "cortex (corteza) del paraclado" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2903966
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0004720 ! paraclade
@@ -2983,7 +2938,6 @@ namespace: plant_anatomy
 def: "A portion of ground tissue that is part of a cortex and part of a pedicel." [POC:curators, TAIR:ki]
 synonym: "cortex (corteza) del pedicelo" EXACT Spanish [POC:mag]
 synonym: "portion of pedicel cortex tissue" EXACT []
-synonym: "cortex (corteza) del pedicelo" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 relationship: part_of PO:0009052 ! pedicel
@@ -3037,7 +2991,6 @@ synonym: "basal axillary branch" RELATED []
 synonym: "epiblasto (epiblastema) axilar basal" EXACT Spanish [POC:mag]
 synonym: "ratoon" RELATED []
 synonym: "tiller" RELATED []
-synonym: "epiblasto (epiblastema) axilar basal" EXACT Spanish [POC:mag]
 is_a: PO:0006343 ! axillary shoot system
 
 [Term]
@@ -3060,7 +3013,6 @@ subset: TraitNet
 synonym: "branch trichome" NARROW []
 synonym: "eje de tricoma del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "stem trichome" NARROW []
-synonym: "eje de tricoma del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0000112 ! shoot axis epidermis
 
@@ -3276,7 +3228,6 @@ comment: The cells in the mesophyll layer(s) may not differentiate similar to th
 subset: Poaceae
 synonym: "capa media de la pared del ovario" EXACT Spanish [POC:mag]
 synonym: "ovary wall middle layer" EXACT []
-synonym: "capa media de la pared del ovario" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2903966
 is_a: PO:0005426 ! chlorenchyma
 relationship: part_of PO:0005022 ! ovary wall
@@ -3349,7 +3300,6 @@ subset: TraitNet
 synonym: "branch pith" NARROW []
 synonym: "m&#233dula del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "stem pith" NARROW []
-synonym: "m&#233dula del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0006109 ! pith
 relationship: part_of PO:0025029 ! shoot axis
 
@@ -3362,7 +3312,6 @@ comment: Part of the bark.
 subset: TraitNet
 synonym: "floema secundario" EXACT Spanish [POC:mag]
 synonym: "portion of secondary phloem tissue" EXACT []
-synonym: "floema secundario" EXACT Spanish [POC:mag]
 is_a: PO:0005417 ! phloem
 
 [Term]
@@ -3375,7 +3324,6 @@ subset: TraitNet
 synonym: "peridermis" EXACT Spanish [POC:mag]
 synonym: "portion of periderm tissue" EXACT []
 synonym: "portion of peridermal tissue" EXACT []
-synonym: "peridermis" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3008013
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0025004 ! plant axis
@@ -3399,7 +3347,6 @@ comment: Can occur on a stem or branch.
 synonym: "branch periderm" NARROW []
 synonym: "peridermis del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "stem periderm" NARROW []
-synonym: "peridermis del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3008032
 is_a: PO:0005046 ! periderm
 relationship: part_of PO:0004518 ! bark
@@ -3413,7 +3360,6 @@ def: "A portion of ground tissue often resembling cortical parenchyma produced c
 subset: Rice
 synonym: "felodermis" EXACT Spanish [POC:mag]
 synonym: "portion of phelloderm tissue" EXACT []
-synonym: "felodermis" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
 relationship: part_of PO:0005048 ! shoot axis periderm
@@ -3426,7 +3372,6 @@ def: "A portion of ground tissue that is the outermost layer of a portion of cor
 comment: A layer or layers of cells beneath the epidermis that is distinct in appearance from adjacent tissues.
 synonym: "hipodermis" EXACT Spanish [POC:mag]
 synonym: "portion of hypodermal tissue" EXACT []
-synonym: "hipodermis" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3016668
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
@@ -3439,7 +3384,6 @@ def: "A portion of plant tissue that consists of mass of undifferentiated plant 
 comment: Consists primarily of parenchyma cells but may contain other cell types as the callus begins to differentiate. May be formed as a result of wounding or may develop in culture.
 synonym: "callo" EXACT Spanish [POC:mag]
 synonym: "portion of callus tissue" EXACT []
-synonym: "callo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3280004
 is_a: PO:0009007 ! portion of plant tissue
 
@@ -3460,7 +3404,6 @@ comment: Can occur in a stem or branch.
 synonym: "branch hypodermis" NARROW []
 synonym: "hipodermis del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "stem hypodermis" NARROW []
-synonym: "hipodermis del eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0005051 ! hypodermis
 relationship: part_of PO:0000223 ! shoot axis cortex
 
@@ -3473,7 +3416,6 @@ comment: Can occur in a stem or branch.
 synonym: "branch endodermis" NARROW []
 synonym: "endodermis de eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "stem endodermis" NARROW []
-synonym: "endodermis de eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0000252 ! endodermis
 relationship: part_of PO:0000223 ! shoot axis cortex
 
@@ -3526,7 +3468,6 @@ def: "A portion of plant tissue that is the outermost layer of endosperm in a se
 subset: Angiosperm
 synonym: "capa de aleurona" EXACT Spanish [POC:mag]
 synonym: "fruit aleurone layer" EXACT []
-synonym: "capa de aleurona" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2903966
 xref: OBO_SF_PO:3184958
 xref: OBO_SF_PO:3185054
@@ -3552,7 +3493,6 @@ comment: Functions in the conduction of organic substances in vascular plants.
 subset: TraitNet
 synonym: "floema" EXACT Spanish [POC:mag]
 synonym: "portion of phloem tissue" EXACT []
-synonym: "floema" EXACT Spanish [POC:mag]
 is_a: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0030048 ! leptome
 
@@ -3566,7 +3506,6 @@ subset: TraitNet
 synonym: "par&#233nquima" EXACT Spanish [POC:mag]
 synonym: "portion of parenchyma tissue" EXACT []
 synonym: "portion of parenchymatous tissue" EXACT []
-synonym: "par&#233nquima" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3007987
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3579,7 +3518,6 @@ subset: TraitNet
 synonym: "col&#233nquima" EXACT Spanish [POC:mag]
 synonym: "portion of collenchyma tissue" EXACT []
 synonym: "supporting tissue" RELATED []
-synonym: "col&#233nquima" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 
 [Term]
@@ -3590,7 +3528,6 @@ def: "Chloroplast-containing parenchyma tissue." [ISBN:0080374913]
 subset: TraitNet
 synonym: "clor&#233nquima" EXACT Spanish [POC:mag]
 synonym: "portion of chlorenchyma tissue" EXACT []
-synonym: "clor&#233nquima" EXACT Spanish [POC:mag]
 is_a: PO:0005421 ! parenchyma
 
 [Term]
@@ -3602,7 +3539,6 @@ subset: TraitNet
 synonym: "escler&#233nquima" EXACT Spanish [POC:mag]
 synonym: "portion of sclerenchyma tissue" EXACT []
 synonym: "portion of sclerenchymatous tissue" EXACT []
-synonym: "escler&#233nquima" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 
 [Term]
@@ -3632,7 +3568,6 @@ def: "Lateral meristem which produces the phellem (cork) and the phelloderm." [I
 subset: TraitNet
 synonym: "cambium de corcho" EXACT Spanish [POC:mag]
 synonym: "phellogen" RELATED []
-synonym: "cambium de corcho" EXACT Spanish [POC:mag]
 is_a: PO:0005597 ! cambium
 relationship: part_of PO:0005048 ! shoot axis periderm
 
@@ -3663,7 +3598,6 @@ comment: The term was made obsolete because lamellar form is an attribute of reg
 synonym: "col&#233nquima laminar" EXACT Spanish [POC:mag]
 synonym: "plate collenchyma" RELATED []
 synonym: "tangential collenchyma" RELATED []
-synonym: "col&#233nquima laminar" EXACT Spanish [POC:mag]
 is_obsolete: true
 
 [Term]
@@ -3688,7 +3622,6 @@ comment: If you are annotating to this term, please add an additional annotation
 subset: TraitNet
 synonym: "mes&#243filo esponjoso" EXACT Spanish [POC:mag]
 synonym: "spongy parenchyma" RELATED []
-synonym: "mes&#243filo esponjoso" EXACT Spanish [POC:mag]
 is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
 
@@ -3701,7 +3634,6 @@ comment: If you are annotating to this term, please add an additional annotation
 subset: TraitNet
 synonym: "mes&#243filo en empalizada" EXACT Spanish [POC:mag]
 synonym: "palisade parenchyma" RELATED []
-synonym: "mes&#243filo en empalizada" EXACT Spanish [POC:mag]
 is_a: PO:0006070 ! mesophyll
 relationship: part_of PO:0005645 ! leaf mesophyll
 
@@ -3742,7 +3674,6 @@ namespace: plant_anatomy
 def: "A duct of schizogenous origin lined with resin-secreting cells and containing resin." [GR:pj, ISBN:0080374913]
 synonym: "canal de resina" EXACT Spanish [POC:mag]
 synonym: "resin duct" RELATED []
-synonym: "canal de resina" EXACT Spanish [POC:mag]
 is_a: PO:0005656 ! portion of secretory tissue
 
 [Term]
@@ -3753,7 +3684,6 @@ def: "A gland or a cavity lined with cells that secrete oils." [GR:pj]
 comment: Oil glands are schizogenous.
 synonym: "gl&#225ndula aceitosa" EXACT Spanish [POC:mag]
 synonym: "oil cavity" RELATED []
-synonym: "gl&#225ndula aceitosa" EXACT Spanish [POC:mag]
 is_a: PO:0005656 ! portion of secretory tissue
 
 [Term]
@@ -3768,7 +3698,6 @@ synonym: "epidermal layer" EXACT []
 synonym: "epidermis" EXACT Spanish [POC:mag]
 synonym: "multiseriate epidermis" RELATED []
 synonym: "portion of epidermal tissue" EXACT []
-synonym: "epidermis" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3008011
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0006210 ! protoderm
@@ -3782,7 +3711,6 @@ comment: As applied to an intercellular space, originating by one or a combinati
 subset: TraitNet
 synonym: "aer&#233nquima" EXACT Spanish [POC:mag]
 synonym: "portion of aerenchyma tissue" RELATED []
-synonym: "aer&#233nquima" EXACT Spanish [POC:mag]
 is_a: PO:0005421 ! parenchyma
 
 [Term]
@@ -3811,7 +3739,6 @@ def: "A maximal portion of ground tissue between the vascular system and the epi
 subset: TraitNet
 synonym: "cortex (corteza)" EXACT Spanish [POC:mag]
 synonym: "portion of cortex tissue" EXACT []
-synonym: "cortex (corteza)" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3011071
 is_a: PO:0025059 ! portion of ground tissue
 
@@ -3831,7 +3758,6 @@ def: "The sub-epidermal layer or layers of cells of the root similar in structur
 comment: The cell walls are thickened and contain suberin. Absent in pteridophytes, fibrous in Phoenix and accompanied by sclerenchyma in Ananas.
 synonym: "exodermis" EXACT Spanish [POC:mag]
 synonym: "root hypodermis" RELATED []
-synonym: "exodermis" EXACT Spanish [POC:mag]
 is_a: PO:0005051 ! hypodermis
 relationship: part_of PO:0000258 ! root cortex
 
@@ -3898,7 +3824,6 @@ synonym: "lower rudimentary glume" RELATED []
 synonym: "outer empty glume" RELATED []
 synonym: "outer glume" RELATED []
 synonym: "outer rudimentary glume" RELATED []
-synonym: "gluma inferior" EXACT Spanish [POC:mag]
 is_a: PO:0009039 ! glume
 
 [Term]
@@ -3911,7 +3836,6 @@ subset: reference
 subset: TraitNet
 synonym: "cat&#225fila en escama" EXACT Spanish [POC:mag]
 synonym: "cataphyll" RELATED []
-synonym: "cat&#225fila en escama" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3167323
 is_a: PO:0006001 ! phyllome
 
@@ -3928,7 +3852,6 @@ synonym: "inner glume" RELATED []
 synonym: "inner rudimentary glume" RELATED []
 synonym: "upper empty glume" RELATED []
 synonym: "upper rudimentary glume" RELATED []
-synonym: "gluma superior" EXACT Spanish [POC:mag]
 is_a: PO:0009039 ! glume
 
 [Term]
@@ -3949,7 +3872,6 @@ subset: Angiosperm
 subset: reference
 synonym: "capa primaria de c&#233lulas parietales " EXACT Spanish [POC:mag]
 synonym: "pollen sac primary parietal cell layer" EXACT []
-synonym: "capa primaria de c&#233lulas parietales " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3298010
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0000002 ! anther wall
@@ -3964,7 +3886,6 @@ subset: Angiosperm
 subset: reference
 synonym: "capa secundaria de c&#233lulas parietales" EXACT Spanish [POC:mag]
 synonym: "pollen sac secondary parietal cell layer" EXACT []
-synonym: "capa secundaria de c&#233lulas parietales" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3298010
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0006006 ! anther wall primary parietal cell layer
@@ -3979,7 +3900,6 @@ comment: In many angiosperms, including <i>Arabidopsis</i>, it divides periclina
 subset: Angiosperm
 synonym: "capa interna secundaria de c&#233lulas parietales" EXACT Spanish [POC:mag]
 synonym: "pollen sac inner secondary parietal cell layer" EXACT []
-synonym: "capa interna secundaria de c&#233lulas parietales" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3298010
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
@@ -3992,7 +3912,6 @@ comment: In many angiosperms, including <i>Arabidopsis</i>, it differentiates in
 subset: Angiosperm
 synonym: "capa externa secundaria de c&#233lulas parietales  " EXACT Spanish [POC:mag]
 synonym: "pollen sac outer secondary parietal cell layer" EXACT []
-synonym: "capa externa secundaria de c&#233lulas parietales  " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3298010
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
@@ -4043,7 +3962,6 @@ comment: Found in heterosporous ferns and seed plants. May also give rise to ste
 synonym: "anther archesporial cell" NARROW []
 synonym: "c&#233lula masculina arquesporial" EXACT Spanish [POC:mag]
 synonym: "male archesporial initial" EXACT []
-synonym: "c&#233lula masculina arquesporial" EXACT Spanish [POC:mag]
 is_a: PO:0030056 ! archesporial cell
 relationship: part_of PO:0025202 ! microsporangium
 
@@ -4056,7 +3974,6 @@ comment: Found in heterosporous ferns and seed plants. May also give rise to ste
 synonym: "c&#233lula femenina arquesporial" EXACT Spanish [POC:mag]
 synonym: "female archesporial initial" EXACT []
 synonym: "ovule archesporial cell" NARROW []
-synonym: "c&#233lula femenina arquesporial" EXACT Spanish [POC:mag]
 is_a: PO:0030056 ! archesporial cell
 relationship: part_of PO:0025201 ! megasporangium
 
@@ -4069,7 +3986,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "epidermis de la hoja" EXACT Spanish [POC:mag]
 synonym: "foliage leaf epidermis" EXACT []
 synonym: "phyllid epidermis" EXACT []
-synonym: "epidermis de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025157 ! phyllome epidermis
 intersection_of: PO:0005679 ! epidermis
 intersection_of: part_of PO:0025034 ! leaf
@@ -4091,7 +4007,6 @@ def: "A portion of shoot epidermis that covers the adaxial/upper surface of a le
 comment: Used to refer to an adaxial epidermis of an entire leaf. More specific terms exist for leaf lamina adaxial epidermis and petiole adaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis adaxial de la hoja" EXACT Spanish [POC:mag]
 synonym: "upper epidermis" RELATED []
-synonym: "epidermis adaxial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0006016 ! leaf epidermis
 
 [Term]
@@ -4102,7 +4017,6 @@ def: "A portion of leaf epidermis that covers the abaxial/lower surface of a lea
 comment: Used to refer to an abaxial epidermis of an entire leaf. More specific terms exist for leaf lamina abaxial epidermis and petiole abaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis abaxial de la hoja" EXACT Spanish [POC:mag]
 synonym: "lower epidermis" RELATED []
-synonym: "epidermis abaxial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0006016 ! leaf epidermis
 
 [Term]
@@ -4126,7 +4040,6 @@ def: "A root apical meristem that is part of an adventitious root." [GR:pj]
 synonym: "crown root meristem" RELATED []
 synonym: "meristema de la ra&#237z adventicia" EXACT Spanish [POC:mag]
 synonym: "seminal root meristem" RELATED []
-synonym: "meristema de la ra&#237z adventicia" EXACT Spanish [POC:mag]
 is_a: PO:0020147 ! root apical meristem
 relationship: part_of PO:0000042 ! shoot-borne root
 
@@ -4184,7 +4097,6 @@ def: "A short, abrupt, flexible point present at the apex of the palea." [GR:pj]
 subset: reference
 synonym: "ap&#237culo de la palea" EXACT Spanish [POC:mag]
 synonym: "apiculus" RELATED []
-synonym: "ap&#237culo de la palea" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009038 ! palea
@@ -4220,7 +4132,6 @@ comment: The root epidermis is different from the shoot epidermis in its origin,
 synonym: "epiblem" RELATED []
 synonym: "epidermis de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "rhizodermis" RELATED []
-synonym: "epidermis de la ra&#237z" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3008016
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0025025 ! root system
@@ -4263,8 +4174,8 @@ id: PO:0006042
 name: velamen
 namespace: plant_anatomy
 def: "A multiseriate epidermis found in aerial roots of some monocots. Most of its cells are dead and store water like a sponge." [ISBN:0080374913]
-synonym: "velamen radicum" RELATED []
 synonym: "velamen" EXACT Spanish [POC:mag]
+synonym: "velamen radicum" RELATED []
 is_a: PO:0006036 ! root epidermis
 
 [Term]
@@ -4321,7 +4232,6 @@ def: "That part of the seed coat that develops from the outer surface of the out
 synonym: "exotesta/testa exterior" EXACT Spanish [POC:mag]
 synonym: "portion of exotesta tissue" EXACT []
 synonym: "seed coat outer epidermis" RELATED []
-synonym: "exotesta/testa exterior" EXACT Spanish [POC:mag]
 is_a: PO:0006048 ! seed coat epidermis
 relationship: part_of PO:0020057 ! testa
 
@@ -4333,7 +4243,6 @@ def: "That part of the seed coat that develops from the inner epidermis of the o
 synonym: "endotesta/testa interior" EXACT Spanish [POC:mag]
 synonym: "portion of endotesta tissue" EXACT []
 synonym: "seed coat inner epidermis" RELATED []
-synonym: "endotesta/testa interior" EXACT Spanish [POC:mag]
 is_a: PO:0006048 ! seed coat epidermis
 relationship: part_of PO:0020057 ! testa
 
@@ -4421,7 +4330,6 @@ namespace: plant_anatomy
 def: "A portion of carpel epidermis that is part of a style." [POC:rw]
 synonym: "epidermis del estilo" EXACT Spanish [POC:mag]
 synonym: "transmitting tract epidermis" RELATED []
-synonym: "epidermis del estilo" EXACT Spanish [POC:mag]
 is_a: PO:0025096 ! carpel epidermis
 relationship: part_of PO:0009074 ! style
 
@@ -4538,7 +4446,6 @@ comment: In stem or root it is differentiated behind the apical meristem.
 subset: TraitNet
 synonym: "floema primario" EXACT Spanish [POC:mag]
 synonym: "portion of primary phloem tissue" EXACT []
-synonym: "floema primario" EXACT Spanish [POC:mag]
 is_a: PO:0005417 ! phloem
 
 [Term]
@@ -4548,7 +4455,6 @@ namespace: plant_anatomy
 def: "Part of the primary phloem that differentiates after the protophloem and before the secondary phloem, if any of the latter is formed." [ISBN:0471245194]
 synonym: "metafloema" EXACT Spanish [POC:mag]
 synonym: "portion of metaphloem tissue" EXACT []
-synonym: "metafloema" EXACT Spanish [POC:mag]
 is_a: PO:0009015 ! portion of vascular tissue
 relationship: part_of PO:0006075 ! primary phloem
 
@@ -4634,7 +4540,6 @@ alt_id: PO:0003001
 def: "A meristem that is part of a root system." [GR:pj]
 synonym: "meristema de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "meristematic zone" RELATED []
-synonym: "meristema de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0009013 ! meristem
 relationship: part_of PO:0025025 ! root system
 
@@ -4681,7 +4586,6 @@ def: "A cultured plant callus that is capable of forming plant organs." [POC:cur
 comment: Plant organs may be formed after the cultured plant callus is treated with plant growth regulators.
 synonym: "callo &#243rganog&#233nico" EXACT Spanish [POC:mag]
 synonym: "meristematic callus" RELATED []
-synonym: "callo &#243rganog&#233nico" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3286242
 is_a: PO:0000009 ! cultured plant callus
 
@@ -4702,8 +4606,7 @@ namespace: plant_anatomy
 def: "A maximal portion of parenchyma in the center of a shoot axis or root." [ISBN:0080280307]
 subset: TraitNet
 synonym: "m&#233dula" EXACT Spanish [POC:mag]
-synonym: "medulla" EXACT [ISBN:0471244554 "Esau 1965"]
-synonym: "m&#233dula" EXACT Spanish [POC:mag]
+synonym: "medulla" EXACT [ISBN:0471244554]
 xref: OBO_SF_PO:3011068
 is_a: PO:0005421 ! parenchyma
 
@@ -4729,8 +4632,8 @@ name: interfascicular region
 namespace: plant_anatomy
 def: "A portion of ground tissue located between vascular bundles in a shoot axis." [ISBN:0471244554, ISBN:0716710072]
 comment: Inapplicable for nearly all monocots.
-synonym: "medullary ray" EXACT [ISBN:0471244554 "Esau 1965. Plant Anatomy, second edition"]
-synonym: "pith ray" EXACT [ISBN:0-7167-1007-2 "Raven et al. 2005"]
+synonym: "medullary ray" EXACT [ISBN:0471244554]
+synonym: "pith ray" EXACT [ISBN:0-7167-1007-2]
 synonym: "regi&#243n interfascicular" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3011073
 is_a: PO:0025059 ! portion of ground tissue
@@ -4745,7 +4648,6 @@ subset: reference
 synonym: "periciclo" EXACT Spanish [POC:mag]
 synonym: "portion of pericycle tissue" EXACT []
 synonym: "portion of pericyclic tissue" EXACT []
-synonym: "periciclo" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0020124 ! root stele
 
@@ -4757,7 +4659,6 @@ def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) 
 synonym: "esporocito" EXACT Spanish [POC:mag]
 synonym: "meiocyte" EXACT []
 synonym: "spore mother cell" EXACT []
-synonym: "esporocito" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3299941
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0030056 ! archesporial cell
@@ -4772,7 +4673,6 @@ comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a d
 subset: TraitNet
 synonym: "c&#233lula del mes&#243filo esponjoso" EXACT Spanish [POC:mag]
 synonym: "spongy parenchyma cell" RELATED []
-synonym: "c&#233lula del mes&#243filo esponjoso" EXACT Spanish [POC:mag]
 is_a: PO:0004006 ! mesophyll cell
 relationship: part_of PO:0005647 ! spongy mesophyll
 
@@ -4785,7 +4685,6 @@ comment: Usually found in the adaxil/upper part of the leaf mesophyll. If you ar
 subset: TraitNet
 synonym: "c&#233lula del mes&#243filo en empalizada" EXACT Spanish [POC:mag]
 synonym: "palisade parenchyma cell" RELATED []
-synonym: "c&#233lula del mes&#243filo en empalizada" EXACT Spanish [POC:mag]
 is_a: PO:0004006 ! mesophyll cell
 relationship: part_of PO:0005648 ! palisade mesophyll
 
@@ -4882,7 +4781,6 @@ namespace: plant_anatomy
 def: "Primary phloem tissue positioned internal to the primary xylem." [ISBN:0122151704]
 synonym: "floema intraxil&#233mico" EXACT Spanish [POC:mag]
 synonym: "intraxylary phloem" RELATED []
-synonym: "floema intraxil&#233mico" EXACT Spanish [POC:mag]
 is_a: PO:0006075 ! primary phloem
 
 [Term]
@@ -4911,7 +4809,6 @@ def: "A portion of plant tissue that is the central region of an endosperm, comp
 comment: Also called starchy endosperm region (characteristic of some grasses).
 synonym: "endosperma central" EXACT Spanish [POC:mag]
 synonym: "portion of central endosperm tissue" EXACT []
-synonym: "endosperma central" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009089 ! endosperm
 
@@ -4922,7 +4819,6 @@ namespace: plant_anatomy
 def: "A laticifer cell in which the walls between contiguous cells may partly or completely disappear." [ISBN:0471245208, TAIR:ki]
 synonym: "c&#233lula del latic&#237fero articulado" EXACT Spanish [POC:mag]
 synonym: "laticiferous vessel" RELATED []
-synonym: "c&#233lula del latic&#237fero articulado" EXACT Spanish [POC:mag]
 is_a: PO:0025031 ! laticifer cell
 relationship: part_of PO:0005006 ! articulated laticifer
 
@@ -4933,7 +4829,6 @@ namespace: plant_anatomy
 def: "A laticifer cell that elongates indefinitely and grows intrusively between the walls of meristematic cells." [PMID:11732189]
 synonym: "c&#233lula del latic&#237fero no articulado" EXACT Spanish [POC:mag]
 synonym: "simple laticifer" RELATED []
-synonym: "c&#233lula del latic&#237fero no articulado" EXACT Spanish [POC:mag]
 is_a: PO:0025031 ! laticifer cell
 relationship: part_of PO:0005007 ! non-articulated laticifer
 
@@ -5031,7 +4926,7 @@ name: tassel spikelet
 namespace: plant_anatomy
 def: "Ultimate inflorescence branch of the maize tassel." [GR:pj]
 subset: Maize
-synonym: "penacho (penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
+synonym: "penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0009051 ! spikelet
 relationship: develops_from PO:0006358 ! tassel spikelet pair meristem
 relationship: part_of PO:0020126 ! tassel
@@ -5152,8 +5047,7 @@ def: "An inflorescence branch arising from a first order inflorescence axis." [P
 subset: Angiosperm
 synonym: "eje de segundo orden en una inflorescencia" EXACT Spanish [POC:mag]
 synonym: "primary inflorescence branch" EXACT []
-synonym: "second order inflorescence branch" RELATED [POC:rw "This is the old name for this term. It was renamed for clarity."]
-synonym: "eje de segundo orden en una inflorescencia" EXACT Spanish [POC:mag]
+synonym: "second order inflorescence branch" RELATED [POC:rw]
 xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 
@@ -5164,8 +5058,7 @@ namespace: plant_anatomy
 def: "An inflorescence branch arising from a second order inflorescence axis." [POC:rw]
 synonym: "eje de tercer orden en una inflorescencia " EXACT Spanish [POC:mag]
 synonym: "secondary inflorescence branch" EXACT []
-synonym: "third order inflorescence branch" RELATED [POC:rw "This is the old name for this term. It was renamed for clarity."]
-synonym: "eje de tercer orden en una inflorescencia " EXACT Spanish [POC:mag]
+synonym: "third order inflorescence branch" RELATED [POC:rw]
 xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 
@@ -5185,7 +5078,6 @@ namespace: plant_anatomy
 def: "A first order inflorescence axis that is the central axis of a tassel." [POC:rw]
 synonym: "espiga central del penacho (borla)" EXACT Spanish [POC:mag]
 synonym: "tassel rachis" RELATED []
-synonym: "espiga central del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020126 ! tassel
 
@@ -5276,7 +5168,6 @@ namespace: plant_anatomy
 def: "A remnant of the ovular chalaza that is part of the seed." [POC:curators]
 synonym: "calaza de la semilla" EXACT Spanish [POC:mag]
 synonym: "portion of seed chalaza" EXACT []
-synonym: "calaza de la semilla" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020026 ! chalaza
 relationship: part_of PO:0009010 ! seed
@@ -5299,7 +5190,6 @@ namespace: plant_anatomy
 def: "An outgrowth of the seed funicle, that forms a bridge between the seed micropyle and other tissues. It is also a remnant form of the obturator found in the ovular funicle." [GR:pj]
 synonym: "obturador de la semilla" EXACT Spanish [POC:mag]
 synonym: "portion of seed obturator tissue" EXACT []
-synonym: "obturador de la semilla" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020029 ! obturator
 relationship: part_of PO:0006332 ! seed funicle
@@ -5313,7 +5203,6 @@ synonym: "br&#225ctea de la inflorescencia de la espiga" EXACT Spanish [POC:mag]
 synonym: "corn husk" RELATED []
 synonym: "husk" RELATED []
 synonym: "husk leaf" RELATED []
-synonym: "br&#225ctea de la inflorescencia de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0009054 ! inflorescence bract
 relationship: part_of PO:0020136 ! Zea ear
 
@@ -5333,10 +5222,10 @@ id: PO:0006339
 name: juvenile leaf
 namespace: plant_anatomy
 def: "Distinct from adult leaves, being characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
-comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf. The first juvenile leaves in Poaceae are e.g. the embryonic leaves found in the grass kernel (caryopsis).
+comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. The first juvenile leaves in Poaceae are the embryonic leaves found in the grass kernel (caryopsis). If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "hoja juvenil" EXACT Spanish [POC:mag]
 synonym: "juvenile phyllid" NARROW []
-synonym: "hoja juvenil" EXACT Spanish [POC:mag]
+xref: OBO_SF_PO:3324058
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -5344,9 +5233,10 @@ id: PO:0006340
 name: adult leaf
 namespace: plant_anatomy
 def: "Adult leaves are characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:pj, MaizeGDB:lv]
-comment: The adult leaves are placed above the juvenile (oldest) leaves. However in some plants the juvenile leaves may go on to establish as adult leaves. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. In some plants the juvenile leaves may go on to establish as adult leaves. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "adult phyllid" NARROW []
 synonym: "hoja adulta" EXACT Spanish [POC:mag]
+xref: OBO_SF_PO:3324058
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -5356,7 +5246,6 @@ namespace: plant_anatomy
 def: "The shoot developing from the embryonic shoot apical meristem." [UMSL:fz]
 synonym: "epiblasto (epiblastema) primario" EXACT Spanish [POC:mag]
 synonym: "main stalk" RELATED []
-synonym: "epiblasto (epiblastema) primario" EXACT Spanish [POC:mag]
 is_a: PO:0009006 ! shoot system
 
 [Term]
@@ -5383,7 +5272,7 @@ namespace: plant_anatomy
 def: "A shoot-borne shoot system that develops from an axillary vegetative bud." [POC:curators]
 subset: Musa
 synonym: "axillary branch" RELATED []
-synonym: "Musa sucker" NARROW [CO_125:0000042 "A shoot system arrising form an axillary bud at the base of a Musa plant."]
+synonym: "Musa sucker" NARROW [CO_125:0000042]
 synonym: "sistema axilar del epiblasto (epiblastema) " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3147109
 is_a: PO:0004545 ! shoot-borne shoot system
@@ -5761,7 +5650,6 @@ subset: Maize
 subset: Poaceae
 synonym: "ginoecio de Poaceae" EXACT Spanish [POC:mag]
 synonym: "Zea gynoecium" NARROW []
-synonym: "ginoecio de Poaceae" EXACT Spanish [POC:mag]
 is_a: PO:0009062 ! gynoecium
 relationship: part_of PO:0006318 ! Poaceae floret
 
@@ -5975,7 +5863,7 @@ id: PO:0006415
 name: pedicel of ear spikelet
 namespace: plant_anatomy
 def: "This is the ultimate branch of the pedicellate ear spikelet." [GR:pj]
-synonym: "pedicelo de la  espiguilla de la espiga " EXACT Spanish [POC:mag]
+synonym: "pedicelo de la espiguilla de la espiga " EXACT Spanish [POC:mag]
 is_a: PO:0006319 ! spikelet pedicel
 relationship: part_of PO:0006348 ! ear pedicellate spikelet
 
@@ -6005,7 +5893,6 @@ def: "A peduncle of a maize ear, below the lowest ear node." [GR:pj]
 synonym: "pedúnculo de la espiga" EXACT Spanish [POC:mag]
 synonym: "shank" RELATED []
 synonym: "Zea lateral branch" RELATED []
-synonym: "pedúnculo de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0009053 ! peduncle
 relationship: part_of PO:0020136 ! Zea ear
 
@@ -6645,7 +6532,6 @@ namespace: plant_anatomy
 def: "The style of a maize floret." [GR:pj]
 synonym: "estilo de Zea" EXACT Spanish [POC:mag]
 synonym: "Zea style" RELATED []
-synonym: "estilo de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006469 ! Poaceae style
 relationship: part_of PO:0006470 ! Zea carpel
 
@@ -6810,7 +6696,6 @@ comment: Zea cob is different from the cob inflorescence found in Sorghum.
 synonym: "ear rachis" RELATED []
 synonym: "espiga central de la espiga de la espiga" EXACT Spanish [POC:mag]
 synonym: "Zea cob" RELATED []
-synonym: "espiga central de la espiga de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020136 ! Zea ear
 
@@ -9411,7 +9296,6 @@ subset: Poaceae
 subset: Rice
 synonym: "epidermis nucelar" EXACT Spanish [POC:mag]
 synonym: "portion of nucellar epidermis" EXACT []
-synonym: "epidermis nucelar" EXACT Spanish [POC:mag]
 is_a: PO:0025312 ! megasporangium exothecium
 relationship: part_of PO:0020020 ! nucellus
 
@@ -9476,7 +9360,6 @@ namespace: plant_anatomy
 def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a stigma." [POC:rw]
 synonym: "sistema vascular del estigma" EXACT Spanish [POC:mag]
 synonym: "stigma vein" RELATED []
-synonym: "sistema vascular del estigma" EXACT Spanish [POC:mag]
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0005019 ! carpel vascular system
 relationship: part_of PO:0009073 ! stigma
@@ -9519,7 +9402,6 @@ namespace: plant_anatomy
 def: "A shoot apical meristem that gives rise to the apical growth of vegetative tissues and organs." [GR:cwt]
 synonym: "meristema vegetativo apical del epiblasto (epiblastema) " EXACT Spanish [POC:mag]
 synonym: "vegetative meristem" RELATED []
-synonym: "meristema vegetativo apical del epiblasto (epiblastema) " EXACT Spanish [POC:mag]
 is_a: PO:0020148 ! shoot apical meristem
 relationship: part_of PO:0025223 ! vegetative shoot apex
 
@@ -9538,8 +9420,9 @@ id: PO:0008018
 name: transition leaf
 namespace: plant_anatomy
 def: "A leaf that is part of an heteroblastic series, and is characterized by anatomical features that are intermediate between juvenile and adult leaves." [GR:cwt]
-comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. Transition leaves may have mosaics of juvenile and adult tissues, as in Brachypodium. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "hoja de transici&#243n   " EXACT Spanish [POC:mag]
+xref: OBO_SF_PO:3324058
 is_a: PO:0025034 ! leaf
 
 [Term]
@@ -9597,7 +9480,6 @@ namespace: plant_anatomy
 def: "The region of the petiole proximal to its stem attachment site." [GR:cwt]
 synonym: "extremo proximal del pec&#237olo   " EXACT Spanish [POC:mag]
 synonym: "petiole base" RELATED []
-synonym: "extremo proximal del pec&#237olo   " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020038 ! petiole
@@ -9619,7 +9501,6 @@ namespace: plant_anatomy
 def: "The region of the petiole distal to its stem attachment site or proximal to the leaf lamina." [GR:cwt]
 synonym: "extremo distal del pec&#237olo    " EXACT Spanish [POC:mag]
 synonym: "petiole apex" RELATED []
-synonym: "extremo distal del pec&#237olo    " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020038 ! petiole
@@ -9662,7 +9543,6 @@ synonym: "non-glandular unicellular trichome" NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
 synonym: "simple trichome" NARROW [PMID:19939948]
 synonym: "unicellular trichome" NARROW []
-synonym: "c&#233lula del tricoma" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0004013 ! epidermal cell
@@ -9689,7 +9569,6 @@ synonym: "poro estom&#225tico" EXACT Spanish [POC:mag]
 synonym: "stoma" BROAD []
 synonym: "stomata" BROAD []
 synonym: "stomatal aperture" RELATED []
-synonym: "poro estom&#225tico" EXACT Spanish [POC:mag]
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0002000 ! stomatal complex
 
@@ -9701,7 +9580,6 @@ def: "OBSOLETE. A cluster of leaves in crowded circles or spirals arising basall
 comment: This term was made obsolete, because its definition did not match the new ontology structure as a child of collective phyllome structure. Annotations for this term are now associated with the new term collective leaf structure (PO:0025022).
 synonym: "hoja en verticilo" EXACT Spanish [POC:mag]
 synonym: "rosette" RELATED []
-synonym: "hoja en verticilo" EXACT Spanish [POC:mag]
 is_obsolete: true
 replaced_by: PO:0025022
 
@@ -9709,7 +9587,7 @@ replaced_by: PO:0025022
 id: PO:0008035
 name: plerome
 namespace: plant_anatomy
-def: "A meristem forming the core of the axis composed of the primary vascular tissues and associated ground tissue, such as pith and interfascicular regions." [ISBN:0471245208 "Anatomy of seed plants by K.Esau 2nd Edition"]
+def: "A meristem forming the core of the axis composed of the primary vascular tissues and associated ground tissue, such as pith and interfascicular regions." [ISBN:0471245208]
 synonym: "pleroma" EXACT Spanish [POC:mag]
 is_a: PO:0009013 ! meristem
 
@@ -9717,7 +9595,7 @@ is_a: PO:0009013 ! meristem
 id: PO:0008036
 name: periblem
 namespace: plant_anatomy
-def: "A portion of meristem tissue that forms the cortex." [ISBN:0471245208 "Anatomy of seed plants by K. Esau 2nd edition"]
+def: "A portion of meristem tissue that forms the cortex." [ISBN:0471245208]
 synonym: "periblema" EXACT Spanish [POC:mag]
 is_a: PO:0009013 ! meristem
 
@@ -9748,7 +9626,6 @@ namespace: plant_anatomy
 def: "The basal part of stem." [GR:cwt]
 synonym: "base del tallo" EXACT Spanish [POC:mag]
 synonym: "gametophore stem base" EXACT []
-synonym: "base del tallo" EXACT Spanish [POC:mag]
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009047 ! stem
 
@@ -9773,7 +9650,7 @@ relationship: part_of PO:0020142 ! stem internode
 id: PO:0008042
 name: stem internode differentiation zone
 namespace: plant_anatomy
-def: "A shoot internode differentiation zone that is part of a stem internode." [POC:rw "PMID:14520573"]
+def: "A shoot internode differentiation zone that is part of a stem internode." [POC:rw]
 comment: Primary, not secondary, tissue differentiation occurs in a differentiation zone.
 synonym: "zona de diferenciaci&#243n del internodo del tallo" EXACT Spanish [POC:mag]
 is_a: PO:0025102 ! shoot internode differentiation zone
@@ -9847,7 +9724,6 @@ def: "A continuous layer of cylindrical cells covering the endosperm side of the
 synonym: "epitelio escutelar" EXACT Spanish [POC:mag]
 synonym: "portion of scutellar epithelium" EXACT []
 synonym: "scutellum epithelium" EXACT []
-synonym: "epitelio escutelar" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020110 ! scutellum
 
@@ -9860,7 +9736,7 @@ comment: Often glandular. Often involved in movement of a plant structure in res
 synonym: "pulv&#237nulo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2972236
-xref: PATO:0000586 "increased size, enlarged"
+xref: PATO:0000586
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009006 ! shoot system
 
@@ -9917,7 +9793,6 @@ synonym: "septifragal capsule" NARROW []
 synonym: "silicula" NARROW []
 synonym: "siliqua" NARROW []
 synonym: "silique" NARROW []
-synonym: "fruto" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2972169
 is_a: PO:0025007 ! collective plant structure
 relationship: develops_from PO:0009062 ! gynoecium
@@ -9926,7 +9801,7 @@ relationship: develops_from PO:0009062 ! gynoecium
 id: PO:0009002
 name: plant cell
 namespace: plant_anatomy
-def: "A cell which is a plant structure." [GO:0005623 "cell", POC:Curators]
+def: "A cell which is a plant structure." [GO:0005623, POC:Curators]
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505.  Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
 subset: reference
 subset: TraitNet
@@ -9995,7 +9870,6 @@ synonym: "Poaceae crown" RELATED []
 synonym: "shoot" RELATED []
 synonym: "sistema de epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "tree crown" NARROW []
-synonym: "sistema de epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3011039
 is_a: PO:0025007 ! collective plant structure
 
@@ -10025,7 +9899,6 @@ subset: TraitNet
 synonym: "&#243rgano vegetal" EXACT Spanish [POC:mag]
 synonym: "compound plant organ" RELATED []
 synonym: "simple plant organ" RELATED [PATO:01503]
-synonym: "&#243rgano vegetal" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2932521
 is_a: PO:0009011 ! plant structure
 disjoint_from: PO:0000003 ! whole plant
@@ -10040,7 +9913,6 @@ def: "A whole plant in the early part of a sporophytic phase after the first cel
 comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryonic phase varies among taxa. In seed plants, the embryonic phase ends with germination. In pteridophytes, the embryonic phase ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryonic phase ends when the apical cell stops dividing and the sporangium begins to develop. In cultured plant embryos, the embryonic phase ends when organs (roots, shoot axes, or leaves) begin to form.
 synonym: "embri&#243n" EXACT Spanish [POC:mag]
 synonym: "germ" RELATED []
-synonym: "embri&#243n" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
 relationship: participates_in PO:0028002 ! sporophyte phase
@@ -10066,7 +9938,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0009011
 name: plant structure
 namespace: plant_anatomy
-def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003 "anatomical structure", POC:curators]
+def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003, POC:curators]
 comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 anatomical structure is defined as: Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome.
 subset: TraitNet
 synonym: "estructura vegetal" EXACT Spanish [POC:mag]
@@ -10090,7 +9962,6 @@ subset: TraitNet
 synonym: "meristema" EXACT Spanish [POC:mag]
 synonym: "meristematic tissue" EXACT []
 synonym: "portion of meristem tissue" EXACT []
-synonym: "meristema" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0004010 ! meristematic cell
 
@@ -10114,8 +9985,7 @@ comment: Functions in conduction and support. In the stem it is often found as a
 subset: TraitNet
 synonym: "porci&#243n de tejido vascular" EXACT Spanish [POC:mag]
 synonym: "vascular system" RELATED []
-synonym: "porci&#243n de tejido vascular" EXACT Spanish [POC:mag]
-xref: BTO:0001432 "vascular tissue"
+xref: BTO:0001432
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000034 ! vascular system
 
@@ -10202,7 +10072,7 @@ namespace: plant_anatomy
 def: "A Zea gynoecium ridge that is a gynoecium of a lower floret of a pedicellate spikelet of ear in the early stages of development." [POC:curators]
 comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. While the development of this stylar ridge is very similar to that of the upper florets, the development does not proceed beyond the early ridge stage.
 synonym: "gynoecial ridge of lower floret of pedicellate spikelet of ear" EXACT []
-synonym: "stylar ridge of lower floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
+synonym: "stylar ridge of lower floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358]
 synonym: "surco del ginoecio del florete inferior de la espiguiila pedicelada de la espiga" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006424 ! gynoecium of lower floret of pedicellate spikelet of ear
@@ -10225,7 +10095,6 @@ synonym: "hoja vascular" EXACT Spanish [POC:mag]
 synonym: "leaf, vascular" EXACT []
 synonym: "needle-like leaf" NARROW []
 synonym: "scale-like leaf" NARROW []
-synonym: "hoja vascular" EXACT Spanish [POC:mag]
 is_a: PO:0025034 ! leaf
 relationship: participates_in PO:0028002 ! sporophyte phase
 
@@ -10328,7 +10197,6 @@ subset: TraitNet
 synonym: "br&#225ctea floral" EXACT Spanish [POC:mag]
 synonym: "chaff" RELATED []
 synonym: "floral bract" EXACT []
-synonym: "br&#225ctea floral" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0009049 ! inflorescence
@@ -10387,7 +10255,6 @@ def: "A \"bract\" in the inflorescence of a grass, sedge or similar plant." [APW
 subset: reference
 synonym: "gluma" EXACT Spanish [POC:mag]
 synonym: "rudimentary glume" RELATED []
-synonym: "gluma" EXACT Spanish [POC:mag]
 is_a: PO:0009054 ! inflorescence bract
 relationship: part_of PO:0009051 ! spikelet
 
@@ -10448,7 +10315,6 @@ def: "Equals inflorescence bract of an involucre, as in Asteraceae or Compositea
 subset: reference
 synonym: "br&#225ctea involucral" EXACT Spanish [POC:mag]
 synonym: "phyllary" RELATED []
-synonym: "br&#225ctea involucral" EXACT Spanish [POC:mag]
 is_a: PO:0009054 ! inflorescence bract
 relationship: part_of PO:0009100 ! involucre
 
@@ -10474,7 +10340,6 @@ synonym: "monoclinous flower" NARROW []
 synonym: "perfect flower" NARROW []
 synonym: "pistillate flower" NARROW []
 synonym: "staminate flower" NARROW []
-synonym: "flor" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147067
 is_a: PO:0025082 ! reproductive shoot system
@@ -10497,10 +10362,6 @@ synonym: "stalk" NARROW []
 synonym: "tallo" EXACT Spanish [POC:mag]
 synonym: "tronco" EXACT Spanish [POC:mag]
 synonym: "trunk" NARROW []
-synonym: "ca&#241a" EXACT Spanish [POC:mag]
-synonym: "eje primario" EXACT Spanish [POC:mag]
-synonym: "tallo" EXACT Spanish [POC:mag]
-synonym: "tronco" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2982923
 is_a: PO:0025029 ! shoot axis
@@ -10545,7 +10406,6 @@ synonym: "Sorghum cob" NARROW []
 synonym: "Triticeae spike" NARROW []
 synonym: "umbel" NARROW []
 synonym: "verticillaster" NARROW []
-synonym: "inflorescencia" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147080
 is_a: PO:0025082 ! reproductive shoot system
@@ -10614,7 +10474,6 @@ subset: reference
 subset: TraitNet
 synonym: "br&#225ctea" EXACT Spanish [POC:mag]
 synonym: "hypsophyll" RELATED []
-synonym: "br&#225ctea" EXACT Spanish [POC:mag]
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -10703,7 +10562,6 @@ subset: reference
 subset: TraitNet
 synonym: "ginoecio" EXACT Spanish [POC:mag]
 synonym: "pistil" RELATED []
-synonym: "ginoecio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -10743,8 +10601,8 @@ comment: Only bears stamens or perianth segments if they are present in the flow
 subset: reference
 synonym: "hipantio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2972200
-xref: PATO:0001873 "tube-shaped (synonym of cylindrical)"
-xref: PATO:0002227 "cup-shaped"
+xref: PATO:0001873
+xref: PATO:0002227
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009064 ! receptacle
 
@@ -10863,7 +10721,6 @@ subset: reference
 subset: TraitNet
 synonym: "estilo" EXACT Spanish [POC:mag]
 synonym: "silk" RELATED []
-synonym: "estilo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
@@ -10883,7 +10740,7 @@ namespace: plant_anatomy
 def: "A Zea gynoecium ridge that is a gynoecium of a lower floret of sessile spikelet of ear in the early stages of development." [POC:curators]
 comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
 synonym: "gynoecial ridge of lower floret of sessile spikelet of ear" EXACT []
-synonym: "stylar ridge of lower floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
+synonym: "stylar ridge of lower floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358]
 synonym: "surco del ginoecio del florete inferior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006423 ! gynoecium of lower floret of sessile spikelet of ear
@@ -10914,7 +10771,7 @@ namespace: plant_anatomy
 def: "A Zea gynoecium ridge that is a gynoecium of an upper floret of pedicellate spikelet of ear in the early stages of development." [POC:curators]
 comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
 synonym: "gynoecial ridge of upper floret of pedicellate spikelet of ear" EXACT []
-synonym: "stylar ridge of upper floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy chapter"]
+synonym: "stylar ridge of upper floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358]
 synonym: "surco del ginoecio del florete superior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006426 ! gynoecium of upper floret of pedicellate spikelet of ear
@@ -10972,7 +10829,6 @@ synonym: "fruit peel" RELATED []
 synonym: "fruit rind" RELATED []
 synonym: "pericarpo" EXACT Spanish [POC:mag]
 synonym: "portion of pericarp tissue" EXACT []
-synonym: "pericarpo" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009001 ! fruit
 
@@ -10992,7 +10848,6 @@ synonym: "flavedo" EXACT []
 synonym: "outer epidermis of pericarp" RELATED []
 synonym: "pericarp epidermis" RELATED []
 synonym: "portion of exocarp tissue" EXACT []
-synonym: "exocarpo" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -11013,7 +10868,6 @@ synonym: "citrus pulp" RELATED []
 synonym: "endocarpo" EXACT Spanish [POC:mag]
 synonym: "inner epidermis of pericarp" RELATED []
 synonym: "portion of endocarp tissue" EXACT []
-synonym: "endocarpo" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -11027,7 +10881,6 @@ subset: Tomato
 synonym: "albedo" RELATED []
 synonym: "mesocarpo" EXACT Spanish [POC:mag]
 synonym: "portion of mesocarp tissue" EXACT []
-synonym: "mesocarpo" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -11040,7 +10893,6 @@ comment: Used only when not specified more precisely; see testa, tegmen.
 subset: TraitNet
 synonym: "cubierta de la semilla" EXACT Spanish [POC:mag]
 synonym: "portion of seed coat tissue" EXACT []
-synonym: "cubierta de la semilla" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -11085,7 +10937,7 @@ namespace: plant_anatomy
 def: "A Zea gynoecium ridge that is a gynoecium of an upper floret of sessile spikelet of ear in the early stages of development." [POC:curators]
 comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
 synonym: "gynoecial ridge of upper floret of sessile spikelet of ear" EXACT []
-synonym: "stylar ridge of upper floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358 "Cheng and Pareddy Chapter"]
+synonym: "stylar ridge of upper floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358]
 synonym: "surco del ginoecio del florete superior de la espiguiila s&#233sil de la espiga" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2959654
 is_a: PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
@@ -11109,9 +10961,8 @@ name: long lateral tassel branch
 namespace: plant_anatomy
 def: "The long branch that  arise from the central spike of tassel in maize." [GR:pj, MaizeGDB:lv]
 subset: Maize
-synonym: "ramificaci&#243n    lateral larga del penacho (borla)" EXACT Spanish [POC:mag]
+synonym: "ramificaci&#243n lateral larga del penacho (borla)" EXACT Spanish [POC:mag]
 synonym: "second order tassel branch" RELATED []
-synonym: "ramificaci&#243n    lateral larga del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006323 ! tassel branch
 relationship: develops_from PO:0009104 ! long lateral tassel branch meristem
 
@@ -11121,9 +10972,8 @@ name: short tassel branch
 namespace: plant_anatomy
 def: "The very short branch that may arise from either or both the long lateral branch and the central spike of tassel in maize." [GR:pj, MaizeGDB:lv]
 subset: Maize
-synonym: "ramificaci&#243n    corta del penacho (borla)" EXACT Spanish [POC:mag]
+synonym: "ramificaci&#243n corta del penacho (borla)" EXACT Spanish [POC:mag]
 synonym: "third order tassel branch" RELATED []
-synonym: "ramificaci&#243n    corta del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006323 ! tassel branch
 relationship: develops_from PO:0009103 ! short tassel branch meristem
 
@@ -11136,7 +10986,6 @@ subset: Maize
 synonym: "meristema de la ramificaci&#243n corta del penacho (borla)" EXACT Spanish [POC:mag]
 synonym: "short branch meristem" RELATED []
 synonym: "third order tassel branch meristem" RELATED []
-synonym: "meristema de la ramificaci&#243n corta del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0009107 ! tassel lateral meristem
 relationship: part_of PO:0006324 ! central spike of tassel
 relationship: part_of PO:0009101 ! long lateral tassel branch
@@ -11150,7 +10999,6 @@ subset: Maize
 synonym: "long lateral branch meristem" RELATED []
 synonym: "meristema de la ramificaci&#243n larga del penacho (borla)" EXACT Spanish [POC:mag]
 synonym: "second order tassel branch meristem" RELATED []
-synonym: "meristema de la ramificaci&#243n larga del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0009107 ! tassel lateral meristem
 relationship: part_of PO:0006324 ! central spike of tassel
 
@@ -11231,7 +11079,6 @@ comment: Has as parts a hypocotyl, a root meristem and a radicle, if any of thes
 synonym: "eje del embri&#243n" EXACT Spanish [POC:mag]
 synonym: "hypocotyl-root axis" EXACT []
 synonym: "zygotic plant embryo axis" NARROW []
-synonym: "eje del embri&#243n" EXACT Spanish [POC:mag]
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -11242,9 +11089,8 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is a fleshy outgrowth of a seed and does not cover the entire seed and develops from a part of the seed other than a funicle." [ISBN-13:9780881928501]
 subset: TraitNet
 synonym: "ariloide" EXACT Spanish [POC:mag]
-synonym: "caruncle" NARROW [ISBN-13:978-0-88192-850-1 "an arilloid near the micropyle"]
-synonym: "strophiole" NARROW [ISBN-13:9780881928501 "an arilloid on the raphe"]
-synonym: "ariloide" EXACT Spanish [POC:mag]
+synonym: "caruncle" NARROW [ISBN-13:978-0-88192-850-1]
+synonym: "strophiole" NARROW [ISBN-13:9780881928501]
 xref: OBO_SF_PO:3132539
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009010 ! seed
@@ -11266,7 +11112,6 @@ namespace: plant_anatomy
 def: "A plug-like structure formed in the micropylar region of the seed coat." [ISBN:0080280293]
 synonym: "op&#233rculo de la semilla" EXACT Spanish [POC:mag]
 synonym: "portion of seed operculum tissue" EXACT []
-synonym: "op&#233rculo de la semilla" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -11300,7 +11145,6 @@ subset: reference
 synonym: "anther sac hypodermis" RELATED []
 synonym: "endotecio de la pared the la antera" EXACT Spanish [POC:mag]
 synonym: "pollen sac endothecium" EXACT []
-synonym: "endotecio de la pared the la antera" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3298006
 is_a: PO:0025309 ! microsporangium endothecium
 relationship: adjacent_to PO:0020004 ! anther wall exothecium
@@ -11332,7 +11176,6 @@ synonym: "anther epidermis" EXACT []
 synonym: "anther sac epidermis" EXACT []
 synonym: "exotecio de la pared de la antera " EXACT Spanish [POC:mag]
 synonym: "pollen sac exothecium" EXACT []
-synonym: "exotecio de la pared de la antera " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3297999
 is_a: PO:0025311 ! microsporangium exothecium
 relationship: part_of PO:0000002 ! anther wall
@@ -11356,7 +11199,6 @@ def: "A stalk that attaches an ovule to a placenta." [APWeb:Glossary, GR:pj]
 subset: reference
 synonym: "fun&#237culo" EXACT Spanish [POC:mag]
 synonym: "funiculus" RELATED []
-synonym: "fun&#237culo" EXACT Spanish [POC:mag]
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0009072 ! ovary
 
@@ -11430,7 +11272,6 @@ comment: This term is now available in the cellular_component aspect of the Gene
 subset: reference
 synonym: "columela" EXACT Spanish [POC:mag]
 synonym: "sexine 1" RELATED []
-synonym: "columela" EXACT Spanish [POC:mag]
 is_obsolete: true
 
 [Term]
@@ -11442,7 +11283,6 @@ comment: This term is now available in the cellular_component aspect of the Gene
 subset: reference
 synonym: "elementos de la escultura" EXACT Spanish [POC:mag]
 synonym: "sexine 3" RELATED []
-synonym: "elementos de la escultura" EXACT Spanish [POC:mag]
 is_obsolete: true
 
 [Term]
@@ -11453,7 +11293,6 @@ def: "OBSOLETE. The inner layer of the ectexine." [APWeb:Glossary]
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043670.
 synonym: "capa basal del grano de polen" EXACT Spanish [POC:mag]
 synonym: "nexine 1" RELATED []
-synonym: "capa basal del grano de polen" EXACT Spanish [POC:mag]
 is_obsolete: true
 
 [Term]
@@ -11510,7 +11349,6 @@ subset: reference
 subset: TraitNet
 synonym: "integumento" EXACT Spanish [POC:mag]
 synonym: "portion of integument tissue" EXACT []
-synonym: "integumento" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
@@ -11537,7 +11375,6 @@ namespace: plant_anatomy
 def: "A portion of plant tissue composed of cells of the inner epidermis of the inner (or only) integument of the ovule that are radially elongated and metabolically very active." [APWeb:Glossary]
 synonym: "endotelio" EXACT Spanish [POC:mag]
 synonym: "portion of endothelium" EXACT []
-synonym: "endotelio" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020022 ! inner integument
 
@@ -11551,7 +11388,6 @@ subset: reference
 subset: TraitNet
 synonym: "micr&#243pila" EXACT Spanish [POC:mag]
 synonym: "ovular micropyle" EXACT []
-synonym: "micr&#243pila" EXACT Spanish [POC:mag]
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0020021 ! integument
 
@@ -11565,7 +11401,6 @@ subset: reference
 synonym: "calaza" EXACT Spanish [POC:mag]
 synonym: "ovular chlaza" EXACT []
 synonym: "portion of chalaza tissue" EXACT []
-synonym: "calaza" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
@@ -11603,7 +11438,6 @@ comment: Most commonly arising from the funicle, also developing from placenta, 
 subset: reference
 synonym: "obturador" EXACT Spanish [POC:mag]
 synonym: "portion of obturator tissue" EXACT []
-synonym: "obturador" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020006 ! funicle
 
@@ -11654,7 +11488,7 @@ is_a: PO:0006001 ! phyllome
 id: PO:0020034
 name: coleorhiza
 namespace: plant_anatomy
-def: "A plant organ that surrounds a radicle." [ISBN:0471244554, ISSN:0006-8101 "Robertse et al. 2001, Botanical Review 77(1):1=10"]
+def: "A plant organ that surrounds a radicle." [ISBN:0471244554, ISSN:0006-8101]
 comment: Found in Poaceae and some other monocots as well as some gymnosperms. Protects the emerging radicle in a plant embryo or seedling. The parenchyma cells of both the coleorhiza and epiblast may function in storage.
 synonym: "coleorriza" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293771
@@ -11710,7 +11544,6 @@ comment: If you are annotating to this term, please add an additional annotation
 subset: TraitNet
 synonym: "l&#225mina de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf blade" RELATED []
-synonym: "l&#225mina de la hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025060 ! lamina
 relationship: part_of PO:0025034 ! leaf
@@ -11724,7 +11557,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "base de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf sheath base" RELATED []
 synonym: "phyllid base" NARROW []
-synonym: "base de la hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3177673
 is_a: PO:0025140 ! phyllome base
@@ -11794,7 +11626,6 @@ synonym: "microspore mother cell" RELATED []
 synonym: "microsporocito" EXACT Spanish [POC:mag]
 synonym: "PMC" RELATED []
 synonym: "pollen mother cell" RELATED []
-synonym: "microsporocito" EXACT Spanish [POC:mag]
 xref: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
@@ -11906,7 +11737,6 @@ def: "Diploid nutritive tissue in an angiosperm seed derived from nucellar tissu
 synonym: "perisperma" EXACT Spanish [POC:mag]
 synonym: "portion of perisperm tissue" EXACT []
 synonym: "seed nucellus" RELATED []
-synonym: "perisperma" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -12046,7 +11876,6 @@ synonym: "male gametophyte" EXACT []
 synonym: "microgametofito" EXACT Spanish [POC:mag]
 synonym: "pollen" RELATED []
 synonym: "pollen grain" EXACT []
-synonym: "microgametofito" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3257959
 xref: OBO_SF_PO:3257963
 is_obsolete: true
@@ -12135,7 +11964,6 @@ def: "A plant cell that is the larger cell of a male gametophyte in seed plants.
 subset: reference
 synonym: "c&#233lula vegetativa" EXACT Spanish [POC:mag]
 synonym: "tube cell" RELATED [ISBN:0716710072]
-synonym: "c&#233lula vegetativa" EXACT Spanish [POC:mag]
 xref: CL:0000296
 is_a: PO:0009002 ! plant cell
 
@@ -12168,7 +11996,6 @@ def: "A portion of ground tissue in the style of a carpel through which the poll
 subset: reference
 synonym: "porci&#243n del tejido de transmisi&#243n" EXACT Spanish [POC:mag]
 synonym: "transmitting tract" RELATED []
-synonym: "porci&#243n del tejido de transmisi&#243n" EXACT Spanish [POC:mag]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0009074 ! style
 
@@ -12243,7 +12070,6 @@ def: "An embryonic plant structure that is a more or less shield-shaped and abso
 comment: May be a modified cotyledon.
 synonym: "escutelo" EXACT Spanish [POC:mag]
 synonym: "haustorial cotyledon" RELATED []
-synonym: "escutelo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132566
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -12267,7 +12093,6 @@ subset: TraitNet
 synonym: "eje de la inflorescencia" EXACT Spanish [POC:mag]
 synonym: "first order inflorescence branch" RELATED []
 synonym: "inflorescence rachis" RELATED []
-synonym: "eje de la inflorescencia" EXACT Spanish [POC:mag]
 is_a: PO:0025029 ! shoot axis
 relationship: part_of PO:0009049 ! inflorescence
 
@@ -12280,7 +12105,6 @@ comment: Often composed of living and dead parenchyma cells. Protects the root a
 subset: reference
 synonym: "caliptra de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "rootcap" EXACT [ISBN:0716710072]
-synonym: "caliptra de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0000025 ! root tip
 
@@ -12331,7 +12155,6 @@ comment: Often the central axis of a root system.
 subset: TraitNet
 synonym: "ra&#237z primaria" EXACT Spanish [POC:mag]
 synonym: "tap root" EXACT []
-synonym: "ra&#237z primaria" EXACT Spanish [POC:mag]
 is_a: PO:0009005 ! root
 relationship: develops_from PO:0020031 ! radicle
 
@@ -12355,7 +12178,6 @@ def: "A portion of root parenchyma tissue that is the central part of a root cap
 synonym: "caliptra de la ra&#237z central" EXACT Spanish [POC:mag]
 synonym: "columella cells" EXACT []
 synonym: "columella rootcap" EXACT [ISBN:0716710072]
-synonym: "caliptra de la ra&#237z central" EXACT Spanish [POC:mag]
 is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0020123 ! root cap
 
@@ -12367,7 +12189,6 @@ def: "A portion of root parenchyma tissue that is part of a root cap and is para
 comment: This is the general term for the lateral portion of any root cap and not the term for a root cap of lateral root (PO:0003018) or lateral root cap of lateral root (PO:0003020).
 synonym: "caliptra lateral de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "peripheral cells" RELATED []
-synonym: "caliptra lateral de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0020123 ! root cap
 
@@ -12388,7 +12209,6 @@ def: "A root initial cell that produces columella cells in the root cap. In dire
 synonym: "c&#233lula inicial de la columela del caliptra de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "columella root cap stem cell" EXACT []
 synonym: "columella stem cell" EXACT []
-synonym: "c&#233lula inicial de la columela del caliptra de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0000059 ! root initial cell
 
 [Term]
@@ -12434,7 +12254,6 @@ def: "A phyllome apex that is part of a leaf." [POC:rw, UMSL:fz]
 comment: It is not precisely defined how far toward the base from the tip a leaf apex extends. For the apical most portion of a leaf, use the term leaf tip. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "&#225pice de la hoja" EXACT Spanish [POC:mag]
 synonym: "phyllid apex" NARROW []
-synonym: "&#225pice de la hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3177673
 is_a: PO:0025139 ! phyllome apex
@@ -12495,7 +12314,6 @@ def: "A maximal portion of meristem tissue located at an apex of a shoot system 
 subset: TraitNet
 synonym: "meristema apical" EXACT Spanish [POC:mag]
 synonym: "primary meristem" RELATED []
-synonym: "meristema apical" EXACT Spanish [POC:mag]
 is_a: PO:0009013 ! meristem
 
 [Term]
@@ -12506,7 +12324,6 @@ def: "A meristem containing cells along the stem or root that first differentiat
 subset: TraitNet
 synonym: "meristema lateral" EXACT Spanish [POC:mag]
 synonym: "secondary meristem" RELATED []
-synonym: "meristema lateral" EXACT Spanish [POC:mag]
 is_a: PO:0009013 ! meristem
 
 [Term]
@@ -12518,7 +12335,6 @@ comment: In most cases it is involved in root elongation.
 subset: TraitNet
 synonym: "meristema apical de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "promeristem" RELATED []
-synonym: "meristema apical de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
 
@@ -12531,7 +12347,6 @@ subset: TraitNet
 synonym: "apical meristem" RELATED []
 synonym: "meristema apical del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "primary shoot meristem" RELATED []
-synonym: "meristema apical del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0006079 ! shoot meristem
 is_a: PO:0020144 ! apical meristem
 relationship: part_of PO:0000037 ! shoot apex
@@ -12836,7 +12651,6 @@ comment: This term replaces the obsolete term leaf whorl (PO:0008034). If you ar
 synonym: "estructura colectiva de hoja" EXACT Spanish [POC:mag]
 synonym: "leaf whorl" NARROW []
 synonym: "rosette" NARROW []
-synonym: "estructura colectiva de hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
 created_by: Ramona
@@ -12850,10 +12664,9 @@ alt_id: PO:0008033
 def: "A collective plant structure that consists of two or more phyllomes originating from the same node or from one or more adjacent nodes with compressed internodes." [POC:Curators]
 subset: TraitNet
 synonym: "estructura colectiva del filoma" EXACT Spanish [POC:mag]
-synonym: "floral whorl" NARROW [GO:0048438 "floral whorl development", GO:0048457 "floral whorl morphogenisis", GO:0048458 "floral whorl formation", GO:0048459 "floral whorl structural organization"]
+synonym: "floral whorl" NARROW [GO:0048438, GO:0048457, GO:0048458, GO:0048459]
 synonym: "phyllome whorl" RELATED []
 synonym: "whorl" NARROW []
-synonym: "estructura colectiva del filoma" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2980171
 xref: OBO_SF_PO:2993809
 is_a: PO:0025007 ! collective plant structure
@@ -12893,7 +12706,6 @@ def: "A plant cell that is part of an embryo sac." [POC:rw]
 synonym: "c&#233lula megagametof&#237tica" EXACT Spanish [POC:mag]
 synonym: "embryo sac cell" RELATED []
 synonym: "megagametophytic cell" EXACT []
-synonym: "c&#233lula megagametof&#237tica" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
 created_by: Ramona
 creation_date: 2010-05-07T02:36:24Z
@@ -12916,7 +12728,6 @@ namespace: plant_anatomy
 def: "A plant cell that is part of a plant embryo." [POC:curators]
 synonym: "c&#233lula embri&#243nica vegetal" EXACT Spanish [POC:mag]
 synonym: "embryonic plant cell" EXACT []
-synonym: "c&#233lula embri&#243nica vegetal" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3177665
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009002 ! plant cell
@@ -12934,7 +12745,6 @@ subset: TraitNet
 synonym: "caullome" EXACT []
 synonym: "eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 synonym: "shoot" RELATED []
-synonym: "eje del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009006 ! shoot system
 created_by: Ramona
@@ -12949,7 +12759,6 @@ comment: Includes parenchyma, collenchyma and sclerenchyma cells.
 subset: TraitNet
 synonym: "c&#233lula del tejido fundamental" EXACT Spanish [POC:mag]
 synonym: "fundamental tissue cell" EXACT []
-synonym: "c&#233lula del tejido fundamental" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3274184
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025059 ! portion of ground tissue
@@ -12975,7 +12784,6 @@ comment: Hydroids are water and mineral conducting cells found in bryophytes in 
 subset: Bryophytes
 synonym: "hidroide" EXACT Spanish [POC:mag]
 synonym: "hydroid cell" EXACT []
-synonym: "hidroide" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000290 ! tracheary element
 relationship: part_of PO:0030047 ! hydrome
@@ -13021,8 +12829,7 @@ synonym: "flesh" EXACT []
 synonym: "fleshy tissue" EXACT []
 synonym: "par&#233nquima de reserva" EXACT Spanish [POC:mag]
 synonym: "portion of storage parenchyma" EXACT []
-synonym: "par&#233nquima de reserva" EXACT Spanish [POC:mag]
-xref: CHEBI:23008 "carbohydrate"
+xref: CHEBI:23008
 is_a: PO:0005421 ! parenchyma
 created_by: Ramona
 creation_date: 2010-05-25T04:30:20Z
@@ -13035,7 +12842,6 @@ def: "A portion of storage parenchyma that is part of a tuber." [POC:curators]
 comment: This is the flesh of a tuber. See part_of children for individual components of tuber flesh.
 synonym: "par&#233nquima de reserva de tub&#233rculo" EXACT Spanish [POC:mag]
 synonym: "tuber flesh" EXACT []
-synonym: "par&#233nquima de reserva de tub&#233rculo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3005637
 is_a: PO:0025035 ! storage parenchyma
 relationship: part_of PO:0004543 ! tuber
@@ -13063,7 +12869,6 @@ comment: This term is used to refer to potato tuber flesh. See part_of children 
 subset: Potato
 synonym: "par&#233nquima de reserva de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 synonym: "potato tuber flesh" NARROW []
-synonym: "par&#233nquima de reserva de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3005637
 is_a: PO:0025036 ! tuber storage parenchyma
 relationship: part_of PO:0004547 ! subterranean tuber
@@ -13194,7 +12999,6 @@ def: "A tuber epidermis that is part of a subterranean tuber." [POC:curators]
 comment: The skin of young potatoes is epidermis while the skin of mature potatoes is periderm.
 synonym: "epidermis de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 synonym: "young potato tuber skin" NARROW []
-synonym: "epidermis de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 is_a: PO:0025046 ! tuber epidermis
 relationship: part_of PO:0004547 ! subterranean tuber
 created_by: Ramona
@@ -13204,7 +13008,7 @@ creation_date: 2010-05-27T09:55:39Z
 id: PO:0025049
 name: subterranean tuber interfascicular region
 namespace: plant_anatomy
-def: "A tuber interfascicular region that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589 "Reeve et al. 1969", POC:curators]
+def: "A tuber interfascicular region that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589, POC:curators]
 comment: In potatoes, the interfascicular region extends to the subterranean tuber axillary vegetative buds (eyes).
 subset: Potato
 synonym: "regi&#243n interfascicular de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
@@ -13220,7 +13024,6 @@ namespace: plant_anatomy
 def: "An interfascicular region that is part of a tuber storage parenchyma." [POC:curators]
 synonym: "regi&#243n interfascicular de tub&#233rculo" EXACT Spanish [POC:mag]
 synonym: "tuber flesh" BROAD []
-synonym: "regi&#243n interfascicular de tub&#233rculo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3011081
 is_a: PO:0006202 ! interfascicular region
 relationship: part_of PO:0025036 ! tuber storage parenchyma
@@ -13245,7 +13048,6 @@ namespace: plant_anatomy
 def: "A portion of pith that is part of a tuber storage parenchyma." [POC:curators]
 synonym: "m&#233dula del tub&#233rculo" EXACT Spanish [POC:mag]
 synonym: "tuber flesh" BROAD []
-synonym: "m&#233dula del tub&#233rculo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3011076
 is_a: PO:0005041 ! shoot axis pith
 relationship: part_of PO:0025036 ! tuber storage parenchyma
@@ -13256,12 +13058,11 @@ creation_date: 2010-06-01T04:04:39Z
 id: PO:0025053
 name: subterranean tuber pith
 namespace: plant_anatomy
-def: "A portion of tuber pith that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589 "Reeve et al. 1969", POC:curators]
+def: "A portion of tuber pith that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589, POC:curators]
 comment: In potatoes, this is part of the flesh.
 subset: Potato
 synonym: "m&#233dula del tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
-synonym: "water core" NARROW [ISSN:0003-0589 "Reeve et al. 1969"]
-synonym: "m&#233dula del tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
+synonym: "water core" NARROW [ISSN:0003-0589]
 is_a: PO:0025052 ! tuber pith
 relationship: part_of PO:0025038 ! subterranean tuber storage parenchyma
 created_by: Ramona
@@ -13307,10 +13108,9 @@ creation_date: 2010-06-03T08:05:23Z
 id: PO:0025057
 name: subterranean tuber cortex
 namespace: plant_anatomy
-def: "A portion of tuber cortex that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589 "Reeve et al. 1969", POC:curators]
+def: "A portion of tuber cortex that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589, POC:curators]
 synonym: "corteza del tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
-synonym: "Outer storage tissue" EXACT [ISSN:0003-0589 "Reeve et al. 1969"]
-synonym: "corteza del tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
+synonym: "Outer storage tissue" EXACT [ISSN:0003-0589]
 is_a: PO:0025055 ! tuber cortex
 intersection_of: PO:0025055 ! tuber cortex
 intersection_of: part_of PO:0025038 ! subterranean tuber storage parenchyma
@@ -13338,7 +13138,7 @@ namespace: plant_anatomy
 def: "Any portion of plant tissue other than epidermis or vascular tissue." [ISBN:0-7167-1007-2, ISBN:0471244554]
 comment: Develops from the ground meristem (eg, meristem L2 and meristem L3).
 subset: TraitNet
-synonym: "fundamental tissue" EXACT [ISBN:0471244554 "Esau Plant Anatomy"]
+synonym: "fundamental tissue" EXACT [ISBN:0471244554]
 synonym: "porci&#243n del tejido fundamental" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3007983
 is_a: PO:0009007 ! portion of plant tissue
@@ -13384,7 +13184,7 @@ creation_date: 2010-06-04T01:00:13Z
 id: PO:0025063
 name: subterranean tuber perimedullary zone
 namespace: plant_anatomy
-def: "A tuber perimedullary zone that is part of a subterranean tuber pith." [ISSN:0003-0589 "Reeve et al. 1969", POC:curators]
+def: "A tuber perimedullary zone that is part of a subterranean tuber pith." [ISSN:0003-0589, POC:curators]
 subset: Potato
 synonym: "zona perimedular del tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 is_a: PO:0025061 ! tuber perimedullary zone
@@ -13427,8 +13227,8 @@ subset: TraitNet
 synonym: "tallo de alto orden (secundario, terciario, etc)" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2972224
-xref: PATO:0001873 "cylindrical"
-xref: PATO:0002226 "subscylindrical"
+xref: PATO:0001873
+xref: PATO:0002226
 is_a: PO:0025001 ! cardinal organ part
 created_by: cooperl
 creation_date: 2009-12-18T10:09:17Z
@@ -13516,7 +13316,6 @@ synonym: "ramificaci&#243n   " EXACT Spanish [POC:mag]
 synonym: "secondary axis" NARROW []
 synonym: "tertiary axis" NARROW []
 synonym: "twig" NARROW []
-synonym: "ramificaci&#243n   " EXACT Spanish [POC:mag]
 is_a: PO:0025029 ! shoot axis
 created_by: Ramona
 creation_date: 2010-07-01T04:21:46Z
@@ -13549,7 +13348,6 @@ synonym: "hoja no vascular" EXACT Spanish [POC:mag]
 synonym: "non-vascular leaflet" RELATED []
 synonym: "phyllid" EXACT []
 synonym: "phyllidium" EXACT []
-synonym: "hoja no vascular" EXACT Spanish [POC:mag]
 is_a: PO:0025034 ! leaf
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
@@ -13584,7 +13382,6 @@ namespace: plant_anatomy
 def: "A portion of plant tissue to which ovules or seeds are attached." [ISBN:0-7167-1007-2]
 synonym: "placenta" EXACT Spanish [POC:mag]
 synonym: "portion of placenta tissue" EXACT []
-synonym: "placenta" EXACT Spanish [POC:mag]
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
 creation_date: 2010-07-13T04:36:23Z
@@ -13620,7 +13417,6 @@ comment: See also subterranean tuber axillary bud (PO:0025042).
 subset: Potato
 synonym: "epiblasto (epiblastema) axilar de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 synonym: "tuber sprout" EXACT []
-synonym: "epiblasto (epiblastema) axilar de tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 is_a: PO:0025003 ! tuber axillary shoot
 relationship: part_of PO:0004547 ! subterranean tuber
 created_by: Ramona
@@ -13695,8 +13491,7 @@ def: "A Poaceae gynoecium ridge that is a gynoecium of an ear floret in the earl
 comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
 synonym: "surco de ginoecio de Zea" EXACT Spanish [POC:mag]
 synonym: "Zea gynoecial ridge" EXACT []
-synonym: "Zea stylar ridge" EXACT [ISBN-13:978-0387947358 "Chang and Pareddy chapter"]
-synonym: "surco de ginoecio de Zea" EXACT Spanish [POC:mag]
+synonym: "Zea stylar ridge" EXACT [ISBN-13:978-0387947358]
 is_a: PO:0006365 ! gynoecium of ear floret
 is_a: PO:0025086 ! Poaceae gynoecium ridge
 created_by: Ramona
@@ -13720,7 +13515,7 @@ name: dehiscence zone
 namespace: plant_anatomy
 def: "A portion of plant tissue that is part of a plant structure and consists of a narrow band of cells that undergoes dehiscence upon maturation of the structure." [POC:curators]
 synonym: "zona de dehiscencia" EXACT Spanish [POC:mag]
-xref: GO:0009900 "dehiscence"
+xref: GO:0009900
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
 creation_date: 2010-10-27T11:07:17Z
@@ -13734,7 +13529,6 @@ comment: Found in bryophytes. The capsule annulus is located at the base of an o
 subset: Bryophytes
 synonym: "anillo de la c&#225psula de musgos" EXACT Spanish [POC:mag]
 synonym: "capsule dehiscence zone" EXACT []
-synonym: "anillo de la c&#225psula de musgos" EXACT Spanish [POC:mag]
 is_a: PO:0025092 ! dehiscence zone
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -13753,7 +13547,6 @@ synonym: "esporangio" EXACT Spanish [POC:mag]
 synonym: "moss capsule" EXACT []
 synonym: "sporangia" EXACT Plural []
 synonym: "spore capsule" EXACT []
-synonym: "esporangio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132600
 xref: OBO_SF_PO:3140824
 is_a: PO:0009008 ! plant organ
@@ -14012,7 +13805,7 @@ creation_date: 2011-01-05T09:16:29Z
 id: PO:0025117
 name: plant anatomical space
 namespace: plant_anatomy
-def: "An anatomical space that is part of a plant." [CARO:0000005 "anatomical space", POC:curators]
+def: "An anatomical space that is part of a plant." [CARO:0000005, POC:curators]
 comment: CARO:0000005 anatomical space is defined as: Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.
 synonym: "espacio anat&#243mico vegetal" EXACT Spanish [POC:mag]
 is_a: PO:0025131 ! plant anatomical entity
@@ -14054,7 +13847,6 @@ subset: Pteridophytes
 synonym: "antheridial sperm cell" EXACT []
 synonym: "c&#233lula esperm&#225tica del anteridio" EXACT Spanish [POC:mag]
 synonym: "spermatazoid" EXACT []
-synonym: "c&#233lula esperm&#225tica del anteridio" EXACT Spanish [POC:mag]
 is_a: PO:0000084 ! plant sperm cell
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -14064,7 +13856,7 @@ creation_date: 2010-11-15T08:05:46Z
 id: PO:0025121
 name: pollen sperm cell
 namespace: plant_anatomy
-def: "A plant sperm cell that is produced by and located in a pollen grain." [ISSN:1040-2519 "Russell, 1991 Annual Review of Plant Physiology and Plant Molecular Biology, 42, 189-204", POC:curators]
+def: "A plant sperm cell that is produced by and located in a pollen grain." [ISSN:1040-2519, POC:curators]
 comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
 subset: Angiosperm
 subset: Gymnosperms
@@ -14174,7 +13966,6 @@ comment: The entire petiole may be laminar, or the petiole may be more or less r
 subset: Musa
 synonym: "l&#225mina (ala) del pec&#237olo   " EXACT Spanish [POC:mag]
 synonym: "petiole wing" NARROW [CO_125:0000005]
-synonym: "l&#225mina (ala) del pec&#237olo   " EXACT Spanish [POC:mag]
 is_a: PO:0020039 ! leaf lamina
 relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
@@ -14197,7 +13988,7 @@ creation_date: 2010-11-15T11:29:28Z
 id: PO:0025131
 name: plant anatomical entity
 namespace: plant_anatomy
-def: "An anatomical entity that is or was part of a plant." [CARO:0000000 "anatomical entity", POC:curators]
+def: "An anatomical entity that is or was part of a plant." [CARO:0000000, POC:curators]
 comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 anatomical entity is defined as: Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
 synonym: "entidad anat&#243mica vegetal" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3115810
@@ -14237,7 +14028,6 @@ subset: Musa
 synonym: "banana crown" NARROW []
 synonym: "corona de la ramificaci&#243n de la inflorescencia" EXACT Spanish [POC:mag]
 synonym: "Musa crown" NARROW [CO_125:0000023]
-synonym: "corona de la ramificaci&#243n de la inflorescencia" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3147067
 is_a: PO:0009006 ! shoot system
 relationship: part_of PO:0009049 ! inflorescence
@@ -14294,7 +14084,6 @@ subset: Musa
 synonym: "compound tepal" RELATED [CO_125:0000021]
 synonym: "estrutura colectiva de t&#233palo fusionado" EXACT Spanish [POC:mag]
 synonym: "syntepalous perianth" EXACT []
-synonym: "estrutura colectiva de t&#233palo fusionado" EXACT Spanish [POC:mag]
 is_a: PO:0025021 ! collective tepal structure
 created_by: Ramona
 creation_date: 2010-11-15T01:18:23Z
@@ -14357,7 +14146,6 @@ subset: Musa
 synonym: "&#225pice del t&#233palo" EXACT Spanish [POC:mag]
 synonym: "compound tepal lobe" NARROW [CO_125:0000031]
 synonym: "free tepal apex" NARROW [CO_125:0000025]
-synonym: "&#225pice del t&#233palo" EXACT Spanish [POC:mag]
 is_a: PO:0025139 ! phyllome apex
 relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
@@ -14464,7 +14252,6 @@ def: "A portion of branch epidermis that is part of a peduncle." [POC:curators]
 subset: Musa
 synonym: "epidermis del pedúnculo" EXACT Spanish [POC:mag]
 synonym: "peduncle surface" RELATED [CO_125:0000036]
-synonym: "epidermis del pedúnculo" EXACT Spanish [POC:mag]
 is_a: PO:0025179 ! branch epidermis
 relationship: part_of PO:0009053 ! peduncle
 created_by: Ramona
@@ -14575,7 +14362,7 @@ creation_date: 2010-11-15T02:35:37Z
 id: PO:0025161
 name: portion of plant substance
 namespace: plant_anatomy
-def: "A portion of organism substance that is or was part of a plant." [CARO:0000004 "portion of organism substance", POC:curators]
+def: "A portion of organism substance that is or was part of a plant." [CARO:0000004, POC:curators]
 comment: Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin. CARO:0000004 portion of organism substance is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body. For plants, the word "body" refers to a whole plant or part thereof.
 synonym: "porci&#243n de sustancia vegetal" EXACT Spanish [POC:mag]
 is_a: PO:0025131 ! plant anatomical entity
@@ -14724,7 +14511,7 @@ namespace: plant_anatomy
 def: "A leaf that is a sclerified and pointed and lacks a lamina." [POC:curators]
 comment: See also stipule spine (PO:0025174).
 synonym: "espina de hoja" EXACT Spanish [POC:mag]
-xref: PATO:0002258 "pointed"
+xref: PATO:0002258
 is_a: PO:0009025 ! vascular leaf
 created_by: Ramona
 creation_date: 2010-11-18T08:10:24Z
@@ -14733,7 +14520,7 @@ creation_date: 2010-11-18T08:10:24Z
 id: PO:0025174
 name: stipule spine
 namespace: plant_anatomy
-def: "A stipule that is sclerified and pointed." [PATO:0002258 "pointed", POC:curators]
+def: "A stipule that is sclerified and pointed." [PATO:0002258, POC:curators]
 comment: See also leaf spine (PO:0025173).
 synonym: "espina de est&#237pula" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3115550
@@ -14844,7 +14631,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "complejo estom&#225tico de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf epidermal stomatal complex" EXACT []
 synonym: "leaf epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0025034 ! leaf
 created_by: Ramona
@@ -14872,7 +14658,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "complejo estom&#225tico de la l&#225mina de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf lamina epidermal stomatal complex" EXACT []
 synonym: "leaf lamina epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico de la l&#225mina de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0020039 ! leaf lamina
 created_by: Ramona
@@ -14919,7 +14704,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "complejo estom&#225tico del pec&#237olo   " EXACT Spanish [POC:mag]
 synonym: "petiole epidermal stomatal complex" EXACT []
 synonym: "petiole epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico del pec&#237olo   " EXACT Spanish [POC:mag]
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
@@ -14934,7 +14718,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "complejo estom&#225tico de la superficie abaxial de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf abaxial epidermal stomatal complex" EXACT []
 synonym: "leaf abaxial epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico de la superficie abaxial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0006019 ! leaf abaxial epidermis
 created_by: Ramona
@@ -14949,7 +14732,6 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "complejo estom&#225tico de la superficie adaxial de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf adaxial epidermal stomatal complex" EXACT []
 synonym: "leaf adaxial epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico de la superficie adaxial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
 created_by: Ramona
@@ -15229,7 +15011,6 @@ def: "A stomatal complex that is part of a phyllome." [POC:rw]
 synonym: "complejo estom&#225tico del filoma" EXACT Spanish [POC:mag]
 synonym: "phyllome epidermal stomatal complex" EXACT []
 synonym: "phyllome epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico del filoma" EXACT Spanish [POC:mag]
 is_a: PO:0002000 ! stomatal complex
 relationship: part_of PO:0006001 ! phyllome
 created_by: Ramona
@@ -15269,7 +15050,6 @@ def: "A phyllome stomatal complex that is part of a petal." [POC:rw]
 synonym: "complejo estom&#225tico del p&#233talo" EXACT Spanish [POC:mag]
 synonym: "petal epidermal stomatal complex" EXACT []
 synonym: "petal epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico del p&#233talo" EXACT Spanish [POC:mag]
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009032 ! petal
 created_by: Ramona
@@ -15283,7 +15063,6 @@ def: "A phyllome stomatal complex that is part of a sepal." [POC:rw]
 synonym: "complejo estom&#225tico del s&#233palo" EXACT Spanish [POC:mag]
 synonym: "sepal epidermal stomatal complex" EXACT []
 synonym: "sepal epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico del s&#233palo" EXACT Spanish [POC:mag]
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009031 ! sepal
 created_by: Ramona
@@ -15297,7 +15076,6 @@ def: "A phyllome stomatal complex that is part of a stamen." [POC:rw]
 synonym: "complejo estom&#225tico del estambre" EXACT Spanish [POC:mag]
 synonym: "stamen epidermal stomatal complex" EXACT []
 synonym: "stamen epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico del estambre" EXACT Spanish [POC:mag]
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009029 ! stamen
 created_by: Ramona
@@ -15311,7 +15089,6 @@ def: "A phyllome stomatal complex that is part of a tepal." [POC:rw]
 synonym: "complejo estom&#225tico del t&#233palo" EXACT Spanish [POC:mag]
 synonym: "tepal epidermal stomatal complex" EXACT []
 synonym: "tepal epidermis stomatal complex" EXACT []
-synonym: "complejo estom&#225tico del t&#233palo" EXACT Spanish [POC:mag]
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
@@ -15411,7 +15188,6 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that forms the central axis of a plant structure such as a fruit or moss capsule." [POC:curators]
 synonym: "columela" EXACT Spanish [POC:mag]
 synonym: "portion of columella tissue" EXACT []
-synonym: "columela" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132522
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Ramona
@@ -15521,7 +15297,6 @@ comment: This a sub-inflorescence that arises from the main inflorescence axis.
 subset: Angiosperm
 synonym: "inflorescencia de segundo orden" EXACT Spanish [POC:mag]
 synonym: "secondary inflorescence" EXACT []
-synonym: "inflorescencia de segundo orden" EXACT Spanish [POC:mag]
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0006321 ! second order inflorescence axis
 relationship: has_part PO:0009046 ! flower
@@ -15540,7 +15315,6 @@ synonym: "hand of bananas" NARROW []
 synonym: "hand of fruit" EXACT [CO_125:.0000037]
 synonym: "infructescencia de segundo orden" EXACT Spanish [POC:mag]
 synonym: "secondary infructescence" EXACT []
-synonym: "infructescencia de segundo orden" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3147085
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
@@ -15580,7 +15354,6 @@ namespace: plant_anatomy
 def: "An infructescence axis that is the primary or main axis of an infructescence." [POC:rw]
 synonym: "eje de la infructescencia de primer orden" EXACT Spanish [POC:mag]
 synonym: "infructescence rachis" EXACT []
-synonym: "eje de la infructescencia de primer orden" EXACT Spanish [POC:mag]
 is_a: PO:0025242 ! infructescence axis
 created_by: Ramona
 creation_date: 2010-12-30T03:38:25Z
@@ -15624,7 +15397,6 @@ comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "estambre persistente" EXACT Spanish [POC:mag]
 synonym: "flower relict" BROAD [CO_125:0000045]
-synonym: "estambre persistente" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3147085
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0009029 ! stamen
@@ -15668,7 +15440,6 @@ comment: If you are annotating to this term, please add an additional annotation
 subset: Musa
 synonym: "epidermis abaxial de la vaina de la hoja" EXACT Spanish [POC:mag]
 synonym: "pseudostem underlayers" NARROW [CO_125:0000047]
-synonym: "epidermis abaxial de la vaina de la hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3147109
 is_a: PO:0025249 ! leaf sheath epidermis
 created_by: Ramona
@@ -15754,7 +15525,6 @@ namespace: plant_anatomy
 def: "A meristematic cell that is part of a portion of procambium." [POC:rw]
 synonym: "c&#233lula del procambio" EXACT Spanish [POC:mag]
 synonym: "procambium cell" EXACT []
-synonym: "c&#233lula del procambio" EXACT Spanish [POC:mag]
 is_a: PO:0004010 ! meristematic cell
 relationship: part_of PO:0025275 ! procambium
 created_by: Ramona
@@ -15816,7 +15586,6 @@ def: "A plant anatomical space that is a cavity a reproductive structure." [POC:
 comment: May be a cavity in a sporophyll, within several fused sporophylls, or within a sporangium. In many instances, the locules are filled with seeds or other plant structures.
 synonym: "l&#243culo" EXACT Spanish [POC:mag]
 synonym: "loculus" EXACT []
-synonym: "l&#243culo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3040048
 xref: OBO_SF_PO:3166008
 is_a: PO:0025117 ! plant anatomical space
@@ -15831,7 +15600,6 @@ def: "A sporangium locule that is part of an anther and is a cavity within a sin
 synonym: "l&#243culo del esporangio" EXACT Spanish [POC:mag]
 synonym: "pollen sac locule" EXACT []
 synonym: "sporophyll locule" BROAD []
-synonym: "l&#243culo del esporangio" EXACT Spanish [POC:mag]
 is_a: PO:0025265 ! sporangium locule
 relationship: part_of PO:0009066 ! anther
 created_by: Ramona
@@ -15846,7 +15614,6 @@ def: "A locule that is a cavity in a sporangium or several fused sporangia." [PO
 comment: May be filled with spores.
 synonym: "l&#243culo de la antera" EXACT Spanish [POC:mag]
 synonym: "spore capsule locule" EXACT []
-synonym: "l&#243culo de la antera" EXACT Spanish [POC:mag]
 is_a: PO:0025263 ! locule
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -15860,7 +15627,6 @@ def: "A locule that is a cavity in an ovary." [POC:curators]
 comment: Generally contains at least one ovule. An ovary locule may be part of a single carpel, in the case of unicarpellate flowers. An ovary that is part of a syncarpous gynoecium may have multiple locules, or the anatomical spaces of multiple carpels may be fused to form a single locule.
 synonym: "l&#243culo del ovario" EXACT Spanish [POC:mag]
 synonym: "sporophyll locule" BROAD []
-synonym: "l&#243culo del ovario" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3166008
 is_a: PO:0025263 ! locule
 relationship: part_of PO:0009072 ! ovary
@@ -16049,7 +15815,6 @@ subset: Angiosperm
 subset: Gymnosperms
 synonym: "polen" EXACT Spanish [POC:mag]
 synonym: "pollen grain" EXACT []
-synonym: "polen" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3257963
 is_a: PO:0025280 ! microgametophyte
 created_by: Ramona
@@ -16080,7 +15845,6 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "anteridio del microgametofito" EXACT Spanish [POC:mag]
 synonym: "antheridial microgametophyte" EXACT []
-synonym: "anteridio del microgametofito" EXACT Spanish [POC:mag]
 is_a: PO:0025280 ! microgametophyte
 relationship: has_part PO:0025125 ! antheridium
 created_by: Ramona
@@ -16094,7 +15858,6 @@ def: "A sporophyte meristematic apical cell that is part of a plant embryo and i
 comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
 synonym: "c&#233lula apical del embri&#243n" EXACT Spanish [POC:mag]
 synonym: "embryonic meristematic apical cell" EXACT []
-synonym: "c&#233lula apical del embri&#243n" EXACT Spanish [POC:mag]
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: develops_from PO:0000423 ! zygote
 relationship: part_of PO:0009009 ! plant embryo
@@ -16119,7 +15882,6 @@ namespace: plant_anatomy
 def: "A coleoptile that is part of a plant embryo." [POC:curators]
 synonym: "cole&#243ptile del embri&#243n" EXACT Spanish [POC:mag]
 synonym: "embryonic coleoptile" EXACT []
-synonym: "cole&#243ptile del embri&#243n" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
 relationship: part_of PO:0009009 ! plant embryo
@@ -16146,7 +15908,6 @@ namespace: plant_anatomy
 def: "A coleorhiza that is part of a plant embryo." [POC:curators]
 synonym: "coleorriza del embri&#243n" EXACT Spanish [POC:mag]
 synonym: "embryonic coleorhiza" EXACT []
-synonym: "coleorriza del embri&#243n" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293771
 is_a: PO:0020034 ! coleorhiza
 relationship: part_of PO:0009009 ! plant embryo
@@ -16294,7 +16055,6 @@ synonym: "angiosperm calyptra" EXACT []
 synonym: "caliptra del perianto" EXACT Spanish [POC:mag]
 synonym: "floral calyptra" EXACT []
 synonym: "floral operculum" RELATED []
-synonym: "caliptra del perianto" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3241802
 is_a: PO:0009058 ! perianth
 disjoint_from: PO:0030037 ! spore capsule calyptra
@@ -16308,7 +16068,6 @@ namespace: plant_anatomy
 def: "A hypocotyl-root junction that is part of an embryo axis." [POC:rw]
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en el embri&#243n" EXACT Spanish [POC:mag]
 synonym: "embryonic hypocotyl-root junction" EXACT []
-synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en el embri&#243n" EXACT Spanish [POC:mag]
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: part_of PO:0019018 ! embryo axis
 created_by: Ramona
@@ -16346,7 +16105,6 @@ namespace: plant_anatomy
 def: "A plant embryo that forms as a result of the fusion of gametes." [POC:curators]
 synonym: "embri&#243n som&#225tico cigotico (del cigote)" EXACT Spanish [POC:mag]
 synonym: "zygotic embryo" EXACT []
-synonym: "embri&#243n som&#225tico cigotico (del cigote)" EXACT Spanish [POC:mag]
 is_a: PO:0009009 ! plant embryo
 created_by: cooperl
 creation_date: 2011-04-27T05:19:46Z
@@ -16370,7 +16128,6 @@ namespace: plant_anatomy
 def: "A cultured somatic plant embryo that develops from isolated microspores." [POC:curators]
 synonym: "embri&#243n cultivado derivado de la microspora vegetal" EXACT Spanish [POC:mag]
 synonym: "microspore-derived haploid embryo" EXACT []
-synonym: "embri&#243n cultivado derivado de la microspora vegetal" EXACT Spanish [POC:mag]
 is_a: PO:0000011 ! cultured somatic plant embryo
 created_by: cooperl
 creation_date: 2011-04-27T05:33:40Z
@@ -16384,7 +16141,6 @@ comment: May have multiple layers such as exothecium, endothecium and tapetum. E
 synonym: "pared del esporangio" EXACT Spanish [POC:mag]
 synonym: "sporangium jacket layer" EXACT []
 synonym: "sporangium jacket layers" EXACT []
-synonym: "pared del esporangio" EXACT Spanish [POC:mag]
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
 created_by: Ramona
@@ -16442,7 +16198,6 @@ def: "An exothecium that is part of a microsporangium wall." [POC:curators]
 synonym: "exotecio del microsporangio" EXACT Spanish [POC:mag]
 synonym: "microsporangial exothecium" EXACT []
 synonym: "microsporangium epidermis" EXACT []
-synonym: "exotecio del microsporangio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3297999
 is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0025307 ! microsporangium wall
@@ -16457,7 +16212,6 @@ def: "An exothecium that is part of a megasporangium wall." [POC:curators]
 synonym: "exotecio del megasporangio" EXACT Spanish [POC:mag]
 synonym: "megapsorangial exothecium" EXACT []
 synonym: "megasporangium epidermis" EXACT []
-synonym: "exotecio del megasporangio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3297999
 is_a: PO:0030073 ! exothecium
 relationship: part_of PO:0025308 ! megasporangium wall
@@ -16560,7 +16314,6 @@ comment: Found in some monocots.
 synonym: "collar rhizoid" EXACT []
 synonym: "rizoide del nodo del cotiled&#243n" EXACT Spanish [POC:mag]
 synonym: "wurtzelhalsrhizoid" EXACT []
-synonym: "rizoide del nodo del cotiled&#243n" EXACT Spanish [POC:mag]
 is_a: PO:0030071 ! epidermal rhizoid
 created_by: Ramona
 creation_date: 2011-05-09T01:26:21Z
@@ -16619,7 +16372,6 @@ comment: During the sporophytic phase, a plant may produce meiospores by meiosis
 subset: TraitNet
 synonym: "fase esporof&#237tica" EXACT Spanish [POC:mag]
 synonym: "sporophytic phase" EXACT []
-synonym: "fase esporof&#237tica" EXACT Spanish [POC:mag]
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
@@ -16633,7 +16385,6 @@ comment: During the gametophytic phase, a plant may produce gametes by mitosis. 
 subset: TraitNet
 synonym: "fase gametof&#237tica" EXACT Spanish [POC:mag]
 synonym: "gametophytic phase" EXACT []
-synonym: "fase gametof&#237tica" EXACT Spanish [POC:mag]
 is_a: PO:0007033 ! whole plant growth stage
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
@@ -16677,7 +16428,6 @@ subset: Pteridophytes
 synonym: "portion of protonema tissue" EXACT []
 synonym: "protonema" EXACT Spanish [POC:mag]
 synonym: "protonemata" EXACT Plural []
-synonym: "protonema" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3199622
 is_a: PO:0005426 ! chlorenchyma
 relationship: participates_in PO:0028003 ! gametophyte phase
@@ -16694,7 +16444,6 @@ subset: Bryophytes
 synonym: "chloronemata" EXACT Plural []
 synonym: "cloronema" EXACT Spanish [POC:mag]
 synonym: "portion of chloronema tissue" EXACT []
-synonym: "cloronema" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3199622
 is_a: PO:0030003 ! protonema
 created_by: Ramona
@@ -16710,7 +16459,6 @@ subset: Bryophytes
 synonym: "caulonema" EXACT Spanish [POC:mag]
 synonym: "caulonemata" EXACT Plural []
 synonym: "portion of caulonema tissue" EXACT []
-synonym: "caulonema" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3199622
 is_a: PO:0030003 ! protonema
 created_by: Ramona
@@ -16726,7 +16474,6 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "fase protonemica" EXACT Spanish [POC:mag]
 synonym: "protonemal phase" EXACT []
-synonym: "fase protonemica" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3199622
 is_a: PO:0007033 ! whole plant growth stage
 relationship: part_of PO:0028003 ! gametophyte phase
@@ -16753,13 +16500,12 @@ creation_date: 2011-03-25T09:35:20Z
 id: PO:0030008
 name: root meristematic apical cell
 namespace: plant_anatomy
-def: "A sporophyte meristematic apical cell that is part of a root tip." [ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes.", POC:curators]
+def: "A sporophyte meristematic apical cell that is part of a root tip." [ISBN:B0007J6EN6, POC:curators]
 comment: Occurs in the sporophytic phase of pteridophytes.
 subset: Pteridophytes
 synonym: "c&#233lula apical de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "root apical cell" EXACT []
 synonym: "root apical initial" EXACT []
-synonym: "c&#233lula apical de la ra&#237z" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0000025 ! root tip
@@ -16777,7 +16523,6 @@ subset: Pteridophytes
 synonym: "c&#233lula apical del epiblasto" EXACT Spanish [POC:mag]
 synonym: "shoot apical cell" EXACT []
 synonym: "shoot apical initial" EXACT []
-synonym: "c&#233lula apical del epiblasto" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 relationship: part_of PO:0009006 ! shoot system
@@ -16795,7 +16540,6 @@ subset: Pteridophytes
 synonym: "c&#233lula apical del eje del epiblasto" EXACT Spanish [POC:mag]
 synonym: "shoot axis apical cell" EXACT []
 synonym: "shoot axis apical initial" EXACT []
-synonym: "c&#233lula apical del eje del epiblasto" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 relationship: part_of PO:0000037 ! shoot apex
@@ -16813,7 +16557,6 @@ subset: Pteridophytes
 synonym: "c&#233lula apical de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf apical cell" EXACT []
 synonym: "leaf apical initial" EXACT []
-synonym: "c&#233lula apical de la hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 relationship: part_of PO:0020137 ! leaf apex
@@ -16824,13 +16567,12 @@ creation_date: 2011-03-25T09:43:12Z
 id: PO:0030012
 name: vascular leaf meristematic apical cell
 namespace: plant_anatomy
-def: "A leaf meristematic apical cell that is part of the leaf apex of a vascular leaf." [ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes.", POC:curators]
+def: "A leaf meristematic apical cell that is part of the leaf apex of a vascular leaf." [ISBN:B0007J6EN6, POC:curators]
 comment: Occurs in vascular leaves of some ferns in their sporophytic phase.
 subset: Pteridophytes
 synonym: "c&#233lula apical de la hoja vascular" EXACT Spanish [POC:mag]
 synonym: "vascular leaf apical cell" EXACT []
 synonym: "vascular leaf apical initial" EXACT []
-synonym: "c&#233lula apical de la hoja vascular" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
@@ -16849,7 +16591,6 @@ synonym: "non-vascular leaf apical cell" EXACT []
 synonym: "non-vascular leaf apical initial" EXACT []
 synonym: "phyllid apical cell" EXACT []
 synonym: "phyllid apical initial" EXACT []
-synonym: "c&#233lula apical de la hoja no vascular" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
 relationship: develops_from PO:0030087 ! non-vascular leaf initial
@@ -16869,7 +16610,6 @@ synonym: "c&#233lula apical gametof&#237tica" EXACT Spanish [POC:mag]
 synonym: "gametophyte apical cell" EXACT []
 synonym: "gametophyte apical initial" EXACT []
 synonym: "gametophytic meristematic apical cell" EXACT []
-synonym: "c&#233lula apical gametof&#237tica" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
@@ -16889,7 +16629,6 @@ synonym: "c&#233lula apical esporof&#237tica" EXACT Spanish [POC:mag]
 synonym: "sporophyte apical cell" RELATED []
 synonym: "sporophyte apical initial" RELATED []
 synonym: "sporophytic meristematic apical cell" EXACT []
-synonym: "c&#233lula apical esporof&#237tica" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
@@ -16907,7 +16646,6 @@ subset: Bryophytes
 synonym: "c&#233lula apical de la seta" EXACT Spanish [POC:mag]
 synonym: "seta apical cell" EXACT []
 synonym: "seta apical initial" EXACT []
-synonym: "c&#233lula apical de la seta" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 relationship: part_of PO:0030032 ! seta
@@ -16923,7 +16661,6 @@ comment: May be covered by a peristome.
 subset: Bryophytes
 synonym: "boca de la c&#225psula productora de esporas" EXACT Spanish [POC:mag]
 synonym: "sporangium mouth" EXACT []
-synonym: "boca de la c&#225psula productora de esporas" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3241816
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025094 ! sporangium
@@ -16955,7 +16692,6 @@ subset: Bryophytes
 synonym: "c&#233lula apical del gamet&#243foro" EXACT Spanish [POC:mag]
 synonym: "gametophore apical cell" EXACT []
 synonym: "gametophore apical initial" EXACT []
-synonym: "c&#233lula apical del gamet&#243foro" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 intersection_of: PO:0030009 ! shoot meristematic apical cell
@@ -16974,7 +16710,6 @@ synonym: "caulid" EXACT []
 synonym: "cauloid" EXACT []
 synonym: "eje del gamet&#243foro" EXACT Spanish [POC:mag]
 synonym: "non-vascular shoot axis" EXACT []
-synonym: "eje del gamet&#243foro" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3185162
 is_a: PO:0025029 ! shoot axis
 intersection_of: PO:0025029 ! shoot axis
@@ -17028,7 +16763,6 @@ synonym: "cauloid apical cell" EXACT []
 synonym: "gametophore axis apical cell" EXACT []
 synonym: "gametophore axis apical initial" EXACT []
 synonym: "non-vascular shoot axis apical cell" EXACT []
-synonym: "c&#233lula apical del eje del gamet&#243foro" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 relationship: part_of PO:0030020 ! gametophore axis
@@ -17039,14 +16773,13 @@ creation_date: 2011-03-25T11:41:09Z
 id: PO:0030024
 name: vascular shoot axis meristematic apical cell
 namespace: plant_anatomy
-def: "A shoot axis meristematic apical cell at the tip of a shoot apex in a shoot system that has as part vascular tissue." [ISBN:B0007J6EN6 "Parihar, 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes.", POC:curators]
+def: "A shoot axis meristematic apical cell at the tip of a shoot apex in a shoot system that has as part vascular tissue." [ISBN:B0007J6EN6, POC:curators]
 comment: Occurs in some ferns in their sporophytic phase.
 subset: Pteridophytes
 synonym: "c&#233lula apical del eje del epiblasto vascualr" EXACT Spanish [POC:mag]
 synonym: "fern shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical initial" EXACT []
-synonym: "c&#233lula apical del eje del epiblasto vascualr" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 relationship: participates_in PO:0028002 ! sporophyte phase
@@ -17063,7 +16796,6 @@ subset: Pteridophytes
 synonym: "c&#233lula apical del talo" EXACT Spanish [POC:mag]
 synonym: "thallus apical cell" EXACT []
 synonym: "thallus apical initial" EXACT []
-synonym: "c&#233lula apical del talo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030027 ! thallus
@@ -17091,14 +16823,13 @@ creation_date: 2011-04-12T08:22:35Z
 id: PO:0030027
 name: thallus
 namespace: plant_anatomy
-def: "A whole plant in the gametophytic phase that has a flat growth form and no distinct organs." [ISBN:B0007J6EN6 "N.S. Parihar 1967. Pteridophytes, 2nd Edition"]
+def: "A whole plant in the gametophytic phase that has a flat growth form and no distinct organs." [ISBN:B0007J6EN6]
 comment: A thallus is a gametophyte of liverworts and pteridophytes and develops from a short-lived protonema. Roughly two dimensional growth results from division of a single apical cell. Thalli may be ribbon or heart shaped or almost filamentous. Although there are no distinct organs, there may be tissue differentiation and dichotomous branching.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "prothallium" BROAD []
 synonym: "talo" EXACT Spanish [POC:mag]
 synonym: "thalli" EXACT Plural []
-synonym: "talo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3257063
 is_a: PO:0000003 ! whole plant
 relationship: participates_in PO:0028003 ! gametophyte phase
@@ -17114,7 +16845,6 @@ comment: When an antheridium occurs on a specialized lateral branch of the gamet
 subset: Bryophytes
 synonym: "br&#225ctea del perigonio" EXACT Spanish [POC:mag]
 synonym: "perigonium bract" EXACT []
-synonym: "br&#225ctea del perigonio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3185168
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
@@ -17145,9 +16875,8 @@ namespace: plant_anatomy
 def: "A bract that subtends an archegonium." [ISBN:0962073342]
 comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually perichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
 subset: Bryophytes
-synonym: "br&#225ctea  pericaetal" EXACT Spanish [POC:mag]
+synonym: "br&#225ctea pericaetal" EXACT Spanish [POC:mag]
 synonym: "perichaetum bract" EXACT []
-synonym: "br&#225ctea  pericaetal" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3185168
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0030018 ! gametophore
@@ -17181,7 +16910,6 @@ comment: Found in some bryophytes, especially mosses.
 subset: Bryophytes
 synonym: "seta" EXACT Spanish [POC:mag]
 synonym: "setae" EXACT Plural []
-synonym: "seta" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3185175
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028002 ! sporophyte phase
@@ -17307,7 +17035,6 @@ synonym: "apophysis" NARROW [ISBN:0962073342]
 synonym: "base del esporangio" EXACT Spanish [POC:mag]
 synonym: "hypophysis" NARROW [ISBN:0962073342]
 synonym: "sporangium neck" EXACT []
-synonym: "base del esporangio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3241725
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025094 ! sporangium
@@ -17369,7 +17096,6 @@ subset: Bryophytes
 synonym: "op&#233rculo de la c&#225psula productora de esporas" EXACT Spanish [POC:mag]
 synonym: "sporangium lid" EXACT []
 synonym: "spore capsule lid" EXACT []
-synonym: "op&#233rculo de la c&#225psula productora de esporas" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3241767
 is_a: PO:0025001 ! cardinal organ part
 disjoint_from: PO:0025298 ! fruit operculum
@@ -17386,7 +17112,6 @@ comment: Found only in bryophytes in gametophore axes, setae, or leaves. Functio
 subset: Bryophytes
 synonym: "estereida" EXACT Spanish [POC:mag]
 synonym: "stereid cell" EXACT []
-synonym: "estereida" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293311
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0030050 ! stereome
@@ -17403,7 +17128,6 @@ subset: Pteridophytes
 synonym: "c&#233lula meristem&#225tica apical del protonema" EXACT Spanish [POC:mag]
 synonym: "protonema apical cell" EXACT []
 synonym: "protonema apical initial" EXACT []
-synonym: "c&#233lula meristem&#225tica apical del protonema" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030003 ! protonema
@@ -17420,7 +17144,6 @@ subset: Bryophytes
 synonym: "hidromo" EXACT Spanish [POC:mag]
 synonym: "hydrom" EXACT []
 synonym: "leptoxylem" EXACT []
-synonym: "hidromo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3295055
 is_a: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0005352 ! xylem
@@ -17437,7 +17160,6 @@ subset: Bryophytes
 synonym: "leptom" EXACT []
 synonym: "leptomo" EXACT Spanish [POC:mag]
 synonym: "leptophloem" EXACT []
-synonym: "leptomo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3295055
 is_a: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0005417 ! phloem
@@ -17452,7 +17174,6 @@ def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium
 comment: Term used for vascular plants to describe the outermost layer of a sporangium wall that is internal to the exothecium.
 synonym: "endotecio de la pared del esporangio" EXACT Spanish [POC:mag]
 synonym: "endothecium of sporangium wall" EXACT []
-synonym: "endotecio de la pared del esporangio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3298004
 is_a: PO:0025059 ! portion of ground tissue
 disjoint_from: PO:0030085 ! protosporangium endothecium
@@ -17499,7 +17220,6 @@ subset: Pteridophytes
 synonym: "antheridium wall cell" EXACT []
 synonym: "capa c&#233lular de la cubierta del anteridio" EXACT Spanish [POC:mag]
 synonym: "sterile jacket cell" EXACT []
-synonym: "capa c&#233lular de la cubierta del anteridio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293290
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0030053 ! antheridium jacket layer
@@ -17518,7 +17238,6 @@ synonym: "antheridial jacket layer" EXACT []
 synonym: "antheridium wall" EXACT []
 synonym: "capa de la cubierta del anteridio " EXACT Spanish [POC:mag]
 synonym: "sterile jacket layer" EXACT []
-synonym: "capa de la cubierta del anteridio " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293931
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0025125 ! antheridium
@@ -17536,7 +17255,6 @@ subset: Bryophytes
 synonym: "epifragma" EXACT Spanish [POC:mag]
 synonym: "epiphram" EXACT []
 synonym: "tympanum" EXACT []
-synonym: "epifragma" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3241820
 is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0025094 ! sporangium
@@ -17566,7 +17284,6 @@ comment: May also give rise to sterile cells such as elators (in liverworts) or 
 synonym: "archesporial initial" EXACT []
 synonym: "c&#233lula arquesporial " EXACT Spanish [POC:mag]
 synonym: "sporogenous cell" EXACT []
-synonym: "c&#233lula arquesporial " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293208
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025094 ! sporangium
@@ -17597,7 +17314,6 @@ comment: Found in mosses. A brachycyte is a drought tolerant cell that can act a
 subset: Bryophytes
 synonym: "braquicito" EXACT Spanish [POC:mag]
 synonym: "brood cell" EXACT [ISBN:0962073342]
-synonym: "braquicito" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293213
 is_a: PO:0009002 ! plant cell
 relationship: participates_in PO:0028003 ! gametophyte phase
@@ -17614,7 +17330,6 @@ subset: Bryophytes
 synonym: "brachytmema cell" NARROW []
 synonym: "c&#233lula del tmema" EXACT Spanish [POC:mag]
 synonym: "dlichotmema cell" NARROW []
-synonym: "c&#233lula del tmema" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293289
 is_a: PO:0009002 ! plant cell
 relationship: participates_in PO:0028003 ! gametophyte phase
@@ -17625,7 +17340,7 @@ creation_date: 2011-04-28T09:24:40Z
 id: PO:0030060
 name: gametophore axillary hair
 namespace: plant_anatomy
-def: "An axillary hair that grows in a leaf axil of a non-vascular leaf." [ISBN:0962073342, ISBN:9780473067304, POC:curators "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+def: "An axillary hair that grows in a leaf axil of a non-vascular leaf." [ISBN:0962073342, ISBN:9780473067304, POC:curators]
 comment: Found in pleurocarpous mosses. Form in the axils of leaf primordia and may disappear when the gametophore is mature.
 subset: Bryophytes
 synonym: "club hair" EXACT [ISBN:0962073342]
@@ -17655,7 +17370,7 @@ creation_date: 2011-04-29T08:30:03Z
 id: PO:0030062
 name: gametophore axillary hair terminal cell
 namespace: plant_anatomy
-def: "An axillary hair terminal cell that is the long terminal cell of a gametophore axillary hair." [ISBN:9780473067304, POC:curators "Lars Hedenas, The Bryologist 100(1): pp. 65-88"]
+def: "An axillary hair terminal cell that is the long terminal cell of a gametophore axillary hair." [ISBN:9780473067304, POC:curators]
 subset: Bryophytes
 synonym: "c&#233lula terminal de pelo axilar del gamet&#243foro" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293292
@@ -17668,7 +17383,7 @@ creation_date: 2011-04-29T08:39:12Z
 id: PO:0030063
 name: gametophore axillary hair base
 namespace: plant_anatomy
-def: "A axillary hair base that is the basal part of a gametophore axillary hair, below the gametophore axillary hair terminal cell." [ISBN:9780473067304, POC:curators "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+def: "A axillary hair base that is the basal part of a gametophore axillary hair, below the gametophore axillary hair terminal cell." [ISBN:9780473067304, POC:curators]
 comment: Consists of two to a dozen cells.
 subset: Bryophytes
 synonym: "base del pelo axilar del gamet&#243foro" EXACT Spanish [POC:mag]
@@ -17682,11 +17397,10 @@ creation_date: 2011-04-29T09:01:40Z
 id: PO:0030064
 name: gametophore axillary hair basal cell
 namespace: plant_anatomy
-def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, POC:curators "Lars Hedenas The Bryologist 100(1): pp. 65-88"]
+def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, POC:curators]
 subset: Bryophytes
 synonym: "c&#233lula basal del pelo axilar del gamet&#243foro" EXACT Spanish [POC:mag]
 synonym: "gametophore axillary hair base cell" EXACT []
-synonym: "c&#233lula basal del pelo axilar del gamet&#243foro" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293292
 is_a: PO:0025319 ! axillary hair basal cell
 relationship: part_of PO:0030063 ! gametophore axillary hair base
@@ -17762,7 +17476,6 @@ comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-
 subset: Bryophytes
 synonym: "parafilium" EXACT Spanish [POC:mag]
 synonym: "paraphyllia" EXACT Plural []
-synonym: "parafilium" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293886
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0030020 ! gametophore axis
@@ -17779,7 +17492,6 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "par&#225fisis" EXACT Spanish [POC:mag]
 synonym: "paraphyses" EXACT Plural []
-synonym: "par&#225fisis" EXACT Spanish [POC:mag]
 xref: OB_SF_PO:3293891
 is_a: PO:0025162 ! multicellular trichome
 relationship: participates_in PO:0028003 ! gametophyte phase
@@ -17813,7 +17525,6 @@ synonym: "non-vascular leaflet midrib" RELATED []
 synonym: "phyllid costa" EXACT []
 synonym: "phyllid midrib" EXACT []
 synonym: "phyllid midvein" RELATED []
-synonym: "costa" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3295062
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0025075 ! non-vascular leaf
@@ -17830,7 +17541,6 @@ synonym: "epithecium" EXACT []
 synonym: "exotecio" EXACT Spanish [POC:mag]
 synonym: "sporangium epidermis" EXACT []
 synonym: "sporangium wall exothecium" EXACT []
-synonym: "exotecio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3241820
 xref: OBO_SF_PO:3297999
 is_a: PO:0005679 ! epidermis
@@ -17849,7 +17559,6 @@ subset: Gymnosperms
 subset: Pteridophytes
 synonym: "arquesporio" EXACT Spanish [POC:mag]
 synonym: "sporogenous tissue" EXACT []
-synonym: "arquesporio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3296935
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030056 ! archesporial cell
@@ -17908,7 +17617,7 @@ creation_date: 2011-05-04T02:38:25Z
 id: PO:0030078
 name: rhizoid
 namespace: plant_anatomy
-def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:unknown "Parihar 1959. An Introduction to Embryophyta: Vol. II. Pteridophytes."]
+def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:unknown]
 comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, protonemal rhizoids that branch from a protonema, and rhizoids that develop from a basal cell of a gametophore bud.
 synonym: "rizoide" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293893
