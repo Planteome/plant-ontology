@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:08:2011 12:49
+date: 10:08:2011 14:56
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta16
 subsetdef: Angiosperm "Term for angiosperms"
@@ -39,12 +39,16 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0000002
 name: anther wall
 namespace: plant_anatomy
+alt_id: PO:0006445
+alt_id: PO:0006477
 def: "A microsporangium wall that is part of an anther." [ISBN:0471244554, ISBN:9780003686647]
 comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers.
 subset: Angiosperm
 subset: reference
 synonym: "pared de la antera" EXACT Spanish [POC:mag]
+synonym: "Poaceae anther wall" NARROW []
 synonym: "pollen sac wall" EXACT []
+synonym: "Zea anther wall" NARROW []
 is_a: PO:0025307 ! microsporangium wall
 relationship: part_of PO:0009066 ! anther
 
@@ -4327,8 +4331,10 @@ relationship: part_of PO:0009073 ! stigma
 id: PO:0006062
 name: style epidermis
 namespace: plant_anatomy
+alt_id: PO:0006498
 def: "A portion of carpel epidermis that is part of a style." [POC:rw]
 synonym: "epidermis del estilo" EXACT Spanish [POC:mag]
+synonym: "Poaceae style epidermis" NARROW []
 synonym: "transmitting tract epidermis" RELATED []
 is_a: PO:0025096 ! carpel epidermis
 relationship: part_of PO:0009074 ! style
@@ -5193,18 +5199,6 @@ synonym: "portion of seed obturator tissue" EXACT []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020029 ! obturator
 relationship: part_of PO:0006332 ! seed funicle
-
-[Term]
-id: PO:0006337
-name: inflorescence bract of ear
-namespace: plant_anatomy
-def: "The leaf subtending an ear of corn and acting as outer envelope of the ear." [GR:pj]
-synonym: "br&#225ctea de la inflorescencia de la espiga" EXACT Spanish [POC:mag]
-synonym: "corn husk" RELATED []
-synonym: "husk" RELATED []
-synonym: "husk leaf" RELATED []
-is_a: PO:0009054 ! inflorescence bract
-relationship: part_of PO:0020136 ! Zea ear
 
 [Term]
 id: PO:0006338
@@ -6111,115 +6105,6 @@ is_a: PO:0009029 ! stamen
 relationship: part_of PO:0006383 ! Poaceae androecium
 
 [Term]
-id: PO:0006442
-name: Poaceae anther
-namespace: plant_anatomy
-def: "The pollen-bearing part of a stamen of a grass floret." [GR:pj]
-synonym: "antera de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009066 ! anther
-relationship: part_of PO:0006441 ! Poaceae stamen
-
-[Term]
-id: PO:0006443
-name: Poaceae connective
-namespace: plant_anatomy
-def: "The part of the stamen of a grass floret, that connects the microsporangia/pollen sacs." [GR:pj]
-synonym: "connectivo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009068 ! connective
-relationship: part_of PO:0006442 ! Poaceae anther
-
-[Term]
-id: PO:0006444
-name: Poaceae microsporangium
-namespace: plant_anatomy
-def: "Sporangium in the anther of a grass stamen producing microspores, usually many in number." [GR:pj]
-synonym: "microsporangio de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0025277 ! pollen sac
-relationship: part_of PO:0006442 ! Poaceae anther
-
-[Term]
-id: PO:0006445
-name: Poaceae anther wall
-namespace: plant_anatomy
-def: "A multicellular layer with outer epidermis and an inner endothecium of an anther of a grass stamen." [GR:pj]
-subset: Poaceae
-synonym: "pared de la antera de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0000002 ! anther wall
-relationship: part_of PO:0006444 ! Poaceae microsporangium
-
-[Term]
-id: PO:0006446
-name: Poaceae endothecium
-namespace: plant_anatomy
-def: "The hypodermis of an anther sac of a grass stamen with distinctively thickened walls and involved in its dehiscence." [GR:pj]
-synonym: "endotecio de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020002 ! anther wall endothecium
-relationship: part_of PO:0006445 ! Poaceae anther wall
-
-[Term]
-id: PO:0006447
-name: Poaceae exothecium
-namespace: plant_anatomy
-def: "The epidermis of an anther sac of a grass stamen." [GR:pj]
-synonym: "exotecio de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020004 ! anther wall exothecium
-relationship: part_of PO:0006445 ! Poaceae anther wall
-
-[Term]
-id: PO:0006448
-name: Poaceae placentoid
-namespace: plant_anatomy
-def: "An inpushing of the anther wall of a grass stamen." [GR:pj]
-synonym: "Placentoide de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020005 ! placentoid
-relationship: part_of PO:0006445 ! Poaceae anther wall
-
-[Term]
-id: PO:0006449
-name: Poaceae stomium
-namespace: plant_anatomy
-def: "A stomium that is part of an anther wall (sensu Poaceae)." [POC:rw]
-synonym: "estomio en Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020101 ! stomium
-relationship: part_of PO:0006445 ! Poaceae anther wall
-
-[Term]
-id: PO:0006450
-name: Poaceae tapetum
-namespace: plant_anatomy
-def: "Innermost part of the anther wall, involved in the nutrition of the pollen in grasses." [GR:pj]
-synonym: "tapete de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009071 ! anther wall tapetum
-relationship: part_of PO:0006445 ! Poaceae anther wall
-
-[Term]
-id: PO:0006451
-name: Poaceae microsporocyte
-namespace: plant_anatomy
-def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores in a grass plant." [GR:pj]
-synonym: "microsporocito de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020047 ! microsporocyte
-relationship: part_of PO:0006444 ! Poaceae microsporangium
-
-[Term]
-id: PO:0006452
-name: Poaceae microspore
-namespace: plant_anatomy
-def: "The smaller, in general, of the two kinds of spores produced in the life cycle of a grass plant. It gives rise to the male gametophyte." [GR:pj]
-synonym: "microspora de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020048 ! microspore
-relationship: develops_from PO:0006451 ! Poaceae microsporocyte
-
-[Term]
-id: PO:0006453
-name: Poaceae theca
-namespace: plant_anatomy
-def: "A part of the anther of a grass stamen consisting of paired sporangia that dehisce down a common slit." [GR:pj]
-synonym: "teca de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0006444 ! Poaceae microsporangium
-is_a: PO:0009069 ! anther theca
-
-[Term]
 id: PO:0006454
 name: Poaceae filament
 namespace: plant_anatomy
@@ -6355,15 +6240,6 @@ is_a: PO:0009073 ! stigma
 relationship: part_of PO:0006455 ! Poaceae carpel
 
 [Term]
-id: PO:0006469
-name: Poaceae style
-namespace: plant_anatomy
-def: "An elongated part of a carpel between the ovary and the stigma of a grass floret, through which the pollen tube grows." [GR:pj]
-synonym: "estilo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009074 ! style
-relationship: part_of PO:0006455 ! Poaceae carpel
-
-[Term]
 id: PO:0006470
 name: Zea carpel
 namespace: plant_anatomy
@@ -6390,15 +6266,6 @@ is_a: PO:0006441 ! Poaceae stamen
 relationship: part_of PO:0006366 ! androecium of tassel floret
 
 [Term]
-id: PO:0006473
-name: Zea anther
-namespace: plant_anatomy
-def: "The pollen-bearing part of a stamen of a maize floret." [GR:pj]
-synonym: "antera de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006442 ! Poaceae anther
-relationship: part_of PO:0006472 ! Zea stamen
-
-[Term]
 id: PO:0006474
 name: Zea filament
 namespace: plant_anatomy
@@ -6406,106 +6273,6 @@ def: "The stalk of the stamen of a maize floret." [GR:pj]
 synonym: "filamento de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006454 ! Poaceae filament
 relationship: part_of PO:0006472 ! Zea stamen
-
-[Term]
-id: PO:0006475
-name: Zea connective
-namespace: plant_anatomy
-def: "The part of the stamen of a maize floret, that connects the microsporangia or pollen sacs." [GR:pj]
-synonym: "conectivo de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006443 ! Poaceae connective
-relationship: part_of PO:0006473 ! Zea anther
-
-[Term]
-id: PO:0006476
-name: Zea microsporangium
-namespace: plant_anatomy
-def: "Sporangium in the anther of a maize stamen producing microspores, usually many in number ." [GR:pj]
-synonym: "microsporangio de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006444 ! Poaceae microsporangium
-relationship: part_of PO:0006473 ! Zea anther
-
-[Term]
-id: PO:0006477
-name: Zea anther wall
-namespace: plant_anatomy
-def: "A multicellular layer with outer epidermis and an inner endothecium of an anther of a maize stamen." [GR:pj]
-synonym: "pared de la antera de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006445 ! Poaceae anther wall
-relationship: part_of PO:0006476 ! Zea microsporangium
-
-[Term]
-id: PO:0006478
-name: Zea theca
-namespace: plant_anatomy
-def: "A part of the anther of a maize stamen consisting of paired sporangia that dehisce down a common slit." [GR:pj]
-synonym: "teca de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006453 ! Poaceae theca
-is_a: PO:0006476 ! Zea microsporangium
-
-[Term]
-id: PO:0006479
-name: Zea microsporocyte
-namespace: plant_anatomy
-def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores in a maize plant." [GR:pj]
-synonym: "microsporocito de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006451 ! Poaceae microsporocyte
-relationship: part_of PO:0006476 ! Zea microsporangium
-
-[Term]
-id: PO:0006480
-name: Zea microspore
-namespace: plant_anatomy
-def: "The smaller, in general, of the two kinds of spores produced in the life cycle of a maize plant. It gives rise to the male gametophyte." [GR:pj]
-synonym: "microspora de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006452 ! Poaceae microspore
-relationship: develops_from PO:0006479 ! Zea microsporocyte
-
-[Term]
-id: PO:0006481
-name: Zea endothecium
-namespace: plant_anatomy
-def: "The hypodermis of an anther sac of a maize stamen with distinctively thickened walls and involved in its dehiscence." [GR:pj]
-synonym: "endotecio de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006446 ! Poaceae endothecium
-relationship: part_of PO:0006477 ! Zea anther wall
-
-[Term]
-id: PO:0006482
-name: Zea exothecium
-namespace: plant_anatomy
-def: "The epidermis of an anther sac of a maize stamen." [GR:pj]
-synonym: "exotecio de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006447 ! Poaceae exothecium
-relationship: part_of PO:0006477 ! Zea anther wall
-
-[Term]
-id: PO:0006483
-name: Zea placentoid
-namespace: plant_anatomy
-def: "An inpushing of the anther wall of a maize stamen." [GR:pj]
-synonym: "placentoide de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006448 ! Poaceae placentoid
-relationship: part_of PO:0006477 ! Zea anther wall
-
-[Term]
-id: PO:0006484
-name: Zea tapetum
-namespace: plant_anatomy
-def: "Innermost part of the anther wall, involved in the nutrition of the pollen in maize." [GR:pj]
-synonym: "tapete de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006450 ! Poaceae tapetum
-relationship: part_of PO:0006477 ! Zea anther wall
-
-[Term]
-id: PO:0006485
-name: Zea stomium
-namespace: plant_anatomy
-def: "A stomium that is part of an anther wall (sensu Zea)." [POC:rw]
-subset: Maize
-synonym: "estomio de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006449 ! Poaceae stomium
-relationship: part_of PO:0006477 ! Zea anther wall
 
 [Term]
 id: PO:0006486
@@ -6523,16 +6290,6 @@ namespace: plant_anatomy
 def: "The apical part of a carpel of a maize floret on which the pollen germinates." [GR:pj]
 synonym: "estigma de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006468 ! Poaceae stigma
-relationship: part_of PO:0006470 ! Zea carpel
-
-[Term]
-id: PO:0006488
-name: silk
-namespace: plant_anatomy
-def: "The style of a maize floret." [GR:pj]
-synonym: "estilo de Zea" EXACT Spanish [POC:mag]
-synonym: "Zea style" RELATED []
-is_a: PO:0006469 ! Poaceae style
 relationship: part_of PO:0006470 ! Zea carpel
 
 [Term]
@@ -6615,24 +6372,6 @@ def: "The epidermal cell layer of the grass stigma." [GR:pj]
 synonym: "epidermis del estigma de Poaceae" EXACT Spanish [POC:mag]
 is_a: PO:0006061 ! stigma epidermis
 relationship: part_of PO:0006468 ! Poaceae stigma
-
-[Term]
-id: PO:0006498
-name: Poaceae style epidermis
-namespace: plant_anatomy
-def: "The epidermal cell layer of the style of a grass carpel." [GR:pj]
-synonym: "epidermis del estilo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0006062 ! style epidermis
-relationship: part_of PO:0006469 ! Poaceae style
-
-[Term]
-id: PO:0006499
-name: Poaceae transmitting tissue
-namespace: plant_anatomy
-def: "Tissue in the style of a grass carpel, through which the pollen tube grows; it connects the stigma and the inside of ovary." [GR:pj]
-synonym: "tejido de transmisi&#243n de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020102 ! portion of transmitting tissue
-relationship: part_of PO:0006469 ! Poaceae style
 
 [Term]
 id: PO:0006500
@@ -10456,10 +10195,16 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009054
 name: inflorescence bract
 namespace: plant_anatomy
+alt_id: PO:0006337
 def: "A bract subtending a branch of the inflorescence or borne on the inflorescence axis below any branches or flowers." [APWeb:Glossary]
+comment: Includes the leaf subtending and acting as outer envelope of an ear in Zea mays.
 subset: reference
 subset: TraitNet
 synonym: "br&#225ctea de la inflorescencia" EXACT Spanish [POC:mag]
+synonym: "corn husk" RELATED []
+synonym: "husk" RELATED []
+synonym: "husk leaf" RELATED []
+synonym: "inflorescence bract of ear" NARROW []
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
 relationship: part_of PO:0009049 ! inflorescence
@@ -10610,11 +10355,17 @@ relationship: part_of PO:0009064 ! receptacle
 id: PO:0009066
 name: anther
 namespace: plant_anatomy
-def: "A cardinal organ part that is the pollen-bearing part of a stamen." [APWeb:Glossary]
+alt_id: PO:0006442
+alt_id: PO:0006473
+def: "A collective plant structure that is the pollen-bearing part of a stamen." [APWeb:Glossary]
+comment: Generally consists of four pollen sacs (microsporangia) in two anther thecas.
 subset: reference
 subset: TraitNet
 synonym: "antera" EXACT Spanish [POC:mag]
+synonym: "Poaceae anther" NARROW []
+synonym: "Zea anther" NARROW []
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3195060
 is_a: PO:0025007 ! collective plant structure
 relationship: develops_from PO:0006089 ! anther primordium
 relationship: has_part PO:0025277 ! pollen sac
@@ -10635,9 +10386,13 @@ relationship: part_of PO:0009029 ! stamen
 id: PO:0009068
 name: connective
 namespace: plant_anatomy
+alt_id: PO:0006443
+alt_id: PO:0006475
 def: "The part of the stamen that connects the microsporangia/pollen sacs." [APWeb:Glossary]
 subset: reference
 synonym: "conectivo" EXACT Spanish [POC:mag]
+synonym: "Poaceae connective" NARROW []
+synonym: "Zea connective" NARROW []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009066 ! anther
@@ -10646,10 +10401,15 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0009069
 name: anther theca
 namespace: plant_anatomy
-def: "A collective organ part structure that is part of an anther and consists of paired sporangia that dehisce down a common slit." [APWeb:Glossary]
+alt_id: PO:0006453
+alt_id: PO:0006478
+def: "A collective plant structure that is part of an anther and consists of a pair of sporangia that dehisce down a common slit." [APWeb:Glossary]
 subset: Angiosperm
 subset: reference
+synonym: "Poaceae theca" NARROW []
 synonym: "teca" EXACT Spanish [POC:mag]
+synonym: "Zea theca" NARROW []
+xref: OBO_SF_PO:3195060
 is_a: PO:0025007 ! collective plant structure
 relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009066 ! anther
@@ -10674,13 +10434,17 @@ replaced_by: PO:0025277
 id: PO:0009071
 name: anther wall tapetum
 namespace: plant_anatomy
+alt_id: PO:0006450
+alt_id: PO:0006484
 def: "A microsporangium tapetum that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
 comment: Develops from a primary or secondary parietal cell layer. Innermost part of the anther wall, involved in the nutrition of the pollen.
 subset: Angiosperm
 subset: reference
+synonym: "Poaceae tapetum" NARROW []
 synonym: "pollen sac tapetum" EXACT []
 synonym: "portion of anther wall tapetal tissue" EXACT []
 synonym: "tapete" EXACT Spanish [POC:mag]
+synonym: "Zea tapetum" NARROW []
 xref: OBO_SF_PO:3298006
 is_a: PO:0025314 ! microsporangium tapetum
 relationship: part_of PO:0000002 ! anther wall
@@ -10716,11 +10480,15 @@ relationship: part_of PO:0009030 ! carpel
 id: PO:0009074
 name: style
 namespace: plant_anatomy
+alt_id: PO:0006469
+alt_id: PO:0006488
 def: "An elongated part of a carpel or group of fused carpels between the ovary and the stigma, and through which the pollen tube grows." [APWeb:Glossary, TAIR:lr]
 subset: reference
 subset: TraitNet
 synonym: "estilo" EXACT Spanish [POC:mag]
-synonym: "silk" RELATED []
+synonym: "Poaceae style" NARROW []
+synonym: "silk" NARROW []
+synonym: "Zea style" NARROW []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
@@ -11138,13 +10906,17 @@ relationship: part_of PO:0009072 ! ovary
 id: PO:0020002
 name: anther wall endothecium
 namespace: plant_anatomy
+alt_id: PO:0006446
+alt_id: PO:0006481
 def: "An microsporangium endothecium that part of an anther wall." [ISBN:9780003686647]
 comment: May have secondary thickening of walls of cells that are involved in anther dehiscence. There can be more than one layer in an anther endothecium.
 subset: Angiosperm
 subset: reference
 synonym: "anther sac hypodermis" RELATED []
 synonym: "endotecio de la pared the la antera" EXACT Spanish [POC:mag]
+synonym: "Poaceae endothecium" NARROW []
 synonym: "pollen sac endothecium" EXACT []
+synonym: "Zea endothecium" NARROW []
 xref: OBO_SF_PO:3298006
 is_a: PO:0025309 ! microsporangium endothecium
 relationship: adjacent_to PO:0020004 ! anther wall exothecium
@@ -11168,6 +10940,8 @@ id: PO:0020004
 name: anther wall exothecium
 namespace: plant_anatomy
 alt_id: PO:0006059
+alt_id: PO:0006447
+alt_id: PO:0006482
 def: "An microsporangium exothecium that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
 comment: Often with thickened cell walls. Involved in anther dehiscence.
 subset: Angiosperm
@@ -11175,7 +10949,9 @@ subset: reference
 synonym: "anther epidermis" EXACT []
 synonym: "anther sac epidermis" EXACT []
 synonym: "exotecio de la pared de la antera " EXACT Spanish [POC:mag]
+synonym: "Poaceae exothecium" NARROW []
 synonym: "pollen sac exothecium" EXACT []
+synonym: "Zea exothecium" NARROW []
 xref: OBO_SF_PO:3297999
 is_a: PO:0025311 ! microsporangium exothecium
 relationship: part_of PO:0000002 ! anther wall
@@ -11184,9 +10960,13 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0020005
 name: placentoid
 namespace: plant_anatomy
+alt_id: PO:0006448
+alt_id: PO:0006483
 def: "A portion of parenchyma tissue that is part of a connective and projects into a pollen sac." [ISBN:9780470752685]
 subset: reference
 synonym: "plancentoide" EXACT Spanish [POC:mag]
+synonym: "Poaceae placentoid" NARROW []
+synonym: "Zea placentoid" NARROW []
 xref: OBO_SF_PO:3132542
 is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0009068 ! connective
@@ -11620,12 +11400,16 @@ is_a: PO:0020043 ! compound leaf
 id: PO:0020047
 name: microsporocyte
 namespace: plant_anatomy
+alt_id: PO:0006451
+alt_id: PO:0006479
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores." [ISBN:0878934030]
 subset: reference
 synonym: "microspore mother cell" RELATED []
 synonym: "microsporocito" EXACT Spanish [POC:mag]
 synonym: "PMC" RELATED []
+synonym: "Poaceae microsporocyte" NARROW []
 synonym: "pollen mother cell" RELATED []
+synonym: "Zea microsporocyte" NARROW []
 xref: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
@@ -11635,9 +11419,13 @@ relationship: part_of PO:0025202 ! microsporangium
 id: PO:0020048
 name: microspore
 namespace: plant_anatomy
+alt_id: PO:0006452
+alt_id: PO:0006480
 def: "The smaller, in general, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant, and on germination giving rise to the male gametophyte." [APWeb:Glossary]
 subset: reference
 synonym: "microspora" EXACT Spanish [POC:mag]
+synonym: "Poaceae microspore" NARROW []
+synonym: "Zea microspore" NARROW []
 xref: CL:0000252
 is_a: PO:0025017 ! spore
 
@@ -11981,10 +11769,14 @@ is_a: PO:0020142 ! stem internode
 id: PO:0020101
 name: stomium
 namespace: plant_anatomy
+alt_id: PO:0006449
+alt_id: PO:0006485
 def: "A plant anatomical space that is a slit in an anther lobe formed from when a dehiscence zone dehisces." [POC:curators]
 comment: Pollen may be released through the stomium.
 subset: reference
 synonym: "estomio" EXACT Spanish [POC:mag]
+synonym: "Poaceae stomium" NARROW []
+synonym: "Zea stomium" NARROW []
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0000002 ! anther wall
 
@@ -11992,8 +11784,10 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0020102
 name: portion of transmitting tissue
 namespace: plant_anatomy
-def: "A portion of ground tissue in the style of a carpel through which the pollen tube grows; it connects the stigma and the inside of ovary." [GR:pj, ISBN:0080374913]
+alt_id: PO:0006499
+def: "A portion of ground tissue in the style of a carpel through which a pollen tube grows; it connects a stigma and the inside of an ovary." [GR:pj, ISBN:0080374913]
 subset: reference
+synonym: "Poaceae transmitting tissue" NARROW []
 synonym: "porci&#243n del tejido de transmisi&#243n" EXACT Spanish [POC:mag]
 synonym: "transmitting tract" RELATED []
 is_a: PO:0025059 ! portion of ground tissue
@@ -15756,12 +15550,16 @@ creation_date: 2011-02-25T08:50:03Z
 id: PO:0025277
 name: pollen sac
 namespace: plant_anatomy
+alt_id: PO:0006444
+alt_id: PO:0006476
 def: "A microsporangium that is located in a sporophyll and where the pollen grains developed and are located after they develop." [POC:curators]
 comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule.
 subset: reference
 subset: TraitNet
 synonym: "anther lobe" NARROW []
+synonym: "Poaceae microsporangium" NARROW []
 synonym: "saco pol&#237nico " EXACT Spanish [POC:mag]
+synonym: "Zea microsporangium" NARROW []
 xref: OBO_SF_PO:3132610
 xref: OBO_SF_PO:3195056
 is_a: PO:0025202 ! microsporangium
