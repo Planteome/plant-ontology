@@ -1,11 +1,12 @@
 format-version: 1.2
-date: 10:08:2011 14:56
+date: 10:08:2011 16:51
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta16
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
 subsetdef: Citrus "Term used for citrus"
+subsetdef: CL "plant cells"
 subsetdef: Gymnosperms "Term used for gymnosperms"
 subsetdef: Maize "Term used for maize"
 subsetdef: Musa "Terms used for banana"
@@ -84,6 +85,7 @@ name: cultured plant cell
 namespace: plant_anatomy
 def: "A plant cell that is grown or maintained in vitro." [POC:Curators]
 comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium.
+subset: CL
 synonym: "c&#233lula cultivada" EXACT Spanish [POC:mag]
 synonym: "cell suspension" RELATED []
 xref: OBO_SF_PO:3289997
@@ -96,6 +98,7 @@ name: plant protoplast
 namespace: plant_anatomy
 def: "A cultured plant cell from which the entire plant cell wall has been removed." [POC:curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
+subset: CL
 synonym: "protoplasto cultivado" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3279819
 is_a: PO:0000005 ! cultured plant cell
@@ -106,6 +109,7 @@ name: leaf-derived cultured plant cell
 namespace: plant_anatomy
 def: "A cultured plant cell that was derived from leaf tissue." [POC:Curators]
 comment: May be derived from cultured plant callus or plant protoplast that was induced from a segment of leaf. In the case of the plant protoplast, after the re-establishment cell walls.
+subset: CL
 synonym: "c&#233lula cultivada de hoja" EXACT Spanish [POC:mag]
 is_a: PO:0000005 ! cultured plant cell
 relationship: derives_from PO:0025034 ! leaf
@@ -116,6 +120,7 @@ name: root-derived cultured plant cell
 namespace: plant_anatomy
 def: "A cultured plant cell that was derived from root tissue." [POC:curators]
 comment: May be derived from cultured plant callus or plant protoplasts induced from a segment of root. In the case of the plant protoplast, after the re-establishment plant cell walls.
+subset: CL
 synonym: "c&#233lula cultivada de ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0000005 ! cultured plant cell
 relationship: derives_from PO:0009005 ! root
@@ -415,6 +420,7 @@ id: PO:0000038
 name: primary endosperm cell
 namespace: plant_anatomy
 def: "Cell produced by the fusion of sperm cell nucleus and two polar nuclei of the central cell (or diploid secondary endosperm nucleus, in cases where two polar nuclei fuse together before double fertilization). The first cell of the endosperm, often tripoid." [TAIR:ki]
+subset: CL
 synonym: "c&#233lula primaria del endosperma" EXACT Spanish [POC:mag]
 is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0009089 ! endosperm
@@ -450,6 +456,7 @@ name: epidermal cork cell
 namespace: plant_anatomy
 def: "One of the two types of short cells in the epidermis of grasses and bamboos. It is usually paired with silica cell." [TAIR:ki]
 comment: Developmentally different from periderm cork cell (i.e., phellem), produced by cork cambium. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025).
+subset: CL
 subset: Poaceae
 synonym: "c&#233lula de corcho epid&#233rmica " EXACT Spanish [POC:mag]
 is_a: PO:0004718 ! short cell
@@ -643,6 +650,7 @@ id: PO:0000059
 name: root initial cell
 namespace: plant_anatomy
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:ki]
+subset: CL
 synonym: "c&#233lula inicial de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "root stem cell" RELATED []
 is_a: PO:0004011 ! initial cell
@@ -656,6 +664,7 @@ id: PO:0000060
 name: root cortex-endodermis initial cell
 namespace: plant_anatomy
 def: "A root initial cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:ki]
+subset: CL
 synonym: "c&#233lula inicial del cortex/endodermis de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "root cortex-endodermis stem cell" EXACT []
 is_a: PO:0000059 ! root initial cell
@@ -665,6 +674,7 @@ id: PO:0000061
 name: lateral root-cap-epidermal initial cell
 namespace: plant_anatomy
 def: "A root initial cell that produces lateral root-cap cells and root epidermis." [POC:curators]
+subset: CL
 synonym: "c&#233lula inicial del caliptra de la ra&#237z lateral" EXACT Spanish [POC:mag]
 synonym: "lateral root-cap-epidermal stem cell" EXACT []
 is_a: PO:0000059 ! root initial cell
@@ -674,6 +684,7 @@ id: PO:0000062
 name: stomatal initial
 namespace: plant_anatomy
 def: "An epidermal initial that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell differentiates into a guard mother cell." [POC:rw]
+subset: CL
 synonym: "inicial estom&#225tica (meristemoide inicial)" EXACT Spanish [POC:mag]
 synonym: "stomatal initial cell" EXACT []
 synonym: "stomatal meristemoid" EXACT []
@@ -688,6 +699,7 @@ name: leaf procambial cell
 namespace: plant_anatomy
 def: "A procambial cell that is part of a leaf procambium." [POC:rw]
 comment: Leaf procambial cells may be derived from the shoot apical meristem or can arise throughout the mesophyll of a developing leaf.
+subset: CL
 synonym: "c&#233lula procambial de la hoja" EXACT Spanish [POC:mag]
 synonym: "dispersed meristematic cell" EXACT [PMCID:PMC1550771]
 synonym: "DMC" EXACT [PMCID:PMC1550771]
@@ -703,6 +715,7 @@ name: xylem pole pericycle cell
 namespace: plant_anatomy
 def: "A pericycle cell that is adjacent to the protoxylem of a vascular bundle." [PMID:17993548]
 comment: Xylem pole pericycle cells are cells in the pericycle that are adjacent to the protoxylem pole of a vascular bundle. Pericycle cells that are adjacent to other xylem cells in the vascular bundle are not considered xylem pole pericycle cells. Xylem pole pericycle cells may retain some meristematic activity and are the site of lateral root initiation.
+subset: CL
 synonym: "c&#233lula del polo xilem&#225tico del periciclo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3124791
 is_a: PO:0025261 ! pericycle cell
@@ -715,6 +728,7 @@ name: phloem pole pericycle cell
 namespace: plant_anatomy
 def: "A pericycle cell that is adjacent to the protophloem of a vascular bundle." [PMID:17993548]
 comment: Phloem pole pericycle cells are cells in the pericycle that are adjacent to the protophloem pole of a vascular bundle. Pericycle cells that are adjacent to other phloem cells in the vascular bundle are not considered phloem pole pericycle cells. Phloem pole pericycle cells are distinct from xylem pole pericycle cells in that they display cytoplasmic characteristics of a more differentiated status.
+subset: CL
 synonym: "c&#233lula del polo floem&#225tico del periciclo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3124791
 is_a: PO:0025261 ! pericycle cell
@@ -727,6 +741,7 @@ name: epithem cell
 namespace: plant_anatomy
 def: "A parenchyma cell of the mesophyll of a hydathode found between the xylem endings and the epidermis." [ISBN:0471245208, PMID:12662305]
 comment: Proposed to be involved in the retrieval of solutes from the xylem sap.
+subset: CL
 synonym: "c&#233lular ???" EXACT Spanish [POC:mag]
 xref: CL:0000074
 is_a: PO:0000074 ! parenchyma cell
@@ -737,6 +752,7 @@ id: PO:0000071
 name: companion cell
 namespace: plant_anatomy
 def: "A specialized parenchyma cell associated with a sieve-tube member in angiosperm phloem and arising from the same mother cell as the sieve-tube member." [ISBN:0879015322]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula acompa&#241iante   " EXACT Spanish [POC:mag]
 xref: CL:0000284
@@ -749,6 +765,7 @@ id: PO:0000074
 name: parenchyma cell
 namespace: plant_anatomy
 def: "A relatively unspecialized ground tissue cell with a nucleate protoplast." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula parenquim&#225tica   " EXACT Spanish [POC:mag]
 is_a: PO:0025030 ! ground tissue cell
@@ -759,6 +776,7 @@ id: PO:0000075
 name: collenchyma cell
 namespace: plant_anatomy
 def: "An elongated plant cell with unevenly thickened non-lignified primary walls that is alive at maturity." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula colenquim&#225tica   " EXACT Spanish [POC:mag]
 is_a: PO:0025030 ! ground tissue cell
@@ -769,6 +787,7 @@ id: PO:0000076
 name: chlorenchyma cell
 namespace: plant_anatomy
 def: "A parenchyma cell containing chloroplasts; a component of leaf mesophyll and other green parenchyma tissue." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula clorenquim&#225tica   " EXACT Spanish [POC:mag]
 xref: CL:0000472
@@ -780,6 +799,7 @@ id: PO:0000077
 name: sclerenchyma cell
 namespace: plant_anatomy
 def: "Usually dead cell variable in form and size, with more or less thick, often lignified, secondary walls." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula esclerenquim&#225tica   " EXACT Spanish [POC:mag]
 xref: CL:0000276
@@ -792,6 +812,7 @@ name: transfer cell
 namespace: plant_anatomy
 def: "A cell with wall ingrowths (or invaginations) that increase the surface of the plasmalemma." [ISBN:0471245208]
 comment: Appear to be specialized for short-distance transfer of solutes. Transfer cells can occur anywhere there is a junction between two individuals, such as between a sporophyte and a gametophyte, or between a parasitic plant and its host.
+subset: CL
 synonym: "c&#233lula de transferencia" EXACT Spanish [POC:mag]
 xref: CL:0000370
 xref: OBO_SF_PO:3172685
@@ -803,6 +824,7 @@ name: fusiform initial
 namespace: plant_anatomy
 alt_id: PO:0000275
 def: "An elongated cambial initial cell with approximately wedge-shaped ends that is part of the vascular cambium and gives rise to axial cells." [ISBN:0471245208]
+subset: CL
 synonym: "c&#233lula inicial fusiforme" EXACT Spanish [POC:mag]
 synonym: "fusiform initial cell" EXACT []
 synonym: "xylem initial" RELATED []
@@ -816,6 +838,7 @@ name: axial cell
 namespace: plant_anatomy
 def: "A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
 comment: These cells make up the axial system, also known as vertical or longitudinal system.
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula axial" EXACT Spanish [POC:mag]
 xref: CL:0000363
@@ -827,6 +850,7 @@ id: PO:0000082
 name: ray initial
 namespace: plant_anatomy
 def: "A cambial initial cell that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
+subset: CL
 synonym: "c&#233lula inicial de rayo" EXACT Spanish [POC:mag]
 synonym: "ray initial cell" EXACT []
 xref: CL:0000316
@@ -839,6 +863,7 @@ namespace: plant_anatomy
 alt_id: PO:0020098
 def: "A gamete produced by an antheridium or a microgametophyte." [POC:curators]
 comment: The sperm (microgamete) is usually smaller than the egg (megagamete). Male gametes may be defined as the motile gamete, rather than the smaller gamete.
+subset: CL
 subset: reference
 synonym: "c&#233lula esperm&#225tica o esperma" EXACT Spanish [POC:mag]
 synonym: "male gamete" EXACT []
@@ -866,6 +891,7 @@ id: PO:0000115
 name: socket cell
 namespace: plant_anatomy
 def: "A shoot epidermal cell that surrounds a trichome and provides its support." [ISBN:0471245208, PMID:15319479]
+subset: CL
 synonym: "c&#233lula de encaje" EXACT Spanish [POC:mag]
 synonym: "cell located at the base of the trichome" RELATED []
 synonym: "trichome support cell" RELATED []
@@ -890,6 +916,7 @@ name: synergid
 namespace: plant_anatomy
 def: "Cell, usually two in number, in the micropylar end of the embryo sac of angiosperms associated with the egg in the egg apparatus." [ISBN:047125208, TAIR:ki]
 subset: Angiosperm
+subset: CL
 subset: reference
 synonym: "sin&#233rgida" EXACT Spanish [POC:mag]
 xref: CL:0000288
@@ -1026,6 +1053,7 @@ id: PO:0000244
 name: functional megaspore
 namespace: plant_anatomy
 def: "The megaspore(s) that forms the embryo sac." [TAIR:lr]
+subset: CL
 synonym: "megaspora funcional" EXACT Spanish [POC:mag]
 xref: CL:0000433
 is_a: PO:0020019 ! megaspore
@@ -1035,6 +1063,7 @@ id: PO:0000245
 name: degenerate megaspore
 namespace: plant_anatomy
 def: "In monosporic and bisporic megasporogenesis: the megaspore(s) that would not participate in megagametogenesis." [TAIR:lr]
+subset: CL
 synonym: "megaspora degenerativa" EXACT Spanish [POC:mag]
 xref: CL:0000475
 is_a: PO:0020019 ! megaspore
@@ -1060,6 +1089,7 @@ name: root hair cell
 namespace: plant_anatomy
 def: "A root epidermal cell with a simple extension that is concerned with absorption of soil solution." [ISBN:0471245208]
 comment: This term is for an entire epidermal cell that contains a root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula del pelo de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025164 ! root epidermal cell
@@ -1084,6 +1114,7 @@ id: PO:0000262
 name: trichoblast
 namespace: plant_anatomy
 def: "A root epidermal cell that is the smaller cell produced by the asymmetric division of an epidermal intial and gives rise to a root hair." [ISBN:0471245208]
+subset: CL
 synonym: "hair cell" RELATED []
 synonym: "tricoblasto" EXACT Spanish [POC:mag]
 xref: CL:0000299
@@ -1095,6 +1126,7 @@ id: PO:0000263
 name: atrichoblast
 namespace: plant_anatomy
 def: "A root epidermal cell that is formed after asymmetric division of an epidermal initial and does not give rise to a root hair." [ISBN:0387987819]
+subset: CL
 synonym: "atricoblasto" EXACT Spanish [POC:mag]
 synonym: "non-hair cell" RELATED []
 xref: CL:0000332
@@ -1116,6 +1148,7 @@ id: PO:0000273
 name: xylem element
 namespace: plant_anatomy
 def: "A cell making up xylem tissue." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "elemento del xilema" EXACT Spanish [POC:mag]
 xref: CL:0000298
@@ -1126,6 +1159,7 @@ id: PO:0000274
 name: xylem fiber
 namespace: plant_anatomy
 def: "A fiber in xylem." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "fibra del xilema" EXACT Spanish [POC:mag]
 is_a: PO:0000273 ! xylem element
@@ -1152,6 +1186,7 @@ name: idioblast
 namespace: plant_anatomy
 def: "A plant cell that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
 comment: Often contains deposit of minerals or products of secondary metabolism. May have a specialized function.
+subset: CL
 synonym: "idioblasto" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3301116
 is_a: PO:0009002 ! plant cell
@@ -1162,6 +1197,7 @@ name: subsidiary cell
 namespace: plant_anatomy
 alt_id: PO:0000296
 def: "An epidermal cell associated with a stoma and at least morphologically distinguishable from the other epidermal cells." [ISBN:047124520]
+subset: CL
 synonym: "accessory cell" RELATED []
 synonym: "c&#233lula subsididaria" EXACT Spanish [POC:mag]
 xref: CL:0000270
@@ -1176,6 +1212,7 @@ namespace: plant_anatomy
 alt_id: PO:0000286
 def: "One of the series of cells that make up a sieve tube; it shows a more or less pronounced differentiation between sieve plates (wide pores) and lateral sieve areas (narrow pores)." [ISBN:0471245208]
 comment: Also sieve tube element and the obsolete sieve tube segment. Occurs in the sporophytic phase of a plant life cycle.
+subset: CL
 subset: TraitNet
 synonym: "miembro del tubo criboso" EXACT Spanish [POC:mag]
 synonym: "sieve element" RELATED []
@@ -1193,6 +1230,7 @@ name: tracheary element
 namespace: plant_anatomy
 def: "General term for any water conducting cell, tracheid or vessel member." [ISBN:0471245208]
 comment: Occurs in the sporophytic phase of a plant life cycle.
+subset: CL
 subset: TraitNet
 synonym: "elemento de traqueida" EXACT Spanish [POC:mag]
 xref: CL:0000672
@@ -1207,6 +1245,7 @@ name: guard cell
 namespace: plant_anatomy
 def: "One of a pair of cells flanking the stomatal pore." [ISBN:0471245208]
 comment: They cause the opening and closing of the pore by changes in turgor.
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula guardiana" EXACT Spanish [POC:mag]
 xref: CL:0000292
@@ -1221,6 +1260,7 @@ name: cambial initial
 namespace: plant_anatomy
 alt_id: PO:0000080
 def: "An initial cell that is part of the vascular or cork cambium and by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
+subset: CL
 synonym: "c&#233lula inicial del cambium" EXACT Spanish [POC:mag]
 synonym: "cambial cell" EXACT []
 synonym: "cambial initial cell" EXACT []
@@ -1236,6 +1276,7 @@ id: PO:0000301
 name: tracheid
 namespace: plant_anatomy
 def: "In the xylem, a dead elongated water-conducting cell in which at least the middle lamella of the end walls remains intact." [APWeb:Glossary]
+subset: CL
 subset: TraitNet
 synonym: "traqueida" EXACT Spanish [POC:mag]
 xref: CL:0000331
@@ -1256,6 +1297,7 @@ name: epidermal pavement cell
 namespace: plant_anatomy
 def: "A shoot epidermal cell that is relatively unspecialized at maturity." [POC:curators]
 comment: May have sinuous anticlinal cell walls that overall give a jigsaw like appearance to the epidermis. Pavement cells are epidermal cells that are not directly associated with a stomatal complex or trichome at maturity, but they share similar developmental origins.
+subset: CL
 synonym: "c&#233lula del pavimento epidermal" EXACT Spanish [POC:mag]
 xref: CL:0000400
 xref: OBO_SF_PO:3139280
@@ -1271,6 +1313,7 @@ id: PO:0000349
 name: epidermal initial
 namespace: plant_anatomy
 def: "An initial cell that is part of an epidermis and gives rise to specialized cell types of the epidermis." [TAIR:lr]
+subset: CL
 synonym: "c&#233lula inicial de la epidermis" EXACT Spanish [POC:mag]
 synonym: "epidermal initial cell" EXACT []
 xref: CL:0000538
@@ -1285,6 +1328,7 @@ id: PO:0000351
 name: guard mother cell
 namespace: plant_anatomy
 def: "A shoot epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
+subset: CL
 synonym: "c&#233lula madre de la c&#233lula guardiana" EXACT Spanish [POC:mag]
 xref: CL:0000262
 is_a: PO:0025165 ! shoot epidermal cell
@@ -1295,6 +1339,7 @@ id: PO:0000352
 name: myrosin cell
 namespace: plant_anatomy
 def: "A cell containing glucosinolates (\"mustard oil glucosides\") and myrosinases, enzymes hydrolyzing the glucosinolates." [ISBN:0471245208]
+subset: CL
 synonym: "c&#233lula de mirosina" EXACT Spanish [POC:mag]
 xref: CL:0000368
 is_a: PO:0025030 ! ground tissue cell
@@ -1304,6 +1349,7 @@ id: PO:0000353
 name: passage cell
 namespace: plant_anatomy
 def: "A ground tissue cell that is part of an exodermis or an endodermis and remains thin walled when the associated cells develop thick secondary walls." [ISBN:0471245208]
+subset: CL
 synonym: "c&#233lula de pasaje" EXACT Spanish [POC:mag]
 xref: CL:0000245
 is_a: PO:0025030 ! ground tissue cell
@@ -1313,6 +1359,7 @@ id: PO:0000355
 name: fiber tracheid
 namespace: plant_anatomy
 def: "A fiber-like tracheid in the secondary xylem; commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures." [ISBN:0471245208]
+subset: CL
 synonym: "fibrotraqueida" EXACT Spanish [POC:mag]
 xref: CL:0000258
 is_a: PO:0000274 ! xylem fiber
@@ -1342,6 +1389,7 @@ name: phloem mother cell
 namespace: plant_anatomy
 def: "A cambial initial cell which is destined to differentiate into secondary phloem." [POC:curators]
 comment: Phloem islands can be formed in the middle of the xylem.
+subset: CL
 synonym: "c&#233lula madre del floema" EXACT Spanish [POC:mag]
 xref: CL:0000264
 is_a: PO:0000295 ! cambial initial
@@ -1352,6 +1400,7 @@ id: PO:0000423
 name: zygote
 namespace: plant_anatomy
 def: "Diploid cell produced by the fusion of sperm cell nucleus and egg cell." [TAIR:ki]
+subset: CL
 synonym: "cigoto" EXACT Spanish [POC:mag]
 xref: CL:0000365
 is_a: PO:0009002 ! plant cell
@@ -1361,6 +1410,7 @@ id: PO:0000431
 name: megasporocyte
 namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores." [ISBN:0471245208]
+subset: CL
 synonym: "megaspore mother cell" EXACT []
 synonym: "megasporocito" EXACT Spanish [POC:mag]
 synonym: "MMC" EXACT []
@@ -1969,6 +2019,7 @@ name: embryo basal cell
 namespace: plant_anatomy
 def: "A plant cell that is the lower-most cell formed after the first division of the zygote and is part of an embryo." [ISBN:0471245208]
 comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
+subset: CL
 synonym: "c&#233lula basal" EXACT Spanish [POC:mag]
 synonym: "embryonic basal cell" EXACT []
 xref: CL:0000646
@@ -1981,6 +2032,7 @@ id: PO:0002003
 name: vessel member
 namespace: plant_anatomy
 def: "One of the cellular components of a vessel, a dead cell with the wall between adjacent members being variously perforated and the walls that persist variously thickened." [ISBN:0471245208]
+subset: CL
 subset: TraitNet
 synonym: "miembro de vaso" EXACT Spanish [POC:mag]
 synonym: "vessel element" RELATED []
@@ -2171,6 +2223,7 @@ name: bulliform cell
 namespace: plant_anatomy
 def: "An enlarged more or less thin-walled leaf pavement cell, present, with other similar cells, in longitudinal rows in leaves of monocots." [ISBN:0471245208]
 comment: Also called motor cell because of its presumed participation in the mechanism of rolling and unrolling of leaves. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula bulliforme" EXACT Spanish [POC:mag]
 synonym: "motor cell" RELATED []
 is_a: PO:0025212 ! leaf pavement cell
@@ -2221,6 +2274,7 @@ id: PO:0004006
 name: mesophyll cell
 namespace: plant_anatomy
 def: "A chlorenchyma cell that is part of a mesophyll." [POC:curators, TAIR:ki]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula del mes&#243filo" EXACT Spanish [POC:mag]
 is_a: PO:0000076 ! chlorenchyma cell
@@ -2250,6 +2304,7 @@ name: silica cell
 namespace: plant_anatomy
 def: "Cells with deposits of silica in them. One of the two types of short cells in the epidermis of grasses and bamboos. It is usually paired with epidermal cork cell." [ISBN:0471245208]
 comment: One of two types of short cells in the epidermis of grasses. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025).
+subset: CL
 subset: Poaceae
 synonym: "c&#233lula sil&#237cica" EXACT Spanish [POC:mag]
 is_a: PO:0004718 ! short cell
@@ -2259,6 +2314,7 @@ id: PO:0004010
 name: meristematic cell
 namespace: plant_anatomy
 def: "A plant cell synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
+subset: CL
 synonym: "c&#233lula meristem&#225tica   " EXACT Spanish [POC:mag]
 xref: CL:0000685
 is_a: PO:0009002 ! plant cell
@@ -2270,6 +2326,7 @@ namespace: plant_anatomy
 alt_id: PO:0000070
 def: "A meristematic cell that by division gives rise to two cells, one of which remains meristematic, while the other is added to the plant body." [ISBN:0471245208]
 comment: Initial cells are often part of a portion of tissue that is composed mostly of somewhat older, differentiating cells. The division of an initial cell is often uneven, with the smaller daughter cell remaining meristematic.
+subset: CL
 synonym: "c&#233lula inicial" EXACT Spanish [POC:mag]
 synonym: "meristemoid" EXACT []
 synonym: "stem cell" RELATED []
@@ -2292,6 +2349,7 @@ id: PO:0004013
 name: epidermal cell
 namespace: plant_anatomy
 def: "A plant cell that is part of a portion of epidermis." [POC:curators]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula epid&#233rmica" EXACT Spanish [POC:mag]
 xref: CL:0000362
@@ -2456,6 +2514,7 @@ id: PO:0004519
 name: phloem fiber
 namespace: plant_anatomy
 def: "A fiber in phloem." [POC:curators]
+subset: CL
 subset: TraitNet
 synonym: "fibra del floema" EXACT Spanish [POC:mag]
 is_a: PO:0000081 ! axial cell
@@ -2467,6 +2526,7 @@ id: PO:0004520
 name: libriform fiber
 namespace: plant_anatomy
 def: "A xylem fiber commonly with thick walls and simple pits." [POC:curators]
+subset: CL
 synonym: "fibra libriforme" EXACT Spanish [POC:mag]
 is_a: PO:0000274 ! xylem fiber
 
@@ -2475,6 +2535,7 @@ id: PO:0004521
 name: septate fiber
 namespace: plant_anatomy
 def: "A fiber with thin transverse walls (septa), which are formed after the cell develops a secondary wall thickening." [POC:curators]
+subset: CL
 synonym: "fibra septada" EXACT Spanish [POC:mag]
 is_a: PO:0000274 ! xylem fiber
 
@@ -2508,6 +2569,7 @@ id: PO:0004525
 name: wood parenchyma cell
 namespace: plant_anatomy
 def: "Parenchyma cell occurring within secondary xylem." [POC:curators]
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula parenquim&#225tica de la madera" EXACT Spanish [POC:mag]
 is_a: PO:0000074 ! parenchyma cell
@@ -2517,6 +2579,7 @@ id: PO:0004526
 name: axial wood parenchyma cell
 namespace: plant_anatomy
 def: "Parenchyma cell in the axial system of secondary xylem." [POC:curators]
+subset: CL
 synonym: "c&#233lula parenquim&#225tica axial de la madera" EXACT Spanish [POC:mag]
 is_a: PO:0004525 ! wood parenchyma cell
 
@@ -2525,6 +2588,7 @@ id: PO:0004527
 name: ray wood parenchyma cell
 namespace: plant_anatomy
 def: "Parenchyma cell of a ray in secondary xylem." [POC:curators]
+subset: CL
 synonym: "c&#233lula parenquim&#225tica de rayo de la madera" EXACT Spanish [POC:mag]
 is_a: PO:0004525 ! wood parenchyma cell
 
@@ -2533,6 +2597,7 @@ id: PO:0004528
 name: upright wood ray parenchyma cell
 namespace: plant_anatomy
 def: "Ray cell in secondary xylem oriented axially (vertically in the axis) with its longest dimension." [POC:curators]
+subset: CL
 synonym: "rayo par&#233nquim&#225tico vertical de la madera" EXACT Spanish [POC:mag]
 is_a: PO:0004527 ! ray wood parenchyma cell
 
@@ -2541,6 +2606,7 @@ id: PO:0004529
 name: procumbent wood ray parenchyma cell
 namespace: plant_anatomy
 def: "Ray cell within secondary xylem having its longest axis in radial direction." [POC:curators]
+subset: CL
 synonym: "c&#233lula procumbente del rayo de la madera" EXACT Spanish [POC:mag]
 is_a: PO:0004527 ! ray wood parenchyma cell
 
@@ -2549,6 +2615,7 @@ id: PO:0004530
 name: tile  cell
 namespace: plant_anatomy
 def: "Empty upright ray cell of approximately the same height as the procumbent ray cell and occurring in indeterminate horizontal series usually  interspersed among the procumbent cells." [POC:curators]
+subset: CL
 synonym: "c&#233lula de baldoza B" EXACT Spanish [POC:mag]
 is_a: PO:0004528 ! upright wood ray parenchyma cell
 
@@ -2557,6 +2624,7 @@ id: PO:0004531
 name: sheath cell
 namespace: plant_anatomy
 def: "Cell on the margin of, and tending to form a sheath around, the procumbent cells of a multi-seriate ray as seen in tangential section." [POC:curators]
+subset: CL
 synonym: "c&#233lula de la vaina" EXACT Spanish [POC:mag]
 xref: CL:0000618
 is_a: PO:0004528 ! upright wood ray parenchyma cell
@@ -2892,6 +2960,7 @@ name: long cell
 namespace: plant_anatomy
 def: "A more or less rectangular leaf pavement cell in which the proximo-distal dimension is several times longer than the transverse dimension." [POC:curators]
 comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula larga" EXACT Spanish [POC:mag]
 is_a: PO:0025212 ! leaf pavement cell
 
@@ -2901,6 +2970,7 @@ name: short cell
 namespace: plant_anatomy
 def: "An isodiametric leaf pavement cell." [POC:curators]
 comment: In the leaf epidermis of Poaceae and Joinvilleaceae, long cells and short cells often alternate in longitudinal rows. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula corta" EXACT Spanish [POC:mag]
 is_a: PO:0025212 ! leaf pavement cell
 
@@ -3242,6 +3312,7 @@ name: root giant cell
 namespace: plant_anatomy
 def: "Multinucleate cell developed by a series of events involving kayokinesis but not cytokinesis of the initial feeding cell. The events are induced by root knot nematodes (e.g., Meloidogyne sp. ) entering the feeding cells (any cells) of the root vascular system." [GR:pj, PMID:15053756]
 subset: Arabidopsis
+subset: CL
 synonym: "c&#233lula gigante de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0003011 ! root vascular system
@@ -3252,6 +3323,7 @@ name: root syncytium cell
 namespace: plant_anatomy
 def: "Multinucleate cell developed by a series of events involving fusion with the neighboring dividing cells. The events are induced by cyst nematodes (e.g. <i>Heterodera schachtii</i>) entering the feeding cells (any cells) of the root vascular system." [GR:pj, PMID:15053756]
 subset: Arabidopsis
+subset: CL
 synonym: "c&#233lula ??? de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0003011 ! root vascular system
@@ -3924,6 +3996,7 @@ id: PO:0006010
 name: primary parietal cell
 namespace: plant_anatomy
 def: "It is formed by the division of a archesporial cell." [PMID:2476454]
+subset: CL
 synonym: "c&#233lula primaria parietal" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
@@ -3963,6 +4036,7 @@ name: male archesporial cell
 namespace: plant_anatomy
 def: "An archesporial cell that is part of a microsporangium and divides to gives rise to a microsporocyte." [PMID:10465788, POC:curators]
 comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In seed plants, a male archesporial cell undergoes periclinal division, giving rise to an inner primary sporogenous cell layer and an outer primary parietal cell.
+subset: CL
 synonym: "anther archesporial cell" NARROW []
 synonym: "c&#233lula masculina arquesporial" EXACT Spanish [POC:mag]
 synonym: "male archesporial initial" EXACT []
@@ -3975,6 +4049,7 @@ name: female archesporial cell
 namespace: plant_anatomy
 def: "An archesporial cell that is part of a megasporangium and divides to give rise to a megasporocyte." [PMID:10465788, POC:curators]
 comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In the majority of flowering plants, including Arabidopsis, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell. In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte.
+subset: CL
 synonym: "c&#233lula femenina arquesporial" EXACT Spanish [POC:mag]
 synonym: "female archesporial initial" EXACT []
 synonym: "ovule archesporial cell" NARROW []
@@ -4572,6 +4647,7 @@ id: PO:0006088
 name: primary sporogenous cell
 namespace: plant_anatomy
 def: "It is formed by the division of the male archesporial initial. After several mitotic divisions these cells differentiate into pollen mother cells." [PMID:12897248]
+subset: CL
 synonym: "c&#233lula espor&#243gena primaria" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
@@ -4662,6 +4738,7 @@ id: PO:0006204
 name: sporocyte
 namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) spores." [GR:pj]
+subset: CL
 synonym: "esporocito" EXACT Spanish [POC:mag]
 synonym: "meiocyte" EXACT []
 synonym: "spore mother cell" EXACT []
@@ -4676,6 +4753,7 @@ name: spongy mesophyll cell
 namespace: plant_anatomy
 def: "Irregularly-shaped, chlorenchymatous cell, separated by large air spaces." [GR:pj]
 comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a dorsiventral leaf, but between two palisade parenchyma layers in an isobilateral leaf. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula del mes&#243filo esponjoso" EXACT Spanish [POC:mag]
 synonym: "spongy parenchyma cell" RELATED []
@@ -4688,6 +4766,7 @@ name: palisade mesophyll cell
 namespace: plant_anatomy
 def: "Elongated chlorenchymatous cell oriented perpendicular to the leaf surface and which is active in photosynthesis." [GR:pj]
 comment: Usually found in the adaxil/upper part of the leaf mesophyll. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula del mes&#243filo en empalizada" EXACT Spanish [POC:mag]
 synonym: "palisade parenchyma cell" RELATED []
@@ -4699,6 +4778,7 @@ id: PO:0006207
 name: exodermal passage cell
 namespace: plant_anatomy
 def: "A short cell in the dimorphic type of exodermis with cell wall that remains non-thickened." [PMID:11709575, TAIR:ki]
+subset: CL
 synonym: "c&#233lula de pasaje exod&#233rmica" EXACT Spanish [POC:mag]
 is_a: PO:0000353 ! passage cell
 relationship: part_of PO:0005772 ! exodermis
@@ -4708,6 +4788,7 @@ id: PO:0006208
 name: endodermal passage cell
 namespace: plant_anatomy
 def: "Cell in the endodermal layer of the root with cell wall that remains non-thickened." [TAIR:ki]
+subset: CL
 synonym: "c&#233lula de pasaje endod&#233rmica" EXACT Spanish [POC:mag]
 is_a: PO:0000353 ! passage cell
 relationship: part_of PO:0000252 ! endodermis
@@ -4823,6 +4904,7 @@ id: PO:0006221
 name: articulated laticifer cell
 namespace: plant_anatomy
 def: "A laticifer cell in which the walls between contiguous cells may partly or completely disappear." [ISBN:0471245208, TAIR:ki]
+subset: CL
 synonym: "c&#233lula del latic&#237fero articulado" EXACT Spanish [POC:mag]
 synonym: "laticiferous vessel" RELATED []
 is_a: PO:0025031 ! laticifer cell
@@ -4833,6 +4915,7 @@ id: PO:0006222
 name: non-articulated laticifer cell
 namespace: plant_anatomy
 def: "A laticifer cell that elongates indefinitely and grows intrusively between the walls of meristematic cells." [PMID:11732189]
+subset: CL
 synonym: "c&#233lula del latic&#237fero no articulado" EXACT Spanish [POC:mag]
 synonym: "simple laticifer" RELATED []
 is_a: PO:0025031 ! laticifer cell
@@ -6151,7 +6234,7 @@ relationship: part_of PO:0006457 ! Poaceae ovule
 
 [Term]
 id: PO:0006459
-name: Poaceae outer integumet
+name: Poaceae outer integument
 namespace: plant_anatomy
 def: "One of the two layers of tissue that usually covers the ovule of a grass, contiguous to the inner integument and usually involved in forming the micropyle at the apex." [GR:pj]
 synonym: "integumento externo de Poaceae" EXACT Spanish [POC:mag]
@@ -6190,6 +6273,7 @@ id: PO:0006463
 name: Poaceae megasporocyte
 namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores in a grass plant." [GR:pj]
+subset: CL
 synonym: "megasporocito de Poaceae" EXACT Spanish [POC:mag]
 is_a: PO:0000431 ! megasporocyte
 relationship: part_of PO:0006462 ! Poaceae nucellus
@@ -6199,6 +6283,7 @@ id: PO:0006464
 name: Poaceae megaspore
 namespace: plant_anatomy
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a grass plant, and on germination giving rise to the female gametophyte (embryo sac)." [GR:pj]
+subset: CL
 synonym: "megaspora de Poaceae" EXACT Spanish [POC:mag]
 is_a: PO:0020019 ! megaspore
 relationship: develops_from PO:0006463 ! Poaceae megasporocyte
@@ -6333,6 +6418,7 @@ id: PO:0006493
 name: Zea megasporocyte
 namespace: plant_anatomy
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores in a maize plant." [GR:pj]
+subset: CL
 synonym: "megasporocito de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006463 ! Poaceae megasporocyte
 relationship: part_of PO:0006492 ! Zea nucellus
@@ -6342,6 +6428,7 @@ id: PO:0006494
 name: Zea megaspore
 namespace: plant_anatomy
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a maize plant, and on germination giving rise to the female gametophyte (embryo sac)." [GR:pj]
+subset: CL
 synonym: "megaspora de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006464 ! Poaceae megaspore
 relationship: develops_from PO:0006493 ! Zea megasporocyte
@@ -6351,6 +6438,8 @@ id: PO:0006495
 name: Poaceae degenerate megaspore
 namespace: plant_anatomy
 def: "The megaspores in a grass plant that would not participate in megagametogenesis." [GR:pj]
+subset: CL
+subset: Poaceae
 synonym: "megaspora degenerativa de Poaceae" EXACT Spanish [POC:mag]
 is_a: PO:0000245 ! degenerate megaspore
 is_a: PO:0006464 ! Poaceae megaspore
@@ -6360,6 +6449,7 @@ id: PO:0006496
 name: Poaceae functional megaspore
 namespace: plant_anatomy
 def: "The megaspore that forms the embryo sac in grasses." [GR:pj]
+subset: CL
 synonym: "megaspora funcional de Poaceae" EXACT Spanish [POC:mag]
 is_a: PO:0000244 ! functional megaspore
 is_a: PO:0006464 ! Poaceae megaspore
@@ -9277,6 +9367,7 @@ name: trichome cell
 namespace: plant_anatomy
 def: "A plant cell that is part of a trichome." [POC:curators]
 comment: A branch of a unicellular trichome is a GO sub-cellular component.
+subset: CL
 synonym: "c&#233lula del tricoma" EXACT Spanish [POC:mag]
 synonym: "non-glandular unicellular trichome" NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
@@ -9542,6 +9633,7 @@ name: plant cell
 namespace: plant_anatomy
 def: "A cell which is a plant structure." [GO:0005623, POC:Curators]
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505.  Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
+subset: CL
 subset: reference
 subset: TraitNet
 synonym: "c&#233lula vegetal" EXACT Spanish [POC:mag]
@@ -9753,6 +9845,7 @@ name: basal endosperm transfer cell
 namespace: plant_anatomy
 def: "A transfer cell that is part of a basal endosperm transfer layer." [POC:rw]
 comment: Responsible for transferring nutrients to an embryo by symplastic or apoplastic methods.
+subset: CL
 synonym: "c&#233lula de transferencia del endosperma basal" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132534
 is_a: PO:0000078 ! transfer cell
@@ -11101,6 +11194,7 @@ id: PO:0020019
 name: megaspore
 namespace: plant_anatomy
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant, and on germination giving rise to the female gametophyte (embryo sac)." [APWeb:Glossary]
+subset: CL
 synonym: "megaspora" EXACT Spanish [POC:mag]
 xref: CL:0000250
 is_a: PO:0025017 ! spore
@@ -11403,6 +11497,7 @@ namespace: plant_anatomy
 alt_id: PO:0006451
 alt_id: PO:0006479
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores." [ISBN:0878934030]
+subset: CL
 subset: reference
 synonym: "microspore mother cell" RELATED []
 synonym: "microsporocito" EXACT Spanish [POC:mag]
@@ -11422,6 +11517,7 @@ namespace: plant_anatomy
 alt_id: PO:0006452
 alt_id: PO:0006480
 def: "The smaller, in general, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant, and on germination giving rise to the male gametophyte." [APWeb:Glossary]
+subset: CL
 subset: reference
 synonym: "microspora" EXACT Spanish [POC:mag]
 synonym: "Poaceae microspore" NARROW []
@@ -11645,6 +11741,7 @@ id: PO:0020090
 name: central cell
 namespace: plant_anatomy
 def: "The largest cell of the mature embryo sac. Contains two polar nuclei, which (after double fertilization) will develop into the endosperm." [TAIR:ki]
+subset: CL
 subset: reference
 synonym: "c&#233lula central" EXACT Spanish [POC:mag]
 xref: CL:0000278
@@ -11693,6 +11790,7 @@ name: antipodal cell
 namespace: plant_anatomy
 def: "Cell, commonly three in number as in the eight-nucleate embryo sac, located at the other end of the embryo sac from the egg cell." [APWeb:Glossary]
 comment: More or less persistent, multiplicative or not.
+subset: CL
 subset: reference
 synonym: "c&#233lula antipodal" EXACT Spanish [POC:mag]
 xref: CL:0000537
@@ -11705,6 +11803,7 @@ name: plant egg cell
 namespace: plant_anatomy
 def: "A gamete produced by an archegonium or an embryo sac." [POC:curators]
 comment: The egg (megagamete) is usually larger than the sperm (microgamete). Female gametes may be defined as the non-motile gamete, rather than the larger gamete.
+subset: CL
 subset: reference
 synonym: "female gamete" EXACT []
 synonym: "megagamete" EXACT []
@@ -11739,6 +11838,7 @@ id: PO:0020097
 name: generative cell
 namespace: plant_anatomy
 def: "A cell of the male gametophyte of angiosperms that divides to produce two male gametes or sperm cells." [APWeb:Glossary]
+subset: CL
 subset: reference
 synonym: "c&#233lula generativa" EXACT Spanish [POC:mag]
 xref: CL:0000280
@@ -11749,6 +11849,7 @@ id: PO:0020099
 name: vegetative cell
 namespace: plant_anatomy
 def: "A plant cell that is the larger cell of a male gametophyte in seed plants. It does not divide further and develops into a pollen tube cell." [POC:rw]
+subset: CL
 subset: reference
 synonym: "c&#233lula vegetativa" EXACT Spanish [POC:mag]
 synonym: "tube cell" RELATED [ISBN:0716710072]
@@ -11851,6 +11952,7 @@ name: embryo hypophysis
 namespace: plant_anatomy
 def: "A plant cell that is the uppermost cell of a suspensor and from which part of the root and root cap in a plant embryo of angiosperms are derived." [ISBN:0471245208]
 subset: Angiosperm
+subset: CL
 synonym: "embryonic hypophysis" EXACT []
 synonym: "hip&#243fisis" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
@@ -11991,6 +12093,7 @@ id: PO:0020132
 name: columella root cap cell
 namespace: plant_anatomy
 def: "Cell that constitutes the central part of the root cap, arranged in longitudinal files." [PMID:9384380, TAIR:ki]
+subset: CL
 synonym: "c&#233lula de la columela del caliptra de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0025030 ! ground tissue cell
 relationship: develops_from PO:0020133 ! columella root cap initial cell
@@ -12000,6 +12103,7 @@ id: PO:0020133
 name: columella root cap initial cell
 namespace: plant_anatomy
 def: "A root initial cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR:ki]
+subset: CL
 synonym: "c&#233lula inicial de la columela del caliptra de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "columella root cap stem cell" EXACT []
 synonym: "columella stem cell" EXACT []
@@ -12249,6 +12353,7 @@ id: PO:0025006
 name: gamete
 namespace: plant_anatomy
 def: "A plant cell that has half the chromosome complement of the sporophyte and is capable of fertilization to create a zygote." [POC:curators]
+subset: CL
 synonym: "gameta" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2941267
 is_a: PO:0009002 ! plant cell
@@ -12383,6 +12488,7 @@ id: PO:0025017
 name: spore
 namespace: plant_anatomy
 def: "A plant cell that arises through meiosis and develops into a gametophyte." [POC:curators]
+subset: CL
 synonym: "espora" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2972117
 is_a: PO:0009002 ! plant cell
@@ -12497,6 +12603,7 @@ id: PO:0025026
 name: megagametophyte cell
 namespace: plant_anatomy
 def: "A plant cell that is part of an embryo sac." [POC:rw]
+subset: CL
 synonym: "c&#233lula megagametof&#237tica" EXACT Spanish [POC:mag]
 synonym: "embryo sac cell" RELATED []
 synonym: "megagametophytic cell" EXACT []
@@ -12550,6 +12657,7 @@ name: ground tissue cell
 namespace: plant_anatomy
 def: "A plant cell that is part of a portion of ground tissue." [POC:curators]
 comment: Includes parenchyma, collenchyma and sclerenchyma cells.
+subset: CL
 subset: TraitNet
 synonym: "c&#233lula del tejido fundamental" EXACT Spanish [POC:mag]
 synonym: "fundamental tissue cell" EXACT []
@@ -12564,6 +12672,7 @@ id: PO:0025031
 name: laticifer cell
 namespace: plant_anatomy
 def: "A ground tissue cell that contains latex." [POC:curators]
+subset: CL
 synonym: "c&#233lula latic&#237fera" EXACT Spanish [POC:mag]
 is_a: PO:0025030 ! ground tissue cell
 created_by: Ramona
@@ -12576,6 +12685,7 @@ namespace: plant_anatomy
 def: "A plant cell that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
 comment: Hydroids are water and mineral conducting cells found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase.
 subset: Bryophytes
+subset: CL
 synonym: "hidroide" EXACT Spanish [POC:mag]
 synonym: "hydroid cell" EXACT []
 is_a: PO:0009002 ! plant cell
@@ -12588,9 +12698,10 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
-def: "A plant that resembles in structure the sieve elements of vascular plants." [ISBN:376821110, ISBN:962073342]
+def: "A plant cell that resembles in structure the sieve elements of vascular plants." [ISBN:376821110, ISBN:962073342]
 comment: A carbohydrate and amino acid conducting cell found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase. Leptoids have no nucleus at maturity. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
 subset: Bryophytes
+subset: CL
 synonym: "leptoid cell" EXACT []
 synonym: "leptoide" EXACT Spanish [POC:mag]
 is_a: PO:0009002 ! plant cell
@@ -13637,6 +13748,7 @@ namespace: plant_anatomy
 def: "A plant sperm cell that is produced by and located in an antheridium." [POC:curators]
 comment: Antheridial sperm cells are motile and lack a plasma membrane.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "antheridial sperm cell" EXACT []
 synonym: "c&#233lula esperm&#225tica del anteridio" EXACT Spanish [POC:mag]
@@ -13653,6 +13765,7 @@ namespace: plant_anatomy
 def: "A plant sperm cell that is produced by and located in a pollen grain." [ISSN:1040-2519, POC:curators]
 comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
 subset: Angiosperm
+subset: CL
 subset: Gymnosperms
 synonym: "c&#233lula esperm&#225tica pol&#237nica" EXACT Spanish [POC:mag]
 is_a: PO:0000084 ! plant sperm cell
@@ -13666,6 +13779,7 @@ name: archegonium egg cell
 namespace: plant_anatomy
 def: "A plant egg cell that is produced by and located in an archegonium." [POC:curators]
 subset: Bryophytes
+subset: CL
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "archegonial egg call" EXACT []
@@ -13681,6 +13795,7 @@ name: embryo sac egg cell
 namespace: plant_anatomy
 def: "A plant egg cell that is produced by and located in an embryo sac." [POC:curators]
 subset: Angiosperm
+subset: CL
 synonym: "ooc&#233lula del saco embrionario" EXACT Spanish [POC:mag]
 is_a: PO:0020094 ! plant egg cell
 relationship: part_of PO:0020096 ! egg apparatus
@@ -14184,6 +14299,7 @@ name: multicellular trichome branch cell
 namespace: plant_anatomy
 def: "A trichome cell that forms a branch of a multicellular trichome." [POC:curators]
 comment: For branches of a unicellular trichome, see unicellular trichome branch (GO:0090405) in GO.
+subset: CL
 synonym: "c&#233lula ramificada de tricoma multicelular" EXACT Spanish [POC:mag]
 is_a: PO:0008030 ! trichome cell
 relationship: part_of PO:0025162 ! multicellular trichome
@@ -14195,6 +14311,7 @@ id: PO:0025164
 name: root epidermal cell
 namespace: plant_anatomy
 def: "An epidermal cell that is part of a root epidermis." [POC:curators]
+subset: CL
 synonym: "c&#233lula epid&#233rmica de la ra&#237z" EXACT Spanish [POC:mag]
 is_a: PO:0004013 ! epidermal cell
 relationship: part_of PO:0006036 ! root epidermis
@@ -14206,6 +14323,7 @@ id: PO:0025165
 name: shoot epidermal cell
 namespace: plant_anatomy
 def: "An epidermal cell that is part of a shoot epidermis." [POC:curators]
+subset: CL
 synonym: "c&#233lula epid&#233rmica del epiblasto (epiblastema)" EXACT Spanish [POC:mag]
 is_a: PO:0004013 ! epidermal cell
 relationship: part_of PO:0006035 ! shoot epidermis
@@ -14218,6 +14336,7 @@ name: papilla cell
 namespace: plant_anatomy
 def: "An epidermal pavement cell with a short protuberance." [POC:curators]
 comment: See plant cell papilla (GO:0090395) for the subcellular component papilla.
+subset: CL
 synonym: "c&#233lula papilosa" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3115430
 is_a: PO:0000332 ! epidermal pavement cell
@@ -14230,6 +14349,7 @@ name: leaf papilla cell
 namespace: plant_anatomy
 def: "A papilla cell that is part of a leaf epidermis." [POC:curators]
 comment: See leaf papilla (GO:0090396) for the subcellular component leaf papilla. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula papilosa de la epidermis" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3115430
 is_a: PO:0025166 ! papilla cell
@@ -14243,6 +14363,7 @@ name: stigma papilla cell
 namespace: plant_anatomy
 def: "A papilla cell that is part of a stigma epidermis." [POC:curators]
 comment: See stigma papilla (GO:0090397) for the subcellular component stigma papilla.
+subset: CL
 synonym: "c&#233lula papilosa del estigma" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3115430
 is_a: PO:0025166 ! papilla cell
@@ -14568,6 +14689,7 @@ name: pollen tube cell
 namespace: plant_anatomy
 def: "A plant cell that develops from a vegetative cell and forms a tubular extension of the pollen grain." [POC:rw]
 comment: Carries the male gametes to into or near the ovule. May be branched in gymnosperms. See GO for pollen tube (GO:0090406) or pollen tube tip (GO:0090404).
+subset: CL
 synonym: "c&#233lula del tubo pol&#237nico " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3093226
 is_a: PO:0009002 ! plant cell
@@ -14766,6 +14888,7 @@ name: leaf pavement cell
 namespace: plant_anatomy
 def: "An epidermal pavement cell that is part of a leaf epidermis." [POC:rw]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula de pavimento de la hoja" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3139280
 is_a: PO:0000332 ! epidermal pavement cell
@@ -14779,6 +14902,7 @@ name: leaf abaxial pavement cell
 namespace: plant_anatomy
 def: "A leaf pavement cell that is part of a leaf abaxial epidermis." [POC:rw]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula de pavimento de la superficie abaxial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025212 ! leaf pavement cell
 relationship: part_of PO:0006019 ! leaf abaxial epidermis
@@ -14791,6 +14915,7 @@ name: leaf adaxial pavement cell
 namespace: plant_anatomy
 def: "A leaf pavement cell that is part of a leaf adaxial epidermis." [POC:rw]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula de pavimento de la superficie adaxial de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025212 ! leaf pavement cell
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
@@ -15043,6 +15168,7 @@ id: PO:0025236
 name: phyllome guard cell
 namespace: plant_anatomy
 def: "A guard cell that is part of a phyllome stomatal complex." [POC:curators]
+subset: CL
 synonym: "c&#233lula guardiana del filoma" EXACT Spanish [POC:mag]
 is_a: PO:0000293 ! guard cell
 relationship: part_of PO:0025215 ! phyllome stomatal complex
@@ -15055,6 +15181,7 @@ name: leaf guard cell
 namespace: plant_anatomy
 def: "A phyllome guard cell that is part of a leaf stomatal complex." [POC:rw]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
 synonym: "c&#233lula guardiana de la hoja" EXACT Spanish [POC:mag]
 is_a: PO:0025236 ! phyllome guard cell
 relationship: part_of PO:0025183 ! leaf stomatal complex
@@ -15317,6 +15444,7 @@ id: PO:0025258
 name: procambial cell
 namespace: plant_anatomy
 def: "A meristematic cell that is part of a portion of procambium." [POC:rw]
+subset: CL
 synonym: "c&#233lula del procambio" EXACT Spanish [POC:mag]
 synonym: "procambium cell" EXACT []
 is_a: PO:0004010 ! meristematic cell
@@ -15350,6 +15478,7 @@ id: PO:0025261
 name: pericycle cell
 namespace: plant_anatomy
 def: "A ground tissue cell that is part of a portion of pericycle." [POC:rw]
+subset: CL
 synonym: "c&#233lula del periciclo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3124791
 is_a: PO:0025030 ! ground tissue cell
@@ -15654,6 +15783,7 @@ name: embryo apical cell
 namespace: plant_anatomy
 def: "A sporophyte meristematic apical cell that is part of a plant embryo and is the uppermost cell formed after the first division of a zygote." [ISBN:0471245208, ISBN:9780070588493]
 comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
+subset: CL
 synonym: "c&#233lula apical del embri&#243n" EXACT Spanish [POC:mag]
 synonym: "embryonic meristematic apical cell" EXACT []
 is_a: PO:0030015 ! sporophyte meristematic apical cell
@@ -15667,6 +15797,7 @@ id: PO:0025285
 name: callus parenchyma cell
 namespace: plant_anatomy
 def: "A parenchyma cell that is part of a plant callus." [POC:curators]
+subset: CL
 synonym: "c&#233lula parenquim&#225tica del callo" EXACT Spanish [POC:mag]
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005052 ! plant callus
@@ -16070,6 +16201,7 @@ id: PO:0025317
 name: axillary hair terminal cell
 namespace: plant_anatomy
 def: "A trichome cell that is the long terminal cell of an axillary hair." [ISBN:9780473067304]
+subset: CL
 synonym: "c&#233lula terminal del pelo axilar" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293292
 is_a: PO:0008030 ! trichome cell
@@ -16095,6 +16227,7 @@ id: PO:0025319
 name: axillary hair basal cell
 namespace: plant_anatomy
 def: "A trichome cell that is part of an axillary hair base." [ISBN:9780473067304]
+subset: CL
 synonym: "axillary hair base cell" EXACT []
 synonym: "c&#233lula basal del pelo axilar" EXACT Spanish [POC:mag]
 xref: OB_SF_PO:3293292
@@ -16194,6 +16327,7 @@ namespace: plant_anatomy
 def: "A chlorenchyma cell that is part of a chloronema and has cross walls of adjacent cells that are perpendicular to the protonema axis." [POC:rw]
 comment: A chloronema cell contains many well-developed chloroplasts.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula del cloronema " EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3199622
 is_a: PO:0000076 ! chlorenchyma cell
@@ -16208,6 +16342,7 @@ namespace: plant_anatomy
 def: "A chlorenchyma cell that is part of a caulonema and has cross walls of adjacent cells that are oblique to the protonema axis." [POC:rw]
 comment: A caulonema cell contains fewer, less well-developed chloroplasts than a chloronema cell.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula del caulonema" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3199622
 is_a: PO:0000076 ! chlorenchyma cell
@@ -16285,6 +16420,7 @@ namespace: plant_anatomy
 def: "A single meristematic cell at the tip of a plant structure where apical growth occurs." [ISBN:0962073342, ISBN:9780473067304]
 comment: Apical cells occur only at the tip of a shoot axis apex, leaf apex, root apex, thallus apex, or protonema in bryophytes and some pteridophytes. Apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. The apical cell may be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge-shaped (lenticular) with two cutting faces (in non-vascular leaves or thalli). An apical cell may be established upon germination of a spore or upon the first cell division of an embryo, or later.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "apical cell" EXACT []
 synonym: "apical initial" EXACT []
@@ -16300,6 +16436,7 @@ name: root meristematic apical cell
 namespace: plant_anatomy
 def: "A sporophyte meristematic apical cell that is part of a root tip." [ISBN:B0007J6EN6, POC:curators]
 comment: Occurs in the sporophytic phase of pteridophytes.
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical de la ra&#237z" EXACT Spanish [POC:mag]
 synonym: "root apical cell" EXACT []
@@ -16317,6 +16454,7 @@ namespace: plant_anatomy
 def: "A meristematic apical cell that is part of a shoot system." [ISBN:0962073342, ISBN:9780473067304]
 comment: May occur in shoot axes or leaves of bryophytes or ferns.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical del epiblasto" EXACT Spanish [POC:mag]
 synonym: "shoot apical cell" EXACT []
@@ -16334,6 +16472,7 @@ namespace: plant_anatomy
 def: "A shoot meristematic apical cell that is part of a shoot apex." [ISBN:0962073342, ISBN:9780473067304]
 comment: Divides to produces leaf initial cells (if leaves are present) and other stem or branch tissues.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical del eje del epiblasto" EXACT Spanish [POC:mag]
 synonym: "shoot axis apical cell" EXACT []
@@ -16351,6 +16490,7 @@ namespace: plant_anatomy
 def: "A shoot meristematic apical cell that is part of a leaf apex." [ISBN:0962073342, POC:curators]
 comment: Occurs in the non-vascular leaves of bryophytes and the vascular leaves of some ferns. Only in plants where leaf growth is apical.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical de la hoja" EXACT Spanish [POC:mag]
 synonym: "leaf apical cell" EXACT []
@@ -16367,6 +16507,7 @@ name: vascular leaf meristematic apical cell
 namespace: plant_anatomy
 def: "A leaf meristematic apical cell that is part of the leaf apex of a vascular leaf." [ISBN:B0007J6EN6, POC:curators]
 comment: Occurs in vascular leaves of some ferns in their sporophytic phase.
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical de la hoja vascular" EXACT Spanish [POC:mag]
 synonym: "vascular leaf apical cell" EXACT []
@@ -16384,6 +16525,7 @@ namespace: plant_anatomy
 def: "A leaf meristematic apical cell that is part of a leaf apex of a non-vascular leaf." [ISBN:0962073342, PMID:19303301]
 comment: Occurs in the non-vascular leaves of bryophytes, which grow by division of a single, wedge-shaped apical cell with two cutting faces.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula apical de la hoja no vascular" EXACT Spanish [POC:mag]
 synonym: "non-vascular leaf apical cell" EXACT []
 synonym: "non-vascular leaf apical initial" EXACT []
@@ -16403,6 +16545,7 @@ namespace: plant_anatomy
 def: "An apical cell that is part of a whole plant in the gametophytic phase." [POC:curators]
 comment: Occurs bryophytes and pteridophytes.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical gametof&#237tica" EXACT Spanish [POC:mag]
 synonym: "gametophyte apical cell" EXACT []
@@ -16422,6 +16565,7 @@ namespace: plant_anatomy
 def: "A meristematic apical cell that is part of a whole plant in the sporophytic phase." [POC:curators]
 comment: Occurs in pteridophytes and the sporophyte of bryophytes.
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical esporof&#237tica" EXACT Spanish [POC:mag]
 synonym: "sporophyte apical cell" RELATED []
@@ -16441,6 +16585,7 @@ namespace: plant_anatomy
 def: "A shoot axis meristematic apical cell at the tip of a seta." [ISBN:0962073342, POC:curators]
 comment: Ceases being an apical cell when the sporangium begins to develop.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula apical de la seta" EXACT Spanish [POC:mag]
 synonym: "seta apical cell" EXACT []
 synonym: "seta apical initial" EXACT []
@@ -16487,6 +16632,7 @@ namespace: plant_anatomy
 def: "A shoot meristematic apical cell that is part of a gametophore." [ISBN:0962073342, POC:curators]
 comment: Occurs in the non-vascular shoot system of the gametophyte of mosses and leafy liverworts.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula apical del gamet&#243foro" EXACT Spanish [POC:mag]
 synonym: "gametophore apical cell" EXACT []
 synonym: "gametophore apical initial" EXACT []
@@ -16556,6 +16702,7 @@ namespace: plant_anatomy
 def: "A shoot axis meristematic apical cell at the tip of a gametophore axis." [ISBN:0962073342, ISBN:9780473067304]
 comment: Occurs at the tips of the stems and branches of bryophytes.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula apical del eje del gamet&#243foro" EXACT Spanish [POC:mag]
 synonym: "cauloid apical cell" EXACT []
 synonym: "gametophore axis apical cell" EXACT []
@@ -16573,6 +16720,7 @@ name: vascular shoot axis meristematic apical cell
 namespace: plant_anatomy
 def: "A shoot axis meristematic apical cell at the tip of a shoot apex in a shoot system that has as part vascular tissue." [ISBN:B0007J6EN6, POC:curators]
 comment: Occurs in some ferns in their sporophytic phase.
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical del eje del epiblasto vascualr" EXACT Spanish [POC:mag]
 synonym: "fern shoot axis apical cell" EXACT []
@@ -16590,6 +16738,7 @@ name: thallus meristematic apical cell
 namespace: plant_anatomy
 def: "A gametophyte apical cell that is part of a thallus." [ISBN:0962073342]
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula apical del talo" EXACT Spanish [POC:mag]
 synonym: "thallus apical cell" EXACT []
@@ -16908,6 +17057,7 @@ namespace: plant_anatomy
 def: "A ground tissue cell with thickened cell walls." [ISBN:0962073342, ISBN:376821110]
 comment: Found only in bryophytes in gametophore axes, setae, or leaves. Functions in support rather than conduction. May or may not retain a living protoplast at maturity.
 subset: Bryophytes
+subset: CL
 synonym: "estereida" EXACT Spanish [POC:mag]
 synonym: "stereid cell" EXACT []
 xref: OBO_SF_PO:3293311
@@ -16922,6 +17072,7 @@ name: protonema meristematic apical cell
 namespace: plant_anatomy
 def: "A gametophyte meristematic apical cell that is part of a protonema." [POC:curators]
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "c&#233lula meristem&#225tica apical del protonema" EXACT Spanish [POC:mag]
 synonym: "protonema apical cell" EXACT []
@@ -17014,6 +17165,7 @@ name: antheridium jacket layer cell
 namespace: plant_anatomy
 def: "A plant cell that is part of an antheridium jacket layer." [ISBN:9780473067304]
 subset: Bryophytes
+subset: CL
 subset: Pteridophytes
 synonym: "antheridium wall cell" EXACT []
 synonym: "capa c&#233lular de la cubierta del anteridio" EXACT Spanish [POC:mag]
@@ -17079,6 +17231,7 @@ name: archesporial cell
 namespace: plant_anatomy
 def: "A plant cell that divides to gives rise to a sporocyte and is part of a sporangium." [ISBN:9780070588493]
 comment: May also give rise to sterile cells such as elators (in liverworts) or tapetal cells. In most species outside seed plants, multiple archesporial cells are part of an archesporium or sporogenous tissue.
+subset: CL
 synonym: "archesporial initial" EXACT []
 synonym: "c&#233lula arquesporial " EXACT Spanish [POC:mag]
 synonym: "sporogenous cell" EXACT []
@@ -17095,6 +17248,7 @@ namespace: plant_anatomy
 def: "A plant cell located at the base of a non-vascular leaf adjacent to where the leaf attaches to the stem." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
 comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness, or ornamentation from other cells in the leaf.
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula alar" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293209
 is_a: PO:0009002 ! plant cell
@@ -17110,6 +17264,7 @@ namespace: plant_anatomy
 def: "A plant cell that develops from a cell in a protonema and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891]
 comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema may develop into brachycytes under stress. May form a chain or be separated by tmema cells.
 subset: Bryophytes
+subset: CL
 synonym: "braquicito" EXACT Spanish [POC:mag]
 synonym: "brood cell" EXACT [ISBN:0962073342]
 xref: OBO_SF_PO:3293213
@@ -17125,6 +17280,7 @@ namespace: plant_anatomy
 def: "A plant cell at the base of a gemma or adjacent to a brachycyte that breaks down to allow abscission of the gemma or brachycyte." [ISBN:0962073342]
 comment: May be a single cell adjacent to a brachycyte or part of a portion of tmema tissue.
 subset: Bryophytes
+subset: CL
 synonym: "brachytmema cell" NARROW []
 synonym: "c&#233lula del tmema" EXACT Spanish [POC:mag]
 synonym: "dlichotmema cell" NARROW []
@@ -17170,6 +17326,7 @@ name: gametophore axillary hair terminal cell
 namespace: plant_anatomy
 def: "An axillary hair terminal cell that is the long terminal cell of a gametophore axillary hair." [ISBN:9780473067304, POC:curators]
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula terminal de pelo axilar del gamet&#243foro" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293292
 is_a: PO:0025317 ! axillary hair terminal cell
@@ -17197,6 +17354,7 @@ name: gametophore axillary hair basal cell
 namespace: plant_anatomy
 def: "An axillary hair basal cell that is part of a gametophore axillary hair base." [ISBN:9780473067304, POC:curators]
 subset: Bryophytes
+subset: CL
 synonym: "c&#233lula basal del pelo axilar del gamet&#243foro" EXACT Spanish [POC:mag]
 synonym: "gametophore axillary hair base cell" EXACT []
 xref: OBO_SF_PO:3293292
@@ -17211,6 +17369,7 @@ name: archegonium neck canal cell
 namespace: plant_anatomy
 def: "A plant cell that is one of the axial row of cells in an immature archegonium neck." [ISBN:0962073342]
 comment: As the archegonium matures, the archegonium neck canal cells disintegrate to form the archegonium neck canal.
+subset: CL
 synonym: "archegonial neck canal cell" EXACT []
 synonym: "c&#233lula del canal del cuello del arquegonio" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3234985
@@ -17242,6 +17401,7 @@ namespace: plant_anatomy
 def: "An protonema sub-apical initial that gives rise to a branch of a protonema." [ISBN:9781405181891]
 comment: May give rise to a chloronema, caulonema, protonema rhizoid, tmema cell, or brachycyte.
 subset: Bryophytes
+subset: CL
 synonym: "protonema side branch initial cell" EXACT []
 synonym: "protonemal side branch initial cell" EXACT []
 synonym: "rama lateral inicial del protonema" EXACT Spanish [POC:mag]
@@ -17258,6 +17418,7 @@ name: epidermal rhizoid initial
 namespace: plant_anatomy
 def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289]
 comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
+subset: CL
 synonym: "epidermal rhizoid initial cell" EXACT []
 synonym: "rizoide inicial epid&#233rmico" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3293302
@@ -17402,6 +17563,7 @@ name: protonemal side branch rhizoid initial
 namespace: plant_anatomy
 def: "A protonema side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
 subset: Bryophytes
+subset: CL
 synonym: "protonema side branch rhizoid initial cell" EXACT []
 synonym: "protonemal side branch rhizoid initial cell" EXACT []
 synonym: "rama lateral inicial del rizoide proton&#233mico" EXACT Spanish [POC:mag]
@@ -17442,6 +17604,7 @@ name: rhizoid meristematic apical cell
 namespace: plant_anatomy
 def: "A gametophyte meristematic apical cell that is part of a rhizoid." [POC:curators]
 subset: Bryophytes
+subset: CL
 synonym: "rhizoid apical cell" EXACT []
 synonym: "rhizoid apical initial" EXACT []
 xref: OBO_SF_PO:3234956
@@ -17456,6 +17619,7 @@ name: caulonema meristematic apical cell
 namespace: plant_anatomy
 def: "A protonema meristematic apical cell that is part of a caulonema." [POC:curators]
 subset: Bryophytes
+subset: CL
 synonym: "caulonema apical cell" EXACT []
 synonym: "caulonema apical initial" EXACT []
 is_a: PO:0030046 ! protonema meristematic apical cell
@@ -17468,6 +17632,7 @@ name: chloronema meristematic apical cell
 namespace: plant_anatomy
 def: "A protonema meristematic apical cell that is part of a chloronema." [POC:curators]
 subset: Bryophytes
+subset: CL
 synonym: "chloronema apical cell" EXACT []
 synonym: "chloronema apical initial" EXACT []
 xref: OBOS_SF_PO:3234956
@@ -17482,6 +17647,7 @@ namespace: plant_anatomy
 def: "A protonema sub-apical initial hat gives rise to a gametophore bud." [POC:curators]
 comment: In Physcomitrella patens, a gametophore bud initial typically is\nmore bulbous than a protonema side branch initial, and its plane of first\ncell division is oblique, rather than perpendicular, to the plane of growth.
 subset: Bryophytes
+subset: CL
 synonym: "gametophore bud initial cell" EXACT []
 xref: OBO_SF_PO:3293297
 is_a: PO:0030086 ! protonema sub-apical initial
@@ -17521,6 +17687,7 @@ namespace: plant_anatomy
 def: "An initial cell that is produced by longitudinal division of a sub-apical cell of a protonema." [POC:rw]
 comment: May give rise to a branch of the protonema (including a protonema rhizoid, tmema cell or brachycyte), a gametophore bud, or may not divide further.
 subset: Bryophytes
+subset: CL
 synonym: "protonema sub-apical initial cell" EXACT []
 synonym: "protonemal sub-apical initial cell" RELATED []
 xref: OBO_SF_PO:3293297
@@ -17538,6 +17705,7 @@ namespace: plant_anatomy
 def: "An initial cell that is part of a gametophore and gives rise to a non-vascular leaf." [PMID:19303301]
 comment: In Physcomitrella patens, non-vascular leaf initials arise from the daughter cells of a gametophore axis apical cell. Subsequent division of a non-vascular leaf initial establishes a non-vascular leaf apical cell.
 subset: Bryophytes
+subset: CL
 synonym: "non-vascular leaf initial cell" EXACT []
 xref: OBO_SF_PO:3304575
 is_a: PO:0004011 ! initial cell
