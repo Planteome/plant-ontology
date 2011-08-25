@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 10:08:2011 16:51
+date: 25:08:2011 09:53
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-beta16
+auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -208,7 +208,7 @@ namespace: plant_anatomy
 def: "A root primordium that is derived from a root pericycle and will develop into a lateral root." [POC:curators]
 synonym: "primordio de ra&#237z lateral" EXACT Spanish [POC:mag]
 is_a: PO:0005029 ! root primordium
-relationship: derives_from PO:0006203 ! pericycle
+relationship: develops_from PO:0006203 ! pericycle
 
 [Term]
 id: PO:0000017
@@ -5027,7 +5027,7 @@ namespace: plant_anatomy
 def: "Flowers of the spikelets of maize tassel." [GR:pj]
 subset: Maize
 synonym: " florete del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006318 ! Poaceae floret
+is_a: PO:0009082 ! spikelet floret
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -5093,21 +5093,6 @@ comment: The development of the gynoecium in the tassel floret of a normal maize
 synonym: "ginoecio del florete del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006384 ! Poaceae gynoecium
 relationship: part_of PO:0006310 ! tassel floret
-
-[Term]
-id: PO:0006318
-name: Poaceae floret
-namespace: plant_anatomy
-alt_id: PO:0025090
-def: "A floret that is part of a spikelet." [Poc:curators]
-comment: Found in Poaceae. It is not clear what the lemma, palea and lodicule correspond to in conventional flowers, therefore we are not making any assumptions of homology at the present time.
-subset: Maize
-subset: Poaceae
-subset: reference
-synonym: "florete de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009082 ! floret
-relationship: develops_from PO:0006329 ! Poaceae floret meristem
-relationship: part_of PO:0009051 ! spikelet
 
 [Term]
 id: PO:0006319
@@ -5454,18 +5439,8 @@ name: ear floret
 namespace: plant_anatomy
 def: "Small flowers of the spikelets of maize ear." [GR:pj]
 synonym: "florete de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006318 ! Poaceae floret
+is_a: PO:0009082 ! spikelet floret
 relationship: part_of PO:0006320 ! ear spikelet
-
-[Term]
-id: PO:0006355
-name: androecium of ear floret
-namespace: plant_anatomy
-def: "Collectively the stamens of maize ear floret." [GR:pj]
-comment: The development of the androecium in the ear floret of a normal maize plant is aborted and is present in a rudimentary state.
-synonym: "androecio del florete de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006471 ! Zea androecium
-relationship: part_of PO:0006354 ! ear floret
 
 [Term]
 id: PO:0006356
@@ -5541,15 +5516,6 @@ def: "Collectively the carpels of a maize ear floret." [GR:pj]
 synonym: "ginoecio del florete de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0006384 ! Poaceae gynoecium
 relationship: part_of PO:0006354 ! ear floret
-
-[Term]
-id: PO:0006366
-name: androecium of tassel floret
-namespace: plant_anatomy
-def: "Collectively the stamens of one floret of a tassel inflorescence of maize." [GR:pj]
-synonym: "androecio del florete del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006471 ! Zea androecium
-relationship: part_of PO:0006310 ! tassel floret
 
 [Term]
 id: PO:0006367
@@ -5707,15 +5673,6 @@ is_a: PO:0009036 ! lodicule
 relationship: part_of PO:0006354 ! ear floret
 
 [Term]
-id: PO:0006383
-name: Poaceae androecium
-namespace: plant_anatomy
-def: "Collectively the stamens of one grass floret." [GR:pj]
-synonym: "androecio de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009061 ! androecium
-relationship: part_of PO:0006318 ! Poaceae floret
-
-[Term]
 id: PO:0006384
 name: Poaceae gynoecium
 namespace: plant_anatomy
@@ -5728,7 +5685,7 @@ subset: Poaceae
 synonym: "ginoecio de Poaceae" EXACT Spanish [POC:mag]
 synonym: "Zea gynoecium" NARROW []
 is_a: PO:0009062 ! gynoecium
-relationship: part_of PO:0006318 ! Poaceae floret
+relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0006385
@@ -5796,24 +5753,6 @@ is_a: PO:0006317 ! gynoecium of tassel floret
 relationship: part_of PO:0006315 ! lower floret of sessile spikelet of tassel
 
 [Term]
-id: PO:0006392
-name: androecium of upper floret of sessile spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the stamens of upper floret of a sessile spikelet of tassel inflorescence of maize." [GR:pj]
-synonym: "androecio del florete superior de la espiguilla s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006366 ! androecium of tassel floret
-relationship: part_of PO:0006316 ! upper floret of sessile spikelet of tassel
-
-[Term]
-id: PO:0006393
-name: androecium of lower floret of sessile spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the stamens of lower floret of a sessile spikelet of tassel inflorescence of maize." [GR:pj]
-synonym: "androecio del florete inferior de la espiguilla s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006366 ! androecium of tassel floret
-relationship: part_of PO:0006315 ! lower floret of sessile spikelet of tassel
-
-[Term]
 id: PO:0006394
 name: gynoecium of upper floret of sessile spikelet of tassel
 namespace: plant_anatomy
@@ -5878,26 +5817,6 @@ comment: A non-functional or rudimentary gynoecium.
 synonym: "ginoecio del florete superior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006317 ! gynoecium of tassel floret
 relationship: part_of PO:0006314 ! upper floret of pedicellate spikelet of tassel
-
-[Term]
-id: PO:0006405
-name: androecium of upper floret of pedicellate spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the stamens of upper floret of a pedicellate spikelet of tassel inflorescence of maize." [GR:pj]
-comment: This constitutes a functional androecium.
-synonym: "androecio del florete superior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006366 ! androecium of tassel floret
-relationship: part_of PO:0006314 ! upper floret of pedicellate spikelet of tassel
-
-[Term]
-id: PO:0006406
-name: androecium of lower floret of pedicellate spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the stamens of lower floret of a pedicellate spikelet of tassel inflorescence of maize." [GR:pj]
-comment: This constitutes a functional androecium.
-synonym: "androecio del florete inferior de la espiguila pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006366 ! androecium of tassel floret
-relationship: part_of PO:0006313 ! lower floret of pedicellate spikelet of tassel
 
 [Term]
 id: PO:0006407
@@ -5972,46 +5891,6 @@ synonym: "shank" RELATED []
 synonym: "Zea lateral branch" RELATED []
 is_a: PO:0009053 ! peduncle
 relationship: part_of PO:0020136 ! Zea ear
-
-[Term]
-id: PO:0006419
-name: androecium of lower floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the stamens of lower floret of a pedicellate spikelet of maize ear inflorescence." [GR:pj]
-comment: The development of the androecium in the ear floret of a normal maize plant is aborted and is present in a rudimentary state.
-synonym: "androecio del florete inferior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006355 ! androecium of ear floret
-relationship: part_of PO:0006353 ! lower floret of pedicellate spikelet of ear
-
-[Term]
-id: PO:0006420
-name: androecium of lower floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the stamens of lower floret of a sessile spikelet of maize ear inflorescence." [GR:pj]
-comment: The development of the androecium in the ear floret of a normal maize plant is aborted and is present in a rudimentary state.
-synonym: "androecio del florete inferior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006355 ! androecium of ear floret
-relationship: part_of PO:0006351 ! lower floret of sessile spikelet of ear
-
-[Term]
-id: PO:0006421
-name: androecium of upper floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the stamens of upper floret of a sessile spikelet of maize ear inflorescence." [GR:pj]
-comment: The development of the androecium in the ear floret of a normal maize plant is aborted and is present in a rudimentary state.
-synonym: "androecio del florete superior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006355 ! androecium of ear floret
-relationship: part_of PO:0006352 ! upper floret of sessile spikelet of ear
-
-[Term]
-id: PO:0006422
-name: androecium of upper floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the stamens of upper floret of a pedicellate spikelet of maize ear inflorescence." [GR:pj]
-comment: The development of the androecium in the ear floret of a normal maize plant is aborted and is present in a rudimentary state.
-synonym: "androecio de florete superior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006355 ! androecium of ear floret
-relationship: part_of PO:0006350 ! upper floret of pedicellate spikelet of ear
 
 [Term]
 id: PO:0006423
@@ -6179,24 +6058,6 @@ is_a: PO:0006371 ! upper glume of ear spikelet
 relationship: part_of PO:0006349 ! ear sessile spikelet
 
 [Term]
-id: PO:0006441
-name: Poaceae stamen
-namespace: plant_anatomy
-def: "A microsporophyll, bearing four microsporangia in a grass floret." [GR:pj]
-synonym: "estambre de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009029 ! stamen
-relationship: part_of PO:0006383 ! Poaceae androecium
-
-[Term]
-id: PO:0006454
-name: Poaceae filament
-namespace: plant_anatomy
-def: "The stalk of the stamen of a grass floret." [GR:pj]
-synonym: "filamento de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009067 ! filament
-relationship: part_of PO:0006441 ! Poaceae stamen
-
-[Term]
 id: PO:0006455
 name: Poaceae carpel
 namespace: plant_anatomy
@@ -6332,32 +6193,6 @@ def: "A megasporophyll at the center of a maize floret enclosing the ovule." [GR
 synonym: "carpelo de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006455 ! Poaceae carpel
 relationship: part_of PO:0006365 ! gynoecium of ear floret
-
-[Term]
-id: PO:0006471
-name: Zea androecium
-namespace: plant_anatomy
-def: "Collectively the stamens of one floret of a maize plant." [GR:pj]
-synonym: "androecio de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006383 ! Poaceae androecium
-
-[Term]
-id: PO:0006472
-name: Zea stamen
-namespace: plant_anatomy
-def: "A microsporophyll bearing four microsporangia in a maize floret." [GR:pj]
-synonym: "estambre de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006441 ! Poaceae stamen
-relationship: part_of PO:0006366 ! androecium of tassel floret
-
-[Term]
-id: PO:0006474
-name: Zea filament
-namespace: plant_anatomy
-def: "The stalk of the stamen of a maize floret." [GR:pj]
-synonym: "filamento de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006454 ! Poaceae filament
-relationship: part_of PO:0006472 ! Zea stamen
 
 [Term]
 id: PO:0006486
@@ -9898,19 +9733,6 @@ xref: OBO_SF_PO:3007368
 is_a: PO:0025224 ! axil
 
 [Term]
-id: PO:0009024
-name: gynoecium ridge of lower floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "A Zea gynoecium ridge that is a gynoecium of a lower floret of a pedicellate spikelet of ear in the early stages of development." [POC:curators]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. While the development of this stylar ridge is very similar to that of the upper florets, the development does not proceed beyond the early ridge stage.
-synonym: "gynoecial ridge of lower floret of pedicellate spikelet of ear" EXACT []
-synonym: "stylar ridge of lower floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358]
-synonym: "surco del ginoecio del florete inferior de la espiguiila pedicelada de la espiga" EXACT Spanish [POC:mag]
-xref: OBO_SF_PO:2959654
-is_a: PO:0006424 ! gynoecium of lower floret of pedicellate spikelet of ear
-is_a: PO:0025087 ! Zea gynoecium ridge
-
-[Term]
 id: PO:0009025
 name: vascular leaf
 namespace: plant_anatomy
@@ -9962,10 +9784,15 @@ is_a: PO:0009026 ! sporophyll
 id: PO:0009029
 name: stamen
 namespace: plant_anatomy
+alt_id: PO:0006441
+alt_id: PO:0006472
 def: "A microsporophyll bearing one or more microsporangia." [APWeb:Glossary]
+comment: part of tassel floret
 subset: reference
 subset: TraitNet
 synonym: "estambre" EXACT Spanish [POC:mag]
+synonym: "Poaceae stamen" NARROW []
+synonym: "Zea stamen" NARROW []
 is_a: PO:0009028 ! microsporophyll
 relationship: develops_from PO:0004705 ! stamen primordium
 relationship: part_of PO:0009061 ! androecium
@@ -10055,7 +9882,7 @@ synonym: "lod&#237culo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3132537
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0008040 ! lodicule primordium
-relationship: part_of PO:0006318 ! Poaceae floret
+relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0009037
@@ -10065,7 +9892,7 @@ def: "In a grass floret, the lower of two bracts enclosing a flower." [APWeb:Glo
 subset: reference
 synonym: "lemma" EXACT Spanish [POC:mag]
 is_a: PO:0009034 ! flower bract
-relationship: part_of PO:0006318 ! Poaceae floret
+relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0009038
@@ -10076,7 +9903,7 @@ comment: Possibly a prophyll/bracteole.
 subset: reference
 synonym: "palea" EXACT Spanish [POC:mag]
 is_a: PO:0009034 ! flower bract
-relationship: part_of PO:0006318 ! Poaceae floret
+relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0009039
@@ -10162,6 +9989,7 @@ subset: reference
 subset: TraitNet
 synonym: "basal flower" NARROW [CO_125:0000019]
 synonym: "diclinous flower" NARROW []
+synonym: "disk floret" NARROW []
 synonym: "double flower" NARROW []
 synonym: "female flower" NARROW [CO_125:0000050]
 synonym: "flor" EXACT Spanish [POC:mag]
@@ -10171,6 +9999,7 @@ synonym: "male flower" NARROW [CGP:curators]
 synonym: "monoclinous flower" NARROW []
 synonym: "perfect flower" NARROW []
 synonym: "pistillate flower" NARROW []
+synonym: "ray floret" NARROW []
 synonym: "staminate flower" NARROW []
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147067
@@ -10247,7 +10076,7 @@ relationship: has_part PO:0009046 ! flower
 id: PO:0009051
 name: spikelet
 namespace: plant_anatomy
-def: "Ultimate and congested inflorescence branch of the grasses." [APWeb:Glossary]
+def: "A reproductive shoot system that is the ultimate and congested inflorescence branch of the grasses." [APWeb:Glossary]
 comment: It consists of one to many closely-packed flowers and associated glumes etc.
 subset: Poaceae
 subset: reference
@@ -10378,13 +10207,36 @@ relationship: part_of PO:0009058 ! perianth
 id: PO:0009061
 name: androecium
 namespace: plant_anatomy
+alt_id: PO:0006355
+alt_id: PO:0006366
+alt_id: PO:0006383
+alt_id: PO:0006392
+alt_id: PO:0006393
+alt_id: PO:0006405
+alt_id: PO:0006406
+alt_id: PO:0006419
+alt_id: PO:0006420
+alt_id: PO:0006421
+alt_id: PO:0006422
+alt_id: PO:0006471
 def: "A collective phyllome structure composed of two or more stamens." [POC:curators]
-comment: In some cases the androecium may consist of only one stamen.
+comment: In some cases the androecium may consist of only one stamen. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). The development of an androecium in an ear floret of a normal maize plant is aborted and is present in a rudimentary state, while the development of an androecium in a tassel floret leads to a functional androecium.
 subset: Maize
 subset: Poaceae
 subset: reference
 subset: TraitNet
 synonym: "androecio" EXACT Spanish [POC:mag]
+synonym: "androecium of ear floret" NARROW []
+synonym: "androecium of lower floret of pedicellate spikelet of ear" NARROW []
+synonym: "androecium of lower floret of sessile spikelet of ear" NARROW []
+synonym: "androecium of lower floret of sessile spikelet of tassel" NARROW []
+synonym: "androecium of tassel floret" EXACT []
+synonym: "androecium of upper floret of pedicellate spikelet of ear" NARROW []
+synonym: "androecium of upper floret of pedicellate spikelet of tassel" EXACT []
+synonym: "androecium of upper floret of sessile spikelet of ear" NARROW []
+synonym: "androecium of upper floret of sessile spikelet of tassel" NARROW []
+synonym: "Poaceae androecium" NARROW []
+synonym: "Zea androecium" NARROW []
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
@@ -10427,7 +10279,6 @@ subset: reference
 synonym: "recept&#225culo" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2975273
-is_a: PO:0009049 ! inflorescence
 is_a: PO:0025001 ! cardinal organ part
 
 [Term]
@@ -10468,10 +10319,15 @@ relationship: part_of PO:0009029 ! stamen
 id: PO:0009067
 name: filament
 namespace: plant_anatomy
-def: "A stalk of a stamen." [GR:pj, MaizeGDB:lv]
+alt_id: PO:0006454
+alt_id: PO:0006474
+def: "A stalk that is part of a stamen." [GR:pj, MaizeGDB:lv]
+comment: Supports the anthers.
 subset: reference
 subset: TraitNet
 synonym: "filamento" EXACT Spanish [POC:mag]
+synonym: "Poaceae filament" NARROW []
+synonym: "Zea filament" NARROW []
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0009029 ! stamen
 
@@ -10595,19 +10451,6 @@ synonym: "ontolog&#237a vegetal" EXACT Spanish [POC:mag]
 is_obsolete: true
 
 [Term]
-id: PO:0009076
-name: gynoecium ridge of lower floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "A Zea gynoecium ridge that is a gynoecium of a lower floret of sessile spikelet of ear in the early stages of development." [POC:curators]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
-synonym: "gynoecial ridge of lower floret of sessile spikelet of ear" EXACT []
-synonym: "stylar ridge of lower floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358]
-synonym: "surco del ginoecio del florete inferior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
-xref: OBO_SF_PO:2959654
-is_a: PO:0006423 ! gynoecium of lower floret of sessile spikelet of ear
-is_a: PO:0025087 ! Zea gynoecium ridge
-
-[Term]
 id: PO:0009077
 name: staminode
 namespace: plant_anatomy
@@ -10624,19 +10467,6 @@ def: "A sterile pistil, often rudimentary." [APWeb:Glossary]
 subset: reference
 synonym: "pistilodio" EXACT Spanish [POC:mag]
 is_a: PO:0009062 ! gynoecium
-
-[Term]
-id: PO:0009079
-name: gynoecium ridge of upper floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "A Zea gynoecium ridge that is a gynoecium of an upper floret of pedicellate spikelet of ear in the early stages of development." [POC:curators]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
-synonym: "gynoecial ridge of upper floret of pedicellate spikelet of ear" EXACT []
-synonym: "stylar ridge of upper floret of pedicellate spikelet of ear" EXACT [ISBN-13:978-0387947358]
-synonym: "surco del ginoecio del florete superior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-xref: OBO_SF_PO:2959654
-is_a: PO:0006426 ! gynoecium of upper floret of pedicellate spikelet of ear
-is_a: PO:0025087 ! Zea gynoecium ridge
 
 [Term]
 id: PO:0009080
@@ -10660,12 +10490,18 @@ is_a: PO:0020122 ! inflorescence axis
 
 [Term]
 id: PO:0009082
-name: floret
+name: spikelet floret
 namespace: plant_anatomy
-def: "Small flowers, especially of the spikelets of Poaceae and Cyperaceae." [APWeb:Glossary]
+alt_id: PO:0006318
+alt_id: PO:0025090
+def: "A small flower that is part of a spikelet." [APWeb:Glossary, POC:rw]
+comment: Found in Poaceae and Cyperaceae. Lemma, palea and lodicule are part of a spikelet floret, but since it is not clear what they correspond to in conventional flowers, no assumptions of homology are made at the present time. To describe a ray or disk floret of the Asteraceae, use flower (PO:0009046).
 subset: reference
 synonym: "florete" EXACT Spanish [POC:mag]
+synonym: "grass floret" NARROW []
+synonym: "Poaceae floret" NARROW []
 is_a: PO:0009046 ! flower
+relationship: part_of PO:0009051 ! spikelet
 
 [Term]
 id: PO:0009083
@@ -10790,19 +10626,6 @@ namespace: plant_anatomy
 def: "OBSOLETE. provisional term" [Poc:curators]
 synonym: "unidad de dispersi&#243n madura" EXACT Spanish [POC:mag]
 is_obsolete: true
-
-[Term]
-id: PO:0009092
-name: gynoecium ridge of upper floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "A Zea gynoecium ridge that is a gynoecium of an upper floret of sessile spikelet of ear in the early stages of development." [POC:curators]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
-synonym: "gynoecial ridge of upper floret of sessile spikelet of ear" EXACT []
-synonym: "stylar ridge of upper floret of sessile spikelet of ear" EXACT [ISBN-13:978-0387947358]
-synonym: "surco del ginoecio del florete superior de la espiguiila s&#233sil de la espiga" EXACT Spanish [POC:mag]
-xref: OBO_SF_PO:2959654
-is_a: PO:0006425 ! gynoecium of upper floret of sessile spikelet of ear
-is_a: PO:0025087 ! Zea gynoecium ridge
 
 [Term]
 id: PO:0009100
@@ -13392,11 +13215,20 @@ creation_date: 2010-10-25T02:21:15Z
 id: PO:0025087
 name: Zea gynoecium ridge
 namespace: plant_anatomy
+alt_id: PO:0009024
+alt_id: PO:0009076
+alt_id: PO:0009079
+alt_id: PO:0009092
 def: "A Poaceae gynoecium ridge that is a gynoecium of an ear floret in the early stages of development and is characterized as a ridge on the abaxial surface of the ear floret." [POC:curators]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
+comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.\n--------------------\nSOURCE COMMENT: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. While the development of this stylar ridge is very similar to that of the upper florets, the development does not proceed beyond the early ridge stage.\n--------------------\nSOURCE COMMENT: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
+subset: Maize
+synonym: "gynoecium ridge of lower floret of pedicellate spikelet of ear" EXACT []
+synonym: "gynoecium ridge of lower floret of sessile spikelet of ear" EXACT []
+synonym: "gynoecium ridge of upper floret of pedicellate spikelet of ear" EXACT []
 synonym: "surco de ginoecio de Zea" EXACT Spanish [POC:mag]
 synonym: "Zea gynoecial ridge" EXACT []
 synonym: "Zea stylar ridge" EXACT [ISBN-13:978-0387947358]
+xref: OBO_SF_PO:2959654
 is_a: PO:0006365 ! gynoecium of ear floret
 is_a: PO:0025086 ! Poaceae gynoecium ridge
 created_by: Ramona
