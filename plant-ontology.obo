@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:08:2011 19:57
+date: 29:08:2011 17:03
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3863,7 +3863,7 @@ is_a: PO:0005352 ! xylem
 
 [Term]
 id: PO:0006000
-name: Poaceae hull
+name: caryopsis hull
 namespace: plant_anatomy
 def: "A collective phyllome structure that encloses a fruit of the Poaceae (caryopsis) and develops from the dried lemma and palea." [POC:rw]
 subset: Maize
@@ -3893,7 +3893,7 @@ name: lower glume
 namespace: plant_anatomy
 alt_id: PO:0006027
 alt_id: PO:0006031
-def: "The proximal/basal of the two glumes." [GR:pj]
+def: "A glume that is the proximal/basal of the two glumes subtending a pair of florets." [GR:pj]
 synonym: "gluma inferior" EXACT Spanish [POC:mag]
 synonym: "lower empty glume" RELATED []
 synonym: "lower rudimentary glume" RELATED []
@@ -3921,7 +3921,7 @@ name: upper glume
 namespace: plant_anatomy
 alt_id: PO:0006028
 alt_id: PO:0006030
-def: "The apical/distal of the two glumes." [GR:pj]
+def: "A glume that is the apical/distal of the two glumes subtending a pair of florets." [GR:pj, POC:rw]
 synonym: "gluma superior" EXACT Spanish [POC:mag]
 synonym: "inner empty glume" RELATED []
 synonym: "inner glume" RELATED []
@@ -4397,8 +4397,11 @@ relationship: part_of PO:0009067 ! filament
 id: PO:0006061
 name: stigma epidermis
 namespace: plant_anatomy
+alt_id: PO:0006497
 def: "A portion of carpel epidermis that is part of a stigma." [PMID:11951033, POC:rw]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del estigma" EXACT Spanish [POC:mag]
+synonym: "Poaceae stigma epidermis" NARROW []
 is_a: PO:0025096 ! carpel epidermis
 relationship: part_of PO:0009073 ! stigma
 
@@ -4408,6 +4411,7 @@ name: style epidermis
 namespace: plant_anatomy
 alt_id: PO:0006498
 def: "A portion of carpel epidermis that is part of a style." [POC:rw]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del estilo" EXACT Spanish [POC:mag]
 synonym: "Poaceae style epidermis" NARROW []
 synonym: "transmitting tract epidermis" RELATED []
@@ -5018,7 +5022,7 @@ subset: Maize
 synonym: "penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0009051 ! spikelet
 relationship: develops_from PO:0006358 ! tassel spikelet pair meristem
-relationship: part_of PO:0020126 ! tassel
+relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006310
@@ -5111,7 +5115,7 @@ namespace: plant_anatomy
 def: "Ultimate inflorescence branch of the maize ear." [GR:pj]
 synonym: "oreja de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0009051 ! spikelet
-relationship: part_of PO:0020136 ! Zea ear
+relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0006321
@@ -5143,7 +5147,7 @@ namespace: plant_anatomy
 def: "Any branch forming from the primary or higher order tassel axes." [GR:pj]
 synonym: "rama del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0009081 ! inflorescence branch
-relationship: part_of PO:0020126 ! tassel
+relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006324
@@ -5153,7 +5157,7 @@ def: "A first order inflorescence axis that is the central axis of a tassel." [P
 synonym: "espiga central del penacho (borla)" EXACT Spanish [POC:mag]
 synonym: "tassel rachis" RELATED []
 is_a: PO:0025104 ! first order inflorescence axis
-relationship: part_of PO:0020126 ! tassel
+relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006325
@@ -5454,15 +5458,6 @@ is_a: PO:0009107 ! tassel lateral meristem
 relationship: part_of PO:0009102 ! short tassel branch
 
 [Term]
-id: PO:0006359
-name: palea of tassel floret
-namespace: plant_anatomy
-def: "In a maize tassel floret, the upper of the two bracts enclosing a flower." [GR:pj]
-synonym: "palea del florete del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0009038 ! palea
-relationship: part_of PO:0006310 ! tassel floret
-
-[Term]
 id: PO:0006360
 name: ear spikelet pair meristem
 namespace: plant_anatomy
@@ -5470,15 +5465,6 @@ def: "A meristem that produces two spikelet meristems, each of which produces tw
 synonym: "par de meristemas de la espiga de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006328 ! spikelet pair meristem
 is_a: PO:0009110 ! ear lateral meristem
-
-[Term]
-id: PO:0006361
-name: palea of ear floret
-namespace: plant_anatomy
-def: "In a maize ear floret, the upper of the two bracts enclosing a flower." [GR:pj]
-synonym: "palea del florete de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0009038 ! palea
-relationship: part_of PO:0006354 ! ear floret
 
 [Term]
 id: PO:0006362
@@ -5503,55 +5489,59 @@ relationship: part_of PO:0006354 ! ear floret
 id: PO:0006367
 name: glume of ear spikelet
 namespace: plant_anatomy
-def: "A bract in the ear inflorescence of a maize plant, subtending two florets." [GR:pj]
+def: "A glume that is part of an ear spikelet." [POC:rw]
 synonym: "gluma de la espiga de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0009039 ! glume
+intersection_of: PO:0009039 ! glume
+intersection_of: part_of PO:0006320 ! ear spikelet
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
 id: PO:0006368
 name: glume of tassel spikelet
 namespace: plant_anatomy
-def: "A bract in the tassel inflorescence of a maize plant, subtending two florets." [GR:pj]
+def: "A glume that is part of a tassel spikelet." [POC:rw]
 synonym: "gluma del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0009039 ! glume
+intersection_of: PO:0009039 ! glume
+intersection_of: part_of PO:0006309 ! tassel spikelet
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0006369
 name: lower glume of ear spikelet
 namespace: plant_anatomy
-def: "The proximal/basal of the two glumes in the ear spikelet." [GR:pj]
+def: "A lower glume that is part of an ear spikelet." [GR:pj, POC:rw]
 synonym: "gluma inferior del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006002 ! lower glume
-is_a: PO:0006367 ! glume of ear spikelet
+relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
 id: PO:0006370
 name: upper glume of tassel spikelet
 namespace: plant_anatomy
-def: "The apical/distal of the two glumes in the tassel spikelet." [GR:pj]
+def: "An upper glume that is part of a tassel spikelet." [GR:pj, POC:rw]
 synonym: "gluma superior del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006004 ! upper glume
-is_a: PO:0006368 ! glume of tassel spikelet
+relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0006371
 name: upper glume of ear spikelet
 namespace: plant_anatomy
-def: "TThe apical/distal of the two glumes in the ear spikelet." [GR:pj]
+def: "An upper glume that is part of an ear spikelet." [GR:pj, POC:rw]
 synonym: "gluma superior de la espiga de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006004 ! upper glume
-is_a: PO:0006367 ! glume of ear spikelet
+relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
 id: PO:0006372
 name: lower glume of tassel spikelet
 namespace: plant_anatomy
-def: "The proximal/basal of the two glumes in the tassel spikelet." [GR:pj]
+def: "A lower glume that is part of a tassel spikelet." [GR:pj, POC:rw]
 synonym: "gluma inferior del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006002 ! lower glume
-is_a: PO:0006368 ! glume of tassel spikelet
+relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0006373
@@ -5637,24 +5627,6 @@ is_a: PO:0009080 ! spikelet rachilla
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
-id: PO:0006381
-name: lodicule of tassel floret
-namespace: plant_anatomy
-def: "In a tassel floret, one of two or three tiny scales or flaps of tissue outside the stamens, possibly representing reduced perianth segments." [APWeb:Glossary, GR:pj]
-synonym: "lod&#237culo del florete del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0009036 ! lodicule
-relationship: part_of PO:0006310 ! tassel floret
-
-[Term]
-id: PO:0006382
-name: lodicule of ear floret
-namespace: plant_anatomy
-def: "In a Maize ear floret, one of two or three tiny scales or flaps of tissue, possibly representing reduced perianth segments." [APWeb:Glossary, GR:pj]
-synonym: "lod&#237culo del florete de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0009036 ! lodicule
-relationship: part_of PO:0006354 ! ear floret
-
-[Term]
 id: PO:0006384
 name: Poaceae gynoecium
 namespace: plant_anatomy
@@ -5673,7 +5645,7 @@ relationship: part_of PO:0009082 ! spikelet floret
 id: PO:0006385
 name: lower glume of pedicellate spikelet of tassel
 namespace: plant_anatomy
-def: "The proximal/basal of the two glumes in the tassel pedicellate spikelet." [GR:pj]
+def: "A lower glume of tassel spikelet that is part of a tassel pedicellate spikelet." [GR:pj, POC:rw]
 synonym: "gluma inferior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006372 ! lower glume of tassel spikelet
 relationship: part_of PO:0006312 ! tassel pedicellate spikelet
@@ -5682,7 +5654,7 @@ relationship: part_of PO:0006312 ! tassel pedicellate spikelet
 id: PO:0006386
 name: lower glume of sessile spikelet of tassel
 namespace: plant_anatomy
-def: "The proximal/basal of the two glumes in the tassel sessile spikelet." [GR:pj]
+def: "A lower glume of tassel spikelet that is part of a tassel sessile spikelet." [GR:pj, POC:rw]
 synonym: "gluma inferior de la espiguilla s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006372 ! lower glume of tassel spikelet
 relationship: part_of PO:0006311 ! tassel sessile spikelet
@@ -5691,7 +5663,7 @@ relationship: part_of PO:0006311 ! tassel sessile spikelet
 id: PO:0006387
 name: upper glume of sessile spikelet of tassel
 namespace: plant_anatomy
-def: "The apical/distal of the two glumes in a tassel sessile spikelet." [GR:pj]
+def: "An upper glume of tassel spikelet that is part of a tassel sessile spikelet." [GR:pj, POC:rw]
 synonym: "gluma superior de la espiguilla s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006370 ! upper glume of tassel spikelet
 relationship: part_of PO:0006311 ! tassel sessile spikelet
@@ -5700,7 +5672,7 @@ relationship: part_of PO:0006311 ! tassel sessile spikelet
 id: PO:0006388
 name: upper glume of pedicellate spikelet of tassel
 namespace: plant_anatomy
-def: "The apical/distal of the two glumes in a tassel pedicellate spikelet." [GR:pj]
+def: "An upper glume of tassel spikelet that is part of a tassel pedicellate spikelet." [GR:pj, POC:rw]
 synonym: "gluma superior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006370 ! upper glume of tassel spikelet
 relationship: part_of PO:0006312 ! tassel pedicellate spikelet
@@ -5745,24 +5717,6 @@ is_a: PO:0006317 ! gynoecium of tassel floret
 relationship: part_of PO:0006316 ! upper floret of sessile spikelet of tassel
 
 [Term]
-id: PO:0006399
-name: palea of lower floret of sessile spikelet of tassel
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize tassel sessile spikelet lower floret." [GR:pj]
-synonym: "palea del florete inferior de la espiguilla del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006359 ! palea of tassel floret
-relationship: part_of PO:0006315 ! lower floret of sessile spikelet of tassel
-
-[Term]
-id: PO:0006401
-name: palea of upper floret of sessile spikelet of tassel
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize tassel sessile spikelet upper floret." [GR:pj]
-synonym: "palea del floerete superior de la espiguill s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006359 ! palea of tassel floret
-relationship: part_of PO:0006316 ! upper floret of sessile spikelet of tassel
-
-[Term]
 id: PO:0006403
 name: gynoecium of lower floret of pedicellate spikelet of tassel
 namespace: plant_anatomy
@@ -5780,24 +5734,6 @@ def: "Collectively the carpels of a upper floret of pedicellate spikelet of maiz
 comment: A non-functional or rudimentary gynoecium.
 synonym: "ginoecio del florete superior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0006317 ! gynoecium of tassel floret
-relationship: part_of PO:0006314 ! upper floret of pedicellate spikelet of tassel
-
-[Term]
-id: PO:0006411
-name: palea of lower floret of pedicellate spikelet of tassel
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize tassel pedicellate spikelet lower floret." [GR:pj]
-synonym: "palea del florete inferior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006359 ! palea of tassel floret
-relationship: part_of PO:0006313 ! lower floret of pedicellate spikelet of tassel
-
-[Term]
-id: PO:0006413
-name: palea of upper floret of pedicellate spikelet of tassel
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize tassel pedicellate spikelet upper floret." [GR:pj]
-synonym: "palea del florete superior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006359 ! palea of tassel floret
 relationship: part_of PO:0006314 ! upper floret of pedicellate spikelet of tassel
 
 [Term]
@@ -5825,7 +5761,7 @@ namespace: plant_anatomy
 def: "A peduncle of a maize tassel, below the lowest tassel node." [GR:pj]
 synonym: "pedúnculo del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0009053 ! peduncle
-relationship: part_of PO:0020126 ! tassel
+relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006418
@@ -5836,7 +5772,7 @@ synonym: "pedúnculo de la espiga" EXACT Spanish [POC:mag]
 synonym: "shank" RELATED []
 synonym: "Zea lateral branch" RELATED []
 is_a: PO:0009053 ! peduncle
-relationship: part_of PO:0020136 ! Zea ear
+relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0006423
@@ -5879,42 +5815,6 @@ is_a: PO:0006365 ! gynoecium of ear floret
 relationship: part_of PO:0006350 ! upper floret of pedicellate spikelet of ear
 
 [Term]
-id: PO:0006427
-name: palea of upper floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize ear sessile spikelet upper floret." [GR:pj]
-synonym: "palea del florete superior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006361 ! palea of ear floret
-relationship: part_of PO:0006352 ! upper floret of sessile spikelet of ear
-
-[Term]
-id: PO:0006428
-name: palea of lower floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize ear sessile spikelet lower floret." [GR:pj]
-synonym: "palea del florete inerior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006361 ! palea of ear floret
-relationship: part_of PO:0006351 ! lower floret of sessile spikelet of ear
-
-[Term]
-id: PO:0006429
-name: palea of upper floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize ear pedicellate spikelet upper floret." [GR:pj]
-synonym: "palea del florete superior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006361 ! palea of ear floret
-relationship: part_of PO:0006350 ! upper floret of pedicellate spikelet of ear
-
-[Term]
-id: PO:0006430
-name: palea of lower floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "The upper of the two bracts enclosing a flower in a maize ear pedicellate spikelet lower floret." [GR:pj]
-synonym: "palea del florete inferior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006361 ! palea of ear floret
-relationship: part_of PO:0006353 ! lower floret of pedicellate spikelet of ear
-
-[Term]
 id: PO:0006435
 name: rachilla of pedicellate spikelet of ear
 namespace: plant_anatomy
@@ -5935,7 +5835,7 @@ is_a: PO:0006380 ! ear spikelet rachilla
 id: PO:0006437
 name: lower glume of pedicellate spikelet of ear
 namespace: plant_anatomy
-def: "The proximal/basal of the two glumes in the ear pedicellate spikelet." [GR:pj]
+def: "A lower glume of ear spikelet that is part of an ear pedicellate spikelet." [GR:pj, POC:rw]
 synonym: "gluma inferior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0006369 ! lower glume of ear spikelet
 relationship: part_of PO:0006348 ! ear pedicellate spikelet
@@ -5944,7 +5844,7 @@ relationship: part_of PO:0006348 ! ear pedicellate spikelet
 id: PO:0006438
 name: lower glume of sessile spikelet of ear
 namespace: plant_anatomy
-def: "The proximal/basal of the two glumes in the ear sessile spikelet." [GR:pj]
+def: "A lower glume of ear spikelet that is part of an ear sessile spikelet." [GR:pj]
 synonym: "gluma inferior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0006369 ! lower glume of ear spikelet
 relationship: part_of PO:0006349 ! ear sessile spikelet
@@ -5953,7 +5853,7 @@ relationship: part_of PO:0006349 ! ear sessile spikelet
 id: PO:0006439
 name: upper glume of pedicellate spikelet of ear
 namespace: plant_anatomy
-def: "The apical/distal of the two glumes in the pedicellate spikelet." [GR:pj]
+def: "An upper glume of ear spikelet that is part of an ear pedicellate spikelet." [GR:pj, POC:rw]
 synonym: "gluma superior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0006371 ! upper glume of ear spikelet
 relationship: part_of PO:0006348 ! ear pedicellate spikelet
@@ -5962,7 +5862,7 @@ relationship: part_of PO:0006348 ! ear pedicellate spikelet
 id: PO:0006440
 name: upper glume of sessile spikelet of ear
 namespace: plant_anatomy
-def: "The apical/distal of the two glumes in the sessile spikelet." [GR:pj]
+def: "An upper glume of ear spikelet that is part of an ear sessile spikelet." [GR:pj, POC:rw]
 synonym: "gluma superior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0006371 ! upper glume of ear spikelet
 relationship: part_of PO:0006349 ! ear sessile spikelet
@@ -6087,15 +5987,6 @@ is_a: PO:0020001 ! ovary placenta
 relationship: part_of PO:0006456 ! Poaceae ovary
 
 [Term]
-id: PO:0006468
-name: Poaceae stigma
-namespace: plant_anatomy
-def: "The apical part of a carpel of a grass floret on which the pollen germinates." [GR:pj]
-synonym: "estigma de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009073 ! stigma
-relationship: part_of PO:0006455 ! Poaceae carpel
-
-[Term]
 id: PO:0006470
 name: Zea carpel
 namespace: plant_anatomy
@@ -6111,15 +6002,6 @@ namespace: plant_anatomy
 def: "The basal portion of a carpel that encloses the ovule(s) in a maize floret." [GR:pj]
 synonym: "ovario de Zea" EXACT Spanish [POC:mag]
 is_a: PO:0006456 ! Poaceae ovary
-relationship: part_of PO:0006470 ! Zea carpel
-
-[Term]
-id: PO:0006487
-name: Zea stigma
-namespace: plant_anatomy
-def: "The apical part of a carpel of a maize floret on which the pollen germinates." [GR:pj]
-synonym: "estigma de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006468 ! Poaceae stigma
 relationship: part_of PO:0006470 ! Zea carpel
 
 [Term]
@@ -6200,15 +6082,6 @@ is_a: PO:0000244 ! functional megaspore
 is_a: PO:0006464 ! Poaceae megaspore
 
 [Term]
-id: PO:0006497
-name: Poaceae stigma epidermis
-namespace: plant_anatomy
-def: "The epidermal cell layer of the grass stigma." [GR:pj]
-synonym: "epidermis del estigma de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0006061 ! stigma epidermis
-relationship: part_of PO:0006468 ! Poaceae stigma
-
-[Term]
 id: PO:0006500
 name: Poaceae ovary epidermis
 namespace: plant_anatomy
@@ -6271,7 +6144,7 @@ synonym: "ear rachis" RELATED []
 synonym: "espiga central de la espiga de la espiga" EXACT Spanish [POC:mag]
 synonym: "Zea cob" RELATED []
 is_a: PO:0025104 ! first order inflorescence axis
-relationship: part_of PO:0020136 ! Zea ear
+relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0006506
@@ -9785,10 +9658,15 @@ relationship: part_of PO:0009006 ! shoot system
 id: PO:0009036
 name: lodicule
 namespace: plant_anatomy
+alt_id: PO:0006381
+alt_id: PO:0006382
 def: "A phyllome that is part of a grass floret and is one of two or three tiny scales or flaps of tissue outside the stamens." [POC:curators]
-comment: May represent a reduced floral structure.
+comment: May represent a reduced floral structure. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 synonym: "lod&#237culo" EXACT Spanish [POC:mag]
+synonym: "lodicule of ear floret" NARROW []
+synonym: "lodicule of tassel floret" NARROW []
+synonym: "lodiculus" EXACT []
 xref: OBO_SF_PO:3132537
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0008040 ! lodicule primordium
@@ -9809,7 +9687,7 @@ alt_id: PO:0006432
 alt_id: PO:0006433
 alt_id: PO:0006434
 def: "A flower bract that is part of a spikelet and is the lower of two bracts enclosing a spikelet floret." [APWeb:Glossary, POC:rw]
-comment: Found in Poaceae such as Zea mays. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
+comment: Found in Poaceae such as Zea mays. A lemma subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
 subset: Maize
 subset: Poaceae
 subset: reference
@@ -9826,17 +9704,36 @@ synonym: "lemma of upper floret of pedicellate spikelet of tassel" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of ear" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of tassel" NARROW []
 is_a: PO:0009034 ! flower bract
-relationship: part_of PO:0006354 ! ear floret
 relationship: part_of PO:0009051 ! spikelet
 
 [Term]
 id: PO:0009038
 name: palea
 namespace: plant_anatomy
-def: "In a grass floret, the upper of the two bracts enclosing a flower." [APWeb:Glossary, GR:pj]
-comment: Possibly a prophyll/bracteole.
+alt_id: PO:0006359
+alt_id: PO:0006361
+alt_id: PO:0006399
+alt_id: PO:0006401
+alt_id: PO:0006411
+alt_id: PO:0006413
+alt_id: PO:0006427
+alt_id: PO:0006428
+alt_id: PO:0006429
+alt_id: PO:0006430
+def: "A flower bract that is part of a spikelet and is the upper/distal of two bracts enclosing a spikelet floret." [APWeb:Glossary, GR:pj]
+comment: Found in Poaceae such as Zea mays. Possibly a prophyll/bracteole. A palea subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
 subset: reference
 synonym: "palea" EXACT Spanish [POC:mag]
+synonym: "palea of ear floret" NARROW []
+synonym: "palea of lower floret of pedicellate spikelet of ear" NARROW []
+synonym: "palea of lower floret of pedicellate spikelet of tassel" NARROW []
+synonym: "palea of lower floret of sessile spikelet of ear" EXACT []
+synonym: "palea of lower floret of sessile spikelet of tassel" NARROW []
+synonym: "palea of tassel floret" NARROW []
+synonym: "palea of upper floret of pedicellate spikelet of ear" NARROW []
+synonym: "palea of upper floret of pedicellate spikelet of tassel" NARROW []
+synonym: "palea of upper floret of sessile spikelet of ear" NARROW []
+synonym: "palea of upper floret of sessile spikelet of tassel" NARROW []
 is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0009082 ! spikelet floret
 
@@ -9845,7 +9742,8 @@ id: PO:0009039
 name: glume
 namespace: plant_anatomy
 alt_id: PO:0006026
-def: "A \"bract\" in the inflorescence of a grass, sedge or similar plant." [APWeb:Glossary, GR:pj]
+def: "One of a pair of inflorescence bracts that is part of a spikelet and subtends the two florets." [POC:rw]
+comment: Found in Poaceae and Cyperaceae. Glumes subtends the pair of florets while a lemma or palea subtend the individual florets.
 subset: reference
 synonym: "gluma" EXACT Spanish [POC:mag]
 synonym: "rudimentary glume" RELATED []
@@ -10352,10 +10250,15 @@ relationship: part_of PO:0009062 ! gynoecium
 id: PO:0009073
 name: stigma
 namespace: plant_anatomy
-def: "Part of a carpel or group of fused carpels on which the pollen germinates, usually apical." [APWeb:Glossary, TAIR:lr]
+alt_id: PO:0006468
+alt_id: PO:0006487
+def: "A cardinal organ part that is part of a carpel or group of fused carpels on which the pollen germinates, usually apical." [APWeb:Glossary, TAIR:lr]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "estigma" EXACT Spanish [POC:mag]
+synonym: "Poaceae stigma" NARROW []
+synonym: "Zea stigma" NARROW []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
@@ -10429,8 +10332,8 @@ name: spikelet floret
 namespace: plant_anatomy
 alt_id: PO:0006318
 alt_id: PO:0025090
-def: "A small flower that is part of a spikelet." [APWeb:Glossary, POC:rw]
-comment: Found in Poaceae and Cyperaceae. Lemma, palea and lodicule are part of a spikelet floret, but since it is not clear what they correspond to in conventional flowers, no assumptions of homology are made at the present time. To describe a ray or disk floret of the Asteraceae, use flower (PO:0009046).
+def: "A small flower that is part of a spikelet." [APWeb:Glossary, PMID:20197291]
+comment: Found in Poaceae and Cyperaceae. Lemma, palea and lodicule are associated with a spikelet floret, but since it is not clear what they correspond to in conventional flowers, no assumptions of homology are made at the present time. To describe a ray or disk floret of the Asteraceae, use flower (PO:0009046).
 subset: reference
 synonym: "florete" EXACT Spanish [POC:mag]
 synonym: "grass floret" NARROW []
@@ -10638,7 +10541,7 @@ def: "Meristem that gives rise to the apical and lateral structures of the tasse
 subset: Maize
 synonym: "meristema del penacho (borla)" EXACT Spanish [POC:mag]
 is_a: PO:0000230 ! inflorescence meristem
-relationship: part_of PO:0020126 ! tassel
+relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0009107
@@ -10668,7 +10571,7 @@ def: "The meristem which gives rise to the female inflorescence or ear in maize.
 subset: Maize
 synonym: "meristema de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0000230 ! inflorescence meristem
-relationship: part_of PO:0020136 ! Zea ear
+relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0009110
@@ -11790,7 +11693,7 @@ replaced_by: PO:0025181
 
 [Term]
 id: PO:0020126
-name: tassel
+name: tassel inflorescence
 namespace: plant_anatomy
 def: "The functionally-staminate flowering structure that terminates the stem of a Zea mays plant." [MaizeGDB:lv]
 comment: Branched inflorescence with a central axis and about 10-50 lateral branches.
@@ -11893,7 +11796,7 @@ relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0020136
-name: Zea ear
+name: ear inflorescence
 namespace: plant_anatomy
 def: "The distal part of a lateral (axillary) branch in Zea that bears the functionally-carpellate florets in a highly contracted inflorescence." [MaizeGDB:lv]
 subset: Maize
@@ -13131,52 +13034,26 @@ created_by: Ramona
 creation_date: 2010-09-17T01:54:02Z
 
 [Term]
-id: PO:0025086
-name: Poaceae gynoecium ridge
-namespace: plant_anatomy
-def: "A gynoecium ridge that is a Poaceae gynoecium in the early stages of development and is characterized as a ridge on the abaxial surface of the Poaceae floret meristem." [PMID:10077498]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.
-subset: Maize
-subset: Poaceae
-synonym: "Poaceae gynoecial ridge" EXACT []
-synonym: "Poaceae stylar ridge" EXACT []
-synonym: "surco del ginoecio de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0006384 ! Poaceae gynoecium
-is_a: PO:0025088 ! gynoecium ridge
-created_by: Ramona
-creation_date: 2010-10-25T02:21:15Z
-
-[Term]
-id: PO:0025087
-name: Zea gynoecium ridge
+id: PO:0025088
+name: gynoecium ridge
 namespace: plant_anatomy
 alt_id: PO:0009024
 alt_id: PO:0009076
 alt_id: PO:0009079
 alt_id: PO:0009092
-def: "A Poaceae gynoecium ridge that is a gynoecium of an ear floret in the early stages of development and is characterized as a ridge on the abaxial surface of the ear floret." [POC:curators]
-comment: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment.\n--------------------\nSOURCE COMMENT: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. While the development of this stylar ridge is very similar to that of the upper florets, the development does not proceed beyond the early ridge stage.\n--------------------\nSOURCE COMMENT: This term has multiple inheritance because describes an entity at a certain stage in its\ndevelopment. Continued overgrowth of the shoot apex (which becomes the ovule primordium) by the ring of gynoecial tissue leads to the formation of the stylar canal, which is detected as a slight protuberance on the mature ovary.
-subset: Maize
-synonym: "gynoecium ridge of lower floret of pedicellate spikelet of ear" EXACT []
-synonym: "gynoecium ridge of lower floret of sessile spikelet of ear" EXACT []
-synonym: "gynoecium ridge of upper floret of pedicellate spikelet of ear" EXACT []
-synonym: "surco de ginoecio de Zea" EXACT Spanish [POC:mag]
-synonym: "Zea gynoecial ridge" EXACT []
-synonym: "Zea stylar ridge" EXACT [ISBN-13:978-0387947358]
-xref: OBO_SF_PO:2959654
-is_a: PO:0006365 ! gynoecium of ear floret
-is_a: PO:0025086 ! Poaceae gynoecium ridge
-created_by: Ramona
-creation_date: 2010-10-25T02:24:40Z
-
-[Term]
-id: PO:0025088
-name: gynoecium ridge
-namespace: plant_anatomy
-def: "A gynoecium in the early stages of development, characterized as a ridge on the abaxial surface of the floral meristem that develops from a gynoecium primordium." [POC:curators]
+alt_id: PO:0025086
+alt_id: PO:0025087
+def: "A gynoecium in the early stages of development, characterized as a ridge on the abaxial surface of the floral meristem that develops from a gynoecium primordium." [PMID:10077498, POC:curators]
+comment: Common in monocots, including species of Poaceae such as Zea mays. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352). In Zea mays, development of the gynoecium ridge of the upper floret of pedicellate spikelet of ear occurs via continued overgrowth of the shoot apex (which becomes the ovule primordium) by a ring of gynoecial tissue, leading to the formation of a stylar canal that is detected as a slight protuberance on the mature ovary. Early development of the gynoecium ridge of the lower floret of pedicellate spikelet of ear is very similar to that of the upper floret of the pedicellate spikelet of ear, except the development does not proceed beyond the early ridge stage.
 synonym: "gynoecial ridge" EXACT []
+synonym: "gynoecium ridge of lower floret of pedicellate spikelet of ear" NARROW []
+synonym: "gynoecium ridge of lower floret of sessile spikelet of ear" NARROW []
+synonym: "gynoecium ridge of upper floret of pedicellate spikelet of ear" NARROW []
+synonym: "gynoecium ridge of upper floret of sessile spikelet of ear" NARROW []
+synonym: "Poaceae gynoecium ridge" NARROW []
 synonym: "stylar ridge" EXACT []
 synonym: "surco del ginoecio" EXACT Spanish [POC:mag]
+synonym: "Zea gynoecium ridge" NARROW []
 is_a: PO:0009062 ! gynoecium
 created_by: Ramona
 creation_date: 2010-10-27T09:19:35Z
