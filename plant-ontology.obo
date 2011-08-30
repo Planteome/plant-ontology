@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:08:2011 17:03
+date: 30:08:2011 12:48
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1024,11 +1024,22 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 id: PO:0000229
 name: flower meristem
 namespace: plant_anatomy
+alt_id: PO:0006329
+alt_id: PO:0006373
+alt_id: PO:0006374
+alt_id: PO:0025091
 def: "A portion of meristem tissue that gives rise to the floral organs." [GR:pj]
+comment: In Zea mays and other grasses, the floret meristem is part of a spikelet and develops into a specific type of floret. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the spikelet type that the meristem is part of. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311). An additional annotation can also be added for the type of floret the meristem will develop into. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+synonym: "ear floret meristem" NARROW []
 synonym: "floral apical meristem" RELATED []
 synonym: "floral meristem" EXACT []
+synonym: "floret meristem" NARROW []
 synonym: "mersitema floral" EXACT Spanish [POC:mag]
+synonym: "Poaceae floret meristem" NARROW []
+synonym: "tassel floret meristem" NARROW []
 is_a: PO:0009013 ! meristem
+is_a: PO:0009106 ! tassel meristem
+relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0000230
@@ -1052,9 +1063,12 @@ is_a: PO:0006079 ! shoot meristem
 id: PO:0000244
 name: functional megaspore
 namespace: plant_anatomy
-def: "The megaspore(s) that forms the embryo sac." [TAIR:lr]
+alt_id: PO:0006496
+def: "A megaspore(s) that forms an embryo sac." [TAIR:lr]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: CL
 synonym: "megaspora funcional" EXACT Spanish [POC:mag]
+synonym: "Poaceae functional megaspore" NARROW []
 xref: CL:0000433
 is_a: PO:0020019 ! megaspore
 
@@ -1062,9 +1076,12 @@ is_a: PO:0020019 ! megaspore
 id: PO:0000245
 name: degenerate megaspore
 namespace: plant_anatomy
+alt_id: PO:0006495
 def: "In monosporic and bisporic megasporogenesis: the megaspore(s) that would not participate in megagametogenesis." [TAIR:lr]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: CL
 synonym: "megaspora degenerativa" EXACT Spanish [POC:mag]
+synonym: "Poaceae degenerate megaspore" NARROW []
 xref: CL:0000475
 is_a: PO:0020019 ! megaspore
 
@@ -1409,11 +1426,16 @@ is_a: PO:0009002 ! plant cell
 id: PO:0000431
 name: megasporocyte
 namespace: plant_anatomy
+alt_id: PO:0006463
+alt_id: PO:0006493
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores." [ISBN:0471245208]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: CL
 synonym: "megaspore mother cell" EXACT []
 synonym: "megasporocito" EXACT Spanish [POC:mag]
 synonym: "MMC" EXACT []
+synonym: "Poaceae megasporocyte" NARROW []
+synonym: "Zea megasporocyte" NARROW []
 xref: CL:0000320
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006015 ! female archesporial cell
@@ -4261,8 +4283,11 @@ is_a: PO:0006036 ! root epidermis
 id: PO:0006043
 name: integument epidermis
 namespace: plant_anatomy
+alt_id: PO:0006508
 def: "A portion epidermis that is part of an integument." [GR:pj, POC:rw]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento" EXACT Spanish [POC:mag]
+synonym: "Poaceae integument epidermis" NARROW []
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0020021 ! integument
 
@@ -4271,6 +4296,7 @@ id: PO:0006044
 name: inner integument epidermis
 namespace: plant_anatomy
 def: "The epidermis of the inner integument in an ovule." [GR:pj]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento interior" EXACT Spanish [POC:mag]
 is_a: PO:0006043 ! integument epidermis
 relationship: part_of PO:0020022 ! inner integument
@@ -4280,6 +4306,7 @@ id: PO:0006045
 name: outer integument epidermis
 namespace: plant_anatomy
 def: "The epidermis of the outer integument in an ovule." [GR:pj]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento exterior" EXACT Spanish [POC:mag]
 is_a: PO:0006043 ! integument epidermis
 relationship: part_of PO:0020023 ! outer integument
@@ -4399,7 +4426,7 @@ name: stigma epidermis
 namespace: plant_anatomy
 alt_id: PO:0006497
 def: "A portion of carpel epidermis that is part of a stigma." [PMID:11951033, POC:rw]
-comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 synonym: "epidermis del estigma" EXACT Spanish [POC:mag]
 synonym: "Poaceae stigma epidermis" NARROW []
 is_a: PO:0025096 ! carpel epidermis
@@ -4411,7 +4438,7 @@ name: style epidermis
 namespace: plant_anatomy
 alt_id: PO:0006498
 def: "A portion of carpel epidermis that is part of a style." [POC:rw]
-comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 synonym: "epidermis del estilo" EXACT Spanish [POC:mag]
 synonym: "Poaceae style epidermis" NARROW []
 synonym: "transmitting tract epidermis" RELATED []
@@ -4422,8 +4449,11 @@ relationship: part_of PO:0009074 ! style
 id: PO:0006063
 name: ovary epidermis
 namespace: plant_anatomy
+alt_id: PO:0006500
 def: "A portion of epidermis that is part of an ovary." [POC:rw]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del ovario" EXACT Spanish [POC:mag]
+synonym: "Poaceae ovary epidermis" NARROW []
 is_a: PO:0005679 ! epidermis
 relationship: part_of PO:0005022 ! ovary wall
 
@@ -5089,16 +5119,6 @@ is_a: PO:0006310 ! tassel floret
 relationship: part_of PO:0006311 ! tassel sessile spikelet
 
 [Term]
-id: PO:0006317
-name: gynoecium of tassel floret
-namespace: plant_anatomy
-def: "Collectively the carpels of a maize tassel floret." [GR:pj]
-comment: The development of the gynoecium in the tassel floret of a normal maize plant is aborted and is present in a rudimentary state.
-synonym: "ginoecio del florete del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006384 ! Poaceae gynoecium
-relationship: part_of PO:0006310 ! tassel floret
-
-[Term]
 id: PO:0006319
 name: spikelet pedicel
 namespace: plant_anatomy
@@ -5194,19 +5214,6 @@ def: "The meristem that produces two spikelet meristems, each of which produces 
 comment: Found in some grass inflorescences.
 synonym: "par de meristemas de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006327 ! spikelet meristem
-
-[Term]
-id: PO:0006329
-name: Poaceae floret meristem
-namespace: plant_anatomy
-alt_id: PO:0025091
-def: "A floral meristem that is part of a spikelet." [POC:rw]
-comment: Found in Poaceae.
-subset: Maize
-subset: Poaceae
-synonym: "meristema del florete de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0000229 ! flower meristem
-relationship: part_of PO:0009051 ! spikelet
 
 [Term]
 id: PO:0006330
@@ -5477,15 +5484,6 @@ is_a: PO:0008016 ! vegetative shoot apical meristem
 relationship: part_of PO:0019018 ! embryo axis
 
 [Term]
-id: PO:0006365
-name: gynoecium of ear floret
-namespace: plant_anatomy
-def: "Collectively the carpels of a maize ear floret." [GR:pj]
-synonym: "ginoecio del florete de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006384 ! Poaceae gynoecium
-relationship: part_of PO:0006354 ! ear floret
-
-[Term]
 id: PO:0006367
 name: glume of ear spikelet
 namespace: plant_anatomy
@@ -5541,28 +5539,6 @@ namespace: plant_anatomy
 def: "A lower glume that is part of a tassel spikelet." [GR:pj, POC:rw]
 synonym: "gluma inferior del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006002 ! lower glume
-relationship: part_of PO:0006309 ! tassel spikelet
-
-[Term]
-id: PO:0006373
-name: ear floret meristem
-namespace: plant_anatomy
-def: "Apical shoot meristem that gives rise to the organs of a maize ear floret." [GR:pj]
-subset: Maize
-synonym: "meristema del florete de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006329 ! Poaceae floret meristem
-is_a: PO:0009109 ! ear meristem
-relationship: part_of PO:0006320 ! ear spikelet
-
-[Term]
-id: PO:0006374
-name: tassel floret meristem
-namespace: plant_anatomy
-def: "Apical meristem that gives rise to the organs of a maize tassel floret." [GR:pj]
-subset: Maize
-synonym: "meristema del florete del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006329 ! Poaceae floret meristem
-is_a: PO:0009106 ! tassel meristem
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -5627,21 +5603,6 @@ is_a: PO:0009080 ! spikelet rachilla
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
-id: PO:0006384
-name: Poaceae gynoecium
-namespace: plant_anatomy
-alt_id: PO:0006357
-alt_id: PO:0025089
-def: "A gynoecium that is part of a Poaceae floret." [POC:rw]
-comment: Gynoecium (sensu Zea) was merged with Poaceae gynoecium, because the Zea gynoecium is not structurally distinct from the Poaceae gynoecium. Hierarchy for gynoecium now matches floret and spikelet.
-subset: Maize
-subset: Poaceae
-synonym: "ginoecio de Poaceae" EXACT Spanish [POC:mag]
-synonym: "Zea gynoecium" NARROW []
-is_a: PO:0009062 ! gynoecium
-relationship: part_of PO:0009082 ! spikelet floret
-
-[Term]
 id: PO:0006385
 name: lower glume of pedicellate spikelet of tassel
 namespace: plant_anatomy
@@ -5697,46 +5658,6 @@ is_a: PO:0006379 ! tassel spikelet rachilla
 relationship: part_of PO:0006312 ! tassel pedicellate spikelet
 
 [Term]
-id: PO:0006391
-name: gynoecium of lower floret of sessile spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the carpels of a lower floret of sessile spikelet of maize tassel." [GR:pj]
-comment: A non-functional or rudimentary gynoecium.
-synonym: "ginoecio del florete inferior de la espiguilla s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006317 ! gynoecium of tassel floret
-relationship: part_of PO:0006315 ! lower floret of sessile spikelet of tassel
-
-[Term]
-id: PO:0006394
-name: gynoecium of upper floret of sessile spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the carpels of a upper floret of sessile spikelet of maize tassel." [GR:pj]
-comment: A non-functional or rudimentary gynoecium.
-synonym: "ginoecio del florete superior de la espiguilla s&#233sil del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006317 ! gynoecium of tassel floret
-relationship: part_of PO:0006316 ! upper floret of sessile spikelet of tassel
-
-[Term]
-id: PO:0006403
-name: gynoecium of lower floret of pedicellate spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the carpels of a lower floret of pedicellate spikelet of maize tassel." [GR:pj]
-comment: A non-functional or rudimentary gynoecium.
-synonym: "ginoecio del florete inferior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006317 ! gynoecium of tassel floret
-relationship: part_of PO:0006313 ! lower floret of pedicellate spikelet of tassel
-
-[Term]
-id: PO:0006404
-name: gynoecium of upper floret of pedicellate spikelet of tassel
-namespace: plant_anatomy
-def: "Collectively the carpels of a upper floret of pedicellate spikelet of maize tassel." [GR:pj]
-comment: A non-functional or rudimentary gynoecium.
-synonym: "ginoecio del florete superior de la espiguilla pedicelada del penacho (borla)" EXACT Spanish [POC:mag]
-is_a: PO:0006317 ! gynoecium of tassel floret
-relationship: part_of PO:0006314 ! upper floret of pedicellate spikelet of tassel
-
-[Term]
 id: PO:0006415
 name: pedicel of ear spikelet
 namespace: plant_anatomy
@@ -5773,46 +5694,6 @@ synonym: "shank" RELATED []
 synonym: "Zea lateral branch" RELATED []
 is_a: PO:0009053 ! peduncle
 relationship: part_of PO:0020136 ! ear inflorescence
-
-[Term]
-id: PO:0006423
-name: gynoecium of lower floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the carpels of a lower floret of sessile spikelet of maize ear." [GR:pj]
-comment: A non-functional or rudimentary gynoecium.
-synonym: "ginoecio del floerete inferior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006365 ! gynoecium of ear floret
-relationship: part_of PO:0006351 ! lower floret of sessile spikelet of ear
-
-[Term]
-id: PO:0006424
-name: gynoecium of lower floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the carpels of a lower floret of pedicellate spikelet of a maize ear." [GR:pj]
-comment: A non-functional or rudimentary gynoecium.
-synonym: "ginoecio del florete inferior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006365 ! gynoecium of ear floret
-relationship: part_of PO:0006353 ! lower floret of pedicellate spikelet of ear
-
-[Term]
-id: PO:0006425
-name: gynoecium of upper floret of sessile spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the carpels of a upper floret of sessile spikelet of maize ear." [GR:pj]
-comment: A functional gynoecium.
-synonym: "ginoecio del florete superior de la espiguilla de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006365 ! gynoecium of ear floret
-relationship: part_of PO:0006352 ! upper floret of sessile spikelet of ear
-
-[Term]
-id: PO:0006426
-name: gynoecium of upper floret of pedicellate spikelet of ear
-namespace: plant_anatomy
-def: "Collectively the carpels of a upper floret of pedicellate spikelet of maize ear." [GR:pj]
-comment: A functional gynoecium.
-synonym: "ginoecio del floerete superior de la espiguilla pedicelada de la espiga" EXACT Spanish [POC:mag]
-is_a: PO:0006365 ! gynoecium of ear floret
-relationship: part_of PO:0006350 ! upper floret of pedicellate spikelet of ear
 
 [Term]
 id: PO:0006435
@@ -5866,229 +5747,6 @@ def: "An upper glume of ear spikelet that is part of an ear sessile spikelet." [
 synonym: "gluma superior de la espiguilla s&#233sil de la espiga" EXACT Spanish [POC:mag]
 is_a: PO:0006371 ! upper glume of ear spikelet
 relationship: part_of PO:0006349 ! ear sessile spikelet
-
-[Term]
-id: PO:0006455
-name: Poaceae carpel
-namespace: plant_anatomy
-def: "A megasporophyll at the center of a grass floret enclosing the ovule." [GR:pj]
-synonym: "carpelo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009030 ! carpel
-relationship: part_of PO:0006384 ! Poaceae gynoecium
-
-[Term]
-id: PO:0006456
-name: Poaceae ovary
-namespace: plant_anatomy
-def: "The basal portion of a carpel that encloses the ovule(s) in a grass floret." [GR:pj]
-synonym: "Ovario de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0009072 ! ovary
-relationship: part_of PO:0006455 ! Poaceae carpel
-
-[Term]
-id: PO:0006457
-name: Poaceae ovule
-namespace: plant_anatomy
-def: "A stalked or sessile structure in a grass carpel within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [GR:pj]
-synonym: "&#243vulo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020003 ! ovule
-relationship: part_of PO:0006456 ! Poaceae ovary
-
-[Term]
-id: PO:0006458
-name: Poaceae chalaza
-namespace: plant_anatomy
-def: "Region in the grass ovule where the integuments and the nucellus merge with the funiculus." [GR:pj]
-synonym: "calaza de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020026 ! chalaza
-relationship: part_of PO:0006457 ! Poaceae ovule
-
-[Term]
-id: PO:0006459
-name: Poaceae outer integument
-namespace: plant_anatomy
-def: "One of the two layers of tissue that usually covers the ovule of a grass, contiguous to the inner integument and usually involved in forming the micropyle at the apex." [GR:pj]
-synonym: "integumento externo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020023 ! outer integument
-relationship: part_of PO:0006465 ! Poaceae integument
-
-[Term]
-id: PO:0006460
-name: Poaceae inner integument
-namespace: plant_anatomy
-def: "The innermost of the two layers of tissue that cover the ovule of a grass, contiguous to the nucellus and usually involved in forming the micropyle at the apex." [GR:pj]
-synonym: "integumento interno de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020022 ! inner integument
-relationship: part_of PO:0006465 ! Poaceae integument
-
-[Term]
-id: PO:0006461
-name: Poaceae micropyle
-namespace: plant_anatomy
-def: "A micropyle at the apex of a grass ovule." [GR:pj]
-synonym: "micr&#243pila de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020025 ! micropyle
-relationship: part_of PO:0006457 ! Poaceae ovule
-
-[Term]
-id: PO:0006462
-name: Poaceae nucellus
-namespace: plant_anatomy
-def: "Subepidermal tissue in the ovule of a grass plant surrounding the megasporocyte." [GR:pj]
-synonym: "nucelo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020020 ! nucellus
-relationship: part_of PO:0006457 ! Poaceae ovule
-
-[Term]
-id: PO:0006463
-name: Poaceae megasporocyte
-namespace: plant_anatomy
-def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores in a grass plant." [GR:pj]
-subset: CL
-synonym: "megasporocito de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0000431 ! megasporocyte
-relationship: part_of PO:0006462 ! Poaceae nucellus
-
-[Term]
-id: PO:0006464
-name: Poaceae megaspore
-namespace: plant_anatomy
-def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a grass plant, and on germination giving rise to the female gametophyte (embryo sac)." [GR:pj]
-subset: CL
-synonym: "megaspora de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020019 ! megaspore
-relationship: develops_from PO:0006463 ! Poaceae megasporocyte
-
-[Term]
-id: PO:0006465
-name: Poaceae integument
-namespace: plant_anatomy
-def: "One of the layers of tissue that covers the ovule of a grass carpel, enveloping the nucellus and forming the micropyle at the apex." [GR:pj]
-synonym: "integumento de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020021 ! integument
-relationship: part_of PO:0006457 ! Poaceae ovule
-
-[Term]
-id: PO:0006466
-name: Poaceae funicle
-namespace: plant_anatomy
-def: "A stalk that attaches an ovule to a placenta in a grass carpel." [GR:pj]
-synonym: "fun&#237culo de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020006 ! funicle
-relationship: part_of PO:0006456 ! Poaceae ovary
-
-[Term]
-id: PO:0006467
-name: Poaceae ovary placenta
-namespace: plant_anatomy
-def: "The region within an ovary to which ovules are attached in a grass carpel." [GR:pj]
-synonym: "Placenta del ovario de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0020001 ! ovary placenta
-relationship: part_of PO:0006456 ! Poaceae ovary
-
-[Term]
-id: PO:0006470
-name: Zea carpel
-namespace: plant_anatomy
-def: "A megasporophyll at the center of a maize floret enclosing the ovule." [GR:pj]
-synonym: "carpelo de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006455 ! Poaceae carpel
-relationship: part_of PO:0006365 ! gynoecium of ear floret
-
-[Term]
-id: PO:0006486
-name: Zea ovary
-namespace: plant_anatomy
-def: "The basal portion of a carpel that encloses the ovule(s) in a maize floret." [GR:pj]
-synonym: "ovario de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006456 ! Poaceae ovary
-relationship: part_of PO:0006470 ! Zea carpel
-
-[Term]
-id: PO:0006489
-name: Zea funicle
-namespace: plant_anatomy
-def: "A stalk that attaches an ovule to a placenta in a maize carpel." [GR:pj]
-synonym: "fun&#237culo de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006466 ! Poaceae funicle
-relationship: part_of PO:0006486 ! Zea ovary
-
-[Term]
-id: PO:0006490
-name: Zea ovary placenta
-namespace: plant_anatomy
-def: "The region within an ovary to which ovules are attached in a maize carpel." [GR:pj]
-synonym: "placenta del ovario de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006467 ! Poaceae ovary placenta
-relationship: part_of PO:0006486 ! Zea ovary
-
-[Term]
-id: PO:0006491
-name: Zea ovule
-namespace: plant_anatomy
-def: "A stalked or sessile structure in a maize carpel within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [GR:pj]
-synonym: "&#243vulo de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006457 ! Poaceae ovule
-relationship: part_of PO:0006486 ! Zea ovary
-
-[Term]
-id: PO:0006492
-name: Zea nucellus
-namespace: plant_anatomy
-def: "Subepidermal tissue in the ovule of a maize plant surrounding the megasporocyte." [GR:pj]
-synonym: "nucelo de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006462 ! Poaceae nucellus
-relationship: part_of PO:0006491 ! Zea ovule
-
-[Term]
-id: PO:0006493
-name: Zea megasporocyte
-namespace: plant_anatomy
-def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) megaspores in a maize plant." [GR:pj]
-subset: CL
-synonym: "megasporocito de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006463 ! Poaceae megasporocyte
-relationship: part_of PO:0006492 ! Zea nucellus
-
-[Term]
-id: PO:0006494
-name: Zea megaspore
-namespace: plant_anatomy
-def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a maize plant, and on germination giving rise to the female gametophyte (embryo sac)." [GR:pj]
-subset: CL
-synonym: "megaspora de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006464 ! Poaceae megaspore
-relationship: develops_from PO:0006493 ! Zea megasporocyte
-
-[Term]
-id: PO:0006495
-name: Poaceae degenerate megaspore
-namespace: plant_anatomy
-def: "The megaspores in a grass plant that would not participate in megagametogenesis." [GR:pj]
-subset: CL
-subset: Poaceae
-synonym: "megaspora degenerativa de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0000245 ! degenerate megaspore
-is_a: PO:0006464 ! Poaceae megaspore
-
-[Term]
-id: PO:0006496
-name: Poaceae functional megaspore
-namespace: plant_anatomy
-def: "The megaspore that forms the embryo sac in grasses." [GR:pj]
-subset: CL
-synonym: "megaspora funcional de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0000244 ! functional megaspore
-is_a: PO:0006464 ! Poaceae megaspore
-
-[Term]
-id: PO:0006500
-name: Poaceae ovary epidermis
-namespace: plant_anatomy
-def: "The epidermal cell layer of the ovary of a grass carpel." [GR:pj]
-synonym: "epidermis del ovario de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0006063 ! ovary epidermis
-relationship: part_of PO:0006456 ! Poaceae ovary
 
 [Term]
 id: PO:0006501
@@ -6145,33 +5803,6 @@ synonym: "espiga central de la espiga de la espiga" EXACT Spanish [POC:mag]
 synonym: "Zea cob" RELATED []
 is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020136 ! ear inflorescence
-
-[Term]
-id: PO:0006506
-name: Zea chalaza
-namespace: plant_anatomy
-def: "Region in the maize ovule where the integuments and the nucellus merge with the funiculus." [GR:pj]
-synonym: "calaza de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006458 ! Poaceae chalaza
-relationship: part_of PO:0006491 ! Zea ovule
-
-[Term]
-id: PO:0006507
-name: Zea integument
-namespace: plant_anatomy
-def: "One of the layers of tissue that covers the ovule of a maize carpel, enveloping the nucellus and forming the micropyle at the apex." [GR:pj]
-synonym: "integumento de Zea" EXACT Spanish [POC:mag]
-is_a: PO:0006465 ! Poaceae integument
-relationship: part_of PO:0006491 ! Zea ovule
-
-[Term]
-id: PO:0006508
-name: Poaceae integument epidermis
-namespace: plant_anatomy
-def: "The epidermis of an integument in a grass ovule." [GR:pj]
-synonym: "epidermis del integumento de Poaceae" EXACT Spanish [POC:mag]
-is_a: PO:0006043 ! integument epidermis
-relationship: part_of PO:0006465 ! Poaceae integument
 
 [Term]
 id: PO:0007001
@@ -9584,11 +9215,15 @@ relationship: part_of PO:0009061 ! androecium
 id: PO:0009030
 name: carpel
 namespace: plant_anatomy
+alt_id: PO:0006455
+alt_id: PO:0006470
 def: "A megasporophyll, almost always at the center of a flower, its margins more or less fused together or with other carpels to enclose the ovule(s)." [APWeb:Glossary]
-comment: If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Poaceae, Brassicaceae and Solanaceae. If carpels are free, the gynoecium is an apocarpous gynoecium, as in Fabaceae.
+comment: If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Poaceae, Brassicaceae and Solanaceae. If carpels are free, the gynoecium is an apocarpous gynoecium, as in Fabaceae. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "carpelo" EXACT Spanish [POC:mag]
+synonym: "Poaceae carpel" NARROW []
+synonym: "Zea carpel" NARROW []
 is_a: PO:0009027 ! megasporophyll
 relationship: develops_from PO:0004703 ! carpel primordium
 relationship: part_of PO:0009062 ! gynoecium
@@ -10079,17 +9714,43 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009062
 name: gynoecium
 namespace: plant_anatomy
+alt_id: PO:0006317
+alt_id: PO:0006357
+alt_id: PO:0006365
+alt_id: PO:0006384
+alt_id: PO:0006391
+alt_id: PO:0006394
+alt_id: PO:0006403
+alt_id: PO:0006404
+alt_id: PO:0006423
+alt_id: PO:0006424
+alt_id: PO:0006425
+alt_id: PO:0006426
+alt_id: PO:0025089
 def: "A collective phyllome structure composed of two or more carpels." [POC:curators]
-comment: In some cases the gynoecium may consist of only one carpel.
+comment: In some cases the gynoecium may consist of only one carpel. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "ginoecio" EXACT Spanish [POC:mag]
+synonym: "gynoecium of ear floret" NARROW []
+synonym: "gynoecium of lower floret of pedicellate spikelet of ear" NARROW []
+synonym: "gynoecium of lower floret of pedicellate spikelet of tassel" NARROW []
+synonym: "gynoecium of lower floret of sessile spikelet of ear" NARROW []
+synonym: "gynoecium of lower floret of sessile spikelet of tassel" NARROW []
+synonym: "gynoecium of tassel floret" NARROW []
+synonym: "gynoecium of upper floret of pedicellate spikelet of ear" NARROW []
+synonym: "gynoecium of upper floret of pedicellate spikelet of tassel" NARROW []
+synonym: "gynoecium of upper floret of sessile spikelet of ear" NARROW []
+synonym: "gynoecium of upper floret of sessile spikelet of tassel" NARROW []
 synonym: "pistil" RELATED []
+synonym: "Poaceae gynoecium" NARROW []
+synonym: "Zea gynoecium" NARROW []
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0000019 ! gynoecium primordium
 relationship: part_of PO:0009046 ! flower
+relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0009063
@@ -10235,12 +9896,17 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0009072
 name: ovary
 namespace: plant_anatomy
+alt_id: PO:0006456
+alt_id: PO:0006486
 def: "A plant structure that is the basal portion of a carpel or group of fused carpels and encloses the ovule(s)." [APWeb:Glossary, TAIR:lr]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: Angiosperm
 subset: Maize
 subset: reference
 subset: TraitNet
 synonym: "ovario" EXACT Spanish [POC:mag]
+synonym: "Poaceae ovary" NARROW []
+synonym: "Zea ovary" NARROW []
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3177370
 is_a: PO:0009011 ! plant structure
@@ -10253,7 +9919,7 @@ namespace: plant_anatomy
 alt_id: PO:0006468
 alt_id: PO:0006487
 def: "A cardinal organ part that is part of a carpel or group of fused carpels on which the pollen germinates, usually apical." [APWeb:Glossary, TAIR:lr]
-comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "estigma" EXACT Spanish [POC:mag]
@@ -10270,6 +9936,7 @@ namespace: plant_anatomy
 alt_id: PO:0006469
 alt_id: PO:0006488
 def: "An elongated part of a carpel or group of fused carpels between the ovary and the stigma, and through which the pollen tube grows." [APWeb:Glossary, TAIR:lr]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "estilo" EXACT Spanish [POC:mag]
@@ -10650,9 +10317,14 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0020001
 name: ovary placenta
 namespace: plant_anatomy
+alt_id: PO:0006467
+alt_id: PO:0006490
 def: "A portion of placenta tissue that is part of an ovary and to which ovules are attached." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "placenta de ovario" EXACT Spanish [POC:mag]
+synonym: "Poaceae ovary placenta" NARROW []
+synonym: "Zea ovary placenta" NARROW []
 is_a: PO:0025078 ! placenta
 relationship: part_of PO:0009072 ! ovary
 
@@ -10680,10 +10352,15 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0020003
 name: ovule
 namespace: plant_anatomy
+alt_id: PO:0006457
+alt_id: PO:0006491
 def: "A stalked or sessile structure in a seed plant within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "&#243vulo" EXACT Spanish [POC:mag]
+synonym: "Poaceae ovule" NARROW []
+synonym: "Zea ovule" NARROW []
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0000018 ! ovule primordium
@@ -10729,10 +10406,15 @@ relationship: part_of PO:0009068 ! connective
 id: PO:0020006
 name: funicle
 namespace: plant_anatomy
+alt_id: PO:0006466
+alt_id: PO:0006489
 def: "A stalk that attaches an ovule to a placenta." [APWeb:Glossary, GR:pj]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "fun&#237culo" EXACT Spanish [POC:mag]
 synonym: "funiculus" RELATED []
+synonym: "Poaceae funicle" NARROW []
+synonym: "Zea funicle" NARROW []
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0009072 ! ovary
 
@@ -10854,9 +10536,14 @@ is_obsolete: true
 id: PO:0020019
 name: megaspore
 namespace: plant_anatomy
+alt_id: PO:0006464
+alt_id: PO:0006494
 def: "The larger, in general, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant, and on germination giving rise to the female gametophyte (embryo sac)." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: CL
 synonym: "megaspora" EXACT Spanish [POC:mag]
+synonym: "Poaceae megaspore" NARROW []
+synonym: "Zea megaspore" NARROW []
 xref: CL:0000250
 is_a: PO:0025017 ! spore
 
@@ -10864,12 +10551,16 @@ is_a: PO:0025017 ! spore
 id: PO:0020020
 name: nucellus
 namespace: plant_anatomy
+alt_id: PO:0006462
+alt_id: PO:0006492
 def: "A megasporangium in a seed plant, composed of fleshy subepidermal tissue that is located in an ovule and surrounding a megasporocyte." [POC:curators]
-comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus.
+comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "megasporangium" RELATED []
 synonym: "nucelo" EXACT Spanish [POC:mag]
+synonym: "Poaceae nucellus" NARROW []
+synonym: "Zea nucellus" NARROW []
 xref: OBO_SF_PO:2903966
 xref: OBO_SF_PO:3132605
 is_a: PO:0025201 ! megasporangium
@@ -10879,11 +10570,16 @@ relationship: part_of PO:0020003 ! ovule
 id: PO:0020021
 name: integument
 namespace: plant_anatomy
+alt_id: PO:0006465
+alt_id: PO:0006507
 def: "One of the layers of tissue that usually covers an ovule, enveloping a nucellus and forming the micropyle at the apex." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "integumento" EXACT Spanish [POC:mag]
+synonym: "Poaceae integument" NARROW []
 synonym: "portion of integument tissue" EXACT []
+synonym: "Zea integument" NARROW []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
@@ -10891,16 +10587,22 @@ relationship: part_of PO:0020003 ! ovule
 id: PO:0020022
 name: inner integument
 namespace: plant_anatomy
+alt_id: PO:0006460
 def: "The innermost of the two layers of tissue that usually cover the ovule, contiguous to the nucellus and usually contributing to the formation of the micropyle at the apex." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "integumento interno" EXACT Spanish [POC:mag]
+synonym: "Poaceae inner integument" NARROW []
 is_a: PO:0020021 ! integument
 
 [Term]
 id: PO:0020023
 name: outer integument
 namespace: plant_anatomy
+alt_id: PO:0006459
 def: "One of the two layers of tissue that usually cover the ovule, contiguous to the inner integument and usually involved in forming the micropyle at the apex." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "integumento externo" EXACT Spanish [POC:mag]
+synonym: "Poaceae outer integument" NARROW []
 is_a: PO:0020021 ! integument
 
 [Term]
@@ -10917,12 +10619,14 @@ relationship: part_of PO:0020022 ! inner integument
 id: PO:0020025
 name: micropyle
 namespace: plant_anatomy
+alt_id: PO:0006461
 def: "A plant anatomical space that is enclosed by and forms an opening in an integument at the apex of an ovule." [POC:curaotrs]
-comment: The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac. In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated.
+comment: The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac. In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "micr&#243pila" EXACT Spanish [POC:mag]
 synonym: "ovular micropyle" EXACT []
+synonym: "Poaceae micropyle" NARROW []
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0020021 ! integument
 
@@ -10930,12 +10634,16 @@ relationship: part_of PO:0020021 ! integument
 id: PO:0020026
 name: chalaza
 namespace: plant_anatomy
-def: "Region in the ovule where the integuments and the nucellus join with the funiculus." [ISBN:047124529]
-comment: The chalaza is recognized as the region which initiates the two integuments at its flank.
+alt_id: PO:0006458
+alt_id: PO:0006506
+def: "A portion of plant tissue that is the region in an ovule where the integuments and the nucellus join with the funiculus." [ISBN:047124529]
+comment: The chalaza is recognized as the region which initiates the two integuments at its flank. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "calaza" EXACT Spanish [POC:mag]
 synonym: "ovular chlaza" EXACT []
+synonym: "Poaceae chalaza" NARROW []
 synonym: "portion of chalaza tissue" EXACT []
+synonym: "Zea chalaza" NARROW []
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0020003 ! ovule
 
