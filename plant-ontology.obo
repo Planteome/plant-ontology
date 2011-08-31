@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:08:2011 12:48
+date: 31:08:2011 16:02
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -24,6 +24,7 @@ default-namespace: plant_ontology
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 ontology: po
 treat-xrefs-as-is_a: CARO
+treat-xrefs-as-genus-differntia: CL
 
 [Term]
 id: PO:0000001
@@ -43,7 +44,7 @@ namespace: plant_anatomy
 alt_id: PO:0006445
 alt_id: PO:0006477
 def: "A microsporangium wall that is part of an anther." [ISBN:0471244554, ISBN:9780003686647]
-comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers.
+comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
 synonym: "pared de la antera" EXACT Spanish [POC:mag]
@@ -743,7 +744,6 @@ def: "A parenchyma cell of the mesophyll of a hydathode found between the xylem 
 comment: Proposed to be involved in the retrieval of solutes from the xylem sap.
 subset: CL
 synonym: "c&#233lular ???" EXACT Spanish [POC:mag]
-xref: CL:0000074
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005660 ! hydathode
 
@@ -755,7 +755,6 @@ def: "A specialized parenchyma cell associated with a sieve-tube member in angio
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula acompa&#241iante   " EXACT Spanish [POC:mag]
-xref: CL:0000284
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0006075 ! primary phloem
@@ -790,7 +789,6 @@ def: "A parenchyma cell containing chloroplasts; a component of leaf mesophyll a
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula clorenquim&#225tica   " EXACT Spanish [POC:mag]
-xref: CL:0000472
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005426 ! chlorenchyma
 
@@ -802,7 +800,6 @@ def: "Usually dead cell variable in form and size, with more or less thick, ofte
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula esclerenquim&#225tica   " EXACT Spanish [POC:mag]
-xref: CL:0000276
 is_a: PO:0025030 ! ground tissue cell
 relationship: part_of PO:0005427 ! sclerenchyma
 
@@ -814,7 +811,6 @@ def: "A cell with wall ingrowths (or invaginations) that increase the surface of
 comment: Appear to be specialized for short-distance transfer of solutes. Transfer cells can occur anywhere there is a junction between two individuals, such as between a sporophyte and a gametophyte, or between a parasitic plant and its host.
 subset: CL
 synonym: "c&#233lula de transferencia" EXACT Spanish [POC:mag]
-xref: CL:0000370
 xref: OBO_SF_PO:3172685
 is_a: PO:0025030 ! ground tissue cell
 
@@ -829,7 +825,6 @@ synonym: "c&#233lula inicial fusiforme" EXACT Spanish [POC:mag]
 synonym: "fusiform initial cell" EXACT []
 synonym: "xylem initial" RELATED []
 synonym: "xylem mother cell" RELATED []
-xref: CL:0000009
 is_a: PO:0000295 ! cambial initial
 
 [Term]
@@ -841,7 +836,6 @@ comment: These cells make up the axial system, also known as vertical or longitu
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula axial" EXACT Spanish [POC:mag]
-xref: CL:0000363
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000079 ! fusiform initial
 
@@ -853,7 +847,6 @@ def: "A cambial initial cell that gives rise to ray cells of the secondary xylem
 subset: CL
 synonym: "c&#233lula inicial de rayo" EXACT Spanish [POC:mag]
 synonym: "ray initial cell" EXACT []
-xref: CL:0000316
 is_a: PO:0000295 ! cambial initial
 
 [Term]
@@ -869,7 +862,6 @@ synonym: "c&#233lula esperm&#225tica o esperma" EXACT Spanish [POC:mag]
 synonym: "male gamete" EXACT []
 synonym: "microgamete" EXACT []
 synonym: "sperm nucleus" RELATED []
-xref: CL:0000366
 is_a: PO:0025006 ! gamete
 relationship: develops_from PO:0020097 ! generative cell
 
@@ -919,7 +911,6 @@ subset: Angiosperm
 subset: CL
 subset: reference
 synonym: "sin&#233rgida" EXACT Spanish [POC:mag]
-xref: CL:0000288
 is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0020096 ! egg apparatus
 
@@ -1069,7 +1060,6 @@ comment: If you are annotating to this structure for Zea mays or other grasses, 
 subset: CL
 synonym: "megaspora funcional" EXACT Spanish [POC:mag]
 synonym: "Poaceae functional megaspore" NARROW []
-xref: CL:0000433
 is_a: PO:0020019 ! megaspore
 
 [Term]
@@ -1082,7 +1072,6 @@ comment: If you are annotating to this structure for Zea mays or other grasses, 
 subset: CL
 synonym: "megaspora degenerativa" EXACT Spanish [POC:mag]
 synonym: "Poaceae degenerate megaspore" NARROW []
-xref: CL:0000475
 is_a: PO:0020019 ! megaspore
 
 [Term]
@@ -1134,7 +1123,6 @@ def: "A root epidermal cell that is the smaller cell produced by the asymmetric 
 subset: CL
 synonym: "hair cell" RELATED []
 synonym: "tricoblasto" EXACT Spanish [POC:mag]
-xref: CL:0000299
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
@@ -1146,7 +1134,6 @@ def: "A root epidermal cell that is formed after asymmetric division of an epide
 subset: CL
 synonym: "atricoblasto" EXACT Spanish [POC:mag]
 synonym: "non-hair cell" RELATED []
-xref: CL:0000332
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
 
@@ -1168,7 +1155,6 @@ def: "A cell making up xylem tissue." [ISBN:0471245208]
 subset: CL
 subset: TraitNet
 synonym: "elemento del xilema" EXACT Spanish [POC:mag]
-xref: CL:0000298
 is_a: PO:0000081 ! axial cell
 
 [Term]
@@ -1192,7 +1178,6 @@ comment: This class is the union of unicellular trichome [narrow synonym of tric
 subset: TraitNet
 synonym: "non-secretory trichome" EXACT []
 synonym: "tricoma" EXACT Spanish [POC:mag]
-xref: CL:0000282
 is_a: PO:0009011 ! plant structure
 relationship: develops_from PO:0000349 ! epidermal initial
 relationship: part_of PO:0005679 ! epidermis
@@ -1217,7 +1202,6 @@ def: "An epidermal cell associated with a stoma and at least morphologically dis
 subset: CL
 synonym: "accessory cell" RELATED []
 synonym: "c&#233lula subsididaria" EXACT Spanish [POC:mag]
-xref: CL:0000270
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: part_of PO:0002000 ! stomatal complex
@@ -1234,8 +1218,6 @@ subset: TraitNet
 synonym: "miembro del tubo criboso" EXACT Spanish [POC:mag]
 synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
-xref: CL:0000268
-xref: CL:0000543
 is_a: PO:0000081 ! axial cell
 disjoint_from: PO:0025033 ! leptoid
 relationship: part_of PO:0005043 ! secondary phloem
@@ -1250,7 +1232,6 @@ comment: Occurs in the sporophytic phase of a plant life cycle.
 subset: CL
 subset: TraitNet
 synonym: "elemento de traqueida" EXACT Spanish [POC:mag]
-xref: CL:0000672
 is_a: PO:0000273 ! xylem element
 disjoint_from: PO:0025032 ! hydroid
 relationship: part_of PO:0005848 ! secondary xylem
@@ -1265,7 +1246,6 @@ comment: They cause the opening and closing of the pore by changes in turgor.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula guardiana" EXACT Spanish [POC:mag]
-xref: CL:0000292
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0000351 ! guard mother cell
@@ -1281,7 +1261,6 @@ subset: CL
 synonym: "c&#233lula inicial del cambium" EXACT Spanish [POC:mag]
 synonym: "cambial cell" EXACT []
 synonym: "cambial initial cell" EXACT []
-xref: CL:0000272
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000059 ! root initial cell
 disjoint_from: PO:0000349 ! epidermal initial
@@ -1296,7 +1275,6 @@ def: "In the xylem, a dead elongated water-conducting cell in which at least the
 subset: CL
 subset: TraitNet
 synonym: "traqueida" EXACT Spanish [POC:mag]
-xref: CL:0000331
 is_a: PO:0000290 ! tracheary element
 
 [Term]
@@ -1316,7 +1294,6 @@ def: "A shoot epidermal cell that is relatively unspecialized at maturity." [POC
 comment: May have sinuous anticlinal cell walls that overall give a jigsaw like appearance to the epidermis. Pavement cells are epidermal cells that are not directly associated with a stomatal complex or trichome at maturity, but they share similar developmental origins.
 subset: CL
 synonym: "c&#233lula del pavimento epidermal" EXACT Spanish [POC:mag]
-xref: CL:0000400
 xref: OBO_SF_PO:3139280
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000115 ! socket cell
@@ -1333,7 +1310,6 @@ def: "An initial cell that is part of an epidermis and gives rise to specialized
 subset: CL
 synonym: "c&#233lula inicial de la epidermis" EXACT Spanish [POC:mag]
 synonym: "epidermal initial cell" EXACT []
-xref: CL:0000538
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000059 ! root initial cell
 disjoint_from: PO:0000295 ! cambial initial
@@ -1347,7 +1323,6 @@ namespace: plant_anatomy
 def: "A shoot epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula madre de la c&#233lula guardiana" EXACT Spanish [POC:mag]
-xref: CL:0000262
 is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000062 ! stomatal initial
 
@@ -1358,7 +1333,6 @@ namespace: plant_anatomy
 def: "A cell containing glucosinolates (\"mustard oil glucosides\") and myrosinases, enzymes hydrolyzing the glucosinolates." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula de mirosina" EXACT Spanish [POC:mag]
-xref: CL:0000368
 is_a: PO:0025030 ! ground tissue cell
 
 [Term]
@@ -1368,7 +1342,6 @@ namespace: plant_anatomy
 def: "A ground tissue cell that is part of an exodermis or an endodermis and remains thin walled when the associated cells develop thick secondary walls." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula de pasaje" EXACT Spanish [POC:mag]
-xref: CL:0000245
 is_a: PO:0025030 ! ground tissue cell
 
 [Term]
@@ -1378,7 +1351,6 @@ namespace: plant_anatomy
 def: "A fiber-like tracheid in the secondary xylem; commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures." [ISBN:0471245208]
 subset: CL
 synonym: "fibrotraqueida" EXACT Spanish [POC:mag]
-xref: CL:0000258
 is_a: PO:0000274 ! xylem fiber
 
 [Term]
@@ -1408,7 +1380,6 @@ def: "A cambial initial cell which is destined to differentiate into secondary p
 comment: Phloem islands can be formed in the middle of the xylem.
 subset: CL
 synonym: "c&#233lula madre del floema" EXACT Spanish [POC:mag]
-xref: CL:0000264
 is_a: PO:0000295 ! cambial initial
 relationship: part_of PO:0005043 ! secondary phloem
 
@@ -1419,7 +1390,6 @@ namespace: plant_anatomy
 def: "Diploid cell produced by the fusion of sperm cell nucleus and egg cell." [TAIR:ki]
 subset: CL
 synonym: "cigoto" EXACT Spanish [POC:mag]
-xref: CL:0000365
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -1436,7 +1406,6 @@ synonym: "megasporocito" EXACT Spanish [POC:mag]
 synonym: "MMC" EXACT []
 synonym: "Poaceae megasporocyte" NARROW []
 synonym: "Zea megasporocyte" NARROW []
-xref: CL:0000320
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006015 ! female archesporial cell
 relationship: part_of PO:0025201 ! megasporangium
@@ -2044,7 +2013,6 @@ comment: The zygote divides to form an embryo apical cell and an embryo basal ce
 subset: CL
 synonym: "c&#233lula basal" EXACT Spanish [POC:mag]
 synonym: "embryonic basal cell" EXACT []
-xref: CL:0000646
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0000423 ! zygote
 relationship: part_of PO:0009009 ! plant embryo
@@ -2338,7 +2306,7 @@ namespace: plant_anatomy
 def: "A plant cell synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula meristem&#225tica   " EXACT Spanish [POC:mag]
-xref: CL:0000685
+xref: CL:0000034
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -2352,8 +2320,6 @@ subset: CL
 synonym: "c&#233lula inicial" EXACT Spanish [POC:mag]
 synonym: "meristemoid" EXACT []
 synonym: "stem cell" RELATED []
-xref: CL:0000034
-xref: CL:0000266
 xref: OBO_SF_PO:3166706
 is_a: PO:0004010 ! meristematic cell
 
@@ -2374,7 +2340,6 @@ def: "A plant cell that is part of a portion of epidermis." [POC:curators]
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula epid&#233rmica" EXACT Spanish [POC:mag]
-xref: CL:0000362
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005679 ! epidermis
 
@@ -2648,7 +2613,6 @@ namespace: plant_anatomy
 def: "Cell on the margin of, and tending to form a sheath around, the procumbent cells of a multi-seriate ray as seen in tangential section." [POC:curators]
 subset: CL
 synonym: "c&#233lula de la vaina" EXACT Spanish [POC:mag]
-xref: CL:0000618
 is_a: PO:0004528 ! upright wood ray parenchyma cell
 
 [Term]
@@ -5510,7 +5474,7 @@ id: PO:0006369
 name: lower glume of ear spikelet
 namespace: plant_anatomy
 def: "A lower glume that is part of an ear spikelet." [GR:pj, POC:rw]
-synonym: "gluma inferior del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
+synonym: "gluma inferior la espiga de la espiguilla" EXACT Spanish [POC:mag]
 is_a: PO:0006002 ! lower glume
 relationship: part_of PO:0006320 ! ear spikelet
 
@@ -5839,15 +5803,17 @@ synonym: "6.04-3/4 of inflorescence emerged in barley" RELATED [GRO:0007099]
 synonym: "6.04-3/4 of inflorescence emerged in oat" RELATED [GRO:0007099]
 synonym: "6.04-3/4 of inflorescence emerged in wheat" RELATED [GRO:0007099]
 synonym: "70% of panicle emerged in rice" RELATED []
-is_a: PO:0007041 ! inflorescence emergence from flag leaf sheath
+is_a: PO:0007041 ! inflorescence emergence phase
 
 [Term]
 id: PO:0007003
-name: IL.03 full inflorescence length reached
+name: IL.03 full inflorescence length reached phase
 namespace: plant_growth_and_development_stage
-def: "The stage when the inflorescence reaches full length." [GR:ap]
+def: "An inflorescence detectable phase during which one or more inflorescences has reached at its full length." [GR:ap, POC:rw]
+comment: This phase can only be used if the final length of the inflorescence is known.
+subset: Maize
 synonym: "4.04 full inflorescence length reached in soybean" RELATED [SOY:0000070]
-is_a: PO:0007047 ! 3 inflorescence visible
+is_a: PO:0007047 ! 3 inflorescence detectable phase
 
 [Term]
 id: PO:0007004
@@ -5859,20 +5825,24 @@ is_obsolete: true
 
 [Term]
 id: PO:0007005
-name: IL.02 1/2 inflorescence length reached
+name: IL.02 1/2 inflorescence length reached phase
 namespace: plant_growth_and_development_stage
-def: "The stage when 1/2 Inflorescence is visible." [GR:ap]
+def: "An inflorescence detectable phase during which one or more inflorescences has reached at least one half of its full length, but has not yet reached its full length." [GR:ap, POC:rw]
+comment: This phase can only be used if the final length of the inflorescence is known.
+subset: Maize
 synonym: "4.03 1/2 of inflorescence length reached in soybean" RELATED [SOY:0000069]
-is_a: PO:0007047 ! 3 inflorescence visible
+is_a: PO:0007047 ! 3 inflorescence detectable phase
 
 [Term]
 id: PO:0007006
-name: IL.00 inflorescence just visible
+name: IL.00 inflorescence just visible phase
 namespace: plant_growth_and_development_stage
-def: "Inflorescence just visible to the naked eye." [Poc:curators]
+def: "An inflorescence detectable phase during which one or more inflorescences is just visible to the naked eye but has not yet reach one quarter of its full length." [POC:curators]
+comment: Includes the time when the inflorescence can be seen by removing outer leaves or bracts, or when the inflorescence is visible as a swelling of the outer leaves or bracts, such as booting in Zea. This phase can only be used if the final length of the inflorescence is known.
+subset: Maize
 synonym: "4.01 Inflorescence just visible in soybean" RELATED [SOY:0000067]
 synonym: "visible flower buds in Arabidopsis" RELATED [TAIR:0000420]
-is_a: PO:0007047 ! 3 inflorescence visible
+is_a: PO:0007047 ! 3 inflorescence detectable phase
 
 [Term]
 id: PO:0007007
@@ -5905,7 +5875,7 @@ synonym: "half bloom" RELATED [GRO:0007131]
 synonym: "middle of heading" RELATED []
 synonym: "middle of panicle emergence in rice" RELATED []
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
-is_a: PO:0007041 ! inflorescence emergence from flag leaf sheath
+is_a: PO:0007041 ! inflorescence emergence phase
 
 [Term]
 id: PO:0007009
@@ -5943,15 +5913,6 @@ synonym: "silique ripening in Arabidopsis" RELATED [TAIR:0000034]
 is_a: PO:0007130 ! B reproductive growth
 
 [Term]
-id: PO:0007012
-name: Poaceae inflorescence visible
-namespace: plant_growth_and_development_stage
-def: "The stage at which grass plant is producing inflorescence(s)." [Poc:curators]
-comment: There is no one-to-one correspondence between growth stages of inflorescences formation in members of Poaceae with that of other families.
-synonym: "BBCH principal growth stage 4" RELATED [ISBN:3826331524]
-is_a: PO:0007047 ! 3 inflorescence visible
-
-[Term]
 id: PO:0007013
 name: BO.03 late boot stage
 namespace: plant_growth_and_development_stage
@@ -5960,13 +5921,13 @@ comment: In rice the flag leaf sheath is more than 10cm out of the penultimate l
 synonym: "5.2-late booting stage in rice" RELATED [GRO:0007150]
 synonym: "flag leaf sheath swollen" RELATED []
 synonym: "rice growth stage-5.2" RELATED [GRO:0007150]
-is_a: PO:0007014 ! booting
+is_a: PO:0007014 ! booting phase
 
 [Term]
 id: PO:0007014
-name: booting
+name: booting phase
 namespace: plant_growth_and_development_stage
-def: "Stage characterized by a swelling of the flag leaf sheath, caused by an increase in the size of the inflorescence as it grows up the leaf sheath." [GR:pj]
+def: "An inflorescence detectable phase characterized by a swelling of the flag leaf sheath, caused by an increase in the size of the inflorescence as it grows up the leaf sheath." [GR:pj]
 synonym: "05-booting in barley" RELATED [GRO:0007090]
 synonym: "05-booting in oat" RELATED [GRO:0007090]
 synonym: "05-booting in wheat" RELATED [GRO:0007090]
@@ -5976,7 +5937,7 @@ synonym: "BBCH growth stage 40" RELATED [ISBN:3826331524]
 synonym: "development of vegetatively propogated organs" RELATED []
 synonym: "rice growth stage-5" RELATED [GRO:0007148]
 synonym: "sorghum growth stage-6" RELATED [GRO:0007130]
-is_a: PO:0007012 ! Poaceae inflorescence visible
+is_a: PO:0007006 ! IL.00 inflorescence just visible phase
 
 [Term]
 id: PO:0007015
@@ -6061,7 +6022,7 @@ synonym: "5.01-flag leaf sheath extending in wheat" RELATED [GRO:0007091]
 synonym: "5.1-early booting stage in rice" RELATED [GRO:0007149]
 synonym: "flag leaf sheath extending" RELATED [GRO:0007091]
 synonym: "rice growth stage-5.1" RELATED [GRO:0007149]
-is_a: PO:0007014 ! booting
+is_a: PO:0007014 ! booting phase
 
 [Term]
 id: PO:0007019
@@ -6073,7 +6034,7 @@ synonym: "5.04-flag leaf sheath extending in barley" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in oat" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in wheat" RELATED [GRO:0007094]
 synonym: "first awns visible" RELATED [GRO:0007094]
-is_a: PO:0007014 ! booting
+is_a: PO:0007014 ! booting phase
 
 [Term]
 id: PO:0007021
@@ -6112,7 +6073,7 @@ synonym: "6.05-emergence of inflorescence completed in barley" RELATED [GRO:0007
 synonym: "6.05-emergence of inflorescence completed in oat" RELATED [GRO:0007100]
 synonym: "6.05-emergence of inflorescence completed in wheat" RELATED [GRO:0007100]
 synonym: "end of panicle emergence in rice" RELATED []
-is_a: PO:0007041 ! inflorescence emergence from flag leaf sheath
+is_a: PO:0007041 ! inflorescence emergence phase
 
 [Term]
 id: PO:0007024
@@ -6147,7 +6108,7 @@ synonym: "first flower buds visible" RELATED []
 synonym: "first spikelet visible" RELATED [GRO:0007096]
 synonym: "visible flower buds" RELATED []
 synonym: "Zadok scale-50, Feekes scale-10.1, Haun scale-10.2" RELATED [GRO:0007096]
-is_a: PO:0007041 ! inflorescence emergence from flag leaf sheath
+is_a: PO:0007041 ! inflorescence emergence phase
 
 [Term]
 id: PO:0007026
@@ -6195,7 +6156,7 @@ synonym: "5.03-flag leaf sheath extending in barley" RELATED [GRO:0007093]
 synonym: "5.03-flag leaf sheath extending in oat" RELATED [GRO:0007093]
 synonym: "5.03-flag leaf sheath extending in wheat" RELATED [GRO:0007093]
 synonym: "Zadok scale-47" RELATED [GRO:0007093]
-is_a: PO:0007014 ! booting
+is_a: PO:0007014 ! booting phase
 
 [Term]
 id: PO:0007029
@@ -6368,9 +6329,10 @@ is_a: PO:0001050 ! leaf development stages
 
 [Term]
 id: PO:0007041
-name: inflorescence emergence from flag leaf sheath
+name: inflorescence emergence phase
 namespace: plant_growth_and_development_stage
-def: "The stage at which the inflorescence emerges from the flag leaf sheath." [GR:ap]
+def: "An inflorescence detectable phase during which an inflorescence emerges from sheathing leaves or bracts." [GR:ap, MaizeGDB:ms, POC:curators]
+comment: Includes emergence of a Zea mays inflorescence from a flag leaf sheath, following booting.
 synonym: "06-heading stage in rice" RELATED [GRO:0007044]
 synonym: "06-inflorescence emergence in barley" RELATED [GRO:0007095]
 synonym: "06-inflorescence emergence in oat" RELATED [GRO:0007095]
@@ -6381,7 +6343,7 @@ synonym: "heading" RELATED [GRO:0007095]
 synonym: "rice growth stage-6" RELATED [GRO:0007044]
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
 synonym: "tasseling" RELATED []
-is_a: PO:0007012 ! Poaceae inflorescence visible
+is_a: PO:0007047 ! 3 inflorescence detectable phase
 
 [Term]
 id: PO:0007042
@@ -6434,7 +6396,7 @@ synonym: "5.02-flag leaf sheath extending in oat" RELATED [GRO:0007092]
 synonym: "5.02-flag leaf sheath extending in wheat" RELATED [GRO:0007092]
 synonym: "flag leaf sheath just visibly swollen" RELATED []
 synonym: "Zadok scale-45, Feekes scale-10, Haun scale-9.2" RELATED [GRO:0007092]
-is_a: PO:0007014 ! booting
+is_a: PO:0007014 ! booting phase
 
 [Term]
 id: PO:0007045
@@ -6447,20 +6409,27 @@ is_a: PO:0007030 ! shoot emergence
 
 [Term]
 id: PO:0007046
-name: IL.01 1/4 inflorescence length reached
+name: IL.01 1/4 inflorescence length reached phase
 namespace: plant_growth_and_development_stage
-def: "The stage when 1/4 Inflorescence is visible." [GR:ap]
+def: "An inflorescence detectable phase during which one or more inflorescences has reached at least one quarter of its full length, but has not yet reached one half of its full length." [GR:ap, POC:rw]
+comment: This phase can only be used if the final length of the inflorescence is known.
+subset: Maize
 synonym: "4.02 1/4 of inflorescence length reached in soybean" RELATED [SOY:0000068]
-is_a: PO:0007047 ! 3 inflorescence visible
+is_a: PO:0007047 ! 3 inflorescence detectable phase
 
 [Term]
 id: PO:0007047
-name: 3 inflorescence visible
+name: 3 inflorescence detectable phase
 namespace: plant_growth_and_development_stage
-def: "The stage at which plant is producing inflorescence(s)." [Poc:curators]
-synonym: "3 inflorescence visible in Solanaceae" RELATED [SGN:0000033]
-synonym: "4 Inflorescence Formation in soybean" RELATED [SOY:0000005]
+alt_id: PO:0007012
+def: "A reproductive growth phase during which one or more inflorescences is detectable." [MaizeGDB:ms, POC:curators]
+comment: This includes the time when inflorescence may be developing (e.g. booting in Zea) but not yet emerged. Includes times when inflorescences are detectable only by assay or with a microscope. There is no one-to-one correspondence between some of the phases of inflorescences formation in members of Poaceae (e.g., booting) with that of other families.
+synonym: "3 inflorescence visible" RELATED []
+synonym: "3 inflorescence visible in Solanaceae" NARROW [SGN:0000033]
+synonym: "4 Inflorescence Formation in soybean" NARROW [SOY:0000005]
+synonym: "BBCH principal growth stage 4" RELATED [ISBN:3826331524]
 synonym: "BBCH principal growth stage 5" RELATED [ISBN:3826331524]
+synonym: "Poaceae inflorescence visible" NARROW []
 is_a: PO:0007130 ! B reproductive growth
 
 [Term]
@@ -6473,7 +6442,7 @@ synonym: "6.02-1/4 of inflorescence emerged in barley" RELATED [GRO:0007097]
 synonym: "6.02-1/4 of inflorescence emerged in oat" RELATED [GRO:0007097]
 synonym: "6.02-1/4 of inflorescence emerged in wheat" RELATED [GRO:0007097]
 synonym: "Zadok scale-53, Feekes scale-10.2" RELATED [GRO:0007097]
-is_a: PO:0007041 ! inflorescence emergence from flag leaf sheath
+is_a: PO:0007041 ! inflorescence emergence phase
 
 [Term]
 id: PO:0007049
@@ -6549,7 +6518,7 @@ id: PO:0007051
 name: BO.00 booting begins
 namespace: plant_growth_and_development_stage
 def: "Booting has just begun." [GR:ap, ISBN:3826331524]
-is_a: PO:0007014 ! booting
+is_a: PO:0007014 ! booting phase
 
 [Term]
 id: PO:0007052
@@ -8886,7 +8855,6 @@ subset: CL
 subset: reference
 subset: TraitNet
 synonym: "c&#233lula vegetal" EXACT Spanish [POC:mag]
-xref: CL:0000610
 xref: GO:0005623
 xref: OBO_SF_PO:2932524
 is_a: PO:0009011 ! plant structure
@@ -9378,7 +9346,7 @@ name: glume
 namespace: plant_anatomy
 alt_id: PO:0006026
 def: "One of a pair of inflorescence bracts that is part of a spikelet and subtends the two florets." [POC:rw]
-comment: Found in Poaceae and Cyperaceae. Glumes subtends the pair of florets while a lemma or palea subtend the individual florets.
+comment: Found in Poaceae and Cyperaceae. Glumes subtend the pair of florets while a lemma or palea subtend the individual florets.
 subset: reference
 synonym: "gluma" EXACT Spanish [POC:mag]
 synonym: "rudimentary glume" RELATED []
@@ -9457,17 +9425,20 @@ subset: reference
 subset: TraitNet
 synonym: "basal flower" NARROW [CO_125:0000019]
 synonym: "diclinous flower" NARROW []
-synonym: "disk floret" NARROW []
+synonym: "disk floret" RELATED []
+synonym: "disk flower" NARROW []
 synonym: "double flower" NARROW []
 synonym: "female flower" NARROW [CO_125:0000050]
 synonym: "flor" EXACT Spanish [POC:mag]
+synonym: "floret" RELATED []
 synonym: "hermaphrodite flower" NARROW [CO_125:0000028]
 synonym: "imperfect flower" NARROW []
 synonym: "male flower" NARROW [CGP:curators]
 synonym: "monoclinous flower" NARROW []
 synonym: "perfect flower" NARROW []
 synonym: "pistillate flower" NARROW []
-synonym: "ray floret" NARROW []
+synonym: "ray floret" RELATED []
+synonym: "ray flower" NARROW []
 synonym: "staminate flower" NARROW []
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147067
@@ -9796,7 +9767,7 @@ namespace: plant_anatomy
 alt_id: PO:0006442
 alt_id: PO:0006473
 def: "A collective plant structure that is the pollen-bearing part of a stamen." [APWeb:Glossary]
-comment: Generally consists of four pollen sacs (microsporangia) in two anther thecas.
+comment: Generally consists of four pollen sacs (microsporangia) in two anther thecas. If you are annotating to anther or one of its parts for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "antera" EXACT Spanish [POC:mag]
@@ -9816,7 +9787,7 @@ namespace: plant_anatomy
 alt_id: PO:0006454
 alt_id: PO:0006474
 def: "A stalk that is part of a stamen." [GR:pj, MaizeGDB:lv]
-comment: Supports the anthers.
+comment: Supports the anthers. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "filamento" EXACT Spanish [POC:mag]
@@ -9832,6 +9803,7 @@ namespace: plant_anatomy
 alt_id: PO:0006443
 alt_id: PO:0006475
 def: "The part of the stamen that connects the microsporangia/pollen sacs." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 synonym: "conectivo" EXACT Spanish [POC:mag]
 synonym: "Poaceae connective" NARROW []
@@ -9847,6 +9819,7 @@ namespace: plant_anatomy
 alt_id: PO:0006453
 alt_id: PO:0006478
 def: "A collective plant structure that is part of an anther and consists of a pair of sporangia that dehisce down a common slit." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
 synonym: "Poaceae theca" NARROW []
@@ -9880,7 +9853,7 @@ namespace: plant_anatomy
 alt_id: PO:0006450
 alt_id: PO:0006484
 def: "A microsporangium tapetum that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
-comment: Develops from a primary or secondary parietal cell layer. Innermost part of the anther wall, involved in the nutrition of the pollen.
+comment: Develops from a primary or secondary parietal cell layer. Innermost part of the anther wall, involved in the nutrition of the pollen. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
 synonym: "Poaceae tapetum" NARROW []
@@ -10000,11 +9973,12 @@ namespace: plant_anatomy
 alt_id: PO:0006318
 alt_id: PO:0025090
 def: "A small flower that is part of a spikelet." [APWeb:Glossary, PMID:20197291]
-comment: Found in Poaceae and Cyperaceae. Lemma, palea and lodicule are associated with a spikelet floret, but since it is not clear what they correspond to in conventional flowers, no assumptions of homology are made at the present time. To describe a ray or disk floret of the Asteraceae, use flower (PO:0009046).
+comment: Found in Poaceae, Cyperaceae and other Poales. Lemma, palea and lodicule are associated with a spikelet floret, but since it is not clear what they correspond to in conventional flowers, no assumptions of homology are made at the present time. To describe a ray or disk floret of the Asteraceae, use flower (PO:0009046).
 subset: reference
 synonym: "florete" EXACT Spanish [POC:mag]
 synonym: "grass floret" NARROW []
 synonym: "Poaceae floret" NARROW []
+synonym: "spikelet flower" RELATED []
 is_a: PO:0009046 ! flower
 relationship: part_of PO:0009051 ! spikelet
 
@@ -10335,7 +10309,7 @@ namespace: plant_anatomy
 alt_id: PO:0006446
 alt_id: PO:0006481
 def: "An microsporangium endothecium that part of an anther wall." [ISBN:9780003686647]
-comment: May have secondary thickening of walls of cells that are involved in anther dehiscence. There can be more than one layer in an anther endothecium.
+comment: May have secondary thickening of walls of cells that are involved in anther dehiscence. There can be more than one layer in an anther endothecium. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
 synonym: "anther sac hypodermis" RELATED []
@@ -10374,7 +10348,7 @@ alt_id: PO:0006059
 alt_id: PO:0006447
 alt_id: PO:0006482
 def: "An microsporangium exothecium that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
-comment: Often with thickened cell walls. Involved in anther dehiscence.
+comment: Often with thickened cell walls. Involved in anther dehiscence. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
 synonym: "anther epidermis" EXACT []
@@ -10394,6 +10368,7 @@ namespace: plant_anatomy
 alt_id: PO:0006448
 alt_id: PO:0006483
 def: "A portion of parenchyma tissue that is part of a connective and projects into a pollen sac." [ISBN:9780470752685]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 synonym: "plancentoide" EXACT Spanish [POC:mag]
 synonym: "Poaceae placentoid" NARROW []
@@ -10544,7 +10519,6 @@ subset: CL
 synonym: "megaspora" EXACT Spanish [POC:mag]
 synonym: "Poaceae megaspore" NARROW []
 synonym: "Zea megaspore" NARROW []
-xref: CL:0000250
 is_a: PO:0025017 ! spore
 
 [Term]
@@ -10866,6 +10840,7 @@ namespace: plant_anatomy
 alt_id: PO:0006451
 alt_id: PO:0006479
 def: "A diploid (2n) cell that undergoes meiosis and produces four haploid (1n) microspores." [ISBN:0878934030]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: CL
 subset: reference
 synonym: "microspore mother cell" RELATED []
@@ -10874,7 +10849,6 @@ synonym: "PMC" RELATED []
 synonym: "Poaceae microsporocyte" NARROW []
 synonym: "pollen mother cell" RELATED []
 synonym: "Zea microsporocyte" NARROW []
-xref: CL:0000248
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
 relationship: part_of PO:0025202 ! microsporangium
@@ -10886,12 +10860,12 @@ namespace: plant_anatomy
 alt_id: PO:0006452
 alt_id: PO:0006480
 def: "The smaller, in general, of the two kinds of spores produced after meiosis in the life cycle of a heterosporous plant, and on germination giving rise to the male gametophyte." [APWeb:Glossary]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: CL
 subset: reference
 synonym: "microspora" EXACT Spanish [POC:mag]
 synonym: "Poaceae microspore" NARROW []
 synonym: "Zea microspore" NARROW []
-xref: CL:0000252
 is_a: PO:0025017 ! spore
 
 [Term]
@@ -11113,7 +11087,6 @@ def: "The largest cell of the mature embryo sac. Contains two polar nuclei, whic
 subset: CL
 subset: reference
 synonym: "c&#233lula central" EXACT Spanish [POC:mag]
-xref: CL:0000278
 is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0025074 ! embryo sac
 
@@ -11162,7 +11135,6 @@ comment: More or less persistent, multiplicative or not.
 subset: CL
 subset: reference
 synonym: "c&#233lula antipodal" EXACT Spanish [POC:mag]
-xref: CL:0000537
 is_a: PO:0025026 ! megagametophyte cell
 relationship: part_of PO:0025074 ! embryo sac
 
@@ -11177,7 +11149,6 @@ subset: reference
 synonym: "female gamete" EXACT []
 synonym: "megagamete" EXACT []
 synonym: "ooc&#233lula" EXACT Spanish [POC:mag]
-xref: CL:0000254
 is_a: PO:0025006 ! gamete
 
 [Term]
@@ -11210,7 +11181,6 @@ def: "A cell of the male gametophyte of angiosperms that divides to produce two 
 subset: CL
 subset: reference
 synonym: "c&#233lula generativa" EXACT Spanish [POC:mag]
-xref: CL:0000280
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -11222,7 +11192,6 @@ subset: CL
 subset: reference
 synonym: "c&#233lula vegetativa" EXACT Spanish [POC:mag]
 synonym: "tube cell" RELATED [ISBN:0716710072]
-xref: CL:0000296
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -11242,7 +11211,7 @@ namespace: plant_anatomy
 alt_id: PO:0006449
 alt_id: PO:0006485
 def: "A plant anatomical space that is a slit in an anther lobe formed from when a dehiscence zone dehisces." [POC:curators]
-comment: Pollen may be released through the stomium.
+comment: Pollen may be released through the stomium. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 synonym: "estomio" EXACT Spanish [POC:mag]
 synonym: "Poaceae stomium" NARROW []
@@ -11256,6 +11225,7 @@ name: portion of transmitting tissue
 namespace: plant_anatomy
 alt_id: PO:0006499
 def: "A portion of ground tissue in the style of a carpel through which a pollen tube grows; it connects a stigma and the inside of an ovary." [GR:pj, ISBN:0080374913]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "Poaceae transmitting tissue" NARROW []
 synonym: "porci&#243n del tejido de transmisi&#243n" EXACT Spanish [POC:mag]
@@ -15034,7 +15004,7 @@ namespace: plant_anatomy
 alt_id: PO:0006444
 alt_id: PO:0006476
 def: "A microsporangium that is located in a sporophyll and where the pollen grains developed and are located after they develop." [POC:curators]
-comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule.
+comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "anther lobe" NARROW []
