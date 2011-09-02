@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 31:08:2011 16:02
-saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-beta18
+date: 01:09:2011 18:21
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-beta16
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -21,6 +21,7 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural" EXACT
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
+remark: Filtered by Has parent with type ID contains "PO:0025034"
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 ontology: po
 treat-xrefs-as-is_a: CARO
@@ -9169,7 +9170,7 @@ namespace: plant_anatomy
 alt_id: PO:0006441
 alt_id: PO:0006472
 def: "A microsporophyll bearing one or more microsporangia." [APWeb:Glossary]
-comment: part of tassel floret
+comment: Part of tassel floret.
 subset: reference
 subset: TraitNet
 synonym: "estambre" EXACT Spanish [POC:mag]
@@ -12353,6 +12354,7 @@ id: PO:0025057
 name: subterranean tuber cortex
 namespace: plant_anatomy
 def: "A portion of tuber cortex that is part of a subterranean tuber storage parenchyma." [ISSN:0003-0589, POC:curators]
+subset: Potato
 synonym: "corteza del tub&#233rculo subterr&#225neo" EXACT Spanish [POC:mag]
 synonym: "Outer storage tissue" EXACT [ISSN:0003-0589]
 is_a: PO:0025055 ! tuber cortex
@@ -12768,7 +12770,7 @@ namespace: plant_anatomy
 alt_id: PO:0025232
 def: "A plant organ in which spores are produced." [ISBN:0716710072, POC:curators]
 comment: In bryophytes, particularly in mosses, a sporangium is referred to as a capsule. In seed plants, a sporangium is located in a sporophyll. In pteridophytes, a sporangium is located on the surface of a sporophyll or fertile leaf or borne on a sporangiophore. May be unicellular in some algae.
-subset: Potato
+subset: Bryophytes
 subset: TraitNet
 synonym: "esporangio" EXACT Spanish [POC:mag]
 synonym: "moss capsule" EXACT []
