@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 01:09:2011 18:21
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-beta16
+date: 08:09:2011 07:57
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1030,8 +1030,6 @@ synonym: "mersitema floral" EXACT Spanish [POC:mag]
 synonym: "Poaceae floret meristem" NARROW []
 synonym: "tassel floret meristem" NARROW []
 is_a: PO:0009013 ! meristem
-is_a: PO:0009106 ! tassel meristem
-relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0000230
@@ -5919,6 +5917,7 @@ name: BO.03 late boot stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath swollen." [GR:ap, ISBN:3826331524]
 comment: In rice the flag leaf sheath is more than 10cm out of the penultimate leaf sheath.
+subset: Poaceae
 synonym: "5.2-late booting stage in rice" RELATED [GRO:0007150]
 synonym: "flag leaf sheath swollen" RELATED []
 synonym: "rice growth stage-5.2" RELATED [GRO:0007150]
@@ -5929,6 +5928,8 @@ id: PO:0007014
 name: booting phase
 namespace: plant_growth_and_development_stage
 def: "An inflorescence detectable phase characterized by a swelling of the flag leaf sheath, caused by an increase in the size of the inflorescence as it grows up the leaf sheath." [GR:pj]
+comment: Booting is a term used specifically for grasses (Poaceae).
+subset: Poaceae
 synonym: "05-booting in barley" RELATED [GRO:0007090]
 synonym: "05-booting in oat" RELATED [GRO:0007090]
 synonym: "05-booting in wheat" RELATED [GRO:0007090]
@@ -6017,6 +6018,7 @@ name: BO.01 early boot stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath has started to extend." [GR:ap, ISBN:3826331524]
 comment: In rice the flag leaf sheath is 5cm out of the penultimate leaf sheath. Upper part of the stem is slightly thickened.
+subset: Poaceae
 synonym: "5.01-flag leaf sheath extending in barley" RELATED [GRO:0007091]
 synonym: "5.01-flag leaf sheath extending in oat" RELATED [GRO:0007091]
 synonym: "5.01-flag leaf sheath extending in wheat" RELATED [GRO:0007091]
@@ -6031,6 +6033,7 @@ name: BO.05 flag leaf sheath opened
 namespace: plant_growth_and_development_stage
 def: "The first awns are visible and the flag leaf sheath has opened." [GR:ap, ISBN:3826331524]
 comment: Awns will be visible only in those species and varieties where they are known to be present.
+subset: Poaceae
 synonym: "5.04-flag leaf sheath extending in barley" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in oat" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in wheat" RELATED [GRO:0007094]
@@ -6153,6 +6156,7 @@ id: PO:0007028
 name: BO.04 flag leaf sheath opening
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath starts opening." [ISBN:3826331524]
+subset: Poaceae
 synonym: "5.03-flag leaf sheath extending in barley" RELATED [GRO:0007093]
 synonym: "5.03-flag leaf sheath extending in oat" RELATED [GRO:0007093]
 synonym: "5.03-flag leaf sheath extending in wheat" RELATED [GRO:0007093]
@@ -6392,6 +6396,7 @@ name: BO.02 mid boot stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath is just visibly swollen." [GR:ap, ISBN:3826331524]
 comment: In rice the flag leaf sheath is 5-10cm out of the penultimate leaf sheath.
+subset: Poaceae
 synonym: "5.02-flag leaf sheath extending in barley" RELATED [GRO:0007092]
 synonym: "5.02-flag leaf sheath extending in oat" RELATED [GRO:0007092]
 synonym: "5.02-flag leaf sheath extending in wheat" RELATED [GRO:0007092]
@@ -6519,6 +6524,7 @@ id: PO:0007051
 name: BO.00 booting begins
 namespace: plant_growth_and_development_stage
 def: "Booting has just begun." [GR:ap, ISBN:3826331524]
+subset: Poaceae
 is_a: PO:0007014 ! booting phase
 
 [Term]
