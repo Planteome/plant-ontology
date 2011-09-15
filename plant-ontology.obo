@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:09:2011 21:21
+date: 15:09:2011 15:14
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -13331,6 +13331,7 @@ synonym: "compound tepal" RELATED [CO_125:0000021]
 synonym: "estrutura colectiva de t&#233palo fusionado" EXACT Spanish [POC:mag]
 synonym: "syntepalous perianth" EXACT []
 is_a: PO:0025021 ! collective tepal structure
+is_a: PO:0025328 ! fused perianth
 created_by: Ramona
 creation_date: 2010-11-15T01:18:23Z
 
@@ -15315,14 +15316,16 @@ creation_date: 2011-04-26T08:42:24Z
 id: PO:0025299
 name: calyptra perianth
 namespace: plant_anatomy
-def: "A perianth that is composed of fused perianth parts and located on top of a gynoecium that contains an inferior ovary." [POC:curators]
-comment: May be composed of fused petals, sepals or tepals, but is generally formed from fused petals in Eucalyptus and other Myrtaceae. Sometimes erroneously referred to as part of a fruit. Not the same structure as a spore capsule calyptra.
+def: "A fused perianth that is composed of fused sepals or petals and located on top of a gynoecium that contains an inferior ovary." [POC:curators]
+comment: Found in Eucalyptus and other Myrtaceae. The petals are generally completely fused. Sometimes erroneously referred to as part of a fruit. Not the same structure as a spore capsule calyptra or fruit operculum. Use the more specific term (calyptra corolla or calyptra calyx) if possible. Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development.
 synonym: "angiosperm calyptra" EXACT []
 synonym: "caliptra del perianto" EXACT Spanish [POC:mag]
 synonym: "floral calyptra" EXACT []
-synonym: "floral operculum" RELATED []
+synonym: "floral operculum" EXACT []
+synonym: "flower calyptra" EXACT []
+synonym: "flower operculum" EXACT []
 xref: OBO_SF_PO:3241802
-is_a: PO:0009058 ! perianth
+is_a: PO:0025328 ! fused perianth
 disjoint_from: PO:0030037 ! spore capsule calyptra
 created_by: Ramona
 creation_date: 2011-04-26T08:45:55Z
@@ -15622,6 +15625,86 @@ xref: OBO_SF_PO:3165981
 is_a: PO:0025082 ! reproductive shoot system
 created_by: Ramona
 creation_date: 2011-07-07T10:52:27Z
+
+[Term]
+id: PO:0025324
+name: banner petal
+namespace: plant_anatomy
+def: "A petal that is the top-most petal of a papilionaceous corolla." [ISBN:9780023681905]
+comment: Usually larger than the adjacent wing petals. Found in the flowers of some Fabaceae.
+synonym: "standard" BROAD []
+synonym: "vexillum" EXACT [ISBN:9780023681905]
+is_a: PO:0009032 ! petal
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:05:29Z
+
+[Term]
+id: PO:0025325
+name: wing petal
+namespace: plant_anatomy
+def: "One of two lateral petals that is adjacent to the banner petal of a papilionaceous corolla ." [ISBN:9780023681905]
+comment: The wing petals are usually much smaller than the banner petal and the corolla keel. Found in the flowers of some Fabaceae.
+is_a: PO:0009032 ! petal
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:05:29Z
+
+[Term]
+id: PO:0025326
+name: keel petal
+namespace: plant_anatomy
+def: "A petal that is one of the two lowest petals of a papilionaceous corolla." [ISBN:9780023681905]
+comment: The keel petals are usually larger than the adjacent wing petals. They are often partially fused to each other. Each petal is shaped like half a boat and projects toward the front of the flower.
+is_a: PO:0009032 ! petal
+relationship: part_of PO:0025327 ! keel
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:05:30Z
+
+[Term]
+id: PO:0025327
+name: keel
+namespace: plant_anatomy
+def: "A boat-shaped collective phyllome structure that consists of the two lowest petals of a papilionaceous corolla." [ISBN:9780023681905]
+comment: The two petals of the keel are often fused at the apex and free at the base. The keel projects toward the front of the flower. Found in the flowers of some Fabaceae.
+is_a: PO:0025023 ! collective phyllome structure
+relationship: part_of PO:0009059 ! corolla
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:09:23Z
+
+[Term]
+id: PO:0025328
+name: fused perianth
+namespace: plant_anatomy
+def: "A perianth that is composed of two or more fused perianth parts (sepals, petals or tepals)." [POC:curators]
+comment: Perianth parts may be partially or wholly fused.
+is_a: PO:0009058 ! perianth
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:50:33Z
+
+[Term]
+id: PO:0025329
+name: calyptra calyx
+namespace: plant_anatomy
+def: "A calyptra perianth composed of fused sepals." [POC:curators]
+comment: Sometimes found in Eucalyptus and other Myrtaceae, covering an inner operculum or calyptra corolla. The sepals are generally completely fused.
+synonym: "operculum calyx" EXACT []
+synonym: "outer operculum" EXACT []
+is_a: PO:0009060 ! calyx
+is_a: PO:0025299 ! calyptra perianth
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:56:37Z
+
+[Term]
+id: PO:0025330
+name: calyptra corolla
+namespace: plant_anatomy
+def: "A calyptra perianth composed of fused petals." [POC:curators]
+comment: Often found in Eucalyptus and other Myrtaceae. The petals are generally completely fused. If an outer operculum (calyptra calyx) is present, it covers the inner operculum (calyptra corolla).
+synonym: "inner operculum" EXACT []
+synonym: "operculum corolla" EXACT []
+is_a: PO:0009059 ! corolla
+is_a: PO:0025299 ! calyptra perianth
+created_by: RamonaNYBG
+creation_date: 2011-09-15T02:56:38Z
 
 [Term]
 id: PO:0028001
