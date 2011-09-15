@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:09:2011 07:57
+date: 14:09:2011 21:21
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3850,11 +3850,12 @@ is_a: PO:0005352 ! xylem
 id: PO:0006000
 name: caryopsis hull
 namespace: plant_anatomy
-def: "A collective phyllome structure that encloses a fruit of the Poaceae (caryopsis) and develops from the dried lemma and palea." [POC:rw]
+def: "A collective phyllome structure that encloses a fruit of the Poaceae (caryopsis) and develops from a dried lemma and palea." [POC:rw]
 subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "plúmula de Poaceae" EXACT Spanish [POC:mag]
+synonym: "Poaceae hull" EXACT []
 xref: OBO_SF_PO:3132525
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0009037 ! lemma
@@ -5802,17 +5803,17 @@ synonym: "6.04-3/4 of inflorescence emerged in barley" RELATED [GRO:0007099]
 synonym: "6.04-3/4 of inflorescence emerged in oat" RELATED [GRO:0007099]
 synonym: "6.04-3/4 of inflorescence emerged in wheat" RELATED [GRO:0007099]
 synonym: "70% of panicle emerged in rice" RELATED []
-is_a: PO:0007041 ! inflorescence emergence phase
+is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007003
-name: IL.03 full inflorescence length reached phase
+name: IL.03 full inflorescence length reached stage
 namespace: plant_growth_and_development_stage
-def: "An inflorescence detectable phase during which one or more inflorescences has reached at its full length." [GR:ap, POC:rw]
+def: "An inflorescence detectable phase during which an inflorescence has reached at its full length." [GR:ap, POC:rw]
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.04 full inflorescence length reached in soybean" RELATED [SOY:0000070]
-is_a: PO:0007047 ! 3 inflorescence detectable phase
+is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
 id: PO:0007004
@@ -5824,24 +5825,24 @@ is_obsolete: true
 
 [Term]
 id: PO:0007005
-name: IL.02 1/2 inflorescence length reached phase
+name: IL.02 1/2 inflorescence length reached stage
 namespace: plant_growth_and_development_stage
-def: "An inflorescence detectable phase during which one or more inflorescences has reached at least one half of its full length, but has not yet reached its full length." [GR:ap, POC:rw]
+def: "An inflorescence detectable phase during which an inflorescence has reached at least one half of its full length, but has not yet reached its full length." [GR:ap, POC:rw]
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.03 1/2 of inflorescence length reached in soybean" RELATED [SOY:0000069]
-is_a: PO:0007047 ! 3 inflorescence detectable phase
+is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
 id: PO:0007006
-name: IL.00 inflorescence just visible phase
+name: IL.00 inflorescence just visible stage
 namespace: plant_growth_and_development_stage
-def: "An inflorescence detectable phase during which one or more inflorescences is just visible to the naked eye but has not yet reach one quarter of its full length." [POC:curators]
+def: "An inflorescence detectable phase during which an inflorescence is just visible, but has not yet reach one quarter of its full length." [POC:curators]
 comment: Includes the time when the inflorescence can be seen by removing outer leaves or bracts, or when the inflorescence is visible as a swelling of the outer leaves or bracts, such as booting in Zea. This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.01 Inflorescence just visible in soybean" RELATED [SOY:0000067]
 synonym: "visible flower buds in Arabidopsis" RELATED [TAIR:0000420]
-is_a: PO:0007047 ! 3 inflorescence detectable phase
+is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
 id: PO:0007007
@@ -5874,7 +5875,7 @@ synonym: "half bloom" RELATED [GRO:0007131]
 synonym: "middle of heading" RELATED []
 synonym: "middle of panicle emergence in rice" RELATED []
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
-is_a: PO:0007041 ! inflorescence emergence phase
+is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007009
@@ -5916,16 +5917,16 @@ id: PO:0007013
 name: BO.03 late boot stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath swollen." [GR:ap, ISBN:3826331524]
-comment: In rice the flag leaf sheath is more than 10cm out of the penultimate leaf sheath.
+comment: In rice the flag leaf sheath is more than 10cm out of the penultimate leaf sheath. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
 synonym: "5.2-late booting stage in rice" RELATED [GRO:0007150]
 synonym: "flag leaf sheath swollen" RELATED []
 synonym: "rice growth stage-5.2" RELATED [GRO:0007150]
-is_a: PO:0007014 ! booting phase
+is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007014
-name: booting phase
+name: booting stage
 namespace: plant_growth_and_development_stage
 def: "An inflorescence detectable phase characterized by a swelling of the flag leaf sheath, caused by an increase in the size of the inflorescence as it grows up the leaf sheath." [GR:pj]
 comment: Booting is a term used specifically for grasses (Poaceae).
@@ -5939,7 +5940,7 @@ synonym: "BBCH growth stage 40" RELATED [ISBN:3826331524]
 synonym: "development of vegetatively propogated organs" RELATED []
 synonym: "rice growth stage-5" RELATED [GRO:0007148]
 synonym: "sorghum growth stage-6" RELATED [GRO:0007130]
-is_a: PO:0007006 ! IL.00 inflorescence just visible phase
+is_a: PO:0007006 ! IL.00 inflorescence just visible stage
 
 [Term]
 id: PO:0007015
@@ -5961,7 +5962,7 @@ synonym: "radicle emergence in Arabidopsis" RELATED [TAIR:T0000395]
 synonym: "radicle emergence in Solanaceae" RELATED [SGN:0000006]
 synonym: "Zadok scale-5" RELATED [GRO:0007055]
 is_a: PO:0007510 ! root emergence
-relationship: part_of PO:0007131 ! seedling growth
+relationship: part_of PO:0007131 ! seedling development stage
 
 [Term]
 id: PO:0007016
@@ -6017,7 +6018,7 @@ id: PO:0007018
 name: BO.01 early boot stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath has started to extend." [GR:ap, ISBN:3826331524]
-comment: In rice the flag leaf sheath is 5cm out of the penultimate leaf sheath. Upper part of the stem is slightly thickened.
+comment: In rice the flag leaf sheath is 5cm out of the penultimate leaf sheath. Upper part of the stem is slightly thickened. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
 synonym: "5.01-flag leaf sheath extending in barley" RELATED [GRO:0007091]
 synonym: "5.01-flag leaf sheath extending in oat" RELATED [GRO:0007091]
@@ -6025,20 +6026,20 @@ synonym: "5.01-flag leaf sheath extending in wheat" RELATED [GRO:0007091]
 synonym: "5.1-early booting stage in rice" RELATED [GRO:0007149]
 synonym: "flag leaf sheath extending" RELATED [GRO:0007091]
 synonym: "rice growth stage-5.1" RELATED [GRO:0007149]
-is_a: PO:0007014 ! booting phase
+is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007019
-name: BO.05 flag leaf sheath opened
+name: BO.05 flag leaf sheath opened stage
 namespace: plant_growth_and_development_stage
 def: "The first awns are visible and the flag leaf sheath has opened." [GR:ap, ISBN:3826331524]
-comment: Awns will be visible only in those species and varieties where they are known to be present.
+comment: Awns will be visible only in those species and varieties where they are known to be present. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
 synonym: "5.04-flag leaf sheath extending in barley" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in oat" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in wheat" RELATED [GRO:0007094]
 synonym: "first awns visible" RELATED [GRO:0007094]
-is_a: PO:0007014 ! booting phase
+is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007021
@@ -6049,7 +6050,7 @@ is_a: PO:0009012 ! plant growth and development stage
 
 [Term]
 id: PO:0007022
-name: imbibition
+name: imbibition stage
 namespace: plant_growth_and_development_stage
 def: "Absorption of water by the seed." [GR:ap, ISBN:0306416875]
 synonym: "0.1 imbibition in maize" RELATED [MaizeGDB:64054]
@@ -6066,7 +6067,7 @@ synonym: "1.03-imbibition complete in wheat" RELATED [GRO:0007054]
 synonym: "BBCH growth stage 01" RELATED [ISBN:3826331524]
 synonym: "imbibition in Arabidopsis" RELATED [TAIR:0000394]
 synonym: "imbibition in Solanaceae" RELATED [SGN:0000004]
-relationship: part_of PO:0007057 ! 0 germination
+is_a: PO:0007057 ! (0) germination stage
 
 [Term]
 id: PO:0007023
@@ -6077,7 +6078,7 @@ synonym: "6.05-emergence of inflorescence completed in barley" RELATED [GRO:0007
 synonym: "6.05-emergence of inflorescence completed in oat" RELATED [GRO:0007100]
 synonym: "6.05-emergence of inflorescence completed in wheat" RELATED [GRO:0007100]
 synonym: "end of panicle emergence in rice" RELATED []
-is_a: PO:0007041 ! inflorescence emergence phase
+is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007024
@@ -6112,7 +6113,7 @@ synonym: "first flower buds visible" RELATED []
 synonym: "first spikelet visible" RELATED [GRO:0007096]
 synonym: "visible flower buds" RELATED []
 synonym: "Zadok scale-50, Feekes scale-10.1, Haun scale-10.2" RELATED [GRO:0007096]
-is_a: PO:0007041 ! inflorescence emergence phase
+is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007026
@@ -6153,15 +6154,16 @@ is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
 id: PO:0007028
-name: BO.04 flag leaf sheath opening
+name: BO.04 flag leaf sheath opening stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath starts opening." [ISBN:3826331524]
+comment: Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
 synonym: "5.03-flag leaf sheath extending in barley" RELATED [GRO:0007093]
 synonym: "5.03-flag leaf sheath extending in oat" RELATED [GRO:0007093]
 synonym: "5.03-flag leaf sheath extending in wheat" RELATED [GRO:0007093]
 synonym: "Zadok scale-47" RELATED [GRO:0007093]
-is_a: PO:0007014 ! booting phase
+is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007029
@@ -6194,7 +6196,7 @@ def: "Shoot or leaf breaks through soil surface." [GR:ap, ISBN:3826331524]
 synonym: "07 shoot emergence in soybean" RELATED [SOY:0000012]
 synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
 synonym: "shoot emergence in Solanaceae" RELATED [SGN:0000007]
-relationship: part_of PO:0007131 ! seedling growth
+relationship: part_of PO:0007131 ! seedling development stage
 
 [Term]
 id: PO:0007031
@@ -6334,10 +6336,10 @@ is_a: PO:0001050 ! leaf development stages
 
 [Term]
 id: PO:0007041
-name: inflorescence emergence phase
+name: inflorescence emergence stage
 namespace: plant_growth_and_development_stage
 def: "An inflorescence detectable phase during which an inflorescence emerges from sheathing leaves or bracts." [GR:ap, MaizeGDB:ms, POC:curators]
-comment: Includes emergence of a Zea mays inflorescence from a flag leaf sheath, following booting.
+comment: Includes emergence of a Zea mays inflorescence from a flag leaf sheath, following booting. In US cornbelt maize (including B73) the tassel fully emerges about 2-3 days prior to silk emergence from husk leaves. At this time the ear and husk may still be enclosed within its leaf sheath depending on the variety and environmental conditions.
 synonym: "06-heading stage in rice" RELATED [GRO:0007044]
 synonym: "06-inflorescence emergence in barley" RELATED [GRO:0007095]
 synonym: "06-inflorescence emergence in oat" RELATED [GRO:0007095]
@@ -6345,10 +6347,12 @@ synonym: "06-inflorescence emergence in wheat" RELATED [GRO:0007095]
 synonym: "08-heading in sorghum" RELATED [GRO:0007131]
 synonym: "half bloom in sorghum" RELATED [GRO:0007131]
 synonym: "heading" RELATED [GRO:0007095]
+synonym: "late vegetative (maize)" NARROW [XX:<new dbxref>]
 synonym: "rice growth stage-6" RELATED [GRO:0007044]
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
 synonym: "tasseling" RELATED []
-is_a: PO:0007047 ! 3 inflorescence detectable phase
+synonym: "VT (maize)" RELATED [XX:<new dbxref>]
+is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
 id: PO:0007042
@@ -6395,14 +6399,14 @@ id: PO:0007044
 name: BO.02 mid boot stage
 namespace: plant_growth_and_development_stage
 def: "The flag leaf sheath is just visibly swollen." [GR:ap, ISBN:3826331524]
-comment: In rice the flag leaf sheath is 5-10cm out of the penultimate leaf sheath.
+comment: In rice the flag leaf sheath is 5-10cm out of the penultimate leaf sheath. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
 synonym: "5.02-flag leaf sheath extending in barley" RELATED [GRO:0007092]
 synonym: "5.02-flag leaf sheath extending in oat" RELATED [GRO:0007092]
 synonym: "5.02-flag leaf sheath extending in wheat" RELATED [GRO:0007092]
 synonym: "flag leaf sheath just visibly swollen" RELATED []
 synonym: "Zadok scale-45, Feekes scale-10, Haun scale-9.2" RELATED [GRO:0007092]
-is_a: PO:0007014 ! booting phase
+is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007045
@@ -6415,21 +6419,21 @@ is_a: PO:0007030 ! shoot emergence
 
 [Term]
 id: PO:0007046
-name: IL.01 1/4 inflorescence length reached phase
+name: IL.01 1/4 inflorescence length reached stage
 namespace: plant_growth_and_development_stage
-def: "An inflorescence detectable phase during which one or more inflorescences has reached at least one quarter of its full length, but has not yet reached one half of its full length." [GR:ap, POC:rw]
+def: "An inflorescence detectable phase during which an inflorescence has reached at least one quarter of its full length, but has not yet reached one half of its full length." [GR:ap, POC:rw]
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.02 1/4 of inflorescence length reached in soybean" RELATED [SOY:0000068]
-is_a: PO:0007047 ! 3 inflorescence detectable phase
+is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
 id: PO:0007047
-name: 3 inflorescence detectable phase
+name: 3 inflorescence detectable stage
 namespace: plant_growth_and_development_stage
 alt_id: PO:0007012
-def: "A reproductive growth phase during which one or more inflorescences is detectable." [MaizeGDB:ms, POC:curators]
-comment: This includes the time when inflorescence may be developing (e.g. booting in Zea) but not yet emerged. Includes times when inflorescences are detectable only by assay or with a microscope. There is no one-to-one correspondence between some of the phases of inflorescences formation in members of Poaceae (e.g., booting) with that of other families.
+def: "A reproductive growth stage during which an inflorescence is detectable." [MaizeGDB:ms, POC:curators]
+comment: This includes the stage when an inflorescence starts to develop (and is detectable only by assay or with a microscope), to the stage where it is visible to the naked eye. This includes the booting stage in the grasses (Poaceae). There is no one-to-one correspondence between some of the phases of inflorescence formation in members of Poaceae (e.g., booting) with that of other families.
 synonym: "3 inflorescence visible" RELATED []
 synonym: "3 inflorescence visible in Solanaceae" NARROW [SGN:0000033]
 synonym: "4 Inflorescence Formation in soybean" NARROW [SOY:0000005]
@@ -6448,7 +6452,7 @@ synonym: "6.02-1/4 of inflorescence emerged in barley" RELATED [GRO:0007097]
 synonym: "6.02-1/4 of inflorescence emerged in oat" RELATED [GRO:0007097]
 synonym: "6.02-1/4 of inflorescence emerged in wheat" RELATED [GRO:0007097]
 synonym: "Zadok scale-53, Feekes scale-10.2" RELATED [GRO:0007097]
-is_a: PO:0007041 ! inflorescence emergence phase
+is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007049
@@ -6521,11 +6525,12 @@ is_a: PO:0007010 ! 6 ripening
 
 [Term]
 id: PO:0007051
-name: BO.00 booting begins
+name: BO.00 booting begins stage
 namespace: plant_growth_and_development_stage
 def: "Booting has just begun." [GR:ap, ISBN:3826331524]
+comment: Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
-is_a: PO:0007014 ! booting phase
+is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007052
@@ -6571,7 +6576,7 @@ is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007057
-name: 0 germination
+name: (0) germination stage
 namespace: plant_growth_and_development_stage
 def: "The resumption of growth by the embryo in a seed." [GR:ap, ISBN:047124529]
 synonym: "0 germination in maize" RELATED [MaizeGDB:64055]
@@ -6802,6 +6807,7 @@ synonym: "maize growth stage-3.4" RELATED [GRO:0007016]
 synonym: "maize V18 stage" RELATED [GRO:0007016]
 synonym: "Stage V17 in soybean" RELATED [SOY:0000032]
 synonym: "V18 in maize" RELATED [MaizeGDB:67360]
+synonym: "VT vegetative tasseling in maize (US cornbelt)" NARROW [XX:<new dbxref>]
 is_a: PO:0007133 ! leaf production
 
 [Term]
@@ -7693,12 +7699,13 @@ is_a: PO:0007033 ! whole plant growth stage
 
 [Term]
 id: PO:0007131
-name: seedling growth
+name: seedling development stage
 namespace: plant_growth_and_development_stage
-def: "Growth of embryo after imbibition up to the development of the first adult leaves." [Poc:curators]
+def: "A vegetative growth stage that has as a participant a whole plant during the interval between germination and development of the first adult leaves." [POC:curators]
+comment: This terms is used only for seed plants, although non-seed plants may have a comparable phase during which they produce juvenile or transition leaves.
 synonym: "seedling growth in Solanaceae" RELATED [SGN:0000005]
 synonym: "seedling in Arabidopsis" RELATED [TAIR:0000027]
-relationship: part_of PO:0007057 ! 0 germination
+is_a: PO:0007134 ! A vegetative growth
 
 [Term]
 id: PO:0007132
@@ -9297,7 +9304,7 @@ alt_id: PO:0006432
 alt_id: PO:0006433
 alt_id: PO:0006434
 def: "A flower bract that is part of a spikelet and is the lower of two bracts enclosing a spikelet floret." [APWeb:Glossary, POC:rw]
-comment: Found in Poaceae such as Zea mays. A lemma subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
+comment: Found in Poaceae such as Zea mays. A lemma subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or similar grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
 subset: Maize
 subset: Poaceae
 subset: reference
@@ -9331,7 +9338,7 @@ alt_id: PO:0006428
 alt_id: PO:0006429
 alt_id: PO:0006430
 def: "A flower bract that is part of a spikelet and is the upper/distal of two bracts enclosing a spikelet floret." [APWeb:Glossary, GR:pj]
-comment: Found in Poaceae such as Zea mays. Possibly a prophyll/bracteole. A palea subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
+comment: Found in Poaceae such as Zea mays. Possibly a prophyll/bracteole. A palea subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or similar grasses, please also add an annotation to the corresponding spikelet type. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
 subset: reference
 synonym: "palea" EXACT Spanish [POC:mag]
 synonym: "palea of ear floret" NARROW []
@@ -15409,6 +15416,7 @@ creation_date: 2011-05-02T09:14:26Z
 id: PO:0025307
 name: microsporangium wall
 namespace: plant_anatomy
+def: "A sporangium wall that is part of a microsporangium." [POC:rw]
 synonym: "pared del microsporangio" EXACT Spanish [POC:mag]
 is_a: PO:0025306 ! sporangium wall
 relationship: part_of PO:0025202 ! microsporangium
@@ -15419,6 +15427,7 @@ creation_date: 2011-05-03T09:42:36Z
 id: PO:0025308
 name: megasporangium wall
 namespace: plant_anatomy
+def: "A sporangium wall that is part of a megasporangium." [POC:rw]
 synonym: "pared del megasporangio" EXACT Spanish [POC:mag]
 is_a: PO:0025306 ! sporangium wall
 relationship: part_of PO:0025201 ! megasporangium
