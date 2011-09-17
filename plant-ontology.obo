@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:09:2011 15:14
+date: 17:09:2011 17:42
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5453,6 +5453,7 @@ name: glume of ear spikelet
 namespace: plant_anatomy
 def: "A glume that is part of an ear spikelet." [POC:rw]
 synonym: "gluma de la espiga de la espiguilla" EXACT Spanish [POC:mag]
+xref: OBO_SF_PO:3400282
 is_a: PO:0009039 ! glume
 intersection_of: PO:0009039 ! glume
 intersection_of: part_of PO:0006320 ! ear spikelet
@@ -5464,6 +5465,7 @@ name: glume of tassel spikelet
 namespace: plant_anatomy
 def: "A glume that is part of a tassel spikelet." [POC:rw]
 synonym: "gluma del penacho (borla) de la espiguilla" EXACT Spanish [POC:mag]
+xref: OBO_SF_PO:3400282
 is_a: PO:0009039 ! glume
 intersection_of: PO:0009039 ! glume
 intersection_of: part_of PO:0006309 ! tassel spikelet
@@ -5813,6 +5815,7 @@ def: "An inflorescence detectable phase during which an inflorescence has reache
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.04 full inflorescence length reached in soybean" RELATED [SOY:0000070]
+xref: OBO_SF_PO:3357762
 is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
@@ -5842,13 +5845,15 @@ comment: Includes the time when the inflorescence can be seen by removing outer 
 subset: Maize
 synonym: "4.01 Inflorescence just visible in soybean" RELATED [SOY:0000067]
 synonym: "visible flower buds in Arabidopsis" RELATED [TAIR:0000420]
+xref: OBO_SF_PO:3324099
 is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
 id: PO:0007007
-name: FF.03 fruit size 70%
+name: FF.03 fruit size 51 to 70% stage
 namespace: plant_growth_and_development_stage
-def: "The stage when the size of the fruit is about 70% of final fruit size." [GR:ap, ISBN:3826331524]
+def: "A fruit formation stage that spans the interval when a fruit has reached 51% to 70% of its final size." [ISBN:3826331524, POC:curators]
+comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.07 Pod 70% of final length in soybean" RELATED [SOY:0000082]
 synonym: "8.02-early milk in barley" RELATED [GRO:0007107]
 synonym: "8.02-early milk in oat" RELATED [GRO:0007107]
@@ -5859,6 +5864,7 @@ synonym: "FF.03 fruit size 70% in Solanaceae" RELATED [SGN:0000044]
 synonym: "late milk" RELATED [GRO:0007109]
 synonym: "tomato immature green" RELATED [SGN:0000044]
 synonym: "Zadok scale-73, Haun scale-13" RELATED [GRO:0007107]
+xref: OBO_SF_PO:3374186
 is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
@@ -5879,12 +5885,14 @@ is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007009
-name: FF.01 fruit size 30%
+name: FF.01 fruit size 11 to 30% stage
 namespace: plant_growth_and_development_stage
-def: "The stage when the size of the fruit is about 30% of final fruit size." [GR:ap, ISBN:3826331524]
+def: "A fruit formation stage that spans the interval when a fruit has reached 11% to 30% of its final size." [ISBN:3826331524, POC:curators]
+comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.02 Pod 30% of final length in soybean" RELATED [SOY:0000080]
 synonym: "FF.01 fruit size 30% in Solanaceae" RELATED [SGN:0000042]
 synonym: "tomato immature green" RELATED [SGN:0000042]
+xref: OBO_SF_PO:3374186
 is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
@@ -5940,6 +5948,7 @@ synonym: "BBCH growth stage 40" RELATED [ISBN:3826331524]
 synonym: "development of vegetatively propogated organs" RELATED []
 synonym: "rice growth stage-5" RELATED [GRO:0007148]
 synonym: "sorghum growth stage-6" RELATED [GRO:0007130]
+xref: OBO_SF_PO:3324099
 is_a: PO:0007006 ! IL.00 inflorescence just visible stage
 
 [Term]
@@ -6133,9 +6142,10 @@ is_a: PO:0007016 ! 4 flowering
 
 [Term]
 id: PO:0007027
-name: FF.04 final fruit size
+name: FF.04 fruit size 71% to final size stage
 namespace: plant_growth_and_development_stage
-def: "The stage when the size of the fruit has reached the final fruit size." [GR:ap, ISBN:3826331524]
+def: "A fruit formation stage that spans the interval when a fruit has reached 71% of its final size to its final size." [ISBN:3826331524, POC:curators]
+comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.09 Pod full size in soybean" RELATED [SOY:0000084]
 synonym: "8.03-medium milk in barley" RELATED [GRO:0007108]
 synonym: "8.03-medium milk in oat" RELATED [GRO:0007108]
@@ -6150,6 +6160,7 @@ synonym: "Kernels in middle of cob yellowish-white" RELATED [ISBN:3826331524]
 synonym: "nearly all kernels have reached final size" RELATED [ISBN:3826331524]
 synonym: "Stage R4 Full pod in soybean" RELATED [SOY:0000084]
 synonym: "tomato mature green" RELATED [SGN:0000045]
+xref: OBO_SF_PO:3374186
 is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
@@ -6167,9 +6178,10 @@ is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007029
-name: FF.02 fruit size 50%
+name: FF.02 fruit size 31 to 50% stage
 namespace: plant_growth_and_development_stage
-def: "The stage when the size of the fruit is about 50% of final fruit size." [GR:ap, ISBN:3826331524]
+def: "A fruit formation stage that spans the interval when a fruit has reached 31% to 50% of its final size." [ISBN:3826331524, POC:curators]
+comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.01-blister stage in maize" RELATED [GRO:0007030]
 synonym: "7.03 Pod 50% of final length in soybean" RELATED [SOY:0000081]
 synonym: "8.01-kernel watery ripe in barley" RELATED [GRO:0007106]
@@ -6186,6 +6198,7 @@ synonym: "Stage R4 Full pod in soybean" RELATED [SOY:0000081]
 synonym: "tomato immature green" RELATED [SGN:0000043]
 synonym: "watery ripe" RELATED [GRO:0007106]
 synonym: "Zadok scale-71, Feekes scale-10.54, Haun scale-12.1" RELATED [GRO:0007106]
+xref: OBO_SF_PO:3374186
 is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
@@ -6223,13 +6236,15 @@ is_a: PO:0007010 ! 6 ripening
 
 [Term]
 id: PO:0007032
-name: FF.00 fruit size 10%
+name: FF.00 fruit size up to 10% stage
 namespace: plant_growth_and_development_stage
-def: "The stage when the size of the fruit is about 10% of final fruit size." [GR:ap, ISBN:3826331524]
+def: "A fruit formation stage that begins with fertilization of an ovary and ends when the fruit has reached 10% of its final size." [ISBN:3826331524, MaizegDB:ms, POC:curators]
+comment: A fruit development stage may begin without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This term can only be used of the final size of the fruit is known.
 synonym: "7.01 Pod 10% of final length in soybean" RELATED [SOY:0000079]
 synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
 synonym: "stage R3 in soybean" RELATED [SOY:0000079]
 synonym: "tomato immature green" RELATED [SGN:0000041]
+xref: OBO_SF_PO:3374186
 is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
@@ -6352,6 +6367,7 @@ synonym: "rice growth stage-6" RELATED [GRO:0007044]
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
 synonym: "tasseling" RELATED []
 synonym: "VT (maize)" RELATED [XX:<new dbxref>]
+xref: OBO_SF_PO:3324099
 is_a: PO:0007047 ! 3 inflorescence detectable stage
 
 [Term]
@@ -6440,6 +6456,7 @@ synonym: "4 Inflorescence Formation in soybean" NARROW [SOY:0000005]
 synonym: "BBCH principal growth stage 4" RELATED [ISBN:3826331524]
 synonym: "BBCH principal growth stage 5" RELATED [ISBN:3826331524]
 synonym: "Poaceae inflorescence visible" NARROW []
+xref: OBO_SF_PO:3324099
 is_a: PO:0007130 ! B reproductive growth
 
 [Term]
@@ -6808,6 +6825,7 @@ synonym: "maize V18 stage" RELATED [GRO:0007016]
 synonym: "Stage V17 in soybean" RELATED [SOY:0000032]
 synonym: "V18 in maize" RELATED [MaizeGDB:67360]
 synonym: "VT vegetative tasseling in maize (US cornbelt)" NARROW [XX:<new dbxref>]
+xref: OBO_SF_PO:3357766
 is_a: PO:0007133 ! leaf production
 
 [Term]
@@ -9320,6 +9338,7 @@ synonym: "lemma of upper floret of pedicellate spikelet of ear" NARROW []
 synonym: "lemma of upper floret of pedicellate spikelet of tassel" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of ear" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of tassel" NARROW []
+xref: OBO_SF_PO:3400245
 is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0009051 ! spikelet
 
@@ -9351,6 +9370,7 @@ synonym: "palea of upper floret of pedicellate spikelet of ear" NARROW []
 synonym: "palea of upper floret of pedicellate spikelet of tassel" NARROW []
 synonym: "palea of upper floret of sessile spikelet of ear" NARROW []
 synonym: "palea of upper floret of sessile spikelet of tassel" NARROW []
+xref: OBO_SF_PO:3400245
 is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0009082 ! spikelet floret
 
@@ -9364,6 +9384,7 @@ comment: Found in Poaceae and Cyperaceae. Glumes subtend the pair of florets whi
 subset: reference
 synonym: "gluma" EXACT Spanish [POC:mag]
 synonym: "rudimentary glume" RELATED []
+xref: OBO_SF_PO:3400282
 is_a: PO:0009054 ! inflorescence bract
 relationship: part_of PO:0009051 ! spikelet
 
@@ -9535,6 +9556,7 @@ subset: Poaceae
 subset: reference
 synonym: "espiguilla" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:2971891
+xref: OBO_SF_PO:3405173
 is_a: PO:0025082 ! reproductive shoot system
 relationship: part_of PO:0009049 ! inflorescence
 
@@ -9931,6 +9953,7 @@ synonym: "Poaceae style" NARROW []
 synonym: "silk" NARROW []
 synonym: "Zea style" NARROW []
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3357921
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
 
@@ -9993,6 +10016,7 @@ synonym: "florete" EXACT Spanish [POC:mag]
 synonym: "grass floret" NARROW []
 synonym: "Poaceae floret" NARROW []
 synonym: "spikelet flower" RELATED []
+xref: OBO_SF_PO:3397632
 is_a: PO:0009046 ! flower
 relationship: part_of PO:0009051 ! spikelet
 
