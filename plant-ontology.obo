@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:09:2011 17:56
+date: 29:09:2011 07:38
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta18
 subsetdef: Angiosperm "Term for angiosperms"
@@ -21,7 +21,6 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural" EXACT
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
-remark: Filtered by Has parent with type ID contains "PO:0025034"
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 ontology: po
 treat-xrefs-as-is_a: CARO
@@ -4718,7 +4717,7 @@ namespace: plant_anatomy
 def: "A portion of ground tissue located between vascular bundles in a shoot axis." [ISBN:0471244554, ISBN:0716710072]
 comment: Inapplicable for nearly all monocots.
 synonym: "medullary ray" EXACT [ISBN:0471244554]
-synonym: "pith ray" EXACT [ISBN:0-7167-1007-2]
+synonym: "pith ray" EXACT [ISBN:0716710072]
 synonym: "regi&#243n interfascicular (Spanish)" EXACT Spanish [POC:mag]
 xref: OBO_SF_PO:3011073
 is_a: PO:0025059 ! portion of ground tissue
@@ -9761,7 +9760,6 @@ xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0000019 ! gynoecium primordium
 relationship: part_of PO:0009046 ! flower
-relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0009063
@@ -10295,8 +10293,8 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is a fleshy outgrowth of a seed and does not cover the entire seed and develops from a part of the seed other than a funicle." [ISBN:9780881928501]
 subset: TraitNet
 synonym: "ariloide (Spanish)" EXACT Spanish [POC:mag]
-synonym: "caruncle" NARROW [ISBN-13:978-0-88192-850-1]
-synonym: "strophiole" NARROW [ISBN-13:9780881928501]
+synonym: "caruncle" NARROW [ISBN:9780881928501]
+synonym: "strophiole" NARROW [ISBN:9780881928501]
 xref: OBO_SF_PO:3132539
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009010 ! seed
@@ -12244,10 +12242,10 @@ creation_date: 2010-05-27T09:31:12Z
 id: PO:0025045
 name: subterranean tuber periderm
 namespace: plant_anatomy
-def: "A portion of tuber periderm that is part of a subterranean tuber." [POC:curators]
+def: "A portion of tuber periderm that is part of a subterranean tuber." [PMID:19752048, POC:curators]
 comment: The skin of young potatoes is epidermis while the skin of mature potatoes is periderm.
 subset: Potato
-synonym: "mature potato tuber skin" NARROW [ISSN:0022-0957]
+synonym: "mature potato tuber skin" NARROW []
 synonym: "peridermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:mag]
 is_a: PO:0025043 ! tuber periderm
 relationship: part_of PO:0004547 ! subterranean tuber
@@ -15802,6 +15800,7 @@ name: phyllode leaf
 namespace: plant_anatomy
 def: "An adult ensiform leaf with a lamina that develops in a median plane, rather a transverse plane, throughout the length of the leaf and is a result of increased activity of the adaxial meristem early in development." [PMID:18978364, PO_REF:00006, PO_REF:00007]
 comment: Common in legumes of the genus Acacia. Similar development occurs in other ensiform leaves in some monocots, but they are not called phyllodes. Transitional leaves also occur, in which the basal portion of the leaf develops similar to a phyllode, but the apical portion of the leaf develops normal leaflets (see PO:0025336, transition phyllode leaf). Phyllodes are generally xeromorphic.
+synonym: "adult phyllode leaf" EXACT []
 synonym: "phyllode" EXACT []
 is_a: PO:0006340 ! adult vascular leaf
 is_a: PO:0025333 ! ensiform vascular leaf
