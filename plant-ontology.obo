@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 29:09:2011 07:38
+date: 30:09:2011 11:51
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-beta18
+auto-generated-by: OBO-Edit 2.1-beta19
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -33,6 +33,7 @@ namespace: plant_anatomy
 def: "An embryonic plant structure that is the body of a developing plant embryo attached to the maternal tissue in an ovule by a suspensor." [POC:rw]
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 synonym: "embri&#243foro (Spanish)" EXACT Spanish [POC:mag]
+synonym: "胚本体" EXACT Japanese [NIG:yy]
 xref: OBO_SF_PO:3132560
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
@@ -15715,6 +15716,7 @@ name: unifacial vascular leaf
 namespace: plant_anatomy
 def: "A vascular leaf that has increased activity of either the adaxial or abaxial meristem early in development, leading to absence of the opposite surface on the mature leaf." [ISBN:9780023681905, PO_REF:00005, PO_REF:00006]
 comment: A unifacial leaf may be round in cross-section (terete) or it may be laminar (ensiform), in which case lamina development is in a median plane (perpendicular to the axis), rather than a transverse plane (tangent to the axis). Unifacial leaves may be bifacial at the leaf base. Many unifacial leaves develop by reduced (or absent) activity of the marginal meristems and increased activity of the adaxial meristem early in development, leading to mature leaves with only an adaxial surface (e.g., Acacia phyllodes). However, some develop by increased activity of the abaxial meristem early in development, leading to mature leaves with only an abaxial surface. Note that unifacial leaves may have two sides, as in ensiform leaves, but both sides arise from the same surface of the leaf meristem (abaxial or adaxial).
+synonym: "hoja unifacial" EXACT Spanish [POC:mag]
 synonym: "unifacial leaf" EXACT []
 is_a: PO:0009025 ! vascular leaf
 created_by: RamonaNYBG
@@ -15779,6 +15781,7 @@ namespace: plant_anatomy
 def: "A unifacial leaf that is flat in cross section due to a lamina that develops in a median plane (perpendicular to the axis), rather a transverse plane (tangent to the axis) throughout all of part of the length of the leaf." [ISBN:9780023681905, PO_REF:00005]
 comment: Common in many monocots and some dicots. Note that ensiform leaves have two sides, but both sides arise from the same surface of the leaf meristem (abaxial or adaxial). In some leaves, the petiole may twist, giving the appearance that the lamina is ensiform, but it is not.
 synonym: "ensiform leaf" EXACT []
+synonym: "hoja ensiforme" EXACT Spanish [POC:mag]
 is_a: PO:0025328 ! unifacial vascular leaf
 created_by: RamonaNYBG
 creation_date: 2011-09-28T04:08:06Z
@@ -15789,6 +15792,7 @@ name: terete vascular leaf
 namespace: plant_anatomy
 def: "A unifacial leaf that is round in cross section throughout all of part of the length of the leaf." [ISBN:9780023681905]
 comment: The surface of a terete leaf corresponds to either the adaxial or abaxial surface of a normal leaf.
+synonym: "hoja cilíndrica" EXACT Spanish [POC:mag]
 synonym: "terete leaf" EXACT []
 is_a: PO:0025328 ! unifacial vascular leaf
 created_by: RamonaNYBG
@@ -15801,6 +15805,7 @@ namespace: plant_anatomy
 def: "An adult ensiform leaf with a lamina that develops in a median plane, rather a transverse plane, throughout the length of the leaf and is a result of increased activity of the adaxial meristem early in development." [PMID:18978364, PO_REF:00006, PO_REF:00007]
 comment: Common in legumes of the genus Acacia. Similar development occurs in other ensiform leaves in some monocots, but they are not called phyllodes. Transitional leaves also occur, in which the basal portion of the leaf develops similar to a phyllode, but the apical portion of the leaf develops normal leaflets (see PO:0025336, transition phyllode leaf). Phyllodes are generally xeromorphic.
 synonym: "adult phyllode leaf" EXACT []
+synonym: "filodio" EXACT Spanish [POC:mag]
 synonym: "phyllode" EXACT []
 is_a: PO:0006340 ! adult vascular leaf
 is_a: PO:0025333 ! ensiform vascular leaf
@@ -15813,6 +15818,7 @@ name: transition phyllode leaf
 namespace: plant_anatomy
 def: "A transition vascular leaf in which the basal portion of the leaf has unifacial lamina development in a median plane, similar to a phyllode, and the apical portion of the leaf develops leaflets similar to a juvenile leaf." [PMID:18978364, PO_REF:00006, PO_REF:00007]
 comment: Common in seedlings of legumes of the genus Acacia. May also occur later, after the plant has begun to produce phyllodes.
+synonym: "filodio transicional" EXACT Spanish [POC:mag]
 synonym: "transition phyllode" EXACT []
 is_a: PO:0008018 ! transition vascular leaf
 is_a: PO:0025333 ! ensiform vascular leaf
