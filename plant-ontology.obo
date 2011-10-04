@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:10:2011 07:43
+date: 04:10:2011 14:46
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-beta19
 subsetdef: Angiosperm "Term for angiosperms"
@@ -9275,7 +9275,7 @@ relationship: part_of PO:0025021 ! collective tepal structure
 id: PO:0009034
 name: flower bract
 namespace: plant_anatomy
-def: "A bract subtending a flower." [POC:curators]
+def: "A bract that subtends perianth that is part of a flower." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "br&#225ctea floral (Spanish)" EXACT Spanish [POC:mag]
@@ -9283,7 +9283,7 @@ synonym: "chaff" RELATED []
 synonym: "floral bract" EXACT []
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
-relationship: part_of PO:0009049 ! inflorescence
+relationship: part_of PO:0009046 ! flower
 
 [Term]
 id: PO:0009035
@@ -9328,8 +9328,8 @@ alt_id: PO:0006431
 alt_id: PO:0006432
 alt_id: PO:0006433
 alt_id: PO:0006434
-def: "A flower bract that is part of a spikelet and is the lower of two bracts enclosing a spikelet floret." [APWeb:Glossary, POC:rw]
-comment: Found in Poaceae such as Zea mays. A lemma subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type, if known. Choose the most specific term possible from: ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
+def: "A flower bract that is the lower of the two bracts enclosing a spikelet floret." [APWeb:Glossary, POC:curators]
+comment: Found in Poaceae such as Zea mays. A lemma and a palea enclose an individual floret while glumes subtend a pair of florets. Lemma is part_of spikelet floret, but if you are annotating to this structure for Zea mays or other similar grasses, an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Maize
 subset: Poaceae
 subset: reference
@@ -9347,7 +9347,7 @@ synonym: "lemma of upper floret of sessile spikelet of ear" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of tassel" NARROW []
 xref: OBO_SF_PO:3400245
 is_a: PO:0009034 ! flower bract
-relationship: part_of PO:0009051 ! spikelet
+relationship: part_of PO:0009082 ! spikelet floret
 
 [Term]
 id: PO:0009038
@@ -9363,8 +9363,8 @@ alt_id: PO:0006427
 alt_id: PO:0006428
 alt_id: PO:0006429
 alt_id: PO:0006430
-def: "A flower bract that is part of a spikelet and is the upper/distal of two bracts enclosing a spikelet floret." [APWeb:Glossary, GR:pj]
-comment: Found in Poaceae such as Zea mays. Possibly a prophyll/bracteole. A palea subtends an individual floret while glumes subtend the pair of florets. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type, if known. Choose the most specific term possible from: ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
+def: "A flower bract that is the upper/distal of the two bracts enclosing a spikelet floret." [APWeb:Glossary, POC:curators]
+comment: Palea is part_of spikelet floret, but if you are annotating to this structure for Zea mays or other similar grasses, an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 synonym: "palea (Spanish)" EXACT Spanish [POC:mag]
 synonym: "palea of ear floret" NARROW []
@@ -9400,7 +9400,7 @@ id: PO:0009040
 name: sterile lemma
 namespace: plant_anatomy
 alt_id: PO:0006029
-def: "A bract in the position of a lemma, but not enclosing floral organs." [UMSL:tk]
+def: "A flower bract in the position of a lemma, but not enclosing floral organs." [UMSL:tk]
 comment: An undeveloped androecium or gynoecium may or may not be detectable. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding spikelet type, if known. Choose the most specific term possible from: ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
 subset: reference
 synonym: "empty glume" RELATED []
