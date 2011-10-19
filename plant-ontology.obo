@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:10:2011 14:46
+date: 19:10:2011 12:29
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-beta19
+auto-generated-by: OBO-Edit 2.1-rc1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1536,7 +1536,7 @@ namespace: plant_growth_and_development_stage
 def: "Stages of development of a fruit defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "stage 17 flower in Arabidopsis" RELATED []
 synonym: "stage 18 flower in Arabidopsis" RELATED []
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0025338 ! collective plant structure development stage
 
 [Term]
 id: PO:0001003
@@ -1856,7 +1856,7 @@ alt_id: PO:0007040
 def: "Stages of development of a leaf defined by characteristic morphological, structural, histological or other visible features." [POC:Curators, TAIR:Tanya_Beradini]
 synonym: "leaf development in Arabidopsis" RELATED []
 synonym: "leaf development stage" RELATED []
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0025339 ! plant organ development stage
 
 [Term]
 id: PO:0001051
@@ -1996,7 +1996,7 @@ id: PO:0001083
 name: inflorescence development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of an inflorescence defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0025338 ! collective plant structure development stage
 
 [Term]
 id: PO:0001094
@@ -2050,7 +2050,7 @@ name: seed development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of seed development, from fertilization to the dry or quiescent state." [TAIR:Katica_Ilic]
 synonym: "seed development in Arabidopsis" RELATED []
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0009012 ! plant structure development stage
 
 [Term]
 id: PO:0001180
@@ -6378,7 +6378,7 @@ synonym: "kernel ripening" RELATED []
 synonym: "maturity of fruit and seed" RELATED []
 synonym: "rice growth stage-8" RELATED []
 synonym: "silique ripening in Arabidopsis" RELATED [TAIR:0000034]
-is_a: PO:0007130 ! B reproductive growth
+is_a: PO:0007130 ! sporophyte reproductive development stage
 
 [Term]
 id: PO:0007013
@@ -6461,11 +6461,11 @@ synonym: "rice growth stage-6.1" RELATED [GRO:0007151]
 synonym: "silk emergence in maize" RELATED [MaizeGDB:67362]
 synonym: "sorghum growth stage 8" RELATED [GRO:0007153]
 synonym: "VT in maize" RELATED [MaizeGDB:67361]
-is_a: PO:0007130 ! B reproductive growth
+is_a: PO:0007130 ! sporophyte reproductive development stage
 
 [Term]
 id: PO:0007017
-name: C senescence
+name: sporophyte senescent stage
 namespace: plant_growth_and_development_stage
 def: "The processes that occur near the end of a plant's active life that are associated with the dismantling of cell components and membranes, loss of functional chloroplasts, and an overall decline in metabolism." [Poc:curators]
 synonym: "10.03-kernel loosening in daytime in barley" RELATED [GRO:0007117]
@@ -6480,7 +6480,8 @@ synonym: "9 Senescence in soybean" RELATED [SOY:0000008]
 synonym: "BBCH principal growth stage 9" RELATED [ISBN:3826331524]
 synonym: "C senescence in Solanaceae" RELATED [SGN:0000052]
 synonym: "senescence in Arabidopsis" RELATED [TAIR:0000035]
-is_a: PO:0007033 ! whole plant growth stage
+synonym: "sporophyte senescence stage" EXACT []
+is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0007018
@@ -6509,13 +6510,6 @@ synonym: "5.04-flag leaf sheath extending in oat" RELATED [GRO:0007094]
 synonym: "5.04-flag leaf sheath extending in wheat" RELATED [GRO:0007094]
 synonym: "first awns visible" RELATED [GRO:0007094]
 is_a: PO:0007014 ! booting stage
-
-[Term]
-id: PO:0007021
-name: plant structure development stage
-namespace: plant_growth_and_development_stage
-def: "The succession of changes during the development of plant parts." [POC:Curators]
-is_a: PO:0009012 ! plant growth and development stage
 
 [Term]
 id: PO:0007022
@@ -6698,7 +6692,7 @@ is_a: PO:0007010 ! 6 ripening
 id: PO:0007032
 name: FF.00 fruit size up to 10% stage
 namespace: plant_growth_and_development_stage
-def: "A fruit formation stage that begins with the formation of a zygote and ends when the fruit has reached 10% of its final size." [ISBN:3826331524, MaizegDB:ms, POC:Curators]
+def: "A fruit formation stage that begins with the formation of a zygote and ends when the fruit has reached 10% of its final size." [ISBN:3826331524, MaizeGDB:ms, POC:Curators]
 comment: This fruit development stage may begin without fertilization or formation of a zygote in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This term can only be used of the final size of the fruit is known.
 synonym: "7.01 Pod 10% of final length in soybean" RELATED [SOY:0000079]
 synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
@@ -6709,9 +6703,9 @@ is_a: PO:0007042 ! 5 fruit formation
 
 [Term]
 id: PO:0007033
-name: whole plant growth stage
+name: whole plant development stage
 namespace: plant_growth_and_development_stage
-def: "The succession of changes during the growth of the whole plant." [GR:Pankaj_Jaiswal]
+def: "A plant structure development stage that has as a participant a whole plant." [POC:curators]
 subset: TraitNet
 synonym: "cereal plant ontology " RELATED [GRO:0080001]
 synonym: "maize growth stage" RELATED [GRO:0007002]
@@ -6721,7 +6715,7 @@ synonym: "rice growth stage" RELATED [GRO:0007040]
 synonym: "Solanaceae whole plant growth stages" RELATED [SGN:0000001]
 synonym: "sorghum growth stage" RELATED [GRO:0007124]
 synonym: "wheat, barley and oat growth stage" RELATED [GRO:0007156]
-is_a: PO:0009012 ! plant growth and development stage
+is_a: PO:0009012 ! plant structure development stage
 
 [Term]
 id: PO:0007034
@@ -6853,7 +6847,7 @@ synonym: "proembryo in maize" RELATED [MaizeGDB:67371]
 synonym: "rice growth stage-7" RELATED [GRO:0007046]
 synonym: "transition stage in maize" RELATED [MaizeGDB:67369]
 synonym: "Zadok scale-70" RELATED [GRO:0007105]
-is_a: PO:0007130 ! B reproductive growth
+is_a: PO:0007130 ! sporophyte reproductive development stage
 
 [Term]
 id: PO:0007043
@@ -6915,7 +6909,7 @@ synonym: "BBCH principal growth stage 4" RELATED [ISBN:3826331524]
 synonym: "BBCH principal growth stage 5" RELATED [ISBN:3826331524]
 synonym: "Poaceae inflorescence visible" NARROW []
 xref: OBO_SF_PO:3324099
-is_a: PO:0007130 ! B reproductive growth
+is_a: PO:0007130 ! sporophyte reproductive development stage
 
 [Term]
 id: PO:0007048
@@ -7067,7 +7061,7 @@ synonym: "BBCH principal growth stage 0" RELATED [ISBN:3826331524]
 synonym: "germination in Arabidopsis" RELATED [TAIR:0000393]
 synonym: "maize growth stage-0" RELATED [GRO:0007003]
 synonym: "rice growth stage-1" RELATED [GRO:0007043]
-is_a: PO:0007134 ! A vegetative growth
+is_a: PO:0007134 ! sporophyte vegetative development stage
 
 [Term]
 id: PO:0007058
@@ -7301,7 +7295,7 @@ synonym: "BBCH principal growth stage 2" RELATED [ISBN:3826331524]
 synonym: "formation of side shoot" RELATED []
 synonym: "rice growth stage-3" RELATED [GRO:0007049]
 synonym: "tillering" RELATED []
-is_a: PO:0007134 ! A vegetative growth
+is_a: PO:0007134 ! sporophyte vegetative development stage
 
 [Term]
 id: PO:0007074
@@ -7923,7 +7917,7 @@ synonym: "1 seedling in maize" RELATED [MaizeGDB:1863]
 synonym: "BBCH principal growth stage 1" RELATED [ISBN:3826331524]
 synonym: "maize growth stage-1.1" RELATED [GRO:0007007]
 synonym: "sorghum principal growth stage 1" RELATED [GRO:0007126]
-is_a: PO:0007134 ! A vegetative growth
+is_a: PO:0007134 ! sporophyte vegetative development stage
 
 [Term]
 id: PO:0007113
@@ -8165,13 +8159,13 @@ is_obsolete: true
 
 [Term]
 id: PO:0007130
-name: B reproductive growth
+name: sporophyte reproductive development stage
 namespace: plant_growth_and_development_stage
-def: "Stage of growth when reproductive structures are being produced." [Poc:curators]
+def: "A sporophyte development stage that has as a participant a whole plant during the interval between the initiation of reproductive structures and something." [RW:test]
 synonym: "B reproductive growth in Solanaceae" RELATED [SGN:0000032]
 synonym: "B-reproductive stage in rice" RELATED [GRO:0007140]
 synonym: "reproductive in Arabidopsis" RELATED [TAIR:0000306]
-is_a: PO:0007033 ! whole plant growth stage
+is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0007131
@@ -8181,13 +8175,13 @@ def: "A vegetative growth stage that has as a participant a whole plant during t
 comment: This terms is used only for seed plants, although non-seed plants may have a comparable phase during which they produce juvenile or transition leaves.
 synonym: "seedling growth in Solanaceae" RELATED [SGN:0000005]
 synonym: "seedling in Arabidopsis" RELATED [TAIR:0000027]
-is_a: PO:0007134 ! A vegetative growth
+is_a: PO:0007134 ! sporophyte vegetative development stage
 
 [Term]
 id: PO:0007132
-name: D dormancy
+name: sporophyte dormant stage
 namespace: plant_growth_and_development_stage
-def: "A suspension of physiological activity that can be reactivated once it is broken." [Poc:curators]
+def: "A sporophyte development stage that has as a participant a whole plant during the interval between the suspension of physiological activity and the reactivation of physiological activity." [RW:test]
 synonym: "10.05-seed dormant in barley" RELATED [GRO:0007119]
 synonym: "10.05-seed dormant in oat" RELATED [GRO:0007119]
 synonym: "10.05-seed dormant in Triticeae" RELATED [GRO:0007119]
@@ -8209,7 +8203,8 @@ synonym: "10.09-secondary dormancy lost in oat" RELATED [GRO:0007123]
 synonym: "10.09-secondary dormancy lost in Triticeae" RELATED [GRO:0007123]
 synonym: "10.09-secondary dormancy lost in wheat" RELATED [GRO:0007123]
 synonym: "D dormancy in Solanaceae" RELATED [SGN:0000053]
-is_a: PO:0007033 ! whole plant growth stage
+synonym: "sporophyte dormancy stage" EXACT []
+is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0007133
@@ -8222,13 +8217,13 @@ is_a: PO:0007112 ! 1 main shoot growth
 
 [Term]
 id: PO:0007134
-name: A vegetative growth
+name: sporophyte vegetative development stage
 namespace: plant_growth_and_development_stage
-def: "Stage of growth when vegetative structures are being produced." [Poc:curators]
+def: "A sporophyte development stage that has as a participant a whole plant during the interval between seed germination and othe initiation of reproductive structures." [RW:test]
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
 synonym: "vegetative in Arabidopsis" RELATED [TAIR:0000305]
-is_a: PO:0007033 ! whole plant growth stage
+is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0007135
@@ -8369,7 +8364,7 @@ alt_id: PO:0007011
 def: "Stages of development of a root defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar]
 comment: At present the stages are described for primary, lateral and crown roots and stages for adventitious root formed by wounding or hormone treatment is not described. Finer resolution of root stages has been kept in the obsolete node as they are not consistently used in the consulted literature. These terms will be reintroduced into the ontology when there is a specific user request.
 synonym: "root development stage" RELATED []
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0025339 ! plant organ development stage
 
 [Term]
 id: PO:0007521
@@ -8629,7 +8624,7 @@ name: flower development stages
 namespace: plant_growth_and_development_stage
 def: "Stages of development of a flower defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "flower development in Arabidopsis" RELATED []
-is_a: PO:0007021 ! plant structure development stage
+is_a: PO:0025338 ! collective plant structure development stage
 
 [Term]
 id: PO:0007616
@@ -9507,7 +9502,7 @@ synonym: "germ" RELATED []
 synonym: "胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0009010
@@ -9541,11 +9536,14 @@ is_a: PO:0025131 ! plant anatomical entity
 
 [Term]
 id: PO:0009012
-name: plant growth and development stage
+name: plant structure development stage
 namespace: plant_growth_and_development_stage
-def: "The succession of changes leading from the zygote to the mature plant." [Poc:curators]
+alt_id: PO:0007021
+def: "A stage in the life of a plant structure during which the plant structure undergoes developmental processes." [POC:curators]
+comment: Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.
 subset: TraitNet
 synonym: "Arabidopsis growth" RELATED [TAIR:0000205]
+synonym: "plant growth and development stage" EXACT []
 
 [Term]
 id: PO:0009013
@@ -9688,7 +9686,7 @@ synonym: "needle-like leaf" NARROW []
 synonym: "scale-like leaf" NARROW []
 synonym: "維管束植物の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025034 ! leaf
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0009026
@@ -12684,7 +12682,7 @@ synonym: "sistema de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gand
 synonym: "根系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025007 ! collective plant structure
 disjoint_from: PO:0009006 ! shoot system
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2010-07-01T02:11:26Z
 
@@ -13598,7 +13596,7 @@ synonym: "胞子嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132600
 xref: OBO_SF_PO:3140824
 is_a: PO:0009008 ! plant organ
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2010-10-27T11:28:21Z
 
@@ -13985,7 +13983,7 @@ subset: Pteridophytes
 synonym: "gametangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶子嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2010-11-15T08:57:32Z
 
@@ -16762,6 +16760,119 @@ created_by: RamonaNYBG
 creation_date: 2011-09-28T04:33:07Z
 
 [Term]
+id: PO:0025337
+name: life of whole plant
+namespace: plant_growth_and_development_stage
+def: "A maximal whole plant development stage." [POC:curators]
+comment: There are only two types of life of whole plant. Every life of a whole plant is either a maximal gametophyte stage or a maximal sporophyte stage.
+is_a: PO:0007033 ! whole plant development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T10:54:37Z
+
+[Term]
+id: PO:0025338
+name: collective plant structure development stage
+namespace: plant_growth_and_development_stage
+def: "A plant structure development stage that has as participant a collective plant structure." [POC:curators]
+is_a: PO:0009012 ! plant structure development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T11:12:49Z
+
+[Term]
+id: PO:0025339
+name: plant organ development stage
+namespace: plant_growth_and_development_stage
+def: "A plant structure development stage that has as participant a plant organ." [POC:curators]
+is_a: PO:0009012 ! plant structure development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T11:12:49Z
+
+[Term]
+id: PO:0025340
+name: gametophyte vegetative development stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte development stage has as a participant a whole plant during the interval between spore germination and the formation of gametangia." [POC:curators]
+is_a: PO:0028003 ! gametophyte development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T11:55:08Z
+
+[Term]
+id: PO:0025341
+name: gametophyte reproductive development stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte development stage has as a participant a whole plant during the interval between the development of a gamete producing structure and fertilization." [POC:curators]
+comment: Some gametophytes may dies before fertilization.
+is_a: PO:0028003 ! gametophyte development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T11:55:08Z
+
+[Term]
+id: PO:0025342
+name: gametophyte dormant stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte development stage that has as a participant a whole plant during the interval between the suspension of physiological activity and the reactivation of physiological activity." [RW:test]
+synonym: "gametophyte dormancy stage" EXACT []
+is_a: PO:0028003 ! gametophyte development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T11:55:08Z
+
+[Term]
+id: PO:0025343
+name: gametophyte senescent stage
+namespace: plant_growth_and_development_stage
+is_a: PO:0028003 ! gametophyte development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T11:55:08Z
+
+[Term]
+id: PO:0025344
+name: gametophore reproductive whole plant development stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte reproductive development stage in which a gametophore and gametangium is being produced." [POC:curators]
+is_a: PO:0025341 ! gametophyte reproductive development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T12:10:50Z
+
+[Term]
+id: PO:0025345
+name: gametophore vegetative whole plant development stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte vegetative whole plant development stage during which a gametophore is being produced but no gametangia are being produced." [POC:curators]
+comment: Succeeds a protonema stage.
+is_a: PO:0025340 ! gametophyte vegetative development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T12:11:43Z
+
+[Term]
+id: PO:0025346
+name: thallus reproductive whole plant development stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte reproductive development stage in which a thallus and gametangium is being produced." [POC:curators]
+is_a: PO:0025341 ! gametophyte reproductive development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T12:18:53Z
+
+[Term]
+id: PO:0025347
+name: thallus vegetative whole plant development stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte vegetative whole plant development stage during which a thallus is being produced but no gametangia are being produced." [POC:curators]
+comment: May succeed a protonema whole plant development stage or may directly succeed spore germination.
+is_a: PO:0025340 ! gametophyte vegetative development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T12:20:16Z
+
+[Term]
+id: PO:0025348
+name: spore germination stage
+namespace: plant_growth_and_development_stage
+def: "A gametophyte vegetative development stage that has as a participant a whole plant during the interval between spore germination (the first cell division of a spore) and something." [RW:test]
+comment: This stage involves only one cell division. After that, protonema or other stage begins.
+is_a: PO:0025340 ! gametophyte vegetative development stage
+created_by: RamonaNYBG
+creation_date: 2011-10-19T12:22:38Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_growth_and_development_stage
@@ -16773,27 +16884,31 @@ creation_date: 2010-07-15T02:54:57Z
 
 [Term]
 id: PO:0028002
-name: sporophyte phase
+name: sporophyte development stage
 namespace: plant_growth_and_development_stage
-def: "A whole plant growth stage that begins with fertilization or apogamy." [POC:Curators]
-comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy both naturally occurring instances (such sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts).
+def: "A whole plant development stage that has as a participant a whole plant during the interval between fertilization or apogamy and its death." [POC:Curators]
+comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts).
 subset: TraitNet
 synonym: "fase esporof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporophytic phase" EXACT []
-is_a: PO:0007033 ! whole plant growth stage
+synonym: "sporphyte phase" EXACT []
+is_a: PO:0007033 ! whole plant development stage
+relationship: part_of PO:0025337 ! life of whole plant
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
 
 [Term]
 id: PO:0028003
-name: gametophyte phase
+name: gametophyte development stage
 namespace: plant_growth_and_development_stage
-def: "A whole plant growth stage that begins with meiosis or apospory." [POC:Curators]
+def: "A whole plant development stage that has as a participant a whole plant during the interval between meiosis or apospory and its death or fertilization." [POC:Curators]
 comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory.
 subset: TraitNet
 synonym: "fase gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "gametophyte phase" EXACT []
 synonym: "gametophytic phase" EXACT []
-is_a: PO:0007033 ! whole plant growth stage
+is_a: PO:0007033 ! whole plant development stage
+relationship: part_of PO:0025337 ! life of whole plant
 created_by: Ramona
 creation_date: 2010-07-15T02:56:11Z
 
@@ -16840,7 +16955,7 @@ synonym: "protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "protonemata" EXACT Plural []
 xref: OBO_SF_PO:3199622
 is_a: PO:0005426 ! chlorenchyma
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-03-10T11:00:03Z
 
@@ -16876,17 +16991,17 @@ creation_date: 2011-03-10T11:00:03Z
 
 [Term]
 id: PO:0030006
-name: protonema phase
+name: protonema whole plant development stage
 namespace: plant_growth_and_development_stage
-def: "A whole plant growth stage that is a sub-phase of a gametophytic phase in which protonema tissue is produced." [POC:Ramona_Walls]
-comment: The protonema phase follows spore germination and precedes the development of gametophores in mosses, some other bryophytes, and leptosporangiate ferns.
+def: "A gametophyte development stage during which a gametophyte undergoes filamentous growth and that succeeds spore germination and precedes a thalloid development stage (planar growth) or gametophore development stage." [POC:Ramona_Walls]
+comment: The protonema phase ends with the development of gametophores in mosses, some other bryophytes, and leptosporangiate ferns and with the development of a thallus in other bryophytes, although protonema tissue may persist of continue to develop after this.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "fase protonemica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "protonema phase" EXACT []
 synonym: "protonemal phase" EXACT []
 xref: OBO_SF_PO:3199622
-is_a: PO:0007033 ! whole plant growth stage
-relationship: part_of PO:0028003 ! gametophyte phase
+is_a: PO:0025340 ! gametophyte vegetative development stage
 created_by: Ramona
 creation_date: 2011-03-10T11:37:59Z
 
@@ -17031,7 +17146,7 @@ synonym: "gametophytic meristematic apical cell" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
-intersection_of: participates_in PO:0028003 ! gametophyte phase
+intersection_of: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T10:00:48Z
 
@@ -17051,7 +17166,7 @@ synonym: "sporophytic meristematic apical cell" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
-intersection_of: participates_in PO:0028002 ! sporophyte phase
+intersection_of: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T10:00:48Z
 
@@ -17098,7 +17213,7 @@ synonym: "gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3185093
 is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0030026 ! gametophore bud
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T10:28:20Z
 
@@ -17205,7 +17320,7 @@ synonym: "vascular shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T11:46:56Z
 
@@ -17239,7 +17354,7 @@ xref: OBO_SF_PO:3185097
 is_a: PO:0000058 ! vegetative bud
 relationship: develops_from PO:0030083 ! gametophore bud initial
 relationship: has_part PO:0030019 ! gametophore meristematic apical cell
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T08:22:35Z
 
@@ -17256,7 +17371,7 @@ synonym: "talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "thalli" EXACT Plural []
 xref: OBO_SF_PO:3257063
 is_a: PO:0000003 ! whole plant
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T08:35:16Z
 
@@ -17288,7 +17403,7 @@ synonym: "pie del esporofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gando
 xref: OBO_SF_PO:3234965
 is_a: PO:0009008 ! plant organ
 relationship: has_part PO:0000078 ! transfer cell
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:01:12Z
 
@@ -17336,7 +17451,7 @@ synonym: "seta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "setae" EXACT Plural []
 xref: OBO_SF_PO:3185175
 is_a: PO:0025004 ! plant axis
-relationship: participates_in PO:0028002 ! sporophyte phase
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:25:45Z
 
@@ -17350,7 +17465,7 @@ subset: Bryophytes
 synonym: "anteridi&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3272612
 is_a: PO:0025004 ! plant axis
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
 
@@ -17364,7 +17479,7 @@ subset: Bryophytes
 synonym: "arquegoni&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OB_SF_PO:3272612
 is_a: PO:0025004 ! plant axis
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
 
@@ -17411,7 +17526,7 @@ synonym: "caliptra de la c&#225psula productora de esporas (Spanish)" EXACT Span
 xref: OBO_SF_PO:3234979
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0025126 ! archegonium
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:53:45Z
 
@@ -17745,7 +17860,7 @@ synonym: "braquicito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "brood cell" EXACT [ISBN:0962073342]
 xref: OBO_SF_PO:3293213
 is_a: PO:0009002 ! plant cell
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-28T09:14:10Z
 
@@ -17762,7 +17877,7 @@ synonym: "c&#233lula del tmema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gan
 synonym: "dlichotmema cell" NARROW []
 xref: OBO_SF_PO:3293289
 is_a: PO:0009002 ! plant cell
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-28T09:24:40Z
 
@@ -17792,7 +17907,7 @@ synonym: "tmema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293289
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030059 ! tmema cell
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-29T08:30:03Z
 
@@ -17929,7 +18044,7 @@ synonym: "par&#225fisis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "paraphyses" EXACT Plural []
 xref: OB_SF_PO:3293891
 is_a: PO:0025162 ! multicellular trichome
-relationship: participates_in PO:0028003 ! gametophyte phase
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-29T01:05:26Z
 
