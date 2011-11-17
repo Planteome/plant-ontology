@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:11:2011 17:31
+date: 17:11:2011 12:04
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1-rc1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1975,7 +1975,7 @@ alt_id: PO:0001076
 def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0001079
@@ -1991,7 +1991,7 @@ namespace: plant_growth_and_development_stage
 def: "Stage at which the embryo is fully developed." [APweb:Glossary, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0001083
@@ -2006,7 +2006,7 @@ name: coleoptilar stage
 namespace: plant_growth_and_development_stage
 def: "The coleoptilar primordium, SAM and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
 synonym: "SAM and radicle formation stage" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0001095
@@ -2014,7 +2014,7 @@ name: true leaf formation
 namespace: plant_growth_and_development_stage
 def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0001096
@@ -2025,12 +2025,12 @@ is_a: PO:0007633 ! endosperm development stages
 
 [Term]
 id: PO:0001097
-name: A zygotic stage
+name: zygote stage
 namespace: plant_growth_and_development_stage
-def: "One cell stage that results from fertilization." [PO:KI]
+def: "A sporophyte development stage that occurs during the interval between syngamy and the first cell division." [POC:curators]
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0001098
@@ -2061,7 +2061,7 @@ namespace: plant_growth_and_development_stage
 def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [APweb:Glossary, TAIR:Katica_Ilic]
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0001185
@@ -2072,7 +2072,7 @@ synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0001378
@@ -2544,7 +2544,7 @@ synonym: "heart stage in Arabidopsis" RELATED []
 synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
 synonym: "triangle stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo development stages
+is_a: PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0004509
@@ -6379,7 +6379,7 @@ synonym: "kernel ripening" RELATED []
 synonym: "maturity of fruit and seed" RELATED []
 synonym: "rice growth stage-8" RELATED []
 synonym: "silique ripening in Arabidopsis" RELATED [TAIR:0000034]
-is_a: PO:0007130 ! sporophyte reproductive development stage
+is_a: PO:0007130 ! sporophyte reproductive stage
 
 [Term]
 id: PO:0007013
@@ -6462,7 +6462,7 @@ synonym: "rice growth stage-6.1" RELATED [GRO:0007151]
 synonym: "silk emergence in maize" RELATED [MaizeGDB:67362]
 synonym: "sorghum growth stage 8" RELATED [GRO:0007153]
 synonym: "VT in maize" RELATED [MaizeGDB:67361]
-is_a: PO:0007130 ! sporophyte reproductive development stage
+is_a: PO:0007130 ! sporophyte reproductive stage
 
 [Term]
 id: PO:0007017
@@ -6848,7 +6848,7 @@ synonym: "proembryo in maize" RELATED [MaizeGDB:67371]
 synonym: "rice growth stage-7" RELATED [GRO:0007046]
 synonym: "transition stage in maize" RELATED [MaizeGDB:67369]
 synonym: "Zadok scale-70" RELATED [GRO:0007105]
-is_a: PO:0007130 ! sporophyte reproductive development stage
+is_a: PO:0007130 ! sporophyte reproductive stage
 
 [Term]
 id: PO:0007043
@@ -6910,7 +6910,7 @@ synonym: "BBCH principal growth stage 4" RELATED [ISBN:3826331524]
 synonym: "BBCH principal growth stage 5" RELATED [ISBN:3826331524]
 synonym: "Poaceae inflorescence visible" NARROW []
 xref: OBO_SF_PO:3324099
-is_a: PO:0007130 ! sporophyte reproductive development stage
+is_a: PO:0007130 ! sporophyte reproductive stage
 
 [Term]
 id: PO:0007048
@@ -7062,7 +7062,7 @@ synonym: "BBCH principal growth stage 0" RELATED [ISBN:3826331524]
 synonym: "germination in Arabidopsis" RELATED [TAIR:0000393]
 synonym: "maize growth stage-0" RELATED [GRO:0007003]
 synonym: "rice growth stage-1" RELATED [GRO:0007043]
-is_a: PO:0007134 ! sporophyte vegetative development stage
+is_a: PO:0007134 ! sporophyte vegetative stage
 
 [Term]
 id: PO:0007058
@@ -7259,7 +7259,7 @@ synonym: "main shoot and two tillers in wheat" RELATED [GRO:0007072]
 synonym: "second axillary shoot detectable" RELATED []
 synonym: "second tiller detectable" RELATED []
 synonym: "Zadok scale-22" RELATED [GRO:0007072]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007072
@@ -7283,7 +7283,7 @@ is_a: PO:0007133 ! leaf production
 
 [Term]
 id: PO:0007073
-name: 2 formation of axillary shoot
+name: 2 formation of axillary shoot stage
 namespace: plant_growth_and_development_stage
 def: "The stage at which the axillary shoots are forming." [Poc:curators]
 synonym: "03-tillering in barley" RELATED [GRO:0007069]
@@ -7296,7 +7296,7 @@ synonym: "BBCH principal growth stage 2" RELATED [ISBN:3826331524]
 synonym: "formation of side shoot" RELATED []
 synonym: "rice growth stage-3" RELATED [GRO:0007049]
 synonym: "tillering" RELATED []
-is_a: PO:0007134 ! sporophyte vegetative development stage
+is_a: PO:0007134 ! sporophyte vegetative stage
 
 [Term]
 id: PO:0007074
@@ -7341,7 +7341,7 @@ synonym: "main shoot and eight tillers in oat" RELATED [GRO:0007078]
 synonym: "main shoot and eight tillers in wheat" RELATED [GRO:0007078]
 synonym: "main shoot and eighth tiller visible" RELATED []
 synonym: "Zadok scale-28" RELATED [GRO:0007078]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007078
@@ -7389,7 +7389,7 @@ synonym: "main shoot and three tillers in wheat" RELATED [GRO:0007073]
 synonym: "third axillary shoot detectable" RELATED []
 synonym: "third tiller detectable" RELATED []
 synonym: "Zadok scale-23" RELATED [GRO:0007073]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007081
@@ -7505,7 +7505,7 @@ synonym: "main shoot and one tiller in barley" RELATED [GRO:0007071]
 synonym: "main shoot and one tiller in oat" RELATED [GRO:0007071]
 synonym: "main shoot and one tiller in wheat" RELATED [GRO:0007071]
 synonym: "Zadok scale-21, Feekes scale-2" RELATED [GRO:0007071]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007088
@@ -7525,7 +7525,7 @@ synonym: "main shoot and four tillers in oat" RELATED [GRO:0007074]
 synonym: "main shoot and four tillers in wheat" RELATED [GRO:0007074]
 synonym: "main shoot and fourth tiller visible" RELATED []
 synonym: "Zadok scale-24" RELATED [GRO:0007074]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007089
@@ -7549,7 +7549,7 @@ synonym: "rice growth stage-4" RELATED [GRO:0007048]
 synonym: "shoot development" RELATED []
 synonym: "sorghum growth stage-4" RELATED [GRO:0007128]
 synonym: "stem elongation in Solanaceae" RELATED [SGN:0000054]
-is_a: PO:0007112 ! 1 main shoot growth
+is_a: PO:0007112 ! 1 main shoot growth stage
 
 [Term]
 id: PO:0007090
@@ -7609,7 +7609,7 @@ synonym: "main shoot and five tillers in barley" RELATED [GRO:0007075]
 synonym: "main shoot and five tillers in oat" RELATED [GRO:0007075]
 synonym: "main shoot and five tillers in wheat" RELATED [GRO:0007075]
 synonym: "Zadok scale-25" RELATED [GRO:0007075]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007094
@@ -7891,7 +7891,7 @@ synonym: "maximum number of tillers visible" RELATED []
 synonym: "maximum number of tillers visible in rice" RELATED []
 synonym: "nine or more axillary shoots detectable" RELATED []
 synonym: "Zadok scale-29" RELATED [GRO:0007079]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007111
@@ -7904,7 +7904,7 @@ is_a: PO:0007089 ! stem elongation
 
 [Term]
 id: PO:0007112
-name: 1 main shoot growth
+name: 1 main shoot growth stage
 namespace: plant_growth_and_development_stage
 def: "The stage at which vegetative structures are being produced by SAM." [Poc:curators]
 comment: In monocots each leaf stage is defined according to the uppermost leaf whose collar is visible (Handbook of plant and crop physiology).
@@ -7918,7 +7918,7 @@ synonym: "1 seedling in maize" RELATED [MaizeGDB:1863]
 synonym: "BBCH principal growth stage 1" RELATED [ISBN:3826331524]
 synonym: "maize growth stage-1.1" RELATED [GRO:0007007]
 synonym: "sorghum principal growth stage 1" RELATED [GRO:0007126]
-is_a: PO:0007134 ! sporophyte vegetative development stage
+is_a: PO:0007134 ! sporophyte vegetative stage
 
 [Term]
 id: PO:0007113
@@ -7927,7 +7927,7 @@ namespace: plant_growth_and_development_stage
 def: "Stages of growth based on expansion of the rosette in Arabidopsis." [TAIR:Katica_Ilic]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "rosette growth in Arabidopsis" RELATED [TAIR:0000042]
-is_a: PO:0007112 ! 1 main shoot growth
+is_a: PO:0007112 ! 1 main shoot growth stage
 
 [Term]
 id: PO:0007114
@@ -8020,7 +8020,7 @@ synonym: "main shoot and six tillers in wheat" RELATED [GRO:0007076]
 synonym: "sixth axillary shoot detectable" RELATED []
 synonym: "sixth tiller detectable" RELATED []
 synonym: "Zadok scale-26, Feekes scale-3" RELATED [GRO:0007076]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007119
@@ -8082,7 +8082,7 @@ synonym: "main shoot and seventh tiller visible" RELATED []
 synonym: "seventh axillary shoot detectable" RELATED []
 synonym: "seventh tiller detectable" RELATED []
 synonym: "Zadok scale-27" RELATED [GRO:0007077]
-is_a: PO:0007073 ! 2 formation of axillary shoot
+is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
 id: PO:0007123
@@ -8160,12 +8160,15 @@ is_obsolete: true
 
 [Term]
 id: PO:0007130
-name: sporophyte reproductive development stage
+name: sporophyte reproductive stage
 namespace: plant_growth_and_development_stage
-def: "A sporophyte development stage that has as a participant a whole plant during the interval between the initiation of reproductive structures and something." [RW:test]
+def: "A sporophyte development stage that occurs during the interval between the initiation of a sporangium and the onset of senescence." [POC:curators]
+comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing  sporangia, but once it has initiated a single sporangium, it remains in the reproductive stage until senescence or death by some other cause.
 synonym: "B reproductive growth in Solanaceae" RELATED [SGN:0000032]
 synonym: "B-reproductive stage in rice" RELATED [GRO:0007140]
 synonym: "reproductive in Arabidopsis" RELATED [TAIR:0000306]
+synonym: "sporophyte reproductively competent stage" EXACT []
+synonym: "sporophytic reproductive stage" EXACT []
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -8176,13 +8179,14 @@ def: "A vegetative growth stage that has as a participant a whole plant during t
 comment: This terms is used only for seed plants, although non-seed plants may have a comparable phase during which they produce juvenile or transition leaves.
 synonym: "seedling growth in Solanaceae" RELATED [SGN:0000005]
 synonym: "seedling in Arabidopsis" RELATED [TAIR:0000027]
-is_a: PO:0007134 ! sporophyte vegetative development stage
+is_a: PO:0007134 ! sporophyte vegetative stage
 
 [Term]
 id: PO:0007132
 name: sporophyte dormant stage
 namespace: plant_growth_and_development_stage
-def: "A sporophyte development stage that has as a participant a whole plant during the interval between the suspension of physiological activity and the reactivation of physiological activity." [RW:test]
+def: "A sporophyte development stage that occurs during the interval between the suspension of physiological activity and its reactivation." [POC:curators]
+comment: During the sporophyte dormant stage, a sporophyte participates in dormancy processes (GO:0022611). The dormant stage is a response to environmental conditions, such as extreme heat, drought, or cold. This term only applies to a whole plant in the sporophyte stage, not to the dormant stage of a seed or other plant structures.
 synonym: "10.05-seed dormant in barley" RELATED [GRO:0007119]
 synonym: "10.05-seed dormant in oat" RELATED [GRO:0007119]
 synonym: "10.05-seed dormant in Triticeae" RELATED [GRO:0007119]
@@ -8205,6 +8209,7 @@ synonym: "10.09-secondary dormancy lost in Triticeae" RELATED [GRO:0007123]
 synonym: "10.09-secondary dormancy lost in wheat" RELATED [GRO:0007123]
 synonym: "D dormancy in Solanaceae" RELATED [SGN:0000053]
 synonym: "sporophyte dormancy stage" EXACT []
+synonym: "sporophytic dormant stage" EXACT []
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -8214,13 +8219,14 @@ namespace: plant_growth_and_development_stage
 def: "The stage at which the leaves produced by SAM are visible above the ground in a seedling or mature plant." [Poc:curators]
 comment: This stage is recommended over rosette growth or stem elongation as it is most easily observed and least ambiguous.
 synonym: "leaf production in Solanaceae" RELATED [SGN:0000012]
-is_a: PO:0007112 ! 1 main shoot growth
+is_a: PO:0007112 ! 1 main shoot growth stage
 
 [Term]
 id: PO:0007134
-name: sporophyte vegetative development stage
+name: sporophyte vegetative stage
 namespace: plant_growth_and_development_stage
-def: "A sporophyte development stage that has as a participant a whole plant during the interval between seed germination and the initiation of reproductive structures." [RW:test]
+def: "A sporophyte development stage that occurs during the interval between the first division of the zygote and the formation of a sporangium." [POC:curators]
+comment: A sporophyte may begin to senesce or die from other causes before producing sporangia.
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
 synonym: "vegetative in Arabidopsis" RELATED [TAIR:0000305]
@@ -8745,13 +8751,14 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 
 [Term]
 id: PO:0007631
-name: embryo development stages
+name: embryo stage
 namespace: plant_growth_and_development_stage
 alt_id: PO:0007020
-def: "Stages of development of the embryo." [TAIR:Katica_Ilic]
+def: "A sporophyte vegetative stage that occurs during the interval between the first cell division and one of the following: germination in seed plants, formation of the first true leaf after the cotyledon(s) in pteridophytes, when the apical cell stops dividing and the sporangium begins to develop in bryophytes, or the beginning of the formation of organs (roots, shoot axes, or leaves) in cultured plant embryos." [POC:curators]
+comment: Succeeds the zygote stage. The embryo stage generally starts after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
 synonym: "embryo development stage" RELATED []
 synonym: "embryonic in Arabidopsis" RELATED []
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0007134 ! sporophyte vegetative stage
 
 [Term]
 id: PO:0007632
@@ -9497,14 +9504,14 @@ disjoint_from: PO:0009007 ! portion of plant tissue
 id: PO:0009009
 name: plant embryo
 namespace: plant_anatomy
-def: "A whole plant in the early part of a sporophytic phase after the first cell division." [POC:Curators]
-comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryonic phase varies among taxa. In seed plants, the embryonic phase ends with germination. In pteridophytes, the embryonic phase ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryonic phase ends when the apical cell stops dividing and the sporangium begins to develop. In cultured plant embryos, the embryonic phase ends when organs (roots, shoot axes, or leaves) begin to form.
+def: "A whole plant that participates in the embryo stage (PO:0025369)." [POC:Curators]
+comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. In seed plants, the embryo stage ends with germination. In pteridophytes, the embryo stage ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryo stage ends when the apical cell stops dividing and the sporangium begins to develop. In cultured plant embryos, the embryo stage ends when organs (roots, shoot axes, or leaves) begin to form.
 synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "germ" RELATED []
 synonym: "胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
-relationship: participates_in PO:0028002 ! sporophyte development stage
+relationship: participates_in PO:0007631 ! embryo stage
 
 [Term]
 id: PO:0009010
@@ -16794,19 +16801,22 @@ creation_date: 2011-10-19T11:12:49Z
 
 [Term]
 id: PO:0025340
-name: gametophyte vegetative development stage
+name: gametophyte vegetative stage
 namespace: plant_growth_and_development_stage
-def: "A gametophyte development stage has as a participant a whole plant during the interval between spore germination and the formation of gametangia." [POC:curators]
+def: "A gametophyte development stage that occurs during the interval between spore germination and the formation of a gametangium." [POC:curators]
+comment: A gametophyte may begin to senesce or die from other causes before producing gametangia. Some plants, such as the fern Vittaria appalachiana, may never produce gametangia, and remain in the vegetative stage indefinitely.
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
 
 [Term]
 id: PO:0025341
-name: gametophyte reproductive development stage
+name: gametophyte reproductive stage
 namespace: plant_growth_and_development_stage
-def: "A gametophyte development stage has as a participant a whole plant during the interval between the development of a gamete producing structure and fertilization." [POC:curators]
-comment: Some gametophytes may dies before fertilization.
+def: "A gametophyte development stage that occurs during the interval between the initiation of a gametangium and the onset of senescence." [POC:curators]
+comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing  gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause.
+synonym: "gametophyte reproductively competent stage" EXACT []
+synonym: "gametophytic reproductive stage" EXACT []
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -16815,8 +16825,10 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025342
 name: gametophyte dormant stage
 namespace: plant_growth_and_development_stage
-def: "A gametophyte development stage that has as a participant a whole plant during the interval between the suspension of physiological activity and the reactivation of physiological activity." [RW:test]
+def: "A gametophyte development stage that occurs during the interval between the suspension of physiological activity and its reactivation." [POC:curators]
+comment: During the gametophyte dormant stage, a gametophyte participates in dormancy processes (GO:0022611). The dormant stage is a response to environmental conditions, such as extreme heat, drought, or cold. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures.
 synonym: "gametophyte dormancy stage" EXACT []
+synonym: "gametophytic dormant stage" EXACT []
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -16834,7 +16846,7 @@ id: PO:0025344
 name: gametophore reproductive whole plant development stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte reproductive development stage in which a gametophore and gametangium is being produced." [POC:curators]
-is_a: PO:0025341 ! gametophyte reproductive development stage
+is_a: PO:0025341 ! gametophyte reproductive stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T12:10:50Z
 
@@ -16844,7 +16856,7 @@ name: gametophore vegetative whole plant development stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte vegetative whole plant development stage during which a gametophore is being produced but no gametangia are being produced." [POC:curators]
 comment: Succeeds a protonema stage.
-is_a: PO:0025340 ! gametophyte vegetative development stage
+is_a: PO:0025340 ! gametophyte vegetative stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T12:11:43Z
 
@@ -16853,7 +16865,7 @@ id: PO:0025346
 name: thallus reproductive whole plant development stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte reproductive development stage in which a thallus and gametangium is being produced." [POC:curators]
-is_a: PO:0025341 ! gametophyte reproductive development stage
+is_a: PO:0025341 ! gametophyte reproductive stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T12:18:53Z
 
@@ -16863,7 +16875,7 @@ name: thallus vegetative whole plant development stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte vegetative whole plant development stage during which a thallus is being produced but no gametangia are being produced." [POC:curators]
 comment: May succeed a protonema whole plant development stage or may directly succeed spore germination.
-is_a: PO:0025340 ! gametophyte vegetative development stage
+is_a: PO:0025340 ! gametophyte vegetative stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T12:20:16Z
 
@@ -16873,7 +16885,7 @@ name: spore germination stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte vegetative development stage that has as a participant a whole plant during the interval between spore germination (the first cell division of a spore) and something." [RW:test]
 comment: This stage involves only one cell division. After that, protonema or other stage begins.
-is_a: PO:0025340 ! gametophyte vegetative development stage
+is_a: PO:0025340 ! gametophyte vegetative stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T12:22:38Z
 
@@ -17112,6 +17124,7 @@ def: "A whole plant development stage that has as a participant a whole plant du
 comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts).
 subset: TraitNet
 synonym: "fase esporof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "sporophytic development stage" EXACT []
 synonym: "sporophytic phase" EXACT []
 synonym: "sporphyte phase" EXACT []
 is_a: PO:0007033 ! whole plant development stage
@@ -17128,6 +17141,7 @@ comment: During the gametophytic phase, a plant may produce gametes by mitosis. 
 subset: TraitNet
 synonym: "fase gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophyte phase" EXACT []
+synonym: "gametophytic development stage" EXACT []
 synonym: "gametophytic phase" EXACT []
 is_a: PO:0007033 ! whole plant development stage
 relationship: part_of PO:0025337 ! life of whole plant
@@ -17223,7 +17237,7 @@ synonym: "fase protonemica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "protonema phase" EXACT []
 synonym: "protonemal phase" EXACT []
 xref: OBO_SF_PO:3199622
-is_a: PO:0025340 ! gametophyte vegetative development stage
+is_a: PO:0025340 ! gametophyte vegetative stage
 created_by: Ramona
 creation_date: 2011-03-10T11:37:59Z
 
