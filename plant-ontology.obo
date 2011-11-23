@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 17:11:2011 12:04
-saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-rc1
+date: 22:11:2011 17:56
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-rc3
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1269,9 +1269,9 @@ name: trichome
 namespace: plant_anatomy
 alt_id: PO:0004510
 def: "A unicellular or multicellular plant structure that forms a non-sclerified outgrowth from the epidermis." [POC:Curators]
-comment: This class is the union of unicellular trichome [narrow synonym of trichome cell (PO:0008030)] and multicellular trichome (PO:0025162).
+comment: This class is the union of unicellular trichome [narrow synonym of trichome cell (PO:0008030)] and multicellular trichome (PO:0025162).  A trichome can vary in length and shape and may be branched or unbranched.  It may be glandular or non-secretory.
 subset: TraitNet
-synonym: "non-secretory trichome" EXACT []
+synonym: "non-secretory trichome" NARROW []
 synonym: "tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、トライコーム (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009011 ! plant structure
@@ -2561,7 +2561,7 @@ is_a: PO:0000282 ! trichome
 id: PO:0004511
 name: seed trichome
 namespace: plant_anatomy
-def: "A trichome that develops from seed coat epidermis and is often long with putative dispersal function." [POC:Curators]
+def: "A trichome that develops from seed coat epidermis." [POC:Curators]
 subset: TraitNet
 synonym: "pubescence" RELATED []
 synonym: "seed hair" EXACT []
@@ -6801,8 +6801,8 @@ is_a: PO:0007010 ! 6 ripening
 id: PO:0007039
 name: leaf trichome development stage
 namespace: plant_growth_and_development_stage
-def: "Stages of development of a trichome defined by characteristic morphological, structural, histological or other visible features." [GR:Chih-Wei_Tung]
-is_a: PO:0001050 ! leaf development stages
+def: "A trichome development stage that has as primary participant a leaf trichome." [GR:Chih-Wei_Tung, POC:Curators]
+is_a: PO:0025368 ! trichome development stage
 
 [Term]
 id: PO:0007041
@@ -17105,6 +17105,70 @@ synonym: "tendril" BROAD []
 is_a: PO:0009042 ! prophyll
 created_by: RamonaNYBG
 creation_date: 2011-11-16T05:09:07Z
+
+[Term]
+id: PO:0025368
+name: trichome development stage
+namespace: plant_growth_and_development_stage
+def: "A plant structure development stage that has as primary participant a trichome." [POC:Curators]
+is_a: PO:0009012 ! plant structure development stage
+created_by: cooperl
+creation_date: 2011-11-22T05:35:39Z
+
+[Term]
+id: PO:0025369
+name: seed trichome development stage
+namespace: plant_growth_and_development_stage
+def: "A trichome development stage that has as primary participant a seed trichome." [POC:<new dbxref>Curators]
+comment: Seed trichome development stage consists of the following sub stages: seed trichome initiation stage (PO:0025370), seed trichome elongation stage (PO:0025371), seed trichome secondary wall biosynthesis stage(PO:0025372) and seed trichome maturation stage (PO:0025373).
+synonym: "seed hair development stage" EXACT []
+is_a: PO:0025368 ! trichome development stage
+created_by: cooperl
+creation_date: 2011-11-22T05:36:46Z
+
+[Term]
+id: PO:0025370
+name: seed trichome initiation stage
+namespace: plant_growth_and_development_stage
+def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome initiation and the onset of seed trichome elongation." [POC:Curators]
+comment: comment: Refers to the GO Biological Process terms: seed trichome initiation (GO:0090377) and seed trichome elongation (GO:0090378).
+synonym: "seed hair initiation stage" EXACT []
+is_a: PO:0025369 ! seed trichome development stage
+created_by: cooperl
+creation_date: 2011-11-22T05:37:55Z
+
+[Term]
+id: PO:0025371
+name: seed trichome elongation stage
+namespace: plant_growth_and_development_stage
+def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome elongation and the onset of seed trichome secondary wall biosynthesis." [POC:Curators]
+comment: Refers to the GO Biological Process terms: seed trichome elongation (GO:0090378) and secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379).
+synonym: "seed hair elongation stage" EXACT []
+is_a: PO:0025369 ! seed trichome development stage
+created_by: cooperl
+creation_date: 2011-11-22T05:43:12Z
+
+[Term]
+id: PO:0025372
+name: seed trichome secondary wall biosynthesis stage
+namespace: plant_growth_and_development_stage
+def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome secondary wall biosynthesis and the onset of seed trichome maturation." [POC:Curators]
+comment: Refers to the GO Biological Process terms: secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379) and seed trichome maturation (GO:0090380).
+synonym: "seed hair secondary wall biosynthesis stage" EXACT []
+is_a: PO:0025369 ! seed trichome development stage
+created_by: cooperl
+creation_date: 2011-11-22T05:45:42Z
+
+[Term]
+id: PO:0025373
+name: seed trichome maturation stage
+namespace: plant_growth_and_development_stage
+def: "A seed trichome development stage which  encompasses the process of seed trichome maturation." [POC:<new dbxref>Curators]
+comment: Refers to the GO Biological Process term: seed trichome maturation (GO:0090380).
+synonym: "seed hair maturation stage" EXACT []
+is_a: PO:0025369 ! seed trichome development stage
+created_by: cooperl
+creation_date: 2011-11-22T05:47:05Z
 
 [Term]
 id: PO:0028001
