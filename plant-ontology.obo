@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:12:2011 10:34
+date: 12:12:2011 14:24
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-rc1
+auto-generated-by: OBO-Edit 2.1-rc4
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -18620,8 +18620,10 @@ creation_date: 2011-05-09T11:54:22Z
 
 [Typedef]
 id: derives_from
-name: derives_from
+name: derives_by_manipulation_from
 namespace: plant_anatomy
+def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
+comment: The derives_by_manipulation_from relation, is a special case of the RO relation derives_from.  Derives_from implies an instance level derivation that holds between two distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later.  Likewise, derives_by_manipulation_from joins two plant structures before and after some manipulation.  Specifically, derives_by_manipulation_from is used to describe the relation between an in vitro plant structure and the in vivo plant structure that is its temporal precursor.
 created_by: Ramona
 creation_date: 2010-07-01T02:45:12Z
 
@@ -18633,6 +18635,16 @@ namespace: plant_anatomy
 [Typedef]
 id: has_part
 name: has_part
+is_transitive: true
+
+[Typedef]
+id: has_participant
+name: has_participant
+comment: Used with a plant structure development stage as the child (domain) and a plant anatomical entity as the parent (range). For example, trichome development stage has_participant trichome.
+domain: PO:0009012 ! plant structure development stage
+range: PO:0025131 ! plant anatomical entity
+created_by: RamonaNYBG
+creation_date: 2011-12-12T02:01:11Z
 
 [Typedef]
 id: part_of
@@ -18642,7 +18654,9 @@ is_transitive: true
 [Typedef]
 id: participates_in
 name: participates_in
-comment: Used with a plant anatomical entity as the child and a plant growth and development stage as the parent. For example, plant gametangium participates_in gametophytic phase.
+comment: Used with a plant anatomical entity as the child (domain) and a plant structure development stage as the parent (range). For example, plant gametangium participates_in gametophytic phase.
+domain: PO:0025131 ! plant anatomical entity
+range: PO:0009012 ! plant structure development stage
 holds_over_chain: part_of participates_in
 created_by: Ramona
 creation_date: 2011-03-23T10:52:56Z
