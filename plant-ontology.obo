@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 22:11:2011 17:56
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-rc3
+date: 12:12:2011 10:34
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1-rc1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -2320,12 +2320,14 @@ relationship: part_of PO:0009005 ! root
 id: PO:0003024
 name: stolon
 namespace: plant_anatomy
-def: "A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes." [APweb:Glossary]
+def: "A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes." [APweb:Glossary, POC:curators]
+comment: The stolon develops from an axillary bud and produces adventitious roots at the nodes and a terminal aerial stem. That stem then sends out one or more stolons from its axillary buds and the process is reiterated. A unique part of this process is that the first internode of a stolon is very long and then the shoot becomes an erect rosette.
 subset: reference
 subset: TraitNet
 synonym: "estol&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "runner" RELATED []
 synonym: "ストロン、ほふく茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3413993
 is_a: PO:0025073 ! branch
 
 [Term]
@@ -8169,6 +8171,7 @@ synonym: "B-reproductive stage in rice" RELATED [GRO:0007140]
 synonym: "reproductive in Arabidopsis" RELATED [TAIR:0000306]
 synonym: "sporophyte reproductively competent stage" EXACT []
 synonym: "sporophytic reproductive stage" EXACT []
+xref: OBO_SF_PO:3437888
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -8226,10 +8229,11 @@ id: PO:0007134
 name: sporophyte vegetative stage
 namespace: plant_growth_and_development_stage
 def: "A sporophyte development stage that occurs during the interval between the first division of the zygote and the formation of a sporangium." [POC:curators]
-comment: A sporophyte may begin to senesce or die from other causes before producing sporangia.
+comment: A sporophyte may begin to senesce or die from other causes before producing sporangia. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
 synonym: "vegetative in Arabidopsis" RELATED [TAIR:0000305]
+xref: OBO_SF_PO:3437882
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -16785,7 +16789,7 @@ creation_date: 2011-10-19T10:54:37Z
 id: PO:0025338
 name: collective plant structure development stage
 namespace: plant_growth_and_development_stage
-def: "A plant structure development stage that has as participant a collective plant structure." [POC:curators]
+def: "A plant structure development stage that has as primary participant a collective plant structure." [POC:curators]
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
@@ -16794,7 +16798,7 @@ creation_date: 2011-10-19T11:12:49Z
 id: PO:0025339
 name: plant organ development stage
 namespace: plant_growth_and_development_stage
-def: "A plant structure development stage that has as participant a plant organ." [POC:curators]
+def: "A plant structure development stage that has as primary participant a plant organ." [POC:curators]
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
@@ -16804,7 +16808,8 @@ id: PO:0025340
 name: gametophyte vegetative stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte development stage that occurs during the interval between spore germination and the formation of a gametangium." [POC:curators]
-comment: A gametophyte may begin to senesce or die from other causes before producing gametangia. Some plants, such as the fern Vittaria appalachiana, may never produce gametangia, and remain in the vegetative stage indefinitely.
+comment: A gametophyte may begin to senesce or die from other causes before producing gametangia. Some plants, such as the fern Vittaria appalachiana, may never produce gametangia, and remain in the vegetative stage indefinitely. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
+xref: OBO_SF_PO:3437882
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -16814,9 +16819,10 @@ id: PO:0025341
 name: gametophyte reproductive stage
 namespace: plant_growth_and_development_stage
 def: "A gametophyte development stage that occurs during the interval between the initiation of a gametangium and the onset of senescence." [POC:curators]
-comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing  gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause.
+comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause.
 synonym: "gametophyte reproductively competent stage" EXACT []
 synonym: "gametophytic reproductive stage" EXACT []
+xref: OBO_SF_PO:3437888
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -16883,7 +16889,7 @@ creation_date: 2011-10-19T12:20:16Z
 id: PO:0025348
 name: spore germination stage
 namespace: plant_growth_and_development_stage
-def: "A gametophyte vegetative development stage that has as a participant a whole plant during the interval between spore germination (the first cell division of a spore) and something." [RW:test]
+def: "A gametophyte vegetative development stage that occurs during the interval between spore germination (the first cell division of a spore) and something." [RW:test]
 comment: This stage involves only one cell division. After that, protonema or other stage begins.
 is_a: PO:0025340 ! gametophyte vegetative stage
 created_by: RamonaNYBG
@@ -16951,6 +16957,7 @@ def: "A shoot axis that is flattened and expanded." [ISBN:9780881928501]
 comment: Has an increased surface area for photosynthesis and may function similar to leaves in plants that have no or small leaves, such as cacti. Consists of one to several internodes and nodes. Cladodes bear scale leaves (or leaf scars where temporary leaves have fallen off) that subtend axillary buds.
 synonym: "cladophyll" EXACT []
 synonym: "phylloclade" EXACT []
+xref: OBO_SF_PO:3439006
 is_a: PO:0025029 ! shoot axis
 created_by: RamonaNYBG
 creation_date: 2011-11-16T03:12:07Z
@@ -17119,7 +17126,7 @@ creation_date: 2011-11-22T05:35:39Z
 id: PO:0025369
 name: seed trichome development stage
 namespace: plant_growth_and_development_stage
-def: "A trichome development stage that has as primary participant a seed trichome." [POC:<new dbxref>Curators]
+def: "A trichome development stage that has as primary participant a seed trichome." [POC:Curators]
 comment: Seed trichome development stage consists of the following sub stages: seed trichome initiation stage (PO:0025370), seed trichome elongation stage (PO:0025371), seed trichome secondary wall biosynthesis stage(PO:0025372) and seed trichome maturation stage (PO:0025373).
 synonym: "seed hair development stage" EXACT []
 is_a: PO:0025368 ! trichome development stage
@@ -17131,7 +17138,7 @@ id: PO:0025370
 name: seed trichome initiation stage
 namespace: plant_growth_and_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome initiation and the onset of seed trichome elongation." [POC:Curators]
-comment: comment: Refers to the GO Biological Process terms: seed trichome initiation (GO:0090377) and seed trichome elongation (GO:0090378).
+comment: Refers to the GO Biological Process terms seed trichome initiation (GO:0090377) and seed trichome elongation (GO:0090378).
 synonym: "seed hair initiation stage" EXACT []
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
@@ -17163,7 +17170,7 @@ creation_date: 2011-11-22T05:45:42Z
 id: PO:0025373
 name: seed trichome maturation stage
 namespace: plant_growth_and_development_stage
-def: "A seed trichome development stage which  encompasses the process of seed trichome maturation." [POC:<new dbxref>Curators]
+def: "A seed trichome development stage which encompasses the process of seed trichome maturation." [POC:Curators]
 comment: Refers to the GO Biological Process term: seed trichome maturation (GO:0090380).
 synonym: "seed hair maturation stage" EXACT []
 is_a: PO:0025369 ! seed trichome development stage
@@ -17184,7 +17191,7 @@ creation_date: 2010-07-15T02:54:57Z
 id: PO:0028002
 name: sporophyte development stage
 namespace: plant_growth_and_development_stage
-def: "A whole plant development stage that has as a participant a whole plant during the interval between fertilization or apogamy and its death." [POC:Curators]
+def: "A whole plant development stage that has as primary participant a whole plant during the interval between fertilization or apogamy and its death." [POC:Curators]
 comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts).
 subset: TraitNet
 synonym: "fase esporof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17200,7 +17207,7 @@ creation_date: 2010-07-15T02:56:11Z
 id: PO:0028003
 name: gametophyte development stage
 namespace: plant_growth_and_development_stage
-def: "A whole plant development stage that has as a participant a whole plant during the interval between meiosis or apospory and its death or fertilization." [POC:Curators]
+def: "A whole plant development stage that has as primary participant a whole plant during the interval between meiosis or apospory and its death or fertilization." [POC:Curators]
 comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory.
 subset: TraitNet
 synonym: "fase gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
