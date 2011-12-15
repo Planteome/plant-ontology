@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:12:2011 14:24
-saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-rc4
+date: 15:12:2011 13:56
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-rc3
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -21,6 +21,7 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural" EXACT
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
+remark: Filtered by Has parent with type ID contains "PO:0025034"
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 ontology: po
 treat-xrefs-as-is_a: CARO
@@ -1526,7 +1527,7 @@ relationship: part_of PO:0025201 ! megasporangium
 [Term]
 id: PO:0001000
 name: meristem eloboration
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. the root meristem gets organized" [GR:Anuradha_Pujar]
 comment: This term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -1534,7 +1535,7 @@ is_obsolete: true
 [Term]
 id: PO:0001002
 name: fruit development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of a fruit defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "stage 17 flower in Arabidopsis" RELATED []
 synonym: "stage 18 flower in Arabidopsis" RELATED []
@@ -1543,7 +1544,7 @@ is_a: PO:0025338 ! collective plant structure development stage
 [Term]
 id: PO:0001003
 name: formation of the leaf founder cells
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The initial stage of leaf development when cells in the SAM are already determined to form a leaf primordium, but the primordium itself is not distinguishable morphologically." [TAIR:Katica_Ilic]
 synonym: "P0 stage" RELATED []
 is_a: PO:0001051 ! 1 leaf initiation stage
@@ -1551,21 +1552,21 @@ is_a: PO:0001051 ! 1 leaf initiation stage
 [Term]
 id: PO:0001004
 name: anther developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the anther defined by characteristic morphological, cytological, histological or other visible features." [POC:Felipe_Zapata]
 is_a: PO:0007605 ! androecium developmental stages
 
 [Term]
 id: PO:0001005
 name: A archesporial cells visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An initial stage during which archesporial cells arise in four corners of L2 layer. Change in shape of primordia to more oval." [TAIR:Katica_Ilic]
 is_a: PO:0001004 ! anther developmental stages
 
 [Term]
 id: PO:0001006
 name: B enlarged microsporocyte stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the microsporocytes become conspicuous." [TAIR:Katica_Ilic]
 synonym: "pollen stage 2 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1573,7 +1574,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001007
 name: pollen developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the pollen defined by characteristic morphological, cytological, histological or other visible features." [POC:Felipe_Zapata]
 synonym: "pollen development in Arabidopsis" RELATED []
 is_a: PO:0007605 ! androecium developmental stages
@@ -1581,7 +1582,7 @@ is_a: PO:0007605 ! androecium developmental stages
 [Term]
 id: PO:0001008
 name: C callose wall formation in pollen mother cells
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which diploid pollen mother cells become separated from each other and from tapetum by a callose wall." [TAIR:Katica_Ilic]
 synonym: "pollen mother cell stage" RELATED []
 synonym: "pollen stage 3 in Arabidopsis" RELATED []
@@ -1590,7 +1591,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001009
 name: D pollen mother cell meiosis stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which pollen mother cells undergo meiosis to form tetrads of microspores." [TAIR:Katica_Ilic]
 synonym: "pollen stage 4 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1598,7 +1599,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001010
 name: F microspore release stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the callose wall between the tetrads breaks down and haploid microspores are released and lie freely in locules." [TAIR:Katica_Ilic]
 synonym: "pollen stage 5 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1606,7 +1607,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001011
 name: A microsporogenous mass stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An initial stage during which the archesporial cells divide to give rise to primary parietal and sporogenous cells." [TAIR:Katica_Ilic]
 synonym: "pollen stage 1 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1614,7 +1615,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001012
 name: G early unicellular microspore stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the microspores round up and small vacuoles appear in their cytoplasm. The microspore walls thicken due to the formation of the exine." [TAIR:Katica_Ilic]
 synonym: "pollen stage 6 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1622,7 +1623,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001013
 name: H late unicellular microspore stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which a large vacuole is formed in each microspore causing a rapid increase in size and a displacement of the nucleus to one side." [TAIR:Katica_Ilic]
 synonym: "pollen stage 7 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1630,7 +1631,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001014
 name: I first mitotic division stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the asymmetric, first mitotic division of the microspores occurs producing a large vegetative cell and small generative cell, located near pollen wall." [TAIR:Katica_Ilic]
 synonym: "pollen stage 8 in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1638,7 +1639,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001015
 name: K second mitotic division stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the generative cell undergoes mitotic division to form two male gametes, the sperm cells." [TAIR:Katica_Ilic]
 comment: In taxa with mature two-celled pollen, the second mitotic division takes place after pollen germination, in germinating pollen tube.
 synonym: "pollen stage 9 in Arabidopsis" RELATED []
@@ -1647,7 +1648,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001016
 name: L mature pollen stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the pollen reaches mature stage and desiccates." [TAIR:Katica_Ilic]
 comment: Mature pollen stages is reached at three-celled pollen in some angiosperms (maize, rice and Arabidopsis), while in others, the maturepollen has two haploid cells (tobacco, snapdragon).
 synonym: "pollen stage 10 in Arabidopsis" RELATED []
@@ -1656,7 +1657,7 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001017
 name: M germinated pollen stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The final stage in the life cycle of the male gametophyte. Upon rehydration, mature pollen grain forms a tubular outgrowth, the pollen tube, which carries the male gametes." [TAIR:Katica_Ilic]
 synonym: "germinated pollen grain in Arabidopsis" RELATED []
 is_a: PO:0001007 ! pollen developmental stages
@@ -1664,14 +1665,14 @@ is_a: PO:0001007 ! pollen developmental stages
 [Term]
 id: PO:0001018
 name: B formation of primary parietal and sporogenous cells
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the primary parietal and primary sporogenous layers are derived from archesporial cells." [TAIR:Katica_Ilic]
 is_a: PO:0001004 ! anther developmental stages
 
 [Term]
 id: PO:0001019
 name: formation of leaf primordium
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development when leaf primordium is formed as a small protrusion on the flank of SAM." [TAIR:Katica_Ilic]
 synonym: "P1 stage" RELATED []
 is_a: PO:0001052 ! 2 leaf expansion stage
@@ -1679,7 +1680,7 @@ is_a: PO:0001052 ! 2 leaf expansion stage
 [Term]
 id: PO:0001020
 name: hood-shaped primordium
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development when a hood-shaped primordium is formed, partially enclosing P1 and SAM, as in Poaceae." [TAIR:Katica_Ilic]
 synonym: "P2 stage" RELATED []
 is_a: PO:0001052 ! 2 leaf expansion stage
@@ -1687,7 +1688,7 @@ is_a: PO:0001052 ! 2 leaf expansion stage
 [Term]
 id: PO:0001021
 name: formation of ligule primordium
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development when conical P3 leaf completely encloses SAM, and the ligule primordium is visible, as in Poaceae." [TAIR:Katica_Ilic]
 synonym: "P3 stage" RELATED []
 is_a: PO:0001052 ! 2 leaf expansion stage
@@ -1695,7 +1696,7 @@ is_a: PO:0001052 ! 2 leaf expansion stage
 [Term]
 id: PO:0001023
 name: rapid elongation of leaf blade
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development during which a rapid elongation of the leaf blade occurs; the elongation of the leaf sheath has not started, as in Poaceae." [TAIR:Katica_Ilic]
 synonym: "P4 stage" RELATED []
 is_a: PO:0001052 ! 2 leaf expansion stage
@@ -1703,7 +1704,7 @@ is_a: PO:0001052 ! 2 leaf expansion stage
 [Term]
 id: PO:0001024
 name: rapid elongation of leaf sheath
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development during which a rapid elongation of the leaf sheath occurs, as in Poaceae." [TAIR:Katica_Ilic]
 synonym: "P5 stage" RELATED []
 is_a: PO:0001052 ! 2 leaf expansion stage
@@ -1711,14 +1712,14 @@ is_a: PO:0001052 ! 2 leaf expansion stage
 [Term]
 id: PO:0001025
 name: C four anther lobes formed
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the four-lobed anther pattern with two developing stomium regions (notch) are formed." [TAIR:Katica_Ilic]
 is_a: PO:0001004 ! anther developmental stages
 
 [Term]
 id: PO:0001026
 name: D locules established
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the four clearly defined locules are established. All anther cell types present and microspore mother cells appear." [TAIR:Katica_Ilic]
 synonym: "stage 8 flower in Arabidopsis" RELATED []
 is_a: PO:0001004 ! anther developmental stages
@@ -1726,35 +1727,35 @@ is_a: PO:0001004 ! anther developmental stages
 [Term]
 id: PO:0001027
 name: meristamtic zone formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The meristematic zone is formed" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0001028
 name: elongation zone formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The cells of root primordium undergo elonagtion" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0001029
 name: E tetrad stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage immediately following meiosis, during which the tetrads of microspores are still hold together, enclosed by the callose wall." [TAIR:Katica_Ilic]
 is_a: PO:0001007 ! pollen developmental stages
 
 [Term]
 id: PO:0001030
 name: specialization zone formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The cells develop their characteristic morphology." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0001031
 name: 4 root elongation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which root is elongating." [POC:Curators]
 comment: In some plant species this stage is subdivided into distal and proximal elongating zones.
 synonym: "Benfey's stage 2 of root development" RELATED []
@@ -1763,7 +1764,7 @@ is_a: PO:0007520 ! root development stages
 [Term]
 id: PO:0001032
 name: E tapetum degeneration initiated
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which degeneration of the tapetum is initiated, as the deposition on the surface of the microspore primexine proceeds." [TAIR:Katica_Ilic]
 comment: Microspores within single locule are at unicellular stage.
 is_a: PO:0001004 ! anther developmental stages
@@ -1771,28 +1772,28 @@ is_a: PO:0001004 ! anther developmental stages
 [Term]
 id: PO:0001034
 name: F bilocular anther stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which anther becomes bilocular, after degeneration and breakage of septum below stomium." [TAIR:Katica_Ilic]
 is_a: PO:0001004 ! anther developmental stages
 
 [Term]
 id: PO:0001035
 name: G anther dehiscence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the dehiscence of anthers occurs. Anther breaks along stomium and pollen is released." [TAIR:Katica_Ilic]
 is_a: PO:0001004 ! anther developmental stages
 
 [Term]
 id: PO:0001036
 name: H anther senescence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the senescence of anther and stamen occurs. Shrinkage of cells and anther structure takes place." [TAIR:Katica_Ilic]
 is_a: PO:0001004 ! anther developmental stages
 
 [Term]
 id: PO:0001040
 name: dry seed stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007055
 def: "Mature seed with low moisture content." [TAIR:Katica_Ilic]
 synonym: "00 Dry Seed in soybean" RELATED [SOY:0000009]
@@ -1804,56 +1805,56 @@ is_a: PO:0001170 ! seed development stages
 [Term]
 id: PO:0001041
 name: chalazal and micropylar domain establishment
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The initial stage of endosperm development during which the chalazal and micropilar domains are established." [TAIR:Katica_Ilic]
 is_a: PO:0007633 ! endosperm development stages
 
 [Term]
 id: PO:0001042
 name: functional specialization of the endosperm
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of endosperm development during which the functional specialization of the maturing endosperm occurs." [TAIR:Katica_Ilic]
 is_a: PO:0007633 ! endosperm development stages
 
 [Term]
 id: PO:0001044
 name: sepal differentiation and expansion stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of calyx development defined by differentiation and expansion of sepal." [POC:Felipe_Zapata]
 is_a: PO:0007603 ! calyx developmental stages
 
 [Term]
 id: PO:0001045
 name: fully expanded sepal
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of calyx development when sepal is fully expanded." [POC:Felipe_Zapata]
 is_a: PO:0007603 ! calyx developmental stages
 
 [Term]
 id: PO:0001047
 name: lemma developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the lemma defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001048
 name: palea developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the palea defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001049
 name: lodicule developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the lodicule defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0001050
 name: leaf development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007040
 def: "Stages of development of a leaf defined by characteristic morphological, structural, histological or other visible features." [POC:Curators, TAIR:Tanya_Beradini]
 synonym: "leaf development in Arabidopsis" RELATED []
@@ -1863,7 +1864,7 @@ is_a: PO:0025339 ! plant organ development stage
 [Term]
 id: PO:0001051
 name: 1 leaf initiation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0001003
 def: "The earliest histological evidence of leaf initiation, i.e, a change in the orientation of cell division both in the epidermis and in internal layers of the shoot meristem occurs at this stage (Poethig S, 1997, Plant Cell 9:1077-1087)." [PMID:9254931]
 comment: Cells in the primordium are not yet differentiated.
@@ -1873,7 +1874,7 @@ is_a: PO:0001050 ! leaf development stages
 [Term]
 id: PO:0001052
 name: 2 leaf expansion stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development which begins when cell differentiation and cell expansion occurs and finishes when the leaf reaches its full size." [TAIR:Katica_Ilic]
 synonym: "leaf expansion stage in Arabidopsis" RELATED []
 is_a: PO:0001050 ! leaf development stages
@@ -1881,7 +1882,7 @@ is_a: PO:0001050 ! leaf development stages
 [Term]
 id: PO:0001053
 name: 3 leaf fully expanded
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of leaf development when leaf is fully expanded." [TAIR:Katica_Ilic]
 synonym: "fully expanded leaf stage in Arabidopsis" RELATED []
 is_a: PO:0001050 ! leaf development stages
@@ -1889,7 +1890,7 @@ is_a: PO:0001050 ! leaf development stages
 [Term]
 id: PO:0001054
 name: 4 leaf senescence stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The final stage of leaf development when the leaf ceases metabolic activity and senesces." [TAIR:Tanya_Beradini]
 synonym: "leaf senescence stage in Arabidopsis" RELATED []
 is_a: PO:0001050 ! leaf development stages
@@ -1897,7 +1898,7 @@ is_a: PO:0001050 ! leaf development stages
 [Term]
 id: PO:0001055
 name: lemma primordia visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of lemma development that begins when the lemma primordia arise." [POC:Felipe_Zapata]
 comment: The lemma primordium forms in 1/2 alternate phylotaxy in rice spikelet.
 is_a: PO:0001047 ! lemma developmental stages
@@ -1905,21 +1906,21 @@ is_a: PO:0001047 ! lemma developmental stages
 [Term]
 id: PO:0001056
 name: lemma differentiation and expansion stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of lemma development defined by differentiation and expansion of lemma." [POC:Felipe_Zapata]
 is_a: PO:0001047 ! lemma developmental stages
 
 [Term]
 id: PO:0001057
 name: fully expanded lemma
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of lemma development when lemma is fully expanded." [POC:Felipe_Zapata]
 is_a: PO:0001047 ! lemma developmental stages
 
 [Term]
 id: PO:0001058
 name: palea primordia visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of palea development that begins when the palea primordia arise." [POC:Felipe_Zapata]
 comment: The palea primordium forms in 1/2 alternate phylotaxy in rice spikelet.
 is_a: PO:0001048 ! palea developmental stages
@@ -1927,28 +1928,28 @@ is_a: PO:0001048 ! palea developmental stages
 [Term]
 id: PO:0001059
 name: J bicellular pollen stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the small generative cell moves inward, becoming completely surrounded by the cytoplasm of the vegetative cell." [TAIR:Katica_Ilic]
 is_a: PO:0001007 ! pollen developmental stages
 
 [Term]
 id: PO:0001070
 name: palea differentiation and expansion stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of palea development defined by differentiation and expansion of palea." [POC:Felipe_Zapata]
 is_a: PO:0001048 ! palea developmental stages
 
 [Term]
 id: PO:0001071
 name: fully expanded palea
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of palea development when palea is fully expanded." [POC:Felipe_Zapata]
 is_a: PO:0001048 ! palea developmental stages
 
 [Term]
 id: PO:0001072
 name: lodicule primordia visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of lodicule development that begins when the lodicule primordia arise." [POC:Felipe_Zapata]
 comment: Two lodicules form on the side of the lemma in rice spikelet.
 is_a: PO:0001049 ! lodicule developmental stages
@@ -1956,21 +1957,21 @@ is_a: PO:0001049 ! lodicule developmental stages
 [Term]
 id: PO:0001074
 name: N second mitotic division stage in germinating pollen
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the generative cell undergoes a mitotic division to form two male gametes, the sperm cells." [TAIR:Katica_Ilic]
 is_a: PO:0001017 ! M germinated pollen stage
 
 [Term]
 id: PO:0001077
 name: lodicule differentiation and expansion stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of lodicule development defined by differentiation and expansion of lodicule." [POC:Felipe_Zapata]
 is_a: PO:0001049 ! lodicule developmental stages
 
 [Term]
 id: PO:0001078
 name: E expanded cotyledon stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0001076
 def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
@@ -1980,14 +1981,14 @@ is_a: PO:0007631 ! embryo stage
 [Term]
 id: PO:0001079
 name: fully expanded lodicule
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of lodicule development when lodicule is fully expanded." [POC:Felipe_Zapata]
 is_a: PO:0001049 ! lodicule developmental stages
 
 [Term]
 id: PO:0001081
 name: F mature embryo stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage at which the embryo is fully developed." [APweb:Glossary, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
@@ -1996,14 +1997,14 @@ is_a: PO:0007631 ! embryo stage
 [Term]
 id: PO:0001083
 name: inflorescence development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of an inflorescence defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 is_a: PO:0025338 ! collective plant structure development stage
 
 [Term]
 id: PO:0001094
 name: coleoptilar stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The coleoptilar primordium, SAM and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
 synonym: "SAM and radicle formation stage" RELATED []
 is_a: PO:0007631 ! embryo stage
@@ -2011,7 +2012,7 @@ is_a: PO:0007631 ! embryo stage
 [Term]
 id: PO:0001095
 name: true leaf formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
 is_a: PO:0007631 ! embryo stage
@@ -2019,14 +2020,14 @@ is_a: PO:0007631 ! embryo stage
 [Term]
 id: PO:0001096
 name: primary endosperm cell stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "One cell stage that takes place following the fertilization, produced by the fusion of sperm cell nucleus and one or more polar nuclei." [TAIR:Katica_Ilic]
 is_a: PO:0007633 ! endosperm development stages
 
 [Term]
 id: PO:0001097
 name: zygote stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A sporophyte development stage that occurs during the interval between syngamy and the first cell division." [POC:curators]
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
@@ -2035,21 +2036,21 @@ is_a: PO:0028002 ! sporophyte development stage
 [Term]
 id: PO:0001098
 name: formation of starchy endosperm
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. Stage of endosperm development during wich the formation of starchy endosperm occurs." [TAIR:Katica_Ilic]
 is_obsolete: true
 
 [Term]
 id: PO:0001099
 name: formation of aleurone and starchy layers
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Differentiation of aleurone layer, the outermost endosperm tissue, and the internal starchy tissue." [TAIR:Katica_Ilic]
 is_a: PO:0001042 ! functional specialization of the endosperm
 
 [Term]
 id: PO:0001170
 name: seed development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of seed development, from fertilization to the dry or quiescent state." [TAIR:Katica_Ilic]
 synonym: "seed development in Arabidopsis" RELATED []
 is_a: PO:0009012 ! plant structure development stage
@@ -2057,7 +2058,7 @@ is_a: PO:0009012 ! plant structure development stage
 [Term]
 id: PO:0001180
 name: B proembryo stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [APweb:Glossary, TAIR:Katica_Ilic]
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
@@ -2066,7 +2067,7 @@ is_a: PO:0007631 ! embryo stage
 [Term]
 id: PO:0001185
 name: C globular stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "During this stage the embryo proper retains radial symmetry (increasing in diameter), and three main tissue systems are established." [TAIR:Katica_Ilic]
 synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
@@ -2077,7 +2078,7 @@ is_a: PO:0007631 ! embryo stage
 [Term]
 id: PO:0001378
 name: sepals enclosing meristem
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of calyx development that begins when the developing sepals overlie the floral meristem." [ISBN:0387940898]
 synonym: "stage 4 flower in Arabidopsis " RELATED []
 is_a: PO:0001044 ! sepal differentiation and expansion stage
@@ -2085,7 +2086,7 @@ is_a: PO:0001044 ! sepal differentiation and expansion stage
 [Term]
 id: PO:0001380
 name: sepals enclosing flower bud
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of calyx development that begins when the sepals enclose the floral bud." [ISBN:0387940898]
 synonym: "sepals enclosing floral bud" EXACT []
 synonym: "stage 6 flower in Arabidopsis " RELATED []
@@ -2488,21 +2489,21 @@ relationship: part_of PO:0005679 ! epidermis
 [Term]
 id: PO:0004500
 name: formation of leaflet primordia
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage at which leaflet primordia are initiated on the leaf primordium of a compound leaf." [TAIR:Katica_Ilic]
 is_a: PO:0001052 ! 2 leaf expansion stage
 
 [Term]
 id: PO:0004501
 name: gynoecium differentiation and expansion
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of gynoecium development defined by differentiation and expansion of carpels." [TAIR:Katica_Ilic]
 is_a: PO:0007606 ! gynoecium developmental stages
 
 [Term]
 id: PO:0004502
 name: closure of carpel(s)
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of gynoecium development defined by the closure of the carpel(s)." [TAIR:Katica_Ilic]
 comment: Closure of the carpel can occur in various ways, by fusion or secretion.
 is_a: PO:0007606 ! gynoecium developmental stages
@@ -2510,35 +2511,35 @@ is_a: PO:0007606 ! gynoecium developmental stages
 [Term]
 id: PO:0004503
 name: stigma cell differentiation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Epidermal cells at the top of developing style differentiate stigma." [TAIR:Katica_Ilic]
 is_a: PO:0007606 ! gynoecium developmental stages
 
 [Term]
 id: PO:0004504
 name: ovule differentiation and expansion
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of ovule development defined by differentiation and expansion of ovules." [TAIR:Katica_Ilic]
 is_a: PO:0007619 ! ovule developmental stages
 
 [Term]
 id: PO:0004505
 name: fertilized ovule stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The earliest stage of seed development immediately following double fertilization." [TAIR:Katica_Ilic]
 is_a: PO:0001170 ! seed development stages
 
 [Term]
 id: PO:0004506
 name: developing seed stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of seed development characterized by seed growth and differentiation." [TAIR:Katica_Ilic]
 is_a: PO:0001170 ! seed development stages
 
 [Term]
 id: PO:0004507
 name: D bilateral stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0001043
 alt_id: PO:0001177
 def: "Change from radial to bilateral symmetry takes place during this embryonic stage." [TAIR:Katica_Ilic]
@@ -6234,7 +6235,7 @@ relationship: part_of PO:0020136 ! ear inflorescence
 [Term]
 id: PO:0007001
 name: FR.01 early stage of fruit ripening
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The early stage in fruit ripening." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "09-dough development" RELATED [GRO:0007110]
 synonym: "7 linear grain-filling in maize" RELATED [MaizeGDB:64632]
@@ -6260,7 +6261,7 @@ is_a: PO:0007010 ! 6 ripening
 [Term]
 id: PO:0007002
 name: IE.03 3/4 of inflorescence emerged from flag leaf sheath
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which 3/4 of inflorescence has emerged from flag leaf sheath." [GR:Anuradha_Pujar]
 synonym: "6.04-3/4 of inflorescence emerged in barley" RELATED [GRO:0007099]
 synonym: "6.04-3/4 of inflorescence emerged in oat" RELATED [GRO:0007099]
@@ -6271,7 +6272,7 @@ is_a: PO:0007041 ! inflorescence emergence stage
 [Term]
 id: PO:0007003
 name: IL.03 full inflorescence length reached stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An inflorescence detectable phase during which an inflorescence has reached at its full length." [GR:Anuradha_Pujar, POC:Ramona_Walls]
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
@@ -6284,7 +6285,7 @@ is_a: PO:0007047 ! 3 inflorescence detectable stage
 [Term]
 id: PO:0007004
 name: 3 rapid growth stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE.The stage at which the plant grows rapidly by either or both stem elongation and expansion of the rosette/foliage." [GR:Anuradha_Pujar]
 comment: Many stages like leaf production PO:0007112, axillary shoot formation PO:0007073, inflorescence PO:0007047 often overlap with this stage
 is_obsolete: true
@@ -6292,7 +6293,7 @@ is_obsolete: true
 [Term]
 id: PO:0007005
 name: IL.02 1/2 inflorescence length reached stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An inflorescence detectable phase during which an inflorescence has reached at least one half of its full length, but has not yet reached its full length." [GR:Anuradha_Pujar, POC:Ramona_Walls]
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
@@ -6302,7 +6303,7 @@ is_a: PO:0007047 ! 3 inflorescence detectable stage
 [Term]
 id: PO:0007006
 name: IL.00 inflorescence just visible stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An inflorescence detectable phase during which an inflorescence is just visible, but has not yet reach one quarter of its full length." [POC:Curators]
 comment: Includes the time when the inflorescence can be seen by removing outer leaves or bracts, or when the inflorescence is visible as a swelling of the outer leaves or bracts, such as booting in Zea. This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
@@ -6314,7 +6315,7 @@ is_a: PO:0007047 ! 3 inflorescence detectable stage
 [Term]
 id: PO:0007007
 name: FF.03 fruit size 50 to 70% stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 50% to 70% of its final size." [ISBN:3826331524, POC:Curators]
 comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.07 Pod 70% of final length in soybean" RELATED [SOY:0000082]
@@ -6333,7 +6334,7 @@ is_a: PO:0007042 ! 5 fruit formation
 [Term]
 id: PO:0007008
 name: IE.02 1/2 of inflorescence emerged from flag leaf sheath
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which 1/2 of inflorescence has emerged from flag leaf sheath." [GR:Anuradha_Pujar]
 synonym: "08-heading" RELATED [GRO:0007131]
 synonym: "6.03-1/2 of inflorescence emerged in barley" RELATED [GRO:0007098]
@@ -6349,7 +6350,7 @@ is_a: PO:0007041 ! inflorescence emergence stage
 [Term]
 id: PO:0007009
 name: FF.01 fruit size 10 to 30% stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 10% to 30% of its final size." [ISBN:3826331524, POC:Curators]
 comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.02 Pod 30% of final length in soybean" RELATED [SOY:0000080]
@@ -6361,7 +6362,7 @@ is_a: PO:0007042 ! 5 fruit formation
 [Term]
 id: PO:0007010
 name: 6 ripening
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Maturation of the fruit." [Poc:curators]
 comment: Although the use of stages like dough or particular ripening stages properly refer to the development of an individual fruit, they are commonly used as here to extrapolate to a growth of a whole plant or a group of plants.
 synonym: "08-dough stage in rice" RELATED [GRO:0007042]
@@ -6386,7 +6387,7 @@ is_a: PO:0007130 ! sporophyte reproductive stage
 [Term]
 id: PO:0007013
 name: BO.03 late boot stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The flag leaf sheath swollen." [GR:Anuradha_Pujar, ISBN:3826331524]
 comment: In rice the flag leaf sheath is more than 10cm out of the penultimate leaf sheath. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -6398,7 +6399,7 @@ is_a: PO:0007014 ! booting stage
 [Term]
 id: PO:0007014
 name: booting stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An inflorescence detectable phase characterized by a swelling of the flag leaf sheath, caused by an increase in the size of the inflorescence as it grows up the leaf sheath." [GR:Pankaj_Jaiswal]
 comment: Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -6417,7 +6418,7 @@ is_a: PO:0007006 ! IL.00 inflorescence just visible stage
 [Term]
 id: PO:0007015
 name: radicle emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007507
 def: "The stage at which the radicle or root emerges from seed." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "0.02-radicle emergence from seed in maize" RELATED [GRO:0007005]
@@ -6439,7 +6440,7 @@ relationship: part_of PO:0007131 ! seedling development stage
 [Term]
 id: PO:0007016
 name: 4 flowering
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which any flower(s) on the plant are open." [Poc:curators]
 comment: This stage refers to the whole plant.
 synonym: "07-anthesis in barley" RELATED [GRO:0007101]
@@ -6469,7 +6470,7 @@ is_a: PO:0007130 ! sporophyte reproductive stage
 [Term]
 id: PO:0007017
 name: sporophyte senescent stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The processes that occur near the end of a plant's active life that are associated with the dismantling of cell components and membranes, loss of functional chloroplasts, and an overall decline in metabolism." [Poc:curators]
 synonym: "10.03-kernel loosening in daytime in barley" RELATED [GRO:0007117]
 synonym: "10.03-kernel loosening in daytime in oat" RELATED [GRO:0007117]
@@ -6489,7 +6490,7 @@ is_a: PO:0028002 ! sporophyte development stage
 [Term]
 id: PO:0007018
 name: BO.01 early boot stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The flag leaf sheath has started to extend." [GR:Anuradha_Pujar, ISBN:3826331524]
 comment: In rice the flag leaf sheath is 5cm out of the penultimate leaf sheath. Upper part of the stem is slightly thickened. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -6504,7 +6505,7 @@ is_a: PO:0007014 ! booting stage
 [Term]
 id: PO:0007019
 name: BO.05 flag leaf sheath opened stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The first awns are visible and the flag leaf sheath has opened." [GR:Anuradha_Pujar, ISBN:3826331524]
 comment: Awns will be visible only in those species and varieties where they are known to be present. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -6517,7 +6518,7 @@ is_a: PO:0007014 ! booting stage
 [Term]
 id: PO:0007022
 name: seed imbibition stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A germination stage during which there is absorption of water by the seed." [GR:Anuradha_Pujar, ISBN:0306416875]
 synonym: "0.1 imbibition in maize" RELATED [MaizeGDB:64054]
 synonym: "01 Beginning of seed imbibition in soybean" RELATED [SOY:0000090]
@@ -6538,7 +6539,7 @@ is_a: PO:0007057 ! 0 seed germination stage
 [Term]
 id: PO:0007023
 name: IE.04 inflorescence fully emerged from flag leaf sheath
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the inflorescence has fully emerged from the flag leaf sheath." [GR:Anuradha_Pujar]
 synonym: "6.05-emergence of inflorescence completed in barley" RELATED [GRO:0007100]
 synonym: "6.05-emergence of inflorescence completed in oat" RELATED [GRO:0007100]
@@ -6549,7 +6550,7 @@ is_a: PO:0007041 ! inflorescence emergence stage
 [Term]
 id: PO:0007024
 name: FL.04 end of flowering
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which flowering is complete." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
 synonym: "6.09 End of flowering in soybean" RELATED [SOY:0000076]
@@ -6567,7 +6568,7 @@ is_a: PO:0007016 ! 4 flowering
 [Term]
 id: PO:0007025
 name: IE.00 inflorescence tip just visible above flag leaf sheath
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the inflorescence tip is just visible above flag leaf sheath." [GR:Anuradha_Pujar]
 synonym: "6.01-first spikelet of inflorescence visible in barley" RELATED [GRO:0007096]
 synonym: "6.01-first spikelet of inflorescence visible in oat" RELATED [GRO:0007096]
@@ -6584,7 +6585,7 @@ is_a: PO:0007041 ! inflorescence emergence stage
 [Term]
 id: PO:0007026
 name: FL.00 first flower(s) open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the first flower(s) open." [GR:Pankaj_Jaiswal]
 comment: These first flowers are not necessarily the oldest flowers in the inflorescence. In some cereal plants the flowering starts in the middle of the inflorescence. This stage refers to the whole plant.
 synonym: "6.00 1st flowers on main stem open in soybean" RELATED [SOY:0000072]
@@ -6600,7 +6601,7 @@ is_a: PO:0007016 ! 4 flowering
 [Term]
 id: PO:0007027
 name: FF.04 fruit size 70% to final size stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 70% of its final size to its final size." [ISBN:3826331524, POC:Curators]
 comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.09 Pod full size in soybean" RELATED [SOY:0000084]
@@ -6623,7 +6624,7 @@ is_a: PO:0007042 ! 5 fruit formation
 [Term]
 id: PO:0007028
 name: BO.04 flag leaf sheath opening stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The flag leaf sheath starts opening." [ISBN:3826331524]
 comment: Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -6636,7 +6637,7 @@ is_a: PO:0007014 ! booting stage
 [Term]
 id: PO:0007029
 name: FF.02 fruit size 30 to 50% stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 30% to 50% of its final size." [ISBN:3826331524, POC:Curators]
 comment: This term can only be used of the final size of the fruit is known.
 synonym: "7.01-blister stage in maize" RELATED [GRO:0007030]
@@ -6661,7 +6662,7 @@ is_a: PO:0007042 ! 5 fruit formation
 [Term]
 id: PO:0007030
 name: seedling shoot emergence stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Shoot or leaf breaks through soil surface." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "07 shoot emergence in soybean" RELATED [SOY:0000012]
 synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
@@ -6671,7 +6672,7 @@ is_a: PO:0007131 ! seedling development stage
 [Term]
 id: PO:0007031
 name: FR.02 mid stage of fruit ripening
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage when fruit ripening is midway." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "10.01-soft dough in sorghum" RELATED [GRO:0007133]
 synonym: "7.4 late dough stage/embryo 4 in maize" RELATED [MaizeGDB:67379]
@@ -6694,7 +6695,7 @@ is_a: PO:0007010 ! 6 ripening
 [Term]
 id: PO:0007032
 name: FF.00 fruit size up to 10% stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A fruit formation stage that begins with the formation of a zygote and ends when the fruit has reached 10% of its final size." [ISBN:3826331524, MaizeGDB:ms, POC:Curators]
 comment: This fruit development stage may begin without fertilization or formation of a zygote in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This term can only be used of the final size of the fruit is known.
 synonym: "7.01 Pod 10% of final length in soybean" RELATED [SOY:0000079]
@@ -6707,7 +6708,7 @@ is_a: PO:0007042 ! 5 fruit formation
 [Term]
 id: PO:0007033
 name: whole plant development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as a participant a whole plant." [POC:curators]
 subset: TraitNet
 synonym: "cereal plant ontology " RELATED [GRO:0080001]
@@ -6723,7 +6724,7 @@ is_a: PO:0009012 ! plant structure development stage
 [Term]
 id: PO:0007034
 name: FL.01 1/4 of flowers open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which 1/4 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
 synonym: "6.02 1/4 of flowers on the main stem open in soybean" RELATED [SOY:0000073]
@@ -6733,7 +6734,7 @@ is_a: PO:0007016 ! 4 flowering
 [Term]
 id: PO:0007035
 name: 7-8 fruit formation and maturation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. This stage refers to the developmental and physiological changes that occur in the whole plant after fertilization and during fruit development, maturation, and provisioning." [Poc:curators]
 comment: We have chosen to use fruit size as a marker of these physiological processes to represent the whole plant growth stage.
 synonym: "06-post-flowering in maize" RELATED [GRO:0007025]
@@ -6760,7 +6761,7 @@ is_obsolete: true
 [Term]
 id: PO:0007036
 name: FR.00 beginning of fruit ripening
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which fruit maturation begins." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "8.01 Beginning of bean ripening in soybean" RELATED [SOY:0000085]
 synonym: "beginning of fruit coloration" RELATED []
@@ -6771,14 +6772,14 @@ is_a: PO:0007010 ! 6 ripening
 [Term]
 id: PO:0007037
 name: inflorescence bifurcation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of inflorescence development marked by the formation of two, oftern equal-sized, inflorescence meristems from one inflorescence meristem." [POC:Curators]
 is_a: PO:0001083 ! inflorescence development stages
 
 [Term]
 id: PO:0007038
 name: FR.04 fruit ripening complete
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which fruit ripening is complete." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "10-ripening in barley" RELATED [GRO:0007114]
 synonym: "10-ripening in oat" RELATED [GRO:0007114]
@@ -6802,14 +6803,14 @@ is_a: PO:0007010 ! 6 ripening
 [Term]
 id: PO:0007039
 name: leaf trichome development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A trichome development stage that has as primary participant a leaf trichome." [GR:Chih-Wei_Tung, POC:Curators]
 is_a: PO:0025368 ! trichome development stage
 
 [Term]
 id: PO:0007041
 name: inflorescence emergence stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An inflorescence detectable phase during which an inflorescence emerges from sheathing leaves or bracts." [GR:Anuradha_Pujar, MaizeGDB:ms, POC:Curators]
 comment: Includes emergence of a Zea mays inflorescence from a flag leaf sheath, following booting. In US cornbelt maize (including B73) the tassel fully emerges about 2-3 days prior to silk emergence from husk leaves. At this time the ear and husk may still be enclosed within its leaf sheath depending on the variety and environmental conditions.
 synonym: "06-heading stage in rice" RELATED [GRO:0007044]
@@ -6828,7 +6829,7 @@ is_a: PO:0007047 ! 3 inflorescence detectable stage
 [Term]
 id: PO:0007042
 name: 5 fruit formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Formation of the seed-bearing structure after flowering." [Poc:curators]
 comment: Although the use of stages like milk or particular fruit sizes properly refer to the development of an individual fruit, they are commonly used as here to extrapolate to a growth of a whole plant or a group of plants.
 synonym: "07-milk stage in rice" RELATED [GRO:0007046]
@@ -6855,7 +6856,7 @@ is_a: PO:0007130 ! sporophyte reproductive stage
 [Term]
 id: PO:0007043
 name: hypocotyl emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Emergence of the hypocotyl above ground." [GR:Anuradha_Pujar, ISBN:0306416875]
 comment: Occurs in plants with epigeal germination.
 synonym: "0.07.01 Cotyledons and hypocotyl emerge in soybean" RELATED [SOY:0000013]
@@ -6868,7 +6869,7 @@ is_a: PO:0007030 ! seedling shoot emergence stage
 [Term]
 id: PO:0007044
 name: BO.02 mid boot stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The flag leaf sheath is just visibly swollen." [GR:Anuradha_Pujar, ISBN:3826331524]
 comment: In rice the flag leaf sheath is 5-10cm out of the penultimate leaf sheath. Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -6882,7 +6883,7 @@ is_a: PO:0007014 ! booting stage
 [Term]
 id: PO:0007045
 name: coleoptile emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Emergence of coleoptile above ground." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "0.3 coleoptile emergence from seed in maize" RELATED [MaizeGDB:67352]
 synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
@@ -6891,7 +6892,7 @@ is_a: PO:0007030 ! seedling shoot emergence stage
 [Term]
 id: PO:0007046
 name: IL.01 1/4 inflorescence length reached stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "An inflorescence detectable phase during which an inflorescence has reached at least one quarter of its full length, but has not yet reached one half of its full length." [GR:Anuradha_Pujar, POC:Ramona_Walls]
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
@@ -6901,7 +6902,7 @@ is_a: PO:0007047 ! 3 inflorescence detectable stage
 [Term]
 id: PO:0007047
 name: 3 inflorescence detectable stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007012
 def: "A reproductive growth stage during which an inflorescence is detectable." [MaizeGDB:ms, POC:Curators]
 comment: This includes the stage when an inflorescence starts to develop (and is detectable only by assay or with a microscope), to the stage where it is visible to the naked eye. This includes the booting stage in the grasses (Poaceae). There is no one-to-one correspondence between some of the phases of inflorescence formation in members of Poaceae (e.g., booting) with that of other families.
@@ -6917,7 +6918,7 @@ is_a: PO:0007130 ! sporophyte reproductive stage
 [Term]
 id: PO:0007048
 name: IE.01 1/4 of inflorescence emerged from flag leaf sheath
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which 1/4 of inflorescence has emerged from flag leaf sheath." [GR:Anuradha_Pujar]
 synonym: "30% of panicle emerged in rice" RELATED []
 synonym: "6.02-1/4 of inflorescence emerged in barley" RELATED [GRO:0007097]
@@ -6929,7 +6930,7 @@ is_a: PO:0007041 ! inflorescence emergence stage
 [Term]
 id: PO:0007049
 name: cotyledon emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007069
 def: "Emergence of cotyledons above ground." [GR:Anuradha_Pujar, ISBN:3826331524]
 comment: This cannot be used in plants with hypogeal germination.
@@ -6961,7 +6962,7 @@ is_a: PO:0007030 ! seedling shoot emergence stage
 [Term]
 id: PO:0007050
 name: FR.03 late stage of fruit ripening
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The late stage of fruit ripening." [GR:Anuradha_Pujar, ISBN:3826331524]
 synonym: "09-maturity in maize" RELATED [GRO:0007037]
 synonym: "10.02-hard dough in sorghum" RELATED [GRO:0007134]
@@ -6998,7 +6999,7 @@ is_a: PO:0007010 ! 6 ripening
 [Term]
 id: PO:0007051
 name: BO.00 booting begins stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Booting has just begun." [GR:Anuradha_Pujar, ISBN:3826331524]
 comment: Booting is a term used specifically for grasses (Poaceae).
 subset: Poaceae
@@ -7007,7 +7008,7 @@ is_a: PO:0007014 ! booting stage
 [Term]
 id: PO:0007052
 name: FL.03 3/4 of flowers open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which 3/4 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
 synonym: "6.02 3/4 of flowers on main stem open in soybean" RELATED [SOY:0000074]
@@ -7019,7 +7020,7 @@ is_a: PO:0007016 ! 4 flowering
 [Term]
 id: PO:0007053
 name: FL.02 1/2 of flowers open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which 1/2 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
 synonym: "6.02 1/2 of flowers on main stem open in soybean" RELATED [SOY:0000094]
@@ -7034,7 +7035,7 @@ is_a: PO:0007016 ! 4 flowering
 [Term]
 id: PO:0007054
 name: epicotyl emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Emergence of the epicotyl above ground." [GR:Anuradha_Pujar, ISBN:0306416875]
 comment: Only the first true foliage leaf or pair of leaves are visible. Occurs in plants with hypogeal germination.
 is_a: PO:0007030 ! seedling shoot emergence stage
@@ -7042,14 +7043,14 @@ is_a: PO:0007030 ! seedling shoot emergence stage
 [Term]
 id: PO:0007056
 name: 1 pattern formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Trichome initiation stage that determine numbers of trichome are formed." [GR:Chih-Wei_Tung]
 is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007057
 name: 0 seed germination stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The resumption of growth by the embryo in a seed." [GR:Anuradha_Pujar, ISBN:047124529]
 synonym: "0 germination in maize" RELATED [MaizeGDB:64055]
 synonym: "0 germination in Solanaceae" RELATED [SGN:0000003]
@@ -7069,27 +7070,27 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 [Term]
 id: PO:0007058
 name: 2 endoreduplication
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage trichome nuclei continue to replicate their DNA after mitosis and cytokinesis have ceased, and as a consequence have a DNA content much greater than 2C." [GR:Chih-Wei_Tung]
 is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007059
 name: 3 branch formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage trichome develops branches." [GR:Chih-Wei_Tung]
 is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007060
 name: obsolete growth and development terms
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 is_obsolete: true
 
 [Term]
 id: PO:0007061
 name: 2.00 main shoot only
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 synonym: "3.01-main shoot only in barley" RELATED [GRO:0007087]
 synonym: "3.01-main shoot only in oat" RELATED [GRO:0007087]
@@ -7101,7 +7102,7 @@ is_obsolete: true
 [Term]
 id: PO:0007062
 name: SE.06 six nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which six nodes or six internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.06 6 nodes/internodes visible in soybean" RELATED [SOY:0000055]
@@ -7115,7 +7116,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007063
 name: LP.07 seven leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at seven nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.07 6th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000021]
@@ -7145,7 +7146,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007064
 name: LP.12 twelve leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at twelve nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.12 11th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000026]
@@ -7165,7 +7166,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007065
 name: LP.05 five leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at five nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "02-tassel initiation in maize" RELATED [GRO:0007011]
@@ -7199,7 +7200,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007066
 name: SE.09 nine nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which nine nodes or nine internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.09 9 nodes/internodes visible in soybean" RELATED [SOY:0000058]
@@ -7209,7 +7210,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007067
 name: LP.17 seventeen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at seventeen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.17 16th trifoliate leaf unfolded in soybean" RELATED [SOY:0000031]
@@ -7227,7 +7228,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007068
 name: mid rosette growth
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Rosette has reached approximately 50% of its final diameter." [Poc:curators]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "mid rosette growth in Arabidopsis" RELATED [TAIR:0000044]
@@ -7236,7 +7237,7 @@ is_a: PO:0007113 ! rosette growth
 [Term]
 id: PO:0007070
 name: SE.08 eight nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which eight nodes or eight internodes are visible." [GR:Anuradha_Pujar]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.08 8 nodes/internodes visible in soybean" RELATED [SOY:0000057]
@@ -7246,7 +7247,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007071
 name: 2.02 main shoot and axillary shoots visible at two nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at two nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.02 Main shoot and axillary shoots visible at 2 nodes in soybean" RELATED [SOY:0000041]
@@ -7266,7 +7267,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007072
 name: LP.18 eighteen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at eighteen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.18 17th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000032]
@@ -7286,7 +7287,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007073
 name: 2 formation of axillary shoot stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the axillary shoots are forming." [Poc:curators]
 synonym: "03-tillering in barley" RELATED [GRO:0007069]
 synonym: "03-tillering in oat" RELATED [GRO:0007069]
@@ -7303,7 +7304,7 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 [Term]
 id: PO:0007074
 name: SE.15 fifteen nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which fifteen nodes or fifteen internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.15 15 nodes/internodes visible in soybean" RELATED [SOY:0000064]
@@ -7312,14 +7313,14 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007075
 name: 5.02 20% of inflorescence emerged.
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007076
 name: late rosette growth
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Rosette has reached approximately 70% of its final diameter." [Poc:curators]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "late rosette growth in Arabidopsis" RELATED [TAIR:0000045]
@@ -7328,7 +7329,7 @@ is_a: PO:0007113 ! rosette growth
 [Term]
 id: PO:0007077
 name: 2.08 main shoot and axillary shoots visible at eight nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at eight nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.08 Main shoot and axillary shoots visible at 8 nodes in soybean" RELATED [SOY:0000047]
@@ -7348,7 +7349,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007078
 name: rosette growth complete
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage at which rosette no longer increases in diameter, its leaf growth and expansion having ceased." [Poc:curators]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "complete rosette in Arabidopsis" RELATED [TAIR:0000418]
@@ -7357,7 +7358,7 @@ is_a: PO:0007113 ! rosette growth
 [Term]
 id: PO:0007079
 name: SE.00 stem elongation begins
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the internodes begin to elongate." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.00 stem elongation begins in soybean" RELATED [SOY:0000049]
@@ -7376,7 +7377,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007080
 name: 2.03 main shoot and axillary shoots visible at three nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at three nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.03 Main shoot and axillary shoots visible at 3 nodes in soybean" RELATED [SOY:0000042]
@@ -7396,7 +7397,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007081
 name: early rosette growth
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Rosette has reached approximately 20% of its final diameter." [Poc:curators]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "early rosette growth in Arabidopsis" RELATED [TAIR:0000043]
@@ -7405,7 +7406,7 @@ is_a: PO:0007113 ! rosette growth
 [Term]
 id: PO:0007082
 name: LP.20 twenty or more leaves whorls visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at twenty or more nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.20 19th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000034]
@@ -7432,7 +7433,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007083
 name: LP.13 thirteen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at thirteen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.13 12th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000027]
@@ -7452,7 +7453,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007084
 name: SE.10 ten nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which ten nodes or ten internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.10 10 nodes/internodes visible in soybean" RELATED [SOY:0000059]
@@ -7461,7 +7462,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007085
 name: LP.14 fourteen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at fourteen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.14 13th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000028]
@@ -7479,7 +7480,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007086
 name: SE.05 five nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which five nodes or five internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.05 5 nodes/internodes visible in soybean" RELATED [SOY:0000054]
@@ -7493,7 +7494,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007087
 name: 2.01 main shoot and axillary shoots visible at one node
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoot(s) at one node is (are) visible." [Poc:curators]
 synonym: "2.01 Main shoot and axillary shoot visible at one node in soybean" RELATED [SOY:0000040]
 synonym: "2.01 main shoot and axillary shoots visible at one node in Solanaceae" RELATED [SGN:0000023]
@@ -7512,7 +7513,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007088
 name: 2.04 main shoot and axillary shoots visible at four nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at four nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.04 Main shoot and axillary shoots visible at 4 nodes in soybean" RELATED [SOY:0000043]
@@ -7532,7 +7533,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007089
 name: stem elongation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the internodes elongate." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "04-stem elongation in barley" RELATED [GRO:0007080]
@@ -7556,7 +7557,7 @@ is_a: PO:0007112 ! 1 main shoot growth stage
 [Term]
 id: PO:0007090
 name: SE.13 thirteen nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which thirteen nodes or thirteen internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.13 13 nodes/internodes visible in soybean" RELATED [SOY:0000062]
@@ -7565,7 +7566,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007091
 name: SE.01 one node or internode visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which one node or one internode is visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.01 one node visible in soybean" RELATED [SOY:0000050]
@@ -7579,7 +7580,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007092
 name: SE.04 four nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which four nodes or four internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.04 4 nodes/internodes visible in soybean" RELATED [SOY:0000053]
@@ -7593,7 +7594,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007093
 name: 2.05 main shoot and axillary shoots visible at five nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at five nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.05 Main shoot and axillary shoots visible at 5 nodes in soybean" RELATED [SOY:0000044]
@@ -7616,7 +7617,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007094
 name: LP.01 one leaf visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at one node, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar, Poc:curators]
 comment: In the taxa with hypogeal type germination the first leaf on the epicotyl is leaf 1, and in grasses, the coleoptile is leaf 1. The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1-4 leaf stage in rice" RELATED [GRO:0007142]
@@ -7641,7 +7642,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007095
 name: LP.08 eight leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at eight nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.08 7th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000022]
@@ -7670,7 +7671,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007096
 name: SE.03 three nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which three nodes or three internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.03 3 nodes/internodes visible in soybean" RELATED [SOY:0000052]
@@ -7684,7 +7685,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007097
 name: SE.14 fourteen nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which fourteen nodes or fourteen internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.14 14 nodes/internodes visible in soybean" RELATED [SOY:0000063]
@@ -7693,7 +7694,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007098
 name: LP.02 two leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at two nodes, other than the cotyledonary node, are visible above ground." [Poc:curators]
 comment: In grasses, the plant has one leaf plus the coleoptile. The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1-4 leaf stage in rice" RELATED [GRO:0007142]
@@ -7721,7 +7722,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007099
 name: SE.97 flag leaf visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the flag leaf is visible." [GR:Anuradha_Pujar]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "06-flag leaf visible in sorghum" RELATED [GRO:0007129]
@@ -7734,7 +7735,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007100
 name: SE.16 sixteen or more nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which sixteen nodes or more, or sixteen internodes or more are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.16 16 or more nodes/internodes visible in soybean" RELATED [SOY:0000065]
@@ -7743,7 +7744,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007101
 name: LP.09 nine leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at nine nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.09 8th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000023]
@@ -7771,14 +7772,14 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007102
 name: 5.04 40% of inflorescence emerged
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007103
 name: LP.10 ten leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at ten nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "10 rosette leaf in Arabidopsis" RELATED [TAIR:0000413]
@@ -7794,7 +7795,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007104
 name: LP.15 fifteen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at fifteen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.15 14th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000029]
@@ -7809,14 +7810,14 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007105
 name: 5.06 60% of inflorescence emerged
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007106
 name: LP.03 three leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at three nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "02-three leaf stage in sorghum" RELATED [GRO:0007126]
@@ -7841,14 +7842,14 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007107
 name: 5.08 80% of inflorescence emerged
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007108
 name: SE.07 seven nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which seven nodes or seven internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.07 7 nodes/internodes visible in soybean" RELATED [SOY:0000056]
@@ -7858,7 +7859,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007109
 name: SE.99 maximum stem length reached
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which maximum stem length is reached." [GR:Anuradha_Pujar]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.99 Maximum stem length reached in soybean" RELATED [SOY:0000066]
@@ -7876,7 +7877,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007110
 name: 2.09 main shoot and axillary shoots visible at nine or more nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at nine nodes or more are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.09 Main shoot and axillary shoots visible at 9 or more nodes in soybean" RELATED [SOY:0000048]
@@ -7898,7 +7899,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007111
 name: SE.12 twelve nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which twelve nodes or twelve internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.12 12 nodes/internodes visible in soybean" RELATED [SOY:0000061]
@@ -7907,7 +7908,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007112
 name: 1 main shoot growth stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which vegetative structures are being produced by SAM." [Poc:curators]
 comment: In monocots each leaf stage is defined according to the uppermost leaf whose collar is visible (Handbook of plant and crop physiology).
 synonym: "01-seedling stage of maize" RELATED [GRO:0007007]
@@ -7925,7 +7926,7 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 [Term]
 id: PO:0007113
 name: rosette growth
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of growth based on expansion of the rosette in Arabidopsis." [TAIR:Katica_Ilic]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "rosette growth in Arabidopsis" RELATED [TAIR:0000042]
@@ -7934,7 +7935,7 @@ is_a: PO:0007112 ! 1 main shoot growth stage
 [Term]
 id: PO:0007114
 name: SE.11 eleven nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which eleven nodes or eleven internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.11 11 nodes/internodes visible in soybean" RELATED [SOY:0000060]
@@ -7943,7 +7944,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007115
 name: LP.04 four leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at four nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "02-tassel initiation in maize" RELATED [GRO:0007011]
@@ -7975,7 +7976,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007116
 name: LP.11 eleven leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at eleven nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.11 10th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000025]
@@ -7993,7 +7994,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007117
 name: SE.02 two nodes or internodes visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which two nodes or two internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.02 2 nodes/internode visible in soybean" RELATED [SOY:0000051]
@@ -8008,7 +8009,7 @@ is_a: PO:0007089 ! stem elongation
 [Term]
 id: PO:0007118
 name: 2.06 main shoot and axillary shoots visible at six nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at six nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.06 Main shoot and axillary shoots visible at 6 nodes in soybean" RELATED [SOY:0000045]
@@ -8027,7 +8028,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007119
 name: LP.16 sixteen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at sixteen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.16 15th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000030]
@@ -8045,7 +8046,7 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007120
 name: LP.19 nineteen leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at nineteen nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "1.19 18th trifoliolate leaf unfolded in soybean" RELATED [SOY:0000033]
@@ -8062,14 +8063,14 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007121
 name: 6.01 10% of flowers open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007122
 name: 2.07 main shoot and axillary shoots visible at seven nodes
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which main shoot and axillary shoots at seven nodes are visible." [GR:Anuradha_Pujar]
 comment: The axillary shoot can be a single shoot or a pair of axillary shoots at each node.
 synonym: "2.07 Main shoot and axillary shoots visible at 7 nodes in soybean" RELATED [SOY:0000046]
@@ -8089,7 +8090,7 @@ is_a: PO:0007073 ! 2 formation of axillary shoot stage
 [Term]
 id: PO:0007123
 name: LP.06 six leaves visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which leaves at six nodes, other than the cotyledonary node, are visible above ground." [GR:Anuradha_Pujar]
 comment: The leaves can be a single leaf, two, or whorls of leaves at each node.
 synonym: "03-tillering stage in rice" RELATED [GRO:0007049]
@@ -8120,28 +8121,28 @@ is_a: PO:0007133 ! leaf production
 [Term]
 id: PO:0007124
 name: 6.03 30% of flowers open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007125
 name: 6.04 40% of flowers open
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007126
 name: 7.02 fruit size 20%
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007127
 name: 7.04 fruit size 40%
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 synonym: "7.2 milk stage/embryo 2 in maize" RELATED [MaizeGDB:67373]
 is_obsolete: true
@@ -8149,21 +8150,21 @@ is_obsolete: true
 [Term]
 id: PO:0007128
 name: 7.06 fruit size 60%
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007129
 name: 7.08 fruit size 80%
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007130
 name: sporophyte reproductive stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A sporophyte development stage that occurs during the interval between the initiation of a sporangium and the onset of senescence." [POC:curators]
 comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing  sporangia, but once it has initiated a single sporangium, it remains in the reproductive stage until senescence or death by some other cause.
 synonym: "B reproductive growth in Solanaceae" RELATED [SGN:0000032]
@@ -8177,7 +8178,7 @@ is_a: PO:0028002 ! sporophyte development stage
 [Term]
 id: PO:0007131
 name: seedling development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A vegetative growth stage that has as a participant a whole plant during the interval between germination and development of the first adult leaves." [POC:Curators]
 comment: This terms is used only for seed plants, although non-seed plants may have a comparable phase during which they produce juvenile or transition leaves.
 synonym: "seedling growth in Solanaceae" RELATED [SGN:0000005]
@@ -8187,7 +8188,7 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 [Term]
 id: PO:0007132
 name: sporophyte dormant stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A sporophyte development stage that occurs during the interval between the suspension of physiological activity and its reactivation." [POC:curators]
 comment: During the sporophyte dormant stage, a sporophyte participates in dormancy processes (GO:0022611). The dormant stage is a response to environmental conditions, such as extreme heat, drought, or cold. This term only applies to a whole plant in the sporophyte stage, not to the dormant stage of a seed or other plant structures.
 synonym: "10.05-seed dormant in barley" RELATED [GRO:0007119]
@@ -8218,7 +8219,7 @@ is_a: PO:0028002 ! sporophyte development stage
 [Term]
 id: PO:0007133
 name: leaf production
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the leaves produced by SAM are visible above the ground in a seedling or mature plant." [Poc:curators]
 comment: This stage is recommended over rosette growth or stem elongation as it is most easily observed and least ambiguous.
 synonym: "leaf production in Solanaceae" RELATED [SGN:0000012]
@@ -8227,7 +8228,7 @@ is_a: PO:0007112 ! 1 main shoot growth stage
 [Term]
 id: PO:0007134
 name: sporophyte vegetative stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A sporophyte development stage that occurs during the interval between the first division of the zygote and the formation of a sporangium." [POC:curators]
 comment: A sporophyte may begin to senesce or die from other causes before producing sporangia. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
@@ -8239,14 +8240,14 @@ is_a: PO:0028002 ! sporophyte development stage
 [Term]
 id: PO:0007135
 name: 4 growth directionality
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage involved in the directionality of expansion growth." [GR:Chih-Wei_Tung]
 is_a: PO:0007039 ! leaf trichome development stage
 
 [Term]
 id: PO:0007501
 name: root cap formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the root cap becomes evident." [GR:Anuradha_Pujar]
 comment: The number and origin of root cap initials that form the root cap varies among species. The root cap initials become independent from the more internally located root meristem cells by an increase in the thickness of the cell wall that separates them.
 synonym: "root cap formation in crown root." RELATED []
@@ -8257,7 +8258,7 @@ is_a: PO:0007525 ! 3 establishment of tissue systems
 [Term]
 id: PO:0007503
 name: A2.1 root intials differntiation of primary roots
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The root initials divide repeatedly and add more cells" [GR:Anuradha_Pujar]
 comment: This term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -8265,7 +8266,7 @@ is_obsolete: true
 [Term]
 id: PO:0007504
 name: crown root primordium formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the initial cells of crown root primordium are formed in the innermost ground meristem cells by one or two periclinal divisions." [GR:Anuradha_Pujar]
 comment: Crown root primordia formed endogenously opposite the collateral bundles in maize.
 is_a: PO:0007505 ! 1 root primordium formation
@@ -8273,21 +8274,21 @@ is_a: PO:0007505 ! 1 root primordium formation
 [Term]
 id: PO:0007505
 name: 1 root primordium formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which root primordium originates and develops at specific locations in embryonic and post embryonic roots." [GR:Anuradha_Pujar]
 is_a: PO:0007520 ! root development stages
 
 [Term]
 id: PO:0007506
 name: primary root primordium formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which a group of cells or initials that will differentiate into the primary root become organized in the embryo ." [GR:Anuradha_Pujar]
 is_a: PO:0007505 ! 1 root primordium formation
 
 [Term]
 id: PO:0007509
 name: root vascular cylinder differentiation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the root vascular cylinder becomes evident." [GR:Anuradha_Pujar]
 comment: The first identifiable region in the differentiating vascular cylinder is the pericycle. In the xylem the differentiation of the tracheary elements begins in a centrifugal direction but is completed in the centripetal direction. The first phloem elements mature before the first xylem elements.
 is_a: PO:0007525 ! 3 establishment of tissue systems
@@ -8295,21 +8296,21 @@ is_a: PO:0007525 ! 3 establishment of tissue systems
 [Term]
 id: PO:0007510
 name: root emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the fully formed root emerges." [GR:Anuradha_Pujar]
 is_a: PO:0001031 ! 4 root elongation
 
 [Term]
 id: PO:0007511
 name: lateral root primordium formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "This stage at which the transverse divisions in pericycle cells form the initials of the lateral root primordium." [GR:Anuradha_Pujar]
 is_a: PO:0007505 ! 1 root primordium formation
 
 [Term]
 id: PO:0007512
 name: A2 root initials differentiation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The root initials differentiate by cell division and cell expansion." [GR:Anuradha_Pujar]
 comment: Crown root stages are based on rice plant. This term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -8317,7 +8318,7 @@ is_obsolete: true
 [Term]
 id: PO:0007513
 name: root cortex differentiation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the root cortex becomes evident." [GR:Anuradha_Pujar]
 comment: Repetitive periclinal divisions and radial enlargement of cells form the cortex layers, the innermost layers become the endodermis with the differentiation of casparian strips.
 synonym: "cortex differentiation of crown root." RELATED []
@@ -8328,14 +8329,14 @@ is_a: PO:0007525 ! 3 establishment of tissue systems
 [Term]
 id: PO:0007514
 name: B3 crown root meristem formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stage at which the meristem of the crown root becomes evident." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007516
 name: root epidermal differentiation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the root epidermis becomes evident." [GR:Anuradha_Pujar]
 comment: Root hairs come to full development beyond the region of elongation zone, approximately at the level where the xylem begins to mature.
 synonym: "epidermal differentiation of lateral root." RELATED []
@@ -8346,7 +8347,7 @@ is_a: PO:0007525 ! 3 establishment of tissue systems
 [Term]
 id: PO:0007517
 name: lateral root emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the lateral root emerges." [GR:Anuradha_Pujar]
 comment: Starch grains can be seen in the root cap after emergence.
 is_a: PO:0007510 ! root emergence
@@ -8354,7 +8355,7 @@ is_a: PO:0007510 ! root emergence
 [Term]
 id: PO:0007518
 name: crown root emergence
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the crown root emerges." [GR:Anuradha_Pujar]
 comment: Crown root stages are based on rice plant.
 is_a: PO:0007510 ! root emergence
@@ -8362,7 +8363,7 @@ is_a: PO:0007510 ! root emergence
 [Term]
 id: PO:0007519
 name: 5 root hair formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the root hairs becomes evident." [GR:Anuradha_Pujar]
 synonym: "Benfey's stage 3 of root development" RELATED []
 is_a: PO:0007520 ! root development stages
@@ -8370,7 +8371,7 @@ is_a: PO:0007520 ! root development stages
 [Term]
 id: PO:0007520
 name: root development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007011
 def: "Stages of development of a root defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar]
 comment: At present the stages are described for primary, lateral and crown roots and stages for adventitious root formed by wounding or hormone treatment is not described. Finer resolution of root stages has been kept in the obsolete node as they are not consistently used in the consulted literature. These terms will be reintroduced into the ontology when there is a specific user request.
@@ -8380,7 +8381,7 @@ is_a: PO:0025339 ! plant organ development stage
 [Term]
 id: PO:0007521
 name: C3.1 metaxylem differentiation of root.
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. Differentiation begins with the enlargement and vacuolation of the tracheary elements of the metaxylem." [GR:Anuradha_Pujar]
 comment: These stages are based on Arabidopsis plant. This term has been obsoleted to keep the structure simple.
 synonym: "metaxylem differentiation of crown root" RELATED []
@@ -8391,21 +8392,21 @@ is_obsolete: true
 [Term]
 id: PO:0007523
 name: establishment of initial cells
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The root initial cells are established." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007524
 name: B1 primary root meristem formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stage at which the meristem of the primary root becomes evident." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007525
 name: 3 establishment of tissue systems
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which distinct tissues become organized." [GR:Anuradha_Pujar]
 synonym: "Benfey's stage 1 of root development" RELATED []
 synonym: "cell differentiation stage of root development" RELATED []
@@ -8417,14 +8418,14 @@ is_a: PO:0007520 ! root development stages
 [Term]
 id: PO:0007526
 name: F2 root hair elongation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stage at which the root hairs are fully elongated." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007527
 name: 2 root meristem formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage at which the root meristem becomes evident." [GR:Anuradha_Pujar]
 comment: Characteristic differences in meristem organization have been related to taxonomic groups. Terms for developmental zones formation are available in the obsolete node, and they will be reintroduced in the ontology when there is a specific user request for them.
 is_a: PO:0007520 ! root development stages
@@ -8432,7 +8433,7 @@ is_a: PO:0007520 ! root development stages
 [Term]
 id: PO:0007528
 name: A2.2 root initials differentiation of lateral roots
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. Radial expansion followed by subsequent periclinal divisions forms the pericycle-derived tissues." [GR:Anuradha_Pujar]
 comment: This term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -8440,7 +8441,7 @@ is_obsolete: true
 [Term]
 id: PO:0007529
 name: E emerged root elongation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stage at which the emerged root starts to elongate. " [GR:Anuradha_Pujar]
 synonym: "emerged crown root elongation" RELATED []
 synonym: "emerged lateral root elongation" RELATED []
@@ -8450,7 +8451,7 @@ is_obsolete: true
 [Term]
 id: PO:0007530
 name: A2.3 founder cell derivatives of lateral root
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. Radial expansion followed by subsequent periclinal divisions forms the isodiametric founder cell tissues." [GR:Anuradha_Pujar]
 comment: This term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -8458,20 +8459,20 @@ is_obsolete: true
 [Term]
 id: PO:0007531
 name: F1 root hair initiation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stage at which the roots hairs are initiated." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007532
 name: obsolete plant growth and development terms
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 is_obsolete: true
 
 [Term]
 id: PO:0007533
 name: C3.3 maturation of protoxylem elements in root.
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The first protoxylem elements next to the pericycle develop secondary walls and mature." [GR:Anuradha_Pujar]
 comment: This term has been obsoleted to keep the structure simple.
 synonym: "maturation of protoxylem elements in crown root" RELATED []
@@ -8482,7 +8483,7 @@ is_obsolete: true
 [Term]
 id: PO:0007534
 name: A2.4 root initials differentiation of crown roots
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. Initial cells of crown root primordium divide anticlinally and periclinally to form epidermis-endodermis initial, vascular-cylinder initial and root cap initial." [GR:Anuradha_Pujar]
 comment: Crown root stages are based on rice plant. This term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -8490,7 +8491,7 @@ is_obsolete: true
 [Term]
 id: PO:0007535
 name: A1 root initials formation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. After the formation of the apical-basal axis in the young embryo, the central and basal portion give rise to the root meristem." [GR:Anuradha_Pujar]
 comment: Endogenously formed embryonic roots are exclusive to Poaceae. This  term has been obsoleted to keep the structure simple.
 is_obsolete: true
@@ -8498,14 +8499,14 @@ is_obsolete: true
 [Term]
 id: PO:0007536
 name: root primordium visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. the root primordium is visbile" [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007537
 name: C3.2 maturation of phloem elements in root.
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The first phloem elements matures." [GR:Anuradha_Pujar]
 comment: This term has been obsoleted to keep the structure simple.
 synonym: "maturation phloem elements of crown root." RELATED []
@@ -8516,14 +8517,14 @@ is_obsolete: true
 [Term]
 id: PO:0007539
 name: B2 lateral root meristem formation
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stage at which the meristem of the lateral root becomes evident." [GR:Anuradha_Pujar]
 is_obsolete: true
 
 [Term]
 id: PO:0007600
 name: 3 flower organ development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of floral organs defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "3 floral organ development stages" RELATED []
 is_a: PO:0007615 ! flower development stages
@@ -8531,7 +8532,7 @@ is_a: PO:0007615 ! flower development stages
 [Term]
 id: PO:0007601
 name: 1 flower meristem visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of flower development marked by the emergence of the floral meristem on the flank of the inflorescence meristem." [POC:Curators]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
@@ -8540,7 +8541,7 @@ is_a: PO:0007615 ! flower development stages
 [Term]
 id: PO:0007602
 name: 2 flower meristem notched
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of floral development that begins when the floral meristem becomes demarcated from the inflorescence meristem by a slight indentation." [POC:Curators]
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
@@ -8549,35 +8550,35 @@ is_a: PO:0007615 ! flower development stages
 [Term]
 id: PO:0007603
 name: calyx developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the calyx defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007604
 name: corolla developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the corolla defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007605
 name: androecium developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the androecium defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007606
 name: gynoecium developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_anatomy
 def: "Stages of development of the gynoecium defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 is_a: PO:0007600 ! 3 flower organ development stages
 
 [Term]
 id: PO:0007607
 name: sepal primordium visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of calyx development that begins when the sepal primordia arise." [POC:Curators]
 synonym: "stage 3 flower in Arabidopsis" RELATED []
 is_a: PO:0007603 ! calyx developmental stages
@@ -8585,7 +8586,7 @@ is_a: PO:0007603 ! calyx developmental stages
 [Term]
 id: PO:0007608
 name: petal primordium visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of corolla development that begins when the petal or petal-stamen primordia arise." [POC:Curators]
 synonym: "stage 5 flower in Arabidopsis" RELATED []
 is_a: PO:0007604 ! corolla developmental stages
@@ -8593,21 +8594,21 @@ is_a: PO:0007604 ! corolla developmental stages
 [Term]
 id: PO:0007609
 name: sepals 50% of final size
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. 50% of the absolute size of the sepals." [POC:Curators]
 is_obsolete: true
 
 [Term]
 id: PO:0007610
 name: sepals 100% of final size
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. 100% of the absolute size of the sepals." [POC:Curators]
 is_obsolete: true
 
 [Term]
 id: PO:0007611
 name: petal differentiation and expansion stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of corolla development defined by differentiation and expansion of petal." [POC:Felipe_Zapata]
 synonym: "stage 10 flower in Arabidopsis" RELATED []
 synonym: "stage 12 flower in Arabidopsis" RELATED []
@@ -8617,14 +8618,14 @@ is_a: PO:0007604 ! corolla developmental stages
 [Term]
 id: PO:0007612
 name: fully expanded petal
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of corolla development when petal is fully expanded." [POC:Felipe_Zapata]
 is_a: PO:0007604 ! corolla developmental stages
 
 [Term]
 id: PO:0007613
 name: stamen primordium visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of androecium development that begins when the stamens or petal-stamen primordia arise." [POC:Curators]
 synonym: "stage 7 flower in Arabidopsis" RELATED []
 is_a: PO:0007605 ! androecium developmental stages
@@ -8632,7 +8633,7 @@ is_a: PO:0007605 ! androecium developmental stages
 [Term]
 id: PO:0007615
 name: flower development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of a flower defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "flower development in Arabidopsis" RELATED []
 is_a: PO:0025338 ! collective plant structure development stage
@@ -8640,7 +8641,7 @@ is_a: PO:0025338 ! collective plant structure development stage
 [Term]
 id: PO:0007616
 name: 4 anthesis
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The phase of a flower when pollen is presented and/or the stigma is receptive." [APweb:Glossary]
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
@@ -8650,7 +8651,7 @@ is_a: PO:0007615 ! flower development stages
 [Term]
 id: PO:0007617
 name: 5 post anthesis
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The phase of a flower after the pollen is presented and/or the stigma is receptive." [POC:Curators]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stages
@@ -8658,14 +8659,14 @@ is_a: PO:0007615 ! flower development stages
 [Term]
 id: PO:0007618
 name: carpel primordium visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of gynoecium development that begins when the carpel primordia arise." [POC:Curators]
 is_a: PO:0007606 ! gynoecium developmental stages
 
 [Term]
 id: PO:0007619
 name: ovule developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the ovule defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "ovule development in Arabidopsis" RELATED []
 is_a: PO:0007606 ! gynoecium developmental stages
@@ -8673,7 +8674,7 @@ is_a: PO:0007606 ! gynoecium developmental stages
 [Term]
 id: PO:0007620
 name: ovule primordium visible
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the ovule primordia arise." [POC:Curators]
 synonym: "ovule stage 1-I in Arabidopsis" RELATED []
 is_a: PO:0007619 ! ovule developmental stages
@@ -8681,7 +8682,7 @@ is_a: PO:0007619 ! ovule developmental stages
 [Term]
 id: PO:0007621
 name: megagametophyte developmental stages
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stages of development of the megagametophyte." [POC:Curators]
 comment: Although megaspore and megagametophyte development are normally separate, one spore producing one gametophyte, in some flowering plants a single gametophyte may be produced from two or four spores.
 is_a: PO:0007619 ! ovule developmental stages
@@ -8689,7 +8690,7 @@ is_a: PO:0007619 ! ovule developmental stages
 [Term]
 id: PO:0007622
 name: integument initiation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the integument primordia are visible." [POC:Curators]
 synonym: "ovule stage 2-II in Arabidopsis" RELATED []
 synonym: "ovule stage 2-III in Arabidopsis" RELATED []
@@ -8698,7 +8699,7 @@ is_a: PO:0004504 ! ovule differentiation and expansion
 [Term]
 id: PO:0007623
 name: A megaspore mother cell enlarges
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell enlarges." [POC:Curators]
 synonym: "ovule stage 2-I in Arabidopsis" RELATED []
 is_a: PO:0007621 ! megagametophyte developmental stages
@@ -8706,7 +8707,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007624
 name: B meiosis of megaspore mother cell
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell undergoes meiosis." [POC:Curators]
 synonym: "ovule stage 2-IV in Arabidopsis" RELATED []
 is_a: PO:0007621 ! megagametophyte developmental stages
@@ -8714,7 +8715,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007625
 name: C tetrad of megaspores
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The product of meiosis of the megaspore mother cell." [POC:Curators]
 synonym: "ovule stage 2-V in Arabidopsis" RELATED []
 is_a: PO:0007621 ! megagametophyte developmental stages
@@ -8722,7 +8723,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007626
 name: D megaspore degeneration
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when non-functional megaspores degenerate." [POC:Curators]
 comment: In some plants more than one megaspore contributes to the megametophyte.
 synonym: "ovule stage 3-I in Arabidopsis" RELATED []
@@ -8731,7 +8732,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007627
 name: E two nucleate megagametophyte
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are two nuclei." [POC:Curators]
 synonym: "ovule stage 3-II in Arabidopsis" RELATED []
 is_a: PO:0007621 ! megagametophyte developmental stages
@@ -8739,7 +8740,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007628
 name: F four nucleate megagametophyte
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are four nuclei." [POC:Curators]
 synonym: "ovule stage 3-IV in Arabidopsis" RELATED []
 is_a: PO:0007621 ! megagametophyte developmental stages
@@ -8747,7 +8748,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007629
 name: G eight nucleate megagametophyte
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are eight nuclei." [POC:Curators]
 comment: Some plants do not form an eight nucleate megametophyte.
 synonym: "ovule stage 3-V in Arabidopsis" RELATED []
@@ -8756,7 +8757,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 [Term]
 id: PO:0007631
 name: embryo stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007020
 def: "A sporophyte vegetative stage that occurs during the interval between the first cell division and one of the following: germination in seed plants, formation of the first true leaf after the cotyledon(s) in pteridophytes, when the apical cell stops dividing and the sporangium begins to develop in bryophytes, or the beginning of the formation of organs (roots, shoot axes, or leaves) in cultured plant embryos." [POC:curators]
 comment: Succeeds the zygote stage. The embryo stage generally starts after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
@@ -8767,7 +8768,7 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 [Term]
 id: PO:0007632
 name: seed maturation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequentially, desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
 synonym: "seed maturation in Arabidopsis" RELATED []
 is_a: PO:0001170 ! seed development stages
@@ -8775,7 +8776,7 @@ is_a: PO:0001170 ! seed development stages
 [Term]
 id: PO:0007633
 name: endosperm development stages
-namespace: plant_growth_and_development_stage
+namespace: plant_anatomy
 def: "Stages of development of the endosperm." [TAIR:Katica_Ilic]
 is_a: PO:0001170 ! seed development stages
 
@@ -9551,7 +9552,7 @@ is_a: PO:0025131 ! plant anatomical entity
 [Term]
 id: PO:0009012
 name: plant structure development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 alt_id: PO:0007021
 def: "A stage in the life of a plant structure during which the plant structure undergoes developmental processes." [POC:curators]
 comment: Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.
@@ -12340,21 +12341,21 @@ relationship: part_of PO:0020147 ! root apical meristem
 [Term]
 id: PO:0021002
 name: calyx absolute size
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The proportion of the absolute size reached by the calyx" [POC:Curators]
 is_obsolete: true
 
 [Term]
 id: PO:0021003
 name: calyx relationship
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. The stages of development of the calyx with respect to the rest of the bud" [POC:Curators]
 is_obsolete: true
 
 [Term]
 id: PO:0021004
 name: inflorescence initiation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "Stage of inflorescence development marked by the formation of the inflorescence meristem on a vegetative branch." [POC:Felipe_Zapata]
 is_a: PO:0001083 ! inflorescence development stages
 
@@ -16778,7 +16779,7 @@ creation_date: 2011-09-28T04:33:07Z
 [Term]
 id: PO:0025337
 name: life of whole plant
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A maximal whole plant development stage." [POC:curators]
 comment: There are only two types of life of whole plant. Every life of a whole plant is either a maximal gametophyte stage or a maximal sporophyte stage.
 is_a: PO:0007033 ! whole plant development stage
@@ -16788,7 +16789,7 @@ creation_date: 2011-10-19T10:54:37Z
 [Term]
 id: PO:0025338
 name: collective plant structure development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a collective plant structure." [POC:curators]
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
@@ -16797,7 +16798,7 @@ creation_date: 2011-10-19T11:12:49Z
 [Term]
 id: PO:0025339
 name: plant organ development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a plant organ." [POC:curators]
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
@@ -16806,7 +16807,7 @@ creation_date: 2011-10-19T11:12:49Z
 [Term]
 id: PO:0025340
 name: gametophyte vegetative stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte development stage that occurs during the interval between spore germination and the formation of a gametangium." [POC:curators]
 comment: A gametophyte may begin to senesce or die from other causes before producing gametangia. Some plants, such as the fern Vittaria appalachiana, may never produce gametangia, and remain in the vegetative stage indefinitely. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 xref: OBO_SF_PO:3437882
@@ -16817,7 +16818,7 @@ creation_date: 2011-10-19T11:55:08Z
 [Term]
 id: PO:0025341
 name: gametophyte reproductive stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte development stage that occurs during the interval between the initiation of a gametangium and the onset of senescence." [POC:curators]
 comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause.
 synonym: "gametophyte reproductively competent stage" EXACT []
@@ -16830,7 +16831,7 @@ creation_date: 2011-10-19T11:55:08Z
 [Term]
 id: PO:0025342
 name: gametophyte dormant stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte development stage that occurs during the interval between the suspension of physiological activity and its reactivation." [POC:curators]
 comment: During the gametophyte dormant stage, a gametophyte participates in dormancy processes (GO:0022611). The dormant stage is a response to environmental conditions, such as extreme heat, drought, or cold. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures.
 synonym: "gametophyte dormancy stage" EXACT []
@@ -16842,7 +16843,7 @@ creation_date: 2011-10-19T11:55:08Z
 [Term]
 id: PO:0025343
 name: gametophyte senescent stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -16850,7 +16851,7 @@ creation_date: 2011-10-19T11:55:08Z
 [Term]
 id: PO:0025344
 name: gametophore reproductive whole plant development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte reproductive development stage in which a gametophore and gametangium is being produced." [POC:curators]
 is_a: PO:0025341 ! gametophyte reproductive stage
 created_by: RamonaNYBG
@@ -16859,7 +16860,7 @@ creation_date: 2011-10-19T12:10:50Z
 [Term]
 id: PO:0025345
 name: gametophore vegetative whole plant development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte vegetative whole plant development stage during which a gametophore is being produced but no gametangia are being produced." [POC:curators]
 comment: Succeeds a protonema stage.
 is_a: PO:0025340 ! gametophyte vegetative stage
@@ -16869,7 +16870,7 @@ creation_date: 2011-10-19T12:11:43Z
 [Term]
 id: PO:0025346
 name: thallus reproductive whole plant development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte reproductive development stage in which a thallus and gametangium is being produced." [POC:curators]
 is_a: PO:0025341 ! gametophyte reproductive stage
 created_by: RamonaNYBG
@@ -16878,7 +16879,7 @@ creation_date: 2011-10-19T12:18:53Z
 [Term]
 id: PO:0025347
 name: thallus vegetative whole plant development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte vegetative whole plant development stage during which a thallus is being produced but no gametangia are being produced." [POC:curators]
 comment: May succeed a protonema whole plant development stage or may directly succeed spore germination.
 is_a: PO:0025340 ! gametophyte vegetative stage
@@ -16888,7 +16889,7 @@ creation_date: 2011-10-19T12:20:16Z
 [Term]
 id: PO:0025348
 name: spore germination stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte vegetative development stage that occurs during the interval between spore germination (the first cell division of a spore) and something." [RW:test]
 comment: This stage involves only one cell division. After that, protonema or other stage begins.
 is_a: PO:0025340 ! gametophyte vegetative stage
@@ -17116,7 +17117,7 @@ creation_date: 2011-11-16T05:09:07Z
 [Term]
 id: PO:0025368
 name: trichome development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a trichome." [POC:Curators]
 is_a: PO:0009012 ! plant structure development stage
 created_by: cooperl
@@ -17125,7 +17126,7 @@ creation_date: 2011-11-22T05:35:39Z
 [Term]
 id: PO:0025369
 name: seed trichome development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A trichome development stage that has as primary participant a seed trichome." [POC:Curators]
 comment: Seed trichome development stage consists of the following sub stages: seed trichome initiation stage (PO:0025370), seed trichome elongation stage (PO:0025371), seed trichome secondary wall biosynthesis stage(PO:0025372) and seed trichome maturation stage (PO:0025373).
 synonym: "seed hair development stage" EXACT []
@@ -17136,7 +17137,7 @@ creation_date: 2011-11-22T05:36:46Z
 [Term]
 id: PO:0025370
 name: seed trichome initiation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome initiation and the onset of seed trichome elongation." [POC:Curators]
 comment: Refers to the GO Biological Process terms seed trichome initiation (GO:0090377) and seed trichome elongation (GO:0090378).
 synonym: "seed hair initiation stage" EXACT []
@@ -17147,7 +17148,7 @@ creation_date: 2011-11-22T05:37:55Z
 [Term]
 id: PO:0025371
 name: seed trichome elongation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome elongation and the onset of seed trichome secondary wall biosynthesis." [POC:Curators]
 comment: Refers to the GO Biological Process terms: seed trichome elongation (GO:0090378) and secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379).
 synonym: "seed hair elongation stage" EXACT []
@@ -17158,7 +17159,7 @@ creation_date: 2011-11-22T05:43:12Z
 [Term]
 id: PO:0025372
 name: seed trichome secondary wall biosynthesis stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome secondary wall biosynthesis and the onset of seed trichome maturation." [POC:Curators]
 comment: Refers to the GO Biological Process terms: secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379) and seed trichome maturation (GO:0090380).
 synonym: "seed hair secondary wall biosynthesis stage" EXACT []
@@ -17169,7 +17170,7 @@ creation_date: 2011-11-22T05:45:42Z
 [Term]
 id: PO:0025373
 name: seed trichome maturation stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A seed trichome development stage which encompasses the process of seed trichome maturation." [POC:Curators]
 comment: Refers to the GO Biological Process term: seed trichome maturation (GO:0090380).
 synonym: "seed hair maturation stage" EXACT []
@@ -17180,7 +17181,7 @@ creation_date: 2011-11-22T05:47:05Z
 [Term]
 id: PO:0028001
 name: plant life cycle phase
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "OBSOLETE. A plant growth and development phase that begins with either meiosis or fertilization." [POC:Curators]
 comment: The life cycle of all plants is characterized by the alternation of phases (or generations). The sporophytic phase has twice the chromosome complement of the gametophytic phase.
 is_obsolete: true
@@ -17190,7 +17191,7 @@ creation_date: 2010-07-15T02:54:57Z
 [Term]
 id: PO:0028002
 name: sporophyte development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A whole plant development stage that has as primary participant a whole plant during the interval between fertilization or apogamy and its death." [POC:Curators]
 comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts).
 subset: TraitNet
@@ -17206,7 +17207,7 @@ creation_date: 2010-07-15T02:56:11Z
 [Term]
 id: PO:0028003
 name: gametophyte development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A whole plant development stage that has as primary participant a whole plant during the interval between meiosis or apospory and its death or fertilization." [POC:Curators]
 comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory.
 subset: TraitNet
@@ -17299,7 +17300,7 @@ creation_date: 2011-03-10T11:00:03Z
 [Term]
 id: PO:0030006
 name: protonema whole plant development stage
-namespace: plant_growth_and_development_stage
+namespace: plant_structure_development_stage
 def: "A gametophyte development stage during which a gametophyte undergoes filamentous growth and that succeeds spore germination and precedes a thalloid development stage (planar growth) or gametophore development stage." [POC:Ramona_Walls]
 comment: The protonema phase ends with the development of gametophores in mosses, some other bryophytes, and leptosporangiate ferns and with the development of a thallus in other bryophytes, although protonema tissue may persist of continue to develop after this.
 subset: Bryophytes
