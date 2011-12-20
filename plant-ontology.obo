@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 15:12:2011 13:56
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-rc3
+date: 20:12:2011 09:29
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1-rc4
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1497,12 +1497,14 @@ relationship: part_of PO:0005043 ! secondary phloem
 
 [Term]
 id: PO:0000423
-name: zygote
+name: plant zygote
 namespace: plant_anatomy
-def: "Diploid cell produced by the fusion of sperm cell nucleus and egg cell." [TAIR:Katica_Ilic]
+def: "A single-celled whole plant that participates in the plant zygote stage." [POC:Ramona_Walls]
+comment: A plant zygote is a whole plant that is a single cell formed by syngamy.
 subset: CL
 synonym: "cigoto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "接合子、接合体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000003 ! whole plant
 is_a: PO:0009002 ! plant cell
 
 [Term]
@@ -1976,7 +1978,7 @@ alt_id: PO:0001076
 def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001079
@@ -1992,7 +1994,7 @@ namespace: plant_structure_development_stage
 def: "Stage at which the embryo is fully developed." [APweb:Glossary, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001083
@@ -2007,7 +2009,7 @@ name: coleoptilar stage
 namespace: plant_structure_development_stage
 def: "The coleoptilar primordium, SAM and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
 synonym: "SAM and radicle formation stage" RELATED []
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001095
@@ -2015,7 +2017,7 @@ name: true leaf formation
 namespace: plant_structure_development_stage
 def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001096
@@ -2026,9 +2028,10 @@ is_a: PO:0007633 ! endosperm development stages
 
 [Term]
 id: PO:0001097
-name: zygote stage
+name: plant zygote stage
 namespace: plant_structure_development_stage
 def: "A sporophyte development stage that occurs during the interval between syngamy and the first cell division." [POC:curators]
+comment: Succeeds syngamy and precedes the embyro stage.
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 is_a: PO:0028002 ! sporophyte development stage
@@ -2062,7 +2065,7 @@ namespace: plant_structure_development_stage
 def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [APweb:Glossary, TAIR:Katica_Ilic]
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001185
@@ -2073,7 +2076,7 @@ synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001378
@@ -2131,7 +2134,7 @@ synonym: "c&#233lula basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "embryonic basal cell" EXACT []
 synonym: "基底細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
-relationship: develops_from PO:0000423 ! zygote
+relationship: develops_from PO:0000423 ! plant zygote
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -2547,7 +2550,7 @@ synonym: "heart stage in Arabidopsis" RELATED []
 synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
 synonym: "triangle stage in Arabidopsis" RELATED []
-is_a: PO:0007631 ! embryo stage
+is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0004509
@@ -8189,8 +8192,8 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 id: PO:0007132
 name: sporophyte dormant stage
 namespace: plant_structure_development_stage
-def: "A sporophyte development stage that occurs during the interval between the suspension of physiological activity and its reactivation." [POC:curators]
-comment: During the sporophyte dormant stage, a sporophyte participates in dormancy processes (GO:0022611). The dormant stage is a response to environmental conditions, such as extreme heat, drought, or cold. This term only applies to a whole plant in the sporophyte stage, not to the dormant stage of a seed or other plant structures.
+def: "A sporophyte development stage during which a sporophyte participates in an multicellular organism dormancy process." [PO_REF:00009, POC:curators]
+comment: Multicellular organism dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the sporophyte stage, not to the dormant stage of a seed, bud, or other plant structure. Dormancy of a plant may be preceded by the senescence of its parts such as leaves in woody plants or most of the shoot system herbaceous perennials and by the formation of dormant buds. The end of dormancy in a sporophyte is marked by resumed growth of buds and/or growth of vascular cambium. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Resurrection plants are in a\ndormant stage when they become dessicated. Refers to GO0022611 (dormancy process). Have requested term for multicellular organism dormancy in GO.
 synonym: "10.05-seed dormant in barley" RELATED [GRO:0007119]
 synonym: "10.05-seed dormant in oat" RELATED [GRO:0007119]
 synonym: "10.05-seed dormant in Triticeae" RELATED [GRO:0007119]
@@ -8756,7 +8759,7 @@ is_a: PO:0007621 ! megagametophyte developmental stages
 
 [Term]
 id: PO:0007631
-name: embryo stage
+name: plant embryo stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007020
 def: "A sporophyte vegetative stage that occurs during the interval between the first cell division and one of the following: germination in seed plants, formation of the first true leaf after the cotyledon(s) in pteridophytes, when the apical cell stops dividing and the sporangium begins to develop in bryophytes, or the beginning of the formation of organs (roots, shoot axes, or leaves) in cultured plant embryos." [POC:curators]
@@ -9509,14 +9512,14 @@ disjoint_from: PO:0009007 ! portion of plant tissue
 id: PO:0009009
 name: plant embryo
 namespace: plant_anatomy
-def: "A whole plant that participates in the embryo stage (PO:0025369)." [POC:Curators]
+def: "A whole plant that participates in the embryo stage." [POC:Curators]
 comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. In seed plants, the embryo stage ends with germination. In pteridophytes, the embryo stage ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryo stage ends when the apical cell stops dividing and the sporangium begins to develop. In cultured plant embryos, the embryo stage ends when organs (roots, shoot axes, or leaves) begin to form.
 synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "germ" RELATED []
 synonym: "胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
-relationship: participates_in PO:0007631 ! embryo stage
+relationship: participates_in PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0009010
@@ -16110,7 +16113,7 @@ subset: CL
 synonym: "c&#233lula apical del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic meristematic apical cell" EXACT []
 is_a: PO:0030015 ! sporophyte meristematic apical cell
-relationship: develops_from PO:0000423 ! zygote
+relationship: develops_from PO:0000423 ! plant zygote
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-12T09:05:04Z
@@ -16832,8 +16835,8 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025342
 name: gametophyte dormant stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage that occurs during the interval between the suspension of physiological activity and its reactivation." [POC:curators]
-comment: During the gametophyte dormant stage, a gametophyte participates in dormancy processes (GO:0022611). The dormant stage is a response to environmental conditions, such as extreme heat, drought, or cold. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures.
+def: "A gametophyte development stage during which a gametophyte participates in a organism dormancy process." [PO_REF:00009, POC:curators]
+comment: Multicellular organism dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a gametophyte dormant stage are a moss that has undergone dessication (a resurrection plant) or the female gametophyte of Ginkgo biloba, which is dormant before fertilization. Refers to GO0022611 (dormancy process). Have requested term for multicellular organism dormancy in GO.
 synonym: "gametophyte dormancy stage" EXACT []
 synonym: "gametophytic dormant stage" EXACT []
 is_a: PO:0028003 ! gametophyte development stage
