@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 20:12:2011 09:29
+date: 05:01:2012 15:03
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1-rc4
+auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -6474,7 +6474,8 @@ is_a: PO:0007130 ! sporophyte reproductive stage
 id: PO:0007017
 name: sporophyte senescent stage
 namespace: plant_structure_development_stage
-def: "The processes that occur near the end of a plant's active life that are associated with the dismantling of cell components and membranes, loss of functional chloroplasts, and an overall decline in metabolism." [Poc:curators]
+def: "A sporophyte development stage during which a sporophyte participates in multicellular organism senescence." [GO:0010259, POC:curators]
+comment: The sporophyte senescent stage is often preceded by the sporophyte reproductive stage, and it ends with death of the sporophyte, either as a result of senescence or some other cause. The sporophyte senescent stage may succeed the sporophyte reproductive stage in monocarpic plants that die after reproducing, such as annuals. This stage is distinct from sporophyte dormant stage, in which organs may senesce, but some parts of the plant remain alive. Multicellular organism senescence/aging (GO:0010259) includes loss of functions such as resistance to disease, homeostasis, and fertility, as well processes like cellular senescence, organ senescence, and wear and tear. The POC curators have requested to the GOC that they revise the definition of GO:0010259, to make it more appropriate for plants.
 synonym: "10.03-kernel loosening in daytime in barley" RELATED [GRO:0007117]
 synonym: "10.03-kernel loosening in daytime in oat" RELATED [GRO:0007117]
 synonym: "10.03-kernel loosening in daytime in Triticeae" RELATED [GRO:0007117]
@@ -8192,29 +8193,9 @@ is_a: PO:0007134 ! sporophyte vegetative stage
 id: PO:0007132
 name: sporophyte dormant stage
 namespace: plant_structure_development_stage
-def: "A sporophyte development stage during which a sporophyte participates in an multicellular organism dormancy process." [PO_REF:00009, POC:curators]
-comment: Multicellular organism dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the sporophyte stage, not to the dormant stage of a seed, bud, or other plant structure. Dormancy of a plant may be preceded by the senescence of its parts such as leaves in woody plants or most of the shoot system herbaceous perennials and by the formation of dormant buds. The end of dormancy in a sporophyte is marked by resumed growth of buds and/or growth of vascular cambium. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Resurrection plants are in a\ndormant stage when they become dessicated. Refers to GO0022611 (dormancy process). Have requested term for multicellular organism dormancy in GO.
-synonym: "10.05-seed dormant in barley" RELATED [GRO:0007119]
-synonym: "10.05-seed dormant in oat" RELATED [GRO:0007119]
-synonym: "10.05-seed dormant in Triticeae" RELATED [GRO:0007119]
-synonym: "10.05-seed dormant in wheat" RELATED [GRO:0007119]
-synonym: "10.06-viable seed germination in barley" RELATED [GRO:0007120]
-synonym: "10.06-viable seed germination in oat" RELATED [GRO:0007120]
-synonym: "10.06-viable seed germination in Triticeae" RELATED [GRO:0007120]
-synonym: "10.06-viable seed germination in wheat" RELATED [GRO:0007120]
-synonym: "10.07-seed not dormant in barley" RELATED [GRO:0007121]
-synonym: "10.07-seed not dormant in oat" RELATED [GRO:0007121]
-synonym: "10.07-seed not dormant in Triticeae" RELATED [GRO:0007121]
-synonym: "10.07-seed not dormant in wheat" RELATED [GRO:0007121]
-synonym: "10.08-secondary dormancy induced in barley" RELATED [GRO:0007122]
-synonym: "10.08-secondary dormancy induced in oat" RELATED [GRO:0007122]
-synonym: "10.08-secondary dormancy induced in Triticeae" RELATED [GRO:0007122]
-synonym: "10.08-secondary dormancy induced in wheat" RELATED [GRO:0007122]
-synonym: "10.09-secondary dormancy lost in barley" RELATED [GRO:0007123]
-synonym: "10.09-secondary dormancy lost in oat" RELATED [GRO:0007123]
-synonym: "10.09-secondary dormancy lost in Triticeae" RELATED [GRO:0007123]
-synonym: "10.09-secondary dormancy lost in wheat" RELATED [GRO:0007123]
-synonym: "D dormancy in Solanaceae" RELATED [SGN:0000053]
+def: "A sporophyte development stage during which a sporophyte participates in a dormancy process." [GO:0022611, PO_REF:00009, POC:curators]
+comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the sporophyte stage, not to the dormant stage of a seed, bud, or other plant structure. Dormancy of a plant may be preceded by the senescence of its parts such as leaves in woody plants or most of the shoot system herbaceous perennials and by the formation of dormant buds. The end of dormancy in a sporophyte is marked by resumed growth of buds and/or growth of vascular cambium. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a sporophyte dormant stage are the resurrection plants Selaginella lepidophylla (a lycopod) and Craterostigma plantagineum (an angiosperm) while they are dessicated, and deciduous woody plants and herbaceous perennials or biennials that have a dormant stage in response to drought or cold.
+synonym: "D dormancy in Solanaceae" NARROW [SGN:0000053]
 synonym: "sporophyte dormancy stage" EXACT []
 synonym: "sporophytic dormant stage" EXACT []
 is_a: PO:0028002 ! sporophyte development stage
@@ -8767,6 +8748,8 @@ comment: Succeeds the zygote stage. The embryo stage generally starts after the 
 synonym: "embryo development stage" RELATED []
 synonym: "embryonic in Arabidopsis" RELATED []
 is_a: PO:0007134 ! sporophyte vegetative stage
+intersection_of: PO:0028002 ! sporophyte development stage
+intersection_of: has_participant PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0007632
@@ -8779,7 +8762,7 @@ is_a: PO:0001170 ! seed development stages
 [Term]
 id: PO:0007633
 name: endosperm development stages
-namespace: plant_anatomy
+namespace: plant_structure_development_stage
 def: "Stages of development of the endosperm." [TAIR:Katica_Ilic]
 is_a: PO:0001170 ! seed development stages
 
@@ -9363,7 +9346,9 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 subset: TraitNet
+synonym: "accessory fruit" NARROW [FNA:glossary]
 synonym: "achene" NARROW []
+synonym: "acorn" NARROW [FNA:glossary]
 synonym: "berry" NARROW []
 synonym: "capsule" NARROW []
 synonym: "caryopsis" NARROW []
@@ -9525,10 +9510,12 @@ relationship: participates_in PO:0007631 ! plant embryo stage
 id: PO:0009010
 name: seed
 namespace: plant_anatomy
-def: "A propagating organ formed in the reproductive cycle of gymnosperms and angiosperms, derived from the ovule and enclosing an embryo." [APweb:Glossary, GR:Pankaj_Jaiswal]
-comment: The seed is representative of a next generation of sporophyte.
+def: "A plant structure that develops from an ovule and contains an embryo enclosed in a seed coat." [RW:test]
+comment: A seed is a reproductive unit of seed plants (gymnosperms and angiosperms).
+subset: Angiosperm
 subset: Arabidopsis
 subset: Citrus
+subset: Gymnosperms
 subset: Maize
 subset: Poaceae
 subset: Rice
@@ -9537,8 +9524,9 @@ subset: TraitNet
 synonym: "diaspore" BROAD []
 synonym: "semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000003 ! whole plant
-relationship: part_of PO:0009001 ! fruit
+is_a: PO:0009011 ! plant structure
+relationship: develops_from PO:0020003 ! ovule
+relationship: has_part PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0009011
@@ -10722,14 +10710,14 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0009090
 name: aril
 namespace: plant_anatomy
-def: "A cardinal organ part that is a fleshy outgrowth of the funicle, covering all or most of the seed." [ISBN:9780881928501]
-comment: A fleshy outgrowth from another part of a seed is an arilloid. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.
+def: "An arilloid that is an outgrowth of a seed from a seed funicle." [ISBN:9780881928501]
+comment: Usually envelopes most of the seed and is fleshy. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.
 subset: reference
 subset: TraitNet
 synonym: "arilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "仮種皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132538
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0019022 ! arilloid
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
@@ -10897,7 +10885,8 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0019022
 name: arilloid
 namespace: plant_anatomy
-def: "A cardinal organ part that is a fleshy outgrowth of a seed and does not cover the entire seed and develops from a part of the seed other than a funicle." [ISBN:9780881928501]
+def: "A cardinal organ part that is a fleshy outgrowth of a seed." [ISBN:9780881928501]
+comment: Often conspicuous and found on seeds with a hard testa that are dispersed by animals. There is some variation in how different sources define the subtypes of arilloids.
 subset: TraitNet
 synonym: "ariloide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "caruncle" NARROW [ISBN:9780881928501]
@@ -10911,7 +10900,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0019023
 name: strophiole
 namespace: plant_anatomy
-def: "An outgrowth occurring on the raphe." [ISBN:0080280293]
+def: "An arilloid that is an outgrowth of a seed on a raphe." [ISBN:9780881928501]
 subset: reference
 synonym: "estrofiolo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ストロフィオール (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11678,7 +11667,8 @@ is_obsolete: true
 id: PO:0020060
 name: caruncle
 namespace: plant_anatomy
-def: "An outgrowth from the surface of a seed, usually near the hilum or micropyle." [APweb:Glossary]
+def: "An arilloid that is an outgrowth of a seed next to the micropyle." [ISBN:9780881928501]
+comment: Often hard and generally smaller and less elaborate than a arillode.
 synonym: "car&#250ncula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種枕（種阜） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0019022 ! arilloid
@@ -11700,11 +11690,12 @@ relationship: has_part PO:0004511 ! seed trichome
 id: PO:0020062
 name: elaiosome
 namespace: plant_anatomy
-def: "An appendage of a seed, usually rich in oil, attractive to animals, especially ants." [APweb:Glossary]
+def: "A cardinal organ part that is an oil-secreting outgrowth of a seed or fruit." [ISBN:9780881928501]
+comment: May be a modified arilloid (a type of strophiole or caruncle) or may be an outgrowth of a fruit. May be attractive to ants and aid in dispersal.
 subset: TraitNet
 synonym: "elaiosoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "油脂体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0019022 ! arilloid
+is_a: PO:0025001 ! cardinal organ part
 
 [Term]
 id: PO:0020063
@@ -12245,7 +12236,8 @@ id: PO:0020139
 name: midvein
 namespace: plant_anatomy
 def: "The central, and usually the most prominent, vein of a leaf or leaf-like organ." [APweb:Glossary]
-synonym: "mid rib" RELATED []
+synonym: "mid rib" BROAD []
+synonym: "midrib" BROAD []
 synonym: "vena media (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "主脈、中央脈、中脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020138 ! leaf vein
@@ -13510,12 +13502,16 @@ id: PO:0025083
 name: strobilus
 namespace: plant_anatomy
 def: "A reproductive shoot system consisting of a number of modified leaves (sporophylls) or ovule-bearing scales grouped terminally on a stem." [ISBN:0716710072, POC:Curators]
+comment: May be simple or compound. Found in lycophytes such as Selaginella and Lycopodium, sphenophytes such as Equisetum, gymnosperms such as cycad, conifers, gnetophytes and the pollen producing structures of Gingko. The term cone is often used for strobili that are woody. Flowers are sometimes considered bisexual strobili. Some flowering plants such as Alnus have inflorescences called catkins that resemble strobili, but are not.
 subset: TraitNet
+synonym: "compound strobilus" NARROW []
 synonym: "cone" EXACT []
 synonym: "cono (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "estr&#243bilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ovulate cone" NARROW []
 synonym: "pollen cone" NARROW []
+synonym: "simple strobilus" NARROW []
+synonym: "strobili" EXACT Plural []
 synonym: "珠果 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025082 ! reproductive shoot system
 created_by: Ramona
@@ -16785,6 +16781,7 @@ name: life of whole plant
 namespace: plant_structure_development_stage
 def: "A maximal whole plant development stage." [POC:curators]
 comment: There are only two types of life of whole plant. Every life of a whole plant is either a maximal gametophyte stage or a maximal sporophyte stage.
+xref: OBO_SF_PO:3131997
 is_a: PO:0007033 ! whole plant development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T10:54:37Z
@@ -16823,7 +16820,7 @@ id: PO:0025341
 name: gametophyte reproductive stage
 namespace: plant_structure_development_stage
 def: "A gametophyte development stage that occurs during the interval between the initiation of a gametangium and the onset of senescence." [POC:curators]
-comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause.
+comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause. The sporophyte\nsenescent stage may succeed the sporophyte reproductive stage in monocarpic plants that die after reproducing, such as annuals.
 synonym: "gametophyte reproductively competent stage" EXACT []
 synonym: "gametophytic reproductive stage" EXACT []
 xref: OBO_SF_PO:3437888
@@ -16835,8 +16832,8 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025342
 name: gametophyte dormant stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage during which a gametophyte participates in a organism dormancy process." [PO_REF:00009, POC:curators]
-comment: Multicellular organism dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a gametophyte dormant stage are a moss that has undergone dessication (a resurrection plant) or the female gametophyte of Ginkgo biloba, which is dormant before fertilization. Refers to GO0022611 (dormancy process). Have requested term for multicellular organism dormancy in GO.
+def: "A gametophyte development stage during which a gametophyte participates in a dormancy process." [GO:0022611, PO_REF:00009, POC:curators]
+comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a gametophyte dormant stage are the moss Polytrichum commune after it has undergone dessication (a type of resurrection plant), the boreal moss Polytrichum alpestre, whose shoot systems have annual growth segments due to a period of dormancy during the winter, the female gametophyte of Ginkgo biloba, which is dormant before fertilization, and dormancy of plant spores.
 synonym: "gametophyte dormancy stage" EXACT []
 synonym: "gametophytic dormant stage" EXACT []
 is_a: PO:0028003 ! gametophyte development stage
@@ -16847,6 +16844,8 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025343
 name: gametophyte senescent stage
 namespace: plant_structure_development_stage
+def: "A gametophyte development stage during which a gametophyte participates in multicellular organism senescence." [GO:0010259, POC:curators]
+comment: The gametophyte senescent stage is often preceded by the gametophyte reproductive stage, and it ends with death of the gametophyte, either as a result of senescence or some other cause. This stage is distinct from gametophyte dormant stage, in which organs may senesce, but some parts of the plant remain alive. Multicellular organism senescence/aging (GO:0010259) includes loss of functions such as resistance to disease, homeostasis, and fertility, as well processes like cellular senescence, organ senescence, and wear and tear. The POC curators have requested to the GOC that they revise the definition of GO:0010259, to make it more appropriate for plants.
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -17020,6 +17019,9 @@ id: PO:0025359
 name: sorus
 namespace: plant_anatomy
 def: "A collective plant structure on the surface of a vascular leaf that has as part a cluster of two or more adjacent sporangia." [PO_REF:00001]
+subset: Gymnosperms
+subset: Poaceae
+subset: Pteridophytes
 synonym: "sori" EXACT Plural []
 is_a: PO:0025007 ! collective plant structure
 relationship: has_part PO:0025094 ! sporangium
@@ -17180,6 +17182,63 @@ synonym: "seed hair maturation stage" EXACT []
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
 creation_date: 2011-11-22T05:47:05Z
+
+[Term]
+id: PO:0025374
+name: seed dormant stage
+namespace: plant_structure_development_stage
+def: "A seed development stage during which a seed participates in a seed dormancy process." [GO:0010162, POC:curators]
+comment: A seed dormancy process (GO:0010162) is a dormancy process in which dormancy (sometimes called a dormant state) is induced, maintained or broken in a seed. Seed dormancy is a suspension of most physiological activity and growth in a seed, including the embryo contained therein, that can be reactivated. It often requires special conditions for reactivation, such as specific temperature, scarification, or leaching of inhibitors. Seed dormancy includes dormancy of the embryo and the seed coat, although\nthese may not begin or end simultaneously. Not all seeds go through a seed dormant stage. Most seeds that go through a dormant stage do so only one time.
+xref: OBO_SF_PO:3468651
+is_a: PO:0001170 ! seed development stages
+relationship: has_part PO:0025377 ! plant embryo dormant stage
+created_by: RamonaNYBG
+creation_date: 2012-01-05T10:29:43Z
+
+[Term]
+id: PO:0025375
+name: plant spore stage
+namespace: plant_structure_development_stage
+def: "A gametophyte development stage that occurs during the interval between meiosis and the germination (first cell division) of a spore." [RW:test]
+comment: Includes the stage when a megaspore is present before it develops into a megagametophyte or embryo sac and the stage when a microspore is present before it develops into a microgametophyte or pollen.
+xref: OBO_SF_PO:3469811
+is_a: PO:0028003 ! gametophyte development stage
+intersection_of: PO:0028003 ! gametophyte development stage
+intersection_of: has_participant PO:0025017 ! spore
+created_by: RamonaNYBG
+creation_date: 2012-01-05T10:32:33Z
+
+[Term]
+id: PO:0025376
+name: plant spore dormant stage
+namespace: plant_structure_development_stage
+def: "A gametophyte dormant stage during which a spore participates in a dormancy process." [GO:0022611, RW:test]
+comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated.
+is_a: PO:0025342 ! gametophyte dormant stage
+relationship: has_participant PO:0025017 ! spore
+created_by: RamonaNYBG
+creation_date: 2012-01-05T10:47:37Z
+
+[Term]
+id: PO:0025377
+name: plant embryo dormant stage
+namespace: plant_structure_development_stage
+def: "A sporophyte dormant stage during which a plant embryo participates in a dormancy process." [GO:0022611, RW:test]
+comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. In seed plants, a plant embryo dormant stage may be part of a seed dormant stage.
+is_a: PO:0007132 ! sporophyte dormant stage
+relationship: has_participant PO:0009009 ! plant embryo
+created_by: RamonaNYBG
+creation_date: 2012-01-05T10:50:10Z
+
+[Term]
+id: PO:0025378
+name: arillode
+namespace: plant_anatomy
+def: "An arilloid that is an elaborate outgrowth of a seed at the micropyler end." [ISBN:9780881928501]
+comment: Generally larger than a caruncle and not hard.
+is_a: PO:0019022 ! arilloid
+created_by: RamonaNYBG
+creation_date: 2012-01-05T02:19:38Z
 
 [Term]
 id: PO:0028001
@@ -18380,6 +18439,8 @@ def: "A portion of plant tissue that is a single or double strand in the center 
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
 subset: Bryophytes
 synonym: "costa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "mid rib" BROAD []
+synonym: "midrib" BROAD []
 synonym: "non-vascular leaf midrib" EXACT []
 synonym: "non-vascular leaf midvein" RELATED []
 synonym: "non-vascular leaflet midrib" RELATED []
