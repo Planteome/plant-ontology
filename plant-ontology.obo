@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:01:2012 11:46
-saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1
+date: 06:01:2012 15:15
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1-rc3
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -279,10 +279,12 @@ is_a: PO:0025128 ! phyllome primordium
 id: PO:0000022
 name: cuticle
 namespace: plant_anatomy
-def: "A layer of fatty material, cutin, rather impervious to water, located on the outer walls of epidermal cells." [ISBN:0471245208]
+def: "A plant anatomical substance composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acids C16 and C18 long (cutin), embedded and overlayed with cuticular wax and forming a layer on the surface of a plant epidermis." [ISBN:0471245208]
+comment: The cuticle is produced in and secreted by epidermal cells of leaves, stems, fruits, and other aerial plant structures. It has as parts an inner cuticle proper and an outer layer of epicuticular wax.
 synonym: "cut&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "クチクラ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025161 ! portion of plant substance
+relationship: adjacent_to PO:0005679 ! epidermis
 
 [Term]
 id: PO:0000023
@@ -17279,6 +17281,116 @@ comment: Generally larger than a caruncle and not hard.
 is_a: PO:0019022 ! arilloid
 created_by: RamonaNYBG
 creation_date: 2012-01-05T02:19:38Z
+
+[Term]
+id: PO:0025379
+name: intercellular space
+namespace: plant_anatomy
+def: "A plant anatomical space that is located inside a portion of plant tissue between two or more cells." [POC:Curators]
+comment: Often located in mesophyll tissue. This term does not include spaces on the surface of a plant structure, like a stomatal pore, stomium, or micropyle, nor larger cavities or canals that are surrounded by tissue, such as an archegonium neck canal.
+is_a: PO:0025117 ! plant anatomical space
+created_by: cooperl
+creation_date: 2012-01-06T11:16:33Z
+
+[Term]
+id: PO:0025380
+name: leaf mesophyll intercellular space 
+namespace: plant_anatomy
+def: "An intercellular space that is part of a leaf mesophyll." []
+comment: Includes the air spaces in the spongy mesophyll and substomatal cavities.
+is_a: PO:0025379 ! intercellular space
+created_by: cooperl
+creation_date: 2012-01-06T01:46:55Z
+
+[Term]
+id: PO:0025381
+name: spongy mesophyll intercellular space
+namespace: plant_anatomy
+def: "A leaf mesophyll intercellular space that is part of a spongy mesophyll." [POC:Curators]
+is_a: PO:0025379 ! intercellular space
+created_by: cooperl
+creation_date: 2012-01-06T01:48:36Z
+
+[Term]
+id: PO:0025382
+name: substomatal cavity
+namespace: plant_anatomy
+def: "A leaf mesophyll intercellular space that is located directly below and contiguous with a stomatal pore." [POC:Curators]
+is_a: PO:0025379 ! intercellular space
+created_by: cooperl
+creation_date: 2012-01-06T01:51:33Z
+
+[Term]
+id: PO:0025383
+name: phyllome sinus
+namespace: plant_anatomy
+def: "A plant anatomical space that is a phyllome marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate phyllomes." [ISBN:978-0-8014-4., POC:Curators]
+is_a: PO:0025117 ! plant anatomical space
+relationship: part_of PO:0025018 ! phyllome margin
+created_by: cooperl
+creation_date: 2012-01-06T02:00:08Z
+
+[Term]
+id: PO:0025384
+name: leaf sinus
+namespace: plant_anatomy
+def: "A phyllome sinus that is a marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate leaves." [ISBN:978-0-8014-4, POC:Curators]
+is_a: PO:0025383 ! phyllome sinus
+relationship: part_of PO:0020128 ! leaf margin
+created_by: cooperl
+creation_date: 2012-01-06T02:19:28Z
+
+[Term]
+id: PO:0025385
+name: cutin
+namespace: plant_anatomy
+def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640, POC:Curators]
+synonym: "cutin matrix" EXACT []
+is_a: PO:0025161 ! portion of plant substance
+created_by: cooperl
+creation_date: 2012-01-06T02:53:37Z
+
+[Term]
+id: PO:0025386
+name: cuticular wax
+namespace: plant_anatomy
+def: "A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a cuticle." [PMID:12467640, PO_Ref:00010]
+comment: A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a cuticle.
+is_a: PO:0025161 ! portion of plant substance
+relationship: part_of PO:0000022 ! cuticle
+created_by: cooperl
+creation_date: 2012-01-06T02:57:22Z
+
+[Term]
+id: PO:0025387
+name: cuticle proper 
+namespace: plant_anatomy
+def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
+synonym: "cutin matrix" EXACT []
+is_a: PO:0025161 ! portion of plant substance
+created_by: cooperl
+creation_date: 2012-01-06T03:06:02Z
+
+[Term]
+id: PO:0025388
+name: epicuticular wax
+namespace: plant_anatomy
+def: "A portion of cuticular wax that forms crystalloids or a smooth film on the exterior of a cuticle." [PMID:12467640, PO_REF:00010]
+comment: Epicuticular waxes may take a variety of forms, such as plates, ribbons, tubes, and rods.
+is_a: PO:0025386 ! cuticular wax
+relationship: adjacent_to PO:0025387 ! cuticle proper 
+created_by: cooperl
+creation_date: 2012-01-06T03:10:32Z
+
+[Term]
+id: PO:0025389
+name: intercuticular wax
+namespace: plant_anatomy
+def: "A portion of cuticular wax that is an amorphous mixture of lipids embedded in the cutin of a cuticle proper." [PMID:12467640, PO_REF:00010]
+is_a: PO:0025386 ! cuticular wax
+relationship: part_of PO:0025387 ! cuticle proper 
+created_by: cooperl
+creation_date: 2012-01-06T03:13:17Z
 
 [Term]
 id: PO:0028001
