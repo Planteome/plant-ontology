@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:01:2012 15:03
+date: 06:01:2012 11:46
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -18,7 +18,7 @@ subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: Japanese "Japanese synonym" EXACT
-synonymtypedef: Plural "Plural" EXACT
+synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 remark: Filtered by Has parent with type ID contains "PO:0025034"
@@ -1536,7 +1536,7 @@ is_obsolete: true
 
 [Term]
 id: PO:0001002
-name: fruit development stages
+name: fruit development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of a fruit defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "stage 17 flower in Arabidopsis" RELATED []
@@ -1553,17 +1553,17 @@ is_a: PO:0001051 ! 1 leaf initiation stage
 
 [Term]
 id: PO:0001004
-name: anther developmental stages
+name: anther development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the anther defined by characteristic morphological, cytological, histological or other visible features." [POC:Felipe_Zapata]
-is_a: PO:0007605 ! androecium developmental stages
+is_a: PO:0007605 ! androecium development stage
 
 [Term]
 id: PO:0001005
 name: A archesporial cells visible
 namespace: plant_structure_development_stage
 def: "An initial stage during which archesporial cells arise in four corners of L2 layer. Change in shape of primordia to more oval." [TAIR:Katica_Ilic]
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001006
@@ -1571,15 +1571,15 @@ name: B enlarged microsporocyte stage
 namespace: plant_structure_development_stage
 def: "Stage during which the microsporocytes become conspicuous." [TAIR:Katica_Ilic]
 synonym: "pollen stage 2 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001007
-name: pollen developmental stages
+name: pollen development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the pollen defined by characteristic morphological, cytological, histological or other visible features." [POC:Felipe_Zapata]
 synonym: "pollen development in Arabidopsis" RELATED []
-is_a: PO:0007605 ! androecium developmental stages
+is_a: PO:0007605 ! androecium development stage
 
 [Term]
 id: PO:0001008
@@ -1588,7 +1588,7 @@ namespace: plant_structure_development_stage
 def: "Stage during which diploid pollen mother cells become separated from each other and from tapetum by a callose wall." [TAIR:Katica_Ilic]
 synonym: "pollen mother cell stage" RELATED []
 synonym: "pollen stage 3 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001009
@@ -1596,7 +1596,7 @@ name: D pollen mother cell meiosis stage
 namespace: plant_structure_development_stage
 def: "Stage during which pollen mother cells undergo meiosis to form tetrads of microspores." [TAIR:Katica_Ilic]
 synonym: "pollen stage 4 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001010
@@ -1604,7 +1604,7 @@ name: F microspore release stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the callose wall between the tetrads breaks down and haploid microspores are released and lie freely in locules." [TAIR:Katica_Ilic]
 synonym: "pollen stage 5 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001011
@@ -1612,7 +1612,7 @@ name: A microsporogenous mass stage
 namespace: plant_structure_development_stage
 def: "An initial stage during which the archesporial cells divide to give rise to primary parietal and sporogenous cells." [TAIR:Katica_Ilic]
 synonym: "pollen stage 1 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001012
@@ -1620,7 +1620,7 @@ name: G early unicellular microspore stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the microspores round up and small vacuoles appear in their cytoplasm. The microspore walls thicken due to the formation of the exine." [TAIR:Katica_Ilic]
 synonym: "pollen stage 6 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001013
@@ -1628,7 +1628,7 @@ name: H late unicellular microspore stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which a large vacuole is formed in each microspore causing a rapid increase in size and a displacement of the nucleus to one side." [TAIR:Katica_Ilic]
 synonym: "pollen stage 7 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001014
@@ -1636,7 +1636,7 @@ name: I first mitotic division stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the asymmetric, first mitotic division of the microspores occurs producing a large vegetative cell and small generative cell, located near pollen wall." [TAIR:Katica_Ilic]
 synonym: "pollen stage 8 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001015
@@ -1645,7 +1645,7 @@ namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the generative cell undergoes mitotic division to form two male gametes, the sperm cells." [TAIR:Katica_Ilic]
 comment: In taxa with mature two-celled pollen, the second mitotic division takes place after pollen germination, in germinating pollen tube.
 synonym: "pollen stage 9 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001016
@@ -1654,7 +1654,7 @@ namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the pollen reaches mature stage and desiccates." [TAIR:Katica_Ilic]
 comment: Mature pollen stages is reached at three-celled pollen in some angiosperms (maize, rice and Arabidopsis), while in others, the maturepollen has two haploid cells (tobacco, snapdragon).
 synonym: "pollen stage 10 in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001017
@@ -1662,14 +1662,14 @@ name: M germinated pollen stage
 namespace: plant_structure_development_stage
 def: "The final stage in the life cycle of the male gametophyte. Upon rehydration, mature pollen grain forms a tubular outgrowth, the pollen tube, which carries the male gametes." [TAIR:Katica_Ilic]
 synonym: "germinated pollen grain in Arabidopsis" RELATED []
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001018
 name: B formation of primary parietal and sporogenous cells
 namespace: plant_structure_development_stage
 def: "Stage during which the primary parietal and primary sporogenous layers are derived from archesporial cells." [TAIR:Katica_Ilic]
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001019
@@ -1716,7 +1716,7 @@ id: PO:0001025
 name: C four anther lobes formed
 namespace: plant_structure_development_stage
 def: "Stage during which the four-lobed anther pattern with two developing stomium regions (notch) are formed." [TAIR:Katica_Ilic]
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001026
@@ -1724,7 +1724,7 @@ name: D locules established
 namespace: plant_structure_development_stage
 def: "Stage during which the four clearly defined locules are established. All anther cell types present and microspore mother cells appear." [TAIR:Katica_Ilic]
 synonym: "stage 8 flower in Arabidopsis" RELATED []
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001027
@@ -1745,7 +1745,7 @@ id: PO:0001029
 name: E tetrad stage
 namespace: plant_structure_development_stage
 def: "Stage immediately following meiosis, during which the tetrads of microspores are still hold together, enclosed by the callose wall." [TAIR:Katica_Ilic]
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001030
@@ -1761,7 +1761,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which root is elongating." [POC:Curators]
 comment: In some plant species this stage is subdivided into distal and proximal elongating zones.
 synonym: "Benfey's stage 2 of root development" RELATED []
-is_a: PO:0007520 ! root development stages
+is_a: PO:0007520 ! root development stage
 
 [Term]
 id: PO:0001032
@@ -1769,28 +1769,28 @@ name: E tapetum degeneration initiated
 namespace: plant_structure_development_stage
 def: "Stage during which degeneration of the tapetum is initiated, as the deposition on the surface of the microspore primexine proceeds." [TAIR:Katica_Ilic]
 comment: Microspores within single locule are at unicellular stage.
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001034
 name: F bilocular anther stage
 namespace: plant_structure_development_stage
 def: "Stage during which anther becomes bilocular, after degeneration and breakage of septum below stomium." [TAIR:Katica_Ilic]
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001035
 name: G anther dehiscence
 namespace: plant_structure_development_stage
 def: "Stage during which the dehiscence of anthers occurs. Anther breaks along stomium and pollen is released." [TAIR:Katica_Ilic]
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001036
 name: H anther senescence
 namespace: plant_structure_development_stage
 def: "Stage during which the senescence of anther and stamen occurs. Shrinkage of cells and anther structure takes place." [TAIR:Katica_Ilic]
-is_a: PO:0001004 ! anther developmental stages
+is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001040
@@ -1802,60 +1802,60 @@ synonym: "00 Dry Seed in soybean" RELATED [SOY:0000009]
 synonym: "1.01-dry seed in Triticeae" RELATED [GRO:0007052]
 synonym: "BBCH growth stage 00" RELATED [ISBN:3826331524]
 synonym: "dry seed in Arabidopsis" RELATED [TAIR:0000213]
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0001170 ! seed development stage
 
 [Term]
 id: PO:0001041
 name: chalazal and micropylar domain establishment
 namespace: plant_structure_development_stage
 def: "The initial stage of endosperm development during which the chalazal and micropilar domains are established." [TAIR:Katica_Ilic]
-is_a: PO:0007633 ! endosperm development stages
+is_a: PO:0007633 ! endosperm development stage
 
 [Term]
 id: PO:0001042
 name: functional specialization of the endosperm
 namespace: plant_structure_development_stage
 def: "Stage of endosperm development during which the functional specialization of the maturing endosperm occurs." [TAIR:Katica_Ilic]
-is_a: PO:0007633 ! endosperm development stages
+is_a: PO:0007633 ! endosperm development stage
 
 [Term]
 id: PO:0001044
 name: sepal differentiation and expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of calyx development defined by differentiation and expansion of sepal." [POC:Felipe_Zapata]
-is_a: PO:0007603 ! calyx developmental stages
+is_a: PO:0007603 ! calyx development stage
 
 [Term]
 id: PO:0001045
 name: fully expanded sepal
 namespace: plant_structure_development_stage
 def: "Stage of calyx development when sepal is fully expanded." [POC:Felipe_Zapata]
-is_a: PO:0007603 ! calyx developmental stages
+is_a: PO:0007603 ! calyx development stage
 
 [Term]
 id: PO:0001047
-name: lemma developmental stages
+name: lemma development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the lemma defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0001048
-name: palea developmental stages
+name: palea development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the palea defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0001049
-name: lodicule developmental stages
+name: lodicule development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the lodicule defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0001050
-name: leaf development stages
+name: leaf development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007040
 def: "Stages of development of a leaf defined by characteristic morphological, structural, histological or other visible features." [POC:Curators, TAIR:Tanya_Beradini]
@@ -1871,7 +1871,7 @@ alt_id: PO:0001003
 def: "The earliest histological evidence of leaf initiation, i.e, a change in the orientation of cell division both in the epidermis and in internal layers of the shoot meristem occurs at this stage (Poethig S, 1997, Plant Cell 9:1077-1087)." [PMID:9254931]
 comment: Cells in the primordium are not yet differentiated.
 synonym: "leaf initiation in Arabidopsis" RELATED []
-is_a: PO:0001050 ! leaf development stages
+is_a: PO:0001050 ! leaf development stage
 
 [Term]
 id: PO:0001052
@@ -1879,7 +1879,7 @@ name: 2 leaf expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of leaf development which begins when cell differentiation and cell expansion occurs and finishes when the leaf reaches its full size." [TAIR:Katica_Ilic]
 synonym: "leaf expansion stage in Arabidopsis" RELATED []
-is_a: PO:0001050 ! leaf development stages
+is_a: PO:0001050 ! leaf development stage
 
 [Term]
 id: PO:0001053
@@ -1887,7 +1887,7 @@ name: 3 leaf fully expanded
 namespace: plant_structure_development_stage
 def: "Stage of leaf development when leaf is fully expanded." [TAIR:Katica_Ilic]
 synonym: "fully expanded leaf stage in Arabidopsis" RELATED []
-is_a: PO:0001050 ! leaf development stages
+is_a: PO:0001050 ! leaf development stage
 
 [Term]
 id: PO:0001054
@@ -1895,7 +1895,7 @@ name: 4 leaf senescence stage
 namespace: plant_structure_development_stage
 def: "The final stage of leaf development when the leaf ceases metabolic activity and senesces." [TAIR:Tanya_Beradini]
 synonym: "leaf senescence stage in Arabidopsis" RELATED []
-is_a: PO:0001050 ! leaf development stages
+is_a: PO:0001050 ! leaf development stage
 
 [Term]
 id: PO:0001055
@@ -1903,21 +1903,21 @@ name: lemma primordia visible
 namespace: plant_structure_development_stage
 def: "Stage of lemma development that begins when the lemma primordia arise." [POC:Felipe_Zapata]
 comment: The lemma primordium forms in 1/2 alternate phylotaxy in rice spikelet.
-is_a: PO:0001047 ! lemma developmental stages
+is_a: PO:0001047 ! lemma development stage
 
 [Term]
 id: PO:0001056
 name: lemma differentiation and expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of lemma development defined by differentiation and expansion of lemma." [POC:Felipe_Zapata]
-is_a: PO:0001047 ! lemma developmental stages
+is_a: PO:0001047 ! lemma development stage
 
 [Term]
 id: PO:0001057
 name: fully expanded lemma
 namespace: plant_structure_development_stage
 def: "Stage of lemma development when lemma is fully expanded." [POC:Felipe_Zapata]
-is_a: PO:0001047 ! lemma developmental stages
+is_a: PO:0001047 ! lemma development stage
 
 [Term]
 id: PO:0001058
@@ -1925,28 +1925,28 @@ name: palea primordia visible
 namespace: plant_structure_development_stage
 def: "Stage of palea development that begins when the palea primordia arise." [POC:Felipe_Zapata]
 comment: The palea primordium forms in 1/2 alternate phylotaxy in rice spikelet.
-is_a: PO:0001048 ! palea developmental stages
+is_a: PO:0001048 ! palea development stage
 
 [Term]
 id: PO:0001059
 name: J bicellular pollen stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the small generative cell moves inward, becoming completely surrounded by the cytoplasm of the vegetative cell." [TAIR:Katica_Ilic]
-is_a: PO:0001007 ! pollen developmental stages
+is_a: PO:0001007 ! pollen development stage
 
 [Term]
 id: PO:0001070
 name: palea differentiation and expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of palea development defined by differentiation and expansion of palea." [POC:Felipe_Zapata]
-is_a: PO:0001048 ! palea developmental stages
+is_a: PO:0001048 ! palea development stage
 
 [Term]
 id: PO:0001071
 name: fully expanded palea
 namespace: plant_structure_development_stage
 def: "Stage of palea development when palea is fully expanded." [POC:Felipe_Zapata]
-is_a: PO:0001048 ! palea developmental stages
+is_a: PO:0001048 ! palea development stage
 
 [Term]
 id: PO:0001072
@@ -1954,7 +1954,7 @@ name: lodicule primordia visible
 namespace: plant_structure_development_stage
 def: "Stage of lodicule development that begins when the lodicule primordia arise." [POC:Felipe_Zapata]
 comment: Two lodicules form on the side of the lemma in rice spikelet.
-is_a: PO:0001049 ! lodicule developmental stages
+is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001074
@@ -1968,7 +1968,7 @@ id: PO:0001077
 name: lodicule differentiation and expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of lodicule development defined by differentiation and expansion of lodicule." [POC:Felipe_Zapata]
-is_a: PO:0001049 ! lodicule developmental stages
+is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001078
@@ -1985,7 +1985,7 @@ id: PO:0001079
 name: fully expanded lodicule
 namespace: plant_structure_development_stage
 def: "Stage of lodicule development when lodicule is fully expanded." [POC:Felipe_Zapata]
-is_a: PO:0001049 ! lodicule developmental stages
+is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001081
@@ -1998,7 +1998,7 @@ is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001083
-name: inflorescence development stages
+name: inflorescence development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of an inflorescence defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 is_a: PO:0025338 ! collective plant structure development stage
@@ -2024,7 +2024,7 @@ id: PO:0001096
 name: primary endosperm cell stage
 namespace: plant_structure_development_stage
 def: "One cell stage that takes place following the fertilization, produced by the fusion of sperm cell nucleus and one or more polar nuclei." [TAIR:Katica_Ilic]
-is_a: PO:0007633 ! endosperm development stages
+is_a: PO:0007633 ! endosperm development stage
 
 [Term]
 id: PO:0001097
@@ -2052,9 +2052,10 @@ is_a: PO:0001042 ! functional specialization of the endosperm
 
 [Term]
 id: PO:0001170
-name: seed development stages
+name: seed development stage
 namespace: plant_structure_development_stage
-def: "Stages of seed development, from fertilization to the dry or quiescent state." [TAIR:Katica_Ilic]
+def: "A plant structure development stage that has as primary participant a seed." [POC:Ramona_Walls, TAIR:Katica_Ilic]
+comment: Includes the stages of seed development, from fertilization to the dry or quiescent state.
 synonym: "seed development in Arabidopsis" RELATED []
 is_a: PO:0009012 ! plant structure development stage
 
@@ -2501,7 +2502,7 @@ id: PO:0004501
 name: gynoecium differentiation and expansion
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development defined by differentiation and expansion of carpels." [TAIR:Katica_Ilic]
-is_a: PO:0007606 ! gynoecium developmental stages
+is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
 id: PO:0004502
@@ -2509,35 +2510,35 @@ name: closure of carpel(s)
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development defined by the closure of the carpel(s)." [TAIR:Katica_Ilic]
 comment: Closure of the carpel can occur in various ways, by fusion or secretion.
-is_a: PO:0007606 ! gynoecium developmental stages
+is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
 id: PO:0004503
 name: stigma cell differentiation
 namespace: plant_structure_development_stage
 def: "Epidermal cells at the top of developing style differentiate stigma." [TAIR:Katica_Ilic]
-is_a: PO:0007606 ! gynoecium developmental stages
+is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
 id: PO:0004504
 name: ovule differentiation and expansion
 namespace: plant_structure_development_stage
 def: "Stage of ovule development defined by differentiation and expansion of ovules." [TAIR:Katica_Ilic]
-is_a: PO:0007619 ! ovule developmental stages
+is_a: PO:0007619 ! ovule development stage
 
 [Term]
 id: PO:0004505
 name: fertilized ovule stage
 namespace: plant_structure_development_stage
 def: "The earliest stage of seed development immediately following double fertilization." [TAIR:Katica_Ilic]
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0001170 ! seed development stage
 
 [Term]
 id: PO:0004506
 name: developing seed stage
 namespace: plant_structure_development_stage
 def: "Stage of seed development characterized by seed growth and differentiation." [TAIR:Katica_Ilic]
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0001170 ! seed development stage
 
 [Term]
 id: PO:0004507
@@ -3365,6 +3366,7 @@ id: PO:0005010
 name: anther septum
 namespace: plant_anatomy
 def: "A septum that is present in an anther dehiscence zone." [GR:Chih-Wei_Tung, GR:Pankaj_Jaiswal]
+synonym: "anther dissepiment" BROAD [FNA:glossary]
 synonym: "septo de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯隔壁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000030 ! septum
@@ -6713,7 +6715,7 @@ is_a: PO:0007042 ! 5 fruit formation
 id: PO:0007033
 name: whole plant development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as a participant a whole plant." [POC:curators]
+def: "A plant structure development stage that has as primary participant a whole plant." [POC:curators]
 subset: TraitNet
 synonym: "cereal plant ontology " RELATED [GRO:0080001]
 synonym: "maize growth stage" RELATED [GRO:0007002]
@@ -6778,7 +6780,7 @@ id: PO:0007037
 name: inflorescence bifurcation stage
 namespace: plant_structure_development_stage
 def: "Stage of inflorescence development marked by the formation of two, oftern equal-sized, inflorescence meristems from one inflorescence meristem." [POC:Curators]
-is_a: PO:0001083 ! inflorescence development stages
+is_a: PO:0001083 ! inflorescence development stage
 
 [Term]
 id: PO:0007038
@@ -8260,7 +8262,7 @@ id: PO:0007505
 name: 1 root primordium formation
 namespace: plant_structure_development_stage
 def: "The stage at which root primordium originates and develops at specific locations in embryonic and post embryonic roots." [GR:Anuradha_Pujar]
-is_a: PO:0007520 ! root development stages
+is_a: PO:0007520 ! root development stage
 
 [Term]
 id: PO:0007506
@@ -8350,11 +8352,11 @@ name: 5 root hair formation
 namespace: plant_structure_development_stage
 def: "The stage at which the root hairs becomes evident." [GR:Anuradha_Pujar]
 synonym: "Benfey's stage 3 of root development" RELATED []
-is_a: PO:0007520 ! root development stages
+is_a: PO:0007520 ! root development stage
 
 [Term]
 id: PO:0007520
-name: root development stages
+name: root development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007011
 def: "Stages of development of a root defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar]
@@ -8397,7 +8399,7 @@ synonym: "cell differentiation stage of root development" RELATED []
 synonym: "establishment of fundamental organization in adventitious root" RELATED []
 synonym: "establishment of fundamental organization in primary root." RELATED []
 synonym: "establishment of fundamental organization lateral root." RELATED []
-is_a: PO:0007520 ! root development stages
+is_a: PO:0007520 ! root development stage
 
 [Term]
 id: PO:0007526
@@ -8412,7 +8414,7 @@ name: 2 root meristem formation
 namespace: plant_structure_development_stage
 def: "The stage at which the root meristem becomes evident." [GR:Anuradha_Pujar]
 comment: Characteristic differences in meristem organization have been related to taxonomic groups. Terms for developmental zones formation are available in the obsolete node, and they will be reintroduced in the ontology when there is a specific user request for them.
-is_a: PO:0007520 ! root development stages
+is_a: PO:0007520 ! root development stage
 
 [Term]
 id: PO:0007528
@@ -8507,11 +8509,11 @@ is_obsolete: true
 
 [Term]
 id: PO:0007600
-name: 3 flower organ development stages
+name: 3 flower organ development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of floral organs defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "3 floral organ development stages" RELATED []
-is_a: PO:0007615 ! flower development stages
+is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007601
@@ -8520,7 +8522,7 @@ namespace: plant_structure_development_stage
 def: "Stage of flower development marked by the emergence of the floral meristem on the flank of the inflorescence meristem." [POC:Curators]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
-is_a: PO:0007615 ! flower development stages
+is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007602
@@ -8529,35 +8531,35 @@ namespace: plant_structure_development_stage
 def: "Stage of floral development that begins when the floral meristem becomes demarcated from the inflorescence meristem by a slight indentation." [POC:Curators]
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
-is_a: PO:0007615 ! flower development stages
+is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007603
-name: calyx developmental stages
+name: calyx development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the calyx defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0007604
-name: corolla developmental stages
+name: corolla development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the corolla defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0007605
-name: androecium developmental stages
+name: androecium development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the androecium defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0007606
-name: gynoecium developmental stages
+name: gynoecium development stage
 namespace: plant_anatomy
 def: "Stages of development of the gynoecium defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
-is_a: PO:0007600 ! 3 flower organ development stages
+is_a: PO:0007600 ! 3 flower organ development stage
 
 [Term]
 id: PO:0007607
@@ -8565,7 +8567,7 @@ name: sepal primordium visible
 namespace: plant_structure_development_stage
 def: "Stage of calyx development that begins when the sepal primordia arise." [POC:Curators]
 synonym: "stage 3 flower in Arabidopsis" RELATED []
-is_a: PO:0007603 ! calyx developmental stages
+is_a: PO:0007603 ! calyx development stage
 
 [Term]
 id: PO:0007608
@@ -8573,7 +8575,7 @@ name: petal primordium visible
 namespace: plant_structure_development_stage
 def: "Stage of corolla development that begins when the petal or petal-stamen primordia arise." [POC:Curators]
 synonym: "stage 5 flower in Arabidopsis" RELATED []
-is_a: PO:0007604 ! corolla developmental stages
+is_a: PO:0007604 ! corolla development stage
 
 [Term]
 id: PO:0007609
@@ -8597,14 +8599,14 @@ def: "Stage of corolla development defined by differentiation and expansion of p
 synonym: "stage 10 flower in Arabidopsis" RELATED []
 synonym: "stage 12 flower in Arabidopsis" RELATED []
 synonym: "stage 9 flower in Arabidopsis" RELATED []
-is_a: PO:0007604 ! corolla developmental stages
+is_a: PO:0007604 ! corolla development stage
 
 [Term]
 id: PO:0007612
 name: fully expanded petal
 namespace: plant_structure_development_stage
 def: "Stage of corolla development when petal is fully expanded." [POC:Felipe_Zapata]
-is_a: PO:0007604 ! corolla developmental stages
+is_a: PO:0007604 ! corolla development stage
 
 [Term]
 id: PO:0007613
@@ -8612,11 +8614,11 @@ name: stamen primordium visible
 namespace: plant_structure_development_stage
 def: "Stage of androecium development that begins when the stamens or petal-stamen primordia arise." [POC:Curators]
 synonym: "stage 7 flower in Arabidopsis" RELATED []
-is_a: PO:0007605 ! androecium developmental stages
+is_a: PO:0007605 ! androecium development stage
 
 [Term]
 id: PO:0007615
-name: flower development stages
+name: flower development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of a flower defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "flower development in Arabidopsis" RELATED []
@@ -8630,7 +8632,7 @@ def: "The phase of a flower when pollen is presented and/or the stigma is recept
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
 synonym: "stage 15 flower in Arabidopsis" RELATED []
-is_a: PO:0007615 ! flower development stages
+is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007617
@@ -8638,22 +8640,22 @@ name: 5 post anthesis
 namespace: plant_structure_development_stage
 def: "The phase of a flower after the pollen is presented and/or the stigma is receptive." [POC:Curators]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
-is_a: PO:0007615 ! flower development stages
+is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007618
 name: carpel primordium visible
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development that begins when the carpel primordia arise." [POC:Curators]
-is_a: PO:0007606 ! gynoecium developmental stages
+is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
 id: PO:0007619
-name: ovule developmental stages
+name: ovule development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the ovule defined by characteristic morphological, structural, histological or other visible features." [POC:Curators]
 synonym: "ovule development in Arabidopsis" RELATED []
-is_a: PO:0007606 ! gynoecium developmental stages
+is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
 id: PO:0007620
@@ -8661,15 +8663,15 @@ name: ovule primordium visible
 namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the ovule primordia arise." [POC:Curators]
 synonym: "ovule stage 1-I in Arabidopsis" RELATED []
-is_a: PO:0007619 ! ovule developmental stages
+is_a: PO:0007619 ! ovule development stage
 
 [Term]
 id: PO:0007621
-name: megagametophyte developmental stages
+name: megagametophyte development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the megagametophyte." [POC:Curators]
 comment: Although megaspore and megagametophyte development are normally separate, one spore producing one gametophyte, in some flowering plants a single gametophyte may be produced from two or four spores.
-is_a: PO:0007619 ! ovule developmental stages
+is_a: PO:0007619 ! ovule development stage
 
 [Term]
 id: PO:0007622
@@ -8686,7 +8688,7 @@ name: A megaspore mother cell enlarges
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell enlarges." [POC:Curators]
 synonym: "ovule stage 2-I in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007624
@@ -8694,7 +8696,7 @@ name: B meiosis of megaspore mother cell
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell undergoes meiosis." [POC:Curators]
 synonym: "ovule stage 2-IV in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007625
@@ -8702,7 +8704,7 @@ name: C tetrad of megaspores
 namespace: plant_structure_development_stage
 def: "The product of meiosis of the megaspore mother cell." [POC:Curators]
 synonym: "ovule stage 2-V in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007626
@@ -8711,7 +8713,7 @@ namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when non-functional megaspores degenerate." [POC:Curators]
 comment: In some plants more than one megaspore contributes to the megametophyte.
 synonym: "ovule stage 3-I in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007627
@@ -8719,7 +8721,7 @@ name: E two nucleate megagametophyte
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are two nuclei." [POC:Curators]
 synonym: "ovule stage 3-II in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007628
@@ -8727,7 +8729,7 @@ name: F four nucleate megagametophyte
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are four nuclei." [POC:Curators]
 synonym: "ovule stage 3-IV in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007629
@@ -8736,7 +8738,7 @@ namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are eight nuclei." [POC:Curators]
 comment: Some plants do not form an eight nucleate megametophyte.
 synonym: "ovule stage 3-V in Arabidopsis" RELATED []
-is_a: PO:0007621 ! megagametophyte developmental stages
+is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007631
@@ -8757,14 +8759,14 @@ name: seed maturation stage
 namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequentially, desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
 synonym: "seed maturation in Arabidopsis" RELATED []
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0001170 ! seed development stage
 
 [Term]
 id: PO:0007633
-name: endosperm development stages
+name: endosperm development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the endosperm." [TAIR:Katica_Ilic]
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0001170 ! seed development stage
 
 [Term]
 id: PO:0008001
@@ -9972,6 +9974,7 @@ name: bracteole
 namespace: plant_anatomy
 def: "A small leaf or leaves borne singly or in pairs on the pedicel, the prophyll(s) of the flower-shoot (pedicel plus flower)." [APweb:Glossary]
 synonym: "bracteola (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "bractlet" EXACT [FNA:glossary]
 synonym: "小苞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009042 ! prophyll
 relationship: part_of PO:0009052 ! pedicel
@@ -10167,7 +10170,10 @@ comment: Usually different from leaves. Often used to refer to a floral bract, b
 subset: reference
 subset: TraitNet
 synonym: "br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "bracteole" RELATED [FNA:glossary]
+synonym: "bractlet" RELATED [FNA:glossary]
 synonym: "hypsophyll" RELATED []
+synonym: "scale" NARROW [FNA:glossary]
 synonym: "苞葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006001 ! phyllome
 
@@ -10231,6 +10237,7 @@ def: "A collective phyllome structure composed of two or more sepals." [POC:Cura
 subset: reference
 subset: TraitNet
 synonym: "c&#225lix (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "calyces" EXACT Plural [FNA:glossary]
 synonym: "がく (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
@@ -10259,7 +10266,9 @@ subset: Maize
 subset: Poaceae
 subset: reference
 subset: TraitNet
+synonym: "androecia" EXACT Plural [FNA:glossary]
 synonym: "androecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "androecium column" NARROW [FNA:glossary]
 synonym: "androecium of ear floret" NARROW []
 synonym: "androecium of lower floret of pedicellate spikelet of ear" NARROW []
 synonym: "androecium of lower floret of sessile spikelet of ear" NARROW []
@@ -10425,6 +10434,7 @@ def: "A collective plant structure that is part of an anther and consists of a p
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
+synonym: "anther thecae" EXACT Plural [FNA:glossary]
 synonym: "Poaceae theca" NARROW []
 synonym: "teca (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Zea theca" NARROW []
@@ -10888,9 +10898,11 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is a fleshy outgrowth of a seed." [ISBN:9780881928501]
 comment: Often conspicuous and found on seeds with a hard testa that are dispersed by animals. There is some variation in how different sources define the subtypes of arilloids.
 subset: TraitNet
+synonym: "aril" RELATED [FNA:glossary]
+synonym: "arilli" EXACT Plural [FNA:glossary]
+synonym: "arillode" RELATED [FNA:glossary]
+synonym: "arillus" EXACT [FNA:glossary]
 synonym: "ariloide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "caruncle" NARROW [ISBN:9780881928501]
-synonym: "strophiole" NARROW [ISBN:9780881928501]
 synonym: "アリロイド (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132539
 is_a: PO:0025001 ! cardinal organ part
@@ -11268,6 +11280,8 @@ def: "A portion of plant tissue that is the region in an ovule where the integum
 comment: The chalaza is recognized as the region which initiates the two integuments at its flank. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "calaza (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "chalazae" EXACT Plural [FNA:glossary]
+synonym: "chalazas" EXACT Plural [FNA:glossary]
 synonym: "ovular chlaza" EXACT []
 synonym: "Poaceae chalaza" NARROW []
 synonym: "portion of chalaza tissue" EXACT []
@@ -11974,6 +11988,7 @@ name: auricle
 namespace: plant_anatomy
 def: "Outgrowth at the base of a leaf blade that may wrap around the stem." [GR:Pankaj_Jaiswal]
 synonym: "aur&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "ear" NARROW [FNA:glossary]
 synonym: "葉耳 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
@@ -12352,7 +12367,7 @@ id: PO:0021004
 name: inflorescence initiation stage
 namespace: plant_structure_development_stage
 def: "Stage of inflorescence development marked by the formation of the inflorescence meristem on a vegetative branch." [POC:Felipe_Zapata]
-is_a: PO:0001083 ! inflorescence development stages
+is_a: PO:0001083 ! inflorescence development stage
 
 [Term]
 id: PO:0025001
@@ -13364,6 +13379,7 @@ namespace: plant_anatomy
 def: "A shoot axis that develops from an axillary meristem or from equal divisions of the shoot apical meristem." [POC:Curators]
 comment: Branches arise from axillary meristems in vascular plants and from divisions of the shoot apical meristem in non-vascular plants.
 subset: TraitNet
+synonym: "branchlet" NARROW [FNA:glossary]
 synonym: "higher order axis" NARROW []
 synonym: "ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "secondary axis" NARROW []
@@ -13933,8 +13949,9 @@ subset: Bryophytes
 subset: CL
 subset: Pteridophytes
 synonym: "antheridial sperm cell" EXACT []
+synonym: "antherozoid" EXACT [FNA:glossary]
 synonym: "c&#233lula esperm&#225tica del anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "spermatazoid" EXACT []
+synonym: "spermatozoid" EXACT [FNA:glossary]
 synonym: "造精器精子細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000084 ! plant sperm cell
 relationship: part_of PO:0025125 ! antheridium
@@ -14012,6 +14029,7 @@ comment: An antheridium has a sterile jacket layer that does not produce sperm c
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "antheridia" EXACT Plural [FNA:glossary]
 synonym: "造精器 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025124 ! plant gametangium
 created_by: Ramona
@@ -14105,6 +14123,17 @@ namespace: plant_anatomy
 def: "A plant anatomical space that is either a groove on the surface or a tube in the interior of a plant structure." [POC:Curators]
 comment: May be cylindrical (PATO:0001203) in shape, with a circular, D-shaped or other irregularly-shaped cross-section.
 synonym: "canal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "channel" EXACT [FNA:glossary]
+synonym: "colpi" NARROW Plural [FNA:glossary]
+synonym: "colpus" NARROW [FNA:glossary]
+synonym: "fossula" NARROW [FNA:glossary]
+synonym: "fossulae" NARROW Plural [FNA:glossary]
+synonym: "furrow" NARROW [FNA:glossary]
+synonym: "groove" NARROW [FNA:glossary]
+synonym: "sulci" NARROW Plural [FNA:glossary]
+synonym: "sulcus" NARROW Plural [FNA:glossary]
+synonym: "vallecula" NARROW Plural [FNA:glossary]
+synonym: "valleculae" NARROW Plural [FNA:glossary]
 synonym: "導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025117 ! plant anatomical space
 created_by: Ramona
@@ -16618,8 +16647,10 @@ name: banner petal
 namespace: plant_anatomy
 def: "A petal that is the top-most petal of a papilionaceous corolla." [ISBN:9780023681905]
 comment: Usually larger than the adjacent wing petals. Found in the flowers of some Fabaceae.
+synonym: "banner" EXACT [FNA:glossary]
 synonym: "p&#233talo estandarte (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "standard" BROAD []
+synonym: "vexilla" EXACT Plural [FNA:glossary]
 synonym: "vexillum" EXACT [ISBN:9780023681905]
 is_a: PO:0009032 ! petal
 created_by: RamonaNYBG
@@ -16680,6 +16711,8 @@ def: "A calyx that is composed of fused sepals." [POC:Curators]
 comment: Sometimes found in Eucalyptus and other Myrtaceae, covering an inner operculum or calyptra corolla. The sepals are generally completely fused. Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development. Not the same structure as a spore capsule calyptra or fruit operculum. Sometimes erroneously referred to as part of a fruit.
 synonym: "caliptra c&#225liz (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "calycine operculum" EXACT []
+synonym: "calyx calyptrae" EXACT Plural [FNA:glossary]
+synonym: "corolla calyptrae" EXACT Plural [FNA:glossary]
 synonym: "operculum calyx" EXACT []
 synonym: "outer operculum" EXACT []
 is_a: PO:0009060 ! calyx
@@ -16791,6 +16824,7 @@ id: PO:0025338
 name: collective plant structure development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a collective plant structure." [POC:curators]
+comment: Includes development stages for flowers, fruits, and inflorescences.
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
@@ -16800,6 +16834,7 @@ id: PO:0025339
 name: plant organ development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a plant organ." [POC:curators]
+comment: Includes development stages for leaves and roots.
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
@@ -16904,6 +16939,11 @@ name: awn
 namespace: plant_anatomy
 def: "A cardinal organ part that is a slender, more or less straight and stiff, fine-pointed, terminal or subterminal appendage of a glume, lemma, or palea." [FNA:glossary]
 comment: Found in a spikelet of Poaceae. Sometimes the awn is a continuation of the bearing structure's central primary vein.
+synonym: "arista" EXACT [FNA:glossary]
+synonym: "aristae" EXACT Plural [FNA:glossary]
+synonym: "bristle" BROAD [FNA:glossary]
+synonym: "seta" EXACT [FNA:glossary]
+synonym: "setae" EXACT Plural [FNA:glossary]
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009051 ! spikelet
 created_by: RamonaNYBG
@@ -17190,7 +17230,7 @@ namespace: plant_structure_development_stage
 def: "A seed development stage during which a seed participates in a seed dormancy process." [GO:0010162, POC:curators]
 comment: A seed dormancy process (GO:0010162) is a dormancy process in which dormancy (sometimes called a dormant state) is induced, maintained or broken in a seed. Seed dormancy is a suspension of most physiological activity and growth in a seed, including the embryo contained therein, that can be reactivated. It often requires special conditions for reactivation, such as specific temperature, scarification, or leaching of inhibitors. Seed dormancy includes dormancy of the embryo and the seed coat, although\nthese may not begin or end simultaneously. Not all seeds go through a seed dormant stage. Most seeds that go through a dormant stage do so only one time.
 xref: OBO_SF_PO:3468651
-is_a: PO:0001170 ! seed development stages
+is_a: PO:0001170 ! seed development stage
 relationship: has_part PO:0025377 ! plant embryo dormant stage
 created_by: RamonaNYBG
 creation_date: 2012-01-05T10:29:43Z
@@ -18130,6 +18170,7 @@ subset: CL
 subset: Pteridophytes
 synonym: "antheridium wall cell" EXACT []
 synonym: "capa c&#233lular de la cubierta del anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "jacket cell" BROAD [FNA:glossary]
 synonym: "sterile jacket cell" EXACT []
 xref: OBO_SF_PO:3293290
 is_a: PO:0009002 ! plant cell
