@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:01:2012 15:15
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1-rc3
+date: 19:01:2012 13:59
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1.1-beta2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -6493,6 +6493,7 @@ synonym: "BBCH principal growth stage 9" RELATED [ISBN:3826331524]
 synonym: "C senescence in Solanaceae" RELATED [SGN:0000052]
 synonym: "senescence in Arabidopsis" RELATED [TAIR:0000035]
 synonym: "sporophyte senescence stage" EXACT []
+xref: OBO_SF_PO:3432979
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -8202,6 +8203,7 @@ comment: A dormancy process (GO:0022611) is a developmental process in which dor
 synonym: "D dormancy in Solanaceae" NARROW [SGN:0000053]
 synonym: "sporophyte dormancy stage" EXACT []
 synonym: "sporophytic dormant stage" EXACT []
+xref: OBO_SF_PO:3435050
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -9514,8 +9516,8 @@ relationship: participates_in PO:0007631 ! plant embryo stage
 id: PO:0009010
 name: seed
 namespace: plant_anatomy
-def: "A plant structure that develops from an ovule and contains an embryo enclosed in a seed coat." [RW:test]
-comment: A seed is a reproductive unit of seed plants (gymnosperms and angiosperms).
+def: "A plant structure that develops from an ovule and has as parts an embryo enclosed in a seed coat." [POC:curators]
+comment: A seed generally develops from an ovule (PO:0020003) after fertilization, but may develop without fertilization in the case of apogamy (e.g., adventitious embryos or somatic embryos). A seed is a reproductive unit of seed plants (gymnosperms, angiosperms, and fossil pteridosperms).
 subset: Angiosperm
 subset: Arabidopsis
 subset: Citrus
@@ -9528,6 +9530,7 @@ subset: TraitNet
 synonym: "diaspore" BROAD []
 synonym: "semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3458354
 is_a: PO:0009011 ! plant structure
 relationship: develops_from PO:0020003 ! ovule
 relationship: has_part PO:0009009 ! plant embryo
@@ -10731,7 +10734,6 @@ synonym: "仮種皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132538
 is_a: PO:0019022 ! arilloid
 relationship: develops_from PO:0020006 ! funicle
-relationship: part_of PO:0009010 ! seed
 
 [Term]
 id: PO:0009091
@@ -11181,7 +11183,7 @@ synonym: "megaspora (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae megaspore" NARROW []
 synonym: "Zea megaspore" NARROW []
 synonym: "大胞子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025017 ! spore
+is_a: PO:0025017 ! plant spore
 
 [Term]
 id: PO:0020020
@@ -11439,14 +11441,15 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020039
 name: leaf lamina
 namespace: plant_anatomy
-def: "A lamina that is part of a leaf, usually dorsiventrally flattened and expanded." [APweb:Glossary]
-comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+def: "A phyllome lamina that is the part of a leaf exclusive of the petiole or sheath, if either is present." [POC:curators]
+comment: A leaf lamina is usually dorsiventrally flattened, but may be flattened in a median plant (perpendicular to the axis) in the case of phyllodes (PO:0025335) or other ensiform leaves (PO:0025333). This term should not be used for leaves that are not laminar (flat), like round leaves in Allium or needle-like leaves in Pinus or some Proteaceae. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "l&#225mina de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf blade" RELATED []
 synonym: "葉身（葉片） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
-is_a: PO:0025060 ! lamina
+xref: OBO_SF_PO:3474979
+is_a: PO:0025396 ! phyllome lamina
 relationship: part_of PO:0025034 ! leaf
 
 [Term]
@@ -11560,7 +11563,7 @@ synonym: "microspora (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae microspore" NARROW []
 synonym: "Zea microspore" NARROW []
 synonym: "小胞子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025017 ! spore
+is_a: PO:0025017 ! plant spore
 
 [Term]
 id: PO:0020049
@@ -12245,6 +12248,7 @@ def: "A strand of vascular tissue in the leaf blade." [APweb:Glossary]
 subset: TraitNet
 synonym: "vena de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3459287
 is_a: PO:0009015 ! portion of vascular tissue
 relationship: part_of PO:0000036 ! leaf vascular system
 
@@ -12592,15 +12596,16 @@ creation_date: 2010-03-25T10:15:35Z
 
 [Term]
 id: PO:0025017
-name: spore
+name: plant spore
 namespace: plant_anatomy
-def: "A plant cell that arises through meiosis and develops into a gametophyte." [POC:Curators]
+def: "A whole plant that arises through meiosis and develops into a gametophyte." [POC:Curators]
+comment: A spore is usually single-celled in homosporous ferns but may be\nmulticellular in heterosporous plants.
 subset: CL
 synonym: "diaspore" BROAD []
 synonym: "espora (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胞子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972117
-is_a: PO:0009002 ! plant cell
+is_a: PO:0000003 ! whole plant
 created_by: Ramona
 creation_date: 2010-04-02T09:53:48Z
 
@@ -13206,11 +13211,13 @@ creation_date: 2009-12-17T03:06:13Z
 id: PO:0025060
 name: lamina
 namespace: plant_anatomy
-def: "A regional part of an anatomical structure that is enlarged through lateral growth." [POC:Curators]
+def: "A part of a plant structure that is thin and flat." [POC:Curators]
+comment: PATO:0000407 (flat) and PATO:0000592 (thin).
 subset: TraitNet
 synonym: "l&#225mina (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身、葉片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3474979
 is_a: PO:0025001 ! cardinal organ part
 created_by: cooperl
 creation_date: 2009-12-18T11:23:59Z
@@ -16873,6 +16880,7 @@ def: "A gametophyte development stage during which a gametophyte participates in
 comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a gametophyte dormant stage are the moss Polytrichum commune after it has undergone dessication (a type of resurrection plant), the boreal moss Polytrichum alpestre, whose shoot systems have annual growth segments due to a period of dormancy during the winter, the female gametophyte of Ginkgo biloba, which is dormant before fertilization, and dormancy of plant spores.
 synonym: "gametophyte dormancy stage" EXACT []
 synonym: "gametophytic dormant stage" EXACT []
+xref: OBO_SF_PO:3435050
 is_a: PO:0028003 ! gametophyte development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:55:08Z
@@ -16986,10 +16994,11 @@ creation_date: 2011-11-16T02:07:59Z
 
 [Term]
 id: PO:0025353
-name: areole
+name: bud areole
 namespace: plant_anatomy
-def: "An axillary bud that does not elongate, in which the leaves develop as spine leaves (PO:0025173)." [ISBN:9780881928501]
+def: "An axillary bud that does not elongate, in which the leaves develop as spine leaves." [ISBN:9780881928501]
 comment: Found in Cactaceae. Appears as a cluster of spines. May be covered in trichomes. In species with tubercles, the areole is often found at the distal end of the tubercle. The areole originates in the axil of the leaf that becomes the tubercle but is displaced to the tip of a tubercle through adnation (fusion of two organs of different types).
+xref: OBO_SF_PO:3438986
 is_a: PO:0004709 ! axillary bud
 created_by: RamonaNYBG
 creation_date: 2011-11-16T03:00:18Z
@@ -17241,12 +17250,12 @@ creation_date: 2012-01-05T10:29:43Z
 id: PO:0025375
 name: plant spore stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage that occurs during the interval between meiosis and the germination (first cell division) of a spore." [RW:test]
-comment: Includes the stage when a megaspore is present before it develops into a megagametophyte or embryo sac and the stage when a microspore is present before it develops into a microgametophyte or pollen.
+def: "A gametophyte development stage that occurs during the interval between meiosis and the germination of a spore." [POC:curators]
+comment: Includes the stage when a megaspore is present before it develops into a megagametophyte or embryo sac and the stage when a microspore is present before it develops into a microgametophyte or pollen. There may be cell division in a spore before it germinates.
 xref: OBO_SF_PO:3469811
 is_a: PO:0028003 ! gametophyte development stage
 intersection_of: PO:0028003 ! gametophyte development stage
-intersection_of: has_participant PO:0025017 ! spore
+intersection_of: has_participant PO:0025017 ! plant spore
 created_by: RamonaNYBG
 creation_date: 2012-01-05T10:32:33Z
 
@@ -17254,10 +17263,11 @@ creation_date: 2012-01-05T10:32:33Z
 id: PO:0025376
 name: plant spore dormant stage
 namespace: plant_structure_development_stage
-def: "A gametophyte dormant stage during which a spore participates in a dormancy process." [GO:0022611, RW:test]
+def: "A gametophyte dormant stage during which a spore participates in a dormancy process." [GO:0022611, POC:curators]
 comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated.
+xref: OBO_SF_PO:3469817
 is_a: PO:0025342 ! gametophyte dormant stage
-relationship: has_participant PO:0025017 ! spore
+relationship: has_participant PO:0025017 ! plant spore
 created_by: RamonaNYBG
 creation_date: 2012-01-05T10:47:37Z
 
@@ -17265,8 +17275,9 @@ creation_date: 2012-01-05T10:47:37Z
 id: PO:0025377
 name: plant embryo dormant stage
 namespace: plant_structure_development_stage
-def: "A sporophyte dormant stage during which a plant embryo participates in a dormancy process." [GO:0022611, RW:test]
+def: "A sporophyte dormant stage during which a plant embryo participates in a dormancy process." [GO:0022611, POC:curators]
 comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. In seed plants, a plant embryo dormant stage may be part of a seed dormant stage.
+xref: OBO_SF_PO:3469817
 is_a: PO:0007132 ! sporophyte dormant stage
 relationship: has_participant PO:0009009 ! plant embryo
 created_by: RamonaNYBG
@@ -17294,7 +17305,7 @@ creation_date: 2012-01-06T11:16:33Z
 
 [Term]
 id: PO:0025380
-name: leaf mesophyll intercellular space 
+name: leaf mesophyll intercellular space
 namespace: plant_anatomy
 def: "An intercellular space that is part of a leaf mesophyll." []
 comment: Includes the air spaces in the spongy mesophyll and substomatal cavities.
@@ -17363,7 +17374,7 @@ creation_date: 2012-01-06T02:57:22Z
 
 [Term]
 id: PO:0025387
-name: cuticle proper 
+name: cuticle proper
 namespace: plant_anatomy
 def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
 synonym: "cutin matrix" EXACT []
@@ -17378,7 +17389,7 @@ namespace: plant_anatomy
 def: "A portion of cuticular wax that forms crystalloids or a smooth film on the exterior of a cuticle." [PMID:12467640, PO_REF:00010]
 comment: Epicuticular waxes may take a variety of forms, such as plates, ribbons, tubes, and rods.
 is_a: PO:0025386 ! cuticular wax
-relationship: adjacent_to PO:0025387 ! cuticle proper 
+relationship: adjacent_to PO:0025387 ! cuticle proper
 created_by: cooperl
 creation_date: 2012-01-06T03:10:32Z
 
@@ -17388,9 +17399,96 @@ name: intercuticular wax
 namespace: plant_anatomy
 def: "A portion of cuticular wax that is an amorphous mixture of lipids embedded in the cutin of a cuticle proper." [PMID:12467640, PO_REF:00010]
 is_a: PO:0025386 ! cuticular wax
-relationship: part_of PO:0025387 ! cuticle proper 
+relationship: part_of PO:0025387 ! cuticle proper
 created_by: cooperl
 creation_date: 2012-01-06T03:13:17Z
+
+[Term]
+id: PO:0025390
+name: free ending veinlet
+namespace: plant_anatomy
+def: "A leaf vein above the first order that is connected to another vein only at one end." [ISBN:9780801475184]
+comment: May be branched or simple. May be found inside a lamina areole. Usually used with third order or higher veins. If vein order is known, an additional annotation should be place on secondary vein (PO:0020140), tertiary vein (PO:0008021), quaternary vein (PO:0008022), or higher order vein (PO:0008023).
+synonym: "free ending vein" EXACT []
+synonym: "freely ending vein" EXACT []
+is_a: PO:0020138 ! leaf vein
+created_by: RamonaNYBG
+creation_date: 2012-01-19T10:07:57Z
+
+[Term]
+id: PO:0025391
+name: lamina areole
+namespace: plant_anatomy
+def: "A cardinal organ part that is the smallest part of a lamina that is completely surrounded by veins." [ISBN:9780801475184]
+comment: Any order of vein can form the sides of an areole. Taken together, the areoles form a contiguous field of polygons over the area of a lamina.
+xref: OBO_SF_PO:3438986
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025060 ! lamina
+created_by: RamonaNYBG
+creation_date: 2012-01-19T10:40:35Z
+
+[Term]
+id: PO:0025392
+name: leaf lamina areole
+namespace: plant_anatomy
+def: "A lamina areole that is the smallest part of a leaf lamina that is completely surrounded by leaf veins." [ISBN:9780801475184]
+comment: Any order of leaf vein can form the sides of an areole. Taken together, the areoles form a contiguous field of polygons over the area of a leaf lamina. Free ending veinlets (PO:0025390) may be found within a leaf lamina areole.
+xref: OBO-SF_PO:3438986
+is_a: PO:0025391 ! lamina areole
+relationship: part_of PO:0020039 ! leaf lamina
+created_by: RamonaNYBG
+creation_date: 2012-01-19T10:45:01Z
+
+[Term]
+id: PO:0025393
+name: pappus
+namespace: plant_anatomy
+def: "A collective organ part structure that has a parts one or more pappus elements (scales, awns, or bristles) at the apex of an inferior ovary just beneath or outside the corolla." [FNA:glossary, ISBN:0964022168]
+comment: Found in flowers and fruits (cypsela) of the Asteraceae. May aid in dispersal by wind or animals. Considered by some to be an evolutionarily modified upper calyx portion, the lower portion having been incorporated into the floral tube casing adnate to the ovary wall; considered by others to be an outgrowth from the ovary wall.
+synonym: "pappi" EXACT Plural []
+xref: OBO_SF_PO:3459178
+is_a: PO:0025269 ! collective organ part structure
+created_by: RamonaNYBG
+creation_date: 2012-01-19T11:10:13Z
+
+[Term]
+id: PO:0025394
+name: pappus element
+namespace: plant_anatomy
+def: "A cardinal organ part that is a segment of a pappus." [FNA:glossary, ISBN:0964022168]
+comment: May be awn-, scale-, or bristle-shaped.
+synonym: "pappus awn" NARROW []
+synonym: "pappus bristle" NARROW []
+synonym: "pappus scale" NARROW [FNA:glossary]
+xref: OBO_SF_PO:3459178
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025393 ! pappus
+created_by: RamonaNYBG
+creation_date: 2012-01-19T11:15:38Z
+
+[Term]
+id: PO:0025395
+name: floral organ
+namespace: plant_anatomy
+def: "A plant organ that is part of a flower." [POC:curators]
+comment: Includes phyllomes such as anthers and petals, as well as shoot\naxes such as androphores and gynophores.
+synonym: "flower organ" EXACT []
+xref: OBO_SF_PO:3464416
+is_a: PO:0009008 ! plant organ
+intersection_of: PO:0009008 ! plant organ
+intersection_of: part_of PO:0009046 ! flower
+created_by: RamonaNYBG
+creation_date: 2012-01-19T11:44:36Z
+
+[Term]
+id: PO:0025396
+name: phyllome lamina
+namespace: plant_anatomy
+def: "A lamina that is part of a phyllome." [POC:Ramona_Walls]
+xref: OBO_SF_PO:3474979
+is_a: PO:0025060 ! lamina
+created_by: RamonaNYBG
+creation_date: 2012-01-19T12:56:11Z
 
 [Term]
 id: PO:0028001
