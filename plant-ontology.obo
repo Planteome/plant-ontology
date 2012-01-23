@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 19:01:2012 13:59
-saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1.1-beta2
+date: 23:01:2012 15:03
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -17298,7 +17298,7 @@ id: PO:0025379
 name: intercellular space
 namespace: plant_anatomy
 def: "A plant anatomical space that is located inside a portion of plant tissue between two or more cells." [POC:Curators]
-comment: Often located in mesophyll tissue. This term does not include spaces on the surface of a plant structure, like a stomatal pore, stomium, or micropyle, nor larger cavities or canals that are surrounded by tissue, such as an archegonium neck canal.
+comment: Often located in mesophyll (PO:0006070). This term does not include spaces on the surface of a plant structure, like a stomatal pore (PO:0008032), stomium (PO:0020101), or micropyle (PO:0020025), nor larger cavities or canals that are surrounded by tissue, such as an archegonium neck canal (PO:0030066).
 is_a: PO:0025117 ! plant anatomical space
 created_by: cooperl
 creation_date: 2012-01-06T11:16:33Z
@@ -17308,7 +17308,7 @@ id: PO:0025380
 name: leaf mesophyll intercellular space
 namespace: plant_anatomy
 def: "An intercellular space that is part of a leaf mesophyll." []
-comment: Includes the air spaces in the spongy mesophyll and substomatal cavities.
+comment: Includes the air spaces in the spongy mesophyll (PO:0005647), the palisade mesophyll (PO:0005648) and substomatal cavity (PO:0025382).
 is_a: PO:0025379 ! intercellular space
 created_by: cooperl
 creation_date: 2012-01-06T01:46:55Z
@@ -17318,7 +17318,8 @@ id: PO:0025381
 name: spongy mesophyll intercellular space
 namespace: plant_anatomy
 def: "A leaf mesophyll intercellular space that is part of a spongy mesophyll." [POC:Curators]
-is_a: PO:0025379 ! intercellular space
+is_a: PO:0025380 ! leaf mesophyll intercellular space
+relationship: part_of PO:0005647 ! spongy mesophyll
 created_by: cooperl
 creation_date: 2012-01-06T01:48:36Z
 
@@ -17326,8 +17327,9 @@ creation_date: 2012-01-06T01:48:36Z
 id: PO:0025382
 name: substomatal cavity
 namespace: plant_anatomy
-def: "A leaf mesophyll intercellular space that is located directly below and contiguous with a stomatal pore." [POC:Curators]
+def: "An intercellular space that is located directly below and contiguous with a stomatal pore." [POC:Curators]
 is_a: PO:0025379 ! intercellular space
+relationship: adjacent_to PO:0008032 ! stomatal pore
 created_by: cooperl
 creation_date: 2012-01-06T01:51:33Z
 
@@ -17489,6 +17491,37 @@ xref: OBO_SF_PO:3474979
 is_a: PO:0025060 ! lamina
 created_by: RamonaNYBG
 creation_date: 2012-01-19T12:56:11Z
+
+[Term]
+id: PO:0025397
+name: palisade mesophyll intercellular space
+namespace: plant_anatomy
+def: "A leaf mesophyll intercellular space that is part of a palisade mesophyll." [POC:curators]
+is_a: PO:0025380 ! leaf mesophyll intercellular space
+relationship: part_of PO:0005648 ! palisade mesophyll
+created_by: cooperl
+creation_date: 2012-01-23T02:21:54Z
+
+[Term]
+id: PO:0025398
+name: phyllome substomatal cavity
+namespace: plant_anatomy
+def: "A substomatal cavity that is part of a phyllome." [POC:curators]
+is_a: PO:0025382 ! substomatal cavity
+relationship: adjacent_to PO:0025234 ! phyllome stomatal pore
+relationship: part_of PO:0006001 ! phyllome
+created_by: cooperl
+creation_date: 2012-01-23T02:49:34Z
+
+[Term]
+id: PO:0025399
+name: leaf substomatal cavity
+namespace: plant_anatomy
+def: "A phyllome substomatal cavity that is part of a leaf." [POC:curators]
+is_a: PO:0025398 ! phyllome substomatal cavity
+relationship: adjacent_to PO:0025235 ! leaf stomatal pore
+created_by: cooperl
+creation_date: 2012-01-23T03:00:45Z
 
 [Term]
 id: PO:0028001
