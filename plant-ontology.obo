@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:01:2012 18:12
+date: 23:01:2012 19:20
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -277,10 +277,10 @@ is_a: PO:0025128 ! phyllome primordium
 
 [Term]
 id: PO:0000022
-name: cuticle
+name: plant cuticle
 namespace: plant_anatomy
-def: "A plant anatomical substance composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acids C16 and C18 long (cutin), embedded and overlayed with cuticular wax and forming a layer on the surface of a plant epidermis." [ISBN:0471245208]
-comment: The cuticle is produced in and secreted by epidermal cells of leaves, stems, fruits, and other aerial plant structures. It has as parts an inner cuticle proper and an outer layer of epicuticular wax.
+def: "A plant anatomical substance composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acids C16 and C18 chains (cutin), embedded and overlayed with cuticular wax and forming a layer on the surface of a plant epidermis." [ISBN:0471245208]
+comment: The plant cuticle is produced in and secreted by epidermal cells (PO:0004013) of leaves (PO:0025034), stems (PO:0009047), fruits (PO:0009001), and other aerial plant structures. It has as parts an inner cuticle proper (PO:0025387) and an outer layer of epicuticular wax (PO:0025388).
 synonym: "cut&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "クチクラ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025161 ! portion of plant substance
@@ -17357,7 +17357,8 @@ creation_date: 2012-01-06T02:19:28Z
 id: PO:0025385
 name: cutin
 namespace: plant_anatomy
-def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640, POC:Curators]
+def: "A portion of plant substance that is the inner layer of a cuticle, composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acid\nC16 and C18 chains." [PMID:12467640, POC:Curators]
+comment: Cutin is the insoluble, covalently cross-linked polymer that forms an electron dense layer over the epidermal cells of an aerial plant structure.
 synonym: "cutin matrix" EXACT []
 is_a: PO:0025161 ! portion of plant substance
 created_by: cooperl
@@ -17367,16 +17368,16 @@ creation_date: 2012-01-06T02:53:37Z
 id: PO:0025386
 name: cuticular wax
 namespace: plant_anatomy
-def: "A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a cuticle." [PMID:12467640, PO_Ref:00010]
-comment: A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a cuticle.
+def: "A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a plant cuticle." [PMID:12467640, PO_Ref:00010]
+comment: Also includes triterpenoids and minor secondary metabolites, such as sterols and flavonoids. May be embedded within or external to the layer of cutin of the cuticle proper.  Phenotypically, wax is distinguished as the glaucous or whitish bloom on a part of a plant shoot system that corresponds to crystalloid epicuticular wax with light scattering capacity.
 is_a: PO:0025161 ! portion of plant substance
-relationship: part_of PO:0000022 ! cuticle
+relationship: part_of PO:0000022 ! plant cuticle
 created_by: cooperl
 creation_date: 2012-01-06T02:57:22Z
 
 [Term]
 id: PO:0025387
-name: cuticle proper
+name: plant cuticle proper
 namespace: plant_anatomy
 def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
 synonym: "cutin matrix" EXACT []
@@ -17391,7 +17392,7 @@ namespace: plant_anatomy
 def: "A portion of cuticular wax that forms crystalloids or a smooth film on the exterior of a cuticle." [PMID:12467640, PO_REF:00010]
 comment: Epicuticular waxes may take a variety of forms, such as plates, ribbons, tubes, and rods.
 is_a: PO:0025386 ! cuticular wax
-relationship: adjacent_to PO:0025387 ! cuticle proper
+relationship: adjacent_to PO:0025387 ! plant cuticle proper
 created_by: cooperl
 creation_date: 2012-01-06T03:10:32Z
 
@@ -17400,8 +17401,9 @@ id: PO:0025389
 name: intercuticular wax
 namespace: plant_anatomy
 def: "A portion of cuticular wax that is an amorphous mixture of lipids embedded in the cutin of a cuticle proper." [PMID:12467640, PO_REF:00010]
+comment: The intercuticular wax is located adjacent to the cell wall.
 is_a: PO:0025386 ! cuticular wax
-relationship: part_of PO:0025387 ! cuticle proper
+relationship: part_of PO:0025387 ! plant cuticle proper
 created_by: cooperl
 creation_date: 2012-01-06T03:13:17Z
 
