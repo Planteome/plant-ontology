@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:01:2012 06:19
+date: 29:01:2012 09:51
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -17536,8 +17536,8 @@ name: phyllome adaxial meristem
 namespace: plant_anatomy
 def: "A portion of meristem tissue that is found on the adaxial side of a developing phyllome (PO:0006001)." [POC:curators]
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf adaxial meristem (PO:0025401).
-synonym: "phyllome adaxial rounding meristem " NARROW [POC:curators]
-synonym: "phyllome adaxial unifacial meristem" NARROW [POC:curators]
+synonym: "phyllome adaxial rounding meristem " NARROW []
+synonym: "phyllome adaxial unifacial meristem" NARROW []
 is_a: PO:0009013 ! meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
@@ -17561,10 +17561,10 @@ creation_date: 2012-01-26T08:40:10Z
 id: PO:0025402
 name: phyllome abaxial meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue that is found on the abaxial side of a developing phyllome (PO:0006001)." [POC:curators]
+def: "A portion of meristem tissue that is found on the abaxial side of a developing phyllome." [POC:curators]
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf abaxial meristem (PO:0025403).
-synonym: "phyllome abaxial rounding meristem" NARROW [POC:curators]
-synonym: "phyllome abaxial unifacial meristem" RELATED [POC:curators]
+synonym: "phyllome abaxial rounding meristem " NARROW []
+synonym: "phyllome abaxial unifacial meristem" NARROW []
 is_a: PO:0009013 ! meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
@@ -17582,6 +17582,35 @@ is_a: PO:0025402 ! phyllome abaxial meristem
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: cooperl
 creation_date: 2012-01-28T06:33:57Z
+
+[Term]
+id: PO:0025404
+name: phyllome marginal meristem
+namespace: plant_anatomy
+def: "A portion of meristem tissue on the edge of a developing phyllome that has as parts marginal and submarginal initials." [POC:curators]
+comment: Phyllome marginal meristems develop on the lateral sides of a phyllome primordium (PO:0025128) and may contribute to expansion of the phyllome lamina (add). Phyllome marginal initials (add) may give rise to phyllome epidermis (PO:0025157) while phyllome submarginal initials (add) may give rise to the mesophyll (PO:0006070). Part of the phyllome margin (PO:0025018). May be of limited duration.
+synonym: "phyllome margin meristem" EXACT [POC:curators]
+xref: OBO_SF_PO:3459318
+is_a: PO:0009013 ! meristem
+relationship: part_of PO:0025018 ! phyllome margin
+relationship: part_of PO:0025128 ! phyllome primordium
+created_by: cooperl
+creation_date: 2012-01-29T07:31:33Z
+
+[Term]
+id: PO:0025405
+name: leaf marginal meristem
+namespace: plant_anatomy
+def: "A portion of phyllome marginal meristem tissue on the edge of a developing leaf that has as parts marginal and submarginal initials." [POC:curators]
+comment: Leaf marginal meristems develop on the lateral sides of a leaf primordium (PO:0000017) and may contribute to expansion of the leaf lamina (PO:0020039). Leaf marginal initials (add) may give rise to leaf epidermis ( PO:0006016) while leaf submarginal initials (add) may give rise to the leaf mesophyll (PO:0005645). May be of limited duration.
+synonym: "leaf margin meristem" EXACT []
+xref: OBO_SF_PO:3459318
+is_a: PO:0025404 ! phyllome marginal meristem
+relationship: part_of PO:0000017 ! leaf primordium
+relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0025009 ! leaf lamina margin
+created_by: cooperl
+creation_date: 2012-01-29T08:08:16Z
 
 [Term]
 id: PO:0028001
