@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:01:2012 17:13
+date: 29:01:2012 06:19
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -22,6 +22,10 @@ synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 remark: Filtered by Has parent with type ID contains "PO:0025034"
+copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
+ontology: po
+treat-xrefs-as-is_a: CARO
+treat-xrefs-as-genus-differntia: CL part_of NCBITaxon:3193 (Embryophyta)
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 ontology: po
 treat-xrefs-as-is_a: CARO
@@ -9664,7 +9668,7 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 id: PO:0009022
 name: meristem L3
 namespace: plant_anatomy
-def: "A multicellular layer beneath a mersistem L2 layer in a shoot apical meristem which gives rise to internal tissues of leaf and stem." [GR:Pankaj_Jaiswal, PMID:12221985]
+def: "A multicellular layer beneath a meristem L2 layer in a shoot apical meristem which gives rise to internal tissues of leaf and stem." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L3 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! meristem
@@ -17307,7 +17311,7 @@ creation_date: 2012-01-06T11:16:33Z
 id: PO:0025380
 name: leaf mesophyll intercellular space
 namespace: plant_anatomy
-def: "An intercellular space that is part of a leaf mesophyll." []
+def: "An intercellular space that is part of a leaf mesophyll." [POC:curators]
 comment: Includes the air spaces in the spongy mesophyll (PO:0005647), the palisade mesophyll (PO:0005648) and substomatal cavity (PO:0025382).
 is_a: PO:0025379 ! intercellular space
 created_by: cooperl
@@ -17357,9 +17361,9 @@ creation_date: 2012-01-06T02:19:28Z
 id: PO:0025385
 name: cutin
 namespace: plant_anatomy
-def: "A portion of plant substance that is the inner layer of a cuticle, composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acid\nC16 and C18 chains." [PMID:12467640, POC:Curators]
+def: "A portion of plant substance that is the inner layer of a cuticle, composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acid C16 and C18 chains." [PMID:12467640, POC:Curators]
 comment: Cutin is the insoluble, covalently cross-linked polymer that forms an electron dense layer over the epidermal cells of an aerial plant structure.
-synonym: "cutin matrix" EXACT []
+synonym: "cutin matrix" BROAD []
 is_a: PO:0025161 ! portion of plant substance
 created_by: cooperl
 creation_date: 2012-01-06T02:53:37Z
@@ -17380,7 +17384,7 @@ id: PO:0025387
 name: plant cuticle proper
 namespace: plant_anatomy
 def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
-synonym: "cutin matrix" EXACT []
+synonym: "cutin matrix" BROAD []
 is_a: PO:0025161 ! portion of plant substance
 created_by: cooperl
 creation_date: 2012-01-06T03:06:02Z
@@ -17530,7 +17534,7 @@ creation_date: 2012-01-23T03:00:45Z
 id: PO:0025400
 name: phyllome adaxial meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue that is found on the adaxial side of a young phyllome (PO:0006001)." [POC:curators]
+def: "A portion of meristem tissue that is found on the adaxial side of a developing phyllome (PO:0006001)." [POC:curators]
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf adaxial meristem (PO:0025401).
 synonym: "phyllome adaxial rounding meristem " NARROW [POC:curators]
 synonym: "phyllome adaxial unifacial meristem" NARROW [POC:curators]
@@ -17543,7 +17547,7 @@ creation_date: 2012-01-26T08:16:48Z
 id: PO:0025401
 name: leaf adaxial meristem
 namespace: plant_anatomy
-def: "A portion of phyllome adaxial meristem tissue that is found on the adaxial side of a young vascular leaf (PO:0009025)." [POC:curators]
+def: "A portion of phyllome adaxial meristem tissue that is found on the adaxial side of a developing vascular leaf." [POC:curators]
 comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are two types of\nadaxial meristems. In leaves with a petiole (PO:0020038) and lamina (PO:0025060), such as Arabidopsis thaliana, an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial leaves, the an adaxial unifacial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire leaf.
 synonym: "leaf adaxial rounding meristem" NARROW [POC:curators]
 synonym: "leaf adaxial unifacial meristem" NARROW [POC:curators]
@@ -17552,6 +17556,32 @@ is_a: PO:0025400 ! phyllome adaxial meristem
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: cooperl
 creation_date: 2012-01-26T08:40:10Z
+
+[Term]
+id: PO:0025402
+name: phyllome abaxial meristem
+namespace: plant_anatomy
+def: "A portion of meristem tissue that is found on the abaxial side of a developing phyllome (PO:0006001)." [POC:curators]
+comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf abaxial meristem (PO:0025403).
+synonym: "phyllome abaxial rounding meristem" NARROW [POC:curators]
+synonym: "phyllome abaxial unifacial meristem" RELATED [POC:curators]
+is_a: PO:0009013 ! meristem
+relationship: part_of PO:0006001 ! phyllome
+created_by: cooperl
+creation_date: 2012-01-28T06:17:09Z
+
+[Term]
+id: PO:0025403
+name: leaf abaxial meristem
+namespace: plant_anatomy
+def: "A portion of phyllome abaxial meristem tissue that is found on the abaxial side of a developing vascular leaf." [PO:0009025, PO:0025402, POC:curators]
+comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are two types of abaxial meristems. In leaves with a petiole (PO:0020038) and lamina (PO:0025060), such as Arabidopsis thaliana, an abaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial leaves, the abaxial unifacial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire leaf.
+synonym: "leaf abaxial rounding meristem" NARROW [POC:curators]
+synonym: "leaf abaxial unifacial meristem" NARROW [POC:curators]
+is_a: PO:0025402 ! phyllome abaxial meristem
+relationship: part_of PO:0009025 ! vascular leaf
+created_by: cooperl
+creation_date: 2012-01-28T06:33:57Z
 
 [Term]
 id: PO:0028001
