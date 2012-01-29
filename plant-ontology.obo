@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:01:2012 09:51
+date: 29:01:2012 13:11
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -6819,6 +6819,7 @@ name: leaf trichome development stage
 namespace: plant_structure_development_stage
 def: "A trichome development stage that has as primary participant a leaf trichome." [GR:Chih-Wei_Tung, POC:Curators]
 is_a: PO:0025368 ! trichome development stage
+relationship: has_participant PO:0006504 ! leaf trichome
 
 [Term]
 id: PO:0007041
@@ -17180,6 +17181,7 @@ name: trichome development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a trichome." [POC:Curators]
 is_a: PO:0009012 ! plant structure development stage
+relationship: has_participant PO:0000282 ! trichome
 created_by: cooperl
 creation_date: 2011-11-22T05:35:39Z
 
@@ -17191,6 +17193,7 @@ def: "A trichome development stage that has as primary participant a seed tricho
 comment: Seed trichome development stage consists of the following sub stages: seed trichome initiation stage (PO:0025370), seed trichome elongation stage (PO:0025371), seed trichome secondary wall biosynthesis stage(PO:0025372) and seed trichome maturation stage (PO:0025373).
 synonym: "seed hair development stage" EXACT []
 is_a: PO:0025368 ! trichome development stage
+relationship: has_participant PO:0004511 ! seed trichome
 created_by: cooperl
 creation_date: 2011-11-22T05:36:46Z
 
