@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:01:2012 13:11
+date: 29:01:2012 16:15
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -287,6 +287,7 @@ def: "A plant anatomical substance composed of a polyester matrix of hydroxy- an
 comment: The plant cuticle is produced in and secreted by epidermal cells (PO:0004013) of leaves (PO:0025034), stems (PO:0009047), fruits (PO:0009001), and other aerial plant structures. It has as parts an inner cuticle proper (PO:0025387) and an outer layer of epicuticular wax (PO:0025388).
 synonym: "cut&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "クチクラ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3459338
 is_a: PO:0025161 ! portion of plant substance
 relationship: adjacent_to PO:0005679 ! epidermis
 
@@ -17180,6 +17181,7 @@ id: PO:0025368
 name: trichome development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a trichome." [POC:Curators]
+xref: OBO_SF_PO:3444432
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0000282 ! trichome
 created_by: cooperl
@@ -17192,6 +17194,7 @@ namespace: plant_structure_development_stage
 def: "A trichome development stage that has as primary participant a seed trichome." [POC:Curators]
 comment: Seed trichome development stage consists of the following sub stages: seed trichome initiation stage (PO:0025370), seed trichome elongation stage (PO:0025371), seed trichome secondary wall biosynthesis stage(PO:0025372) and seed trichome maturation stage (PO:0025373).
 synonym: "seed hair development stage" EXACT []
+xref: OBO_SF_PO:3035688
 is_a: PO:0025368 ! trichome development stage
 relationship: has_participant PO:0004511 ! seed trichome
 created_by: cooperl
@@ -17204,6 +17207,7 @@ namespace: plant_structure_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome initiation and the onset of seed trichome elongation." [POC:Curators]
 comment: Refers to the GO Biological Process terms seed trichome initiation (GO:0090377) and seed trichome elongation (GO:0090378).
 synonym: "seed hair initiation stage" EXACT []
+xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
 creation_date: 2011-11-22T05:37:55Z
@@ -17215,6 +17219,7 @@ namespace: plant_structure_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome elongation and the onset of seed trichome secondary wall biosynthesis." [POC:Curators]
 comment: Refers to the GO Biological Process terms: seed trichome elongation (GO:0090378) and secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379).
 synonym: "seed hair elongation stage" EXACT []
+xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
 creation_date: 2011-11-22T05:43:12Z
@@ -17226,6 +17231,7 @@ namespace: plant_structure_development_stage
 def: "A seed trichome development stage which occurs during the interval between the onset of seed trichome secondary wall biosynthesis and the onset of seed trichome maturation." [POC:Curators]
 comment: Refers to the GO Biological Process terms: secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379) and seed trichome maturation (GO:0090380).
 synonym: "seed hair secondary wall biosynthesis stage" EXACT []
+xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
 creation_date: 2011-11-22T05:45:42Z
@@ -17237,6 +17243,7 @@ namespace: plant_structure_development_stage
 def: "A seed trichome development stage which encompasses the process of seed trichome maturation." [POC:Curators]
 comment: Refers to the GO Biological Process term: seed trichome maturation (GO:0090380).
 synonym: "seed hair maturation stage" EXACT []
+xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
 creation_date: 2011-11-22T05:47:05Z
@@ -17306,6 +17313,7 @@ name: intercellular space
 namespace: plant_anatomy
 def: "A plant anatomical space that is located inside a portion of plant tissue between two or more cells." [POC:Curators]
 comment: Often located in mesophyll (PO:0006070). This term does not include spaces on the surface of a plant structure, like a stomatal pore (PO:0008032), stomium (PO:0020101), or micropyle (PO:0020025), nor larger cavities or canals that are surrounded by tissue, such as an archegonium neck canal (PO:0030066).
+xref: OBO_SF_PO:3459306
 is_a: PO:0025117 ! plant anatomical space
 created_by: cooperl
 creation_date: 2012-01-06T11:16:33Z
@@ -17316,6 +17324,7 @@ name: leaf mesophyll intercellular space
 namespace: plant_anatomy
 def: "An intercellular space that is part of a leaf mesophyll." [POC:curators]
 comment: Includes the air spaces in the spongy mesophyll (PO:0005647), the palisade mesophyll (PO:0005648) and substomatal cavity (PO:0025382).
+xref: OBO_SF_PO:3459306
 is_a: PO:0025379 ! intercellular space
 created_by: cooperl
 creation_date: 2012-01-06T01:46:55Z
@@ -17325,6 +17334,7 @@ id: PO:0025381
 name: spongy mesophyll intercellular space
 namespace: plant_anatomy
 def: "A leaf mesophyll intercellular space that is part of a spongy mesophyll." [POC:Curators]
+xref: OBO_SF_PO:3459306
 is_a: PO:0025380 ! leaf mesophyll intercellular space
 relationship: part_of PO:0005647 ! spongy mesophyll
 created_by: cooperl
@@ -17335,6 +17345,7 @@ id: PO:0025382
 name: substomatal cavity
 namespace: plant_anatomy
 def: "An intercellular space that is located directly below and contiguous with a stomatal pore." [POC:Curators]
+xref: OBO_SF_PO:3459336
 is_a: PO:0025379 ! intercellular space
 relationship: adjacent_to PO:0008032 ! stomatal pore
 created_by: cooperl
@@ -17345,6 +17356,7 @@ id: PO:0025383
 name: phyllome sinus
 namespace: plant_anatomy
 def: "A plant anatomical space that is a phyllome marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate phyllomes." [ISBN:978-0-8014-4., POC:Curators]
+xref: OBO_SF_PO:3459283
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025018 ! phyllome margin
 created_by: cooperl
@@ -17355,6 +17367,7 @@ id: PO:0025384
 name: leaf sinus
 namespace: plant_anatomy
 def: "A phyllome sinus that is a marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate leaves." [ISBN:978-0-8014-4, POC:Curators]
+xref: OBO_SF_PO:3459283
 is_a: PO:0025383 ! phyllome sinus
 relationship: part_of PO:0020128 ! leaf margin
 created_by: cooperl
@@ -17365,9 +17378,12 @@ id: PO:0025385
 name: cutin
 namespace: plant_anatomy
 def: "A portion of plant substance that is the inner layer of a cuticle, composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acid C16 and C18 chains." [PMID:12467640, POC:Curators]
-comment: Cutin is the insoluble, covalently cross-linked polymer that forms an electron dense layer over the epidermal cells of an aerial plant structure.
+comment: Cutin is the insoluble, covalently cross-linked polymer that forms an electron dense layer over the epidermal cells (PO:0004013) of an aerial plant structure.
 synonym: "cutin matrix" BROAD []
+xref: OBO_SF_PO:3459338
 is_a: PO:0025161 ! portion of plant substance
+relationship: part_of PO:0000022 ! plant cuticle
+relationship: part_of PO:0025387 ! plant cuticle proper
 created_by: cooperl
 creation_date: 2012-01-06T02:53:37Z
 
@@ -17377,6 +17393,7 @@ name: cuticular wax
 namespace: plant_anatomy
 def: "A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a plant cuticle." [PMID:12467640, PO_Ref:00010]
 comment: Also includes triterpenoids and minor secondary metabolites, such as sterols and flavonoids. May be embedded within or external to the layer of cutin of the cuticle proper.  Phenotypically, wax is distinguished as the glaucous or whitish bloom on a part of a plant shoot system that corresponds to crystalloid epicuticular wax with light scattering capacity.
+xref: OBO_SF_PO:3459338
 is_a: PO:0025161 ! portion of plant substance
 relationship: part_of PO:0000022 ! plant cuticle
 created_by: cooperl
@@ -17388,6 +17405,7 @@ name: plant cuticle proper
 namespace: plant_anatomy
 def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
 synonym: "cutin matrix" BROAD []
+xref: OBO_SF_PO:3459338
 is_a: PO:0025161 ! portion of plant substance
 created_by: cooperl
 creation_date: 2012-01-06T03:06:02Z
@@ -17398,6 +17416,7 @@ name: epicuticular wax
 namespace: plant_anatomy
 def: "A portion of cuticular wax that forms crystalloids or a smooth film on the exterior of a cuticle." [PMID:12467640, PO_REF:00010]
 comment: Epicuticular waxes may take a variety of forms, such as plates, ribbons, tubes, and rods.
+xref: OBO_SF_PO:3459338
 is_a: PO:0025386 ! cuticular wax
 relationship: adjacent_to PO:0025387 ! plant cuticle proper
 created_by: cooperl
@@ -17409,6 +17428,7 @@ name: intercuticular wax
 namespace: plant_anatomy
 def: "A portion of cuticular wax that is an amorphous mixture of lipids embedded in the cutin of a cuticle proper." [PMID:12467640, PO_REF:00010]
 comment: The intercuticular wax is located adjacent to the cell wall.
+xref: OBO_SF_PO:3459338
 is_a: PO:0025386 ! cuticular wax
 relationship: part_of PO:0025387 ! plant cuticle proper
 created_by: cooperl
@@ -17506,6 +17526,7 @@ id: PO:0025397
 name: palisade mesophyll intercellular space
 namespace: plant_anatomy
 def: "A leaf mesophyll intercellular space that is part of a palisade mesophyll." [POC:curators]
+xref: OBO_SF_PO:3459306
 is_a: PO:0025380 ! leaf mesophyll intercellular space
 relationship: part_of PO:0005648 ! palisade mesophyll
 created_by: cooperl
@@ -17516,6 +17537,7 @@ id: PO:0025398
 name: phyllome substomatal cavity
 namespace: plant_anatomy
 def: "A substomatal cavity that is part of a phyllome." [POC:curators]
+xref: OBO_SF_PO:3459336
 is_a: PO:0025382 ! substomatal cavity
 relationship: adjacent_to PO:0025234 ! phyllome stomatal pore
 relationship: part_of PO:0006001 ! phyllome
@@ -17527,6 +17549,7 @@ id: PO:0025399
 name: leaf substomatal cavity
 namespace: plant_anatomy
 def: "A phyllome substomatal cavity that is part of a leaf mesophyll." [POC:curators]
+xref: OBO_SF_PO:3459336
 is_a: PO:0025398 ! phyllome substomatal cavity
 relationship: adjacent_to PO:0025235 ! leaf stomatal pore
 relationship: part_of PO:0005645 ! leaf mesophyll
@@ -17541,6 +17564,7 @@ def: "A portion of meristem tissue that is found on the adaxial side of a develo
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf adaxial meristem (PO:0025401).
 synonym: "phyllome adaxial rounding meristem " NARROW []
 synonym: "phyllome adaxial unifacial meristem" NARROW []
+xref: OBO_SF_PO:3459332
 is_a: PO:0009013 ! meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
@@ -17555,6 +17579,7 @@ comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are
 synonym: "leaf adaxial rounding meristem" NARROW [POC:curators]
 synonym: "leaf adaxial unifacial meristem" NARROW [POC:curators]
 synonym: "leaf ventral meristem" NARROW [POC:curators]
+xref: OBO_SF_PO:3459332
 is_a: PO:0025400 ! phyllome adaxial meristem
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: cooperl
@@ -17568,6 +17593,7 @@ def: "A portion of meristem tissue that is found on the abaxial side of a develo
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf abaxial meristem (PO:0025403).
 synonym: "phyllome abaxial rounding meristem " NARROW []
 synonym: "phyllome abaxial unifacial meristem" NARROW []
+xref: OBO_SF_PO:3459332
 is_a: PO:0009013 ! meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
@@ -17581,6 +17607,7 @@ def: "A portion of phyllome abaxial meristem tissue that is found on the abaxial
 comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are two types of abaxial meristems. In leaves with a petiole (PO:0020038) and lamina (PO:0025060), such as Arabidopsis thaliana, an abaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial leaves, the abaxial unifacial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire leaf.
 synonym: "leaf abaxial rounding meristem" NARROW [POC:curators]
 synonym: "leaf abaxial unifacial meristem" NARROW [POC:curators]
+xref: OBO_SF_PO:3459332
 is_a: PO:0025402 ! phyllome abaxial meristem
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: cooperl
