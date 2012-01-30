@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 29:01:2012 16:15
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1
+date: 30:01:2012 12:02
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -12341,9 +12341,9 @@ name: shoot apical meristem
 namespace: plant_anatomy
 def: "A shoot meristem formed in the apex of the shoot, including meristems originating as axillary shoot meristems." [UMSL:fz]
 subset: TraitNet
-synonym: "apical meristem" RELATED []
 synonym: "meristema apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary shoot meristem" RELATED []
+synonym: "SAM" EXACT []
 synonym: "茎頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006079 ! shoot meristem
 is_a: PO:0020144 ! apical meristem
@@ -17311,10 +17311,11 @@ creation_date: 2012-01-05T02:19:38Z
 id: PO:0025379
 name: intercellular space
 namespace: plant_anatomy
-def: "A plant anatomical space that is located inside a portion of plant tissue between two or more cells." [POC:Curators]
-comment: Often located in mesophyll (PO:0006070). This term does not include spaces on the surface of a plant structure, like a stomatal pore (PO:0008032), stomium (PO:0020101), or micropyle (PO:0020025), nor larger cavities or canals that are surrounded by tissue, such as an archegonium neck canal (PO:0030066).
+def: "A plant anatomical space that is part of a portion of plant tissue between two or more cells." [POC:curators]
+comment: Often part of a mesophyll (PO:0006070). This term does not include spaces on the surface of a plant structure, like a stomatal pore (PO:0008032), stomium (PO:0020101), or micropyle (PO:0020025), nor larger cavities or canals that are surrounded by tissue, such as an archegonium neck canal (PO:0030066). May be filled with air or fluid.
 xref: OBO_SF_PO:3459306
 is_a: PO:0025117 ! plant anatomical space
+relationship: part_of PO:0009007 ! portion of plant tissue
 created_by: cooperl
 creation_date: 2012-01-06T11:16:33Z
 
@@ -17326,6 +17327,9 @@ def: "An intercellular space that is part of a leaf mesophyll." [POC:curators]
 comment: Includes the air spaces in the spongy mesophyll (PO:0005647), the palisade mesophyll (PO:0005648) and substomatal cavity (PO:0025382).
 xref: OBO_SF_PO:3459306
 is_a: PO:0025379 ! intercellular space
+intersection_of: PO:0025379 ! intercellular space
+intersection_of: part_of PO:0005645 ! leaf mesophyll
+relationship: part_of PO:0005645 ! leaf mesophyll
 created_by: cooperl
 creation_date: 2012-01-06T01:46:55Z
 
@@ -17355,7 +17359,7 @@ creation_date: 2012-01-06T01:51:33Z
 id: PO:0025383
 name: phyllome sinus
 namespace: plant_anatomy
-def: "A plant anatomical space that is a phyllome marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate phyllomes." [ISBN:978-0-8014-4., POC:Curators]
+def: "A plant anatomical space that is a phyllome marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate phyllomes." [ISBN:978080144, POC:Curators]
 xref: OBO_SF_PO:3459283
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025018 ! phyllome margin
@@ -17366,7 +17370,7 @@ creation_date: 2012-01-06T02:00:08Z
 id: PO:0025384
 name: leaf sinus
 namespace: plant_anatomy
-def: "A phyllome sinus that is a marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate leaves." [ISBN:978-0-8014-4, POC:Curators]
+def: "A phyllome sinus that is a marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate leaves." [ISBN:978080144, POC:Curators]
 xref: OBO_SF_PO:3459283
 is_a: PO:0025383 ! phyllome sinus
 relationship: part_of PO:0020128 ! leaf margin
@@ -17574,7 +17578,7 @@ creation_date: 2012-01-26T08:16:48Z
 id: PO:0025401
 name: leaf adaxial meristem
 namespace: plant_anatomy
-def: "A portion of phyllome adaxial meristem tissue that is found on the adaxial side of a developing vascular leaf." [POC:curators]
+def: "A portion of phyllome adaxial meristem tissue that is found on the adaxial side of a developing vascular leaf." [ISBN:0521288959, POC:curators]
 comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are two types of\nadaxial meristems. In leaves with a petiole (PO:0020038) and lamina (PO:0025060), such as Arabidopsis thaliana, an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial leaves, the an adaxial unifacial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire leaf.
 synonym: "leaf adaxial rounding meristem" NARROW [POC:curators]
 synonym: "leaf adaxial unifacial meristem" NARROW [POC:curators]
@@ -17631,7 +17635,7 @@ creation_date: 2012-01-29T07:31:33Z
 id: PO:0025405
 name: leaf marginal meristem
 namespace: plant_anatomy
-def: "A portion of phyllome marginal meristem tissue on the edge of a developing leaf that has as parts marginal and submarginal initials." [POC:curators]
+def: "A portion of phyllome marginal meristem tissue on the edge of a developing leaf that has as parts marginal and submarginal initials." [ISBN:0521288959, POC:curators]
 comment: Leaf marginal meristems develop on the lateral sides of a leaf primordium (PO:0000017) and may contribute to expansion of the leaf lamina (PO:0020039). Leaf marginal initials (add) may give rise to leaf epidermis ( PO:0006016) while leaf submarginal initials (add) may give rise to the leaf mesophyll (PO:0005645). May be of limited duration.
 synonym: "leaf margin meristem" EXACT []
 xref: OBO_SF_PO:3459318
