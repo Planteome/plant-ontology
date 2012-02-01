@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:02:2012 12:39
+date: 01:02:2012 18:03
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -908,14 +908,16 @@ is_a: PO:0000295 ! cambial initial
 id: PO:0000081
 name: axial cell
 namespace: plant_anatomy
-def: "A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
-comment: These cells make up the axial system, also known as vertical or longitudinal system.
+def: "OBSOLETE. A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
+comment: This term was made obsolete because it is not appropriate. It is replaced by sieve element, tracheary element, and fiber cell.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula axial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
-relationship: develops_from PO:0000079 ! fusiform initial
+is_obsolete: true
+consider: PO:0000290
+consider: PO:0025406
+consider: PO:0025407
 
 [Term]
 id: PO:0000082
@@ -1242,12 +1244,13 @@ relationship: develops_from PO:0000349 ! epidermal initial
 id: PO:0000272
 name: protoxylem
 namespace: plant_anatomy
-def: "A portion of xylem tissue composed of any of the first formed elements of the primary xylem." [ISBN:047125208]
+def: "A portion of primary xylem (PO:0005849) tissue that has as parts tracheary elements (PO:0000290) with only annular or helical secondary wall thickening that are the first formed tracheary elements at a particular location." [ISBN:047125208]
+comment: Develops while the vascular tissue (PO:0009015) is still elongating. Tracheary elements in protoxylem are smaller than in metaxylem (PO:0000372). Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原生木（質）部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005352 ! xylem
-relationship: part_of PO:0005849 ! primary xylem
+xref: OBO_SF_PO:3476729
+is_a: PO:0005849 ! primary xylem
 
 [Term]
 id: PO:0000273
@@ -1258,7 +1261,7 @@ subset: CL
 subset: TraitNet
 synonym: "elemento del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000081 ! axial cell
+is_a: PO:0009002 ! plant cell
 
 [Term]
 id: PO:0000274
@@ -1325,7 +1328,7 @@ synonym: "miembro del tubo criboso (Spanish)" EXACT Spanish [POC:Maria_Alejandra
 synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
 synonym: "師管要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000081 ! axial cell
+is_a: PO:0025406 ! sieve element
 disjoint_from: PO:0025033 ! leptoid
 relationship: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0006075 ! primary phloem
@@ -1375,7 +1378,7 @@ is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000059 ! root initial cell
 disjoint_from: PO:0000349 ! epidermal initial
 disjoint_from: PO:0030067 ! protonema side branch initial
-relationship: part_of PO:0005598 ! vascular cambium
+relationship: part_of PO:0005597 ! cambium
 
 [Term]
 id: PO:0000301
@@ -1475,12 +1478,13 @@ is_a: PO:0000274 ! xylem fiber
 id: PO:0000372
 name: metaxylem
 namespace: plant_anatomy
-def: "A portion of xylem tissue that is part of the primary xylem and differentiates after the protoxylem and before the secondary xylem, if any of the latter is formed." [ISBN:047125208]
+def: "A portion of primary xylem (PO:0005849) tissue that develops after the vascular tissue (PO:0009015) has stopped elongating and after the protoxylem (PO:0000272)." [ISBN:047125208]
+comment: Develops before the secondary xylem (PO:0005848), if any is formed. Tracheary elements (PO:0000290) in metaxylem are larger than in protoxylem and can have any type of secondary wall thickening. Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
 synonym: "metaxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of metaxylem tissue" EXACT []
 synonym: "後生木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005352 ! xylem
-relationship: part_of PO:0005849 ! primary xylem
+xref: OBO_SF_PO:3476729
+is_a: PO:0005849 ! primary xylem
 
 [Term]
 id: PO:0000373
@@ -2669,7 +2673,7 @@ subset: CL
 subset: TraitNet
 synonym: "fibra del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "師部繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000081 ! axial cell
+is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0000289 ! sieve tube member
 relationship: part_of PO:0005043 ! secondary phloem
 
@@ -3590,13 +3594,12 @@ is_a: PO:0025127 ! primordium
 id: PO:0005039
 name: primary thickening meristem
 namespace: plant_anatomy
-def: "A meristem that develops from a peripheral zone of a shoot apical meristem and is responsible for the primary increase in thickness of a shoot axis." [ISBN:9780669014891]
-comment: May appear as a distinct mantle like zone. Often found in monocotyledons.
+def: "A lateral meristem that has a parts multiple layers of cells located near the shoot apical meristem." [ISBN:0471245208, JSTOR:4354165]
+comment: Contributes to primary thickening of the stem, adventitious root formation, and formation of linkages between the stem, leaf, and root vasculature. Contiguous with the shoot apical meristem in some species, but not all. Produces more or less distinct vascular bundles surrounded by ground tissue, as opposed to the more or less continuous xylem and phloem produced by a vascular cambium. A primary thickening meristem is a multi-layered structure, compared to the single layer of a cambium. Found in many monocotyledons.
 synonym: "meristema de engrosamiento primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次 肥厚（膜）分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0020145 ! lateral meristem
 relationship: develops_from PO:0000225 ! peripheral zone
-relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0005040
@@ -3785,12 +3788,13 @@ is_obsolete: true
 id: PO:0005352
 name: xylem
 namespace: plant_anatomy
-def: "A portion of vascular tissue that has as parts xylem elements." [GR:Pankaj_Jaiswal]
-comment: The principal function is the upward translocation of water and solutes. See also primary xylem and secondary xylem.
+def: "A portion of vascular tissue (PO:0009015) that has as parts tracheary elements (PO:0000290)." [ISBN:047125208]
+comment: Functions in the translocation of water and solutes from roots (PO:0009005) to the shoot system (PO:0009006) and in support. Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of xylem tissue" EXACT []
 synonym: "xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3476729
 is_a: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0030047 ! hydrome
 
@@ -3888,28 +3892,31 @@ is_a: PO:0025059 ! portion of ground tissue
 id: PO:0005597
 name: cambium
 namespace: plant_anatomy
-def: "A lateral meristem, the cells of which divide mostly periclinally." [ISBN:0080374913]
+def: "A lateral meristem (PO:0020145) that is part of a plant axis (PO:0025004) and has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files." [ISBN:047125208]
+comment: This term is applied to only two types of meristems: vascular cambium (PO:0005598) and cork cambium/phellogen (PO:0005599).
 subset: TraitNet
 synonym: "cambium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020145 ! lateral meristem
+relationship: part_of PO:0025004 ! plant axis
 
 [Term]
 id: PO:0005598
 name: vascular cambium
 namespace: plant_anatomy
-def: "A lateral meristem, the cells of which give rise to secondary xylem and phloem, leading to an increase in girth." [GR:Pankaj_Jaiswal]
+def: "A cambium (PO:0005597) that is located between and gives rise to secondary xylem (PO:0005848) and secondary phloem (PO:0005043)." [ISBN:047125208]
+comment: Vascular cambium gives off cells in both directions by periclinal division, leading to an increase in girth of a plant axis (PO:0025004).
 subset: TraitNet
 synonym: "cambium vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005597 ! cambium
-relationship: part_of PO:0005020 ! vascular bundle
 
 [Term]
 id: PO:0005599
 name: cork cambium
 namespace: plant_anatomy
-def: "Lateral meristem which produces the phellem (cork) and the phelloderm." [ISBN:0080374913]
+def: "A cambium (PO:0005597) that is part of a shoot axis periderm (PO:0005048) and produces phellem (PO:0004003) and phelloderm (PO:0005050)." [ISBN:047125208]
+comment: Cork cambium is located between the phellem and phelloderm and produces phellem toward the outside and phelloderm toward the inside of a plant axis (PO:0025004).
 subset: TraitNet
 synonym: "cambium de corcho (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phellogen" RELATED []
@@ -4125,13 +4132,14 @@ relationship: part_of PO:0000258 ! root cortex
 id: PO:0005848
 name: secondary xylem
 namespace: plant_anatomy
-def: "A portion of xylem tissue that develops from a vascular cambium." [ISBN:0471245194, POC:Curators]
-comment: Absent in some dicots and most monocots. The "wood" of gymnosperm and dicot angiosperm trees, shrubs, and lianas.
+def: "A portion of xylem (PO:0005352) tissue that develops from a vascular cambium (PO:0005598)." [ISBN:0471245194]
+comment: Secondary xylem develops as part of secondary growth (GO:0080117). Secondary xylem is the wood of gymnosperm and dicot angiosperm trees, shrubs, and lianas. May be organized into axial (PO:0025410) and ray (PO:0025411) systems. Some monocots have a primary thickening meristem (PO:0005039), located near the shoot apical meristem (PO:0020148), that gives the appearance of secondary growth and may produce lignified tissue that appears woody but is not composed of secondary xylem. Tracheary elements (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of secondary xylem tissue" EXACT []
 synonym: "wood" EXACT []
 synonym: "xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "二次木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
 relationship: develops_from PO:0005598 ! vascular cambium
 
@@ -4139,13 +4147,15 @@ relationship: develops_from PO:0005598 ! vascular cambium
 id: PO:0005849
 name: primary xylem
 namespace: plant_anatomy
-def: "A portion of xylem tissue of the primary procambium (PO:0025275)." [GR:Pankaj_Jaiswal, ISBN:0122151704, ISBN:0471245194]
-comment: In stem or root it is differentiated behind the apical meristem.
+def: "A portion of xylem (PO:0005352) tissue that develops from the procambium (PO:0025275)." [ISBN:0122151704, ISBN:0471245194]
+comment: Primary xylem develops as part of primary growth (request for primary growth has been made to GO) and is not differentiated into axial (PO:0025410) and ray (PO:0025411) systems. Tracheary elements (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of primary xylem tissue" EXACT []
 synonym: "xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次 木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
+relationship: develops_from PO:0025275 ! procambium
 
 [Term]
 id: PO:0006000
@@ -8932,7 +8942,7 @@ relationship: part_of PO:0009073 ! stigma
 id: PO:0008013
 name: anther vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a anther." [POC:Ramona_Walls]
+def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a anther." [POC:Ramona_Walls]
 synonym: "sistema vascular de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000034 ! vascular system
@@ -9023,6 +9033,7 @@ id: PO:0008021
 name: tertiary vein
 namespace: plant_anatomy
 def: "A leaf vein arising from a secondary vein." [GR:Chih-Wei_Tung]
+comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "third order leaf vein" RELATED []
 synonym: "vena terciaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "三次脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9033,6 +9044,7 @@ id: PO:0008022
 name: quaternary vein
 namespace: plant_anatomy
 def: "A leaf vein arising from a tertiary vein." [GR:Chih-Wei_Tung]
+comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "fourth order leaf vein" RELATED []
 synonym: "vena cuaternaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "四次脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9043,6 +9055,7 @@ id: PO:0008023
 name: higher order vein
 namespace: plant_anatomy
 def: "A leaf vein arising from a quaternary or higher vein order." [GR:Chih-Wei_Tung]
+comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "fifth and higher order leaf vein" RELATED []
 synonym: "vena de alto orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "高次葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -10955,10 +10968,13 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0019026
 name: tracheid bar
 namespace: plant_anatomy
-def: "A distinct ring-like structure, composed of tracheid cells, which surrounds the hilum of some taxa e.g., Phaseolus, and forms a groove in the surface of the pericarp (immediately adjacent to the hilum)." [ISBN:0080280293]
+def: "A portion of xylem (PO:0005352) tissue that is a distinct ring-like structure composed of tracheids (PO:0000301), that is part of a seed (PO:0009010) and surrounds the hilum (PO:0020063) and forms a groove in the surface of the pericarp (PO:0009084) immediately adjacent to the hilum." [ISBN:0080280293]
+comment: Found some taxa, such as Phaseolus.
 synonym: "barra de la traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "仮導管の筋、縞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009015 ! portion of vascular tissue
+xref: OBO_SF_PO:3476729
+is_a: PO:0005352 ! xylem
+relationship: adjacent_to PO:0020063 ! hilum
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -12261,30 +12277,36 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0020138
 name: leaf vein
 namespace: plant_anatomy
-def: "A strand of vascular tissue in the leaf blade." [APweb:Glossary]
+def: "A vascular bundle (PO:0005020) that is part of a leaf lamina vascular system (PO:0000048)." [POC:curators]
 subset: TraitNet
+synonym: "leaf lamina vascular bundle" EXACT []
 synonym: "vena de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459287
-is_a: PO:0009015 ! portion of vascular tissue
-relationship: part_of PO:0000036 ! leaf vascular system
+is_a: PO:0005020 ! vascular bundle
+relationship: part_of PO:0000048 ! leaf lamina vascular system
 
 [Term]
 id: PO:0020139
 name: midvein
 namespace: plant_anatomy
-def: "The central, and usually the most prominent, vein of a leaf or leaf-like organ." [APweb:Glossary]
+def: "A primary leaf vein (PO:0025413) that is the central vein of a vascular leaf (PO:0009025)." [POC:curators]
+comment: Often the most prominent vein of a vascular leaf. See costa (PO:0030072) for the central conductive strand of a non-vascular leaf (PO:0025075).
 synonym: "mid rib" BROAD []
+synonym: "mid-rib" BROAD []
 synonym: "midrib" BROAD []
+synonym: "vascular leaf costa" RELATED []
+synonym: "vascular leaf midvein" EXACT []
 synonym: "vena media (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "主脈、中央脈、中脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020138 ! leaf vein
+is_a: PO:0025413 ! primary vein
 
 [Term]
 id: PO:0020140
 name: secondary vein
 namespace: plant_anatomy
 def: "Second order veins in the leaf blade." [GR:Pankaj_Jaiswal]
+comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "veinlet" RELATED []
 synonym: "vena secundaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "二次脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12326,7 +12348,8 @@ is_a: PO:0009013 ! meristem
 id: PO:0020145
 name: lateral meristem
 namespace: plant_anatomy
-def: "A meristem containing cells along the stem or root that first differentiate and function as members of a mature tissue system but then again take up meristematic activity." [APweb:Glossary]
+def: "A portion of meristem (PO:0009013) tissue located parallel to the circumference of a plant organ (PO:0009008)." [ISBN:047125208]
+comment: Participates in lateral growth (request has been made for lateral growth in GO) of a plant organ, primarily shoot axes (PO:0025029) and roots (PO:0009005). Contrast with apical meristem (PO:0020144).
 subset: TraitNet
 synonym: "meristema lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "secondary meristem" RELATED []
@@ -17661,7 +17684,7 @@ creation_date: 2012-01-29T08:08:16Z
 id: PO:0025406
 name: sieve element
 namespace: plant_anatomy
-is_a: PO:0000081 ! axial cell
+is_a: PO:0009002 ! plant cell
 created_by: RamonaNYBG
 creation_date: 2012-02-01T10:23:03Z
 
@@ -17723,6 +17746,26 @@ namespace: plant_anatomy
 is_a: PO:0000074 ! parenchyma cell
 created_by: RamonaNYBG
 creation_date: 2012-02-01T11:50:29Z
+
+[Term]
+id: PO:0025413
+name: primary vein
+namespace: plant_anatomy
+def: "A leaf vein (PO:0020138) that connects directly to a petiole vascular system (PO:0000052) or a shoot axis vascular system (PO:0000039)." [POC:curators]
+comment: Generally the largest and most prominent of the leaf veins. A leaf may have more than one primary vein. The central primary vein is the midvein (PO:0020139). Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
+is_a: PO:0020138 ! leaf vein
+created_by: RamonaNYBG
+creation_date: 2012-02-01T04:24:58Z
+
+[Term]
+id: PO:0025414
+name: secondary thickening meristem
+namespace: plant_anatomy
+def: "A lateral meristem that is part of a shoot axis not contiguous with the shoot apical meristem and has a parts multiple layers of cells." [ISBN:0080374903, JSTOR:4354165]
+comment: Contributes mainly to formation of the body of a stem, but may also produce adventitious roots. May be continuous or discontinuous with the primary thickening meristem. Found in some monocot species of the Liliales and Asperigales.
+is_a: PO:0020145 ! lateral meristem
+created_by: RamonaNYBG
+creation_date: 2012-02-01T05:49:53Z
 
 [Term]
 id: PO:0028001
