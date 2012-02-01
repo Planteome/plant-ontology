@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 31:01:2012 09:42
-saved-by: cooperl
+date: 01:02:2012 12:39
+saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -426,6 +426,7 @@ synonym: "維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009011 ! plant structure
 disjoint_from: PO:0000003 ! whole plant
 relationship: part_of PO:0000003 ! whole plant
+relationship: participates_in PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0000035
@@ -2714,7 +2715,7 @@ is_a: PO:0005598 ! vascular cambium
 id: PO:0004524
 name: included phloem
 namespace: plant_anatomy
-def: "A portion of phloem tissue produced by included vascular cambium." [POC:Curators]
+def: "A portion of secondary phloem tissue produced by included vascular cambium." [POC:curators]
 synonym: "floema incluido (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "floema interno (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "材内師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3480,13 +3481,15 @@ relationship: part_of PO:0009030 ! carpel
 id: PO:0005020
 name: vascular bundle
 namespace: plant_anatomy
-def: "A unit strand of the vascular system containing the vascular tissues, xylem and phloem. In addition vascular cambium is often present." [GR:Pankaj_Jaiswal]
-comment: May also contain portions of ground tissue.
+def: "A portion of vascular tissue (PO:0009015) that is a unit strand of the vascular system (PO:0000034) and has as part xylem (PO:0005352) or phloem (PO:0005417)." [POC:curators]
+comment: May also contain portions of ground tissue (PO:0025059). The bundle sheath (PO:0006023) can also be part of a vascular bundle, if it is present.
 subset: Maize
 subset: TraitNet
 synonym: "haz vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "vein" EXACT []
 synonym: "維管束 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009007 ! portion of plant tissue
+xref: OBO_SF_PO:3476725
+is_a: PO:0009015 ! portion of vascular tissue
 
 [Term]
 id: PO:0005021
@@ -3624,13 +3627,15 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0005043
 name: secondary phloem
 namespace: plant_anatomy
-def: "A portion of phloem tissue formed by the activity of the vascular cambium." [ISBN:0122151704]
-comment: Part of the bark.
+def: "A portion of phloem (PO:0005417) tissue that develops from a vascular cambium (PO:0005598)." [ISBN:0471245208]
+comment: Secondary phloem develops as part of secondary growth (GO:0080117).
 subset: TraitNet
 synonym: "floema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of secondary phloem tissue" EXACT []
 synonym: "二次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3476728
 is_a: PO:0005417 ! phloem
+relationship: develops_from PO:0005598 ! vascular cambium
 
 [Term]
 id: PO:0005046
@@ -3820,12 +3825,13 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0005417
 name: phloem
 namespace: plant_anatomy
-def: "A portion of vascular tissue that has as parts sieve tube members." [POC:Ramona_Walls]
+def: "A portion of vascular tissue (PO:0009015) that has as parts sieve elements (PO:0025406)." [ISBN:0471245208, POC:curators]
 comment: Functions in the conduction of organic substances in vascular plants.
 subset: TraitNet
 synonym: "floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of phloem tissue" EXACT []
 synonym: "師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3476728
 is_a: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0030048 ! leptome
 
@@ -4133,7 +4139,7 @@ relationship: develops_from PO:0005598 ! vascular cambium
 id: PO:0005849
 name: primary xylem
 namespace: plant_anatomy
-def: "A portion of xylem tissue of the primary plant body." [GR:Pankaj_Jaiswal, ISBN:0122151704, ISBN:0471245194]
+def: "A portion of xylem tissue of the primary procambium (PO:0025275)." [GR:Pankaj_Jaiswal, ISBN:0122151704, ISBN:0471245194]
 comment: In stem or root it is differentiated behind the apical meristem.
 subset: TraitNet
 synonym: "portion of primary xylem tissue" EXACT []
@@ -4877,35 +4883,39 @@ replaced_by: PO:0025275
 id: PO:0006075
 name: primary phloem
 namespace: plant_anatomy
-def: "A portion of phloem tissue of the primary plant body." [ISBN:0122151704]
-comment: In stem or root it is differentiated behind the apical meristem.
+def: "A portion of phloem (PO:0005417) tissue that develops from the procambium (PO:0025275)." [ISBN:0471245208]
+comment: In stem or root it is differentiated behind the apical meristem. Primary phloem develops as part of primary growth (GO term for primary growth has been requested).
 subset: TraitNet
 synonym: "floema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of primary phloem tissue" EXACT []
 synonym: "一次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3476728
 is_a: PO:0005417 ! phloem
+relationship: develops_from PO:0025275 ! procambium
 
 [Term]
 id: PO:0006076
 name: metaphloem
 namespace: plant_anatomy
-def: "Part of the primary phloem that differentiates after the protophloem and before the secondary phloem, if any of the latter is formed." [ISBN:0471245194]
+def: "A portion of primary phloem (PO:0006075) tissue that has as parts companion cells (PO:0000071, in angiosperms) or albuminous cells (PO:0025412, in gymnosperms) associated with the sieve elements (PO:0025406) and that develops after the protophloem (PO:0006077)." [ISBN:0471245194, POC:curators]
+comment: Metaphloem develops after a portion of vascular tissue (PO:0009015) has stopped elongating, in the same location as the protophloem, replacing the protophloem. Sieve elements in the metaphloem are larger than in the protophloem. Develops before the secondary phloem, if any is formed.
 synonym: "metafloema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of metaphloem tissue" EXACT []
 synonym: "後生師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009015 ! portion of vascular tissue
-relationship: part_of PO:0006075 ! primary phloem
+xref: OBO_SF_PO:3476728
+is_a: PO:0006075 ! primary phloem
 
 [Term]
 id: PO:0006077
 name: protophloem
 namespace: plant_anatomy
-def: "The first-formed elements of the primary phloem." [ISBN:0471245194]
+def: "A portion of primary phloem (PO:0006075) tissue has as parts the first-formed sieve elements (PO:0025406) at a particular location and does not have companion cells (PO:0000071, in angiosperms) or albuminous cells (PO:0025412, in gymnosperms) associated with the sieve elements." [ISBN:0471245194, POC:curators]
+comment: Protophloem is the first primary phloem to develop in any particular location in a portion of vascular tissue (PO:0009015). Sieve elements in the protophloem are smaller than in the metaphloem (PO:0006076). The protophloem usually only lasts a short time before it is replaced by metaphloem.
 synonym: "portion of protophloem tissue" EXACT []
 synonym: "protofloema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原始師部、原生始師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009015 ! portion of vascular tissue
-relationship: part_of PO:0006075 ! primary phloem
+xref: OBO_SF_PO:3476728
+is_a: PO:0006075 ! primary phloem
 
 [Term]
 id: PO:0006078
@@ -5249,7 +5259,7 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0006216
 name: internal phloem
 namespace: plant_anatomy
-def: "Primary phloem tissue positioned internal to the primary xylem." [ISBN:0122151704]
+def: "A portion of primary phloem tissue positioned internal to the primary xylem." [ISBN:0122151704]
 synonym: "floema intraxil&#233mico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "intraxylary phloem" RELATED []
 synonym: "内部師部、師管部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9593,13 +9603,14 @@ replaced_by: PO:0005679
 id: PO:0009015
 name: portion of vascular tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue that has parts xylem and phloem." [APweb:Glossary]
-comment: Functions in conduction and support. In the stem it is often found as a stele, surrounded by the cortex and surrounding the pith.
+def: "A portion of plant tissue (PO:0009007) that has as tracheary elements (PO:0000290) or sieve elements (PO:0025406)." [POC:curators]
+comment: Functions in conduction and support. In shoot axes (PO:0025029), vascular tissue is often found as part of a shoot axis stele (PO:0025198) or as scattered vascular bundles (PO:0005020). May include other types of tissues or cells, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
 subset: TraitNet
 synonym: "porci&#243n de tejido vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vascular system" RELATED []
 synonym: "維管束細胞の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: BTO:0001432
+xref: OBO_SF_PO:3476725
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000034 ! vascular system
 
@@ -12604,8 +12615,8 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025017
 name: plant spore
 namespace: plant_anatomy
-def: "A whole plant that arises through meiosis and develops into a gametophyte." [POC:Curators]
-comment: A spore is usually single-celled in homosporous ferns but may be\nmulticellular in heterosporous plants.
+def: "A whole plant (PO:0000003) that arises through meiosis and is contained in a spore wall." [POC:curators]
+comment: A spore is usually single-celled in homosporous plants but may be multicellular in heterosporous plants. May have a spore wall (GO:0031160) made of sporopollenin.
 subset: CL
 synonym: "diaspore" BROAD []
 synonym: "espora (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17645,6 +17656,73 @@ relationship: part_of PO:0009025 ! vascular leaf
 relationship: part_of PO:0025009 ! leaf lamina margin
 created_by: cooperl
 creation_date: 2012-01-29T08:08:16Z
+
+[Term]
+id: PO:0025406
+name: sieve element
+namespace: plant_anatomy
+is_a: PO:0000081 ! axial cell
+created_by: RamonaNYBG
+creation_date: 2012-02-01T10:23:03Z
+
+[Term]
+id: PO:0025407
+name: fiber cell
+namespace: plant_anatomy
+is_a: PO:0000077 ! sclerenchyma cell
+created_by: RamonaNYBG
+creation_date: 2012-02-01T10:26:58Z
+
+[Term]
+id: PO:0025408
+name: primary vascular tissue
+namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that develops from a procambium (PO:0025275)." [ISBN:0471245208]
+comment: Forms as part of primary growth (GO term for primary growth has been requested).
+xref: OBO_SF_PO:3476726
+is_a: PO:0009015 ! portion of vascular tissue
+intersection_of: PO:0009015 ! portion of vascular tissue
+intersection_of: develops_from PO:0025275 ! procambium
+relationship: develops_from PO:0025275 ! procambium
+created_by: RamonaNYBG
+creation_date: 2012-02-01T10:53:46Z
+
+[Term]
+id: PO:0025409
+name: secondary vascular tissue
+namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that develops from a vascular cambium (PO:0005598)." [ISBN:0471245208]
+comment: Forms as part of secondary growth (GO:0080117) in vascular plants. Often differentiated into the axial system (PO:0025410) and ray system (PO:0025411).
+xref: OBO_SF_PO:3476726
+is_a: PO:0009015 ! portion of vascular tissue
+intersection_of: PO:0009015 ! portion of vascular tissue
+intersection_of: develops_from PO:0005598 ! vascular cambium
+created_by: RamonaNYBG
+creation_date: 2012-02-01T10:53:46Z
+
+[Term]
+id: PO:0025410
+name: axial system
+namespace: plant_anatomy
+is_a: PO:0009015 ! portion of vascular tissue
+created_by: RamonaNYBG
+creation_date: 2012-02-01T11:01:35Z
+
+[Term]
+id: PO:0025411
+name: ray system
+namespace: plant_anatomy
+is_a: PO:0009015 ! portion of vascular tissue
+created_by: RamonaNYBG
+creation_date: 2012-02-01T11:01:35Z
+
+[Term]
+id: PO:0025412
+name: albuminous cell
+namespace: plant_anatomy
+is_a: PO:0000074 ! parenchyma cell
+created_by: RamonaNYBG
+creation_date: 2012-02-01T11:50:29Z
 
 [Term]
 id: PO:0028001
