@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:02:2012 14:57
+date: 02:02:2012 17:43
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1269,15 +1269,16 @@ consider: PO:0000290
 
 [Term]
 id: PO:0000274
-name: xylem fiber
+name: xylem fiber cell
 namespace: plant_anatomy
-def: "A fiber in xylem." [ISBN:0471245208]
+def: "A fiber cell (PO:0025407) that is part of a portion of xylem (PO:0005352) tissue." [ISBN:0471245208]
+comment: It may be difficult to distinguish xylem fiber cells from tracheary elements (PO:0000290).
 subset: CL
 subset: TraitNet
 synonym: "fibra del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025407 ! fiber cell
-relationship: part_of PO:0005848 ! secondary xylem
+relationship: part_of PO:0005352 ! xylem
 
 [Term]
 id: PO:0000282
@@ -1472,11 +1473,12 @@ is_a: PO:0025030 ! ground tissue cell
 id: PO:0000355
 name: fiber tracheid
 namespace: plant_anatomy
-def: "A fiber-like tracheid in the secondary xylem; commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures." [ISBN:0471245208]
+def: "A xylem fiber cell (PO:0000274) with bordered pits with pit cavities." [ISBN:0471245208]
+comment: Commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures. If both libriform fiber cells (PO:0004520) and fiber tracheids are present, the libriform fiber cells usually have thicker walls. Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading from the pit cavity to the cell lumen through the thick cell wall.
 subset: CL
 synonym: "fibrotraqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "繊維 仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000274 ! xylem fiber
+is_a: PO:0000274 ! xylem fiber cell
 
 [Term]
 id: PO:0000372
@@ -2159,7 +2161,7 @@ id: PO:0002003
 name: vessel member
 namespace: plant_anatomy
 def: "A tracheary element (PO:0000290) that is part of a vessel (PO:0025417) and has as parts perforation plates." [ISBN:0471245208]
-comment: The cell wall of a vessel member has openings called perforations, which are organized into perforation plates (term has been requested in GO). These are usually on the end walls of a cell, but may also be on the side walls. A perforation plate may be simple, with one perforation, or multiperforate, with more than one perforation.
+comment: Commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures. If both libriform fibers (PO:0004520) and fiber tracheids are present, the libriform fibers usually have thicker walls. Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading from the pit cavity to the cell lumen through the thick cell wall.
 subset: CL
 subset: TraitNet
 synonym: "miembro de vaso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2672,36 +2674,40 @@ relationship: develops_from PO:0005043 ! secondary phloem
 
 [Term]
 id: PO:0004519
-name: phloem fiber
+name: phloem fiber cell
 namespace: plant_anatomy
-def: "A fiber in phloem." [POC:Curators]
+def: "A fiber cell (PO:0025407) that is part of a portion of phloem (PO:0005417) tissue." [ISBN:0471245208]
 subset: CL
 subset: TraitNet
 synonym: "fibra del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "師部繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
-disjoint_from: PO:0000289 ! sieve tube member
-relationship: part_of PO:0005043 ! secondary phloem
+is_a: PO:0025407 ! fiber cell
+relationship: part_of PO:0005417 ! phloem
 
 [Term]
 id: PO:0004520
-name: libriform fiber
+name: libriform fiber cell
 namespace: plant_anatomy
-def: "A xylem fiber commonly with thick walls and simple pits." [POC:Curators]
+def: "A xylem fiber cell (PO:0000274) with simple pits." [ISBN:0471245208]
+comment: Libriform fiber cells have unbordered pits while fiber tracheids (PO:0000355) have bordered pits. Many intermediate forms exists and are generally classified as fiber tracheids. If both libriform fiber cells and fiber tracheids are present, the libriform fiber cells usually have thicker walls. Libriform fiber cells have a slit-like aperture toward the cell lumen, but no pit cavity.
 subset: CL
 synonym: "fibra libriforme (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "真性木繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000274 ! xylem fiber
+is_a: PO:0000274 ! xylem fiber cell
 
 [Term]
 id: PO:0004521
 name: septate fiber
 namespace: plant_anatomy
-def: "A fiber with thin transverse walls (septa), which are formed after the cell develops a secondary wall thickening." [POC:Curators]
+def: "OBSOLETE: A fiber with thin transverse walls (septa), which are formed after the cell develops a secondary wall thickening." [POC:Curators]
+comment: This term was made oboslete, because sepate fibers do not only appear in the xylem. It is replaced by septate fiber tracheid (PO:0025419), septate libriform fiber cell (PO:0025420), and septate phloem fiber cell (PO:0025421).
 subset: CL
 synonym: "fibra septada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "隔壁繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000274 ! xylem fiber
+is_obsolete: true
+consider: PO:0025419
+consider: PO:0025420
+consider: PO:0025421
 
 [Term]
 id: PO:0004522
@@ -17704,6 +17710,8 @@ creation_date: 2012-02-01T10:23:03Z
 id: PO:0025407
 name: fiber cell
 namespace: plant_anatomy
+def: "An elongated, tapering schlerenchyma cell (PO:0000077) with a more or less thick secondary cell wall." [ISBN:0471245208]
+comment: May or may not have lignin in the secondary wall or a living protoplast at maturity. It may be difficult to distinguish fiber cells from tracheary elements (PO:0000290).
 is_a: PO:0000077 ! sclerenchyma cell
 created_by: RamonaNYBG
 creation_date: 2012-02-01T10:26:58Z
@@ -17824,6 +17832,47 @@ comment: Usually not very elongated.
 is_a: PO:0000077 ! sclerenchyma cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T02:41:10Z
+
+[Term]
+id: PO:0025419
+name: septate fiber tracheid
+namespace: plant_anatomy
+def: "A fiber tracheid (PO:0000355) that has as parts one or more thin internal partitions or septa." [ISBN:0471245208]
+comment: Septate fiber cells usually have a living protoplast at maturity. The septa form from mitosis within the lignified cell wall.
+is_a: PO:0000355 ! fiber tracheid
+created_by: RamonaNYBG
+creation_date: 2012-02-02T04:43:44Z
+
+[Term]
+id: PO:0025420
+name: septate libriform fiber cell
+namespace: plant_anatomy
+def: "A libriform fiber cell (PO:0004520) that has as parts one or more thin internal partitions or septa." [ISBN:0471245208]
+comment: Septate fiber cells usually have a living protoplast at maturity. The septa form from mitosis within the lignified cell wall.
+is_a: PO:0004520 ! libriform fiber cell
+created_by: RamonaNYBG
+creation_date: 2012-02-02T04:43:44Z
+
+[Term]
+id: PO:0025421
+name: septate phloem fiber cell
+namespace: plant_anatomy
+def: "A phloem fiber cell (PO:0004519) that has as parts one or more thin internal partitions or septa." [ISBN:0471245208]
+comment: Septate fiber cells usually have a living protoplast at maturity. The septa form from mitosis within the lignified cell wall.
+is_a: PO:0004519 ! phloem fiber cell
+created_by: RamonaNYBG
+creation_date: 2012-02-02T04:43:44Z
+
+[Term]
+id: PO:0025422
+name: gelatinous fiber
+namespace: plant_anatomy
+def: "A xylem fiber cell (PO:0000274) in which the inner-most layer of the secondary wall contains abundant alpha-cellulose and is poor in lignin." [ISBN:0080374903]
+comment: Commonly found in reaction wood in dicots. The inner layer of the cell wall, or G-layer, can absorb much water and swell and is relatively porous and less compact than the outer layers of the cell wall.
+synonym: "mucilaginous fiber cell" EXACT [ISBN:0080374903]
+is_a: PO:0000274 ! xylem fiber cell
+created_by: RamonaNYBG
+creation_date: 2012-02-02T04:53:23Z
 
 [Term]
 id: PO:0028001
