@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:02:2012 08:48
+date: 02:02:2012 14:57
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -821,14 +821,15 @@ relationship: part_of PO:0005660 ! hydathode
 id: PO:0000071
 name: companion cell
 namespace: plant_anatomy
-def: "A specialized parenchyma cell associated with a sieve-tube member in angiosperm phloem and arising from the same mother cell as the sieve-tube member." [ISBN:0879015322]
+def: "A parenchyma cell (PO:0000074) that is adjacent to a sieve-tube member (PO:0000289) and arises from the same initial cell (PO:0004011) as the sieve-tube member." [ISBN:0471245208]
+comment: Found in angiosperms. Compare to albuminous cells (PO:0025412), which are found in gymnosperms.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula acompa&#241iante (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "伴細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000074 ! parenchyma cell
-relationship: part_of PO:0005043 ! secondary phloem
-relationship: part_of PO:0006075 ! primary phloem
+relationship: adjacent_to PO:0000289 ! sieve tube member
+relationship: part_of PO:0005417 ! phloem
 
 [Term]
 id: PO:0000074
@@ -870,13 +871,13 @@ relationship: part_of PO:0005426 ! chlorenchyma
 id: PO:0000077
 name: sclerenchyma cell
 namespace: plant_anatomy
-def: "Usually dead cell variable in form and size, with more or less thick, often lignified, secondary walls." [ISBN:0471245208]
+def: "A ground tissue cell (PO:0025030) with thickened secondary cell walls that are lignified." [ISBN:0471245208]
+comment: May or may not be devoid of protoplast at maturity. Not always easy to distinguish from tracheary elements (PO:0000290) or sclerified parenchyma cells (PO:0000074). Distinguishable from collenchyma cells (PO:0000075) because collenchyma cells alive at maturity. Collenchyma cells provides flexibility while sclerenchyma cells provide hardness.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula esclerenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "厚膜組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025030 ! ground tissue cell
-relationship: part_of PO:0005427 ! sclerenchyma
 
 [Term]
 id: PO:0000078
@@ -1339,14 +1340,16 @@ relationship: part_of PO:0025416 ! sieve tube
 id: PO:0000290
 name: tracheary element
 namespace: plant_anatomy
-def: "General term for any water conducting cell, tracheid or vessel member." [ISBN:0471245208]
-comment: Occurs in the sporophytic phase of a plant life cycle.
+def: "A plant cell (PO:0009002O) that has a lignified cell wall with secondary thickening and bordered pits and is dead at maturity." [ISBN:0471245208]
+comment: More or less elongated and with pits of various types in the cell wall. Tracheary elements function in the conduction of water and dissolved substances such as mineral nutrients from the roots to the shoot system. Tracheary elements can be distinguished from fiber cells (PO:0025407) by the presence of bordered pits, although there are intermediate forms called fiber tracheids (PO:0000355).
 subset: CL
 subset: TraitNet
 synonym: "elemento de traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025032 ! hydroid
+relationship: part_of PO:0005352 ! xylem
+relationship: participates_in PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0000293
@@ -1384,7 +1387,8 @@ relationship: part_of PO:0005597 ! cambium
 id: PO:0000301
 name: tracheid
 namespace: plant_anatomy
-def: "In the xylem, a dead elongated water-conducting cell in which at least the middle lamella of the end walls remains intact." [APweb:Glossary]
+def: "A tracheary element (PO:0000290) that has no perforations in its cell wall." [ISBN:0471245208]
+comment: May have any of the kinds of secondary wall thickenings found in tracheary elements. The area of contact between two tracheids has only bordered pits, whereas in vessel members (PO:0002003) it has openings in the cell wall called perforations, organized into perforation plates (term has been requested in GO).
 subset: CL
 subset: TraitNet
 synonym: "traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2154,14 +2158,16 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0002003
 name: vessel member
 namespace: plant_anatomy
-def: "One of the cellular components of a vessel, a dead cell with the wall between adjacent members being variously perforated and the walls that persist variously thickened." [ISBN:0471245208]
+def: "A tracheary element (PO:0000290) that is part of a vessel (PO:0025417) and has as parts perforation plates." [ISBN:0471245208]
+comment: The cell wall of a vessel member has openings called perforations, which are organized into perforation plates (term has been requested in GO). These are usually on the end walls of a cell, but may also be on the side walls. A perforation plate may be simple, with one perforation, or multiperforate, with more than one perforation.
 subset: CL
 subset: TraitNet
 synonym: "miembro de vaso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "vessel element" RELATED []
-synonym: "vessel segment" RELATED []
+synonym: "vessel element" EXACT []
+synonym: "vessel segment" EXACT []
 synonym: "道管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000290 ! tracheary element
+relationship: part_of PO:0025417 ! vessel
 
 [Term]
 id: PO:0002004
@@ -3594,12 +3600,13 @@ is_a: PO:0025127 ! primordium
 id: PO:0005039
 name: primary thickening meristem
 namespace: plant_anatomy
-def: "A lateral meristem that has a parts multiple layers of cells located near the shoot apical meristem." [ISBN:0471245208, JSTOR:4354165]
-comment: Contributes to primary thickening of the stem, adventitious root formation, and formation of linkages between the stem, leaf, and root vasculature. Contiguous with the shoot apical meristem in some species, but not all. Produces more or less distinct vascular bundles surrounded by ground tissue, as opposed to the more or less continuous xylem and phloem produced by a vascular cambium. A primary thickening meristem is a multi-layered structure, compared to the single layer of a cambium. Found in many monocotyledons.
+def: "A shoot lateral meristem (PO:0006344) that is part of a shoot axis (PO:0025029) and has a parts multiple layers of meristematic cells (PO:0004010) located near the shoot apical meristem (PO:0020148)." [ISBN:0471245208, JSTOR:4354165]
+comment: Contributes to primary thickening of a shoot axis (PO:0025029), adventitious (shoot-borne) root (PO:0000042) formation, and formation of linkages between shot axis (PO:0000039), leaf (PO:0000036), and root (PO:0003011) vascular systems. Contiguous with the shoot apical meristem (PO:0020148) in some species, but not all. Produces more or less distinct vascular bundles (PO:0005020) surrounded by ground tissue (PO:0025059), as opposed to the more or less continuous xylem (PO:0005352) and phloem (PO:0005417) produced by a vascular cambium (PO:0005598). A primary thickening meristem is a multi-layered structure, compared to the single layer of a cambium. Found in many monocotyledons.
 synonym: "meristema de engrosamiento primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次 肥厚（膜）分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020145 ! lateral meristem
+is_a: PO:0006344 ! shoot lateral meristem
 relationship: develops_from PO:0000225 ! peripheral zone
+relationship: part_of PO:0009047 ! stem
 
 [Term]
 id: PO:0005040
@@ -3788,7 +3795,7 @@ is_obsolete: true
 id: PO:0005352
 name: xylem
 namespace: plant_anatomy
-def: "A portion of vascular tissue (PO:0009015) that has as parts tracheary elements (PO:0000290)." [ISBN:047125208]
+def: "A portion of vascular tissue (PO:0009015) that has as parts tracheary elements (PO:0000290)." [ISBN:0471245194]
 comment: Functions in the translocation of water and solutes from roots (PO:0009005) to the shoot system (PO:0009006) and in support. Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of xylem tissue" EXACT []
@@ -17748,7 +17755,11 @@ creation_date: 2012-02-01T11:01:35Z
 id: PO:0025412
 name: albuminous cell
 namespace: plant_anatomy
+def: "A parenchyma cell (PO:0000074) that is morphologically and physiologically associated with a sieve cell (PO:0025415) but does is not derived from the same initial cell (PO:0004011) as the sieve cell." [ISBN:0471245208]
+comment: May be found in the ray system (PO:0025411) and sometimes the axial system (PO:0025410) of gymnosperms. Compare to companion cells (PO:0000071), which are found in angiosperms.
 is_a: PO:0000074 ! parenchyma cell
+relationship: adjacent_to PO:0025415 ! sieve cell
+relationship: part_of PO:0005417 ! phloem
 created_by: RamonaNYBG
 creation_date: 2012-02-01T11:50:29Z
 
@@ -17766,9 +17777,10 @@ creation_date: 2012-02-01T04:24:58Z
 id: PO:0025414
 name: secondary thickening meristem
 namespace: plant_anatomy
-def: "A lateral meristem that is part of a shoot axis not contiguous with the shoot apical meristem and has a parts multiple layers of cells." [ISBN:0080374903, JSTOR:4354165]
-comment: Contributes mainly to formation of the body of a stem, but may also produce adventitious roots. May be continuous or discontinuous with the primary thickening meristem. Found in some monocot species of the Liliales and Asperigales.
-is_a: PO:0020145 ! lateral meristem
+def: "A shoot lateral meristem (PO:0006344) that is part of a stem (PO:0025029) not contiguous with the shoot apical meristem (PO:0020148) and has a parts multiple layers of meristematic cells (PO:0004010)." [ISBN:0080374903, JSTOR:4354165]
+comment: Contributes mainly to formation of the body of a stem (PO:0009047), but may also produce adventitious (shoot-borne) roots (PO:0000042). May be continuous or discontinuous with the primary thickening meristem (PO:0005039). Found in some monocot species of the Liliales and Asperigales.
+is_a: PO:0006344 ! shoot lateral meristem
+relationship: part_of PO:0009047 ! stem
 created_by: RamonaNYBG
 creation_date: 2012-02-01T05:49:53Z
 
@@ -17793,6 +17805,25 @@ comment: A sieve plate (GO:0097218) is part of a sieve tube member.
 is_a: PO:0005417 ! phloem
 created_by: RamonaNYBG
 creation_date: 2012-02-02T07:03:00Z
+
+[Term]
+id: PO:0025417
+name: vessel
+namespace: plant_anatomy
+def: "A portion of xylem (PO:0005352) tissue that has as parts a tube-like series of vessel members (PO:0002003), the common walls of which have perforations." [ISBN:0471245194]
+is_a: PO:0005352 ! xylem
+created_by: RamonaNYBG
+creation_date: 2012-02-02T02:11:47Z
+
+[Term]
+id: PO:0025418
+name: sclerid
+namespace: plant_anatomy
+def: "A sclerenchyma cell (PO:0000077) that has thick secondary walls with many pits." [ISBN:0471245208]
+comment: Usually not very elongated.
+is_a: PO:0000077 ! sclerenchyma cell
+created_by: RamonaNYBG
+creation_date: 2012-02-02T02:41:10Z
 
 [Term]
 id: PO:0028001
