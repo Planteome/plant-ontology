@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:02:2012 18:03
+date: 02:02:2012 08:48
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1256,12 +1256,15 @@ is_a: PO:0005849 ! primary xylem
 id: PO:0000273
 name: xylem element
 namespace: plant_anatomy
-def: "A cell making up xylem tissue." [ISBN:0471245208]
+def: "OBSOLTE. A cell making up xylem tissue." [ISBN:0471245208]
+comment: This term was made obsolete because it was not appropriate. Replaced by tracheary element (PO:0000290) and xylem fiber cell (PO:0000274).
 subset: CL
 subset: TraitNet
 synonym: "elemento del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+is_obsolete: true
+consider: PO:0000274
+consider: PO:0000290
 
 [Term]
 id: PO:0000274
@@ -1272,7 +1275,7 @@ subset: CL
 subset: TraitNet
 synonym: "fibra del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000273 ! xylem element
+is_a: PO:0025407 ! fiber cell
 relationship: part_of PO:0005848 ! secondary xylem
 
 [Term]
@@ -1320,8 +1323,9 @@ id: PO:0000289
 name: sieve tube member
 namespace: plant_anatomy
 alt_id: PO:0000286
-def: "One of the series of cells that make up a sieve tube; it shows a more or less pronounced differentiation between sieve plates (wide pores) and lateral sieve areas (narrow pores)." [ISBN:0471245208]
-comment: Also sieve tube element and the obsolete sieve tube segment. Occurs in the sporophytic phase of a plant life cycle.
+def: "A sieve element (PO:0025406) that is part of a sieve tube (PO:0025416) and has sieve areas aggregated into sieve plates." [ISBN:0471245208]
+comment: Sieve tube members have sieve areas  (GO:0097217) that are specialized into those with wide pores in sieve plates (GO:0097218) and those with narrow pores in lateral sieve areas. Sieve tube members may have inclined end walls with compound (GO:0097219) or simple (GO:0097220) sieve plates. Typical of angiosperms. Differ from sieve cells (PO:0025415), which have less pronounced specialization of sieve areas and no sieve plates.
+subset: Angiosperm
 subset: CL
 subset: TraitNet
 synonym: "miembro del tubo criboso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1329,9 +1333,7 @@ synonym: "sieve element" RELATED []
 synonym: "sieve tube element" RELATED []
 synonym: "師管要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025406 ! sieve element
-disjoint_from: PO:0025033 ! leptoid
-relationship: part_of PO:0005043 ! secondary phloem
-relationship: part_of PO:0006075 ! primary phloem
+relationship: part_of PO:0025416 ! sieve tube
 
 [Term]
 id: PO:0000290
@@ -1343,10 +1345,8 @@ subset: CL
 subset: TraitNet
 synonym: "elemento de traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000273 ! xylem element
+is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025032 ! hydroid
-relationship: part_of PO:0005848 ! secondary xylem
-relationship: part_of PO:0005849 ! primary xylem
 
 [Term]
 id: PO:0000293
@@ -12875,7 +12875,7 @@ synonym: "leptoid cell" EXACT []
 synonym: "leptoide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "レプトイド、師管組織に相当する細胞群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
-disjoint_from: PO:0000289 ! sieve tube member
+disjoint_from: PO:0025406 ! sieve element
 relationship: part_of PO:0030048 ! leptome
 created_by: Ramona
 creation_date: 2010-05-12T04:49:59Z
@@ -17684,7 +17684,12 @@ creation_date: 2012-01-29T08:08:16Z
 id: PO:0025406
 name: sieve element
 namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that is part of a portion of phloem (PO:0005417) tissue, has sieve areas (modified pits) in its walls, and lacks a nucleus in its mature protoplast." [ISBN:0471245208]
+comment: Sieve cells function mainly in longitudinal conduction of organic solutes. Classified into sieve cells (PO:0025415) and sieve tube members (PO:0000289) based on the presence of sieve plates (GO:0097218) and specialization of sieve areas (GO:0097217) in different parts of the cell. Develops from either a cambial initial (PO:0000295) or a procambial cell (PO:0025258).
 is_a: PO:0009002 ! plant cell
+disjoint_from: PO:0025033 ! leptoid
+relationship: part_of PO:0005417 ! phloem
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: RamonaNYBG
 creation_date: 2012-02-01T10:23:03Z
 
@@ -17766,6 +17771,28 @@ comment: Contributes mainly to formation of the body of a stem, but may also pro
 is_a: PO:0020145 ! lateral meristem
 created_by: RamonaNYBG
 creation_date: 2012-02-01T05:49:53Z
+
+[Term]
+id: PO:0025415
+name: sieve cell
+namespace: plant_anatomy
+def: "A sieve element (PO:0025406) in which the sieve areas are not aggregated into sieve plates." [ISBN:0471245208]
+comment: Sieve areas (GO:0097217) in sieve cells generally have narrow pores and thin connecting strands, and they are not highly specialized, but instead are fairly uniform throughout the cell wall. Typical of gymnosperms and non-seed vascular plants. Differ from sieve tube members (PO:0000289), which have sieve plates (GO:0097218) and more pronounced specialization of sieve areas.
+subset: Gymnosperms
+subset: Pteridophytes
+is_a: PO:0025406 ! sieve element
+created_by: RamonaNYBG
+creation_date: 2012-02-02T06:54:00Z
+
+[Term]
+id: PO:0025416
+name: sieve tube
+namespace: plant_anatomy
+def: "A portion of phloem (PO:0005417) tissue that has as parts a series of sieve tube members (PO:0000289) arranged end to end and interconnected through sieve plates." [ISBN:0471245208]
+comment: A sieve plate (GO:0097218) is part of a sieve tube member.
+is_a: PO:0005417 ! phloem
+created_by: RamonaNYBG
+creation_date: 2012-02-02T07:03:00Z
 
 [Term]
 id: PO:0028001
