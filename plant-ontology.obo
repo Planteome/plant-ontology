@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:02:2012 17:43
+date: 03:02:2012 10:38
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2741,38 +2741,44 @@ is_a: PO:0005043 ! secondary phloem
 id: PO:0004525
 name: wood parenchyma cell
 namespace: plant_anatomy
-def: "Parenchyma cell occurring within secondary xylem." [POC:Curators]
+def: "A parenchyma cell (PO:0000074) that is part of a portion of wood parenchyma (PO:0004532)." [ISBN:0471245208]
+comment: Found in secondary xylem (PO:0005848) or secondary phloem (PO:0005043).
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula parenquim&#225tica de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木部柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000074 ! parenchyma cell
+relationship: part_of PO:0004532 ! wood parenchyma
 
 [Term]
 id: PO:0004526
 name: axial wood parenchyma cell
 namespace: plant_anatomy
-def: "Parenchyma cell in the axial system of secondary xylem." [POC:Curators]
+def: "A wood parenchyma cell (PO:0004525) that is part of a portion of axial wood parenchyma (PO:0004533)." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula parenquim&#225tica axial de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸方向木部柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004525 ! wood parenchyma cell
+relationship: develops_from PO:0000079 ! fusiform initial
+relationship: part_of PO:0004533 ! axial wood parenchyma
 
 [Term]
 id: PO:0004527
 name: ray wood parenchyma cell
 namespace: plant_anatomy
-def: "Parenchyma cell of a ray in secondary xylem." [POC:Curators]
+def: "A parenchyma cell (PO:0000074) that develops from a ray initial (PO:0000082) and is part of a portion of ray wood parenchyma (PO:0004534)." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula parenquim&#225tica de rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "放射状木部柔組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004525 ! wood parenchyma cell
+relationship: develops_from PO:0000082 ! ray initial
+relationship: part_of PO:0004534 ! ray wood parenchyma
 
 [Term]
 id: PO:0004528
 name: upright wood ray parenchyma cell
 namespace: plant_anatomy
-def: "Ray cell in secondary xylem oriented axially (vertically in the axis) with its longest dimension." [POC:Curators]
+def: "A ray wood parenchyma cell (PO:0004527) that is oriented with its longest dimension parallel to the plant axis (PO:0025004) in which it is found." [ISBN:0471245208]
 subset: CL
 synonym: "rayo par&#233nquim&#225tico vertical de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "直立性木質放射状柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2780,9 +2786,9 @@ is_a: PO:0004527 ! ray wood parenchyma cell
 
 [Term]
 id: PO:0004529
-name: procumbent wood ray parenchyma cell
+name: procumbent ray wood parenchyma cell
 namespace: plant_anatomy
-def: "Ray cell within secondary xylem having its longest axis in radial direction." [POC:Curators]
+def: "A ray wood parenchyma cell (PO:0004527) that is oriented with its longest dimension radial to the plant axis (PO:0025004) in which it is found." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula procumbente del rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "平伏木質放射状柔組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2812,28 +2818,33 @@ is_a: PO:0004528 ! upright wood ray parenchyma cell
 id: PO:0004532
 name: wood parenchyma
 namespace: plant_anatomy
-def: "Parenchymatous tissue occurring in the wood." [POC:Curators]
+def: "A portion of parenchyma (PO:0005421) tissue that is part of a portion of secondary xylem (PO:0005848) and has as parts wood parenchyma cells (PO:0004525)." [ISBN:0471245194]
 synonym: "par&#233nquima de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木部柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005848 ! secondary xylem
+is_a: PO:0005421 ! parenchyma
+relationship: part_of PO:0005848 ! secondary xylem
 
 [Term]
 id: PO:0004533
 name: axial wood parenchyma
 namespace: plant_anatomy
-def: "Parenchyma tissue in the axial system of secondary xylem." [POC:Curators]
+def: "A portion of wood parenchyma (PO:0004532) that is part of an axial system (PO:0025410) and has as parts axial wood parenchyma cells (PO:0004526)." [ISBN:0471245194]
 synonym: "par&#233nquima axial de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸方向木部柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004532 ! wood parenchyma
+relationship: part_of PO:0025410 ! axial system
 
 [Term]
 id: PO:0004534
 name: ray wood parenchyma
 namespace: plant_anatomy
-def: "Radially oriented parenchyma tissue in secondary xylem." [POC:Curators]
+def: "A portion of wood parenchyma (PO:0004532) that is part of a ray system (PO:0025411) and has as parts ray wood parenchyma cells (PO:0004527)." [ISBN:0471245194]
+comment: Occurs in bands or rays of variable width and height that extend radially in the secondary xylem (PO:0005848) and secondary phloem (PO:0005043) of a plant axis (PO:0025004).
 synonym: "par&#233nquima de rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "ray" BROAD []
 synonym: "放射状木部柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004532 ! wood parenchyma
+relationship: part_of PO:0025411 ! ray system
 
 [Term]
 id: PO:0004535
@@ -17698,7 +17709,7 @@ id: PO:0025406
 name: sieve element
 namespace: plant_anatomy
 def: "A plant cell (PO:0009002) that is part of a portion of phloem (PO:0005417) tissue, has sieve areas (modified pits) in its walls, and lacks a nucleus in its mature protoplast." [ISBN:0471245208]
-comment: Sieve cells function mainly in longitudinal conduction of organic solutes. Classified into sieve cells (PO:0025415) and sieve tube members (PO:0000289) based on the presence of sieve plates (GO:0097218) and specialization of sieve areas (GO:0097217) in different parts of the cell. Develops from either a cambial initial (PO:0000295) or a procambial cell (PO:0025258).
+comment: Sieve elements function mainly in longitudinal conduction of organic solutes. Classified into sieve cells (PO:0025415) and sieve tube members (PO:0000289) based on the presence of sieve plates (GO:0097218) and specialization of sieve areas (GO:0097217) in different parts of the cell. Develops from either a cambial initial (PO:0000295) or a procambial cell (PO:0025258).
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025033 ! leptoid
 relationship: part_of PO:0005417 ! phloem
@@ -17747,6 +17758,10 @@ creation_date: 2012-02-01T10:53:46Z
 id: PO:0025410
 name: axial system
 namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that has as parts cells derived from fusiform initials (PO:0000079) and oriented with their longest diameter parallel to a plant axis (PO:0025004)." [ISBN:0471245208]
+comment: Includes portions of secondary xylem (PO:0005848) and axial wood parenchyma (PO:0004533).
+synonym: "longitudinal system" EXACT []
+synonym: "vertical system" EXACT []
 is_a: PO:0009015 ! portion of vascular tissue
 created_by: RamonaNYBG
 creation_date: 2012-02-01T11:01:35Z
@@ -17755,6 +17770,11 @@ creation_date: 2012-02-01T11:01:35Z
 id: PO:0025411
 name: ray system
 namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that has as part ray wood parenchyma (PO:0004534) and extends radially in the secondary xylem (PO:0005848) and secondary phloem (PO:0005848) of a plant axis (PO:0025004)." [ISBN:0471245208]
+comment: May include ray tracheids, as in Pinaceae and some Cupressaceae.
+synonym: "horizontal system" EXACT []
+synonym: "radial system" EXACT []
+synonym: "ray" BROAD []
 is_a: PO:0009015 ! portion of vascular tissue
 created_by: RamonaNYBG
 creation_date: 2012-02-01T11:01:35Z
@@ -17865,7 +17885,7 @@ creation_date: 2012-02-02T04:43:44Z
 
 [Term]
 id: PO:0025422
-name: gelatinous fiber
+name: gelatinous fiber cell
 namespace: plant_anatomy
 def: "A xylem fiber cell (PO:0000274) in which the inner-most layer of the secondary wall contains abundant alpha-cellulose and is poor in lignin." [ISBN:0080374903]
 comment: Commonly found in reaction wood in dicots. The inner layer of the cell wall, or G-layer, can absorb much water and swell and is relatively porous and less compact than the outer layers of the cell wall.
