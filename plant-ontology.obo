@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:02:2012 10:38
+date: 03:02:2012 18:41
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2601,7 +2601,8 @@ relationship: part_of PO:0006048 ! seed coat epidermis
 id: PO:0004512
 name: heartwood
 namespace: plant_anatomy
-def: "The inner layers of secondary xylem that have largely ceased to function in storage and conduction and in which reserve materials have been removed or converted into heartwood substances; generally darker colored than the functioning sapwood." [ISBN:0471245208, POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that lacks living wood parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
+comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a plant axis (PO:0025004), interior to the sapwood.
 subset: TraitNet
 synonym: "duramen (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2611,7 +2612,8 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004513
 name: sapwood
 namespace: plant_anatomy
-def: "Outer part of the wood of stem or root containing living cells and reserves and in which conduction of water takes place. Generally lighter colored than the heartwood." [ISBN:0471245208, POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that has as parts living wood parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
+comment: Sapwood contains reserve materials and is where the conduction of water takes place. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood the vascular cambium (PO:0005598) of a plant axis (PO:0025004).
 subset: TraitNet
 synonym: "albura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "液材、辺材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2621,7 +2623,8 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004514
 name: growth ring
 namespace: plant_anatomy
-def: "A growth layer of secondary xylem or secondary phloem as seen in transection of stem or root; may be an annual ring or a false annual ring." [ISBN:0471245208, POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that has as parts a single layer of early wood (PO:0004515) and a single layer of later wood (PO:0004516) from the same growth season and is part of a plant axis (PO:0025004)." [ISBN:0471245208, POC:Curators]
+comment: Forms a ring when viewed in transverse section. May be an annual ring or a false annual ring.
 subset: TraitNet
 synonym: "anillo de crecimiento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "annual ring" EXACT []
@@ -2632,33 +2635,35 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004515
 name: early wood
 namespace: plant_anatomy
-def: "The wood formed in first part of a growth ring and characterized by a lower density and larger cells than the late wood." [ISBN:0471245208, POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that has lower density and larger cells than late wood (PO:0004516) and is formed in the first part of a growing season." [ISBN:0471245208, POC:Curators]
 subset: TraitNet
 synonym: "madera temprana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spring wood" RELATED []
 synonym: "早材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004514 ! growth ring
+is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0004514 ! growth ring
 
 [Term]
 id: PO:0004516
 name: late wood
 namespace: plant_anatomy
-def: "The secondary xylem formed in the later part of a growth ring; denser and composed of smaller cells than the early wood." [POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that has higher density and smaller cells than early wood (PO:0004515) and formed in the later part of a growing season." [POC:Curators]
 subset: Citrus
 subset: TraitNet
 synonym: "madera tard&#237a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "summer wood" RELATED []
 synonym: "晩材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004514 ! growth ring
+is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0004514 ! growth ring
 
 [Term]
 id: PO:0004517
 name: growth ring boundary
 namespace: plant_anatomy
-def: "Boundary between two growth rings." [POC:Curators]
+def: "A plant anatomical surface that is the boundary between the outermost (last formed) late wood (PO:0004516) of one growth ring and the innermost (earliest formed) early wood (PO:0004515) of the next growth ring (PO:0004514)." [RW:test]
 synonym: "l&#237mite del anillo de crecimiento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "年輪境界線 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004514 ! growth ring
+relationship: part_of PO:0004514 ! growth ring
 
 [Term]
 id: PO:0004518
