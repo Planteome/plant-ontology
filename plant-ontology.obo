@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:02:2012 18:41
+date: 04:02:2012 10:15
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1350,7 +1350,6 @@ synonym: "管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025032 ! hydroid
 relationship: part_of PO:0005352 ! xylem
-relationship: participates_in PO:0028002 ! sporophyte development stage
 
 [Term]
 id: PO:0000293
@@ -17718,7 +17717,6 @@ comment: Sieve elements function mainly in longitudinal conduction of organic so
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025033 ! leptoid
 relationship: part_of PO:0005417 ! phloem
-relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: RamonaNYBG
 creation_date: 2012-02-01T10:23:03Z
 
@@ -17898,6 +17896,51 @@ synonym: "mucilaginous fiber cell" EXACT [ISBN:0080374903]
 is_a: PO:0000274 ! xylem fiber cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T04:53:23Z
+
+[Term]
+id: PO:0025423
+name: plant tissue development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage that has as primary participant a portion of plant tissue." [POC:Ramona_Walls]
+is_a: PO:0009012 ! plant structure development stage
+created_by: RamonaNYBG
+creation_date: 2012-02-04T09:22:36Z
+
+[Term]
+id: PO:0025424
+name: vascular tissue development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage that has as primary participant a portion of vascular tissue." [POC:Ramona_Walls]
+is_a: PO:0025423 ! plant tissue development stage
+created_by: RamonaNYBG
+creation_date: 2012-02-04T09:24:06Z
+
+[Term]
+id: PO:0025425
+name: xylem development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage that has as primary participant a portion of xylem tissue." [POC:Ramona_Walls]
+is_a: PO:0025424 ! vascular tissue development stage
+created_by: RamonaNYBG
+creation_date: 2012-02-04T09:24:38Z
+
+[Term]
+id: PO:0025426
+name: phloem development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage that has as primary participant a portion of phloem tissue." [POC:Ramona_Walls]
+is_a: PO:0025424 ! vascular tissue development stage
+created_by: RamonaNYBG
+creation_date: 2012-02-04T09:25:00Z
+
+[Term]
+id: PO:0025427
+name: secondary xylem development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage that has as primary participant a portion of secondary xylem tissue." [POC:Ramona_Walls]
+is_a: PO:0025425 ! xylem development stage
+created_by: RamonaNYBG
+creation_date: 2012-02-04T09:25:25Z
 
 [Term]
 id: PO:0028001
