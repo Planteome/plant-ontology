@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 04:02:2012 10:15
-saved-by: RamonaNYBG
+date: 08:02:2012 01:05
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1.1-beta4
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -241,6 +241,7 @@ comment: Emerges as an outgrowth in the shoot apex (flanking the meristem).
 synonym: "primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
+relationship: develops_from PO:0025431 ! leaf anlagen
 relationship: part_of PO:0000037 ! shoot apex
 
 [Term]
@@ -4206,12 +4207,13 @@ relationship: part_of PO:0006342 ! infructescence
 id: PO:0006001
 name: phyllome
 namespace: plant_anatomy
-def: "A lateral plant organ produced by a shoot apical meristem." [POC:Curators]
+def: "A lateral plant organ produced by a shoot apical meristem." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム、葉器官 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
+relationship: develops_from PO:0025128 ! phyllome primordium
 relationship: part_of PO:0009006 ! shoot system
 
 [Term]
@@ -4264,10 +4266,11 @@ is_a: PO:0009039 ! glume
 id: PO:0006005
 name: carpel anlagen
 namespace: plant_anatomy
-def: "A portion of meristem tissue that is a presumptive region on a floral meristem where carpel primordia would initiate." [PMID:14729915]
+def: "A portion of phyllome anlagen tissue (PO:0025430)  that will give rise to a carpel primordium (PO:0004703) and is part of a peripheral zone (PO:000225) of flower meristem (PO:0000229)." [PMID:14729915, POC:curators]
 synonym: "esbozo de carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! meristem
+relationship: part_of PO:0000225 ! peripheral zone
 relationship: part_of PO:0000229 ! flower meristem
 
 [Term]
@@ -5814,7 +5817,7 @@ id: PO:0006346
 name: leaf intercalary meristem
 namespace: plant_anatomy
 def: "An intercalary meristem in the primary body of the leaf separated from the apical meristem by non-meristematic tissues." [GR:Pankaj_Jaiswal]
-comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf. The leaf intercalary meristem does not include a leaf plate meristem (PO:0025429) .
 synonym: "meristema intercalar de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉 介在 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006073 ! intercalary meristem
@@ -14149,6 +14152,7 @@ def: "A primordium that will develop into a phyllome." [POC:Ramona_Walls]
 synonym: "primordio del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025127 ! primordium
+relationship: develops_from PO:0025430 ! phyllome anlagen
 created_by: Ramona
 creation_date: 2010-11-15T09:27:11Z
 
@@ -17688,6 +17692,7 @@ comment: Phyllome marginal meristems develop on the lateral sides of a phyllome 
 synonym: "phyllome margin meristem" EXACT [POC:curators]
 xref: OBO_SF_PO:3459318
 is_a: PO:0009013 ! meristem
+relationship: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0025018 ! phyllome margin
 relationship: part_of PO:0025128 ! phyllome primordium
 created_by: cooperl
@@ -17699,6 +17704,7 @@ name: leaf marginal meristem
 namespace: plant_anatomy
 def: "A portion of phyllome marginal meristem tissue on the edge of a developing leaf that has as parts marginal and submarginal initials." [ISBN:0521288959, POC:curators]
 comment: Leaf marginal meristems develop on the lateral sides of a leaf primordium (PO:0000017) and may contribute to expansion of the leaf lamina (PO:0020039). Leaf marginal initials (add) may give rise to leaf epidermis ( PO:0006016) while leaf submarginal initials (add) may give rise to the leaf mesophyll (PO:0005645). May be of limited duration.
+synonym: "leaf margin blastozone " EXACT []
 synonym: "leaf margin meristem" EXACT []
 xref: OBO_SF_PO:3459318
 is_a: PO:0025404 ! phyllome marginal meristem
@@ -17941,6 +17947,70 @@ def: "A plant structure development stage that has as primary participant a port
 is_a: PO:0025425 ! xylem development stage
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:25:25Z
+
+[Term]
+id: PO:0025428
+name: phyllome plate meristem
+namespace: plant_anatomy
+def: "A portion of meristem (PO;0009013) tissue in which the planes of cell division in each layer are anticlinal to the surface of the leaf (PO: 0025034)." [POC:curators]
+is_a: PO:0009013 ! meristem
+relationship: part_of PO:0006001 ! phyllome
+created_by: cooperl
+creation_date: 2012-02-07T07:25:01Z
+
+[Term]
+id: PO:0025429
+name: leaf plate meristem
+namespace: plant_anatomy
+def: "A portion of phyllome plate meristem (PO:0025428) in the vascular leaf (PO:0009025)." [POC:curators]
+comment: The activity of a leaf plate meristem results in increase in the surface area but not thickness of a vascular leaf (PO:0009025).
+is_a: PO:0025428 ! phyllome plate meristem
+relationship: part_of PO:0009025 ! vascular leaf
+created_by: cooperl
+creation_date: 2012-02-07T07:41:37Z
+
+[Term]
+id: PO:0025430
+name: phyllome anlagen
+namespace: plant_anatomy
+def: "A portion of meristem tissue (PO:0009013) that will give rise to a phyllome primordium (PO:0025128)." [POC:curator]
+comment: The phyllome anlagen is only detectable by gene expression, not morphology.
+synonym: "phyllome meristem" BROAD []
+is_a: PO:0009013 ! meristem
+created_by: cooperl
+creation_date: 2012-02-07T08:20:10Z
+
+[Term]
+id: PO:0025431
+name: leaf anlagen
+namespace: plant_anatomy
+def: "A portion of phyllome anlagen tissue (PO:0025430) that will give rise to a leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
+comment: This is the region where you have the maximum concentration of auxin in the SAM (at least in a few species that have been studied).
+synonym: "leaf meristem" BROAD []
+is_a: PO:0025430 ! phyllome anlagen
+relationship: part_of PO:0000225 ! peripheral zone
+relationship: part_of PO:0008016 ! vegetative shoot apical meristem
+created_by: cooperl
+creation_date: 2012-02-07T08:40:37Z
+
+[Term]
+id: PO:0025432
+name: cotyledon anlagen
+namespace: plant_anatomy
+def: "A portion of phyllome anlagen tissue (PO:0025430) that will give rise to a cotyldon primordium (add) and is part of a plant embryo (PO:0009009)." [POC:curators]
+is_a: PO:0025430 ! phyllome anlagen
+created_by: cooperl
+creation_date: 2012-02-07T09:07:56Z
+
+[Term]
+id: PO:0025433
+name: root anlagen
+namespace: plant_anatomy
+def: "A portion of pericycle tissue (PO:0006203) that will give rise to a root primordium (PO:0005029)." [POC:curators]
+comment: Only detectable by gene expression, not morphology.
+is_a: PO:0006203 ! pericycle
+created_by: cooperl
+creation_date: 2012-02-08T01:00:56Z
 
 [Term]
 id: PO:0028001
