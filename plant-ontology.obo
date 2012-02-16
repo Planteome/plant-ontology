@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 09:02:2012 09:16
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1.1-beta4
+date: 16:02:2012 17:09
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1.1-beta6
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -2401,7 +2401,7 @@ synonym: "portion of phellem tissue" EXACT []
 synonym: "コルク組織（＝cork tissue) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
-relationship: part_of PO:0005048 ! shoot axis periderm
+relationship: part_of PO:0005046 ! periderm
 
 [Term]
 id: PO:0004004
@@ -3624,8 +3624,12 @@ name: primary thickening meristem
 namespace: plant_anatomy
 def: "A shoot lateral meristem (PO:0006344) that is part of a shoot axis (PO:0025029) and has a parts multiple layers of meristematic cells (PO:0004010) located near the shoot apical meristem (PO:0020148)." [ISBN:0471245208, JSTOR:4354165]
 comment: Contributes to primary thickening of a shoot axis (PO:0025029), adventitious (shoot-borne) root (PO:0000042) formation, and formation of linkages between shot axis (PO:0000039), leaf (PO:0000036), and root (PO:0003011) vascular systems. Contiguous with the shoot apical meristem (PO:0020148) in some species, but not all. Produces more or less distinct vascular bundles (PO:0005020) surrounded by ground tissue (PO:0025059), as opposed to the more or less continuous xylem (PO:0005352) and phloem (PO:0005417) produced by a vascular cambium (PO:0005598). A primary thickening meristem is a multi-layered structure, compared to the single layer of a cambium. Found in many monocotyledons.
+synonym: "collar meristem" EXACT []
 synonym: "meristema de engrosamiento primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "meristematic cap" RELATED []
+synonym: "PTM" EXACT []
 synonym: "一次 肥厚（膜）分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481640
 is_a: PO:0006344 ! shoot lateral meristem
 relationship: develops_from PO:0000225 ! peripheral zone
 relationship: part_of PO:0009047 ! stem
@@ -3721,7 +3725,7 @@ synonym: "portion of phelloderm tissue" EXACT []
 synonym: "コルク皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
-relationship: part_of PO:0005048 ! shoot axis periderm
+relationship: part_of PO:0005046 ! periderm
 
 [Term]
 id: PO:0005051
@@ -3921,37 +3925,39 @@ is_a: PO:0025059 ! portion of ground tissue
 id: PO:0005597
 name: cambium
 namespace: plant_anatomy
-def: "A lateral meristem (PO:0020145) that is part of a plant axis (PO:0025004) and has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files." [ISBN:047125208]
+def: "A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files." [ISBN:047125208]
 comment: This term is applied to only two types of meristems: vascular cambium (PO:0005598) and cork cambium/phellogen (PO:0005599).
 subset: TraitNet
 synonym: "cambium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
-relationship: part_of PO:0025004 ! plant axis
 
 [Term]
 id: PO:0005598
 name: vascular cambium
 namespace: plant_anatomy
 def: "A cambium (PO:0005597) that is located between and gives rise to secondary xylem (PO:0005848) and secondary phloem (PO:0005043)." [ISBN:047125208]
-comment: Vascular cambium gives off cells in both directions by periclinal division, leading to an increase in girth of a plant axis (PO:0025004).
+comment: A vascular cambium produces cells in both directions by periclinal division, leading to an increase in the cross-sectional area of a plant axis (PO:0025004).
 subset: TraitNet
 synonym: "cambium vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481640
 is_a: PO:0005597 ! cambium
 
 [Term]
 id: PO:0005599
 name: cork cambium
 namespace: plant_anatomy
-def: "A cambium (PO:0005597) that is part of a shoot axis periderm (PO:0005048) and produces phellem (PO:0004003) and phelloderm (PO:0005050)." [ISBN:047125208]
+def: "A cambium (PO:0005597) that is part of a periderm (PO:0005046) and produces phellem (PO:0004003) and phelloderm (PO:0005050)." [ISBN:047125208]
 comment: Cork cambium is located between the phellem and phelloderm and produces phellem toward the outside and phelloderm toward the inside of a plant axis (PO:0025004).
 subset: TraitNet
 synonym: "cambium de corcho (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "phellogen" RELATED []
+synonym: "phellogen" EXACT []
 synonym: "コルク形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481640
 is_a: PO:0005597 ! cambium
-relationship: part_of PO:0005048 ! shoot axis periderm
+relationship: part_of PO:0005046 ! periderm
 
 [Term]
 id: PO:0005621
@@ -4266,10 +4272,11 @@ is_a: PO:0009039 ! glume
 id: PO:0006005
 name: carpel anlagen
 namespace: plant_anatomy
-def: "A portion of phyllome anlagen tissue (PO:0025430)  that will give rise to a carpel primordium (PO:0004703) and is part of a peripheral zone (PO:000225) of flower meristem (PO:0000229)." [PMID:14729915, POC:curators]
+def: "A phyllome anlagen (PO:0025430) that will give rise to a carpel primordium (PO:0004703) and is part of a peripheral zone (PO:000225) of a flower meristem (PO:0000229)." [PMID:14729915, POC:curators]
 synonym: "esbozo de carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+xref: OBO_SF_PO:3473464
+is_a: PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0000225 ! peripheral zone
 relationship: part_of PO:0000229 ! flower meristem
 
@@ -4343,12 +4350,13 @@ relationship: part_of PO:0006006 ! anther wall primary parietal cell layer
 
 [Term]
 id: PO:0006011
-name: lateral vein
+name: lateral leaf vein
 namespace: plant_anatomy
-def: "An unbranched second order vein of the grass leaf blade." [GR:Pankaj_Jaiswal]
+def: "An unbranched second order leaf vein (PO:0020140) that runs between two adjacent primary leaf veins (PO:0025413)." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+comment: Found in the leaf lamina of some monocots, particularly in Poaceae.
 synonym: "vena lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020140 ! secondary vein
+is_a: PO:0020140 ! secondary leaf vein
 
 [Term]
 id: PO:0006012
@@ -4976,6 +4984,8 @@ subset: TraitNet
 synonym: "meristema del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! meristem
+intersection_of: PO:0009013 ! meristem
+intersection_of: part_of PO:0009006 ! shoot system
 relationship: part_of PO:0009006 ! shoot system
 
 [Term]
@@ -5037,6 +5047,8 @@ synonym: "meristema de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra
 synonym: "meristematic zone" RELATED []
 synonym: "根分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! meristem
+intersection_of: PO:0009013 ! meristem
+intersection_of: part_of PO:0025025 ! root system
 relationship: part_of PO:0025025 ! root system
 
 [Term]
@@ -5445,13 +5457,14 @@ relationship: part_of PO:0020147 ! root apical meristem
 id: PO:0006308
 name: root lateral meristem
 namespace: plant_anatomy
-def: "Meristem of the root located parallel to the sides of the axis." [ISBN:047124529]
-comment: Generally causes root thickening. Not to be confused with lateral root meristem, which is the meristem of the lateral root.
+def: "A lateral meristem (PO:0020145) that is part of a root (PO:0009005)." [POC:curators]
+comment: Not to be confused with lateral root apical meristem (PO:0006020), which is an apical meristem (PO:0020144) of a lateral root (PO:0020121).
 synonym: "meristema lateral de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根側部分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006085 ! root meristem
+xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
-relationship: part_of PO:0020121 ! lateral root
+intersection_of: PO:0020145 ! lateral meristem
+intersection_of: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0006309
@@ -5793,11 +5806,14 @@ is_a: PO:0004545 ! shoot-borne shoot system
 id: PO:0006344
 name: shoot lateral meristem
 namespace: plant_anatomy
-def: "A shoot meristem located parallel to the sides of the axis." [Poc:curators]
+def: "A lateral meristem (PO:0020145) that is part of a shoot axis (PO:0025029)." [Poc:curators]
 synonym: "meristema lateral del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006079 ! shoot meristem
+xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
+intersection_of: PO:0020145 ! lateral meristem
+intersection_of: part_of PO:0025029 ! shoot axis
+relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
 id: PO:0006345
@@ -5915,18 +5931,18 @@ subset: Maize
 synonym: "par de meristemas del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂対分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006328 ! spikelet pair meristem
-is_a: PO:0009107 ! tassel lateral meristem
+is_a: PO:0009107 ! tassel branch meristem
 relationship: part_of PO:0009102 ! short tassel branch
 
 [Term]
 id: PO:0006360
 name: ear spikelet pair meristem
 namespace: plant_anatomy
-def: "A meristem that produces two spikelet meristems, each of which produces two floral meristems in a maize ear." [GR:Pankaj_Jaiswal]
+def: "An ear inflorescence branch meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136)." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
 synonym: "par de meristemas de la espiga de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂対分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006328 ! spikelet pair meristem
-is_a: PO:0009110 ! ear lateral meristem
+is_a: PO:0009110 ! ear inflorescence branch meristem
 
 [Term]
 id: PO:0006362
@@ -9061,36 +9077,39 @@ relationship: part_of PO:0020039 ! leaf lamina
 
 [Term]
 id: PO:0008021
-name: tertiary vein
+name: tertiary leaf vein
 namespace: plant_anatomy
-def: "A leaf vein arising from a secondary vein." [GR:Chih-Wei_Tung]
+def: "A leaf lamina vein (PO:0020138) arising from a secondary leaf vein (PO:0020140)." [GR:Chih-Wei_Tung]
 comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "third order leaf vein" RELATED []
 synonym: "vena terciaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "三次脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020138 ! leaf vein
+xref: OBO_SF_PO:3476730
+is_a: PO:0020138 ! leaf lamina vein
 
 [Term]
 id: PO:0008022
-name: quaternary vein
+name: quaternary leaf vein
 namespace: plant_anatomy
-def: "A leaf vein arising from a tertiary vein." [GR:Chih-Wei_Tung]
+def: "A leaf lamina vein (PO:0020138) arising from a tertiary leaf vein (PO:0008021)." [GR:Chih-Wei_Tung]
 comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "fourth order leaf vein" RELATED []
 synonym: "vena cuaternaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "四次脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020138 ! leaf vein
+xref: OBO_SF_PO:3476730
+is_a: PO:0020138 ! leaf lamina vein
 
 [Term]
 id: PO:0008023
-name: higher order vein
+name: higher order leaf vein
 namespace: plant_anatomy
-def: "A leaf vein arising from a quaternary or higher vein order." [GR:Chih-Wei_Tung]
+def: "A leaf lamina vein (PO:0020138) arising from a quaternary (PO:0008022) or other higher order leaf vein." [GR:Chih-Wei_Tung]
 comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "fifth and higher order leaf vein" RELATED []
 synonym: "vena de alto orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "高次葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020138 ! leaf vein
+xref: OBO_SF_PO:3476730
+is_a: PO:0020138 ! leaf lamina vein
 
 [Term]
 id: PO:0008024
@@ -10851,7 +10870,7 @@ synonym: "meristema de la ramificaci&#243n corta del penacho (borla) (Spanish)" 
 synonym: "short branch meristem" RELATED []
 synonym: "third order tassel branch meristem" RELATED []
 synonym: "雄穂短枝分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009107 ! tassel lateral meristem
+is_a: PO:0009107 ! tassel branch meristem
 relationship: part_of PO:0006324 ! central spike of tassel
 relationship: part_of PO:0009101 ! long lateral tassel branch
 
@@ -10865,18 +10884,18 @@ synonym: "long lateral branch meristem" RELATED []
 synonym: "meristema de la ramificaci&#243n larga del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order tassel branch meristem" RELATED []
 synonym: "雄穂の長側枝の分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009107 ! tassel lateral meristem
+is_a: PO:0009107 ! tassel branch meristem
 relationship: part_of PO:0006324 ! central spike of tassel
 
 [Term]
 id: PO:0009105
-name: inflorescence lateral meristem
+name: inflorescence branch meristem
 namespace: plant_anatomy
-def: "The meristem which gives rise to the lateral structures of the inflorescence and contributes to their apical growth." [GR:Pankaj_Jaiswal, MaizeGDB:lv]
+def: "An inflorescence meristem (PO:0009108) that gives rise to an inflorescence branch (PO:0009081)." [MaizeGDB:lv, POC:curators]
 synonym: "meristema lateral de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序側部（側方）分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481640
 is_a: PO:0000230 ! inflorescence meristem
-is_a: PO:0006344 ! shoot lateral meristem
 
 [Term]
 id: PO:0009106
@@ -10887,18 +10906,21 @@ subset: Maize
 synonym: "meristema del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000230 ! inflorescence meristem
+intersection_of: PO:0000230 ! inflorescence meristem
+intersection_of: part_of PO:0020126 ! tassel inflorescence
 relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0009107
-name: tassel lateral meristem
+name: tassel branch meristem
 namespace: plant_anatomy
-def: "The meristem that gives rise to the long lateral branch, short branch and spikelets in maize tassel." [MaizeGDB:lv]
+def: "An inflorescence branch meristem (PO:0009105) that gives rise to the long lateral tassel branch (PO:0009101), short tassel branch (PO:0009102), and tassel spikelets (PO:0006309) in a tassel inflorescence (PO:0020126)." [MaizeGDB:lv, POC:Ramona_Walls]
 subset: Maize
 synonym: "meristema lateral del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009105 ! inflorescence lateral meristem
-is_a: PO:0009106 ! tassel meristem
+xref: OBO_SF_PO:3481640
+is_a: PO:0009105 ! inflorescence branch meristem
+relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0009108
@@ -10920,18 +10942,21 @@ subset: Maize
 synonym: "meristema de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000230 ! inflorescence meristem
+intersection_of: PO:0000230 ! inflorescence meristem
+intersection_of: part_of PO:0020136 ! ear inflorescence
 relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0009110
-name: ear lateral meristem
+name: ear inflorescence branch meristem
 namespace: plant_anatomy
-def: "The meristem that gives rise to the lateral structures of a maize ear." [GR:Pankaj_Jaiswal]
+def: "An inflorescence branch meristem (PO:0009105) that gives rise to a branch of an ear inflorescence (PO:0020136)." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
 subset: Maize
 synonym: "meristema de la espiga lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009105 ! inflorescence lateral meristem
-is_a: PO:0009109 ! ear meristem
+xref: OBOS_SF_PO:3481640
+is_a: PO:0009105 ! inflorescence branch meristem
+relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0009111
@@ -12306,7 +12331,7 @@ relationship: part_of PO:0025034 ! leaf
 
 [Term]
 id: PO:0020138
-name: leaf vein
+name: leaf lamina vein
 namespace: plant_anatomy
 def: "A vascular bundle (PO:0005020) that is part of a leaf lamina vascular system (PO:0000048)." [POC:curators]
 subset: TraitNet
@@ -12314,12 +12339,13 @@ synonym: "leaf lamina vascular bundle" EXACT []
 synonym: "vena de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459287
+xref: OBO_SF_PO:3476730
 is_a: PO:0005020 ! vascular bundle
 relationship: part_of PO:0000048 ! leaf lamina vascular system
 
 [Term]
 id: PO:0020139
-name: midvein
+name: leaf midvein
 namespace: plant_anatomy
 def: "A primary leaf vein (PO:0025413) that is the central vein of a vascular leaf (PO:0009025)." [POC:curators]
 comment: Often the most prominent vein of a vascular leaf. See costa (PO:0030072) for the central conductive strand of a non-vascular leaf (PO:0025075).
@@ -12330,18 +12356,20 @@ synonym: "vascular leaf costa" RELATED []
 synonym: "vascular leaf midvein" EXACT []
 synonym: "vena media (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "主脈、中央脈、中脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025413 ! primary vein
+xref: OBO_SF_PO:3476730
+is_a: PO:0025413 ! primary leaf vein
 
 [Term]
 id: PO:0020140
-name: secondary vein
+name: secondary leaf vein
 namespace: plant_anatomy
-def: "Second order veins in the leaf blade." [GR:Pankaj_Jaiswal]
+def: "A leaf lamina vein (PO:0020138) arising from a primary leaf vein (PO:0025413)." [GR:Pankaj_Jaiswal]
 comment: Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
 synonym: "veinlet" RELATED []
 synonym: "vena secundaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "二次脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020138 ! leaf vein
+xref: OBO_SF_PO:3476730
+is_a: PO:0020138 ! leaf lamina vein
 
 [Term]
 id: PO:0020141
@@ -12379,13 +12407,15 @@ is_a: PO:0009013 ! meristem
 id: PO:0020145
 name: lateral meristem
 namespace: plant_anatomy
-def: "A portion of meristem (PO:0009013) tissue located parallel to the circumference of a plant organ (PO:0009008)." [ISBN:047125208]
-comment: Participates in lateral growth (request has been made for lateral growth in GO) of a plant organ, primarily shoot axes (PO:0025029) and roots (PO:0009005). Contrast with apical meristem (PO:0020144).
+def: "A portion of meristem (PO:0009013) tissue located parallel to the sides of a plant axis (PO:0025004), the cells of which undergo periclinal and anticlinal division as part of lateral growth." [ISBN:047125208]
+comment: Participates in lateral growth (request has been made for lateral growth in GO) of a shoot axis (PO:0025029) or root (PO:0009005), leading to an increase in the cross-sectional area. Contrast with apical meristem (PO:0020144) or intercalary meristem (PO:0006073).
 subset: TraitNet
 synonym: "meristema lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "secondary meristem" RELATED []
 synonym: "側 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481640
 is_a: PO:0009013 ! meristem
+relationship: part_of PO:0025004 ! plant axis
 
 [Term]
 id: PO:0020147
@@ -14109,7 +14139,7 @@ comment: An antheridium has a sterile jacket layer that does not produce sperm c
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "antheridia" EXACT Plural [FNA:glossary]
+synonym: "antheridia" EXACT Plural [FNA:40b5fa5d-a75b-49d8-8328-b4c28d54ea66]
 synonym: "造精器 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025124 ! plant gametangium
 created_by: Ramona
@@ -15157,7 +15187,7 @@ creation_date: 2010-12-09T04:05:41Z
 id: PO:0025203
 name: pericarp vascular bundle
 namespace: plant_anatomy
-def: "A vascular bundle that is part of a pericarp." [POC:Ramona_Walls]
+def: "A vascular bundle (PO:0005020) that is part of a pericarp (PO:0009084)." [POC:Ramona_Walls]
 synonym: "haz vascular del pericarpo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果皮 維管束 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005020 ! vascular bundle
@@ -17508,11 +17538,11 @@ creation_date: 2012-01-06T03:13:17Z
 id: PO:0025390
 name: free ending veinlet
 namespace: plant_anatomy
-def: "A leaf vein above the first order that is connected to another vein only at one end." [ISBN:9780801475184]
+def: "A leaf lamina vein (PO:0020138) above the first order that is connected to another vein only at one end." [ISBN:9780801475184]
 comment: May be branched or simple. May be found inside a lamina areole. Usually used with third order or higher veins. If vein order is known, an additional annotation should be place on secondary vein (PO:0020140), tertiary vein (PO:0008021), quaternary vein (PO:0008022), or higher order vein (PO:0008023).
 synonym: "free ending vein" EXACT []
 synonym: "freely ending vein" EXACT []
-is_a: PO:0020138 ! leaf vein
+is_a: PO:0020138 ! leaf lamina vein
 created_by: RamonaNYBG
 creation_date: 2012-01-19T10:07:57Z
 
@@ -17802,11 +17832,12 @@ creation_date: 2012-02-01T11:50:29Z
 
 [Term]
 id: PO:0025413
-name: primary vein
+name: primary leaf vein
 namespace: plant_anatomy
-def: "A leaf vein (PO:0020138) that connects directly to a petiole vascular system (PO:0000052) or a shoot axis vascular system (PO:0000039)." [POC:curators]
+def: "A leaf lamina vein (PO:0020138) that connects directly to a petiole vascular system (PO:0000052) or a shoot axis vascular system (PO:0000039)." [POC:curators]
 comment: Generally the largest and most prominent of the leaf veins. A leaf may have more than one primary vein. The central primary vein is the midvein (PO:0020139). Vein orders only apply to hierarchically branching vein patterns, not to dichotomously branching vein patterns, as found in some ferns and gymnosperms.
-is_a: PO:0020138 ! leaf vein
+xref: OBO_SF_PO:3476730
+is_a: PO:0020138 ! leaf lamina vein
 created_by: RamonaNYBG
 creation_date: 2012-02-01T04:24:58Z
 
@@ -17814,10 +17845,11 @@ creation_date: 2012-02-01T04:24:58Z
 id: PO:0025414
 name: secondary thickening meristem
 namespace: plant_anatomy
-def: "A shoot lateral meristem (PO:0006344) that is part of a stem (PO:0025029) not contiguous with the shoot apical meristem (PO:0020148) and has a parts multiple layers of meristematic cells (PO:0004010)." [ISBN:0080374903, JSTOR:4354165]
-comment: Contributes mainly to formation of the body of a stem (PO:0009047), but may also produce adventitious (shoot-borne) roots (PO:0000042). May be continuous or discontinuous with the primary thickening meristem (PO:0005039). Found in some monocot species of the Liliales and Asperigales.
-is_a: PO:0006344 ! shoot lateral meristem
-relationship: part_of PO:0009047 ! stem
+def: "A lateral meristem (PO:0020145) that is not contiguous with the shoot apical meristem (PO:0020148) and has a parts multiple layers of meristematic cells (PO:0004010)." [ISBN:0080374903, JSTOR:2471543, JSTOR:4354165]
+comment: Contributes mainly to formation of the body of a stem (PO:0009047), but may also produce adventitious (shoot-borne) roots (PO:0000042) and may also be found in the roots (PO:0009005) of some species. May be continuous or discontinuous with the primary thickening meristem (PO:0005039). Found in some monocot species of the Liliales and Asperigales.
+synonym: "STM" EXACT []
+xref: OBO_SF_PO:3481640
+is_a: PO:0020145 ! lateral meristem
 created_by: RamonaNYBG
 creation_date: 2012-02-01T05:49:53Z
 
@@ -17973,9 +18005,10 @@ creation_date: 2012-02-07T07:41:37Z
 id: PO:0025430
 name: phyllome anlagen
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that will give rise to a phyllome primordium (PO:0025128)." [POC:curator]
+def: "A portion of meristem tissue (PO:0009013) that will give rise to a phyllome primordium (PO:0025128)." [POC:curators]
 comment: The phyllome anlagen is only detectable by gene expression, not morphology.
 synonym: "phyllome meristem" BROAD []
+xref: OBO_SF_PO:3473464
 is_a: PO:0009013 ! meristem
 created_by: cooperl
 creation_date: 2012-02-07T08:20:10Z
@@ -18008,9 +18041,60 @@ name: root anlagen
 namespace: plant_anatomy
 def: "A portion of pericycle tissue (PO:0006203) that will give rise to a root primordium (PO:0005029)." [POC:curators]
 comment: Only detectable by gene expression, not morphology.
+xref: OBO_SF_PO:3473464
 is_a: PO:0006203 ! pericycle
 created_by: cooperl
 creation_date: 2012-02-08T01:00:56Z
+
+[Term]
+id: PO:0025434
+name: petiole vascular bundle
+namespace: plant_anatomy
+def: "A vascular bundle (PO:0005020) that is part of a petiole vascular system (PO:0000052)." [POC:Ramona_Walls]
+xref: OBO_SF_PO:3476730
+is_a: PO:0005020 ! vascular bundle
+created_by: RamonaNYBG
+creation_date: 2012-02-16T08:02:20Z
+
+[Term]
+id: PO:0025435
+name: shoot axis cork cambium
+namespace: plant_anatomy
+def: "A cork cambium (PO:0005599) that is part of a shoot axis (PO:0025029)." [POC:Ramona_Walls]
+is_a: PO:0005599 ! cork cambium
+relationship: part_of PO:0025029 ! shoot axis
+created_by: RamonaNYBG
+creation_date: 2012-02-16T04:01:53Z
+
+[Term]
+id: PO:0025436
+name: root cork cambium
+namespace: plant_anatomy
+def: "A cork cambium (PO:0005599) that is part of a root (PO:0009005)." [POC:Ramona_Walls]
+is_a: PO:0005599 ! cork cambium
+relationship: part_of PO:0009005 ! root
+created_by: RamonaNYBG
+creation_date: 2012-02-16T04:01:54Z
+
+[Term]
+id: PO:0025437
+name: shoot axis vascular cambium
+namespace: plant_anatomy
+def: "A vascular cambium (PO:0005598) that is part of a shoot axis (PO:0025029)." [POC:Ramona_Walls]
+is_a: PO:0005598 ! vascular cambium
+relationship: part_of PO:0025029 ! shoot axis
+created_by: RamonaNYBG
+creation_date: 2012-02-16T04:02:24Z
+
+[Term]
+id: PO:0025438
+name: root vascular cambium
+namespace: plant_anatomy
+def: "A vascular cambium (PO:0005598) that is part of a root (PO:0009005)." [POC:Ramona_Walls]
+is_a: PO:0005598 ! vascular cambium
+relationship: part_of PO:0009005 ! root
+created_by: RamonaNYBG
+creation_date: 2012-02-16T04:02:43Z
 
 [Term]
 id: PO:0028001
