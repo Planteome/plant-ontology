@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:02:2012 15:29
+date: 18:02:2012 16:49
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -17717,7 +17717,7 @@ creation_date: 2012-01-28T06:33:57Z
 id: PO:0025404
 name: phyllome marginal meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue on the edge of a developing phyllome that has as parts marginal and submarginal initials." [POC:curators]
+def: "A portion of meristem (PO:0009013) tissue on the edge of a developing phyllome (PO:0006001) that has as parts marginal and submarginal initials." [POC:curators]
 comment: Phyllome marginal meristems develop on the lateral sides of a phyllome primordium (PO:0025128) and may contribute to expansion of the phyllome lamina (PO:0025396). Phyllome marginal initials (add) may give rise to phyllome epidermis (PO:0025157) while phyllome submarginal initials (add) may give rise to the mesophyll (PO:0006070). Part of the phyllome margin (PO:0025018). May be of limited duration.
 synonym: "phyllome margin meristem" EXACT [POC:curators]
 xref: OBO_SF_PO:3459318
@@ -18001,6 +18001,7 @@ comment: The activity of a leaf plate meristem results in increase in the surfac
 xref: OBO_SF_PO:3459331
 is_a: PO:0025428 ! phyllome plate meristem
 relationship: part_of PO:0009025 ! vascular leaf
+relationship: participates_in PO:0001052 ! 2 leaf expansion stage
 created_by: cooperl
 creation_date: 2012-02-07T07:41:37Z
 
@@ -18008,7 +18009,7 @@ creation_date: 2012-02-07T07:41:37Z
 id: PO:0025430
 name: phyllome anlagen
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that will give rise to a phyllome primordium (PO:0025128)." [POC:curators]
+def: "A portion of meristem (PO:0009013) tissue that will give rise to a phyllome primordium (PO:0025128)." [POC:curators]
 comment: The phyllome anlagen is only detectable by gene expression, not morphology.
 synonym: "phyllome meristem" BROAD []
 xref: OBO_SF_PO:3473464
@@ -18020,7 +18021,7 @@ creation_date: 2012-02-07T08:20:10Z
 id: PO:0025431
 name: leaf anlagen
 namespace: plant_anatomy
-def: "A portion of phyllome anlagen tissue (PO:0025430) that will give rise to a leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
+def: "A phyllome anlagen (PO:0025430) that will give rise to a leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
 comment: This is the region where you have the maximum concentration of auxin in the SAM (at least in a few species that have been studied).
 synonym: "leaf meristem" BROAD []
 is_a: PO:0025430 ! phyllome anlagen
@@ -18044,6 +18045,7 @@ name: root anlagen
 namespace: plant_anatomy
 def: "A portion of pericycle tissue (PO:0006203) that will give rise to a root primordium (PO:0005029)." [POC:curators]
 comment: Only detectable by gene expression, not morphology.
+synonym: "<new synonym>" RELATED []
 xref: OBO_SF_PO:3473464
 is_a: PO:0006203 ! pericycle
 created_by: cooperl
