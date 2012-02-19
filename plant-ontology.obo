@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:02:2012 16:49
+date: 18:02:2012 17:12
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -217,10 +217,11 @@ is_a: PO:0009025 ! vascular leaf
 id: PO:0000015
 name: cotyledon primordium
 namespace: plant_anatomy
-def: "A phyllome primordium that will develop into a cotyledon." [POC:Curators]
+def: "A phyllome primordium (PO:0025128) that will develop into a cotyledon (PO:0020030)." [POC:Curators]
 synonym: "primordio de cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
+relationship: develops_from PO:0025432 ! cotyledon anlagen
 
 [Term]
 id: PO:0000016
@@ -3617,6 +3618,7 @@ def: "A primordium that will develop into a root." [POC:Curators]
 synonym: "primordio de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025127 ! primordium
+relationship: develops_from PO:0025433 ! root anlagen
 
 [Term]
 id: PO:0005039
@@ -18034,8 +18036,10 @@ creation_date: 2012-02-07T08:40:37Z
 id: PO:0025432
 name: cotyledon anlagen
 namespace: plant_anatomy
-def: "A portion of phyllome anlagen tissue (PO:0025430) that will give rise to a cotyledon primordium (add) and is part of a plant embryo (PO:0009009)." [POC:curators]
+def: "A phyllome anlagen (PO:0025430) that will give rise to a cotyledon primordium (PO:0000015) and is part of a plant embryo (PO:0009009)." [POC:curators]
+xref: OBO_SF_PO:3459279
 is_a: PO:0025430 ! phyllome anlagen
+relationship: part_of PO:0009009 ! plant embryo
 created_by: cooperl
 creation_date: 2012-02-07T09:07:56Z
 
@@ -18045,7 +18049,6 @@ name: root anlagen
 namespace: plant_anatomy
 def: "A portion of pericycle tissue (PO:0006203) that will give rise to a root primordium (PO:0005029)." [POC:curators]
 comment: Only detectable by gene expression, not morphology.
-synonym: "<new synonym>" RELATED []
 xref: OBO_SF_PO:3473464
 is_a: PO:0006203 ! pericycle
 created_by: cooperl
