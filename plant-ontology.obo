@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:02:2012 17:12
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1
+date: 01:03:2012 14:35
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -21,7 +21,6 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
-remark: Filtered by Has parent with type ID contains "PO:0025034"
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 ontology: po
 treat-xrefs-as-is_a: CARO
@@ -3939,7 +3938,7 @@ id: PO:0005598
 name: vascular cambium
 namespace: plant_anatomy
 def: "A cambium (PO:0005597) that is located between and gives rise to secondary xylem (PO:0005848) and secondary phloem (PO:0005043)." [ISBN:047125208]
-comment: A vascular cambium produces cells in both directions by periclinal division, leading to an increase in the cross-sectional area of a plant axis (PO:0025004).
+comment: A vascular cambium produces cells in both directions, centrifugally and centrifically, leading to an increase in the cross-sectional area of a plant axis (PO:0025004).
 subset: TraitNet
 synonym: "cambium vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4911,10 +4910,12 @@ is_a: PO:0006070 ! mesophyll
 id: PO:0006073
 name: intercalary meristem
 namespace: plant_anatomy
-def: "A shoot meristem separated from the apical meristem in the primary body by more or less mature tissues." [ISBN:0080374913, ISBN:0122151704]
+def: "A shoot meristem (PO:0006079) that is intercalated between two portions of non-meristematic tissue and results in an increase in length as part of primary growth." [ISBN:0080374913, ISBN:0122151704, POC:curators]
+comment: See subtypes: leaf intercalary meristem (PO:0006346) and stem intercalary meristem (PO:0006347). Not known to occur in roots. Term for primary growth has been requested in GO.
 subset: TraitNet
 synonym: "meristema intercalar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "介在分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3496010
 is_a: PO:0006079 ! shoot meristem
 
 [Term]
@@ -5461,6 +5462,7 @@ namespace: plant_anatomy
 def: "A lateral meristem (PO:0020145) that is part of a root (PO:0009005)." [POC:curators]
 comment: Not to be confused with lateral root apical meristem (PO:0006020), which is an apical meristem (PO:0020144) of a lateral root (PO:0020121).
 synonym: "meristema lateral de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "root lateral growth meristem" EXACT []
 synonym: "根側部分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
@@ -5809,6 +5811,7 @@ name: shoot lateral meristem
 namespace: plant_anatomy
 def: "A lateral meristem (PO:0020145) that is part of a shoot axis (PO:0025029)." [Poc:curators]
 synonym: "meristema lateral del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "shoot lateral growth meristem" EXACT []
 synonym: "茎側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
@@ -5833,10 +5836,11 @@ consider: PO:0025195
 id: PO:0006346
 name: leaf intercalary meristem
 namespace: plant_anatomy
-def: "An intercalary meristem in the primary body of the leaf separated from the apical meristem by non-meristematic tissues." [GR:Pankaj_Jaiswal]
-comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf. The leaf intercalary meristem does not include a leaf plate meristem (PO:0025429) .
+def: "An intercalary meristem (PO:0006073) that is part of a leaf (PO:0006346) and is intercalated between two portions of non-meristematic tissue between a leaf apex (PO:0020137) and a leaf base (PO:0020040)." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+comment: Results in an increase in length of a leaf, as part of primary growth. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf. The leaf intercalary meristem does not include a leaf plate meristem (PO:0025429) .
 synonym: "meristema intercalar de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉 介在 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3496010
 is_a: PO:0006073 ! intercalary meristem
 relationship: part_of PO:0025034 ! leaf
 
@@ -5844,9 +5848,11 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0006347
 name: stem intercalary meristem
 namespace: plant_anatomy
-def: "An intercalary meristem in the primary body of stem separated from the apical meristem by more or less mature tissues." [GR:Pankaj_Jaiswal]
+def: "An intercalary meristem (PO:0006073) that is part of a stem internode (PO:0020142) and is intercalated between two portions of non-meristematic tissue." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+comment: Results in an increase in length of a stem internode, as part of primary growth.
 synonym: "meristema intercalar del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎　介在分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3496010
 is_a: PO:0006073 ! intercalary meristem
 relationship: part_of PO:0020142 ! stem internode
 
@@ -5932,7 +5938,7 @@ subset: Maize
 synonym: "par de meristemas del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂対分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006328 ! spikelet pair meristem
-is_a: PO:0009107 ! tassel branch meristem
+is_a: PO:0009107 ! tassel inflorescence branch meristem
 relationship: part_of PO:0009102 ! short tassel branch
 
 [Term]
@@ -8893,13 +8899,16 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008005
 name: fruit nucellus
 namespace: plant_anatomy
-def: "A nucellus in the grass caryopsis." [GR:Anuradha_Pujar]
+def: "A nucellus that is part of a fruit." [GR:Anuradha_Pujar]
 subset: Poaceae
 subset: Rice
 synonym: "nucelo del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実　珠心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2903966
+xref: OBO_SF_PO:3495808
 is_a: PO:0020020 ! nucellus
+intersection_of: PO:0020020 ! nucellus
+intersection_of: part_of PO:0009001 ! fruit
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -10871,7 +10880,7 @@ synonym: "meristema de la ramificaci&#243n corta del penacho (borla) (Spanish)" 
 synonym: "short branch meristem" RELATED []
 synonym: "third order tassel branch meristem" RELATED []
 synonym: "雄穂短枝分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009107 ! tassel branch meristem
+is_a: PO:0009107 ! tassel inflorescence branch meristem
 relationship: part_of PO:0006324 ! central spike of tassel
 relationship: part_of PO:0009101 ! long lateral tassel branch
 
@@ -10885,7 +10894,7 @@ synonym: "long lateral branch meristem" RELATED []
 synonym: "meristema de la ramificaci&#243n larga del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order tassel branch meristem" RELATED []
 synonym: "雄穂の長側枝の分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009107 ! tassel branch meristem
+is_a: PO:0009107 ! tassel inflorescence branch meristem
 relationship: part_of PO:0006324 ! central spike of tassel
 
 [Term]
@@ -10913,7 +10922,7 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0009107
-name: tassel branch meristem
+name: tassel inflorescence branch meristem
 namespace: plant_anatomy
 def: "An inflorescence branch meristem (PO:0009105) that gives rise to the long lateral tassel branch (PO:0009101), short tassel branch (PO:0009102), and tassel spikelets (PO:0006309) in a tassel inflorescence (PO:0020126)." [MaizeGDB:lv, POC:Ramona_Walls]
 subset: Maize
@@ -12408,9 +12417,10 @@ is_a: PO:0009013 ! meristem
 id: PO:0020145
 name: lateral meristem
 namespace: plant_anatomy
-def: "A portion of meristem (PO:0009013) tissue located parallel to the sides of a plant axis (PO:0025004), the cells of which undergo periclinal and anticlinal division as part of lateral growth." [ISBN:047125208]
-comment: Participates in lateral growth (request has been made for lateral growth in GO) of a shoot axis (PO:0025029) or root (PO:0009005), leading to an increase in the cross-sectional area. Contrast with apical meristem (PO:0020144) or intercalary meristem (PO:0006073).
+def: "A portion of meristem (PO:0009013) tissue located parallel to the sides of a a shoot axis (PO:0025029) or root (PO:0009005) that participates in lateral growth." [ISBN:047125208]
+comment: A term for lateral growth has been requested in GO. Lateral meristems contribute to an increase in the cross-sectional area of a shoot axis or root. Examples of lateral meristems are: cambium (PO:0005597) (includes cork cambium (PO:0005599) and vascular cambium (PO:0005598)), shoot lateral meristem (PO:0006344) (includes primary thickening meristem (PO:0005039)), root lateral meristem (PO:0006308), and secondary thickening meristem (PO:0025414). Contrasts with apical meristem (PO:0020144), phyllome marginal meristem (PO:0025404), or intercalary meristem (PO:0006073).
 subset: TraitNet
+synonym: "lateral growth meristem" EXACT []
 synonym: "meristema lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "secondary meristem" RELATED []
 synonym: "側 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -17846,7 +17856,7 @@ creation_date: 2012-02-01T04:24:58Z
 id: PO:0025414
 name: secondary thickening meristem
 namespace: plant_anatomy
-def: "A lateral meristem (PO:0020145) that is not contiguous with the shoot apical meristem (PO:0020148) and has a parts multiple layers of meristematic cells (PO:0004010)." [ISBN:0080374903, JSTOR:2471543, JSTOR:4354165]
+def: "A lateral meristem (PO:0020145) that is not contiguous with an apical meristem (PO:0020144) and has a parts multiple layers of meristematic cells (PO:0004010)." [ISBN:0080374903, JSTOR:2471543, JSTOR:4354165]
 comment: Contributes mainly to formation of the body of a stem (PO:0009047), but may also produce adventitious (shoot-borne) roots (PO:0000042) and may also be found in the roots (PO:0009005) of some species. May be continuous or discontinuous with the primary thickening meristem (PO:0005039). Found in some monocot species of the Liliales and Asperigales.
 synonym: "STM" EXACT []
 xref: OBO_SF_PO:3481640
@@ -18102,6 +18112,71 @@ is_a: PO:0005598 ! vascular cambium
 relationship: part_of PO:0009005 ! root
 created_by: RamonaNYBG
 creation_date: 2012-02-16T04:02:43Z
+
+[Term]
+id: PO:0025439
+name: cambial zone
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is part of a plant axis (PO:0025004) and has as parts a cambium (PO:0005597) and adjacent cells." [POC:curators]
+comment: This term is used for the cambium (PO:0005597) and surrounding area, especially when the borders of the cambium are not clear.
+xref: OBO_SF_PO:3488337
+is_a: PO:0025001 ! cardinal organ part
+relationship: has_part PO:0005597 ! cambium
+relationship: part_of PO:0025004 ! plant axis
+created_by: RamonaNYBG
+creation_date: 2012-03-01T10:34:20Z
+
+[Term]
+id: PO:0025440
+name: shoot axis cambial zone
+namespace: plant_anatomy
+def: "A cambial zone that is part of a shoot axis (PO:0025029)." [POC:curators]
+comment: Includes a cambium (PO:0005597) and adjacent cells. This term is used when the borders of the cambium are not clear.
+xref: OBO_SF_PO:3488337
+is_a: PO:0025439 ! cambial zone
+intersection_of: PO:0025439 ! cambial zone
+intersection_of: part_of PO:0025029 ! shoot axis
+relationship: part_of PO:0025029 ! shoot axis
+created_by: RamonaNYBG
+creation_date: 2012-03-01T10:38:26Z
+
+[Term]
+id: PO:0025441
+name: root cambial zone
+namespace: plant_anatomy
+def: "A cambial zone that is part of a root (PO:0009005)." [POC:curators]
+comment: Includes a cambium (PO:0005597) and adjacent cells. This term is used when the borders of the cambium are not clear.
+xref: OBO_SF_PO:3488337
+is_a: PO:0009005 ! root
+is_a: PO:0025439 ! cambial zone
+intersection_of: PO:0025439 ! cambial zone
+intersection_of: part_of PO:0009005 ! root
+created_by: RamonaNYBG
+creation_date: 2012-03-01T10:38:26Z
+
+[Term]
+id: PO:0025442
+name: stem secondary thickening meristem
+namespace: plant_anatomy
+def: "A secondary thickening meristem (PO:0025414) that is part of a stem (PO:0009047)." [JSTOR:4354165]
+is_a: PO:0025414 ! secondary thickening meristem
+intersection_of: PO:0025414 ! secondary thickening meristem
+intersection_of: part_of PO:0009047 ! stem
+relationship: part_of PO:0009047 ! stem
+created_by: RamonaNYBG
+creation_date: 2012-03-01T12:10:45Z
+
+[Term]
+id: PO:0025443
+name: root secondary thickening meristem
+namespace: plant_anatomy
+def: "A secondary thickening meristem (PO:0025414) that is part of a root (PO:0009005)." [JSTOR:2471543]
+is_a: PO:0025414 ! secondary thickening meristem
+intersection_of: PO:0025414 ! secondary thickening meristem
+intersection_of: part_of PO:0009005 ! root
+relationship: part_of PO:0009005 ! root
+created_by: RamonaNYBG
+creation_date: 2012-03-01T12:10:45Z
 
 [Term]
 id: PO:0028001
