@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:03:2012 15:25
+date: 05:03:2012 11:31
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -916,6 +916,7 @@ subset: CL
 subset: TraitNet
 synonym: "c&#233lula axial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481651
 is_obsolete: true
 consider: PO:0000290
 consider: PO:0025406
@@ -1264,6 +1265,7 @@ subset: CL
 subset: TraitNet
 synonym: "elemento del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481658
 is_obsolete: true
 consider: PO:0000274
 consider: PO:0000290
@@ -1342,12 +1344,13 @@ relationship: part_of PO:0025416 ! sieve tube
 id: PO:0000290
 name: tracheary element
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002O) that has a lignified cell wall with secondary thickening and bordered pits and is dead at maturity." [ISBN:0471245208]
-comment: More or less elongated and with pits of various types in the cell wall. Tracheary elements function in the conduction of water and dissolved substances such as mineral nutrients from the roots to the shoot system. Tracheary elements can be distinguished from fiber cells (PO:0025407) by the presence of bordered pits, although there are intermediate forms called fiber tracheids (PO:0000355).
+def: "A plant cell (PO:0009002O) that has a lignified cell wall with secondary thickening and bordered pits." [ISBN:0471245208]
+comment: Tracheary elements are dead at maturity, are more or less elongated, and have pits of various types in the cell wall. Tracheary elements function in the conduction of water and dissolved substances such as mineral nutrients from the roots to the shoot system. Tracheary elements can be distinguished from fiber cells (PO:0025407) by the presence of bordered pits, although there are intermediate forms called fiber tracheids (PO:0000355).
 subset: CL
 subset: TraitNet
 synonym: "elemento de traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481658
 is_a: PO:0009002 ! plant cell
 disjoint_from: PO:0025032 ! hydroid
 relationship: part_of PO:0005352 ! xylem
@@ -1389,11 +1392,12 @@ id: PO:0000301
 name: tracheid
 namespace: plant_anatomy
 def: "A tracheary element (PO:0000290) that has no perforations in its cell wall." [ISBN:0471245208]
-comment: May have any of the kinds of secondary wall thickenings found in tracheary elements. The area of contact between two tracheids has only bordered pits, whereas in vessel members (PO:0002003) it has openings in the cell wall called perforations, organized into perforation plates (term has been requested in GO).
+comment: May have any of the kinds of secondary wall thickenings found in tracheary elements. The area of contact between two tracheids has only bordered pits, whereas in vessel members (PO:0002003), it has openings in the cell wall called perforations, organized into perforation plates (term has been requested in GO).
 subset: CL
 subset: TraitNet
 synonym: "traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481658
 is_a: PO:0000290 ! tracheary element
 
 [Term]
@@ -2158,18 +2162,20 @@ relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0002003
-name: vessel member
+name: xylem vessel member
 namespace: plant_anatomy
-def: "A tracheary element (PO:0000290) that is part of a vessel (PO:0025417) and has as parts perforation plates." [ISBN:0471245208]
+def: "A tracheary element (PO:0000290) that is part of a xylem vessel (PO:0025417) and has as parts perforation plates." [ISBN:0471245208]
 comment: Commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures. If both libriform fibers (PO:0004520) and fiber tracheids are present, the libriform fibers usually have thicker walls. Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading from the pit cavity to the cell lumen through the thick cell wall.
 subset: CL
 subset: TraitNet
 synonym: "miembro de vaso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vessel element" EXACT []
+synonym: "vessel member" EXACT []
 synonym: "vessel segment" EXACT []
 synonym: "道管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481658
 is_a: PO:0000290 ! tracheary element
-relationship: part_of PO:0025417 ! vessel
+relationship: part_of PO:0025417 ! xylem vessel
 
 [Term]
 id: PO:0002004
@@ -17812,6 +17818,7 @@ def: "A portion of secondary vascular tissue (PO:0025409) that has as parts cell
 comment: Includes portions of secondary xylem (PO:0005848) and axial wood parenchyma (PO:0004533).
 synonym: "longitudinal system" EXACT []
 synonym: "vertical system" EXACT []
+xref: OBO_SF_PO:3483855
 is_a: PO:0025409 ! secondary vascular tissue
 created_by: RamonaNYBG
 creation_date: 2012-02-01T11:01:35Z
@@ -17825,6 +17832,7 @@ comment: May include ray tracheids, as in Pinaceae and some Cupressaceae.
 synonym: "horizontal system" EXACT []
 synonym: "radial system" EXACT []
 synonym: "ray" BROAD []
+xref: OBO_SF_PO:3483855
 is_a: PO:0025409 ! secondary vascular tissue
 created_by: RamonaNYBG
 creation_date: 2012-02-01T11:01:35Z
@@ -17888,9 +17896,11 @@ creation_date: 2012-02-02T07:03:00Z
 
 [Term]
 id: PO:0025417
-name: vessel
+name: xylem vessel
 namespace: plant_anatomy
 def: "A portion of xylem (PO:0005352) tissue that has as parts a tube-like series of vessel members (PO:0002003), the common walls of which have perforations." [ISBN:0471245194]
+synonym: "vessel" EXACT []
+xref: OBO_SF_PO:3481658
 is_a: PO:0005352 ! xylem
 created_by: RamonaNYBG
 creation_date: 2012-02-02T02:11:47Z
@@ -18118,7 +18128,7 @@ id: PO:0025439
 name: cambial zone
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is part of a plant axis (PO:0025004) and has as parts a cambium (PO:0005597) and adjacent cells." [POC:curators]
-comment: This term is used for the cambium (PO:0005597) and surrounding area, especially when the borders of the cambium are not clear.
+comment: The cambial zone generally consists of the initial cells of the cambium and their immediate derivatives, arranged in radial files. This term is used for the cambium (PO:0005597) and surrounding area, especially when the borders of the cambium are not clear.
 xref: OBO_SF_PO:3488337
 is_a: PO:0025001 ! cardinal organ part
 relationship: has_part PO:0005597 ! cambium
@@ -18177,6 +18187,102 @@ intersection_of: part_of PO:0009005 ! root
 relationship: part_of PO:0009005 ! root
 created_by: RamonaNYBG
 creation_date: 2012-03-01T12:10:45Z
+
+[Term]
+id: PO:0025444
+name: primary xylem tracheary element
+namespace: plant_anatomy
+def: "A tracheary element (PO:0000290) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+is_a: PO:0000290 ! tracheary element
+intersection_of: PO:0000290 ! tracheary element
+intersection_of: part_of PO:0005849 ! primary xylem
+relationship: part_of PO:0005849 ! primary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025445
+name: secondary xylem tracheary element
+namespace: plant_anatomy
+def: "A tracheary element (PO:0000290) that is part of a portion of secondary xylem tissue (PO:0005848)." [POC:curators]
+is_a: PO:0000290 ! tracheary element
+intersection_of: PO:0000290 ! tracheary element
+intersection_of: part_of PO:0005848 ! secondary xylem
+relationship: part_of PO:0005848 ! secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025446
+name: primary xylem tracheid
+namespace: plant_anatomy
+def: "A tracheid PO:0000301 that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+is_a: PO:0000301 ! tracheid
+intersection_of: PO:0000301 ! tracheid
+intersection_of: part_of PO:0005849 ! primary xylem
+relationship: part_of PO:0005849 ! primary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025447
+name: secondary xylem tracheid
+namespace: plant_anatomy
+def: "A tracheid PO:0000301 that is part of a portion of secondary xylem tissue (PO:0005848)." [POC:curators]
+is_a: PO:0000301 ! tracheid
+intersection_of: PO:0000301 ! tracheid
+intersection_of: part_of PO:0005848 ! secondary xylem
+relationship: part_of PO:0005848 ! secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025448
+name: primary xylem vessel member
+namespace: plant_anatomy
+def: "A xylem vessel member (PO:0002003) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+is_a: PO:0002003 ! xylem vessel member
+intersection_of: PO:0002003 ! xylem vessel member
+intersection_of: part_of PO:0005849 ! primary xylem
+relationship: part_of PO:0005849 ! primary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025449
+name: secondary xylem vessel member
+namespace: plant_anatomy
+def: "A xylem vessel member (PO:0002003) that is part of a portion of secondary xylem tissue (PO:0005848)." [POC:curators]
+is_a: PO:0002003 ! xylem vessel member
+intersection_of: PO:0002003 ! xylem vessel member
+intersection_of: part_of PO:0005848 ! secondary xylem
+relationship: part_of PO:0005848 ! secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025450
+name: primary xylem vessel
+namespace: plant_anatomy
+def: "A xylem vessel (PO:0025417) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+is_a: PO:0025417 ! xylem vessel
+intersection_of: PO:0025417 ! xylem vessel
+intersection_of: part_of PO:0005849 ! primary xylem
+relationship: part_of PO:0005849 ! primary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025451
+name: secondary xylem vessel
+namespace: plant_anatomy
+def: "A xylem vessel (PO:0025417) that is part of a portion of secondary xylem tissue (PO:0005848)." [POC:curators]
+is_a: PO:0025417 ! xylem vessel
+intersection_of: PO:0025417 ! xylem vessel
+intersection_of: part_of PO:0005848 ! secondary xylem
+relationship: part_of PO:0005848 ! secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-05T11:06:18Z
 
 [Term]
 id: PO:0028001
