@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:03:2012 12:20
+date: 12:03:2012 15:35
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -842,12 +842,14 @@ relationship: part_of PO:0005660 ! hydathode
 id: PO:0000071
 name: companion cell
 namespace: plant_anatomy
-def: "A parenchyma cell (PO:0000074) that is adjacent to a sieve-tube member (PO:0000289) and arises from the same initial cell (PO:0004011) as the sieve-tube member." [ISBN:0471245208]
-comment: Found in angiosperms. Compare to albuminous cells (PO:0025412), which are found in gymnosperms.
+def: "A parenchyma cell (PO:0000074) that is adjacent to a sieve tube element (PO:0000289) and arises from the same phloem mother cell (PO:0000400) as the sieve tube element." [PO_REF:00011]
+comment: Companion cells are connected to sieve tube elements through plasmodesmata and function in phloem loading of small molecules, including photosynthate (either sucrose or raffinose-family oligosaccharides). May participate in phloem sucrose loading (GO:0009915). Molecules can be loaded into the companion cells from surrounding cells through either symplastic (via plasmodesmata) or apoplastic (transmembrane) transport. Unlike sieve tube elements, companion cells retain their nuclei and other organelles at maturity. A sieve tube element may have one or more or no companion cells associated with it. This term should not be used for other types of parenchyma cells (PO:0000074) that do not arise from the same phloem mother cell as a sieve tube element. Companion cells are found in angiosperms, as compared to albuminous cells (PO:0025412), which are found in non-angiosperm vascular plants. Companion cells may be specialized as transfer companion cells (PO:0025458), ordinary companion cells (PO:0025459), or intermediary companion cells (PO:0025460). Multiple types of companion cells may be found in the same plant.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula acompa&#241iante (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "minor vein companion cell" EXACT []
 synonym: "伴細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_POI:3481662
 is_a: PO:0000074 ! parenchyma cell
 relationship: adjacent_to PO:0000289 ! sieve tube element
 relationship: part_of PO:0005417 ! phloem
@@ -892,8 +894,8 @@ relationship: part_of PO:0005426 ! chlorenchyma
 id: PO:0000077
 name: sclerenchyma cell
 namespace: plant_anatomy
-def: "A ground tissue cell (PO:0025030) with thickened secondary cell walls that are lignified." [ISBN:0471245208]
-comment: May or may not be devoid of protoplast at maturity. Not always easy to distinguish from tracheary elements (PO:0000290) or sclerified parenchyma cells (PO:0000074). Distinguishable from collenchyma cells (PO:0000075) because collenchyma cells alive at maturity. Collenchyma cells provides flexibility while sclerenchyma cells provide hardness.
+def: "A ground tissue cell (PO:0025030) with a lignified secondary cell wall." [ISBN:0471245208]
+comment: May be dead at maturity. Not always easy to distinguish from tracheary elements (PO:0000290) or sclerified parenchyma cells (PO:0000074). Distinguishable from collenchyma cells (PO:0000075) because collenchyma cells are alive at maturity. Collenchyma cells provides flexibility while sclerenchyma cells provide hardness.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula esclerenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1378,7 +1380,9 @@ subset: TraitNet
 synonym: "miembro del tubo criboso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sieve tube member" EXACT []
 synonym: "sieve tube segment" EXACT []
+synonym: "sieve-tube element" EXACT []
 synonym: "師管要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481654
 is_a: PO:0025406 ! sieve element
 relationship: part_of PO:0025416 ! sieve tube
 
@@ -2446,6 +2450,7 @@ synonym: "cork" RELATED []
 synonym: "felema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of phellem tissue" EXACT []
 synonym: "コルク組織（＝cork tissue) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3488320
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
 relationship: part_of PO:0005046 ! periderm
@@ -3779,6 +3784,7 @@ subset: Rice
 synonym: "felodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of phelloderm tissue" EXACT []
 synonym: "コルク皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3488320
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0005599 ! cork cambium
 relationship: part_of PO:0005046 ! periderm
@@ -4012,6 +4018,7 @@ synonym: "cambium de corcho (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "phellogen" EXACT []
 synonym: "コルク形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
+xref: OBO_SF_PO:3488320
 is_a: PO:0005597 ! cambium
 relationship: part_of PO:0005046 ! periderm
 
@@ -18034,6 +18041,7 @@ name: sieve element
 namespace: plant_anatomy
 def: "A plant cell (PO:0009002) that is part of a portion of phloem tissue (PO:0005417), has sieve areas in its walls, and lacks a nucleus in its mature protoplast." [ISBN:0471245208]
 comment: Sieve elements function mainly in longitudinal conduction of organic solutes. Classified into sieve cells (PO:0025415) and sieve tube elements (PO:0000289) based on the presence of sieve plates and specialization of sieve areas in different parts of the cell. Develops from either a cambial initial (PO:0000295), a phloem mother cell (PO:0000400), or a cell of the procambium (PO:0025275).
+xref: OBO_SF_PO:3481654
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0005417 ! phloem
 created_by: RamonaNYBG
@@ -18146,6 +18154,7 @@ def: "A sieve element (PO:0025406) in which the sieve areas are not aggregated i
 comment: Sieve areas in sieve cells generally have narrow pores and thin connecting strands, and they are not highly specialized, but instead are fairly uniform throughout the cell wall. Typical of gymnosperms and non-seed vascular plants such as ferns. Differ from sieve tube elements, which have sieve plates and more pronounced specialization of sieve areas.
 subset: Gymnosperms
 subset: Pteridophytes
+xref: OBO_SF_PO:3481654
 is_a: PO:0025406 ! sieve element
 created_by: RamonaNYBG
 creation_date: 2012-02-02T06:54:00Z
@@ -18156,6 +18165,7 @@ name: sieve tube
 namespace: plant_anatomy
 def: "A portion of phloem tissue (PO:0005417) that has as parts a series of sieve tube elements (PO:0000289) arranged end to end and interconnected through sieve plates." [ISBN:0471245208]
 comment: A sieve plate is part of a sieve tube member.
+xref: OBO_SF_PO:3481654
 is_a: PO:0005417 ! phloem
 created_by: RamonaNYBG
 creation_date: 2012-02-02T07:03:00Z
@@ -18173,10 +18183,12 @@ creation_date: 2012-02-02T02:11:47Z
 
 [Term]
 id: PO:0025418
-name: sclerid
+name: sclerid cell
 namespace: plant_anatomy
-def: "A sclerenchyma cell (PO:0000077) that has thick secondary walls with many pits." [ISBN:0471245208]
-comment: Usually not very elongated.
+def: "A sclerenchyma cell (PO:0000077) with many pits in the secondary cell wall." [ISBN:0471245208]
+comment: Usually not very elongated. The lumen of a sclerid cell is occluded by the secondary cell wall.
+synonym: "sclereid" EXACT []
+synonym: "sclerid" EXACT []
 is_a: PO:0000077 ! sclerenchyma cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T02:41:10Z
@@ -18549,6 +18561,126 @@ intersection_of: part_of PO:0005848 ! secondary xylem
 relationship: part_of PO:0005848 ! secondary xylem
 created_by: RamonaNYBG
 creation_date: 2012-03-05T11:06:18Z
+
+[Term]
+id: PO:0025452
+name: primary phloem sieve element
+namespace: plant_anatomy
+def: "A sieve element (PO:0025406) that is part of a portion of primary phloem (PO:0006075)." [POC:curators]
+xref: OBO_SF_PO:3481654
+is_a: PO:0025406 ! sieve element
+intersection_of: PO:0025406 ! sieve element
+intersection_of: part_of PO:0006075 ! primary phloem
+relationship: part_of PO:0006075 ! primary phloem
+created_by: RamonaNYBG
+creation_date: 2012-03-12T02:41:15Z
+
+[Term]
+id: PO:0025453
+name: secondary phloem sieve element
+namespace: plant_anatomy
+def: "A sieve element (PO:0025406) that is part of a portion of secondary phloem (PO:0005043)." [POC:curators]
+xref: OBO_SF_PO:3481654
+is_a: PO:0025406 ! sieve element
+intersection_of: PO:0025406 ! sieve element
+intersection_of: part_of PO:0005043 ! secondary phloem
+relationship: part_of PO:0005043 ! secondary phloem
+created_by: RamonaNYBG
+creation_date: 2012-03-12T02:41:15Z
+
+[Term]
+id: PO:0025454
+name: primary phloem sieve cell
+namespace: plant_anatomy
+def: "A sieve cell (PO:0025415) that is part of a portion of primary phloem (PO:0006075)." [POC:curators]
+xref: OBO_SF_PO:3481654
+is_a: PO:0025415 ! sieve cell
+intersection_of: PO:0025415 ! sieve cell
+intersection_of: part_of PO:0006075 ! primary phloem
+relationship: part_of PO:0006075 ! primary phloem
+created_by: RamonaNYBG
+creation_date: 2012-03-12T02:41:15Z
+
+[Term]
+id: PO:0025455
+name: primary phloem sieve tube element
+namespace: plant_anatomy
+def: "A sieve tube element (PO:0000289) that is part of a portion of primary phloem (PO:0006075)." [POC:curators]
+synonym: "primary phloem sieve tube member" EXACT []
+synonym: "primary phloem sieve-tube element" EXACT []
+xref: OBO_SF_PO:3481654
+is_a: PO:0000289 ! sieve tube element
+intersection_of: PO:0000289 ! sieve tube element
+intersection_of: part_of PO:0006075 ! primary phloem
+relationship: part_of PO:0006075 ! primary phloem
+created_by: RamonaNYBG
+creation_date: 2012-03-12T02:41:15Z
+
+[Term]
+id: PO:0025456
+name: secondary phloem sieve cell
+namespace: plant_anatomy
+def: "A sieve cell (PO:0025415) that is part of a portion of secondary phloem (PO:0005043)." [POC:curators]
+xref: OBO_SF_PO:3481654
+is_a: PO:0025415 ! sieve cell
+intersection_of: PO:0025415 ! sieve cell
+intersection_of: part_of PO:0005043 ! secondary phloem
+relationship: part_of PO:0005043 ! secondary phloem
+created_by: RamonaNYBG
+creation_date: 2012-03-12T02:41:15Z
+
+[Term]
+id: PO:0025457
+name: secondary phloem sieve tube element
+namespace: plant_anatomy
+def: "A sieve tube element (PO:0000289) that is part of a portion of secondary phloem (PO:0005043)." [POC:curators]
+synonym: "secondary phloem sieve tube member" EXACT []
+synonym: "secondary phloem sieve-tube element" EXACT []
+xref: OBO_SF_PO:3481654
+is_a: PO:0000289 ! sieve tube element
+intersection_of: PO:0000289 ! sieve tube element
+intersection_of: part_of PO:0005043 ! secondary phloem
+relationship: part_of PO:0005043 ! secondary phloem
+created_by: RamonaNYBG
+creation_date: 2012-03-12T02:41:15Z
+
+[Term]
+id: PO:0025458
+name: transfer companion cell
+namespace: plant_anatomy
+def: "A companion cell (PO:0000400) that is a transfer cell (PO:0000078) with many cell wall invaginations." [PMID:21669666, PO_REF:00011]
+comment: Plasmodesmata between a transfer companion cell and adjacent mesophyll cells may be few in number. Transfer companion cells are found in plants that use apoplastic phloem loading. Unlike sieve tube elements (PO:0000289), transfer companion cells retain their nuclei and other organelles at maturity.
+synonym: "transfer cell" BROAD []
+xref: OBO_SF_PO:3481662
+is_a: PO:0000071 ! companion cell
+is_a: PO:0000078 ! transfer cell
+created_by: RamonaNYBG
+creation_date: 2012-03-12T03:06:09Z
+
+[Term]
+id: PO:0025459
+name: ordinary companion cell
+namespace: plant_anatomy
+def: "A companion cell (PO:0000400) that lacks cell wall invaginations and has few or no plasmodesmata connecting it to adjacent mesophyll cells." [PMID:21669666, PO_REF:00011]
+comment: Found in plants that use apoplastic phloem loading. Unlike sieve tube elements (PO:0000289), ordinary companion cells retain their nuclei and other organelles at maturity.
+synonym: "regular companion cell" EXACT []
+synonym: "standard companion cell" EXACT []
+xref: OBO_SF_PO:3481662
+is_a: PO:0000071 ! companion cell
+created_by: RamonaNYBG
+creation_date: 2012-03-12T03:06:09Z
+
+[Term]
+id: PO:0025460
+name: intermediary companion cell
+namespace: plant_anatomy
+def: "A companion cell (PO:0000400) that has dense cytoplasm, a small vacuole, proplastids rather than chloroplasts, and abundant and highly branched plasmodesmata linking it to adjacent mesophyll cells." [PMID:21669666, PO_REF:00011]
+comment: Intermediary companion cells translocate high concentrations of raffinose-family oligosaccharides and are found in plants that use symplastic phloem loading. Unlike sieve tube elements (PO:0000289), intermediary companion cells retain their nuclei and other organelles at maturity.
+synonym: "intermediary cell" EXACT []
+xref: OBO_SF_PO:3481662
+is_a: PO:0000071 ! companion cell
+created_by: RamonaNYBG
+creation_date: 2012-03-12T03:06:09Z
 
 [Term]
 id: PO:0028001
