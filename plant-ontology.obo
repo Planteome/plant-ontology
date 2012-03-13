@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:03:2012 15:35
+date: 13:03:2012 09:41
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2119,7 +2119,7 @@ id: PO:0001170
 name: seed development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a seed." [POC:Ramona_Walls, TAIR:Katica_Ilic]
-comment: Includes the stages of seed development, from fertilization to the dry or quiescent state.
+comment: Includes the stages of seed development, from fertilization to the dry or quiescent state. May have as part an embryo development stage.
 synonym: "seed development in Arabidopsis" RELATED []
 is_a: PO:0009012 ! plant structure development stage
 
@@ -2653,8 +2653,8 @@ relationship: part_of PO:0006048 ! seed coat epidermis
 id: PO:0004512
 name: heartwood
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) that lacks living wood parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
-comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a plant axis (PO:0025004), interior to the sapwood.
+def: "A portion of secondary xylem (PO:0005848) that lacks living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
+comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a plant axis (PO:0025004), interior to the sapwood. Heartwood forms at the end of a cell death stage of secondary xylem.
 subset: TraitNet
 synonym: "duramen (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2664,8 +2664,8 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004513
 name: sapwood
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) that has as parts living wood parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
-comment: Sapwood contains reserve materials and is where the conduction of water takes place. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood the vascular cambium (PO:0005598) of a plant axis (PO:0025004).
+def: "A portion of secondary xylem (PO:0005848) that has as parts living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
+comment: Sapwood contains reserve materials and may function in the conduction of water and minerals. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood and the vascular cambium (PO:0005598) of a plant axis (PO:0025004). Sapwood forms during a secondary xylem development stage.
 subset: TraitNet
 synonym: "albura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "液材、辺材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2675,7 +2675,7 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004514
 name: growth ring
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) that has as parts a single layer of early wood (PO:0004515) and a single layer of later wood (PO:0004516) from the same growth season and is part of a plant axis (PO:0025004)." [ISBN:0471245208, POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that has as parts a single layer of early wood (PO:0004515) and a single layer of late wood (PO:0004516) from the same growth season and is part of a plant axis (PO:0025004)." [ISBN:0471245208, POC:Curators]
 comment: Forms a ring when viewed in transverse section. May be an annual ring or a false annual ring.
 subset: TraitNet
 synonym: "anillo de crecimiento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2688,7 +2688,9 @@ id: PO:0004515
 name: early wood
 namespace: plant_anatomy
 def: "A portion of secondary xylem (PO:0005848) that has lower density and larger cells than late wood (PO:0004516) and is formed in the first part of a growing season." [ISBN:0471245208, POC:Curators]
+comment: The transition from early wood to late wood may be gradual and is not always easy to distinguish.
 subset: TraitNet
+synonym: "earlywood" EXACT []
 synonym: "madera temprana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spring wood" RELATED []
 synonym: "早材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2700,8 +2702,10 @@ id: PO:0004516
 name: late wood
 namespace: plant_anatomy
 def: "A portion of secondary xylem (PO:0005848) that has higher density and smaller cells than early wood (PO:0004515) and formed in the later part of a growing season." [POC:Curators]
+comment: The transition from early wood to late wood may be gradual and is not always easy to distinguish.
 subset: Citrus
 subset: TraitNet
+synonym: "latewood" EXACT []
 synonym: "madera tard&#237a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "summer wood" RELATED []
 synonym: "晩材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2796,60 +2800,77 @@ is_a: PO:0005043 ! secondary phloem
 
 [Term]
 id: PO:0004525
-name: wood parenchyma cell
+name: secondary xylem parenchyma cell
 namespace: plant_anatomy
-def: "A parenchyma cell (PO:0000074) that is part of a portion of wood parenchyma (PO:0004532)." [ISBN:0471245208]
-comment: Found in secondary xylem (PO:0005848) or secondary phloem (PO:0005043).
+def: "A parenchyma cell (PO:0000074) that is part of a portion of secondary xylem parenchyma (PO:0004532)." [ISBN:0471245208]
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula parenquim&#225tica de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "wood parenchyma cell" EXACT []
 synonym: "木部柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3503456
 is_a: PO:0000074 ! parenchyma cell
-relationship: part_of PO:0004532 ! wood parenchyma
+intersection_of: PO:0000074 ! parenchyma cell
+intersection_of: part_of PO:0004532 ! secondary xylem parenchyma
+relationship: part_of PO:0004532 ! secondary xylem parenchyma
 
 [Term]
 id: PO:0004526
-name: axial wood parenchyma cell
+name: axial secondary xylem parenchyma cell
 namespace: plant_anatomy
-def: "A wood parenchyma cell (PO:0004525) that is part of a portion of axial wood parenchyma (PO:0004533)." [ISBN:0471245208]
+def: "A secondary xylem parenchyma cell (PO:0004525) that is part of a portion of axial secondary xylem parenchyma (PO:0004533)." [ISBN:0471245208]
 subset: CL
+synonym: "axial wood parenchyma cell" EXACT []
 synonym: "c&#233lula parenquim&#225tica axial de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸方向木部柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004525 ! wood parenchyma cell
+xref: OBO_SF_PO:3503456
+is_a: PO:0004525 ! secondary xylem parenchyma cell
+intersection_of: PO:0004525 ! secondary xylem parenchyma cell
+intersection_of: part_of PO:0004533 ! axial secondary xylem parenchyma
 relationship: develops_from PO:0000079 ! fusiform initial
-relationship: part_of PO:0004533 ! axial wood parenchyma
+relationship: part_of PO:0004533 ! axial secondary xylem parenchyma
 
 [Term]
 id: PO:0004527
-name: ray wood parenchyma cell
+name: ray secondary xylem parenchyma cell
 namespace: plant_anatomy
-def: "A parenchyma cell (PO:0000074) that develops from a ray initial (PO:0000082) and is part of a portion of ray wood parenchyma (PO:0004534)." [ISBN:0471245208]
+def: "A parenchyma cell (PO:0000074) that develops from a ray initial (PO:0000082) and is part of a portion of ray secondary xylem parenchyma (PO:0004534)." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula parenquim&#225tica de rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "ray wood parenchyma cell" EXACT []
 synonym: "放射状木部柔組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004525 ! wood parenchyma cell
+xref: OBO_SF_PO:3503456
+is_a: PO:0004525 ! secondary xylem parenchyma cell
+intersection_of: PO:0004525 ! secondary xylem parenchyma cell
+intersection_of: part_of PO:0004534 ! ray secondary xylem parenchyma
 relationship: develops_from PO:0000082 ! ray initial
-relationship: part_of PO:0004534 ! ray wood parenchyma
+relationship: part_of PO:0004534 ! ray secondary xylem parenchyma
 
 [Term]
 id: PO:0004528
-name: upright wood ray parenchyma cell
+name: upright ray secondary xylem parenchyma cell
 namespace: plant_anatomy
-def: "A ray wood parenchyma cell (PO:0004527) that is oriented with its longest dimension parallel to the plant axis (PO:0025004) in which it is found." [ISBN:0471245208]
+def: "A ray secondary xylem parenchyma cell (PO:0004527) that is oriented with its longest dimension parallel to the plant axis (PO:0025004) in which it is found." [ISBN:0471245208]
 subset: CL
 synonym: "rayo par&#233nquim&#225tico vertical de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "upright cell" BROAD []
+synonym: "upright ray wood parenchyma cell" EXACT []
 synonym: "直立性木質放射状柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004527 ! ray wood parenchyma cell
+xref: OBO_SF_PO:3503456
+is_a: PO:0004527 ! ray secondary xylem parenchyma cell
 
 [Term]
 id: PO:0004529
-name: procumbent ray wood parenchyma cell
+name: procumbent ray secondary xylem parenchyma cell
 namespace: plant_anatomy
-def: "A ray wood parenchyma cell (PO:0004527) that is oriented with its longest dimension radial to the plant axis (PO:0025004) in which it is found." [ISBN:0471245208]
+def: "A ray secondary xylem parenchyma cell (PO:0004527) that is oriented with its longest dimension radial to the plant axis (PO:0025004) in which it is found." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula procumbente del rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "procumbent cell" BROAD []
+synonym: "procumbent ray wood parenchyma cell" EXACT []
 synonym: "平伏木質放射状柔組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004527 ! ray wood parenchyma cell
+xref: OBO_SF_PO:3503456
+is_a: PO:0004527 ! ray secondary xylem parenchyma cell
 
 [Term]
 id: PO:0004530
@@ -2859,7 +2880,7 @@ def: "Empty upright ray cell of approximately the same height as the procumbent 
 subset: CL
 synonym: "c&#233lula de baldoza B (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "タイル B 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004528 ! upright wood ray parenchyma cell
+is_a: PO:0004528 ! upright ray secondary xylem parenchyma cell
 
 [Term]
 id: PO:0004531
@@ -2869,38 +2890,50 @@ def: "Cell on the margin of, and tending to form a sheath around, the procumbent
 subset: CL
 synonym: "c&#233lula de la vaina (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "鞘細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004528 ! upright wood ray parenchyma cell
+is_a: PO:0004528 ! upright ray secondary xylem parenchyma cell
 
 [Term]
 id: PO:0004532
-name: wood parenchyma
+name: secondary xylem parenchyma
 namespace: plant_anatomy
-def: "A portion of parenchyma (PO:0005421) tissue that is part of a portion of secondary xylem (PO:0005848) and has as parts wood parenchyma cells (PO:0004525)." [ISBN:0471245194]
+def: "A portion of parenchyma (PO:0005421) tissue that is part of a portion of secondary xylem (PO:0005848) and has as parts secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245194]
 synonym: "par&#233nquima de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "wood parenchyma" EXACT []
 synonym: "木部柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3503451
 is_a: PO:0005421 ! parenchyma
+intersection_of: PO:0005421 ! parenchyma
+intersection_of: part_of PO:0005848 ! secondary xylem
 relationship: part_of PO:0005848 ! secondary xylem
 
 [Term]
 id: PO:0004533
-name: axial wood parenchyma
+name: axial secondary xylem parenchyma
 namespace: plant_anatomy
-def: "A portion of wood parenchyma (PO:0004532) that is part of an axial system (PO:0025410) and has as parts axial wood parenchyma cells (PO:0004526)." [ISBN:0471245194]
+def: "A portion of secondary xylem parenchyma (PO:0004532) that is part of an axial system (PO:0025410) and has as parts axial secondary xylem parenchyma cells (PO:0004526)." [ISBN:0471245194]
+synonym: "axial wood parenchyma" EXACT []
 synonym: "par&#233nquima axial de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸方向木部柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004532 ! wood parenchyma
+xref: OBO_SF_PO:3503451
+is_a: PO:0004532 ! secondary xylem parenchyma
+intersection_of: PO:0004532 ! secondary xylem parenchyma
+intersection_of: part_of PO:0025410 ! axial system
 relationship: part_of PO:0025410 ! axial system
 
 [Term]
 id: PO:0004534
-name: ray wood parenchyma
+name: ray secondary xylem parenchyma
 namespace: plant_anatomy
-def: "A portion of wood parenchyma (PO:0004532) that is part of a ray system (PO:0025411) and has as parts ray wood parenchyma cells (PO:0004527)." [ISBN:0471245194]
+def: "A portion of secondary xylem parenchyma (PO:0004532) that is part of a ray system (PO:0025411) and has as parts ray secondary xylem parenchyma cells (PO:0004527)." [ISBN:0471245194]
 comment: Occurs in bands or rays of variable width and height that extend radially in the secondary xylem (PO:0005848) and secondary phloem (PO:0005043) of a plant axis (PO:0025004).
 synonym: "par&#233nquima de rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ray" BROAD []
+synonym: "ray wood parenchyma" EXACT []
 synonym: "放射状木部柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004532 ! wood parenchyma
+xref: OBO_SF_PO:3503451
+is_a: PO:0004532 ! secondary xylem parenchyma
+intersection_of: PO:0004532 ! secondary xylem parenchyma
+intersection_of: part_of PO:0025411 ! ray system
 relationship: part_of PO:0025411 ! ray system
 
 [Term]
