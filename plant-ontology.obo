@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:03:2012 09:41
+date: 14:03:2012 14:51
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1297,12 +1297,15 @@ id: PO:0000274
 name: xylem fiber cell
 namespace: plant_anatomy
 def: "A fiber cell (PO:0025407) that is part of a portion of xylem (PO:0005352) tissue." [ISBN:0471245208]
-comment: It may be difficult to distinguish xylem fiber cells from tracheary elements (PO:0000290).
+comment: It may be difficult to distinguish xylem fiber cells, especially fiber tracheids (PO:0000355), from tracheary elements (PO:0000290). Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading to the cell lumen through the cell wall.
 subset: CL
 subset: TraitNet
 synonym: "fibra del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部 繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025407 ! fiber cell
+xref: OBO_SF_PO:3481665
+is_a: PO:0025407 ! plant fiber cell
+intersection_of: PO:0025407 ! plant fiber cell
+intersection_of: part_of PO:0005352 ! xylem
 relationship: part_of PO:0005352 ! xylem
 
 [Term]
@@ -1520,10 +1523,12 @@ id: PO:0000355
 name: fiber tracheid
 namespace: plant_anatomy
 def: "A xylem fiber cell (PO:0000274) with bordered pits with pit cavities." [ISBN:0471245208]
-comment: Commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures. If both libriform fiber cells (PO:0004520) and fiber tracheids are present, the libriform fiber cells usually have thicker walls. Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading from the pit cavity to the cell lumen through the thick cell wall.
+comment: Fiber tracheids generally have pointed ends and bordered pits that have lenticular to slit-like apertures. If both libriform fiber cells (PO:0004520) and fiber tracheids are present, the libriform fiber cells usually have thicker walls. Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading to the cell lumen through the cell wall.
 subset: CL
+synonym: "fiber tracheid cell" EXACT []
 synonym: "fibrotraqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "繊維 仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481665
 is_a: PO:0000274 ! xylem fiber cell
 
 [Term]
@@ -2654,32 +2659,36 @@ id: PO:0004512
 name: heartwood
 namespace: plant_anatomy
 def: "A portion of secondary xylem (PO:0005848) that lacks living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
-comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a plant axis (PO:0025004), interior to the sapwood. Heartwood forms at the end of a cell death stage of secondary xylem.
+comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a shoot axis (PO:0025029) or root (PO:0009005), interior to the sapwood. Heartwood forms at the end of a cell death stage of secondary xylem.
 subset: TraitNet
 synonym: "duramen (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0025004 ! plant axis
 
 [Term]
 id: PO:0004513
 name: sapwood
 namespace: plant_anatomy
 def: "A portion of secondary xylem (PO:0005848) that has as parts living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
-comment: Sapwood contains reserve materials and may function in the conduction of water and minerals. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood and the vascular cambium (PO:0005598) of a plant axis (PO:0025004). Sapwood forms during a secondary xylem development stage.
+comment: Sapwood contains reserve materials and may function in the conduction of water and minerals. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood and the vascular cambium (PO:0005598) of a shoot axis (PO:0025029) or root (PO:0009005). Sapwood forms during a secondary xylem development stage.
 subset: TraitNet
 synonym: "albura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "液材、辺材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0025004 ! plant axis
 
 [Term]
 id: PO:0004514
 name: growth ring
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) that has as parts a single layer of early wood (PO:0004515) and a single layer of late wood (PO:0004516) from the same growth season and is part of a plant axis (PO:0025004)." [ISBN:0471245208, POC:Curators]
-comment: Forms a ring when viewed in transverse section. May be an annual ring or a false annual ring.
+def: "A portion of secondary xylem (PO:0005848) that has as parts a single layer of early wood (PO:0004515) and a single layer of late wood (PO:0004516) from the same growth season and is part of a shoot axis (PO:0025029) or root (PO:0009005)." [ISBN:0471245208, POC:Curators]
+comment: Appears as a ring in a transverse section of plant axis (PO:0025004). May be an annual ring (one growth ring per year) or a false annual ring (more or less than one growth ring per year).
 subset: TraitNet
 synonym: "anillo de crecimiento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "annual ring" EXACT []
+synonym: "annual ring" NARROW []
+synonym: "false annual ring" NARROW []
+synonym: "growth layer" EXACT []
 synonym: "年輪（＝annual ring) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005848 ! secondary xylem
 
@@ -2687,13 +2696,14 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004515
 name: early wood
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) that has lower density and larger cells than late wood (PO:0004516) and is formed in the first part of a growing season." [ISBN:0471245208, POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that is a part of a growth ring (PO:0004514) formed during the early part of a growing season, has lower density than late wood (PO:0004516) of the same growth ring, and has as parts early wood tracheary elements (PO:0025461) with generally larger lumens than the late wood tracheary elements (PO:0025462) of the same growth ring." [ISBN:0471245208, POC:Curators]
 comment: The transition from early wood to late wood may be gradual and is not always easy to distinguish.
 subset: TraitNet
 synonym: "earlywood" EXACT []
 synonym: "madera temprana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spring wood" RELATED []
 synonym: "早材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3502764
 is_a: PO:0005848 ! secondary xylem
 relationship: part_of PO:0004514 ! growth ring
 
@@ -2701,7 +2711,7 @@ relationship: part_of PO:0004514 ! growth ring
 id: PO:0004516
 name: late wood
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) that has higher density and smaller cells than early wood (PO:0004515) and formed in the later part of a growing season." [POC:Curators]
+def: "A portion of secondary xylem (PO:0005848) that is a part of a growth ring (PO:0004514) formed during the later part of a growing season, has higher density than early wood (PO:0004515) of the same growth ring, and has as parts late wood tracheary elements (PO:0025462) with generally smaller lumens than the early wood tracheary elements (PO:0025461) of the same growth ring." [ISBN:0471245208, POC:Curators]
 comment: The transition from early wood to late wood may be gradual and is not always easy to distinguish.
 subset: Citrus
 subset: TraitNet
@@ -2709,6 +2719,7 @@ synonym: "latewood" EXACT []
 synonym: "madera tard&#237a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "summer wood" RELATED []
 synonym: "晩材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3502764
 is_a: PO:0005848 ! secondary xylem
 relationship: part_of PO:0004514 ! growth ring
 
@@ -2716,10 +2727,12 @@ relationship: part_of PO:0004514 ! growth ring
 id: PO:0004517
 name: growth ring boundary
 namespace: plant_anatomy
-def: "A plant anatomical surface that is the boundary between the outermost (last formed) late wood (PO:0004516) of one growth ring and the innermost (earliest formed) early wood (PO:0004515) of the next growth ring (PO:0004514)." [RW:test]
+def: "A portion of secondary xylem (PO:0005848) that includes the last-formed late wood (PO:0004516) of one growth ring (PO:0004514) and the earliest-formed early wood (PO:0004515) of the next growth ring." [POC:curators]
+comment: Used to describe the boundary area between two adjacent growth rings, which may be distinct or indistinct.
 synonym: "l&#237mite del anillo de crecimiento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "年輪境界線 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-relationship: part_of PO:0004514 ! growth ring
+xref: OBO_SF_PO:3502785
+is_a: PO:0005848 ! secondary xylem
 
 [Term]
 id: PO:0004518
@@ -2741,8 +2754,12 @@ def: "A fiber cell (PO:0025407) that is part of a portion of phloem (PO:0005417)
 subset: CL
 subset: TraitNet
 synonym: "fibra del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "phloem fiber" EXACT []
 synonym: "師部繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025407 ! fiber cell
+xref: OBO_SF_PO:3481665
+is_a: PO:0025407 ! plant fiber cell
+intersection_of: PO:0025407 ! plant fiber cell
+intersection_of: part_of PO:0005417 ! phloem
 relationship: part_of PO:0005417 ! phloem
 
 [Term]
@@ -2750,25 +2767,26 @@ id: PO:0004520
 name: libriform fiber cell
 namespace: plant_anatomy
 def: "A xylem fiber cell (PO:0000274) with simple pits." [ISBN:0471245208]
-comment: Libriform fiber cells have unbordered pits while fiber tracheids (PO:0000355) have bordered pits. Many intermediate forms exists and are generally classified as fiber tracheids. If both libriform fiber cells and fiber tracheids are present, the libriform fiber cells usually have thicker walls. Libriform fiber cells have a slit-like aperture toward the cell lumen, but no pit cavity.
+comment: Libriform fiber cells have simple (unbordered) pits while fiber tracheids (PO:0000355) have bordered pits. Many intermediate forms exist and are generally classified as fiber tracheids (PO:0000355). If both libriform fiber cells and fiber tracheids are present, the libriform fiber cells usually have thicker walls. Libriform fiber cells have a slit-like aperture toward the cell lumen, but no pit cavity.
 subset: CL
 synonym: "fibra libriforme (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "libriform fiber" EXACT []
 synonym: "真性木繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3481665
 is_a: PO:0000274 ! xylem fiber cell
 
 [Term]
 id: PO:0004521
-name: septate fiber
+name: septate fiber cell
 namespace: plant_anatomy
-def: "OBSOLETE: A fiber with thin transverse walls (septa), which are formed after the cell develops a secondary wall thickening." [POC:Curators]
-comment: This term was made oboslete, because sepate fibers do not only appear in the xylem. It is replaced by septate fiber tracheid (PO:0025419), septate libriform fiber cell (PO:0025420), and septate phloem fiber cell (PO:0025421).
+def: "A plant fiber cell (PO:0025407) with thin transverse walls (septa), which are formed when mitosis occurs within the cell after development of a secondary cell wall (GO:0009531)." [ISBN:0471245208, POC:Curators]
+comment: A septate fiber septum is composed of the adjacent primary cell walls of two internal cells that arise from mitosis within the septate fiber cell after it has formed a secondary cell wall (GO:0009531).
 subset: CL
 synonym: "fibra septada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "septate fiber" EXACT []
 synonym: "隔壁繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_obsolete: true
-consider: PO:0025419
-consider: PO:0025420
-consider: PO:0025421
+xref: OBO_SF_PO:3481665
+is_a: PO:0025407 ! plant fiber cell
 
 [Term]
 id: PO:0004522
@@ -4266,12 +4284,13 @@ id: PO:0005848
 name: secondary xylem
 namespace: plant_anatomy
 def: "A portion of xylem (PO:0005352) tissue that develops from a vascular cambium (PO:0005598)." [ISBN:0471245194]
-comment: Secondary xylem develops as part of secondary growth (GO:0080117). Secondary xylem is the wood of gymnosperm and dicot angiosperm trees, shrubs, and lianas. May be organized into axial (PO:0025410) and ray (PO:0025411) systems. Some monocots have a primary thickening meristem (PO:0005039), located near the shoot apical meristem (PO:0020148), that gives the appearance of secondary growth and may produce lignified tissue that appears woody but is not composed of secondary xylem. Tracheary elements (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
+comment: Secondary xylem develops as part of secondary growth (GO:0080117). Secondary xylem is the wood of gymnosperm and dicot angiosperm trees, shrubs, and lianas. May be organized into axial (PO:0025410) and ray (PO:0025411) systems. Secondary xylem is often part of a shoot axis (PO:0025029) or a root (PO:0009005) but may occur in other organs. Some monocots have a primary thickening meristem (PO:0005039), located near the shoot apical meristem (PO:0020148), that gives the appearance of secondary growth and may produce lignified tissue that appears woody but is not composed of secondary xylem. Tracheary elements in secondary xylem (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of secondary xylem tissue" EXACT []
 synonym: "wood" EXACT []
 synonym: "xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "二次木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3067090
 xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
 relationship: develops_from PO:0005598 ! vascular cambium
@@ -9827,7 +9846,7 @@ replaced_by: PO:0005679
 id: PO:0009015
 name: portion of vascular tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that has as tracheary elements (PO:0000290) or sieve elements (PO:0025406)." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) that has as parts tracheary elements (PO:0000290) or sieve elements (PO:0025406)." [POC:curators]
 comment: Functions in conduction and support. In shoot axes (PO:0025029), vascular tissue is often found as part of a shoot axis stele (PO:0025198) or as scattered vascular bundles (PO:0005020). May include other types of tissues or cells, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
 subset: TraitNet
 synonym: "porci&#243n de tejido vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -18082,10 +18101,13 @@ creation_date: 2012-02-01T10:23:03Z
 
 [Term]
 id: PO:0025407
-name: fiber cell
+name: plant fiber cell
 namespace: plant_anatomy
-def: "An elongated, tapering schlerenchyma cell (PO:0000077) with a more or less thick secondary cell wall." [ISBN:0471245208]
-comment: May or may not have lignin in the secondary wall or a living protoplast at maturity. It may be difficult to distinguish fiber cells from tracheary elements (PO:0000290).
+def: "A sclerenchyma cell (PO:0000077) that is elongated and tapering." [ISBN:0471245208]
+comment: May or may not have lignin in the secondary cell wall (GO:0009531) or a living protoplast at maturity. It may be difficult to distinguish fiber cells from tracheary elements (PO:0000290). Compare with sclerid cells (PO:0025418), which are usually not elongated.
+synonym: "fiber" EXACT []
+synonym: "plant fiber" EXACT []
+xref: OBO_SF_PO:3481665
 is_a: PO:0000077 ! sclerenchyma cell
 created_by: RamonaNYBG
 creation_date: 2012-02-01T10:26:58Z
@@ -18231,8 +18253,10 @@ id: PO:0025419
 name: septate fiber tracheid
 namespace: plant_anatomy
 def: "A fiber tracheid (PO:0000355) that has as parts one or more thin internal partitions or septa." [ISBN:0471245208]
-comment: Septate fiber cells usually have a living protoplast at maturity. The septa form from mitosis within the lignified cell wall.
+comment: A septate fiber tracheid septum is composed of the adjacent primary cell walls of two internal cells that arise from mitosis within the septate fiber tracheid after it has formed a secondary cell wall (GO:0009531).
+xref: OBO_SF_PO:3481665
 is_a: PO:0000355 ! fiber tracheid
+is_a: PO:0004521 ! septate fiber cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T04:43:44Z
 
@@ -18241,8 +18265,10 @@ id: PO:0025420
 name: septate libriform fiber cell
 namespace: plant_anatomy
 def: "A libriform fiber cell (PO:0004520) that has as parts one or more thin internal partitions or septa." [ISBN:0471245208]
-comment: Septate fiber cells usually have a living protoplast at maturity. The septa form from mitosis within the lignified cell wall.
+comment: A septate libriform fiber cell septum is composed of the adjacent primary cell walls of two internal cells that arise from mitosis within the septate libriform fiber cell after it has formed a secondary cell wall (GO:0009531).
+xref: OBO_SF_PO:3481665
 is_a: PO:0004520 ! libriform fiber cell
+is_a: PO:0004521 ! septate fiber cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T04:43:44Z
 
@@ -18251,8 +18277,10 @@ id: PO:0025421
 name: septate phloem fiber cell
 namespace: plant_anatomy
 def: "A phloem fiber cell (PO:0004519) that has as parts one or more thin internal partitions or septa." [ISBN:0471245208]
-comment: Septate fiber cells usually have a living protoplast at maturity. The septa form from mitosis within the lignified cell wall.
+comment: A septatephloem fiber cell septum is composed of the adjacent primary cell walls of two internal cells that arise from mitosis within the septate phloem fiber cell after it has formed a secondary cell wall (GO:0009531).
+xref: OBO_SF_PO:3481665
 is_a: PO:0004519 ! phloem fiber cell
+is_a: PO:0004521 ! septate fiber cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T04:43:44Z
 
@@ -18260,9 +18288,11 @@ creation_date: 2012-02-02T04:43:44Z
 id: PO:0025422
 name: gelatinous fiber cell
 namespace: plant_anatomy
-def: "A xylem fiber cell (PO:0000274) in which the inner-most layer of the secondary wall contains abundant alpha-cellulose and is poor in lignin." [ISBN:0080374903]
-comment: Commonly found in reaction wood in dicots. The inner layer of the cell wall, or G-layer, can absorb much water and swell and is relatively porous and less compact than the outer layers of the cell wall.
+def: "A xylem fiber cell (PO:0000274) in which the inner-most layer of the secondary cell wall (GO:0009531) contains abundant cellulose and is poor in lignin." [ISBN:0080374903, PMID:21596948]
+comment: Often found in reaction wood in dicots and in some phloem fiber cells (PO:0004519), as in Linum usitatissimum. In gelatinous fiber cells, the inner layer of the cell wall is a cellulosic gelatinous-layer or G-layer, which may be relatively porous and less compact than the outer layers of the cell wall and may absorb water and swell.
+synonym: "gelatinous fiber" EXACT []
 synonym: "mucilaginous fiber cell" EXACT [ISBN:0080374903]
+xref: OBO_SF_PO:3481665
 is_a: PO:0000274 ! xylem fiber cell
 created_by: RamonaNYBG
 creation_date: 2012-02-02T04:53:23Z
@@ -18271,8 +18301,9 @@ creation_date: 2012-02-02T04:53:23Z
 id: PO:0025423
 name: plant tissue development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a portion of plant tissue." [POC:Ramona_Walls]
+def: "A plant structure development stage (PO:0009012) that has as primary participant a portion of plant tissue (PO:0009007)." [POC:Ramona_Walls]
 is_a: PO:0009012 ! plant structure development stage
+relationship: has_participant PO:0009007 ! portion of plant tissue
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:22:36Z
 
@@ -18280,8 +18311,9 @@ creation_date: 2012-02-04T09:22:36Z
 id: PO:0025424
 name: vascular tissue development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a portion of vascular tissue." [POC:Ramona_Walls]
+def: "A plant tissue development stage (PO:0025423) that has as primary participant a portion of vascular tissue (PO:0009015)." [POC:Ramona_Walls]
 is_a: PO:0025423 ! plant tissue development stage
+relationship: has_participant PO:0009015 ! portion of vascular tissue
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:24:06Z
 
@@ -18289,8 +18321,9 @@ creation_date: 2012-02-04T09:24:06Z
 id: PO:0025425
 name: xylem development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a portion of xylem tissue." [POC:Ramona_Walls]
+def: "A vascular tissue development stage (PO:0025424) that has as primary participant a portion of xylem (PO:0005352) tissue." [POC:Ramona_Walls]
 is_a: PO:0025424 ! vascular tissue development stage
+relationship: has_participant PO:0005352 ! xylem
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:24:38Z
 
@@ -18298,8 +18331,9 @@ creation_date: 2012-02-04T09:24:38Z
 id: PO:0025426
 name: phloem development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a portion of phloem tissue." [POC:Ramona_Walls]
+def: "A vascular tissue development stage (PO:0025424) that has as primary participant a portion of phloem (PO:0005417) tissue." [POC:Ramona_Walls]
 is_a: PO:0025424 ! vascular tissue development stage
+relationship: has_participant PO:0005417 ! phloem
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:25:00Z
 
@@ -18307,8 +18341,13 @@ creation_date: 2012-02-04T09:25:00Z
 id: PO:0025427
 name: secondary xylem development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a portion of secondary xylem tissue." [POC:Ramona_Walls]
+def: "A xylem development stage (PO:0025425) that has as primary participant a portion of secondary xylem (PO:0005848) tissue during the interval between the beginning of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:curators]
+comment: During a secondary xylem development stage (also called a wood development stage), the cells of secondary xylem (PO:0005848), including tracheary elements (PO:0000290), xylem fiber cells (PO:0000274), and wood parenchyma cells (PO:0004525) undergo cellular developmental processes (GO:0048869) such as cell division (GO:0051301), cell growth (GO:0016049), cell differentiation (GO:0030154), or cell death (GO:0008219). The transition from sapwood to heartwood marks the end of the secondary xylem development stage.
+synonym: "sapwood development stage" EXACT []
+synonym: "wood development stage" EXACT []
+xref: OBO_SF_PO:3488347
 is_a: PO:0025425 ! xylem development stage
+relationship: has_participant PO:0004513 ! sapwood
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:25:25Z
 
@@ -18714,6 +18753,112 @@ xref: OBO_SF_PO:3481662
 is_a: PO:0000071 ! companion cell
 created_by: RamonaNYBG
 creation_date: 2012-03-12T03:06:09Z
+
+[Term]
+id: PO:0025461
+name: early wood tracheary element
+namespace: plant_anatomy
+def: "A tracheary element that is part of a portion of early wood (PO:0004515)." [POC:curators]
+comment: Early wood tracheary elements generally have larger cell lumens than late wood tracheary elements (PO:0025462) of the same growth ring (PO:0004514).
+synonym: "earlywood tracheary element" EXACT []
+xref: OBO_SF_PO:3502764
+is_a: PO:0000290 ! tracheary element
+intersection_of: PO:0000290 ! tracheary element
+intersection_of: part_of PO:0004515 ! early wood
+relationship: part_of PO:0004515 ! early wood
+created_by: RamonaNYBG
+creation_date: 2012-03-14T11:05:40Z
+
+[Term]
+id: PO:0025462
+name: late wood tracheary element
+namespace: plant_anatomy
+def: "A tracheary element that is part of a portion of late wood (PO:0004516)." [POC:curators]
+comment: Late wood tracheary elements generally have smaller cell lumens than early wood tracheary elements (PO:0025461) of the same growth ring (PO:0004514).
+synonym: "latewood tracheary element" EXACT []
+xref: OBO_SF_PO:3502764
+is_a: PO:0000290 ! tracheary element
+intersection_of: PO:0000290 ! tracheary element
+intersection_of: part_of PO:0004516 ! late wood
+relationship: part_of PO:0004516 ! late wood
+created_by: RamonaNYBG
+creation_date: 2012-03-14T11:05:40Z
+
+[Term]
+id: PO:0025463
+name: cell division stage of secondary xylem
+namespace: plant_structure_development_stage
+def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the first and last cell division in a portion of secondary xylem tissue (PO:0005848), during which cells are produced by divisions of cambial initials (PO:0000295) or xylem mother cells (PO:id)." [POC:curators]
+comment: This stage includes production of xylem mother cells by cambial initials and production of tracheary elements (PO:0000290) or other cells by xylem mother cells. Precedes a cell differentiation stage of secondary xylem (PO:0025469), although cell differentiation may begin before a cell division stage of secondary xylem ends.
+xref: OBO_SF_PO:3488347
+is_a: PO:0025427 ! secondary xylem development stage
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:07:50Z
+
+[Term]
+id: PO:0025464
+name: cell expansion stage of secondary xylem
+namespace: plant_structure_development_stage
+def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the onset of a secondary cell wall formation stage of secondary xylem (PO:0025465), during which the cells undergo cell growth (GO:0016049)." [POC:curators]
+comment: This stage succeeds a cell division stage of secondary xylem (PO:0025463) and precedes secondary cell wall formation stage of secondary xylem (PO:0025465).
+xref: OBO_SF_PO:3488347
+is_a: PO:0025469 ! cell differentiation stage of secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:07:50Z
+
+[Term]
+id: PO:0025465
+name: secondary cell wall formation stage of secondary xylem
+namespace: plant_structure_development_stage
+xref: OBO_SF_PO:3488347
+is_a: PO:0025469 ! cell differentiation stage of secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:07:50Z
+
+[Term]
+id: PO:0025466
+name: cell death stage of secondary xylem
+namespace: plant_structure_development_stage
+def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the first cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the death of the last secondary xylem parenchyma cell (PO:0004525) or septate fiber cell (PO:0004521) in a portion of secondary xylem (PO:0005848)." [POC:curators]
+comment: During this stage, the cells of a portion of secondary xylem are undergoing cell death (GO:0008219), sometimes called apoptosis. Death of the tracheary elements and non-spetate xylem fiber cells generally precedes the death of secondary parenchyma cells and septate fiber cells. Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
+synonym: "transition to heartwood stage" EXACT []
+xref: OBO_SF_PO:3488347
+is_a: PO:0025469 ! cell differentiation stage of secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:07:50Z
+
+[Term]
+id: PO:0025467
+name: tracheary element death stage of secondary xylem
+namespace: plant_structure_development_stage
+def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the first and last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274)." [POC:curators]
+comment: During this stage, the tracheary elements and non-septate xylem fiber cells of a portion of secondary xylem (PO:0005848) undergo cell death (GO:0008219), but most of the secondary xylem parenchyma cells (PO:0004525) and septate xylem fiber cells (septate fiber tracheid, PO:0025419, and septate libriform fiber cell, PO:0025420) remain alive. Precedes a secondary xylem parenchyma cell death stage of secondary xylem (PO:0025468).
+xref: OBO_SF_PO:3488347
+is_a: PO:0025466 ! cell death stage of secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:07:50Z
+
+[Term]
+id: PO:0025468
+name: secondary xylem parenchyma cell death stage of secondary xylem
+namespace: plant_structure_development_stage
+def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the last cell death in a portion of secondary xylem (PO:0005848)." [POC:curators]
+comment: During this stage, the secondary xylem parenchyma cells (PO:0004525) and septate xylem fiber cells (septate fiber tracheid, PO:0025419, and septate libriform fiber cell, PO:0025420) of a portion of secondary xylem (PO:0005848) undergo cell death (GO:0008219). Succeeds a tracheary element death stage of secondary xylem (PO:0025467). Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
+xref: OBO_SF_PO:3488347
+is_a: PO:0025466 ! cell death stage of secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:07:50Z
+
+[Term]
+id: PO:0025469
+name: cell differentiation stage of secondary xylem
+namespace: plant_structure_development_stage
+def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:curators]
+comment: During a this stage, cells of secondary xylem undergo cell differentiation (GO:0030154), including cell growth (GO:0016049), cell morphogenisis (GO:0000902), or cell death (GO:0008219). Cell death is considered part of differentiation in secondary xylem, because it is an essential part of wood development. This stage succeeds the last cell division in a cell division stage of secondary xylem, even though cell differentiation may begin before all cell division finishes.
+xref: OBO_SF_PO:3488347
+is_a: PO:0025427 ! secondary xylem development stage
+created_by: RamonaNYBG
+creation_date: 2012-03-14T02:14:09Z
 
 [Term]
 id: PO:0028001
