@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:03:2012 14:51
+date: 16:03:2012 09:03
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -23,8 +23,8 @@ synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 treat-xrefs-as-is_a: CARO
 ontology: po
-property_value: copyright Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
-property_value: treat-xrefs-as-genus-differntia CL part_of NCBITaxon:3193 (Embryophyta)
+copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
+treat-xrefs-as-genus-differntia CL part_of NCBITaxon: 3193 (Embryophyta)
 
 [Term]
 id: PO:0000001
@@ -106,6 +106,7 @@ comment: Includes isolated plant cells and small plant cell aggregates that prol
 subset: CL
 synonym: "c&#233lula cultivada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cell suspension" RELATED []
+synonym: "cultured cell" BROAD []
 synonym: "培養細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3289997
 is_a: PO:0000004 ! in vitro plant structure
@@ -118,6 +119,7 @@ namespace: plant_anatomy
 def: "A cultured plant cell from which the entire plant cell wall has been removed." [POC:Curators]
 comment: The cell wall is generally removed using polysaccharide-degrading enzymes such as cellulase, pectinase and /or xylanase. The cultured plant cell may be in suspension culture or from callus culture on solid media.
 subset: CL
+synonym: "protoplast" BROAD []
 synonym: "protoplasto cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "培養プロトプラスト、培養原形質 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3279819
@@ -131,9 +133,10 @@ def: "A cultured plant cell that was derived from leaf tissue." [POC:Curators]
 comment: May be derived from cultured plant callus or plant protoplast that was induced from a segment of leaf. In the case of the plant protoplast, after the re-establishment cell walls.
 subset: CL
 synonym: "c&#233lula cultivada de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "leaf-derived cultured cell" EXACT []
 synonym: "培養葉細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000005 ! cultured plant cell
-relationship: derives_from PO:0025034 ! leaf
+relationship: derives_by_manipulation_from PO:0025034 ! leaf
 
 [Term]
 id: PO:0000008
@@ -143,9 +146,10 @@ def: "A cultured plant cell that was derived from root tissue." [POC:Curators]
 comment: May be derived from cultured plant callus or plant protoplasts induced from a segment of root. In the case of the plant protoplast, after the re-establishment plant cell walls.
 subset: CL
 synonym: "c&#233lula cultivada de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "root-derived cultured cell" EXACT []
 synonym: "培養根細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000005 ! cultured plant cell
-relationship: derives_from PO:0009005 ! root
+relationship: derives_by_manipulation_from PO:0009005 ! root
 
 [Term]
 id: PO:0000009
@@ -154,6 +158,7 @@ namespace: plant_anatomy
 def: "A plant callus grown or maintained in vitro." [POC:Curators]
 comment: Cultured plant callus may induced to form from plant protoplasts or cultured plant cells in suspension culture. After supplementation with the appropriate plant growth regulators, further differentiation may lead to the development of plant tissues, plant organs and ultimately, a whole plant.
 synonym: "callo cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cultured callus" BROAD []
 synonym: "培養カルス (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3280004
 xref: OBO_SF_PO:3286242
@@ -167,6 +172,7 @@ name: cultured plant embryo
 namespace: plant_anatomy
 def: "A plant embryo that is grown or maintained in vitro." [POC:Curators, TAIR:Katica_Ilic]
 comment: Includes isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte).
+synonym: "cultured embryo" EXACT []
 synonym: "embri&#243n cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "培養胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3289110
@@ -179,6 +185,7 @@ name: cultured somatic plant embryo
 namespace: plant_anatomy
 def: "A somatic plant embryo grown and maintained in vitro." [POC:Curators, TAIR:Katica_Ilic]
 comment: Cultured somatic plant embryos are commonly induced after the formation of callus from an explant and treatment with plant growth regulators.
+synonym: "cultured somatic embryo" BROAD []
 synonym: "embri&#243n som&#225tico cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "培養体細胞胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000010 ! cultured plant embryo
@@ -296,6 +303,7 @@ namespace: plant_anatomy
 def: "A plant anatomical substance composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acids C16 and C18 chains (cutin), embedded and overlayed with cuticular wax and forming a layer on the surface of a plant epidermis." [ISBN:0471245208]
 comment: The plant cuticle is produced in and secreted by epidermal cells (PO:0004013) of leaves (PO:0025034), stems (PO:0009047), fruits (PO:0009001), and other aerial plant structures. It has as parts an inner cuticle proper (PO:0025387) and an outer layer of epicuticular wax (PO:0025388).
 synonym: "cut&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cuticle" BROAD []
 synonym: "クチクラ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459338
 is_a: PO:0025161 ! portion of plant substance
@@ -967,6 +975,7 @@ subset: reference
 synonym: "c&#233lula esperm&#225tica o esperma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "male gamete" EXACT []
 synonym: "microgamete" EXACT []
+synonym: "sperm cell" BROAD []
 synonym: "sperm nucleus" RELATED []
 synonym: "精子細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025006 ! gamete
@@ -1572,6 +1581,7 @@ def: "A single-celled whole plant that participates in the plant zygote stage." 
 comment: A plant zygote is a whole plant that is a single cell formed by syngamy.
 subset: CL
 synonym: "cigoto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "zygote" BROAD []
 synonym: "接合子、接合体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000003 ! whole plant
 is_a: PO:0009002 ! plant cell
@@ -2103,6 +2113,7 @@ def: "A sporophyte development stage that occurs during the interval between syn
 comment: Succeeds syngamy and precedes the embyro stage.
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
+synonym: "zygote stage" BROAD []
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -2659,7 +2670,7 @@ id: PO:0004512
 name: heartwood
 namespace: plant_anatomy
 def: "A portion of secondary xylem (PO:0005848) that lacks living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
-comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a shoot axis (PO:0025029) or root (PO:0009005), interior to the sapwood. Heartwood forms at the end of a cell death stage of secondary xylem.
+comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a shoot axis (PO:0025029) or root (PO:0009005), interior to the sapwood. Heartwood forms at the end of a cell death stage of secondary xylem (PO:0025466).
 subset: TraitNet
 synonym: "duramen (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2671,7 +2682,7 @@ id: PO:0004513
 name: sapwood
 namespace: plant_anatomy
 def: "A portion of secondary xylem (PO:0005848) that has as parts living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:Curators]
-comment: Sapwood contains reserve materials and may function in the conduction of water and minerals. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood and the vascular cambium (PO:0005598) of a shoot axis (PO:0025029) or root (PO:0009005). Sapwood forms during a secondary xylem development stage.
+comment: Sapwood contains reserve materials and may function in the conduction of water and minerals. It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood and the vascular cambium (PO:0005598) of a shoot axis (PO:0025029) or root (PO:0009005). Sapwood forms during a secondary xylem development stage (PO:0025427).
 subset: TraitNet
 synonym: "albura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "液材、辺材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2988,6 +2999,7 @@ comment: Common in Citrus.
 subset: Citrus
 synonym: "adventitious embryo" BROAD []
 synonym: "embri&#243n adventicio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "nucellar embryo" EXACT []
 synonym: "不定胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293415
 is_a: PO:0025302 ! somatic plant embryo
@@ -3206,7 +3218,7 @@ comment: Found in grasses where no hypocotyl is present. The scutellar node may 
 synonym: "nodo escutelar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020141 ! stem node
-relationship: part_of PO:0019018 ! embryo axis
+relationship: part_of PO:0019018 ! plant embryo axis
 
 [Term]
 id: PO:0004709
@@ -3860,7 +3872,8 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that consists of mass of undifferentiated plant cells." [GR:Pankaj_Jaiswal, POC:Curators]
 comment: Consists primarily of parenchyma cells but may contain other cell types as the callus begins to differentiate. May be formed as a result of wounding or may develop in culture.
 synonym: "callo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "portion of callus tissue" EXACT []
+synonym: "callus" BROAD []
+synonym: "portion of plant callus tissue" EXACT []
 synonym: "カルス (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3280004
 is_a: PO:0009007 ! portion of plant tissue
@@ -6086,7 +6099,7 @@ synonym: "embryonic shoot apical meristem" EXACT []
 synonym: "meristema embri&#243nico apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚性シュート頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0008016 ! vegetative shoot apical meristem
-relationship: part_of PO:0019018 ! embryo axis
+relationship: part_of PO:0019018 ! plant embryo axis
 
 [Term]
 id: PO:0006367
@@ -8958,6 +8971,7 @@ alt_id: PO:0007020
 def: "A sporophyte vegetative stage that occurs during the interval between the first cell division and one of the following: germination in seed plants, formation of the first true leaf after the cotyledon(s) in pteridophytes, when the apical cell stops dividing and the sporangium begins to develop in bryophytes, or the beginning of the formation of organs (roots, shoot axes, or leaves) in cultured plant embryos." [POC:curators]
 comment: Succeeds the zygote stage. The embryo stage generally starts after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
 synonym: "embryo development stage" RELATED []
+synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
 is_a: PO:0007134 ! sporophyte vegetative stage
 intersection_of: PO:0028002 ! sporophyte development stage
@@ -9646,6 +9660,7 @@ subset: CL
 subset: reference
 subset: TraitNet
 synonym: "c&#233lula vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cell" BROAD []
 synonym: "植物 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: GO:0005623
 xref: OBO_SF_PO:2932524
@@ -9735,6 +9750,8 @@ subset: reference
 subset: TraitNet
 synonym: "plant tissue" RELATED []
 synonym: "porci&#243n de un tejido vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of tissue" BROAD []
+synonym: "tissue" BROAD []
 synonym: "植物組織の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2944945
 is_a: PO:0009011 ! plant structure
@@ -9752,6 +9769,7 @@ comment: Examples: stem, leaf, root. May include individual cell types that are 
 subset: TraitNet
 synonym: "&#243rgano vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "compound plant organ" RELATED []
+synonym: "organ" BROAD []
 synonym: "simple plant organ" RELATED [PATO:01503]
 synonym: "植物 器官 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2932521
@@ -9764,6 +9782,7 @@ namespace: plant_anatomy
 def: "A whole plant that participates in the embryo stage." [POC:Curators]
 comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. In seed plants, the embryo stage ends with germination. In pteridophytes, the embryo stage ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryo stage ends when the apical cell stops dividing and the sporangium begins to develop. In cultured plant embryos, the embryo stage ends when organs (roots, shoot axes, or leaves) begin to form.
 synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "embryo" BROAD []
 synonym: "germ" RELATED []
 synonym: "胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2982384
@@ -11234,11 +11253,12 @@ relationship: part_of PO:0020038 ! petiole
 
 [Term]
 id: PO:0019018
-name: embryo axis
+name: plant embryo axis
 namespace: plant_anatomy
 def: "A plant axis that is the axial part of a plant embryo." [ISBN:0471245208, POC:Ramona_Walls]
 comment: Has as parts a hypocotyl, a root meristem and a radicle, if any of these are present.
 synonym: "eje del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "embryo axis" BROAD []
 synonym: "hypocotyl-root axis" EXACT []
 synonym: "zygotic plant embryo axis" NARROW []
 synonym: "胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12228,6 +12248,7 @@ def: "A gamete produced by an archegonium or an embryo sac." [POC:Curators]
 comment: The egg (megagamete) is usually larger than the sperm (microgamete). Female gametes may be defined as the non-motile gamete, rather than the larger gamete.
 subset: CL
 subset: reference
+synonym: "egg cell" BROAD []
 synonym: "female gamete" EXACT []
 synonym: "megagamete" EXACT []
 synonym: "ooc&#233lula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -12980,6 +13001,7 @@ comment: A spore is usually single-celled in homosporous plants but may be multi
 subset: CL
 synonym: "diaspore" BROAD []
 synonym: "espora (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "spore" BROAD []
 synonym: "胞子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972117
 is_a: PO:0000003 ! whole plant
@@ -13134,6 +13156,8 @@ name: embryo plant cell
 namespace: plant_anatomy
 def: "A plant cell that is part of a plant embryo." [POC:Curators]
 synonym: "c&#233lula embri&#243nica vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "embryo cell" BROAD []
+synonym: "embryonic cell" BROAD []
 synonym: "embryonic plant cell" EXACT []
 synonym: "胚性細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3177665
@@ -14425,6 +14449,7 @@ subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "gametangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "gametangium" BROAD []
 synonym: "配偶子嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -15898,6 +15923,7 @@ name: portion of embryo plant tissue
 namespace: plant_anatomy
 def: "A portion of plant tissue that is part of a plant embryo." [POC:Curators]
 comment: This class is for tissues that only occur as part of an embryo.
+synonym: "portion of embryo tissue" BROAD []
 synonym: "portion of embryonic plant tissue" EXACT []
 synonym: "tejido embri&#243nico vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚性組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16798,7 +16824,7 @@ def: "A hypocotyl-root junction that is part of an embryo axis." [POC:Ramona_Wal
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en el embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic hypocotyl-root junction" EXACT []
 is_a: PO:0004724 ! hypocotyl-root junction
-relationship: part_of PO:0019018 ! embryo axis
+relationship: part_of PO:0019018 ! plant embryo axis
 created_by: Ramona
 creation_date: 2011-04-27T08:20:22Z
 
@@ -16822,6 +16848,7 @@ def: "A plant embryo that arises from previously differentiated somatic cells, r
 comment: Somatic plant embryos may arise where embryos normally would not arise as a product of apomixis. They may occur on the edges of leaves on some species of Kalanchoe or some ferns.
 synonym: "apomictic plant embryo" EXACT []
 synonym: "embri&#243n som&#225tico vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "somatic embryo" BROAD []
 xref: OBO_SF_PO:3293415
 is_a: PO:0009009 ! plant embryo
 created_by: cooperl
@@ -16833,7 +16860,7 @@ name: zygotic plant embryo
 namespace: plant_anatomy
 def: "A plant embryo that forms as a result of the fusion of gametes." [POC:Curators]
 synonym: "embri&#243n som&#225tico cigotico (del cigote) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "zygotic embryo" EXACT []
+synonym: "zygotic embryo" BROAD []
 is_a: PO:0009009 ! plant embryo
 created_by: cooperl
 creation_date: 2011-04-27T05:19:46Z
@@ -16843,6 +16870,7 @@ id: PO:0025304
 name: cultured zygote-derived plant embryo
 namespace: plant_anatomy
 def: "A zygotic plant embryo that is grown or maintained in vitro." [POC:Curators]
+synonym: "cultured zygote-derived embryo" BROAD []
 synonym: "cultured zygotic embryo" EXACT []
 synonym: "embri&#243n cultivado derivado del cigoto vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0000010 ! cultured plant embryo
@@ -16856,6 +16884,7 @@ name: microspore-derived cultured plant embryo
 namespace: plant_anatomy
 def: "A cultured somatic plant embryo that develops from isolated microspores." [POC:Curators]
 synonym: "embri&#243n cultivado derivado de la microspora vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "microspore-derived cultured embryo" BROAD []
 synonym: "microspore-derived haploid embryo" EXACT []
 is_a: PO:0000011 ! cultured somatic plant embryo
 created_by: cooperl
@@ -17289,6 +17318,7 @@ name: plant organ development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a plant organ." [POC:curators]
 comment: Includes development stages for leaves and roots.
+synonym: "organ development stage" BROAD []
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
@@ -17705,6 +17735,7 @@ name: plant spore stage
 namespace: plant_structure_development_stage
 def: "A gametophyte development stage that occurs during the interval between meiosis and the germination of a spore." [POC:curators]
 comment: Includes the stage when a megaspore is present before it develops into a megagametophyte or embryo sac and the stage when a microspore is present before it develops into a microgametophyte or pollen. There may be cell division in a spore before it germinates.
+synonym: "spore stage" BROAD []
 xref: OBO_SF_PO:3469811
 is_a: PO:0028003 ! gametophyte development stage
 intersection_of: PO:0028003 ! gametophyte development stage
@@ -17718,6 +17749,7 @@ name: plant spore dormant stage
 namespace: plant_structure_development_stage
 def: "A gametophyte dormant stage during which a spore participates in a dormancy process." [GO:0022611, POC:curators]
 comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated.
+synonym: "spore dormant stage" BROAD []
 xref: OBO_SF_PO:3469817
 is_a: PO:0025342 ! gametophyte dormant stage
 relationship: has_participant PO:0025017 ! plant spore
@@ -17730,6 +17762,7 @@ name: plant embryo dormant stage
 namespace: plant_structure_development_stage
 def: "A sporophyte dormant stage during which a plant embryo participates in a dormancy process." [GO:0022611, POC:curators]
 comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. In seed plants, a plant embryo dormant stage may be part of a seed dormant stage.
+synonym: "embryo dormant stage" BROAD []
 xref: OBO_SF_PO:3469817
 is_a: PO:0007132 ! sporophyte dormant stage
 relationship: has_participant PO:0009009 ! plant embryo
@@ -17847,6 +17880,7 @@ id: PO:0025387
 name: plant cuticle proper
 namespace: plant_anatomy
 def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
+synonym: "cuticle proper" BROAD []
 synonym: "cutin matrix" BROAD []
 xref: OBO_SF_PO:3459338
 is_a: PO:0025161 ! portion of plant substance
@@ -18105,7 +18139,8 @@ name: plant fiber cell
 namespace: plant_anatomy
 def: "A sclerenchyma cell (PO:0000077) that is elongated and tapering." [ISBN:0471245208]
 comment: May or may not have lignin in the secondary cell wall (GO:0009531) or a living protoplast at maturity. It may be difficult to distinguish fiber cells from tracheary elements (PO:0000290). Compare with sclerid cells (PO:0025418), which are usually not elongated.
-synonym: "fiber" EXACT []
+synonym: "fiber" BROAD []
+synonym: "fiber cell" BROAD []
 synonym: "plant fiber" EXACT []
 xref: OBO_SF_PO:3481665
 is_a: PO:0000077 ! sclerenchyma cell
@@ -18302,6 +18337,7 @@ id: PO:0025423
 name: plant tissue development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage (PO:0009012) that has as primary participant a portion of plant tissue (PO:0009007)." [POC:Ramona_Walls]
+synonym: "tissue development stage" BROAD []
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0009007 ! portion of plant tissue
 created_by: RamonaNYBG
@@ -20295,12 +20331,10 @@ creation_date: 2011-05-23T09:00:21Z
 [Typedef]
 id: adjacent_to
 name: adjacent_to
-comment: Used when a plant structure (the child) is permanently in contact with another plant structure (the parent).
-created_by: Ramona
-creation_date: 2011-05-09T11:54:22Z
+xref: RO:0002220
 
 [Typedef]
-id: derives_from
+id: derives_by_manipulation_from
 name: derives_by_manipulation_from
 namespace: plant_anatomy
 def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
@@ -20311,34 +20345,27 @@ creation_date: 2010-07-01T02:45:12Z
 [Typedef]
 id: develops_from
 name: develops_from
-namespace: plant_anatomy
+xref: RO:0002202
+is_transitive: true
 
 [Typedef]
 id: has_part
 name: has_part
+xref: BFO:0000051
 is_transitive: true
 
 [Typedef]
 id: has_participant
 name: has_participant
-comment: Used with a plant structure development stage as the child (domain) and a plant anatomical entity as the parent (range). For example, trichome development stage has_participant trichome.
-domain: PO:0009012 ! plant structure development stage
-range: PO:0025131 ! plant anatomical entity
-created_by: RamonaNYBG
-creation_date: 2011-12-12T02:01:11Z
 
 [Typedef]
 id: part_of
 name: part_of
+xref: BFO:0000050
 is_transitive: true
 
 [Typedef]
 id: participates_in
 name: participates_in
-comment: Used with a plant anatomical entity as the child (domain) and a plant structure development stage as the parent (range). For example, plant gametangium participates_in gametophytic phase.
-domain: PO:0025131 ! plant anatomical entity
-range: PO:0009012 ! plant structure development stage
 holds_over_chain: part_of participates_in
-created_by: Ramona
-creation_date: 2011-03-23T10:52:56Z
 
