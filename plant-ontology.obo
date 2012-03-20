@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 16:03:2012 09:03
-saved-by: RamonaNYBG
+date: 19:03:2012 18:19
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -21,6 +21,7 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
+remark: Filtered by Has parent with type ID contains "PO:0025034"
 treat-xrefs-as-is_a: CARO
 ontology: po
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
@@ -1585,6 +1586,7 @@ synonym: "zygote" BROAD []
 synonym: "接合子、接合体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000003 ! whole plant
 is_a: PO:0009002 ! plant cell
+relationship: participates_in PO:0001097 ! plant zygote stage
 
 [Term]
 id: PO:0000431
@@ -2109,12 +2111,12 @@ is_a: PO:0007633 ! endosperm development stage
 id: PO:0001097
 name: plant zygote stage
 namespace: plant_structure_development_stage
-def: "A sporophyte development stage that occurs during the interval between syngamy and the first cell division." [POC:curators]
+def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between syngamy and the first cell division." [POC:curators]
 comment: Succeeds syngamy and precedes the embyro stage.
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
-is_a: PO:0028002 ! sporophyte development stage
+is_a: PO:0007134 ! sporophyte vegetative stage
 
 [Term]
 id: PO:0001098
@@ -8968,8 +8970,8 @@ id: PO:0007631
 name: plant embryo stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007020
-def: "A sporophyte vegetative stage that occurs during the interval between the first cell division and one of the following: germination in seed plants, formation of the first true leaf after the cotyledon(s) in pteridophytes, when the apical cell stops dividing and the sporangium begins to develop in bryophytes, or the beginning of the formation of organs (roots, shoot axes, or leaves) in cultured plant embryos." [POC:curators]
-comment: Succeeds the zygote stage. The embryo stage generally starts after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
+def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of the plant zygote (PO:0000423) and beginning of the next stage of growth, which varies among taxa.  In seed plants, the plant embryo stage ends with the seed germination stage (PO:0007057). In pteridophytes, the plant embryo stage ends with the formation of the first vascular leaf (PO:0009025). In bryophytes, the plant embryo stage ends when the seta meristematic apical cell (PO:0030016) stops dividing and the sporangium (PO:0025094) begins to develop. In cultured plant embryos (PO:0000010), the plant embryo stage ends when a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or leaf (PO:0025034) begins to form." [POC:curators]
+comment: Succeeds the plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of an adventitious embryo, somatic embryo (PO:0025302), other embryos that arise through apogamy, or microspore-derived cultured plant embryo (PO:0025305), it is formed after the division of a single cell that is not a zygote.
 synonym: "embryo development stage" RELATED []
 synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
@@ -9779,8 +9781,8 @@ is_a: PO:0009011 ! plant structure
 id: PO:0009009
 name: plant embryo
 namespace: plant_anatomy
-def: "A whole plant that participates in the embryo stage." [POC:Curators]
-comment: An embryo is generally formed after the first division of a zygote, but in the case of adventitious embryos, somatic embryos, other embryos that arise through apogamy, and cultured haploid embryos, it is formed after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. In seed plants, the embryo stage ends with germination. In pteridophytes, the embryo stage ends with the formation of the first true leaf after the cotyledon(s). In bryophytes, the embryo stage ends when the apical cell stops dividing and the sporangium begins to develop. In cultured plant embryos, the embryo stage ends when organs (roots, shoot axes, or leaves) begin to form.
+def: "A whole plant (PO:0000003) that participates in the plant embryo stage (PO:0007631)." [POC:Curators]
+comment: A plant embryo is generally formed after the first division of a plant zygote (PO:0000423), but in the case of an adventitious embryo (nucellar plant embryo (PO:0004537)), somatic embryo (PO:0025302), other embryos that arise through apogamy, or microspore-derived cultured plant embryo (PO:0025305), it is formed after the division of a single cell that is not a zygote.  The end of the embryo stage varies among taxa. In seed plants, the  plant embryo stage (PO:0007631) ends with germination. In pteridophytes, the plant embryo stage ends with the formation of the first vascular leaf (PO:0009025). In bryophytes, the plant embryo stage ends when the embryo apical cell (PO:0025284) stops dividing and the sporangium (PO:0025094) begins to develop. In cultured plant embryos (PO:0000010), the plant embryo stage ends when a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis\n(PO:0025029), or leaf (PO:0025034) begins to form.
 synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo" BROAD []
 synonym: "germ" RELATED []
