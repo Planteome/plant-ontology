@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:03:2012 19:19
+date: 21:03:2012 14:30
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1579,7 +1579,7 @@ id: PO:0000423
 name: plant zygote
 namespace: plant_anatomy
 def: "A single-celled whole plant that participates in the plant zygote stage." [POC:Ramona_Walls]
-comment: A plant zygote is a whole plant that is a single cell formed by syngamy.
+comment: A plant zygote is a whole plant that is a single cell formed by fertilization (syngamy).
 subset: CL
 synonym: "cigoto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "zygote" BROAD []
@@ -2111,11 +2111,12 @@ is_a: PO:0007633 ! endosperm development stage
 id: PO:0001097
 name: plant zygote stage
 namespace: plant_structure_development_stage
-def: "A sporophyte development stage (PO:0007134) that occurs during the interval between fertilization and the first cell division of the plant zygote." [POC:curators]
+def: "A sporophyte development stage (PO:0007134) that occurs during the interval between fertilization and the first cell division of the plant zygote (PO:0000423)." [POC:curators]
 comment: Precedes the plant embyro stage (PO:0007631).   Refers to the GO Biological Process term: fertilization (GO:0009566).
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
+xref: OBO_SF_PO:3439450
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -8970,11 +8971,12 @@ id: PO:0007631
 name: plant embryo stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007020
-def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of the plant zygote (PO:0000423) and beginning of the next stage of growth, which varies among taxa.  In seed plants, the plant embryo stage ends with the seed germination stage (PO:0007057). In pteridophytes, the plant embryo stage ends with the formation of the first vascular leaf (PO:0009025). In bryophytes, the plant embryo stage ends when the seta meristematic apical cell (PO:0030016) stops dividing and the sporangium (PO:0025094) begins to develop. In cultured plant embryos (PO:0000010), the plant embryo stage ends when a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or leaf (PO:0025034) begins to form." [POC:curators]
-comment: Succeeds the plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of an adventitious embryo, somatic embryo (PO:0025302), other embryos that arise through apogamy, or microspore-derived cultured plant embryo (PO:0025305), it is formed after the division of a single cell that is not a zygote.
+def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of a seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators]
+comment: Succeeds a plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
 synonym: "embryo development stage" RELATED []
 synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
+xref: OBO_SF_PO:3439459
 is_a: PO:0007134 ! sporophyte vegetative stage
 intersection_of: PO:0028002 ! sporophyte development stage
 intersection_of: has_participant PO:0009009 ! plant embryo
@@ -9782,7 +9784,7 @@ id: PO:0009009
 name: plant embryo
 namespace: plant_anatomy
 def: "A whole plant (PO:0000003) that participates in the plant embryo stage (PO:0007631)." [POC:Curators]
-comment: A plant embryo is generally formed after the first division of a plant zygote (PO:0000423), but in the case of an adventitious embryo (e.g. nucellar plant embryo (PO:0004537)), somatic embryo (PO:0025302), other embryos that arise through apogamy, or microspore-derived cultured plant embryo (PO:0025305), it is formed after the division of a single cell that is not a zygote.
+comment: A plant embryo is generally formed after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
 synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo" BROAD []
 synonym: "germ" RELATED []
@@ -11755,7 +11757,7 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020033
 name: coleoptile
 namespace: plant_anatomy
-def: "A plant organ (PO:0009008) that surrounds the plumule (PO:0020032) of a plant embryo (PO:0009009) or the emerging shoot apex (PO:0000037) of a seedling." [ISBN:0471244554, ISBN:9781842464229]
+def: "A plant organ (PO:0009008) that forms a sheath and surrounds the plumule (PO:0020032) of a plant embryo (PO:0009009) or the emerging shoot apex (PO:0000037) of a seedling." [ISBN:0471244554, ISBN:9781842464229]
 comment: The coleoptile is an outgrowth or part of the scutellum (PO:0020110) (which is a modified, haustorial cotyledon (PO:0020030)).  Develops separate from the shoot apical meristem (PO:0020148).  Found in Poaceae and other monocotyledons such as Zingiberaceae. Protects the emerging shoot system (PO:0009006) as it grows through the soil.
 synonym: "cole&#243ptile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉鞘、鞘葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
