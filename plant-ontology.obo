@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 21:03:2012 17:21
-saved-by: cooperl
+date: 22:03:2012 12:00
+saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -743,11 +743,12 @@ is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0000059
-name: root initial cell
+name: root initial
 namespace: plant_anatomy
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "root initial cell" EXACT []
 synonym: "root stem cell" RELATED []
 synonym: "根始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004011 ! initial cell
@@ -759,25 +760,27 @@ relationship: part_of PO:0020149 ! quiescent center
 
 [Term]
 id: PO:0000060
-name: root cortex-endodermis initial cell
+name: root cortex-endodermis initial
 namespace: plant_anatomy
 def: "A root initial cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial del cortex/endodermis de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "root cortex-endodermis initial cell" EXACT []
 synonym: "root cortex-endodermis stem cell" EXACT []
 synonym: "根皮層内皮始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000059 ! root initial cell
+is_a: PO:0000059 ! root initial
 
 [Term]
 id: PO:0000061
-name: lateral root-cap-epidermal initial cell
+name: lateral root-cap epidermal initial
 namespace: plant_anatomy
 def: "A root initial cell that produces lateral root-cap cells and root epidermis." [POC:Curators]
 subset: CL
 synonym: "c&#233lula inicial del caliptra de la ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "lateral root-cap epidermal initial cell" EXACT []
 synonym: "lateral root-cap-epidermal stem cell" EXACT []
 synonym: "側根冠表皮始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000059 ! root initial cell
+is_a: PO:0000059 ! root initial
 
 [Term]
 id: PO:0000062
@@ -1227,8 +1230,8 @@ relationship: part_of PO:0005708 ! cortex
 id: PO:0000256
 name: root hair cell
 namespace: plant_anatomy
-def: "A root epidermal cell with a simple extension that is concerned with absorption of soil solution." [ISBN:0471245208]
-comment: This term is for an entire epidermal cell that contains a root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
+def: "A root epidermal cell (PO:0025164) that develops from a trichoblast (PO:0000262) and has as part a root hair (GO:0035618)." [ISBN:0471245208]
+comment: Compare with non-hair root epidermal cell (PO:0000263). This term is for an entire epidermal cell that contains a root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula del pelo de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1265,12 +1268,14 @@ relationship: develops_from PO:0000349 ! epidermal initial
 
 [Term]
 id: PO:0000263
-name: atrichoblast
+name: non-hair root epidermal cell
 namespace: plant_anatomy
-def: "A root epidermal cell that is formed after asymmetric division of an epidermal initial and does not give rise to a root hair." [ISBN:0387987819]
+def: "A root epidermal cell (PO:0025164) that develops from an epidermal initial (PO:0000349) and does not have as part a root hair (GO:0035618)." [ISBN:0387987819, PMID:14627722]
+comment: Compare to root hair cell (PO:0000256), which develops from a trichoblast (PO:0000262).
 subset: CL
+synonym: "atrichoblast" EXACT []
 synonym: "atricoblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "non-hair cell" RELATED []
+synonym: "non-hair cell" BROAD []
 synonym: "非毛根形成細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial
@@ -2554,6 +2559,7 @@ def: "A meristematic cell that by division gives rise to two cells, one of which
 comment: Initial cells are often part of a portion of tissue that is composed mostly of somewhat older, differentiating cells. The division of an initial cell is often uneven, with the smaller daughter cell remaining meristematic.
 subset: CL
 synonym: "c&#233lula inicial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "initial" EXACT []
 synonym: "meristemoid" EXACT []
 synonym: "stem cell" RELATED []
 synonym: "始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11726,7 +11732,7 @@ subset: TraitNet
 synonym: "cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed leaf" EXACT [FNA:2e1fc560-4493-47fe-b363-500a1189b27d]
 synonym: "子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3509898 
+xref: OBO_SF_PO:3509898
 is_a: PO:0009025 ! vascular leaf
 relationship: develops_from PO:0000015 ! cotyledon primordium
 
@@ -12572,19 +12578,20 @@ subset: CL
 synonym: "c&#233lula de la columela del caliptra de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "柱軸根冠細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025030 ! ground tissue cell
-relationship: develops_from PO:0020133 ! columella root cap initial cell
+relationship: develops_from PO:0020133 ! columella root cap initial
 
 [Term]
 id: PO:0020133
-name: columella root cap initial cell
+name: columella root cap initial
 namespace: plant_anatomy
 def: "A root initial cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial de la columela del caliptra de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "columella root cap initial cell" EXACT []
 synonym: "columella root cap stem cell" EXACT []
 synonym: "columella stem cell" EXACT []
 synonym: "柱軸根冠始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000059 ! root initial cell
+is_a: PO:0000059 ! root initial
 
 [Term]
 id: PO:0020134
@@ -18923,6 +18930,38 @@ is_a: PO:0020030 ! cotyledon
 relationship: develops_from PO:0025470 ! embryo cotyledon
 created_by: cooperl
 creation_date: 2012-03-21T04:49:15Z
+
+[Term]
+id: PO:0025472
+name: reaction wood
+namespace: plant_anatomy
+def: "A portion of secondary xylem (PO:0005848) found on either the upper or lower side of a shoot axis (PO:0025029) that is leaning or crooked, with specific anatomical characteristics that depend on whether it is compression wood (PO:0025473) or tension wood (PO:0025474)." [ISBN:3540411739, PO_REF:00012]
+comment: Functions in restoring a leaning stem (PO:0009047) or branch (PO:0025073) to its original position. May be either compression wood, found on the lower side of a gymnosperm shoot axis or tension wood, found on the upper side of an angiosperm shoot axis.
+is_a: PO:0005848 ! secondary xylem
+created_by: RamonaNYBG
+creation_date: 2012-03-22T11:13:13Z
+
+[Term]
+id: PO:0025473
+name: compression wood
+namespace: plant_anatomy
+def: "A portion of reaction wood (PO:0025472) found on the lower side of a shoot axis (PO:0025029) that is leaning or crooked that has as parts heavily lignified tracheids (PO:0000301) that are rounded in transverse section and bear spiral cell wall checks." [ISBN:3540411739, PO_REF:00012]
+comment: Functions in restoring a leaning stem (PO:0009047) or branch (PO:0025073) to its original position. Found in gymnosperms.
+subset: Gymnosperms
+is_a: PO:0025472 ! reaction wood
+created_by: RamonaNYBG
+creation_date: 2012-03-22T11:14:09Z
+
+[Term]
+id: PO:0025474
+name: tension wood
+namespace: plant_anatomy
+def: "A portion of reaction wood (PO:0025472) found on the upper side of a shoot axis (PO:0025029) that is leaning or crooked that has as parts gelatinous fiber cells (PO:0025422)." [ISBN:3540411739, PO_REF:00012]
+comment: Secondary xylem tracheary elements (PO:0025445) in tension wood are often longer than the tracheary elements in non-tension wood of the same plant. Functions in restoring a leaning stem (PO:0009047) or branch (PO:0025073) to its original position. Found in angiosperms.
+subset: Angiosperm
+is_a: PO:0025472 ! reaction wood
+created_by: RamonaNYBG
+creation_date: 2012-03-22T11:14:09Z
 
 [Term]
 id: PO:0028001
