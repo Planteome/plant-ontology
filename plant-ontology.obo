@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:03:2012 14:30
+date: 21:03:2012 17:21
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -11719,12 +11719,14 @@ relationship: develops_from PO:0020006 ! funicle
 id: PO:0020030
 name: cotyledon
 namespace: plant_anatomy
-def: "A leaf formed at the first node of a sporophyte." [APweb:Glossary, GR:Pankaj_Jaiswal]
+def: "A vascular leaf (PO:0009025) formed at the first shoot node (PO:0005004) of a plant embryo (PO:0009009) or a seedling (PO:0000003)." [GR:Pankaj_Jaiswal, ISBN:9780879015329, POC:curators]
+comment: Generally stores food in dicotyledons and absorbs food in monocotyledons.
 subset: reference
 subset: TraitNet
 synonym: "cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed leaf" EXACT [FNA:2e1fc560-4493-47fe-b363-500a1189b27d]
 synonym: "子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3509898 
 is_a: PO:0009025 ! vascular leaf
 relationship: develops_from PO:0000015 ! cotyledon primordium
 
@@ -11732,8 +11734,8 @@ relationship: develops_from PO:0000015 ! cotyledon primordium
 id: PO:0020031
 name: radicle
 namespace: plant_anatomy
-def: "An embryonic root that is the basal continuation of a hypocotyl." [ISBN:0471245208]
-comment: Found in an embryo or a seedling. May develop into the root system of an adult plant. Sometimes abortive.
+def: "A root (PO:0009005) that is the basal continuation of a hypocotyl (PO:0020100) in a plant embryo (PO:0009009) or a seedling (PO:0000003)." [ISBN:0471245208]
+comment: May develop into the root system of an adult plant. Sometimes abortive.
 subset: reference
 synonym: "rad&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11757,7 +11759,7 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020033
 name: coleoptile
 namespace: plant_anatomy
-def: "A plant organ (PO:0009008) that forms a sheath and surrounds the plumule (PO:0020032) of a plant embryo (PO:0009009) or the emerging shoot apex (PO:0000037) of a seedling." [ISBN:0471244554, ISBN:9781842464229]
+def: "A sheath-like plant organ (PO:0009008) that surrounds the plumule (PO:0020032) of a plant embryo (PO:0009009) or the emerging shoot apex (PO:0000037) of a seedling." [ISBN:0471244554, ISBN:9781842464229]
 comment: The coleoptile is an outgrowth or part of the scutellum (PO:0020110) (which is a modified, haustorial cotyledon (PO:0020030)).  Develops separate from the shoot apical meristem (PO:0020148).  Found in Poaceae and other monocotyledons such as Zingiberaceae. Protects the emerging shoot system (PO:0009006) as it grows through the soil.
 synonym: "cole&#243ptile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉鞘、鞘葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11769,7 +11771,7 @@ relationship: part_of PO:0020110 ! scutellum
 id: PO:0020034
 name: coleorhiza
 namespace: plant_anatomy
-def: "A plant organ that surrounds a radicle." [ISBN:0471244554, PMID:19386806, PO_REF:00003]
+def: "A sheath-like plant organ (PO:0009008) that surrounds the radicle (PO:0020031) of a plant embryo (PO:0009009) or the emerging root (PO:0009005) of a seedling (PO:0000003)." [ISBN:0471244554, PMID:19386806, PO_REF:00003]
 comment: Found in Poaceae and some other monocots as well as some gymnosperms. Protects the emerging radicle in a plant embryo or seedling. The parenchyma cells of both the coleorhiza and epiblast may function in storage.
 synonym: "coleorriza (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根鞘 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16648,8 +16650,8 @@ creation_date: 2011-04-20T02:20:11Z
 id: PO:0025287
 name: seedling coleoptile
 namespace: plant_anatomy
-def: "A coleoptile (PO:0020033) that develops from an embryo coleoptile (PO:0025286)." [POC:Curators]
-comment: A seedling coleoptile is an elongation of an embryo coleoptile (PO:0025286) and is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
+def: "A coleoptile (PO:0020033) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:Curators]
+comment: A seedling coleoptile  develops from an embryo coleoptile (PO:0025286).
 synonym: "cole&#243ptile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
@@ -16661,7 +16663,7 @@ creation_date: 2011-04-20T02:20:12Z
 id: PO:0025288
 name: embryo coleorhiza
 namespace: plant_anatomy
-def: "A coleorhiza that is part of a plant embryo." [POC:Curators]
+def: "A coleorhiza (PO:0020034) that is part of a plant embryo (PO:0009009)." [POC:Curators]
 synonym: "coleorriza del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic coleorhiza" EXACT []
 xref: OBO_SF_PO:3293771
@@ -16674,8 +16676,8 @@ creation_date: 2011-04-20T02:34:16Z
 id: PO:0025289
 name: seedling coleorhiza
 namespace: plant_anatomy
-def: "A coleorhiza that develops from an embryonic coleorhiza." [POC:Curators]
-comment: Part of a whole plant in the seedling phase.
+def: "A coleorhiza (PO:0020034) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:Curators]
+comment: Develops from an embryo coleorhiza (PO:0025288).
 synonym: "coleorriza de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293771
 is_a: PO:0020034 ! coleorhiza
@@ -16765,7 +16767,7 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025296
 name: embryo radicle
 namespace: plant_anatomy
-def: "A radicle that is part of a plant embryo." [POC:Curators]
+def: "A radicle (PO:0020031) that is part of a plant embryo (PO:0009009)." [POC:Curators]
 subset: Citrus
 synonym: "embryonic radicle" EXACT []
 synonym: "rad&#237cula del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -16779,8 +16781,8 @@ creation_date: 2011-04-25T10:41:14Z
 id: PO:0025297
 name: seedling radicle
 namespace: plant_anatomy
-def: "A radicle that develops from an embryonic radicle." [POC:Curators]
-comment: Part of a whole plant in the seedling phase.
+def: "A radicle (PO:0020031) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:Curators]
+comment: Develops from an embryo radicle (PO:0025296).
 synonym: "rad&#237cula de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293781
 is_a: PO:0020031 ! radicle
@@ -18901,6 +18903,26 @@ xref: OBO_SF_PO:3488347
 is_a: PO:0025427 ! secondary xylem development stage
 created_by: RamonaNYBG
 creation_date: 2012-03-14T02:14:09Z
+
+[Term]
+id: PO:0025470
+name: embryo cotyledon
+namespace: plant_anatomy
+def: "A cotyledon (PO:0020030) that is part of a plant embryo (PO:0009009)." [POC:curators]
+is_a: PO:0020030 ! cotyledon
+created_by: cooperl
+creation_date: 2012-03-21T04:49:09Z
+
+[Term]
+id: PO:0025471
+name: seedling cotyledon
+namespace: plant_anatomy
+def: "A cotyledon (PO:0020030) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+comment: Develops from an embryo cotyledon (PO:0025470).
+is_a: PO:0020030 ! cotyledon
+relationship: develops_from PO:0025470 ! embryo cotyledon
+created_by: cooperl
+creation_date: 2012-03-21T04:49:15Z
 
 [Term]
 id: PO:0028001
