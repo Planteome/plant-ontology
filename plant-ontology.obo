@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:03:2012 07:56
+date: 23:03:2012 10:21
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -6952,7 +6952,7 @@ is_a: PO:0007042 ! 5 fruit formation
 id: PO:0007033
 name: whole plant development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a whole plant." [POC:curators]
+def: "A plant structure development stage (PO:0009012) that has as primary participant a whole plant (PO:0000003)." [POC:curators]
 subset: TraitNet
 synonym: "cereal plant ontology " RELATED [GRO:0080001]
 synonym: "maize growth stage" RELATED [GRO:0007002]
@@ -6963,6 +6963,7 @@ synonym: "Solanaceae whole plant growth stages" RELATED [SGN:0000001]
 synonym: "sorghum growth stage" RELATED [GRO:0007124]
 synonym: "wheat, barley and oat growth stage" RELATED [GRO:0007156]
 is_a: PO:0009012 ! plant structure development stage
+relationship: has_participant PO:0000003 ! whole plant
 
 [Term]
 id: PO:0007034
