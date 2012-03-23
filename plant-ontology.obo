@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 22:03:2012 18:34
-saved-by: cooperl
+date: 23:03:2012 07:56
+saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -65,13 +65,17 @@ def: "A plant structure which is a whole organism." [POC:Curators]
 comment: Examples include seed PO:0009010 and embryo PO:0009009.
 subset: reference
 subset: TraitNet
+synonym: "clonal colony" RELATED []
+synonym: "colony" RELATED []
 synonym: "frutex" NARROW [FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba]
 synonym: "frutices" NARROW Plural [FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b]
 synonym: "gametophyte" NARROW []
+synonym: "genet" BROAD []
 synonym: "planta entera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "prothalli" NARROW Plural [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
 synonym: "prothallium" NARROW []
 synonym: "prothallus" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
+synonym: "ramet" BROAD []
 synonym: "seedling" NARROW []
 synonym: "sporophyte" NARROW []
 synonym: "suffrutex" NARROW [FNA:99508f62-7116-4e2b-90c0-19ff55ebd967]
@@ -907,7 +911,7 @@ id: PO:0000077
 name: sclerenchyma cell
 namespace: plant_anatomy
 def: "A ground tissue cell (PO:0025030) with a lignified secondary cell wall." [ISBN:0471245208]
-comment: May be dead at maturity. Not always easy to distinguish from tracheary elements (PO:0000290) or sclerified parenchyma cells (PO:0000074). Distinguishable from collenchyma cells (PO:0000075) because collenchyma cells are alive at maturity. Collenchyma cells provides flexibility while sclerenchyma cells provide hardness.
+comment: May be dead at maturity. The secondary cell wall of a sclerenchyma cell is often thicker than other cell types in the same plant structure, but it is not always easy to distinguish from tracheary elements (PO:0000290) or sclerified parenchyma cells (PO:0000074). Compare with collenchyma cells (PO:0000075) that are always alive at maturity, have irregularly thickened primary cell walls, and do not have lignified secondary cell walls. Collenchyma cells provides flexibility while sclerenchyma cells provide hardness. Sclerenchyma cells include plant fiber cells (PO:0025407) and sclerid cells (PO:0025418).
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula esclerenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4055,6 +4059,7 @@ synonym: "portion of sclerenchyma tissue" EXACT []
 synonym: "portion of sclerenchymatous tissue" EXACT []
 synonym: "厚膜組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025059 ! portion of ground tissue
+relationship: has_part PO:0000077 ! sclerenchyma cell
 
 [Term]
 id: PO:0005597
@@ -11779,7 +11784,6 @@ synonym: "cole&#243ptile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉鞘、鞘葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3192359
 is_a: PO:0009008 ! plant organ
-relationship: part_of PO:0020110 ! scutellum
 
 [Term]
 id: PO:0020034
@@ -16731,7 +16735,7 @@ creation_date: 2011-04-20T02:39:56Z
 id: PO:0025292
 name: embryo epicotyl
 namespace: plant_anatomy
-def: "An epicotyl that is part of a plant embryo." [POC:Curators]
+def: "An epicotyl (PO:0020035) that is part of a plant embryo (PO:0009009)." [POC:Curators]
 synonym: "embryonic epicotyl" EXACT []
 synonym: "epic&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293774
@@ -16750,7 +16754,6 @@ synonym: "epic&#243tile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_A
 xref: OBO_SF_PO:3293774
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryo epicotyl
-relationship: participates_in PO:0007131 ! seedling development stage
 created_by: Ramona
 creation_date: 2011-04-25T10:13:08Z
 
@@ -19325,6 +19328,7 @@ def: "A shoot system that consists of the shoot axes and non-vascular leaves of 
 comment: A gametophore is the leafy part of the gametophyte of mosses and leafy liverworts, excluding the protonema. Develop from buds that form on the protonema. Antheridia and archegonia arise on the gametophore.
 subset: Bryophytes
 synonym: "gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "ramet" BROAD []
 xref: OBO_SF_PO:3185093
 is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0030026 ! gametophore bud
