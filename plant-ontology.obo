@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 22:03:2012 12:00
-saved-by: RamonaNYBG
+date: 22:03:2012 18:34
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -6651,10 +6651,11 @@ is_a: PO:0007006 ! IL.00 inflorescence just visible stage
 
 [Term]
 id: PO:0007015
-name: radicle emergence
+name: radicle emergence stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007507
-def: "The stage at which the radicle or root emerges from seed." [GR:Anuradha_Pujar, ISBN:3826331524]
+def: "A root development stage (PO:0007520) during which a radicle (PO:0020031) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:3826331524, POC:curators]
+comment: The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
 synonym: "0.02-radicle emergence from seed in maize" RELATED [GRO:0007005]
 synonym: "0.2 radicle emergence from seed in maize" RELATED [MaizeGDB:67351]
 synonym: "05 radicle emergence from seed coat in soybean" RELATED [SOY:0000011]
@@ -6668,8 +6669,9 @@ synonym: "radicle emergence" RELATED []
 synonym: "radicle emergence in Arabidopsis" RELATED [TAIR:T0000395]
 synonym: "radicle emergence in Solanaceae" RELATED [SGN:0000006]
 synonym: "Zadok scale-5" RELATED [GRO:0007055]
-is_a: PO:0007510 ! root emergence
-relationship: part_of PO:0007131 ! seedling development stage
+xref: OBO_SF_PO:3409606
+is_a: PO:0007520 ! root development stage
+relationship: part_of PO:0007057 ! 0 seed germination stage
 
 [Term]
 id: PO:0007016
@@ -7092,16 +7094,17 @@ is_a: PO:0007130 ! sporophyte reproductive stage
 
 [Term]
 id: PO:0007043
-name: hypocotyl emergence
+name: hypocotyl emergence stage
 namespace: plant_structure_development_stage
-def: "Emergence of the hypocotyl above ground." [GR:Anuradha_Pujar, ISBN:0306416875]
-comment: Occurs in plants with epigeal germination.
+def: "A seedling development stage (PO:0007131) during which the hypocotyl (PO:0020100) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:0306416875, POC:curators]
+comment: This terms is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
 synonym: "0.07.01 Cotyledons and hypocotyl emerge in soybean" RELATED [SOY:0000013]
 synonym: "0.07.02 Hypocotyl emerges above soil in soybean" RELATED [SOY:0000092]
 synonym: "BBCH growth stage 08" RELATED [ISBN:3826331524]
 synonym: "hypocotyl and cotyledon emergence in Arabidopsis" RELATED [TAIR:0000396]
 synonym: "hypocotyl emergence in Solanaceae" RELATED [SGN:0000010]
-is_a: PO:0007030 ! seedling shoot emergence stage
+xref: OBO_SF_PO:3510272
+is_a: PO:0007131 ! seedling development stage
 
 [Term]
 id: PO:0007044
@@ -7119,12 +7122,15 @@ is_a: PO:0007014 ! booting stage
 
 [Term]
 id: PO:0007045
-name: coleoptile emergence
+name: coleoptile emergence stage
 namespace: plant_structure_development_stage
-def: "Emergence of coleoptile above ground." [GR:Anuradha_Pujar, ISBN:3826331524]
+def: "A sporophyte vegetative stage (PO:0007134) during which the coleoptile (PO:0020033) emerges from the seed coat (PO:0009088)." [ISBN:3826331524, POC:curators]
+comment: Occurs in Poaceae and some other monocotyledons.  May occur simultaneously with coleoptile emergence from the growth medium. This terms is used only for seed plants.  The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
 synonym: "0.3 coleoptile emergence from seed in maize" RELATED [MaizeGDB:67352]
 synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
-is_a: PO:0007030 ! seedling shoot emergence stage
+xref: OBO_SF_PO:3324056
+is_a: PO:0007134 ! sporophyte vegetative stage
+relationship: part_of PO:0007057 ! 0 seed germination stage
 
 [Term]
 id: PO:0007046
@@ -7166,11 +7172,11 @@ is_a: PO:0007041 ! inflorescence emergence stage
 
 [Term]
 id: PO:0007049
-name: cotyledon emergence
+name: cotyledon emergence stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007069
-def: "Emergence of cotyledons above ground." [GR:Anuradha_Pujar, ISBN:3826331524]
-comment: This cannot be used in plants with hypogeal germination.
+def: "A seedling development stage (PO:0007131) during which the cotyledon (PO:0020030) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:3826331524, POC:curators]
+comment: This term is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium, especially in plants with hypogeal germination.
 synonym: "01-seedling emergence in sorghum" RELATED [GRO:0007125]
 synonym: "1.00 Cotyledon visible in soybean" RELATED [SOY:0000014]
 synonym: "1.00 imperfect leaf unrolled" RELATED []
@@ -7194,7 +7200,8 @@ synonym: "Triticeae first leaf through coleoptile" RELATED [GRO:0007059]
 synonym: "VE in maize" RELATED [MaizeGDB:64057]
 synonym: "VE stage in soybean" RELATED [SOY:0000014]
 synonym: "Zadok scale-10, Feekes scale-1" RELATED [GRO:0007059]
-is_a: PO:0007030 ! seedling shoot emergence stage
+xref: OBO_SF_PO:3510272
+is_a: PO:0007131 ! seedling development stage
 
 [Term]
 id: PO:0007050
@@ -7271,11 +7278,12 @@ is_a: PO:0007016 ! 4 flowering
 
 [Term]
 id: PO:0007054
-name: epicotyl emergence
+name: epicotyl emergence stage
 namespace: plant_structure_development_stage
-def: "Emergence of the epicotyl above ground." [GR:Anuradha_Pujar, ISBN:0306416875]
-comment: Only the first true foliage leaf or pair of leaves are visible. Occurs in plants with hypogeal germination.
-is_a: PO:0007030 ! seedling shoot emergence stage
+def: "A seedling development stage (PO:0007131) during which the epicotyl (PO:0020035) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:0306416875, POC:curators]
+comment: This term is used only for seed plants.  Occurs in plants with hypogeal germination such as pea (pisum sativum). The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+xref: OBO_SF_PO:3510272
+is_a: PO:0007131 ! seedling development stage
 
 [Term]
 id: PO:0007056
@@ -8416,7 +8424,7 @@ is_a: PO:0028002 ! sporophyte development stage
 id: PO:0007131
 name: seedling development stage
 namespace: plant_structure_development_stage
-def: "A vegetative growth stage that has as a participant a whole plant during the interval between germination and development of the first adult leaves." [POC:Curators]
+def: "A sporophyte vegetative stage (PO:0007134) that succeeds the seed germination stage (PO:0007057) and terminates with the development of the first adult vascular leaf (PO:0006340)." [POC:Curators]
 comment: This terms is used only for seed plants, although non-seed plants may have a comparable phase during which they produce juvenile or transition leaves.
 synonym: "seedling growth in Solanaceae" RELATED [SGN:0000005]
 synonym: "seedling in Arabidopsis" RELATED [TAIR:0000027]
@@ -8447,7 +8455,7 @@ is_a: PO:0007112 ! 1 main shoot growth stage
 id: PO:0007134
 name: sporophyte vegetative stage
 namespace: plant_structure_development_stage
-def: "A sporophyte development stage that occurs during the interval between the first division of the zygote and the formation of a sporangium." [POC:curators]
+def: "A sporophyte development stage (PO:0028002) that occurs during the interval between the first division of a plant zygote (PO:0000423) and the formation of a sporangium (PO:0025094)." [POC:curators]
 comment: A sporophyte may begin to senesce or die from other causes before producing sporangia. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
@@ -9790,7 +9798,7 @@ id: PO:0009009
 name: plant embryo
 namespace: plant_anatomy
 def: "A whole plant (PO:0000003) that participates in the plant embryo stage (PO:0007631)." [POC:Curators]
-comment: A plant embryo is generally formed after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
+comment: A plant embryo is generally formed after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa; the beginning of a seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010).
 synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo" BROAD []
 synonym: "germ" RELATED []
@@ -11788,12 +11796,12 @@ is_a: PO:0009008 ! plant organ
 id: PO:0020035
 name: epicotyl
 namespace: plant_anatomy
-def: "The first stem internode above a hypocotyl." [ISBN:0471244554]
-comment: The epicotyl is the first internode of a stem above the cotyledons.
+def: "The first stem internode (PO:0020142) above the cotyledonary node (PO:0025321) of a plant embryo (PO:0009009) or a seedling (PO:0000003)." [ISBN:0471244554]
 synonym: "epic&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "上胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293774
 is_a: PO:0020142 ! stem internode
+relationship: participates_in PO:0007054 ! epicotyl emergence stage
 
 [Term]
 id: PO:0020036
@@ -12319,7 +12327,7 @@ is_a: PO:0009002 ! plant cell
 id: PO:0020100
 name: hypocotyl
 namespace: plant_anatomy
-def: "A stem internode that is the part of a stem below the cotyledonary node and transitional to a root." [APweb:Glossary]
+def: "A stem internode (PO:0020142) below the cotyledonary node (PO:0025321) and transitional to a root (PO:0009005) of a plant embryo (PO:0009009) or a seedling (PO:0000003)." [APweb:Glossary, POC:curators]
 synonym: "hipoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
@@ -16696,7 +16704,7 @@ creation_date: 2011-04-20T02:34:17Z
 id: PO:0025290
 name: embryo hypocotyl
 namespace: plant_anatomy
-def: "A hypocotyl that is part of a plant embryo." [POC:Curators]
+def: "A hypocotyl (PO:0020100) that is part of a plant embryo (PO:0009009)." [POC:curators]
 synonym: "embryonic hypocotyl" EXACT []
 synonym: "hipoc&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293772
@@ -16709,12 +16717,13 @@ creation_date: 2011-04-20T02:39:46Z
 id: PO:0025291
 name: seedling hypocotyl
 namespace: plant_anatomy
-def: "A hypocotyl that develops from an embryonic hypocotyl." [POC:Curators]
-comment: Part of a whole plant in the seedling phase. This term should only be used for seed plants.
+def: "A hypocotyl (PO:0020100) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:Curators]
+comment: Develops from an embryo hypocotyl (PO:0025290). This term should only be used for seed plants.
 synonym: "hipoc&#243tile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293772
 is_a: PO:0020100 ! hypocotyl
 relationship: develops_from PO:0025290 ! embryo hypocotyl
+relationship: participates_in PO:0007131 ! seedling development stage
 created_by: Ramona
 creation_date: 2011-04-20T02:39:56Z
 
@@ -16735,12 +16744,13 @@ creation_date: 2011-04-25T10:13:08Z
 id: PO:0025293
 name: seedling epicotyl
 namespace: plant_anatomy
-def: "A epicotyl that develops from an embryonic epicotyl." [POC:Curators]
-comment: Part of a whole plant in the seedling phase.
+def: "An epicotyl (PO:0020035) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+comment: Develops from an embryo epicotyl (PO:0025292).
 synonym: "epic&#243tile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293774
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryo epicotyl
+relationship: participates_in PO:0007131 ! seedling development stage
 created_by: Ramona
 creation_date: 2011-04-25T10:13:08Z
 
@@ -18964,6 +18974,18 @@ created_by: RamonaNYBG
 creation_date: 2012-03-22T11:14:09Z
 
 [Term]
+id: PO:0025475
+name: coleorhiza emergence stage
+namespace: plant_structure_development_stage
+def: "A root development stage (PO:0007520) during which a coleorhiza (PO:0020034) emerges from the seed coat (PO:0009088)." [POC:curators]
+comment: The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+xref: OBO_SF_PO:3324056
+is_a: PO:0007520 ! root development stage
+relationship: part_of PO:0007057 ! 0 seed germination stage
+created_by: cooperl
+creation_date: 2012-03-22T03:42:34Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_structure_development_stage
@@ -18977,8 +18999,8 @@ creation_date: 2010-07-15T02:54:57Z
 id: PO:0028002
 name: sporophyte development stage
 namespace: plant_structure_development_stage
-def: "A whole plant development stage that has as primary participant a whole plant during the interval between fertilization or apogamy and its death." [POC:Curators]
-comment: During the sporophytic phase, a plant may produce meiospores by meiosis. A whole plant in the sporophytic phase usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts).
+def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between fertilization (or apogamy) and death." [POC:Curators]
+comment: A whole plant (PO:0000003) in the sporophyte development stage usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts). During the sporophyte development stage, a plant may produce meiospores by meiosis.
 subset: TraitNet
 synonym: "fase esporof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporophytic development stage" EXACT []
