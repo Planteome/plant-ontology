@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 26:03:2012 10:48
-saved-by: RamonaNYBG
+date: 26:03:2012 13:49
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -21,6 +21,7 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
+remark: Filtered by Has parent with type ID contains "PO:0025034"
 treat-xrefs-as-is_a: CARO
 ontology: po
 copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
@@ -83,12 +84,6 @@ synonym: "woody clump" NARROW [FNA:c1ccca7d-2a98-4a9d-8603-c34b551935e0]
 synonym: "植物体全体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2968335
 is_a: PO:0009011 ! plant structure
-disjoint_from: PO:0000034 ! vascular system
-disjoint_from: PO:0009007 ! portion of plant tissue
-disjoint_from: PO:0009008 ! plant organ
-disjoint_from: PO:0025001 ! cardinal organ part
-disjoint_from: PO:0025007 ! collective plant structure
-disjoint_from: PO:0025269 ! collective organ part structure
 
 [Term]
 id: PO:0000004
@@ -586,7 +581,7 @@ is_a: PO:0003005 ! nodal root
 id: PO:0000045
 name: embryo root
 namespace: plant_anatomy
-def: "A root that is initiated in a developing embryo." [TAIR:Katica_Ilic]
+def: "A root (PO:0000045) that is initiated in a developing plant embryo (PO:0009009)." [TAIR:Katica_Ilic]
 subset: reference
 synonym: "embryonic root" EXACT []
 synonym: "ra&#237z embri&#243nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -597,7 +592,7 @@ is_a: PO:0009005 ! root
 id: PO:0000046
 name: seminal root
 namespace: plant_anatomy
-def: "A root formed within the scutellar node of the embryo in some monocotyledonous plants." [TAIR:Katica_Ilic]
+def: "A root (PO:0009005) formed within the scutellar node (PO:0004708) of the plant embryo (PO:0009009) in some monocotyledonous plants." [TAIR:Katica_Ilic]
 subset: reference
 synonym: "lateral seminal root" RELATED []
 synonym: "ra&#237z seminal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -7103,7 +7098,7 @@ id: PO:0007043
 name: hypocotyl emergence stage
 namespace: plant_structure_development_stage
 def: "A seedling development stage (PO:0007131) during which the hypocotyl (PO:0020100) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:0306416875, POC:curators]
-comment: This terms is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+comment: This term is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
 synonym: "0.07.01 Cotyledons and hypocotyl emerge in soybean" RELATED [SOY:0000013]
 synonym: "0.07.02 Hypocotyl emerges above soil in soybean" RELATED [SOY:0000092]
 synonym: "BBCH growth stage 08" RELATED [ISBN:3826331524]
@@ -11754,8 +11749,8 @@ relationship: develops_from PO:0000015 ! cotyledon primordium
 id: PO:0020031
 name: radicle
 namespace: plant_anatomy
-def: "A root (PO:0009005) that is the basal continuation of a hypocotyl (PO:0020100) in a plant embryo (PO:0009009) or a seedling (PO:0000003)." [ISBN:0471245208]
-comment: May develop into the root system of an adult plant. Sometimes abortive.
+def: "An embryo root (PO:0000045) that is the basal continuation of a hypocotyl (PO:0020100) in a plant embryo (PO:0009009) or a seedling (PO:0000003)." [ISBN:0471245208]
+comment: May develop into the primary root (PO:0020127) and eventually the root system (PO:0025025) of an adult plant. Sometimes abortive.
 subset: reference
 synonym: "rad&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12536,14 +12531,14 @@ id: PO:0020127
 name: primary root
 namespace: plant_anatomy
 alt_id: PO:0020089
-def: "A root that develops directly from an embryonic radicle." [ISBN:0122151704, POC:Curators]
-comment: Often the central axis of a root system.
+def: "A root (PO:0009005) that develops directly from an seedling radicle (PO:0020127)." [ISBN:0122151704, POC:curators]
+comment: The first root of a plant.  In dicots and gymnosperms  it becomes the tap root, the central axis of a root system (PO:0025025).
 subset: TraitNet
 synonym: "ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tap root" EXACT []
 synonym: "一次根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009005 ! root
-relationship: develops_from PO:0020031 ! radicle
+relationship: develops_from PO:0025297 ! seedling radicle
 
 [Term]
 id: PO:0020128
@@ -16677,6 +16672,7 @@ synonym: "cole&#243ptile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_
 xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
 relationship: develops_from PO:0025286 ! embryo coleoptile
+relationship: participates_in PO:0007131 ! seedling development stage
 created_by: Ramona
 creation_date: 2011-04-20T02:20:12Z
 
@@ -16789,7 +16785,8 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025296
 name: embryo radicle
 namespace: plant_anatomy
-def: "A radicle (PO:0020031) that is part of a plant embryo (PO:0009009)." [POC:Curators]
+def: "A radicle (PO:0020031) that is part of a plant embryo (PO:0009009)." [POC:curators]
+comment: May eventually develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
 subset: Citrus
 synonym: "embryonic radicle" EXACT []
 synonym: "rad&#237cula del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -16803,8 +16800,8 @@ creation_date: 2011-04-25T10:41:14Z
 id: PO:0025297
 name: seedling radicle
 namespace: plant_anatomy
-def: "A radicle (PO:0020031) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:Curators]
-comment: Develops from an embryo radicle (PO:0025296).
+def: "A radicle (PO:0020031) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
 synonym: "rad&#237cula de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293781
 is_a: PO:0020031 ! radicle
