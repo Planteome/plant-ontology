@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 26:03:2012 13:49
-saved-by: cooperl
+date: 27:03:2012 08:26
+saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -21,11 +21,10 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
-remark: Filtered by Has parent with type ID contains "PO:0025034"
+remark: copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
 treat-xrefs-as-is_a: CARO
 ontology: po
-copyright: Plant Ontology by Plantontology.org is licensed under a Creative Commons Attribution-NoDerivs 3.0 United States License
-treat-xrefs-as-genus-differntia CL part_of NCBITaxon: 3193 (Embryophyta)
+treat-xrefs-as-genus-differntia: CL part_of NCBITaxon: 3193
 
 [Term]
 id: PO:0000001
@@ -742,56 +741,56 @@ is_a: PO:0000055 ! bud
 
 [Term]
 id: PO:0000059
-name: root initial
+name: root initial cell
 namespace: plant_anatomy
 def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "root initial cell" EXACT []
+synonym: "root initial" EXACT []
 synonym: "root stem cell" RELATED []
 synonym: "根始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004011 ! initial cell
-disjoint_from: PO:0000295 ! cambial initial
-disjoint_from: PO:0000349 ! epidermal initial
-disjoint_from: PO:0030067 ! protonema side branch initial
-disjoint_from: PO:0030086 ! protonema sub-apical initial
+disjoint_from: PO:0000295 ! cambial initial cell
+disjoint_from: PO:0000349 ! epidermal initial cell
+disjoint_from: PO:0030067 ! protonema side branch initial cell
+disjoint_from: PO:0030086 ! protonema sub-apical initial cell
 relationship: part_of PO:0020149 ! quiescent center
 
 [Term]
 id: PO:0000060
-name: root cortex-endodermis initial
+name: root cortex-endodermis initial cell
 namespace: plant_anatomy
 def: "A root initial cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial del cortex/endodermis de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "root cortex-endodermis initial cell" EXACT []
+synonym: "root cortex-endodermis initial" EXACT []
 synonym: "root cortex-endodermis stem cell" EXACT []
 synonym: "根皮層内皮始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000059 ! root initial
+is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0000061
-name: lateral root-cap epidermal initial
+name: lateral root-cap epidermal initial cell
 namespace: plant_anatomy
 def: "A root initial cell that produces lateral root-cap cells and root epidermis." [POC:curators]
 subset: CL
 synonym: "c&#233lula inicial del caliptra de la ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "lateral root-cap epidermal initial cell" EXACT []
+synonym: "lateral root-cap epidermal initial" EXACT []
 synonym: "lateral root-cap-epidermal stem cell" EXACT []
 synonym: "側根冠表皮始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000059 ! root initial
+is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0000062
-name: stomatal initial
+name: stomatal initial cell
 namespace: plant_anatomy
 def: "An epidermal initial that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell differentiates into a guard mother cell." [POC:Ramona_Walls]
 subset: CL
 synonym: "inicial estom&#225tica (meristemoide inicial) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "stomatal initial cell" EXACT []
+synonym: "stomatal initial" EXACT []
 synonym: "stomatal meristemoid" EXACT []
 xref: OBO_SF_PO:3112108
-is_a: PO:0000349 ! epidermal initial
+is_a: PO:0000349 ! epidermal initial cell
 created_by: Ramona
 creation_date: 2011-02-02T09:01:50Z
 
@@ -927,17 +926,17 @@ is_a: PO:0025030 ! ground tissue cell
 
 [Term]
 id: PO:0000079
-name: fusiform initial
+name: fusiform initial cell
 namespace: plant_anatomy
 alt_id: PO:0000275
 def: "An elongated cambial initial cell with approximately wedge-shaped ends that is part of the vascular cambium and gives rise to axial cells." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula inicial fusiforme (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "fusiform initial cell" EXACT []
+synonym: "fusiform initial" EXACT []
 synonym: "xylem initial" RELATED []
 synonym: "xylem mother cell" RELATED []
 synonym: "紡錘形始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000295 ! cambial initial
+is_a: PO:0000295 ! cambial initial cell
 
 [Term]
 id: PO:0000081
@@ -957,14 +956,14 @@ consider: PO:0025407
 
 [Term]
 id: PO:0000082
-name: ray initial
+name: ray initial cell
 namespace: plant_anatomy
 def: "A cambial initial cell that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula inicial de rayo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "ray initial cell" EXACT []
+synonym: "ray initial" EXACT []
 synonym: "放射組織始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000295 ! cambial initial
+is_a: PO:0000295 ! cambial initial cell
 
 [Term]
 id: PO:0000084
@@ -1011,7 +1010,7 @@ synonym: "ソケット細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CL:0000297
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
-relationship: develops_from PO:0000349 ! epidermal initial
+relationship: develops_from PO:0000349 ! epidermal initial cell
 
 [Term]
 id: PO:0000146
@@ -1263,7 +1262,7 @@ synonym: "hair cell" RELATED []
 synonym: "tricoblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根毛形成細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
-relationship: develops_from PO:0000349 ! epidermal initial
+relationship: develops_from PO:0000349 ! epidermal initial cell
 
 [Term]
 id: PO:0000263
@@ -1277,7 +1276,7 @@ synonym: "atricoblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "non-hair cell" BROAD []
 synonym: "非毛根形成細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
-relationship: develops_from PO:0000349 ! epidermal initial
+relationship: develops_from PO:0000349 ! epidermal initial cell
 
 [Term]
 id: PO:0000272
@@ -1356,7 +1355,7 @@ synonym: "squamule" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、トライコーム (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009011 ! plant structure
-relationship: develops_from PO:0000349 ! epidermal initial
+relationship: develops_from PO:0000349 ! epidermal initial cell
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -1435,19 +1434,19 @@ relationship: part_of PO:0002000 ! stomatal complex
 
 [Term]
 id: PO:0000295
-name: cambial initial
+name: cambial initial cell
 namespace: plant_anatomy
 alt_id: PO:0000080
 def: "An initial cell that is part of the vascular or cork cambium and by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
 subset: CL
 synonym: "c&#233lula inicial del cambium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cambial cell" EXACT []
-synonym: "cambial initial cell" EXACT []
+synonym: "cambial initial" EXACT []
 synonym: "形成層始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004011 ! initial cell
-disjoint_from: PO:0000349 ! epidermal initial
-disjoint_from: PO:0030067 ! protonema side branch initial
-disjoint_from: PO:0030086 ! protonema sub-apical initial
+disjoint_from: PO:0000349 ! epidermal initial cell
+disjoint_from: PO:0030067 ! protonema side branch initial cell
+disjoint_from: PO:0030086 ! protonema sub-apical initial cell
 relationship: part_of PO:0005597 ! cambium
 
 [Term]
@@ -1485,20 +1484,20 @@ synonym: "表皮被蓋細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3139280
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0008030 ! trichome cell
-relationship: develops_from PO:0000349 ! epidermal initial
+relationship: develops_from PO:0000349 ! epidermal initial cell
 
 [Term]
 id: PO:0000349
-name: epidermal initial
+name: epidermal initial cell
 namespace: plant_anatomy
 def: "An initial cell that is part of an epidermis and gives rise to specialized cell types of the epidermis." [TAIR:Leonore_Reiser]
 subset: CL
 synonym: "c&#233lula inicial de la epidermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "epidermal initial cell" EXACT []
+synonym: "epidermal initial" EXACT []
 synonym: "表皮始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004011 ! initial cell
-disjoint_from: PO:0030067 ! protonema side branch initial
-disjoint_from: PO:0030086 ! protonema sub-apical initial
+disjoint_from: PO:0030067 ! protonema side branch initial cell
+disjoint_from: PO:0030086 ! protonema sub-apical initial cell
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -1510,7 +1509,7 @@ subset: CL
 synonym: "c&#233lula madre de la c&#233lula guardiana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "孔辺母細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025165 ! shoot epidermal cell
-relationship: develops_from PO:0000062 ! stomatal initial
+relationship: develops_from PO:0000062 ! stomatal initial cell
 
 [Term]
 id: PO:0000352
@@ -1575,7 +1574,7 @@ comment: Phloem islands can be formed in the middle of the xylem.
 subset: CL
 synonym: "c&#233lula madre del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "師部母細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000295 ! cambial initial
+is_a: PO:0000295 ! cambial initial cell
 relationship: part_of PO:0005043 ! secondary phloem
 
 [Term]
@@ -2864,7 +2863,7 @@ xref: OBO_SF_PO:3503456
 is_a: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: part_of PO:0004533 ! axial secondary xylem parenchyma
-relationship: develops_from PO:0000079 ! fusiform initial
+relationship: develops_from PO:0000079 ! fusiform initial cell
 relationship: part_of PO:0004533 ! axial secondary xylem parenchyma
 
 [Term]
@@ -2880,7 +2879,7 @@ xref: OBO_SF_PO:3503456
 is_a: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: part_of PO:0004534 ! ray secondary xylem parenchyma
-relationship: develops_from PO:0000082 ! ray initial
+relationship: develops_from PO:0000082 ! ray initial cell
 relationship: part_of PO:0004534 ! ray secondary xylem parenchyma
 
 [Term]
@@ -12586,20 +12585,20 @@ subset: CL
 synonym: "c&#233lula de la columela del caliptra de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "柱軸根冠細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025030 ! ground tissue cell
-relationship: develops_from PO:0020133 ! columella root cap initial
+relationship: develops_from PO:0020133 ! columella root cap initial cell
 
 [Term]
 id: PO:0020133
-name: columella root cap initial
+name: columella root cap initial cell
 namespace: plant_anatomy
 def: "A root initial cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial de la columela del caliptra de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "columella root cap initial cell" EXACT []
+synonym: "columella root cap initial" EXACT []
 synonym: "columella root cap stem cell" EXACT []
 synonym: "columella stem cell" EXACT []
 synonym: "柱軸根冠始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000059 ! root initial
+is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0020134
@@ -18398,7 +18397,7 @@ creation_date: 2012-02-04T09:25:00Z
 id: PO:0025427
 name: secondary xylem development stage
 namespace: plant_structure_development_stage
-def: "A xylem development stage (PO:0025425) that has as primary participant a portion of secondary xylem (PO:0005848) tissue during the interval between the beginning of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:curators]
+def: "A xylem development stage (PO:0025425) that has as primary participant a portion of secondary xylem (PO:0005848) tissue during the interval between the beginning of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:wood_curators]
 comment: During a secondary xylem development stage (also called a wood development stage), the cells of secondary xylem (PO:0005848), including tracheary elements (PO:0000290), xylem fiber cells (PO:0000274), and wood parenchyma cells (PO:0004525) undergo cellular developmental processes (GO:0048869) such as cell division (GO:0051301), cell growth (GO:0016049), cell differentiation (GO:0030154), or cell death (GO:0008219). The transition from sapwood to heartwood marks the end of the secondary xylem development stage.
 synonym: "sapwood development stage" EXACT []
 synonym: "wood development stage" EXACT []
@@ -18845,8 +18844,8 @@ creation_date: 2012-03-14T11:05:40Z
 id: PO:0025463
 name: cell division stage of secondary xylem
 namespace: plant_structure_development_stage
-def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the first and last cell division in a portion of secondary xylem tissue (PO:0005848), during which cells are produced by divisions of cambial initials (PO:0000295) or xylem mother cells (PO:id)." [POC:curators]
-comment: This stage includes production of xylem mother cells by cambial initials and production of tracheary elements (PO:0000290) or other cells by xylem mother cells. Precedes a cell differentiation stage of secondary xylem (PO:0025469), although cell differentiation may begin before a cell division stage of secondary xylem ends.
+def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the first and last cell division in a portion of secondary xylem tissue (PO:0005848), during which cells are produced by divisions of cambial initials (PO:0000295) or xylem mother cells." [POC:wood_curators]
+comment: This stage includes production of xylem mother cells by cambial initials and production of tracheary elements (PO:0000290) or other xylem cells by xylem mother cells. Precedes a cell differentiation stage of secondary xylem (PO:0025469), although cell differentiation may begin before a cell division stage of secondary xylem ends.
 xref: OBO_SF_PO:3488347
 is_a: PO:0025427 ! secondary xylem development stage
 created_by: RamonaNYBG
@@ -18856,8 +18855,8 @@ creation_date: 2012-03-14T02:07:50Z
 id: PO:0025464
 name: cell expansion stage of secondary xylem
 namespace: plant_structure_development_stage
-def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the onset of a secondary cell wall formation stage of secondary xylem (PO:0025465), during which the cells undergo cell growth (GO:0016049)." [POC:curators]
-comment: This stage succeeds a cell division stage of secondary xylem (PO:0025463) and precedes secondary cell wall formation stage of secondary xylem (PO:0025465).
+def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the onset of a secondary cell wall formation stage of secondary xylem (PO:0025465), during which the cells undergo cell growth (GO:0016049)." [POC:wood_curators]
+comment: This stage succeeds a cell division stage of secondary xylem (PO:0025463) and precedes secondary cell wall formation stage of secondary xylem (PO:0025465). At least part of this stage can be easily observed in woody species containing xylem vessels (PO:0025417).
 xref: OBO_SF_PO:3488347
 is_a: PO:0025469 ! cell differentiation stage of secondary xylem
 created_by: RamonaNYBG
@@ -18867,6 +18866,8 @@ creation_date: 2012-03-14T02:07:50Z
 id: PO:0025465
 name: secondary cell wall formation stage of secondary xylem
 namespace: plant_structure_development_stage
+def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the onset of secondary wall biogenesis (GO:0009834) of the cells in a portion of secondary xylem (PO:0005848) and the beginning of a cell death stage of secondary xylem (PO:0025466)." [POC:wood_curators]
+comment: During this stage, secondary cell walls (GO:0009531) are being formed in a portion of secondary xylem tissue, preventing further expansion of the cells. This stage succeeds a cell expansion stage of secondary xylem (PO:0025464) and precedes a cell death stage of secondary xylem.
 xref: OBO_SF_PO:3488347
 is_a: PO:0025469 ! cell differentiation stage of secondary xylem
 created_by: RamonaNYBG
@@ -18876,8 +18877,8 @@ creation_date: 2012-03-14T02:07:50Z
 id: PO:0025466
 name: cell death stage of secondary xylem
 namespace: plant_structure_development_stage
-def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the first cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the death of the last secondary xylem parenchyma cell (PO:0004525) or septate fiber cell (PO:0004521) in a portion of secondary xylem (PO:0005848)." [POC:curators]
-comment: During this stage, the cells of a portion of secondary xylem are undergoing cell death (GO:0008219), sometimes called apoptosis. Death of the tracheary elements and non-spetate xylem fiber cells generally precedes the death of secondary parenchyma cells and septate fiber cells. Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
+def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the first cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the death of the last secondary xylem parenchyma cell (PO:0004525) or septate fiber cell (PO:0004521) in a portion of secondary xylem (PO:0005848)." [POC:wood_curators]
+comment: During this stage, the cells of a portion of secondary xylem are undergoing cell death (GO:0008219), sometimes called apoptosis. Death of the tracheary elements and non-septate xylem fiber cells generally precedes the death of secondary parenchyma cells and septate fiber cells. Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
 synonym: "transition to heartwood stage" EXACT []
 xref: OBO_SF_PO:3488347
 is_a: PO:0025469 ! cell differentiation stage of secondary xylem
@@ -18888,7 +18889,7 @@ creation_date: 2012-03-14T02:07:50Z
 id: PO:0025467
 name: tracheary element death stage of secondary xylem
 namespace: plant_structure_development_stage
-def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the first and last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274)." [POC:curators]
+def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the first and last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274)." [POC:wood_curators]
 comment: During this stage, the tracheary elements and non-septate xylem fiber cells of a portion of secondary xylem (PO:0005848) undergo cell death (GO:0008219), but most of the secondary xylem parenchyma cells (PO:0004525) and septate xylem fiber cells (septate fiber tracheid, PO:0025419, and septate libriform fiber cell, PO:0025420) remain alive. Precedes a secondary xylem parenchyma cell death stage of secondary xylem (PO:0025468).
 xref: OBO_SF_PO:3488347
 is_a: PO:0025466 ! cell death stage of secondary xylem
@@ -18899,7 +18900,7 @@ creation_date: 2012-03-14T02:07:50Z
 id: PO:0025468
 name: secondary xylem parenchyma cell death stage of secondary xylem
 namespace: plant_structure_development_stage
-def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the last cell death in a portion of secondary xylem (PO:0005848)." [POC:curators]
+def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the last cell death in a portion of secondary xylem (PO:0005848)." [POC:wood_curators]
 comment: During this stage, the secondary xylem parenchyma cells (PO:0004525) and septate xylem fiber cells (septate fiber tracheid, PO:0025419, and septate libriform fiber cell, PO:0025420) of a portion of secondary xylem (PO:0005848) undergo cell death (GO:0008219). Succeeds a tracheary element death stage of secondary xylem (PO:0025467). Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
 xref: OBO_SF_PO:3488347
 is_a: PO:0025466 ! cell death stage of secondary xylem
@@ -18910,7 +18911,7 @@ creation_date: 2012-03-14T02:07:50Z
 id: PO:0025469
 name: cell differentiation stage of secondary xylem
 namespace: plant_structure_development_stage
-def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:curators]
+def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:wood_curators]
 comment: During a this stage, cells of secondary xylem undergo cell differentiation (GO:0030154), including cell growth (GO:0016049), cell morphogenisis (GO:0000902), or cell death (GO:0008219). Cell death is considered part of differentiation in secondary xylem, because it is an essential part of wood development. This stage succeeds the last cell division in a cell division stage of secondary xylem, even though cell differentiation may begin before all cell division finishes.
 xref: OBO_SF_PO:3488347
 is_a: PO:0025427 ! secondary xylem development stage
@@ -19236,7 +19237,7 @@ synonym: "phyllid apical cell" EXACT []
 synonym: "phyllid apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
-relationship: develops_from PO:0030087 ! non-vascular leaf initial
+relationship: develops_from PO:0030087 ! non-vascular leaf initial cell
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
 creation_date: 2011-03-25T09:44:45Z
@@ -19464,7 +19465,7 @@ synonym: "brown bud" EXACT []
 synonym: "yema del gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3185097
 is_a: PO:0000058 ! vegetative bud
-relationship: develops_from PO:0030083 ! gametophore bud initial
+relationship: develops_from PO:0030083 ! gametophore bud initial cell
 relationship: has_part PO:0030019 ! gametophore meristematic apical cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
@@ -20098,33 +20099,33 @@ creation_date: 2011-04-29T09:21:53Z
 
 [Term]
 id: PO:0030067
-name: protonema side branch initial
+name: protonema side branch initial cell
 namespace: plant_anatomy
 def: "An protonema sub-apical initial that gives rise to a branch of a protonema." [ISBN:9781405181891]
 comment: May give rise to a chloronema, caulonema, protonema rhizoid, tmema cell, or brachycyte.
 subset: Bryophytes
 subset: CL
-synonym: "protonema side branch initial cell" EXACT []
+synonym: "protonema side branch initial" EXACT []
 synonym: "protonemal side branch initial cell" EXACT []
 synonym: "rama lateral inicial del protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293297
 xref: OBO_SF_PO:3293302
-is_a: PO:0030086 ! protonema sub-apical initial
+is_a: PO:0030086 ! protonema sub-apical initial cell
 relationship: part_of PO:0030003 ! protonema
 created_by: Ramona
 creation_date: 2011-04-29T09:25:26Z
 
 [Term]
 id: PO:0030068
-name: epidermal rhizoid initial
+name: epidermal rhizoid initial cell
 namespace: plant_anatomy
 def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289]
 comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
 subset: CL
-synonym: "epidermal rhizoid initial cell" EXACT []
+synonym: "epidermal rhizoid initial" EXACT []
 synonym: "rizoide inicial epid&#233rmico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293302
-is_a: PO:0000349 ! epidermal initial
+is_a: PO:0000349 ! epidermal initial cell
 created_by: Ramona
 creation_date: 2011-04-29T09:33:11Z
 
@@ -20168,7 +20169,7 @@ comment: Found in bryophytes and pteridophytes growing from the epidermis of a g
 synonym: "rizoide epid&#233rmico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
-relationship: develops_from PO:0030068 ! epidermal rhizoid initial
+relationship: develops_from PO:0030068 ! epidermal rhizoid initial cell
 created_by: Ramona
 creation_date: 2011-04-29T01:15:05Z
 
@@ -20264,17 +20265,17 @@ creation_date: 2011-05-04T07:26:51Z
 
 [Term]
 id: PO:0030077
-name: protonemal side branch rhizoid initial
+name: protonemal side branch rhizoid initial cell
 namespace: plant_anatomy
 def: "A protonema side branch initial that gives rise to a protonemal rhizoid." [POC:curators]
 subset: Bryophytes
 subset: CL
-synonym: "protonema side branch rhizoid initial cell" EXACT []
-synonym: "protonemal side branch rhizoid initial cell" EXACT []
+synonym: "protonema side branch rhizoid initial" EXACT []
+synonym: "protonemal side branch rhizoid initial" EXACT []
 synonym: "rama lateral inicial del rizoide proton&#233mico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_PO_SF:3293297
 xref: OBO_SF_PO:3293302
-is_a: PO:0030067 ! protonema side branch initial
+is_a: PO:0030067 ! protonema side branch initial cell
 created_by: Ramona
 creation_date: 2011-05-04T02:38:25Z
 
@@ -20299,7 +20300,7 @@ subset: Bryophytes
 synonym: "rizoide proton&#233mico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
-relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial
+relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial cell
 created_by: Ramona
 creation_date: 2011-05-04T03:13:26Z
 
@@ -20347,15 +20348,15 @@ creation_date: 2011-05-17T09:06:26Z
 
 [Term]
 id: PO:0030083
-name: gametophore bud initial
+name: gametophore bud initial cell
 namespace: plant_anatomy
 def: "A protonema sub-apical initial hat gives rise to a gametophore bud." [POC:curators]
 comment: In Physcomitrella patens, a gametophore bud initial typically is more bulbous than a protonema side branch initial, and its plane of first cell division is oblique, rather than perpendicular, to the plane of growth.
 subset: Bryophytes
 subset: CL
-synonym: "gametophore bud initial cell" EXACT []
+synonym: "gametophore bud initial" EXACT []
 xref: OBO_SF_PO:3293297
-is_a: PO:0030086 ! protonema sub-apical initial
+is_a: PO:0030086 ! protonema sub-apical initial cell
 created_by: Ramona
 creation_date: 2011-05-17T09:10:08Z
 
@@ -20386,13 +20387,13 @@ creation_date: 2011-05-17T10:31:21Z
 
 [Term]
 id: PO:0030086
-name: protonema sub-apical initial
+name: protonema sub-apical initial cell
 namespace: plant_anatomy
 def: "An initial cell that is produced by longitudinal division of a sub-apical cell of a protonema." [POC:Ramona_Walls]
 comment: May give rise to a branch of the protonema (including a protonema rhizoid, tmema cell or brachycyte), a gametophore bud, or may not divide further.
 subset: Bryophytes
 subset: CL
-synonym: "protonema sub-apical initial cell" EXACT []
+synonym: "protonema sub-apical initial" EXACT []
 synonym: "protonemal sub-apical initial cell" RELATED []
 xref: OBO_SF_PO:3293297
 is_a: PO:0004011 ! initial cell
@@ -20401,13 +20402,13 @@ creation_date: 2011-05-23T08:31:30Z
 
 [Term]
 id: PO:0030087
-name: non-vascular leaf initial
+name: non-vascular leaf initial cell
 namespace: plant_anatomy
 def: "An initial cell that is part of a gametophore and gives rise to a non-vascular leaf." [PMID:19303301]
 comment: In Physcomitrella patens, non-vascular leaf initials arise from the daughter cells of a gametophore axis apical cell. Subsequent division of a non-vascular leaf initial establishes a non-vascular leaf apical cell.
 subset: Bryophytes
 subset: CL
-synonym: "non-vascular leaf initial cell" EXACT []
+synonym: "non-vascular leaf initial" EXACT []
 xref: OBO_SF_PO:3304575
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0030018 ! gametophore
