@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:03:2012 11:50
+date: 27:03:2012 14:52
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
@@ -391,8 +391,8 @@ synonym: "dissepiment" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
 synonym: "septa" EXACT Plural [FNA:28e5096f-fc90-4b10-9079-9a60068a7967]
 synonym: "septo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "隔壁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: Image_at_PlantSystematics:1597
 xref: OBO_SF_PO:3177333
+xref: PlantSystematics_image_archive:1597
 is_a: PO:0025269 ! collective organ part structure
 
 [Term]
@@ -16421,8 +16421,8 @@ def: "A septum that divides a cavity or mass of tissue in a fruit and develops f
 comment: Annotations for Arabidopsis should go under fruit replum (PO:0025267), not under fruit septum. The partition between two sections of an orange is a fruit septum.
 synonym: "fruit dissepiment" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
 synonym: "septo del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-xref: Image_at_PlantSystematics:1597
 xref: OBO_SF_PO:3177333
+xref: PlantSystematics_image_archive:1597
 is_a: PO:0000030 ! septum
 relationship: develops_from PO:0025262 ! ovary septum
 relationship: part_of PO:0009001 ! fruit
@@ -17970,9 +17970,9 @@ namespace: plant_anatomy
 def: "A collective organ part structure that has a parts one or more pappus elements (scales, awns, or bristles) at the apex of an inferior ovary just beneath or outside the corolla." [FNA:glossary, ISBN:0964022168]
 comment: Found in flowers and fruits (cypsela) of the Asteraceae. May aid in dispersal by wind or animals. Considered by some to be an evolutionarily modified upper calyx portion, the lower portion having been incorporated into the floral tube casing adnate to the ovary wall; considered by others to be an outgrowth from the ovary wall.
 synonym: "pappi" EXACT Plural []
-xref: Image_at_PlantSystematics:14891
-xref: Image_at_PlantSystematics:8662
 xref: OBO_SF_PO:3459178
+xref: PlantSystematics_image_archive:14891
+xref: PlantSystematics_image_archive:8662
 is_a: PO:0025269 ! collective organ part structure
 created_by: RamonaNYBG
 creation_date: 2012-01-19T11:10:13Z
@@ -17986,9 +17986,9 @@ comment: May be awn-, scale-, or bristle-shaped.
 synonym: "pappus awn" NARROW []
 synonym: "pappus bristle" NARROW []
 synonym: "pappus scale" NARROW [FNA:69d37efd-a967-4ca2-a7d0-6f563c2ead03]
-xref: Image_at_PlantSystematics:14891
-xref: Image_at_PlantSystematics:8662
 xref: OBO_SF_PO:3459178
+xref: PlantSystematics_image_archive:14891
+xref: PlantSystematics_image_archive:8662
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025393 ! pappus
 created_by: RamonaNYBG
@@ -18942,8 +18942,8 @@ creation_date: 2012-03-21T04:49:15Z
 id: PO:0025472
 name: reaction wood
 namespace: plant_anatomy
-def: "A portion of secondary xylem (PO:0005848) found on either the upper or lower side of a shoot axis (PO:0025029) that is leaning or crooked, with specific anatomical characteristics that depend on whether it is compression wood (PO:0025473) or tension wood (PO:0025474)." [ISBN:3540411739, PO_REF:00012]
-comment: Functions in restoring a leaning stem (PO:0009047) or branch (PO:0025073) to its original position. May be either compression wood, found on the lower side of a gymnosperm shoot axis or tension wood, found on the upper side of an angiosperm shoot axis.
+def: "A portion of secondary xylem (PO:0005848) found on either the upper or lower side of a shoot axis (PO:0025029) that is angled away from vertical, with anatomical characteristics that depend on whether it is compression wood (PO:0025473) or tension wood (PO:0025474)." [ISBN:3540411739, PO_REF:00012]
+comment: Develops as a response to gravity (either tension or compression) and may function in restoring a stem (PO:0009047) or branch (PO:0025073) that is leaning to its original position. May be either compression wood, found on the lower side of a gymnosperm shoot axis, or tension wood, found on the upper side of an angiosperm shoot axis.
 is_a: PO:0005848 ! secondary xylem
 created_by: RamonaNYBG
 creation_date: 2012-03-22T11:13:13Z
@@ -18952,8 +18952,8 @@ creation_date: 2012-03-22T11:13:13Z
 id: PO:0025473
 name: compression wood
 namespace: plant_anatomy
-def: "A portion of reaction wood (PO:0025472) found on the lower side of a shoot axis (PO:0025029) that is leaning or crooked that has as parts heavily lignified tracheids (PO:0000301) that are rounded in transverse section and bear spiral cell wall checks." [ISBN:3540411739, PO_REF:00012]
-comment: Functions in restoring a leaning stem (PO:0009047) or branch (PO:0025073) to its original position. Found in gymnosperms.
+def: "A portion of reaction wood (PO:0025472) found on the lower side of a shoot axis (PO:0025029) that is angled away from vertical and that has as parts heavily lignified tracheids (PO:0000301) that are rounded in transverse section and bear spiral cell wall checks." [ISBN:3540411739, PO_REF:00012]
+comment: Develops as a response to gravity (either tension or compression) and may function in restoring a stem (PO:0009047) or branch (PO:0025073) that is leaning to its original position. Found in gymnosperms.
 subset: Gymnosperms
 is_a: PO:0025472 ! reaction wood
 created_by: RamonaNYBG
@@ -18963,8 +18963,8 @@ creation_date: 2012-03-22T11:14:09Z
 id: PO:0025474
 name: tension wood
 namespace: plant_anatomy
-def: "A portion of reaction wood (PO:0025472) found on the upper side of a shoot axis (PO:0025029) that is leaning or crooked that has as parts gelatinous fiber cells (PO:0025422)." [ISBN:3540411739, PO_REF:00012]
-comment: Secondary xylem tracheary elements (PO:0025445) in tension wood are often longer than the tracheary elements in non-tension wood of the same plant. Functions in restoring a leaning stem (PO:0009047) or branch (PO:0025073) to its original position. Found in angiosperms.
+def: "A portion of reaction wood (PO:0025472) found on the upper side of a shoot axis (PO:0025029) that is angled away from vertical and that has as parts gelatinous fiber cells (PO:0025422)." [ISBN:3540411739, PO_REF:00012]
+comment: Secondary xylem tracheary elements (PO:0025445) in tension wood are often longer than the tracheary elements in non-tension wood of the same plant. Develops as a response to gravity (either tension or compression) and may function in restoring a stem (PO:0009047) or branch (PO:0025073) that is leaning to its original position. Found in angiosperms.
 subset: Angiosperm
 is_a: PO:0025472 ! reaction wood
 created_by: RamonaNYBG
