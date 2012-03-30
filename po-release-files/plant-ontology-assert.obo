@@ -18,12 +18,12 @@ subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: Japanese "Japanese synonym" EXACT
-synonymtypedef: Plural "Plural"
+synonymtypedef: Plural "Plural" 
 synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 treat-xrefs-as-is_a: CARO
 ontology: po
-treat-xrefs-as-genus-differntia: CL part_of NCBITaxon: 3193
+property_value: "treat-xrefs-as-genus-differntia" "CL part_of NCBITaxon: 3193"
 
 [Term]
 id: PO:0000001
@@ -1118,7 +1118,7 @@ comment: Functions as a population of stem cells that replenishes the meristem.
 synonym: "central initiation zone" RELATED []
 synonym: "zona central (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中央帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -1129,7 +1129,7 @@ def: "Organogenic region of the meristem, characterized by higher rates of cell 
 synonym: "peripheral meristem" RELATED []
 synonym: "zona perif&#233rica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "周辺帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -1140,7 +1140,7 @@ def: "The region of the shoot apical meristem that lies below the central zone a
 synonym: "file meristem" RELATED []
 synonym: "zona de costilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "髄状zone (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -1170,7 +1170,7 @@ namespace: plant_anatomy
 def: "A meristem that gives rise to an inflorescence." [GR:Pankaj_Jaiswal]
 synonym: "meristema de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -2223,7 +2223,7 @@ subset: CL
 synonym: "c&#233lula basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic basal cell" EXACT []
 synonym: "基底細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025028 ! embryo plant cell
 relationship: develops_from PO:0000423 ! plant zygote
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -3226,6 +3226,7 @@ comment: Found in grasses where no hypocotyl is present. The scutellar node may 
 synonym: "nodo escutelar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020141 ! stem node
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0019018 ! plant embryo axis
 
 [Term]
@@ -3583,6 +3584,7 @@ comment: Can occur in the hypocotyl and root.
 synonym: "cortex (corteza) del emrbion (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005708 ! cortex
+is_a: PO:0025233 ! portion of embryo plant tissue
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -3593,6 +3595,7 @@ def: "A portion of endodermis that is part of an embryo." [PMID:16543410]
 synonym: "endodermis del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚 内胚葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000252 ! endodermis
+is_a: PO:0025233 ! portion of embryo plant tissue
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -3803,6 +3806,7 @@ synonym: "portion of secondary phloem tissue" EXACT []
 synonym: "二次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476728
 is_a: PO:0005417 ! phloem
+is_a: PO:0025409 ! secondary vascular tissue
 relationship: develops_from PO:0005598 ! vascular cambium
 
 [Term]
@@ -4315,6 +4319,7 @@ synonym: "二次木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3067090
 xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
+is_a: PO:0025409 ! secondary vascular tissue
 relationship: develops_from PO:0005598 ! vascular cambium
 
 [Term]
@@ -4329,6 +4334,7 @@ synonym: "xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo
 synonym: "一次 木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
+is_a: PO:0025408 ! primary vascular tissue
 relationship: develops_from PO:0025275 ! procambium
 
 [Term]
@@ -4417,6 +4423,7 @@ def: "A phyllome anlagen (PO:0025430) that will give rise to a carpel primordium
 synonym: "esbozo de carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3473464
+is_a: PO:0006079 ! shoot meristem
 is_a: PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0000225 ! peripheral zone
 relationship: part_of PO:0000229 ! flower meristem
@@ -4506,14 +4513,14 @@ namespace: plant_anatomy
 def: "A thin band of intercalary meristematic tissue at the junction of a leaf blade (lamina) and a leaf sheath found in grasses." [GR:Pankaj_Jaiswal, ISBN:0080374913]
 synonym: "collar de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉頚領（カラー） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
 id: PO:0006013
 name: juice sac
 namespace: plant_anatomy
-def: "As found in citrus the mature juice sac is a swollen sac with a slender stalk and a sac wall lined with layers of tightly arranged cells. It develops from a single cell of the endocarp. Endocarp develops from the carpellary inner epidermis." [GR:Pankaj_Jaiswal, web:http\://www.chineseplantscience.com/earticle_read.asp?id=12171]
+def: "As found in citrus the mature juice sac is a swollen sac with a slender stalk and a sac wall lined with layers of tightly arranged cells. It develops from a single cell of the endocarp. Endocarp develops from the carpellary inner epidermis." [GR:Pankaj_Jaiswal, web:http://www.chineseplantscience.com/earticle_read.asp?id=12171]
 subset: Citrus
 synonym: "juice vesicle" RELATED []
 synonym: "ves&#237cula contenedora de jugo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4824,6 +4831,7 @@ def: "A portion of shoot epidermis that is part of the scutellum." [GR:Pankaj_Ja
 synonym: "epidermis del escutelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005679 ! epidermis
+is_a: PO:0025233 ! portion of embryo plant tissue
 relationship: part_of PO:0020110 ! scutellum
 
 [Term]
@@ -5084,6 +5092,7 @@ synonym: "portion of primary phloem tissue" EXACT []
 synonym: "一次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476728
 is_a: PO:0005417 ! phloem
+is_a: PO:0025408 ! primary vascular tissue
 relationship: develops_from PO:0025275 ! procambium
 
 [Term]
@@ -5594,6 +5603,7 @@ def: "A portion of procambium tissue that undergoes differentiation to form the 
 comment: A derivative of the root apical meristem.
 synonym: "procambium de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006085 ! root meristem
 is_a: PO:0025275 ! procambium
 relationship: part_of PO:0020147 ! root apical meristem
 
@@ -5607,9 +5617,11 @@ synonym: "meristema lateral de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_A
 synonym: "root lateral growth meristem" EXACT []
 synonym: "根側部分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
+is_a: PO:0006085 ! root meristem
 is_a: PO:0020145 ! lateral meristem
 intersection_of: PO:0020145 ! lateral meristem
 intersection_of: part_of PO:0009005 ! root
+relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0006309
@@ -5818,6 +5830,7 @@ synonym: "hypogynia" EXACT Plural [FNA:afcc169c-9f01-4a56-955f-7ca1d7f5d104]
 synonym: "hypogynium" EXACT [FNA:b19b39b0-9a57-4ab7-8cb5-3b0af680c9dc]
 synonym: "花被間柱、子房柄、雌蕊柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025029 ! shoot axis
+is_a: PO:0025395 ! floral organ
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -5888,6 +5901,7 @@ synonym: "embryonic leaf" EXACT []
 synonym: "hoja embri&#243nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "初期の葉(cotyledon?) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009025 ! vascular leaf
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -5962,6 +5976,7 @@ synonym: "meristema lateral del epiblasto (epiblastema) (Spanish)" EXACT Spanish
 synonym: "shoot lateral growth meristem" EXACT []
 synonym: "茎側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
+is_a: PO:0006079 ! shoot meristem
 is_a: PO:0020145 ! lateral meristem
 intersection_of: PO:0020145 ! lateral meristem
 intersection_of: part_of PO:0025029 ! shoot axis
@@ -6108,6 +6123,7 @@ synonym: "embryonic shoot apical meristem" EXACT []
 synonym: "meristema embri&#243nico apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚性シュート頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0008016 ! vegetative shoot apical meristem
+is_a: PO:0025233 ! portion of embryo plant tissue
 relationship: part_of PO:0019018 ! plant embryo axis
 
 [Term]
@@ -6144,6 +6160,7 @@ def: "A lower glume that is part of an ear spikelet." [GR:Pankaj_Jaiswal, POC:Ra
 synonym: "gluma inferior la espiga de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006002 ! lower glume
+is_a: PO:0006367 ! glume of ear spikelet
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -6154,6 +6171,7 @@ def: "An upper glume that is part of a tassel spikelet." [GR:Pankaj_Jaiswal, POC
 synonym: "gluma superior del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006004 ! upper glume
+is_a: PO:0006368 ! glume of tassel spikelet
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -6164,6 +6182,7 @@ def: "An upper glume that is part of an ear spikelet." [GR:Pankaj_Jaiswal, POC:R
 synonym: "gluma superior de la espiga de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006004 ! upper glume
+is_a: PO:0006367 ! glume of ear spikelet
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -6174,6 +6193,7 @@ def: "A lower glume that is part of a tassel spikelet." [GR:Pankaj_Jaiswal, POC:
 synonym: "gluma inferior del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006002 ! lower glume
+is_a: PO:0006368 ! glume of tassel spikelet
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -8995,6 +9015,7 @@ xref: OBO_SF_PO:3439459
 is_a: PO:0007134 ! sporophyte vegetative stage
 intersection_of: PO:0028002 ! sporophyte development stage
 intersection_of: has_participant PO:0009009 ! plant embryo
+relationship: has_participant PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0007632
@@ -9140,6 +9161,7 @@ def: "Vascular system of embryo." [GR:Chih-Wei_Tung]
 synonym: "sistema vascular del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000034 ! vascular system
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -9185,6 +9207,7 @@ def: "Vascular system of the hypocotyl." [GR:Chih-Wei_Tung]
 synonym: "sistema vascular del hipoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸 維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000034 ! vascular system
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0008011 ! embryo vascular system
 relationship: part_of PO:0020100 ! hypocotyl
 
@@ -9547,6 +9570,7 @@ synonym: "scutellum vascular system" RELATED []
 synonym: "sistema vascular de escutelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤　維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000034 ! vascular system
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0008011 ! embryo vascular system
 relationship: part_of PO:0020110 ! scutellum
 
@@ -9559,7 +9583,7 @@ synonym: "epitelio escutelar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gando
 synonym: "portion of scutellar epithelium" EXACT []
 synonym: "scutellum epithelium" EXACT []
 synonym: "胚盤上皮細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025233 ! portion of embryo plant tissue
 relationship: part_of PO:0020110 ! scutellum
 
 [Term]
@@ -9946,7 +9970,7 @@ namespace: plant_anatomy
 def: "The outermost layer of a shoot apical meristem that gives rise to a shoot epidermis." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -9956,7 +9980,7 @@ namespace: plant_anatomy
 def: "A cell layer directly beneath a meristem L1 layer in a shoot apical meristem which gives rise to subepidermal tissue." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L2 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L2 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -9966,7 +9990,7 @@ namespace: plant_anatomy
 def: "A multicellular layer beneath a meristem L2 layer in a shoot apical meristem which gives rise to internal tissues of leaf and stem." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L3 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -10062,6 +10086,7 @@ synonym: "Poaceae stamen" NARROW []
 synonym: "Zea stamen" NARROW []
 synonym: "雄蕊 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009028 ! microsporophyll
+is_a: PO:0025395 ! floral organ
 relationship: develops_from PO:0004705 ! stamen primordium
 relationship: part_of PO:0009061 ! androecium
 
@@ -10080,6 +10105,7 @@ synonym: "Poaceae carpel" NARROW []
 synonym: "Zea carpel" NARROW []
 synonym: "心皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009027 ! megasporophyll
+is_a: PO:0025395 ! floral organ
 relationship: develops_from PO:0004703 ! carpel primordium
 relationship: part_of PO:0009062 ! gynoecium
 
@@ -10093,6 +10119,7 @@ subset: TraitNet
 synonym: "s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006001 ! phyllome
+is_a: PO:0025395 ! floral organ
 relationship: develops_from PO:0004704 ! sepal primordium
 relationship: part_of PO:0009060 ! calyx
 
@@ -10106,6 +10133,7 @@ subset: TraitNet
 synonym: "p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006001 ! phyllome
+is_a: PO:0025395 ! floral organ
 relationship: develops_from PO:0000021 ! petal primordium
 relationship: part_of PO:0009059 ! corolla
 
@@ -10120,6 +10148,7 @@ synonym: "t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972262
 is_a: PO:0006001 ! phyllome
+is_a: PO:0025395 ! floral organ
 relationship: part_of PO:0025021 ! collective tepal structure
 
 [Term]
@@ -10135,6 +10164,7 @@ synonym: "floral bract" EXACT []
 synonym: "花 苞（葉） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972266
 is_a: PO:0009055 ! bract
+is_a: PO:0025395 ! floral organ
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -10168,6 +10198,7 @@ synonym: "squamule" EXACT [FNA:eb17e400-cfd0-4936-8b93-0238bebcede5]
 synonym: "鱗被 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132537
 is_a: PO:0006001 ! phyllome
+is_a: PO:0025395 ! floral organ
 relationship: develops_from PO:0008040 ! lodicule primordium
 relationship: part_of PO:0009082 ! spikelet floret
 
@@ -10941,6 +10972,7 @@ synonym: "staminodia" EXACT Plural [FNA:55cc4338-cb83-4f69-b915-8738717442d0]
 synonym: "staminodium" EXACT [FNA:3fd89fab-a53f-4771-b7d6-7fafadbf2c9a]
 synonym: "仮雄蕊 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009028 ! microsporophyll
+is_a: PO:0025395 ! floral organ
 relationship: part_of PO:0009061 ! androecium
 
 [Term]
@@ -11223,6 +11255,7 @@ synonym: "meristema lateral del penacho (borla) (Spanish)" EXACT Spanish [POC:Ma
 synonym: "雄穂側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
 is_a: PO:0009105 ! inflorescence branch meristem
+is_a: PO:0009106 ! tassel meristem
 relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
@@ -11259,6 +11292,7 @@ synonym: "meristema de la espiga lateral (Spanish)" EXACT Spanish [POC:Maria_Ale
 synonym: "雌穂側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBOS_SF_PO:3481640
 is_a: PO:0009105 ! inflorescence branch meristem
+is_a: PO:0009109 ! ear meristem
 relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
@@ -11283,6 +11317,7 @@ synonym: "hypocotyl-root axis" EXACT []
 synonym: "zygotic plant embryo axis" NARROW []
 synonym: "胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025004 ! plant axis
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -11413,6 +11448,7 @@ synonym: "pollen sac exothecium" EXACT []
 synonym: "Zea exothecium" NARROW []
 synonym: "葯室外壁,花粉のうの表皮、 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3297999
+is_a: PO:0025097 ! stamen epidermis
 is_a: PO:0025311 ! microsporangium exothecium
 relationship: part_of PO:0000002 ! anther wall
 
@@ -11600,6 +11636,7 @@ synonym: "珠心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2903966
 xref: OBO_SF_PO:3132605
 is_a: PO:0025201 ! megasporangium
+is_a: PO:0025395 ! floral organ
 relationship: part_of PO:0020003 ! ovule
 
 [Term]
@@ -11769,6 +11806,7 @@ synonym: "pl&#250mula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "幼芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293758
 is_a: PO:0000037 ! shoot apex
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -12434,7 +12472,7 @@ subset: CL
 synonym: "embryonic hypophysis" EXACT []
 synonym: "hip&#243fisis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原根層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025028 ! embryo plant cell
 relationship: part_of PO:0020108 ! suspensor
 
 [Term]
@@ -12779,7 +12817,7 @@ def: "A portion of meristem tissue that is part of a root apical meristem and co
 comment: If a root cap is present, the quiescent center is behind the root cap.
 synonym: "centro de division de c&#233lulas del meristema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "静止中心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0006085 ! root meristem
 relationship: part_of PO:0020147 ! root apical meristem
 
 [Term]
@@ -13172,9 +13210,9 @@ def: "OBSOLETE. A plant cell that is part of a male gametophyte." [POC:Ramona_Wa
 comment: This term was made obsolete because it is not appropriate for non-seed plants.
 synonym: "c&#233lula microgametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小配偶体細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_obsolete: true
 created_by: Ramona
 creation_date: 2010-05-07T02:36:55Z
+is_obsolete: true
 
 [Term]
 id: PO:0025028
@@ -13187,9 +13225,11 @@ synonym: "embryonic cell" BROAD []
 synonym: "embryonic plant cell" EXACT []
 synonym: "胚性細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3177665
+is_a: PO:0009002 ! plant cell
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009002 ! plant cell
 intersection_of: part_of PO:0009009 ! plant embryo
+relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-05-07T02:41:17Z
 
@@ -14153,6 +14193,7 @@ xref: OBO_SF_PO:3293758
 is_a: PO:0009011 ! plant structure
 intersection_of: PO:0009011 ! plant structure
 intersection_of: part_of PO:0009009 ! plant embryo
+relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-11-05T01:36:24Z
 
@@ -15210,6 +15251,7 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "espinilla de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉刺状突起 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3115540
+is_a: PO:0006016 ! leaf epidermis
 is_a: PO:0025169 ! prickle
 relationship: part_of PO:0025034 ! leaf
 created_by: Ramona
@@ -15313,6 +15355,7 @@ synonym: "complejo estom&#225tico de la hoja (Spanish)" EXACT Spanish [POC:Maria
 synonym: "leaf epidermal stomatal complex" EXACT []
 synonym: "leaf epidermis stomatal complex" EXACT []
 synonym: "葉気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006016 ! leaf epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0025034 ! leaf
 created_by: Ramona
@@ -15342,6 +15385,7 @@ synonym: "complejo estom&#225tico de la l&#225mina de la hoja (Spanish)" EXACT S
 synonym: "leaf lamina epidermal stomatal complex" EXACT []
 synonym: "leaf lamina epidermis stomatal complex" EXACT []
 synonym: "葉身気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000047 ! leaf lamina epidermis
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0020039 ! leaf lamina
 created_by: Ramona
@@ -15391,6 +15435,7 @@ synonym: "complejo estom&#225tico del pec&#237olo (Spanish)" EXACT Spanish [POC:
 synonym: "petiole epidermal stomatal complex" EXACT []
 synonym: "petiole epidermis stomatal complex" EXACT []
 synonym: "葉柄 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000051 ! petiole epidermis
 is_a: PO:0025183 ! leaf stomatal complex
 relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
@@ -15733,6 +15778,7 @@ synonym: "phyllome epidermal stomatal complex" EXACT []
 synonym: "phyllome epidermis stomatal complex" EXACT []
 synonym: "フィロム 気孔装置、群葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0002000 ! stomatal complex
+is_a: PO:0025157 ! phyllome epidermis
 relationship: part_of PO:0006001 ! phyllome
 created_by: Ramona
 creation_date: 2010-12-20T08:23:11Z
@@ -15746,6 +15792,7 @@ synonym: "bract epidermal stomatal complex" EXACT []
 synonym: "bract epidermis stomatal complex" EXACT []
 synonym: "complejo estom&#225tico de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "苞 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025158 ! bract epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009055 ! bract
 created_by: Ramona
@@ -15760,6 +15807,7 @@ synonym: "carpel epidermal stomatal complex" EXACT []
 synonym: "carpel epidermis stomatal complex" EXACT []
 synonym: "complejo estom&#225tico del carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025096 ! carpel epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009030 ! carpel
 created_by: Ramona
@@ -15774,6 +15822,7 @@ synonym: "complejo estom&#225tico del p&#233talo (Spanish)" EXACT Spanish [POC:M
 synonym: "petal epidermal stomatal complex" EXACT []
 synonym: "petal epidermis stomatal complex" EXACT []
 synonym: "花弁 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006041 ! petal epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009032 ! petal
 created_by: Ramona
@@ -15788,6 +15837,7 @@ synonym: "complejo estom&#225tico del s&#233palo (Spanish)" EXACT Spanish [POC:M
 synonym: "sepal epidermal stomatal complex" EXACT []
 synonym: "sepal epidermis stomatal complex" EXACT []
 synonym: "がく片 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006040 ! sepal epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009031 ! sepal
 created_by: Ramona
@@ -15802,6 +15852,7 @@ synonym: "complejo estom&#225tico del estambre (Spanish)" EXACT Spanish [POC:Mar
 synonym: "stamen epidermal stomatal complex" EXACT []
 synonym: "stamen epidermis stomatal complex" EXACT []
 synonym: "雄蕊 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025097 ! stamen epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009029 ! stamen
 created_by: Ramona
@@ -15816,6 +15867,7 @@ synonym: "complejo estom&#225tico del t&#233palo (Spanish)" EXACT Spanish [POC:M
 synonym: "tepal epidermal stomatal complex" EXACT []
 synonym: "tepal epidermis stomatal complex" EXACT []
 synonym: "花被片 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025184 ! tepal epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
 relationship: part_of PO:0009033 ! tepal
 created_by: Ramona
@@ -15954,9 +16006,11 @@ synonym: "portion of embryonic plant tissue" EXACT []
 synonym: "tejido embri&#243nico vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚性組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293751
+is_a: PO:0009007 ! portion of plant tissue
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009007 ! portion of plant tissue
 intersection_of: part_of PO:0009009 ! plant embryo
+relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2010-12-20T12:27:10Z
 
@@ -16517,6 +16571,7 @@ namespace: plant_anatomy
 def: "A portion of procambium tissue that is part of a shoot system." [POC:Ramona_Walls]
 synonym: "procambio del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3184921
+is_a: PO:0006079 ! shoot meristem
 is_a: PO:0025275 ! procambium
 relationship: part_of PO:0009006 ! shoot system
 created_by: Ramona
@@ -16635,6 +16690,7 @@ comment: The zygote divides to form an embryo apical cell and an embryo basal ce
 subset: CL
 synonym: "c&#233lula apical del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic meristematic apical cell" EXACT []
+is_a: PO:0025028 ! embryo plant cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: develops_from PO:0000423 ! plant zygote
 relationship: part_of PO:0009009 ! plant embryo
@@ -16662,6 +16718,7 @@ synonym: "cole&#243ptile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Ale
 synonym: "embryonic coleoptile" EXACT []
 xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-20T02:20:11Z
@@ -16689,6 +16746,7 @@ synonym: "coleorriza del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejand
 synonym: "embryonic coleorhiza" EXACT []
 xref: OBO_SF_PO:3293771
 is_a: PO:0020034 ! coleorhiza
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-20T02:34:16Z
@@ -16715,6 +16773,7 @@ synonym: "embryonic hypocotyl" EXACT []
 synonym: "hipoc&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293772
 is_a: PO:0020100 ! hypocotyl
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-20T02:39:46Z
@@ -16742,6 +16801,7 @@ synonym: "embryonic epicotyl" EXACT []
 synonym: "epic&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293774
 is_a: PO:0020035 ! epicotyl
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-25T10:13:08Z
@@ -16768,6 +16828,7 @@ synonym: "embryonic mesocotyl" EXACT []
 synonym: "mesoc&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293779
 is_a: PO:0020037 ! mesocotyl
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-25T10:21:58Z
@@ -16796,6 +16857,7 @@ synonym: "embryonic radicle" EXACT []
 synonym: "rad&#237cula del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293781
 is_a: PO:0020031 ! radicle
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0009009 ! plant embryo
 created_by: Ramona
 creation_date: 2011-04-25T10:41:14Z
@@ -16841,11 +16903,11 @@ synonym: "floral operculum" EXACT []
 synonym: "flower calyptra" EXACT []
 synonym: "flower operculum" EXACT []
 xref: OBO_SF_PO:3241802
+created_by: Ramona
+creation_date: 2011-04-26T08:45:55Z
 is_obsolete: true
 consider: PO:0025329
 consider: PO:0025330
-created_by: Ramona
-creation_date: 2011-04-26T08:45:55Z
 
 [Term]
 id: PO:0025300
@@ -16855,6 +16917,7 @@ def: "A hypocotyl-root junction that is part of an embryo axis." [POC:Ramona_Wal
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en el embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic hypocotyl-root junction" EXACT []
 is_a: PO:0004724 ! hypocotyl-root junction
+is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0019018 ! plant embryo axis
 created_by: Ramona
 creation_date: 2011-04-27T08:20:22Z
@@ -17800,6 +17863,7 @@ xref: OBO_SF_PO:3469811
 is_a: PO:0028003 ! gametophyte development stage
 intersection_of: PO:0028003 ! gametophyte development stage
 intersection_of: has_participant PO:0025017 ! plant spore
+relationship: has_participant PO:0025017 ! plant spore
 created_by: RamonaNYBG
 creation_date: 2012-01-05T10:32:33Z
 
@@ -17813,6 +17877,7 @@ synonym: "etapa latente esporof&#237tica de la planta (Spanish)" EXACT Spanish [
 synonym: "spore dormant stage" BROAD []
 xref: OBO_SF_PO:3469817
 is_a: PO:0025342 ! gametophyte dormant stage
+is_a: PO:0025375 ! plant spore stage
 relationship: has_participant PO:0025017 ! plant spore
 created_by: RamonaNYBG
 creation_date: 2012-01-05T10:47:37Z
@@ -17826,6 +17891,7 @@ comment: A dormancy process (GO:0022611) is a developmental process in which dor
 synonym: "embryo dormant stage" BROAD []
 xref: OBO_SF_PO:3469817
 is_a: PO:0007132 ! sporophyte dormant stage
+is_a: PO:0007631 ! plant embryo stage
 relationship: has_participant PO:0009009 ! plant embryo
 created_by: RamonaNYBG
 creation_date: 2012-01-05T10:50:10Z
@@ -18065,6 +18131,7 @@ xref: OBO_SF_PO:3464416
 is_a: PO:0009008 ! plant organ
 intersection_of: PO:0009008 ! plant organ
 intersection_of: part_of PO:0009046 ! flower
+relationship: part_of PO:0009046 ! flower
 created_by: RamonaNYBG
 creation_date: 2012-01-19T11:44:36Z
 
@@ -18111,6 +18178,7 @@ namespace: plant_anatomy
 def: "A phyllome substomatal cavity that is part of a leaf mesophyll." [POC:curators]
 synonym: "cavidad subestom&#225tica de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459336
+is_a: PO:0025380 ! leaf mesophyll intercellular space
 is_a: PO:0025398 ! phyllome substomatal cavity
 relationship: adjacent_to PO:0025235 ! leaf stomatal pore
 relationship: part_of PO:0005645 ! leaf mesophyll
@@ -18127,7 +18195,7 @@ synonym: "meristema adaxial del filoma (Spanish)" EXACT Spanish [POC:Maria_Aleja
 synonym: "phyllome adaxial rounding meristem " NARROW []
 synonym: "phyllome adaxial unifacial meristem" NARROW []
 xref: OBO_SF_PO:3459332
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
 creation_date: 2012-01-26T08:16:48Z
@@ -18157,7 +18225,7 @@ synonym: "meristema abaxial del filoma (Spanish)" EXACT Spanish [POC:Maria_Aleja
 synonym: "phyllome abaxial rounding meristem " NARROW []
 synonym: "phyllome abaxial unifacial meristem" NARROW []
 xref: OBO_SF_PO:3459332
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
 creation_date: 2012-01-28T06:17:09Z
@@ -18185,7 +18253,7 @@ comment: Phyllome marginal meristems develop on the lateral sides of a phyllome 
 synonym: "meristema marginal del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllome margin meristem" EXACT [POC:curators]
 xref: OBO_SF_PO:3459318
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0025018 ! phyllome margin
 relationship: part_of PO:0025128 ! phyllome primordium
@@ -18262,6 +18330,7 @@ xref: OBO_SF_PO:3476726
 is_a: PO:0009015 ! portion of vascular tissue
 intersection_of: PO:0009015 ! portion of vascular tissue
 intersection_of: develops_from PO:0005598 ! vascular cambium
+relationship: develops_from PO:0005598 ! vascular cambium
 created_by: RamonaNYBG
 creation_date: 2012-02-01T10:53:46Z
 
@@ -18503,7 +18572,7 @@ def: "A portion of meristem (PO:0009013) tissue in which the planes of cell divi
 comment: The activity of a phyllome plate meristem results in increase in the surface area, but not thickness of a phyllome.
 synonym: "meristema en placa del filoma  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459331
-is_a: PO:0009013 ! meristem
+is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
 creation_date: 2012-02-07T07:25:01Z
@@ -18541,6 +18610,7 @@ namespace: plant_anatomy
 def: "A phyllome anlagen (PO:0025430) that will give rise to a leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
 comment: This is the region where you have the maximum concentration of auxin in the SAM (at least in a few species that have been studied).
 synonym: "leaf meristem" BROAD []
+is_a: PO:0006079 ! shoot meristem
 is_a: PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0000225 ! peripheral zone
 relationship: part_of PO:0008016 ! vegetative shoot apical meristem
@@ -18554,6 +18624,7 @@ namespace: plant_anatomy
 def: "A phyllome anlagen (PO:0025430) that will give rise to a cotyledon primordium (PO:0000015) and is part of a plant embryo (PO:0009009)." [POC:curators]
 synonym: "precursor de cotiled&#243n  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459279
+is_a: PO:0025233 ! portion of embryo plant tissue
 is_a: PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0009009 ! plant embryo
 created_by: cooperl
@@ -18589,6 +18660,7 @@ namespace: plant_anatomy
 def: "A cork cambium (PO:0005599) that is part of a shoot axis (PO:0025029)." [POC:Ramona_Walls]
 synonym: "cambium suber&#237geno del &#225pice del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0005599 ! cork cambium
+is_a: PO:0006344 ! shoot lateral meristem
 relationship: part_of PO:0025029 ! shoot axis
 created_by: RamonaNYBG
 creation_date: 2012-02-16T04:01:53Z
@@ -18600,6 +18672,7 @@ namespace: plant_anatomy
 def: "A cork cambium (PO:0005599) that is part of a root (PO:0009005)." [POC:Ramona_Walls]
 synonym: "cambium suber&#237geno de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0005599 ! cork cambium
+is_a: PO:0006308 ! root lateral meristem
 relationship: part_of PO:0009005 ! root
 created_by: RamonaNYBG
 creation_date: 2012-02-16T04:01:54Z
@@ -18611,6 +18684,7 @@ namespace: plant_anatomy
 def: "A vascular cambium (PO:0005598) that is part of a shoot axis (PO:0025029)." [POC:Ramona_Walls]
 synonym: "cambium vascular del eje del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0005598 ! vascular cambium
+is_a: PO:0006344 ! shoot lateral meristem
 relationship: part_of PO:0025029 ! shoot axis
 created_by: RamonaNYBG
 creation_date: 2012-02-16T04:02:24Z
@@ -18622,6 +18696,7 @@ namespace: plant_anatomy
 def: "A vascular cambium (PO:0005598) that is part of a root (PO:0009005)." [POC:Ramona_Walls]
 synonym: "cambium vascular de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0005598 ! vascular cambium
+is_a: PO:0006308 ! root lateral meristem
 relationship: part_of PO:0009005 ! root
 created_by: RamonaNYBG
 creation_date: 2012-02-16T04:02:43Z
@@ -18667,6 +18742,7 @@ is_a: PO:0009005 ! root
 is_a: PO:0025439 ! cambial zone
 intersection_of: PO:0025439 ! cambial zone
 intersection_of: part_of PO:0009005 ! root
+relationship: part_of PO:0009005 ! root
 created_by: RamonaNYBG
 creation_date: 2012-03-01T10:38:26Z
 
@@ -18676,6 +18752,7 @@ name: stem secondary thickening meristem
 namespace: plant_anatomy
 def: "A secondary thickening meristem (PO:0025414) that is part of a stem (PO:0009047)." [JSTOR:4354165]
 synonym: "meristema de engrosamiento secundario del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+is_a: PO:0006344 ! shoot lateral meristem
 is_a: PO:0025414 ! secondary thickening meristem
 intersection_of: PO:0025414 ! secondary thickening meristem
 intersection_of: part_of PO:0009047 ! stem
@@ -18689,6 +18766,7 @@ name: root secondary thickening meristem
 namespace: plant_anatomy
 def: "A secondary thickening meristem (PO:0025414) that is part of a root (PO:0009005)." [JSTOR:2471543]
 synonym: "meristema de engrosamiento secundario de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+is_a: PO:0006308 ! root lateral meristem
 is_a: PO:0025414 ! secondary thickening meristem
 intersection_of: PO:0025414 ! secondary thickening meristem
 intersection_of: part_of PO:0009005 ! root
@@ -18729,6 +18807,7 @@ namespace: plant_anatomy
 def: "A tracheid PO:0000301 that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "traqueida del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0000301 ! tracheid
+is_a: PO:0025444 ! primary xylem tracheary element
 intersection_of: PO:0000301 ! tracheid
 intersection_of: part_of PO:0005849 ! primary xylem
 relationship: part_of PO:0005849 ! primary xylem
@@ -18742,6 +18821,7 @@ namespace: plant_anatomy
 def: "A tracheid PO:0000301 that is part of a portion of secondary xylem tissue (PO:0005848)." [POC:curators]
 synonym: "traqueida del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0000301 ! tracheid
+is_a: PO:0025445 ! secondary xylem tracheary element
 intersection_of: PO:0000301 ! tracheid
 intersection_of: part_of PO:0005848 ! secondary xylem
 relationship: part_of PO:0005848 ! secondary xylem
@@ -18755,6 +18835,7 @@ namespace: plant_anatomy
 def: "A xylem vessel member (PO:0002003) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "elemento vaso del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0002003 ! xylem vessel member
+is_a: PO:0025444 ! primary xylem tracheary element
 intersection_of: PO:0002003 ! xylem vessel member
 intersection_of: part_of PO:0005849 ! primary xylem
 relationship: part_of PO:0005849 ! primary xylem
@@ -18768,6 +18849,7 @@ namespace: plant_anatomy
 def: "A xylem vessel member (PO:0002003) that is part of a portion of secondary xylem tissue (PO:0005848)." [POC:curators]
 synonym: "elemento vaso del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 is_a: PO:0002003 ! xylem vessel member
+is_a: PO:0025445 ! secondary xylem tracheary element
 intersection_of: PO:0002003 ! xylem vessel member
 intersection_of: part_of PO:0005848 ! secondary xylem
 relationship: part_of PO:0005848 ! secondary xylem
@@ -18836,6 +18918,7 @@ def: "A sieve cell (PO:0025415) that is part of a portion of primary phloem (PO:
 synonym: "c&#233lula cribosa del floema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3481654
 is_a: PO:0025415 ! sieve cell
+is_a: PO:0025452 ! primary phloem sieve element
 intersection_of: PO:0025415 ! sieve cell
 intersection_of: part_of PO:0006075 ! primary phloem
 relationship: part_of PO:0006075 ! primary phloem
@@ -18852,6 +18935,7 @@ synonym: "primary phloem sieve tube member" EXACT []
 synonym: "primary phloem sieve-tube element" EXACT []
 xref: OBO_SF_PO:3481654
 is_a: PO:0000289 ! sieve tube element
+is_a: PO:0025452 ! primary phloem sieve element
 intersection_of: PO:0000289 ! sieve tube element
 intersection_of: part_of PO:0006075 ! primary phloem
 relationship: part_of PO:0006075 ! primary phloem
@@ -18866,6 +18950,7 @@ def: "A sieve cell (PO:0025415) that is part of a portion of secondary phloem (P
 synonym: "c&#233lula cribosa del floema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3481654
 is_a: PO:0025415 ! sieve cell
+is_a: PO:0025453 ! secondary phloem sieve element
 intersection_of: PO:0025415 ! sieve cell
 intersection_of: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0005043 ! secondary phloem
@@ -18882,6 +18967,7 @@ synonym: "secondary phloem sieve tube member" EXACT []
 synonym: "secondary phloem sieve-tube element" EXACT []
 xref: OBO_SF_PO:3481654
 is_a: PO:0000289 ! sieve tube element
+is_a: PO:0025453 ! secondary phloem sieve element
 intersection_of: PO:0000289 ! sieve tube element
 intersection_of: part_of PO:0005043 ! secondary phloem
 relationship: part_of PO:0005043 ! secondary phloem
@@ -18937,7 +19023,7 @@ def: "A tracheary element that is part of a portion of early wood (PO:0004515)."
 comment: Early wood tracheary elements generally have larger cell lumens than late wood tracheary elements (PO:0025462) of the same growth ring (PO:0004514).
 synonym: "earlywood tracheary element" EXACT []
 xref: OBO_SF_PO:3502764
-is_a: PO:0000290 ! tracheary element
+is_a: PO:0025445 ! secondary xylem tracheary element
 intersection_of: PO:0000290 ! tracheary element
 intersection_of: part_of PO:0004515 ! early wood
 relationship: part_of PO:0004515 ! early wood
@@ -18953,7 +19039,7 @@ comment: Late wood tracheary elements generally have smaller cell lumens than ea
 synonym: "elemento de tr&#225quea de madera temprana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "latewood tracheary element" EXACT []
 xref: OBO_SF_PO:3502764
-is_a: PO:0000290 ! tracheary element
+is_a: PO:0025445 ! secondary xylem tracheary element
 intersection_of: PO:0000290 ! tracheary element
 intersection_of: part_of PO:0004516 ! late wood
 relationship: part_of PO:0004516 ! late wood
@@ -19116,9 +19202,9 @@ namespace: plant_structure_development_stage
 def: "OBSOLETE. A plant growth and development phase that begins with either meiosis or fertilization." [POC:curators]
 comment: The life cycle of all plants is characterized by the alternation of phases (or generations). The sporophytic phase has twice the chromosome complement of the gametophytic phase.
 synonym: "fase del ciclo de vida de la plant (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-is_obsolete: true
 created_by: Ramona
 creation_date: 2010-07-15T02:54:57Z
+is_obsolete: true
 
 [Term]
 id: PO:0028002
@@ -19346,6 +19432,7 @@ synonym: "vascular leaf apical cell" EXACT []
 synonym: "vascular leaf apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
+is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: Ramona
 creation_date: 2011-03-25T09:44:45Z
@@ -19365,6 +19452,7 @@ synonym: "phyllid apical cell" EXACT []
 synonym: "phyllid apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
+is_a: PO:0030019 ! gametophore meristematic apical cell
 relationship: develops_from PO:0030087 ! non-vascular leaf initial cell
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: Ramona
@@ -19387,6 +19475,7 @@ xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
 intersection_of: participates_in PO:0028003 ! gametophyte development stage
+relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T10:00:48Z
 
@@ -19407,6 +19496,7 @@ xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
 intersection_of: participates_in PO:0028002 ! sporophyte development stage
+relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T10:00:48Z
 
@@ -19423,6 +19513,7 @@ synonym: "seta apical cell" EXACT []
 synonym: "seta apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
+is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0030032 ! seta
 created_by: Ramona
 creation_date: 2011-04-26T07:56:36Z
@@ -19471,8 +19562,10 @@ synonym: "gametophore apical cell" EXACT []
 synonym: "gametophore apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
+is_a: PO:0030014 ! gametophyte meristematic apical cell
 intersection_of: PO:0030009 ! shoot meristematic apical cell
 intersection_of: part_of PO:0030018 ! gametophore
+relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T10:45:12Z
 
@@ -19491,6 +19584,7 @@ xref: OBO_SF_PO:3185162
 is_a: PO:0025029 ! shoot axis
 intersection_of: PO:0025029 ! shoot axis
 intersection_of: part_of PO:0030018 ! gametophore
+relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T10:57:31Z
 
@@ -19507,6 +19601,7 @@ synonym: "non-vascular branch" EXACT []
 synonym: "rama del gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3185162
 is_a: PO:0025073 ! branch
+is_a: PO:0030020 ! gametophore axis
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T11:13:48Z
@@ -19524,6 +19619,7 @@ synonym: "non-vascular stem" EXACT []
 synonym: "tallo del gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3185162
 is_a: PO:0009047 ! stem
+is_a: PO:0030020 ! gametophore axis
 relationship: part_of PO:0030018 ! gametophore
 created_by: Ramona
 creation_date: 2011-03-25T11:17:24Z
@@ -19543,6 +19639,7 @@ synonym: "gametophore axis apical initial" EXACT []
 synonym: "non-vascular shoot axis apical cell" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
+is_a: PO:0030019 ! gametophore meristematic apical cell
 relationship: part_of PO:0030020 ! gametophore axis
 created_by: Ramona
 creation_date: 2011-03-25T11:41:09Z
@@ -19561,6 +19658,7 @@ synonym: "vascular shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical initial" EXACT []
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
+is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2011-03-25T11:46:56Z
@@ -20589,5 +20687,5 @@ is_transitive: true
 [Typedef]
 id: participates_in
 name: participates_in
-holds_over_chain: part_of participates_in
+holds_over_chain: part_of participates_in ! participates_in
 
