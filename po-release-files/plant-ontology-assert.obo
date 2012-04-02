@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 30:03:2012 08:49
-saved-by: cooperl
+date: 02:04:2012 08:04
+saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta7
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -23,7 +23,7 @@ synonymtypedef: Spanish "Spanish synonym" EXACT
 default-namespace: plant_ontology
 treat-xrefs-as-is_a: CARO
 ontology: po
-property_value: "treat-xrefs-as-genus-differntia" "CL part_of NCBITaxon: 3193"
+treat-xrefs-as-genus-differntia: CL part_of NCBITaxon: 3193
 
 [Term]
 id: PO:0000001
@@ -2116,7 +2116,7 @@ id: PO:0001097
 name: plant zygote stage
 namespace: plant_structure_development_stage
 def: "A sporophyte development stage (PO:0007134) that occurs during the interval between fertilization and the first cell division of the plant zygote (PO:0000423)." [POC:curators]
-comment: Precedes the plant embyro stage (PO:0007631).   Refers to the GO Biological Process term: fertilization (GO:0009566).
+comment: Precedes the plant embyro stage (PO:0007631). Refers to the GO biological process term fertilization (GO:0009566).
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
@@ -4673,7 +4673,7 @@ name: lemma awn
 namespace: plant_anatomy
 def: "An awn that is part of a lemma." [POC:Ramona_Walls]
 subset: reference
-synonym: "arista (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "arista de la lemma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "芒 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025349 ! awn
@@ -9830,7 +9830,6 @@ synonym: "germ" RELATED []
 synonym: "胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2982384
 is_a: PO:0000003 ! whole plant
-relationship: participates_in PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0009010
@@ -9877,7 +9876,7 @@ def: "A stage in the life of a plant structure during which the plant structure 
 comment: Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.
 subset: TraitNet
 synonym: "Arabidopsis growth" RELATED [TAIR:0000205]
-synonym: "etapa de desarrollo de estructura vegetal  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "etapa de desarrollo de estructura vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "plant growth and development stage" EXACT []
 
 [Term]
@@ -17396,7 +17395,7 @@ name: life of whole plant
 namespace: plant_structure_development_stage
 def: "A maximal whole plant development stage." [POC:curators]
 comment: There are only two types of life of whole plant. Every life of a whole plant is either a maximal gametophyte stage or a maximal sporophyte stage.
-synonym: "vida de la planta entera  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "vida de la planta entera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3131997
 is_a: PO:0007033 ! whole plant development stage
 created_by: RamonaNYBG
@@ -17952,7 +17951,7 @@ id: PO:0025382
 name: substomatal cavity
 namespace: plant_anatomy
 def: "An intercellular space that is located directly below and contiguous with a stomatal pore." [POC:curators]
-synonym: "cavidad subestom&#225tica  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cavidad subestom&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459336
 is_a: PO:0025379 ! intercellular space
 relationship: adjacent_to PO:0008032 ! stomatal pore
@@ -17964,7 +17963,7 @@ id: PO:0025383
 name: phyllome sinus
 namespace: plant_anatomy
 def: "A plant anatomical space that is a phyllome marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate phyllomes." [ISBN:978080144, POC:curators]
-synonym: "seno del filoma  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "seno del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459283
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0025018 ! phyllome margin
@@ -18560,7 +18559,7 @@ synonym: "sapwood development stage" EXACT []
 synonym: "wood development stage" EXACT []
 xref: OBO_SF_PO:3488347
 is_a: PO:0025425 ! xylem development stage
-relationship: has_participant PO:0004513 ! sapwood
+relationship: has_participant PO:0005848 ! secondary xylem
 created_by: RamonaNYBG
 creation_date: 2012-02-04T09:25:25Z
 
@@ -18570,7 +18569,7 @@ name: phyllome plate meristem
 namespace: plant_anatomy
 def: "A portion of meristem (PO:0009013) tissue in which the planes of cell division in each layer are anticlinal to the surface of the phyllome (PO:0006001)." [POC:curators]
 comment: The activity of a phyllome plate meristem results in increase in the surface area, but not thickness of a phyllome.
-synonym: "meristema en placa del filoma  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "meristema en placa del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459331
 is_a: PO:0006079 ! shoot meristem
 relationship: part_of PO:0006001 ! phyllome
@@ -18622,7 +18621,7 @@ id: PO:0025432
 name: cotyledon anlagen
 namespace: plant_anatomy
 def: "A phyllome anlagen (PO:0025430) that will give rise to a cotyledon primordium (PO:0000015) and is part of a plant embryo (PO:0009009)." [POC:curators]
-synonym: "precursor de cotiled&#243n  (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "precursor de cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459279
 is_a: PO:0025233 ! portion of embryo plant tissue
 is_a: PO:0025430 ! phyllome anlagen
