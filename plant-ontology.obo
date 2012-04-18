@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 02:04:2012 08:04
+date: 18:04:2012 15:33
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1.1-beta7
+auto-generated-by: OBO-Edit 2.1.1-beta8
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -734,7 +734,7 @@ is_a: PO:0025084 ! reproductive bud
 id: PO:0000058
 name: vegetative bud
 namespace: plant_anatomy
-def: "A bud that develops into a shoot system that has as organ parts only vegetative organs." [POC:curators]
+def: "A bud (PO:0000055) that develops into a shoot system that has as organ parts only vegetative organs." [POC:curators]
 synonym: "yema vegetativa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3020771
@@ -3265,7 +3265,7 @@ is_a: PO:0025072 ! axillary reproductive bud
 id: PO:0004712
 name: axillary vegetative bud
 namespace: plant_anatomy
-def: "An axillary bud that develops into a long or short shoot." [POC:curators]
+def: "An axillary bud (PO:0004712) that develops into a shoot system (PO:0009006) that has as organ parts only vegetative organs." [POC:curators]
 synonym: "yema vegetativa axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋枝芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3020771
@@ -3308,7 +3308,7 @@ is_a: PO:0025071 ! terminal reproductive bud
 id: PO:0004716
 name: terminal vegetative bud
 namespace: plant_anatomy
-def: "A terminal bud that develops into a long or short shoot." [POC:curators]
+def: "A terminal bud (PO:0004713) that develops into a shoot system (PO:0009006) that has as organ parts only vegetative organs." [POC:curators]
 synonym: "yema vegetativa terminal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "栄養成長型頂芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000058 ! vegetative bud
@@ -9889,6 +9889,7 @@ comment: Functions in conduction and support. In shoot axes (PO:0025029), vascul
 subset: TraitNet
 synonym: "porci&#243n de tejido vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vascular system" RELATED []
+synonym: "vascular tissue" EXACT []
 synonym: "維管束細胞の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: BTO:0001432
 xref: OBO_SF_PO:3476725
@@ -12656,14 +12657,16 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0020138
 name: leaf lamina vein
 namespace: plant_anatomy
-def: "A vascular bundle (PO:0005020) that is part of a leaf lamina vascular system (PO:0000048)." [POC:curators]
+def: "A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048)." [POC:curators]
 subset: TraitNet
 synonym: "leaf lamina vascular bundle" EXACT []
 synonym: "vena de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459287
 xref: OBO_SF_PO:3476730
-is_a: PO:0005020 ! vascular bundle
+is_a: PO:0025348 ! phyllome lamina vein
+intersection_of: PO:0025348 ! phyllome lamina vein
+intersection_of: part_of PO:0000048 ! leaf lamina vascular system
 relationship: part_of PO:0000048 ! leaf lamina vascular system
 
 [Term]
@@ -17455,6 +17458,18 @@ created_by: RamonaNYBG
 creation_date: 2011-10-19T12:20:16Z
 
 [Term]
+id: PO:0025348
+name: phyllome lamina vein
+namespace: plant_anatomy
+def: "A vascular bundle (PO:0005020) that is part of a phyllome lamina (PO:0025396)." [POC:Ramona_Walls]
+is_a: PO:0005020 ! vascular bundle
+intersection_of: PO:0005020 ! vascular bundle
+intersection_of: part_of PO:0025396 ! phyllome lamina
+relationship: part_of PO:0025396 ! phyllome lamina
+created_by: RamonaNYBG
+creation_date: 2012-04-18T01:41:29Z
+
+[Term]
 id: PO:0025349
 name: awn
 namespace: plant_anatomy
@@ -17508,13 +17523,13 @@ creation_date: 2011-11-16T02:07:59Z
 
 [Term]
 id: PO:0025353
-name: bud areole
+name: areole bud
 namespace: plant_anatomy
-def: "An axillary bud that does not elongate, in which the leaves develop as spine leaves." [ISBN:9780881928501]
-comment: Found in Cactaceae. Appears as a cluster of spines. May be covered in trichomes. In species with tubercles, the areole is often found at the distal end of the tubercle. The areole originates in the axil of the leaf that becomes the tubercle but is displaced to the tip of a tubercle through adnation (fusion of two organs of different types).
+def: "An axillary vegetative bud (PO:0004712) that is not elongated, in which the vascular leaves (PO:0009025) develop as spine leaves (PO:0025173)." [ISBN:9780881928501]
+comment: Found in Cactaceae. Appears as a cluster of spine leaves. May be covered in trichomes (PO:0000282). In species with tubercles (PO:0025352), the areole bud is often found at the distal end of the tubercle. The areole bud originates in a leaf axil (PO:0009023) of a leaf that becomes a tubercle but is displaced to the tip of a tubercle through elongation of the tubercle.
 synonym: "areola de la yema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3438986
-is_a: PO:0004709 ! axillary bud
+is_a: PO:0004712 ! axillary vegetative bud
 created_by: RamonaNYBG
 creation_date: 2011-11-16T03:00:18Z
 
@@ -17996,14 +18011,14 @@ creation_date: 2012-01-19T10:07:57Z
 
 [Term]
 id: PO:0025391
-name: lamina areole
+name: phyllome lamina areole
 namespace: plant_anatomy
-def: "A cardinal organ part that is the smallest part of a lamina that is completely surrounded by veins." [ISBN:9780801475184]
-comment: Any order of vein can form the sides of an areole. Taken together, the areoles form a contiguous field of polygons over the area of a lamina.
+def: "A cardinal organ part (PO:0025001) that is part of a phyllome lamina (PO:0025396) and is completely surrounded by phyllome lamina veins (PO:0025348) and cannot be divided into any smaller parts that are completely surrounded by phyllome lamina veins." [ISBN:9780801475184]
+comment: Any order of phyllome lamina vein can form the sides of a phyllome lamina areole. Taken together, the phyllome lamina areoles form a contiguous field of polygons over the area of a phyllome lamina.
 synonym: "areola de la l&#225mina (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3438986
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0025060 ! lamina
+relationship: part_of PO:0025396 ! phyllome lamina
 created_by: RamonaNYBG
 creation_date: 2012-01-19T10:40:35Z
 
@@ -18011,11 +18026,13 @@ creation_date: 2012-01-19T10:40:35Z
 id: PO:0025392
 name: leaf lamina areole
 namespace: plant_anatomy
-def: "A lamina areole that is the smallest part of a leaf lamina that is completely surrounded by leaf veins." [ISBN:9780801475184]
-comment: Any order of leaf vein can form the sides of an areole. Taken together, the areoles form a contiguous field of polygons over the area of a leaf lamina. Free ending veinlets (PO:0025390) may be found within a leaf lamina areole.
+def: "A phyllome lamina areole (PO:0025391) that is part of a leaf lamina (PO:0020039) and is completely surrounded by leaf lamina veins (PO:0020138) and cannot be divided into any smaller parts that are completely surrounded by leaf lamina veins." [ISBN:9780801475184]
+comment: Any order of leaf lamina vein can form the sides of a leaf lamina areole. Taken together, the leaf lamina areoles form a contiguous field of polygons over the area of a leaf lamina. Free ending veinlets (PO:0025390) may be found within a leaf lamina areole.
 synonym: "areola de la l&#225mina foliar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO-SF_PO:3438986
-is_a: PO:0025391 ! lamina areole
+is_a: PO:0025391 ! phyllome lamina areole
+intersection_of: PO:0025391 ! phyllome lamina areole
+intersection_of: part_of PO:0020039 ! leaf lamina
 relationship: part_of PO:0020039 ! leaf lamina
 created_by: RamonaNYBG
 creation_date: 2012-01-19T10:45:01Z
@@ -18650,7 +18667,6 @@ xref: OBO_SF_PO:3488337
 is_a: PO:0025439 ! cambial zone
 intersection_of: PO:0025439 ! cambial zone
 intersection_of: part_of PO:0025029 ! shoot axis
-relationship: part_of PO:0025029 ! shoot axis
 created_by: RamonaNYBG
 creation_date: 2012-03-01T10:38:26Z
 
@@ -18662,7 +18678,6 @@ def: "A cambial zone that is part of a root (PO:0009005)." [POC:curators]
 comment: Includes a cambium (PO:0005597) and adjacent cells. This term is used when the borders of the cambium are not clear.
 synonym: "zona cambial de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3488337
-is_a: PO:0009005 ! root
 is_a: PO:0025439 ! cambial zone
 intersection_of: PO:0025439 ! cambial zone
 intersection_of: part_of PO:0009005 ! root
