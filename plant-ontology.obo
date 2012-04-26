@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:04:2012 15:33
+date: 26:04:2012 16:37
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1.1-beta8
+auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -265,7 +265,7 @@ namespace: plant_anatomy
 def: "A primordium that will develop into an ovule." [POC:curators]
 synonym: "primordio de &#243vulo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚珠原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025127 ! primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0000019
@@ -274,7 +274,7 @@ namespace: plant_anatomy
 def: "A primordium that will develop into a gynoecium." [POC:curators]
 synonym: "primordio de gineceo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌蕊原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025127 ! primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0000020
@@ -293,6 +293,7 @@ def: "A phyllome primordium that will develop into a petal." [POC:curators]
 synonym: "primordio de p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0000022
@@ -1151,7 +1152,7 @@ alt_id: PO:0006329
 alt_id: PO:0006373
 alt_id: PO:0006374
 alt_id: PO:0025091
-def: "A portion of reproductive shoot apical meristem tissue (PO:0008028) that gives rise to the floral organs." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A portion of reproductive shoot apical meristem tissue (PO:0008028) that gives rise to the floral organs (PO:0025395)." [GR:Pankaj_Jaiswal, POC:curators]
 comment: In Zea mays and other grasses, the floret meristem is part of a spikelet and develops into a specific type of floret. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the spikelet type that the meristem is part of. Choose the most specific term possible from: spikelet (PO:0009051), ear spikelet (PO:0006320), ear pedicellate spikelet (PO:0006348), ear sessile spikelet (PO:0006349), tassel spikelet (PO:0006309), tassel pedicellate spikelet (PO:0006312), tassel sessile spikelet (PO:0006311).
 synonym: "ear floret meristem" NARROW []
 synonym: "floral apical meristem" RELATED []
@@ -3064,8 +3065,8 @@ is_a: PO:0025029 ! shoot axis
 id: PO:0004543
 name: tuber
 namespace: plant_anatomy
-def: "An enlarged storage branch." [POC:curators]
-comment: Found in potatoes and other species.
+def: "A radially enlarged branch that functions in storage." [POC:curators]
+comment: This term should be used for tuber derived from branches, as found in potatoes, yams, and other species, not for tubers derived from roots. Use the term tuber root (PO:0025476) for tubers derived from roots, as in Cassava.
 subset: Potato
 subset: reference
 subset: TraitNet
@@ -3115,6 +3116,7 @@ id: PO:0004547
 name: subterranean tuber
 namespace: plant_anatomy
 def: "A tuber that is below ground." [POC:curators]
+comment: This term should be used for tubers derived from branches, as found in potatoes, yams, and other species, not for tubers derived from roots. Use the term tuber root (PO:0025476) for tubers derived from roots, as in Cassava.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下 塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3176,6 +3178,7 @@ def: "A phyllome primordium that develops into a carpel. It initiates from the c
 synonym: "primordio de carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
+is_a: PO:0025477 ! floral structure primordium
 relationship: develops_from PO:0006005 ! carpel anlagen
 
 [Term]
@@ -3186,6 +3189,7 @@ def: "A phyllome primordium that will devlop into a sepal." [POC:curators]
 synonym: "primordio de s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0004705
@@ -3195,15 +3199,20 @@ def: "A phyllome primordium that will develop into a stamen." [POC:curators]
 synonym: "primordio de estambre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄蕊 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0004706
 name: flower primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into a flower." [POC:curators]
+def: "OBSOLETE. A primordium that will develop into a flower." [POC:curators]
+comment: This term was made obsolete because it is ambiguous. Use flower meristem (PO:0000229) or floral structure primordium (PO:0025477) instead. If annotating to a primordium of a floral structure, it is better to use the more specific term, such as petal primordium (PO:0000021) or anther primordium (PO:0006089).
 synonym: "primordio de flor (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025127 ! primordium
+xref: OBO_SF_PO:3519234
+is_obsolete: true
+consider: PO:0000229
+consider: PO:0025477
 
 [Term]
 id: PO:0004707
@@ -5231,7 +5240,7 @@ namespace: plant_anatomy
 def: "A primordium that will develop into anther." [POC:curators]
 synonym: "primordio de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025127 ! primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0006090
@@ -9462,7 +9471,8 @@ namespace: plant_anatomy
 def: "A primordium that will develop into a lodicule." [POC:curators]
 synonym: "primordio del lod&#237culo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "鱗被 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025127 ! primordium
+is_a: PO:0025128 ! phyllome primordium
+is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0008041
@@ -10362,7 +10372,7 @@ synonym: "花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147067
 is_a: PO:0025082 ! reproductive shoot system
-relationship: develops_from PO:0004706 ! flower primordium
+relationship: develops_from PO:0000229 ! flower meristem
 
 [Term]
 id: PO:0009047
@@ -14518,13 +14528,14 @@ creation_date: 2010-11-15T08:58:31Z
 id: PO:0025127
 name: primordium
 namespace: plant_anatomy
-def: "A portion of plant tissue that differentiates and develops from meristem tissue into a new plant structure." [POC:curators]
-comment: The primordium is the first distinct form in the development of a plant structure.
+def: "A portion of meristem tissue (PO:0009013) that has as parts protoderm (PO:0006210) and sub-epidermal meristematic tissue and is committed to the development of a particular plant structure (PO:0009011)." [POC:curators]
+comment: A primordium appears as a protrusion and is the first distinct form of a plant organ (PO:0009008), cardinal organ part (PO:0025001), or\ncollective plant structure (PO:0025007). The transition from a primordium to the plant structure it develops into is marked by the development of non-meristematic cells, although meristematic cells may be present after the transition.
 synonym: "portion of primordial tissue" EXACT []
 synonym: "portion of primordium tissue" EXACT []
 synonym: "primordio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009007 ! portion of plant tissue
+xref: OBO_SF_PO:3081059
+is_a: PO:0009013 ! meristem
 created_by: Ramona
 creation_date: 2010-11-15T09:10:22Z
 
@@ -19122,6 +19133,37 @@ is_a: PO:0007520 ! root development stage
 relationship: part_of PO:0007057 ! 0 seed germination stage
 created_by: cooperl
 creation_date: 2012-03-22T03:42:34Z
+
+[Term]
+id: PO:0025476
+name: tuber root
+namespace: plant_anatomy
+def: "A radially enlarged root (PO:0009005)." [RW:test]
+comment: Functions in storage. This term should be used for tubers derived from roots, as found in Cassava, not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuber root may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch, but these arise from adventitious buds or are derived from the stem (PO:0009047) to which the tuber root is attached. A tuber root usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
+xref: OBO_SF_PO:2813017
+is_a: PO:0009005 ! root
+created_by: RamonaNYBG
+creation_date: 2012-04-26T02:09:03Z
+
+[Term]
+id: PO:0025477
+name: floral structure primordium
+namespace: plant_anatomy
+def: "A primordium (PO:0025127) that is committed to the development of a plant structure that is part of a flower (PO:0009046), such as a floral organ (PO:0025395), gynoecium (PO:0009062), or anther (PO:0009066)." [POC:curators]
+comment: If annotating to a primordium of a floral structure, it is better to use the more specific term, such as petal primordium (PO:0000021) or anther primordium (PO:0006089).
+subset: Angiosperm
+xref: OBO_SF_PO:3519234
+is_a: PO:0025127 ! primordium
+created_by: RamonaNYBG
+creation_date: 2012-04-26T03:57:09Z
+
+[Term]
+id: PO:0025478
+name: androecium primordium
+namespace: plant_anatomy
+is_a: PO:0025477 ! floral structure primordium
+created_by: RamonaNYBG
+creation_date: 2012-04-26T04:11:35Z
 
 [Term]
 id: PO:0028001
