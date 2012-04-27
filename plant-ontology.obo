@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:04:2012 16:37
+date: 27:04:2012 11:01
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -230,50 +230,63 @@ is_a: PO:0009025 ! vascular leaf
 id: PO:0000015
 name: cotyledon primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) that will develop into a cotyledon (PO:0020030)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a cotyledon anlagen (PO:0025432) and is committed to the development of a cotyledon (PO:0020030)." [POC:curators]
+synonym: "portion of cotyledon primordium tissue" EXACT []
 synonym: "primordio de cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 relationship: develops_from PO:0025432 ! cotyledon anlagen
+relationship: part_of PO:0025223 ! vegetative shoot apex
 
 [Term]
 id: PO:0000016
 name: lateral root primordium
 namespace: plant_anatomy
-def: "A root primordium that is derived from a root pericycle and will develop into a lateral root." [POC:curators]
+def: "A root primordium (PO:0005029) that is committed to the development of a lateral root (PO:0020121)." [POC:curators]
+comment: A lateral root primordium generally develop from pericycle cells (PO:0025261), but cells of an endodermis (PO:0000252) may also participate in the formation of a lateral root primordium in some species, and in ferns lateral root primordia develop from the endodermis. Transition from lateral root primordium to lateral root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147), which can occur before the lateral root penetrates the exterior of the parent root.
+synonym: "portion of lateral root primordium tissue" EXACT []
 synonym: "primordio de ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3522014
 is_a: PO:0005029 ! root primordium
-relationship: develops_from PO:0006203 ! pericycle
 
 [Term]
 id: PO:0000017
-name: leaf primordium
+name: vascular leaf primordium
 namespace: plant_anatomy
-def: "A phyllome primordium that will develop into a leaf." [POC:curators]
-comment: Emerges as an outgrowth in the shoot apex (flanking the meristem).
+def: "A phyllome primordium (PO:0025128) that develops from a leaf anlagen (PO:0025430) and is committed to the development of a vascular leaf (PO:0009025)." [POC:curators]
+synonym: "leaf primordium" EXACT []
+synonym: "portion of vascular leaf primordium tissue" EXACT []
 synonym: "primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 relationship: develops_from PO:0025431 ! leaf anlagen
-relationship: part_of PO:0000037 ! shoot apex
+relationship: part_of PO:0025223 ! vegetative shoot apex
 
 [Term]
 id: PO:0000018
 name: ovule primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into an ovule." [POC:curators]
+def: "A floral structure primordium (PO:0025477) that is committed to the development of an ovule (PO:0020003)." [ISBN:0471245208, POC:curators]
+comment: The transition from ovule primordium to ovule occurs when an integument (PO:0020021) begins to develop from the protoderm (PO:0006210).
+synonym: "portion of ovule primordium tissue" EXACT []
 synonym: "primordio de &#243vulo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚珠原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
 is_a: PO:0025477 ! floral structure primordium
 
 [Term]
 id: PO:0000019
 name: gynoecium primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into a gynoecium." [POC:curators]
+def: "A floral structure primordium (PO:0025477) that is committed to the development of a gynoecium (PO:0009062)." [POC:curators]
+comment: Use carpel primordium (PO:0004703) for the primordium (PO:0025127) of an individual carpel (PO:0009030).
+synonym: "portion of gynoecium primordium tissue" EXACT []
 synonym: "primordio de gineceo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌蕊原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
 is_a: PO:0025477 ! floral structure primordium
 
 [Term]
@@ -289,11 +302,15 @@ is_obsolete: true
 id: PO:0000021
 name: petal primordium
 namespace: plant_anatomy
-def: "A phyllome primordium that will develop into a petal." [POC:curators]
+def: "A phyllome primordium (PO:0025128) is committed to the development of a petal (PO:0009032)." [POC:curators]
+synonym: "portion of petal primordium tissue" EXACT []
 synonym: "primordio de p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
+relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0000022
@@ -553,6 +570,7 @@ synonym: "epiblasto (epiblastema) que se origina en la ra&#237z (Spanish)" EXACT
 synonym: "stilt root" NARROW []
 synonym: "シュート細胞由来の根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009005 ! root
+relationship: develops_from PO:0025480 ! shoot-borne root primordium
 
 [Term]
 id: PO:0000043
@@ -3072,6 +3090,7 @@ subset: reference
 subset: TraitNet
 synonym: "diaspore" BROAD []
 synonym: "tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "tuber branch" EXACT []
 synonym: "塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3017726
 is_a: PO:0025073 ! branch
@@ -3174,32 +3193,44 @@ is_a: PO:0006343 ! axillary shoot system
 id: PO:0004703
 name: carpel primordium
 namespace: plant_anatomy
-def: "A phyllome primordium that develops into a carpel. It initiates from the carpel anlagen region of the floral meristem." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a carpel anlagen (PO:0006005) and is committed to the development of a carpel (PO:0009030)." [POC:curators]
+synonym: "portion of carpel primordium tissue" EXACT []
 synonym: "primordio de carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
 relationship: develops_from PO:0006005 ! carpel anlagen
+relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0004704
 name: sepal primordium
 namespace: plant_anatomy
-def: "A phyllome primordium that will devlop into a sepal." [POC:curators]
+def: "A phyllome primordium (PO:0025128) is committed to the development of a sepal (PO:0009031)." [POC:curators]
+synonym: "portion of sepal primordium tissue" EXACT []
 synonym: "primordio de s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
+relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0004705
 name: stamen primordium
 namespace: plant_anatomy
-def: "A phyllome primordium that will develop into a stamen." [POC:curators]
+def: "A phyllome primordium (PO:0025128) is committed to the development of a stamen (PO:0009029)." [POC:curators]
+synonym: "portion of stamen primordium tissue" EXACT []
 synonym: "primordio de estambre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄蕊 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
+relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0004706
@@ -3425,7 +3456,7 @@ def: "A portion of phyllome primordium tissue that is the abaxial/outer side of 
 synonym: "lado abaxial del primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉原基の裏側、背軸側 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
-relationship: part_of PO:0000017 ! leaf primordium
+relationship: part_of PO:0000017 ! vascular leaf primordium
 
 [Term]
 id: PO:0004726
@@ -3435,7 +3466,7 @@ def: "A portion of phyllome primordium tissue that is the adaxial/inner side of 
 synonym: "lado adaxial del primordio de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉原基の表側、向軸側 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
-relationship: part_of PO:0000017 ! leaf primordium
+relationship: part_of PO:0000017 ! vascular leaf primordium
 
 [Term]
 id: PO:0005001
@@ -3754,10 +3785,14 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0005029
 name: root primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into a root." [POC:curators]
+def: "A primordium (PO:0025127) that is committed to the development of a root (PO:0009005)." [ISBN:0521288959, POC:curators]
+comment: Root primordia may arise from pericycle cells (PO:0025261), as in most seed plants, cells of an endodermis (PO:0000252), as in ferns, or from cells on a shoot axis (PO:0025029), in the case of basal root primordia (PO:0025479) and shoot-borne root primordia (PO:0025480). Transition from root primordium to root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147).
+synonym: "portion of root primordium tissue" EXACT []
 synonym: "primordio de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3522014
 is_a: PO:0025127 ! primordium
+relationship: develops_from PO:0025433 ! root anlagen
 
 [Term]
 id: PO:0005039
@@ -4427,7 +4462,6 @@ synonym: "esbozo de carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "心皮原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3473464
 is_a: PO:0025430 ! phyllome anlagen
-relationship: part_of PO:0000225 ! peripheral zone
 relationship: part_of PO:0000229 ! flower meristem
 
 [Term]
@@ -5237,9 +5271,11 @@ relationship: develops_from PO:0006014 ! male archesporial cell
 id: PO:0006089
 name: anther primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into anther." [POC:curators]
+def: "A floral structure primordium (PO:0025477) that is committed to the development of an anther (PO:0009066)." [POC:curators]
+synonym: "portion of anther primordium tissue" EXACT []
 synonym: "primordio de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
 is_a: PO:0025477 ! floral structure primordium
 
 [Term]
@@ -9448,10 +9484,13 @@ replaced_by: PO:0007131
 id: PO:0008038
 name: adventitious root primordium
 namespace: plant_anatomy
-def: "A root primordium that will develop into an adventitious root." [POC:curators]
+def: "OBSOLETE: A root primordium that will develop into an adventitious root." [POC:curators]
+comment: This term was made obsolete because the PO does not have a distinct term for adventitious root. It is replaced by basal root primordium (PO:0025479) and shoot-borne root primordium (PO:0025480).
 synonym: "primordio de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "不定根根原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005029 ! root primordium
+is_obsolete: true
+consider: PO:0006086
+consider: PO:0025480
 
 [Term]
 id: PO:0008039
@@ -9468,11 +9507,15 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0008040
 name: lodicule primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into a lodicule." [POC:curators]
+def: "A phyllome primordium (PO:0025128) is committed to the development of a lodicule (PO:0009036)." [POC:curators]
+synonym: "portion of lodicule primordium tissue" EXACT []
 synonym: "primordio del lod&#237culo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "鱗被 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3519234
+xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
+relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0008041
@@ -10665,6 +10708,7 @@ synonym: "雄蕊群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
+relationship: develops_from PO:0025478 ! androecium primordium
 relationship: part_of PO:0009046 ! flower
 
 [Term]
@@ -12738,6 +12782,7 @@ def: "A maximal portion of meristem tissue located at an apex of a shoot system 
 subset: TraitNet
 synonym: "meristema apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary meristem" RELATED []
+synonym: "promeristem" BROAD []
 synonym: "頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! meristem
 
@@ -12764,7 +12809,8 @@ def: "An apical meristem of the root system." [GR:Pankaj_Jaiswal, UMSL:fz]
 comment: In most cases it is involved in root elongation.
 subset: TraitNet
 synonym: "meristema apical de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "promeristem" RELATED []
+synonym: "promeristem" BROAD []
+synonym: "RAM" EXACT []
 synonym: "根端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
@@ -12777,6 +12823,7 @@ def: "A shoot meristem formed in the apex of the shoot, including meristems orig
 subset: TraitNet
 synonym: "meristema apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary shoot meristem" RELATED []
+synonym: "promeristem" BROAD []
 synonym: "SAM" EXACT []
 synonym: "茎頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006079 ! shoot meristem
@@ -12844,6 +12891,7 @@ synonym: "adventitious root" BROAD []
 synonym: "ra&#237z basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "下胚軸由来の根、不定根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009005 ! root
+relationship: develops_from PO:0025479 ! basal root primordium
 created_by: Ramona
 creation_date: 2010-09-16T03:03:49Z
 
@@ -13294,7 +13342,7 @@ synonym: "葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3167333
 xref: OBO_SF_PO:3205370
 is_a: PO:0006001 ! phyllome
-relationship: develops_from PO:0000017 ! leaf primordium
+relationship: develops_from PO:0000017 ! vascular leaf primordium
 created_by: Ramona
 creation_date: 2010-07-12T01:31:44Z
 
@@ -14543,11 +14591,15 @@ creation_date: 2010-11-15T09:10:22Z
 id: PO:0025128
 name: phyllome primordium
 namespace: plant_anatomy
-def: "A primordium that will develop into a phyllome." [POC:Ramona_Walls]
+def: "A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) that is part of a peripheral zone (PO:0000225) of a shoot apical meristem (PO:0020148) and is committed to the development of a phyllome (PO:0006001)." [PMID:11572953, POC:curators]
+comment: The transition from phyllome primordium to phyllome occurs when the first non-meristematic tissue develops begins to develop.
+synonym: "portion of phyllome primordium tissue" EXACT []
 synonym: "primordio del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3521973
 is_a: PO:0025127 ! primordium
 relationship: develops_from PO:0025430 ! phyllome anlagen
+relationship: part_of PO:0000037 ! shoot apex
 created_by: Ramona
 creation_date: 2010-11-15T09:27:11Z
 
@@ -18229,7 +18281,7 @@ synonym: "leaf margin blastozone " EXACT []
 synonym: "leaf margin meristem" EXACT []
 xref: OBO_SF_PO:3459318
 is_a: PO:0025404 ! phyllome marginal meristem
-relationship: part_of PO:0000017 ! leaf primordium
+relationship: part_of PO:0000017 ! vascular leaf primordium
 relationship: part_of PO:0009025 ! vascular leaf
 relationship: part_of PO:0025009 ! leaf lamina margin
 created_by: cooperl
@@ -18558,6 +18610,7 @@ comment: The phyllome anlagen is only detectable by gene expression, not morphol
 synonym: "phyllome meristem" BROAD []
 xref: OBO_SF_PO:3473464
 is_a: PO:0009013 ! meristem
+relationship: part_of PO:0000225 ! peripheral zone
 created_by: cooperl
 creation_date: 2012-02-07T08:20:10Z
 
@@ -18569,7 +18622,6 @@ def: "A phyllome anlagen (PO:0025430) that will give rise to a leaf primordium (
 comment: This is the region where you have the maximum concentration of auxin in the SAM (at least in a few species that have been studied).
 synonym: "leaf meristem" BROAD []
 is_a: PO:0025430 ! phyllome anlagen
-relationship: part_of PO:0000225 ! peripheral zone
 relationship: part_of PO:0008016 ! vegetative shoot apical meristem
 created_by: cooperl
 creation_date: 2012-02-07T08:40:37Z
@@ -18578,7 +18630,7 @@ creation_date: 2012-02-07T08:40:37Z
 id: PO:0025432
 name: cotyledon anlagen
 namespace: plant_anatomy
-def: "A phyllome anlagen (PO:0025430) that will give rise to a cotyledon primordium (PO:0000015) and is part of a plant embryo (PO:0009009)." [POC:curators]
+def: "A phyllome anlagen (PO:0025430) that will give rise to a cotyledon primordium (PO:0000015) and is part of a peripheral zone (PO:000225) of an embryo shoot apical meristem (PO:0006362)." [POC:curators]
 synonym: "precursor de cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459279
 is_a: PO:0025430 ! phyllome anlagen
@@ -18590,11 +18642,11 @@ creation_date: 2012-02-07T09:07:56Z
 id: PO:0025433
 name: root anlagen
 namespace: plant_anatomy
-def: "A portion of pericycle tissue (PO:0006203) that will give rise to a root primordium (PO:0005029)." [POC:curators]
-comment: Only detectable by gene expression, not morphology.
+def: "A portion of plant tissue (PO:0009007 that is committed to the development of a root primordium (PO:0005029)." [POC:curators]
+comment: Only detectable by gene expression, not morphology. May arise in a pericycle  (PO:0006203), as in most seed plants, an endodermis (PO:0000252), as in ferns, or on a shoot axis (PO:0025029), in the case of a basal root  (PO:0025002) or shoot-borne root  (PO:0000042).
 synonym: "precursor de ra&#237 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3473464
-is_a: PO:0006203 ! pericycle
+is_a: PO:0009007 ! portion of plant tissue
 created_by: cooperl
 creation_date: 2012-02-08T01:00:56Z
 
@@ -19152,6 +19204,7 @@ namespace: plant_anatomy
 def: "A primordium (PO:0025127) that is committed to the development of a plant structure that is part of a flower (PO:0009046), such as a floral organ (PO:0025395), gynoecium (PO:0009062), or anther (PO:0009066)." [POC:curators]
 comment: If annotating to a primordium of a floral structure, it is better to use the more specific term, such as petal primordium (PO:0000021) or anther primordium (PO:0006089).
 subset: Angiosperm
+synonym: "portion of floral structure primordium tissue" EXACT []
 xref: OBO_SF_PO:3519234
 is_a: PO:0025127 ! primordium
 created_by: RamonaNYBG
@@ -19161,9 +19214,48 @@ creation_date: 2012-04-26T03:57:09Z
 id: PO:0025478
 name: androecium primordium
 namespace: plant_anatomy
+def: "A floral structure primordium (PO:0025477) that is committed to the development of an androecium (PO:0009061)." [POC:curators]
+comment: Use stamen primordium (PO:0004705) for the primordium (PO:0025127) of an individual stamen (PO:0009029).
+synonym: "portion of androecium primordium tissue" EXACT []
+xref: OBO_SF_PO:3519234
 is_a: PO:0025477 ! floral structure primordium
 created_by: RamonaNYBG
 creation_date: 2012-04-26T04:11:35Z
+
+[Term]
+id: PO:0025479
+name: basal root primordium
+namespace: plant_anatomy
+def: "A root primordium (PO:0005029) that is committed to the development of a basal root (PO:0025002)." [POC:curators]
+synonym: "portion of basal root primordium tissue" EXACT []
+xref: OBO_SF_PO:3522014
+is_a: PO:0005029 ! root primordium
+created_by: RamonaNYBG
+creation_date: 2012-04-27T09:59:05Z
+
+[Term]
+id: PO:0025480
+name: shoot-borne root primordium
+namespace: plant_anatomy
+def: "A root primordium (PO:0005029) that is committed to the development of a shoot-borne root (PO:0000042)." [POC:curators]
+synonym: "portion of shoot-borne root primordium tissue" EXACT []
+xref: OBO_SF_PO:3522014
+is_a: PO:0005029 ! root primordium
+created_by: RamonaNYBG
+creation_date: 2012-04-27T09:59:05Z
+
+[Term]
+id: PO:0025481
+name: leaflet primordium
+namespace: plant_anatomy
+def: "A primordium (PO:0025127) that develops as part of a leaf primordium (PO:0000017) of a compound leaf (PO:0020043) and is committed to the development of a leaflet (PO:0020049)." [ISBN:0521288959, POC:curators]
+comment: Leaflets of palms does not develop from leaflet primordia but by separation of segments of a leaf lamina (PO:0020039).
+synonym: "portion of leaflet primordium tissue" EXACT []
+xref: OBO_SF_PO:3522026
+is_a: PO:0025127 ! primordium
+relationship: part_of PO:0000017 ! vascular leaf primordium
+created_by: RamonaNYBG
+creation_date: 2012-04-27T10:54:13Z
 
 [Term]
 id: PO:0028001
