@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 27:04:2012 11:01
-saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1
+date: 01:05:2012 17:36
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.1.1-beta9
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -3083,17 +3083,19 @@ is_a: PO:0025029 ! shoot axis
 id: PO:0004543
 name: tuber
 namespace: plant_anatomy
-def: "A radially enlarged branch that functions in storage." [POC:curators]
-comment: This term should be used for tuber derived from branches, as found in potatoes, yams, and other species, not for tubers derived from roots. Use the term tuber root (PO:0025476) for tubers derived from roots, as in Cassava.
+def: "A shoot axis (PO:0025029) that is radially enlarged and develops from a branch (PO:0025073)." [POC:curators]
+comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 subset: reference
 subset: TraitNet
 synonym: "diaspore" BROAD []
+synonym: "shoot axis branch tuber" EXACT [POC:curators]
 synonym: "tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber branch" EXACT []
 synonym: "塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3017726
-is_a: PO:0025073 ! branch
+is_a: PO:0025029 ! shoot axis
+relationship: develops_from PO:0025073 ! branch
 
 [Term]
 id: PO:0004544
@@ -3134,8 +3136,8 @@ is_a: PO:0004545 ! shoot-borne shoot system
 id: PO:0004547
 name: subterranean tuber
 namespace: plant_anatomy
-def: "A tuber that is below ground." [POC:curators]
-comment: This term should be used for tubers derived from branches, as found in potatoes, yams, and other species, not for tubers derived from roots. Use the term tuber root (PO:0025476) for tubers derived from roots, as in Cassava.
+def: "A tuber (PO:0004543) that is below ground." [POC:curators]
+comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下 塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9031,7 +9033,7 @@ id: PO:0007631
 name: plant embryo stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007020
-def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of a seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators]
+def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators]
 comment: Succeeds a plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
 synonym: "embryo development stage" RELATED []
 synonym: "embryo stage" BROAD []
@@ -13880,13 +13882,15 @@ creation_date: 2010-06-24T01:29:20Z
 id: PO:0025073
 name: branch
 namespace: plant_anatomy
-def: "A shoot axis that develops from an axillary meristem or from equal divisions of the shoot apical meristem." [POC:curators]
+def: "A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of the shoot apical meristem (PO:0020148)." [POC:curators]
 comment: Branches arise from axillary meristems in vascular plants and from divisions of the shoot apical meristem in non-vascular plants.
 subset: TraitNet
+synonym: "<new synonym>" RELATED []
 synonym: "branchlet" NARROW [FNA:32d32293-adee-47ae-b1ba-bd9bd22230c2]
 synonym: "higher order axis" NARROW []
 synonym: "ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "secondary axis" NARROW []
+synonym: "shoot axis branch" EXACT [POC:curators]
 synonym: "tertiary axis" NARROW []
 synonym: "twig" NARROW []
 synonym: "枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
