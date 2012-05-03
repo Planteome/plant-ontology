@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 01:05:2012 17:36
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.1.1-beta9
+date: 03:05:2012 16:03
+saved-by: RamonaNYBG
+auto-generated-by: OBO-Edit 2.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -230,7 +230,7 @@ is_a: PO:0009025 ! vascular leaf
 id: PO:0000015
 name: cotyledon primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) that develops from a cotyledon anlagen (PO:0025432) and is committed to the development of a cotyledon (PO:0020030)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a cotyledon anlagen (PO:0025432) and is part of a vegetative shoot apex (PO:0025223) and is committed to the development of a cotyledon (PO:0020030)." [POC:curators]
 synonym: "portion of cotyledon primordium tissue" EXACT []
 synonym: "primordio de cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -255,7 +255,7 @@ is_a: PO:0005029 ! root primordium
 id: PO:0000017
 name: vascular leaf primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) that develops from a leaf anlagen (PO:0025430) and is committed to the development of a vascular leaf (PO:0009025)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a leaf anlagen (PO:0025430) and is part of a vegetative shoot apex (PO:0025223) and is committed to the development of a vascular leaf (PO:0009025)." [POC:curators]
 synonym: "leaf primordium" EXACT []
 synonym: "portion of vascular leaf primordium tissue" EXACT []
 synonym: "primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -283,6 +283,7 @@ name: gynoecium primordium
 namespace: plant_anatomy
 def: "A floral structure primordium (PO:0025477) that is committed to the development of a gynoecium (PO:0009062)." [POC:curators]
 comment: Use carpel primordium (PO:0004703) for the primordium (PO:0025127) of an individual carpel (PO:0009030).
+synonym: "pistil primordium" EXACT []
 synonym: "portion of gynoecium primordium tissue" EXACT []
 synonym: "primordio de gineceo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌蕊原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -302,7 +303,7 @@ is_obsolete: true
 id: PO:0000021
 name: petal primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) is committed to the development of a petal (PO:0009032)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a petal anlagen (PO:0025484) and is committed to the development of a petal (PO:0009032)." [POC:curators]
 synonym: "portion of petal primordium tissue" EXACT []
 synonym: "primordio de p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -310,7 +311,7 @@ xref: OBO_SF_PO:3519234
 xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
-relationship: part_of PO:0025222 ! reproductive shoot apex
+relationship: develops_from PO:0025484 ! petal anlagen
 
 [Term]
 id: PO:0000022
@@ -1137,7 +1138,7 @@ comment: Functions as a population of stem cells that replenishes the meristem.
 synonym: "central initiation zone" RELATED []
 synonym: "zona central (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中央帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -1148,7 +1149,7 @@ def: "Organogenic region of the meristem, characterized by higher rates of cell 
 synonym: "peripheral meristem" RELATED []
 synonym: "zona perif&#233rica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "周辺帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -1159,7 +1160,7 @@ def: "The region of the shoot apical meristem that lies below the central zone a
 synonym: "file meristem" RELATED []
 synonym: "zona de costilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "髄状zone (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -1189,7 +1190,7 @@ namespace: plant_anatomy
 def: "A meristem that gives rise to an inflorescence." [GR:Pankaj_Jaiswal]
 synonym: "meristema de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -3204,13 +3205,12 @@ xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
 relationship: develops_from PO:0006005 ! carpel anlagen
-relationship: part_of PO:0025222 ! reproductive shoot apex
 
 [Term]
 id: PO:0004704
 name: sepal primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) is committed to the development of a sepal (PO:0009031)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a sepal anlagen (PO:0025485) and is committed to the development of a sepal (PO:0009031)." [POC:curators]
 synonym: "portion of sepal primordium tissue" EXACT []
 synonym: "primordio de s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3218,13 +3218,13 @@ xref: OBO_SF_PO:3519234
 xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
-relationship: part_of PO:0025222 ! reproductive shoot apex
+relationship: develops_from PO:0025485 ! sepal anlagen
 
 [Term]
 id: PO:0004705
 name: stamen primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) is committed to the development of a stamen (PO:0009029)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a stamen anlagen (PO:0025486) and is committed to the development of a stamen (PO:0009029)." [POC:curators]
 synonym: "portion of stamen primordium tissue" EXACT []
 synonym: "primordio de estambre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄蕊 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3232,7 +3232,7 @@ xref: OBO_SF_PO:3519234
 xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
-relationship: part_of PO:0025222 ! reproductive shoot apex
+relationship: develops_from PO:0025486 ! stamen anlagen
 
 [Term]
 id: PO:0004706
@@ -4551,7 +4551,7 @@ namespace: plant_anatomy
 def: "A thin band of intercalary meristematic tissue at the junction of a leaf blade (lamina) and a leaf sheath found in grasses." [GR:Pankaj_Jaiswal, ISBN:0080374913]
 synonym: "collar de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉頚領（カラー） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
@@ -5172,8 +5172,8 @@ def: "A meristem that is part of a shoot system." [GR:Pankaj_Jaiswal]
 subset: TraitNet
 synonym: "meristema del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
-intersection_of: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
+intersection_of: PO:0009013 ! portion of meristem tissue
 intersection_of: part_of PO:0009006 ! shoot system
 relationship: part_of PO:0009006 ! shoot system
 
@@ -5235,8 +5235,8 @@ def: "A meristem that is part of a root system." [GR:Pankaj_Jaiswal]
 synonym: "meristema de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "meristematic zone" RELATED []
 synonym: "根分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
-intersection_of: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
+intersection_of: PO:0009013 ! portion of meristem tissue
 intersection_of: part_of PO:0025025 ! root system
 relationship: part_of PO:0025025 ! root system
 
@@ -5443,7 +5443,7 @@ synonym: "dermatogen cell" RELATED []
 synonym: "protodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3016651
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
 id: PO:0006211
@@ -9458,7 +9458,7 @@ namespace: plant_anatomy
 def: "A meristem forming the core of the axis composed of the primary vascular tissues and associated ground tissue, such as pith and interfascicular regions." [ISBN:0471245208]
 synonym: "pleroma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原中心柱 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
 id: PO:0008036
@@ -9467,7 +9467,7 @@ namespace: plant_anatomy
 def: "A portion of meristem tissue that forms the cortex." [ISBN:0471245208]
 synonym: "periblema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
 id: PO:0008037
@@ -9509,7 +9509,7 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0008040
 name: lodicule primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) is committed to the development of a lodicule (PO:0009036)." [POC:curators]
+def: "A phyllome primordium (PO:0025128)that develops from a lodicule anlagen (PO:0025483) and is committed to the development of a lodicule (PO:0009036)." [POC:curators]
 synonym: "portion of lodicule primordium tissue" EXACT []
 synonym: "primordio del lod&#237culo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "鱗被 原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9517,7 +9517,7 @@ xref: OBO_SF_PO:3519234
 xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 is_a: PO:0025477 ! floral structure primordium
-relationship: part_of PO:0025222 ! reproductive shoot apex
+relationship: develops_from PO:0025483 ! lodicule anlagen
 
 [Term]
 id: PO:0008041
@@ -9912,13 +9912,13 @@ synonym: "plant growth and development stage" EXACT []
 
 [Term]
 id: PO:0009013
-name: meristem
+name: portion of meristem tissue
 namespace: plant_anatomy
 def: "A portion of plant tissue in which cells have retained their embryonic characteristics, or have reverted to them secondarily, and that divide to produce new cells that can undergo differentiation to form mature tissues, i.e. they have a capacity for morphogenesis and growth." [APweb:Glossary, GR:Pankaj_Jaiswal]
 subset: TraitNet
+synonym: "meristem" EXACT []
 synonym: "meristema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "meristematic tissue" EXACT []
-synonym: "portion of meristem tissue" EXACT []
 synonym: "分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0004010 ! meristematic cell
@@ -10001,7 +10001,7 @@ namespace: plant_anatomy
 def: "The outermost layer of a shoot apical meristem that gives rise to a shoot epidermis." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -10011,7 +10011,7 @@ namespace: plant_anatomy
 def: "A cell layer directly beneath a meristem L1 layer in a shoot apical meristem which gives rise to subepidermal tissue." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L2 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L2 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -10021,7 +10021,7 @@ namespace: plant_anatomy
 def: "A multicellular layer beneath a meristem L2 layer in a shoot apical meristem which gives rise to internal tissues of leaf and stem." [GR:Pankaj_Jaiswal, PMID:12221985]
 synonym: "meristema L3 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -10127,10 +10127,11 @@ namespace: plant_anatomy
 alt_id: PO:0006455
 alt_id: PO:0006470
 def: "A megasporophyll, almost always at the center of a flower, its margins more or less fused together or with other carpels to enclose the ovule(s)." [APweb:Glossary]
-comment: If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Poaceae, Brassicaceae and Solanaceae. If carpels are free, the gynoecium is an apocarpous gynoecium, as in Fabaceae. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+comment: In some cases, a gynoecium (PO:0009062) may consist of only one carpel, in which case annotations should go on carpel (PO:0009030). The word pistil is used synonymously with gynoecium, but if a gynoecium consists of a single carpel, then pistil may be used synonymously with carpel. If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Poaceae, Brassicaceae and Solanaceae. If carpels are free, the gynoecium is an apocarpous gynoecium, as in Fabaceae. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "pistil" RELATED []
 synonym: "Poaceae carpel" NARROW []
 synonym: "Zea carpel" NARROW []
 synonym: "心皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -10731,7 +10732,7 @@ alt_id: PO:0006425
 alt_id: PO:0006426
 alt_id: PO:0025089
 def: "A collective phyllome structure composed of two or more carpels." [POC:curators]
-comment: In some cases the gynoecium may consist of only one carpel. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+comment: In some cases, a gynoecium may consist of only one carpel, in which case annotations should go on carpel (PO:0009030). The word pistil is used synonymously with gynoecium, but if a gynoecium consists of a single carpel, then pistil may be used synonymously with carpel. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "ginoecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10747,7 +10748,7 @@ synonym: "gynoecium of upper floret of pedicellate spikelet of ear" NARROW []
 synonym: "gynoecium of upper floret of pedicellate spikelet of tassel" NARROW []
 synonym: "gynoecium of upper floret of sessile spikelet of ear" NARROW []
 synonym: "gynoecium of upper floret of sessile spikelet of tassel" NARROW []
-synonym: "pistil" RELATED []
+synonym: "pistil" EXACT []
 synonym: "Poaceae gynoecium" NARROW []
 synonym: "Zea gynoecium" NARROW []
 synonym: "雌蕊群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12457,15 +12458,16 @@ relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
 id: PO:0020106
-name: auricle
+name: leaf sheath auricle
 namespace: plant_anatomy
-def: "Outgrowth at the base of a leaf blade that may wrap around the stem." [GR:Pankaj_Jaiswal]
+def: "A cardinal organ part (PO:0025001) that is an ear-shaped outgrowth of the distal part of a leaf sheath (PO:0020104)." [GR:Pankaj_Jaiswal, POC:curators]
+comment: May wrap around the stem (PO:0009047) or branch (PO:0025073) to which the vascular leaf (PO:0009025) it is part of is attached. Found in some Poaceae.
 synonym: "aur&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "ear" NARROW [FNA:821f1b3a-3fb0-40d9-9f38-ca0a6c0f313c]
+synonym: "leaf sheath ear" EXACT [FNA:821f1b3a-3fb0-40d9-9f38-ca0a6c0f313c]
 synonym: "葉耳 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0020104 ! leaf sheath
 
 [Term]
 id: PO:0020108
@@ -12782,11 +12784,12 @@ name: apical meristem
 namespace: plant_anatomy
 def: "A maximal portion of meristem tissue located at an apex of a shoot system or root system." [GR:Pankaj_Jaiswal, POC:curators]
 subset: TraitNet
+synonym: "AM" EXACT []
 synonym: "meristema apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary meristem" RELATED []
 synonym: "promeristem" BROAD []
 synonym: "頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
 id: PO:0020145
@@ -12800,7 +12803,7 @@ synonym: "meristema lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "secondary meristem" RELATED []
 synonym: "側 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0025004 ! plant axis
 
 [Term]
@@ -12840,7 +12843,7 @@ def: "A portion of meristem tissue that is part of a root apical meristem and co
 comment: If a root cap is present, the quiescent center is behind the root cap.
 synonym: "centro de division de c&#233lulas del meristema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "静止中心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020147 ! root apical meristem
 
 [Term]
@@ -13106,6 +13109,7 @@ synonym: "margen del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "フィロム縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025005 ! organ margin
+relationship: part_of PO:0025396 ! phyllome lamina
 created_by: Ramona
 creation_date: 2010-04-02T10:51:16Z
 
@@ -14587,7 +14591,7 @@ synonym: "portion of primordium tissue" EXACT []
 synonym: "primordio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3081059
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 created_by: Ramona
 creation_date: 2010-11-15T09:10:22Z
 
@@ -14595,7 +14599,7 @@ creation_date: 2010-11-15T09:10:22Z
 id: PO:0025128
 name: phyllome primordium
 namespace: plant_anatomy
-def: "A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) that is part of a peripheral zone (PO:0000225) of a shoot apical meristem (PO:0020148) and is committed to the development of a phyllome (PO:0006001)." [PMID:11572953, POC:curators]
+def: "A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) and is part of a shoot apex (PO:0000037) and is committed to the development of a phyllome (PO:0006001)." [PMID:11572953, POC:curators]
 comment: The transition from phyllome primordium to phyllome occurs when the first non-meristematic tissue develops begins to develop.
 synonym: "portion of phyllome primordium tissue" EXACT []
 synonym: "primordio del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -16575,7 +16579,7 @@ def: "A portion of meristem tissue that undergoes differentiation to form the pr
 comment: May occur in an apical meristem or in a developing phyllome. Gives rise to the primary xylem and primary phloem. This term replaces PO:0006074.
 synonym: "procambio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3184905
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 created_by: Ramona
 creation_date: 2011-02-24T01:10:38Z
 
@@ -18210,7 +18214,7 @@ synonym: "meristema adaxial del filoma (Spanish)" EXACT Spanish [POC:Maria_Aleja
 synonym: "phyllome adaxial rounding meristem " NARROW []
 synonym: "phyllome adaxial unifacial meristem" NARROW []
 xref: OBO_SF_PO:3459332
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
 creation_date: 2012-01-26T08:16:48Z
@@ -18240,7 +18244,7 @@ synonym: "meristema abaxial del filoma (Spanish)" EXACT Spanish [POC:Maria_Aleja
 synonym: "phyllome abaxial rounding meristem " NARROW []
 synonym: "phyllome abaxial unifacial meristem" NARROW []
 xref: OBO_SF_PO:3459332
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
 creation_date: 2012-01-28T06:17:09Z
@@ -18263,15 +18267,13 @@ creation_date: 2012-01-28T06:33:57Z
 id: PO:0025404
 name: phyllome marginal meristem
 namespace: plant_anatomy
-def: "A portion of meristem (PO:0009013) tissue on the edge of a developing phyllome (PO:0006001) that has as parts marginal and submarginal initials." [POC:curators]
-comment: Phyllome marginal meristems develop on the lateral sides of a phyllome primordium (PO:0025128) and may contribute to expansion of the phyllome lamina (PO:0025396). Phyllome marginal initials (add) may give rise to phyllome epidermis (PO:0025157) while phyllome submarginal initials (add) may give rise to the mesophyll (PO:0006070). Part of the phyllome margin (PO:0025018). May be of limited duration.
+def: "A portion of meristem (PO:0009013) tissue that is part of a phyllome margin (PO:0025018) of an expanding phyllome (PO:0006001) and has as parts marginal and submarginal initials." [POC:curators]
+comment: Phyllome marginal meristems may develop on the lateral margins of a phyllome after the transition from a phyllome primordium (PO:0025128) and may contribute to expansion of the phyllome lamina (PO:0025396). Marginal growth can occur in a phyllome primordium, but it is not considered part of a phyllome marginal meristem. Phyllome marginal initials (add) may give rise to phyllome epidermis (PO:0025157) while phyllome submarginal initials (add) may give rise to the mesophyll (PO:0006070). May be of limited duration.
 synonym: "meristema marginal del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllome margin meristem" EXACT [POC:curators]
 xref: OBO_SF_PO:3459318
-is_a: PO:0009013 ! meristem
-relationship: part_of PO:0006001 ! phyllome
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0025018 ! phyllome margin
-relationship: part_of PO:0025128 ! phyllome primordium
 created_by: cooperl
 creation_date: 2012-01-29T07:31:33Z
 
@@ -18279,15 +18281,15 @@ creation_date: 2012-01-29T07:31:33Z
 id: PO:0025405
 name: leaf marginal meristem
 namespace: plant_anatomy
-def: "A portion of phyllome marginal meristem tissue on the edge of a developing leaf that has as parts marginal and submarginal initials." [ISBN:0521288959, POC:curators]
-comment: Leaf marginal meristems develop on the lateral sides of a leaf primordium (PO:0000017) and may contribute to expansion of the leaf lamina (PO:0020039). Leaf marginal initials (add) may give rise to leaf epidermis ( PO:0006016) while leaf submarginal initials (add) may give rise to the leaf mesophyll (PO:0005645). May be of limited duration.
+def: "A portion of phyllome marginal meristem (PO:0025404) tissue that is part of a leaf margin (PO:0025009) of a vascular leaf (PO:0009025) during a leaf expansion stage (PO:0001052) and has parts marginal and submarginal initials." [ISBN:0521288959, POC:curators]
+comment: Leaf marginal meristems develop on the lateral margins of a vascular leaf after the transition from a vascular leaf primordium (PO:0000017) and may contribute to expansion of the leaf lamina (PO:0020039). Marginal growth can occur in a vascular leaf primordium, but it is not considered part of a leaf marginal meristem. Leaf marginal initials (add) may give rise to leaf epidermis (PO:0006016) while leaf submarginal initials (add) may give rise to the leaf mesophyll (PO:0005645). May be of limited duration.
 synonym: "leaf margin blastozone " EXACT []
 synonym: "leaf margin meristem" EXACT []
 xref: OBO_SF_PO:3459318
 is_a: PO:0025404 ! phyllome marginal meristem
-relationship: part_of PO:0000017 ! vascular leaf primordium
 relationship: part_of PO:0009025 ! vascular leaf
 relationship: part_of PO:0025009 ! leaf lamina margin
+relationship: participates_in PO:0001052 ! 2 leaf expansion stage
 created_by: cooperl
 creation_date: 2012-01-29T08:08:16Z
 
@@ -18586,7 +18588,7 @@ def: "A portion of meristem (PO:0009013) tissue in which the planes of cell divi
 comment: The activity of a phyllome plate meristem results in increase in the surface area, but not thickness of a phyllome.
 synonym: "meristema en placa del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3459331
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0006001 ! phyllome
 created_by: cooperl
 creation_date: 2012-02-07T07:25:01Z
@@ -18609,11 +18611,11 @@ creation_date: 2012-02-07T07:41:37Z
 id: PO:0025430
 name: phyllome anlagen
 namespace: plant_anatomy
-def: "A portion of meristem (PO:0009013) tissue that will give rise to a phyllome primordium (PO:0025128)." [POC:curators]
+def: "A portion of meristem (PO:0009013) tissue that is part of a part_of peripheral zone (PO:0000225) and will give rise to a phyllome primordium (PO:0025128)." [POC:curators]
 comment: The phyllome anlagen is only detectable by gene expression, not morphology.
 synonym: "phyllome meristem" BROAD []
 xref: OBO_SF_PO:3473464
-is_a: PO:0009013 ! meristem
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0000225 ! peripheral zone
 created_by: cooperl
 creation_date: 2012-02-07T08:20:10Z
@@ -18646,7 +18648,7 @@ creation_date: 2012-02-07T09:07:56Z
 id: PO:0025433
 name: root anlagen
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007 that is committed to the development of a root primordium (PO:0005029)." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) that is committed to the development of a root primordium (PO:0005029)." [POC:curators]
 comment: Only detectable by gene expression, not morphology. May arise in a pericycle  (PO:0006203), as in most seed plants, an endodermis (PO:0000252), as in ferns, or on a shoot axis (PO:0025029), in the case of a basal root  (PO:0025002) or shoot-borne root  (PO:0000042).
 synonym: "precursor de ra&#237 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3473464
@@ -19205,12 +19207,13 @@ creation_date: 2012-04-26T02:09:03Z
 id: PO:0025477
 name: floral structure primordium
 namespace: plant_anatomy
-def: "A primordium (PO:0025127) that is committed to the development of a plant structure that is part of a flower (PO:0009046), such as a floral organ (PO:0025395), gynoecium (PO:0009062), or anther (PO:0009066)." [POC:curators]
+def: "A primordium (PO:0025127) that is committed to the development of a plant structure that is part of a flower (PO:0009046), such as a floral organ (PO:0025395), gynoecium (PO:0009062), or anther (PO:0009066) and is part of a reproductive shoot apex (PO:0025222)." [POC:curators]
 comment: If annotating to a primordium of a floral structure, it is better to use the more specific term, such as petal primordium (PO:0000021) or anther primordium (PO:0006089).
 subset: Angiosperm
 synonym: "portion of floral structure primordium tissue" EXACT []
 xref: OBO_SF_PO:3519234
 is_a: PO:0025127 ! primordium
+relationship: part_of PO:0025222 ! reproductive shoot apex
 created_by: RamonaNYBG
 creation_date: 2012-04-26T03:57:09Z
 
@@ -19260,6 +19263,62 @@ is_a: PO:0025127 ! primordium
 relationship: part_of PO:0000017 ! vascular leaf primordium
 created_by: RamonaNYBG
 creation_date: 2012-04-27T10:54:13Z
+
+[Term]
+id: PO:0025482
+name: bract anlagen
+namespace: plant_anatomy
+def: "A phyllome anlagen (PO:0025430) that will give rise to a bract primordium (PO:0025487) and is part of a peripheral zone (PO:000225) of a reproductive shoot apical meristem (PO:0008028)." [POC:Ramona_Walls]
+is_a: PO:0025430 ! phyllome anlagen
+created_by: RamonaNYBG
+creation_date: 2012-05-03T03:02:02Z
+
+[Term]
+id: PO:0025483
+name: lodicule anlagen
+namespace: plant_anatomy
+def: "A phyllome anlagen (PO:0025430) that will give rise to a lodicule primordium (PO:0008040) and is part of a peripheral zone (PO:000225) of a flower meristem (PO:0000229)." [POC:Ramona_Walls]
+is_a: PO:0025430 ! phyllome anlagen
+created_by: RamonaNYBG
+creation_date: 2012-05-03T03:02:02Z
+
+[Term]
+id: PO:0025484
+name: petal anlagen
+namespace: plant_anatomy
+def: "A phyllome anlagen (PO:0025430) that will give rise to a petal primordium (PO:0000021) and is part of a peripheral zone (PO:000225) of a flower meristem (PO:0000229)." [POC:Ramona_Walls]
+is_a: PO:0025430 ! phyllome anlagen
+created_by: RamonaNYBG
+creation_date: 2012-05-03T03:02:03Z
+
+[Term]
+id: PO:0025485
+name: sepal anlagen
+namespace: plant_anatomy
+def: "A phyllome anlagen (PO:0025430) that will give rise to a sepal primordium (PO:0004704) and is part of a peripheral zone (PO:000225) of a flower meristem (PO:0000229)." [POC:Ramona_Walls]
+is_a: PO:0025430 ! phyllome anlagen
+created_by: RamonaNYBG
+creation_date: 2012-05-03T03:02:03Z
+
+[Term]
+id: PO:0025486
+name: stamen anlagen
+namespace: plant_anatomy
+def: "A phyllome anlagen (PO:0025430) that will give rise to a stamen primordium (PO:0004705) and is part of a peripheral zone (PO:000225) of a flower meristem (PO:0000229)." [POC:Ramona_Walls]
+is_a: PO:0025430 ! phyllome anlagen
+created_by: RamonaNYBG
+creation_date: 2012-05-03T03:02:03Z
+
+[Term]
+id: PO:0025487
+name: bract primordium
+namespace: plant_anatomy
+def: "A phyllome primordium (PO:0025128) that develops from a bract anlagen (PO:0025482) and is part of a reproductive shoot apex (PO:0025222) and is committed to the development of a bract (PO:0009055)." [POC:curators]
+is_a: PO:0025128 ! phyllome primordium
+relationship: develops_from PO:0025482 ! bract anlagen
+relationship: part_of PO:0025222 ! reproductive shoot apex
+created_by: RamonaNYBG
+creation_date: 2012-05-03T03:04:46Z
 
 [Term]
 id: PO:0028001
