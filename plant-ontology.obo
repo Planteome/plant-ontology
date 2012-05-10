@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:05:2012 09:54
+date: 10:05:2012 13:11
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.1.1-beta6
 subsetdef: Angiosperm "Term for angiosperms"
@@ -9847,8 +9847,8 @@ disjoint_from: PO:0025269 ! collective organ part structure
 id: PO:0009008
 name: plant organ
 namespace: plant_anatomy
-def: "A plant structure that is a functional unit, is a proper part of a plant, and includes portions of tissues of at least two different types that derive from a common developmental path." [POC:curators]
-comment: Examples: stem, leaf, root. May include individual cell types that are not part of tissues (e.g.: idioblasts).
+def: "A plant structure (PO:0009011) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path." [POC:curators]
+comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual cell types that are not part of tissues (e.g., idioblasts). A plant organ may have one or more different plant organs as parts, such as sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094).
 subset: TraitNet
 synonym: "&#243rgano vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "compound plant organ" RELATED []
@@ -10140,10 +10140,11 @@ comment: In some cases, a gynoecium (PO:0009062) may consist of only one carpel,
 subset: reference
 subset: TraitNet
 synonym: "carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "pistil" RELATED []
+synonym: "pistil" BROAD []
 synonym: "Poaceae carpel" NARROW []
 synonym: "Zea carpel" NARROW []
 synonym: "心皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3523523
 is_a: PO:0009027 ! megasporophyll
 relationship: develops_from PO:0004703 ! carpel primordium
 relationship: part_of PO:0009062 ! gynoecium
@@ -10743,10 +10744,11 @@ alt_id: PO:0006424
 alt_id: PO:0006425
 alt_id: PO:0006426
 alt_id: PO:0025089
-def: "A collective phyllome structure composed of two or more carpels." [POC:curators]
-comment: In some cases, a gynoecium may consist of only one carpel, in which case annotations should go on carpel (PO:0009030). The word pistil is used synonymously with gynoecium, but if a gynoecium consists of a single carpel, then pistil may be used synonymously with carpel. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+def: "A collective phyllome structure (PO:0025023) composed of one or more carpels (PO:0009030)." [POC:curators]
+comment: A gynoecium is usually composed of two or more carpels, but may have only a single carpel as part. If annotating gene expression to a gynoecium with a single carpel, the annotation should go on carpel. A gynoecium with two or more carpels may be either syncarpous (carpels fused) or apopcarpous (carpels free) or the carpels may be partially fused. The word pistil is used synonymously with gynoecium for a synocarpous gynoecium, and synonymously with carpel for an apocarpous gynoecium, whether it has one or more carpels. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
+synonym: "apocarpous gynoecium" NARROW []
 synonym: "ginoecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gynaecium" EXACT [FNA:03f034c5-6bd6-4846-8ef7-c5190d09008c]
 synonym: "gynoecia" EXACT Plural [FNA:226a743c-7988-4b66-b163-2ce80d7c8a70]
@@ -10760,12 +10762,14 @@ synonym: "gynoecium of upper floret of pedicellate spikelet of ear" NARROW []
 synonym: "gynoecium of upper floret of pedicellate spikelet of tassel" NARROW []
 synonym: "gynoecium of upper floret of sessile spikelet of ear" NARROW []
 synonym: "gynoecium of upper floret of sessile spikelet of tassel" NARROW []
-synonym: "pistil" EXACT []
+synonym: "pistil" BROAD []
 synonym: "Poaceae gynoecium" NARROW []
+synonym: "syncarpous gynoecium" NARROW []
 synonym: "Zea gynoecium" NARROW []
 synonym: "雌蕊群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
+xref: OBO_SF_PO:3523523
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0000019 ! gynoecium primordium
 relationship: part_of PO:0009046 ! flower
