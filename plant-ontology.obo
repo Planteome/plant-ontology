@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 10:05:2012 13:11
+date: 14:05:2012 09:02
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1.1-beta6
+auto-generated-by: OBO-Edit 2.1.1-beta10
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -11454,8 +11454,8 @@ name: ovule
 namespace: plant_anatomy
 alt_id: PO:0006457
 alt_id: PO:0006491
-def: "A stalked or sessile structure in a seed plant within which one or more megaspores are formed and later the female gametophyte or embryo sac develops." [APweb:Glossary]
-comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+def: "A plant organ (PO:0009008) that has as parts a nucellus (PO:0020020) containing a female gametophyte (PO:0025279), one or two integuments (PO:0020021), and a funicle (PO:0020006)." [POC:curators]
+comment: A seed (PO:0009010) develops from an ovule. In angiosperms, an ovule is part of an ovary (PO:0009072). In gymnosperms, an ovule is part of an ovuliferous scale (add term). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "&#243vulo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11463,7 +11463,7 @@ synonym: "Poaceae ovule" NARROW []
 synonym: "Zea ovule" NARROW []
 synonym: "胚珠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0009008 ! plant organ
 relationship: develops_from PO:0000018 ! ovule primordium
 relationship: part_of PO:0009072 ! ovary
 
@@ -11522,7 +11522,7 @@ synonym: "Poaceae funicle" NARROW []
 synonym: "Zea funicle" NARROW []
 synonym: "珠柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025066 ! stalk
-relationship: part_of PO:0009072 ! ovary
+relationship: part_of PO:0020003 ! ovule
 
 [Term]
 id: PO:0020008
@@ -13929,7 +13929,7 @@ synonym: "saco embrionario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "胚嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025279 ! megagametophyte
 relationship: develops_from PO:0020019 ! megaspore
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0025490 ! ovarian ovule
 created_by: Ramona
 creation_date: 2010-07-01T02:50:36Z
 
@@ -18226,7 +18226,7 @@ creation_date: 2012-01-23T03:00:45Z
 id: PO:0025400
 name: phyllome adaxial meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue that is found on the adaxial side of a developing phyllome (PO:0006001)." [POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that is found on the adaxial side of a developing phyllome (PO:0006001)." [POC:curators]
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf adaxial meristem (PO:0025401).
 synonym: "meristema adaxial del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllome adaxial rounding meristem " NARROW []
@@ -18241,7 +18241,7 @@ creation_date: 2012-01-26T08:16:48Z
 id: PO:0025401
 name: leaf adaxial meristem
 namespace: plant_anatomy
-def: "A portion of phyllome adaxial meristem tissue that is found on the adaxial side of a developing vascular leaf." [ISBN:0521288959, POC:curators]
+def: "A portion of phyllome adaxial meristem (PO:0025400) tissue that is found on the adaxial side of a developing vascular leaf (PO:0009025)." [ISBN:0521288959, POC:curators]
 comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are two types of adaxial meristems. In leaves with a petiole (PO:0020038) and lamina (PO:0025060), such as Arabidopsis thaliana, an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial leaves, the an adaxial unifacial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire leaf.
 synonym: "leaf adaxial rounding meristem" NARROW [POC:curators]
 synonym: "leaf adaxial unifacial meristem" NARROW [POC:curators]
@@ -18256,7 +18256,7 @@ creation_date: 2012-01-26T08:40:10Z
 id: PO:0025402
 name: phyllome abaxial meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue that is found on the abaxial side of a developing phyllome." [POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that is found on the abaxial side of a developing phyllome (PO:0006001)." [POC:curators]
 comment: Contributes to the thickness of a phyllome (PO:0006001). There are two types of adaxial meristems. In phyllomes with a petiole (PO:0020038) and lamina (PO:0025060), an adaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial phyllomes, the an adaxial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire phyllome. If annotating to a leaf, use the more specific term leaf abaxial meristem (PO:0025403).
 synonym: "meristema abaxial del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllome abaxial rounding meristem " NARROW []
@@ -18271,7 +18271,7 @@ creation_date: 2012-01-28T06:17:09Z
 id: PO:0025403
 name: leaf abaxial meristem
 namespace: plant_anatomy
-def: "A portion of phyllome abaxial meristem tissue that is found on the abaxial side of a developing vascular leaf." [PO:0009025, PO:0025402, POC:curators]
+def: "A portion of phyllome abaxial meristem (PO:0025402) tissue that is found on the abaxial side of a developing vascular leaf (PO:0009025)." [POC:curators]
 comment: Contributes to the thickness of a vascular leaf (PO:0009025). There are two types of abaxial meristems. In leaves with a petiole (PO:0020038) and lamina (PO:0025060), such as Arabidopsis thaliana, an abaxial rounding meristem occurs later in development, is separated from the apical meristem (PO:0020144), and contributes to the thickness of the petiole and midrib. In unifacial leaves, the abaxial unifacial meristem occurs earlier in development, is close to but separate from the apical meristem, and contributes to the thickness and cross-sectional shape of the entire leaf.
 synonym: "leaf abaxial rounding meristem" NARROW [POC:curators]
 synonym: "leaf abaxial unifacial meristem" NARROW [POC:curators]
@@ -18286,7 +18286,7 @@ id: PO:0025404
 name: phyllome marginal meristem
 namespace: plant_anatomy
 def: "A portion of meristem (PO:0009013) tissue that is part of a phyllome margin (PO:0025018) of an expanding phyllome (PO:0006001) and has as parts marginal and submarginal initials." [POC:curators]
-comment: Phyllome marginal meristems may develop on the lateral margins of a phyllome after the transition from a phyllome primordium (PO:0025128) and may contribute to expansion of the phyllome lamina (PO:0025396). Marginal growth can occur in a phyllome primordium, but it is not considered part of a phyllome marginal meristem. Phyllome marginal initials (add) may give rise to phyllome epidermis (PO:0025157) while phyllome submarginal initials (add) may give rise to the mesophyll (PO:0006070). May be of limited duration.
+comment: Phyllome marginal meristems may develop on the lateral margins of a phyllome after the transition from a phyllome primordium (PO:0025128) and may contribute to expansion of the phyllome lamina (PO:0025396). Marginal growth can occur in a phyllome primordium, but it is not considered part of a phyllome marginal meristem. Phyllome marginal initials may give rise to phyllome epidermis (PO:0025157) while phyllome submarginal initials may give rise to the mesophyll (PO:0006070). May be of limited duration.
 synonym: "meristema marginal del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllome margin meristem" EXACT [POC:curators]
 xref: OBO_SF_PO:3459318
@@ -19371,6 +19371,29 @@ xref: OBO_SF_PO:3521973
 is_a: PO:0025487 ! bract primordium
 created_by: RamonaNYBG
 creation_date: 2012-05-07T08:15:32Z
+
+[Term]
+id: PO:0025490
+name: ovarian ovule
+namespace: plant_anatomy
+def: "An ovule (PO:0020006) that is part of an ovary (PO:0009072)." [POC:curators]
+comment: Found in angiosperms.
+subset: Angiosperm
+is_a: PO:0020003 ! ovule
+relationship: part_of PO:0009072 ! ovary
+created_by: RamonaNYBG
+creation_date: 2012-05-14T08:42:42Z
+
+[Term]
+id: PO:0025491
+name: ovuliferous scale ovule
+namespace: plant_anatomy
+def: "An ovule (PO:0020006) that is part of an ovuliferous scale (add)." [POC:curators]
+comment: Found in gymnosperms.
+subset: Gymnosperms
+is_a: PO:0020003 ! ovule
+created_by: RamonaNYBG
+creation_date: 2012-05-14T08:42:42Z
 
 [Term]
 id: PO:0028001
