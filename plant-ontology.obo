@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 14:05:2012 09:02
+date: 23:05:2012 16:43
 saved-by: RamonaNYBG
-auto-generated-by: OBO-Edit 2.1.1-beta10
+auto-generated-by: OBO-Edit 2.2-rc1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -60,7 +60,7 @@ id: PO:0000003
 name: whole plant
 namespace: plant_anatomy
 def: "A plant structure which is a whole organism." [POC:curators]
-comment: Examples include seed PO:0009010 and embryo PO:0009009.
+comment: Examples include plant embryo (PO:0009009), megagametophyte (PO:0025279) and microgametophyte (PO:0025280).
 subset: reference
 subset: TraitNet
 synonym: "clonal colony" RELATED []
@@ -202,7 +202,7 @@ synonym: "頂端かぎ状構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020100 ! hypocotyl
-relationship: part_of PO:0006341 ! primary shoot
+relationship: part_of PO:0006341 ! primary shoot system
 
 [Term]
 id: PO:0000013
@@ -244,8 +244,8 @@ relationship: part_of PO:0025223 ! vegetative shoot apex
 id: PO:0000016
 name: lateral root primordium
 namespace: plant_anatomy
-def: "A root primordium (PO:0005029) that is committed to the development of a lateral root (PO:0020121)." [POC:curators]
-comment: A lateral root primordium generally develop from pericycle cells (PO:0025261), but cells of an endodermis (PO:0000252) may also participate in the formation of a lateral root primordium in some species, and in ferns lateral root primordia develop from the endodermis. Transition from lateral root primordium to lateral root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147), which can occur before the lateral root penetrates the exterior of the parent root.
+def: "A root primordium (PO:0005029) that is part of a root (PO:0009005) and is committed to the development of a lateral root (PO:0020121)." [POC:curators]
+comment: A lateral root primordium may arise from cells of a pericycle (PO:0006203) in a root, as in most seed plants (pericyclic lateral root primordium; PO:0025492), or from cells of an endodermis (PO:0000252) or other tissue in ferns and some seed plants (non-pericyclic lateral root primordium: PO:0025493). Transition from lateral root primordium to lateral root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147), which can occur before the lateral root penetrates the exterior of the parent root.
 synonym: "portion of lateral root primordium tissue" EXACT []
 synonym: "primordio de ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3722,7 +3722,7 @@ def: "A wall of an ovary that is composed of abaxial (outer) and adaxial (inner)
 synonym: "pared del ovario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房壁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0009072 ! ovary
+relationship: part_of PO:0009072 ! plant ovary
 
 [Term]
 id: PO:0005023
@@ -3794,8 +3794,8 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0005029
 name: root primordium
 namespace: plant_anatomy
-def: "A primordium (PO:0025127) that is committed to the development of a root (PO:0009005)." [ISBN:0521288959, POC:curators]
-comment: Root primordia may arise from pericycle cells (PO:0025261), as in most seed plants, cells of an endodermis (PO:0000252), as in ferns, or from cells on a shoot axis (PO:0025029), in the case of basal root primordia (PO:0025479) and shoot-borne root primordia (PO:0025480). Transition from root primordium to root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147).
+def: "A primordium (PO:0025127) that develops from a root anlagen (PO:0025433) and is committed to the development of a root (PO:0009005)." [ISBN:0521288959, POC:curators]
+comment: A root primordium may arise from cells of a pericycle (PO:0006203) in a root in most seed plant (pericyclic lateral root primordium; PO:0025492), from cells of an endodermis (PO:0000252) in ferns and some seed plants (non-pericyclic lateral root primordium: PO:0025493), or from cells of a shoot axis (PO:0025029), in the case of a basal root primordium (PO:0025479) or shoot-borne root primordium (PO:0025480). Transition from root primordium to root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147).
 synonym: "portion of root primordium tissue" EXACT []
 synonym: "primordio de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root primordia" EXACT Plural []
@@ -5969,11 +5969,11 @@ is_a: PO:0009025 ! vascular leaf
 
 [Term]
 id: PO:0006341
-name: primary shoot
+name: primary shoot system
 namespace: plant_anatomy
-def: "The shoot developing from the embryonic shoot apical meristem." [UMSL:fz]
-synonym: "epiblasto (epiblastema) primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+def: "A shoot system (PO:0009006) that develops from an embryo shoot apical meristem (PO:0006362)." [POC:curators, UMSL:fz]
 synonym: "main stalk" RELATED []
+synonym: "sistema de epiblasto (epiblastema) primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次 分げつ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009006 ! shoot system
 
@@ -9892,7 +9892,7 @@ synonym: "semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3458354
 is_a: PO:0009011 ! plant structure
-relationship: develops_from PO:0020003 ! ovule
+relationship: develops_from PO:0020003 ! plant ovule
 relationship: has_part PO:0009009 ! plant embryo
 
 [Term]
@@ -10700,8 +10700,8 @@ alt_id: PO:0006420
 alt_id: PO:0006421
 alt_id: PO:0006422
 alt_id: PO:0006471
-def: "A collective phyllome structure composed of two or more stamens." [POC:curators]
-comment: In some cases the androecium may consist of only one stamen. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). The development of an androecium in an ear floret of a normal maize plant is aborted and is present in a rudimentary state, while the development of an androecium in a tassel floret leads to a functional androecium.
+def: "A collective phyllome structure (PO:0025023) composed all of the stamens (PO:0009029) in a flower (PO:0009046)." [POC:curators]
+comment: The androecium also has as parts any staminodes (PO:0009077) that may be present in a flower. If annotating gene expression to an androecium with a single stamen (PO:0009029), the annotation should go on stamen. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). The development of an androecium in an ear floret of a normal maize plant is aborted and is present in a rudimentary state, while the development of an androecium in a tassel floret leads to a functional androecium.
 subset: Maize
 subset: Poaceae
 subset: reference
@@ -10744,8 +10744,8 @@ alt_id: PO:0006424
 alt_id: PO:0006425
 alt_id: PO:0006426
 alt_id: PO:0025089
-def: "A collective phyllome structure (PO:0025023) composed of one or more carpels (PO:0009030)." [POC:curators]
-comment: A gynoecium is usually composed of two or more carpels, but may have only a single carpel as part. If annotating gene expression to a gynoecium with a single carpel, the annotation should go on carpel. A gynoecium with two or more carpels may be either syncarpous (carpels fused) or apopcarpous (carpels free) or the carpels may be partially fused. The word pistil is used synonymously with gynoecium for a synocarpous gynoecium, and synonymously with carpel for an apocarpous gynoecium, whether it has one or more carpels. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+def: "A collective phyllome structure (PO:0025023) composed all of the carpels (PO:0009030) in a flower (PO:0009046)." [POC:curators]
+comment: If annotating gene expression to a gynoecium with a single carpel (PO:0009030), the annotation should go on carpel. A gynoecium with two or more carpels may be either syncarpous (carpels fused) or apopcarpous (carpels free) or the carpels may be partially fused. The word pistil is used synonymously with gynoecium for a synocarpous gynoecium, and synonymously with carpel for an apocarpous gynoecium, whether it has one or more carpels. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
 synonym: "apocarpous gynoecium" NARROW []
@@ -10937,7 +10937,7 @@ relationship: part_of PO:0000002 ! anther wall
 
 [Term]
 id: PO:0009072
-name: ovary
+name: plant ovary
 namespace: plant_anatomy
 alt_id: PO:0006456
 alt_id: PO:0006486
@@ -11425,7 +11425,7 @@ synonym: "Poaceae ovary placenta" NARROW []
 synonym: "Zea ovary placenta" NARROW []
 synonym: "子房胎座 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025078 ! placenta
-relationship: part_of PO:0009072 ! ovary
+relationship: part_of PO:0009072 ! plant ovary
 
 [Term]
 id: PO:0020002
@@ -11450,12 +11450,12 @@ relationship: part_of PO:0000002 ! anther wall
 
 [Term]
 id: PO:0020003
-name: ovule
+name: plant ovule
 namespace: plant_anatomy
 alt_id: PO:0006457
 alt_id: PO:0006491
-def: "A plant organ (PO:0009008) that has as parts a nucellus (PO:0020020) containing a female gametophyte (PO:0025279), one or two integuments (PO:0020021), and a funicle (PO:0020006)." [POC:curators]
-comment: A seed (PO:0009010) develops from an ovule. In angiosperms, an ovule is part of an ovary (PO:0009072). In gymnosperms, an ovule is part of an ovuliferous scale (add term). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+def: "A plant organ (PO:0009008) that has as parts a nucellus (PO:0020020) in which a female gametophyte (PO:0025279) is located, one or two integuments (PO:0020021), and a funicle (PO:0020006)." [POC:curators]
+comment: A seed (PO:0009010) develops from a plant ovule. In angiosperms, a plant ovule is part of a plant ovary (PO:0009072). In conifers, a plant ovule is part of an ovuliferous scale (add term). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "&#243vulo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11463,9 +11463,9 @@ synonym: "Poaceae ovule" NARROW []
 synonym: "Zea ovule" NARROW []
 synonym: "胚珠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
+xref: OBO_SF_PO:3519233
 is_a: PO:0009008 ! plant organ
 relationship: develops_from PO:0000018 ! ovule primordium
-relationship: part_of PO:0009072 ! ovary
 
 [Term]
 id: PO:0020004
@@ -11512,8 +11512,8 @@ name: funicle
 namespace: plant_anatomy
 alt_id: PO:0006466
 alt_id: PO:0006489
-def: "A stalk that attaches an ovule to a placenta." [APweb:Glossary, GR:Pankaj_Jaiswal]
-comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+def: "A stalk (PO:0025066) that attaches a plant ovule (PO:0020003) to a placenta (PO:0025078)." [APweb:Glossary, GR:Pankaj_Jaiswal]
+comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "fun&#237culo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "funiculi" EXACT Plural [FNA:a5184efd-42a0-4372-aabf-8ae590f8a7e0]
@@ -11522,7 +11522,7 @@ synonym: "Poaceae funicle" NARROW []
 synonym: "Zea funicle" NARROW []
 synonym: "珠柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025066 ! stalk
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020008
@@ -11660,8 +11660,8 @@ name: nucellus
 namespace: plant_anatomy
 alt_id: PO:0006462
 alt_id: PO:0006492
-def: "A megasporangium in a seed plant, composed of fleshy subepidermal tissue that is located in an ovule and surrounding a megasporocyte." [POC:curators]
-comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+def: "A megasporangium (PO:0025201) in a seed plant, composed of fleshy subepidermal tissue that is part of a plant ovule (PO:0020003) and surrounds a megasporocyte (PO:0000431)." [POC:curators]
+comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus. If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "megasporangium" RELATED []
@@ -11673,7 +11673,7 @@ synonym: "珠心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2903966
 xref: OBO_SF_PO:3132605
 is_a: PO:0025201 ! megasporangium
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020021
@@ -11681,8 +11681,8 @@ name: integument
 namespace: plant_anatomy
 alt_id: PO:0006465
 alt_id: PO:0006507
-def: "One of the layers of tissue that usually covers an ovule, enveloping a nucellus and forming the micropyle at the apex." [APweb:Glossary]
-comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+def: "A portion of plant tissue (PO:0009007) that usually covers a plant ovule (PO:0020003), enveloping a nucellus (PO:0020020) and forming a micropyle (PO:0020025) at the apex." [APweb:Glossary]
+comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "integumento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11691,7 +11691,7 @@ synonym: "portion of integument tissue" EXACT []
 synonym: "Zea integument" NARROW []
 synonym: "珠皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020022
@@ -11750,8 +11750,8 @@ name: chalaza
 namespace: plant_anatomy
 alt_id: PO:0006458
 alt_id: PO:0006506
-def: "A portion of plant tissue that is the region in an ovule where the integuments and the nucellus join with the funiculus." [ISBN:047124529]
-comment: The chalaza is recognized as the region which initiates the two integuments at its flank. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+def: "A portion of plant tissue (PO:0009007) that is the region in a plant ovule (PO:0020003) where the integuments (PO:0020021) and the nucellus (PO:0020020) join with the funicule (PO:0020006)." [ISBN:047124529]
+comment: The chalaza is recognized as the region which initiates the two integuments at its flank. If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "calaza (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "chalazae" EXACT Plural [FNA:cfff25ca-2b7f-46fa-970e-2a7fcdab1dbf]
@@ -11762,26 +11762,28 @@ synonym: "portion of chalaza tissue" EXACT []
 synonym: "Zea chalaza" NARROW []
 synonym: "カラザ（合点）=珠心と珠皮が珠柄につながるところ、珠孔の反対側 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020027
 name: raphe
 namespace: plant_anatomy
-def: "A cardinal organ part that is a ridge on an ovule where a funicle is or was fused to the ovule." [ISBN:047124529, POC:curators]
+def: "A cardinal organ part (PO:0025001) that is a ridge on a plant ovule (PO:0020003) where a funicle (PO:0020006) is or was fused to the ovule." [ISBN:047124529, POC:curators]
+comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491).
 subset: reference
 synonym: "rafe (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "背線、縫線 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2972097
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020028
 name: antiraphe
 namespace: plant_anatomy
-def: "A cardinal organ part that is the part of an ovule on the opposite side from a raphe." [POC:curators]
+def: "A cardinal organ part (PO:0025001) that is the part of a plant ovule (PO:0020003) on the opposite side from a raphe (PO:0020027)." [POC:curators]
+comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491).
 subset: Angiosperm
 subset: reference
 synonym: "anterafe (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11789,7 +11791,7 @@ synonym: "胚珠の縫線と反対側にある組織 (Japanese)" EXACT Japanese 
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2972168
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0020003 ! ovule
+relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020029
@@ -12528,9 +12530,11 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020121
 name: lateral root
 namespace: plant_anatomy
-def: "A root that develops from a lateral root primordium located in the pericycle layer of a primary root." [ISBN:0122151704]
+def: "A root (PO:0009005) that develops from a lateral root primordium (PO:0000016) that is part of another root on the same plant." [ISBN:0521288959, ISRR:Richard_Zobel, POC:curators]
+comment: A lateral root primordium may develops on any root, including a primary root (PO:0020127), on an existing lateral root (PO:0020121), or a shoot-borne root (PO:0000042). In seed plants, a lateral root primordium generally develops from pericycle cells (PO:0025261), but cells of an endodermis (PO:0000252) may also participate in its formation in some species. In ferns, lateral root primordia develop from the endodermis.
 synonym: "ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3524773
 is_a: PO:0009005 ! root
 relationship: develops_from PO:0000016 ! lateral root primordium
 
@@ -13572,10 +13576,11 @@ id: PO:0025049
 name: subterranean tuber interfascicular region
 namespace: plant_anatomy
 def: "A tuber interfascicular region that is part of a subterranean tuber storage parenchyma." [PO_REF:00004, POC:curators]
-comment: In potatoes, the interfascicular region extends to the subterranean tuber axillary vegetative buds (eyes).
+comment: Because subterranean interfascicular regions in potato tubers form before the subterranean tuber perimedullary zone expands (PO:0025063), in mature potato tubers, the subterranean tuber interfascicular regions persist as rays that extend from the central pith to the eyes or subterranean tuber axillary vegetative buds (PO:0025042).
 subset: Potato
 synonym: "regi&#243n interfascicular de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下 塊茎 維管束間領域 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3011081
 is_a: PO:0025050 ! tuber interfascicular region
 relationship: part_of PO:0025038 ! subterranean tuber storage parenchyma
 created_by: Ramona
@@ -13602,6 +13607,7 @@ namespace: plant_anatomy
 def: "A tuber interfascicular region that is part of an aerial tuber storage parenchyma." [POC:curators]
 synonym: "regi&#243n interfascicular de tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご維管束間領域 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3011081
 is_a: PO:0025050 ! tuber interfascicular region
 relationship: part_of PO:0025039 ! aerial tuber storage parenchyma
 created_by: Ramona
@@ -13929,7 +13935,7 @@ synonym: "saco embrionario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "胚嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025279 ! megagametophyte
 relationship: develops_from PO:0020019 ! megaspore
-relationship: part_of PO:0025490 ! ovarian ovule
+relationship: located_in PO:0025490 ! plant ovary ovule
 created_by: Ramona
 creation_date: 2010-07-01T02:50:36Z
 
@@ -16490,7 +16496,7 @@ synonym: "l&#243culo del ovario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Ga
 synonym: "sporophyll locule" BROAD []
 xref: OBO_SF_PO:3166008
 is_a: PO:0025263 ! locule
-relationship: part_of PO:0009072 ! ovary
+relationship: part_of PO:0009072 ! plant ovary
 created_by: Ramona
 creation_date: 2011-02-09T01:39:52Z
 
@@ -17551,6 +17557,7 @@ id: PO:0025348
 name: phyllome lamina vein
 namespace: plant_anatomy
 def: "A vascular bundle (PO:0005020) that is part of a phyllome lamina (PO:0025396)." [POC:Ramona_Walls]
+xref: OBO_SF_PO:3519204
 is_a: PO:0005020 ! vascular bundle
 intersection_of: PO:0005020 ! vascular bundle
 intersection_of: part_of PO:0025396 ! phyllome lamina
@@ -18667,7 +18674,7 @@ id: PO:0025433
 name: root anlagen
 namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that is committed to the development of a root primordium (PO:0005029)." [POC:curators]
-comment: Only detectable by gene expression, not morphology. May arise in a pericycle  (PO:0006203), as in most seed plants, an endodermis (PO:0000252), as in ferns, or on a shoot axis (PO:0025029), in the case of a basal root  (PO:0025002) or shoot-borne root  (PO:0000042).
+comment: Only detectable by gene expression, not morphology. May arise in a pericycle (PO:0006203), as for lateral roots in most seed plants, an endodermis (PO:0000252), as for lateral roots in ferns, or from parenchyma cells (PO:0000074) that are part a shoot axis (PO:0025029), in the case of a basal root (PO:0025002) or shoot-borne root (PO:0000042).
 synonym: "precursor de ra&#237 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3473464
 is_a: PO:0009007 ! portion of plant tissue
@@ -19374,13 +19381,14 @@ creation_date: 2012-05-07T08:15:32Z
 
 [Term]
 id: PO:0025490
-name: ovarian ovule
+name: plant ovary ovule
 namespace: plant_anatomy
-def: "An ovule (PO:0020006) that is part of an ovary (PO:0009072)." [POC:curators]
+def: "A plant ovule (PO:0020006) that is part of a plant ovary (PO:0009072)." [POC:curators]
 comment: Found in angiosperms.
 subset: Angiosperm
-is_a: PO:0020003 ! ovule
-relationship: part_of PO:0009072 ! ovary
+xref: OBO_SF_PO:3519233
+is_a: PO:0020003 ! plant ovule
+relationship: part_of PO:0009072 ! plant ovary
 created_by: RamonaNYBG
 creation_date: 2012-05-14T08:42:42Z
 
@@ -19388,12 +19396,59 @@ creation_date: 2012-05-14T08:42:42Z
 id: PO:0025491
 name: ovuliferous scale ovule
 namespace: plant_anatomy
-def: "An ovule (PO:0020006) that is part of an ovuliferous scale (add)." [POC:curators]
-comment: Found in gymnosperms.
+def: "A plant ovule (PO:0020006) that is part of an ovuliferous scale (add)." [POC:curators]
+comment: Found in conifers.
 subset: Gymnosperms
-is_a: PO:0020003 ! ovule
+xref: OBO_SF_PO:3519233
+is_a: PO:0020003 ! plant ovule
 created_by: RamonaNYBG
 creation_date: 2012-05-14T08:42:42Z
+
+[Term]
+id: PO:0025492
+name: pericyclic lateral root primordium
+namespace: plant_anatomy
+def: "A lateral root primordium (PO:0000016) that develops from a portion of pericycle tissue (PO:0006203) and is committed to the development of a pericyclic lateral root (PO:0025494)." [POC:curators]
+xref: OBO_SF_PO:3522014
+is_a: PO:0000016 ! lateral root primordium
+created_by: RamonaNYBG
+creation_date: 2012-05-23T14:15:16Z
+
+[Term]
+id: PO:0025493
+name: non-pericyclic lateral root primordium
+namespace: plant_anatomy
+def: "A lateral root primordium (PO:0000016) that develops from a portion of plant tissue (PO:0009007) other than a pericycle (PO:0006203) and is committed to the development of a non-pericyclic lateral root (PO:0025495)." [POC:curators]
+comment: A non-pericyclic lateral root primordium may develop from cells of an endodermis (PO:0000252) in ferns and some seed plants.
+xref: OBO_SF_PO:3522014
+is_a: PO:0000016 ! lateral root primordium
+created_by: RamonaNYBG
+creation_date: 2012-05-23T14:15:16Z
+
+[Term]
+id: PO:0025494
+name: pericyclic lateral root
+namespace: plant_anatomy
+def: "A lateral root (PO:0025495) that develops from a pericyclic lateral root primordium (PO:0025492)." [POC:curators]
+comment: A pericyclic lateral root primordium develops from cells that are  part of a pericycle (PO:0006203). This is the most common type of lateral root in seed plants.
+xref: OBO_SF_PO:3079725
+is_a: PO:0020121 ! lateral root
+relationship: develops_from PO:0025492 ! pericyclic lateral root primordium
+created_by: RamonaNYBG
+creation_date: 2012-05-23T14:25:36Z
+
+[Term]
+id: PO:0025495
+name: non-pericyclic lateral root
+namespace: plant_anatomy
+def: "A lateral root (PO:0025495) that develops from a non-pericyclic lateral root primordium (PO:0025493)." [ISRR:Richard_Zobel, POC:curators]
+comment: A non-pericyclic lateral root primordium develops from cells that are not part of a pericycle (PO:0006203). Develops from cells in an endodermis (PO:0000252) in ferns and some seed plants.
+synonym: "adventitious root sensu strictu" BROAD []
+xref: OBO_SF_PO:3079725
+is_a: PO:0020121 ! lateral root
+relationship: develops_from PO:0025493 ! non-pericyclic lateral root primordium
+created_by: RamonaNYBG
+creation_date: 2012-05-23T14:25:36Z
 
 [Term]
 id: PO:0028001
@@ -20864,6 +20919,12 @@ is_transitive: true
 [Typedef]
 id: has_participant
 name: has_participant
+
+[Typedef]
+id: located_in
+name: located_in
+created_by: RamonaNYBG
+creation_date: 2012-05-23T09:52:02Z
 
 [Typedef]
 id: part_of
