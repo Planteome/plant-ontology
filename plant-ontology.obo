@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:05:2012 19:19
+date: 12:06:2012 13:02
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -471,7 +471,7 @@ disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009008 ! plant organ
 disjoint_from: PO:0025001 ! cardinal organ part
-disjoint_from: PO:0025007 ! collective plant structure
+disjoint_from: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025269 ! collective organ part structure
 relationship: part_of PO:0000003 ! whole plant
 relationship: participates_in PO:0028002 ! sporophyte development stage
@@ -9662,7 +9662,7 @@ alt_id: PO:0020082
 alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
-def: "A collective plant structure containing one or more embryos, which as a whole, develops from a gynoecium." [POC:curators]
+def: "A multi-tissue plant structure (PO:0025496) containing one or more plant embryos (PO:0009009), which as a whole, develops from a gynoecium (PO:0009062)." [POC:curators]
 comment: A fruit may contain additional plant structures that were part of the flower that mature along with the gynoecium, such as a receptacle. A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions. Fruits only occur in angiosperms.
 subset: Angiosperm
 subset: Arabidopsis
@@ -9730,7 +9730,7 @@ synonym: "syncarp" NARROW [FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a]
 synonym: "utricle" NARROW [FNA:79dd979c-c3e8-4197-bf22-cd14b8932901]
 synonym: "果実 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972169
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025496 ! multi-tissue plant structure
 relationship: develops_from PO:0009062 ! gynoecium
 
 [Term]
@@ -9751,7 +9751,7 @@ is_a: PO:0009011 ! plant structure
 disjoint_from: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009008 ! plant organ
 disjoint_from: PO:0025001 ! cardinal organ part
-disjoint_from: PO:0025007 ! collective plant structure
+disjoint_from: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025269 ! collective organ part structure
 
 [Term]
@@ -9820,7 +9820,7 @@ synonym: "thallus" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
 synonym: "tree crown" NARROW []
 synonym: "シュート系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3011039
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025025 ! root system
 
 [Term]
@@ -9840,15 +9840,15 @@ xref: OBO_SF_PO:2944945
 is_a: PO:0009011 ! plant structure
 disjoint_from: PO:0009008 ! plant organ
 disjoint_from: PO:0025001 ! cardinal organ part
-disjoint_from: PO:0025007 ! collective plant structure
+disjoint_from: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025269 ! collective organ part structure
 
 [Term]
 id: PO:0009008
 name: plant organ
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path." [POC:curators]
-comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual cell types that are not part of tissues (e.g., idioblasts). A plant organ may have one or more different plant organs as parts, such as sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094).
+def: "A multi-tissue plant structure (PO:0025496) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path." [POC:curators]
+comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual cell types that are not part of tissues (e.g., idioblasts (PO:0000283)). A plant organ may have one or more different plant organs as parts, such as sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094) or a carpel that may have as part an plant ovule (PO:0020003).
 subset: TraitNet
 synonym: "&#243rgano vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "compound plant organ" RELATED []
@@ -9856,7 +9856,7 @@ synonym: "organ" BROAD []
 synonym: "simple plant organ" RELATED [PATO:01503]
 synonym: "植物 器官 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2932521
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025496 ! multi-tissue plant structure
 
 [Term]
 id: PO:0009009
@@ -9875,7 +9875,7 @@ is_a: PO:0000003 ! whole plant
 id: PO:0009010
 name: seed
 namespace: plant_anatomy
-def: "A plant structure that develops from an ovule and has as parts an embryo enclosed in a seed coat." [POC:curators]
+def: "A multi-tissue plant structure (PO:0025496) that develops from a plant ovule (PO:0020003) and has as parts a plant embryo (PO:0009009) enclosed in a seed coat (PO:0009088)." [POC:curators]
 comment: A seed generally develops from an ovule (PO:0020003) after fertilization, but may develop without fertilization in the case of apogamy (e.g., adventitious embryos or somatic embryos). A seed is a reproductive unit of seed plants (gymnosperms, angiosperms, and fossil pteridosperms).
 subset: Angiosperm
 subset: Arabidopsis
@@ -9891,7 +9891,7 @@ synonym: "pyrene" NARROW [FNA:f5c50e73-61e3-48ec-b918-6f85b3f40738]
 synonym: "semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3458354
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025496 ! multi-tissue plant structure
 relationship: develops_from PO:0020003 ! plant ovule
 relationship: has_part PO:0009009 ! plant embryo
 
@@ -10839,7 +10839,7 @@ synonym: "Zea anther" NARROW []
 synonym: "葯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3195060
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 relationship: develops_from PO:0006089 ! anther primordium
 relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009029 ! stamen
@@ -10894,7 +10894,7 @@ synonym: "teca (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Zea theca" NARROW []
 synonym: "花粉嚢、胞子嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3195060
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009066 ! anther
 
@@ -10941,7 +10941,7 @@ name: plant ovary
 namespace: plant_anatomy
 alt_id: PO:0006456
 alt_id: PO:0006486
-def: "A plant structure that is the basal portion of a carpel or group of fused carpels and encloses the ovule(s)." [APweb:Glossary, TAIR:Leonore_Reiser]
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is the basal portion of a carpel (PO:0009030) or group of fused carpels and encloses the plant ovule(s) (PO:0020003)." [APweb:Glossary, POC:LCtest, TAIR:Leonore_Reiser]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: Angiosperm
 subset: Maize
@@ -10953,7 +10953,7 @@ synonym: "Zea ovary" NARROW []
 synonym: "子房 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3177370
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
@@ -12902,7 +12902,7 @@ synonym: "parte de un &#243rgano cardinal (Spanish)" EXACT Spanish [POC:Maria_Al
 synonym: "基本的な（主要な）器官部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2945268
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-11T01:18:24Z
@@ -12977,16 +12977,16 @@ creation_date: 2010-03-03T03:06:46Z
 
 [Term]
 id: PO:0025007
-name: collective plant structure
+name: collective plant organ structure
 namespace: plant_anatomy
-def: "A plant structure that is a proper part of a plant and is composed of two or more organs and any associated portions of plant tissue." [POC:curators]
+def: "A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007)." [POC:curators]
 comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049. See also collective organ part structure, for plant structures composed of parts of multiple organs, but no complete organs.
 subset: TraitNet
 synonym: "collective plant organ structure" EXACT []
 synonym: "estructura colectiva vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合 植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2954382
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025497 ! collective plant structure
 relationship: has_part PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-09T04:12:11Z
@@ -13206,7 +13206,7 @@ synonym: "whorl" NARROW []
 synonym: "複葉器官構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2980171
 xref: OBO_SF_PO:2993809
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 created_by: cooperl
 creation_date: 2010-04-28T11:04:34Z
 
@@ -13232,7 +13232,7 @@ subset: TraitNet
 synonym: "root" BROAD [FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9]
 synonym: "sistema de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: Ramona
 creation_date: 2010-07-01T02:11:26Z
@@ -16536,11 +16536,11 @@ creation_date: 2011-02-09T02:30:21Z
 id: PO:0025269
 name: collective organ part structure
 namespace: plant_anatomy
-def: "A plant structure composed of two or more cardinal organ parts from adjacent organs and any associated portions of plant tissue." [POC:curators]
+def: "A collective plant structure (PO:0025497) composed of two or more cardinal organ parts (PO:0025001) from adjacent plant organs (PO:0009008) and any associated portions of plant tissue (PO:0009007)." [POC:curators]
 comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths. Unlike a collective plant structure, a collective organ part structure does not contain any complete organs.
 synonym: "&#243rgano colectivo de una parte de la estructura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3175301
-is_a: PO:0009011 ! plant structure
+is_a: PO:0025497 ! collective plant structure
 relationship: has_part PO:0025001 ! cardinal organ part
 created_by: Ramona
 creation_date: 2011-02-09T02:57:59Z
@@ -17704,7 +17704,7 @@ subset: Gymnosperms
 subset: Poaceae
 subset: Pteridophytes
 synonym: "sori" EXACT Plural []
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 relationship: has_part PO:0025094 ! sporangium
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: RamonaNYBG
@@ -17717,7 +17717,7 @@ namespace: plant_anatomy
 def: "A collective plant structure on the surface of a vascular leaf that has as parts two or more fused sori." [POC:curators]
 synonym: "ceonosoro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "coenosori" EXACT Plural []
-is_a: PO:0025007 ! collective plant structure
+is_a: PO:0025007 ! collective plant organ structure
 relationship: has_part PO:0025359 ! sorus
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: RamonaNYBG
@@ -19450,6 +19450,37 @@ is_a: PO:0020121 ! lateral root
 relationship: develops_from PO:0025493 ! non-pericyclic lateral root primordium
 created_by: RamonaNYBG
 creation_date: 2012-05-23T14:25:36Z
+
+[Term]
+id: PO:0025496
+name: multi-tissue plant structure
+namespace: plant_anatomy
+def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single, distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types." [POC:LCtest]
+xref: OBO_SF_PO:3530843
+is_a: PO:0009011 ! plant structure
+created_by: cooperl
+creation_date: 2012-06-11T14:57:00Z
+
+[Term]
+id: PO:0025497
+name: collective plant structure
+namespace: plant_anatomy
+def: "A multi-tissue plant structure (PO:0025496) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008), or cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:LCtest]
+xref: OBO_SF_PO:3530834
+is_a: PO:0025496 ! multi-tissue plant structure
+created_by: cooperl
+creation_date: 2012-06-11T15:09:20Z
+
+[Term]
+id: PO:0025498
+name: cardinal part of multi-tissue plant structure
+namespace: plant_anatomy
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a proper part of a plant organ (PO:0009008) and includes portions of plant tissue (PO:0009007) of at least two different types." [POC:LCtest]
+xref: OBO_SF_PO:3534632
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0025496 ! multi-tissue plant structure
+created_by: cooperl
+creation_date: 2012-06-11T15:28:44Z
 
 [Term]
 id: PO:0028001
