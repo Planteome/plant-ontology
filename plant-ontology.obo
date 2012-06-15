@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 12:06:2012 14:20
-saved-by: cooperl
+date: 15:06:2012 15:01
+saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -460,15 +460,14 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0000034
 name: vascular system
 namespace: plant_anatomy
-def: "A plant structure that includes the totality of the portions of vascular tissue in their specific arrangement in a whole plant or in a constituent part thereof." [ISBN:0471245208, ISBN:0716710072, POC:curators]
-comment: The vascular system may also contain portions of ground tissue.
+def: "A portion of vascular tissue (PO:0009015) that is the maximal portion vascular tissue in a whole plant or in a constituent part thereof." [ISBN:0471245208, ISBN:0716710072, POC:curators]
+comment: A vascular system consist of the totality of the portions of vascular tissue in their specific arrangement in a plant structure. May include other types of tissues or cells, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
 subset: TraitNet
 synonym: "sistema vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vasculature" EXACT [FNA:caf918bf-f4c4-423c-8008-87c96e5399a0]
 synonym: "維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009011 ! plant structure
+is_a: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009002 ! plant cell
-disjoint_from: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009008 ! plant organ
 disjoint_from: PO:0025001 ! cardinal organ part
 disjoint_from: PO:0025007 ! collective plant organ structure
@@ -3020,7 +3019,6 @@ synonym: "pedicelo del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gando
 synonym: "果柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2903966
 is_a: PO:0025243 ! infructescence branch
-relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0004537
@@ -3395,7 +3393,7 @@ def: "A cardinal organ part that forms a longitudinal groove in the testa throug
 synonym: "faboid split" RELATED []
 synonym: "surco del hilium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "へそ（種子）溝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025132 ! canal
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -5882,7 +5880,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part that is a ridge on a seed that develops from a raphe." [ISBN:047124529, POC:curators]
 synonym: "rafe de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 背線、縫線 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: develops_from PO:0020027 ! raphe
 relationship: part_of PO:0009010 ! seed
 
@@ -5893,7 +5891,7 @@ namespace: plant_anatomy
 def: "A stalk that is attached to a seed and is the remnants of a funicle." [POC:curators]
 synonym: "fun&#237culo de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 種柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025066 ! stalk
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
@@ -9077,7 +9075,7 @@ synonym: "blossom end" RELATED []
 synonym: "porci&#243n distal del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実 遠位端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -9091,7 +9089,7 @@ synonym: "fruit shoulders" RELATED []
 synonym: "porci&#243n proximal del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実 近位端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0009001 ! fruit
 
 [Term]
@@ -9662,7 +9660,7 @@ alt_id: PO:0020082
 alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
-def: "A multi-tissue plant structure (PO:0025496) containing one or more plant embryos (PO:0009009), which as a whole, develops from a gynoecium (PO:0009062)." [POC:curators]
+def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062) and has or more plant embryos (PO:0009009) located within it." [POC:curators]
 comment: A fruit may contain additional plant structures that were part of the flower that mature along with the gynoecium, such as a receptacle. A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions. Fruits only occur in angiosperms.
 subset: Angiosperm
 subset: Arabidopsis
@@ -9848,7 +9846,7 @@ id: PO:0009008
 name: plant organ
 namespace: plant_anatomy
 def: "A multi-tissue plant structure (PO:0025496) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path." [POC:curators]
-comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual cell types that are not part of tissues (e.g., idioblasts (PO:0000283)). A plant organ may have one or more different plant organs as parts, such as sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094) or a carpel that may have as part an plant ovule (PO:0020003).
+comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual cell types that are not part of tissues (e.g., idioblasts, PO:0000283). A plant organ may have one or more different plant organs as parts, such as sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094) or a carpel that may have as part a plant ovule (PO:0020003).
 subset: TraitNet
 synonym: "&#243rgano vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "compound plant organ" RELATED []
@@ -10941,7 +10939,7 @@ name: plant ovary
 namespace: plant_anatomy
 alt_id: PO:0006456
 alt_id: PO:0006486
-def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is the basal portion of a carpel (PO:0009030) or group of fused carpels and encloses the plant ovule(s) (PO:0020003)." [APweb:Glossary, POC:LCtest, TAIR:Leonore_Reiser]
+def: "A plant structure (PO:0009011) that is the basal portion of a carpel (PO:0009030) or group of fused carpels and encloses the plant ovule(s) (PO:0020003)." [APweb:Glossary, TAIR:Leonore_Reiser]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: Angiosperm
 subset: Maize
@@ -10953,7 +10951,7 @@ synonym: "Zea ovary" NARROW []
 synonym: "子房 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3177370
-is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
+is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
@@ -11371,7 +11369,7 @@ synonym: "arillus" EXACT [FNA:a8b68c3e-3987-4e3b-b776-d180b8d99767]
 synonym: "ariloide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "アリロイド (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132539
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -11383,7 +11381,7 @@ subset: reference
 synonym: "estrofiolo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ストロフィオール (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0019022 ! arilloid
-relationship: part_of PO:0020027 ! raphe
+relationship: part_of PO:0006331 ! seed raphe
 
 [Term]
 id: PO:0019024
@@ -12208,7 +12206,7 @@ def: "A cardinal organ part that is a scar on a seed at the place where it was a
 synonym: "hila" EXACT Plural [FNA:7ad77ba7-72b8-4447-ad0e-b0214ef133de]
 synonym: "hilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "核（デンプン粒）、へそ（種子） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0009010 ! seed
 
 [Term]
@@ -16626,7 +16624,7 @@ name: pollen sac
 namespace: plant_anatomy
 alt_id: PO:0006444
 alt_id: PO:0006476
-def: "A microsporangium that is located in a sporophyll and where the pollen grains developed and are located after they develop." [POC:curators]
+def: "A microsporangium that is part of a sporophyll and where the pollen grains develop and are located after they develop." [POC:curators]
 comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
@@ -19455,7 +19453,7 @@ creation_date: 2012-05-23T14:25:36Z
 id: PO:0025496
 name: multi-tissue plant structure
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single, distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types." [POC:LCtest]
+def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single, distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types." [CARO:0000055, POC:curators]
 xref: OBO_SF_PO:3530843
 is_a: PO:0009011 ! plant structure
 created_by: cooperl
@@ -19465,9 +19463,9 @@ creation_date: 2012-06-11T14:57:00Z
 id: PO:0025497
 name: collective plant structure
 namespace: plant_anatomy
-def: "A multi-tissue plant structure (PO:0025496) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008), or cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:LCtest]
+def: "A plant structure (PO:0009011) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008) or adjacent cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:LCtest]
 xref: OBO_SF_PO:3530834
-is_a: PO:0025496 ! multi-tissue plant structure
+is_a: PO:0009011 ! plant structure
 created_by: cooperl
 creation_date: 2012-06-11T15:09:20Z
 
@@ -19568,6 +19566,7 @@ synonym: "protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "protonemata" EXACT Plural []
 xref: OBO_SF_PO:3199622
 is_a: PO:0005426 ! chlorenchyma
+relationship: develops_from PO:0025017 ! plant spore
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-03-10T11:00:03Z
