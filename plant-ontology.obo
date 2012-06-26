@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:06:2012 17:09
+date: 26:06:2012 07:45
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -460,12 +460,13 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0000034
 name: vascular system
 namespace: plant_anatomy
-def: "A portion of vascular tissue (PO:0009015) that is the maximal portion vascular tissue in a whole plant or in a constituent part thereof." [ISBN:0471245208, ISBN:0716710072, POC:curators]
-comment: A vascular system consist of the totality of the portions of vascular tissue in their specific arrangement in a plant structure. May include other types of tissues or cells, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
+def: "A maximal portion of vascular tissue (PO:0009015) in a whole plant (PO:0000003), collective plant structure (PO:0025497), multi-tissue plant structure (PO:0025496), or cardinal part of multi-tissue plant structure (PO:0025498)." [ISBN:0471245208, ISBN:0716710072, POC:curators]
+comment: A vascular system consist of the totality of the portions of vascular tissue in their specific arrangement in a plant structure. May include other portions of plant tissue or plant cells (PO:0009002) of other types, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
 subset: TraitNet
 synonym: "sistema vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vasculature" EXACT [FNA:caf918bf-f4c4-423c-8008-87c96e5399a0]
 synonym: "維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OB_SF_PO:2903976
 is_a: PO:0009007 ! portion of plant tissue
 disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009008 ! plant organ
@@ -9660,8 +9661,8 @@ alt_id: PO:0020082
 alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
-def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062) and has or more plant embryos (PO:0009009) located within it." [POC:curators]
-comment: A fruit may contain additional plant structures that were part of the flower that mature along with the gynoecium, such as a receptacle. A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions. Fruits only occur in angiosperms.
+def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062) and may have as parts one or more seeds (PO:0009010)." [POC:curators]
+comment: A fruit may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds. Fruits only occur in angiosperms.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -9846,7 +9847,7 @@ id: PO:0009008
 name: plant organ
 namespace: plant_anatomy
 def: "A multi-tissue plant structure (PO:0025496) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path." [POC:curators]
-comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual cell types that are not part of tissues (e.g., idioblasts, PO:0000283). A plant organ may have one or more different plant organs as parts, such as sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094) or a carpel that may have as part a plant ovule (PO:0020003).
+comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual plant cells (PO:0009002) that are not part of a portion of plant tissue (e.g., idioblasts, PO:0000283). A plant organ may have one or more different plant organs as parts, such as a sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094) or a carpel (PO:0009030) that may have as part a plant ovule (PO:0020003).
 subset: TraitNet
 synonym: "&#243rgano vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "compound plant organ" RELATED []
@@ -12892,10 +12893,11 @@ is_a: PO:0001083 ! inflorescence development stage
 id: PO:0025001
 name: cardinal organ part
 namespace: plant_anatomy
-def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a proper part of a plant organ (PO:0009008) and includes portions of plant tissue (PO:0009007) of at least two different types." [POC:curators, POC:LCtest]
-comment: Cardinal refers to the fact that these are biologically meaningful parts, not arbitrary. Examples include lobe (PO TBD), operculum (PO TBD), neck (PO TBD), petiole PO:0020038, leaflet PO:0020049.
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a proper part of a plant organ (PO:0009008) and includes portions of plant tissue (PO:0009007) of at least two different types." [POC:curators]
+comment: Cardinal refers to the fact that these are biologically meaningful and not arbitrary parts. Examples include petiole (PO:0020038), lamina (PO:0025060), and leaflet (PO:0020049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs.
 subset: Arabidopsis
 subset: TraitNet
+synonym: "cardinal part of plant organ" EXACT []
 synonym: "parte de un &#243rgano cardinal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "基本的な（主要な）器官部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2903994
@@ -12978,11 +12980,8 @@ id: PO:0025007
 name: collective plant organ structure
 namespace: plant_anatomy
 def: "A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007)." [POC:curators]
-comment: Organs can be of the same type or different types. Examples include: flower PO:0009046, perianth PO:0009058, inflorescence PO:0009049. See also collective organ part structure, for plant structures composed of parts of multiple organs, but no complete organs.
+comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058),  and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs.
 subset: TraitNet
-synonym: "collective plant organ structure" EXACT []
-synonym: "estructura colectiva vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "集合 植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2954382
 is_a: PO:0025497 ! collective plant structure
 relationship: has_part PO:0009008 ! plant organ
@@ -16534,8 +16533,8 @@ creation_date: 2011-02-09T02:30:21Z
 id: PO:0025269
 name: collective organ part structure
 namespace: plant_anatomy
-def: "A collective plant structure (PO:0025497) composed of two or more cardinal organ parts (PO:0025001) from adjacent plant organs (PO:0009008) and any associated portions of plant tissue (PO:0009007)." [POC:curators]
-comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type (e.g., petioles, carpel walls), but may be of different types. Includes plant structures like a septum that consists of the walls of two fused carpels or a pseudostem that consist of multiple, overlapping leaf sheaths. Unlike a collective plant structure, a collective organ part structure does not contain any complete organs.
+def: "A collective plant structure (PO:0025497) composed of two or more cardinal organ parts (PO:0025001) that are part of adjacent plant organs (PO:0009008) and any associated portions of plant tissue (PO:0009007)." [POC:curators]
+comment: A collective organ part structure is composed of parts of multiple organs, but no complete organs. The organ parts are often of the same type but may be of different types. Includes plant structures like a septum (PO:0000030) that consists of the walls of two fused carpels (PO:0009030) or a pseudostem (PO:0025248) that consist of multiple, overlapping leaf sheaths (PO:0020104). Unlike a collective plant organ structure (PO:0025007), a collective organ part structure does not contain any complete plant organs.
 synonym: "&#243rgano colectivo de una parte de la estructura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3175301
 is_a: PO:0025497 ! collective plant structure
@@ -19218,9 +19217,9 @@ creation_date: 2012-03-22T03:42:34Z
 
 [Term]
 id: PO:0025476
-name: tuber root
+name: tuberous root
 namespace: plant_anatomy
-def: "A radially enlarged root (PO:0009005)." [RW:test]
+def: "A radially enlarged root (PO:0009005)." [POC:Ramona_Walls]
 comment: Functions in storage. This term should be used for tubers derived from roots, as found in Cassava, not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuber root may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch, but these arise from adventitious buds or are derived from the stem (PO:0009047) to which the tuber root is attached. A tuber root usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
 xref: OBO_SF_PO:2813017
 is_a: PO:0009005 ! root
@@ -19453,7 +19452,8 @@ creation_date: 2012-05-23T14:25:36Z
 id: PO:0025496
 name: multi-tissue plant structure
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single, distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types." [CARO:0000055, POC:curators]
+def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." [CARO:0000055, POC:curators]
+comment: ost multi-tissue plant structures have at list a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).
 xref: OBO_SF_PO:3530843
 is_a: PO:0009011 ! plant structure
 created_by: cooperl
@@ -19463,7 +19463,9 @@ creation_date: 2012-06-11T14:57:00Z
 id: PO:0025497
 name: collective plant structure
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008) or adjacent cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:LCtest]
+def: "A plant structure (PO:0009011) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008) or adjacent cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:curators]
+synonym: "estructura colectiva vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "集合 植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3530834
 is_a: PO:0009011 ! plant structure
 created_by: cooperl
@@ -19473,7 +19475,8 @@ creation_date: 2012-06-11T15:09:20Z
 id: PO:0025498
 name: cardinal part of multi-tissue plant structure
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that is a proper part of a multi-tissue plant structure (PO:0025496) and includes portions of plant tissues (PO:0009007) of at least two different types." [POC:LCtest]
+def: "A plant structure (PO:0009011) that is a proper part of a multi-tissue plant structure (PO:0025496) and includes portions of plant tissues (PO:0009007) of at least two different types." [POC:curators]
+comment: Includes cardinal parts of plant organs (PO:0025001) as well as parts of other multi-tissue plant structures. Cardinal refers to the fact that these are biologically meaningful and not arbitrary parts. Most cardinal part of multi-tissue plant structure have both fiat and bona-fide boundaries, including parts with large fiat boundaries, such as leaf base (PO:0020040) or fruit distal end (PO:0008001), and parts with primarily bona-fide boundaries, such as leaflet (PO:0020049).
 xref: OBO_SF_PO:3534632
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0025496 ! multi-tissue plant structure
