@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 26:06:2012 07:45
-saved-by: RamonaNYBG
+date: 26:06:2012 12:06
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -59,7 +59,7 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0000003
 name: whole plant
 namespace: plant_anatomy
-def: "A plant structure which is a whole organism." [POC:curators]
+def: "A plant structure (PO:0005679) which is a whole organism." [POC:curators]
 comment: Examples include plant embryo (PO:0009009), megagametophyte (PO:0025279) and microgametophyte (PO:0025280).
 subset: reference
 subset: TraitNet
@@ -87,7 +87,7 @@ is_a: PO:0009011 ! plant structure
 id: PO:0000004
 name: in vitro plant structure
 namespace: plant_anatomy
-def: "A plant structure that is grown or maintained in vitro." [POC:curators]
+def: "A plant structure (PO:0009011) that is grown or maintained in vitro." [POC:curators]
 comment: In vitro growth is defined as microbe-free growth in a sterile, culture environment, usually in the laboratory. An example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish, culture flask or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with Agrobacterium.
 synonym: "estructura vegetal in vito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生体外植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -1351,7 +1351,7 @@ id: PO:0000282
 name: trichome
 namespace: plant_anatomy
 alt_id: PO:0004510
-def: "A unicellular or multicellular plant structure that forms a non-sclerified outgrowth from the epidermis." [POC:curators]
+def: "A unicellular or multicellular plant structure (PO:0009011) that forms a non-sclerified outgrowth from the epidermis (PO:0005679)." [POC:curators]
 comment: This class is the union of unicellular trichome [narrow synonym of trichome cell (PO:0008030)] and multicellular trichome (PO:0025162).  A trichome can vary in length and shape and may be branched or unbranched.  It may be glandular or non-secretory.
 subset: TraitNet
 synonym: "barb trichome" BROAD [FNA:aa191087-e979-486f-ad87-0e050a83090f]
@@ -9736,7 +9736,7 @@ relationship: develops_from PO:0009062 ! gynoecium
 id: PO:0009002
 name: plant cell
 namespace: plant_anatomy
-def: "A cell which is a plant structure." [GO:0005623, POC:curators]
+def: "A cell which is a plant structure (PO:0009011)." [GO:0005623, POC:curators]
 comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505. Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
 subset: CL
 subset: reference
@@ -9826,7 +9826,7 @@ disjoint_from: PO:0025025 ! root system
 id: PO:0009007
 name: portion of plant tissue
 namespace: plant_anatomy
-def: "A plant structure that consists predominantly of similarly specialized cells of one or more types." [POC:curators, TAIR:Leonore_Reiser]
+def: "A plant structure (PO:0009011) that consists predominantly of similarly specialized plant cells (PO:0009002) of one or more types." [POC:curators, TAIR:Leonore_Reiser]
 comment: A portion of plant tissue may contain one or several types of cells that are organized in a specific spatial arrangement into a structural unit (which includes a mass of callus) and may include an intercellular matrix. May include other types of isolated cells, such as idioblasts.
 subset: reference
 subset: TraitNet
@@ -14231,7 +14231,7 @@ creation_date: 2010-12-17T02:04:06Z
 id: PO:0025099
 name: embryo plant structure
 namespace: plant_anatomy
-def: "A plant structure that is part of an embryo." [POC:curators]
+def: "A plant structure (PO:0009011) that is part of an plant embryo (PO:0009009)." [POC:curators]
 comment: Includes plant structures that only occur in embryos (such as suspensor) as well as plant structures that are part of an embryo when a plant is in the embryonic phase (such as embryonic radicle).
 synonym: "embryonic plant structure" EXACT []
 synonym: "estructura vegetal embri&#243nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -20785,7 +20785,7 @@ creation_date: 2011-05-04T02:38:25Z
 id: PO:0030078
 name: rhizoid
 namespace: plant_anatomy
-def: "A plant structure that is a uniseriate filament with positive geotropism that grows from an epidermis or protonema." [ISBN:0962073342, ISBN:unknown]
+def: "A plant structure (PO:0009011) that is a uniseriate filament with positive geotropism that grows from an epidermis (PO:0005679) or protonema (PO:0030003)." [ISBN:0962073342, ISBN:unknown]
 comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, protonemal rhizoids that branch from a protonema, and rhizoids that develop from a basal cell of a gametophore bud.
 synonym: "rizoide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293893
