@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:06:2012 12:06
+date: 26:06:2012 18:45
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -6709,7 +6709,7 @@ name: radicle emergence stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007507
 def: "A root development stage (PO:0007520) during which a radicle (PO:0020031) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:3826331524, POC:curators]
-comment: The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+comment: The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 synonym: "0.02-radicle emergence from seed in maize" RELATED [GRO:0007005]
 synonym: "0.2 radicle emergence from seed in maize" RELATED [MaizeGDB:67351]
 synonym: "05 radicle emergence from seed coat in soybean" RELATED [SOY:0000011]
@@ -7152,7 +7152,7 @@ id: PO:0007043
 name: hypocotyl emergence stage
 namespace: plant_structure_development_stage
 def: "A seedling development stage (PO:0007131) during which the hypocotyl (PO:0020100) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:0306416875, POC:curators]
-comment: This term is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+comment: This term is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed (PO:0009010) is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 synonym: "0.07.01 Cotyledons and hypocotyl emerge in soybean" RELATED [SOY:0000013]
 synonym: "0.07.02 Hypocotyl emerges above soil in soybean" RELATED [SOY:0000092]
 synonym: "BBCH growth stage 08" RELATED [ISBN:3826331524]
@@ -7180,7 +7180,7 @@ id: PO:0007045
 name: coleoptile emergence stage
 namespace: plant_structure_development_stage
 def: "A sporophyte vegetative stage (PO:0007134) during which the coleoptile (PO:0020033) emerges from the seed coat (PO:0009088)." [ISBN:3826331524, POC:curators]
-comment: Occurs in Poaceae and some other monocotyledons.  May occur simultaneously with coleoptile emergence from the growth medium. This terms is used only for seed plants.  The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+comment: Occurs in Poaceae and some other monocotyledons.  May occur simultaneously with coleoptile emergence from the growth medium.  The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed (PO:0009010) is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 synonym: "0.3 coleoptile emergence from seed in maize" RELATED [MaizeGDB:67352]
 synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
 xref: OBO_SF_PO:3324056
@@ -7231,7 +7231,7 @@ name: cotyledon emergence stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007069
 def: "A seedling development stage (PO:0007131) during which the cotyledon (PO:0020030) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:3826331524, POC:curators]
-comment: This term is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium, especially in plants with hypogeal germination.
+comment: This term is used only for seed plants. The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium, especially in plants with hypogeal germination. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 synonym: "01-seedling emergence in sorghum" RELATED [GRO:0007125]
 synonym: "1.00 Cotyledon visible in soybean" RELATED [SOY:0000014]
 synonym: "1.00 imperfect leaf unrolled" RELATED []
@@ -7336,7 +7336,7 @@ id: PO:0007054
 name: epicotyl emergence stage
 namespace: plant_structure_development_stage
 def: "A seedling development stage (PO:0007131) during which the epicotyl (PO:0020035) emerges from the seed coat (PO:0009088)." [GR:Anuradha_Pujar, ISBN:0306416875, POC:curators]
-comment: This term is used only for seed plants.  Occurs in plants with hypogeal germination such as pea (pisum sativum). The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+comment: Occurs in plants with hypogeal germination such as pea (pisum sativum). The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed (PO:0009010) is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 xref: OBO_SF_PO:3510272
 is_a: PO:0007131 ! seedling development stage
 
@@ -12342,12 +12342,13 @@ id: PO:0020094
 name: plant egg cell
 namespace: plant_anatomy
 def: "A gamete (PO:0025006) produced by an archegonium (PO:0025126) or an embryo sac (PO:0025074)." [POC:curators]
-comment: The plant egg cell (megagamete) is usually larger than the plant sperm cell (PO:0000084; microgamete). Female gametes may be defined as the non-motile gamete, rather than the larger gamete.
+comment: The plant egg cell (megagamete) is usually larger than the plant sperm cell (PO:0000084; microgamete).
 subset: CL
 subset: reference
 synonym: "egg cell" BROAD []
 synonym: "female gamete" EXACT []
 synonym: "megagamete" EXACT []
+synonym: "non-mobile gamete" BROAD []
 synonym: "ooc&#233lula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "卵細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3030032
@@ -12966,7 +12967,7 @@ creation_date: 2010-03-12T10:33:57Z
 id: PO:0025006
 name: gamete
 namespace: plant_anatomy
-def: "A plant cell that has half the chromosome complement of the sporophyte and is capable of fertilization to create a zygote." [POC:curators]
+def: "A plant cell that has half the chromosome complement of the sporophyte and is capable of fertilization to create a plant zygote (PO:0000423)." [POC:curators]
 subset: CL
 synonym: "gameta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -19208,7 +19209,7 @@ id: PO:0025475
 name: coleorhiza emergence stage
 namespace: plant_structure_development_stage
 def: "A root development stage (PO:0007520) during which a coleorhiza (PO:0020034) emerges from the seed coat (PO:0009088)." [POC:curators]
-comment: The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed is underneath a growth medium.
+comment: Occurs in Poaceae and some other monocotyledons. May occur simultaneously with coleoptile emergence from the growth medium.  The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed (PO:0009010) is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 xref: OBO_SF_PO:3324056
 is_a: PO:0007520 ! root development stage
 relationship: part_of PO:0007057 ! 0 seed germination stage
@@ -20785,7 +20786,7 @@ creation_date: 2011-05-04T02:38:25Z
 id: PO:0030078
 name: rhizoid
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that is a uniseriate filament with positive geotropism that grows from an epidermis (PO:0005679) or protonema (PO:0030003)." [ISBN:0962073342, ISBN:unknown]
+def: "A plant structure (PO:0009011) that is a uniseriate filament with positive geotropism that grows from an epidermis (PO:0005679) or protonema (PO:0030003)." [ISBN:0962073342]
 comment: May be unicellular or multicellular. Serves to anchor the plant to the substrate, and may function in nutrient and water uptake. Usually lacks chlorophyll. Includes epidermal rhizoids that grow from the epidermis of bryophytes and pteridophytes in the gametophytic phase or from the stems of some monocots, protonemal rhizoids that branch from a protonema, and rhizoids that develop from a basal cell of a gametophore bud.
 synonym: "rizoide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF_PO:3293893
