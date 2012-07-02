@@ -90,7 +90,7 @@ namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is grown or maintained in vitro." [POC:curators]
 comment: In vitro growth is defined as microbe-free growth in a sterile, culture environment, usually in the laboratory. An example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish, culture flask or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with Agrobacterium.
 synonym: "estructura vegetal in vito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "生体外植物構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "培養下植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2958948
 is_a: PO:0009011 ! plant structure
 
@@ -118,7 +118,7 @@ comment: The cell wall is generally removed using polysaccharide-degrading enzym
 subset: CL
 synonym: "protoplast" BROAD []
 synonym: "protoplasto cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "植物プロトプラスト、培養原形質    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "植物プロトプラスト (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3279819
 is_a: PO:0000005 ! cultured plant cell
 
@@ -132,7 +132,7 @@ subset: CL
 synonym: "c&#233lula cultivada de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cultured plant cell" RELATED [POC:curators]
 synonym: "leaf-derived cultured cell" EXACT []
-synonym: "培養葉細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉由来植物培養細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000005 ! cultured plant cell
 relationship: derives_by_manipulation_from PO:0025034 ! leaf
 
@@ -145,7 +145,7 @@ comment: May be derived from cultured plant callus or plant protoplasts induced 
 subset: CL
 synonym: "c&#233lula cultivada de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root-derived cultured cell" EXACT []
-synonym: "培養根細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "根由来植物培養細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000005 ! cultured plant cell
 relationship: derives_by_manipulation_from PO:0009005 ! root
 
@@ -185,7 +185,7 @@ def: "A somatic plant embryo grown and maintained in vitro." [POC:curators, TAIR
 comment: Cultured somatic plant embryos are commonly induced after the formation of callus from an explant and treatment with plant growth regulators.
 synonym: "cultured somatic embryo" BROAD []
 synonym: "embri&#243n som&#225tico cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "培養植物体細胞胚    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "培養植物体細胞不定胚    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000010 ! cultured plant embryo
 is_a: PO:0025302 ! somatic plant embryo
 relationship: develops_from PO:0006091 ! embryogenic callus
@@ -198,7 +198,7 @@ def: "Hook-like structure which develops at the apical part of the hypocotyl in 
 subset: reference
 synonym: "gancho apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "hypocotyl hook" RELATED []
-synonym: "頂端かぎ状構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "頂端かぎ状屈曲構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020100 ! hypocotyl
@@ -234,7 +234,7 @@ def: "A phyllome primordium (PO:0025128) that develops from a cotyledon anlagen 
 synonym: "cotyledon primordia" EXACT Plural []
 synonym: "portion of cotyledon primordium tissue" EXACT []
 synonym: "primordio de cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子葉原基（可視的）  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "子葉原基（可視的） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
 relationship: develops_from PO:0025432 ! cotyledon anlagen
@@ -390,7 +390,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. Tip portion of the pollen tube that is rapidly growing." [TAIR:Katica_Ilic]
 comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube tip (GO:0090404). Since a pollen tube tip is part_of a pollen tube, which is part of a pollen cell, annotations for pollen tube tip may also go to the more general term pollen tube cell (PO:0025195).
 synonym: "punta del tubo pol&#237nico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "花粉管 先端    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "花粉管先端部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3115812
 is_obsolete: true
 consider: PO:0025195
@@ -440,7 +440,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue consisting of four microspores that remained joined together shortly after meiosis. Each cell will give rise to a male gametophyte." [POC:Ramona_Walls]
 subset: reference
 synonym: "t&#233trada de las microsporas (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "小胞子の四分子    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "小胞子の四分子   小胞子四分子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132503
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020047 ! microsporocyte
@@ -454,7 +454,7 @@ def: "A valve that is a part of a fruit that splits apart when the fruit dehisce
 comment: A valve may develop from an entire carpel (as in Brassicaceae) or from part of a carpel (as in Fabaceae).
 subset: Arabidopsis
 synonym: "valva de fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "果実 弁    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "果実の弁    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132512
 is_a: PO:0025228 ! valve
 relationship: part_of PO:0009001 ! fruit
@@ -1331,7 +1331,7 @@ comment: This term was made obsolete because it was not appropriate. Replaced by
 subset: CL
 subset: TraitNet
 synonym: "elemento del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "木質部 構成要素    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "木部要素    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481658
 is_obsolete: true
 consider: PO:0000274
@@ -1346,7 +1346,7 @@ comment: It may be difficult to distinguish xylem fiber cells, especially fiber 
 subset: CL
 subset: TraitNet
 synonym: "fibra del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "木質部繊維細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "木部繊維細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481665
 is_a: PO:0025407 ! plant fiber cell
 intersection_of: PO:0025407 ! plant fiber cell
@@ -1385,7 +1385,7 @@ synonym: "squamella" NARROW [FNA:8e08fd97-8c3f-4377-a4a1-dc52a4f3c7e1]
 synonym: "squamellae" NARROW Plural [FNA:5f7f24f3-8ff4-450a-896e-3ae16be8f3ef]
 synonym: "squamule" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "毛茸、糸状体、トライコーム    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "毛茸、糸状体、毛    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009011 ! plant structure
 relationship: develops_from PO:0000349 ! epidermal initial cell
 relationship: part_of PO:0005679 ! epidermis
@@ -2708,7 +2708,7 @@ subset: TraitNet
 synonym: "pubescence" RELATED []
 synonym: "seed hair" EXACT []
 synonym: "tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "種子 トライコーム（毛茸、糸状体、毛状突起体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子毛（毛茸、糸状体、毛状突起体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0006048 ! seed coat epidermis
 
@@ -2883,7 +2883,7 @@ subset: CL
 subset: TraitNet
 synonym: "c&#233lula parenquim&#225tica de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "wood parenchyma cell" EXACT []
-synonym: "二次木質部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503456
 is_a: PO:0000074 ! parenchyma cell
 intersection_of: PO:0000074 ! parenchyma cell
@@ -2898,7 +2898,7 @@ def: "A secondary xylem parenchyma cell (PO:0004525) that is part of a portion o
 subset: CL
 synonym: "axial wood parenchyma cell" EXACT []
 synonym: "c&#233lula parenquim&#225tica axial de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "軸方向第二木部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "軸方向二次木部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503456
 is_a: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
@@ -2914,7 +2914,7 @@ def: "A parenchyma cell (PO:0000074) that develops from a ray initial (PO:000008
 subset: CL
 synonym: "c&#233lula parenquim&#225tica de rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ray wood parenchyma cell" EXACT []
-synonym: "放射状第二木質部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "放射状二次木部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503456
 is_a: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
@@ -2931,7 +2931,7 @@ subset: CL
 synonym: "rayo par&#233nquim&#225tico vertical de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "upright cell" BROAD []
 synonym: "upright ray wood parenchyma cell" EXACT []
-synonym: "直立放射状第二木質部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "直立放射状二次木部柔組織細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503456
 is_a: PO:0004527 ! ray secondary xylem parenchyma cell
 
@@ -2944,7 +2944,7 @@ subset: CL
 synonym: "c&#233lula procumbente del rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "procumbent cell" BROAD []
 synonym: "procumbent ray wood parenchyma cell" EXACT []
-synonym: "平伏放射第二木質部柔組織細胞   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "平伏放射二次木部柔組織細胞   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503456
 is_a: PO:0004527 ! ray secondary xylem parenchyma cell
 
@@ -2975,7 +2975,7 @@ namespace: plant_anatomy
 def: "A portion of parenchyma (PO:0005421) tissue that is part of a portion of secondary xylem (PO:0005848) and has as parts secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245194]
 synonym: "par&#233nquima de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "wood parenchyma" EXACT []
-synonym: "二次木質部柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503451
 is_a: PO:0005421 ! parenchyma
 intersection_of: PO:0005421 ! parenchyma
@@ -2989,7 +2989,7 @@ namespace: plant_anatomy
 def: "A portion of secondary xylem parenchyma (PO:0004532) that is part of an axial system (PO:0025410) and has as parts axial secondary xylem parenchyma cells (PO:0004526)." [ISBN:0471245194]
 synonym: "axial wood parenchyma" EXACT []
 synonym: "par&#233nquima axial de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "軸方向第二木部柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "軸方向二次木部柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503451
 is_a: PO:0004532 ! secondary xylem parenchyma
 intersection_of: PO:0004532 ! secondary xylem parenchyma
@@ -3005,7 +3005,7 @@ comment: Occurs in bands or rays of variable width and height that extend radial
 synonym: "par&#233nquima de rayo de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ray" BROAD []
 synonym: "ray wood parenchyma" EXACT []
-synonym: "放射状第二木質部柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "放射状二次木質部柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3503451
 is_a: PO:0004532 ! secondary xylem parenchyma
 intersection_of: PO:0004532 ! secondary xylem parenchyma
@@ -3046,7 +3046,7 @@ subset: Citrus
 synonym: "adventitious embryo" BROAD []
 synonym: "embri&#243n adventicio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "nucellar embryo" EXACT []
-synonym: "不定胚    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "珠心由来の不定胚    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293415
 is_a: PO:0025302 ! somatic plant embryo
 
@@ -3524,7 +3524,7 @@ subset: TraitNet
 synonym: "branch trichome" NARROW []
 synonym: "eje de tricoma del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem trichome" NARROW []
-synonym: "シュート軸 トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "シュート軸毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000282 ! trichome
 relationship: part_of PO:0000112 ! shoot axis epidermis
 
@@ -4016,7 +4016,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. Aerenchyma, originating by a combination of two processes, separation and degradation of cell walls." [GR:Pankaj_Jaiswal, ISBN:0080374913]
 comment: The term was made obsolete because schizo-lysigenous form is an attribute of regular aerenchyma.
 synonym: "aer&#233nquima esquizo-lis&#237geno (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "離生通気組織(schizogenous?) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "離破生通気組織(schizogenous?) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -4385,7 +4385,7 @@ subset: TraitNet
 synonym: "portion of secondary xylem tissue" EXACT []
 synonym: "wood" EXACT []
 synonym: "xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次木質部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3067090
 xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
@@ -4400,7 +4400,7 @@ comment: Primary xylem develops as part of primary growth (request for primary g
 subset: TraitNet
 synonym: "portion of primary xylem tissue" EXACT []
 synonym: "xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "一次木質部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "一次木部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476729
 is_a: PO:0005352 ! xylem
 relationship: develops_from PO:0025275 ! procambium
@@ -5069,7 +5069,7 @@ synonym: "adaxial meristem" RELATED []
 synonym: "leaf meristem" RELATED []
 synonym: "ventral meristem" RELATED []
 synonym: "zona transicional semejante al cambium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "形成層様移行領域 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "形成層様移行帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -5179,7 +5179,7 @@ def: "A portion of primary phloem (PO:0006075) tissue has as parts the first-for
 comment: Protophloem is the first primary phloem to develop in any particular location in a portion of vascular tissue (PO:0009015). Sieve elements in the protophloem are smaller than in the metaphloem (PO:0006076). The protophloem usually only lasts a short time before it is replaced by metaphloem.
 synonym: "portion of protophloem tissue" EXACT []
 synonym: "protofloema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "原始師部、原生始師部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原生師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476728
 is_a: PO:0006075 ! primary phloem
 
@@ -5190,7 +5190,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The vascular tissue of the primary plant body at the embryonic stage." [GR:Pankaj_Jaiswal]
 comment: Redundant to sec ...
 synonym: "tejido vascular primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "一次維管組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "一次維管束組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -5213,7 +5213,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The vascular tissue derived from the vascular cambium because of the secondary growth." [GR:Pankaj_Jaiswal]
 comment: Redundant sec phloem and xylem
 synonym: "tejido vascular secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次維管組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次維管束組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -5539,7 +5539,7 @@ namespace: plant_anatomy
 def: "A portion of primary phloem tissue positioned internal to the primary xylem." [ISBN:0122151704]
 synonym: "floema intraxil&#233mico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "intraxylary phloem" RELATED []
-synonym: "内部師部、師管部    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "内部師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006075 ! primary phloem
 
 [Term]
@@ -6006,7 +6006,7 @@ namespace: plant_anatomy
 def: "A shoot system (PO:0009006) that develops from an embryo shoot apical meristem (PO:0006362)." [POC:curators, UMSL:fz]
 synonym: "main stalk" RELATED []
 synonym: "sistema de epiblasto (epiblastema) primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "一次分げつ    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "一次分げつ系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009006 ! shoot system
 
 [Term]
@@ -6535,7 +6535,7 @@ comment: If you are annotating to this term, please add an additional annotation
 subset: TraitNet
 synonym: "phyllid trichome" NARROW []
 synonym: "tricoma de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "葉トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132414
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006016 ! leaf epidermis
@@ -9304,7 +9304,7 @@ namespace: plant_anatomy
 def: "A vascular leaf that is part of an heteroblastic series, and is characterized by anatomical features that are intermediate between juvenile and adult leaves." [GR:Chih-Wei_Tung]
 comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. Transition leaves may have mosaics of juvenile and adult tissues, as in Brachypodium.
 synonym: "hoja de transici&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "移行期の維管束系葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "維管束植物の幼葉と成熟葉の移行期の葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3324058
 is_a: PO:0009025 ! vascular leaf
 
@@ -9448,7 +9448,7 @@ synonym: "non-glandular unicellular trichome" NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
 synonym: "simple trichome" NARROW [PMID:19939948]
 synonym: "unicellular trichome" NARROW []
-synonym: "トライコーム（毛茸、糸状体）細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "毛（毛茸、糸状体）細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0004013 ! epidermal cell
 relationship: part_of PO:0000282 ! trichome
@@ -9460,7 +9460,7 @@ namespace: plant_anatomy
 def: "OBSOLETE. The branch on a trichome." [GR:Chih-Wei_Tung]
 comment: This term was made obsolete because it is a sub-cellular component. New term unicellular trichome branch (GO:0090405) has been added to GO. For cell that is a branch of a multicellular trichome, see multicellular trichome branch cell (PO:0025163).
 synonym: "rama del tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "トライコーム上の分枝    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "毛上の分枝    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 consider: PO:0025163
 
@@ -10105,7 +10105,7 @@ synonym: "scale-like leaf" NARROW []
 synonym: "sterile frond" NARROW [FNA:a4dc40f4-92f9-4ba5-b616-a84564f63fed]
 synonym: "trophophyll" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
 synonym: "vascular leaves" EXACT Plural [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
-synonym: "維管束系葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "維管束のある葉   、または維管束植物の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025034 ! leaf
 relationship: participates_in PO:0028002 ! sporophyte development stage
 
@@ -10118,7 +10118,7 @@ subset: reference
 subset: TraitNet
 synonym: "esporofilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spore leaf" EXACT [FNA:301289d5-912b-4db3-af05-73579ecb9ef0]
-synonym: "芽胞葉、実葉、胞子葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "胞子葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006001 ! phyllome
 
 [Term]
@@ -10849,7 +10849,7 @@ subset: reference
 synonym: "floral cup" BROAD [FNA:fef1e834-960a-45ae-b4d8-b9454313c2bf]
 synonym: "hipantio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "hypanthia" EXACT Plural [FNA:0d70e812-f442-4e40-95b7-7d2541db063d]
-synonym: "隠頭花序、いちじく状花序（＝hypanthodium    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "花床筒 、いちじく状花序（＝hypanthodium    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972200
 xref: PATO:0001873
 xref: PATO:0002227
@@ -10962,7 +10962,7 @@ synonym: "pollen sac tapetum" EXACT []
 synonym: "portion of anther wall tapetal tissue" EXACT []
 synonym: "tapete (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Zea tapetum" NARROW []
-synonym: "葯壁絨毯組織（タペート組織)  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葯壁タペート組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3298006
 is_a: PO:0025314 ! microsporangium tapetum
 relationship: part_of PO:0000002 ! anther wall
@@ -11230,7 +11230,9 @@ id: PO:0009091
 name: mature dispersal unit
 namespace: plant_anatomy
 def: "OBSOLETE. provisional term" [Poc:curators]
+synonym: "? (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "unidad de dispersi&#243n madura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "? (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -11428,7 +11430,7 @@ synonym: "op&#233rculo de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejand
 synonym: "portion of seed operculum tissue" EXACT []
 synonym: "seed lid" EXACT [FNA:c162800f-7ac5-4f02-8ff3-679d247a5c15]
 synonym: "seed opercula" EXACT Plural [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
-synonym: "種子 蘚蓋   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子蘚蓋   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
@@ -11599,7 +11601,7 @@ def: "OBSOLETE. The inner, non-sculptured part of the exine which lies below the
 comment: This term is now available in the cellular_component aspect of the Gene Ontology, GO:0043672.
 subset: reference
 synonym: "nexina (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "ネキシン？ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "ネキシン (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -11646,7 +11648,7 @@ comment: This term is now available in the cellular_component aspect of the Gene
 subset: reference
 synonym: "elementos de la escultura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sexine 3" RELATED []
-synonym: "立体要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "柱状体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -12539,7 +12541,7 @@ def: "A cardinal organ part (PO:0025001) that is an ear-shaped outgrowth of the 
 comment: May wrap around the stem (PO:0009047) or branch (PO:0025073) to which the vascular leaf (PO:0009025) it is part of is attached. Found in some Poaceae.
 synonym: "aur&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf sheath ear" EXACT [FNA:821f1b3a-3fb0-40d9-9f38-ca0a6c0f313c]
-synonym: "葉耳    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉鞘葉耳    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020104 ! leaf sheath
@@ -13043,7 +13045,7 @@ namespace: plant_anatomy
 def: "A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007)." [POC:curators]
 comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058),  and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs.
 subset: TraitNet
-synonym: "集合植物構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "集合植物器官構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2954382
 is_a: PO:0025497 ! collective plant structure
 relationship: has_part PO:0009008 ! plant organ
@@ -13243,7 +13245,7 @@ synonym: "leaf series" EXACT [FNA:5060eda6-41fb-4c20-9bc6-79c449da97b2]
 synonym: "leaf whorl" NARROW []
 synonym: "rosette" NARROW []
 synonym: "verticil" BROAD [FNA:12607624-3d2a-4113-bd86-0e2557f2f473]
-synonym: "集合的葉構造   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉が集まった構造   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2988258
 is_a: PO:0025023 ! collective phyllome structure
 created_by: Ramona
@@ -13262,7 +13264,7 @@ synonym: "floral whorl" NARROW [GO:0048438, GO:0048457, GO:0048458, GO:0048459]
 synonym: "phyllome whorl" RELATED []
 synonym: "verticil" BROAD [FNA:12607624-3d2a-4113-bd86-0e2557f2f473]
 synonym: "whorl" NARROW []
-synonym: "複葉器官構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉的器官が集まった構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2980171
 xref: OBO_SF_PO:2993809
 is_a: PO:0025007 ! collective plant organ structure
@@ -13893,7 +13895,7 @@ name: seed storage parenchyma
 namespace: plant_anatomy
 def: "A portion of storage parenchyma that is part of a seed." [POC:curators]
 synonym: "par&#233nquima de reserva de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "種子 貯蔵柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子貯蔵柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3016492
 is_a: PO:0025035 ! storage parenchyma
 relationship: part_of PO:0009010 ! seed
@@ -14131,7 +14133,7 @@ synonym: "ovulate cone" NARROW []
 synonym: "pollen cone" NARROW []
 synonym: "simple strobilus" NARROW []
 synonym: "strobili" EXACT Plural [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
-synonym: "珠果    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "胞子嚢穂,　球花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025082 ! reproductive shoot system
 created_by: Ramona
 creation_date: 2010-09-17T09:51:22Z
@@ -14283,7 +14285,7 @@ name: bract trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a bract epidermis." [POC:Ramona_Walls]
 synonym: "tricoma de br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "苞 トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "苞毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0025158 ! bract epidermis
 created_by: Ramona
@@ -14718,7 +14720,7 @@ def: "A leaf near the apex of a stem that is still rolled into a cylinder." [POC
 comment: Describes the phenotype of a vascular leaf during a leaf development phase in Musa and other monocots.
 subset: Musa
 synonym: "hoja en cigarro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "タバコ葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉巻状葉  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CO_125:0000008
 is_a: PO:0009025 ! vascular leaf
 created_by: Ramona
@@ -14754,7 +14756,7 @@ synonym: "sulci" NARROW Plural [FNA:eb5b8ab1-f470-4ec7-af85-1aebb3c6cfdb]
 synonym: "sulcus" NARROW [FNA:1349af86-f437-43f7-8d89-922f8f8cbb4b]
 synonym: "vallecula" NARROW [FNA:1ff40e83-d673-479e-8e07-db94025934ce]
 synonym: "valleculae" NARROW Plural [FNA:096605b7-f4f5-43b4-a0c1-c29a9e3fb65d]
-synonym: "管    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "溝   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025117 ! plant anatomical space
 created_by: Ramona
 creation_date: 2010-11-15T11:47:42Z
@@ -14767,7 +14769,7 @@ def: "A canal that is part of a petiole." [POC:curators]
 comment: May occur on the surface or be internal.
 subset: Musa
 synonym: "canal de pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "葉柄管    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉柄の溝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025132 ! canal
 relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
@@ -14796,7 +14798,7 @@ namespace: plant_anatomy
 def: "A portion of leaf lamina abaxial epidermis that covers the abaxial surface of a cigar leaf." [CGP:curators, POC:Ramona_Walls]
 synonym: "cigar leaf dorsal surface" EXACT [CO_125:0000017]
 synonym: "epidermis abaxial de la l&#225mina de la hoja en cigarro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "タバコ葉身背軸側表皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉巻状葉の葉身背軸側表皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000049 ! leaf lamina abaxial epidermis
 relationship: part_of PO:0025130 ! cigar leaf
 created_by: Ramona
@@ -14810,7 +14812,7 @@ def: "A tepal that is separate from all other tepals." [POC:curators]
 comment: This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0001505 (separated from).
 subset: Musa
 synonym: "t&#233palo libre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "花被片    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "遊離花被片    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CO_125:0000020
 is_a: PO:0009033 ! tepal
 disjoint_from: PO:0025137 ! fused tepal
@@ -15037,7 +15039,7 @@ def: "A shoot axis trichome that is part of a peduncle epidermis." [POC:Ramona_W
 subset: Musa
 synonym: "peduncle hair" EXACT [CO_125:0000051]
 synonym: "tricoma del ped&#250nculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "花梗 トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "花梗毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005003 ! shoot axis trichome
 relationship: part_of PO:0025152 ! peduncle epidermis
 created_by: Ramona
@@ -15159,7 +15161,7 @@ comment: Can vary in size and complexity. May contain a secretory gland.
 synonym: "non-glandular multicelluar trichome" NARROW []
 synonym: "non-secretory multicellular trichome" NARROW []
 synonym: "tricoma multicelular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "多細胞トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "多細胞毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000282 ! trichome
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0004013 ! epidermal cell
@@ -15174,7 +15176,7 @@ def: "A trichome cell that forms a branch of a multicellular trichome." [POC:cur
 comment: For branches of a unicellular trichome, see unicellular trichome branch (GO:0090405) in GO.
 subset: CL
 synonym: "c&#233lula ramificada de tricoma multicelular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "多細胞 トライコーム（毛茸、糸状体）分枝細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "多細胞毛（毛茸、糸状体）分枝細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0008030 ! trichome cell
 relationship: part_of PO:0025162 ! multicellular trichome
 created_by: Ramona
@@ -15379,7 +15381,7 @@ namespace: plant_anatomy
 def: "A shoot axis trichome that is part of a stem epidermis." [POC:Ramona_Walls]
 synonym: "stem hair" EXACT []
 synonym: "tricoma del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "茎トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "茎の毛 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005003 ! shoot axis trichome
 relationship: part_of PO:0025178 ! stem epidermis
 created_by: Ramona
@@ -15392,7 +15394,7 @@ namespace: plant_anatomy
 def: "A shoot axis trichome that is part of a branch epidermis." [POC:Ramona_Walls]
 synonym: "branch hair" EXACT []
 synonym: "tricoma de una ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "枝 トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "枝の毛 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005003 ! shoot axis trichome
 relationship: part_of PO:0025179 ! branch epidermis
 created_by: Ramona
@@ -15453,7 +15455,7 @@ name: sepal trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a sepal epidermis." [POC:Ramona_Walls]
 synonym: "tricoma de la epidermis del s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "がく片トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "がく片毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3112828
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006040 ! sepal epidermis
@@ -15510,7 +15512,7 @@ name: phyllome trichome
 namespace: plant_anatomy
 def: "A trichome that is part of a phyllome epidermis." [POC:Ramona_Walls]
 synonym: "tricoma del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "フィロムトライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "フィロム毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000282 ! trichome
 created_by: Ramona
 creation_date: 2010-12-06T01:17:31Z
@@ -15521,7 +15523,7 @@ name: petal trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a petal epidermis." [POC:Ramona_Walls]
 synonym: "tricoma del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "花弁トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "花弁毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0006041 ! petal epidermis
 created_by: Ramona
@@ -15533,7 +15535,7 @@ name: tepal trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a tepal epidermis." [POC:Ramona_Walls]
 synonym: "tricoma de la epidermis del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "花被片トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "花被片毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0025184 ! tepal epidermis
 created_by: Ramona
@@ -15793,7 +15795,7 @@ name: carpel trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a bract epidermis." [POC:Ramona_Walls]
 synonym: "tricoma del carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "心皮 トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "心皮毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0025096 ! carpel epidermis
 created_by: Ramona
@@ -15805,7 +15807,7 @@ name: stamen trichome
 namespace: plant_anatomy
 def: "A phyllome trichome that is part of a stamen epidermis." [POC:Ramona_Walls]
 synonym: "tricoma vascular del estambre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "雄蕊トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "雄蕊毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
 relationship: part_of PO:0025097 ! stamen epidermis
 created_by: Ramona
@@ -15818,7 +15820,7 @@ namespace: plant_anatomy
 def: "A leaf trichome that is part of a leaf abaxial epidermis." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "tricoma de la superficie abaxial de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "葉背軸側トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉背軸側毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006504 ! leaf trichome
 relationship: part_of PO:0006019 ! leaf abaxial epidermis
 created_by: Ramona
@@ -15831,7 +15833,7 @@ namespace: plant_anatomy
 def: "A leaf trichome that is part of a leaf adaxial epidermis." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "tricoma de la superficie adaxial de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "葉向軸側トライコーム（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉向軸側毛（毛茸、糸状体）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006504 ! leaf trichome
 relationship: part_of PO:0006018 ! leaf adaxial epidermis
 created_by: Ramona
@@ -17778,7 +17780,7 @@ namespace: plant_anatomy
 def: "An axillary vegetative bud (PO:0004712) that is not elongated, in which the vascular leaves (PO:0009025) develop as spine leaves (PO:0025173)." [ISBN:9780881928501]
 comment: Found in Cactaceae. Appears as a cluster of spine leaves. May be covered in trichomes (PO:0000282). In species with tubercles (PO:0025352), the areole bud is often found at the distal end of the tubercle. The areole bud originates in a leaf axil (PO:0009023) of a leaf that becomes a tubercle but is displaced to the tip of a tubercle through elongation of the tubercle.
 synonym: "areola de la yema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "芽網目隙 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "刺座、アレオール (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3438986
 is_a: PO:0004712 ! axillary vegetative bud
 created_by: RamonaNYBG
@@ -17982,7 +17984,7 @@ name: trichome development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage that has as primary participant a trichome." [POC:curators]
 synonym: "etapa de desarrollo del tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "トライコーム発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "毛発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3444432
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0000282 ! trichome
@@ -17997,7 +17999,7 @@ def: "A trichome development stage that has as primary participant a seed tricho
 comment: Seed trichome development stage consists of the following sub stages: seed trichome initiation stage (PO:0025370), seed trichome elongation stage (PO:0025371), seed trichome secondary wall biosynthesis stage(PO:0025372) and seed trichome maturation stage (PO:0025373).
 synonym: "etapa de desarrollo del tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed hair development stage" EXACT []
-synonym: "種子トライコーム発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子毛発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3035688
 is_a: PO:0025368 ! trichome development stage
 relationship: has_participant PO:0004511 ! seed trichome
@@ -18012,7 +18014,7 @@ def: "A seed trichome development stage which occurs during the interval between
 comment: Refers to the GO Biological Process terms seed trichome initiation (GO:0090377) and seed trichome elongation (GO:0090378).
 synonym: "etapa de iniciaci&#243n del tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed hair initiation stage" EXACT []
-synonym: "種子トライコーム開始 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子毛形成過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
@@ -18026,7 +18028,7 @@ def: "A seed trichome development stage which occurs during the interval between
 comment: Refers to the GO Biological Process terms: seed trichome elongation (GO:0090378) and secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379).
 synonym: "etapa de elongaci&#243n del tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed hair elongation stage" EXACT []
-synonym: "種子トライコーム伸長過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子毛伸長過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
@@ -18040,7 +18042,7 @@ def: "A seed trichome development stage which occurs during the interval between
 comment: Refers to the GO Biological Process terms: secondary cell wall biogenesis involved in seed trichome differentiation (GO:0090379) and seed trichome maturation (GO:0090380).
 synonym: "etapa de bios&#237ntesis de la pared secundaria del tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed hair secondary wall biosynthesis stage" EXACT []
-synonym: "種子トライコーム第二壁生合成段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子毛二次壁生合成段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
@@ -18054,7 +18056,7 @@ def: "A seed trichome development stage which encompasses the process of seed tr
 comment: Refers to the GO Biological Process term: seed trichome maturation (GO:0090380).
 synonym: "etapa de maduraci&#n del tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed hair maturation stage" EXACT []
-synonym: "種子トライコーム成熟段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "種子毛成熟段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3035688
 is_a: PO:0025369 ! seed trichome development stage
 created_by: cooperl
@@ -18855,7 +18857,7 @@ namespace: plant_anatomy
 def: "A phyllome plate meristem (PO:0025428) in the vascular leaf (PO:0009025)." [ISBN:0521288959, POC:curators]
 comment: The activity of a leaf plate meristem results in increase in the surface area, but not thickness of a vascular leaf (PO:0009025).
 synonym: "meristema en placa de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "葉板分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉の板状分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459331
 is_a: PO:0025428 ! phyllome plate meristem
 relationship: part_of PO:0009025 ! vascular leaf
@@ -19339,7 +19341,7 @@ namespace: plant_structure_development_stage
 def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the first and last cell division in a portion of secondary xylem tissue (PO:0005848), during which cells are produced by divisions of cambial initials (PO:0000295) or xylem mother cells." [POC:wood_curators]
 comment: This stage includes production of xylem mother cells by cambial initials and production of tracheary elements (PO:0000290) or other xylem cells by xylem mother cells. Precedes a cell differentiation stage of secondary xylem (PO:0025469), although cell differentiation may begin before a cell division stage of secondary xylem ends.
 synonym: "elemento de tr&#225quea de madera tard&#237a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次木質部の細胞分裂期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部の細胞分裂期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025427 ! secondary xylem development stage
 created_by: RamonaNYBG
@@ -19352,7 +19354,7 @@ namespace: plant_structure_development_stage
 def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the onset of a secondary cell wall formation stage of secondary xylem (PO:0025465), during which the cells undergo cell growth (GO:0016049)." [POC:wood_curators]
 comment: This stage succeeds a cell division stage of secondary xylem (PO:0025463) and precedes secondary cell wall formation stage of secondary xylem (PO:0025465). At least part of this stage can be easily observed in woody species containing xylem vessels (PO:0025417).
 synonym: "etapa de expansi&#243n celular del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次木質部の細胞拡張期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部の細胞伸長期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025469 ! cell differentiation stage of secondary xylem
 created_by: RamonaNYBG
@@ -19365,7 +19367,7 @@ namespace: plant_structure_development_stage
 def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs during the interval between the onset of secondary wall biogenesis (GO:0009834) of the cells in a portion of secondary xylem (PO:0005848) and the beginning of a cell death stage of secondary xylem (PO:0025466)." [POC:wood_curators]
 comment: During this stage, secondary cell walls (GO:0009531) are being formed in a portion of secondary xylem tissue, preventing further expansion of the cells. This stage succeeds a cell expansion stage of secondary xylem (PO:0025464) and precedes a cell death stage of secondary xylem.
 synonym: "estapa de formaci&#243n de la pared secundaria celular del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次木質部の二次細胞壁形段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部の細胞壁二次壁形成段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025469 ! cell differentiation stage of secondary xylem
 created_by: RamonaNYBG
@@ -19379,7 +19381,7 @@ def: "A cell differentiation stage of secondary xylem (PO:0025469) that occurs d
 comment: During this stage, the cells of a portion of secondary xylem are undergoing cell death (GO:0008219), sometimes called apoptosis. Death of the tracheary elements and non-septate xylem fiber cells generally precedes the death of secondary parenchyma cells and septate fiber cells. Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
 synonym: "etapa de muerte celular del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "transition to heartwood stage" EXACT []
-synonym: "二次木質部の細胞死段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部の細胞死段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025469 ! cell differentiation stage of secondary xylem
 created_by: RamonaNYBG
@@ -19392,7 +19394,7 @@ namespace: plant_structure_development_stage
 def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the first and last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274)." [POC:wood_curators]
 comment: During this stage, the tracheary elements and non-septate xylem fiber cells of a portion of secondary xylem (PO:0005848) undergo cell death (GO:0008219), but most of the secondary xylem parenchyma cells (PO:0004525) and septate xylem fiber cells (septate fiber tracheid, PO:0025419, and septate libriform fiber cell, PO:0025420) remain alive. Precedes a secondary xylem parenchyma cell death stage of secondary xylem (PO:0025468).
 synonym: "etapa de muerte del elemento de tr&#225a del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "第二木質部管状要素枯死期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部管状要素枯死期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025466 ! cell death stage of secondary xylem
 created_by: RamonaNYBG
@@ -19405,7 +19407,7 @@ namespace: plant_structure_development_stage
 def: "A cell death stage of secondary xylem (PO:0025466) that occurs during the interval between the last cell death of a tracheary element (PO:0000290) or non-septate xylem fiber cell (PO:0000274) and the last cell death in a portion of secondary xylem (PO:0005848)." [POC:wood_curators]
 comment: During this stage, the secondary xylem parenchyma cells (PO:0004525) and septate xylem fiber cells (septate fiber tracheid, PO:0025419, and septate libriform fiber cell, PO:0025420) of a portion of secondary xylem (PO:0005848) undergo cell death (GO:0008219). Succeeds a tracheary element death stage of secondary xylem (PO:0025467). Once all cells in portion of secondary xylem are dead, it transitions from sapwood (PO:0004513) to heartwood (PO:0004512), and secondary xylem development ends.
 synonym: "etapa de muerte de las c&#233lulas parenquim&#225ticas del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次木質部柔組織細胞死期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部柔組織細胞死期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025466 ! cell death stage of secondary xylem
 created_by: RamonaNYBG
@@ -19418,7 +19420,7 @@ namespace: plant_structure_development_stage
 def: "A secondary xylem development stage (PO:0025427) that occurs during the interval between the end of a cell division stage of secondary xylem (PO:0025463) and the death of the last living cell in the secondary xylem." [POC:wood_curators]
 comment: During a this stage, cells of secondary xylem undergo cell differentiation (GO:0030154), including cell growth (GO:0016049), cell morphogenisis (GO:0000902), or cell death (GO:0008219). Cell death is considered part of differentiation in secondary xylem, because it is an essential part of wood development. This stage succeeds the last cell division in a cell division stage of secondary xylem, even though cell differentiation may begin before all cell division finishes.
 synonym: "etapa de diferenciaci&#243 celular del xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "二次木質部の細胞分化期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "二次木部の細胞分化期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3488347
 is_a: PO:0025427 ! secondary xylem development stage
 created_by: RamonaNYBG
@@ -19696,6 +19698,7 @@ id: PO:0025492
 name: pericyclic lateral root primordium
 namespace: plant_anatomy
 def: "A lateral root primordium (PO:0000016) that develops from a portion of pericycle tissue (PO:0006203) and is committed to the development of a pericyclic lateral root (PO:0025494)." [POC:curators]
+synonym: "内鞘由来分枝根始原体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3522014
 is_a: PO:0000016 ! lateral root primordium
 created_by: RamonaNYBG
@@ -19707,6 +19710,7 @@ name: non-pericyclic lateral root primordium
 namespace: plant_anatomy
 def: "A lateral root primordium (PO:0000016) that develops from a portion of plant tissue (PO:0009007) other than a pericycle (PO:0006203) and is committed to the development of a non-pericyclic lateral root (PO:0025495)." [POC:curators]
 comment: A non-pericyclic lateral root primordium may develop from cells of an endodermis (PO:0000252) in ferns and some seed plants.
+synonym: "内鞘以外の組織から発生する分枝根始原体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3522014
 is_a: PO:0000016 ! lateral root primordium
 created_by: RamonaNYBG
@@ -19718,6 +19722,7 @@ name: pericyclic lateral root
 namespace: plant_anatomy
 def: "A lateral root (PO:0025495) that develops from a pericyclic lateral root primordium (PO:0025492)." [POC:curators]
 comment: A pericyclic lateral root primordium develops from cells that are  part of a pericycle (PO:0006203). This is the most common type of lateral root in seed plants.
+synonym: "内鞘由来分枝根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3079725
 is_a: PO:0020121 ! lateral root
 relationship: develops_from PO:0025492 ! pericyclic lateral root primordium
@@ -19731,6 +19736,7 @@ namespace: plant_anatomy
 def: "A lateral root (PO:0025495) that develops from a non-pericyclic lateral root primordium (PO:0025493)." [ISRR:Richard_Zobel, POC:curators]
 comment: A non-pericyclic lateral root primordium develops from cells that are not part of a pericycle (PO:0006203). Develops from cells in an endodermis (PO:0000252) in ferns and some seed plants.
 synonym: "adventitious root sensu strictu" BROAD []
+synonym: "内鞘以外の組織から発生する分枝根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3079725
 is_a: PO:0020121 ! lateral root
 relationship: develops_from PO:0025493 ! non-pericyclic lateral root primordium
@@ -19743,6 +19749,7 @@ name: multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." [CARO:0000055, POC:curators]
 comment: ost multi-tissue plant structures have at list a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).
+synonym: "複数の組織からなる植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3530843
 is_a: PO:0009011 ! plant structure
 created_by: cooperl
@@ -19754,6 +19761,7 @@ name: collective plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008) or adjacent cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:curators]
 synonym: "estructura colectiva vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "集合的植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3530834
 is_a: PO:0009011 ! plant structure
 created_by: cooperl
@@ -19765,6 +19773,7 @@ name: cardinal part of multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is a proper part of a multi-tissue plant structure (PO:0025496) and includes portions of plant tissues (PO:0009007) of at least two different types." [POC:curators]
 comment: Includes cardinal parts of plant organs (PO:0025001) as well as parts of other multi-tissue plant structures. Cardinal refers to the fact that these are biologically meaningful and not arbitrary parts. Most cardinal part of multi-tissue plant structure have both fiat and bona-fide boundaries, including parts with large fiat boundaries, such as leaf base (PO:0020040) or fruit distal end (PO:0008001), and parts with primarily bona-fide boundaries, such as leaflet (PO:0020049).
+synonym: "複数の組織からなる植物構造の基本（主要）部分 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3534632
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0025496 ! multi-tissue plant structure
@@ -19860,7 +19869,7 @@ subset: Pteridophytes
 synonym: "portion of protonema tissue" EXACT []
 synonym: "protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "protonemata" EXACT Plural []
-synonym: "原糸体、糸状体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3199622
 is_a: PO:0005426 ! chlorenchyma
 relationship: develops_from PO:0025017 ! plant spore
@@ -19911,7 +19920,7 @@ subset: Pteridophytes
 synonym: "fase protonemica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "protonema phase" EXACT []
 synonym: "protonemal phase" EXACT []
-synonym: "原糸体、糸状体植物全体 発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体を形成する植物発生段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3199622
 is_a: PO:0025340 ! gametophyte vegetative stage
 created_by: Ramona
@@ -19929,7 +19938,7 @@ subset: Pteridophytes
 synonym: "apical cell" EXACT []
 synonym: "apical initial" EXACT []
 synonym: "c&#233lula apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0004010 ! meristematic cell
 created_by: Ramona
@@ -19946,7 +19955,7 @@ subset: Pteridophytes
 synonym: "c&#233lula apical de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root apical cell" EXACT []
 synonym: "root apical initial" EXACT []
-synonym: "根分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "根分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0000025 ! root tip
@@ -19965,7 +19974,7 @@ subset: Pteridophytes
 synonym: "c&#233lula apical del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "shoot apical cell" EXACT []
 synonym: "shoot apical initial" EXACT []
-synonym: "シュート分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "シュート分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 relationship: part_of PO:0009006 ! shoot system
@@ -19984,7 +19993,7 @@ subset: Pteridophytes
 synonym: "c&#233lula apical del eje del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "shoot axis apical cell" EXACT []
 synonym: "shoot axis apical initial" EXACT []
-synonym: "シュート軸分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "シュート軸分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 relationship: part_of PO:0000037 ! shoot apex
@@ -20003,7 +20012,7 @@ subset: Pteridophytes
 synonym: "c&#233lula apical de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf apical cell" EXACT []
 synonym: "leaf apical initial" EXACT []
-synonym: "葉分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 relationship: part_of PO:0020137 ! leaf apex
@@ -20021,7 +20030,7 @@ subset: Pteridophytes
 synonym: "c&#233lula apical de la hoja vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vascular leaf apical cell" EXACT []
 synonym: "vascular leaf apical initial" EXACT []
-synonym: "維管束系葉の分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "維管束を持つ葉の分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
@@ -20041,7 +20050,7 @@ synonym: "non-vascular leaf apical cell" EXACT []
 synonym: "non-vascular leaf apical initial" EXACT []
 synonym: "phyllid apical cell" EXACT []
 synonym: "phyllid apical initial" EXACT []
-synonym: "非維管束系葉分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "維管束を持たない葉の分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030011 ! leaf meristematic apical cell
 relationship: develops_from PO:0030087 ! non-vascular leaf initial cell
@@ -20062,7 +20071,7 @@ synonym: "c&#233lula apical gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria
 synonym: "gametophyte apical cell" EXACT []
 synonym: "gametophyte apical initial" EXACT []
 synonym: "gametophytic meristematic apical cell" EXACT []
-synonym: "配偶体分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "配偶体分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
@@ -20083,7 +20092,7 @@ synonym: "c&#233lula apical esporof&#237tica (Spanish)" EXACT Spanish [POC:Maria
 synonym: "sporophyte apical cell" RELATED []
 synonym: "sporophyte apical initial" RELATED []
 synonym: "sporophytic meristematic apical cell" EXACT []
-synonym: "胞子体分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "胞子体分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
@@ -20102,7 +20111,7 @@ subset: CL
 synonym: "c&#233lula apical de la seta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seta apical cell" EXACT []
 synonym: "seta apical initial" EXACT []
-synonym: "柄（とげ、剛毛）分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "柄分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 relationship: part_of PO:0030032 ! seta
@@ -20153,7 +20162,7 @@ subset: CL
 synonym: "c&#233lula apical del gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophore apical cell" EXACT []
 synonym: "gametophore apical initial" EXACT []
-synonym: "茎葉体分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "茎葉体分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030009 ! shoot meristematic apical cell
 intersection_of: PO:0030009 ! shoot meristematic apical cell
@@ -20209,7 +20218,7 @@ synonym: "caulid stem" EXACT []
 synonym: "cauloid stem" EXACT []
 synonym: "non-vascular stem" EXACT []
 synonym: "tallo del gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "茎葉体幹 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "茎葉体の茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3185162
 is_a: PO:0009047 ! stem
 relationship: part_of PO:0030018 ! gametophore
@@ -20229,7 +20238,7 @@ synonym: "cauloid apical cell" EXACT []
 synonym: "gametophore axis apical cell" EXACT []
 synonym: "gametophore axis apical initial" EXACT []
 synonym: "non-vascular shoot axis apical cell" EXACT []
-synonym: "茎葉体軸分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "茎葉体軸分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 relationship: part_of PO:0030020 ! gametophore axis
@@ -20248,7 +20257,7 @@ synonym: "c&#233lula apical del eje del epiblasto vascualr (Spanish)" EXACT Span
 synonym: "fern shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical cell" EXACT []
 synonym: "vascular shoot axis apical initial" EXACT []
-synonym: "維管束系シュート軸の分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "維管束を持つシュート軸分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 relationship: participates_in PO:0028002 ! sporophyte development stage
@@ -20266,7 +20275,7 @@ subset: Pteridophytes
 synonym: "c&#233lula apical del talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "thallus apical cell" EXACT []
 synonym: "thallus apical initial" EXACT []
-synonym: "葉状体分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉状体分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030027 ! thallus
@@ -20334,7 +20343,7 @@ subset: Bryophytes
 subset: Citrus
 subset: Pteridophytes
 synonym: "pie del esporofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "胞子体足部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "胞子体あし (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234965
 is_a: PO:0009008 ! plant organ
 relationship: has_part PO:0000078 ! transfer cell
@@ -20385,7 +20394,7 @@ comment: Found in some bryophytes, especially mosses.
 subset: Bryophytes
 synonym: "seta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "setae" EXACT Plural []
-synonym: "柄（とげ、剛毛） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3185175
 is_a: PO:0025004 ! plant axis
 relationship: participates_in PO:0028002 ! sporophyte development stage
@@ -20482,7 +20491,7 @@ subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "vientre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "造卵器の拡張した基部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "造卵器腹部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234981
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025126 ! archegonium
@@ -20619,7 +20628,7 @@ subset: Pteridophytes
 synonym: "c&#233lula meristem&#225tica apical del protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "protonema apical cell" EXACT []
 synonym: "protonema apical initial" EXACT []
-synonym: "原糸体、糸状体　分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体、糸状体の分裂組織の頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234956
 is_a: PO:0030014 ! gametophyte meristematic apical cell
 relationship: part_of PO:0030003 ! protonema
@@ -20933,7 +20942,7 @@ comment: As the archegonium matures, the archegonium neck canal cells disintegra
 subset: CL
 synonym: "archegonial neck canal cell" EXACT []
 synonym: "c&#233lula del canal del cuello del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "造卵器頸部管細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "造卵器頚溝細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234985
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0030039 ! archegonium neck
@@ -20950,7 +20959,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "archegonial neck canal" EXACT []
 synonym: "canal del cuello del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "造卵器頸部管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "造卵器頚溝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234985
 is_a: PO:0025132 ! canal
 relationship: part_of PO:0030039 ! archegonium neck
@@ -20968,7 +20977,7 @@ subset: CL
 synonym: "protonema side branch initial" EXACT []
 synonym: "protonemal side branch initial cell" EXACT []
 synonym: "rama lateral inicial del protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "原糸体、糸状体側枝始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体側枝始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293297
 xref: OBO_SF_PO:3293302
 is_a: PO:0030086 ! protonema sub-apical initial cell
@@ -21143,7 +21152,7 @@ subset: CL
 synonym: "protonema side branch rhizoid initial" EXACT []
 synonym: "protonemal side branch rhizoid initial" EXACT []
 synonym: "rama lateral inicial del rizoide proton&#233mico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "原糸体、糸状体l側枝仮根始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体側枝仮根始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_PO_SF:3293297
 xref: OBO_SF_PO:3293302
 is_a: PO:0030067 ! protonema side branch initial cell
@@ -21170,7 +21179,7 @@ namespace: plant_anatomy
 def: "A rhizoid that is part of a protonema and develops from a protonemal side branch rhizoid initial." [ISBN:0962073342]
 subset: Bryophytes
 synonym: "rizoide proton&#233mico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "原糸体、糸状体l仮根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体仮根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293893
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial cell
@@ -21219,7 +21228,7 @@ subset: CL
 synonym: "c&#233lula apical meristem&#225tica del cloronema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "chloronema apical cell" EXACT []
 synonym: "chloronema apical initial" EXACT []
-synonym: "クロロネマ細胞分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "クロロネマ分裂頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBOS_SF_PO:3234956
 is_a: PO:0030046 ! protonema meristematic apical cell
 created_by: Ramona
@@ -21280,7 +21289,7 @@ subset: CL
 synonym: "c&#233lula subapical inicial del protonema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "protonema sub-apical initial" EXACT []
 synonym: "protonemal sub-apical initial cell" RELATED []
-synonym: "原糸体、糸状体頂端下始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "原糸体次頂端始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293297
 is_a: PO:0004011 ! initial cell
 created_by: Ramona
@@ -21296,7 +21305,7 @@ subset: Bryophytes
 subset: CL
 synonym: "c&#233lula inicial de la hoja no vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "non-vascular leaf initial" EXACT []
-synonym: "非維管束系葉始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "非維管束葉の始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3304575
 is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0030018 ! gametophore
