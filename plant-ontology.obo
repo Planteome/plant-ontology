@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 27:06:2012 13:34
-saved-by: moorel
+date: 03:07:2012 11:26
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -5634,7 +5634,6 @@ def: "OBSOLETE. The outer layer of the tunica." [GR:Pankaj_Jaiswal]
 comment: A similar term L1 meristem (PO:0009020) occurs.
 synonym: "L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 replaced_by: PO:0009020
 
@@ -5646,7 +5645,6 @@ def: "OBSOLETE. The second layer of the tunica." [GR:Pankaj_Jaiswal]
 comment: A similar term L2 meristem (PO:0009021) occurs.
 synonym: "L2 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "L2 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "L2 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 replaced_by: PO:0009021
 
@@ -5658,7 +5656,6 @@ def: "OBSOLETE. The innermost layer of the tunica." [GR:Pankaj_Jaiswal]
 comment: A similar term L3 meristem (PO:0009022) occurs.
 synonym: "L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "L3 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 replaced_by: PO:0009022
 
@@ -11232,7 +11229,6 @@ namespace: plant_anatomy
 def: "OBSOLETE. provisional term" [Poc:curators]
 synonym: "? (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "unidad de dispersi&#243n madura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "? (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_obsolete: true
 
 [Term]
@@ -13043,7 +13039,7 @@ id: PO:0025007
 name: collective plant organ structure
 namespace: plant_anatomy
 def: "A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007)." [POC:curators]
-comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058),  and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs.
+comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058),  and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs. This was formerly named 'collective plant structure.
 subset: TraitNet
 synonym: "集合植物器官構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2954382
@@ -19760,6 +19756,7 @@ id: PO:0025497
 name: collective plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is a proper part of a whole plant (PO:0000003) and includes two or more adjacent plant organs (PO:0009008) or adjacent cardinal organ parts (PO:0025001), along with any associated portions of plant tissue (PO:0009007)." [POC:curators]
+comment: This is a parent term to describe both collective organ part structure (PO:0025269)  (e.g. septum), as well as collective plant organ structure (PO:0025007) (which was formerly named collective plant structure), for example shoot system (PO:0009006).
 synonym: "estructura colectiva vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合的植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3530834
@@ -20879,7 +20876,6 @@ comment: Found in bryophytes at the base of a gemma. Participates in abscission 
 subset: Bryophytes
 synonym: "tmema (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "tmema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "tmema (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293289
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030059 ! tmema cell
