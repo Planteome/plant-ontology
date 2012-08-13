@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 31:07:2012 08:53
+date: 13:08:2012 14:05
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1326,7 +1326,7 @@ is_a: PO:0005849 ! primary xylem
 id: PO:0000273
 name: xylem element
 namespace: plant_anatomy
-def: "OBSOLTE. A cell making up xylem tissue." [ISBN:0471245208]
+def: "OBSOLETE. A cell making up xylem tissue." [ISBN:0471245208]
 comment: This term was made obsolete because it was not appropriate. Replaced by tracheary element (PO:0000290) and xylem fiber cell (PO:0000274).
 subset: CL
 subset: TraitNet
@@ -6055,7 +6055,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0006345
 name: pollen tube
 namespace: plant_anatomy
-def: "A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
+def: "OBSOLETE. A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
 comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube (GO:0090406). Since a pollen tube is part_of a pollen tube cell, annotations for pollen tube may also go to the more general term pollen tube cell (PO:0025195).
 subset: reference
 subset: TraitNet
@@ -7415,6 +7415,7 @@ is_a: PO:0007039 ! leaf trichome development stage
 id: PO:0007060
 name: obsolete growth and development terms
 namespace: plant_structure_development_stage
+def: "OBSOLETE." [POC:curators]
 is_obsolete: true
 
 [Term]
@@ -8778,6 +8779,7 @@ is_obsolete: true
 id: PO:0007532
 name: obsolete plant growth and development terms
 namespace: plant_structure_development_stage
+def: "OBSOLETE." [POC:curators]
 is_obsolete: true
 
 [Term]
@@ -9837,7 +9839,7 @@ relationship: part_of PO:0025025 ! root system
 id: PO:0009006
 name: shoot system
 namespace: plant_anatomy
-def: "A collective plant structure that produces shoot apical meristems and the plant structures that arise from them." [POC:curators]
+def: "A collective plant organ structure that produces shoot apical meristems and the plant structures that arise from them." [POC:curators]
 comment: Generally the above ground portion of a plant.
 subset: reference
 subset: TraitNet
@@ -10222,7 +10224,7 @@ relationship: part_of PO:0025021 ! collective tepal structure
 id: PO:0009034
 name: flower bract
 namespace: plant_anatomy
-def: "A bract that subtends perianth that is part of a flower." [POC:curators]
+def: "A bract that subtends a perianth that is part of a flower." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "br&#225ctea floral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10859,7 +10861,7 @@ name: anther
 namespace: plant_anatomy
 alt_id: PO:0006442
 alt_id: PO:0006473
-def: "A collective plant structure that is the pollen-bearing part of a stamen." [APweb:Glossary]
+def: "A collective plant organ structure that is the pollen-bearing part of a stamen." [APweb:Glossary]
 comment: Generally consists of four pollen sacs (microsporangia) in two anther thecas. If you are annotating to anther or one of its parts for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
@@ -10914,7 +10916,7 @@ name: anther theca
 namespace: plant_anatomy
 alt_id: PO:0006453
 alt_id: PO:0006478
-def: "A collective plant structure that is part of an anther and consists of a pair of sporangia that dehisce down a common slit." [APweb:Glossary]
+def: "A collective plant organ structure that is part of an anther and consists of a pair of sporangia that dehisce down a common slit." [APweb:Glossary]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
@@ -11854,7 +11856,6 @@ id: PO:0020030
 name: cotyledon
 namespace: plant_anatomy
 def: "A vascular leaf (PO:0009025) formed at the first shoot node (PO:0005004) of a plant embryo (PO:0009009) or a seedling (PO:0000003)." [GR:Pankaj_Jaiswal, ISBN:9780879015329, POC:curators]
-comment: Generally stores food in dicotyledons and absorbs food in monocotyledons.
 subset: reference
 subset: TraitNet
 synonym: "cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13039,7 +13040,7 @@ id: PO:0025007
 name: collective plant organ structure
 namespace: plant_anatomy
 def: "A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007)." [POC:curators]
-comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058),  and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs. This was formerly named 'collective plant structure.
+comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058),  and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs. This was formerly named collective plant structure.
 subset: TraitNet
 synonym: "estructura vegetal colectiva de &#243rgano (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合植物器官構造    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13253,7 +13254,7 @@ id: PO:0025023
 name: collective phyllome structure
 namespace: plant_anatomy
 alt_id: PO:0008033
-def: "A collective plant structure that consists of two or more phyllomes originating from the same node or from one or more adjacent nodes with compressed internodes." [POC:curators]
+def: "A collective plant organ structure that consists of two or more phyllomes originating from the same node or from one or more adjacent nodes with compressed internodes." [POC:curators]
 subset: TraitNet
 synonym: "cycle" BROAD [FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe]
 synonym: "estructura colectiva del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13284,7 +13285,7 @@ creation_date: 2010-07-16T09:59:08Z
 id: PO:0025025
 name: root system
 namespace: plant_anatomy
-def: "A collective plant structure that produces root apical meristems and the plant structures that arise from them." [POC:curators]
+def: "A collective plant organ structure that produces root apical meristems and the plant structures that arise from them." [POC:curators]
 comment: Generally the below ground portion of a vascular plant.
 subset: TraitNet
 synonym: "root" BROAD [FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9]
@@ -14666,7 +14667,7 @@ id: PO:0025127
 name: primordium
 namespace: plant_anatomy
 def: "A portion of meristem tissue (PO:0009013) that has as parts protoderm (PO:0006210) and sub-epidermal meristematic tissue and is committed to the development of a particular plant structure (PO:0009011)." [POC:curators]
-comment: A primordium appears as a protrusion and is the first distinct form of a plant organ (PO:0009008), cardinal organ part (PO:0025001), or\ncollective plant structure (PO:0025007). The transition from a primordium to the plant structure it develops into is marked by the development of non-meristematic cells, although meristematic cells may be present after the transition.
+comment: A primordium appears as a protrusion and is the first distinct form of a plant organ (PO:0009008), cardinal organ part (PO:0025001), or collective plant organ structure (PO:0025007). The transition from a primordium to the plant structure it develops into is marked by the development of non-meristematic cells, although meristematic cells may be present after the transition.
 synonym: "portion of primordial tissue" EXACT []
 synonym: "portion of primordium tissue" EXACT []
 synonym: "primordia" EXACT Plural []
@@ -15655,6 +15656,7 @@ synonym: "estela (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中心柱, central cylinder    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3080915
 is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025004 ! plant axis
 created_by: Ramona
 creation_date: 2010-12-09T03:56:19Z
 
@@ -17858,7 +17860,7 @@ creation_date: 2011-11-16T04:02:19Z
 id: PO:0025359
 name: sorus
 namespace: plant_anatomy
-def: "A collective plant structure on the surface of a vascular leaf that has as part a cluster of two or more adjacent sporangia." [PO_REF:00001]
+def: "A collective plant organ structure on the surface of a vascular leaf that has as part a cluster of two or more adjacent sporangia." [PO_REF:00001]
 subset: Gymnosperms
 subset: Poaceae
 subset: Pteridophytes
@@ -17874,7 +17876,7 @@ creation_date: 2011-11-16T04:24:04Z
 id: PO:0025360
 name: ceonosorus
 namespace: plant_anatomy
-def: "A collective plant structure on the surface of a vascular leaf that has as parts two or more fused sori." [POC:curators]
+def: "A collective plant organ structure on the surface of a vascular leaf that has as parts two or more fused sori." [POC:curators]
 synonym: "ceonosoro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "coenosori" EXACT Plural []
 synonym: "融合胞子嚢を有する維管束葉表面の集合構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -18366,7 +18368,7 @@ id: PO:0025395
 name: floral organ
 namespace: plant_anatomy
 def: "A plant organ that is part of a flower." [POC:curators]
-comment: Includes phyllomes such as anthers and petals, as well as shoot\naxes such as androphores and gynophores.
+comment: Includes phyllomes such as anthers and petals, as well as shoot axes such as androphores and gynophores.
 synonym: "&#243rgano floral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "flower organ" EXACT []
 synonym: "花器官 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -19712,7 +19714,7 @@ id: PO:0025492
 name: pericyclic lateral root primordium
 namespace: plant_anatomy
 def: "A lateral root primordium (PO:0000016) that develops from a portion of pericycle tissue (PO:0006203) and is committed to the development of a pericyclic lateral root (PO:0025494)." [POC:curators]
-synonym: "primordio de ra&#237z lateral peric�clica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "primordio de ra&#237z lateral peric�clica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内鞘由来分枝根始原体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3522014
 is_a: PO:0000016 ! lateral root primordium
@@ -19725,7 +19727,7 @@ name: non-pericyclic lateral root primordium
 namespace: plant_anatomy
 def: "A lateral root primordium (PO:0000016) that develops from a portion of plant tissue (PO:0009007) other than a pericycle (PO:0006203) and is committed to the development of a non-pericyclic lateral root (PO:0025495)." [POC:curators]
 comment: A non-pericyclic lateral root primordium may develop from cells of an endodermis (PO:0000252) in ferns and some seed plants.
-synonym: "primordio de ra&#237z lateral no peric�clica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "primordio de ra&#237z lateral no peric�clica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内鞘以外の組織から発生する分枝根始原体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3522014
 is_a: PO:0000016 ! lateral root primordium
@@ -19753,7 +19755,7 @@ namespace: plant_anatomy
 def: "A lateral root (PO:0025495) that develops from a non-pericyclic lateral root primordium (PO:0025493)." [ISRR:Richard_Zobel, POC:curators]
 comment: A non-pericyclic lateral root primordium develops from cells that are not part of a pericycle (PO:0006203). Develops from cells in an endodermis (PO:0000252) in ferns and some seed plants.
 synonym: "adventitious root sensu strictu" BROAD []
-synonym: "ra&#237z lateral no peric�clica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "ra&#237z lateral no peric�clica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内鞘以外の組織から発生する分枝根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3079725
 is_a: PO:0020121 ! lateral root
@@ -19766,7 +19768,7 @@ id: PO:0025496
 name: multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." [CARO:0000055, POC:curators]
-comment: ost multi-tissue plant structures have at list a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).
+comment: Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).
 synonym: "estructura vegetal con m&#250ltiples tejidos (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "複数の組織からなる植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3530843
@@ -20613,7 +20615,7 @@ subset: Bryophytes
 synonym: "op&#233rculo de la c&#225psula productora de esporas (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporangium lid" EXACT []
 synonym: "spore capsule lid" EXACT []
-synonym: "spore capsule operculua" EXACT Plural [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
+synonym: "spore capsule opercula" EXACT Plural [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
 synonym: "胞子嚢蓋 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3241767
 is_a: PO:0025001 ! cardinal organ part
@@ -21274,7 +21276,7 @@ id: PO:0030084
 name: amphithecium
 namespace: plant_anatomy
 def: "A portion of plant tissue that is the outer layer or layers of a sporangium early in sporangium development." [ISBN:0962073342]
-comment: Term used for bryophytes. May have one or more layers. An amphithecium may give rise to an exothecium and other layer of a sporangium wall (jacket layer or layers). In true mosses, the amphithecium gives rise to the sporangium wall and the peristome. In hornworts and peat mosses, it gives rise to the sporangium wall and sporogenous tissue.
+comment: Term used for bryophytes. May have one or more layers. An amphithecium may give rise to an exothecium and other layers of a sporangium wall (jacket layer or layers). In true mosses, the amphithecium gives rise to the sporangium wall and the peristome. In hornworts and peat mosses, it gives rise to the sporangium wall and sporogenous tissue.
 subset: Bryophytes
 synonym: "anfitecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "アンフィテシウム細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
