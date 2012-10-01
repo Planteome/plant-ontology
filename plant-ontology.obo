@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:08:2012 14:05
+date: 01:10:2012 13:08
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -265,7 +265,7 @@ synonym: "vascular leaf primordia" EXACT Plural []
 synonym: "葉原基    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3521973
 is_a: PO:0025128 ! phyllome primordium
-relationship: develops_from PO:0025431 ! leaf anlagen
+relationship: develops_from PO:0025431 ! vascular leaf anlagen
 relationship: part_of PO:0025223 ! vegetative shoot apex
 
 [Term]
@@ -1976,7 +1976,7 @@ id: PO:0001050
 name: leaf development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007040
-def: "Stages of development of a leaf defined by characteristic morphological, structural, histological or other visible features." [POC:curators, TAIR:Tanya_Beradini]
+def: "Stages of development of a leaf defined by characteristic morphological, structural, histological or other visible features." [POC:curators, TAIR:Tanya_Berardini]
 synonym: "leaf development in Arabidopsis" RELATED []
 synonym: "leaf development stage" RELATED []
 is_a: PO:0025339 ! plant organ development stage
@@ -2011,7 +2011,7 @@ is_a: PO:0001050 ! leaf development stage
 id: PO:0001054
 name: 4 leaf senescence stage
 namespace: plant_structure_development_stage
-def: "The final stage of leaf development when the leaf ceases metabolic activity and senesces." [TAIR:Tanya_Beradini]
+def: "The final stage of leaf development when the leaf ceases metabolic activity and senesces." [TAIR:Tanya_Berardini]
 synonym: "leaf senescence stage in Arabidopsis" RELATED []
 is_a: PO:0001050 ! leaf development stage
 
@@ -3493,13 +3493,14 @@ relationship: part_of PO:0000017 ! vascular leaf primordium
 
 [Term]
 id: PO:0005001
-name: basal axillary shoot
+name: basal axillary shoot system
 namespace: plant_anatomy
-def: "A branch that forms from a leaf at the very base of the shoot." [GR:Anuradha_Pujar]
+def: "An axillary shoot system (PO:0006343) that develops from an axillary vegetative bud (PO:0004712) that is part of a stem base (PO:0008039)." [GR:Anuradha_Pujar]
+comment: Called a tiller in the Poaceae.
 synonym: "basal axillary branch" RELATED []
 synonym: "epiblasto (epiblastema) axilar basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ratoon" RELATED []
-synonym: "tiller" RELATED []
+synonym: "tiller" NARROW []
 synonym: "基底腋枝    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006343 ! axillary shoot system
 
@@ -6574,7 +6575,7 @@ synonym: "FR.01 early stage of fruit ripening in Solanaceae" RELATED [SGN:000004
 synonym: "R4 in maize" RELATED [MaizeGDB:67374]
 synonym: "rice growth stage-8.1" RELATED [GRO:0007152]
 synonym: "tomato turning stage" RELATED [SGN:0000048]
-is_a: PO:0007010 ! 6 ripening stage
+is_a: PO:0007010 ! whole plant fruit ripening stage
 
 [Term]
 id: PO:0007002
@@ -6598,7 +6599,7 @@ synonym: "3.4 late vegetative (maize)" NARROW [PO_REF:00002]
 synonym: "4.04 full inflorescence length reached in soybean" RELATED [SOY:0000070]
 synonym: "VT (maize)" NARROW [PO_REF:00002]
 xref: OBO_SF_PO:3357762
-is_a: PO:0007047 ! 3 inflorescence detectable stage
+is_a: PO:0007047 ! whole plant inflorescence detectable stage
 
 [Term]
 id: PO:0007004
@@ -6616,7 +6617,7 @@ def: "An inflorescence detectable phase during which an inflorescence has reache
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.03 1/2 of inflorescence length reached in soybean" RELATED [SOY:0000069]
-is_a: PO:0007047 ! 3 inflorescence detectable stage
+is_a: PO:0007047 ! whole plant inflorescence detectable stage
 
 [Term]
 id: PO:0007006
@@ -6628,7 +6629,7 @@ subset: Maize
 synonym: "4.01 Inflorescence just visible in soybean" RELATED [SOY:0000067]
 synonym: "visible flower buds in Arabidopsis" RELATED [TAIR:0000420]
 xref: OBO_SF_PO:3324099
-is_a: PO:0007047 ! 3 inflorescence detectable stage
+is_a: PO:0007047 ! whole plant inflorescence detectable stage
 
 [Term]
 id: PO:0007007
@@ -6647,7 +6648,7 @@ synonym: "late milk" RELATED [GRO:0007109]
 synonym: "tomato immature green" RELATED [SGN:0000044]
 synonym: "Zadok scale-73, Haun scale-13" RELATED [GRO:0007107]
 xref: OBO_SF_PO:3374186
-is_a: PO:0007042 ! 5 fruit formation stage
+is_a: PO:0007042 ! whole plant fruit formation stage
 
 [Term]
 id: PO:0007008
@@ -6675,14 +6676,15 @@ synonym: "7.02 Pod 30% of final length in soybean" RELATED [SOY:0000080]
 synonym: "FF.01 fruit size 30% in Solanaceae" RELATED [SGN:0000042]
 synonym: "tomato immature green" RELATED [SGN:0000042]
 xref: OBO_SF_PO:3374186
-is_a: PO:0007042 ! 5 fruit formation stage
+is_a: PO:0007042 ! whole plant fruit formation stage
 
 [Term]
 id: PO:0007010
-name: 6 ripening stage
+name: whole plant fruit ripening stage
 namespace: plant_structure_development_stage
-def: "Maturation of the fruit." [Poc:curators]
-comment: Although the use of stages like dough or particular ripening stages properly refer to the development of an individual fruit, they are commonly used as here to extrapolate to a growth of a whole plant or a group of plants.
+def: "A sporophyte reproductive stage (PO:0007130) that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) is begins the process of ripening (GO:0009835) and ends when (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening, whichever comes first." [Poc:curators]
+comment: This term is to be used for a stage of development of a whole plant. For the stages of development of an individual fruit, see fruit development stage (PO:0001002). Although individual fruits are undergoing ripening (which is a type of senescence) during this stage, the whole plant is not yet undergoing multicelluar organism senescence (GO:0010259). An annual species generally will have only one fruit ripening stage in its life, followed by a sporophyte senescent stage (PO:0007017), as in case (1). A perennial species may have one fruit ripening stage for each growing season, followed by a sporophyte dormant stage (PO:0007132), as in case (2). In evergreen species, the plant may remain in the sporophyte reproductive stage (PO:0007130) after all fruit has ripened, without entering dormancy or senescence, as in case (3). In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the whole plant fruit development stage (PO:id) has ended. Although the use of stages like dough or particular ripening stages (see synonyms) properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
+subset: Angiosperm
 synonym: "08-dough stage in rice" RELATED [GRO:0007042]
 synonym: "09-dough development in barley" RELATED [GRO:0007110]
 synonym: "09-dough development in oat" RELATED [GRO:0007110]
@@ -6759,10 +6761,11 @@ relationship: part_of PO:0007057 ! 0 seed germination stage
 
 [Term]
 id: PO:0007016
-name: 4 flowering stage
+name: whole plant flowering stage
 namespace: plant_structure_development_stage
-def: "The stage at which any flower(s) on the plant are open." [Poc:curators]
-comment: This stage refers to the whole plant.
+def: "A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open." [Poc:curators]
+comment: This term is to be used for a stage of development of a whole plant. For the stages of development of an individual flower, see flower development stage (PO:0007615).
+subset: Angiosperm
 synonym: "07-anthesis in barley" RELATED [GRO:0007101]
 synonym: "07-anthesis in oat" RELATED [GRO:0007101]
 synonym: "07-anthesis in wheat" RELATED [GRO:0007101]
@@ -6885,7 +6888,7 @@ synonym: "flowering complete" RELATED []
 synonym: "fruit set visible" RELATED []
 synonym: "late reproductive" RELATED []
 synonym: "Zadok scale-69, Haun scale-11.6" RELATED [GRO:0007104]
-is_a: PO:0007016 ! 4 flowering stage
+is_a: PO:0007016 ! whole plant flowering stage
 
 [Term]
 id: PO:0007025
@@ -6918,7 +6921,7 @@ synonym: "7.01-anthesis beginning in wheat" RELATED [GRO:0007102]
 synonym: "first open flower in Arabidopsis" RELATED [TAIR:0000421]
 synonym: "FL.00 first flower(s) open in Solanaceae" RELATED [SGN:0000035]
 synonym: "Stage R1 Open flower at any node on the main stem" RELATED [SOY:0000072]
-is_a: PO:0007016 ! 4 flowering stage
+is_a: PO:0007016 ! whole plant flowering stage
 
 [Term]
 id: PO:0007027
@@ -6941,7 +6944,7 @@ synonym: "nearly all kernels have reached final size" RELATED [ISBN:3826331524]
 synonym: "Stage R4 Full pod in soybean" RELATED [SOY:0000084]
 synonym: "tomato mature green" RELATED [SGN:0000045]
 xref: OBO_SF_PO:3374186
-is_a: PO:0007042 ! 5 fruit formation stage
+is_a: PO:0007042 ! whole plant fruit formation stage
 
 [Term]
 id: PO:0007028
@@ -6979,7 +6982,7 @@ synonym: "tomato immature green" RELATED [SGN:0000043]
 synonym: "watery ripe" RELATED [GRO:0007106]
 synonym: "Zadok scale-71, Feekes scale-10.54, Haun scale-12.1" RELATED [GRO:0007106]
 xref: OBO_SF_PO:3374186
-is_a: PO:0007042 ! 5 fruit formation stage
+is_a: PO:0007042 ! whole plant fruit formation stage
 
 [Term]
 id: PO:0007030
@@ -7012,7 +7015,7 @@ synonym: "soft dough" RELATED [GRO:0007112]
 synonym: "Stage R6 Full seed in soybean" RELATED [SOY:0000087]
 synonym: "tomato orange fruit" RELATED [SGN:0000049]
 synonym: "Zadok scale-85, Feekes scale-11.2" RELATED [GRO:0007112]
-is_a: PO:0007010 ! 6 ripening stage
+is_a: PO:0007010 ! whole plant fruit ripening stage
 
 [Term]
 id: PO:0007032
@@ -7025,7 +7028,7 @@ synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
 synonym: "stage R3 in soybean" RELATED [SOY:0000079]
 synonym: "tomato immature green" RELATED [SGN:0000041]
 xref: OBO_SF_PO:3374186
-is_a: PO:0007042 ! 5 fruit formation stage
+is_a: PO:0007042 ! whole plant fruit formation stage
 
 [Term]
 id: PO:0007033
@@ -7052,7 +7055,7 @@ def: "The stage at which 1/4 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
 synonym: "6.02 1/4 of flowers on the main stem open in soybean" RELATED [SOY:0000073]
 synonym: "FL.01 1/4 of flowers open in Solanaceae" RELATED [SGN:0000036]
-is_a: PO:0007016 ! 4 flowering stage
+is_a: PO:0007016 ! whole plant flowering stage
 
 [Term]
 id: PO:0007035
@@ -7090,7 +7093,7 @@ synonym: "8.01 Beginning of bean ripening in soybean" RELATED [SOY:0000085]
 synonym: "beginning of fruit coloration" RELATED []
 synonym: "first silique shattered" RELATED []
 synonym: "FR.00 beginning of fruit ripening in Solanaceae" RELATED [SGN:0000047]
-is_a: PO:0007010 ! 6 ripening stage
+is_a: PO:0007010 ! whole plant fruit ripening stage
 
 [Term]
 id: PO:0007037
@@ -7121,7 +7124,7 @@ synonym: "fully ripe" RELATED []
 synonym: "fully ripe grain hard, difficult to divide by thumbnail in rice" RELATED [ISBN:3826331524]
 synonym: "fully ripe kernels hard and shiny about 65% dry matter in maize" RELATED [ISBN:3826331524]
 synonym: "tomato fully red ripe fruit" RELATED [SGN:0000051]
-is_a: PO:0007010 ! 6 ripening stage
+is_a: PO:0007010 ! whole plant fruit ripening stage
 
 [Term]
 id: PO:0007039
@@ -7148,14 +7151,15 @@ synonym: "rice growth stage-6" RELATED [GRO:0007044]
 synonym: "sorghum growth stage-7" RELATED [GRO:0007131]
 synonym: "tasseling" RELATED []
 xref: OBO_SF_PO:3324099
-is_a: PO:0007047 ! 3 inflorescence detectable stage
+is_a: PO:0007047 ! whole plant inflorescence detectable stage
 
 [Term]
 id: PO:0007042
-name: 5 fruit formation stage
+name: whole plant fruit formation stage
 namespace: plant_structure_development_stage
-def: "Formation of the seed-bearing structure after flowering." [Poc:curators]
-comment: Although the use of stages like milk or particular fruit sizes properly refer to the development of an individual fruit, they are commonly used as here to extrapolate to a growth of a whole plant or a group of plants.
+def: "A sporophyte reproductive stage (PO:0007130) that begins with the initiation of the first fruit (PO:0009001) of a growing season and ends with the onset of a whole plant fruit ripening stage (PO:0007010)." [Poc:curators]
+comment: This term is to be used for a stage of development of a whole plant (PO:0000003). For the stages of development of an individual fruit, see fruit development stage (PO:0001002). An annual plant will only have one fruit formation stage in its life, while a perennial may have one fruit formation stage for each growing season. In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the fruit ripening stage of whole plant (PO:0007042) has begun. Although the use of stages like milk or particular fruit sizes (see synonyms) properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
+subset: Angiosperm
 synonym: "07-milk stage in rice" RELATED [GRO:0007046]
 synonym: "08-milk development in barley" RELATED [GRO:0007105]
 synonym: "08-milk development in oat" RELATED [GRO:0007105]
@@ -7225,15 +7229,16 @@ def: "An inflorescence detectable phase during which an inflorescence has reache
 comment: This phase can only be used if the final length of the inflorescence is known.
 subset: Maize
 synonym: "4.02 1/4 of inflorescence length reached in soybean" RELATED [SOY:0000068]
-is_a: PO:0007047 ! 3 inflorescence detectable stage
+is_a: PO:0007047 ! whole plant inflorescence detectable stage
 
 [Term]
 id: PO:0007047
-name: 3 inflorescence detectable stage
+name: whole plant inflorescence detectable stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007012
-def: "A reproductive growth stage during which an inflorescence is detectable." [MaizeGDB:ms, POC:curators]
+def: "A reproductive growth stage during which an inflorescence is detectable." [MaizeGDB:Mary_Schaeffer, POC:curators]
 comment: This includes the stage when an inflorescence starts to develop (and is detectable only by assay or with a microscope), to the stage where it is visible to the naked eye. This includes the booting stage in the grasses (Poaceae). There is no one-to-one correspondence between some of the phases of inflorescence formation in members of Poaceae (e.g., booting) with that of other families.
+subset: Angiosperm
 synonym: "3 inflorescence visible" RELATED []
 synonym: "3 inflorescence visible in Solanaceae" NARROW [SGN:0000033]
 synonym: "4 Inflorescence Formation in soybean" NARROW [SOY:0000005]
@@ -7323,7 +7328,7 @@ synonym: "Stage R7 Beginning maturity in soybean" RELATED [SOY:0000088]
 synonym: "storage maturity in maize" RELATED [MaizeGDB:67381]
 synonym: "tomato red firm fruit" RELATED [SGN:0000050]
 synonym: "Zadok scale-87, Haun scale-15" RELATED [GRO:0007113]
-is_a: PO:0007010 ! 6 ripening stage
+is_a: PO:0007010 ! whole plant fruit ripening stage
 
 [Term]
 id: PO:0007051
@@ -7344,7 +7349,7 @@ synonym: "6.02 3/4 of flowers on main stem open in soybean" RELATED [SOY:0000074
 synonym: "FL.03 3/4 of flowers open in Solanaceae" RELATED [SGN:0000038]
 synonym: "flowering finishing" RELATED []
 synonym: "Stage R2 Open flower at one of the two uppermost nodes on the main stem with fully developed leaf in soybean" RELATED [SOY:0000074]
-is_a: PO:0007016 ! 4 flowering stage
+is_a: PO:0007016 ! whole plant flowering stage
 
 [Term]
 id: PO:0007053
@@ -7359,7 +7364,7 @@ synonym: "7.02-anthesis half-way in wheat" RELATED [GRO:0007103]
 synonym: "FL.02 1/2 of flowers open in Solanaceae" RELATED [SGN:0000037]
 synonym: "full flowering" RELATED []
 synonym: "Haun scale-11.5" RELATED [GRO:0007103]
-is_a: PO:0007016 ! 4 flowering stage
+is_a: PO:0007016 ! whole plant flowering stage
 
 [Term]
 id: PO:0007054
@@ -10106,6 +10111,7 @@ synonym: "trophophyll" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
 synonym: "vascular leaves" EXACT Plural [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
 synonym: "維管束のある葉   、または維管束植物の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025034 ! leaf
+relationship: develops_from PO:0000017 ! vascular leaf primordium
 relationship: participates_in PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -10599,7 +10605,6 @@ synonym: "ped&#250nculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花梗（総梗）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972231
 is_a: PO:0025029 ! shoot axis
-relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0009054
@@ -13428,7 +13433,6 @@ synonym: "葉    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3167333
 xref: OBO_SF_PO:3205370
 is_a: PO:0006001 ! phyllome
-relationship: develops_from PO:0000017 ! vascular leaf primordium
 created_by: Ramona
 creation_date: 2010-07-12T01:31:44Z
 
@@ -14598,7 +14602,7 @@ synonym: "archegonial egg call" EXACT []
 synonym: "ooc&#233lula del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器卵細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020094 ! plant egg cell
-relationship: part_of PO:0025126 ! archegonium
+relationship: located_in PO:0025126 ! archegonium
 created_by: Ramona
 creation_date: 2010-11-15T08:14:32Z
 
@@ -14606,11 +14610,12 @@ creation_date: 2010-11-15T08:14:32Z
 id: PO:0025123
 name: embryo sac egg cell
 namespace: plant_anatomy
-def: "A plant egg cell that is produced by and located in an embryo sac." [POC:curators]
+def: "A plant egg cell (PO:0020094) that is part of an egg apparatus (PO:0020096) that is part of an embryo sac (PO:0025074)." [POC:curators]
 subset: Angiosperm
 subset: CL
 synonym: "ooc&#233lula del saco embrionario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚嚢卵細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3028397
 is_a: PO:0020094 ! plant egg cell
 relationship: part_of PO:0020096 ! egg apparatus
 created_by: Ramona
@@ -17619,7 +17624,7 @@ id: PO:0025341
 name: gametophyte reproductive stage
 namespace: plant_structure_development_stage
 def: "A gametophyte development stage that occurs during the interval between the initiation of a gametangium and the onset of senescence." [POC:curators]
-comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause. The sporophyte\nsenescent stage may succeed the sporophyte reproductive stage in monocarpic plants that die after reproducing, such as annuals.
+comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause. The sporophyte senescent stage may succeed the sporophyte reproductive stage in monocarpic plants that die after reproducing, such as annuals.
 synonym: "etapa reproductiva del gametofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophyte reproductively competent stage" EXACT []
 synonym: "gametophytic reproductive stage" EXACT []
@@ -18881,12 +18886,13 @@ creation_date: 2012-02-07T08:20:10Z
 
 [Term]
 id: PO:0025431
-name: leaf anlagen
+name: vascular leaf anlagen
 namespace: plant_anatomy
-def: "A phyllome anlagen (PO:0025430) that will give rise to a leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
+def: "A phyllome anlagen (PO:0025430) that will give rise to a vascular leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
 comment: This is the region where you have the maximum concentration of auxin in the SAM (at least in a few species that have been studied).
 synonym: "leaf meristem" BROAD []
 synonym: "葉原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3459279
 is_a: PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0008016 ! vegetative shoot apical meristem
 created_by: cooperl
@@ -19794,7 +19800,7 @@ id: PO:0025498
 name: cardinal part of multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is a proper part of a multi-tissue plant structure (PO:0025496) and includes portions of plant tissues (PO:0009007) of at least two different types." [POC:curators]
-comment: Includes cardinal parts of plant organs (PO:0025001) as well as parts of other multi-tissue plant structures. Cardinal refers to the fact that these are biologically meaningful and not arbitrary parts. Most cardinal part of multi-tissue plant structure have both fiat and bona-fide boundaries, including parts with large fiat boundaries, such as leaf base (PO:0020040) or fruit distal end (PO:0008001), and parts with primarily bona-fide boundaries, such as leaflet (PO:0020049).
+comment: Includes cardinal parts of plant organs (PO:0025001) as well as parts of other multi-tissue plant structures. Cardinal refers to the fact that these are biologically meaningful and not arbitrary parts. Most cardinal parts of multi-tissue plant structures have both fiat and bona-fide boundaries, including parts with large fiat boundaries, such as leaf base (PO:0020040) or fruit distal end (PO:0008001), and parts with primarily bona-fide boundaries, such as leaflet (PO:0020049).
 synonym: "parte cardinal de estructura vegetal con m&#250ltiples tejidos (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "複数の組織からなる植物構造の基本（主要）部分 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3534632
@@ -19802,6 +19808,19 @@ is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0025496 ! multi-tissue plant structure
 created_by: cooperl
 creation_date: 2012-06-11T15:28:44Z
+
+[Term]
+id: PO:0025499
+name: sepal epidermis giant cell
+namespace: plant_anatomy
+def: "An epidermal pavement cell (PO:0000332) that is part of sepal epidermis (PO:0006040) and is approximately one fifth the length of a sepal." [PMID:20485493, TAIR:Tanya_Berardini]
+comment: Compare to other epidermal pavement cells that are approximately one hundredth of the length of a sepal (PO:0009031). In Arabidopsis, sepal giant epidermal cells arise by DNA endoreplication (GO:0042023) and have high DNA content (up to 16C).
+synonym: "giant cell" BROAD []
+xref: OBO_SF_PO:3091468
+is_a: PO:0000332 ! epidermal pavement cell
+relationship: part_of PO:0006040 ! sepal epidermis
+created_by: RamonaNYBG
+creation_date: 2012-10-01T11:39:23Z
 
 [Term]
 id: PO:0028001
@@ -19836,8 +19855,8 @@ creation_date: 2010-07-15T02:56:11Z
 id: PO:0028003
 name: gametophyte development stage
 namespace: plant_structure_development_stage
-def: "A whole plant development stage that has as primary participant a whole plant during the interval between meiosis or apospory and its death or fertilization." [POC:curators]
-comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory.
+def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between meiosis or apospory and its death." [POC:curators]
+comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory. In seed plants, the gametophyte may be transformed by fertilization but not strictly die, such as when pollen (PO:0025281) germinates or when a plant embryo begins to develop within an archegonium (PO:0025126) of a gymnosperm or an embryo sac (PO:0025074) of an angiosperms.
 subset: TraitNet
 synonym: "fase gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophyte phase" EXACT []
