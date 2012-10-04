@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:10:2012 13:08
+date: 03:10:2012 12:17
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1656,10 +1656,13 @@ is_obsolete: true
 id: PO:0001002
 name: fruit development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of a fruit defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
+def: "A plant structure development stage (PO:0009012) that has as primary participant a fruit (PO:0009001)." [POC:curators]
+comment: Defined by characteristic morphological, structural, histological or other visible features. May have as part a seed development stage (PO:0001170).
 synonym: "stage 17 flower in Arabidopsis" RELATED []
 synonym: "stage 18 flower in Arabidopsis" RELATED []
-is_a: PO:0025338 ! collective plant structure development stage
+is_a: PO:0009012 ! plant structure development stage
+intersection_of: PO:0009012 ! plant structure development stage
+intersection_of: has_participant PO:0009001 ! fruit
 
 [Term]
 id: PO:0001003
@@ -2119,7 +2122,7 @@ id: PO:0001083
 name: inflorescence development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of an inflorescence defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0025338 ! collective plant structure development stage
+is_a: PO:0025338 ! collective plant organ structure development stage
 
 [Term]
 id: PO:0001094
@@ -8952,9 +8955,12 @@ is_a: PO:0007605 ! androecium development stage
 id: PO:0007615
 name: flower development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of a flower defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
+def: "A collective plant organ structure development stage (PO:0025338) that has as primary participant a flower (PO:0009046)." [POC:curators]
+comment: Defined by characteristic morphological, structural, histological, or other visible features.
 synonym: "flower development in Arabidopsis" RELATED []
-is_a: PO:0025338 ! collective plant structure development stage
+is_a: PO:0025338 ! collective plant organ structure development stage
+intersection_of: PO:0025338 ! collective plant organ structure development stage
+intersection_of: has_participant PO:0009046 ! flower
 
 [Term]
 id: PO:0007616
@@ -17583,13 +17589,15 @@ creation_date: 2011-10-19T10:54:37Z
 
 [Term]
 id: PO:0025338
-name: collective plant structure development stage
+name: collective plant organ structure development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a collective plant structure." [POC:curators]
-comment: Includes development stages for flowers, fruits, and inflorescences.
+def: "A plant structure development stage (PO:0009012) that has as primary participant a collective plant structure (PO:0025497)." [POC:curators]
+comment: Includes flower development stage (PO:0007615), corolla development stage (PO:0007604), and inflorescence development stage (PO:0001083).
 synonym: "etapa de desarrollo de una estructura colectiva de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合的植物構造の発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009012 ! plant structure development stage
+intersection_of: PO:0009012 ! plant structure development stage
+intersection_of: has_participant PO:0025007 ! collective plant organ structure
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
 
