@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:10:2012 12:17
+date: 05:10:2012 17:06
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1656,7 +1656,7 @@ is_obsolete: true
 id: PO:0001002
 name: fruit development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage (PO:0009012) that has as primary participant a fruit (PO:0009001)." [POC:curators]
+def: "A plant structure development stage (PO:0009012) that has as primary participant a single fruit (PO:0009001)." [POC:curators]
 comment: Defined by characteristic morphological, structural, histological or other visible features. May have as part a seed development stage (PO:0001170).
 synonym: "stage 17 flower in Arabidopsis" RELATED []
 synonym: "stage 18 flower in Arabidopsis" RELATED []
@@ -6639,7 +6639,7 @@ id: PO:0007007
 name: FF.03 fruit size 50 to 70% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 50% to 70% of its final size." [ISBN:3826331524, POC:curators]
-comment: This term can only be used of the final size of the fruit is known.
+comment: This term can only be used of the final size if the fruit is known.
 synonym: "7.07 Pod 70% of final length in soybean" RELATED [SOY:0000082]
 synonym: "8.02-early milk in barley" RELATED [GRO:0007107]
 synonym: "8.02-early milk in oat" RELATED [GRO:0007107]
@@ -6674,7 +6674,7 @@ id: PO:0007009
 name: FF.01 fruit size 10 to 30% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 10% to 30% of its final size." [ISBN:3826331524, POC:curators]
-comment: This term can only be used of the final size of the fruit is known.
+comment: This term can only be used of the final size if the fruit is known.
 synonym: "7.02 Pod 30% of final length in soybean" RELATED [SOY:0000080]
 synonym: "FF.01 fruit size 30% in Solanaceae" RELATED [SGN:0000042]
 synonym: "tomato immature green" RELATED [SGN:0000042]
@@ -6685,7 +6685,7 @@ is_a: PO:0007042 ! whole plant fruit formation stage
 id: PO:0007010
 name: whole plant fruit ripening stage
 namespace: plant_structure_development_stage
-def: "A sporophyte reproductive stage (PO:0007130) that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) is begins the process of ripening (GO:0009835) and ends when (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening, whichever comes first." [Poc:curators]
+def: "A whole plant fruit development stage (PO:0025500) that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) is begins the process of ripening (GO:0009835) and ends when (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening, whichever comes first." [Poc:curators]
 comment: This term is to be used for a stage of development of a whole plant. For the stages of development of an individual fruit, see fruit development stage (PO:0001002). Although individual fruits are undergoing ripening (which is a type of senescence) during this stage, the whole plant is not yet undergoing multicelluar organism senescence (GO:0010259). An annual species generally will have only one fruit ripening stage in its life, followed by a sporophyte senescent stage (PO:0007017), as in case (1). A perennial species may have one fruit ripening stage for each growing season, followed by a sporophyte dormant stage (PO:0007132), as in case (2). In evergreen species, the plant may remain in the sporophyte reproductive stage (PO:0007130) after all fruit has ripened, without entering dormancy or senescence, as in case (3). In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the whole plant fruit development stage (PO:id) has ended. Although the use of stages like dough or particular ripening stages (see synonyms) properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
 subset: Angiosperm
 synonym: "08-dough stage in rice" RELATED [GRO:0007042]
@@ -6705,7 +6705,7 @@ synonym: "kernel ripening" RELATED []
 synonym: "maturity of fruit and seed" RELATED []
 synonym: "rice growth stage-8" RELATED []
 synonym: "silique ripening in Arabidopsis" RELATED [TAIR:0000034]
-is_a: PO:0007130 ! sporophyte reproductive stage
+is_a: PO:0025500 ! whole plant fruit development stage
 
 [Term]
 id: PO:0007013
@@ -6931,7 +6931,7 @@ id: PO:0007027
 name: FF.04 fruit size 70% to final size stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 70% of its final size to its final size." [ISBN:3826331524, POC:curators]
-comment: This term can only be used of the final size of the fruit is known.
+comment: This term can only be used of the final size if the fruit is known.
 synonym: "7.09 Pod full size in soybean" RELATED [SOY:0000084]
 synonym: "8.03-medium milk in barley" RELATED [GRO:0007108]
 synonym: "8.03-medium milk in oat" RELATED [GRO:0007108]
@@ -6967,7 +6967,7 @@ id: PO:0007029
 name: FF.02 fruit size 30 to 50% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage that spans the interval when a fruit has reached 30% to 50% of its final size." [ISBN:3826331524, POC:curators]
-comment: This term can only be used of the final size of the fruit is known.
+comment: This term can only be used of the final size if the fruit is known.
 synonym: "7.01-blister stage in maize" RELATED [GRO:0007030]
 synonym: "7.03 Pod 50% of final length in soybean" RELATED [SOY:0000081]
 synonym: "8.01-kernel watery ripe in barley" RELATED [GRO:0007106]
@@ -7025,7 +7025,7 @@ id: PO:0007032
 name: FF.00 fruit size up to 10% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage that begins with the formation of a zygote and ends when the fruit has reached 10% of its final size." [ISBN:3826331524, MaizeGDB:ms, POC:curators]
-comment: This fruit development stage may begin without fertilization or formation of a zygote in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This term can only be used of the final size of the fruit is known.
+comment: This fruit development stage may begin without fertilization or formation of a zygote in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This term can only be used if the final size of the fruit is known.
 synonym: "7.01 Pod 10% of final length in soybean" RELATED [SOY:0000079]
 synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
 synonym: "stage R3 in soybean" RELATED [SOY:0000079]
@@ -7160,7 +7160,7 @@ is_a: PO:0007047 ! whole plant inflorescence detectable stage
 id: PO:0007042
 name: whole plant fruit formation stage
 namespace: plant_structure_development_stage
-def: "A sporophyte reproductive stage (PO:0007130) that begins with the initiation of the first fruit (PO:0009001) of a growing season and ends with the onset of a whole plant fruit ripening stage (PO:0007010)." [Poc:curators]
+def: "A whole plant fruit development stage (PO:0025500) that begins with the initiation of the first fruit (PO:0009001) of a growing season and ends with the onset of a whole plant fruit ripening stage (PO:0007010)." [Poc:curators]
 comment: This term is to be used for a stage of development of a whole plant (PO:0000003). For the stages of development of an individual fruit, see fruit development stage (PO:0001002). An annual plant will only have one fruit formation stage in its life, while a perennial may have one fruit formation stage for each growing season. In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the fruit ripening stage of whole plant (PO:0007042) has begun. Although the use of stages like milk or particular fruit sizes (see synonyms) properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
 subset: Angiosperm
 synonym: "07-milk stage in rice" RELATED [GRO:0007046]
@@ -7182,7 +7182,7 @@ synonym: "proembryo in maize" RELATED [MaizeGDB:67371]
 synonym: "rice growth stage-7" RELATED [GRO:0007046]
 synonym: "transition stage in maize" RELATED [MaizeGDB:67369]
 synonym: "Zadok scale-70" RELATED [GRO:0007105]
-is_a: PO:0007130 ! sporophyte reproductive stage
+is_a: PO:0025500 ! whole plant fruit development stage
 
 [Term]
 id: PO:0007043
@@ -19829,6 +19829,16 @@ is_a: PO:0000332 ! epidermal pavement cell
 relationship: part_of PO:0006040 ! sepal epidermis
 created_by: RamonaNYBG
 creation_date: 2012-10-01T11:39:23Z
+
+[Term]
+id: PO:0025500
+name: whole plant fruit development stage
+namespace: plant_structure_development_stage
+def: "A sporophyte reproductive stage that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) that has no other fruits as part enters a fruit initiation stage (PO:id) and ends with the earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [POC:curators]
+comment: Includes whole plant fruit formation stage (PO:0007042) and whole plant fruit ripening stage (PO:0007010). An iteroparous plant will have a single whole plant fruit development stage during its life of whole plant (PO:0025337), while a semelparous plant may have multiple whole plant fruit development stages during its life, each of which will be part of the same instance of a sporophyte reproductive stage.
+is_a: PO:0007130 ! sporophyte reproductive stage
+created_by: RamonaNYBG
+creation_date: 2012-10-05T11:36:45Z
 
 [Term]
 id: PO:0028001
