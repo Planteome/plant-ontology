@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:10:2012 13:12
+date: 15:10:2012 15:50
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -519,7 +519,7 @@ def: "Cell produced by the fusion of sperm cell nucleus and two polar nuclei of 
 subset: CL
 synonym: "c&#233lula primaria del endosperma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次胚乳細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025026 ! megagametophyte cell
+is_a: PO:0025026 ! embryo sac cell
 relationship: part_of PO:0009089 ! endosperm
 
 [Term]
@@ -1065,7 +1065,7 @@ subset: CL
 subset: reference
 synonym: "sin&#233rgida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "助細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025026 ! megagametophyte cell
+is_a: PO:0025026 ! embryo sac cell
 relationship: part_of PO:0020096 ! egg apparatus
 
 [Term]
@@ -1657,9 +1657,10 @@ id: PO:0001002
 name: fruit development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage (PO:0009012) that has as primary participant a single fruit (PO:0009001)." [POC:curators]
-comment: Defined by characteristic morphological, structural, histological or other visible features of a fruit. May have as part a seed development stage (PO:0001170). For development stages of a whole plant based on fruit development, use whole plant fruit development stage (PO:0025500) or its subclasses.
+comment: Defined by characteristic morphological, structural, histological or other visible features of a fruit. Includes as subclasses fruit formation stage (PO:0025501) and fruit ripening stage (PO:0025502). May have as part a seed development stage (PO:0001170). This stage applies to an individual fruit. For development stages of a whole plant (PO:0000003) based on fruit development, use whole plant fruit development stage (PO:0025500) or its subclasses.
 synonym: "stage 17 flower in Arabidopsis" RELATED []
 synonym: "stage 18 flower in Arabidopsis" RELATED []
+xref: OBO_SF_PO:3573602
 is_a: PO:0009012 ! plant structure development stage
 
 [Term]
@@ -2528,10 +2529,12 @@ id: PO:0004005
 name: laticiferous cell
 namespace: plant_anatomy
 def: "OBSOLETE. A specialized cells or ducts resembling vessels; they form branched networks of latex-secreting cells in the phloem and other parts of plants." [http://academic.kellogg.edu/herbrandsonc/bio111/glossary/glossary.htm]
-comment: Obsoleted: Too general definition of the term. Replaced by two terms: non-articulated laticifer cell and articulated laticifer cell.
+comment: Obsoleted: Too general definition of the term. Replaced by laticifer cell (PO:0025031).
 synonym: "c&#233lula latic&#237fera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "乳細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3028393
 is_obsolete: true
+replaced_by: PO:0025031
 
 [Term]
 id: PO:0004006
@@ -3559,19 +3562,25 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0005006
 name: articulated laticifer
 namespace: plant_anatomy
-def: "A structure consisting of long multinucleate tubes in which latex is found, having cross walls (articulated)." [APweb:Glossary, GR:Pankaj_Jaiswal]
+def: "A portion of secretory tissue (PO:0005656) that has as parts articulated laticifer cells (PO:0006221)." [GR:Pankaj_Jaiswal, POC:curators]
+comment: The articulated laticifer cells are joined longitudinally to form a tube, with cross-walls that may be partially to fully perforated.
 synonym: "latic&#237fero articulado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of articulated laticifer tissue" EXACT []
 synonym: "連合乳管（有節乳管）    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005053 ! laticifer
+xref: OBO_SF_PO:3028393
+is_a: PO:0005656 ! portion of secretory tissue
 
 [Term]
 id: PO:0005007
 name: non-articulated laticifer
 namespace: plant_anatomy
-def: "A structure consisting of long multinucleate tubes in which latex is found, having no cross walls." [APweb:Glossary, GR:Pankaj_Jaiswal]
+def: "OBSOLETE. A structure consisting of long multinucleate tubes in which latex is found, having no cross walls." [APweb:Glossary, GR:Pankaj_Jaiswal]
+comment: This term was made obsolete because a nom-articulated laticifer is not a tissue type but consists of a single cell. Use non-articulated laticifer cell (PO:0006222) instead.
 synonym: "latic&#237fero no articulado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "無節乳管、単乳管    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005053 ! laticifer
+xref: OBO_SF_PO:3028393
+is_obsolete: true
+replaced_by: PO:0006222
 
 [Term]
 id: PO:0005008
@@ -3959,10 +3968,15 @@ is_a: PO:0009007 ! portion of plant tissue
 id: PO:0005053
 name: laticifer
 namespace: plant_anatomy
-def: "A secretory structure that produces latex." [ISBN:0080374913]
+def: "OBSOLETE. A secretory structure that produces latex." [ISBN:0080374913]
+comment: This term was made obsolete because its had only one subclass. Consider non-articulated laticifer (PO:0005007), articulated laticifer cell (PO:0006221) or non-articulated laticifer cell (PO:0006222) instead.
 synonym: "latic&#237fero (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "乳管    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005656 ! portion of secretory tissue
+xref: OBO_SF_PO:3028393
+is_obsolete: true
+consider: PO:0005006
+consider: PO:0006221
+consider: PO:0006222
 
 [Term]
 id: PO:0005057
@@ -5580,11 +5594,14 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0006221
 name: articulated laticifer cell
 namespace: plant_anatomy
-def: "A laticifer cell in which the walls between contiguous cells may partly or completely disappear." [ISBN:0471245208, TAIR:Katica_Ilic]
+def: "A laticifer cell (PO:0025031) that is joined longitudinally to other articulated laticifer cells to form a tube." [ISBN:0471245208, TAIR:Katica_Ilic]
+comment: The walls between contiguous cells may be perforated or may disappear completely. This terms should be used for individual cells. For multiple cells joined together, use articulated laticifer (PO:0005006).
 subset: CL
 synonym: "c&#233lula del latic&#237fero articulado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "laticiferous vessel" RELATED []
+synonym: "compound laticifer cell" EXACT []
+synonym: "laticifer member" EXACT [JSTOR:2442685]
 synonym: "連合乳管（有節乳管）細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3028393
 is_a: PO:0025031 ! laticifer cell
 relationship: part_of PO:0005006 ! articulated laticifer
 
@@ -5592,13 +5609,14 @@ relationship: part_of PO:0005006 ! articulated laticifer
 id: PO:0006222
 name: non-articulated laticifer cell
 namespace: plant_anatomy
-def: "A laticifer cell that elongates indefinitely and grows intrusively between the walls of meristematic cells." [PMID:11732189]
+def: "A laticifer cell (PO:0025031) that is not joined longitudinally to other laticifer cells to form a tube." [PMID:11732189]
+comment: May be coenocytic (multi-nucleate) and branched and may grow intrusively between other plant cells (PO:0009002).
 subset: CL
 synonym: "c&#233lula del latic&#237fero no articulado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "simple laticifer" RELATED []
+synonym: "simple laticifer" EXACT []
 synonym: "無節乳管細胞、単乳管細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3028393
 is_a: PO:0025031 ! laticifer cell
-relationship: part_of PO:0005007 ! non-articulated laticifer
 
 [Term]
 id: PO:0006300
@@ -6684,7 +6702,7 @@ id: PO:0007010
 name: whole plant fruit ripening stage
 namespace: plant_structure_development_stage
 def: "A whole plant fruit development stage (PO:0025500) that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) begins the process of ripening (GO:0009835) in a way which, in case there are other fruits, the majority of the other fruits start to ripen continuously therewith, and ends with earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [Poc:curators]
-comment: Succeeds a whole plant fruit formation stage. This term is to be used for a stage of development of a whole plant. For the stages of development of an individual fruit, see fruit ripening stage (PO:0025502). Although individual fruits are undergoing ripening (which is a type of senescence) during this stage, the whole plant is not yet undergoing multicelluar organism senescence (GO:0010259). An iteroparous species generally will have only one fruit ripening stage in its life, followed by a sporophyte senescent stage (PO:0007017), as in case (1). A semelparous species may have one fruit ripening stage for each whole plant fruit developments stage (PO:0025500), followed by a sporophyte dormant stage (PO:0007132), as in case (2). In evergreen species, a plant may have multiple fruit development stages and in the sporophyte reproductive stage (PO:0007130) after all fruit has ripened, without entering dormancy or senescence, as in case (3). In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the whole plant fruit formation stage (PO:0007042) has ended. In some plants, fruit may continue to ripen after the whole plant has entered a sporophyte dormant stage or sporophyte senescent stage and left the whole plant fruit ripening stage. Some plants may never enter a whole plant fruit ripening stage, because fruits only begin to ripen after the plant has entered a sporophyte dormant stage or sporophyte senescent stage. Although the use of stages like dough stage properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
+comment: Succeeds a whole plant fruit formation stage (PO:0007042). This term is to be used for a stage of development of a whole plant. For the stages of development of an individual fruit, see fruit ripening stage (PO:0025502). Although individual fruits are undergoing fruit ripening (GO:0009835), which is a type of senescence, during this stage, the whole plant is not yet undergoing multicelluar organism senescence (GO:0010259). An iteroparous species generally will have only one fruit ripening stage in its life, while a semelparous species may have multiple fruit ripening stage in its life. A whole plant fruit ripening stage may be followed by a sporophyte senescent stage, as in case (1) or by a sporophyte dormant stage (PO:0007132), as in case (2). In evergreen species and species that fruit multiple times during a growing season, a plant may have multiple fruit development stages without entering dormancy or senescence, as in case (3). In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the whole plant fruit formation stage (PO:0007042) has ended. In some plants, fruit may continue to ripen after the whole plant has entered a sporophyte dormant stage or sporophyte senescent stage and left the whole plant fruit ripening stage. Some plants may never enter a whole plant fruit ripening stage, because fruits only begin to ripen after the plant has entered a sporophyte dormant stage or sporophyte senescent stage. Although the use of synonyms like "10-dough stage in sorghum" properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
 subset: Angiosperm
 synonym: "08-dough stage in rice" RELATED [GRO:0007042]
 synonym: "09-dough development in barley" RELATED [GRO:0007110]
@@ -7158,8 +7176,8 @@ is_a: PO:0007047 ! whole plant inflorescence detectable stage
 id: PO:0007042
 name: whole plant fruit formation stage
 namespace: plant_structure_development_stage
-def: "A whole plant fruit development stage (PO:0025500) that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) that has no other fruits as part enters a fruit initiation stage (PO:0025503) and ends with the onset of a whole plant fruit ripening stage (PO:0007010)." [Poc:curators]
-comment: This term is to be used for a stage of development of a whole plant (PO:0000003). For the stages of development of an individual fruit, see fruit development stage (PO:0001002). An iteroparous plant will only have one fruit formation stage in its life,  while a semelparous plant may have multiple whole plant fruit development stages during its life. In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the fruit ripening stage of whole plant (PO:0007042) has begun. Although the use of synonyms like 07-milk stage in rice properly refer to the development of an individual fruits, they are used as here to extrapolate to a whole plant.
+def: "A whole plant fruit development stage (PO:0025500) that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) that is not currently participating in a whole plant fruit development stage begins a fruit initiation stage (PO:0025503) and ends with the onset of a whole plant fruit ripening stage (PO:0007010)." [Poc:curators]
+comment: This term is to be used for a stage of development of a whole plant (PO:0000003). For the stages of development of an individual fruit, see fruit development stage (PO:0001002). An iteroparous plant will only have one fruit formation stage in its life,  while a semelparous plant may have multiple whole plant fruit formation stages during its life. In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the fruit ripening stage of whole plant (PO:0007042) has begun. Although the use of synonyms like "07-milk stage in rice" properly refer to the development of an individual fruits, they are used as here to extrapolate to a whole plant.
 subset: Angiosperm
 synonym: "07-milk stage in rice" RELATED [GRO:0007046]
 synonym: "08-milk development in barley" RELATED [GRO:0007105]
@@ -12341,14 +12359,16 @@ is_obsolete: true
 
 [Term]
 id: PO:0020090
-name: central cell
+name: embryo sac central cell
 namespace: plant_anatomy
-def: "The largest cell of the mature embryo sac. Contains two polar nuclei, which (after double fertilization) will develop into the endosperm." [TAIR:Katica_Ilic]
+def: "An embryo sac cell (PO:0025026) that is largest cell in a mature embryo sac (PO:0025074)." [PMID:17041880, TAIR:Katica_Ilic]
+comment: In most angiosperms, the embryo sac central cell contains two polar nuclei, and, after double fertilization, develops into an endosperm. In some angiosperms, such as Illicium, the embryo sac central cell contains a single polar nucleus. Embryo sac central cell is distinct from archegonium central cell (PO:0025509).
 subset: CL
 subset: reference
 synonym: "c&#233lula central (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中央細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025026 ! megagametophyte cell
+xref: OBO_SF_PO:3080937
+is_a: PO:0025026 ! embryo sac cell
 relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
@@ -12397,7 +12417,7 @@ subset: CL
 subset: reference
 synonym: "c&#233lula antipodal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "反足細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025026 ! megagametophyte cell
+is_a: PO:0025026 ! embryo sac cell
 relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
@@ -13307,15 +13327,17 @@ creation_date: 2010-07-01T02:11:26Z
 
 [Term]
 id: PO:0025026
-name: megagametophyte cell
+name: embryo sac cell
 namespace: plant_anatomy
-def: "A plant cell that is part of an embryo sac." [POC:Ramona_Walls]
+def: "A plant cell (PO:0009002) that is part of an embryo sac (PO:0025074)." [POC:Ramona_Walls]
 subset: CL
 synonym: "c&#233lula megagametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo sac cell" RELATED []
 synonym: "megagametophytic cell" EXACT []
 synonym: "大配偶体細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
+intersection_of: PO:0009002 ! plant cell
+intersection_of: part_of PO:0025074 ! embryo sac
 created_by: Ramona
 creation_date: 2010-05-07T02:36:24Z
 
@@ -13385,10 +13407,12 @@ creation_date: 2010-05-07T02:47:45Z
 id: PO:0025031
 name: laticifer cell
 namespace: plant_anatomy
-def: "A ground tissue cell that contains latex." [POC:curators]
+def: "A ground tissue cell (PO:0025030) that contains latex." [POC:curators]
+comment: May be simple or branched.
 subset: CL
 synonym: "c&#233lula latic&#237fera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "乳管細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3028393
 is_a: PO:0025030 ! ground tissue cell
 created_by: Ramona
 creation_date: 2010-07-12T09:08:10Z
@@ -13996,11 +14020,12 @@ creation_date: 2010-07-01T04:21:46Z
 id: PO:0025074
 name: embryo sac
 namespace: plant_anatomy
-def: "A megagametophyte that is located in an ovule in an ovary." [POC:curators]
-comment: Produces an embryo sac egg cell.
+def: "A megagametophyte (PO:0025279) that is located in a plant ovary ovule (PO:0025490)." [POC:curators]
+comment: Produces an embryo sac egg cell (PO:0025123).
 subset: Angiosperm
 synonym: "saco embrionario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚嚢    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3028397
 is_a: PO:0025279 ! megagametophyte
 relationship: develops_from PO:0020019 ! megaspore
 relationship: located_in PO:0025490 ! plant ovary ovule
@@ -14056,7 +14081,8 @@ creation_date: 2010-07-12T02:31:42Z
 id: PO:0025078
 name: placenta
 namespace: plant_anatomy
-def: "A portion of plant tissue to which ovules or seeds are attached." [ISBN:0716710072]
+def: "A portion of plant tissue at the interface between two plant structures, one of which is in a gametophyte development stage (PO:id) and one of which is in a sporophyte development stage (PO:id), and that has as parts transfer cells (PO:0000078)." [ISBN:0716710072]
+comment: The transfer cells aid in nutrient transport. Examples include ovary placenta (PO:0020001) and fruit placenta (PO:0004535).
 synonym: "placenta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "placentae" EXACT Plural [FNA:2f9cc2ef-9943-4a58-8f0d-01214acd0b4e]
 synonym: "placentas" EXACT Plural [FNA:3d86068e-4587-4b88-b73f-5fe663bc4d07]
@@ -14614,7 +14640,8 @@ creation_date: 2010-11-15T08:14:32Z
 id: PO:0025123
 name: embryo sac egg cell
 namespace: plant_anatomy
-def: "A plant egg cell (PO:0020094) that is part of an egg apparatus (PO:0020096) that is part of an embryo sac (PO:0025074)." [POC:curators]
+def: "A plant egg cell (PO:0020094) that is part of an egg apparatus (PO:0020096)." [POC:curators]
+comment: The egg apparatus is part of an embryo sac (PO:0025074).
 subset: Angiosperm
 subset: CL
 synonym: "ooc&#233lula del saco embrionario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -19831,8 +19858,9 @@ creation_date: 2012-10-01T11:39:23Z
 id: PO:0025500
 name: whole plant fruit development stage
 namespace: plant_structure_development_stage
-def: "A sporophyte reproductive stage that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) that has no other fruits as part enters a fruit initiation stage (PO:id) and ends with the earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [POC:curators]
-comment: Includes whole plant fruit formation stage (PO:0007042) and whole plant fruit ripening stage (PO:0007010). An iteroparous plant will have a single whole plant fruit development stage during its life of whole plant (PO:0025337), while a semelparous plant may have multiple whole plant fruit development stages during its life, each of which will be part of the same instance of a sporophyte reproductive stage.
+def: "A sporophyte reproductive stage that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) that is not currently participating in a whole plant fruit development stage begins a fruit initiation stage (PO:0025503), and ends with the earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [POC:curators]
+comment: A whole plant fruit development stage begins with the beginning of whole plant fruit formation stage (PO:0007042) and ends with the end of a whole plant fruit ripening stage (PO:0007010). A whole plant fruit development stage can be thought of as a fruiting cycle for a whole plant that begins when the plant starts to produce fruit and ends when all of the fruit on the plant are ripe, unless the plant enters a sporophyte senescent stage or sporophyte dormant stage before all the fruit is ripe. An iteroparous plant will have a single whole plant fruit development stage during its life of whole plant (PO:0025337), while a semelparous plant may have multiple whole plant fruit development stages during its life, each of which will be part of the same instance of a sporophyte reproductive stage. Some plants retain their fruit after ripening and through dormancy, and thus may begin a new whole fruit development stage while fruits from the previous whole plant fruit development stage are still present.
+xref: OBO_SF_PO:3574905
 is_a: PO:0007130 ! sporophyte reproductive stage
 created_by: RamonaNYBG
 creation_date: 2012-10-05T11:36:45Z
@@ -19841,8 +19869,9 @@ creation_date: 2012-10-05T11:36:45Z
 id: PO:0025501
 name: fruit formation stage
 namespace: plant_structure_development_stage
-def: "A fruit development stage (PO:0001002) that being with the formation of a plant zygote (PO:0000423) and ends when a fruit ripening stage (PO:0025502) begins." [POC:curators]
-comment: This stage applies to an individual fruit (PO:0009001). For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage (PO:0007042).
+def: "A fruit development stage (PO:0001002) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when that fruit's fruit ripening stage (PO:0025502) begins." [POC:curators]
+comment: A fruit formation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage applies to an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage (PO:0007042).
+xref: OBO_SF_PO:3577355
 is_a: PO:0001002 ! fruit development stage
 relationship: has_participant PO:0009001 ! fruit
 created_by: RamonaNYBG
@@ -19852,8 +19881,9 @@ creation_date: 2012-10-06T08:08:16Z
 id: PO:0025502
 name: fruit ripening stage
 namespace: plant_structure_development_stage
-def: "A fruit development stage (PO:0001002) during which a fruit (PO:0009001) participates in the process of fruit ripening (GO:0009835)." [POC:curators]
+def: "A fruit development stage (PO:0001002) during which a single fruit (PO:0009001) participates in the process of fruit ripening (GO:0009835)." [POC:curators]
 comment: Succeeds a fruit formation stage (PO:0025501). This stage is to be used for an individual fruit.  For the development stage of a whole plant (PO:0000003), use whole plant fruit ripening stage (PO:0007010).
+xref: OBO_SF_PO:3577380
 is_a: PO:0001002 ! fruit development stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T08:08:16Z
@@ -19862,8 +19892,9 @@ creation_date: 2012-10-06T08:08:16Z
 id: PO:0025503
 name: fruit initiation stage
 namespace: plant_structure_development_stage
-def: "A fruit formation stage (PO:0025501) that begins with the formation of a plant zygote (PO:0000423) and ends as soon as the fruit (PO:0009001) starts to grow." [POC:curators]
-comment: The fruit initiation stage may begin without fertilization or formation of a zygote in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage ends as soon as plant cells (PO:0009002) in a developing fruit begin to divide or expand. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
+def: "A fruit formation stage (PO:0025501) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when the plant cells (PO:0009002) in the fruit begin to divide or expand." [POC:curators]
+comment: The fruit initiation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage ends as soon as plant cells (PO:0009002) in a developing fruit begin to divide or expand and may be very brief. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
+xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T08:08:16Z
@@ -19872,8 +19903,9 @@ creation_date: 2012-10-06T08:08:16Z
 id: PO:0025504
 name: fruit size up to 10% stage
 namespace: plant_structure_development_stage
-def: "A fruit formation stage (PO:0025501) that begins after a fruit initiation stage (PO:0025503), and ends when the fruit (PO:0009001) has reached 10% of its final size." [POC:curators]
-comment: Begins as soon as plant cells (PO:0009002) in a developing fruit begin to divide or expand. Succeeds a fruit initiation stage (PO:0025503) and proceeds a fruit size 10 to 30% stage (PO:0025505). This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
+def: "A fruit formation stage (PO:0025501) that begins when the plant cells (PO:0009002) in a fruit (PO:0009001) begin to divide or expand, and ends when the fruit has reached 10% of its final size." [POC:curators]
+comment: Succeeds a fruit initiation stage (PO:0025503) and proceeds a fruit size 10 to 30% stage (PO:0025505). This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
+xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T11:01:04Z
@@ -19884,6 +19916,7 @@ name: fruit size 10 to 30% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that spans the interval when a fruit (PO:0009001) has reached 10% to 30% of its final size." [POC:curators]
 comment: Succeeds a fruit size up to 10% stage (PO:0025504) and proceeds a fruit size 30 to 50% stage (PO:0025506). This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage 10 to 30% (PO:0007009).
+xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T11:01:04Z
@@ -19894,6 +19927,7 @@ name: fruit size 30 to 50% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that spans the interval when a fruit (PO:0009001) has reached 30 to 50% of its final size." [POC:curators]
 comment: Succeeds a fruit size 10 to 30% stage (PO:0025505) and proceeds a fruit size 50 to 70% stage (PO:0025507). This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage 30 to 50% (PO:0007029).
+xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T11:01:04Z
@@ -19904,6 +19938,7 @@ name: fruit size 50 to 70% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that spans the interval when a fruit (PO:0009001) has reached 50 to 70% of its final size." [POC:curators]
 comment: Succeeds a fruit size 30 to 50% stage (PO:0025505) and proceeds a fruit size 70% to final size stage (PO:0025508). This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage 50 to 70% (PO:0007007).
+xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T11:01:04Z
@@ -19914,9 +19949,33 @@ name: fruit size 70% to final size stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that spans begins when a fruit (PO:0009001) has reached 70% of its final size and ends when a fruit has reached its final size and a fruit ripening stage (PO:0025502) begins." [POC:curators]
 comment: Succeeds a fruit size 50 to 70% stage (PO:0025507) and proceeds a fruit ripening stage. This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage 70% to final size (PO:0007027).
+xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
 creation_date: 2012-10-06T11:01:04Z
+
+[Term]
+id: PO:0025509
+name: archegonium central cell
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that is the distal cell arising from the first division of an archegonial initial cell (PO:0025510) in a gymnosperm." [PMID:17041880]
+comment: The archegonium central cell is larger than the other cell that arises from the initial division of the archegonium initial cell. Divides asymmetrically to form a smaller archegonium neck canal cell (PO:0030065) and a larger archegonium egg cell (PO:0025122) in gymnosperms.
+xref: OBO_SF_PO:3080937
+is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0025510 ! archegonium initial cell
+created_by: RamonaNYBG
+creation_date: 2012-10-15T15:24:16Z
+
+[Term]
+id: PO:0025510
+name: archegonium initial cell
+namespace: plant_anatomy
+def: "An initial cell that is part of an archegonium megagametophyte (PO:0025282) and divides to give rise to an archegonium (PO:0025126)." [PMID:17041880]
+synonym: "archegonium initial" EXACT [PMID:17041880]
+xref: OBO_SF_PO:3577440
+is_a: PO:0004011 ! initial cell
+created_by: RamonaNYBG
+creation_date: 2012-10-15T15:30:51Z
 
 [Term]
 id: PO:0028001
@@ -19951,8 +20010,8 @@ creation_date: 2010-07-15T02:56:11Z
 id: PO:0028003
 name: gametophyte development stage
 namespace: plant_structure_development_stage
-def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between meiosis or apospory and its death." [POC:curators]
-comment: During the gametophytic phase, a plant may produce gametes by mitosis. In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophytic phase but bears the chromosome complement that would normally be found in the sporophytic phase. A whole plant in the gametophytic phase usually has half the chromosome complement of a plant in the sporophytic phase, but not in the case of apospory. In seed plants, the gametophyte may be transformed by fertilization but not strictly die, such as when pollen (PO:0025281) germinates or when a plant embryo begins to develop within an archegonium (PO:0025126) of a gymnosperm or an embryo sac (PO:0025074) of an angiosperms.
+def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between meiosis or apospory and the time that the whole plant ceases to exist." [POC:curators]
+comment: In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophyte development stage but bears the chromosome complement that would normally be found in the sporophyte development stage (PO:0028002). A whole plant in the gametophyte development stage usually has half the chromosome complement of a plant in the sporophyte development stage, but not in the case of apospory. A whole plant in the gametophyte development stage may cease to exist by death at any point in its development. In seed plants, the whole plant in the gametophyte development stage may cease to exists through transformation, such as when pollen (PO:0025281) releases its pollen sperm cells (PO:0025121) or when a plant embryo (PO:0009009) begins to develop within an embryo sac (PO:0025074) of an angiosperm. During the gametophytic phase, a plant may produce gametes (PO:0025006) by mitosis.
 subset: TraitNet
 synonym: "fase gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophyte phase" EXACT []
