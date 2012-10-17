@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:10:2012 15:50
+date: 17:10:2012 17:04
 saved-by: RamonaNYBG
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1459,6 +1459,7 @@ comment: They cause the opening and closing of the pore by changes in turgor.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula guardiana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "occlusive cell" EXACT [PMID:16845829]
 synonym: "孔辺細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
@@ -11988,7 +11989,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0020039
 name: leaf lamina
 namespace: plant_anatomy
-def: "A phyllome lamina that is the part of a leaf exclusive of the petiole or sheath, if either is present." [POC:curators]
+def: "A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present." [POC:curators]
 comment: A leaf lamina is usually dorsiventrally flattened, but may be flattened in a median plant (perpendicular to the axis) in the case of phyllodes (PO:0025335) or other ensiform leaves (PO:0025333). This term should not be used for leaves that are not laminar (flat), like round leaves in Allium or needle-like leaves in Pinus or some Proteaceae. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "l&#225mina de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -12708,13 +12709,15 @@ relationship: develops_from PO:0025297 ! seedling radicle
 id: PO:0020128
 name: leaf margin
 namespace: plant_anatomy
-def: "The margin of any flattened part of a leaf." [POC:curators]
+def: "A phyllome margin (PO:0025018) of any flattened part of a leaf (PO:0025034)." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "margen de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉縁    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2972280
 is_a: PO:0025018 ! phyllome margin
+intersection_of: PO:0025005 ! organ margin
+intersection_of: part_of PO:0025034 ! leaf
 relationship: part_of PO:0025034 ! leaf
 
 [Term]
@@ -12992,6 +12995,8 @@ synonym: "基本的な（主要な）器官部    (Japanese)" EXACT Japanese [NI
 xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2945268
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
+intersection_of: PO:0025498 ! cardinal part of multi-tissue plant structure
+intersection_of: part_of PO:0009008 ! plant organ
 relationship: part_of PO:0009008 ! plant organ
 created_by: Ramona
 creation_date: 2010-02-11T01:18:24Z
@@ -13048,6 +13053,7 @@ xref: OBO_SF_PO:2903994
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:2971897
 is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025513 ! organ lamina
 created_by: rwalls
 creation_date: 2010-03-12T10:33:57Z
 
@@ -13212,12 +13218,14 @@ creation_date: 2010-04-02T09:53:48Z
 id: PO:0025018
 name: phyllome margin
 namespace: plant_anatomy
-def: "The margin of a phyllome." [POC:curators]
+def: "An organ margin (PO:0025005) that is part of a phyllome (PO:0006001)." [POC:curators]
 subset: TraitNet
 synonym: "margen del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム縁    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 is_a: PO:0025005 ! organ margin
+intersection_of: PO:0025005 ! organ margin
+intersection_of: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0025396 ! phyllome lamina
 created_by: Ramona
 creation_date: 2010-04-02T10:51:16Z
@@ -13822,7 +13830,7 @@ creation_date: 2009-12-17T03:06:13Z
 id: PO:0025060
 name: lamina
 namespace: plant_anatomy
-def: "A part of a plant structure that is thin and flat." [POC:curators]
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is thin and flat." [POC:curators]
 comment: PATO:0000407 (flat) and PATO:0000592 (thin).
 subset: TraitNet
 synonym: "blade" EXACT [FNA:7dd0c248-f531-4cfe-b196-882e99f4c32b]
@@ -13832,7 +13840,7 @@ synonym: "laminae" EXACT Plural [FNA:12cea564-84fd-40c9-9671-1db2ec4eac90]
 synonym: "葉身、葉片    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
 xref: OBO_SF_PO:3474979
-is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 created_by: cooperl
 creation_date: 2009-12-18T11:23:59Z
 
@@ -14735,13 +14743,16 @@ creation_date: 2010-11-15T09:27:11Z
 id: PO:0025129
 name: petiole lamina
 namespace: plant_anatomy
-def: "A lamina that is part of a petiole." [POC:curators]
+def: "A lamina (PO:0025060) that is part of a petiole (PO:0020038)." [POC:curators]
 comment: The entire petiole may be laminar, or the petiole may be more or less rounded in cross section with laminar extensions.
 subset: Musa
 synonym: "l&#225mina (ala) del pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "petiole wing" NARROW [CO_125:0000005]
 synonym: "葉柄葉身、葉片    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020039 ! leaf lamina
+xref: OBO_SF_OBO:3474979
+is_a: PO:0025060 ! lamina
+intersection_of: PO:0025060 ! lamina
+intersection_of: part_of PO:0020038 ! petiole
 relationship: part_of PO:0020038 ! petiole
 created_by: Ramona
 creation_date: 2010-11-15T10:28:38Z
@@ -16233,7 +16244,7 @@ creation_date: 2010-12-30T02:09:39Z
 id: PO:0025240
 name: second order inflorescence
 namespace: plant_anatomy
-def: "A reproductive shoot system that is part of an inflorescence and has as parts a second order inflorescence branch and any shoot axes and flowers that arise from that branch." [POC:Ramona_Walls]
+def: "A reproductive shoot system (PO:0025082) that is part of an inflorescence (PO:0009049) and has as parts a second order inflorescence axis (PO:0006321) and any shoot axes (PO:0025029) and flowers (PO:0009046) that arise from it." [POC:Ramona_Walls]
 comment: This a sub-inflorescence that arises from the main inflorescence axis.
 subset: Angiosperm
 synonym: "inflorescencia de segundo orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -18231,6 +18242,7 @@ id: PO:0025383
 name: phyllome sinus
 namespace: plant_anatomy
 def: "A plant anatomical space that is a phyllome marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate phyllomes." [ISBN:978080144, POC:curators]
+comment: Can be angular or rounded.
 synonym: "seno del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム洞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459283
@@ -18244,6 +18256,7 @@ id: PO:0025384
 name: leaf sinus
 namespace: plant_anatomy
 def: "A phyllome sinus that is a marginal embayment, incision or indentation between marginal projections of any sort, typically lobes, teeth, or the base of cordate leaves." [ISBN:978080144, POC:curators]
+comment: Can be angular or rounded.
 synonym: "seno de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉洞、溝？ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459283
@@ -18420,11 +18433,13 @@ creation_date: 2012-01-19T11:44:36Z
 id: PO:0025396
 name: phyllome lamina
 namespace: plant_anatomy
-def: "A lamina that is part of a phyllome." [POC:Ramona_Walls]
+def: "An organ lamina (PO:0025513) that is part of a phyllome (PO:0006001)." [POC:Ramona_Walls]
 synonym: "filoma laminar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム葉身 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3474979
-is_a: PO:0025060 ! lamina
+is_a: PO:0025513 ! organ lamina
+intersection_of: PO:0025060 ! lamina
+intersection_of: part_of PO:0006001 ! phyllome
 created_by: RamonaNYBG
 creation_date: 2012-01-19T12:56:11Z
 
@@ -19976,6 +19991,119 @@ xref: OBO_SF_PO:3577440
 is_a: PO:0004011 ! initial cell
 created_by: RamonaNYBG
 creation_date: 2012-10-15T15:30:51Z
+
+[Term]
+id: PO:0025511
+name: petal spur
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is a slender, hollow extension of a petal (PO:0009032)." [ISBN:9781842464229]
+comment: Often contains nectar. Use this term if the spur is part of a single petal. If the spur is part two or more fused petals, use corolla spur (PO:0025512).
+xref: OBO_SF_PO:3080941
+xref: PlantSystematics_image_archive:15744
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009032 ! petal
+created_by: RamonaNYBG
+creation_date: 2012-10-17T10:58:58Z
+
+[Term]
+id: PO:0025512
+name: corolla spur
+namespace: plant_anatomy
+def: "A collective organ part structure (PO:0025269) that is a slender, hollow extension of a corolla and has as parts segments of two more fused petals." [ISBN:9781842464229]
+comment: Often contains nectar. Use this term if the spur is part of two or more fused petals (PO:0009032). If the spur is part of a single petal, use petal spur (PO:0025511).
+xref: OBO_SF_PO:3080941
+xref: PlantSystematics_image_archive:33258
+is_a: PO:0025269 ! collective organ part structure
+relationship: part_of PO:0009059 ! corolla
+created_by: RamonaNYBG
+creation_date: 2012-10-17T11:03:21Z
+
+[Term]
+id: PO:0025513
+name: organ lamina
+namespace: plant_anatomy
+def: "A lamina (PO:0025060) that is part of a plant organ (PO:0009008)." [POC:curators]
+xref: OBO_SF_OBO:3474979
+is_a: PO:0025060 ! lamina
+intersection_of: PO:0025060 ! lamina
+intersection_of: part_of PO:0009008 ! plant organ
+created_by: RamonaNYBG
+creation_date: 2012-10-17T15:51:02Z
+
+[Term]
+id: PO:0025514
+name: phyllome lamina lobe
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is a projection on a phyllome margin (PO:0025018) for which the corresponding phyllome sinus (PO:0025383) extends one quarter or more of the distance to the center of the long axis of the phyllome lamina (PO:0025396)." [JSTOR:2441319]
+comment: A phyllome lobe may be either rounded or angular at the tip, and may have phyllome teeth (PO:0025515) or phyllome crenae (PO:0025516) on its margin. The corresponding phyllome sinus may be rounded or angular.
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025396 ! phyllome lamina
+created_by: RamonaNYBG
+creation_date: 2012-10-17T16:35:08Z
+
+[Term]
+id: PO:0025515
+name: phyllome lamina tooth
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is an angular projection on a phyllome margin (PO:0025018) for which the corresponding phyllome sinus (PO:0025383) extends less than one quarter of the distance to the center of the long axis of the phyllome lamina (PO:0025396)." [JSTOR:2441319]
+comment: See phyllome lamina crena (PO:0025516) for a small rounded projection. The corresponding phyllome sinus may be rounded or angular.
+synonym: "phyllome lamina teeth" EXACT Plural []
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025396 ! phyllome lamina
+created_by: RamonaNYBG
+creation_date: 2012-10-17T16:36:10Z
+
+[Term]
+id: PO:0025516
+name: phyllome lamina crena
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is a rounded projection on a phyllome margin (PO:0025018) for which the corresponding phyllome sinus (PO:0025383) extends less than one quarter of the distance to the center of the long axis of the phyllome lamina (PO:0025396)." [JSTOR:2441319]
+comment: See phyllome lamina tooth (PO:0025515) for a small angular projection. The corresponding phyllome sinus may be rounded or angular.
+synonym: "phyllome lamina crenae" EXACT Plural []
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025396 ! phyllome lamina
+created_by: RamonaNYBG
+creation_date: 2012-10-17T16:36:28Z
+
+[Term]
+id: PO:0025517
+name: leaf lamina lobe
+namespace: plant_anatomy
+def: "A phyllome lobe (PO:0025514) that is a projection on a leaf lamina margin (PO:0025009) for which the corresponding leaf sinus (PO:0025384) extends one quarter or more of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
+comment: A leaf lobe may be either rounded or angular at the tip, and may have leaf teeth (PO:0025518) or leaf crenae (PO:0025519) on its margin. The corresponding leaf sinus may be rounded or angular.
+is_a: PO:0025514 ! phyllome lamina lobe
+intersection_of: PO:0025514 ! phyllome lamina lobe
+intersection_of: part_of PO:0025034 ! leaf
+created_by: RamonaNYBG
+creation_date: 2012-10-17T16:40:42Z
+
+[Term]
+id: PO:0025518
+name: leaf lamina tooth
+namespace: plant_anatomy
+def: "A phyllome lamina tooth (PO:0025515) that is an angular projection on a leaf margin (PO:0020128) for which the corresponding leaf sinus (PO:0025384) extends less than one quarter of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
+comment: See leaf lamina crena (PO:0025519) for a small rounded projection. The corresponding leaf sinus may be rounded or angular.
+synonym: "leaf lamina teeth" EXACT Plural []
+is_a: PO:0025515 ! phyllome lamina tooth
+intersection_of: PO:0025515 ! phyllome lamina tooth
+intersection_of: part_of PO:0025034 ! leaf
+created_by: RamonaNYBG
+creation_date: 2012-10-17T16:41:41Z
+
+[Term]
+id: PO:0025519
+name: leaf lamina crena
+namespace: plant_anatomy
+def: "A phyllome lamina crena (PO:0025516) that is a rounded projection on a leaf margin (PO:0020128) for which the corresponding leaf sinus (PO:0025384) extends less than one quarter of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
+comment: See leaf lamina tooth (PO:0025518) for a small angular projection. The corresponding leaf sinus may be rounded or angular.
+synonym: "leaf lamina crenae" EXACT Plural []
+synonym: "leaf lamina crenule" NARROW []
+synonym: "leaf lamina scallop" EXACT []
+is_a: PO:0025516 ! phyllome lamina crena
+intersection_of: PO:0025516 ! phyllome lamina crena
+intersection_of: part_of PO:0025034 ! leaf
+created_by: RamonaNYBG
+creation_date: 2012-10-17T16:41:57Z
 
 [Term]
 id: PO:0028001
