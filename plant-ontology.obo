@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 17:10:2012 17:04
-saved-by: RamonaNYBG
+date: 20:11:2012 20:04
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -3105,9 +3105,9 @@ is_a: PO:0025029 ! shoot axis
 
 [Term]
 id: PO:0004543
-name: tuber
+name: shoot axis tuber
 namespace: plant_anatomy
-def: "A shoot axis (PO:0025029) that is radially enlarged and develops from a branch (PO:0025073)." [POC:curators]
+def: "A tuber (PO:0025522) that develops from a branch (PO:0025073)." [POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 subset: reference
@@ -3118,7 +3118,7 @@ synonym: "tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber branch" EXACT []
 synonym: "塊茎    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3017726
-is_a: PO:0025029 ! shoot axis
+is_a: PO:0025522 ! tuber
 relationship: develops_from PO:0025073 ! branch
 
 [Term]
@@ -3160,21 +3160,21 @@ is_a: PO:0004545 ! shoot-borne shoot system
 id: PO:0004547
 name: subterranean tuber
 namespace: plant_anatomy
-def: "A tuber (PO:0004543) that is below ground." [POC:curators]
+def: "A shoot axis tuber (PO:0004543)  that develops below ground." [POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004543 ! tuber
+is_a: PO:0004543 ! shoot axis tuber
 
 [Term]
 id: PO:0004548
 name: aerial tuber
 namespace: plant_anatomy
-def: "A tuber that is above ground." [POC:curators]
+def: "A shoot axis tuber (PO:0004543) that develops  above ground." [POC:curators]
 synonym: "tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご(珠芽）propagule    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004543 ! tuber
+is_a: PO:0004543 ! shoot axis tuber
 
 [Term]
 id: PO:0004700
@@ -9848,7 +9848,7 @@ id: PO:0009005
 name: root
 namespace: plant_anatomy
 alt_id: PO:0003006
-def: "A plant axis that is part of a root system." [POC:curators]
+def: "A plant axis (PO:0025004) that is part of a root system (PO:0025025)." [POC:curators]
 comment: Commonly thought of as one of the three basic parts of the seed plant body. A plant stucture that is usually underground and does not bear leaves and only rarely shoots, is usually more or less positively geotropic, is endogenous in origin, indeterminate in growth and often with secondary thickening.
 subset: Maize
 subset: reference
@@ -13499,7 +13499,7 @@ synonym: "tuber flesh" EXACT []
 synonym: "塊茎貯蔵柔組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005637
 is_a: PO:0025035 ! storage parenchyma
-relationship: part_of PO:0004543 ! tuber
+relationship: part_of PO:0004543 ! shoot axis tuber
 created_by: Ramona
 creation_date: 2010-05-25T04:33:26Z
 
@@ -13557,7 +13557,7 @@ synonym: "yema vegetativa axilar de tub&#233rculo (Spanish)" EXACT Spanish [POC:
 synonym: "塊茎腋栄養芽    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005636
 is_a: PO:0004712 ! axillary vegetative bud
-relationship: part_of PO:0004543 ! tuber
+relationship: part_of PO:0004543 ! shoot axis tuber
 created_by: Ramona
 creation_date: 2010-05-26T08:09:37Z
 
@@ -13602,7 +13602,7 @@ synonym: "peridermis de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejan
 synonym: "塊茎周皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005635
 is_a: PO:0005048 ! shoot axis periderm
-relationship: part_of PO:0004543 ! tuber
+relationship: part_of PO:0004543 ! shoot axis tuber
 created_by: Ramona
 creation_date: 2010-05-26T03:58:54Z
 
@@ -13641,7 +13641,7 @@ synonym: "epidermis de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejand
 synonym: "塊茎 表皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005635
 is_a: PO:0000112 ! shoot axis epidermis
-relationship: part_of PO:0004543 ! tuber
+relationship: part_of PO:0004543 ! shoot axis tuber
 created_by: Ramona
 creation_date: 2010-05-27T09:37:30Z
 
@@ -13950,7 +13950,7 @@ synonym: "meristema axilar de yema de tub&#233rculo (Spanish)" EXACT Spanish [PO
 synonym: "塊茎腋芽 分裂組織    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3016498
 is_a: PO:0000232 ! axillary bud meristem
-relationship: part_of PO:0004543 ! tuber
+relationship: part_of PO:0004543 ! shoot axis tuber
 created_by: Ramona
 creation_date: 2010-06-15T12:59:57Z
 
@@ -19545,14 +19545,15 @@ creation_date: 2012-03-22T03:42:34Z
 
 [Term]
 id: PO:0025476
-name: tuberous root
+name: tuberous root tuber
 namespace: plant_anatomy
-def: "A radially enlarged root (PO:0009005)." [POC:Ramona_Walls]
-comment: Functions in storage. This term should be used for tubers derived from roots, as found in Cassava, not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuber root may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch, but these arise from adventitious buds or are derived from the stem (PO:0009047) to which the tuber root is attached. A tuber root usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
+def: "A tuber (PO:0004543) that develops from a tuberous root (PO:0025523) and is further radially enlarged." [POC:curators]
+comment: Functions in storage. This term should be used for tubers derived from roots, as found in Cassava, not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term shoot axis tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuberous root tuber may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch, but these arise from adventitious buds or are derived from the stem (PO:0009047) to which the tuber root is attached. A tuberous root tuber usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
 synonym: "ra&#237z tubercular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎根  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2813017
-is_a: PO:0009005 ! root
+is_a: PO:0025522 ! tuber
+relationship: develops_from PO:0025523 ! tuberous root
 created_by: RamonaNYBG
 creation_date: 2012-04-26T02:09:03Z
 
@@ -20104,6 +20105,41 @@ intersection_of: PO:0025516 ! phyllome lamina crena
 intersection_of: part_of PO:0025034 ! leaf
 created_by: RamonaNYBG
 creation_date: 2012-10-17T16:41:57Z
+
+[Term]
+id: PO:0025520
+name: <new term>
+namespace: plant_anatomy
+created_by: cooperl
+creation_date: 2012-11-20T18:35:08Z
+
+[Term]
+id: PO:0025521
+name: <new term>
+namespace: plant_anatomy
+created_by: cooperl
+creation_date: 2012-11-20T18:35:13Z
+
+[Term]
+id: PO:0025522
+name: tuber
+namespace: plant_anatomy
+def: "A plant axis (PO:0025004) that is radially enlarged." [:<new dbxref>, POC:curators]
+comment: Functions in storage of photosynthate metabolites. May develop from a branch (PO:0025073) or a root (PO:0009005).  If you are annotating to tuber, you should pick the more specific child term: shoot axis tuber (PO:0004543) and tuberous root tuber (PO:0025476).
+subset: Potato
+xref: OBO_SF_PO:3017726
+relationship: develops_from PO:0025004 ! plant axis
+created_by: cooperl
+creation_date: 2012-11-20T18:35:45Z
+
+[Term]
+id: PO:0025523
+name: tuberous root
+namespace: plant_anatomy
+def: "A root (PO:0009005) that is radially enlarged relative to other lateral roots (PO:0020121) or shoot-borne roots (PO:0000042) on the same plant, but not as enlarged as a tuberous root tuber (PO:0025476)." [POC:curators]
+is_a: PO:0009005 ! root
+created_by: cooperl
+creation_date: 2012-11-20T18:47:23Z
 
 [Term]
 id: PO:0028001
