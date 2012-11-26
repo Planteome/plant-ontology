@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:11:2012 20:04
+date: 25:11:2012 22:36
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3108,7 +3108,7 @@ id: PO:0004543
 name: shoot axis tuber
 namespace: plant_anatomy
 def: "A tuber (PO:0025522) that develops from a branch (PO:0025073)." [POC:curators]
-comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
+comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 subset: reference
 subset: TraitNet
@@ -20107,28 +20107,14 @@ created_by: RamonaNYBG
 creation_date: 2012-10-17T16:41:57Z
 
 [Term]
-id: PO:0025520
-name: <new term>
-namespace: plant_anatomy
-created_by: cooperl
-creation_date: 2012-11-20T18:35:08Z
-
-[Term]
-id: PO:0025521
-name: <new term>
-namespace: plant_anatomy
-created_by: cooperl
-creation_date: 2012-11-20T18:35:13Z
-
-[Term]
 id: PO:0025522
 name: tuber
 namespace: plant_anatomy
 def: "A plant axis (PO:0025004) that is radially enlarged." [:<new dbxref>, POC:curators]
-comment: Functions in storage of photosynthate metabolites. May develop from a branch (PO:0025073) or a root (PO:0009005).  If you are annotating to tuber, you should pick the more specific child term: shoot axis tuber (PO:0004543) and tuberous root tuber (PO:0025476).
+comment: Functions in storage of photosynthate metabolites. May develop from a branch (PO:0025073) or a root (PO:0009005).  If you are annotating to tuber, you should pick the more specific child term: shoot axis tuber (PO:0004543) or tuberous root tuber (PO:0025476).
 subset: Potato
 xref: OBO_SF_PO:3017726
-relationship: develops_from PO:0025004 ! plant axis
+is_a: PO:0025004 ! plant axis
 created_by: cooperl
 creation_date: 2012-11-20T18:35:45Z
 
