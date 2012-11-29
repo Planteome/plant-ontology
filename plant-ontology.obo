@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:11:2012 22:36
+date: 29:11:2012 15:01
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -12004,7 +12004,7 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0020040
 name: leaf base
 namespace: plant_anatomy
-def: "A phyllome base that is part of a leaf." [POC:Ramona_Walls]
+def: "A phyllome base (PO:0025140) that is part of a leaf (PO:0025034)." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "base de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf sheath base" RELATED []
@@ -13382,7 +13382,7 @@ creation_date: 2010-05-07T02:41:17Z
 id: PO:0025029
 name: shoot axis
 namespace: plant_anatomy
-def: "A plant axis that is part of a shoot system." [POC:curators]
+def: "A plant axis (PO:0025004) that is part of a shoot system (PO:0009006)." [POC:curators]
 comment: Often bears leaves and branches. In vascular plants, has at least one node and one internode.
 subset: TraitNet
 synonym: "caullome" EXACT []
@@ -14910,7 +14910,7 @@ creation_date: 2010-11-15T01:25:20Z
 id: PO:0025140
 name: phyllome base
 namespace: plant_anatomy
-def: "The basal part of a phyllome, where it attaches to a shoot axis." [POC:Ramona_Walls]
+def: "The basal part of a phyllome (PO:0006001), where it attaches to a shoot axis (PO:0025029)." [POC:Ramona_Walls]
 synonym: "base del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム基部   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025001 ! cardinal organ part
@@ -17811,11 +17811,12 @@ creation_date: 2011-11-16T11:36:08Z
 id: PO:0025352
 name: tubercle
 namespace: plant_anatomy
-def: "An enlarged leaf base that is fused with adjacent shoot axis tissue." [ISBN:9780881928501, JSTOR:3093870]
-comment: Found in cacti and other succulents. The upper part of a leaf from which a tubercle develops is usually shed early in development. Tubercles are often conical, but they may merge with those directly above and below to form ribs, as in saguaro (Carnegiea), or they may elongate, as in species of pincushion cacti (Mammillaria). In species with tubercles, the areole (PO:xxxxxxx) is often found at the distal end of the tubercle. The areole originates in the axil of the leaf that becomes the tubercle but is displaced to the tip of a tubercle through adnation (fusion of two organs of different types).
+def: "An enlarged leaf base (PO:0020040) that is fused with adjacent shoot axis (PO:0025029) tissue." [ISBN:9780881928501, JSTOR:3093870]
+comment: Found in cacti and other succulents. The upper part of a leaf from which a tubercle develops is usually shed early in development. Tubercles are often conical, but they may merge with those directly above and below to form ribs, as in saguaro (Carnegiea), or they may elongate, as in species of pincushion cacti (Mammillaria). In species with tubercles, the areole bud (PO:0025353) is often found at the distal end of the tubercle. The areole bud originates in the leaf axil (PO:0009023) of the leaf that becomes the tubercle, but is displaced to the tip through elongation of the tubercle.
 synonym: "podaria" EXACT Plural []
 synonym: "podarium" EXACT [JSTOR:3093870]
 synonym: "小塊茎、塊根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3080911
 is_a: PO:0020040 ! leaf base
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: RamonaNYBG
@@ -17826,7 +17827,7 @@ id: PO:0025353
 name: areole bud
 namespace: plant_anatomy
 def: "An axillary vegetative bud (PO:0004712) that is not elongated, in which the vascular leaves (PO:0009025) develop as spine leaves (PO:0025173)." [ISBN:9780881928501]
-comment: Found in Cactaceae. Appears as a cluster of spine leaves. May be covered in trichomes (PO:0000282). In species with tubercles (PO:0025352), the areole bud is often found at the distal end of the tubercle. The areole bud originates in a leaf axil (PO:0009023) of a leaf that becomes a tubercle but is displaced to the tip of a tubercle through elongation of the tubercle.
+comment: Found in Cactaceae. Appears as a cluster of spine leaves (PO:0025173). May be covered in trichomes (PO:0000282). In species with tubercles (PO:0025352), the areole bud is often found at the distal end of the tubercle. The areole bud originates in a leaf axil (PO:0009023) of a leaf that becomes a tubercle but is displaced to the tip of a tubercle through elongation of the tubercle.
 synonym: "areola de la yema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "刺座、アレオール (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3438986
@@ -20123,6 +20124,7 @@ id: PO:0025523
 name: tuberous root
 namespace: plant_anatomy
 def: "A root (PO:0009005) that is radially enlarged relative to other lateral roots (PO:0020121) or shoot-borne roots (PO:0000042) on the same plant, but not as enlarged as a tuberous root tuber (PO:0025476)." [POC:curators]
+xref: OBO_SF_PO:2813017
 is_a: PO:0009005 ! root
 created_by: cooperl
 creation_date: 2012-11-20T18:47:23Z
