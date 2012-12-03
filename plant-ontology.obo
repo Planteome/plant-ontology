@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:11:2012 15:01
+date: 03:12:2012 12:37
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1763,9 +1763,11 @@ is_a: PO:0001007 ! pollen development stage
 id: PO:0001015
 name: K second mitotic division stage
 namespace: plant_structure_development_stage
-def: "Stage of microgametophyte development during which the generative cell undergoes mitotic division to form two male gametes, the sperm cells." [TAIR:Katica_Ilic]
-comment: In taxa with mature two-celled pollen, the second mitotic division takes place after pollen germination, in germinating pollen tube.
+def: "A pollen development stage (PO:0001007) during which the generative cell (PO:0020097) undergoes mitotic division to form two male gametes, the pollen sperm cells (PO:0025121)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: In taxa with mature two-celled pollen (PO:0025281), the second mitotic division takes place after pollen germination (GO:0009846), in germinating pollen tube cell (PO:0025195).
 synonym: "pollen stage 9 in Arabidopsis" RELATED []
+synonym: "tricellular pollen development stage" EXACT []
+synonym: "tricellular stage" BROAD []
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -20108,10 +20110,21 @@ created_by: RamonaNYBG
 creation_date: 2012-10-17T16:41:57Z
 
 [Term]
+id: PO:0025520
+name: leaf lamina intramarginal vein
+namespace: plant_anatomy
+def: "A leaf lamina vein (PO:0020138) that is just inside the leaf lamina margin (PO:0025009) and extends from the leaf base (PO:0020040) to the leaf tip (PO:0025142)." [POC:Laurel_Cooper]
+comment: The leaf lamina intramarginal vein is much thinner than the leaf midvein (PO:0020139; syn: midrib), and is of constant thickness.
+xref: OBO_SF_PO:3590680
+is_a: PO:0020138 ! leaf lamina vein
+created_by: cooperl
+creation_date: 2012-12-03T11:36:13Z
+
+[Term]
 id: PO:0025522
 name: tuber
 namespace: plant_anatomy
-def: "A plant axis (PO:0025004) that is radially enlarged." [:<new dbxref>, POC:curators]
+def: "A plant axis (PO:0025004) that is radially enlarged." [POC:curators]
 comment: Functions in storage of photosynthate metabolites. May develop from a branch (PO:0025073) or a root (PO:0009005).  If you are annotating to tuber, you should pick the more specific child term: shoot axis tuber (PO:0004543) or tuberous root tuber (PO:0025476).
 subset: Potato
 xref: OBO_SF_PO:3017726
