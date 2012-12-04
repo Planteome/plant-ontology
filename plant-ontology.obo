@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:12:2012 12:37
+date: 03:12:2012 16:23
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1764,7 +1764,7 @@ id: PO:0001015
 name: K second mitotic division stage
 namespace: plant_structure_development_stage
 def: "A pollen development stage (PO:0001007) during which the generative cell (PO:0020097) undergoes mitotic division to form two male gametes, the pollen sperm cells (PO:0025121)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: In taxa with mature two-celled pollen (PO:0025281), the second mitotic division takes place after pollen germination (GO:0009846), in germinating pollen tube cell (PO:0025195).
+comment: In taxa with mature two-celled pollen (PO:0025281), the second mitotic division takes place after pollen germination (GO:0009846), in the germinating pollen tube cell (PO:0025195).
 synonym: "pollen stage 9 in Arabidopsis" RELATED []
 synonym: "tricellular pollen development stage" EXACT []
 synonym: "tricellular stage" BROAD []
@@ -14664,15 +14664,17 @@ creation_date: 2010-11-15T08:14:32Z
 
 [Term]
 id: PO:0025124
-name: plant gametangium
+name: multicellular plant gametangium
 namespace: plant_anatomy
-def: "A plant organ that produces one or more gametes that are located in it and is part of a whole plant in the gametophytic phase." [POC:curators]
+def: "A plant organ (PO:0009008) that produces one or more gametes (PO:0025006) and is part of a whole plant (PO:0000003) in the gametophyte development stage (PO:0028003)." [POC:curators]
+comment: Occurs in bryophytes, pteridophytes and gymnosperms, but never in angiosperms.  In both gymnosperms and angiosperms, the antheridium (PO:0025125) is replaced by pollen (PO:0025281) and in angiosperms, the archegonium (PO:0025126) is also replaced by the embryo sac (PO:0025074) for producing gametes.  Participates in the gametophyte development stage (PO:0028003).
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "gametangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametangium" BROAD []
 synonym: "植物配偶子嚢    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3592293
 is_a: PO:0009008 ! plant organ
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
@@ -14689,7 +14691,7 @@ subset: Pteridophytes
 synonym: "anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "antheridia" EXACT Plural [FNA:40b5fa5d-a75b-49d8-8328-b4c28d54ea66]
 synonym: "造精器    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025124 ! plant gametangium
+is_a: PO:0025124 ! multicellular plant gametangium
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
 
@@ -14697,14 +14699,14 @@ creation_date: 2010-11-15T08:58:31Z
 id: PO:0025126
 name: archegonium
 namespace: plant_anatomy
-def: "A plant gametangium that produces an archegonium egg cell that is located in it." [POC:curators]
+def: "A plant gametangium (PO:0025124) that has as parts a venter (PO:0030038) and an archegonium neck (PO:0030039) and develops from an archegonium initial cell (PO:0025510)." [POC:curators]
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
 synonym: "archegonia" EXACT Plural []
 synonym: "arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025124 ! plant gametangium
+is_a: PO:0025124 ! multicellular plant gametangium
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
 
@@ -20119,6 +20121,20 @@ xref: OBO_SF_PO:3590680
 is_a: PO:0020138 ! leaf lamina vein
 created_by: cooperl
 creation_date: 2012-12-03T11:36:13Z
+
+[Term]
+id: PO:0025521
+name: unicellular plant gametangium 
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that produces one or more gametes (PO:0025006) and is part of a whole plant (PO:0000003) in the gametophyte development stage (PO:0028003)." [POC:Laurel_Cooper, XX:<new dbxref>]
+comment: Occurs in some green alga, such as Ulva.  Participates in the gametophyte development stage (PO:0028003).
+subset: CL
+synonym: "gametangium" BROAD []
+xref: OBO_SF_PO:3592293
+is_a: PO:0009002 ! plant cell
+relationship: participates_in PO:0028003 ! gametophyte development stage
+created_by: cooperl
+creation_date: 2012-12-03T16:09:54Z
 
 [Term]
 id: PO:0025522
