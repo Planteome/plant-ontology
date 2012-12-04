@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:12:2012 16:23
+date: 03:12:2012 17:45
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -14699,7 +14699,8 @@ creation_date: 2010-11-15T08:58:31Z
 id: PO:0025126
 name: archegonium
 namespace: plant_anatomy
-def: "A plant gametangium (PO:0025124) that has as parts a venter (PO:0030038) and an archegonium neck (PO:0030039) and develops from an archegonium initial cell (PO:0025510)." [POC:curators]
+def: "A multicellular plant gametangium (PO:0025124) that develops from an archegonium initial cell (PO:0025510) and has as parts a venter (PO:0030038) and an archegonium neck (PO:0030039)." [POC:curators]
+comment: At maturity, the archegonium contains an archegonium egg cell (PO:0025122). In mosses, the archegonium also has part an archegonium stalk (PO:0030036).
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
@@ -14707,6 +14708,7 @@ synonym: "archegonia" EXACT Plural []
 synonym: "arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025124 ! multicellular plant gametangium
+relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
 
@@ -16786,7 +16788,7 @@ creation_date: 2011-02-25T09:59:47Z
 id: PO:0025279
 name: megagametophyte
 namespace: plant_anatomy
-def: "A whole plant in the gametophytic phase that produces only egg cells." [POC:curators]
+def: "A whole plant in the gametophyte development stage (PO:0028003) that produces only plant egg cells (PO:0020094)." [POC:curators]
 comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In some pteridophytes, megagametophytes develop from megaspores. In angiosperms, Gnetum, and Weltwischia, the megagametophyte is greatly reduced. The megagametophyte in angiosperms is an embryo sac.
 synonym: "female gametophyte" EXACT []
 synonym: "megagametofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -16832,7 +16834,7 @@ creation_date: 2011-03-31T07:05:48Z
 id: PO:0025282
 name: archegonium megagametophyte
 namespace: plant_anatomy
-def: "A megagametophyte that has as parts one or more archegonia." [POC:curators]
+def: "A megagametophyte (PO:0025279) that has as parts one or more archegonia (PO:0025126)." [POC:curators]
 comment: Megagametophytes in bryophytes only produce egg cells, but do not develop from megaspores, because there is no heterospory in bryophytes. In some pteridophytes, megagametophytes develop from megaspores.
 subset: Bryophytes
 subset: Pteridophytes
@@ -20124,9 +20126,9 @@ creation_date: 2012-12-03T11:36:13Z
 
 [Term]
 id: PO:0025521
-name: unicellular plant gametangium 
+name: unicellular plant gametangium
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that produces one or more gametes (PO:0025006) and is part of a whole plant (PO:0000003) in the gametophyte development stage (PO:0028003)." [POC:Laurel_Cooper, XX:<new dbxref>]
+def: "A plant cell (PO:0009002) that produces one or more gametes (PO:0025006) and is part of a whole plant (PO:0000003) in the gametophyte development stage (PO:0028003)." [POC:Laurel_Cooper]
 comment: Occurs in some green alga, such as Ulva.  Participates in the gametophyte development stage (PO:0028003).
 subset: CL
 synonym: "gametangium" BROAD []
@@ -20864,7 +20866,7 @@ creation_date: 2011-04-12T10:53:45Z
 id: PO:0030038
 name: venter
 namespace: plant_anatomy
-def: "A cardinal organ part that is the enlarged basal part of an archegonium and has an archegonium egg cell located in it." [ISBN:0962073342]
+def: "A cardinal organ part (PO:0025001) that is the enlarged basal part of an archegonium (PO:0025126) and has an archegonium egg cell (PO:0025122) located in it." [ISBN:0962073342]
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
@@ -20880,8 +20882,8 @@ creation_date: 2011-04-12T11:00:43Z
 id: PO:0030039
 name: archegonium neck
 namespace: plant_anatomy
-def: "A cardinal organ part that is the elongated apical part of an archegonium." [ISBN:0962073342, ISBN:9780070588493]
-comment: Early in development, the neck is occluded by a single row of neck canal cells. At maturity, the neck canal cells disintegrate, creating a canal for the sperm to enter the archegonium.
+def: "A cardinal organ part (PO:0025001) that is the elongated, apical part of an archegonium (PO:0025126)." [ISBN:0962073342, ISBN:9780070588493]
+comment: Early in development, the archegonium neck is occluded by a single row of neck canal cells (PO:0030065). At maturity, the neck canal cells disintegrate, creating a archegonium neck canal (PO:0030066) for the plant sperm cells (PO:0000084) to enter the archegonium.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "archegonial neck" RELATED []
