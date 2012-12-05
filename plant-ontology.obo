@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:12:2012 17:45
+date: 05:12:2012 13:30
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -12812,9 +12812,10 @@ is_a: PO:0009049 ! inflorescence
 id: PO:0020137
 name: leaf apex
 namespace: plant_anatomy
-def: "A phyllome apex that is part of a leaf." [POC:Ramona_Walls, UMSL:fz]
+def: "A phyllome apex (PO:0025139) that is part of a leaf (PO:0025034)." [POC:Ramona_Walls, UMSL:fz]
 comment: It is not precisely defined how far toward the base from the tip a leaf apex extends. For the apical most portion of a leaf, use the term leaf tip. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "&#225pice de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "leaf lamina apex" NARROW []
 synonym: "phyllid apex" NARROW []
 synonym: "葉先    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
@@ -12906,7 +12907,7 @@ is_a: PO:0009013 ! portion of meristem tissue
 id: PO:0020145
 name: lateral meristem
 namespace: plant_anatomy
-def: "A portion of meristem (PO:0009013) tissue located parallel to the sides of a a shoot axis (PO:0025029) or root (PO:0009005) that participates in lateral growth." [ISBN:047125208]
+def: "A portion of meristem (PO:0009013) tissue located parallel to the sides of a shoot axis (PO:0025029) or root (PO:0009005) that participates in lateral growth." [ISBN:047125208]
 comment: A term for lateral growth has been requested in GO. Lateral meristems contribute to an increase in the cross-sectional area of a shoot axis or root. Examples of lateral meristems are: cambium (PO:0005597) (includes cork cambium (PO:0005599) and vascular cambium (PO:0005598)), shoot lateral meristem (PO:0006344) (includes primary thickening meristem (PO:0005039)), root lateral meristem (PO:0006308), and secondary thickening meristem (PO:0025414). Contrasts with apical meristem (PO:0020144), phyllome marginal meristem (PO:0025404), or intercalary meristem (PO:0006073).
 subset: TraitNet
 synonym: "lateral growth meristem" EXACT []
@@ -14941,8 +14942,9 @@ creation_date: 2010-11-15T01:34:53Z
 id: PO:0025142
 name: leaf tip
 namespace: plant_anatomy
-def: "A phyllome tip that is part of a leaf apex." [POC:Ramona_Walls]
+def: "A phyllome tip (PO:0025141) that is part of a leaf apex (PO:0020137)." [POC:Ramona_Walls]
 comment: This term is to be used for only the apical most portion of a leaf. For a larger area, use the term leaf apex. Use this term when describing the shape of a leaf tip. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+synonym: "leaf lamina tip" NARROW []
 synonym: "punta de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉端    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3298269
@@ -20117,8 +20119,9 @@ creation_date: 2012-10-17T16:41:57Z
 id: PO:0025520
 name: leaf lamina intramarginal vein
 namespace: plant_anatomy
-def: "A leaf lamina vein (PO:0020138) that is just inside the leaf lamina margin (PO:0025009) and extends from the leaf base (PO:0020040) to the leaf tip (PO:0025142)." [POC:Laurel_Cooper]
+def: "A leaf lamina vein (PO:0020138) that is just inside the leaf lamina margin (PO:0025009) and extends from the leaf lamina base (PO:0008019) to the leaf apex (PO:0020137)." [POC:Laurel_Cooper]
 comment: The leaf lamina intramarginal vein is much thinner than the leaf midvein (PO:0020139; syn: midrib), and is of constant thickness.
+synonym: "intramarginal vein" BROAD []
 xref: OBO_SF_PO:3590680
 is_a: PO:0020138 ! leaf lamina vein
 created_by: cooperl
