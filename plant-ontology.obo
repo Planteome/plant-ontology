@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:12:2012 16:55
+date: 05:12:2012 19:36
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -14600,8 +14600,8 @@ creation_date: 2010-12-02T09:04:09Z
 id: PO:0025120
 name: antheridium sperm cell
 namespace: plant_anatomy
-def: "A plant sperm cell that is produced by and located in an antheridium." [POC:curators]
-comment: Antheridial sperm cells are motile and lack a plasma membrane.
+def: "A plant sperm cell (PO:0000084) that develops from a spermatogenous cell (new PO ID) and is located in an antheridium (PO:0025125)." [POC:curators]
+comment: Antheridial sperm cells are motile.
 subset: Bryophytes
 subset: CL
 subset: Pteridophytes
@@ -14610,8 +14610,9 @@ synonym: "antherozoid" EXACT [FNA:6ba61665-8856-4dfa-b850-f40a963f6c01]
 synonym: "c&#233lula esperm&#225tica del anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spermatozoid" EXACT [FNA:6e0e355b-3f3e-4de2-8144-4be0bfc17109]
 synonym: "造精器精子細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3030033
 is_a: PO:0000084 ! plant sperm cell
-relationship: part_of PO:0025125 ! antheridium
+relationship: located_in PO:0025125 ! antheridium
 created_by: Ramona
 creation_date: 2010-11-15T08:05:46Z
 
@@ -14686,13 +14687,14 @@ creation_date: 2010-11-15T08:57:32Z
 id: PO:0025125
 name: antheridium
 namespace: plant_anatomy
-def: "A plant gametangium that produces antheridium sperm cells that are located in it." [POC:curators]
-comment: An antheridium has a sterile jacket layer that does not produce sperm cells. In both gymnosperms and angiosperms, the antheridium (PO:0025125) is replaced by pollen (PO:0025281).
+def: "A multicellular plant gametangium (PO:0025124) that produces antheridium sperm cells (PO:0025120) and has as parts an antheridium jacket layer (PO:0030053) and an antheridium stalk (PO:0030035)." [POC:curators]
+comment: An antheridium has a sterile jacket layer (PO:0030052). In both gymnosperms and angiosperms, the antheridium (PO:0025125) is replaced by pollen (PO:0025281).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "antheridia" EXACT Plural [FNA:40b5fa5d-a75b-49d8-8328-b4c28d54ea66]
 synonym: "造精器    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3109542
 is_a: PO:0025124 ! multicellular plant gametangium
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
@@ -20790,8 +20792,8 @@ creation_date: 2011-04-12T10:25:45Z
 id: PO:0030033
 name: antheridiophore
 namespace: plant_anatomy
-def: "A plant axis that bears two or more antheridia on an antheridial head." [ISBN:0962073342]
-comment: Found in Marchantiales.
+def: "A plant axis (PO:0025004) that bears two or more antheridia (PO:0025125) on an antheridium head (PO:0030075)." [ISBN:0962073342]
+comment: Found in mosses and other bryophytes such as the liverwort Marchantiales.
 subset: Bryophytes
 synonym: "anteridi&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄器床柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -20820,14 +20822,14 @@ creation_date: 2011-04-12T10:29:01Z
 id: PO:0030035
 name: antheridium stalk
 namespace: plant_anatomy
-def: "A stalk that is the basal part of an antheridium." [ISBN:9780070588493]
-comment: Raises the antheridium above the rest of the gametophyte.
+def: "A stalk (PO:0025066) that is the basal part of an antheridium (PO:0025125)." [ISBN:9780070588493]
+comment: The antheridium stalk raises the antheridium (PO:0025125) from the antheridium head (PO:0030075).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridial stalk" EXACT []
 synonym: "ped&#250nculo del anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造精器柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3272612
+xref: OBO_SF_PO:3109542
 is_a: PO:0025066 ! stalk
 relationship: part_of PO:0025125 ! antheridium
 created_by: Ramona
@@ -21122,8 +21124,8 @@ creation_date: 2011-04-29T08:13:39Z
 id: PO:0030053
 name: antheridium jacket layer
 namespace: plant_anatomy
-def: "A portion of plant tissue that is a single layer of cells on the outside of an antheridium." [ISBN:9780473067304]
-comment: Cells in the antheridium jacket layer surround the inner spermatogenous cells and do not give rise to sperm cells.
+def: "A portion of plant tissue (PO:0009007) that is a single layer of cells on the outside of an antheridium (PO:0025125)." [ISBN:9780473067304]
+comment: Cells in the antheridium jacket layer surround the inner spermatogenous cells and do not give rise to antheridium sperm cells (PO:0025120).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridial jacket layer" EXACT []
@@ -21496,10 +21498,9 @@ creation_date: 2011-05-02T12:05:51Z
 id: PO:0030075
 name: antheridium head
 namespace: plant_anatomy
-def: "A disk-shaped cardinal organ part that is the apical portion of an antheridiophore and bears antheridia." [ISBN:0962073342]
-comment: Found in Marchantiales.
+def: "A disk-shaped cardinal organ part (PO:0025001) that is the apical portion of an antheridiophore (PO:0030033) and bears antheridia (PO:0025125)" [ISBN:0962073342]
+comment: Found in mosses and other bryophytes such as the liverwort Marchantiales.
 subset: Bryophytes
-subset: Poaceae
 synonym: "antheridial head" EXACT []
 synonym: "cabeza del anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造精器頭部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
