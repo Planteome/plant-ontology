@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:12:2012 16:42
+date: 08:12:2012 14:08
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -14637,7 +14637,7 @@ id: PO:0025122
 name: archegonium egg cell
 namespace: plant_anatomy
 def: "A plant egg cell (PO:0020094) that develops from the archegonium central cell (PO:0025509) and is located in the venter (PO:0030038)." [POC:curators]
-comment: The archegonium egg cell has a common origin with the central canal cell.
+comment: The archegonium egg cell has a common origin with the ventral canal cell.
 subset: Bryophytes
 subset: CL
 subset: Gymnosperms
@@ -14647,6 +14647,7 @@ synonym: "ooc&#233lula del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejan
 synonym: "造卵器卵細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3030032
 is_a: PO:0020094 ! plant egg cell
+relationship: develops_from PO:0025509 ! archegonium central cell
 relationship: located_in PO:0030038 ! venter
 created_by: Ramona
 creation_date: 2010-11-15T08:14:32Z
@@ -14705,7 +14706,7 @@ creation_date: 2010-11-15T08:58:31Z
 id: PO:0025126
 name: archegonium
 namespace: plant_anatomy
-def: "A multicellular plant gametangium (PO:0025124) that develops from an archegonium initial cell (PO:0025510) and has as parts a venter (PO:0030038) and an archegonium neck (PO:0030039)." [POC:curators]
+def: "A multicellular plant gametangium (PO:0025124) that develops from an archegonium initial cell (PO:0025510) and has as parts a venter (PO:0030038) and an archegonium neck (PO:0030039)." [ISBN:0521794331, POC:curators]
 comment: At maturity, the archegonium produces an archegonium egg cell (PO:0025122).  In mosses, the archegonium also has part an archegonium stalk (PO:0030036). The archegonium (PO:0025126) occurs in bryophytes and pteridophytes, but never in angiosperms, where the female gamete (plant egg cell; PO:0020094) is produced by the embryo sac (PO:0025074), a specialized (reduced) gametangium.
 subset: Bryophytes
 subset: Gymnosperms
@@ -14715,7 +14716,6 @@ synonym: "arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3109542
 is_a: PO:0025124 ! multicellular plant gametangium
-relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: Ramona
 creation_date: 2010-11-15T08:58:31Z
 
@@ -19990,8 +19990,9 @@ creation_date: 2012-10-06T11:01:04Z
 id: PO:0025509
 name: archegonium central cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is the distal cell arising from the first division of an archegonial initial cell (PO:0025510) in a gymnosperm." [PMID:17041880]
-comment: The archegonium central cell is larger than the other cell that arises from the initial division of the archegonium initial cell. Divides asymmetrically to form a smaller archegonium neck canal cell (PO:0030065) and a larger archegonium egg cell (PO:0025122).  Only occurs in gymnosperms.
+def: "A plant cell (PO:0009002) that is the larger, distal cell arising from the first division of an archegonium initial cell (PO:0025510)." [PMID:17041880]
+comment: The archegonium central cell divides asymmetrically to form a smaller ventral canal cell (PO:0025524) and a larger archegonium egg cell (PO:0025122). It is larger than the archegonium neck canal cell (PO:0030065), which also develops from the archegonium initial cell (PO:0025510). The archegonium central cell only occurs in gymnosperms.
+subset: Gymnosperms
 synonym: " 造卵器中央細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3080937
 is_a: PO:0009002 ! plant cell
@@ -20003,11 +20004,12 @@ creation_date: 2012-10-15T15:24:16Z
 id: PO:0025510
 name: archegonium initial cell
 namespace: plant_anatomy
-def: "An initial cell (PO:0004011) that divides to give rise to an archegonium (PO:0025126)." [PMID:17041880]
+def: "An initial cell (PO:0004011) that is part of the archegonium megagametophyte (PO:0025282) and which divides asymmetrically to form an archegonium central cell (PO:0025509) and a smaller archegonium neck canal cell (PO:0030035)." [PMID:17041880]
 synonym: "archegonium initial" EXACT [PMID:17041880]
 synonym: "造卵器始原細胞   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3577440
 is_a: PO:0004011 ! initial cell
+relationship: part_of PO:0025282 ! archegonium megagametophyte
 created_by: RamonaNYBG
 creation_date: 2012-10-15T15:30:51Z
 
@@ -20177,6 +20179,19 @@ xref: OBO_SF_PO:2813017
 is_a: PO:0009005 ! root
 created_by: cooperl
 creation_date: 2012-11-20T18:47:23Z
+
+[Term]
+id: PO:0025524
+name: ventral canal cell
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that develops from the archegonium central cell (PO:0025509), and lies at the base of the archegonium neck (PO:0030039), above the archegonium egg cell (PO:0025122) in the venter (PO:0030038)." [ISBN:0521794331, PMID:17041880]
+comment: The ventral canal cell is smaller than the archegonium egg cell (PO:0025122), which also develops from the asymmetric division of the archegonium central cell (PO:0025509). It lack a plant-type cell wall (GO:0009505) (ref? ). When the archegonium (PO:0025126) is mature, the ventral canal cell (along with the archegonium neck canal cells; PO:0030065), contributes to the formation of the archegonium neck canal (PO:0030066) by distintegrating and becoming mucilaginous. The canal cells and may produce chemicals to attract the male gamete, the antheridium sperm cells (PO:0025120).
+xref: OBO_SF_PO:3594092
+is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0025509 ! archegonium central cell
+relationship: part_of PO:0030038 ! venter
+created_by: cooperl
+creation_date: 2012-12-08T13:09:38Z
 
 [Term]
 id: PO:0028001
@@ -21342,6 +21357,7 @@ synonym: "c&#233lula del canal del cuello del arquegonio (Spanish)" EXACT Spanis
 synonym: "造卵器頚溝細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234985
 is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0025510 ! archegonium initial cell
 relationship: part_of PO:0030039 ! archegonium neck
 created_by: Ramona
 creation_date: 2011-04-29T09:13:40Z
