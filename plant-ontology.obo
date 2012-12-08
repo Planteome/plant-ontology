@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:12:2012 13:18
+date: 07:12:2012 16:42
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -14636,16 +14636,18 @@ creation_date: 2010-11-15T08:05:46Z
 id: PO:0025122
 name: archegonium egg cell
 namespace: plant_anatomy
-def: "A plant egg cell (PO:0020094) that is produced by and located in an archegonium." [POC:curators]
+def: "A plant egg cell (PO:0020094) that develops from the archegonium central cell (PO:0025509) and is located in the venter (PO:0030038)." [POC:curators]
+comment: The archegonium egg cell has a common origin with the central canal cell.
 subset: Bryophytes
 subset: CL
 subset: Gymnosperms
 subset: Pteridophytes
-synonym: "archegonial egg call" EXACT []
+synonym: "archegonial egg cell" EXACT []
 synonym: "ooc&#233lula del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器卵細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3030032
 is_a: PO:0020094 ! plant egg cell
-relationship: located_in PO:0025126 ! archegonium
+relationship: located_in PO:0030038 ! venter
 created_by: Ramona
 creation_date: 2010-11-15T08:14:32Z
 
@@ -14704,7 +14706,7 @@ id: PO:0025126
 name: archegonium
 namespace: plant_anatomy
 def: "A multicellular plant gametangium (PO:0025124) that develops from an archegonium initial cell (PO:0025510) and has as parts a venter (PO:0030038) and an archegonium neck (PO:0030039)." [POC:curators]
-comment: At maturity, the archegonium produces an archegonium egg cell (PO:0025122).  In mosses, the archegonium also has part an archegonium stalk (PO:0030036). The archegonium (PO:0025126) occurs in bryophytes and pteridophytes, but never in angiosperms, where the female gamete (plant egg cell (PO:0020094) is produced by the embryo sac (PO:0025074), a specialized (reduced) gametangium.
+comment: At maturity, the archegonium produces an archegonium egg cell (PO:0025122).  In mosses, the archegonium also has part an archegonium stalk (PO:0030036). The archegonium (PO:0025126) occurs in bryophytes and pteridophytes, but never in angiosperms, where the female gamete (plant egg cell; PO:0020094) is produced by the embryo sac (PO:0025074), a specialized (reduced) gametangium.
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
@@ -19989,7 +19991,7 @@ id: PO:0025509
 name: archegonium central cell
 namespace: plant_anatomy
 def: "A plant cell (PO:0009002) that is the distal cell arising from the first division of an archegonial initial cell (PO:0025510) in a gymnosperm." [PMID:17041880]
-comment: The archegonium central cell is larger than the other cell that arises from the initial division of the archegonium initial cell. Divides asymmetrically to form a smaller archegonium neck canal cell (PO:0030065) and a larger archegonium egg cell (PO:0025122) in gymnosperms.
+comment: The archegonium central cell is larger than the other cell that arises from the initial division of the archegonium initial cell. Divides asymmetrically to form a smaller archegonium neck canal cell (PO:0030065) and a larger archegonium egg cell (PO:0025122).  Only occurs in gymnosperms.
 synonym: " 造卵器中央細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3080937
 is_a: PO:0009002 ! plant cell
@@ -20001,7 +20003,7 @@ creation_date: 2012-10-15T15:24:16Z
 id: PO:0025510
 name: archegonium initial cell
 namespace: plant_anatomy
-def: "An initial cell that is part of an archegonium megagametophyte (PO:0025282) and divides to give rise to an archegonium (PO:0025126)." [PMID:17041880]
+def: "An initial cell (PO:0004011) that divides to give rise to an archegonium (PO:0025126)." [PMID:17041880]
 synonym: "archegonium initial" EXACT [PMID:17041880]
 synonym: "造卵器始原細胞   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3577440
@@ -20899,7 +20901,7 @@ id: PO:0030039
 name: archegonium neck
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is the elongated, apical part of an archegonium (PO:0025126)." [ISBN:0962073342, ISBN:9780070588493]
-comment: Early in development, the archegonium neck is occluded by a single row of neck canal cells (PO:0030065). At maturity, the neck canal cells disintegrate, creating a archegonium neck canal (PO:0030066) for the plant sperm cells (PO:0000084) to enter the archegonium.
+comment: Early in development, the archegonium neck is occluded by a single row of neck canal cells (PO:0030065). At maturity, the neck canal cells disintegrate, creating a archegonium neck canal (PO:0030066) for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "archegonial neck" RELATED []
