@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:12:2012 14:08
+date: 08:12:2012 15:53
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20184,7 +20184,7 @@ creation_date: 2012-11-20T18:47:23Z
 id: PO:0025524
 name: ventral canal cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that develops from the archegonium central cell (PO:0025509), and lies at the base of the archegonium neck (PO:0030039), above the archegonium egg cell (PO:0025122) in the venter (PO:0030038)." [ISBN:0521794331, PMID:17041880]
+def: "A plant cell (PO:0009002) that develops from the archegonium central cell (PO:0025509), and lies at the base of the archegonium neck (PO:0030039), above the archegonium egg cell (PO:0025122) in the venter (PO:0030038)." [ISBN:0521794331, PMID:17041880, POC:Laurel_Cooper]
 comment: The ventral canal cell is smaller than the archegonium egg cell (PO:0025122), which also develops from the asymmetric division of the archegonium central cell (PO:0025509). It lack a plant-type cell wall (GO:0009505) (ref? ). When the archegonium (PO:0025126) is mature, the ventral canal cell (along with the archegonium neck canal cells; PO:0030065), contributes to the formation of the archegonium neck canal (PO:0030066) by distintegrating and becoming mucilaginous. The canal cells and may produce chemicals to attract the male gamete, the antheridium sperm cells (PO:0025120).
 xref: OBO_SF_PO:3594092
 is_a: PO:0009002 ! plant cell
@@ -20882,15 +20882,15 @@ creation_date: 2011-04-12T10:39:46Z
 id: PO:0030037
 name: spore capsule calyptra
 namespace: plant_anatomy
-def: "A cardinal organ part that develops from the wall of an archegonium and surrounds a sporangium." [ISBN:0962073342, ISBN:9780473067304]
-comment: Found in bryophytes. The calyptra is a membranous or hairy cap or hood composed of gametophytic tissue that protects the embryonic sporophyte within the archegonium. In some species, the calyptra may persist after the sporophyte develops and gets carried upward as the seta elongates.
+def: "A cardinal organ part (PO:0025001) that develops from an archegonium venter (PO:0030038) and is a cap or hood enclosing the sporangium (syn: spore capsule; PO:0025094)." [ISBN:0962073342, ISBN:9780473067304]
+comment: Found in bryophytes. The spore capsule calyptra is a membranous or hairy cap or hood, composed of gametophytic tissue (venter; PO:0030038) that protects the embryonic sporophyte within the archegonium (PO:0025126). In some species, it may persist after the sporophyte develops and gets carried upward as the seta (PO:0030032) elongates. The spore capsule calyptra is usually lost before the spores are released, and its shape can be used for identification purposes.
 subset: Bryophytes
 synonym: "caliptra de la c&#225psula productora de esporas (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spore capsule calyptrae" EXACT Plural [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
 synonym: "コケ類　蘚帽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234979
 is_a: PO:0025001 ! cardinal organ part
-relationship: develops_from PO:0025126 ! archegonium
+relationship: develops_from PO:0030038 ! venter
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:53:45Z
@@ -20900,6 +20900,7 @@ id: PO:0030038
 name: venter
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is the enlarged basal part of an archegonium (PO:0025126) and has an archegonium egg cell (PO:0025122) located in it." [ISBN:0962073342]
+comment: After fertilization, the venter develops into the spore capsule calyptra (PO:0030037), which protects the sporangium (syn: spore capsule; PO:0025094) containing the developing sporophyte.
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
@@ -20916,7 +20917,7 @@ id: PO:0030039
 name: archegonium neck
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is the elongated, apical part of an archegonium (PO:0025126)." [ISBN:0962073342, ISBN:9780070588493]
-comment: Early in development, the archegonium neck is occluded by a single row of neck canal cells (PO:0030065). At maturity, the neck canal cells disintegrate, creating a archegonium neck canal (PO:0030066) for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
+comment: Early in development, the archegonium neck is occluded by a single row of neck canal cells (PO:0030065). At maturity, the neck canal cells (PO:0030065) and the ventral canal cell (PO:0025524) disintegrate, creating a archegonium neck canal (PO:0030066) for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "archegonial neck" RELATED []
@@ -21349,8 +21350,8 @@ creation_date: 2011-04-29T09:03:51Z
 id: PO:0030065
 name: archegonium neck canal cell
 namespace: plant_anatomy
-def: "A plant cell that is one of the axial row of cells in an immature archegonium neck." [ISBN:0962073342]
-comment: As the archegonium matures, the archegonium neck canal cells disintegrate to form the archegonium neck canal.
+def: "A plant cell (PO:0009002)  that is one of the axial row of cells in an immature archegonium neck (PO:0030039)." [ISBN:0962073342]
+comment: During archegonium development, the archegonium neck canal cells (PO:0030065) and the ventral canal cell (PO:0025524) disintegrate, creating a archegonium neck canal for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
 subset: CL
 synonym: "archegonial neck canal cell" EXACT []
 synonym: "c&#233lula del canal del cuello del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21366,8 +21367,8 @@ creation_date: 2011-04-29T09:13:40Z
 id: PO:0030066
 name: archegonium neck canal
 namespace: plant_anatomy
-def: "A canal in the center of an archegonium neck." [ISBN:0962073342]
-comment: Forms after the archegonium neck canal cells disintegrate.
+def: "A canal (PO:0025132) in the center of an archegonium neck (PO:0030039)." [ISBN:0962073342]
+comment: During archegonium development, the archegonium neck canal cells (PO:0030065) and the ventral canal cell (PO:0025524) disintegrate, creating a archegonium neck canal for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "archegonial neck canal" EXACT []
