@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:12:2012 15:53
+date: 10:12:2012 17:13
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1002,7 +1002,7 @@ id: PO:0000084
 name: plant sperm cell
 namespace: plant_anatomy
 alt_id: PO:0020098
-def: "A gamete produced by an antheridium or a microgametophyte." [POC:curators]
+def: "A gamete (PO:0025006) produced by an antheridium (PO:0025125) or a microgametophyte (PO:0025280)." [POC:curators]
 comment: The sperm (microgamete) is usually smaller than the egg (megagamete). Male gametes may be defined as the motile gamete, rather than the smaller gamete.
 subset: CL
 subset: reference
@@ -1013,7 +1013,7 @@ synonym: "sperm cell" BROAD []
 synonym: "sperm nucleus" RELATED []
 synonym: "植物精子細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025006 ! gamete
-relationship: develops_from PO:0020097 ! generative cell
+relationship: develops_from PO:0025525 ! spermatogenous cell
 
 [Term]
 id: PO:0000112
@@ -12469,12 +12469,14 @@ relationship: part_of PO:0025074 ! embryo sac
 id: PO:0020097
 name: generative cell
 namespace: plant_anatomy
-def: "A cell of the male gametophyte of angiosperms that divides to produce two male gametes or sperm cells." [APweb:Glossary]
+def: "A spermatogenous cell (PO:0025525) of the microgametophyte (PO:0025280) in angiosperms, that divides to produce two pollen sperm cells (PO:0025121)." [APweb:Glossary]
+comment: Only occurs in angiosperms.
 subset: CL
 subset: reference
 synonym: "c&#233lula generativa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄原細胞、生殖系列細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025525 ! spermatogenous cell
+relationship: part_of PO:0025280 ! microgametophyte
 
 [Term]
 id: PO:0020099
@@ -14600,7 +14602,7 @@ creation_date: 2010-12-02T09:04:09Z
 id: PO:0025120
 name: antheridium sperm cell
 namespace: plant_anatomy
-def: "A plant sperm cell (PO:0000084) that develops from a spermatogenous cell (new PO ID) and is located in an antheridium (PO:0025125)." [POC:curators]
+def: "A plant sperm cell (PO:0000084) which develops from a spermatogenous cell (PO:0025525) and is located in an antheridium (PO:0025125)." [POC:curators]
 comment: Antheridial sperm cells are motile.
 subset: Bryophytes
 subset: CL
@@ -14612,6 +14614,7 @@ synonym: "spermatozoid" EXACT [FNA:6e0e355b-3f3e-4de2-8144-4be0bfc17109]
 synonym: "造精器精子細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3030033
 is_a: PO:0000084 ! plant sperm cell
+relationship: develops_from PO:0025525 ! spermatogenous cell
 relationship: located_in PO:0025125 ! antheridium
 created_by: Ramona
 creation_date: 2010-11-15T08:05:46Z
@@ -14620,7 +14623,7 @@ creation_date: 2010-11-15T08:05:46Z
 id: PO:0025121
 name: pollen sperm cell
 namespace: plant_anatomy
-def: "A plant sperm cell that is produced by and located in a pollen grain." [PMID:20298228, POC:curators]
+def: "A plant sperm cell (PO:0000084) that develops from a generative cell (PO:0020097) or the body cell (PO:0025526) and is part of the pollen (PO:0025281)." [PMID:20298228, POC:curators]
 comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
 subset: Angiosperm
 subset: CL
@@ -14628,6 +14631,8 @@ subset: Gymnosperms
 synonym: "c&#233lula esperm&#225tica pol&#237nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花粉精子細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000084 ! plant sperm cell
+relationship: develops_from PO:0020097 ! generative cell
+relationship: develops_from PO:0025526 ! body cell
 relationship: part_of PO:0025281 ! pollen
 created_by: Ramona
 creation_date: 2010-11-15T08:05:46Z
@@ -16824,8 +16829,7 @@ creation_date: 2011-03-23T11:32:19Z
 id: PO:0025281
 name: pollen
 namespace: plant_anatomy
-def: "A microgametophyte that is located in a pollen sac." [POC:curators]
-comment: Produces pollen sperm cells.
+def: "A microgametophyte (PO:0025280) that develops from a microspore (PO:0020048) is located in a pollen sac (PO:0025277)." [POC:curators]
 subset: Angiosperm
 subset: Gymnosperms
 synonym: "polen (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -16858,7 +16862,7 @@ creation_date: 2011-03-31T07:08:48Z
 id: PO:0025283
 name: antheridium microgametophyte
 namespace: plant_anatomy
-def: "A microgametophyte that has as parts one or more antheridium." [POC:curators]
+def: "A microgametophyte (PO:0025280) that has as parts one or more antheridia (PO:0025125)." [POC:curators]
 comment: Microgametophytes in bryophytes only produce sperm cells, but do not develop from microspores, because there is no heterospory in bryophytes. In some pteridophytes, microgametophytes develop from microspores.
 subset: Bryophytes
 subset: Pteridophytes
@@ -20194,6 +20198,25 @@ created_by: cooperl
 creation_date: 2012-12-08T13:09:38Z
 
 [Term]
+id: PO:0025525
+name: spermatogenous cell
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that gives rise to one or more plant sperm cells (PO:0000084)." [POC:test]
+comment: In liverworts, hornworts and mosses the spermatogenous cell gives rise to a single, biflagellated, antheridium sperm cell (PO:0025120). In angiosperms please use the generative cell (PO:0020097) and in gymnosperms use the body cell (PO:0025526).
+is_a: PO:0009002 ! plant cell
+created_by: cooperl
+creation_date: 2012-12-10T14:06:15Z
+
+[Term]
+id: PO:0025526
+name: body cell
+namespace: plant_anatomy
+def: "A spermatogenous cell (PO:0025525) of the microgametophyte (PO:0025280) in gymnosperms, that divides to produce the sterile cell and pollen sperm cell (PO:0025121)." [POC:test]
+is_a: PO:0025525 ! spermatogenous cell
+created_by: cooperl
+creation_date: 2012-12-10T14:47:12Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_structure_development_stage
@@ -21152,7 +21175,7 @@ id: PO:0030053
 name: antheridium jacket layer
 namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that is a single layer of cells on the outside of an antheridium (PO:0025125)." [ISBN:9780473067304]
-comment: Cells in the antheridium jacket layer surround the inner spermatogenous cells and do not give rise to antheridium sperm cells (PO:0025120).
+comment: Cells in the antheridium jacket layer surround the spermatogenous cells (PO:0025525) and do not give rise to antheridium sperm cells (PO:0025120).
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "antheridial jacket layer" EXACT []
