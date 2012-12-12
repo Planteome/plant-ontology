@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:12:2012 17:13
+date: 11:12:2012 18:58
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1012,6 +1012,7 @@ synonym: "microgamete" EXACT []
 synonym: "sperm cell" BROAD []
 synonym: "sperm nucleus" RELATED []
 synonym: "植物精子細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3030033
 is_a: PO:0025006 ! gamete
 relationship: develops_from PO:0025525 ! spermatogenous cell
 
@@ -12469,14 +12470,14 @@ relationship: part_of PO:0025074 ! embryo sac
 id: PO:0020097
 name: generative cell
 namespace: plant_anatomy
-def: "A spermatogenous cell (PO:0025525) of the microgametophyte (PO:0025280) in angiosperms, that divides to produce two pollen sperm cells (PO:0025121)." [APweb:Glossary]
-comment: Only occurs in angiosperms.
+def: "A spermatogenous cell (PO:0025525) of the microgametophyte (PO:0025280) that divides to produce two pollen sperm cells (PO:0025121)." [APweb:Glossary, ISBN:1572590416, POC:Laurel_Cooper]
+comment: Occurs in angiosperms.
 subset: CL
 subset: reference
 synonym: "c&#233lula generativa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄原細胞、生殖系列細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3525242
 is_a: PO:0025525 ! spermatogenous cell
-relationship: part_of PO:0025280 ! microgametophyte
 
 [Term]
 id: PO:0020099
@@ -14623,13 +14624,14 @@ creation_date: 2010-11-15T08:05:46Z
 id: PO:0025121
 name: pollen sperm cell
 namespace: plant_anatomy
-def: "A plant sperm cell (PO:0000084) that develops from a generative cell (PO:0020097) or the body cell (PO:0025526) and is part of the pollen (PO:0025281)." [PMID:20298228, POC:curators]
+def: "A plant sperm cell (PO:0000084) that is part of the pollen (PO:0025281)." [PMID:20298228, POC:curators]
 comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
 subset: Angiosperm
 subset: CL
 subset: Gymnosperms
 synonym: "c&#233lula esperm&#225tica pol&#237nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花粉精子細胞    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3030033
 is_a: PO:0000084 ! plant sperm cell
 relationship: develops_from PO:0020097 ! generative cell
 relationship: develops_from PO:0025526 ! body cell
@@ -16815,7 +16817,7 @@ creation_date: 2011-03-23T11:32:19Z
 id: PO:0025280
 name: microgametophyte
 namespace: plant_anatomy
-def: "A whole plant (PO:0000003) in the gametophyte development stage (PO:0028003) that produces only plant sperm cells (PO:0000084)." [POC:curators]
+def: "A whole plant (PO:0000003) in the gametophyte development stage (PO:0028003) that produces plant sperm cells (PO:0000084)." [POC:curators]
 comment: The microgametophyte in bryophytes only produce sperm cells, but do not develop from microspores, because there is no heterospory in bryophytes. In seed plants the male gametophyte is reduced to a pollen grain.
 synonym: "male gametophyte" EXACT []
 synonym: "microgametofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -20201,9 +20203,11 @@ creation_date: 2012-12-08T13:09:38Z
 id: PO:0025525
 name: spermatogenous cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that gives rise to one or more plant sperm cells (PO:0000084)." [POC:test]
+def: "A plant cell (PO:0009002) that gives rise to one or more plant sperm cells (PO:0000084)." [ISBN:1572590416, POC:Laurel_Cooper]
 comment: In liverworts, hornworts and mosses the spermatogenous cell gives rise to a single, biflagellated, antheridium sperm cell (PO:0025120). In angiosperms please use the generative cell (PO:0020097) and in gymnosperms use the body cell (PO:0025526).
+xref: OBO_SF_PO:3525242
 is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025280 ! microgametophyte
 created_by: cooperl
 creation_date: 2012-12-10T14:06:15Z
 
@@ -20211,7 +20215,10 @@ creation_date: 2012-12-10T14:06:15Z
 id: PO:0025526
 name: body cell
 namespace: plant_anatomy
-def: "A spermatogenous cell (PO:0025525) of the microgametophyte (PO:0025280) in gymnosperms, that divides to produce the sterile cell and pollen sperm cell (PO:0025121)." [POC:test]
+def: "A spermatogenous cell (PO:0025525) of the microgametophyte (PO:0025280) that divides to produce a vegetative cell and the  pollen sperm cell (PO:0025121)." [ISBN:1572590416, POC:Laurel_Cooper]
+comment: Occurs in gymnosperms.
+synonym: "gymnosperm generative cell " EXACT []
+xref: OBO_SF_PO:3525242
 is_a: PO:0025525 ! spermatogenous cell
 created_by: cooperl
 creation_date: 2012-12-10T14:47:12Z
