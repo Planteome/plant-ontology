@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 12:12:2012 21:11
-saved-by: RamonaNYBG
+date: 13:12:2012 19:54
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -726,13 +726,14 @@ relationship: part_of PO:0009032 ! petal
 id: PO:0000055
 name: bud
 namespace: plant_anatomy
-def: "An undeveloped shoot system." [POC:curators]
+def: "An undeveloped shoot system (PO:0000055)." [POC:curators]
 subset: TraitNet
 synonym: "adventitious bud" NARROW [FNA:0eed275a-5dae-414a-bf36-81a08e6c6ba9]
 synonym: "yema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "芽    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3016634
 is_a: PO:0009006 ! shoot system
+relationship: participates_in PO:0025528 ! bud development stage
 
 [Term]
 id: PO:0000056
@@ -2125,8 +2126,9 @@ is_a: PO:0007631 ! plant embryo stage
 id: PO:0001083
 name: inflorescence development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of an inflorescence defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0025338 ! collective plant organ structure development stage
+def: "A reproductive shoot system development stage (PO:0025530) that has as primary participant a inflorescence (PO:0009049)." [POC:Laurel_Cooper]
+xref: OBO_SF_PO:3595703
+is_a: PO:0025530 ! reproductive shoot system development stage
 
 [Term]
 id: PO:0001094
@@ -8976,10 +8978,11 @@ is_a: PO:0007605 ! androecium development stage
 id: PO:0007615
 name: flower development stage
 namespace: plant_structure_development_stage
-def: "A collective plant organ structure development stage (PO:0025338) that has as primary participant a flower (PO:0009046)." [POC:curators]
+def: "A reproductive shoot system development stage (PO:0025530) that has as primary participant a flower (PO:0009046)." [POC:curators]
 comment: Defined by characteristic morphological, structural, histological, or other visible features.
 synonym: "flower development in Arabidopsis" RELATED []
-is_a: PO:0025338 ! collective plant organ structure development stage
+xref: OBO_SF_PO:3595703
+is_a: PO:0025530 ! reproductive shoot system development stage
 intersection_of: PO:0025338 ! collective plant organ structure development stage
 intersection_of: has_participant PO:0009046 ! flower
 
@@ -9885,6 +9888,7 @@ synonym: "シュート系、苗条系    (Japanese)" EXACT Japanese [NIG:Yukiko_
 xref: OBO_SF_PO:3011039
 is_a: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025025 ! root system
+relationship: participates_in PO:0025527 ! shoot system development stage
 
 [Term]
 id: PO:0009007
@@ -10588,6 +10592,7 @@ xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147080
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009046 ! flower
+relationship: participates_in PO:0001083 ! inflorescence development stage
 
 [Term]
 id: PO:0009051
@@ -14155,6 +14160,7 @@ subset: TraitNet
 synonym: "sistema de brote reproductivo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生殖シュート 系、苗条系    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009006 ! shoot system
+relationship: participates_in PO:0025530 ! reproductive shoot system development stage
 created_by: Ramona
 creation_date: 2010-09-17T09:49:10Z
 
@@ -20222,6 +20228,58 @@ xref: OBO_SF_PO:3525242
 is_a: PO:0025525 ! spermatogenous cell
 created_by: cooperl
 creation_date: 2012-12-10T14:47:12Z
+
+[Term]
+id: PO:0025527
+name: shoot system development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage (PO:0009012) that has as primary participant a shoot system (PO:0009006)." [POC:Laurel_Cooper]
+xref: OBO_SF_PO:3595703
+is_a: PO:0025338 ! collective plant organ structure development stage
+created_by: cooperl
+creation_date: 2012-12-13T18:21:19Z
+
+[Term]
+id: PO:0025528
+name: bud development stage
+namespace: plant_structure_development_stage
+def: "A shoot system development stage (PO:0025527) that has as primary participant a bud (PO:0009006)." [POC:Laurel_Cooper]
+xref: OBO_SF_PO:3595703
+is_a: PO:0025527 ! shoot system development stage
+created_by: cooperl
+creation_date: 2012-12-13T18:29:35Z
+
+[Term]
+id: PO:0025529
+name: bud dormancy stage
+namespace: plant_structure_development_stage
+def: "A bud development stage (PO:0025528) during which a bud (PO:0009006) participates in a bud dormancy process (GO:0097207)." [GOC:0097207, POC:Laurel_Cooper]
+synonym: "E-L 1" EXACT []
+xref: OBO_SF_PO:3595703
+is_a: PO:0025528 ! bud development stage
+created_by: cooperl
+creation_date: 2012-12-13T18:56:52Z
+
+[Term]
+id: PO:0025530
+name: reproductive shoot system development stage
+namespace: plant_structure_development_stage
+def: "A shoot system development stage (PO:0025527) that has as primary participant a reproductive shoot system (PO:0025082)." [POC:Laurel_Cooper]
+xref: OBO_SF_PO:3595703
+is_a: PO:0025527 ! shoot system development stage
+created_by: cooperl
+creation_date: 2012-12-13T19:01:14Z
+
+[Term]
+id: PO:0025531
+name: bud swell stage
+namespace: plant_structure_development_stage
+def: "A bud development stage (PO:0025528) during which a bud (PO:0009006) enlarges due to growth of the shoot system (PO:0009006)." [POC:Laurel_Cooper]
+synonym: "E-L 2" EXACT []
+xref: OBO_SF_PO:3595703
+is_a: PO:0025528 ! bud development stage
+created_by: cooperl
+creation_date: 2012-12-13T19:15:39Z
 
 [Term]
 id: PO:0028001
