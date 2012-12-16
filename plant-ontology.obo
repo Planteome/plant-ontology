@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:12:2012 12:00
+date: 15:12:2012 23:12
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1053,7 +1053,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue that is part of a plant structure that has as parts a separation layer and a protective layer and is involved in the abscission of the structure." [ISBN:047124529, POC:curators]
 synonym: "abscission layer" RELATED []
 synonym: "zona de absici&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "離層    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "離層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: GO:0009838
 is_a: PO:0009007 ! portion of plant tissue
 
@@ -3488,7 +3488,7 @@ name: abaxial side of leaf primordium
 namespace: plant_anatomy
 def: "A portion of phyllome primordium tissue that is the abaxial/outer side of a leaf primordium and develops into the abaxial/lower leaf blade." [POC:curators]
 synonym: "lado abaxial del primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "葉原基の裏側、背軸側    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "葉原基の裏側、背軸側 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025128 ! phyllome primordium
 relationship: part_of PO:0000017 ! vascular leaf primordium
 
@@ -3761,7 +3761,7 @@ name: abaxial epidermis of ovary
 namespace: plant_anatomy
 def: "The epidermal cell layer of the abaxial/outer surface of the ovary." [GR:Pankaj_Jaiswal]
 synonym: "epidermis abaxial del ovario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子房の裏側、背軸側の表皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "子房の裏側 背軸側の表皮 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006063 ! ovary epidermis
 
 [Term]
@@ -3770,7 +3770,7 @@ name: adaxial epidermis of ovary
 namespace: plant_anatomy
 def: "The epidermal cell layer of the adaxial/inner surface of the ovary." [GR:Pankaj_Jaiswal]
 synonym: "epidermis adaxial del ovario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子房の表側、向軸側の表皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "子房の表側、向軸側の表皮 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006063 ! ovary epidermis
 
 [Term]
@@ -7050,7 +7050,9 @@ namespace: plant_structure_development_stage
 def: "A whole plant fruit formation stage (PO:0007042) that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) that has no other fruits as part enters a fruit initiation stage (PO:0025503) and ends when the average size of fruits (PO:0009001) on a whole plant (PO:0000003) has reached 10% of final size." [ISBN:3826331524, MaizeGDB:ms, POC:curators]
 comment: This terms is best used for plant with more or less synchronous fruit development and can only be used of the final size of the fruit is known. This stage is to be used for the development stage of a whole plant (PO:0000003). For an individual fruit, use fruit size up to 10% stage (PO:0025504).
 synonym: "7.01 Pod 10% of final length in soybean" RELATED [SOY:0000079]
+synonym: "E-L 27" RELATED []
 synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
+synonym: "fruit setting" NARROW []
 synonym: "stage R3 in soybean" RELATED [SOY:0000079]
 synonym: "tomato immature green" RELATED [SGN:0000041]
 xref: OBO_SF_PO:3374186
@@ -7125,7 +7127,7 @@ is_a: PO:0007010 ! whole plant fruit ripening stage
 id: PO:0007037
 name: inflorescence bifurcation stage
 namespace: plant_structure_development_stage
-def: "Stage of inflorescence development marked by the formation of two, oftern equal-sized, inflorescence meristems from one inflorescence meristem." [POC:curators]
+def: "Stage of inflorescence development marked by the formation of two, often equal-sized, inflorescence meristems from one inflorescence meristem." [POC:curators]
 is_a: PO:0001083 ! inflorescence development stage
 
 [Term]
@@ -9237,7 +9239,7 @@ def: "A portion of plant tissue that is the abaxial/lower portion of the nucellu
 subset: Poaceae
 subset: Rice
 synonym: "proyecci&#243n nucelar abaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "背軸側珠心突起    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "背軸側珠心突起 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0008007 ! nucellar projection
 
@@ -19938,6 +19940,7 @@ name: fruit initiation stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when the plant cells (PO:0009002) in the fruit begin to divide or expand." [POC:curators]
 comment: The fruit initiation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage ends as soon as plant cells (PO:0009002) in a developing fruit begin to divide or expand and may be very brief. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
+synonym: "<new synonym>" RELATED []
 xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
@@ -20286,6 +20289,7 @@ id: PO:0025532
 name: bud burst stage
 namespace: plant_structure_development_stage
 def: "A shoot system development stage (PO:0025527) during which a shoot system (PO:0009006) emerges from the bud (PO:0009006)." [POC:Laurel_Cooper]
+synonym: "E-L 4" EXACT []
 xref: OBO_SF_PO:3595703
 is_a: PO:0025527 ! shoot system development stage
 created_by: cooperl
