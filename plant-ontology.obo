@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:12:2012 23:12
+date: 18:12:2012 12:05
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -11153,7 +11153,8 @@ is_obsolete: true
 id: PO:0009084
 name: pericarp
 namespace: plant_anatomy
-def: "A wall of a fruit, developed from the ovary or carpel wall." [APweb:Glossary, GR:Pankaj_Jaiswal, TAIR:Leonore_Reiser]
+def: "A portion of plant tissue (PO:0009007) that is the outer layer (wall) of a fruit (PO:0009001), and develops from a plant ovary (PO:0009072) or a carpel (PO:0009030) wall." [APweb:Glossary, GR:Pankaj_Jaiswal, TAIR:Leonore_Reiser]
+comment: May be fleshy in fruits such as grape.
 subset: Arabidopsis
 subset: Citrus
 subset: Maize
@@ -11164,7 +11165,8 @@ synonym: "fruit peel" RELATED []
 synonym: "fruit rind" RELATED []
 synonym: "pericarpo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of pericarp tissue" EXACT []
-synonym: "果皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "果皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3581197
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009001 ! fruit
 
@@ -11174,17 +11176,19 @@ name: exocarp
 namespace: plant_anatomy
 alt_id: PO:0006046
 alt_id: PO:0006217
-def: "A portion of plant tissue that is the outer layer of a pericarp." [GR:Pankaj_Jaiswal]
+def: "A portion of plant tissue (PO:0009007) that is the outer layer of a pericarp (PO:0009084)." [GR:Pankaj_Jaiswal]
 subset: Citrus
 subset: Tomato
 synonym: "ectocarp" EXACT []
 synonym: "epicarp" EXACT []
 synonym: "exocarpo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "flavedo" EXACT []
+synonym: "fruit epidermis" EXACT []
 synonym: "outer epidermis of pericarp" RELATED []
 synonym: "pericarp epidermis" RELATED []
 synonym: "portion of exocarp tissue" EXACT []
-synonym: "外果皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "外果皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3581197
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -11193,7 +11197,7 @@ id: PO:0009086
 name: endocarp
 namespace: plant_anatomy
 alt_id: PO:0006047
-def: "A portion of plant tissue that is the innermost differentiated layer of a pericarp." [GR:Pankaj_Jaiswal]
+def: "A portion of plant tissue (PO:0009007) that is the innermost differentiated layer of a pericarp (PO:0009084)." [GR:Pankaj_Jaiswal]
 subset: Arabidopsis
 subset: Citrus
 subset: Maize
@@ -11206,6 +11210,7 @@ synonym: "endocarpo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "inner epidermis of pericarp" RELATED []
 synonym: "portion of endocarp tissue" EXACT []
 synonym: "内果皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3581197
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -11213,13 +11218,14 @@ relationship: part_of PO:0009084 ! pericarp
 id: PO:0009087
 name: mesocarp
 namespace: plant_anatomy
-def: "A portion of plant tissue that is the middle layer of a pericarp." [GR:Pankaj_Jaiswal]
+def: "A portion of plant tissue (PO:0009007) that is the middle layer of a pericarp (PO:0009084)." [GR:Pankaj_Jaiswal]
 subset: Citrus
 subset: Tomato
 synonym: "albedo" RELATED []
 synonym: "mesocarpo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of mesocarp tissue" EXACT []
-synonym: "中果皮    (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "中果皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3581197
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009084 ! pericarp
 
@@ -19940,7 +19946,6 @@ name: fruit initiation stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when the plant cells (PO:0009002) in the fruit begin to divide or expand." [POC:curators]
 comment: The fruit initiation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage ends as soon as plant cells (PO:0009002) in a developing fruit begin to divide or expand and may be very brief. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
-synonym: "<new synonym>" RELATED []
 xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: RamonaNYBG
