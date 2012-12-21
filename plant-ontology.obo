@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:12:2012 19:26
+date: 20:12:2012 20:29
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -13516,14 +13516,14 @@ creation_date: 2010-05-25T04:30:20Z
 id: PO:0025036
 name: tuber storage parenchyma
 namespace: plant_anatomy
-def: "A portion of storage parenchyma that is part of a tuber." [POC:curators]
-comment: This is the flesh of a tuber. See part_of children for individual components of tuber flesh.
+def: "A portion of storage parenchyma that is part of a tuber (PO:0025522)." [POC:curators]
+comment: This is the flesh of a tuber. See part_of children for individual components of tuber flesh. If you are annotating to this term, please add an additional annotation to either shoot axis tuber (PO:0004543) or tuberous root tuber (PO:0025476).
 synonym: "par&#233nquima de reserva de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber flesh" EXACT []
 synonym: "塊茎貯蔵柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005637
 is_a: PO:0025035 ! storage parenchyma
-relationship: part_of PO:0004543 ! shoot axis tuber
+relationship: part_of PO:0025522 ! tuber
 created_by: Ramona
 creation_date: 2010-05-25T04:33:26Z
 
@@ -13572,9 +13572,9 @@ creation_date: 2010-05-25T04:38:30Z
 
 [Term]
 id: PO:0025040
-name: tuber axillary vegetative bud
+name: shoot axis tuber axillary vegetative bud
 namespace: plant_anatomy
-def: "An axillary vegetative bud that is part of a tuber." [POC:curators]
+def: "An axillary vegetative bud (PO:0004712) that is part of a shoot axis tuber (PO:0004543)." [POC:curators]
 synonym: "tuber bud" EXACT []
 synonym: "tuber eye" RELATED []
 synonym: "yema vegetativa axilar de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13593,7 +13593,7 @@ def: "A tuber axillary vegetative bud that is part of an aerial tuber." [POC:cur
 synonym: "yema vegetativa axilar de tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）腋枝芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005636
-is_a: PO:0025040 ! tuber axillary vegetative bud
+is_a: PO:0025040 ! shoot axis tuber axillary vegetative bud
 relationship: part_of PO:0004548 ! aerial tuber
 created_by: Ramona
 creation_date: 2010-05-26T08:18:09Z
@@ -13612,16 +13612,16 @@ synonym: "tuber eye" BROAD []
 synonym: "yema vegetativa axilar de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎腋栄養芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005636
-is_a: PO:0025040 ! tuber axillary vegetative bud
+is_a: PO:0025040 ! shoot axis tuber axillary vegetative bud
 relationship: part_of PO:0004547 ! subterranean tuber
 created_by: Ramona
 creation_date: 2010-05-26T08:18:09Z
 
 [Term]
 id: PO:0025043
-name: tuber periderm
+name: shoot axis tuber periderm
 namespace: plant_anatomy
-def: "A portion of shoot periderm that is part of a tuber." [POC:curators]
+def: "A portion of shoot axis periderm (PO:0005048) that is part of a shoot axis tuber (PO:0004543)." [POC:curators]
 synonym: "peridermis de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎周皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005635
@@ -13637,7 +13637,7 @@ namespace: plant_anatomy
 def: "A portion of tuber periderm that is part of an aerial tuber." [POC:curators]
 synonym: "peridermis de tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）周皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025043 ! tuber periderm
+is_a: PO:0025043 ! shoot axis tuber periderm
 created_by: Ramona
 creation_date: 2010-05-27T09:31:12Z
 
@@ -13651,16 +13651,16 @@ subset: Potato
 synonym: "mature potato tuber skin" NARROW []
 synonym: "peridermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎 周皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025043 ! tuber periderm
+is_a: PO:0025043 ! shoot axis tuber periderm
 relationship: part_of PO:0004547 ! subterranean tuber
 created_by: Ramona
 creation_date: 2010-05-27T09:31:12Z
 
 [Term]
 id: PO:0025046
-name: tuber epidermis
+name: shoot axis tuber epidermis
 namespace: plant_anatomy
-def: "A portion of shoot axis epidermis that is part of a tuber." [POC:curators]
+def: "A portion of shoot axis epidermis (PO:0000112) that is part of a shoot axis tuber (PO:0004543)." [POC:curators]
 synonym: "epidermis de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3005635
@@ -13676,7 +13676,7 @@ namespace: plant_anatomy
 def: "A portion of tuber epidermis that is part of an aerial tuber." [POC:curators]
 synonym: "epidermis de tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025046 ! tuber epidermis
+is_a: PO:0025046 ! shoot axis tuber epidermis
 relationship: part_of PO:0004548 ! aerial tuber
 created_by: Ramona
 creation_date: 2010-05-27T09:55:39Z
@@ -13690,7 +13690,7 @@ comment: The skin of young potatoes is epidermis while the skin of mature potato
 synonym: "epidermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "young potato tuber skin" NARROW []
 synonym: "地下塊茎 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025046 ! tuber epidermis
+is_a: PO:0025046 ! shoot axis tuber epidermis
 relationship: part_of PO:0004547 ! subterranean tuber
 created_by: Ramona
 creation_date: 2010-05-27T09:55:39Z
@@ -13966,9 +13966,9 @@ creation_date: 2010-06-15T11:03:02Z
 
 [Term]
 id: PO:0025068
-name: tuber axillary bud meristem
+name: shoot axis tuber axillary bud meristem
 namespace: plant_anatomy
-def: "An axillary bud meristem that is part of a tuber." [POC:curators]
+def: "An axillary bud meristem (PO:0000232) that is part of a shoot axis tuber (PO:0004543)." [POC:curators]
 comment: As the bud grows, the meristem switches from being an axillary meristem to being a shoot apical meristem.
 synonym: "meristema axilar de yema de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎腋芽 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13985,7 +13985,7 @@ namespace: plant_anatomy
 def: "A tuber axillary bud meristem that is part of an aerial tuber." [POC:curators]
 synonym: "meristema axilar de yema de tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）腋芽分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025068 ! tuber axillary bud meristem
+is_a: PO:0025068 ! shoot axis tuber axillary bud meristem
 relationship: part_of PO:0004548 ! aerial tuber
 created_by: Ramona
 creation_date: 2010-06-15T01:03:59Z
@@ -13997,7 +13997,7 @@ namespace: plant_anatomy
 def: "A tuber axillary bud meristem that is part of a subterranean tuber." [POC:curators]
 synonym: "meristema axilar de yema de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎腋芽 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025068 ! tuber axillary bud meristem
+is_a: PO:0025068 ! shoot axis tuber axillary bud meristem
 relationship: part_of PO:0004547 ! subterranean tuber
 created_by: Ramona
 creation_date: 2010-06-15T01:03:59Z
@@ -19589,6 +19589,9 @@ namespace: plant_anatomy
 def: "A tuber (PO:0004543) that develops from a tuberous root (PO:0025523) and is further radially enlarged." [POC:curators]
 comment: Functions in storage. This term should be used for tubers derived from roots, as found in Cassava, not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term shoot axis tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuberous root tuber may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch, but these arise from adventitious buds or are derived from the stem (PO:0009047) to which the tuber root is attached. A tuberous root tuber usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
 synonym: "ra&#237z tubercular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "root tuber" EXACT []
+synonym: "storage root" EXACT []
+synonym: "tuber root" RELATED []
 synonym: "塊茎根の塊茎(Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2813017
 is_a: PO:0025522 ! tuber
@@ -21005,7 +21008,7 @@ creation_date: 2011-04-12T10:39:46Z
 id: PO:0030037
 name: spore capsule calyptra
 namespace: plant_anatomy
-def: "A cardinal organ part (PO:0025001) that develops from an archegonium venter (PO:0030038) and is a cap or hood enclosing the sporangium (syn: spore capsule; PO:0025094)." [ISBN:0962073342, ISBN:9780473067304]
+def: "A cardinal organ part (PO:0025001) that develops from an archegonium (PO:0025126) and is a cap or hood enclosing the sporangium (syn: spore capsule; PO:0025094)." [ISBN:0962073342, ISBN:9780473067304]
 comment: Found in bryophytes. The spore capsule calyptra is a membranous or hairy cap or hood, composed of gametophytic tissue (venter; PO:0030038) that protects the embryonic sporophyte within the archegonium (PO:0025126). In some species, it may persist after the sporophyte develops and gets carried upward as the seta (PO:0030032) elongates. The spore capsule calyptra is usually lost before the spores are released, and its shape can be used for identification purposes.
 subset: Bryophytes
 synonym: "caliptra de la c&#225psula productora de esporas (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21013,7 +21016,7 @@ synonym: "spore capsule calyptrae" EXACT Plural [FNA:50f48ec3-3dcd-4e7f-b065-b68
 synonym: "コケ類　蘚帽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3234979
 is_a: PO:0025001 ! cardinal organ part
-relationship: develops_from PO:0030038 ! venter
+relationship: develops_from PO:0025126 ! archegonium
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:53:45Z
