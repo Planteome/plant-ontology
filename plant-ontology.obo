@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:12:2012 18:12
+date: 20:12:2012 19:26
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -10121,7 +10121,7 @@ is_a: PO:0025224 ! axil
 id: PO:0009025
 name: vascular leaf
 namespace: plant_anatomy
-def: "A leaf in a vascular plant." [POC:curators]
+def: "A leaf (PO:0025034) in a vascular plant." [POC:curators]
 comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud. Occurs in the sporophytic phase of a plant life cycle.
 subset: Angiosperm
 subset: Gymnosperms
@@ -10904,7 +10904,7 @@ name: anther
 namespace: plant_anatomy
 alt_id: PO:0006442
 alt_id: PO:0006473
-def: "A collective plant organ structure that is the pollen-bearing part of a stamen." [APweb:Glossary]
+def: "A collective plant organ structure (PO:0025007) that is the pollen-bearing part of a stamen (PO:0009029)." [APweb:Glossary]
 comment: Generally consists of four pollen sacs (microsporangia) in two anther thecas. If you are annotating to anther or one of its parts for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
@@ -10959,7 +10959,7 @@ name: anther theca
 namespace: plant_anatomy
 alt_id: PO:0006453
 alt_id: PO:0006478
-def: "A collective plant organ structure that is part of an anther and consists of a pair of sporangia that dehisce down a common slit." [APweb:Glossary]
+def: "A collective plant organ structure (PO:0025007) that is part of an anther (PO:0009066) and consists of a pair of sporangia (PO:0025094) that dehisce down a common slit." [APweb:Glossary]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
@@ -13315,7 +13315,7 @@ id: PO:0025023
 name: collective phyllome structure
 namespace: plant_anatomy
 alt_id: PO:0008033
-def: "A collective plant organ structure that consists of two or more phyllomes originating from the same node or from one or more adjacent nodes with compressed internodes." [POC:curators]
+def: "A collective plant organ structure (PO:0025007) that consists of two or more phyllomes (PO:0006001) originating from the same node or from one or more adjacent nodes with compressed shoot internodes (PO:0005005)." [POC:curators]
 subset: TraitNet
 synonym: "cycle" BROAD [FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe]
 synonym: "estructura colectiva del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13346,7 +13346,7 @@ creation_date: 2010-07-16T09:59:08Z
 id: PO:0025025
 name: root system
 namespace: plant_anatomy
-def: "A collective plant organ structure that produces root apical meristems and the plant structures that arise from them." [POC:curators]
+def: "A collective plant organ structure (PO:0025007) that produces root apical meristems (PO:0020147) and the plant structures that arise from them." [POC:curators]
 comment: Generally the below ground portion of a vascular plant.
 subset: TraitNet
 synonym: "root" BROAD [FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9]
@@ -13486,7 +13486,7 @@ creation_date: 2010-05-12T04:49:59Z
 id: PO:0025034
 name: leaf
 namespace: plant_anatomy
-def: "A phyllome that is not associated with a reproductive structure." [POC:curators]
+def: "A phyllome (PO:0006001) that is not associated with a reproductive structure." [POC:curators]
 subset: TraitNet
 synonym: "hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13937,7 +13937,7 @@ creation_date: 2010-06-04T05:05:36Z
 id: PO:0025066
 name: stalk
 namespace: plant_anatomy
-def: "A cardinal organ part that is elongated and sub-cylindrical to cylindrical and supports another cardinal organ part." [POC:curators]
+def: "A cardinal organ part (PO:0025001) that is elongated and sub-cylindrical to cylindrical and supports another cardinal organ part." [POC:curators]
 comment: Some stalks may be ridged or grooved.
 subset: TraitNet
 synonym: "stipe" RELATED [FNA:21cee2f5-016a-44c6-b7a5-1fff6adc7e35]
@@ -17947,7 +17947,7 @@ creation_date: 2011-11-16T04:02:19Z
 id: PO:0025359
 name: sorus
 namespace: plant_anatomy
-def: "A collective plant organ structure on the surface of a vascular leaf that has as part a cluster of two or more adjacent sporangia." [PO_REF:00001]
+def: "A collective plant organ structure (PO:0025007) on the surface of a vascular leaf (PO:0009025) that has as part a cluster of two or more adjacent sporangia PO:0025094)." [PO_REF:00001]
 subset: Gymnosperms
 subset: Poaceae
 subset: Pteridophytes
@@ -17963,7 +17963,7 @@ creation_date: 2011-11-16T04:24:04Z
 id: PO:0025360
 name: ceonosorus
 namespace: plant_anatomy
-def: "A collective plant organ structure on the surface of a vascular leaf that has as parts two or more fused sori." [POC:curators]
+def: "A collective plant organ structure (PO:0025007) on the surface of a vascular leaf that has as parts two or more fused sori (PO:0025359)." [POC:curators]
 synonym: "ceonosoro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "coenosori" EXACT Plural []
 synonym: "融合胞子嚢を有する維管束葉表面の集合構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -18456,7 +18456,7 @@ creation_date: 2012-01-19T11:15:38Z
 id: PO:0025395
 name: floral organ
 namespace: plant_anatomy
-def: "A plant organ that is part of a flower." [POC:curators]
+def: "A plant organ (PO:0009008) that is part of a flower (PO:0009046)." [POC:curators]
 comment: Includes phyllomes such as anthers and petals, as well as shoot axes such as androphores and gynophores.
 synonym: "&#243rgano floral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "flower organ" EXACT []
@@ -20939,13 +20939,14 @@ creation_date: 2011-04-12T10:25:45Z
 id: PO:0030033
 name: antheridiophore
 namespace: plant_anatomy
-def: "A plant axis (PO:0025004) that bears two or more antheridia (PO:0025125) on an antheridium head (PO:0030075)." [ISBN:0962073342]
+def: "A stalk (PO:0025066) that supports an antheridium head (PO:0030075)." [ISBN:0962073342]
 comment: Found in mosses and other bryophytes such as the liverwort Marchantiales.
 subset: Bryophytes
 synonym: "anteridi&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄器床柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3272612
 is_a: PO:0025066 ! stalk
+relationship: has_part PO:0030075 ! antheridium head
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
@@ -20954,13 +20955,14 @@ creation_date: 2011-04-12T10:29:01Z
 id: PO:0030034
 name: archegoniophore
 namespace: plant_anatomy
-def: "A plant axis that bears two or more archegonia on an archegonial head." [ISBN:0962073342]
+def: "A stalk (PO:0025066) that supports an archegonium head (PO:0030034)." [ISBN:0962073342]
 comment: Found in Marchantiales.
 subset: Bryophytes
 synonym: "arquegoni&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌器床柄、雌器托 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OB_SF_PO:3272612
-is_a: PO:0025004 ! plant axis
+is_a: PO:0025066 ! stalk
+relationship: has_part PO:0030076 ! archegonium head
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
@@ -21672,7 +21674,7 @@ synonym: "cabeza del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Ga
 synonym: "造卵器頭部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OB_SF_PO:3272612
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0030034 ! archegoniophore
+relationship: has_part PO:0025126 ! archegonium
 created_by: Ramona
 creation_date: 2011-05-04T07:26:51Z
 
