@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:12:2012 20:29
+date: 21:12:2012 06:02
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1130,7 +1130,7 @@ relationship: part_of PO:0009035 ! nectary
 id: PO:0000223
 name: shoot axis cortex
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of a cortex and part of a shoot axis." [ISBN:047124529, POC:curators]
+def: "A portion of ground tissue (PO:0025059) that is part of a cortex (PO:0005708) and part of a shoot axis (PO:0025029)." [ISBN:047124529, POC:curators]
 comment: Can occur in a stem or branch.
 subset: TraitNet
 synonym: "branch cortex" NARROW []
@@ -3168,7 +3168,7 @@ is_a: PO:0004545 ! shoot-borne shoot system
 id: PO:0004547
 name: subterranean tuber
 namespace: plant_anatomy
-def: "A shoot axis tuber (PO:0004543)  that develops below ground." [POC:curators]
+def: "A shoot axis tuber (PO:0004543) that develops below ground." [POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3857,7 +3857,7 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0005040
 name: root pith
 namespace: plant_anatomy
-def: "A portion of pith that is part of a root." [ISBN:0080280307]
+def: "A portion of pith (PO:0006109) that is part of a root (PO:0009005)." [ISBN:0080280307]
 subset: TraitNet
 synonym: "m&#233dula de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3868,7 +3868,7 @@ relationship: part_of PO:0020124 ! root stele
 id: PO:0005041
 name: shoot axis pith
 namespace: plant_anatomy
-def: "A portion of pith that is part of a shoot axis." [ISBN:0080280307]
+def: "A portion of pith (PO:0006109) that is part of a shoot axis (PO:0025029)." [ISBN:0080280307]
 comment: Can occur in a stem or branch.
 subset: TraitNet
 synonym: "branch pith" NARROW []
@@ -4103,7 +4103,7 @@ disjoint_from: PO:0030048 ! leptome
 id: PO:0005421
 name: parenchyma
 namespace: plant_anatomy
-def: "A portion of ground tissue composed of polyhedral cells typically with thin, non-lignified cellulosic cell walls and nucleate, living protoplasts." [POC:curators]
+def: "A portion of ground tissue (PO:0025059) composed of polyhedral cells typically with thin, non-lignified cellulosic cell walls and nucleate, living protoplasts." [POC:curators]
 comment: Parenchyma contains relatively unspecialized cells.
 subset: TraitNet
 synonym: "par&#233nquima (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4371,7 +4371,7 @@ is_obsolete: true
 id: PO:0005708
 name: cortex
 namespace: plant_anatomy
-def: "A maximal portion of ground tissue between the vascular system and the epidermis in a plant." [POC:curators]
+def: "A maximal portion of ground tissue (PO:0025059) between the vascular system (PO:0000034) and the epidermis (PO:0005679) in a plant." [POC:curators]
 subset: TraitNet
 synonym: "cortex (corteza) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of cortex tissue" EXACT []
@@ -5364,7 +5364,7 @@ is_a: PO:0000009 ! cultured plant callus
 id: PO:0006109
 name: pith
 namespace: plant_anatomy
-def: "A maximal portion of parenchyma in the center of a shoot axis or root." [ISBN:0080280307]
+def: "A maximal portion of parenchyma (PO:0005421) in the center of a shoot axis (PO:0025029) or root (PO:0009005)." [ISBN:0080280307]
 subset: TraitNet
 synonym: "m&#233dula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "medulla" EXACT [ISBN:0471244554]
@@ -13500,7 +13500,7 @@ creation_date: 2010-07-12T01:31:44Z
 id: PO:0025035
 name: storage parenchyma
 namespace: plant_anatomy
-def: "A portion of parenchyma specialized for carbohydrate storage." [POC:curators]
+def: "A portion of parenchyma (PO:0005421) specialized for carbohydrate storage." [POC:curators]
 comment: This tissue could be found in any organ, but often occurs in fruits or tubers. New GO term carbohydrate storage has been requested.
 synonym: "flesh" EXACT []
 synonym: "fleshy tissue" EXACT []
@@ -13516,7 +13516,7 @@ creation_date: 2010-05-25T04:30:20Z
 id: PO:0025036
 name: tuber storage parenchyma
 namespace: plant_anatomy
-def: "A portion of storage parenchyma that is part of a tuber (PO:0025522)." [POC:curators]
+def: "A portion of storage parenchyma (PO:0025035) that is part of a tuber (PO:0025522)." [POC:curators]
 comment: This is the flesh of a tuber. See part_of children for individual components of tuber flesh. If you are annotating to this term, please add an additional annotation to either shoot axis tuber (PO:0004543) or tuberous root tuber (PO:0025476).
 synonym: "par&#233nquima de reserva de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber flesh" EXACT []
@@ -13544,7 +13544,7 @@ creation_date: 2010-05-25T04:33:26Z
 id: PO:0025038
 name: subterranean tuber storage parenchyma
 namespace: plant_anatomy
-def: "A portion of tuber storage parenchyma that is part of a subterranean tuber." [POC:curators]
+def: "A portion of tuber storage parenchyma (PO:0025035) that is part of a subterranean tuber (PO:0004547)." [POC:curators]
 comment: This term is used to refer to potato tuber flesh. See part_of children for individual components of subterranean tuber flesh.
 subset: Potato
 synonym: "par&#233nquima de reserva de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13560,7 +13560,7 @@ creation_date: 2010-05-25T04:38:30Z
 id: PO:0025039
 name: aerial tuber storage parenchyma
 namespace: plant_anatomy
-def: "A portion of tuber storage parenchyma that is part of an aerial tuber." [POC:curators]
+def: "A portion of tuber storage parenchyma (PO:0025036) that is part of an aerial tuber (PO:0004548)." [POC:curators]
 comment: See part_of children for individual components of aerial tuber flesh.
 synonym: "par&#233nquima de reserva de tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）貯蔵柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13741,12 +13741,12 @@ creation_date: 2010-06-01T03:36:07Z
 id: PO:0025052
 name: tuber pith
 namespace: plant_anatomy
-def: "A portion of pith that is part of a tuber storage parenchyma." [POC:curators]
+def: "A portion of pith (PO:0006109) that is part of a tuber storage parenchyma (PO:0025036)." [POC:curators]
 synonym: "m&#233dula del tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber flesh" BROAD []
 synonym: "塊茎髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3011076
-is_a: PO:0005041 ! shoot axis pith
+is_a: PO:0006109 ! pith
 relationship: part_of PO:0025036 ! tuber storage parenchyma
 created_by: Ramona
 creation_date: 2010-06-01T04:04:39Z
@@ -13755,7 +13755,7 @@ creation_date: 2010-06-01T04:04:39Z
 id: PO:0025053
 name: subterranean tuber pith
 namespace: plant_anatomy
-def: "A portion of tuber pith that is part of a subterranean tuber storage parenchyma." [PO_REF:00004, POC:curators]
+def: "A portion of tuber pith (PO:0025052) that is part of a subterranean tuber storage parenchyma (PO:0025038)." [PO_REF:00004, POC:curators]
 comment: In potatoes, this is part of the flesh.
 subset: Potato
 synonym: "m&#233dula del tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13770,7 +13770,7 @@ creation_date: 2010-06-01T04:06:52Z
 id: PO:0025054
 name: aerial tuber pith
 namespace: plant_anatomy
-def: "A portion of tuber pith that is part of an aerial tuber storage parenchyma." [POC:curators]
+def: "A portion of tuber pith (PO:0025052) that is part of an aerial tuber storage parenchyma (PO:0025039)." [POC:curators]
 synonym: "m&#233dula del tub&#233rculo a&#233reo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025052 ! tuber pith
@@ -13782,11 +13782,11 @@ creation_date: 2010-06-01T04:06:58Z
 id: PO:0025055
 name: tuber cortex
 namespace: plant_anatomy
-def: "A portion of stem cortex that is part of a tuber storage parenchyma." [POC:curators]
+def: "A portion of cortex (PO:0005708) that is part of a tuber storage parenchyma (PO:0025036)." [POC:curators]
 synonym: "corteza del tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3011079
-is_a: PO:0000223 ! shoot axis cortex
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0025036 ! tuber storage parenchyma
 created_by: rwalls
 creation_date: 2010-06-02T02:51:28Z
@@ -13825,7 +13825,7 @@ creation_date: 2010-06-03T08:05:23Z
 id: PO:0025058
 name: perimedullary zone
 namespace: plant_anatomy
-def: "A portion of parenchyma that is the outer layer of a portion of pith." [ISBN:0471244554]
+def: "A portion of parenchyma (PO:0005421) that is the outer layer of the pith (PO:0006109)." [ISBN:0471244554]
 comment: The term perimedullary zone is only used when the outer layer of the pith is distinct from the inner layer.
 synonym: "zona perimedular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "髄冠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13839,7 +13839,7 @@ creation_date: 2010-06-03T12:52:12Z
 id: PO:0025059
 name: portion of ground tissue
 namespace: plant_anatomy
-def: "Any portion of plant tissue other than epidermis or vascular tissue." [ISBN:0471244554, ISBN:0716710072]
+def: "Any portion of plant tissue (PO:0009007) other than epidermis (PO:0005679) or vascular tissue (PO:0009015)." [ISBN:0471244554, ISBN:0716710072]
 comment: Develops from the ground meristem (eg, meristem L2 and meristem L3).
 subset: TraitNet
 synonym: "fundamental tissue" EXACT [ISBN:0471244554]
@@ -13872,7 +13872,7 @@ creation_date: 2009-12-18T11:23:59Z
 id: PO:0025061
 name: tuber perimedullary zone
 namespace: plant_anatomy
-def: "A perimedullary zone that is part of a tuber pith." [POC:curators]
+def: "A perimedullary zone (PO:0025058) that is part of a tuber pith (PO:0025052)." [POC:curators]
 synonym: "tuber flesh" BROAD []
 synonym: "zona perimedular del tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎髄冠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13910,7 +13910,7 @@ creation_date: 2010-06-04T01:00:13Z
 id: PO:0025064
 name: shoot axis perimedullary zone
 namespace: plant_anatomy
-def: "A perimedullary zone that is part of a shoot axis pith." [POC:curators]
+def: "A perimedullary zone (PO:0025058) that is part of a shoot axis pith (PO:0005041)." [POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch perimedullary zone" NARROW []
 synonym: "stem perimedullary zone" NARROW []
@@ -19587,7 +19587,7 @@ id: PO:0025476
 name: tuberous root tuber
 namespace: plant_anatomy
 def: "A tuber (PO:0004543) that develops from a tuberous root (PO:0025523) and is further radially enlarged." [POC:curators]
-comment: Functions in storage. This term should be used for tubers derived from roots, as found in Cassava, not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term shoot axis tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuberous root tuber may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch, but these arise from adventitious buds or are derived from the stem (PO:0009047) to which the tuber root is attached. A tuberous root tuber usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
+comment: Functions in storage. This term should be used for tubers derived from roots (PO:0009005), as found in Cassava or sweet potato (Ipomoea batatas), not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term shoot axis tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuberous root tuber may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch. A tuberous root tuber usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
 synonym: "ra&#237z tubercular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root tuber" EXACT []
 synonym: "storage root" EXACT []
