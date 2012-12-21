@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:12:2012 17:21
+date: 20:12:2012 18:12
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1210,10 +1210,11 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0000232
 name: axillary bud meristem
 namespace: plant_anatomy
-def: "A shoot meristem formed in the axil of the leaf." [TAIR:Leonore_Reiser]
+def: "A shoot meristem (PO:0006079) formed in an axil (PO:0025224)." [POC:Laurel_Cooper, TAIR:Leonore_Reiser]
 synonym: "axillary meristem" RELATED []
 synonym: "meristema de yema axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋芽分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3016498
 is_a: PO:0006079 ! shoot meristem
 
 [Term]
@@ -3155,9 +3156,10 @@ is_a: PO:0009006 ! shoot system
 
 [Term]
 id: PO:0004546
-name: epicomic shoot
+name: epicormic shoot system
 namespace: plant_anatomy
-def: "Shoot developing from a trunk." [POC:curators]
+def: "A shoot-borne shoot system (PO:0004546) developing from a stem (PO:0009047)." [POC:curators]
+synonym: "stem sucker" EXACT []
 synonym: "tallo epic&#243rmico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "後生枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004545 ! shoot-borne shoot system
@@ -3306,7 +3308,7 @@ relationship: part_of PO:0019018 ! plant embryo axis
 id: PO:0004709
 name: axillary bud
 namespace: plant_anatomy
-def: "A bud that develops from an axillary bud meristem." [POC:curators]
+def: "A bud (PO:0000055) that develops from an axillary bud meristem (PO:0000232)." [POC:curators]
 subset: reference
 synonym: "yema axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5220,7 +5222,7 @@ is_obsolete: true
 id: PO:0006079
 name: shoot meristem
 namespace: plant_anatomy
-def: "A meristem that is part of a shoot system." [GR:Pankaj_Jaiswal]
+def: "A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006)." [GR:Pankaj_Jaiswal]
 subset: TraitNet
 synonym: "meristema del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6055,14 +6057,16 @@ relationship: has_part PO:0009001 ! fruit
 id: PO:0006343
 name: axillary shoot system
 namespace: plant_anatomy
-def: "A shoot-borne shoot system that develops from an axillary vegetative bud." [POC:curators]
+def: "A shoot-borne shoot system (PO:0004545) that develops from an axillary bud (PO:0004709)." [POC:curators]
 subset: Musa
 synonym: "axillary branch" RELATED []
 synonym: "Musa sucker" NARROW [CO_125:0000042]
 synonym: "sistema axilar del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3147109
+xref: OBO_SF_PO:3596114
 is_a: PO:0004545 ! shoot-borne shoot system
+relationship: develops_from PO:0004709 ! axillary bud
 
 [Term]
 id: PO:0006344
@@ -9876,7 +9880,7 @@ relationship: part_of PO:0025025 ! root system
 id: PO:0009006
 name: shoot system
 namespace: plant_anatomy
-def: "A collective plant organ structure that produces shoot apical meristems and the plant structures that arise from them." [POC:curators]
+def: "A collective plant organ structure (PO:0025007) that produces shoot apical meristems (PO:0020148) and the plant structures that arise from them." [POC:curators]
 comment: Generally the above ground portion of a plant.
 subset: reference
 subset: TraitNet
@@ -12953,7 +12957,7 @@ is_a: PO:0020144 ! apical meristem
 id: PO:0020148
 name: shoot apical meristem
 namespace: plant_anatomy
-def: "A shoot meristem formed in the apex of the shoot, including meristems originating as axillary shoot meristems." [UMSL:fz]
+def: "A shoot meristem (PO:0006079) formed at the apex of the shoot axis (PO:0025029), including those originating from an axillary bud meristem (PO:0000232)." [UMSL:fz]
 subset: TraitNet
 synonym: "meristema apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary shoot meristem" RELATED []
@@ -14015,7 +14019,7 @@ creation_date: 2010-06-24T01:09:49Z
 id: PO:0025072
 name: axillary reproductive bud
 namespace: plant_anatomy
-def: "An axillary bud that develops into a reproductive structure." [POC:curators]
+def: "An axillary bud (PO:0004709) that develops into an reproductive shoot system (PO:0025082)." [POC:curators]
 synonym: "yema axilar reproductiva (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋生殖芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3020771
@@ -14629,7 +14633,6 @@ synonym: "spermatozoid" EXACT [FNA:6e0e355b-3f3e-4de2-8144-4be0bfc17109]
 synonym: "造精器精子細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3030033
 is_a: PO:0000084 ! plant sperm cell
-relationship: develops_from PO:0025525 ! spermatogenous cell
 relationship: located_in PO:0025125 ! antheridium
 created_by: Ramona
 creation_date: 2010-11-15T08:05:46Z
@@ -14639,7 +14642,7 @@ id: PO:0025121
 name: pollen sperm cell
 namespace: plant_anatomy
 def: "A plant sperm cell (PO:0000084) that is part of the pollen (PO:0025281)." [PMID:20298228, POC:curators]
-comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In Angiosperms, during double fertilization, one fuses with the egg cell to produce a zygote while another fuses with the two polar nuclei of the central cell to give rise to endosperm.
+comment: Pollen sperm cells are structurally simple, usually non-motile cells that may contain a normal complement of cellular organelles, including heritable cytoplasmic organelles such as mitochondria and, in some plants, plastids, but lack a cell wall. In seed plants, pollen sperm cells are usually two in number. In angiosperms, during double fertilization, one fuses with the plant egg cell (PO:0020094) to produce a plant zygote (PO:0000423) while another fuses with the two polar nuclei of the embryo sac central cell (PO:0020090) to give rise to endosperm (PO:0009089).  In angiosperms, the pollen sperm cell arises from the generative cell (PO:0020097). In gymnosperms, the pollen sperm cell arises from the body cell (PO:0025525).
 subset: Angiosperm
 subset: CL
 subset: Gymnosperms
@@ -20301,6 +20304,17 @@ created_by: cooperl
 creation_date: 2012-12-14T11:55:04Z
 
 [Term]
+id: PO:0025533
+name: prothallial cell
+namespace: plant_anatomy
+def: "A vegetative plant cell (PO:0009002) that develops from the division of the microspore (PO:0020048) and is part of the microgametophyte of vascular plants other than angiosperms." [ISBN:9780879015329, ISBN:9783443140113, POC:Laurel_Cooper]
+comment: The prothallial cell is believed to be the remnant of the vegetative tissue of the male gametophyte.
+xref: OBO_SF_PO:3597966
+is_a: PO:0009002 ! plant cell
+created_by: cooperl
+creation_date: 2012-12-20T16:29:31Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_structure_development_stage
@@ -20931,7 +20945,7 @@ subset: Bryophytes
 synonym: "anteridi&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄器床柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3272612
-is_a: PO:0025004 ! plant axis
+is_a: PO:0025066 ! stalk
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Ramona
 creation_date: 2011-04-12T10:29:01Z
@@ -21641,7 +21655,7 @@ synonym: "cabeza del anteridio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gan
 synonym: "造精器頭部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OB_SF_PO:3272612
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0030033 ! antheridiophore
+relationship: has_part PO:0025125 ! antheridium
 created_by: Ramona
 creation_date: 2011-05-04T07:26:51Z
 
