@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:02:2013 16:15
+date: 19:02:2013 18:07
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -9881,8 +9881,8 @@ relationship: part_of PO:0025025 ! root system
 id: PO:0009006
 name: shoot system
 namespace: plant_anatomy
-def: "A collective plant organ structure (PO:0025007) that produces shoot apical meristems (PO:0020148) and the plant structures that arise from them." [POC:curators]
-comment: Generally the above ground portion of a plant.
+def: "A collective plant organ structure (PO:0025007) that produces shoot-borne portions of meristem tissue (PO:0009013) and the plant structures (PO:0009011) that arise from them." [POC:cooperl, POC:curators]
+comment: Generally the above-ground portion of a plant.
 subset: reference
 subset: TraitNet
 synonym: "Poaceae crown" RELATED []
@@ -9895,7 +9895,6 @@ synonym: "シュート系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yam
 xref: OBO_SF_PO:3011039
 is_a: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025025 ! root system
-relationship: participates_in PO:0025527 ! shoot system development stage
 
 [Term]
 id: PO:0009007
@@ -17684,6 +17683,7 @@ comment: Includes development stages for leaves and roots.
 synonym: "etapa de desarrollo de un &#243rgano (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "organ development stage" BROAD []
 synonym: "植物器官発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3426504
 is_a: PO:0009012 ! plant structure development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
@@ -20248,9 +20248,11 @@ creation_date: 2012-12-10T14:47:12Z
 id: PO:0025527
 name: shoot system development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage (PO:0009012) that has as primary participant a shoot system (PO:0009006)." [POC:Laurel_Cooper]
+def: "A plant structure development stage (PO:0009012) that begins with the plant organ development stage (PO:0025339) and ends with either gametophyte senescent stage (PO:0025343) or sporophyte senescent stage (PO:0007017) or death." [POC:Laurel_Cooper]
+comment: The shoot system (PO:0009006) develops fron the shoot apical meristem (PO:0020148) in the plant embryo (PO:0009009) in vascular plants.  In lower plants the gametophore (PO:0030018) arises from a gametophore meristematic apical cell (PO:0030019) in the protonema (PO:0030003).
 xref: OBO_SF_PO:3595703
 is_a: PO:0025338 ! collective plant organ structure development stage
+relationship: has_participant PO:0009006 ! shoot system
 created_by: cooperl
 creation_date: 2012-12-13T18:21:19Z
 
