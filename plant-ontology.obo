@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:02:2013 18:07
+date: 25:02:2013 23:54
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3169,7 +3169,7 @@ id: PO:0004547
 name: subterranean tuber
 namespace: plant_anatomy
 def: "A shoot axis tuber (PO:0004543) that develops below ground." [POC:curators]
-comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
+comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3508,7 +3508,7 @@ relationship: part_of PO:0000017 ! vascular leaf primordium
 id: PO:0005001
 name: basal axillary shoot system
 namespace: plant_anatomy
-def: "An axillary shoot system (PO:0006343) that develops from an axillary bud (PO:0004709) that is part of a stem base (PO:0008039)." [GR:Anuradha_Pujar, POC:cooperl]
+def: "An axillary shoot system (PO:0006343) that is part of a stem base (PO:0008039)." [GR:Anuradha_Pujar, POC:cooperl]
 comment: Called a tiller in the Poaceae.
 synonym: "basal axillary branch" RELATED []
 synonym: "epiblasto (epiblastema) axilar basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -9882,7 +9882,7 @@ id: PO:0009006
 name: shoot system
 namespace: plant_anatomy
 def: "A collective plant organ structure (PO:0025007) that produces shoot-borne portions of meristem tissue (PO:0009013) and the plant structures (PO:0009011) that arise from them." [POC:cooperl, POC:curators]
-comment: Generally the above-ground portion of a plant.
+comment: The shoot system is generally used to refer to the above-ground plant parts, although some plants have parts of their shoot system underground. For example, a rhizome (PO:0004542), bulb (PO:0025356), a corm (PO:0025355) or a subterranean tuber (PO:0004547), as in Solanum tuberosum (potato) or yam, are all part of the shoot system.
 subset: reference
 subset: TraitNet
 synonym: "Poaceae crown" RELATED []
@@ -9892,7 +9892,7 @@ synonym: "thalli" RELATED Plural [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
 synonym: "thallus" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
 synonym: "tree crown" NARROW []
 synonym: "シュート系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3011039
+xref: OBO_SF_PO:3028469
 is_a: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025025 ! root system
 
@@ -10870,7 +10870,7 @@ id: PO:0009064
 name: receptacle
 namespace: plant_anatomy
 def: "A cardinal organ part that is the region at the distal end of either a peduncle or a pedicel where the floral appendages (e.g.: sepals, petals, stamens and pistils) are attached." [POC:curators]
-comment: The fleshy part of a strawberry fruit develops from a receptacle.
+comment: The fleshy part of a strawberry develops from a receptacle.
 subset: reference
 synonym: "flower receptacle" EXACT [FNA:1fd506b2-d80f-4b52-be88-4da3114a3237]
 synonym: "recept&#225culo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17685,6 +17685,7 @@ synonym: "organ development stage" BROAD []
 synonym: "植物器官発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3426504
 is_a: PO:0009012 ! plant structure development stage
+relationship: part_of PO:0025527 ! shoot system development stage
 created_by: RamonaNYBG
 creation_date: 2011-10-19T11:12:49Z
 
@@ -17894,13 +17895,14 @@ id: PO:0025355
 name: corm
 namespace: plant_anatomy
 def: "A shoot system (PO:0009006) that has as parts a short, enlarged stem (PO:0009047) in which the shoot internodes (PO:0005005) do not elongate, and one or more buds (PO:0000055)." [ISBN:9780881928501]
-comment: May serve as a storage or perennating organ. Usually underground. A corm differs from a bulb (PO:0025356) in that it does not have fleshy leaves\nor leaf bases but usually has scale leaves or remnants of dry leaf sheaths\nthat form a protective covering around it. May bear remnants or scars of\ndetached leaves. Adventitious roots may develop from the base of a corm,\nand these may be contractile, pulling the corm into the soil. Examples\ninclude Gladiolus and Crocus. The pseudobulb of an orchid is equivalent to\na corm. A corm is very similar to a rhizome (PO:0004542) with very short sympodial units, although not all corms have sympodial growth.
+comment: May serve as a storage or perennating organ. Usually underground. A corm differs from a bulb (PO:0025356) in that it does not have fleshy leaves or leaf bases but usually has scale leaves or remnants of dry leaf sheaths that form a protective covering around it. May bear remnants or scars of detached leaves. Adventitious roots may develop from the base of a corm, and these may be contractile, pulling the corm into the soil. Examples include Gladiolus and Crocus. The pseudobulb of an orchid is equivalent to a corm. A corm is very similar to a rhizome (PO:0004542) with very short sympodial units, although not all corms have sympodial growth.
 synonym: "cormel" NARROW []
 synonym: "cormlet" NARROW []
 synonym: "cormo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "diaspore" BROAD []
 synonym: "pseudobulb" NARROW []
 synonym: "球茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3080906
 is_a: PO:0009006 ! shoot system
 created_by: RamonaNYBG
 creation_date: 2011-11-16T03:39:15Z
@@ -17915,6 +17917,7 @@ synonym: "bulbet" NARROW []
 synonym: "bulbo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "diaspore" BROAD []
 synonym: "球根、鱗茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3080906
 is_a: PO:0009006 ! shoot system
 created_by: RamonaNYBG
 creation_date: 2011-11-16T03:39:15Z
