@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:04:2013 18:00
+date: 05:04:2013 18:50
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20393,6 +20393,28 @@ xref: OBO_SF_PO:3609182
 is_a: PO:0025538 ! plant sap
 created_by: cooperl
 creation_date: 2013-04-05T17:29:18Z
+
+[Term]
+id: PO:0025541
+name: bundle sheath cell
+namespace: plant_anatomy
+def: "A ground tissue cell (PO:0000076) that is part of a bundle sheath (PO:0006023)." [POC:cooperl]
+xref: OBO_SF_PO:3610061
+is_a: PO:0025030 ! ground tissue cell
+relationship: part_of PO:0006023 ! bundle sheath
+created_by: cooperl
+creation_date: 2013-04-05T18:29:48Z
+
+[Term]
+id: PO:0025542
+name: bundle sheath chlorenchyma cell
+namespace: plant_anatomy
+def: "A chlorenchyma cell (PO:0000076) that is part of a bundle sheath (PO:0006023)." [POC:cooperl]
+xref: OBO_SF_PO:3610061
+is_a: PO:0000075 ! collenchyma cell
+is_a: PO:0025541 ! bundle sheath cell
+created_by: cooperl
+creation_date: 2013-04-05T18:31:57Z
 
 [Term]
 id: PO:0028001
