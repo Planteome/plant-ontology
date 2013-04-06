@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:04:2013 15:30
+date: 05:04:2013 18:00
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -15229,7 +15229,7 @@ id: PO:0025161
 name: portion of plant substance
 namespace: plant_anatomy
 def: "A portion of organism substance that is or was part of a plant." [CARO:0000004, POC:curators]
-comment: Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin. CARO:0000004 portion of organism substance is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body. For plants, the word "body" refers to a whole plant or part thereof.
+comment: Refers to portion of organism substance (CARO:0000004) which is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body. For plants, the word "body" refers to a whole plant or part thereof.  Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin.
 synonym: "porci&#243n de sustancia vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物を構成する物質の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025131 ! plant anatomical entity
@@ -20362,6 +20362,37 @@ namespace: plant_anatomy
 is_a: PO:0025029 ! shoot axis
 created_by: cooperl
 creation_date: 2013-04-05T15:18:13Z
+
+[Term]
+id: PO:0025538
+name: plant sap
+namespace: plant_anatomy
+def: "A portion of plant substance (PO:0025161) that is an aqueous solution which may contain sugars, hormones, mineral elements and/or other nutrients." [POC:cooperl]
+comment: Plant sap should not be confused with latex or resins.
+xref: OBO_SF_PO:3609182
+is_a: PO:0025161 ! portion of plant substance
+created_by: cooperl
+creation_date: 2013-04-05T17:15:40Z
+
+[Term]
+id: PO:0025539
+name: xylem sap
+namespace: plant_anatomy
+def: "A plant sap (PO:0025538) that is an aqueous solution which may contain mineral elements, nutrients, and plant hormones, and is transported from the root system (PO:0025025) toward the leaves through the tracheary elements (PO:0000290) of the xylem." [POC:cooperl]
+xref: OBO_SF_PO:3609182
+is_a: PO:0025538 ! plant sap
+created_by: cooperl
+creation_date: 2013-04-05T17:29:14Z
+
+[Term]
+id: PO:0025540
+name: phloem sap
+namespace: plant_anatomy
+def: "A plant sap (PO:0025538) that is an aqueous solution which may contain sugars, mineral elements, and plant hormones, and is transported through the phloem sieve elements (PO:0025406)." [POC:cooperl]
+xref: OBO_SF_PO:3609182
+is_a: PO:0025538 ! plant sap
+created_by: cooperl
+creation_date: 2013-04-05T17:29:18Z
 
 [Term]
 id: PO:0028001
