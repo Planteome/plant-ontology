@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:04:2013 10:11
+date: 08:04:2013 15:01
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -10995,7 +10995,7 @@ name: anther wall tapetum
 namespace: plant_anatomy
 alt_id: PO:0006450
 alt_id: PO:0006484
-def: "A microsporangium tapetum that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
+def: "A microsporangium tapetum (PO:0025314) that is part of an anther wall (PO:0000002)." [ISBN:0471244554, ISBN:9780003686647]
 comment: Develops from a primary or secondary parietal cell layer. Innermost part of the anther wall, involved in the nutrition of the pollen. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
@@ -17311,8 +17311,9 @@ creation_date: 2011-05-03T11:19:36Z
 id: PO:0025313
 name: tapetum
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the inner-most layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647, ISBN:9780070588493]
+def: "A portion of ground tissue (PO:0025059) that is the inner-most layer of a sporangium wall (PO:0025306)." [ISBN:0471244554, ISBN:9780003686647, ISBN:9780070588493]
 comment: May function in providing nutrition to developing sporocytes or pollen. May have one or more layers of cells. May break down as spores mature. A tapetum does not develop in some plants, such as Psilotum. In angiosperms, the tapetum develops from one of the parietal layers. In non-seed plants, the tapetum may develop from the outer cells of archesporium or from the inner-most layer of the sporangium wall.
+synonym: "tapetal cell" EXACT []
 synonym: "tapeto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "絨毯組織、タペート組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3298006
@@ -17325,7 +17326,7 @@ creation_date: 2011-05-03T11:59:24Z
 id: PO:0025314
 name: microsporangium tapetum
 namespace: plant_anatomy
-def: "An tapetum that is part of a microsporangium wall." [POC:curators]
+def: "An tapetum (PO:0025313) that is part of a microsporangium wall (PO:0025307)." [POC:curators]
 synonym: "tapeto del microsporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小胞子嚢絨毯組織（タペート組織） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3298006
@@ -20416,6 +20417,43 @@ is_a: PO:0000075 ! collenchyma cell
 is_a: PO:0025541 ! bundle sheath cell
 created_by: cooperl
 creation_date: 2013-04-05T18:31:57Z
+
+[Term]
+id: PO:0025543
+name: tapetum cell
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that is part of the tapetum (PO:0025313)." [POC:cooperl]
+comment: The tapetum is the inner-most layer of a sporangium wall (PO:0025306).
+synonym: "tapetal cell" EXACT []
+xref: OBO_SF_PO:3609728
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025313 ! tapetum
+created_by: cooperl
+creation_date: 2013-04-08T13:58:47Z
+
+[Term]
+id: PO:0025544
+name: microsporangium tapetum cell
+namespace: plant_anatomy
+def: "A tapetum cell (PO:0025543) that is part of a microsporangium tapetum (PO:0025314)." [POC:cooperl]
+synonym: "microsporangium tapetal cell" EXACT []
+xref: OBO_SF_PO:3609728
+is_a: PO:0025543 ! tapetum cell
+relationship: part_of PO:0025314 ! microsporangium tapetum
+created_by: cooperl
+creation_date: 2013-04-08T14:29:34Z
+
+[Term]
+id: PO:0025545
+name: anther wall tapetum cell
+namespace: plant_anatomy
+def: "A microsporangium tapetum cell (PO:0025544) that is part of the anther wall tapetum (PO:0009071)." [POC:cooperl]
+synonym: "anther wall tapetal cell" EXACT []
+xref: OBO_SF_PO:3609728
+is_a: PO:0025544 ! microsporangium tapetum cell
+relationship: part_of PO:0009071 ! anther wall tapetum
+created_by: cooperl
+creation_date: 2013-04-08T14:37:38Z
 
 [Term]
 id: PO:0028001
