@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:04:2013 12:39
+date: 18:04:2013 12:09
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5867,12 +5867,13 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006324
-name: central spike of tassel
+name: central spike of tassel inflorescence
 namespace: plant_anatomy
-def: "A first order inflorescence axis that is the central axis of a tassel." [POC:Ramona_Walls]
+def: "A first order inflorescence axis (PO:0025104) that is the central axis of a tassel inflorescence (PO:0020126)." [POC:curators, POC:Ramona_Walls]
 synonym: "espiga central del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tassel rachis" RELATED []
 synonym: "雄穂(花）中央の穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3611296
 is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020126 ! tassel inflorescence
 
@@ -6302,7 +6303,7 @@ synonym: "meristema apical de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alej
 synonym: "雌穂頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009108 ! inflorescence apical meristem
 is_a: PO:0009109 ! ear meristem
-relationship: part_of PO:0006505 ! central spike of ear
+relationship: part_of PO:0006505 ! central spike of ear inflorescence 
 
 [Term]
 id: PO:0006376
@@ -6314,7 +6315,7 @@ synonym: "meristema apical del penacho (borla) (Spanish)" EXACT Spanish [POC:Mar
 synonym: "雄穂頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009106 ! tassel meristem
 is_a: PO:0009108 ! inflorescence apical meristem
-relationship: part_of PO:0006324 ! central spike of tassel
+relationship: part_of PO:0006324 ! central spike of tassel inflorescence
 
 [Term]
 id: PO:0006377
@@ -6571,14 +6572,15 @@ relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006505
-name: central spike of ear
+name: central spike of ear inflorescence 
 namespace: plant_anatomy
-def: "A first order inflorescence axis that is the central axis of an ear." [POC:Ramona_Walls]
+def: "A first order inflorescence axis (PO:0025104) that is the central axis of an ear inflorescence (PO:0020136)." [POC:curators]
 comment: Zea cob is different from the cob inflorescence found in Sorghum.
 synonym: "ear rachis" RELATED []
 synonym: "espiga central de la espiga de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Zea cob" RELATED []
 synonym: "雌穂（花）中央の穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3611295
 is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020136 ! ear inflorescence
 
@@ -11118,7 +11120,7 @@ relationship: part_of PO:0009051 ! spikelet
 id: PO:0009081
 name: inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence axis (PO:0020122) that is a branch forming from a primary or higher order inflorescence axis." [Poc:curators]
+def: "An inflorescence axis (PO:0020122) that is a branch forming from a primary or higher order inflorescence axis." [POC:curators]
 subset: Angiosperm
 synonym: "coflorescence" RELATED []
 synonym: "conflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11330,7 +11332,7 @@ synonym: "short branch meristem" RELATED []
 synonym: "third order tassel branch meristem" RELATED []
 synonym: "雄穂短枝分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009107 ! tassel inflorescence branch meristem
-relationship: part_of PO:0006324 ! central spike of tassel
+relationship: part_of PO:0006324 ! central spike of tassel inflorescence
 relationship: part_of PO:0009101 ! long lateral tassel branch
 
 [Term]
@@ -11344,7 +11346,7 @@ synonym: "meristema de la ramificaci&#243n larga del penacho (borla) (Spanish)" 
 synonym: "second order tassel branch meristem" RELATED []
 synonym: "雄穂の長側枝の分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009107 ! tassel inflorescence branch meristem
-relationship: part_of PO:0006324 ! central spike of tassel
+relationship: part_of PO:0006324 ! central spike of tassel inflorescence
 
 [Term]
 id: PO:0009105
@@ -12651,13 +12653,14 @@ relationship: develops_from PO:0000016 ! lateral root primordium
 id: PO:0020122
 name: inflorescence axis
 namespace: plant_anatomy
-def: "A shoot axis (PO:0025029) that is part of an inflorescence (PO:0009049)." [POC:Ramona_Walls]
+def: "A shoot axis (PO:0025029) that is part of an inflorescence (PO:0009049)." [POC:curators]
 subset: Angiosperm
 subset: TraitNet
 synonym: "eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "first order inflorescence branch" RELATED []
 synonym: "inflorescence rachis" RELATED []
 synonym: "花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3147080
 is_a: PO:0025029 ! shoot axis
 relationship: part_of PO:0009049 ! inflorescence
 
@@ -12827,6 +12830,7 @@ subset: reference
 synonym: "cob" RELATED []
 synonym: "oreja de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3611295
 is_a: PO:0009049 ! inflorescence
 
 [Term]
@@ -14426,7 +14430,7 @@ creation_date: 2011-01-03T12:06:50Z
 id: PO:0025104
 name: first order inflorescence axis
 namespace: plant_anatomy
-def: "An inflorescence axis that is the primary or main axis of an inflorescence." [POC:Ramona_Walls]
+def: "An inflorescence axis (PO:0020122) that is the primary or main axis of an inflorescence (PO:0009049)." [POC:Ramona_Walls]
 comment: A first order inflorescence axis consists of either a peduncle alone or a peduncle plus its continuation, depending on the form of the inflorescence.
 subset: Angiosperm
 synonym: "inflorescence rachis" EXACT [FNA:78c2e094-f6db-4d95-b8bb-3e2bdaebf764]
@@ -14435,6 +14439,7 @@ synonym: "primary inflorescence axis" EXACT []
 synonym: "primer orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ray" BROAD [FNA:e86834d2-bae0-48a4-9fa8-078046cb015c]
 synonym: "第一花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3147080
 is_a: PO:0020122 ! inflorescence axis
 relationship: has_part PO:0009053 ! peduncle
 created_by: Ramona
@@ -14442,7 +14447,7 @@ creation_date: 2011-01-05T08:41:49Z
 
 [Term]
 id: PO:0025105
-name: forth order inflorescence axis
+name: fourth order inflorescence axis
 namespace: plant_anatomy
 def: "An inflorescence branch arising from a third order inflorescence axis." [POC:Ramona_Walls]
 synonym: "cuarto orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
