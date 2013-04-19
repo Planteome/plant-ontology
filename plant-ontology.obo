@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:04:2013 13:16
+date: 19:04:2013 15:21
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -9474,18 +9474,17 @@ is_a: PO:0000051 ! petiole epidermis
 id: PO:0008030
 name: trichome cell
 namespace: plant_anatomy
-def: "A plant cell that is part of a trichome." [POC:curators]
+def: "A plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282)." [POC:curators]
 comment: A branch of a unicellular trichome is a GO sub-cellular component.
 subset: CL
 synonym: "c&#233lula del tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "non-glandular unicellular trichome" NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
 synonym: "simple trichome" NARROW [PMID:19939948]
-synonym: "unicellular trichome" NARROW []
 synonym: "毛（毛茸、糸状体）細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0004013 ! epidermal cell
-relationship: part_of PO:0000282 ! trichome
+relationship: part_of PO:0025535 ! multicellular trichome tip
 
 [Term]
 id: PO:0008031
@@ -20359,6 +20358,18 @@ xref: OBO_SF_PO:3609180
 is_a: PO:0000022 ! plant cuticle
 created_by: cooperl
 creation_date: 2013-04-05T14:53:05Z
+
+[Term]
+id: PO:0025537
+name: unicellular trichome
+namespace: plant_anatomy
+def: "A trichome (PO:0000282) that is a single plant cell (PO:0009002)." [POC:curators]
+comment: This should not be confused with a trichome cell, which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282).
+xref: OBO_SF_PO:3107521
+is_a: PO:0000282 ! trichome
+is_a: PO:0009002 ! plant cell
+created_by: cooperl
+creation_date: 2013-04-19T15:12:31Z
 
 [Term]
 id: PO:0025538
