@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:04:2013 16:54
+date: 18:04:2013 22:42
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3426,17 +3426,6 @@ is_a: PO:0025132 ! canal
 relationship: part_of PO:0009010 ! seed
 
 [Term]
-id: PO:0004720
-name: paraclade
-namespace: plant_anatomy
-def: "An inflorescence branch (PO:0009081) that ends in an inflorescence that repeats the main inflorescence." [APweb:Glossary, ISBN:0521251346]
-comment: Please use inflorescence branch (PO:0009081).
-subset: Angiosperm
-synonym: "paraclado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "側生分枝（=lateral branch） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_obsolete: true
-
-[Term]
 id: PO:0004721
 name: paraclade cortex
 namespace: plant_anatomy
@@ -6305,7 +6294,7 @@ synonym: "meristema apical de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alej
 synonym: "雌穂頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009108 ! inflorescence apical meristem
 is_a: PO:0009109 ! ear meristem
-relationship: part_of PO:0006505 ! central spike of ear inflorescence 
+relationship: part_of PO:0006505 ! central spike of ear inflorescence
 
 [Term]
 id: PO:0006376
@@ -6574,7 +6563,7 @@ relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006505
-name: central spike of ear inflorescence 
+name: central spike of ear inflorescence
 namespace: plant_anatomy
 def: "A first order inflorescence axis (PO:0025104) that is the central axis of an ear inflorescence (PO:0020136)." [POC:curators]
 comment: Zea cob is different from the cob inflorescence found in Sorghum.
@@ -11122,11 +11111,14 @@ relationship: part_of PO:0009051 ! spikelet
 id: PO:0009081
 name: inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence axis (PO:0020122) that is a branch (PO:0009081) arising from a first order inflorescence axis (PO:0025104) or from a higher order inflorescence branch." [POC:curators]
+alt_id: PO:0004720
+def: "An inflorescence axis (PO:0020122) that is a branch (PO:0009081) arising from a first order inflorescence axis (PO:0025104) or from a higher order inflorescence branch." [POC:cooperl]
 subset: Angiosperm
 synonym: "coflorescence" RELATED []
 synonym: "conflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "paraclade" EXACT []
+synonym: "paraclado (Spanish)" EXACT [POC:Maria_Alejandra_Gandolfo]
+synonym: "側生分枝（=lateral branch） (Japanese)" EXACT [NIG:Yukiko_Yamazaki]
 synonym: "花序枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3150504
 is_a: PO:0020122 ! inflorescence axis
@@ -20367,14 +20359,6 @@ xref: OBO_SF_PO:3609180
 is_a: PO:0000022 ! plant cuticle
 created_by: cooperl
 creation_date: 2013-04-05T14:53:05Z
-
-[Term]
-id: PO:0025537
-name: <new term>
-namespace: plant_anatomy
-is_a: PO:0025029 ! shoot axis
-created_by: cooperl
-creation_date: 2013-04-05T15:18:13Z
 
 [Term]
 id: PO:0025538
