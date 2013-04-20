@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:04:2013 15:21
+date: 19:04:2013 20:02
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1361,8 +1361,8 @@ id: PO:0000282
 name: trichome
 namespace: plant_anatomy
 alt_id: PO:0004510
-def: "A unicellular or multicellular plant structure (PO:0009011) that forms a non-sclerified outgrowth from the epidermis (PO:0005679)." [POC:curators]
-comment: This class is the union of unicellular trichome [narrow synonym of trichome cell (PO:0008030)] and multicellular trichome (PO:0025162).  A trichome can vary in length and shape and may be branched or unbranched.  It may be glandular or non-secretory.
+def: "A unicellular or multicellular plant structure (PO:0009011) that forms a non-sclerified outgrowth from the epidermis (PO:0005679)." [PMID:19939948, POC:curators]
+comment: This class is the union of unicellular trichome (PO:0025537) and multicellular trichome (PO:0025162). A trichome can vary in length and shape and may be branched or unbranched.  It may be glandular or non-secretory.
 subset: TraitNet
 synonym: "barb trichome" BROAD [FNA:aa191087-e979-486f-ad87-0e050a83090f]
 synonym: "bristle" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
@@ -1389,6 +1389,7 @@ synonym: "squamellae" NARROW Plural [FNA:5f7f24f3-8ff4-450a-896e-3ae16be8f3ef]
 synonym: "squamule" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、毛 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3107521
 is_a: PO:0009011 ! plant structure
 relationship: develops_from PO:0000349 ! epidermal initial cell
 relationship: part_of PO:0005679 ! epidermis
@@ -9475,16 +9476,13 @@ id: PO:0008030
 name: trichome cell
 namespace: plant_anatomy
 def: "A plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282)." [POC:curators]
-comment: A branch of a unicellular trichome is a GO sub-cellular component.
 subset: CL
 synonym: "c&#233lula del tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "non-glandular unicellular trichome" NARROW []
-synonym: "non-secretory unicellular trichome" NARROW []
-synonym: "simple trichome" NARROW [PMID:19939948]
 synonym: "毛（毛茸、糸状体）細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3107521
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0004013 ! epidermal cell
-relationship: part_of PO:0025535 ! multicellular trichome tip
+relationship: part_of PO:0025162 ! multicellular trichome
 
 [Term]
 id: PO:0008031
@@ -15250,6 +15248,7 @@ synonym: "non-glandular multicelluar trichome" NARROW []
 synonym: "non-secretory multicellular trichome" NARROW []
 synonym: "tricoma multicelular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "多細胞毛（毛茸、糸状体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3107521
 is_a: PO:0000282 ! trichome
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0004013 ! epidermal cell
@@ -20341,11 +20340,14 @@ creation_date: 2013-04-05T14:36:22Z
 [Term]
 id: PO:0025535
 name: multicellular trichome tip
-def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome (PO:0025162)." [POC:Laurel_Cooper]
-comment: The tip may be various shapes.  For the tip of a unicellular trichome, please see GO.
+def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome apex (PO:xx)." [POC:Laurel_Cooper]
+comment: The tip may be various shapes.  For the tip of a unicellular trichome, please see  GO sub-cellular component GO:xxxxxxx.
+synonym: "tip of a multicellular trichome" EXACT []
 xref: OBO_SF_PO:3610120
 is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025549 ! trichome tip
 relationship: part_of PO:0025162 ! multicellular trichome
+relationship: part_of PO:0025551 ! multicellular trichome apex
 created_by: cooperl
 creation_date: 2013-04-05T14:36:38Z
 
@@ -20364,7 +20366,10 @@ id: PO:0025537
 name: unicellular trichome
 namespace: plant_anatomy
 def: "A trichome (PO:0000282) that is a single plant cell (PO:0009002)." [POC:curators]
-comment: This should not be confused with a trichome cell, which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282).
+comment: This should not be confused with a trichome cell, which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282). A branch of a unicellular trichome is a GO sub-cellular component GO:0090405.
+synonym: "non-glandular unicellular trichome " NARROW []
+synonym: "non-secretory unicellular trichome" NARROW []
+synonym: "simple trichome" NARROW [PMID:19939948]
 xref: OBO_SF_PO:3107521
 is_a: PO:0000282 ! trichome
 is_a: PO:0009002 ! plant cell
@@ -20491,6 +20496,40 @@ xref: OBO_SF_PO:3609161
 is_a: PO:0006321 ! primary inflorescence branch
 created_by: cooperl
 creation_date: 2013-04-18T15:50:04Z
+
+[Term]
+id: PO:0025549
+name: trichome tip
+namespace: plant_anatomy
+def: "A plant structure (PO:0009011) that is the apical most portion of a trichome apex (PO:0025550)." [POC:curators]
+comment: A tip of a unicellular trichome is a GO sub-cellular component GO:xxxxxxx.
+xref: OBO_SF_PO:3610120
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0025550 ! trichome apex
+created_by: cooperl
+creation_date: 2013-04-19T18:40:11Z
+
+[Term]
+id: PO:0025550
+name: trichome apex
+namespace: plant_anatomy
+def: "A plant structure (PO:0009011) that is the apical most portion of a trichome (PO:0000282)." [POC:cooperl]
+comment: An  apex of a unicellular trichome is a GO sub-cellular component GO:xxxxxxx. Will be requested from GO.
+xref: OBO_SF_PO:3610120
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0000282 ! trichome
+created_by: cooperl
+creation_date: 2013-04-19T19:22:17Z
+
+[Term]
+id: PO:0025551
+name: multicellular trichome apex
+def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome (PO:0025162)." [POC:cooperl]
+synonym: "apex of a multicellular trichome" EXACT []
+xref: OBO_SF_PO:3610120
+is_a: PO:0025550 ! trichome apex
+created_by: cooperl
+creation_date: 2013-04-19T19:46:05Z
 
 [Term]
 id: PO:0028001
