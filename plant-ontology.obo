@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2013 11:46
+date: 22:04:2013 12:27
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5849,11 +5849,12 @@ is_a: PO:0009081 ! inflorescence branch
 
 [Term]
 id: PO:0006323
-name: tassel branch
+name: tassel inflorescence branch
 namespace: plant_anatomy
-def: "Any branch forming from the primary or higher order tassel axes." [GR:Pankaj_Jaiswal]
+def: "An inflorescence branch (PO:0009081) arising from an axillary bud (PO:0004709) on a first order inflorescence axis (PO:0025104) or from a higher order inflorescence branch that is part of a tassel  inflorescence (PO:0020126)." [GR:Pankaj_Jaiswal, POC:cooperl]
 synonym: "rama del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3611296
 is_a: PO:0009081 ! inflorescence branch
 relationship: part_of PO:0020126 ! tassel inflorescence
 
@@ -6338,7 +6339,7 @@ def: "The axis of the tassel spikelet, above the glumes." [GR:Pankaj_Jaiswal]
 subset: Maize
 synonym: "raquilla del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂小軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006323 ! tassel branch
+is_a: PO:0006323 ! tassel inflorescence branch
 is_a: PO:0009080 ! spikelet rachilla
 relationship: part_of PO:0006309 ! tassel spikelet
 
@@ -10041,6 +10042,7 @@ namespace: plant_anatomy
 def: "A pulvinus (PO:0009000) of an inflorescence branch (PO:0009081)." [GR:Chih-Wei_Tung, POC:cooperl]
 synonym: "pulv&#237nulo ramificado de una inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序枝葉枕 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:2972236
 is_a: PO:0009000 ! pulvinus
 relationship: part_of PO:0009081 ! inflorescence branch
 
@@ -11299,7 +11301,7 @@ subset: Maize
 synonym: "ramificaci&#243n lateral larga del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order tassel branch" RELATED []
 synonym: "雄穂の長側枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006323 ! tassel branch
+is_a: PO:0006323 ! tassel inflorescence branch
 relationship: develops_from PO:0009104 ! long lateral tassel branch meristem
 
 [Term]
@@ -11311,7 +11313,7 @@ subset: Maize
 synonym: "ramificaci&#243n corta del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "third order tassel branch" RELATED []
 synonym: "雄穂短枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006323 ! tassel branch
+is_a: PO:0006323 ! tassel inflorescence branch
 relationship: develops_from PO:0009103 ! short tassel branch meristem
 
 [Term]
@@ -14448,6 +14450,7 @@ synonym: "fourth order inflorescence axis" EXACT []
 synonym: "tertiary inflorescence branch" EXACT []
 synonym: "third order paraclade" EXACT []
 synonym: "第四花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:56:27Z
@@ -14460,6 +14463,7 @@ def: "An inflorescence branch (PO:0009081) arising from a third order infloresce
 synonym: "fifth order inflorescence axis" EXACT []
 synonym: "quinto orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第五花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:57:49Z
@@ -14472,6 +14476,7 @@ def: "An inflorescence branch (PO:0009081) arising from a fourth order infloresc
 synonym: "sexto orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sixth order inflorescence axis" EXACT []
 synonym: "第六花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:57:49Z
@@ -14484,6 +14489,7 @@ def: "An inflorescence branch (PO:0009081) arising from a fifth order infloresce
 synonym: "s&#233ptimo orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seventh order inflorescence axis " EXACT []
 synonym: "第七花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:57:49Z
@@ -14496,6 +14502,7 @@ def: "An inflorescence branch (PO:0009081) arising from a sixth order infloresce
 synonym: "eighth order inflorescence axis  " EXACT []
 synonym: "octavo orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第八花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:57:49Z
@@ -14508,6 +14515,7 @@ def: "An inflorescence branch (PO:0009081) arising from an seventh order inflore
 synonym: "ninth order inflorescence axis" EXACT []
 synonym: "noveno orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第九花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:57:49Z
@@ -14520,6 +14528,7 @@ def: "An inflorescence branch (PO:0009081) arising from a eighth order infloresc
 synonym: "d&#233cimo o mayor orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tenth or higher order inflorescence axis" EXACT []
 synonym: "第十以上の花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3150504
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
 creation_date: 2011-01-05T08:57:49Z
