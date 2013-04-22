@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2013 10:00
+date: 22:04:2013 11:46
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5836,12 +5836,12 @@ is_a: PO:0009081 ! inflorescence branch
 
 [Term]
 id: PO:0006322
-name: secondary inflorescence branch
+name: second order inflorescence branch
 namespace: plant_anatomy
 def: "An inflorescence branch (PO:0009081) arising from a primary inflorescence branch (PO:0006321)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "eje de tercer orden en una inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "second order inflorescence branch" EXACT []
 synonym: "second order paraclade" EXACT []
+synonym: "secondary inflorescence branch" EXACT []
 synonym: "third order inflorescence axis" EXACT []
 synonym: "第三花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3150504
@@ -9693,7 +9693,7 @@ relationship: part_of PO:0020110 ! scutellum
 id: PO:0009000
 name: pulvinus
 namespace: plant_anatomy
-def: "A cardinal organ part at the apex or base of a petiole, petiolule, leaf sheath, or branch that is differentiated from the remaining organ parts by its enlarged cross section." [POC:curators]
+def: "A cardinal organ part (PO:0025001) at the apex or base of a petiole, petiolule, leaf sheath, or branch that is differentiated from the remaining organ parts by its enlarged cross section." [POC:curators]
 comment: Often glandular. Often involved in movement of a plant structure in response to touch, gravity or light. In panicoid grasses a swollen region in the stem above the intercalary meristem. Such a definition would also include stems of Chloranthaceae, Acanthaceae, Carpels, Amaranthaceae, etc. [source: APweb:Glossary].
 synonym: "pulv&#237nulo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pulvini" EXACT Plural [FNA:8fa72a9e-0eeb-4ecd-a965-0b1133fcd921]
@@ -10038,7 +10038,7 @@ replaced_by: PO:0025059
 id: PO:0009017
 name: inflorescence branch pulvinus
 namespace: plant_anatomy
-def: "Pulvinus of an inflorescence branch." [GR:Chih-Wei_Tung]
+def: "A pulvinus (PO:0009000) of an inflorescence branch (PO:0009081)." [GR:Chih-Wei_Tung, POC:cooperl]
 synonym: "pulv&#237nulo ramificado de una inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序枝葉枕 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009000 ! pulvinus
@@ -10609,7 +10609,7 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009052
 name: pedicel
 namespace: plant_anatomy
-def: "An inflorescence branch that supports an individual flower in an inflorescence that contains more than one flower." [ISBN:0716710072]
+def: "An inflorescence branch (PO:0009081) that supports an individual flower in an inflorescence (PO:0009049)." [ISBN:0716710072, poc:cooperl]
 comment: The bracteoles are borne on the pedicel, which terminates in a flower. A pedicel is the ultimate branch in an inflorescence.
 subset: Angiosperm
 subset: reference
@@ -14442,7 +14442,7 @@ creation_date: 2011-01-05T08:41:49Z
 id: PO:0025105
 name: third order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch (PO:0009081) arising from a secondary inflorescence branch (PO:0006322)." [POC:cooperl, POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from a second order inflorescence branch (PO:0006322)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "cuarto orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "fourth order inflorescence axis" EXACT []
 synonym: "tertiary inflorescence branch" EXACT []
@@ -14454,9 +14454,10 @@ creation_date: 2011-01-05T08:56:27Z
 
 [Term]
 id: PO:0025106
-name: fifth order inflorescence axis
+name: fourth order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch arising from a forth order inflorescence axis." [POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from a third order inflorescence branch (PO:0025105)." [POC:cooperl, POC:Ramona_Walls]
+synonym: "fifth order inflorescence axis" EXACT []
 synonym: "quinto orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第五花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009081 ! inflorescence branch
@@ -14465,10 +14466,11 @@ creation_date: 2011-01-05T08:57:49Z
 
 [Term]
 id: PO:0025107
-name: sixth order inflorescence axis
+name: fifth order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch arising from a fifth order inflorescence axis." [POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from a fourth order inflorescence branch (PO:0025106)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "sexto orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "sixth order inflorescence axis" EXACT []
 synonym: "第六花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
@@ -14476,10 +14478,11 @@ creation_date: 2011-01-05T08:57:49Z
 
 [Term]
 id: PO:0025108
-name: seventh order inflorescence axis
+name: sixth order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch arising from a sixth order inflorescence axis." [POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from a fifth order inflorescence branch (PO:0025107)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "s&#233ptimo orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "seventh order inflorescence axis " EXACT []
 synonym: "第七花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
@@ -14487,9 +14490,10 @@ creation_date: 2011-01-05T08:57:49Z
 
 [Term]
 id: PO:0025109
-name: eighth order inflorescence axis
+name: seventh order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch arising from a seventh order inflorescence axis." [POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from a sixth order inflorescence branch (PO:0025108)." [POC:cooperl, POC:Ramona_Walls]
+synonym: "eighth order inflorescence axis  " EXACT []
 synonym: "octavo orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第八花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009081 ! inflorescence branch
@@ -14498,9 +14502,10 @@ creation_date: 2011-01-05T08:57:49Z
 
 [Term]
 id: PO:0025110
-name: ninth order inflorescence axis
+name: eighth order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch arising from an eighth order inflorescence axis." [POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from an seventh order inflorescence branch (PO:0025109)." [POC:cooperl, POC:Ramona_Walls]
+synonym: "ninth order inflorescence axis" EXACT []
 synonym: "noveno orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第九花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009081 ! inflorescence branch
@@ -14509,10 +14514,11 @@ creation_date: 2011-01-05T08:57:49Z
 
 [Term]
 id: PO:0025111
-name: tenth or higher order inflorescence axis
+name: ninth or higher order inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch arising from a ninth or higher order inflorescence axis." [POC:Ramona_Walls]
+def: "An inflorescence branch (PO:0009081) arising from a eighth order inflorescence branch (PO:0025110) or higher." [POC:cooperl, POC:Ramona_Walls]
 synonym: "d&#233cimo o mayor orden del eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "tenth or higher order inflorescence axis" EXACT []
 synonym: "第十以上の花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009081 ! inflorescence branch
 created_by: Ramona
