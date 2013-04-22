@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:04:2013 08:55
+date: 22:04:2013 10:00
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2630,7 +2630,7 @@ is_obsolete: true
 id: PO:0004013
 name: epidermal cell
 namespace: plant_anatomy
-def: "A plant cell that is part of a portion of epidermis." [POC:curators]
+def: "A plant cell (PO:0009002) that is part of a portion of epidermis (PO:0005679)." [POC:curators]
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula epid&#233rmica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4312,7 +4312,7 @@ is_a: PO:0005656 ! portion of secretory tissue
 id: PO:0005679
 name: epidermis
 namespace: plant_anatomy
-def: "A portion of plant tissue composed of epidermal cells that develops from the protoderm and covers the surface of a plant structure." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) composed of epidermal cells (PO:0004013) that develops from the protoderm (PO:0006210) and covers the surface of a plant structure (PO:0009011)." [POC:curators]
 comment: The epidermis can be composed of one or more layers of cells. In some species of vascular plants, the epidermis, which is a primary tissue, is replaced by periderm, which is secondary tissue, later in development. The epidermis can also include trichomes, stomatal pores, root hairs, and rhizoids.
 subset: TraitNet
 synonym: "dermal tissue" EXACT []
@@ -15242,7 +15242,7 @@ creation_date: 2010-11-18T07:32:44Z
 id: PO:0025162
 name: multicellular trichome
 namespace: plant_anatomy
-def: "A portion of plant tissue that forms a non-sclerified outgrowth from the epidermis." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) that forms a non-sclerified outgrowth from the epidermis (PO:0005679)." [POC:curators]
 comment: Can vary in size and complexity. May contain a secretory gland.
 synonym: "non-glandular multicelluar trichome" NARROW []
 synonym: "non-secretory multicellular trichome" NARROW []
@@ -15251,7 +15251,7 @@ synonym: "多細胞毛（毛茸、糸状体） (Japanese)" EXACT Japanese [NIG:Y
 xref: OBO_SF_PO:3107521
 is_a: PO:0000282 ! trichome
 is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0004013 ! epidermal cell
+relationship: develops_from PO:0005679 ! epidermis
 created_by: Ramona
 creation_date: 2010-11-18T07:46:34Z
 
@@ -15259,7 +15259,7 @@ creation_date: 2010-11-18T07:46:34Z
 id: PO:0025163
 name: multicellular trichome branch cell
 namespace: plant_anatomy
-def: "A trichome cell that forms a branch of a multicellular trichome." [POC:curators]
+def: "A trichome cell (PO:0008030) that forms a branch of a multicellular trichome (PO:0025162)." [POC:curators]
 comment: For branches of a unicellular trichome, see unicellular trichome branch (GO:0090405) in GO.
 subset: CL
 synonym: "c&#233lula ramificada de tricoma multicelular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17353,7 +17353,7 @@ creation_date: 2011-05-03T12:03:42Z
 id: PO:0025316
 name: axillary hair
 namespace: plant_anatomy
-def: "A multicellular trichome that has as parts a long terminal cell atop a basal stalk and grows in a leaf axil." [ISBN:9780473067304, POC:curators]
+def: "A multicellular trichome (PO:0025162) that has as parts a long terminal cell atop a basal stalk and grows in a leaf axil (PO:0009023)." [ISBN:9780473067304, POC:curators]
 comment: Found in monocots and mosses. The basal stalk may contain one or more cells.
 synonym: "pelo axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋毛 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -17366,7 +17366,7 @@ creation_date: 2011-05-04T11:08:44Z
 id: PO:0025317
 name: axillary hair terminal cell
 namespace: plant_anatomy
-def: "A trichome cell that is the long terminal cell of an axillary hair." [ISBN:9780473067304]
+def: "A trichome cell (PO:0008030) that is the long terminal cell of an axillary hair (PO:0008030)." [ISBN:9780473067304]
 subset: CL
 synonym: "c&#233lula terminal del pelo axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋毛終端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -17394,7 +17394,7 @@ creation_date: 2011-05-04T11:18:18Z
 id: PO:0025319
 name: axillary hair basal cell
 namespace: plant_anatomy
-def: "A trichome cell that is part of an axillary hair base." [ISBN:9780473067304]
+def: "A trichome cell (PO:0008030) that is part of a base of an axillary hair (PO:0025316)." [ISBN:9780473067304]
 subset: CL
 synonym: "axillary hair base cell" EXACT []
 synonym: "c&#233lula basal del pelo axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -20373,6 +20373,7 @@ synonym: "simple trichome" NARROW [PMID:19939948]
 xref: OBO_SF_PO:3107521
 is_a: PO:0000282 ! trichome
 is_a: PO:0009002 ! plant cell
+relationship: develops_from PO:0004013 ! epidermal cell
 created_by: cooperl
 creation_date: 2013-04-19T15:12:31Z
 
@@ -21774,7 +21775,7 @@ creation_date: 2011-04-29T01:01:17Z
 id: PO:0030070
 name: paraphysis
 namespace: plant_anatomy
-def: "A slender, usually uniseriate multicellular trichome that grows intermixed with the gametangia." [ISBN:0029496608]
+def: "A slender, usually uniseriate multicellular trichome (PO:0025162) that grows intermixed with the gametangia." [ISBN:0029496608]
 comment: Found in bryophytes and pteridophytes, especially in mosses.
 subset: Bryophytes
 subset: Pteridophytes
