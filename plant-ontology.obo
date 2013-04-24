@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2013 12:27
+date: 24:04:2013 15:15
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1317,7 +1317,7 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000272
 name: protoxylem
 namespace: plant_anatomy
-def: "A portion of primary xylem (PO:0005849) tissue that has as parts tracheary elements (PO:0000290) with only annular or helical secondary wall thickening that are the first formed tracheary elements at a particular location." [ISBN:047125208]
+def: "A portion of primary xylem (PO:0005849) tissue that has as parts tracheary elements (PO:0000290) with only annular or helical secondary wall thickening that are the first formed tracheary elements (PO:0000290) at a particular location." [ISBN:047125208]
 comment: Develops while the vascular tissue (PO:0009015) is still elongating. Tracheary elements in protoxylem are smaller than in metaxylem (PO:0000372). Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -20546,6 +20546,128 @@ xref: OBO_SF_PO:3610120
 is_a: PO:0025550 ! trichome apex
 created_by: cooperl
 creation_date: 2013-04-19T19:46:05Z
+
+[Term]
+id: PO:0025552
+name: centarch protoxylem
+namespace: plant_anatomy
+def: "A portion of protoxylem (PO:0000272) tissue in which the maturation of primary xylem (PO:0005849) of the shoot system (PO:0009006) progresses centripedally, the oldest elements (protoxylem) are farthest from the center of the axis." [POC:curators]
+comment: This pattern was common in early land plants.
+xref: OBO_SF_PO:3610599
+is_a: PO:0000272 ! protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T13:35:57Z
+
+[Term]
+id: PO:0025553
+name: mesarch protoxylem
+namespace: plant_anatomy
+def: "A portion of protoxylem (PO:0000272) tissue in which the maturation of primary xylem (PO:0005849) of the shoot system (PO:0009006) progresses both centripedally and centrifugally from the center." [ISBN:0471245208, POC:cooperl]
+comment: Mesarch protoxylem is found in ferns and cycads stems.
+xref: OBO_SF_PO:3610599
+is_a: PO:0000272 ! protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T13:44:53Z
+
+[Term]
+id: PO:0025554
+name: exarch protoxylem
+namespace: plant_anatomy
+def: "A portion of protoxylem (PO:0000272) tissue in which the maturation of primary xylem (PO:0005849) progresses centripedally, the oldest elements (protoxylem) are farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0000272 ! protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T14:19:54Z
+
+[Term]
+id: PO:0025555
+name: root exarch protoxylem
+namespace: plant_anatomy
+def: "A portion of exarch protoxylem (PO:002554) tissue in which the maturation of primary xylem (PO:0005849) of the root system (PO:0025025) progresses centripedally, the oldest elements (protoxylem) are farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025554 ! exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T14:27:59Z
+
+[Term]
+id: PO:0025556
+name: shoot system exarch protoxylem
+namespace: plant_anatomy
+def: "A portion of exarch protoxylem (PO:002554)tissue in which the maturation of primary xylem (PO:0005849) of the shoot system (PO:0009006) progresses centripedally, the oldest elements (protoxylem) are farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025554 ! exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T14:29:06Z
+
+[Term]
+id: PO:0025557
+name: endarch protoxylem
+namespace: plant_anatomy
+def: "A portion of protoxylem (PO:0000272) tissue in which the maturation of primary xylem (PO:0005849) progresses  centrifugally, the oldest elements (protoxylem) are towards the center of the axis." [ISBN:0471245208, POC:cooperl]
+comment: Endarch protoxylem is typically found in stems of seed plants, and also in leaves in which the protoxylem is on the adaxial side.
+xref: OBO_SF_PO:3610599
+is_a: PO:0000272 ! protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T14:53:32Z
+
+[Term]
+id: PO:0025558
+name: monarch protoxylem
+namespace: plant_anatomy
+def: "A portion of root exarch protoxylem (PO:0025555) tissue in which the primary xylem (PO:0005849) of the root system (PO:0025025) hasonly one protoxylem strand or pole, and differentation progresses centripedally, with the oldest element (protoxylem) farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+is_a: PO:0025555 ! root exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T15:14:22Z
+
+[Term]
+id: PO:0025559
+name: diarch protoxylem
+namespace: plant_anatomy
+def: "A portion of root exarch protoxylem (PO:0025555) tissue in which the primary xylem (PO:0005849) of the root system (PO:0025025)  has two protoxylem strands or poles, and differentation progresses centripedally, with the oldest elements (protoxylem) farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025555 ! root exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T15:01:31Z
+
+[Term]
+id: PO:0025560
+name: triarch protoxylem
+namespace: plant_anatomy
+def: "A portion of root exarch protoxylem (PO:0025555) tissue in which the primary xylem (PO:0005849) of the root system (PO:0025025)  has three protoxylem strands or poles, and differentation progresses centripedally, with the oldest elements (protoxylem) farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025555 ! root exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T15:08:29Z
+
+[Term]
+id: PO:0025561
+name: tertrach protoxylem
+namespace: plant_anatomy
+def: "A portion of root exarch protoxylem (PO:0025555) tissue in which the primary xylem (PO:0005849) of the root system (PO:0025025)  has four protoxylem strands or poles, and differentation progresses centripedally, with the oldest elements (protoxylem) farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025555 ! root exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T15:09:27Z
+
+[Term]
+id: PO:0025562
+name: pentarch protoxylem
+namespace: plant_anatomy
+def: "A portion of root exarch protoxylem (PO:0025555) tissue in which the primary xylem (PO:0005849) of the root system (PO:0025025)  has five protoxylem strands or poles, and differentation progresses centripedally, with the oldest elements (protoxylem) farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025555 ! root exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T15:10:29Z
+
+[Term]
+id: PO:0025563
+name: polyarch protoxylem
+namespace: plant_anatomy
+def: "A portion of root exarch protoxylem (PO:0025555) tissue in which the primary xylem (PO:0005849) of the root system (PO:0025025)  has more than five protoxylem strands or poles, and differentation progresses centripedally, with the oldest elements (protoxylem) farthest from the center of the axis." [ISBN:0471245208, POC:cooperl]
+xref: OBO_SF_PO:3610599
+is_a: PO:0025555 ! root exarch protoxylem
+created_by: cooperl
+creation_date: 2013-04-24T15:11:11Z
 
 [Term]
 id: PO:0028001
