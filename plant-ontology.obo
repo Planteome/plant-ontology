@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:04:2013 12:41
+date: 29:04:2013 15:08
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20356,8 +20356,9 @@ creation_date: 2013-04-05T14:36:22Z
 id: PO:0025535
 name: multicellular trichome tip
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome apex (PO:0025551)." [POC:Laurel_Cooper]
-comment: The tip may be various shapes.  For the tip of a unicellular trichome, please see  GO sub-cellular component GO:xxxxxxx.
+comment: The tip may be various shapes.  A tip of a unicellular trichome is a GO sub-cellular component. Unicellular trichome tip (GO:0090553): A cell projection part that is the apical most portion of a unicellular trichome apex. [GOC:PO_curators] .
 synonym: "tip of a multicellular trichome" EXACT []
+xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
 is_a: PO:0009007 ! portion of plant tissue
 is_a: PO:0025549 ! trichome tip
@@ -20381,10 +20382,11 @@ id: PO:0025537
 name: unicellular trichome
 namespace: plant_anatomy
 def: "A trichome (PO:0000282) that is a single plant cell (PO:0009002)." [POC:curators]
-comment: This should not be confused with a trichome cell, which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282). A branch of a unicellular trichome is a GO sub-cellular component GO:0090405.
+comment: This should not be confused with a trichome cell, which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282). For parts of the unicellular trichome (such as branch, tip, apex), please see the GO sub-cellular components.
 synonym: "non-glandular unicellular trichome " NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
 synonym: "simple trichome" NARROW [PMID:19939948]
+xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3107521
 is_a: PO:0000282 ! trichome
 is_a: PO:0009002 ! plant cell
@@ -20518,7 +20520,8 @@ id: PO:0025549
 name: trichome tip
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is the apical most portion of a trichome apex (PO:0025550)." [POC:curators]
-comment: A tip of a unicellular trichome is a GO sub-cellular component GO:xxxxxxx.
+comment: This term is the parent to the tip of a multicellular trichome  (PO:0025162) or a unicellular trichome (PO:0025537).  A tip of a unicellular trichome is a GO sub-cellular component. Unicellular trichome tip (GO:0090553): A cell projection part that is the apical most portion of a unicellular trichome apex. [GOC:PO_curators] .
+xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0025550 ! trichome apex
@@ -20530,7 +20533,8 @@ id: PO:0025550
 name: trichome apex
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is the apical most portion of a trichome (PO:0000282)." [POC:cooperl]
-comment: An  apex of a unicellular trichome is a GO sub-cellular component GO:xxxxxxx. Will be requested from GO.
+comment: This term is the parent to the apex of a multicellular trichome  (PO:0025162) or a unicellular trichome (PO:0025537). An apex of a unicellular trichome is a GO sub-cellular component. Unicellular trichome apex (GO:0090552:  A cell projection part that is the apical most portion of a unicellular trichome. [GOC:PO_curators, PO:0025537] .
+xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0000282 ! trichome
@@ -20541,7 +20545,9 @@ creation_date: 2013-04-19T19:22:17Z
 id: PO:0025551
 name: multicellular trichome apex
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome (PO:0025162)." [POC:cooperl]
+comment: An apex of a unicellular trichome is a GO sub-cellular component. Unicellular trichome apex (GO:0090552):  A cell projection part that is the apical most portion of a unicellular trichome. [GOC:PO_curators, PO:0025537] .
 synonym: "apex of a multicellular trichome" EXACT []
+xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
 is_a: PO:0025550 ! trichome apex
 created_by: cooperl
