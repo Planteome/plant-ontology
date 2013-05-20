@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:05:2013 05:50
+date: 20:05:2013 12:56
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -15265,7 +15265,7 @@ id: PO:0025162
 name: multicellular trichome
 namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that forms a non-sclerified outgrowth from the epidermis (PO:0005679)." [POC:curators]
-comment: Can vary in size and complexity. May contain a secretory gland.
+comment: A multicellular trichome (PO:0000282) has as parts more than one trichome cell (PO:0008030), may vary in size and complexity, be branched and may contain a secretory gland.
 synonym: "non-glandular multicelluar trichome" NARROW []
 synonym: "non-secretory multicellular trichome" NARROW []
 synonym: "tricoma multicelular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -20363,7 +20363,7 @@ creation_date: 2013-04-05T14:36:22Z
 id: PO:0025535
 name: multicellular trichome tip
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome apex (PO:0025551)." [POC:Laurel_Cooper]
-comment: The tip may be various shapes.  A tip of a unicellular trichome is a GO sub-cellular component. Unicellular trichome tip (GO:0090553): A cell projection part that is the apical most portion of a unicellular trichome apex. [GOC:PO_curators] .
+comment: This term describes the apex region of a tip of a multicellular trichome (PO:0000282). The tip may be various shapes.  A tip of a unicellular trichome is a GO cellular component term; unicellular trichome tip (GO:0090553).
 synonym: "tip of a multicellular trichome" EXACT []
 xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
@@ -20389,7 +20389,7 @@ id: PO:0025537
 name: unicellular trichome
 namespace: plant_anatomy
 def: "A trichome (PO:0000282) that is a single plant cell (PO:0009002)." [POC:curators]
-comment: This should not be confused with a trichome cell, which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282). For parts of the unicellular trichome (such as branch, tip, apex), please see the GO sub-cellular components.
+comment: This should not be confused with a trichome cell (PO:0008030), which is a plant cell (PO:0009002) that is part of a multicellular trichome (PO:0000282). For parts of the unicellular trichome (such as branch, tip, apex), please see the GO cellular component terms; unicellular trichome apex (GO:0090552), unicellular trichome tip (GO:0090553), and unicellular trichome branch (GO:0090405).
 synonym: "non-glandular unicellular trichome " NARROW []
 synonym: "non-secretory unicellular trichome" NARROW []
 synonym: "simple trichome" NARROW [PMID:19939948]
@@ -20527,7 +20527,7 @@ id: PO:0025549
 name: trichome tip
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is the apical most portion of a trichome apex (PO:0025550)." [POC:curators]
-comment: This term is the parent to the tip of a multicellular trichome  (PO:0025162) or a unicellular trichome (PO:0025537).  A tip of a unicellular trichome is a GO sub-cellular component. Unicellular trichome tip (GO:0090553): A cell projection part that is the apical most portion of a unicellular trichome apex. [GOC:PO_curators] .
+comment: This term is the parent to the tip of a multicellular trichome (PO:0025162) or the tip of a unicellular trichome (PO:0025537), specifically, a multicellular trichome tip (PO:0025535) and a unicellular trichome tip (GO:0090553), which is a GO cellular component term.
 xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
 is_a: PO:0009011 ! plant structure
@@ -20540,7 +20540,7 @@ id: PO:0025550
 name: trichome apex
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that is the apical most portion of a trichome (PO:0000282)." [POC:cooperl]
-comment: This term is the parent to the apex of a multicellular trichome  (PO:0025162) or a unicellular trichome (PO:0025537). An apex of a unicellular trichome is a GO sub-cellular component. Unicellular trichome apex (GO:0090552:  A cell projection part that is the apical most portion of a unicellular trichome. [GOC:PO_curators, PO:0025537] .
+comment: This term is the parent to the apex of a multicellular trichome (PO:0025162) or a unicellular trichome (PO:0025537), specifically, a multicellular trichome apex (PO:0025551) and an unicellular trichome apex (GO:0090552) which is a GO cellular component term.
 xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
 is_a: PO:0009011 ! plant structure
@@ -20552,7 +20552,7 @@ creation_date: 2013-04-19T19:22:17Z
 id: PO:0025551
 name: multicellular trichome apex
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome (PO:0025162)." [POC:cooperl]
-comment: An apex of a unicellular trichome is a GO sub-cellular component. Unicellular trichome apex (GO:0090552):  A cell projection part that is the apical most portion of a unicellular trichome. [GOC:PO_curators, PO:0025537] .
+comment: This term describes the apex region of a multicellular trichome (PO:0000282).  The apex of a unicellular trichome is a GO cellular component: unicellular trichome apex (GO:0090552).
 synonym: "apex of a multicellular trichome" EXACT []
 xref: OBO_SF_GO:3611615
 xref: OBO_SF_PO:3610120
