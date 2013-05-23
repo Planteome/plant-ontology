@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:05:2013 12:56
+date: 23:05:2013 11:28
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -17362,7 +17362,7 @@ creation_date: 2011-05-03T12:03:42Z
 id: PO:0025315
 name: megasporangium tapetum
 namespace: plant_anatomy
-def: "An tapetum that is part of a megasporangium wall." [POC:curators]
+def: "A tapetum (PO:0025313) that is part of a megasporangium wall (PO:0025308)." [POC:curators]
 synonym: "tapeto del megasporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "大胞子嚢嚢絨毯組織（タペート組織） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3298006
@@ -20682,6 +20682,17 @@ xref: OBO_SF_PO:3610599
 is_a: PO:0025555 ! root system exarch protoxylem
 created_by: cooperl
 creation_date: 2013-04-24T15:11:11Z
+
+[Term]
+id: PO:0025564
+name: megasporangium tapetum cell
+namespace: plant_anatomy
+def: "A tapetum cell (PO:0025543) that is part of a megasporangium tapetum (PO:0025315)." [POC:curators]
+xref: OBO_SF_PO:3609728
+is_a: PO:0025543 ! tapetum cell
+relationship: part_of PO:0025315 ! megasporangium tapetum
+created_by: cooperl
+creation_date: 2013-05-23T11:26:06Z
 
 [Term]
 id: PO:0028001
