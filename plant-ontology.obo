@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:05:2013 14:17
+date: 23:05:2013 17:13
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20406,8 +20406,8 @@ creation_date: 2013-04-19T15:12:31Z
 id: PO:0025538
 name: plant sap
 namespace: plant_anatomy
-def: "A portion of plant substance (PO:0025161) that is an aqueous solution which may contain sugars, hormones, mineral elements and/or other nutrients." [POC:cooperl]
-comment: Plant sap should not be confused with latex or resins.
+def: "A portion of plant substance (PO:0025161) that is an aqueous solution that can be transported through the apoplast (GO:0048046) or symplast (GO:0055044)." [POC:cooperl]
+comment: Plant sap should not be confused with latex, resins or plant cell cytoplasm.
 xref: OBO_SF_PO:3609182
 is_a: PO:0025161 ! portion of plant substance
 created_by: cooperl
@@ -20694,6 +20694,46 @@ is_a: PO:0025543 ! tapetum cell
 relationship: part_of PO:0025315 ! megasporangium tapetum
 created_by: cooperl
 creation_date: 2013-05-23T11:26:06Z
+
+[Term]
+id: PO:0025565
+name: shoot system xylem sap
+namespace: plant_anatomy
+def: "A xylem sap (PO:0025539) that is located in the shoot system (PO:0009006)." [POC:curators]
+xref: OBO_SF_PO:3609182
+is_a: PO:0025539 ! xylem sap
+created_by: cooperl
+creation_date: 2013-05-23T16:52:45Z
+
+[Term]
+id: PO:0025566
+name: shoot system phloem sap 
+namespace: plant_anatomy
+def: "A phloem sap (PO:0025540) that is located in the shoot system (PO:0009006)." [POC:curators]
+xref: OBO_SF_PO:3609182
+is_a: PO:0025540 ! phloem sap
+created_by: cooperl
+creation_date: 2013-05-23T16:52:49Z
+
+[Term]
+id: PO:0025567
+name: root system phloem sap 
+namespace: plant_anatomy
+def: "A phloem sap (PO:0025540) that is located in the root system (PO:0025025)." [POC:curators]
+xref: OBO_SF_PO:3609182
+is_a: PO:0025540 ! phloem sap
+created_by: cooperl
+creation_date: 2013-05-23T16:57:41Z
+
+[Term]
+id: PO:0025568
+name: root system xylem sap
+namespace: plant_anatomy
+def: "A xylem sap (PO:0025539) that is located in the root system (PO:0025025)." [POC:curators]
+xref: OBO_SF_PO:3609182
+is_a: PO:0025539 ! xylem sap
+created_by: cooperl
+creation_date: 2013-05-23T16:58:26Z
 
 [Term]
 id: PO:0028001
