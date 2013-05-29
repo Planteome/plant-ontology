@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:05:2013 17:54
+date: 29:05:2013 12:52
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -722,7 +722,7 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000054
 name: petal vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a petal." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a petal (PO:0025218)." [POC:Ramona_Walls]
 synonym: "sistema vascular de p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025206 ! phyllome vascular system
@@ -4451,7 +4451,7 @@ relationship: part_of PO:0006342 ! infructescence
 id: PO:0006001
 name: phyllome
 namespace: plant_anatomy
-def: "A lateral plant organ produced by a shoot apical meristem." [POC:curators]
+def: "A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4849,7 +4849,7 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0006041
 name: petal epidermis
 namespace: plant_anatomy
-def: "A portion of phyllome epidermis that is part of a petal." [POC:curators]
+def: "A portion of phyllome epidermis (PO:0025157) that is part of a petal (PO:0009032)." [POC:curators]
 synonym: "epidermis del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
@@ -5111,7 +5111,7 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0006069
 name: petal parenchyma
 namespace: plant_anatomy
-def: "A portion of parenchyma tissue that is part of a petal." [POC:Ramona_Walls]
+def: "A portion of parenchyma (PO:0005421) tissue that is part of a petal (PO:0009032)." [POC:Ramona_Walls]
 synonym: "par&#233nquima del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005421 ! parenchyma
@@ -10228,7 +10228,7 @@ relationship: part_of PO:0009062 ! gynoecium
 id: PO:0009031
 name: sepal
 namespace: plant_anatomy
-def: "A member of the (usually green) outer whorl of non-fertile parts surrounding the fertile organs of a flower." [APweb:Glossary]
+def: "A phyllome (PO:0006001) that is usually green, and is part of the calyx (PO:0009060)." [APweb:Glossary]
 subset: reference
 subset: TraitNet
 synonym: "s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10241,11 +10241,12 @@ relationship: part_of PO:0009060 ! calyx
 id: PO:0009032
 name: petal
 namespace: plant_anatomy
-def: "A member of the corolla, the inner whorl of non-fertile parts surrounding the fertile organs of a flower, usually soft and colored conspicuously." [APweb:Glossary]
+def: "A phyllome (PO:0006001) that is usually soft and conspicuously colored, part of the corolla (PO:0009059)." [APweb:Glossary, POC:cooperl]
 subset: reference
 subset: TraitNet
 synonym: "p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3614109
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0000021 ! petal primordium
 relationship: part_of PO:0009059 ! corolla
@@ -10254,7 +10255,7 @@ relationship: part_of PO:0009059 ! corolla
 id: PO:0009033
 name: tepal
 namespace: plant_anatomy
-def: "A phyllome that is part of a perianth in which all parts are similar in appearance and are neither petals nor sepals." [POC:curators]
+def: "A phyllome (PO:0006001) that is part of a perianth (PO:0009058) in which all parts are similar in appearance and it is not possible to distinguish between the petals (PO:0009032) or sepals (PO:0009031)." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10716,7 +10717,7 @@ is_a: PO:0009035 ! nectary
 id: PO:0009058
 name: perianth
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) composed of two or more petals (PO:0009032), sepals (PO:0009031), or tepals (PO:0009033)." [POC:cooperl, POC:curators]
+def: "A collective phyllome structure (PO:0025023) composed of two or more petals (PO:0009032) and/or sepals (PO:0009031), or tepals (PO:0009033)." [POC:cooperl, POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "calyptra perianth" NARROW []
@@ -10732,7 +10733,8 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009059
 name: corolla
 namespace: plant_anatomy
-def: "A collective phyllome structure composed of two or more petals." [POC:curators]
+def: "A collective phyllome structure (PO:0025023) that is composed of two or more petals (PO:0009032), comprising the inner whorl of non-fertile floral organs (PO:0025395) and surrounds the androecium PO:0009061 and/or gynoecium (PO:0009062)." [POC:cooperl, POC:curators]
+comment: The corolla is part of the perianth (PO:0009058).
 subset: reference
 subset: TraitNet
 synonym: "corola (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10741,6 +10743,7 @@ synonym: "corollas" EXACT Plural [FNA:791b8f53-16ba-448b-9a16-9ab841d947a9]
 synonym: "花冠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
+xref: OBO_SF_PO:3614108
 is_a: PO:0025023 ! collective phyllome structure
 relationship: part_of PO:0009058 ! perianth
 
@@ -10748,7 +10751,8 @@ relationship: part_of PO:0009058 ! perianth
 id: PO:0009060
 name: calyx
 namespace: plant_anatomy
-def: "A collective phyllome structure composed of two or more sepals." [POC:curators]
+def: "A collective phyllome structure (PO:0025023) that is composed of two or more sepals (PO:0009031), and comprises the outer whorl of non-fertile floral organs (PO:0025395)." [POC:curators]
+comment: The calyx is part of the perianth (PO:0009058).
 subset: reference
 subset: TraitNet
 synonym: "c&#225lix (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10756,6 +10760,7 @@ synonym: "calyces" EXACT Plural [FNA:f250c45e-8348-4db4-aa9a-10dfa08bfd00]
 synonym: "がく (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:2988258
+xref: OBO_SF_PO:3614113
 is_a: PO:0025023 ! collective phyllome structure
 relationship: part_of PO:0009058 ! perianth
 
@@ -10853,7 +10858,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009063
 name: epicalyx
 namespace: plant_anatomy
-def: "A collective phyllome structure composed of two or more phyllomes immediately outside the calyx." [POC:curators]
+def: "A collective phyllome structure (PO:0025023) composed of two or more phyllomes immediately outside the calyx (PO:0009060)." [POC:curators]
 subset: reference
 synonym: "calyculi" EXACT Plural [FNA:ca2bac8b-bf83-4d65-8ad5-90dab57684c3]
 synonym: "calyculus" EXACT [FNA:f8892653-cf01-42a0-8ed2-d6206c2eb7dc]
@@ -13120,7 +13125,7 @@ creation_date: 2010-02-09T04:12:11Z
 id: PO:0025008
 name: petal margin
 namespace: plant_anatomy
-def: "The margin of a petal." [POC:curators]
+def: "A phyllome margin (PO:0025018) of a petal (PO:0009032)." [POC:curators]
 synonym: "margen del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁周縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13209,7 +13214,7 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025015
 name: tepal margin
 namespace: plant_anatomy
-def: "The margin of a tepal." [POC:curators]
+def: "The margin of a tepal (PO:0009033)." [POC:curators]
 synonym: "margen del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13291,7 +13296,7 @@ creation_date: 2010-04-02T01:27:23Z
 id: PO:0025021
 name: collective tepal structure
 namespace: plant_anatomy
-def: "A perianth consisting of two or more tepals." [POC:curators]
+def: "A perianth (PO:0009058) consisting of two or more tepals (PO:0009033)." [POC:curators]
 synonym: "estructura colectiva del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合花被片構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2988258
@@ -13303,7 +13308,7 @@ creation_date: 2010-04-14T12:41:50Z
 id: PO:0025022
 name: collective leaf structure
 namespace: plant_anatomy
-def: "A collective phyllome structure composed of two or more leaves." [POC:curators]
+def: "A collective phyllome structure (PO:0025023) composed of two or more leaves (PO:0025034)." [POC:curators]
 comment: This term replaces the obsolete term leaf whorl (PO:0008034). If you are looking for annotations for PO:0008034, please use this term instead.
 synonym: "cycle" BROAD [FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe]
 synonym: "estructura colectiva de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -14916,7 +14921,7 @@ creation_date: 2010-11-15T12:05:45Z
 id: PO:0025136
 name: free tepal
 namespace: plant_anatomy
-def: "A tepal that is separate from all other tepals." [POC:curators]
+def: "A tepal (PO:0009033) that is separate from all other tepals." [POC:curators]
 comment: This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0001505 (separated from).
 subset: Musa
 synonym: "t&#233palo libre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -14931,7 +14936,7 @@ creation_date: 2010-11-15T01:06:51Z
 id: PO:0025137
 name: fused tepal
 namespace: plant_anatomy
-def: "A tepal that is fused to another tepal." [POC:curators]
+def: "A tepal (PO:0009033) that is fused to another tepal (PO:0009033)." [POC:curators]
 comment: May be fused to two tepals (one on either side). This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0000642 (fused with).
 subset: Musa
 synonym: "t&#233palo fusionado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -15013,7 +15018,7 @@ creation_date: 2010-11-15T01:36:13Z
 id: PO:0025143
 name: tepal apex
 namespace: plant_anatomy
-def: "A phyllome apex that is part of a tepal." [POC:Ramona_Walls]
+def: "A phyllome apex PO:0025139)  that is part of a tepal (PO:0009033)." [POC:Ramona_Walls]
 comment: It is not precisely defined how far toward the base from the tip a tepal apex extends. For the apical most portion of a tepal, use the term tepal tip.
 subset: Musa
 synonym: "&#225pice del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -15029,7 +15034,7 @@ creation_date: 2010-11-15T01:42:08Z
 id: PO:0025144
 name: petal apex
 namespace: plant_anatomy
-def: "A phyllome apex that is part of a petal." [POC:Ramona_Walls]
+def: "A phyllome apex (PO:0025139) that is part of a petal (PO:0009032)." [POC:Ramona_Walls]
 comment: It is not precisely defined how far toward the base from the tip a petal apex extends. For the apical most portion of a petal, use the term petal tip.
 synonym: "&#225pice del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁頂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -15055,7 +15060,7 @@ creation_date: 2010-11-15T01:43:23Z
 id: PO:0025146
 name: petal base
 namespace: plant_anatomy
-def: "A phyllome base that is part of a petal." [POC:Ramona_Walls]
+def: "A phyllome base (PO:0025140) that is part of a petal (PO:0009032)." [POC:curators]
 synonym: "base del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁基部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025140 ! phyllome base
@@ -15079,7 +15084,7 @@ creation_date: 2010-11-15T01:47:58Z
 id: PO:0025148
 name: tepal base
 namespace: plant_anatomy
-def: "A phyllome base that is part of a tepal." [POC:Ramona_Walls]
+def: "A phyllome base (PO:0025140) that is part of a tepal (PO:0009033)." [POC:Ramona_Walls]
 synonym: "base del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片基部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025140 ! phyllome base
@@ -15591,7 +15596,7 @@ creation_date: 2010-12-09T11:47:55Z
 id: PO:0025184
 name: tepal epidermis
 namespace: plant_anatomy
-def: "A portion of phyllome epidermis that is part of a tepal." [POC:Ramona_Walls]
+def: "A portion of phyllome epidermis that is part of a tepal (PO:0009033)." [POC:Ramona_Walls]
 synonym: "epidermis del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
@@ -15891,7 +15896,7 @@ creation_date: 2010-12-17T10:11:07Z
 id: PO:0025207
 name: tepal vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a tepal." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a tepal (PO:0009033)." [POC:curators]
 synonym: "sistema vascular del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025206 ! phyllome vascular system
@@ -16039,7 +16044,7 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025218
 name: petal stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a petal." [POC:Ramona_Walls]
+def: "A phyllome stomatal complex (PO:0025215) that is part of a petal (PO:0009032)." [POC:Ramona_Walls]
 synonym: "complejo estom&#225tico del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "petal epidermal stomatal complex" EXACT []
 synonym: "petal epidermis stomatal complex" EXACT []
@@ -16081,7 +16086,7 @@ creation_date: 2010-12-20T08:27:52Z
 id: PO:0025221
 name: tepal stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a tepal." [POC:Ramona_Walls]
+def: "A phyllome stomatal complex that is part of a tepal (PO:0009033)." [POC:Ramona_Walls]
 synonym: "complejo estom&#225tico del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tepal epidermal stomatal complex" EXACT []
 synonym: "tepal epidermis stomatal complex" EXACT []
@@ -16400,7 +16405,7 @@ creation_date: 2010-12-30T03:47:08Z
 id: PO:0025246
 name: persistent tepal
 namespace: plant_anatomy
-def: "A phyllome that develops from a tepal and remains attached to a fruit at maturity." [POC:Ramona_Walls]
+def: "A phyllome (PO:0006001) that develops from a tepal (PO:0009033) and remains attached to a fruit (PO:0009001) at maturity." [POC:Ramona_Walls]
 comment: May be alive or dead at maturity.
 subset: Musa
 synonym: "flower relict" BROAD [CO_125:0000045]
@@ -17486,7 +17491,7 @@ creation_date: 2011-07-07T10:52:27Z
 id: PO:0025324
 name: banner petal
 namespace: plant_anatomy
-def: "A petal that is the top-most petal of a papilionaceous corolla." [ISBN:9780023681905]
+def: "A petal (PO:0009032) that is the top-most petal of a papilionaceous corolla (PO:0009059)." [ISBN:9780023681905]
 comment: Usually larger than the adjacent wing petals. Found in the flowers of some Fabaceae.
 synonym: "banner" BROAD [FNA:462b3746-d46d-47e1-9c69-8e94d2223769]
 synonym: "p&#233talo estandarte (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17502,7 +17507,7 @@ creation_date: 2011-09-15T02:05:29Z
 id: PO:0025325
 name: wing petal
 namespace: plant_anatomy
-def: "One of two lateral petals that is adjacent to the banner petal of a papilionaceous corolla ." [ISBN:9780023681905]
+def: "One of two lateral petals (PO:0009032) that is adjacent to the banner petal of a papilionaceous corolla (PO:0009059)." [ISBN:9780023681905]
 comment: The wing petals are usually much smaller than the banner petal and the corolla keel. Found in the flowers of some Fabaceae.
 synonym: "ala" EXACT [FNA:6766d43e-3533-4b2a-8c28-7a2a8c067889]
 synonym: "alae" EXACT Plural [FNA:b38c80fb-e887-4918-9e2d-92172e393916]
@@ -17516,7 +17521,7 @@ creation_date: 2011-09-15T02:05:29Z
 id: PO:0025326
 name: keel petal
 namespace: plant_anatomy
-def: "A petal that is one of the two lowest petals of a papilionaceous corolla." [ISBN:9780023681905]
+def: "A petal (PO:0009032) that is one of the two lowest petals of a papilionaceous corolla (PO:0025324)." [ISBN:9780023681905]
 comment: The keel petals are usually larger than the adjacent wing petals. They are often partially fused to each other. Each petal is shaped like half a boat and projects toward the front of the flower.
 synonym: "carina" EXACT [FNA:6c272247-ef5f-4043-b326-db4e6473d972]
 synonym: "carinae" EXACT Plural [FNA:06194d31-c067-4d1a-a91a-75028069bbf5]
@@ -17531,7 +17536,7 @@ creation_date: 2011-09-15T02:05:30Z
 id: PO:0025327
 name: keel
 namespace: plant_anatomy
-def: "A boat-shaped collective phyllome structure that consists of the two lowest petals of a papilionaceous corolla." [ISBN:9780023681905]
+def: "A boat-shaped collective phyllome structure (PO:0025023) that consists of the two lowest petals (PO:0009032) of a papilionaceous corolla (PO:0009059)." [ISBN:9780023681905]
 comment: The two petals of the keel are often fused at the apex and free at the base. The keel projects toward the front of the flower. Found in the flowers of some Fabaceae.
 synonym: "quilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "竜骨（イネ科）、舟弁（マメ科） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -17558,7 +17563,7 @@ creation_date: 2011-09-28T03:39:46Z
 id: PO:0025329
 name: calyptra calyx
 namespace: plant_anatomy
-def: "A calyx that is composed of fused sepals." [POC:curators]
+def: "A calyx (PO:0009060) that is composed of fused sepals (PO:0009031)." [POC:curators]
 comment: Sometimes found in Eucalyptus and other Myrtaceae, covering an inner operculum or calyptra corolla. The sepals are generally completely fused. Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development. Not the same structure as a spore capsule calyptra or fruit operculum. Sometimes erroneously referred to as part of a fruit.
 synonym: "caliptra c&#225liz (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "calycine operculum" EXACT []
@@ -17574,7 +17579,7 @@ creation_date: 2011-09-15T02:56:37Z
 id: PO:0025330
 name: calyptra corolla
 namespace: plant_anatomy
-def: "A corolla that is composed of fused petals." [POC:curators]
+def: "A corolla (PO:0009059) that is composed of fused petals (PO:0009032)." [POC:curators]
 comment: Often found in Eucalyptus and other Myrtaceae. The petals are generally completely fused. If an outer operculum (calyptra calyx) is present, it covers the inner operculum (calyptra corolla). Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development. Not the same structure as a spore capsule calyptra or fruit operculum. Sometimes erroneously referred to as part of a fruit.
 synonym: "caliptra corola (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "corolla calyptrae" EXACT Plural [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
@@ -20734,6 +20739,16 @@ xref: OBO_SF_PO:3609182
 is_a: PO:0025539 ! xylem sap
 created_by: cooperl
 creation_date: 2013-05-23T16:58:26Z
+
+[Term]
+id: PO:0025569
+name: free petal
+namespace: plant_anatomy
+def: "A petal (PO:0009032) that is part of a collective phyllome structure (PO:0025023) where some of the petals are fused." [POC:cooperl]
+xref: OBO_SF_PO:3614109
+is_a: PO:0009032 ! petal
+created_by: cooperl
+creation_date: 2013-05-29T11:58:32Z
 
 [Term]
 id: PO:0028001
