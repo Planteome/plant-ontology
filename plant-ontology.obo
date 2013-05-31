@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:05:2013 11:54
+date: 30:05:2013 19:23
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -10718,7 +10718,7 @@ is_a: PO:0009035 ! nectary
 id: PO:0009058
 name: perianth
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) composed of two or more petals (PO:0009032) and/or sepals (PO:0009031), or tepals (PO:0009033)." [POC:cooperl, POC:curators]
+def: "A collective phyllome structure (PO:0025023) that includes as parts the corolla (PO:0009059) and/or the calyx (PO:0009060) or one or more tepals (PO:0009033)." [POC:cooperl, POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "calyptra perianth" NARROW []
@@ -10734,7 +10734,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009059
 name: corolla
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) that is composed of two or more petals (PO:0009032), comprising the inner whorl of non-fertile floral organs (PO:0025395) and surrounds the androecium PO:0009061 and/or gynoecium (PO:0009062)." [POC:cooperl, POC:curators]
+def: "A collective phyllome structure (PO:0025023) that is composed of one or more petal(s) (PO:0009032), comprising the inner whorl of non-fertile floral organs (PO:0025395) and surrounds the androecium PO:0009061 and/or gynoecium (PO:0009062)." [POC:cooperl, POC:curators]
 comment: The corolla is part of the perianth (PO:0009058).
 subset: reference
 subset: TraitNet
@@ -10752,7 +10752,7 @@ relationship: part_of PO:0009058 ! perianth
 id: PO:0009060
 name: calyx
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) that is composed of two or more sepals (PO:0009031), and comprises the outer whorl of non-fertile floral organs (PO:0025395)." [POC:curators]
+def: "A collective phyllome structure (PO:0025023) that is composed of one or more sepal(s) (PO:0009031), and comprises the outer whorl of non-fertile floral organs (PO:0025395)." [POC:cooperl, POC:curators]
 comment: The calyx is part of the perianth (PO:0009058).
 subset: reference
 subset: TraitNet
@@ -13297,7 +13297,7 @@ creation_date: 2010-04-02T01:27:23Z
 id: PO:0025021
 name: collective tepal structure
 namespace: plant_anatomy
-def: "A perianth (PO:0009058) consisting of two or more tepals (PO:0009033)." [POC:curators]
+def: "A perianth (PO:0009058) consisting of one or more tepal(s) (PO:0009033)." [POC:cooperl, POC:curators]
 synonym: "estructura colectiva del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合花被片構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2984557
@@ -14923,14 +14923,14 @@ creation_date: 2010-11-15T12:05:45Z
 id: PO:0025136
 name: free tepal
 namespace: plant_anatomy
-def: "A tepal (PO:0009033) that is separate from all other tepals." [POC:curators]
-comment: This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0001505 (separated from).
-subset: Musa
+def: "A tepal (PO:0009033) that is part of a fused collective tepal structure (PO:0025138) but is separate from (PATO:0001505) the other tepals." [PATO:0001505, POC:cooperl, POC:curators]
 synonym: "t&#233palo libre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "遊離花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CO_125:0000020
+xref: OBO_SF_PO:3030644
 is_a: PO:0009033 ! tepal
 disjoint_from: PO:0025137 ! fused tepal
+relationship: part_of PO:0025138 ! fused collective tepal structure
 created_by: rwalls
 creation_date: 2010-11-15T01:06:51Z
 
@@ -14938,11 +14938,12 @@ creation_date: 2010-11-15T01:06:51Z
 id: PO:0025137
 name: fused tepal
 namespace: plant_anatomy
-def: "A tepal (PO:0009033) that is fused to another tepal (PO:0009033)." [POC:curators]
+def: "A tepal (PO:0009033) that is part of a fused collective tepal structure (PO:0025138) and is fused to at least one other tepal." [POC:cooperl, POC:curators]
 comment: May be fused to two tepals (one on either side). This is a phenotype that is a cross-product of PO:0025136 (tepal) and PATO:0000642 (fused with).
 subset: Musa
 synonym: "t&#233palo fusionado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "融合花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF_PO:3030644
 is_a: PO:0009033 ! tepal
 relationship: part_of PO:0025138 ! fused collective tepal structure
 created_by: rwalls
@@ -14952,9 +14953,8 @@ creation_date: 2010-11-15T01:12:18Z
 id: PO:0025138
 name: fused collective tepal structure
 namespace: plant_anatomy
-def: "A collective tepal structure that has as parts at least two fused tepals." [POC:curators]
-comment: This is a phenotype that is a cross-product of PO:0025021 (collective tepal structure) and PATO:0000642 (fused with). In Musa, there are there are 5 fused tepals which form 3 major lobes and 2 minor lobes.
-subset: Musa
+def: "A collective tepal structure (PO:0025021) in which  at least two tepals (PO:0025137) are fused (PATO:0000642)." [PATO:0000642, POC:cooperl, POC:curators]
+comment: The fused collective tepal structure (PO:0025138) includes as parts two or more fused tepals (PO:0025137) and may also include one or more free tepal(s) (PO:0025136), which are unfused.
 synonym: "compound tepal" RELATED [CO_125:0000021]
 synonym: "estrutura colectiva de t&#233palo fusionado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "syntepalous perianth" EXACT []
