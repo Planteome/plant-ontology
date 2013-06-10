@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:06:2013 13:00
+date: 10:06:2013 14:42
 saved-by: moorel
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1324,13 +1324,14 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000272
 name: protoxylem
 namespace: plant_anatomy
-def: "A portion of primary xylem (PO:0005849) tissue that has as parts tracheary elements (PO:0000290) with only annular or helical secondary wall thickening that are the first formed tracheary elements (PO:0000290) at a particular location." [ISBN:047125208]
-comment: Develops while the vascular tissue (PO:0009015) is still elongating. Tracheary elements in protoxylem are smaller than in metaxylem (PO:0000372). Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
+def: "A portion of vascular tissue (PO:0009015) that has as part protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
+comment: Develops while the vascular tissue (PO:0009015) is still elongating. When protoxylem tracheary elements (PO:0025575) are destroyed they may become obliterated by surrounding parenchyma cells (PO:0000074). Protoxylem has smaller elements than the metaxylem (PO:0000372).
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原生木（質）部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476729
-is_a: PO:0005849 ! primary xylem
+is_a: PO:0009015 ! portion of vascular tissue
+relationship: part_of PO:0005849 ! primary xylem
 
 [Term]
 id: PO:0000273
@@ -1593,13 +1594,14 @@ is_a: PO:0000274 ! xylem fiber cell
 id: PO:0000372
 name: metaxylem
 namespace: plant_anatomy
-def: "A portion of primary xylem (PO:0005849) tissue that develops after the vascular tissue (PO:0009015) has stopped elongating and after the protoxylem (PO:0000272)." [ISBN:047125208]
-comment: Develops before the secondary xylem (PO:0005848), if any is formed. Tracheary elements (PO:0000290) in metaxylem are larger than in protoxylem and can have any type of secondary wall thickening. Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
+def: "A portion of vascular tissue (PO:0009015) that has as part metaxylem tracheary elements (PO:0025576) embedded in parenchyma (PO:0005421) tissue, may contain xylem fiber cells (PO:0000274) and develops after elongation has completed." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
+comment: Metaxylem develops after the protoxylem (PO:0000272) and has larger elements than the protoxylem.
 synonym: "metaxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of metaxylem tissue" EXACT []
 synonym: "後生木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476729
-is_a: PO:0005849 ! primary xylem
+is_a: PO:0009015 ! portion of vascular tissue
+relationship: part_of PO:0005849 ! primary xylem
 
 [Term]
 id: PO:0000373
@@ -19213,7 +19215,7 @@ creation_date: 2012-03-05T11:06:18Z
 id: PO:0025446
 name: primary xylem tracheid
 namespace: plant_anatomy
-def: "A tracheid PO:0000301 that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+def: "A tracheid (PO:0000301) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "traqueida del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木質部仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000301 ! tracheid
@@ -20803,8 +20805,9 @@ id: PO:0025575
 name: protoxylem tracheary element
 namespace: plant_anatomy
 def: "A primary xylem tracheary element (PO:0025444) with predominately annular or helical secondary wall thickening that are the first formed tracheary elements (PO:0000290) at a particular location." [ISBN:0471738433, POC:laura_moore]
-comment: In a given portion of primary xylem (PO:0005849), protoxylem tracheary elements are generally smaller in size, fewer in number and have less secondary wall material than metaxylem tracheary elements (PO:0025576).
+comment: In a given portion of primary xylem (PO:0005849), protoxylem tracheary elements are generally smaller in size, fewer in number, un-pitted and have less secondary wall material than metaxylem tracheary elements (PO:0025576).
 is_a: PO:0025444 ! primary xylem tracheary element
+relationship: part_of PO:0000272 ! protoxylem
 created_by: moorel
 creation_date: 2013-06-10T11:36:21Z
 
@@ -20813,8 +20816,9 @@ id: PO:0025576
 name: metaxylem tracheary element
 namespace: plant_anatomy
 def: "A primary xylem tracheary element (PO:0025444) that may have helical, scalariform, reticulate and/or pitted secondary wall thickening." [ISBN:0471738433, POC:laura_moore]
-comment: In a given portion of primary xylem (PO:0005849), metaxylem tracheary elements are generally larger in size, greater in number and have more secondary wall material than protoxylem tracheary elements (PO:0025575).
+comment: In a given portion of primary xylem (PO:0005849), metaxylem tracheary elements are generally larger in size, greater in number, are pitted and have more secondary wall material than protoxylem tracheary elements (PO:0025575).
 is_a: PO:0025444 ! primary xylem tracheary element
+relationship: part_of PO:0000372 ! metaxylem
 created_by: moorel
 creation_date: 2013-06-10T11:48:17Z
 
