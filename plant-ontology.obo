@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 11:06:2013 12:10
-saved-by: moorel
+date: 11:06:2013 16:39
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -1324,7 +1324,7 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000272
 name: protoxylem
 namespace: plant_anatomy
-def: "A portion of primary xylem (PO:0000272) tissue that has as part protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
+def: "A portion of primary xylem (PO:0000272) tissue that has as part one or more protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
 comment: Develops while the vascular tissue (PO:0009015) is still elongating. When protoxylem tracheary elements (PO:0025575) are destroyed they may become obliterated by surrounding parenchyma cells (PO:0000074). Protoxylem has smaller elements than the metaxylem (PO:0000372).
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1593,8 +1593,8 @@ is_a: PO:0000274 ! xylem fiber cell
 id: PO:0000372
 name: metaxylem
 namespace: plant_anatomy
-def: "A portion of primary xylem (PO:0005849) tissue that has as part metaxylem tracheary elements (PO:0025576) embedded in parenchyma (PO:0005421) tissue, may contain xylem fiber cells (PO:0000274) and develops after elongation has completed." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
-comment: Metaxylem develops after the protoxylem (PO:0000272) and has larger elements than the protoxylem.
+def: "A primary xylem (PO:0005849) tissue that has as part one or more metaxylem  tracheary elements (PO:0025576) embedded in parenchyma (PO:0005421) tissue and may contain xylem fiber cells (PO:0000274)." [ISBN:047125208, ISBN:0471738433, POC:curators]
+comment: Metaxylem has larger tracheary elements (PO:0000290) than the protoxylem (PO:0000272), and develops after the formation of the protoxylem, once elongation of the plant axis (PO:0025004) has completed.
 synonym: "metaxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of metaxylem tissue" EXACT []
 synonym: "後生木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4048,7 +4048,7 @@ is_obsolete: true
 id: PO:0005352
 name: xylem
 namespace: plant_anatomy
-def: "A portion of vascular tissue (PO:0009015) that has as parts tracheary elements (PO:0000290)." [ISBN:0471245194]
+def: "A portion of vascular tissue (PO:0009015) that has as part one or more tracheary elements (PO:0000290)." [ISBN:0471245194]
 comment: Functions in the translocation of water and solutes from roots (PO:0009005) to the shoot system (PO:0009006) and in support. Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of xylem tissue" EXACT []
@@ -4420,7 +4420,7 @@ relationship: develops_from PO:0005598 ! vascular cambium
 id: PO:0005849
 name: primary xylem
 namespace: plant_anatomy
-def: "A portion of xylem (PO:0005352) tissue that develops from the procambium (PO:0025275)." [ISBN:0122151704, ISBN:0471245194]
+def: "A xylem (PO:0005352) tissue that develops from the procambium (PO:0025275)." [ISBN:0122151704, ISBN:0471245194]
 comment: Primary xylem develops as part of primary growth (request for primary growth has been made to GO) and is not differentiated into axial (PO:0025410) and ray (PO:0025411) systems. Tracheary elements (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of primary xylem tissue" EXACT []
@@ -10020,7 +10020,7 @@ replaced_by: PO:0005679
 id: PO:0009015
 name: portion of vascular tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that has as parts tracheary elements (PO:0000290) or sieve elements (PO:0025406)." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) that has as part one or more tracheary elements (PO:0000290) or sieve elements (PO:0025406)." [POC:curators]
 comment: Functions in conduction and support. In shoot axes (PO:0025029), vascular tissue is often found as part of a shoot axis stele (PO:0025198) or as scattered vascular bundles (PO:0005020). May include other types of tissues or cells, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
 subset: TraitNet
 synonym: "porci&#243n de tejido vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -19217,8 +19217,6 @@ def: "A tracheid (PO:0000301) that is part of a portion of primary xylem tissue 
 synonym: "traqueida del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木質部仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000301 ! tracheid
-intersection_of: PO:0000301 ! tracheid
-intersection_of: part_of PO:0005849 ! primary xylem
 relationship: part_of PO:0005849 ! primary xylem
 created_by: rwalls
 creation_date: 2012-03-05T11:06:18Z
