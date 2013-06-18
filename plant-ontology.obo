@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 17:06:2013 13:32
-saved-by: brianatkinson
+date: 17:06:2013 17:46
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -1324,7 +1324,7 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000272
 name: protoxylem
 namespace: plant_anatomy
-def: "A portion of primary xylem (PO:0000272) tissue that has as part one or more protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
+def: "A primary xylem (PO:0000272) tissue that has as part one or more protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laura_moore]
 comment: Develops while the vascular tissue (PO:0009015) is still elongating. When protoxylem tracheary elements (PO:0025575) are destroyed they may become obliterated by surrounding parenchyma cells (PO:0000074). Protoxylem has smaller elements than the metaxylem (PO:0000372).
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4420,7 +4420,7 @@ relationship: develops_from PO:0005598 ! vascular cambium
 id: PO:0005849
 name: primary xylem
 namespace: plant_anatomy
-def: "A xylem (PO:0005352) tissue that develops from the procambium (PO:0025275)." [ISBN:0122151704, ISBN:0471245194]
+def: "A portion of  xylem (PO:0005352) tissue that develops from the procambium (PO:0025275)." [ISBN:0122151704, ISBN:0471245194]
 comment: Primary xylem develops as part of primary growth (request for primary growth has been made to GO) and is not differentiated into axial (PO:0025410) and ray (PO:0025411) systems. Tracheary elements (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
 subset: TraitNet
 synonym: "portion of primary xylem tissue" EXACT []
@@ -18825,7 +18825,7 @@ creation_date: 2012-02-02T07:03:00Z
 id: PO:0025417
 name: xylem vessel
 namespace: plant_anatomy
-def: "A portion of xylem (PO:0005352) tissue that has as parts a tube-like series of vessel members (PO:0002003), the common walls of which have perforations." [ISBN:0471245194]
+def: "A portion of  xylem (PO:0005352) tissue that has as parts a tube-like series of vessel members (PO:0002003), the common walls of which have perforations." [ISBN:0471245194]
 synonym: "vaso xilem&$225tico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vessel" EXACT []
 synonym: "木質部導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -19190,12 +19190,10 @@ creation_date: 2012-03-01T12:10:45Z
 id: PO:0025444
 name: primary xylem tracheary element
 namespace: plant_anatomy
-def: "A tracheary element (PO:0000290) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+def: "A tracheary element (PO:0000290) that is part of a primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "elemento de tr&#225quea del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木質部導管要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000290 ! tracheary element
-intersection_of: PO:0000290 ! tracheary element
-intersection_of: part_of PO:0005849 ! primary xylem
 relationship: part_of PO:0005849 ! primary xylem
 created_by: rwalls
 creation_date: 2012-03-05T11:06:18Z
@@ -19218,7 +19216,7 @@ creation_date: 2012-03-05T11:06:18Z
 id: PO:0025446
 name: primary xylem tracheid
 namespace: plant_anatomy
-def: "A tracheid (PO:0000301) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+def: "A tracheid (PO:0000301) that is part of a xylem tissue (PO:0005849)." [POC:curators]
 synonym: "traqueida del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木質部仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000301 ! tracheid
@@ -19244,7 +19242,7 @@ creation_date: 2012-03-05T11:06:18Z
 id: PO:0025448
 name: primary xylem vessel member
 namespace: plant_anatomy
-def: "A xylem vessel member (PO:0002003) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+def: "A xylem vessel member (PO:0002003) that is part of a primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "elemento vaso del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木質部導管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0002003 ! xylem vessel member
@@ -19272,7 +19270,7 @@ creation_date: 2012-03-05T11:06:18Z
 id: PO:0025450
 name: primary xylem vessel
 namespace: plant_anatomy
-def: "A xylem vessel (PO:0025417) that is part of a portion of primary xylem tissue (PO:0005849)." [POC:curators]
+def: "A xylem vessel (PO:0025417) that is part of a primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "vaso del xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木質部導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025417 ! xylem vessel
