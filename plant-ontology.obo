@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 19:06:2013 12:10
-saved-by: brianatkinson
+date: 19:06:2013 13:41
+saved-by: moorel
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -1973,21 +1973,21 @@ id: PO:0001047
 name: lemma development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the lemma defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! 3 flower organ development stage
+is_a: PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0001048
 name: palea development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the palea defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! 3 flower organ development stage
+is_a: PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0001049
 name: lodicule development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the lodicule defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! 3 flower organ development stage
+is_a: PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0001050
@@ -8877,15 +8877,16 @@ is_obsolete: true
 
 [Term]
 id: PO:0007600
-name: 3 flower organ development stage
+name: floral organ development stage
 namespace: plant_structure_development_stage
 def: "A plant organ development stage (PO:0025339) that has as primary participant a floral organ (PO:0025395)." [POC:curators, POC:laura_moore]
 synonym: "3 floral organ development stages" RELATED []
-is_a: PO:0007615 ! flower development stage
+is_a: PO:0025339 ! plant organ development stage
+relationship: part_of PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007601
-name: 1 flower meristem visible stage
+name: flower meristem visible stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) marked by the emergence of the flower meristem (PO:0000229) on the flank of the apical meristem (PO:0020144)." [POC:curators, POC:laura_moore]
 synonym: "1 floral meristem visible" EXACT []
@@ -8894,9 +8895,9 @@ is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007602
-name: 2 flower meristem notched stage
+name: flower meristem notched stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) that begins when the flower meristem (PO:0000229) becomes seperated from the apical meristem (PO:0020144) by a slight indentation." [POC:curators, POC:laura_moore]
+def: "A flower development stage (PO:0007615) that begins when the flower meristem (PO:0000229) becomes separated from the apical meristem (PO:0020144) by a slight indentation." [POC:curators, POC:laura_moore]
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stage
@@ -8905,29 +8906,33 @@ is_a: PO:0007615 ! flower development stage
 id: PO:0007603
 name: calyx development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the calyx defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 flower organ development stage
+def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant a calyx (PO:0009060)." [POC:curators, POC:laura_moore]
+is_a: PO:0025578 ! collective phyllome structure development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0007604
 name: corolla development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the corolla defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 flower organ development stage
+def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant a corolla (PO:0009059)." [POC:curators, POC:laura_moore]
+is_a: PO:0025578 ! collective phyllome structure development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0007605
 name: androecium development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the androecium defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 flower organ development stage
+def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant an androecium (PO:0009061)." [POC:curators, POC:laura_moore]
+is_a: PO:0025578 ! collective phyllome structure development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0007606
 name: gynoecium development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the gynoecium defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
-is_a: PO:0007600 ! 3 flower organ development stage
+def: "A collective phyllome structure development stage (PO:0025578) that has a primary participant a gynoecium (PO:0009062)." [POC:curators, POC:laura_moore]
+is_a: PO:0025578 ! collective phyllome structure development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0007607
@@ -8998,7 +9003,7 @@ intersection_of: has_participant PO:0009046 ! flower
 
 [Term]
 id: PO:0007616
-name: 4 anthesis stage
+name: anthesis stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) when pollen (PO:0025281) is presented and/or the stigma (PO:0009073) is receptive." [APweb:Glossary, POC:laura_moore]
 synonym: "stage 13 flower in Arabidopsis" RELATED []
@@ -9008,7 +9013,7 @@ is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007617
-name: 5 post anthesis stage
+name: post anthesis stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) that occurs after the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
@@ -20835,6 +20840,15 @@ is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0009063 ! epicalyx
 created_by: cooperl
 creation_date: 2013-06-12T13:17:57Z
+
+[Term]
+id: PO:0025578
+name: collective phyllome structure development stage
+namespace: plant_structure_development_stage
+def: "A collective plant organ stucture development stage (PO:0025338) that has as primary participant collective phyllome structure (PO:0025023)." [POC:laura_moore]
+is_a: PO:0025338 ! collective plant organ structure development stage
+created_by: moorel
+creation_date: 2013-06-19T13:27:03Z
 
 [Term]
 id: PO:0028001
