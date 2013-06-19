@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:06:2013 13:41
+date: 19:06:2013 13:57
 saved-by: moorel
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1972,22 +1972,25 @@ is_a: PO:0007603 ! calyx development stage
 id: PO:0001047
 name: lemma development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the lemma defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! floral organ development stage
+def: "A phyllome development stage (PO:0025579) that has as a primary participant a lemma (PO:0009037)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
+is_a: PO:0025579 ! phyllome development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0001048
 name: palea development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the palea defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! floral organ development stage
+def: "A phyllome development stage (PO:0025579) that has as a primary participant a palea (PO:0009038)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
+is_a: PO:0025579 ! phyllome development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0001049
 name: lodicule development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the lodicule defined by characteristic morphological, structural, histological or other visible features." [GR:Anuradha_Pujar, POC:Felipe_Zapata]
-is_a: PO:0007600 ! floral organ development stage
+def: "A phyllome development stage (PO:ID) that has as a primary participant a lodicule (PO:0009036)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
+is_a: PO:0025579 ! phyllome development stage
+relationship: part_of PO:0007600 ! floral organ development stage
 
 [Term]
 id: PO:0001050
@@ -20849,6 +20852,15 @@ def: "A collective plant organ stucture development stage (PO:0025338) that has 
 is_a: PO:0025338 ! collective plant organ structure development stage
 created_by: moorel
 creation_date: 2013-06-19T13:27:03Z
+
+[Term]
+id: PO:0025579
+name: phyllome development stage
+namespace: plant_structure_development_stage
+def: "A plant organ development stage (PO:0025339) that has a primary participant a phyllome (PO:0025023)." [POC:laura_moore]
+is_a: PO:0025339 ! plant organ development stage
+created_by: moorel
+creation_date: 2013-06-19T13:44:31Z
 
 [Term]
 id: PO:0028001
