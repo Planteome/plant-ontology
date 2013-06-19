@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:06:2013 14:54
+date: 19:06:2013 12:10
 saved-by: brianatkinson
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -8879,7 +8879,7 @@ is_obsolete: true
 id: PO:0007600
 name: 3 flower organ development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of floral organs defined by characteristic morphological, structural, histological or other visible features." [POC:curators]
+def: "A plant organ development stage (PO:0025339) that has as primary participant a floral organ (PO:0025395)." [POC:curators, POC:laura_moore]
 synonym: "3 floral organ development stages" RELATED []
 is_a: PO:0007615 ! flower development stage
 
@@ -8887,7 +8887,7 @@ is_a: PO:0007615 ! flower development stage
 id: PO:0007601
 name: 1 flower meristem visible stage
 namespace: plant_structure_development_stage
-def: "Stage of flower development marked by the emergence of the floral meristem on the flank of the inflorescence meristem." [POC:curators]
+def: "A flower development stage (PO:0007615) marked by the emergence of the flower meristem (PO:0000229) on the flank of the apical meristem (PO:0020144)." [POC:curators, POC:laura_moore]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stage
@@ -8896,7 +8896,7 @@ is_a: PO:0007615 ! flower development stage
 id: PO:0007602
 name: 2 flower meristem notched stage
 namespace: plant_structure_development_stage
-def: "Stage of floral development that begins when the floral meristem becomes demarcated from the inflorescence meristem by a slight indentation." [POC:curators]
+def: "A flower development stage (PO:0007615) that begins when the flower meristem (PO:0000229) becomes seperated from the apical meristem (PO:0020144) by a slight indentation." [POC:curators, POC:laura_moore]
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stage
@@ -9000,7 +9000,7 @@ intersection_of: has_participant PO:0009046 ! flower
 id: PO:0007616
 name: 4 anthesis stage
 namespace: plant_structure_development_stage
-def: "The phase of a flower when pollen is presented and/or the stigma is receptive." [APweb:Glossary]
+def: "A flower development stage (PO:0007615) when pollen (PO:0025281) is presented and/or the stigma (PO:0009073) is receptive." [APweb:Glossary, POC:laura_moore]
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
 synonym: "stage 15 flower in Arabidopsis" RELATED []
@@ -9010,7 +9010,7 @@ is_a: PO:0007615 ! flower development stage
 id: PO:0007617
 name: 5 post anthesis stage
 namespace: plant_structure_development_stage
-def: "The phase of a flower after the pollen is presented and/or the stigma is receptive." [POC:curators]
+def: "A flower development stage (PO:0007615) that occurs after the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 is_a: PO:0007615 ! flower development stage
 
