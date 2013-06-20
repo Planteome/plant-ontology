@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 20:06:2013 10:07
-saved-by: brianatkinson
+date: 20:06:2013 13:25
+saved-by: moorel
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -10294,7 +10294,7 @@ relationship: part_of PO:0025021 ! collective tepal structure
 id: PO:0009034
 name: flower bract
 namespace: plant_anatomy
-def: "A bract that subtends a perianth that is part of a flower." [POC:curators]
+def: "A bract (PO:0009055) that subtends a perianth (PO:0009058) that is part of a flower (PO:0009046)." [POC:curators]
 subset: reference
 subset: TraitNet
 synonym: "br&#225ctea floral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10676,7 +10676,7 @@ id: PO:0009054
 name: inflorescence bract
 namespace: plant_anatomy
 alt_id: PO:0006337
-def: "A bract subtending a branch of the inflorescence or borne on the inflorescence axis below any branches or flowers." [APweb:Glossary]
+def: "A bract (PO:0009055) subtending a branch of the inflorescence (PO:0009049) or borne on the inflorescence axis (PO:0020122) below any branch (PO:0025073) or flower (PO:0009046)." [APweb:Glossary]
 comment: Includes the leaf subtending and acting as outer envelope of an ear in Zea mays.
 subset: reference
 subset: TraitNet
@@ -10714,6 +10714,7 @@ synonym: "bractlet" RELATED [FNA:8968da77-e6b0-4302-baf9-1c8cb72a8b06]
 synonym: "hypsophyll" RELATED []
 synonym: "scale" NARROW [FNA:26a8c907-4576-4825-b3d2-4f848291029d]
 synonym: "苞葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:217
 is_a: PO:0006001 ! phyllome
 relationship: develops_from PO:0025487 ! bract primordium
 
@@ -13193,7 +13194,7 @@ creation_date: 2010-03-25T10:04:37Z
 id: PO:0025011
 name: bract margin
 namespace: plant_anatomy
-def: "The margin of a bract." [POC:curators]
+def: "A phyllome margin (PO:0025018) that is part of a bract (PO:0009055)." [POC:curators]
 synonym: "margen de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "苞縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -15193,7 +15194,7 @@ creation_date: 2010-11-15T02:14:05Z
 id: PO:0025154
 name: bract apex
 namespace: plant_anatomy
-def: "A phyllome apex that is part of a bract." [POC:Ramona_Walls]
+def: "A phyllome apex (PO:0025139) that is part of a bract (PO:0009055)." [POC:Ramona_Walls]
 comment: It is not precisely defined how far toward the base from the tip a bract apex extends. For the apical most portion of a bract, use the term bract tip.
 subset: Musa
 synonym: "&#225pice de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -15208,7 +15209,7 @@ creation_date: 2010-11-15T02:21:05Z
 id: PO:0025155
 name: bract base
 namespace: plant_anatomy
-def: "A phyllome base that is part of a bract." [POC:Ramona_Walls]
+def: "A phyllome base (PO:0025140) that is part of a bract (PO:0009055)." [POC:Ramona_Walls]
 subset: Musa
 synonym: "base de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "苞基部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -15234,7 +15235,7 @@ creation_date: 2010-11-15T02:23:56Z
 id: PO:0025157
 name: phyllome epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of a phyllome." [POC:curators]
+def: "A portion of shoot epidermis (PO:0006035) that is part of a phyllome (PO:0006001)." [POC:curators]
 synonym: "epidermis del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006035 ! shoot epidermis
@@ -15248,7 +15249,7 @@ creation_date: 2010-11-15T02:32:53Z
 id: PO:0025158
 name: bract epidermis
 namespace: plant_anatomy
-def: "A portion of phyllome epidermis that is part of a bract." [POC:Ramona_Walls]
+def: "A portion of phyllome epidermis (PO:0025157) that is part of a bract (PO:0009055)." [POC:Ramona_Walls]
 synonym: "epidermis de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "苞表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
@@ -16032,7 +16033,7 @@ creation_date: 2010-12-17T02:52:02Z
 id: PO:0025215
 name: phyllome stomatal complex
 namespace: plant_anatomy
-def: "A stomatal complex that is part of a phyllome." [POC:Ramona_Walls]
+def: "A stomatal complex (PO:0002000) that is part of a phyllome (PO:0006001)." [POC:Ramona_Walls]
 synonym: "complejo estom&#225tico del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllome epidermal stomatal complex" EXACT []
 synonym: "phyllome epidermis stomatal complex" EXACT []
@@ -16046,7 +16047,7 @@ creation_date: 2010-12-20T08:23:11Z
 id: PO:0025216
 name: bract stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a bract." [POC:Ramona_Walls]
+def: "A phyllome stomatal complex (PO:0025215) that is part of a bract (PO:0009055)." [POC:Ramona_Walls]
 synonym: "bract epidermal stomatal complex" EXACT []
 synonym: "bract epidermis stomatal complex" EXACT []
 synonym: "complejo estom&#225tico de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21417,7 +21418,7 @@ creation_date: 2011-04-12T08:35:16Z
 id: PO:0030028
 name: perigonial bract
 namespace: plant_anatomy
-def: "A bract that subtends an antheridium." [ISBN:9780473067304]
+def: "A bract (PO:0009055) that subtends an antheridium (PO:0025125)." [ISBN:9780473067304]
 comment: When an antheridium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perigonial bracts. If an antheridium occurs on a main axis of the gametophore, usually only the terminal phyllomes are perigonial bracts.
 subset: Bryophytes
 synonym: "br&#225ctea del perigonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21451,7 +21452,7 @@ creation_date: 2011-04-12T10:01:12Z
 id: PO:0030030
 name: perichaetal bract
 namespace: plant_anatomy
-def: "A bract that subtends an archegonium." [ISBN:0962073342]
+def: "A bract (PO:0009055) that subtends an archegonium (PO:0025126)." [ISBN:0962073342]
 comment: When an archegonium occurs on a specialized lateral branch of the gametophore, all of the phyllomes on that branch are usually perichaetal bracts. If an archegonium occurs on a main axis of the gametophore, only the terminal phyllomes are usually perichaetal bracts. The two or three terminal-most perichaetal bracts may fuse to form a gametophytic perianth.
 subset: Bryophytes
 synonym: "br&#225ctea pericaetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
