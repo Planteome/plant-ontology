@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 24:06:2013 14:19
-saved-by: brianatkinson
+date: 24:06:2013 14:39
+saved-by: moorel
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -1973,7 +1973,7 @@ id: PO:0001047
 name: lemma development stage
 namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lemma (PO:0009037)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:548
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -1982,7 +1982,7 @@ id: PO:0001048
 name: palea development stage
 namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a palea (PO:0009038)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:548
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -1990,8 +1990,8 @@ relationship: part_of PO:0007600 ! floral organ development stage
 id: PO:0001049
 name: lodicule development stage
 namespace: plant_structure_development_stage
-def: "A phyllome development stage (PO:ID) that has as a primary participant a lodicule (PO:0009036)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
-xref: OBO_SF2_PO:500
+def: "A phyllome development stage (PO:0025579) that has as a primary participant a lodicule (PO:0009036)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
+xref: OBO_SF2_PO:548
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -2000,10 +2000,11 @@ id: PO:0001050
 name: leaf development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007040
-def: "Stages of development of a leaf defined by characteristic morphological, structural, histological or other visible features." [POC:curators, TAIR:Tanya_Berardini]
+def: "A phyllome development stage (PO:0025579) that has as a primary participant a leaf (PO:0025034)." [POC:curators, POC:laura_moore, TAIR:Tanya_Berardini]
 synonym: "leaf development in Arabidopsis" RELATED []
 synonym: "leaf development stage" RELATED []
-is_a: PO:0025339 ! plant organ development stage
+xref: OBO_SF2_PO:548
+is_a: PO:0025579 ! phyllome development stage
 
 [Term]
 id: PO:0001051
@@ -8887,7 +8888,7 @@ name: floral organ development stage
 namespace: plant_structure_development_stage
 def: "A plant organ development stage (PO:0025339) that has as primary participant a floral organ (PO:0025395)." [POC:curators, POC:laura_moore]
 synonym: "3 floral organ development stages" RELATED []
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
 relationship: part_of PO:0007615 ! flower development stage
 
@@ -8916,7 +8917,7 @@ id: PO:0007603
 name: calyx development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant a calyx (PO:0009060)." [POC:curators, POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -8925,7 +8926,7 @@ id: PO:0007604
 name: corolla development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant a corolla (PO:0009059)." [POC:curators, POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -8934,7 +8935,7 @@ id: PO:0007605
 name: androecium development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant an androecium (PO:0009061)." [POC:curators, POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -8943,7 +8944,7 @@ id: PO:0007606
 name: gynoecium development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has a primary participant a gynoecium (PO:0009062)." [POC:curators, POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ development stage
 
@@ -20861,7 +20862,7 @@ id: PO:0025578
 name: collective phyllome structure development stage
 namespace: plant_structure_development_stage
 def: "A collective plant organ stucture development stage (PO:0025338) that has as primary participant collective phyllome structure (PO:0025023)." [POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:547
 is_a: PO:0025338 ! collective plant organ structure development stage
 created_by: moorel
 creation_date: 2013-06-19T13:27:03Z
@@ -20871,7 +20872,7 @@ id: PO:0025579
 name: phyllome development stage
 namespace: plant_structure_development_stage
 def: "A plant organ development stage (PO:0025339) that has a primary participant a phyllome (PO:0025023)." [POC:laura_moore]
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:548
 is_a: PO:0025339 ! plant organ development stage
 created_by: moorel
 creation_date: 2013-06-19T13:44:31Z
