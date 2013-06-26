@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 26:06:2013 14:48
-saved-by: moorel
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 26:06:2013 15:23
+saved-by: brianatkinson
+auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -17595,7 +17595,7 @@ creation_date: 2011-09-28T03:39:46Z
 id: PO:0025329
 name: calyptra calyx
 namespace: plant_anatomy
-def: "A calyx (PO:0009060) that is composed of fused sepals (PO:0009031)." [POC:curators]
+def: "A calyx (PO:0009060) that is composed of fused sepals (PO:0025584)." [POC:curators]
 comment: Sometimes found in Eucalyptus and other Myrtaceae, covering an inner operculum or calyptra corolla. The sepals are generally completely fused. Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development. Not the same structure as a spore capsule calyptra or fruit operculum. Sometimes erroneously referred to as part of a fruit.
 synonym: "caliptra c&#225liz (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "calycine operculum" EXACT []
@@ -20902,7 +20902,7 @@ creation_date: 2013-06-25T15:13:14Z
 id: PO:0025582
 name: fused calyx
 namespace: plant_anatomy
-def: "A calyx that is entirely composed of fused sepals (PO:OOOXXX)." [POC:curators_test]
+def: "A calyx (PO:0009060) that is composed of fused sepals (PO:0025584)." [POC:curators_test]
 is_a: PO:0009060 ! calyx
 created_by: brianatkinson
 creation_date: 2013-06-25T15:40:18Z
@@ -20911,11 +20911,20 @@ creation_date: 2013-06-25T15:40:18Z
 id: PO:0025583
 name: fused petal
 namespace: plant_anatomy
-def: "A petal (PO:0009032) that is apart of the corolla where it is fused to at least one other petal (PO:0009032)." [POC:curators_test]
+def: "A petal (PO:0009032) that is a part of the corolla where it is fused to at least one other petal (PO:0009032)." [POC:curators_test]
 is_a: PO:0009032 ! petal
 relationship: part_of PO:0025581 ! fused corolla
 created_by: brianatkinson
 creation_date: 2013-06-26T13:16:23Z
+
+[Term]
+id: PO:0025584
+name: fused sepal 
+namespace: plant_anatomy
+def: "A sepal (PO:0009031) that is a part of the calyx (PO:0009060) where it is fused to at least one other sepal (PO:0009031)." [POC:curators_test]
+is_a: PO:0009031 ! sepal
+created_by: brianatkinson
+creation_date: 2013-06-26T15:12:58Z
 
 [Term]
 id: PO:0028001
