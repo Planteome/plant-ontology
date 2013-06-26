@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 25:06:2013 15:46
-saved-by: brianatkinson
+date: 26:06:2013 11:59
+saved-by: moorel
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -8889,14 +8889,14 @@ namespace: plant_structure_development_stage
 def: "A plant organ development stage (PO:0025339) that has as primary participant a floral organ (PO:0025395)." [POC:curators, POC:laura_moore]
 synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
+is_a: PO:0007615 ! flower development stage
 is_a: PO:0025339 ! plant organ development stage
-relationship: part_of PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007601
-name: 1-flower meristem visible stage
+name: flower meristem visible stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) marked by the emergence of the flower meristem (PO:0000229) on the flank of the apical meristem (PO:0020144)." [POC:curators, POC:laura_moore]
+def: "A flower development stage (PO:0007615) marked by the emergence of the flower meristem (PO:0000229) from a portion of meristem tissue (PO:0009013)." [POC:curators, POC:laura_moore]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
@@ -8904,7 +8904,7 @@ is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007602
-name: 2-flower meristem notched stage
+name: flower meristem notched stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) that begins when the flower meristem (PO:0000229) becomes separated from the apical meristem (PO:0020144) by a slight indentation." [POC:curators, POC:laura_moore]
 synonym: "2 floral meristem notched" EXACT []
@@ -9007,7 +9007,7 @@ is_a: PO:0007605 ! androecium development stage
 id: PO:0007615
 name: flower development stage
 namespace: plant_structure_development_stage
-def: "A reproductive shoot system development stage (PO:0025530) that has as primary participant a flower (PO:0009046)." [POC:curators]
+def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the flower meristem visible stage (PO:0007601) and ends after the post anthesis stage (PO:0007617)." [POC:curators]
 comment: Defined by characteristic morphological, structural, histological, or other visible features.
 synonym: "flower development in Arabidopsis" RELATED []
 xref: OBO_SF_PO:3573550
@@ -9017,7 +9017,7 @@ intersection_of: has_participant PO:0009046 ! flower
 
 [Term]
 id: PO:0007616
-name: 3-anthesis stage
+name: anthesis stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) when pollen (PO:0025281) is presented and/or the stigma (PO:0009073) is receptive." [APweb:Glossary, POC:laura_moore]
 synonym: "stage 13 flower in Arabidopsis" RELATED []
@@ -9028,7 +9028,7 @@ is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007617
-name: 4-post anthesis stage
+name: post anthesis stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) that occurs after the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
@@ -17619,7 +17619,7 @@ synonym: "corolline operculum" EXACT []
 synonym: "inner operculum" EXACT []
 synonym: "operculum corolla" EXACT []
 synonym: "蘚帽花冠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025581 ! fused corolla 
+is_a: PO:0025581 ! fused corolla
 created_by: rwalls
 creation_date: 2011-09-15T02:56:38Z
 
@@ -20891,7 +20891,7 @@ creation_date: 2013-06-25T14:09:14Z
 
 [Term]
 id: PO:0025581
-name: fused corolla 
+name: fused corolla
 namespace: plant_anatomy
 def: "A corolla (PO:0009059) that is composed of fused petals (PO:000XXX)." [POC:curators_test]
 is_a: PO:0009059 ! corolla
