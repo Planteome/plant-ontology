@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:06:2013 15:23
+date: 26:06:2013 15:39
 saved-by: brianatkinson
 auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20893,7 +20893,7 @@ creation_date: 2013-06-25T14:09:14Z
 id: PO:0025581
 name: fused corolla
 namespace: plant_anatomy
-def: "A corolla (PO:0009059) that is composed of fused petals (PO:000XXX)." [POC:curators_test]
+def: "A corolla (PO:0009059) that is composed of fused petals (PO:0025583)." [POC:curators_test]
 is_a: PO:0009059 ! corolla
 created_by: brianatkinson
 creation_date: 2013-06-25T15:13:14Z
@@ -20911,8 +20911,10 @@ creation_date: 2013-06-25T15:40:18Z
 id: PO:0025583
 name: fused petal
 namespace: plant_anatomy
-def: "A petal (PO:0009032) that is a part of the corolla where it is fused to at least one other petal (PO:0009032)." [POC:curators_test]
+def: "A petal (PO:0009032) that is part of a fused corolla (PO:0025581) or a fused perianth (PO:0025580)." [POC:curators_test]
+comment: In fused perianth (PO:0025580), the fused petal (PO:0025583) may be joined to a fused sepal (PO:new) or another fused petal.
 is_a: PO:0009032 ! petal
+relationship: part_of PO:0025580 ! fused perianth
 relationship: part_of PO:0025581 ! fused corolla
 created_by: brianatkinson
 creation_date: 2013-06-26T13:16:23Z
