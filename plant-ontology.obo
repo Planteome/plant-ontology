@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:06:2013 09:50
+date: 27:06:2013 12:17
 saved-by: moorel
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -8886,31 +8886,31 @@ is_obsolete: true
 id: PO:0007600
 name: floral organ development stage
 namespace: plant_structure_development_stage
-def: "A plant organ development stage (PO:0025339) that has as primary participant a floral organ (PO:0025395)." [POC:curators, POC:laura_moore]
+def: "A flower formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
 synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
-is_a: PO:0007615 ! flower development stage
 is_a: PO:0025339 ! plant organ development stage
+is_a: PO:0025585 ! flower formation stage
 
 [Term]
 id: PO:0007601
-name: flower meristem visible stage
+name: floral organ meristem development stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) marked by the emergence of the flower meristem (PO:0000229) from a portion of meristem tissue (PO:0009013)." [POC:curators, POC:laura_moore]
+def: "A flower formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229)  from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
-is_a: PO:0007615 ! flower development stage
+is_a: PO:0025585 ! flower formation stage
 
 [Term]
 id: PO:0007602
-name: flower meristem notched stage
+name: floral organ primordium development stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) that begins when the flower meristem (PO:0000229) becomes separated from the apical meristem (PO:0020144) by a slight indentation." [POC:curators, POC:laura_moore]
+def: "A flower formation stage (PO:0025585) which begins with the appearance of the floral organ primordium (PO:0025477) and ends with the beginning of the floral organ development stage (PO:0007600)." [POC:curators, POC:laura_moore]
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
-is_a: PO:0007615 ! flower development stage
+is_a: PO:0025585 ! flower formation stage
 
 [Term]
 id: PO:0007603
@@ -9019,21 +9019,21 @@ intersection_of: has_participant PO:0009046 ! flower
 id: PO:0007616
 name: anthesis stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) when pollen (PO:0025281) is presented and/or the stigma (PO:0009073) is receptive." [APweb:Glossary, POC:laura_moore]
+def: "A flowering stage (PO:0025586) when pollen (PO:0025281) is presented and/or the stigma (PO:0009073) is receptive." [APweb:Glossary, POC:laura_moore]
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
 synonym: "stage 15 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
-is_a: PO:0007615 ! flower development stage
+is_a: PO:0025586 ! flowering stage
 
 [Term]
 id: PO:0007617
 name: post anthesis stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) that occurs after the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
+def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
-is_a: PO:0007615 ! flower development stage
+is_a: PO:0025586 ! flowering stage
 
 [Term]
 id: PO:0007618
@@ -20934,6 +20934,24 @@ xref: OBO_SF2_PO:549
 is_a: PO:0009031 ! sepal
 created_by: brianatkinson
 creation_date: 2013-06-26T15:12:58Z
+
+[Term]
+id: PO:0025585
+name: flower formation stage
+namespace: plant_structure_development_stage
+def: "A flower development stage (PO:0007615) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:0025586)." [POC:laura_moore]
+is_a: PO:0007615 ! flower development stage
+created_by: moorel
+creation_date: 2013-06-27T12:02:35Z
+
+[Term]
+id: PO:0025586
+name: flowering stage
+namespace: plant_structure_development_stage
+def: "A flower development stage (PO:0007615) during which a single flower (PO:0009046) participates in the process of flowering (GO:0010228)." [POC:laura_moore]
+is_a: PO:0007615 ! flower development stage
+created_by: moorel
+creation_date: 2013-06-27T12:02:59Z
 
 [Term]
 id: PO:0028001
