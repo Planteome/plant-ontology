@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 26:06:2013 16:50
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 27:06:2013 09:50
+saved-by: moorel
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -14579,9 +14579,9 @@ creation_date: 2011-01-05T08:57:49Z
 
 [Term]
 id: PO:0025112
-name: second order infructescence axis
+name: primary infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a first order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a first order infructescence axis (PO:0025244)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "primary infructescence branch" EXACT []
 synonym: "segundo orden del eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第二果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -14592,9 +14592,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025113
-name: third order infructescence axis
+name: second order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a second order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a primary infructescence branch (PO:0025112)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "secondary infructescence branch" EXACT []
 synonym: "tercer orden del eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第三果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -14605,9 +14605,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025114
-name: forth order infructescence axis
+name: third order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a third order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a second order infructescence branch (PO:0025113)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "cuarto orden del eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第四果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
@@ -14616,9 +14616,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025115
-name: fifth order infructescence axis
+name: fourth order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a forth order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a third order infructescence branch (PO:0025114)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "quinto orden del eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第五果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
@@ -14627,9 +14627,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025116
-name: sixth order infructescence axis
+name: fifth order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a fifth order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a fourth order infructescence branch (PO:0025115)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "sexto orden del eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第六果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
@@ -16374,7 +16374,7 @@ synonym: "第二果序 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3147085
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
-relationship: has_part PO:0025112 ! second order infructescence axis
+relationship: has_part PO:0025112 ! primary infructescence branch
 relationship: part_of PO:0006342 ! infructescence
 created_by: rwalls
 creation_date: 2010-12-30T03:31:29Z
@@ -16396,7 +16396,7 @@ creation_date: 2010-12-30T03:34:07Z
 id: PO:0025243
 name: infructescence branch
 namespace: plant_anatomy
-def: "An infructescence axis that is a branch from a primary or higher order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence axis (PO:0025242) that is a branch (PO:0025073) from a primary or higher order infructescence axis." [POC:Ramona_Walls]
 synonym: "ramificaci&#243n de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果序枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3150504
@@ -16524,9 +16524,9 @@ creation_date: 2010-12-30T04:02:50Z
 
 [Term]
 id: PO:0025252
-name: seventh order infructescence axis
+name: sixth order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a sixth order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a fifth order infructescence branch (PO:0025116)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "eje de la infructescencia de s&#233ptimo orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第七果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
@@ -16535,9 +16535,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025253
-name: eighth order infructescence axis
+name: seventh order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a seventh order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a sixth order infructescence branch (PO:0025252)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "eje de la infructescencia de octavo orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第八果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
@@ -16546,9 +16546,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025254
-name: ninth order infructescence axis
+name: eighth order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from an eight order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from a seventh order infructescence branch (PO:0025253)." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "eje de la infructescencia de noveno orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第九果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
@@ -16557,9 +16557,9 @@ creation_date: 2011-01-05T09:16:29Z
 
 [Term]
 id: PO:0025255
-name: tenth or higher order infructescence axis
+name: ninth or higher order infructescence branch
 namespace: plant_anatomy
-def: "An infructescence branch arising from a ninth or higher order infructescence axis." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) arising from an eighth order infructescence branch (PO:0025254) or higher." [POC:laura_moore, POC:Ramona_Walls]
 synonym: "eje de la infructescencia ded&#233cimo o mayor orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "第十以上の果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025243 ! infructescence branch
