@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 27:06:2013 13:34
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 27:06:2013 13:53
+saved-by: moorel
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -8891,6 +8891,7 @@ synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
 is_a: PO:0025585 ! flower formation stage
+relationship: developmentally_preceded_by PO:0007602 ! floral organ primordium development stage
 
 [Term]
 id: PO:0007601
@@ -8911,6 +8912,7 @@ synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025585 ! flower formation stage
+relationship: developmentally_preceded_by PO:0007601 ! floral organ meristem development stage
 
 [Term]
 id: PO:0007603
@@ -9034,6 +9036,7 @@ def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:00
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025586 ! flowering stage
+relationship: developmentally_preceded_by PO:0007616 ! anthesis stage
 
 [Term]
 id: PO:0007618
