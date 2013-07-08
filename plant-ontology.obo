@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 01:07:2013 13:35
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 08:07:2013 11:30
+saved-by: moorel
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -8889,7 +8889,7 @@ synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
 is_a: PO:0025585 ! flower formation stage
-relationship: developmentally_preceded_by PO:0007602 ! floral organ primordium development stage
+relationship: preceded_by PO:0007602 ! floral organ primordium development stage
 
 [Term]
 id: PO:0007601
@@ -8910,7 +8910,7 @@ synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025585 ! flower formation stage
-relationship: developmentally_preceded_by PO:0007601 ! floral organ meristem development stage
+relationship: preceded_by PO:0007601 ! floral organ meristem development stage
 
 [Term]
 id: PO:0007603
@@ -9034,7 +9034,7 @@ def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:00
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025586 ! flowering stage
-relationship: developmentally_preceded_by PO:0007616 ! anthesis stage
+relationship: preceded_by PO:0007616 ! anthesis stage
 
 [Term]
 id: PO:0007618
@@ -20952,7 +20952,7 @@ name: flowering stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) during which a single flower (PO:0009046) participates in the process of flowering (GO:0010228)." [POC:laura_moore]
 is_a: PO:0007615 ! flower development stage
-relationship: developmentally_preceded_by PO:0025585 ! flower formation stage
+relationship: preceded_by PO:0025585 ! flower formation stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:59Z
 
@@ -22555,4 +22555,10 @@ is_transitive: true
 id: participates_in
 name: participates_in
 holds_over_chain: part_of participates_in
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+created_by: moorel
+creation_date: 2013-07-08T11:23:54Z
 
