@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:07:2013 11:30
+date: 09:07:2013 10:35
 saved-by: moorel
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20,7 +20,10 @@ subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
-default-namespace: plant_ontology
+default-namespace: file:/home/moorel/Poc/Poc/trunk/ontology/OBO_format/plant_ontology.obo
+treat-xrefs-as-is_a: CARO
+ontology: po
+treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:3193
 treat-xrefs-as-is_a: CARO
 ontology: po
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:3193
@@ -8889,7 +8892,7 @@ synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
 is_a: PO:0025585 ! flower formation stage
-relationship: preceded_by PO:0007602 ! floral organ primordium development stage
+relationship: developmentally_preceded_by PO:0007602 ! floral organ primordium development stage
 
 [Term]
 id: PO:0007601
@@ -8910,7 +8913,7 @@ synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025585 ! flower formation stage
-relationship: preceded_by PO:0007601 ! floral organ meristem development stage
+relationship: developmentally_preceded_by PO:0007601 ! floral organ meristem development stage
 
 [Term]
 id: PO:0007603
@@ -9034,7 +9037,7 @@ def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:00
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025586 ! flowering stage
-relationship: preceded_by PO:0007616 ! anthesis stage
+relationship: developmentally_preceded_by PO:0007616 ! anthesis stage
 
 [Term]
 id: PO:0007618
@@ -20397,6 +20400,7 @@ creation_date: 2013-04-05T14:36:22Z
 [Term]
 id: PO:0025535
 name: multicellular trichome tip
+namespace: plant_ontology
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome apex (PO:0025551)." [POC:Laurel_Cooper]
 comment: This term describes the apex region of a tip of a multicellular trichome (PO:0000282). The tip may be various shapes.  A tip of a unicellular trichome is a GO cellular component term; unicellular trichome tip (GO:0090553).
 synonym: "tip of a multicellular trichome" EXACT []
@@ -20586,6 +20590,7 @@ creation_date: 2013-04-19T19:22:17Z
 [Term]
 id: PO:0025551
 name: multicellular trichome apex
+namespace: plant_ontology
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome (PO:0025162)." [POC:cooperl]
 comment: This term describes the apex region of a multicellular trichome (PO:0000282).  The apex of a unicellular trichome is a GO cellular component: unicellular trichome apex (GO:0090552).
 synonym: "apex of a multicellular trichome" EXACT []
@@ -20952,7 +20957,7 @@ name: flowering stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) during which a single flower (PO:0009046) participates in the process of flowering (GO:0010228)." [POC:laura_moore]
 is_a: PO:0007615 ! flower development stage
-relationship: preceded_by PO:0025585 ! flower formation stage
+relationship: developmentally_preceded_by PO:0025585 ! flower formation stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:59Z
 
@@ -22504,6 +22509,7 @@ creation_date: 2011-05-23T09:00:21Z
 [Typedef]
 id: adjacent_to
 name: adjacent_to
+namespace: plant_ontology
 xref: RO:0002220
 
 [Typedef]
@@ -22518,6 +22524,7 @@ creation_date: 2010-07-01T02:45:12Z
 [Typedef]
 id: developmentally_preceded_by
 name: developmentally_preceded_by
+namespace: plant_ontology
 def: "X developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p." [RO:0002258]
 xref: RO:0002258
 created_by: cooperl
@@ -22526,39 +22533,39 @@ creation_date: 2013-06-27T13:16:56Z
 [Typedef]
 id: develops_from
 name: develops_from
+namespace: plant_ontology
 xref: RO:0002202
 is_transitive: true
 
 [Typedef]
 id: has_part
 name: has_part
+namespace: plant_ontology
 xref: BFO:0000051
 is_transitive: true
 
 [Typedef]
 id: has_participant
 name: has_participant
+namespace: plant_ontology
 
 [Typedef]
 id: located_in
 name: located_in
+namespace: plant_ontology
 created_by: rwalls
 creation_date: 2012-05-23T09:52:02Z
 
 [Typedef]
 id: part_of
 name: part_of
+namespace: plant_ontology
 xref: BFO:0000050
 is_transitive: true
 
 [Typedef]
 id: participates_in
 name: participates_in
+namespace: plant_ontology
 holds_over_chain: part_of participates_in
-
-[Typedef]
-id: preceded_by
-name: preceded_by
-created_by: moorel
-creation_date: 2013-07-08T11:23:54Z
 
