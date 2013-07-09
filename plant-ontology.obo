@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:07:2013 10:35
+date: 09:07:2013 11:22
 saved-by: moorel
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1976,7 +1976,7 @@ namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lemma (PO:0009037)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
 xref: OBO_SF2_PO:548
 is_a: PO:0025579 ! phyllome development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0001048
@@ -1985,7 +1985,7 @@ namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a palea (PO:0009038)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
 xref: OBO_SF2_PO:548
 is_a: PO:0025579 ! phyllome development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0001049
@@ -1994,7 +1994,7 @@ namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lodicule (PO:0009036)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:laura_moore]
 xref: OBO_SF2_PO:548
 is_a: PO:0025579 ! phyllome development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0001050
@@ -8885,34 +8885,34 @@ is_obsolete: true
 
 [Term]
 id: PO:0007600
-name: floral organ development stage
+name: floral organ differentiation stage
 namespace: plant_structure_development_stage
-def: "A flower formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
+def: "A floral organ formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
 synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
-is_a: PO:0025585 ! flower formation stage
+is_a: PO:0025585 ! floral organ formation stage
 relationship: developmentally_preceded_by PO:0007602 ! floral organ primordium development stage
 
 [Term]
 id: PO:0007601
 name: floral organ meristem development stage
 namespace: plant_structure_development_stage
-def: "A flower formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229)  from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore]
+def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229)  from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
-is_a: PO:0025585 ! flower formation stage
+is_a: PO:0025585 ! floral organ formation stage
 
 [Term]
 id: PO:0007602
 name: floral organ primordium development stage
 namespace: plant_structure_development_stage
-def: "A flower formation stage (PO:0025585) which begins with the appearance of the floral organ primordium (PO:0025477) and ends with the beginning of the floral organ development stage (PO:0007600)." [POC:curators, POC:laura_moore]
+def: "A floral organ formation stage (PO:0025585) which begins with the appearance of the floral organ primordium (PO:0025477) and ends with the beginning of the floral organ differentiation stage (PO:0007600)." [POC:curators, POC:laura_moore]
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
-is_a: PO:0025585 ! flower formation stage
+is_a: PO:0025585 ! floral organ formation stage
 relationship: developmentally_preceded_by PO:0007601 ! floral organ meristem development stage
 
 [Term]
@@ -8922,7 +8922,7 @@ namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant a calyx (PO:0009060)." [POC:curators, POC:laura_moore]
 xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0007604
@@ -8931,7 +8931,7 @@ namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant a corolla (PO:0009059)." [POC:curators, POC:laura_moore]
 xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0007605
@@ -8940,7 +8940,7 @@ namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant an androecium (PO:0009061)." [POC:curators, POC:laura_moore]
 xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0007606
@@ -8949,7 +8949,7 @@ namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has a primary participant a gynoecium (PO:0009062)." [POC:curators, POC:laura_moore]
 xref: OBO_SF2_PO:547
 is_a: PO:0025578 ! collective phyllome structure development stage
-relationship: part_of PO:0007600 ! floral organ development stage
+relationship: part_of PO:0007600 ! floral organ differentiation stage
 
 [Term]
 id: PO:0007607
@@ -20944,10 +20944,12 @@ creation_date: 2013-06-26T15:12:58Z
 
 [Term]
 id: PO:0025585
-name: flower formation stage
+name: floral organ formation stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:0025586)." [POC:laura_moore]
+xref: OBO_SF2_PO:550
 is_a: PO:0007615 ! flower development stage
+relationship: developmentally_preceded_by PO:0025588 ! flower meristem transition stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:35Z
 
@@ -20957,7 +20959,7 @@ name: flowering stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) during which a single flower (PO:0009046) participates in the process of flowering (GO:0010228)." [POC:laura_moore]
 is_a: PO:0007615 ! flower development stage
-relationship: developmentally_preceded_by PO:0025585 ! flower formation stage
+relationship: developmentally_preceded_by PO:0025585 ! floral organ formation stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:59Z
 
@@ -20971,6 +20973,16 @@ xref: OBO_SF2_PO:549
 is_a: PO:0009031 ! sepal
 created_by: brianatkinson
 creation_date: 2013-07-01T13:18:07Z
+
+[Term]
+id: PO:0025588
+name: flower meristem transition stage
+namespace: plant_structure_development_stage
+def: "A flower development stage (PO:0007615) which begins with the transition from a portion of meristem tissue (PO:0009013) to a flower meristem (PO:0000229) and ends with the onset of the floral organ formation stage (PO:0025585)." [POC:laura_moore]
+xref: OBO_SF2_PO:554
+is_a: PO:0007615 ! flower development stage
+created_by: moorel
+creation_date: 2013-07-09T11:16:11Z
 
 [Term]
 id: PO:0028001
