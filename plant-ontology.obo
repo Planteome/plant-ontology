@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 09:07:2013 11:22
-saved-by: moorel
+date: 09:07:2013 17:20
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -8892,13 +8892,13 @@ synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
 is_a: PO:0025585 ! floral organ formation stage
-relationship: developmentally_preceded_by PO:0007602 ! floral organ primordium development stage
+relationship: preceded_by PO:0007602 ! floral organ primordium development stage
 
 [Term]
 id: PO:0007601
 name: floral organ meristem development stage
 namespace: plant_structure_development_stage
-def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229)  from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore]
+def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229) from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore]
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
@@ -8913,7 +8913,7 @@ synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 is_a: PO:0025585 ! floral organ formation stage
-relationship: developmentally_preceded_by PO:0007601 ! floral organ meristem development stage
+relationship: preceded_by PO:0007601 ! floral organ meristem development stage
 
 [Term]
 id: PO:0007603
@@ -9010,9 +9010,10 @@ is_a: PO:0007605 ! androecium development stage
 id: PO:0007615
 name: flower development stage
 namespace: plant_structure_development_stage
-def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the flower meristem visible stage (PO:0007601) and ends after the post anthesis stage (PO:0007617)." [POC:curators]
+def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the floral organ meristem development stage (PO:0007601) and ends after the post anthesis stage (PO:0007617)." [POC:curators]
 comment: Defined by characteristic morphological, structural, histological, or other visible features.
 synonym: "flower development in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:500
 xref: OBO_SF_PO:3573550
 is_a: PO:0025530 ! reproductive shoot system development stage
 intersection_of: PO:0025338 ! collective plant organ structure development stage
@@ -9026,18 +9027,18 @@ def: "A flowering stage (PO:0025586) when pollen (PO:0025281) is presented and/o
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
 synonym: "stage 15 flower in Arabidopsis" RELATED []
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:551
 is_a: PO:0025586 ! flowering stage
 
 [Term]
 id: PO:0007617
 name: post anthesis stage
 namespace: plant_structure_development_stage
-def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
+def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:0007616)." [POC:curators]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
-xref: OBO_SF2_PO:500
+xref: OBO_SF2_PO:551
 is_a: PO:0025586 ! flowering stage
-relationship: developmentally_preceded_by PO:0007616 ! anthesis stage
+relationship: preceded_by PO:0007616 ! anthesis stage
 
 [Term]
 id: PO:0007618
@@ -20947,9 +20948,10 @@ id: PO:0025585
 name: floral organ formation stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:0025586)." [POC:laura_moore]
+synonym: "flower morphogenesis stage " EXACT []
 xref: OBO_SF2_PO:550
 is_a: PO:0007615 ! flower development stage
-relationship: developmentally_preceded_by PO:0025588 ! flower meristem transition stage
+relationship: preceded_by PO:0025588 ! flower meristem transition stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:35Z
 
@@ -20958,8 +20960,9 @@ id: PO:0025586
 name: flowering stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) during which a single flower (PO:0009046) participates in the process of flowering (GO:0010228)." [POC:laura_moore]
+xref: OBO_SF2_PO:551
 is_a: PO:0007615 ! flower development stage
-relationship: developmentally_preceded_by PO:0025585 ! floral organ formation stage
+relationship: preceded_by PO:0025585 ! floral organ formation stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:59Z
 
@@ -20978,7 +20981,7 @@ creation_date: 2013-07-01T13:18:07Z
 id: PO:0025588
 name: flower meristem transition stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) which begins with the transition from a portion of meristem tissue (PO:0009013) to a flower meristem (PO:0000229) and ends with the onset of the floral organ formation stage (PO:0025585)." [POC:laura_moore]
+def: "A flower development stage (PO:0007615) which begins with the transition of a portion of meristem tissue (PO:0009013) to a flower meristem (PO:0000229) and ends with the onset of the floral organ formation stage (PO:0025585)." [POC:laura_moore]
 xref: OBO_SF2_PO:554
 is_a: PO:0007615 ! flower development stage
 created_by: moorel
@@ -22580,4 +22583,13 @@ id: participates_in
 name: participates_in
 namespace: plant_ontology
 holds_over_chain: part_of participates_in
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+namespace: plant_ontology
+def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [BFO:0000062]
+comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
+created_by: cooperl
+creation_date: 2013-07-09T14:29:15Z
 
