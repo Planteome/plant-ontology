@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 10:07:2013 11:46
-saved-by: moorel
+date: 24:07:2013 14:01
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -9021,14 +9021,14 @@ intersection_of: has_participant PO:0009046 ! flower
 
 [Term]
 id: PO:0007616
-name: anthesis stage
+name: flowering stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the onset of the post anthesis stage (PO:0007617)." [APweb:Glossary, POC:laura_moore]
+def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the onset of the post anthesis stage (PO:0007617)." [APweb:Glossary, POC:laura_moore, POC:Laurel_Cooper]
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
 synonym: "stage 15 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:551
-is_a: PO:0025586 ! flowering stage
+is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0007617
@@ -9037,8 +9037,7 @@ namespace: plant_structure_development_stage
 def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:0007616)." [POC:curators]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:551
-is_a: PO:0025586 ! flowering stage
-relationship: preceded_by PO:0007616 ! anthesis stage
+is_a: PO:0007616 ! flowering stage
 
 [Term]
 id: PO:0007618
@@ -20954,17 +20953,6 @@ is_a: PO:0007615 ! flower development stage
 relationship: preceded_by PO:0025588 ! flower meristem transition stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:35Z
-
-[Term]
-id: PO:0025586
-name: flowering stage
-namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) during which a single flower (PO:0009046) participates in the process of flowering (GO:0010228)." [POC:laura_moore]
-xref: OBO_SF2_PO:551
-is_a: PO:0007615 ! flower development stage
-relationship: preceded_by PO:0025585 ! floral organ formation stage
-created_by: moorel
-creation_date: 2013-06-27T12:02:59Z
 
 [Term]
 id: PO:0025587
