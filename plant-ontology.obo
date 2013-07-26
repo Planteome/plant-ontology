@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:07:2013 13:06
+date: 26:07:2013 14:31
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -8887,7 +8887,8 @@ is_obsolete: true
 id: PO:0007600
 name: floral organ differentiation stage
 namespace: plant_structure_development_stage
-def: "A floral organ formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the anthesis stage (PO:0007616)." [POC:curators, POC:laura_moore]
+def: "A floral organ formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the flowering stage (PO:0007616)." [POC:curators, POC:Laura_Moore, POC:Laurel_Cooper]
+comment: During this stage, the process of floral organ development (GO:0048437) occurs, defined as the process whose specific outcome is the progression of the floral organ over time, from its formation to the mature structure.
 synonym: "3 floral organ development stages" RELATED []
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
@@ -8898,7 +8899,8 @@ relationship: preceded_by PO:0007602 ! floral organ primordium development stage
 id: PO:0007601
 name: floral organ meristem development stage
 namespace: plant_structure_development_stage
-def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229) from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore]
+def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229) from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:laura_moore, POC:Laurel_Cooper]
+comment: During this stage, the process of floral meristem growth (GO:0010451) occurs. This process is defined as the increase in size or mass of a floral meristem, a population of undifferentiated cells in a plant that gives rise to a flower.
 synonym: "1 floral meristem visible" EXACT []
 synonym: "stage 1 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
@@ -8909,6 +8911,7 @@ id: PO:0007602
 name: floral organ primordium development stage
 namespace: plant_structure_development_stage
 def: "A floral organ formation stage (PO:0025585) which begins with the appearance of the floral organ primordium (PO:0025477) and ends with the beginning of the floral organ differentiation stage (PO:0007600)." [POC:curators, POC:laura_moore]
+comment: During this stage, the process of floral meristem determinacy (GO:0010582) occurs, where a floral meristem becomes determinate (i.e. ceases to produce lateral organs and may or may not terminally differentiate). This stage may be indicated by a slight indentation to the inflorescence meristem.
 synonym: "2 floral meristem notched" EXACT []
 synonym: "stage 2 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
@@ -9010,8 +9013,8 @@ is_a: PO:0007605 ! androecium development stage
 id: PO:0007615
 name: flower development stage
 namespace: plant_structure_development_stage
-def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the floral organ meristem development stage (PO:0007601) and ends after the post anthesis stage (PO:0007617)." [POC:curators]
-comment: Defined by characteristic morphological, structural, histological, or other visible features.
+def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the flower meristem transition stage (PO:0025588) and ends after the flowering stage (PO:0007616)." [POC:curators]
+comment: This term and its sub-classes apply to an individual flower (PO:000904). For the development stage of a whole plant (PO:0000003), use whole plant flowering stage (PO:0007016). During this stage, a flower undergoes the process of flower develeopment (GO:0009908), defined as the process whose specific outcome is the progression of the flower over time, from its formation to the mature structure.
 synonym: "flower development in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:500
 xref: OBO_SF_PO:3573550
@@ -9023,21 +9026,18 @@ intersection_of: has_participant PO:0009046 ! flower
 id: PO:0007616
 name: flowering stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the onset of the post anthesis stage (PO:0007617)." [APweb:Glossary, POC:laura_moore, POC:Laurel_Cooper]
+alt_id: PO:0007617
+def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856), or death of the flower (PO:000904)." [APweb:Glossary, POC:Laura_Moore, POC:Laurel_Cooper]
+comment: In most species, flowering stage (anthesis) is when the flower is open and ends with pollination.  During this stage, the process of anther dehiscence (PO:0007616) usually occurs, defined as the dehiscence of an anther to release the pollen grains contained within it. This term applies to an individual flower (PO:000904).
+synonym: "anthesis stage" NARROW []
+synonym: "post anthesis stage" NARROW []
 synonym: "stage 13 flower in Arabidopsis" RELATED []
 synonym: "stage 14 flower in Arabidopsis" RELATED []
 synonym: "stage 15 flower in Arabidopsis" RELATED []
-xref: OBO_SF2_PO:551
-is_a: PO:0007615 ! flower development stage
-
-[Term]
-id: PO:0007617
-name: post anthesis stage
-namespace: plant_structure_development_stage
-def: "A flowering stage (PO:0025586) that occurs after the anthesis stage (PO:0007616)." [POC:curators]
 synonym: "stage 16 flower in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:551
-is_a: PO:0007616 ! flowering stage
+is_a: PO:0007615 ! flower development stage
+relationship: preceded_by PO:0025585 ! floral organ formation stage
 
 [Term]
 id: PO:0007618
@@ -20908,7 +20908,7 @@ creation_date: 2013-06-19T13:27:03Z
 id: PO:0025579
 name: phyllome development stage
 namespace: plant_structure_development_stage
-def: "A plant organ development stage (PO:0025339) that has a primary participant a phyllome (PO:0025023)." [POC:laura_moore]
+def: "A plant organ development stage (PO:0025339) that has a primary participant a phyllome (PO:0025023)." [POC:Laura_Moore, POC:Laurel_Cooper]
 synonym: "estado de desarrollo del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: OBO_SF2_PO:548
 is_a: PO:0025339 ! plant organ development stage
@@ -20987,6 +20987,7 @@ id: PO:0025585
 name: floral organ formation stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:0025586)." [POC:laura_moore]
+comment: During this stage, the processes of flower formation (GO:0048460; defined as the process that gives rise to the flower. This process pertains to the initial formation of a structure from unspecified parts) and flower morphogenesis (GO:0048439; defined as the process in which the anatomical structures of the flower are generated and organized) occur.
 synonym: "flower morphogenesis stage " EXACT []
 xref: OBO_SF2_PO:550
 is_a: PO:0007615 ! flower development stage
@@ -21012,6 +21013,7 @@ id: PO:0025588
 name: flower meristem transition stage
 namespace: plant_structure_development_stage
 def: "A flower development stage (PO:0007615) which begins with the transition of a portion of meristem tissue (PO:0009013) to a flower meristem (PO:0000229) and ends with the onset of the floral organ formation stage (PO:0025585)." [POC:laura_moore]
+comment: During this stage, a process occurs involving a vegetative to reproductive phase transition of meristem (GO:0010228), defined as the process involved in transforming a meristem that produces vegetative structures, such as leaves, into a meristem that produces reproductive structures, such as a flower or an inflorescence.
 xref: OBO_SF2_PO:554
 is_a: PO:0007615 ! flower development stage
 created_by: moorel
