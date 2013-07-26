@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:07:2013 12:15
+date: 26:07:2013 13:06
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20008,7 +20008,7 @@ id: PO:0025502
 name: fruit ripening stage
 namespace: plant_structure_development_stage
 def: "A fruit development stage (PO:0001002) during which a single fruit (PO:0009001) participates in the process of fruit ripening (GO:0009835)." [POC:curators]
-comment: Succeeds a fruit formation stage (PO:0025501). This stage is to be used for an individual fruit.  For the development stage of a whole plant (PO:0000003), use whole plant fruit ripening stage (PO:0007010).
+comment: Succeeds a fruit formation stage (PO:0025501). This stage is to be used for an individual fruit.  Fruit ripening (GO:0009835) is defined as: an aging process that has as participant a fruit. Ripening causes changes in one or more characteristics of a fruit (color, aroma, flavor, texture, hardness, cell wall structure) and may make it more attractive to animals and aid in seed dispersal. For the development stage of a whole plant (PO:0000003), use whole plant fruit ripening stage (PO:0007010).
 xref: OBO_SF_PO:3577380
 is_a: PO:0001002 ! fruit development stage
 created_by: rwalls
@@ -20851,51 +20851,6 @@ xref: OBO_SF_PO:3614109
 is_a: PO:0009032 ! petal
 created_by: cooperl
 creation_date: 2013-05-29T11:58:32Z
-
-[Term]
-id: PO:0025570
-name: fruit ripening initiation stage
-namespace: plant_structure_development_stage
-def: "A fruit ripening stage (PO:0025502) that begins at the end of the fruit formation stage (PO:0025501) that is triggered by cellular and molecular changes in the color, texture and aromatic characteristics of a fruit (PO:0009001)." [POC:moorel]
-is_a: PO:0025502 ! fruit ripening stage
-created_by: moorel
-creation_date: 2013-06-05T14:58:00Z
-
-[Term]
-id: PO:0025571
-name: fruit breaker stage
-namespace: plant_structure_development_stage
-def: "A fruit ripening stage (PO:0025502) that begins after the fruit ripening initiation stage (PO:0025570) with the initial conversion of chloroplasts (GO:0009507) to carotenoid and anthocyanin accumulating chromoplasts (GO:0009509) and begins tissue softening, sugar/nutrient uptake and lasts until fruit (PO:0009001) reaches a uniform color." [POC:moorel]
-is_a: PO:0025502 ! fruit ripening stage
-created_by: moorel
-creation_date: 2013-06-05T15:00:02Z
-
-[Term]
-id: PO:0025572
-name: fruit red hard stage
-namespace: plant_structure_development_stage
-def: "A fruit ripening stage (PO:0025502) that begins after the fruit breaker stage (PO:0025571) with uniform fruit (PO:0009001) color and lasts until the optimal texture has been reached due to cell wall (GO:0005618) pectin degradation and sugar/nutrient uptake." [POC:moorel]
-is_a: PO:0025502 ! fruit ripening stage
-created_by: moorel
-creation_date: 2013-06-05T15:02:35Z
-
-[Term]
-id: PO:0025573
-name: fruit maturation stage
-namespace: plant_structure_development_stage
-def: "A fruit ripening stage (PO:0025502) which begins after the fruit red hard stage (PO:0025572) determined by fruit (PO:0009001) with desirable texture, color, taste and aroma." [POC:moorel]
-is_a: PO:0025502 ! fruit ripening stage
-created_by: moorel
-creation_date: 2013-06-05T15:04:21Z
-
-[Term]
-id: PO:0025574
-name: fruit over ripe stage
-namespace: plant_structure_development_stage
-def: "A fruit ripening stage (PO:0025502) that occurs after the fruit maturation stage (PO:0025573) and is determined by excessive softening leading to spoilage and tissue death (GO:0016271)." [POC:moorel]
-is_a: PO:0025502 ! fruit ripening stage
-created_by: moorel
-creation_date: 2013-06-05T15:05:55Z
 
 [Term]
 id: PO:0025575
