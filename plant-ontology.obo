@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:07:2013 11:29
+date: 30:07:2013 09:57
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1671,8 +1671,10 @@ name: fruit development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage (PO:0009012) that has as primary participant a single fruit (PO:0009001)." [POC:curators]
 comment: Defined by characteristic morphological, structural, histological or other visible features of a fruit. Includes as subclasses fruit formation stage (PO:0025501) and fruit ripening stage (PO:0025502). May have as part a seed development stage (PO:0001170). This stage applies to an individual fruit. For development stages of a whole plant (PO:0000003) based on fruit development, use whole plant fruit development stage (PO:0025500) or its subclasses.
-synonym: "stage 17 flower in Arabidopsis" RELATED []
-synonym: "stage 18 flower in Arabidopsis" RELATED []
+synonym: "stage 17 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 18 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 19 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 20 flower in Arabidopsis" RELATED [PMID:2152125]
 xref: OBO_SF_PO:3573602
 is_a: PO:0009012 ! plant structure development stage
 
@@ -8887,9 +8889,10 @@ is_obsolete: true
 id: PO:0007600
 name: floral organ differentiation stage
 namespace: plant_structure_development_stage
-def: "A floral organ formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the flowering stage (PO:0007616)." [POC:curators, POC:Laurel_Cooper]
+def: "A floral organ formation stage (PO:0025585) which begins with the differentiation of floral organs (PO:0025395) from the floral organ primordium (PO:0025477) and ends with the beginning of the flowering stage (PO:0007616)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
 comment: During this stage, the process of floral organ development (GO:0048437) occurs, defined as the process whose specific outcome is the progression of the floral organ over time, from its formation to the mature structure.
 synonym: "3 floral organ development stages" RELATED []
+synonym: "stage 6-12 flower in Arabidopsis " RELATED [PMID:2152125]
 xref: OBO_SF2_PO:546
 is_a: PO:0025339 ! plant organ development stage
 is_a: PO:0025585 ! floral organ formation stage
@@ -8899,10 +8902,10 @@ relationship: preceded_by PO:0007602 ! floral organ primordium development stage
 id: PO:0007601
 name: floral organ meristem development stage
 namespace: plant_structure_development_stage
-def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229) from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [POC:curators, POC:Laurel_Cooper]
+def: "A floral organ formation stage (PO:0025585) which begins with the development of the floral organ meristem (PO:0000229) from a portion of meristem tissue (PO:0009013) and ends with the beginning of the floral organ primordium development stage (PO:0007602)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
 comment: During this stage, the process of floral meristem growth (GO:0010451) occurs. This process is defined as the increase in size or mass of a floral meristem, a population of undifferentiated cells in a plant that gives rise to a flower.
 synonym: "1 floral meristem visible" EXACT []
-synonym: "stage 1 flower in Arabidopsis" RELATED []
+synonym: "stage 1 flower in Arabidopsis" RELATED [PMID:2152125]
 xref: OBO_SF2_PO:500
 is_a: PO:0025585 ! floral organ formation stage
 
@@ -8910,10 +8913,13 @@ is_a: PO:0025585 ! floral organ formation stage
 id: PO:0007602
 name: floral organ primordium development stage
 namespace: plant_structure_development_stage
-def: "A floral organ formation stage (PO:0025585) which begins with the appearance of the floral organ primordium (PO:0025477) and ends with the beginning of the floral organ differentiation stage (PO:0007600)." [POC:curators, POC:Laurel_Cooper]
+def: "A floral organ formation stage (PO:0025585) which begins with the appearance of the floral organ primordium (PO:0025477) and ends with the beginning of the floral organ differentiation stage (PO:0007600)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
 comment: During this stage, the process of floral meristem determinacy (GO:0010582) occurs, where a floral meristem becomes determinate (i.e. ceases to produce lateral organs and may or may not terminally differentiate). This stage may be indicated by a slight indentation to the inflorescence meristem.
 synonym: "2 floral meristem notched" EXACT []
-synonym: "stage 2 flower in Arabidopsis" RELATED []
+synonym: "stage 2 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 3 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 4 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 5 flower in Arabidopsis" RELATED [PMID:2152125]
 xref: OBO_SF2_PO:500
 is_a: PO:0025585 ! floral organ formation stage
 relationship: preceded_by PO:0007601 ! floral organ meristem development stage
@@ -9015,7 +9021,7 @@ name: flower development stage
 namespace: plant_structure_development_stage
 def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the flower meristem transition stage (PO:0025588) and ends after the flowering stage (PO:0007616)." [POC:curators]
 comment: This term and its sub-classes apply to an individual flower (PO:000904). For the development stage of a whole plant (PO:0000003), use whole plant flowering stage (PO:0007016). During this stage, a flower undergoes the process of flower development (GO:0009908), defined as the process whose specific outcome is the progression of the flower over time, from its formation to the mature structure.
-synonym: "flower development in Arabidopsis" RELATED []
+synonym: "flower development in Arabidopsis" RELATED [PMID:2152125]
 xref: OBO_SF2_PO:500
 xref: OBO_SF_PO:3573550
 is_a: PO:0025530 ! reproductive shoot system development stage
@@ -9027,14 +9033,15 @@ id: PO:0007616
 name: flowering stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007617
-def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856), or death of the flower (PO:000904)." [POC:curators, POC:Laurel_Cooper]
+def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856), or death of the flower (PO:000904)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
 comment: In most species, flowering stage (anthesis) is when the flower is open and ends with pollination.  During this stage, the process of anther dehiscence (GO:0009901) usually occurs, defined as the dehiscence of an anther to release the pollen grains contained within it. This term applies to an individual flower (PO:000904).
 synonym: "anthesis stage" NARROW []
 synonym: "post anthesis stage" NARROW []
-synonym: "stage 13 flower in Arabidopsis" RELATED []
-synonym: "stage 14 flower in Arabidopsis" RELATED []
-synonym: "stage 15 flower in Arabidopsis" RELATED []
-synonym: "stage 16 flower in Arabidopsis" RELATED []
+synonym: "stage 13 flower in Arabidopsis " RELATED [PMID:2152125]
+synonym: "stage 14 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 15 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 16 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 17 flower in Arabidopsis" RELATED [PMID:2152125]
 xref: OBO_SF2_PO:551
 is_a: PO:0007615 ! flower development stage
 relationship: preceded_by PO:0025585 ! floral organ formation stage
