@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 31:07:2013 10:26
-saved-by: Laurel_Cooper
+date: 13:08:2013 09:37
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -9032,7 +9032,7 @@ id: PO:0007616
 name: flowering stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007617
-def: "A flower development stage (PO:0007615) that begins when pollen is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856), or death of the flower (PO:000904)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
+def: "A flower development stage (PO:0007615) that begins when pollen (PO:0025281) is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856) and/or floral organ senescence (GO:0080187)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
 comment: In most species, flowering stage (anthesis) is when the flower is open and ends with pollination.  During this stage, the process of anther dehiscence (GO:0009901) usually occurs, defined as the dehiscence of an anther to release the pollen grains contained within it. This term applies to an individual flower (PO:000904).
 synonym: "anthesis stage" NARROW []
 synonym: "post anthesis stage" NARROW []
@@ -9911,7 +9911,7 @@ relationship: part_of PO:0025025 ! root system
 id: PO:0009006
 name: shoot system
 namespace: plant_anatomy
-def: "A collective plant organ structure (PO:0025007) that produces shoot-borne portions of meristem tissue (PO:0009013) and the plant structures (PO:0009011) that arise from them." [POC:Laurel_Cooper, POC:curators]
+def: "A collective plant organ structure (PO:0025007) that produces shoot-borne portions of meristem tissue (PO:0009013) and the plant structures (PO:0009011) that arise from them." [POC:curators, POC:Laurel_Cooper]
 comment: The shoot system is generally used to refer to the above-ground plant parts, although some plants have parts of their shoot system underground. For example, a rhizome (PO:0004542), bulb (PO:0025356), a corm (PO:0025355) or a subterranean tuber (PO:0004547), as in Solanum tuberosum (potato) or yam, are all part of the shoot system.
 subset: reference
 subset: TraitNet
@@ -10755,7 +10755,7 @@ is_a: PO:0009035 ! nectary
 id: PO:0009058
 name: perianth
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) that includes as parts the corolla (PO:0009059) and/or the calyx (PO:0009060); or one or more tepals (PO:0009033)." [POC:Laurel_Cooper, POC:curators]
+def: "A collective phyllome structure (PO:0025023) that includes as parts the corolla (PO:0009059) and/or the calyx (PO:0009060); or one or more tepals (PO:0009033)." [POC:curators, POC:Laurel_Cooper]
 comment: The perianth can consist of only the corolla (PO:0009059), only the calyx (PO:0009060) or it may have both structures in a complete flower.  If the petals (PO:0009032) and sepals (PO:0009031) are indistinguishable from one another, the perianth consists of just a collective tepal structure  (PO:0025021), composed of one or more tepals (PO:0009033), for example in tulip or lily flowers.
 subset: reference
 subset: TraitNet
@@ -10774,7 +10774,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009059
 name: corolla
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) that is composed of one or more petals (PO:0009032), comprising the inner whorl of non-reproductive floral organs (PO:0025395) and surrounds the androecium (PO:0009061) and the gynoecium (PO:0009062)." [POC:Laurel_Cooper, POC:curators]
+def: "A collective phyllome structure (PO:0025023) that is composed of one or more petals (PO:0009032), comprising the inner whorl of non-reproductive floral organs (PO:0025395) and surrounds the androecium (PO:0009061) and the gynoecium (PO:0009062)." [POC:curators, POC:Laurel_Cooper]
 comment: The corolla (PO:0009059) is part of the perianth (PO:0009058). This  definition is based on the complete flower, which has all four whorls. In many species, and in mutants one or more of the whorls may be missing. The corolla (PO:0009059) often functions to attract pollinators.
 subset: reference
 subset: TraitNet
@@ -10792,7 +10792,7 @@ relationship: part_of PO:0009058 ! perianth
 id: PO:0009060
 name: calyx
 namespace: plant_anatomy
-def: "A collective phyllome structure (PO:0025023) that is composed of one or more sepals (PO:0009031), and comprises the outer whorl of non-reproductive floral organs (PO:0025395)." [POC:Laurel_Cooper, POC:curators]
+def: "A collective phyllome structure (PO:0025023) that is composed of one or more sepals (PO:0009031), and comprises the outer whorl of non-reproductive floral organs (PO:0025395)." [POC:curators, POC:Laurel_Cooper]
 comment: The calyx is part of the perianth (PO:0009058). This definition is based on the perfect flower, which has all four whorls. In many species, and in mutants one or more of the whorls are missing.
 subset: reference
 subset: TraitNet
@@ -13336,7 +13336,7 @@ creation_date: 2010-04-02T01:27:23Z
 id: PO:0025021
 name: collective tepal structure
 namespace: plant_anatomy
-def: "A perianth (PO:0009058) consisting of one or more tepals (PO:0009033)." [POC:Laurel_Cooper, POC:curators]
+def: "A perianth (PO:0009058) consisting of one or more tepals (PO:0009033)." [POC:curators, POC:Laurel_Cooper]
 comment: This structure is a perianth (PO:0009058) where there is no differentiation between calyx (PO:0009060) and corolla (PO:0009059).
 synonym: "estructura colectiva del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合花被片構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -14962,7 +14962,7 @@ creation_date: 2010-11-15T12:05:45Z
 id: PO:0025136
 name: free tepal
 namespace: plant_anatomy
-def: "A tepal (PO:0009033) that is part of a collective tepal structure (PO:0025021), along with a fused collective tepal structure (PO:0025138), but is separate from (PATO:0001505) the other tepals." [PATO:0001505, POC:Laurel_Cooper, POC:curators]
+def: "A tepal (PO:0009033) that is part of a collective tepal structure (PO:0025021), along with a fused collective tepal structure (PO:0025138), but is separate from (PATO:0001505) the other tepals." [PATO:0001505, POC:curators, POC:Laurel_Cooper]
 comment: A free tepal (PO:0025136) only occurs in a perianth (PO:0009058) that contains a fused collective tepal structure (PO:0025138). If you are describing a tepal (PO:0025137) that is part of a perianth (PO:0009058) where none of the tepals (PO:0009033) are fused, you should use tepal.
 synonym: "t&#233palo libre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "遊離花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -14977,7 +14977,7 @@ creation_date: 2010-11-15T01:06:51Z
 id: PO:0025137
 name: fused tepal
 namespace: plant_anatomy
-def: "A tepal (PO:0009033) that is part of a fused collective tepal structure (PO:0025138) in which it is fused to at least one other tepal." [POC:Laurel_Cooper, POC:curators]
+def: "A tepal (PO:0009033) that is part of a fused collective tepal structure (PO:0025138) in which it is fused to at least one other tepal." [POC:curators, POC:Laurel_Cooper]
 subset: Musa
 synonym: "t&#233palo fusionado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "融合花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -14991,7 +14991,7 @@ creation_date: 2010-11-15T01:12:18Z
 id: PO:0025138
 name: fused collective tepal structure
 namespace: plant_anatomy
-def: "A collective tepal structure (PO:0025021) in which  there are at least two fused tepals (PO:0025137)." [PATO:0000642, POC:Laurel_Cooper, POC:curators]
+def: "A collective tepal structure (PO:0025021) in which  there are at least two fused tepals (PO:0025137)." [PATO:0000642, POC:curators, POC:Laurel_Cooper]
 synonym: " connate tepal structure" EXACT []
 synonym: "compound tepal" RELATED [CO_125:0000021]
 synonym: "estrutura colectiva de t&#233palo fusionado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
