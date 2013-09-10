@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 09:09:2013 09:28
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 10:09:2013 15:12
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1669,14 +1669,14 @@ is_obsolete: true
 id: PO:0001002
 name: fruit development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage (PO:0009012) that has as primary participant a single fruit (PO:0009001)." [POC:curators]
+def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a single fruit (PO:0009001)." [POC:cooperl, POC:curators]
 comment: Defined by characteristic morphological, structural, histological or other visible features of a fruit. Includes as subclasses fruit formation stage (PO:0025501) and fruit ripening stage (PO:0025502). May have as part a seed development stage (PO:0001170). This stage applies to an individual fruit. For development stages of a whole plant (PO:0000003) based on fruit development, use whole plant fruit development stage (PO:0025500) or its subclasses.
 synonym: "stage 17 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 18 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 19 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 20 flower in Arabidopsis" RELATED [PMID:2152125]
 xref: OBO_SF2_PO:501
-is_a: PO:0009012 ! plant structure development stage
+is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
 id: PO:0001003
@@ -2204,10 +2204,10 @@ is_a: PO:0001042 ! functional specialization of the endosperm stage
 id: PO:0001170
 name: seed development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a seed." [POC:Ramona_Walls, TAIR:Katica_Ilic]
+def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a seed (PO:0009010)." [POC:cooperl, POC:Ramona_Walls, TAIR:Katica_Ilic]
 comment: Includes the stages of seed development, from fertilization to the dry or quiescent state. May have as part an embryo development stage.
 synonym: "seed development in Arabidopsis" RELATED []
-is_a: PO:0009012 ! plant structure development stage
+is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
 id: PO:0001180
@@ -17749,13 +17749,13 @@ creation_date: 2011-10-19T11:12:49Z
 id: PO:0025339
 name: plant organ development stage
 namespace: plant_structure_development_stage
-def: "A plant structure development stage that has as primary participant a plant organ." [POC:curators]
+def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a plant organ (PO:0009008) ." [POC:cooperl, POC:curators]
 comment: Includes development stages for leaves and roots.
 synonym: "etapa de desarrollo de un &#243rgano (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "organ development stage" BROAD []
 synonym: "植物器官発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3426504
-is_a: PO:0009012 ! plant structure development stage
+is_a: PO:0025571 ! multi-tissue plant structure development stage
 relationship: part_of PO:0025527 ! shoot system development stage
 created_by: rwalls
 creation_date: 2011-10-19T11:12:49Z
@@ -20865,6 +20865,16 @@ xref: OBO_SF2_PO:555
 is_a: PO:0001050 ! leaf development stage
 created_by: brianatkinson
 creation_date: 2013-09-06T09:57:58Z
+
+[Term]
+id: PO:0025571
+name: multi-tissue plant structure development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage (PO:0009012) that has as primary participant a multi-tissue plant structure  (PO:0025496)." [POC:Laurel_Cooper]
+xref: PO_SF2_SF:492
+is_a: PO:0009012 ! plant structure development stage
+created_by: cooperl
+creation_date: 2013-09-10T15:02:45Z
 
 [Term]
 id: PO:0025575
