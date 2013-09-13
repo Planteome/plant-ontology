@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:09:2013 15:12
+date: 13:09:2013 11:37
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1812,11 +1812,11 @@ is_a: PO:0001004 ! anther development stage
 
 [Term]
 id: PO:0001019
-name: formation of vascular leaf primordium stage
+name: vascular leaf primordium formation stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) when the shoot apical meristem (PO:0020148) forms a vascular leaf primordium (PO:0000017) on the peripheral zone (PO:0000225)." [TAIR:Katica_Ilic]
 synonym: "P1 stage" RELATED []
-is_a: PO:0001052 ! vascular leaf expansion stage
+is_a: PO:0001051 ! vascular leaf initiation stage
 
 [Term]
 id: PO:0001020
@@ -2004,7 +2004,7 @@ id: PO:0001050
 name: leaf development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007040
-def: "A phyllome development stage (PO:0025579) that has as a primary participant a leaf (PO:0025034)." [POC:curators, POC:Laura_Moore, TAIR:Tanya_Berardini]
+def: "A phyllome development stage (PO:0025579) that has as a primary participant a leaf (PO:0025034)." [POC:curators, TAIR:Tanya_Berardini]
 synonym: "leaf development in Arabidopsis" RELATED []
 synonym: "leaf development stage" RELATED []
 xref: OBO_SF2_PO:548
@@ -2027,6 +2027,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:00025570)  that begins with cell differentiation and cell expansion forming the leaf lamina (PO:0020039) and ends with the onset of the leaf fully expanded stage (PO:0001053)." [TAIR:Katica_Ilic]
 synonym: "leaf expansion stage in Arabidopsis" RELATED []
 is_a: PO:0025570 ! vascular leaf development stage
+relationship: preceded_by PO:0001051 ! vascular leaf initiation stage
 
 [Term]
 id: PO:0001053
@@ -2035,6 +2036,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:0025570) that begins when the vascular leaf (PO:0009025) is fully expanded and cell expansion has ceased and ends with the onset of the vascular leaf senescence stage (PO:0001054)." [TAIR:Katica_Ilic]
 synonym: "fully expanded leaf stage in Arabidopsis" RELATED []
 is_a: PO:0025570 ! vascular leaf development stage
+relationship: preceded_by PO:0001052 ! vascular leaf expansion stage
 
 [Term]
 id: PO:0001054
@@ -2043,6 +2045,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:0025570) that begins with the formation of a abscission zone at the base of a vascular leaf (PO:0009025) and ends with leaf separation and death." [TAIR:Tanya_Berardini]
 synonym: "leaf senescence stage in Arabidopsis" RELATED []
 is_a: PO:0025570 ! vascular leaf development stage
+relationship: preceded_by PO:0001053 ! vascular leaf post-expansion stage
 
 [Term]
 id: PO:0001055
@@ -20860,7 +20863,7 @@ creation_date: 2013-05-29T11:58:32Z
 id: PO:0025570
 name: vascular leaf development stage
 namespace: plant_structure_development_stage
-def: "A leaf development stage (PO:0001050) that begins with the vascular leaf initiation stage (PO:0007040) and ends with the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson]
+def: "A leaf development stage (PO:0001051) which begins with the onset of the vascular leaf initiation stage (PO:0001051) and ends with the termination of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson]
 xref: OBO_SF2_PO:555
 is_a: PO:0001050 ! leaf development stage
 created_by: brianatkinson
