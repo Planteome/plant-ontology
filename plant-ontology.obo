@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:09:2013 12:02
+date: 14:09:2013 12:44
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -30,7 +30,6 @@ treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:3193
 [Term]
 id: PO:0000001
 name: embryo proper
-namespace: plant_ontology
 def: "An embryonic plant structure that is the body of a developing plant embryo attached to the maternal tissue in an ovule by a suspensor." [POC:Ramona_Walls]
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 synonym: "embri&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2214,6 +2213,7 @@ namespace: plant_structure_development_stage
 def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a seed (PO:0009010)." [POC:cooperl, POC:Ramona_Walls, TAIR:Katica_Ilic]
 comment: Includes the stages of seed development, from fertilization to the dry or quiescent state. May have as part an embryo development stage.
 synonym: "seed development in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:568
 is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
@@ -11169,7 +11169,6 @@ relationship: part_of PO:0009051 ! spikelet
 [Term]
 id: PO:0009081
 name: inflorescence branch
-namespace: plant_ontology
 alt_id: PO:0004720
 def: "An inflorescence axis (PO:0020122) that is a branch (PO:0009081) arising from a first order inflorescence axis (PO:0025104) or from a higher order inflorescence branch." [POC:Laurel_Cooper]
 subset: Angiosperm
@@ -17747,6 +17746,7 @@ def: "A plant structure development stage (PO:0009012) that has as primary parti
 comment: Includes flower development stage (PO:0007615), corolla development stage (PO:0007604), and inflorescence development stage (PO:0001083).
 synonym: "etapa de desarrollo de una estructura colectiva de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合的植物構造の発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:391
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0025007 ! collective plant organ structure
 created_by: rwalls
@@ -17761,7 +17761,7 @@ comment: Includes development stages for leaves and roots.
 synonym: "etapa de desarrollo de un &#243rgano (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "organ development stage" BROAD []
 synonym: "植物器官発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3426504
+xref: OBO_SF2_PO:522
 is_a: PO:0025571 ! multi-tissue plant structure development stage
 relationship: part_of PO:0025527 ! shoot system development stage
 created_by: rwalls
@@ -18235,11 +18235,11 @@ creation_date: 2011-11-22T05:47:05Z
 id: PO:0025374
 name: seed dormant stage
 namespace: plant_structure_development_stage
-def: "A seed development stage during which a seed participates in a seed dormancy process." [GO:0010162, POC:curators]
+def: "A seed development stage (PO:0001170) during which a seed (PO:0009010) participates in a seed dormancy process (GO:0010162)." [GO:0010162, POC:curators]
 comment: A seed dormancy process (GO:0010162) is a dormancy process in which dormancy (sometimes called a dormant state) is induced, maintained or broken in a seed. Seed dormancy is a suspension of most physiological activity and growth in a seed, including the embryo contained therein, that can be reactivated. It often requires special conditions for reactivation, such as specific temperature, scarification, or leaching of inhibitors. Seed dormancy includes dormancy of the embryo and the seed coat, although\nthese may not begin or end simultaneously. Not all seeds go through a seed dormant stage. Most seeds that go through a dormant stage do so only one time.
 synonym: "etapa latente de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3468651
+xref: OBO_SF2_PO:424
 is_a: PO:0001170 ! seed development stage
 relationship: has_part PO:0025377 ! plant embryo dormant stage
 created_by: rwalls
@@ -20633,7 +20633,6 @@ creation_date: 2013-04-19T19:22:17Z
 [Term]
 id: PO:0025551
 name: multicellular trichome apex
-namespace: plant_ontology
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome (PO:0025162)." [POC:Laurel_Cooper]
 comment: This term describes the apex region of a multicellular trichome (PO:0000282).  The apex of a unicellular trichome is a GO cellular component: unicellular trichome apex (GO:0090552).
 synonym: "apex of a multicellular trichome" EXACT []
@@ -20878,7 +20877,7 @@ id: PO:0025571
 name: multi-tissue plant structure development stage
 namespace: plant_structure_development_stage
 def: "A plant structure development stage (PO:0009012) that has as primary participant a multi-tissue plant structure  (PO:0025496)." [POC:Laurel_Cooper]
-xref: PO_SF2_SF:492
+xref: OBO_SF2_PO:492
 is_a: PO:0009012 ! plant structure development stage
 created_by: cooperl
 creation_date: 2013-09-10T15:02:45Z
@@ -22587,13 +22586,12 @@ creation_date: 2011-05-23T09:00:21Z
 [Typedef]
 id: adjacent_to
 name: adjacent_to
-namespace: plant_ontology
 xref: RO:0002220
 
 [Typedef]
 id: derives_by_manipulation_from
 name: derives_by_manipulation_from
-namespace: plant_structure_development_stage
+namespace: plant_anatomy
 def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
 comment: The derives_by_manipulation_from relation, is a special case of the RO relation derives_from.  Derives_from implies an instance level derivation that holds between two distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later.  Likewise, derives_by_manipulation_from joins two plant structures before and after some manipulation.  Specifically, derives_by_manipulation_from is used to describe the relation between an in vitro plant structure and the in vivo plant structure that is its temporal precursor.
 created_by: rwalls
@@ -22602,55 +22600,48 @@ creation_date: 2010-07-01T02:45:12Z
 [Typedef]
 id: developmentally_preceded_by
 name: developmentally_preceded_by
-namespace: plant_ontology
 def: "X developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p." [RO:0002258]
 xref: RO:0002258
+is_obsolete: true
 created_by: Laurel_Cooper
 creation_date: 2013-06-27T13:16:56Z
 
 [Typedef]
 id: develops_from
 name: develops_from
-namespace: plant_ontology
 xref: RO:0002202
 is_transitive: true
 
 [Typedef]
 id: has_part
 name: has_part
-namespace: plant_ontology
 xref: BFO:0000051
 is_transitive: true
 
 [Typedef]
 id: has_participant
 name: has_participant
-namespace: plant_ontology
 
 [Typedef]
 id: located_in
 name: located_in
-namespace: plant_ontology
 created_by: rwalls
 creation_date: 2012-05-23T09:52:02Z
 
 [Typedef]
 id: part_of
 name: part_of
-namespace: plant_ontology
 xref: BFO:0000050
 is_transitive: true
 
 [Typedef]
 id: participates_in
 name: participates_in
-namespace: plant_ontology
 holds_over_chain: part_of participates_in
 
 [Typedef]
 id: preceded_by
 name: preceded_by
-namespace: plant_ontology
 def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [BFO:0000062]
 comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
 created_by: Laurel_Cooper
