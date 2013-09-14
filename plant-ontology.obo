@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:09:2013 15:54
+date: 14:09:2013 11:24
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20,8 +20,7 @@ subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym" EXACT
-default-namespace: file:/home/moorel/Poc/Poc/trunk/ontology/OBO_format/plant_ontology.obo
-treat-xrefs-as-is_a: CARO
+default-namespace: 
 ontology: po
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:3193
 treat-xrefs-as-is_a: CARO
@@ -22594,7 +22593,7 @@ xref: RO:0002220
 [Typedef]
 id: derives_by_manipulation_from
 name: derives_by_manipulation_from
-namespace: plant_anatomy
+namespace: plant_ontology
 def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
 comment: The derives_by_manipulation_from relation, is a special case of the RO relation derives_from.  Derives_from implies an instance level derivation that holds between two distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later.  Likewise, derives_by_manipulation_from joins two plant structures before and after some manipulation.  Specifically, derives_by_manipulation_from is used to describe the relation between an in vitro plant structure and the in vivo plant structure that is its temporal precursor.
 created_by: rwalls
