@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 19:09:2013 16:59
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 20:09:2013 16:08
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -2626,7 +2626,7 @@ is_a: PO:0004718 ! short cell
 id: PO:0004010
 name: meristematic cell
 namespace: plant_anatomy
-def: "A plant cell synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
+def: "A plant cell (PO:0009002) synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula meristem&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2638,7 +2638,7 @@ id: PO:0004011
 name: initial cell
 namespace: plant_anatomy
 alt_id: PO:0000070
-def: "A meristematic cell that by division gives rise to two cells, one of which remains meristematic, while the other is added to the plant body." [ISBN:0471245208]
+def: "A meristematic cell (PO:0004010) that by division gives rise to two cells, one of which remains meristematic, while the other is added to the plant body." [ISBN:0471245208]
 comment: Initial cells are often part of a portion of tissue that is composed mostly of somewhat older, differentiating cells. The division of an initial cell is often uneven, with the smaller daughter cell remaining meristematic.
 subset: CL
 synonym: "c&#233lula inicial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13523,7 +13523,7 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_anatomy
-def: "A plant cell that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
+def: "A plant cell (PO:0009002) that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
 comment: Hydroids are water and mineral conducting cells found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase.
 subset: Bryophytes
 subset: CL
@@ -13539,8 +13539,8 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
-def: "A plant cell that resembles in structure the sieve elements of vascular plants." [ISBN:376821110, ISBN:962073342]
-comment: A carbohydrate and amino acid conducting cell found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase. Leptoids have no nucleus at maturity. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
+def: "A plant cell (PO:0009002) that resembles in structure the sieve elements (PO:0025406) of vascular plants." [ISBN:376821110, ISBN:962073342]
+comment: A carbohydrate and amino acid conducting cell found in bryophytes in axes and leaves in the gametophyte development stage (PO:0028003) and in the seta in the sporophytic phase. Leptoids have no nucleus at maturity. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
 subset: Bryophytes
 subset: CL
 synonym: "leptoid cell" EXACT []
@@ -14138,8 +14138,8 @@ creation_date: 2010-07-01T02:50:36Z
 id: PO:0025075
 name: non-vascular leaf
 namespace: plant_anatomy
-def: "A leaf in a non-vascular plant." [POC:curators]
-comment: Include moss and liverwort leaves. Occurs in the gametophytic phase of a plant life cycle.
+def: "A leaf (PO:0025034) in a non-vascular plant." [POC:curators]
+comment: Non-vascular leaves occur in the gametophyte development stage (PO:0028003) of Bryophytes, plants such as moss and liverwort.
 subset: Bryophytes
 subset: TraitNet
 synonym: "gametophyll" EXACT []
@@ -14150,6 +14150,7 @@ synonym: "non-vascular leaflet" RELATED []
 synonym: "phyllid" EXACT []
 synonym: "phyllidium" EXACT []
 synonym: "非維管束系葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:137
 is_a: PO:0025034 ! leaf
 relationship: part_of PO:0030018 ! gametophore
 created_by: rwalls
@@ -20907,6 +20908,16 @@ created_by: brianatkinson
 creation_date: 2013-09-17T16:55:03Z
 
 [Term]
+id: PO:0025573
+name: non-vascular leaf development stage
+namespace: plant_structure_development_stage
+def: "A leaf development stage (PO:0001050) that has as a primary participant a non-vascular leaf (PO:0025075)." [POC:Laurel_Cooper]
+xref: OBO_SF_PO:555
+is_a: PO:0001050 ! leaf development stage
+created_by: cooperl
+creation_date: 2013-09-20T15:59:49Z
+
+[Term]
 id: PO:0025575
 name: protoxylem tracheary element
 namespace: plant_anatomy
@@ -21223,7 +21234,7 @@ creation_date: 2011-03-10T11:37:59Z
 id: PO:0030007
 name: meristematic apical cell
 namespace: plant_anatomy
-def: "A single meristematic cell at the tip of a plant structure where apical growth occurs." [ISBN:0962073342, ISBN:9780473067304]
+def: "A single meristematic cell (PO:0004010) at the tip of a plant structure where apical growth occurs." [ISBN:0962073342, ISBN:9780473067304]
 comment: Apical cells occur only at the tip of a shoot axis apex, leaf apex, root apex, thallus apex, or protonema in bryophytes and some pteridophytes. Apical growth results from division of a single meristematic cell located at the tip of an apical meristem or plant organ, rather than from a population of meristematic cells located at the tip of an apical meristem. The apical cell may be tetrahedral shaped, with three (in shoots) or four (in roots) cutting faces, or wedge-shaped (lenticular) with two cutting faces (in non-vascular leaves or thalli). An apical cell may be established upon germination of a spore or upon the first cell division of an embryo, or later.
 subset: Bryophytes
 subset: CL
@@ -21334,7 +21345,7 @@ creation_date: 2011-03-25T09:44:45Z
 id: PO:0030013
 name: non-vascular leaf meristematic apical cell
 namespace: plant_anatomy
-def: "A leaf meristematic apical cell that is part of a leaf apex of a non-vascular leaf." [ISBN:0962073342, PMID:19303301]
+def: "A leaf meristematic apical cell (PO:0030011) that is part of a leaf apex of a non-vascular leaf." [ISBN:0962073342, PMID:19303301]
 comment: Occurs in the non-vascular leaves of bryophytes, which grow by division of a single, wedge-shaped apical cell with two cutting faces.
 subset: Bryophytes
 subset: CL
@@ -21431,7 +21442,7 @@ creation_date: 2011-04-26T09:01:06Z
 id: PO:0030018
 name: gametophore
 namespace: plant_anatomy
-def: "A shoot system (PO:0009006) that consists of the shoot axes (PO:0025029) and non-vascular leaves (PO:0025075) of a plant in the gametophytic phase." [ISBN:0962073342]
+def: "A shoot system (PO:0009006) that consists of the shoot axes (PO:0025029) and non-vascular leaves (PO:0025075) of a plant in the gametophyte development stage (PO:0028003) ." [ISBN:0962073342, POC:curators]
 comment: A gametophore is the leafy part of the gametophyte of mosses and leafy liverworts, excluding the protonema. Develop from buds that form on the protonema. Antheridia and archegonia arise on the gametophore.
 subset: Bryophytes
 synonym: "gamet&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21467,7 +21478,7 @@ creation_date: 2011-03-25T10:45:12Z
 id: PO:0030020
 name: gametophore axis
 namespace: plant_anatomy
-def: "A shoot axis that is part of a gametophore." [ISBN:0962073342, POC:curators]
+def: "A shoot axis (PO:0025029) that is part of a gametophore (PO:0030018)." [ISBN:0962073342, POC:curators]
 comment: Found in mosses and leafy liverworts. A stem or branch of the leafy part of a bryophyte.
 subset: Bryophytes
 synonym: "caulid" EXACT []
@@ -21935,8 +21946,8 @@ creation_date: 2011-05-11T11:04:52Z
 id: PO:0030047
 name: hydrome
 namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts hydroid cells and cells of no other types." [ISBN:376821110]
-comment: A hydrome is composed of only hydroids. Found in bryophytes, in the center of a non-vascular shoot axis such as a gametophore or seta. Often surrounded by leptome. May function in water conduction and may provide support.
+def: "A portion of plant tissue (PO:0009007) that has as parts hydroid (PO:0025032) cells and cells of no other types." [ISBN:376821110, POC:curators]
+comment: A hydrome is composed of only hydroids. Found in bryophytes, in the center of a non-vascular shoot axis (PO:0025029) such as a gametophore (PO:0030018) or seta (PO:0030032). Often surrounded by the leptome (PO:0030048). May function in water conduction and may provide support.
 subset: Bryophytes
 synonym: "hidromo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "hydrom" EXACT []
@@ -21951,8 +21962,8 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030048
 name: leptome
 namespace: plant_anatomy
-def: "A portion of plant tissue that has as parts leptoid cells and cells of no other types." [ISBN:376821110]
-comment: A leptome is composed of only leptoids. Found in bryophytes, in non-vascular shoot axes such as a gametophore axis or seta, or in the midrib of a non-vascular leaf. Often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
+def: "A portion of plant tissue (PO:0009007) that has as parts leptoid (PO:0025033) cells and cells of no other types." [ISBN:376821110]
+comment: A leptome is composed of only leptoids (PO:0025033). Found in bryophytes, in non-vascular shoot axes such as a gametophore axis or seta (PO:0030032) or in the midrib of a non-vascular leaf. Often surrounding a central hydrome. May function in the conduction of organic substances, similar to phloem in vascular plants.
 subset: Bryophytes
 synonym: "leptom" EXACT []
 synonym: "leptomo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -22102,7 +22113,7 @@ creation_date: 2011-04-28T08:31:02Z
 id: PO:0030057
 name: alar cell
 namespace: plant_anatomy
-def: "A plant cell located at the base of a non-vascular leaf adjacent to where the leaf attaches to the stem." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
+def: "A plant cell (PO:0009002) located at the base of a non-vascular leaf (PO:0025075) adjacent to where the leaf attaches to the stem (PO:0009047)." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
 comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness, or ornamentation from other cells in the leaf.
 subset: Bryophytes
 subset: CL
@@ -22347,7 +22358,7 @@ creation_date: 2011-04-29T01:15:05Z
 id: PO:0030072
 name: costa
 namespace: plant_anatomy
-def: "A portion of plant tissue that is a single or double strand in the center of a non-vascular leaf and has as part hydrome or leptome." [ISBN:376821110]
+def: "A portion of plant tissue (PO:0009007) that is a single or double strand in the center of a non-vascular leaf and has as part hydrome (PO:0030047) or leptome (PO:0030048)." [ISBN:376821110]
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
 subset: Bryophytes
 synonym: "costa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -22594,7 +22605,7 @@ creation_date: 2011-05-23T08:31:30Z
 id: PO:0030087
 name: non-vascular leaf initial cell
 namespace: plant_anatomy
-def: "An initial cell that is part of a gametophore and gives rise to a non-vascular leaf." [PMID:19303301]
+def: "An initial cell (PO:0004011) that is part of a gametophore (PO:0030018) and gives rise to a non-vascular leaf (PO:0025075)." [PMID:19303301]
 comment: In Physcomitrella patens, non-vascular leaf initials arise from the daughter cells of a gametophore axis apical cell. Subsequent division of a non-vascular leaf initial establishes a non-vascular leaf apical cell.
 subset: Bryophytes
 subset: CL
