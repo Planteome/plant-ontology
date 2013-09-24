@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 24:09:2013 13:33
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 24:09:2013 15:21
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1257,7 +1257,7 @@ id: PO:0000252
 name: endodermis
 namespace: plant_anatomy
 alt_id: PO:0006064
-def: "A portion of ground tissue that is the inner most layer of a cortex and has a casparian strip in its anticlinal cell walls." [ISBN:047124529, POC:curators]
+def: "A portion of ground tissue (PO:0025059) that is the inner most layer of a cortex (PO:0005708) and has a casparian strip in its anticlinal cell walls." [ISBN:047124529, POC:curators]
 comment: Forms a sheath around the vascular system. It may have secondary walls later, part_of cortex.
 synonym: "endodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "endodermoid" RELATED []
@@ -1286,7 +1286,7 @@ id: PO:0000258
 name: root cortex
 namespace: plant_anatomy
 alt_id: PO:0003010
-def: "A portion of ground tissue that is part of a cortex and part of a root." [ISBN:047125208, POC:curators]
+def: "A portion of ground tissue (PO:0025059) that is part of a cortex and part of a root (PO:0009005)." [ISBN:047125208, POC:curators]
 comment: In dicots and gymnosperms, the cortex consists of mainly parenchyma cells. In monocots sclerenchyma develops in addition to parenchyma.
 subset: TraitNet
 synonym: "cortex de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3465,7 +3465,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0004721
 name: paraclade cortex
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of a cortex and part of a paraclade." [POC:curators, TAIR:Katica_Ilic]
+def: "A portion of ground tissue (PO:0025059) that is part of a cortex (PO:0005708) and part of a paraclade." [POC:curators, TAIR:Katica_Ilic]
 synonym: "cortex (corteza) del paraclado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of paraclade cortex tissue" EXACT []
 synonym: "側生分枝皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3691,7 +3691,7 @@ relationship: part_of PO:0020100 ! hypocotyl
 id: PO:0005014
 name: embryo cortex
 namespace: plant_anatomy
-def: "A cortex that is part of an embryo." [PMID:16543410, POC:curators, TAIR:Donghui_Li]
+def: "A cortex (PO:0005708) that is part of a plant embryo (PO:0009009)." [PMID:16543410, POC:curators, TAIR:Donghui_Li]
 comment: Can occur in the hypocotyl and root.
 synonym: "cortex (corteza) del emrbion (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3982,7 +3982,7 @@ relationship: part_of PO:0005046 ! periderm
 id: PO:0005051
 name: hypodermis
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the outermost layer of a portion of cortex." [POC:curators]
+def: "A portion of ground tissue (PO:0025059) that is the outermost layer of a portion of cortex (PO:0005708)." [POC:curators]
 comment: A layer or layers of cells beneath the epidermis that is distinct in appearance from adjacent tissues.
 synonym: "hipodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of hypodermal tissue" EXACT []
@@ -13919,7 +13919,7 @@ subset: TraitNet
 synonym: "fundamental tissue" EXACT [ISBN:0471244554]
 synonym: "porci&#243n del tejido fundamental (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "基本組織の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3007983
+xref: OBO_SF2_PO:106
 is_a: PO:0009007 ! portion of plant tissue
 created_by: Laurel_Cooper
 creation_date: 2009-12-17T03:06:13Z
