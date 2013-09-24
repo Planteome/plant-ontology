@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 23:09:2013 18:41
-saved-by: cooperl
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 24:09:2013 13:33
+saved-by: brianatkinson
+auto-generated-by: OBO-Edit 2.2
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1679,9 +1679,9 @@ is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
 id: PO:0001003
-name: vascular leaf anlagen formation stage
+name: vascular leaf founder cells formation stage
 namespace: plant_structure_development_stage
-def: "A vascular leaf initiation stage (PO:0001051) when the cells of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a leaf primordium, but the primordium itself is not distinguishable morphologically." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The vascular leaf primordium (PO:0000017) is not yet distinguishable.
 synonym: "P0 stage" RELATED []
 synonym: "vascular leaf founder cell formation stage" EXACT []
@@ -1820,7 +1820,7 @@ comment: The vascular leaf primordium (PO:0000017) develops from the vascular le
 synonym: "P1 stage" RELATED []
 xref: OBO-SF2_PO:556
 is_a: PO:0001051 ! vascular leaf initiation stage
-relationship: preceded_by PO:0001003 ! vascular leaf anlagen formation stage
+relationship: preceded_by PO:0025586 ! vascular leaf anlagen formation stage
 
 [Term]
 id: PO:0001020
@@ -21077,6 +21077,16 @@ is_a: PO:0007615 ! flower development stage
 relationship: preceded_by PO:0025588 ! flower meristem transition stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:35Z
+
+[Term]
+id: PO:0025586
+name: vascular leaf anlagen formation stage
+namespace: plant_structure_development_stage
+def: "A vascular leaf initiation stage (PO:0007040) when the cells of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson]
+is_a: PO:0001051 ! vascular leaf initiation stage
+relationship: preceded_by PO:0001003 ! vascular leaf founder cells formation stage
+created_by: brianatkinson
+creation_date: 2013-09-24T13:26:31Z
 
 [Term]
 id: PO:0025587
