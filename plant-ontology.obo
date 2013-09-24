@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:09:2013 12:10
+date: 23:09:2013 18:41
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -822,7 +822,7 @@ is_a: PO:0000059 ! root initial cell
 id: PO:0000062
 name: stomatal initial cell
 namespace: plant_anatomy
-def: "An epidermal initial that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell differentiates into a guard mother cell." [POC:Ramona_Walls]
+def: "An epidermal initial cell (PO:0000349) that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell (PO:0004010) differentiates into a guard mother cell (PO:0000351)." [POC:Ramona_Walls]
 subset: CL
 synonym: "inicial estom&#225tica (meristemoide inicial) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stomatal initial" EXACT []
@@ -971,7 +971,7 @@ id: PO:0000079
 name: fusiform initial cell
 namespace: plant_anatomy
 alt_id: PO:0000275
-def: "An elongated cambial initial cell with approximately wedge-shaped ends that is part of the vascular cambium and gives rise to axial cells." [ISBN:0471245208]
+def: "An elongated cambial initial cell (PO:0000295) with approximately wedge-shaped ends that is part of the vascular cambium (PO:0005598) and gives rise to axial cells." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula inicial fusiforme (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "fusiform initial" EXACT []
@@ -1000,7 +1000,7 @@ consider: PO:0025407
 id: PO:0000082
 name: ray initial cell
 namespace: plant_anatomy
-def: "A cambial initial cell that gives rise to ray cells of the secondary xylem and secondary phloem." [ISBN:0471245208]
+def: "A cambial initial cell (PO:0000295) that gives rise to ray cells of the secondary xylem (PO:0005848) and secondary phloem (PO:0005043)." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula inicial de rayo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ray initial" EXACT []
@@ -1482,7 +1482,7 @@ id: PO:0000295
 name: cambial initial cell
 namespace: plant_anatomy
 alt_id: PO:0000080
-def: "An initial cell that is part of the vascular or cork cambium and by periclinal divisions produce cells to the outside or inside of the cambial axis." [POC:curators]
+def: "An initial cell (PO:0004011) that is part of the vascular cambium (PO:0005598) or cork cambium (PO:0005599), and by periclinal divisions, produces cells to the outside or inside of the cambial axis." [POC:curators]
 subset: CL
 synonym: "c&#233lula inicial del cambium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cambial cell" EXACT []
@@ -1535,7 +1535,7 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000349
 name: epidermal initial cell
 namespace: plant_anatomy
-def: "An initial cell that is part of an epidermis and gives rise to specialized cell types of the epidermis." [TAIR:Leonore_Reiser]
+def: "An initial cell (PO:0004011) that is part of an epidermis (PO:0005679) and gives rise to specialized cell types of the epidermis." [TAIR:Leonore_Reiser]
 subset: CL
 synonym: "c&#233lula inicial de la epidermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "epidermal initial" EXACT []
@@ -1615,7 +1615,7 @@ is_obsolete: true
 id: PO:0000400
 name: phloem mother cell
 namespace: plant_anatomy
-def: "A cambial initial cell which is destined to differentiate into secondary phloem." [POC:curators]
+def: "A cambial initial cell (PO:0000295) which is destined to differentiate into secondary phloem." [POC:curators]
 comment: Phloem islands can be formed in the middle of the xylem.
 subset: CL
 synonym: "c&#233lula madre del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2031,17 +2031,18 @@ is_a: PO:0025570 ! vascular leaf development stage
 id: PO:0001052
 name: vascular leaf expansion stage
 namespace: plant_structure_development_stage
-def: "A vascular leaf development stage (PO:00025570)  that begins with cell differentiation and cell expansion forming the leaf lamina (PO:0020039) and ends with the onset of the leaf fully expanded stage (PO:0001053)." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
+def: "A vascular leaf development stage (PO:0025570) during which vascular leaf size increases primarily through cell expansion." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: During this stage leaf shaping (GO:0010358) occurs which is defined as the developmental process that pertains to the organization of a leaf in three-dimensional space once the structure has initially formed.
 synonym: "leaf expansion stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:557
 is_a: PO:0025570 ! vascular leaf development stage
-relationship: preceded_by PO:0001051 ! vascular leaf initiation stage
+relationship: preceded_by PO:0025574 ! vascular leaf differentiation stage
 
 [Term]
 id: PO:0001053
 name: vascular leaf post-expansion stage
 namespace: plant_structure_development_stage
-def: "A vascular leaf development stage (PO:0025570) that begins when the vascular leaf (PO:0009025) is fully expanded and cell expansion has ceased and ends with the onset of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
+def: "A vascular leaf development stage (PO:0025570) that begins when the vascular leaf (PO:0009025) is fully expanded and ends with the onset of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "fully expanded leaf stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:558
 is_a: PO:0025570 ! vascular leaf development stage
@@ -20923,6 +20924,18 @@ created_by: cooperl
 creation_date: 2013-09-20T15:59:49Z
 
 [Term]
+id: PO:0025574
+name: vascular leaf differentiation stage
+namespace: plant_structure_development_stage
+def: "A vascular leaf development stage (PO:0025570) that begins with the formation of cambial initial cells (PO:0000295) and epidermal initial cells (PO:0000349) and ends with the formation and differentiation of the leaf epidermis (PO:0006016) and leaf vascular system (PO:0000036)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
+synonym: "vascular leaf morphogenesis stage" EXACT []
+xref: OBO_SF2_PO:572
+is_a: PO:0025570 ! vascular leaf development stage
+relationship: preceded_by PO:0001051 ! vascular leaf initiation stage
+created_by: cooperl
+creation_date: 2013-09-23T17:08:15Z
+
+[Term]
 id: PO:0025575
 name: protoxylem tracheary element
 namespace: plant_anatomy
@@ -22301,7 +22314,7 @@ creation_date: 2011-04-29T09:25:26Z
 id: PO:0030068
 name: epidermal rhizoid initial cell
 namespace: plant_anatomy
-def: "An epidermal initial that gives rise to an epidermal rhizoid." [PMID:12917289]
+def: "An epidermal initial cell (PO:0000349) that gives rise to an epidermal rhizoid (PO:0030071)." [PMID:12917289]
 comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
 subset: CL
 synonym: "epidermal rhizoid initial" EXACT []
@@ -22349,7 +22362,7 @@ creation_date: 2011-04-29T01:05:26Z
 id: PO:0030071
 name: epidermal rhizoid
 namespace: plant_anatomy
-def: "A rhizoid that develops from an epidermal rhizoid initial." [ISBN:12917289]
+def: "A rhizoid (PO:0030078) that develops from an epidermal rhizoid initial cell (PO:0030068)." [ISBN:12917289]
 comment: Found in bryophytes and pteridophytes growing from the epidermis of a gametophore or the lower surface of a thallus and in some monocots growing from the stem at the cotyledonary node. May be considered a type of trichome.
 synonym: "rizoide epid&#233rmico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "表皮仮根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
