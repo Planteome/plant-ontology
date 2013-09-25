@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 24:09:2013 15:36
-saved-by: brianatkinson
-auto-generated-by: OBO-Edit 2.2
+date: 25:09:2013 12:14
+saved-by: cooperl
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -2133,13 +2133,14 @@ is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001078
-name: E expanded cotyledon stage
+name: expanded cotyledon stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001076
 def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
 is_a: PO:0007631 ! plant embryo stage
+relationship: preceded_by PO:0004507 ! bilateral stage
 
 [Term]
 id: PO:0001079
@@ -2150,12 +2151,13 @@ is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001081
-name: F mature embryo stage
+name: mature embryo stage
 namespace: plant_structure_development_stage
 def: "Stage at which the embryo is fully developed." [APweb:Glossary, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
 is_a: PO:0007631 ! plant embryo stage
+relationship: preceded_by PO:0001078 ! expanded cotyledon stage
 
 [Term]
 id: PO:0001083
@@ -2172,6 +2174,7 @@ namespace: plant_structure_development_stage
 def: "The coleoptilar primordium, SAM and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
 synonym: "SAM and radicle formation stage" RELATED []
 is_a: PO:0007631 ! plant embryo stage
+relationship: preceded_by PO:0001180 ! proembryo stage
 
 [Term]
 id: PO:0001095
@@ -2180,6 +2183,7 @@ namespace: plant_structure_development_stage
 def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
 is_a: PO:0007631 ! plant embryo stage
+relationship: preceded_by PO:0001081 ! mature embryo stage
 
 [Term]
 id: PO:0001096
@@ -2226,7 +2230,7 @@ is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
 id: PO:0001180
-name: B proembryo stage
+name: proembryo stage
 namespace: plant_structure_development_stage
 def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [APweb:Glossary, TAIR:Katica_Ilic]
 synonym: "eight-celled stage in Arabidopsis" RELATED []
@@ -2235,7 +2239,7 @@ is_a: PO:0007631 ! plant embryo stage
 
 [Term]
 id: PO:0001185
-name: C globular stage
+name: globular stage
 namespace: plant_structure_development_stage
 def: "During this stage the embryo proper retains radial symmetry (increasing in diameter), and three main tissue systems are established." [TAIR:Katica_Ilic]
 synonym: "dermatogen stage in Arabidopsis" RELATED []
@@ -2243,6 +2247,7 @@ synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
 is_a: PO:0007631 ! plant embryo stage
+relationship: preceded_by PO:0001094 ! coleoptilar stage
 
 [Term]
 id: PO:0001378
@@ -2725,7 +2730,7 @@ is_a: PO:0001170 ! seed development stage
 
 [Term]
 id: PO:0004507
-name: D bilateral stage
+name: bilateral stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001043
 alt_id: PO:0001177
@@ -2735,6 +2740,7 @@ synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
 synonym: "triangle stage in Arabidopsis" RELATED []
 is_a: PO:0007631 ! plant embryo stage
+relationship: preceded_by PO:0001185 ! globular stage
 
 [Term]
 id: PO:0004509
