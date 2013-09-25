@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:09:2013 12:14
+date: 25:09:2013 13:07
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1951,6 +1951,7 @@ synonym: "1.01-dry seed in Triticeae" RELATED [GRO:0007052]
 synonym: "BBCH growth stage 00" RELATED [ISBN:3826331524]
 synonym: "dry seed in Arabidopsis" RELATED [TAIR:0000213]
 is_a: PO:0001170 ! seed development stage
+relationship: preceded_by PO:0007632 ! seed maturation stage
 
 [Term]
 id: PO:0001041
@@ -2174,7 +2175,7 @@ namespace: plant_structure_development_stage
 def: "The coleoptilar primordium, SAM and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
 synonym: "SAM and radicle formation stage" RELATED []
 is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001180 ! proembryo stage
+relationship: preceded_by PO:0001185 ! globular stage
 
 [Term]
 id: PO:0001095
@@ -2247,7 +2248,7 @@ synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
 is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001094 ! coleoptilar stage
+relationship: preceded_by PO:0001180 ! proembryo stage
 
 [Term]
 id: PO:0001378
@@ -2727,6 +2728,7 @@ name: developing seed stage
 namespace: plant_structure_development_stage
 def: "Stage of seed development characterized by seed growth and differentiation." [TAIR:Katica_Ilic]
 is_a: PO:0001170 ! seed development stage
+relationship: preceded_by PO:0007633 ! endosperm development stage
 
 [Term]
 id: PO:0004507
@@ -2740,7 +2742,7 @@ synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
 synonym: "triangle stage in Arabidopsis" RELATED []
 is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001185 ! globular stage
+relationship: preceded_by PO:0001094 ! coleoptilar stage
 
 [Term]
 id: PO:0004509
@@ -9190,6 +9192,7 @@ namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequently, a desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
 synonym: "seed maturation in Arabidopsis" RELATED []
 is_a: PO:0001170 ! seed development stage
+relationship: preceded_by PO:0004506 ! developing seed stage
 
 [Term]
 id: PO:0007633
@@ -9197,6 +9200,7 @@ name: endosperm development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the endosperm." [TAIR:Katica_Ilic]
 is_a: PO:0001170 ! seed development stage
+relationship: preceded_by PO:0004505 ! fertilized ovule stage
 
 [Term]
 id: PO:0008001
@@ -18266,6 +18270,7 @@ synonym: "種子休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:424
 is_a: PO:0001170 ! seed development stage
 relationship: has_part PO:0025377 ! plant embryo dormant stage
+relationship: preceded_by PO:0001040 ! dry seed stage
 created_by: rwalls
 creation_date: 2012-01-05T10:29:43Z
 
