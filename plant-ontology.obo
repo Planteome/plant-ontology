@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:09:2013 18:17
+date: 30:09:2013 12:44
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -712,12 +712,12 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000053
 name: petiole cortex
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of a cortex and part of the petiole." [POC:curators, TAIR:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of a petiole (PO:0020038)." [POC:curators, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 synonym: "cortex (corteza) del pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of petiole corex tissue" EXACT []
 synonym: "葉柄皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025059 ! portion of ground tissue
-relationship: part_of PO:0005708 ! cortex
+xref: OBO_SF2_PO:115
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0020038 ! petiole
 
 [Term]
@@ -1139,7 +1139,7 @@ relationship: part_of PO:0009035 ! nectary
 id: PO:0000223
 name: shoot axis cortex
 namespace: plant_anatomy
-def: "A portion of ground tissue (PO:0025059) that is part of a cortex (PO:0005708) and part of a shoot axis (PO:0025029)." [ISBN:047124529, POC:curators]
+def: "A portion of cortex (PO:0005708) that is part of a shoot axis (PO:0025029)." [ISBN:047124529, POC:curators, POC:Laurel_Cooper]
 comment: Can occur in a stem or branch.
 subset: TraitNet
 synonym: "branch cortex" NARROW []
@@ -1147,8 +1147,8 @@ synonym: "cortex del eje del epiblasto (epiblastema) del tallo (Spanish)" EXACT 
 synonym: "portion of shoot axis cortex tissue" EXACT []
 synonym: "stem cortex" NARROW []
 synonym: "シュート軸皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025059 ! portion of ground tissue
-relationship: part_of PO:0005708 ! cortex
+xref: OBO_SF2_PO:115
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
@@ -1286,14 +1286,14 @@ id: PO:0000258
 name: root cortex
 namespace: plant_anatomy
 alt_id: PO:0003010
-def: "A portion of ground tissue (PO:0025059) that is part of a cortex and part of a root (PO:0009005)." [ISBN:047125208, POC:curators]
+def: "A portion of cortex (PO:0005708) that is part of a root (PO:0009005)." [ISBN:047125208, POC:curators]
 comment: In dicots and gymnosperms, the cortex consists of mainly parenchyma cells. In monocots sclerenchyma develops in addition to parenchyma.
 subset: TraitNet
 synonym: "cortex de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of root cortex tissue" EXACT []
 synonym: "根皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025059 ! portion of ground tissue
-relationship: part_of PO:0005708 ! cortex
+xref: OBO_SF2_PO:115
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009005 ! root
 
 [Term]
@@ -3472,25 +3472,26 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0004721
 name: paraclade cortex
 namespace: plant_anatomy
-def: "A portion of ground tissue (PO:0025059) that is part of a cortex (PO:0005708) and part of a paraclade." [POC:curators, TAIR:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of an inflorescence branch (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 synonym: "cortex (corteza) del paraclado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "inflorescence branch cortex" EXACT []
 synonym: "portion of paraclade cortex tissue" EXACT []
 synonym: "側生分枝皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:2903966
-is_a: PO:0025059 ! portion of ground tissue
-relationship: part_of PO:0005708 ! cortex
+xref: OBO_SF2_PO:115
+xref: OBO_SF2_PO:49
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009081 ! inflorescence branch
 
 [Term]
 id: PO:0004722
 name: pedicel cortex
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of a cortex and part of a pedicel." [POC:curators, TAIR:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of a pedicel (PO:0009052)." [POC:curators, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 synonym: "cortex (corteza) del pedicelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of pedicel cortex tissue" EXACT []
 synonym: "小花柄皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025059 ! portion of ground tissue
-relationship: part_of PO:0005708 ! cortex
+xref: OBO_SF2_PO:115
+is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009052 ! pedicel
 
 [Term]
@@ -3698,10 +3699,11 @@ relationship: part_of PO:0020100 ! hypocotyl
 id: PO:0005014
 name: embryo cortex
 namespace: plant_anatomy
-def: "A cortex (PO:0005708) that is part of a plant embryo (PO:0009009)." [PMID:16543410, POC:curators, TAIR:Donghui_Li]
+def: "A portion of cortex (PO:0005708) that is part of a plant embryo (PO:0009009)." [PMID:16543410, POC:curators, TAIR:Donghui_Li]
 comment: Can occur in the hypocotyl and root.
 synonym: "cortex (corteza) del emrbion (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:9
 is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -3895,10 +3897,11 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0005040
 name: root pith
 namespace: plant_anatomy
-def: "A portion of pith (PO:0006109) that is part of a root (PO:0009005)." [ISBN:0080280307]
+def: "A portion of pith (PO:0006109) that is part of a root stele (PO:0020124)." [ISBN:0080280307]
 subset: TraitNet
 synonym: "m&#233dula de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:114
 is_a: PO:0006109 ! pith
 relationship: part_of PO:0020124 ! root stele
 
@@ -4414,7 +4417,7 @@ subset: TraitNet
 synonym: "cortex (corteza) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of cortex tissue" EXACT []
 synonym: "皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3011071
+xref: OBO_SF2_PO:115
 is_a: PO:0025059 ! portion of ground tissue
 
 [Term]
@@ -5407,7 +5410,7 @@ subset: TraitNet
 synonym: "m&#233dula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "medulla" EXACT [ISBN:0471244554]
 synonym: "髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3011068
+xref: OBO_SF2_PO:114
 is_a: PO:0005421 ! parenchyma
 
 [Term]
@@ -10944,7 +10947,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009064
 name: receptacle
 namespace: plant_anatomy
-def: "A cardinal organ part that is the region at the distal end of either a peduncle or a pedicel where the floral appendages (e.g.: sepals, petals, stamens and pistils) are attached." [POC:curators]
+def: "A cardinal organ part (PO:0025001) that is the region at the distal end of either a peduncle or a pedicel where the floral appendages (e.g.: sepals, petals, stamens and pistils) are attached." [POC:curators]
 comment: The fleshy part of a strawberry develops from a receptacle.
 subset: reference
 synonym: "flower receptacle" EXACT [FNA:1fd506b2-d80f-4b52-be88-4da3114a3237]
@@ -12759,7 +12762,7 @@ id: PO:0020124
 name: root stele
 namespace: plant_anatomy
 alt_id: PO:0003012
-def: "A stele that is part of a root." [POC:Ramona_Walls]
+def: "A stele (PO:0025197) that is part of a root (PO:0009005)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: Includes the pericycle as the outermost layer of the stele.
 subset: Maize
 subset: reference
@@ -12767,6 +12770,7 @@ subset: TraitNet
 synonym: "estela de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root vascular cylinder" RELATED []
 synonym: "根中心柱 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:177
 is_a: PO:0025197 ! stele
 relationship: part_of PO:0009005 ! root
 
@@ -13868,7 +13872,7 @@ namespace: plant_anatomy
 def: "A portion of cortex (PO:0005708) that is part of a tuber storage parenchyma (PO:0025036)." [POC:curators]
 synonym: "corteza del tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3011079
+xref: OBO_SF2_PO:118
 is_a: PO:0005708 ! cortex
 relationship: part_of PO:0025036 ! tuber storage parenchyma
 created_by: rwalls
@@ -15840,11 +15844,11 @@ creation_date: 2010-12-09T02:23:04Z
 id: PO:0025197
 name: stele
 namespace: plant_anatomy
-def: "A cardinal organ part that is the central column of a plant axis that consists of the primary vascular tissue and associated ground tissue." [POC:curators]
+def: "A cardinal organ part (PO:0025001) that is the central column of a plant axis that consists of the primary vascular tissue and associated ground tissue." [POC:curators]
 comment: If a pith is present, it is part of the stele, otherwise the stele only includes the primary vascular tissue and the ground tissue that surrounds it.
 synonym: "estela (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中心柱, central cylinder (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3080915
+xref: OBO_SF2_PO:177
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025004 ! plant axis
 created_by: rwalls
@@ -21133,6 +21137,28 @@ xref: OBO_SF2_PO:574
 is_a: PO:0025142 ! leaf tip
 created_by: brianatkinson
 creation_date: 2013-09-27T13:53:19Z
+
+[Term]
+id: PO:0025590
+name: receptacle pith
+namespace: plant_anatomy
+def: "A portion of pith (PO:0006109) that is part of a receptacle (PO:0009064)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:114
+is_a: PO:0006109 ! pith
+relationship: part_of PO:0009064 ! receptacle
+created_by: cooperl
+creation_date: 2013-09-30T10:42:43Z
+
+[Term]
+id: PO:0025591
+name: receptacle cortex
+namespace: plant_anatomy
+def: "A portion of cortex (PO:0005708) that is part of a receptacle (PO:0009064)." [POC:Laurel_Copoer]
+xref: OBO_SF2_PO:115
+is_a: PO:0005708 ! cortex
+relationship: part_of PO:0009064 ! receptacle
+created_by: cooperl
+creation_date: 2013-09-30T11:07:16Z
 
 [Term]
 id: PO:0028001
