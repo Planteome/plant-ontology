@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:09:2013 12:44
+date: 02:10:2013 14:13
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1167,7 +1167,7 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 id: PO:0000225
 name: peripheral zone
 namespace: plant_anatomy
-def: "Organogenic region of the meristem, characterized by higher rates of cell division." [ISBN:0521288959, TAIR:Leonore_Reiser]
+def: "A portion of meristem tissue (PO:0009013) which is the organogenic region of the meristem, characterized by higher rates of cell division." [ISBN:0521288959, TAIR:Leonore_Reiser]
 synonym: "peripheral meristem" RELATED []
 synonym: "zona perif&#233rica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "周辺帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -1679,10 +1679,10 @@ is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
 id: PO:0001003
-name: vascular leaf founder cells formation stage
+name: vascular leaf anlagen formation stage
 namespace: plant_structure_development_stage
-def: "The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a leaf primordium, but the primordium itself is not distinguishable morphologically." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: The vascular leaf primordium (PO:0000017) is not yet distinguishable.
+def: "A vascular leaf initiation stage (PO:0007040) during which the vascular leaf founder cells (PO:0025592) of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a vascular leaf primordium (PO:0000017), but the primordium is not yet morphologically distinguishable .
 synonym: "P0 stage" RELATED []
 synonym: "vascular leaf founder cell formation stage" EXACT []
 xref: OBO_SF2_PO:560
@@ -1820,7 +1820,7 @@ comment: The vascular leaf primordium (PO:0000017) develops from the vascular le
 synonym: "P1 stage" RELATED []
 xref: OBO-SF2_PO:556
 is_a: PO:0001051 ! vascular leaf initiation stage
-relationship: preceded_by PO:0025586 ! vascular leaf anlagen formation stage
+relationship: preceded_by PO:0001003 ! vascular leaf anlagen formation stage
 
 [Term]
 id: PO:0001020
@@ -2488,7 +2488,7 @@ relationship: part_of PO:0003017 ! root cap of primary root
 id: PO:0003023
 name: root nodule
 namespace: plant_anatomy
-def: "A cardinal organ part that is an outgrowth of a root and is inhabited by nitrogen-fixing bacteria." [POC:Ramona_Walls]
+def: "A cardinal organ part (PO:0025001) that is an outgrowth of a root (PO:0009005) and is inhabited by nitrogen-fixing bacteria." [POC:Ramona_Walls]
 comment: Root nodules are a symbiosis between a plant (often, but not exclusively, of the Fabaceae) and bacteria of the genus Rhizobium, Bradyrhizobium, or Azorhizobium.
 subset: TraitNet
 synonym: "n&#243dulo de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4739,7 +4739,7 @@ id: PO:0006020
 name: lateral root apical meristem
 namespace: plant_anatomy
 alt_id: PO:0003013
-def: "A root apical meristem found that is part of a lateral root." [GR:Pankaj_Jaiswal]
+def: "A root apical meristem (PO:0020147) is part of a lateral root (PO:0020121)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 comment: This is different from root lateral meristem.
 synonym: "apical meristem of lateral root" RELATED []
 synonym: "lateral root meristem" RELATED []
@@ -4752,7 +4752,7 @@ relationship: part_of PO:0000027 ! lateral root tip
 id: PO:0006021
 name: adventitious root apical meristem
 namespace: plant_anatomy
-def: "A root apical meristem that is part of an adventitious root." [GR:Pankaj_Jaiswal]
+def: "A root apical meristem (PO:0020147) that is part of an adventitious root." [GR:Pankaj_Jaiswal]
 synonym: "crown root meristem" RELATED []
 synonym: "meristema de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seminal root meristem" RELATED []
@@ -5286,7 +5286,7 @@ is_obsolete: true
 id: PO:0006081
 name: primary root apical meristem
 namespace: plant_anatomy
-def: "A root apical meristem that is part of a primary root." [GR:Pankaj_Jaiswal]
+def: "A root apical meristem (PO:0020147) that is part of a primary root (PO:0020127)." [GR:Pankaj_Jaiswal]
 synonym: "apical meristem of primary root" RELATED []
 synonym: "embryonic root meristem" RELATED []
 synonym: "meristema apical de la ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -5327,7 +5327,7 @@ id: PO:0006085
 name: root meristem
 namespace: plant_anatomy
 alt_id: PO:0003001
-def: "A meristem that is part of a root system." [GR:Pankaj_Jaiswal]
+def: "A portion of meristem tissue (PO:0009013) that is part of a root system (PO:0025025)." [GR:Pankaj_Jaiswal]
 synonym: "meristema de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "meristematic zone" RELATED []
 synonym: "根分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9385,7 +9385,7 @@ relationship: part_of PO:0020100 ! hypocotyl
 id: PO:0008016
 name: vegetative shoot apical meristem
 namespace: plant_anatomy
-def: "A shoot apical meristem that gives rise to the apical growth of vegetative tissues and organs." [GR:Chih-Wei_Tung]
+def: "A shoot apical meristem (PO:0020148) that gives rise to the apical growth of vegetative tissues and organs." [GR:Chih-Wei_Tung]
 synonym: "meristema vegetativo apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vegetative meristem" RELATED []
 synonym: "栄養シュート頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9527,7 +9527,7 @@ is_a: PO:0000051 ! petiole epidermis
 id: PO:0008028
 name: reproductive shoot apical meristem
 namespace: plant_anatomy
-def: "A shoot apical meristem that gives rise to the apical growth of reproductive tissues and organs." [GR:Chih-Wei_Tung]
+def: "A shoot apical meristem (PO:0020148) that gives rise to the apical growth of reproductive tissues and organs." [GR:Chih-Wei_Tung]
 synonym: "meristema apical reproductivo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生殖シュート頂端 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020148 ! shoot apical meristem
@@ -10058,7 +10058,7 @@ xref: OBO_SF2_PO:185
 id: PO:0009013
 name: portion of meristem tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue in which cells have retained their embryonic characteristics, or have reverted to them secondarily, and that divide to produce new cells that can undergo differentiation to form mature tissues, i.e. they have a capacity for morphogenesis and growth." [APweb:Glossary, GR:Pankaj_Jaiswal]
+def: "A portion of plant tissue (PO:0009007) in which plant cells (PO:0009002) have retained their embryonic characteristics, or have reverted to them secondarily, and that divide to produce new cells that can undergo differentiation to form mature tissues, i.e. they have a capacity for morphogenesis and growth." [APweb:Glossary, GR:Pankaj_Jaiswal]
 subset: TraitNet
 synonym: "meristem" EXACT []
 synonym: "meristema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -12909,6 +12909,7 @@ def: "The distal part of a lateral (axillary) branch in Zea that bears the funct
 subset: Maize
 subset: reference
 synonym: "cob" RELATED []
+synonym: "ear" EXACT []
 synonym: "oreja de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3611295
@@ -13028,7 +13029,7 @@ relationship: part_of PO:0025004 ! plant axis
 id: PO:0020147
 name: root apical meristem
 namespace: plant_anatomy
-def: "An apical meristem of the root system." [GR:Pankaj_Jaiswal, UMSL:fz]
+def: "A root meristem (PO:0006085) formed at the apex of a root (PO:0009005), including those originating from an lateral root apical meristem (PO:0006020)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper, UMSL:fz]
 comment: In most cases it is involved in root elongation.
 subset: TraitNet
 synonym: "meristema apical de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -15803,7 +15804,7 @@ creation_date: 2010-12-20T07:49:04Z
 id: PO:0025194
 name: root nodule meristem
 namespace: plant_anatomy
-def: "A root meristem that gives rise to a root nodule." [PMID:1809347, POC:Ramona_Walls]
+def: "A root meristem (PO:0006085) that gives rise to a root nodule (PO:0003023)." [PMID:1809347, POC:Ramona_Walls]
 synonym: "meristema del n&#243dulo de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根粒分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PMID:1809347
@@ -19074,7 +19075,7 @@ creation_date: 2012-02-07T07:41:37Z
 id: PO:0025430
 name: phyllome anlagen
 namespace: plant_anatomy
-def: "A portion of meristem (PO:0009013) tissue that is part of a part_of peripheral zone (PO:0000225) and will give rise to a phyllome primordium (PO:0025128)." [POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that is part of a peripheral zone (PO:0000225) of a shoot apical meristem (PO:0020148) and will give rise to a phyllome primordium (PO:0025128)." [POC:curators, POC:Laurel_Cooper]
 comment: The phyllome anlagen is only detectable by gene expression, not morphology.
 synonym: "phyllome meristem" BROAD []
 synonym: "フィロム原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -19088,11 +19089,11 @@ creation_date: 2012-02-07T08:20:10Z
 id: PO:0025431
 name: vascular leaf anlagen
 namespace: plant_anatomy
-def: "A phyllome anlagen (PO:0025430) that will give rise to a vascular leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a vegetative shoot apical meristem (PO:0008016)." [PMID:14732442, POC:curators]
+def: "A phyllome anlagen (PO:0025430) that will give rise to a vascular leaf primordium (PO:0000017) and is part of a peripheral zone (PO:0000225) of a shoot apical meristem (PO:0020148)." [PMID:14732442, POC:Laurel_Cooper]
 comment: This is the region where you have the maximum concentration of auxin in the SAM (at least in a few species that have been studied).
 synonym: "leaf meristem" BROAD []
 synonym: "維管束系葉原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3459279
+xref: OBO_SF2_PO:407
 is_a: PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0008016 ! vegetative shoot apical meristem
 created_by: Laurel_Cooper
@@ -21094,14 +21095,16 @@ creation_date: 2013-06-27T12:02:35Z
 
 [Term]
 id: PO:0025586
-name: vascular leaf anlagen formation stage
-namespace: plant_structure_development_stage
-def: "A vascular leaf initiation stage (PO:0007040) when the cells of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson]
-xref: OBO_SF2_PO:573
-is_a: PO:0001051 ! vascular leaf initiation stage
-relationship: preceded_by PO:0001003 ! vascular leaf founder cells formation stage
-created_by: brianatkinson
-creation_date: 2013-09-24T13:26:31Z
+name: phyllome founder cell
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that is part of the phyllome anlagen (PO:0025430)." [PMID:12610522, POC:Laurel_Cooper]
+comment: As a group, the phyllome founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a phyllome anlagen (PO:0025430). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria.
+synonym: "phyllome anlagen cell" EXACT []
+xref: OBO_SF2_PO:tba
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025430 ! phyllome anlagen
+created_by: cooperl
+creation_date: 2013-10-02T11:58:41Z
 
 [Term]
 id: PO:0025587
@@ -21159,6 +21162,18 @@ is_a: PO:0005708 ! cortex
 relationship: part_of PO:0009064 ! receptacle
 created_by: cooperl
 creation_date: 2013-09-30T11:07:16Z
+
+[Term]
+id: PO:0025592
+name: vascular leaf founder cell
+namespace: plant_anatomy
+def: "A phyllome founder cell (PO:0025586) that is part of a vascular leaf anlagen (PO:0025431)." [PMID:12610522, POC:Laurel_Cooper]
+comment: As a group, the vascular leaf founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a vascular leaf anlagen (PO:0025431). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria.
+xref: OBO_SF2_PO:tba
+is_a: PO:0025586 ! phyllome founder cell
+relationship: part_of PO:0025431 ! vascular leaf anlagen
+created_by: cooperl
+creation_date: 2013-10-02T12:00:28Z
 
 [Term]
 id: PO:0028001
