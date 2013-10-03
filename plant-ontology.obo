@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:10:2013 11:53
+date: 03:10:2013 15:00
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2635,6 +2635,7 @@ namespace: plant_anatomy
 def: "A plant cell (PO:0009002) synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula meristem&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "stem cell" EXACT []
 synonym: "分裂組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CL:0000034
 is_a: PO:0009002 ! plant cell
@@ -2652,7 +2653,7 @@ synonym: "initial" EXACT []
 synonym: "meristemoid" EXACT []
 synonym: "stem cell" RELATED []
 synonym: "始原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3166706
+xref: OBO_SF2_PO:272
 is_a: PO:0004010 ! meristematic cell
 
 [Term]
@@ -16640,7 +16641,7 @@ creation_date: 2011-01-05T12:05:43Z
 id: PO:0025258
 name: procambial cell
 namespace: plant_anatomy
-def: "A meristematic cell that is part of a portion of procambium." [POC:Ramona_Walls]
+def: "A meristematic cell (PO:0004010) that is part of a portion of procambium (PO:0025275)." [POC:Ramona_Walls]
 subset: CL
 synonym: "c&#233lula del procambio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "procambium cell" EXACT []
@@ -16871,7 +16872,7 @@ creation_date: 2011-02-17T09:48:05Z
 id: PO:0025275
 name: procambium
 namespace: plant_anatomy
-def: "A portion of meristem tissue that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
+def: "A portion of meristem tissue (PO:0009013) that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
 comment: May occur in an apical meristem or in a developing phyllome. Gives rise to the primary xylem and primary phloem. This term replaces PO:0006074.
 synonym: "procambio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
