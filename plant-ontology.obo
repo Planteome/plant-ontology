@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:10:2013 15:00
+date: 08:10:2013 12:09
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1682,7 +1682,7 @@ id: PO:0001003
 name: vascular leaf anlagen formation stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0007040) during which the vascular leaf founder cells (PO:0025592) of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a vascular leaf primordium (PO:0000017), but the primordium is not yet morphologically distinguishable .
+comment: The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a vascular leaf primordium (PO:0000017), but the primordium is not yet morphologically distinguishable.
 synonym: "P0 stage" RELATED []
 synonym: "vascular leaf founder cell formation stage" EXACT []
 xref: OBO_SF2_PO:560
@@ -1815,7 +1815,7 @@ is_a: PO:0001004 ! anther development stage
 id: PO:0001019
 name: vascular leaf primordium formation stage
 namespace: plant_structure_development_stage
-def: "A vascular leaf initiation stage (PO:0001051) during which a vascular leaf primordium (PO:0000017) forms in the peripheral zone (PO:0000225) of the shoot apical meristem (PO:0020148)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A vascular leaf initiation stage (PO:0001051) during which a vascular leaf primordium (PO:0000017) forms in the peripheral zone (PO:0000225) of the vegetative shoot apical meristem (PO:0020148)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The vascular leaf primordium (PO:0000017) develops from the vascular leaf anlagen (PO:0025431).
 synonym: "P1 stage" RELATED []
 xref: OBO-SF2_PO:556
@@ -5745,7 +5745,7 @@ replaced_by: PO:0025276
 id: PO:0006307
 name: root procambium
 namespace: plant_anatomy
-def: "A portion of procambium tissue that undergoes differentiation to form the primary vascular tissue of a root." [POC:Ramona_Walls]
+def: "A portion of procambium (PO:0025275) tissue that undergoes differentiation to form the primary vascular tissue (PO:0025408) of a root (PO:0009005)." [POC:Ramona_Walls]
 comment: A derivative of the root apical meristem.
 synonym: "procambium de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16658,7 +16658,7 @@ namespace: plant_anatomy
 def: "A portion of shoot procambium tissue that is part of a leaf." [POC:Ramona_Walls]
 synonym: "procambio de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025276 ! shoot procambium
+is_a: PO:0025276 ! - shoot procambium
 created_by: rwalls
 creation_date: 2011-02-02T11:16:33Z
 
@@ -16670,7 +16670,7 @@ def: "A portion of shoot procambium that is part of a shoot apical meristem and 
 synonym: "procambio del eje del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート軸前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3184921
-is_a: PO:0025276 ! shoot procambium
+is_a: PO:0025276 ! - shoot procambium
 relationship: part_of PO:0020148 ! shoot apical meristem
 created_by: rwalls
 creation_date: 2011-02-02T11:16:33Z
@@ -16872,7 +16872,7 @@ creation_date: 2011-02-17T09:48:05Z
 id: PO:0025275
 name: procambium
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that undergoes differentiation to form the primary vascular tissue." [ISBN:0471244554]
+def: "A portion of meristem tissue (PO:0009013) that undergoes differentiation to form the primary vascular tissue (PO:0025408)." [ISBN:0471244554]
 comment: May occur in an apical meristem or in a developing phyllome. Gives rise to the primary xylem and primary phloem. This term replaces PO:0006074.
 synonym: "procambio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16883,9 +16883,9 @@ creation_date: 2011-02-24T01:10:38Z
 
 [Term]
 id: PO:0025276
-name: shoot procambium
+name: - shoot procambium
 namespace: plant_anatomy
-def: "A portion of procambium tissue that is part of a shoot system." [POC:Ramona_Walls]
+def: "A portion of procambium (PO:0025275) tissue that is part of a shoot system (PO:0009006)." [POC:Ramona_Walls]
 synonym: "procambio del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3184921
@@ -18774,8 +18774,6 @@ synonym: "tejido vascular primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra
 synonym: "一次維管組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3476726
 is_a: PO:0009015 ! portion of vascular tissue
-intersection_of: PO:0009015 ! portion of vascular tissue
-intersection_of: develops_from PO:0025275 ! procambium
 relationship: develops_from PO:0025275 ! procambium
 created_by: rwalls
 creation_date: 2012-02-01T10:53:46Z
@@ -21101,7 +21099,7 @@ namespace: plant_anatomy
 def: "A plant cell (PO:0009002) that is part of the phyllome anlagen (PO:0025430)." [PMID:12610522, POC:Laurel_Cooper]
 comment: As a group, the phyllome founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a phyllome anlagen (PO:0025430). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria.
 synonym: "phyllome anlagen cell" EXACT []
-xref: OBO_SF2_PO:tba
+xref: OBO_SF2_PO:575
 is_a: PO:0009002 ! plant cell
 relationship: part_of PO:0025430 ! phyllome anlagen
 created_by: cooperl
@@ -21170,7 +21168,7 @@ name: vascular leaf founder cell
 namespace: plant_anatomy
 def: "A phyllome founder cell (PO:0025586) that is part of a vascular leaf anlagen (PO:0025431)." [PMID:12610522, POC:Laurel_Cooper]
 comment: As a group, the vascular leaf founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a vascular leaf anlagen (PO:0025431). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria.
-xref: OBO_SF2_PO:tba
+xref: OBO_SF2_PO:575
 is_a: PO:0025586 ! phyllome founder cell
 relationship: part_of PO:0025431 ! vascular leaf anlagen
 created_by: cooperl
