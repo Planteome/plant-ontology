@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:10:2013 18:27
+date: 08:10:2013 19:56
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -266,7 +266,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0000017
 name: vascular leaf primordium
 namespace: plant_anatomy
-def: "A phyllome primordium (PO:0025128) that develops from a leaf anlagen (PO:0025430) and is part of a vegetative shoot apex (PO:0025223) and is committed to the development of a vascular leaf (PO:0009025)." [POC:curators]
+def: "A phyllome primordium (PO:0025128) that develops from a vascular leaf anlagen (PO:0025431) and is part of a vegetative shoot apex (PO:0025223) and is committed to the development of a vascular leaf (PO:0009025)." [POC:curators, POC:Laurel_Cooper]
 synonym: "leaf primordium" EXACT []
 synonym: "portion of vascular leaf primordium tissue" EXACT []
 synonym: "primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3523,8 +3523,8 @@ is_a: PO:0025001 ! cardinal organ part
 id: PO:0004725
 name: vascular leaf primordium abaxial side
 namespace: plant_anatomy
-def: "A portion of vascular leaf primordium (PO:0000017) that faces away from the shoot apical meristem (PO:0020148) and develops into the abaxial (lower) side of the leaf lamina (PO:0020039)." [POC:Brian_Atkinson, POC:curators]
-comment: The vascular leaves (PO:0009025) of some plants may not have an obvious adaxial or abaxial side such as the leaves of many xerophytic (arid-adapted) species. The adaxial and abaxial side may appear considerably more rounded and this could be due to early activity of the vascular leaf adaxial meristem (PO:0025401) and/or leaf abaxial meristem (PO:0025401).
+def: "A portion of vascular leaf primordium (PO:0000017) that is distal to the axis of the shoot apical meristem (PO:0020148) and develops into the abaxial side of the leaf lamina (PO:0020039)." [POC:Brian_Atkinson, POC:curators, POC:Laurel_Cooper]
+comment: While the abaxial side of the leaf is usually the lower surface, the vascular leaves (PO:0009025) of some plants may not have an obvious adaxial or abaxial side such as the leaves of many xerophytic (arid-adapted) species. The adaxial and abaxial side may appear considerably more rounded and this could be due to early activity of the vascular leaf adaxial meristem (PO:0025401) and/or leaf abaxial meristem (PO:0025401).  In other cases, such as Alstromeria, the leaves may be twisted or resupinate.
 synonym: "lado abaxial del primordio de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉原基の裏側、背軸側 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:571
@@ -3535,8 +3535,8 @@ relationship: part_of PO:0000017 ! vascular leaf primordium
 id: PO:0004726
 name: vascular leaf primordium adaxial side
 namespace: plant_anatomy
-def: "A portion of vascular leaf primordium (PO:0000017) that faces the shoot apical meristem (PO:0020148) and develops into the adaxial (upper) side of the leaf lamina (PO:0020039)." [POC:Brian_Atkinson, POC:curators]
-comment: The vascular leaves (PO:0009025) of some plants may not have an obvious adaxial or abaxial side such as the leaves of many xerophytic (arid-adapted) species. The adaxial and abaxial side may appear considerably more rounded and this could be due to early activity of the vascular leaf adaxial meristem (PO:0025401) and/or leaf abaxial meristem (PO:0025401).
+def: "A portion of vascular leaf primordium (PO:0000017) that is proximal to the axis of the shoot apical meristem (PO:0020148) and develops into the adaxial side of the leaf lamina (PO:0020039)." [POC:Brian_Atkinson, POC:curators, POC:Laurel_Cooper]
+comment: While the adaxial side of the leaf is usually the upper surface, the vascular leaves (PO:0009025) of some plants may not have an obvious adaxial or abaxial side such as the leaves of many xerophytic (arid-adapted) species. The adaxial and abaxial side may appear considerably more rounded and this could be due to early activity of the vascular leaf adaxial meristem (PO:0025401) and/or leaf abaxial meristem (PO:0025401). In other cases, such as Alstromeria, the leaves may be twisted or resupinate.
 synonym: "lado adaxial del primordio de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉原基(可視的）の表側、向軸側 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:570
@@ -20921,7 +20921,7 @@ id: PO:0025572
 name: vascular leaf primordium polarity determination stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which the vascular leaf primordium (PO:0004725) develops an adaxial side (PO:0004726) and an abaxial side (PO:0004725)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
-comment: The vascular leaf primordium adaxial side (PO:0004726) is the closest side to the meristem. This stage leads to the development of a bifacial vascular leaf.
+comment: The vascular leaf primordium adaxial side (PO:0004726) is the side proximal to the axis of the vegetative shoot apical meristem (PO:0020148), while abaxial side (PO:0004725) is the distal side.
 xref: OBO_SF2_PO:569
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001019 ! vascular leaf primordium formation stage
