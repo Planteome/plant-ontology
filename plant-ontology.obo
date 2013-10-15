@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:10:2013 13:51
+date: 14:10:2013 17:51
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -24,7 +24,6 @@ default-namespace: plant_ontology
 ontology: po
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
-! The Plant Ontology is licensed under a Creative Commons License "Attribution-NoDerivs CC BY-ND" License 
 
 [Term]
 id: PO:0000001
@@ -512,7 +511,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0000037
 name: shoot apex
 namespace: plant_anatomy
-def: "A shoot axis that is the most distal part of a shoot system and has as parts a shoot apical meristem and the youngest leaf primordia." [POC:curators]
+def: "A shoot axis (PO:0025029) that is the most distal part of a shoot system (PO:0009006) and has as parts a shoot apical meristem (PO:0020148) and the youngest primordia (PO:0025127)." [POC:curators]
 subset: reference
 synonym: "&#225pice del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート頂、茎頂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -836,7 +835,7 @@ creation_date: 2011-02-02T09:01:50Z
 id: PO:0000063
 name: leaf procambial cell
 namespace: plant_anatomy
-def: "A procambial cell that is part of a leaf procambium." [POC:Ramona_Walls]
+def: "A procambial cell (PO:0025258) that is part of a leaf procambium (PO:0025259)." [POC:Ramona_Walls]
 comment: Leaf procambial cells may be derived from the shoot apical meristem or can arise throughout the mesophyll of a developing leaf.
 subset: CL
 synonym: "c&#233lula procambial de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4693,7 +4692,7 @@ relationship: part_of PO:0025201 ! megasporangium
 id: PO:0006016
 name: leaf epidermis
 namespace: plant_anatomy
-def: "A portion of phyllome epidermis that is part of a leaf." [POC:curators]
+def: "A portion of phyllome epidermis (PO:0025157) that is part of a leaf." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "foliage leaf epidermis" EXACT []
@@ -4717,7 +4716,7 @@ is_a: PO:0009089 ! endosperm
 id: PO:0006018
 name: leaf adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that covers the adaxial/upper surface of a leaf." [POC:Ramona_Walls]
+def: "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf." [POC:Ramona_Walls]
 comment: Used to refer to an adaxial epidermis of an entire leaf. More specific terms exist for leaf lamina adaxial epidermis and petiole adaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis adaxial de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "upper epidermis" RELATED []
@@ -4728,7 +4727,7 @@ is_a: PO:0006016 ! leaf epidermis
 id: PO:0006019
 name: leaf abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf epidermis that covers the abaxial/lower surface of a leaf." [POC:curators]
+def: "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf." [POC:curators, POC:Laurel_Cooper]
 comment: Used to refer to an abaxial epidermis of an entire leaf. More specific terms exist for leaf lamina abaxial epidermis and petiole abaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis abaxial de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lower epidermis" RELATED []
@@ -5299,18 +5298,20 @@ relationship: part_of PO:0000026 ! primary root tip
 id: PO:0006082
 name: abaxial protoderm
 namespace: plant_anatomy
-def: "The outermost layer of the shoot apical meristem which gives rise to the abaxial/lower leaf epidermis." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148) and gives rise to the leaf abaxial epidermis (PO:0006019)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:cooperl]
 synonym: "protodermis abaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "背軸側前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:125
 is_a: PO:0006210 ! protoderm
 
 [Term]
 id: PO:0006083
 name: adaxial protoderm
 namespace: plant_anatomy
-def: "The outermost layer of the shoot apical meristem which gives rise to the adaxial/upper leaf epidermis." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148) and gives rise to the leaf adaxial epidermis (PO:0006018)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:Laurel_Cooper]
 synonym: "protodermis adaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "向軸側前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:125
 is_a: PO:0006210 ! protoderm
 
 [Term]
@@ -5535,11 +5536,12 @@ is_obsolete: true
 id: PO:0006210
 name: protoderm
 namespace: plant_anatomy
-def: "A portion of meristem tissue that develops from the outer layer of an apical meristem and gives rise to a portion of epidermis." [ISBN:047124529, POC:curators]
+def: "A portion of meristem tissue  (PO:0009013) that develops from the outer layer of an apical meristem (PO:0020144) and gives rise to a portion of epidermis (PO:0005679)." [ISBN:047124529, POC:curators]
 comment: It may or may not arise from independent initials. Some researchers also call it an epidermis in meristematic state.
 synonym: "dermatogen cell" RELATED []
 synonym: "protodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "前表皮、原表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:125
 xref: OBO_SF_PO:3016651
 is_a: PO:0009013 ! portion of meristem tissue
 
@@ -13001,7 +13003,7 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0020144
 name: apical meristem
 namespace: plant_anatomy
-def: "A maximal portion of meristem tissue located at an apex of a shoot system or root system." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A maximal portion of meristem tissue (PO:0009013) located at  a shoot apex (PO:0000037) or root system (PO:0025025)." [GR:Pankaj_Jaiswal, POC:curators]
 subset: TraitNet
 synonym: "AM" EXACT []
 synonym: "meristema apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -15282,12 +15284,10 @@ creation_date: 2010-11-15T02:23:56Z
 id: PO:0025157
 name: phyllome epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis (PO:0006035) that is part of a phyllome (PO:0006001)." [POC:curators]
+def: "A portion of shoot epidermis (PO:0006035) that is part of a phyllome (PO:0006001)." [POC:curators, POC:Laurel_Cooper]
 synonym: "epidermis del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006035 ! shoot epidermis
-intersection_of: PO:0005679 ! epidermis
-intersection_of: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0006001 ! phyllome
 created_by: rwalls
 creation_date: 2010-11-15T02:32:53Z
@@ -15660,7 +15660,7 @@ creation_date: 2010-12-06T01:11:21Z
 id: PO:0025183
 name: leaf stomatal complex
 namespace: plant_anatomy
-def: "A phyllome stomatal complex that is part of a leaf." [POC:Ramona_Walls]
+def: "A phyllome stomatal complex (PO:0025215) that is part of a leaf." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "complejo estom&#225tico de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf epidermal stomatal complex" EXACT []
@@ -15753,7 +15753,7 @@ creation_date: 2010-12-09T11:49:35Z
 id: PO:0025190
 name: leaf abaxial stomatal complex
 namespace: plant_anatomy
-def: "A leaf stomatal complex that is part of a leaf abaxial epidermis." [POC:Ramona_Walls]
+def: "A leaf stomatal complex (PO:0025183) that is part of a leaf abaxial epidermis (PO:0006019)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "complejo estom&#225tico de la superficie abaxial de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf abaxial epidermal stomatal complex" EXACT []
@@ -16654,10 +16654,10 @@ creation_date: 2011-02-02T09:46:46Z
 id: PO:0025259
 name: leaf procambium
 namespace: plant_anatomy
-def: "A portion of shoot procambium tissue that is part of a leaf." [POC:Ramona_Walls]
+def: "A portion of shoot procambium (PO:0025276) tissue that is part of a vascular leaf (PO:0009025)." [POC:Ramona_Walls]
 synonym: "procambio de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025276 ! - shoot procambium
+is_a: PO:0025276 ! shoot procambium
 created_by: rwalls
 creation_date: 2011-02-02T11:16:33Z
 
@@ -16669,7 +16669,7 @@ def: "A portion of shoot procambium that is part of a shoot apical meristem and 
 synonym: "procambio del eje del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート軸前形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3184921
-is_a: PO:0025276 ! - shoot procambium
+is_a: PO:0025276 ! shoot procambium
 relationship: part_of PO:0020148 ! shoot apical meristem
 created_by: rwalls
 creation_date: 2011-02-02T11:16:33Z
@@ -16882,7 +16882,7 @@ creation_date: 2011-02-24T01:10:38Z
 
 [Term]
 id: PO:0025276
-name: - shoot procambium
+name: shoot procambium
 namespace: plant_anatomy
 def: "A portion of procambium (PO:0025275) tissue that is part of a shoot system (PO:0009006)." [POC:Ramona_Walls]
 synonym: "procambio del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
