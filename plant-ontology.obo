@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:10:2013 11:24
+date: 18:10:2013 13:50
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1035,7 +1035,7 @@ synonym: "culm epidermis" RELATED []
 synonym: "epidermis del eje del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem epidermis" NARROW []
 synonym: "シュート軸表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0006035 ! shoot system epidermis
 relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
@@ -1130,7 +1130,7 @@ namespace: plant_anatomy
 def: "A portion of shoot epidermis that is part of a nectary." [POC:Ramona_Walls]
 synonym: "epidermis del nectario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "蜜腺表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0006035 ! shoot system epidermis
 relationship: part_of PO:0009035 ! nectary
 
 [Term]
@@ -1222,7 +1222,7 @@ synonym: "axillary meristem" RELATED []
 synonym: "meristema de yema axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋芽分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3016498
-is_a: PO:0006079 ! shoot meristem
+is_a: PO:0006079 ! shoot system meristem
 
 [Term]
 id: PO:0000244
@@ -2277,7 +2277,7 @@ synonym: "stomatal apparatus" EXACT [FNA:5def9af3-483f-41c5-93e3-fa66839b22f6]
 synonym: "stomate" EXACT [FNA:1d7d0bb6-be7e-43e4-8730-6e31b43915b4]
 synonym: "気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3132410
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0006035 ! shoot system epidermis
 
 [Term]
 id: PO:0002001
@@ -3692,7 +3692,7 @@ namespace: plant_anatomy
 def: "The outermost primary cell layer of the hypocotyl." [PMID:15368128, TAIR:Donghui_Li]
 synonym: "epidermis del hipoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0006035 ! shoot system epidermis
 relationship: part_of PO:0020100 ! hypocotyl
 
 [Term]
@@ -4837,14 +4837,15 @@ relationship: part_of PO:0020049 ! leaflet
 
 [Term]
 id: PO:0006035
-name: shoot epidermis
+name: shoot system epidermis
 namespace: plant_anatomy
-def: "A portion of epidermis that is part of a shoot system." [ISBN:047124529, POC:curators]
+def: "A portion of epidermis (PO:0005679) that is part of a shoot system (PO:0009006) and arises from the meristem L1 layer (PO:0009020)." [ISBN:047124529, POC:curators, POC:Laurel_Cooper]
 comment: Often interrupted by stomata and other structures. The shoot epidermis is different from the root epidermis in its origin, function and structure.
 synonym: "epidermis del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3008016
 is_a: PO:0005679 ! epidermis
+relationship: develops_from PO:0009020 ! meristem L1 layer
 relationship: part_of PO:0009006 ! shoot system
 
 [Term]
@@ -5198,7 +5199,7 @@ subset: TraitNet
 synonym: "meristema intercalar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "節間分裂組織、介在分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3496010
-is_a: PO:0006079 ! shoot meristem
+is_a: PO:0006079 ! shoot system meristem
 
 [Term]
 id: PO:0006074
@@ -5261,15 +5262,14 @@ is_obsolete: true
 
 [Term]
 id: PO:0006079
-name: shoot meristem
+name: shoot system meristem
 namespace: plant_anatomy
 def: "A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006)." [GR:Pankaj_Jaiswal]
 subset: TraitNet
 synonym: "meristema del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:472
 is_a: PO:0009013 ! portion of meristem tissue
-intersection_of: PO:0009013 ! portion of meristem tissue
-intersection_of: part_of PO:0009006 ! shoot system
 relationship: part_of PO:0009006 ! shoot system
 
 [Term]
@@ -10145,9 +10145,10 @@ replaced_by: PO:0025196
 
 [Term]
 id: PO:0009020
-name: meristem L1
+name: meristem L1 layer
 namespace: plant_anatomy
-def: "The outermost layer of a shoot apical meristem that gives rise to a shoot epidermis." [GR:Pankaj_Jaiswal, PMID:12221985]
+def: "A portion of meristem tissue (PO:0009013) that is the outermost layer of a shoot apical meristem (PO:0020148) and gives rise to a shoot system epidermis (PO:0006035)." [GR:Pankaj_Jaiswal, PMID:11283725, PMID:12221985, POC:Laurel_Cooper]
+comment: The cells of the meristem L1 layer divide in a strictly anticlinical fashion.
 synonym: "meristema L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! portion of meristem tissue
@@ -10155,9 +10156,10 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0009021
-name: meristem L2
+name: meristem L2 layer
 namespace: plant_anatomy
-def: "A cell layer directly beneath a meristem L1 layer in a shoot apical meristem which gives rise to subepidermal tissue." [GR:Pankaj_Jaiswal, PMID:12221985]
+def: "A portion of meristem tissue (PO:0009013) directly beneath a meristem L1 layer (PO:0009020) in a shoot apical meristem (PO:0020148) which gives rise to ground tissue (PO:0025059)." [GR:Pankaj_Jaiswal, PMID:11283725, PMID:12221985]
+comment: Cells in the first subepidermal layer, the L2, divide in a largely anticlinal fashion, forming a completely separate population of cells from the other cell layers. Within developing organs, the meristem L2 layer divides anticlinally and periclinally.
 synonym: "meristema L2 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L2 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! portion of meristem tissue
@@ -10165,9 +10167,10 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
 id: PO:0009022
-name: meristem L3
+name: meristem L3 layer
 namespace: plant_anatomy
-def: "A multicellular layer beneath a meristem L2 layer in a shoot apical meristem which gives rise to internal tissues of leaf and stem." [GR:Pankaj_Jaiswal, PMID:12221985]
+def: "A portion of meristem tissue (PO:0009013) beneath a meristem L2 layer (PO:0009021) in a shoot apical meristem (PO:0020148) which gives rise to internal tissues of leaf and stem." [GR:Pankaj_Jaiswal, PMID:11283725, PMID:12221985, POC:Laurel_Cooper]
+comment: The meristem L3 layer cells frequently divide in various orientations.
 synonym: "meristema L3 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009013 ! portion of meristem tissue
@@ -13051,7 +13054,7 @@ synonym: "primary shoot meristem" RELATED []
 synonym: "promeristem" BROAD []
 synonym: "SAM" EXACT []
 synonym: "茎頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006079 ! shoot meristem
+is_a: PO:0006079 ! shoot system meristem
 is_a: PO:0020144 ! apical meristem
 relationship: part_of PO:0000037 ! shoot apex
 
@@ -15286,7 +15289,7 @@ namespace: plant_anatomy
 def: "A portion of shoot epidermis (PO:0006035) that is part of a phyllome (PO:0006001)." [POC:curators, POC:Laurel_Cooper]
 synonym: "epidermis del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006035 ! shoot epidermis
+is_a: PO:0006035 ! shoot system epidermis
 relationship: part_of PO:0006001 ! phyllome
 created_by: rwalls
 creation_date: 2010-11-15T02:32:53Z
@@ -15397,7 +15400,7 @@ subset: CL
 synonym: "c&#233lula epid&#233rmica del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004013 ! epidermal cell
-relationship: part_of PO:0006035 ! shoot epidermis
+relationship: part_of PO:0006035 ! shoot system epidermis
 created_by: rwalls
 creation_date: 2010-11-18T10:29:44Z
 
