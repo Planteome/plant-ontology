@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:10:2013 11:54
+date: 18:10:2013 10:28
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -12945,8 +12945,6 @@ synonym: "葉身葉脈 ？   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3459287
 xref: OBO_SF_PO:3476730
 is_a: PO:0025348 ! phyllome lamina vein
-intersection_of: PO:0025348 ! phyllome lamina vein
-intersection_of: part_of PO:0000048 ! leaf lamina vascular system
 relationship: part_of PO:0000048 ! leaf lamina vascular system
 
 [Term]
@@ -20156,6 +20154,7 @@ name: petal spur
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is a slender, hollow extension of a petal (PO:0009032)." [ISBN:9781842464229]
 comment: Often contains nectar. Use this term if the spur is part of a single petal. If the spur is part two or more fused petals, use corolla spur (PO:0025512).
+synonym: "花弁距 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3080941
 xref: PlantSystematics_image_archive:15744
 is_a: PO:0025001 ! cardinal organ part
@@ -20182,6 +20181,7 @@ id: PO:0025513
 name: organ lamina
 namespace: plant_anatomy
 def: "A lamina (PO:0025060) that is part of a plant organ (PO:0009008)." [POC:curators]
+synonym: "器官 葉身 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_OBO:3474979
 is_a: PO:0025060 ! lamina
 intersection_of: PO:0025060 ! lamina
@@ -20233,6 +20233,7 @@ name: leaf lamina lobe
 namespace: plant_anatomy
 def: "A phyllome lobe (PO:0025514) that is a projection on a leaf lamina margin (PO:0025009) for which the corresponding leaf sinus (PO:0025384) extends one quarter or more of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
 comment: A leaf lobe may be either rounded or angular at the tip, and may have leaf teeth (PO:0025518) or leaf crenae (PO:0025519) on its margin. The corresponding leaf sinus may be rounded or angular.
+synonym: "葉身裂片(Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025514 ! phyllome lamina lobe
 intersection_of: PO:0025514 ! phyllome lamina lobe
 intersection_of: part_of PO:0025034 ! leaf
@@ -20246,6 +20247,7 @@ namespace: plant_anatomy
 def: "A phyllome lamina tooth (PO:0025515) that is an angular projection on a leaf margin (PO:0020128) for which the corresponding leaf sinus (PO:0025384) extends less than one quarter of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
 comment: See leaf lamina crena (PO:0025519) for a small rounded projection. The corresponding leaf sinus may be rounded or angular.
 synonym: "leaf lamina teeth" EXACT Plural []
+synonym: "葉身歯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025515 ! phyllome lamina tooth
 intersection_of: PO:0025515 ! phyllome lamina tooth
 intersection_of: part_of PO:0025034 ! leaf
@@ -20261,6 +20263,7 @@ comment: See leaf lamina tooth (PO:0025518) for a small angular projection. The 
 synonym: "leaf lamina crenae" EXACT Plural []
 synonym: "leaf lamina crenule" NARROW []
 synonym: "leaf lamina scallop" EXACT []
+synonym: "葉身鈍鋸歯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025516 ! phyllome lamina crena
 intersection_of: PO:0025516 ! phyllome lamina crena
 intersection_of: part_of PO:0025034 ! leaf
@@ -20274,6 +20277,7 @@ namespace: plant_anatomy
 def: "A leaf lamina vein (PO:0020138) that is just inside the leaf lamina margin (PO:0025009) and extends from the leaf lamina base (PO:0008019) to the leaf apex (PO:0020137)." [POC:Laurel_Cooper]
 comment: The leaf lamina intramarginal vein is much thinner than the leaf midvein (PO:0020139; syn: midrib), and is of constant thickness.
 synonym: "intramarginal vein" BROAD []
+synonym: "葉身辺縁葉脈 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3590680
 is_a: PO:0020138 ! leaf lamina vein
 created_by: Laurel_Cooper
@@ -20312,6 +20316,7 @@ id: PO:0025523
 name: tuberous root
 namespace: plant_anatomy
 def: "A root (PO:0009005) that is radially enlarged relative to other lateral roots (PO:0020121) or shoot-borne roots (PO:0000042) on the same plant, but not as enlarged as a tuberous root tuber (PO:0025476)." [POC:curators]
+synonym: "塊茎根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2813017
 is_a: PO:0009005 ! root
 created_by: Laurel_Cooper
@@ -20590,6 +20595,7 @@ name: anther wall tapetum cell
 namespace: plant_anatomy
 def: "A microsporangium tapetum cell (PO:0025544) that is part of the anther wall tapetum (PO:0009071)." [POC:Laurel_Cooper]
 synonym: "anther wall tapetal cell" EXACT []
+synonym: "葯壁絨毯細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3609728
 is_a: PO:0025544 ! microsporangium tapetum cell
 relationship: part_of PO:0009071 ! anther wall tapetum
@@ -20744,7 +20750,8 @@ name: endarch protoxylem
 namespace: plant_anatomy
 def: "A portion of protoxylem (PO:0000272) tissue in which the maturation of primary xylem (PO:0005849) of the shoot system (PO:0009006) progresses centrifugally, with the oldest elements (protoxylem) towards the center of the plant axis (PO:0025004)." [ISBN:0471245208, POC:Laurel_Cooper]
 comment: Endarch protoxylem is typically found in stems of seed plants, and also in leaves in which the protoxylem is on the adaxial side.
-synonym: "protoxilema endarch (Spanish)" EXACT Spanish [POC:Laurel_Cooper]
+synonym: "protoxilema endarch (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "内原型原生木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3610599
 is_a: PO:0000272 ! protoxylem
 created_by: Laurel_Cooper
