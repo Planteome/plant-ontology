@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:10:2013 15:25
+date: 21:10:2013 16:40
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1948,6 +1948,7 @@ synonym: "00 Dry Seed in soybean" RELATED [SOY:0000009]
 synonym: "1.01-dry seed in Triticeae" RELATED [GRO:0007052]
 synonym: "BBCH growth stage 00" RELATED [ISBN:3826331524]
 synonym: "dry seed in Arabidopsis" RELATED [TAIR:0000213]
+xref: OBO_SF2_PO:568
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0007632 ! seed maturation stage
 
@@ -2138,6 +2139,7 @@ alt_id: PO:0001076
 def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo stage
 relationship: preceded_by PO:0004507 ! bilateral stage
 
@@ -2155,6 +2157,7 @@ namespace: plant_structure_development_stage
 def: "Stage at which the embryo is fully developed." [APweb:Glossary, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo stage
 relationship: preceded_by PO:0001078 ! expanded cotyledon stage
 
@@ -2180,6 +2183,7 @@ name: true leaf formation stage
 namespace: plant_structure_development_stage
 def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
+xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo stage
 relationship: preceded_by PO:0001081 ! mature embryo stage
 
@@ -2220,7 +2224,7 @@ is_a: PO:0001042 ! functional specialization of the endosperm stage
 id: PO:0001170
 name: seed development stage
 namespace: plant_structure_development_stage
-def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a seed (PO:0009010)." [POC:cooperl, POC:Ramona_Walls, TAIR:Katica_Ilic]
+def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a seed (PO:0009010)." [POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
 comment: Includes the stages of seed development, from fertilization to the dry or quiescent state. May have as part an embryo development stage.
 synonym: "seed development in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:568
@@ -2233,6 +2237,7 @@ namespace: plant_structure_development_stage
 def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [APweb:Glossary, TAIR:Katica_Ilic]
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo stage
 
 [Term]
@@ -2244,6 +2249,7 @@ synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo stage
 relationship: preceded_by PO:0001180 ! proembryo stage
 
@@ -2718,6 +2724,7 @@ id: PO:0004505
 name: fertilized ovule stage
 namespace: plant_structure_development_stage
 def: "The earliest stage of seed development immediately following double fertilization." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:568
 is_a: PO:0001170 ! seed development stage
 
 [Term]
@@ -2725,6 +2732,7 @@ id: PO:0004506
 name: developing seed stage
 namespace: plant_structure_development_stage
 def: "Stage of seed development characterized by seed growth and differentiation." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:568
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0007633 ! endosperm development stage
 
@@ -2739,6 +2747,7 @@ synonym: "heart stage in Arabidopsis" RELATED []
 synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
 synonym: "triangle stage in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo stage
 relationship: preceded_by PO:0001185 ! globular stage
 
@@ -9195,6 +9204,7 @@ name: seed maturation stage
 namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequently, a desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
 synonym: "seed maturation in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:568
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0004506 ! developing seed stage
 
@@ -9203,6 +9213,7 @@ id: PO:0007633
 name: endosperm development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the endosperm." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:568
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0004505 ! fertilized ovule stage
 
@@ -9391,6 +9402,7 @@ def: "A shoot apical meristem (PO:0020148) that gives rise to the apical growth 
 synonym: "meristema vegetativo apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vegetative meristem" RELATED []
 synonym: "栄養シュート頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:36
 is_a: PO:0020148 ! shoot apical meristem
 relationship: part_of PO:0025223 ! vegetative shoot apex
 
@@ -9532,6 +9544,7 @@ namespace: plant_anatomy
 def: "A shoot apical meristem (PO:0020148) that gives rise to the apical growth of reproductive tissues and organs." [GR:Chih-Wei_Tung]
 synonym: "meristema apical reproductivo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生殖シュート頂端 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:36
 is_a: PO:0020148 ! shoot apical meristem
 relationship: part_of PO:0025222 ! reproductive shoot apex
 
@@ -10151,6 +10164,8 @@ def: "A portion of meristem tissue (PO:0009013) that is the outermost layer of a
 comment: The cells of the meristem L1 layer divide in a strictly anticlinical fashion.
 synonym: "meristema L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:150
+xref: OBO_SF2_PO\::576
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
@@ -10158,10 +10173,12 @@ relationship: part_of PO:0020148 ! shoot apical meristem
 id: PO:0009021
 name: meristem L2 layer
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) directly beneath a meristem L1 layer (PO:0009020) in a shoot apical meristem (PO:0020148) which gives rise to ground tissue (PO:0025059)." [GR:Pankaj_Jaiswal, PMID:11283725, PMID:12221985]
+def: "A portion of meristem tissue (PO:0009013) directly beneath a meristem L1 layer (PO:0009020) in a shoot apical meristem (PO:0020148) which gives rise to ground tissue (PO:0025059)." [GR:Pankaj_Jaiswal, PMID:11283725, PMID:12221985, POC:Laurel_Cooper]
 comment: Cells in the first subepidermal layer, the L2, divide in a largely anticlinal fashion, forming a completely separate population of cells from the other cell layers. Within developing organs, the meristem L2 layer divides anticlinally and periclinally.
 synonym: "meristema L2 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L2 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:150
+xref: OBO_SF2_PO:576
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
@@ -10173,6 +10190,8 @@ def: "A portion of meristem tissue (PO:0009013) beneath a meristem L2 layer (PO:
 comment: The meristem L3 layer cells frequently divide in various orientations.
 synonym: "meristema L3 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L3 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:150
+xref: OBO_SF2_PO:576
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
@@ -18275,6 +18294,7 @@ comment: A seed dormancy process (GO:0010162) is a dormancy process in which dor
 synonym: "etapa latente de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:424
+xref: OBO_SF2_PO:568
 is_a: PO:0001170 ! seed development stage
 relationship: has_part PO:0025377 ! plant embryo dormant stage
 relationship: preceded_by PO:0001040 ! dry seed stage
