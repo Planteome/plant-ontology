@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:10:2013 12:29
+date: 25:10:2013 16:30
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3216,6 +3216,7 @@ def: "A shoot-borne shoot system (PO:0004546) developing from a stem (PO:0009047
 synonym: "stem sucker" EXACT []
 synonym: "tallo epic&#243rmico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "後生枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:135
 is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
@@ -4854,9 +4855,10 @@ id: PO:0006035
 name: shoot system epidermis
 namespace: plant_anatomy
 def: "A portion of epidermis (PO:0005679) that is part of a shoot system (PO:0009006) and arises from the meristem L1 layer (PO:0009020)." [ISBN:047124529, POC:curators, POC:Laurel_Cooper]
-comment: Often interrupted by stomata and other structures. The shoot epidermis is different from the root epidermis in its origin, function and structure.
+comment: Often interrupted by stomatal complexes (PO:0002000) and other structures. The shoot system epidermis is different from the root epidermis (PO:0006036) in its origin, function and structure.
 synonym: "epidermis del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:111
 xref: OBO_SF_PO:3008016
 is_a: PO:0005679 ! epidermis
 relationship: develops_from PO:0009020 ! meristem L1 layer
@@ -9976,6 +9978,7 @@ synonym: "thalli" RELATED Plural [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
 synonym: "thallus" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
 synonym: "tree crown" NARROW []
 synonym: "シュート系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:135
 xref: OBO_SF_PO:3028469
 is_a: PO:0025007 ! collective plant organ structure
 disjoint_from: PO:0025025 ! root system
@@ -11358,6 +11361,7 @@ subset: TraitNet
 synonym: "cubierta de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of seed coat tissue" EXACT []
 synonym: "種子種皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:149
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
 
