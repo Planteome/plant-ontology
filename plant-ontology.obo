@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:10:2013 16:40
+date: 24:10:2013 18:30
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -363,7 +363,7 @@ is_obsolete: true
 id: PO:0000025
 name: root tip
 namespace: plant_anatomy
-def: "The portion of the root including the meristem and root cap." [TAIR:Katica_Ilic]
+def: "The apical most portion of the root (PO:0009005) including the root apical meristem (PO:0020147) and root cap (PO:0020123)." [TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971884
@@ -575,7 +575,7 @@ name: shoot-borne root
 namespace: plant_anatomy
 alt_id: PO:0003007
 alt_id: PO:0020129
-def: "A post-embryonic root that develops from shoot tissue." [GR:Pankaj_Jaiswal, TAIR:Katica_Ilic]
+def: "A root (PO:0009005) that develops from shoot axis (PO:0025029) tissue, in the post-embryonic stage." [GR:Pankaj_Jaiswal, TAIR:Katica_Ilic]
 subset: reference
 subset: TraitNet
 synonym: "adventitious root" BROAD []
@@ -584,6 +584,7 @@ synonym: "climbing root" BROAD [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
 synonym: "epiblasto (epiblastema) que se origina en la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stilt root" NARROW []
 synonym: "シュート細胞由来の根  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:163
 is_a: PO:0009005 ! root
 relationship: develops_from PO:0025480 ! shoot-borne root primordium
 
@@ -1057,11 +1058,12 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000146
 name: abscission zone
 namespace: plant_anatomy
-def: "A portion of plant tissue that is part of a plant structure that has as parts a separation layer and a protective layer and is involved in the abscission of the structure." [ISBN:047124529, POC:curators]
+def: "A portion of plant tissue (PO:0009007) that is part of a plant structure that has as parts a separation layer (PO:0006211) and a protective layer (PO:0006212) and is involved in the abscission of the structure." [ISBN:047124529, POC:curators]
 synonym: "abscission layer" RELATED []
 synonym: "zona de absici&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "離層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: GO:0009838
+xref: OBO_SF2_PO:193
 is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
@@ -4748,12 +4750,13 @@ id: PO:0006020
 name: lateral root apical meristem
 namespace: plant_anatomy
 alt_id: PO:0003013
-def: "A root apical meristem (PO:0020147) is part of a lateral root (PO:0020121)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "A root apical meristem (PO:0020147) gives rise to a lateral root (PO:0020121)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 comment: This is different from root lateral meristem.
 synonym: "apical meristem of lateral root" RELATED []
 synonym: "lateral root meristem" RELATED []
 synonym: "meristema apical de la ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:577
 is_a: PO:0020147 ! root apical meristem
 relationship: part_of PO:0000027 ! lateral root tip
 
@@ -4761,11 +4764,12 @@ relationship: part_of PO:0000027 ! lateral root tip
 id: PO:0006021
 name: adventitious root apical meristem
 namespace: plant_anatomy
-def: "A root apical meristem (PO:0020147) that is part of an adventitious root." [GR:Pankaj_Jaiswal]
+def: "A root apical meristem (PO:0020147) gives rise to a shoot-borne root (PO:0000042)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "crown root meristem" RELATED []
 synonym: "meristema de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seminal root meristem" RELATED []
 synonym: "不定根頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:163
 is_a: PO:0020147 ! root apical meristem
 relationship: part_of PO:0000042 ! shoot-borne root
 
@@ -5295,11 +5299,12 @@ is_obsolete: true
 id: PO:0006081
 name: primary root apical meristem
 namespace: plant_anatomy
-def: "A root apical meristem (PO:0020147) that is part of a primary root (PO:0020127)." [GR:Pankaj_Jaiswal]
+def: "A root apical meristem (PO:0020147) that gives rise to a primary root (PO:0020127)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "apical meristem of primary root" RELATED []
 synonym: "embryonic root meristem" RELATED []
 synonym: "meristema apical de la ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:577
 is_a: PO:0020147 ! root apical meristem
 relationship: part_of PO:0000026 ! primary root tip
 
@@ -5558,10 +5563,11 @@ is_a: PO:0009013 ! portion of meristem tissue
 id: PO:0006211
 name: separation layer
 namespace: plant_anatomy
-def: "A portion of plant tissue that is part of an abscission zone and contains cells that develop an abnormal wall chemistry and swelling resulting in their easily being pulled apart along the pectin-rich middle lamella." [ISBN:0122151704]
+def: "A portion of plant tissue (PO:0009007) that is part of an abscission zone (PO:0000146) and contains cells that develop an abnormal wall chemistry and swelling resulting in their easily being pulled apart along the pectin-rich middle lamella." [ISBN:0122151704]
 comment: Directly involved in the weakening process of abscission.
 synonym: "capa de separaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "隔離層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:190
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000146 ! abscission zone
 
@@ -5569,9 +5575,10 @@ relationship: part_of PO:0000146 ! abscission zone
 id: PO:0006212
 name: protective layer
 namespace: plant_anatomy
-def: "A portion of plant tissue composed of a layer of cells that is part of the abscission zone that have lignin and suberin depositions and are found on the axial side of the break or exposed surface of abscission." [ISBN:0122151704]
+def: "A portion of plant tissue (PO:0009007) composed of a layer of cells that is part of the abscission zone (PO:0000146) that have lignin and suberin depositions and are found on the axial side of the break or exposed surface of abscission." [ISBN:0122151704]
 synonym: "capa protectora (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "保護層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:190
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000146 ! abscission zone
 
@@ -10165,7 +10172,7 @@ comment: The cells of the meristem L1 layer divide in a strictly anticlinical fa
 synonym: "meristema L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:150
-xref: OBO_SF2_PO\::576
+xref: OBO_SF2_PO:\:576
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
@@ -12773,12 +12780,13 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0020123
 name: root cap
 namespace: plant_anatomy
-def: "A portion of parenchyma tissue that is part of the root tip and covers the root apical meristem." [ISBN:0716710072, POC:curators]
+def: "A portion of root parenchyma (PO:0025095) tissue that is part of the root tip (PO:0000025) and covers the root apical meristem (PO:0020147)." [ISBN:0716710072, POC:curators]
 comment: Often composed of living and dead parenchyma cells. Protects the root apical meristem.
 subset: reference
 synonym: "caliptra de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "rootcap" EXACT [ISBN:0716710072]
 synonym: "根冠（＝kalyptra) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:194
 is_a: PO:0025095 ! root parenchyma
 relationship: part_of PO:0000025 ! root tip
 
@@ -13059,6 +13067,7 @@ synonym: "meristema apical de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Al
 synonym: "promeristem" BROAD []
 synonym: "RAM" EXACT []
 synonym: "根端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:577
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
 
@@ -13081,10 +13090,11 @@ relationship: part_of PO:0000037 ! shoot apex
 id: PO:0020149
 name: quiescent center
 namespace: plant_anatomy
-def: "A portion of meristem tissue that is part of a root apical meristem and consists of mitotically and metabolically inactive cells and is positioned behind the root protoderm." [ISBN:0122151704, POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that is part of a root apical meristem (PO:0020147) and consists of mitotically and metabolically inactive cells and is located behind the protoderm (PO:0006210) of the root (PO:0009005)." [ISBN:0122151704, POC:curators]
 comment: If a root cap is present, the quiescent center is behind the root cap.
 synonym: "centro de division de c&#233lulas del meristema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "静止中心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:190
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020147 ! root apical meristem
 
@@ -14421,9 +14431,10 @@ creation_date: 2010-10-27T11:28:21Z
 id: PO:0025095
 name: root parenchyma
 namespace: plant_anatomy
-def: "A portion of parenchyma tissue that is part of a root." [POC:curators]
+def: "A portion of parenchyma tissue (PO:0005421) that is part of a root (PO:0009005)." [POC:curators]
 synonym: "par&#233nquima de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:213
 is_a: PO:0005421 ! parenchyma
 relationship: part_of PO:0009005 ! root
 created_by: rwalls
@@ -19137,12 +19148,12 @@ creation_date: 2012-02-07T09:07:56Z
 id: PO:0025433
 name: root anlagen
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is committed to the development of a root primordium (PO:0005029)." [POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that is committed to the development of a root primordium (PO:0005029)." [POC:curators]
 comment: Only detectable by gene expression, not morphology. May arise in a pericycle (PO:0006203), as for lateral roots in most seed plants, an endodermis (PO:0000252), as for lateral roots in ferns, or from parenchyma cells (PO:0000074) that are part a shoot axis (PO:0025029), in the case of a basal root (PO:0025002) or shoot-borne root (PO:0000042).
 synonym: "precursor de ra&#237 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:427
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0009013 ! portion of meristem tissue
 created_by: Laurel_Cooper
 creation_date: 2012-02-08T01:00:56Z
 
