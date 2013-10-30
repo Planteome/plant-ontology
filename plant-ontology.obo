@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2013 18:20
+date: 29:10:2013 19:48
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -596,7 +596,7 @@ def: "Adventitious root formed at the base of the growing stem (known as a crown
 subset: reference
 synonym: "ra&#237z en corona (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "冠根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0003005 ! nodal root
+is_a: PO:0003005 ! shoot-borne nodal root
 
 [Term]
 id: PO:0000044
@@ -610,7 +610,7 @@ synonym: "brace root" RELATED []
 synonym: "breathing root" BROAD []
 synonym: "ra&#237z de sost&#233n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "支柱根、支持根、支柱気根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0003005 ! nodal root
+is_a: PO:0003005 ! shoot-borne nodal root
 
 [Term]
 id: PO:0000045
@@ -635,7 +635,7 @@ synonym: "scutellar nodal root" RELATED []
 synonym: "secondary root" RELATED []
 synonym: "種子根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000045 ! embryo root
-is_a: PO:0003005 ! nodal root
+is_a: PO:0003005 ! shoot-borne nodal root
 
 [Term]
 id: PO:0000047
@@ -2377,15 +2377,16 @@ is_obsolete: true
 
 [Term]
 id: PO:0003005
-name: nodal root
+name: shoot-borne nodal root
 namespace: plant_anatomy
 alt_id: PO:0003008
 alt_id: PO:0003009
-def: "Adventitious root that forms at a shoot node." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/]
+def: "A shoot-borne root (PO:0000042) that forms at a shoot axis node (PO:0005004)." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/]
 subset: reference
 subset: TraitNet
 synonym: "ra&#237z nodosa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "節根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:163
 is_a: PO:0000042 ! shoot-borne root
 
 [Term]
@@ -4764,9 +4765,9 @@ relationship: part_of PO:0000027 ! lateral root tip
 
 [Term]
 id: PO:0006021
-name: adventitious root apical meristem
+name: shoot-borne root meristem
 namespace: plant_anatomy
-def: "A root apical meristem (PO:0020147) gives rise to a shoot-borne root (PO:0000042)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "A portion of meristem tissue that gives rise to a shoot-borne root (PO:0000042)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "crown root meristem" RELATED []
 synonym: "meristema de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seminal root meristem" RELATED []
@@ -13039,13 +13040,14 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0020144
 name: apical meristem
 namespace: plant_anatomy
-def: "A maximal portion of meristem tissue (PO:0009013) located at  a shoot apex (PO:0000037) or root system (PO:0025025)." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A maximal portion of meristem tissue (PO:0009013) located at  a shoot apex (PO:0000037) or root tip (PO:0000025)." [GR:Pankaj_Jaiswal, POC:curators, POC:Laurel_Cooper]
 subset: TraitNet
 synonym: "AM" EXACT []
 synonym: "meristema apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary meristem" RELATED []
 synonym: "promeristem" BROAD []
 synonym: "頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:579
 is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
@@ -13067,8 +13069,8 @@ relationship: part_of PO:0025004 ! plant axis
 id: PO:0020147
 name: root apical meristem
 namespace: plant_anatomy
-def: "A root meristem (PO:0006085) formed at the apex of a root (PO:0009005), including those originating from an lateral root apical meristem (PO:0006020)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper, UMSL:fz]
-comment: In most cases it is involved in root elongation.
+def: "A root meristem (PO:0006085) located at the root tip (PO:0000025), behind the root cap (PO:0020123)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper, UMSL:fz]
+comment: In most cases, it is involved in root elongation.
 subset: TraitNet
 synonym: "meristema apical de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "promeristem" BROAD []
