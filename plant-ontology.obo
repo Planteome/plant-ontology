@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2013 13:47
+date: 29:10:2013 18:20
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3595,9 +3595,9 @@ relationship: part_of PO:0000112 ! shoot axis epidermis
 
 [Term]
 id: PO:0005004
-name: shoot node
+name: shoot axis node
 namespace: plant_anatomy
-def: "A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) where one or more spikelet, flower, floret, branch, bud, or leaf may arise." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) where a bud (PO:0000055) may form and develop into a branch (PO:0025073), leaf (PO:0025034), flower (PO:0004541), inflorescence (PO:0009049) or nodal root (PO:0003005)." [GR:Pankaj_Jaiswal, POC:curators, POC:Laurel_Cooper]
 subset: reference
 subset: TraitNet
 synonym: "nodo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -5946,7 +5946,7 @@ namespace: plant_anatomy
 def: "A shoot node that is part of an inflorescence axis and where a spikelet, flower, floret or inflorescence branch is attached." [GR:Pankaj_Jaiswal]
 synonym: "nodo de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005004 ! shoot node
+is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
@@ -9948,7 +9948,7 @@ id: PO:0009005
 name: root
 namespace: plant_anatomy
 alt_id: PO:0003006
-def: "A plant axis (PO:0025004) that is part of a root system (PO:0025025)." [POC:curators]
+def: "A plant axis (PO:0025004) that is usually positively geotropic and found below ground, lacks shoot axis nodes (PO:0005004) and does not bear leaves (PO:0025034)." [POC:curators, POC:Laurel_Cooper]
 comment: Commonly thought of as one of the three basic parts of the seed plant body. A plant structure that is usually underground and does not bear leaves and only rarely shoots, is usually more or less positively geotropic, is endogenous in origin, indeterminate in growth and often with secondary thickening.
 subset: Maize
 subset: reference
@@ -13021,7 +13021,7 @@ namespace: plant_anatomy
 def: "A shoot node that is part of a stem." [APweb:Glossary]
 synonym: "nodo del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005004 ! shoot node
+is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0009047 ! stem
 
 [Term]
@@ -13466,7 +13466,7 @@ def: "A shoot node (PO:0005004) that is part of a branch (PO:0025073)." [POC:cur
 synonym: "nodo ramificado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:145
-is_a: PO:0005004 ! shoot node
+is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0025073 ! branch
 created_by: rwalls
 creation_date: 2010-07-16T09:59:08Z
