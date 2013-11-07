@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2013 19:48
+date: 06:11:2013 16:50
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5347,10 +5347,11 @@ id: PO:0006085
 name: root meristem
 namespace: plant_anatomy
 alt_id: PO:0003001
-def: "A portion of meristem tissue (PO:0009013) that is part of a root system (PO:0025025)." [GR:Pankaj_Jaiswal]
+def: "A portion of meristem tissue (PO:0009013)  that gives rise to a root (PO:0009005)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "meristema de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "meristematic zone" RELATED []
 synonym: "根分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:577
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0025025 ! root system
 
@@ -5783,8 +5784,7 @@ synonym: "root lateral growth meristem" EXACT []
 synonym: "根側部分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
-intersection_of: PO:0020145 ! lateral meristem
-intersection_of: part_of PO:0009005 ! root
+relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0006309
@@ -6143,8 +6143,6 @@ synonym: "shoot lateral growth meristem" EXACT []
 synonym: "茎側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3481640
 is_a: PO:0020145 ! lateral meristem
-intersection_of: PO:0020145 ! lateral meristem
-intersection_of: part_of PO:0025029 ! shoot axis
 relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
@@ -9949,8 +9947,8 @@ id: PO:0009005
 name: root
 namespace: plant_anatomy
 alt_id: PO:0003006
-def: "A plant axis (PO:0025004) that is usually positively geotropic and found below ground, lacks shoot axis nodes (PO:0005004) and does not bear leaves (PO:0025034)." [POC:curators, POC:Laurel_Cooper]
-comment: Commonly thought of as one of the three basic parts of the seed plant body. A plant structure that is usually underground and does not bear leaves and only rarely shoots, is usually more or less positively geotropic, is endogenous in origin, indeterminate in growth and often with secondary thickening.
+def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
+comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the ground, and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually found underground, although there are many exceptions, such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
 subset: Maize
 subset: reference
 subset: TraitNet
@@ -9960,7 +9958,7 @@ synonym: "ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "radices" EXACT Plural [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
 synonym: "radix" EXACT [FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd]
 synonym: "根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF2_PO:48
+xref: OBO_SF2_PO:578
 is_a: PO:0025004 ! plant axis
 relationship: develops_from PO:0005029 ! root primordium
 relationship: part_of PO:0025025 ! root system
