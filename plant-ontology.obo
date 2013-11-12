@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:11:2013 15:37
+date: 11:11:2013 17:35
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3157,7 +3157,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004542
 name: rhizome
 namespace: plant_anatomy
-def: "A swollen shoot axis that grows horizontally at or below the substrate surface and produces shoots above and roots or rhizoids below." [POC:curators]
+def: "A swollen shoot axis (PO:0025029) that grows horizontally at or below the substrate surface and produces shoots above and roots or rhizoids below." [POC:curators]
 comment: In ferns and many monocots, a rhizome is a primary axis (stem), while in other species, it is a branch. Usually produces scale-like leaves.
 subset: reference
 subset: TraitNet
@@ -3610,14 +3610,15 @@ relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
 id: PO:0005005
-name: shoot internode
+name: shoot axis internode
 namespace: plant_anatomy
-def: "A cardinal organ part that is the part of a shoot axis between two nodes of the axis." [POC:curators]
+def: "A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) that is between two shoot axis nodes (PO:0005004)." [POC:curators, POC:Laurel_Cooper]
 subset: Potato
 subset: reference
 subset: TraitNet
 synonym: "internodo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:146
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025029 ! shoot axis
 
@@ -5953,12 +5954,13 @@ relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
 id: PO:0006326
-name: inflorescence internode
+name: inflorescence axis internode
 namespace: plant_anatomy
-def: "A shoot internode that is part of an inflorescence axis." [POC:curators]
+def: "A shoot axis internode (PO:0005005) that is part of an inflorescence axis (PO:0020122)." [POC:curators, POC:Laurel_Cooper]
 synonym: "internodo de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005005 ! shoot internode
+xref: OBO-SF2_PO:146
+is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0020122 ! inflorescence axis
 
 [Term]
@@ -13028,11 +13030,12 @@ relationship: part_of PO:0009047 ! stem
 id: PO:0020142
 name: stem internode
 namespace: plant_anatomy
-def: "A shoot internode that is part of a stem." [POC:curators]
+def: "A shoot axis internode (PO:0005005) that is part of a stem (PO:0009047)." [POC:curators, POC:Laurel_Cooper]
 comment: See node.
 synonym: "internodo del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005005 ! shoot internode
+xref: OBO-SF2_PO:146
+is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0009047 ! stem
 
 [Term]
@@ -13156,12 +13159,13 @@ creation_date: 2010-02-11T01:18:24Z
 id: PO:0025002
 name: basal root
 namespace: plant_anatomy
-def: "A root that arises from a part of the hypocotyl." [POC:curators]
+def: "A shoot-borne internode root (PO:0025593) that arises from a part of the hypocotyl (PO:0020100)." [POC:curators, POC:Laurel_Cooper]
 subset: TraitNet
 synonym: "adventitious root" BROAD []
 synonym: "ra&#237z basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "下胚軸由来の根、不定根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009005 ! root
+xref: OBO_SF2_PO:162
+is_a: PO:0025593 ! shoot-borne internode root
 relationship: develops_from PO:0025479 ! basal root primordium
 created_by: rwalls
 creation_date: 2010-09-16T03:03:49Z
@@ -14272,10 +14276,11 @@ creation_date: 2010-09-16T03:18:48Z
 id: PO:0025080
 name: branch internode
 namespace: plant_anatomy
-def: "A shoot internode that is part of a branch." [POC:curators]
+def: "A shoot axis internode (PO:0005005) that is part of a branch (PO:0025073)." [POC:curators, POC:Laurel_Cooper]
 synonym: "internodo de una ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005005 ! shoot internode
+xref: OBO-SF2_PO:146
+is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0025073 ! branch
 created_by: rwalls
 creation_date: 2010-07-16T10:12:21Z
@@ -14514,7 +14519,7 @@ def: "A plant axis elongation zone that is part of a shoot axis internode." [POC
 synonym: "zona de elongaci&#243n del internodo de epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025180 ! plant axis elongation zone
-relationship: part_of PO:0005005 ! shoot internode
+relationship: part_of PO:0005005 ! shoot axis internode
 created_by: rwalls
 creation_date: 2011-01-03T11:39:43Z
 
@@ -14538,7 +14543,7 @@ def: "A plant axis differentiation zone that is part of a shoot axis." [POC:Ramo
 synonym: "zona de diferenciaci&#243n del internodo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート節間分化帯(層)  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025119 ! plant axis differentiation zone
-relationship: part_of PO:0005005 ! shoot internode
+relationship: part_of PO:0005005 ! shoot axis internode
 created_by: rwalls
 creation_date: 2011-01-03T12:05:20Z
 
@@ -15977,11 +15982,12 @@ creation_date: 2010-12-17T08:16:40Z
 id: PO:0025204
 name: rhizome internode
 namespace: plant_anatomy
-def: "A shoot axis internode that is part of a rhizome." [POC:Ramona_Walls]
+def: "A shoot axis internode (PO:0005005) that is part of a rhizome (PO:0004542)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "internodo del rizoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根茎節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:146
 xref: OBO_SF_PO:1766539
-is_a: PO:0005005 ! shoot internode
+is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0004542 ! rhizome
 created_by: rwalls
 creation_date: 2010-12-17T09:22:47Z
@@ -21232,6 +21238,19 @@ is_a: PO:0025586 ! phyllome founder cell
 relationship: part_of PO:0025431 ! vascular leaf anlagen
 created_by: cooperl
 creation_date: 2013-10-02T12:00:28Z
+
+[Term]
+id: PO:0025593
+name: shoot-borne internode root
+namespace: plant_anatomy
+def: "A shoot-borne root (PO:0000042) that arises from a shoot axis internode (PO:0005005)." [POC:Laurel_Cooper]
+synonym: "adventitious root" BROAD []
+synonym: "internode root " RELATED []
+xref: OBO_SF2_PO:170
+is_a: PO:0000042 ! shoot-borne root
+relationship: develops_from PO:0005005 ! shoot axis internode
+created_by: cooperl
+creation_date: 2013-11-11T16:24:39Z
 
 [Term]
 id: PO:0028001
