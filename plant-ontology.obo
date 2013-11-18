@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:11:2013 22:58
+date: 18:11:2013 15:22
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -13981,6 +13981,7 @@ synonym: "porci&#243n del tejido fundamental (Spanish)" EXACT Spanish [POC:Maria
 synonym: "基本組織の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:106
 is_a: PO:0009007 ! portion of plant tissue
+relationship: develops_from PO:0025594 ! ground meristem
 created_by: Laurel_Cooper
 creation_date: 2009-12-17T03:06:13Z
 
@@ -20964,6 +20965,7 @@ id: PO:0025570
 name: vascular leaf development stage
 namespace: plant_structure_development_stage
 def: "A leaf development stage (PO:0001050) which begins with the onset of the vascular leaf initiation stage (PO:0001051) and ends with the termination of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
+comment: In some plants, the leaf developmental stages may occur in the same leaf simultaneously.  For example, leaves maize (or other grasses) have various zones where stages are occurring along the length of the lamina.
 xref: OBO_SF2_PO:555
 is_a: PO:0001050 ! leaf development stage
 created_by: brianatkinson
@@ -21231,7 +21233,7 @@ id: PO:0025592
 name: vascular leaf founder cell
 namespace: plant_anatomy
 def: "A phyllome founder cell (PO:0025586) that is part of a vascular leaf anlagen (PO:0025431)." [PMID:12610522, POC:Laurel_Cooper]
-comment: As a group, the vascular leaf founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a vascular leaf anlagen (PO:0025431). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria.
+comment: As a group, the vascular leaf founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a vascular leaf anlagen (PO:0025431). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria. The analagen may consist of one or more founder cells.
 xref: OBO_SF2_PO:575
 is_a: PO:0025586 ! phyllome founder cell
 relationship: part_of PO:0025431 ! vascular leaf anlagen
@@ -21250,6 +21252,16 @@ is_a: PO:0000042 ! shoot-borne root
 relationship: develops_from PO:0005005 ! shoot axis internode
 created_by: cooperl
 creation_date: 2013-11-11T16:24:39Z
+
+[Term]
+id: PO:0025594
+name: ground meristem
+namespace: plant_anatomy
+def: "A portion of meristem tissue (PO:0009013) that gives rise to a portion of ground tissue (PO:0025059)." [POC:curators]
+xref: OBO_SF2_PO:XXX
+is_a: PO:0009013 ! portion of meristem tissue
+created_by: cooperl
+creation_date: 2013-11-18T11:14:03Z
 
 [Term]
 id: PO:0028001
