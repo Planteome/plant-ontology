@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:11:2013 11:35
+date: 20:11:2013 11:53
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -21157,12 +21157,12 @@ creation_date: 2013-06-26T15:12:58Z
 id: PO:0025585
 name: floral organ formation stage
 namespace: plant_structure_development_stage
-def: "A flower development stage (PO:0007615) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:007616)." [POC:Laurel_Cooper]
+def: "A plant organ development stage (PO:0025339) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:007616)." [POC:Laurel_Cooper]
 comment: During this stage, the processes of flower formation (GO:0048460; defined as the process that gives rise to the flower. This process pertains to the initial formation of a structure from unspecified parts) and flower morphogenesis (GO:0048439; defined as the process in which the anatomical structures of the flower are generated and organized) occur.
 synonym: "flower morphogenesis stage " EXACT []
 xref: OBO_SF2_PO:550
-is_a: PO:0007615 ! flower development stage
 is_a: PO:0025339 ! plant organ development stage
+relationship: part_of PO:0007615 ! flower development stage
 relationship: preceded_by PO:0025588 ! flower meristem transition stage
 created_by: moorel
 creation_date: 2013-06-27T12:02:35Z
