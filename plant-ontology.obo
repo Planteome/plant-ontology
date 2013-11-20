@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:11:2013 15:22
+date: 20:11:2013 11:35
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -6860,7 +6860,7 @@ relationship: part_of PO:0007057 ! 0 seed germination stage
 id: PO:0007016
 name: whole plant flowering stage
 namespace: plant_structure_development_stage
-def: "A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open." [Poc:curators]
+def: "A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open." [POC:curators]
 comment: This term is to be used for a stage of development of a whole plant. For the stages of development of an individual flower, see flower development stage (PO:0007615).
 subset: Angiosperm
 synonym: "07-anthesis in barley" RELATED [GRO:0007101]
@@ -6885,6 +6885,7 @@ synonym: "rice growth stage-6.1" RELATED [GRO:0007151]
 synonym: "silk emergence in maize" RELATED [MaizeGDB:67362]
 synonym: "sorghum growth stage 8" RELATED [GRO:0007153]
 synonym: "VT in maize" RELATED [MaizeGDB:67361]
+xref: OBO-SF2_PO:499
 is_a: PO:0007130 ! sporophyte reproductive stage
 
 [Term]
@@ -7144,6 +7145,7 @@ synonym: "rice growth stage" RELATED [GRO:0007040]
 synonym: "Solanaceae whole plant growth stages" RELATED [SGN:0000001]
 synonym: "sorghum growth stage" RELATED [GRO:0007124]
 synonym: "wheat, barley and oat growth stage" RELATED [GRO:0007156]
+xref: OBO-SF2PO:390
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0000003 ! whole plant
 
@@ -8608,6 +8610,7 @@ synonym: "B-reproductive stage in rice" RELATED [GRO:0007140]
 synonym: "reproductive in Arabidopsis" RELATED [TAIR:0000306]
 synonym: "sporophyte reproductively competent stage" EXACT []
 synonym: "sporophytic reproductive stage" EXACT []
+xref: OBO-SF2_PO:396
 xref: OBO_SF_PO:3437888
 is_a: PO:0028002 ! sporophyte development stage
 
@@ -8630,6 +8633,7 @@ comment: A dormancy process (GO:0022611) is a developmental process in which dor
 synonym: "D dormancy in Solanaceae" NARROW [SGN:0000053]
 synonym: "sporophyte dormancy stage" EXACT []
 synonym: "sporophytic dormant stage" EXACT []
+xref: OBO-SF2_PO:394
 xref: OBO_SF_PO:3435050
 is_a: PO:0028002 ! sporophyte development stage
 
@@ -8651,6 +8655,7 @@ comment: A sporophyte may begin to senesce or die from other causes before produ
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
 synonym: "vegetative in Arabidopsis" RELATED [TAIR:0000305]
+xref: OBO-SF2_PO:395
 xref: OBO_SF_PO:3437882
 is_a: PO:0028002 ! sporophyte development stage
 
@@ -17854,6 +17859,7 @@ def: "A gametophyte development stage that occurs during the interval between sp
 comment: A gametophyte may begin to senesce or die from other causes before producing gametangia. Some plants, such as the fern Vittaria appalachiana, may never produce gametangia, and remain in the vegetative stage indefinitely. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 synonym: "etapa vegetativa del gemetofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶体栄養期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:395
 xref: OBO_SF_PO:3437882
 is_a: PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -17869,6 +17875,7 @@ synonym: "etapa reproductiva del gametofito (Spanish)" EXACT Spanish [POC:Maria_
 synonym: "gametophyte reproductively competent stage" EXACT []
 synonym: "gametophytic reproductive stage" EXACT []
 synonym: "配偶体生殖段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:396
 xref: OBO_SF_PO:3437888
 is_a: PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -17884,6 +17891,7 @@ synonym: "etapa latente del gametofito (Spanish)" EXACT Spanish [POC:Maria_Aleja
 synonym: "gametophyte dormancy stage" EXACT []
 synonym: "gametophytic dormant stage" EXACT []
 synonym: "配偶体休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:395
 xref: OBO_SF_PO:3435050
 is_a: PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -20077,6 +20085,7 @@ name: whole plant fruit development stage
 namespace: plant_structure_development_stage
 def: "A sporophyte reproductive stage that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) that is not currently participating in a whole plant fruit development stage begins a fruit initiation stage (PO:0025503), and ends with the earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [POC:curators]
 comment: A whole plant fruit development stage begins with the beginning of whole plant fruit formation stage (PO:0007042) and ends with the end of a whole plant fruit ripening stage (PO:0007010). A whole plant fruit development stage can be thought of as a fruiting cycle for a whole plant that begins when the plant starts to produce fruit and ends when all of the fruit on the plant are ripe, unless the plant enters a sporophyte senescent stage or sporophyte dormant stage before all the fruit is ripe. An iteroparous plant will have a single whole plant fruit development stage during its life of whole plant (PO:0025337), while a semelparous plant may have multiple whole plant fruit development stages during its life, each of which will be part of the same instance of a sporophyte reproductive stage. Some plants retain their fruit after ripening and through dormancy, and thus may begin a new whole fruit development stage while fruits from the previous whole plant fruit development stage are still present.
+xref: OBO-SF2_PO:502
 xref: OBO_SF_PO:3574905
 is_a: PO:0007130 ! sporophyte reproductive stage
 created_by: rwalls
@@ -21287,6 +21296,7 @@ synonym: "sporophytic development stage" EXACT []
 synonym: "sporophytic phase" EXACT []
 synonym: "sporphyte phase" EXACT []
 synonym: "胞子体発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:139
 is_a: PO:0007033 ! whole plant development stage
 relationship: part_of PO:0025337 ! life of whole plant stage
 created_by: rwalls
@@ -21304,6 +21314,7 @@ synonym: "gametophyte phase" EXACT []
 synonym: "gametophytic development stage" EXACT []
 synonym: "gametophytic phase" EXACT []
 synonym: "配偶体発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:139
 is_a: PO:0007033 ! whole plant development stage
 relationship: part_of PO:0025337 ! life of whole plant stage
 created_by: rwalls
