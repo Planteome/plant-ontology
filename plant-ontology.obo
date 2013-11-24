@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:11:2013 14:02
+date: 24:11:2013 09:47
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -575,7 +575,7 @@ name: shoot-borne root
 namespace: plant_anatomy
 alt_id: PO:0003007
 alt_id: PO:0020129
-def: "A root (PO:0009005) that develops from shoot axis (PO:0025029) tissue, in the post-embryonic stage." [GR:Pankaj_Jaiswal, TAIR:Katica_Ilic]
+def: "A root (PO:0009005) that develops from shoot axis (PO:0025029) tissue." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 subset: reference
 subset: TraitNet
 synonym: "adventitious root" BROAD []
@@ -2385,6 +2385,8 @@ alt_id: PO:0003009
 def: "A shoot-borne root (PO:0000042) that forms at a shoot axis node (PO:0005004)." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/]
 subset: reference
 subset: TraitNet
+synonym: "adventitious nodal root " BROAD []
+synonym: "nodal root" RELATED []
 synonym: "ra&#237z nodosa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "節根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:163
@@ -4767,9 +4769,10 @@ relationship: part_of PO:0000027 ! lateral root tip
 
 [Term]
 id: PO:0006021
-name: shoot-borne root meristem
+name: shoot-borne root apical meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue that gives rise to a shoot-borne root (PO:0000042)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "A root apical meristem (PO:0020147) that gives rise to a shoot-borne root (PO:0000042)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+synonym: "adventitious root apical meristem " BROAD []
 synonym: "crown root meristem" RELATED []
 synonym: "meristema de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seminal root meristem" RELATED []
@@ -9954,7 +9957,7 @@ id: PO:0009005
 name: root
 namespace: plant_anatomy
 alt_id: PO:0003006
-def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
+def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately, and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
 comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the ground, and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually found underground, although there are many exceptions, such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
 subset: Maize
 subset: reference
@@ -10181,6 +10184,7 @@ namespace: plant_anatomy
 def: "A portion of meristem tissue (PO:0009013) that is the outermost layer of a shoot apical meristem (PO:0020148) and gives rise to a shoot system epidermis (PO:0006035)." [GR:Pankaj_Jaiswal, PMID:11283725, PMID:12221985, POC:Laurel_Cooper]
 comment: The cells of the meristem L1 layer divide in a strictly anticlinical fashion.
 synonym: "meristema L1 (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "tunica " RELATED []
 synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:150
 xref: OBO_SF2_PO:\:576
@@ -10199,6 +10203,7 @@ xref: OBO_SF2_PO:150
 xref: OBO_SF2_PO:576
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
+relationship: part_of PO:0025595 ! shoot system ground meristem
 
 [Term]
 id: PO:0009022
@@ -10212,6 +10217,7 @@ xref: OBO_SF2_PO:150
 xref: OBO_SF2_PO:576
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
+relationship: part_of PO:0025595 ! shoot system ground meristem
 
 [Term]
 id: PO:0009023
@@ -13484,7 +13490,7 @@ creation_date: 2010-07-16T09:59:08Z
 id: PO:0025025
 name: root system
 namespace: plant_anatomy
-def: "A collective plant organ structure (PO:0025007) that produces root apical meristems (PO:0020147) and the plant structures that arise from them." [POC:curators]
+def: "A collective plant organ structure (PO:0025007) that produces root meristems (PO:0006085), the plant structures (PO:0009011) that arise from them and the parts thereof." [POC:curators, POC:Laurel_Cooper]
 comment: Generally the below ground portion of a vascular plant.
 subset: TraitNet
 synonym: "root" BROAD [FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9]
@@ -13979,7 +13985,7 @@ id: PO:0025059
 name: portion of ground tissue
 namespace: plant_anatomy
 def: "Any portion of plant tissue (PO:0009007) other than epidermis (PO:0005679) or vascular tissue (PO:0009015)." [ISBN:0471244554, ISBN:0716710072]
-comment: Develops from the ground meristem (eg, meristem L2 and meristem L3).
+comment: Develops from the ground meristem (PO:0025594).
 subset: TraitNet
 synonym: "fundamental tissue" EXACT [ISBN:0471244554]
 synonym: "porci&#243n del tejido fundamental (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21266,11 +21272,32 @@ creation_date: 2013-11-11T16:24:39Z
 id: PO:0025594
 name: ground meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that gives rise to a portion of ground tissue (PO:0025059)." [POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that gives rise to a portion of ground tissue (PO:0025059)." [POC:curators, POC:Laurel_Cooper]
 xref: OBO_SF2_PO:XXX
 is_a: PO:0009013 ! portion of meristem tissue
 created_by: cooperl
 creation_date: 2013-11-18T11:14:03Z
+
+[Term]
+id: PO:0025595
+name: shoot system ground meristem
+namespace: plant_anatomy
+def: "A ground meristem (PO:0025594) that gives rise to a portion of ground tissue (PO:0025059) in the shoot system (PO:0009006)." [POC:Laurel_Cooper]
+comment: The L2 and L3 layer of the meristem are part of the shoot system ground meristem (PO:0025595).
+xref: OBO_SF2_PO:XXX
+is_a: PO:0025594 ! ground meristem
+created_by: cooperl
+creation_date: 2013-11-23T13:29:56Z
+
+[Term]
+id: PO:0025596
+name: root system ground meristem
+namespace: plant_anatomy
+def: "A ground meristem (PO:0025594) that gives rise to a portion of ground tissue (PO:0025059) in the root system (PO:0025025)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:xxx
+is_a: PO:0025594 ! ground meristem
+created_by: cooperl
+creation_date: 2013-11-23T13:38:49Z
 
 [Term]
 id: PO:0028001
