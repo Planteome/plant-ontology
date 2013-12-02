@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:11:2013 09:47
+date: 02:12:2013 15:15
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1219,7 +1219,7 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0000232
 name: axillary bud meristem
 namespace: plant_anatomy
-def: "A shoot meristem (PO:0006079) formed in an axil (PO:0025224)." [POC:Laurel_Cooper, TAIR:Leonore_Reiser]
+def: "A shoot system meristem (PO:0006079) formed in an axil (PO:0025224)." [POC:Laurel_Cooper, TAIR:Leonore_Reiser]
 synonym: "axillary meristem" RELATED []
 synonym: "meristema de yema axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋芽分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5215,11 +5215,12 @@ is_a: PO:0006070 ! mesophyll
 id: PO:0006073
 name: intercalary meristem
 namespace: plant_anatomy
-def: "A shoot meristem (PO:0006079) that is intercalated between two portions of non-meristematic tissue and results in an increase in length as part of primary growth." [ISBN:0080374913, ISBN:0122151704, POC:curators]
+def: "A shoot system meristem (PO:0006079) that is intercalated between two portions of non-meristematic tissue and results in an increase in length as part of primary growth." [ISBN:0080374913, ISBN:0122151704, POC:curators]
 comment: See subtypes: leaf intercalary meristem (PO:0006346) and stem intercalary meristem (PO:0006347). Not known to occur in roots. Term for primary growth has been requested in GO.
 subset: TraitNet
 synonym: "meristema intercalar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "節間分裂組織、介在分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:449
 xref: OBO_SF_PO:3496010
 is_a: PO:0006079 ! shoot system meristem
 
@@ -13096,13 +13097,14 @@ is_a: PO:0020144 ! apical meristem
 id: PO:0020148
 name: shoot apical meristem
 namespace: plant_anatomy
-def: "A shoot meristem (PO:0006079) formed at the apex of the shoot axis (PO:0025029), including those originating from an axillary bud meristem (PO:0000232)." [UMSL:fz]
+def: "A shoot system meristem (PO:0006079) formed at the apex of the shoot axis (PO:0025029), including those originating from an axillary bud meristem (PO:0000232)." [POC:Cooperl, UMSL:fz]
 subset: TraitNet
 synonym: "meristema apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary shoot meristem" RELATED []
 synonym: "promeristem" BROAD []
 synonym: "SAM" EXACT []
 synonym: "茎頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:472
 is_a: PO:0006079 ! shoot system meristem
 is_a: PO:0020144 ! apical meristem
 relationship: part_of PO:0000037 ! shoot apex
@@ -14117,6 +14119,7 @@ def: "An axillary bud meristem (PO:0000232) that is part of a shoot axis tuber (
 comment: As the bud grows, the meristem switches from being an axillary meristem to being a shoot apical meristem.
 synonym: "meristema axilar de yema de tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塊茎腋芽 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:122
 xref: OBO_SF_PO:3016498
 is_a: PO:0000232 ! axillary bud meristem
 relationship: part_of PO:0004543 ! shoot axis tuber
