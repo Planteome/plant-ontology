@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:12:2013 15:15
+date: 03:12:2013 15:16
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2382,7 +2382,7 @@ name: shoot-borne nodal root
 namespace: plant_anatomy
 alt_id: PO:0003008
 alt_id: PO:0003009
-def: "A shoot-borne root (PO:0000042) that forms at a shoot axis node (PO:0005004)." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/]
+def: "A shoot-borne root (PO:0000042) that forms at a shoot axis node (PO:0005004)." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/, POC:Laurel_Cooper]
 subset: reference
 subset: TraitNet
 synonym: "adventitious nodal root " BROAD []
@@ -5287,11 +5287,12 @@ is_obsolete: true
 id: PO:0006079
 name: shoot system meristem
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006)." [GR:Pankaj_Jaiswal]
+def: "A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 subset: TraitNet
 synonym: "meristema del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:472
+xref: OBO_SF2_PO:583
 is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0009006 ! shoot system
 
@@ -21276,7 +21277,7 @@ id: PO:0025594
 name: ground meristem
 namespace: plant_anatomy
 def: "A portion of meristem tissue (PO:0009013) that gives rise to a portion of ground tissue (PO:0025059)." [POC:curators, POC:Laurel_Cooper]
-xref: OBO_SF2_PO:XXX
+xref: OBO_SF2_PO:584
 is_a: PO:0009013 ! portion of meristem tissue
 created_by: cooperl
 creation_date: 2013-11-18T11:14:03Z
@@ -21286,9 +21287,10 @@ id: PO:0025595
 name: shoot system ground meristem
 namespace: plant_anatomy
 def: "A ground meristem (PO:0025594) that gives rise to a portion of ground tissue (PO:0025059) in the shoot system (PO:0009006)." [POC:Laurel_Cooper]
-comment: The L2 and L3 layer of the meristem are part of the shoot system ground meristem (PO:0025595).
+comment: The meristem L2 layer (PO:0009021) and meristem L3 layer (PO:0009021) of the are part of the shoot system ground meristem (PO:0025595).
 xref: OBO_SF2_PO:XXX
 is_a: PO:0025594 ! ground meristem
+relationship: part_of PO:0009006 ! shoot system
 created_by: cooperl
 creation_date: 2013-11-23T13:29:56Z
 
@@ -21297,8 +21299,9 @@ id: PO:0025596
 name: root system ground meristem
 namespace: plant_anatomy
 def: "A ground meristem (PO:0025594) that gives rise to a portion of ground tissue (PO:0025059) in the root system (PO:0025025)." [POC:Laurel_Cooper]
-xref: OBO_SF2_PO:xxx
+xref: OBO_SF2_PO:584
 is_a: PO:0025594 ! ground meristem
+relationship: part_of PO:0025025 ! root system
 created_by: cooperl
 creation_date: 2013-11-23T13:38:49Z
 
