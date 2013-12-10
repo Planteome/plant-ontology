@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:12:2013 15:16
+date: 07:12:2013 15:14
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5892,9 +5892,12 @@ relationship: part_of PO:0009051 ! spikelet
 id: PO:0006320
 name: ear spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize ear." [GR:Pankaj_Jaiswal]
+def: "A spikelet (PO:0009051) that is part of the ear inflorescence (PO:0020136) and bears a single ear floret (PO:0006354) at maturity." [GR:Pankaj_Jaiswal, PMID:12015291, POC:Laurel_Cooper]
+comment: The ear spikelet forms with two ear florets (PO:0006354), but the lower one aborts during development.
+subset: Maize
 synonym: "oreja de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:536
 is_a: PO:0009051 ! spikelet
 relationship: part_of PO:0020136 ! ear inflorescence
 
@@ -6112,7 +6115,7 @@ is_a: PO:0009006 ! shoot system
 id: PO:0006342
 name: infructescence
 namespace: plant_anatomy
-def: "A reproductive shoot system that develops from an inflorescence and has as parts all of the shoot axes distal to the most distal foliage leaf of a shoot axis and all of the fruits borne by those axes." [POC:Ramona_Walls]
+def: "A reproductive shoot system (PO:0025082) that develops from an inflorescence (PO:0009049) and has as parts all of the shoot axes (PO:0025029) distal to the most distal foliage leaf (PO:0009025) of a shoot axis and all of the fruits (PO:0009001) borne by those axes." [POC:Laurel_Cooper, POC:Ramona_Walls]
 subset: Angiosperm
 subset: Musa
 synonym: "banana bunch" NARROW [CO_125:0000014]
@@ -10672,7 +10675,7 @@ alt_id: PO:0020117
 alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
-def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes distal to the most distal foliage leaf of a shoot axis and all of the flowers borne by those axes. Must have two or more flowers as parts." [POC:Ramona_Walls]
+def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) distal to the most distal foliage leaf (PO:0009025) of a shoot axis and all of the flowers (PO:0009046) borne by those axes. Must have two or more flowers as parts." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: Some plants have only solitary flowers, e.g.<i> Magnolia</i>.
 subset: Angiosperm
 subset: reference
@@ -10715,8 +10718,8 @@ synonym: "Triticeae spike" NARROW []
 synonym: "umbel" NARROW []
 synonym: "verticillaster" NARROW []
 synonym: "花序 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:260
 xref: OBO_SF_PO:2971891
-xref: OBO_SF_PO:3147080
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009046 ! flower
 relationship: participates_in PO:0001083 ! inflorescence development stage
@@ -10725,7 +10728,7 @@ relationship: participates_in PO:0001083 ! inflorescence development stage
 id: PO:0009051
 name: spikelet
 namespace: plant_anatomy
-def: "A reproductive shoot system that is the ultimate and congested inflorescence branch of the grasses." [APweb:Glossary]
+def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested inflorescence branch (PO:0009081) of the grasses." [APweb:Glossary]
 comment: It consists of one to many closely-packed flowers and associated glumes etc.
 subset: Poaceae
 subset: reference
@@ -12959,13 +12962,14 @@ relationship: part_of PO:0009005 ! root
 id: PO:0020136
 name: ear inflorescence
 namespace: plant_anatomy
-def: "The distal part of a lateral (axillary) branch in Zea that bears the functionally-carpellate florets in a highly contracted inflorescence." [MaizeGDB:lv]
+def: "A inflorescence (PO:0009049) in Zea spp. that is highly compacted and bears the ear spikelets (PO:0006320) on a lateral inflorescence axis (PO:0020122)." [MaizeGDB:lv, POC:Laurel_Cooper]
 subset: Maize
 subset: reference
 synonym: "cob" RELATED []
 synonym: "ear" EXACT []
 synonym: "oreja de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:536
 xref: OBO_SF_PO:3611295
 is_a: PO:0009049 ! inflorescence
 
@@ -14319,7 +14323,7 @@ creation_date: 2010-09-16T03:18:48Z
 id: PO:0025082
 name: reproductive shoot system
 namespace: plant_anatomy
-def: "A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium." [POC:curators]
+def: "A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094)." [POC:curators]
 subset: TraitNet
 synonym: "sistema de brote reproductivo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生殖シュート 系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16494,6 +16498,7 @@ name: infructescence axis
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an infructescence (PO:0006342)." [POC:Ramona_Walls]
 synonym: "eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Maize cob " NARROW []
 synonym: "果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025029 ! shoot axis
 relationship: develops_from PO:0020122 ! inflorescence axis
@@ -21304,6 +21309,16 @@ is_a: PO:0025594 ! ground meristem
 relationship: part_of PO:0025025 ! root system
 created_by: cooperl
 creation_date: 2013-11-23T13:38:49Z
+
+[Term]
+id: PO:0025597
+name: ear infructescence
+namespace: plant_anatomy
+def: "An infructescence (PO:0006342) in Zea spp. that bears kernels (i.e. fruit; PO:0009001) on a compact infructescence axis (PO:0025242) and develops from the ear inflorescence (PO:0020136)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:580
+is_a: PO:0006342 ! infructescence
+created_by: cooperl
+creation_date: 2013-12-07T11:57:21Z
 
 [Term]
 id: PO:0028001
