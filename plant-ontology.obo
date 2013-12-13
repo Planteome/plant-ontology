@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:12:2013 15:14
+date: 13:12:2013 15:12
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5797,7 +5797,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0006309
 name: tassel spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel." [GR:Pankaj_Jaiswal]
+def: "A spikelet (PO:0009051) that is part of the tassel inflorescence (PO:0020126) and bears tassel florets (PO:0006310) at maturity." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 subset: Maize
 synonym: "penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5809,7 +5809,7 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 id: PO:0006310
 name: tassel floret
 namespace: plant_anatomy
-def: "A spikelet floret that is part of a tassel spikelet." [POC:Ramona_Walls]
+def: "A spikelet floret (PO:0009082) that is part of a tassel spikelet (PO:0006309)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: Found in Poaceae.
 subset: Maize
 synonym: " florete del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10612,18 +10612,12 @@ subset: Angiosperm
 subset: reference
 subset: TraitNet
 synonym: "basal flower" NARROW [CO_125:0000019]
-synonym: "diclinous flower" NARROW []
 synonym: "double flower" NARROW []
-synonym: "female flower" NARROW [CO_125:0000050]
 synonym: "flor (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "floret" RELATED []
 synonym: "hermaphrodite flower" NARROW [CO_125:0000028]
-synonym: "imperfect flower" NARROW []
-synonym: "male flower" NARROW [CGP:curators]
 synonym: "monoclinous flower" NARROW []
 synonym: "perfect flower" NARROW []
-synonym: "pistillate flower" NARROW []
-synonym: "staminate flower" NARROW []
 synonym: "花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:2971891
 xref: OBO_SF_PO:3147067
@@ -11276,6 +11270,7 @@ synonym: "grass floret" NARROW []
 synonym: "Poaceae floret" NARROW []
 synonym: "spikelet flower" RELATED []
 synonym: "小穂小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:380
 xref: OBO_SF_PO:3397632
 is_a: PO:0009046 ! flower
 relationship: part_of PO:0009051 ! spikelet
@@ -12846,13 +12841,13 @@ replaced_by: PO:0025181
 id: PO:0020126
 name: tassel inflorescence
 namespace: plant_anatomy
-def: "The functionally-staminate flowering structure that terminates the stem of a Zea mays plant." [MaizeGDB:lv]
+def: "A staminate inflorescence (PO:0025601) in Zea spp. that bears the tassel spikelet (PO:0006309) on a terminal inflorescence axis (PO:0020122)." [MaizeGDB:lv, POC:Laurel_Cooper]
 comment: Branched inflorescence with a central axis and about 10-50 lateral branches.
 subset: Maize
 subset: reference
 synonym: "penacho de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0025601 ! staminate inflorescence
 
 [Term]
 id: PO:0020127
@@ -12962,7 +12957,7 @@ relationship: part_of PO:0009005 ! root
 id: PO:0020136
 name: ear inflorescence
 namespace: plant_anatomy
-def: "A inflorescence (PO:0009049) in Zea spp. that is highly compacted and bears the ear spikelets (PO:0006320) on a lateral inflorescence axis (PO:0020122)." [MaizeGDB:lv, POC:Laurel_Cooper]
+def: "A pistillate inflorescence (PO:0025598) in Zea spp. that is highly compacted and bears the ear spikelets (PO:0006320) on a lateral inflorescence axis (PO:0020122)." [MaizeGDB:lv, POC:Laurel_Cooper]
 subset: Maize
 subset: reference
 synonym: "cob" RELATED []
@@ -12971,7 +12966,7 @@ synonym: "oreja de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejand
 synonym: "雌穂（花） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:536
 xref: OBO_SF_PO:3611295
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0025598 ! pistillate inflorescence
 
 [Term]
 id: PO:0020137
@@ -17741,12 +17736,14 @@ creation_date: 2011-09-15T02:56:38Z
 id: PO:0025331
 name: ray flower
 namespace: plant_anatomy
-def: "A small flower on the margin of a head-type inflorescence (capitulum)." [ISBN:9781842464229]
-comment: Found in the Asteraceae, surrounding the disk flowers. Usually zygomorphic, and different in form from disk flowers. Usually pistillate but sterile.
+def: "A small pistillate flower (PO:0025599) on the margin of a head-type (capitulum) inflorescence  (PO:0009049)." [ISBN:9781842464229, POC:Laurel_Cooper]
+comment: Found in the Asteraceae, surrounding the disk flowers (PO:0025332). Usually zygomorphic, and different in form from disk flowers. Usually pistillate but sterile.
 synonym: "flor del rayo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ray floret" EXACT []
 synonym: "舌状花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009046 ! flower
+xref: OBO_SF2_PO:380
+xref: OBO_SF2_PO:585
+is_a: PO:0025599 ! pistillate flower
 created_by: rwalls
 creation_date: 2011-09-26T10:45:11Z
 
@@ -17754,12 +17751,13 @@ creation_date: 2011-09-26T10:45:11Z
 id: PO:0025332
 name: disk flower
 namespace: plant_anatomy
-def: "A small flower in the center of a head-type inflorescence (capitulum)." [ISBN:9781842464229]
-comment: Found in the Asteraceae. May be actinomorphic or bilabiate, often bisexual. Usually surrounded by and different in form from ray flowers.
+def: "A small flower (PO:0009046) in the center of a head-type (capitulum) inflorescence (PO:0009049)." [ISBN:9781842464229]
+comment: Found in the Asteraceae. May be actinomorphic or bilabiate, often bisexual. Usually surrounded by and different in form from ray flowers (PO:0025331).
 synonym: "disc floret" EXACT [FNA:cec71a8a-8600-4a30-a593-46b2b3dbf892]
 synonym: "disk floret" EXACT []
 synonym: "flor del disco (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中心花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:380
 is_a: PO:0009046 ! flower
 created_by: rwalls
 creation_date: 2011-09-26T10:45:11Z
@@ -21317,8 +21315,55 @@ namespace: plant_anatomy
 def: "An infructescence (PO:0006342) in Zea spp. that bears kernels (i.e. fruit; PO:0009001) on a compact infructescence axis (PO:0025242) and develops from the ear inflorescence (PO:0020136)." [POC:Laurel_Cooper]
 xref: OBO_SF2_PO:580
 is_a: PO:0006342 ! infructescence
+relationship: develops_from PO:0020136 ! ear inflorescence
 created_by: cooperl
 creation_date: 2013-12-07T11:57:21Z
+
+[Term]
+id: PO:0025598
+name: pistillate inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049) that includes as part only pistillate flowers (PO:0025599)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:585
+is_a: PO:0009049 ! inflorescence
+created_by: cooperl
+creation_date: 2013-12-13T11:16:53Z
+
+[Term]
+id: PO:0025599
+name: pistillate flower
+namespace: plant_anatomy
+def: "A flower (PO:0009046) that includes as part a single carpel (PO:0009030) or a gynoecium (PO:0009062) but no functional androecium (PO:0009061)." [POC:Laurel_Cooper]
+synonym: "diclinous flower" BROAD []
+synonym: "female flower" RELATED [CO_125:0000050]
+synonym: "imperfect flower" BROAD []
+xref: OBO_SF2_PO:585
+is_a: PO:0009046 ! flower
+created_by: cooperl
+creation_date: 2013-12-13T11:26:58Z
+
+[Term]
+id: PO:0025600
+name: staminate flower
+namespace: plant_anatomy
+def: "A flower (PO:0009046) that includes as part an androecium (PO:0009061), but no functional gynoecium (PO:0009062)." [POC:Laurel_Cooper]
+synonym: "diclinous flower" BROAD []
+synonym: "imperfect flower" BROAD []
+synonym: "male flower" NARROW [CGP:curators]
+xref: OBO_SF2_PO:585
+is_a: PO:0009046 ! flower
+created_by: cooperl
+creation_date: 2013-12-13T11:27:26Z
+
+[Term]
+id: PO:0025601
+name: staminate inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049) that includes as part only staminate flowers (PO:0025600)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:585
+is_a: PO:0009049 ! inflorescence
+created_by: cooperl
+creation_date: 2013-12-13T13:37:56Z
 
 [Term]
 id: PO:0028001
