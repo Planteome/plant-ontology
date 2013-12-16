@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:12:2013 15:12
+date: 16:12:2013 11:55
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5801,6 +5801,7 @@ def: "A spikelet (PO:0009051) that is part of the tassel inflorescence (PO:00201
 subset: Maize
 synonym: "penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:537
 is_a: PO:0009051 ! spikelet
 relationship: develops_from PO:0006358 ! tassel spikelet pair meristem
 relationship: part_of PO:0020126 ! tassel inflorescence
@@ -5809,12 +5810,14 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 id: PO:0006310
 name: tassel floret
 namespace: plant_anatomy
-def: "A spikelet floret (PO:0009082) that is part of a tassel spikelet (PO:0006309)." [POC:Laurel_Cooper, POC:Ramona_Walls]
-comment: Found in Poaceae.
+def: "A small staminate flower (PO:0025600) that is part of a tassel spikelet (PO:0006309)." [PMID:12015291, POC:Laurel_Cooper, POC:Ramona_Walls]
+comment: The tassel floret (PO:0006310) initiates both stamens (PO:0009029) and carpels (PO:0009030), but all carpels abort during development. Found in Zea spp.
 subset: Maize
 synonym: " florete del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:537
 is_a: PO:0009082 ! spikelet floret
+is_a: PO:0025600 ! staminate flower
 relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
@@ -6259,11 +6262,13 @@ relationship: part_of PO:0006348 ! ear pedicellate spikelet
 id: PO:0006354
 name: ear floret
 namespace: plant_anatomy
-def: "A spikelet floret that is part of an ear spikelet." [POC:Ramona_Walls]
-comment: Found in Poaceae.
+def: "A small, pistillate flower (PO:0025599) that is part of a ear spikelet (PO:0006320)." [PMID:12015291, POC:Laurel_Cooper, POC:Ramona_Walls]
+comment: The ear floret (PO:0006354) initiates both carpels (PO:0009030) and stamens (PO:0009029), but all stamens abort during development. Found in Zea spp.
 synonym: "florete de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:536
 is_a: PO:0009082 ! spikelet floret
+is_a: PO:0025599 ! pistillate flower
 relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
@@ -10451,8 +10456,8 @@ alt_id: PO:0006431
 alt_id: PO:0006432
 alt_id: PO:0006433
 alt_id: PO:0006434
-def: "A flower bract that is the lower of the two bracts enclosing a spikelet floret." [APweb:Glossary, POC:curators]
-comment: Found in Poaceae such as Zea mays. A lemma and a palea enclose an individual floret while glumes subtend a pair of florets. Lemma is part_of spikelet floret, but if you are annotating to this structure for Zea mays or other similar grasses, an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+def: "A flower bract (PO:0009034) that is the lower of the two bracts (PO:0009055) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
+comment: A lemma (PO:0009037) and palea (PO:0009038) enclose an individual spikelet floret (PO:0009082). The lemma is usually the larger of the two. Since it is not clear what the lemma and palea correspond to in conventional flowers, no assumptions of homology are made. If you are annotating to this structure for Zea spp. an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). Found in  Found in Poaceae, Cyperaceae and other Poales.
 subset: Maize
 subset: Poaceae
 subset: reference
@@ -10471,6 +10476,7 @@ synonym: "lemma of upper floret of sessile spikelet of tassel" NARROW []
 synonym: "lemmas" EXACT Plural [FNA:95b70500-2969-4d99-801e-9367ba2db50e]
 synonym: "lemmata" EXACT Plural [FNA:874598c1-dd20-4ab3-ac36-3180873df1bc]
 synonym: "外頴 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:381
 xref: OBO_SF_PO:3400245
 is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0009082 ! spikelet floret
@@ -10489,8 +10495,8 @@ alt_id: PO:0006427
 alt_id: PO:0006428
 alt_id: PO:0006429
 alt_id: PO:0006430
-def: "A flower bract that is the upper/distal of the two bracts enclosing a spikelet floret." [APweb:Glossary, POC:curators]
-comment: Palea is part_of spikelet floret, but if you are annotating to this structure for Zea mays or other similar grasses, an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+def: "A flower bract (PO:0009034) that is the upper/distal of the two bracts (PO:0009055) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
+comment: A lemma (PO:0009037) and palea (PO:0009038) enclose an individual spikelet floret (PO:0009082). The palea is usually the smaller of the two. Since it is not clear what the lemma and palea correspond to in conventional flowers, no assumptions of homology are made. If you are annotating to this structure for Zea spp. an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). Found in  Found in Poaceae, Cyperaceae and other Poales.
 subset: reference
 synonym: "pale" BROAD [FNA:3d284a17-79c6-40b0-84c5-1cd337f43e55]
 synonym: "palea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10508,6 +10514,7 @@ synonym: "paleae" BROAD Plural [FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7]
 synonym: "paleas" BROAD Plural [FNA:c7715818-04d2-4e9f-b63f-8741b6e558f4]
 synonym: "palet" BROAD [FNA:c7612a78-aff8-478d-9a6e-866dac52f101]
 synonym: "内頴 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:381
 xref: OBO_SF_PO:3400245
 is_a: PO:0009034 ! flower bract
 relationship: part_of PO:0009082 ! spikelet floret
@@ -10606,8 +10613,8 @@ id: PO:0009046
 name: flower
 namespace: plant_anatomy
 alt_id: PO:0004541
-def: "A determinate reproductive shoot system that has as part at least one carpel or at least one stamen and does not contain any other determinate shoot system as a part." [POC:curators]
-comment: The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain pistillode or staminode or other aborted organs that don't show up in mature form.
+def: "A determinate reproductive shoot system (PO:0025082) that has as part at least one carpel (PO:0009030) or at least one stamen (PO:0009029) and does not contain any other determinate shoot system (PO:0009006) as a part." [POC:curators]
+comment: The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain one or more pistillode (PO:0009078), staminode (PO:0009077) or other aborted organs that don't show up in mature form.
 subset: Angiosperm
 subset: reference
 subset: TraitNet
@@ -11262,8 +11269,8 @@ name: spikelet floret
 namespace: plant_anatomy
 alt_id: PO:0006318
 alt_id: PO:0025090
-def: "A small flower that is part of a spikelet." [PMID:20197291, POC:curators]
-comment: Found in Poaceae, Cyperaceae and other Poales. Lemma, palea and lodicule are associated with a spikelet floret, but since it is not clear what they correspond to in conventional flowers, no assumptions of homology are made at the present time. To describe a floret of the Asteraceae, use ray flower (PO:0025331) or disk flower (PO:0025332).
+def: "A small flower (PO:0009046) that is part of a spikelet (PO:0009051)." [PMID:20197291, POC:curators]
+comment: A spikelet floret (PO:0009082) is enclosed by one or both the flower bracts (PO:0009034);  lemma (PO:0009037) and palea (PO:0009038) and also includes a lodicule (PO:0009036).  To describe a floret of the Asteraceae, use ray flower (PO:0025331) or disk flower (PO:0025332).  Found in Poaceae, Cyperaceae and other Poales.
 subset: reference
 synonym: "florete de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "grass floret" NARROW []
@@ -12847,6 +12854,7 @@ subset: Maize
 subset: reference
 synonym: "penacho de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:537
 is_a: PO:0025601 ! staminate inflorescence
 
 [Term]
@@ -21324,8 +21332,10 @@ id: PO:0025598
 name: pistillate inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) that includes as part only pistillate flowers (PO:0025599)." [POC:Laurel_Cooper]
+synonym: "carpellate inflorescence" EXACT []
 xref: OBO_SF2_PO:585
 is_a: PO:0009049 ! inflorescence
+relationship: has_part PO:0025599 ! pistillate flower
 created_by: cooperl
 creation_date: 2013-12-13T11:16:53Z
 
@@ -21333,7 +21343,8 @@ creation_date: 2013-12-13T11:16:53Z
 id: PO:0025599
 name: pistillate flower
 namespace: plant_anatomy
-def: "A flower (PO:0009046) that includes as part a single carpel (PO:0009030) or a gynoecium (PO:0009062) but no functional androecium (PO:0009061)." [POC:Laurel_Cooper]
+def: "A flower (PO:0009046) that includes as part a single carpel (PO:0009030) or a gynoecium (PO:0009062), but the androecium (PO:0009061) is absent or has aborted during development." [POC:Laurel_Cooper]
+synonym: "carpellate flower" EXACT []
 synonym: "diclinous flower" BROAD []
 synonym: "female flower" RELATED [CO_125:0000050]
 synonym: "imperfect flower" BROAD []
@@ -21346,7 +21357,7 @@ creation_date: 2013-12-13T11:26:58Z
 id: PO:0025600
 name: staminate flower
 namespace: plant_anatomy
-def: "A flower (PO:0009046) that includes as part an androecium (PO:0009061), but no functional gynoecium (PO:0009062)." [POC:Laurel_Cooper]
+def: "A flower (PO:0009046) that includes as part an androecium (PO:0009061), and the gynoecium (PO:0009062) is absent or has aborted during development." [POC:Laurel_Cooper]
 synonym: "diclinous flower" BROAD []
 synonym: "imperfect flower" BROAD []
 synonym: "male flower" NARROW [CGP:curators]
@@ -21362,6 +21373,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) that includes as part only staminate flowers (PO:0025600)." [POC:Laurel_Cooper]
 xref: OBO_SF2_PO:585
 is_a: PO:0009049 ! inflorescence
+relationship: has_part PO:0025600 ! staminate flower
 created_by: cooperl
 creation_date: 2013-12-13T13:37:56Z
 
