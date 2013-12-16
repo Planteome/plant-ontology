@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:12:2013 11:55
+date: 16:12:2013 14:28
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: Angiosperm "Term for angiosperms"
@@ -21333,6 +21333,7 @@ name: pistillate inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) that includes as part only pistillate flowers (PO:0025599)." [POC:Laurel_Cooper]
 synonym: "carpellate inflorescence" EXACT []
+synonym: "female inflorescence" RELATED []
 xref: OBO_SF2_PO:585
 is_a: PO:0009049 ! inflorescence
 relationship: has_part PO:0025599 ! pistillate flower
@@ -21358,9 +21359,10 @@ id: PO:0025600
 name: staminate flower
 namespace: plant_anatomy
 def: "A flower (PO:0009046) that includes as part an androecium (PO:0009061), and the gynoecium (PO:0009062) is absent or has aborted during development." [POC:Laurel_Cooper]
+synonym: "adenate flower" RELATED []
 synonym: "diclinous flower" BROAD []
 synonym: "imperfect flower" BROAD []
-synonym: "male flower" NARROW [CGP:curators]
+synonym: "male flower" RELATED [CGP:curators]
 xref: OBO_SF2_PO:585
 is_a: PO:0009046 ! flower
 created_by: cooperl
@@ -21371,6 +21373,9 @@ id: PO:0025601
 name: staminate inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) that includes as part only staminate flowers (PO:0025600)." [POC:Laurel_Cooper]
+synonym: "adenate inflorescence" RELATED []
+synonym: "inflorescence" RELATED []
+synonym: "male inflorescence" RELATED []
 xref: OBO_SF2_PO:585
 is_a: PO:0009049 ! inflorescence
 relationship: has_part PO:0025600 ! staminate flower
