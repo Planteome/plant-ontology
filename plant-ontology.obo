@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 16:12:2013 14:28
+date: 09:04:2014 16:07
 saved-by: cooperl
-auto-generated-by: OBO-Edit 2.3-beta5
+auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -1714,9 +1714,11 @@ is_a: PO:0001007 ! pollen development stage
 id: PO:0001007
 name: pollen development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the pollen defined by characteristic morphological, cytological, histological or other visible features." [POC:Felipe_Zapata]
+def: "A microgametophtye development stage (PO:0025602) during which the pollen (PO:0025281) develops." [POC:Felipe_Zapata, POC:Laurel_Cooper]
 synonym: "pollen development in Arabidopsis" RELATED []
-is_a: PO:0007605 ! androecium development stage
+xref: OBO_SF2_PO:589
+is_a: PO:0025602 ! microgametophtye development stage
+relationship: part_of PO:0007605 ! androecium development stage
 
 [Term]
 id: PO:0001008
@@ -9141,9 +9143,11 @@ is_a: PO:0007619 ! ovule development stage
 id: PO:0007621
 name: megagametophyte development stage
 namespace: plant_structure_development_stage
-def: "Stages of development of the megagametophyte." [POC:curators]
+def: "A gametophyte development stage (PO:0028003) during which the megagametophyte (PO:0025279) develops." [POC:curators, POC:Laurel_Cooper]
 comment: Although megaspore and megagametophyte development are normally separate, one spore producing one gametophyte, in some flowering plants a single gametophyte may be produced from two or four spores.
-is_a: PO:0007619 ! ovule development stage
+xref: OBO_SF2_PO:589
+is_a: PO:0028003 ! gametophyte development stage
+relationship: part_of PO:0007619 ! ovule development stage
 
 [Term]
 id: PO:0007622
@@ -17876,7 +17880,7 @@ creation_date: 2011-10-19T11:12:49Z
 id: PO:0025340
 name: gametophyte vegetative stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage that occurs during the interval between spore germination and the formation of a gametangium." [POC:curators]
+def: "A gametophyte development stage (PO:0028003) that occurs during the interval between spore germination and the formation of a gametangium." [POC:curators]
 comment: A gametophyte may begin to senesce or die from other causes before producing gametangia. Some plants, such as the fern Vittaria appalachiana, may never produce gametangia, and remain in the vegetative stage indefinitely. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 synonym: "etapa vegetativa del gemetofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶体栄養期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -17890,8 +17894,8 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025341
 name: gametophyte reproductive stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage that occurs during the interval between the initiation of a gametangium and the onset of senescence." [POC:curators]
-comment: A whole plant may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause. The sporophyte senescent stage may succeed the sporophyte reproductive stage in monocarpic plants that die after reproducing, such as annuals.
+def: "A gametophyte development stage (PO:0028003) that occurs during the interval between the initiation of either a multicellular plant gametangium (PO:0025124) or a unicellular plant gametangium (PO:0025521) and the onset of senescence." [POC:curators, POC:Laurel_Cooper]
+comment: A whole plant (PO:0000003) may continue developmental vegetative growth (GO:0080186) after it has entered the reproductive stage, and it may revert to a stage in which it is no longer producing gametantia, but once it has initiated a single gametangium, it remains in the reproductive stage until senescence or death by some other cause.
 synonym: "etapa reproductiva del gametofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophyte reproductively competent stage" EXACT []
 synonym: "gametophytic reproductive stage" EXACT []
@@ -17906,8 +17910,8 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025342
 name: gametophyte dormant stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage during which a gametophyte participates in a dormancy process." [GO:0022611, PO_REF:00009, POC:curators]
-comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant in the gametophyte stage, not to the dormant stage of other plant structures. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a gametophyte dormant stage are the moss Polytrichum commune after it has undergone dessication (a type of resurrection plant), the boreal moss Polytrichum alpestre, whose shoot systems have annual growth segments due to a period of dormancy during the winter, the female gametophyte of Ginkgo biloba, which is dormant before fertilization, and dormancy of plant spores.
+def: "A gametophyte development stage (PO:0028003) during which a gametophyte participates in a dormancy process." [GO:0022611, PO_REF:00009, POC:curators]
+comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. This term only applies to a whole plant (PO:0000003) in the gametophyte stage, not to the dormant stage of other plant structures. The dormant stage may be a response to environmental conditions such as seasonality or extreme heat, drought, or cold. Examples of a gametophyte dormant stage are the moss Polytrichum commune after it has undergone dessication (a type of resurrection plant), the boreal moss Polytrichum alpestre, whose shoot systems have annual growth segments due to a period of dormancy during the winter, the female gametophyte of Ginkgo biloba, which is dormant before fertilization, and dormancy of plant spores.
 synonym: "etapa latente del gametofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gametophyte dormancy stage" EXACT []
 synonym: "gametophytic dormant stage" EXACT []
@@ -17935,7 +17939,7 @@ creation_date: 2011-10-19T11:55:08Z
 id: PO:0025344
 name: gametophore reproductive whole plant development stage
 namespace: plant_structure_development_stage
-def: "A gametophyte reproductive development stage in which a gametophore and gametangium is being produced." [POC:curators]
+def: "A gametophyte reproductive stage (PO:0025341) in which a gametophore (PO:0030018) and gametangium is being produced." [POC:curators]
 synonym: "etapa de desarrollo del gamet&#243foro reproductivo de la planta entera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎葉体生殖生長 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025341 ! gametophyte reproductive stage
@@ -18360,7 +18364,7 @@ creation_date: 2012-01-05T10:29:43Z
 id: PO:0025375
 name: plant spore stage
 namespace: plant_structure_development_stage
-def: "A gametophyte development stage that occurs during the interval between meiosis and the germination of a spore." [POC:curators]
+def: "A gametophyte development stage (PO:0028003) that occurs during the interval between meiosis and the germination of a spore." [POC:curators]
 comment: Includes the stage when a megaspore is present before it develops into a megagametophyte or embryo sac and the stage when a microspore is present before it develops into a microgametophyte or pollen. There may be cell division in a spore before it germinates.
 synonym: "etapa esporof&#237tica de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "spore stage" BROAD []
@@ -21381,6 +21385,16 @@ is_a: PO:0009049 ! inflorescence
 relationship: has_part PO:0025600 ! staminate flower
 created_by: cooperl
 creation_date: 2013-12-13T13:37:56Z
+
+[Term]
+id: PO:0025602
+name: microgametophtye development stage
+namespace: plant_structure_development_stage
+def: "A gametophyte development stage (PO:0028003) during which a microgametophyte (PO:0025280) develops." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:589
+is_a: PO:0028003 ! gametophyte development stage
+created_by: cooperl
+creation_date: 2014-04-09T15:32:30Z
 
 [Term]
 id: PO:0028001
