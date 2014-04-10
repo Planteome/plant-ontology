@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:04:2014 08:27
+date: 10:04:2014 13:01
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -329,12 +329,12 @@ relationship: develops_from PO:0025484 ! petal anlagen
 id: PO:0000022
 name: plant cuticle
 namespace: plant_anatomy
-def: "A plant anatomical substance composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acids C16 and C18 chains (cutin), embedded and overlayed with cuticular wax and forming a layer on the surface of a plant epidermis." [ISBN:0471245208]
+def: "A portion of plant substance (PO:0025161) composed of cutin (PO:0025385), a polyester matrix of hydroxy- and hydroxy epoxy fatty acids C16 and C18 chains, embedded and overlayed with cuticular wax (PO:0025386) and forming a layer on the surface of a plant epidermis (PO:0005679)." [ISBN:0471245208, POC:Laurel_Cooper]
 comment: The plant cuticle is produced in and secreted by epidermal cells (PO:0004013) of leaves (PO:0025034), stems (PO:0009047), fruits (PO:0009001), and other aerial plant structures. It has as parts an inner cuticle proper (PO:0025387) and an outer layer of epicuticular wax (PO:0025388).
 synonym: "cut&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cuticle" BROAD []
 synonym: "植物クチクラ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3459338
+xref: OBO_SF2_PO:416
 is_a: PO:0025161 ! portion of plant substance
 relationship: adjacent_to PO:0005679 ! epidermis
 
@@ -4360,11 +4360,12 @@ is_a: PO:0005656 ! portion of secretory tissue
 id: PO:0005665
 name: resin canal
 namespace: plant_anatomy
-def: "A duct of schizogenous origin lined with resin-secreting cells and containing resin." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+def: "A canal (PO:0025132) of schizogenous origin, lined with secretory resin cells (PO:0025604) and containing plant resin (PO:0025603)." [GR:Pankaj_Jaiswal, ISBN:0080374913, PMID:11337413, POC:Laurel_Cooper]
 synonym: "canal de resina (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "resin duct" RELATED []
 synonym: "樹脂道 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005656 ! portion of secretory tissue
+xref: OBO_SF2_PO:587
+is_a: PO:0025132 ! canal
 
 [Term]
 id: PO:0005669
@@ -15007,7 +15008,7 @@ creation_date: 2010-11-15T11:41:38Z
 id: PO:0025132
 name: canal
 namespace: plant_anatomy
-def: "A plant anatomical space that is either a groove on the surface or a tube in the interior of a plant structure." [POC:curators]
+def: "A plant anatomical space (PO:0025117) that is either a groove on the surface, or a tube in the interior of a plant structure (PO:0009011)." [POC:curators]
 comment: May be cylindrical (PATO:0001203) in shape, with a circular, D-shaped or other irregularly-shaped cross-section.
 synonym: "canal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "channel" RELATED [FNA:ec645f00-04c0-4c38-9ca6-6ebf76908163]
@@ -18505,7 +18506,7 @@ creation_date: 2012-01-06T02:19:28Z
 id: PO:0025385
 name: cutin
 namespace: plant_anatomy
-def: "A portion of plant substance that is the inner layer of a cuticle, composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acid C16 and C18 chains." [PMID:12467640, POC:curators]
+def: "A portion of plant substance (PO:0025161) that is the inner layer of a plant cuticle (PO:0000022), and is composed of a polyester matrix of hydroxy- and hydroxy epoxy fatty acid C16 and C18 chains." [PMID:12467640, POC:curators]
 comment: Cutin is the insoluble, covalently cross-linked polymer that forms an electron dense layer over the epidermal cells (PO:0004013) of an aerial plant structure.
 synonym: "cutin matrix" BROAD []
 synonym: "クチン (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -18520,11 +18521,11 @@ creation_date: 2012-01-06T02:53:37Z
 id: PO:0025386
 name: cuticular wax
 namespace: plant_anatomy
-def: "A portion of plant substance comprised predominantly of very long chain aliphatic lipids and is part of a plant cuticle." [PMID:12467640, PO_Ref:00010]
+def: "A portion of plant substance (PO:0025161) comprised predominantly of very long chain aliphatic lipids and is part of a plant cuticle (PO:0000022)." [PMID:12467640, PO_Ref:00010]
 comment: Also includes triterpenoids and minor secondary metabolites, such as sterols and flavonoids. May be embedded within or external to the layer of cutin of the cuticle proper.  Phenotypically, wax is distinguished as the glaucous or whitish bloom on a part of a plant shoot system that corresponds to crystalloid epicuticular wax with light scattering capacity.
 synonym: "cera cuticular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "クチクラワックス (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3459338
+xref: OBO_SF2_PO:416
 is_a: PO:0025161 ! portion of plant substance
 relationship: part_of PO:0000022 ! plant cuticle
 created_by: Laurel_Cooper
@@ -18534,12 +18535,12 @@ creation_date: 2012-01-06T02:57:22Z
 id: PO:0025387
 name: plant cuticle proper
 namespace: plant_anatomy
-def: "A portion of plant substance that is the inner layer of a cuticle, composed primarily of cutin, embedded and overlayed with cuticular wax." [PMID:12467640]
+def: "A portion of plant substance (PO:0025161) that is the inner layer of a plant cuticle (PO:0000022), composed primarily of cutin (PO:0025385), embedded and overlayed with cuticular wax (PO:0025386)." [PMID:12467640, POC:Laurel_Cooper]
 synonym: "cut&#237cula propia de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cuticle proper" BROAD []
 synonym: "cutin matrix" BROAD []
 synonym: "植物クチクラproper (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3459338
+xref: OBO_SF2_PO:416
 is_a: PO:0025161 ! portion of plant substance
 created_by: Laurel_Cooper
 creation_date: 2012-01-06T03:06:02Z
@@ -18548,11 +18549,11 @@ creation_date: 2012-01-06T03:06:02Z
 id: PO:0025388
 name: epicuticular wax
 namespace: plant_anatomy
-def: "A portion of cuticular wax that forms crystalloids or a smooth film on the exterior of a cuticle." [PMID:12467640, PO_REF:00010]
+def: "A portion of cuticular wax (PO:0025386) that forms crystalloids or a smooth film on the exterior of a plant cuticle (PO:0000022)." [PMID:12467640, PO_REF:00010, POC:Laurel_Cooper]
 comment: Epicuticular waxes may take a variety of forms, such as plates, ribbons, tubes, and rods.
 synonym: "cera epicuticular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "エピクチクラワックス (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3459338
+xref: OBO_SF2_PO:416
 is_a: PO:0025386 ! cuticular wax
 relationship: adjacent_to PO:0025387 ! plant cuticle proper
 created_by: Laurel_Cooper
@@ -18562,11 +18563,11 @@ creation_date: 2012-01-06T03:10:32Z
 id: PO:0025389
 name: intercuticular wax
 namespace: plant_anatomy
-def: "A portion of cuticular wax that is an amorphous mixture of lipids embedded in the cutin of a cuticle proper." [PMID:12467640, PO_REF:00010]
+def: "A portion of cuticular wax (PO:0025386) that is an amorphous mixture of lipids embedded in the cutin (PO:0025385) of a plant cuticle proper (PO:0025387)." [PMID:12467640, PO_REF:00010, POC:Laurel_Cooper]
 comment: The intercuticular wax is located adjacent to the cell wall.
 synonym: "cera intercuticular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "クチクラ層間ワックス (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3459338
+xref: OBO_SF2_PO:416
 is_a: PO:0025386 ! cuticular wax
 relationship: part_of PO:0025387 ! plant cuticle proper
 created_by: Laurel_Cooper
@@ -20595,7 +20596,9 @@ def: "A portion of plant substance (PO:0025161) that is an aqueous solution that
 comment: Plant sap should not be confused with latex, resins or plant cell cytoplasm.
 synonym: "savia de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物液 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3609182
+xref: GO:0048046
+xref: GO:0055044
+xref: OBO_SF2_PO:530
 is_a: PO:0025161 ! portion of plant substance
 created_by: Laurel_Cooper
 creation_date: 2013-04-05T17:15:40Z
@@ -20607,7 +20610,7 @@ namespace: plant_anatomy
 def: "A plant sap (PO:0025538) that is an aqueous solution which may contain mineral elements, nutrients, and plant hormones, and is transported from the root system (PO:0025025) toward the leaves through the tracheary elements (PO:0000290) of the xylem." [POC:Laurel_Cooper]
 synonym: "savia del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木質部樹液 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3609182
+xref: OBO_SF2_PO:530
 is_a: PO:0025538 ! plant sap
 created_by: Laurel_Cooper
 creation_date: 2013-04-05T17:29:14Z
@@ -20619,7 +20622,7 @@ namespace: plant_anatomy
 def: "A plant sap (PO:0025538) that is an aqueous solution which may contain sugars, mineral elements, and plant hormones, and is transported through the phloem sieve elements (PO:0025406)." [POC:Laurel_Cooper]
 synonym: "savia del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "師管液 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3609182
+xref: OBO_SF2_PO:530
 is_a: PO:0025538 ! plant sap
 created_by: Laurel_Cooper
 creation_date: 2013-04-05T17:29:18Z
@@ -20940,7 +20943,7 @@ namespace: plant_anatomy
 def: "A xylem sap (PO:0025539) that is located in the shoot system (PO:0009006)." [POC:curators]
 synonym: "savia del floema del epiblasto (Spanish) " EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート組織木部樹液 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3609182
+xref: OBO_SF2_PO:530
 is_a: PO:0025539 ! xylem sap
 created_by: Laurel_Cooper
 creation_date: 2013-05-23T16:52:45Z
@@ -20952,7 +20955,7 @@ namespace: plant_anatomy
 def: "A phloem sap (PO:0025540) that is located in the shoot system (PO:0009006)." [POC:curators]
 synonym: "savia del floema del sistema del epiblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート組織師管液 (Japanese)" EXACT Japanese []
-xref: OBO_SF_PO:3609182
+xref: OBO_SF2_PO:530
 is_a: PO:0025540 ! phloem sap
 created_by: Laurel_Cooper
 creation_date: 2013-05-23T16:52:49Z
@@ -20964,7 +20967,7 @@ namespace: plant_anatomy
 def: "A phloem sap (PO:0025540) that is located in the root system (PO:0025025)." [POC:curators]
 synonym: "savia del floema del sistema de la raiz (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根組織師管液 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3609182
+xref: OBO_SF2_PO:530
 is_a: PO:0025540 ! phloem sap
 created_by: Laurel_Cooper
 creation_date: 2013-05-23T16:57:41Z
@@ -20976,7 +20979,7 @@ namespace: plant_anatomy
 def: "A xylem sap (PO:0025539) that is located in the root system (PO:0025025)." [POC:curators]
 synonym: "savia del xilema del sistema de la raiz (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根組織木部樹液 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3609182
+xref: OBO_SF2_PO:530
 is_a: PO:0025539 ! xylem sap
 created_by: Laurel_Cooper
 creation_date: 2013-05-23T16:58:26Z
@@ -21395,6 +21398,32 @@ xref: OBO_SF2_PO:589
 is_a: PO:0028003 ! gametophyte development stage
 created_by: cooperl
 creation_date: 2014-04-09T15:32:30Z
+
+[Term]
+id: PO:0025603
+name: plant resin
+namespace: plant_anatomy
+def: "A portion of plant substance (PO:0025161) that consists of a complex mixture of organic aromatic compounds such as mono-, sesqui-, and diterpenoids." [PMID:11337413, POC:Laurel_Cooper]
+comment: Plant resins are often produced by Gymnosperms but not restricted to those plants. In the conifers, plant resins are constitutively and inducibly produced through the secretory activity of resin cells (PO:0025604), and can be exuded through a resin canal (PO:0005665) to a site of injury or predator attack.
+subset: Gymnosperms
+synonym: "oleoresin " RELATED []
+synonym: "pitch " EXACT []
+xref: CHEBI:24913
+xref: CHEBI:26873
+xref: OBO_SF2_PO:587
+is_a: PO:0025161 ! portion of plant substance
+created_by: cooperl
+creation_date: 2014-04-10T09:51:14Z
+
+[Term]
+id: PO:0025604
+name: resin cell
+namespace: plant_anatomy
+def: "An epidermal cell (PO:0004013) that secretes plant resin (PO:0025603), and may line resin canals (PO:0005665) and/or be associated with resin blisters (or cysts)." [PMID:11337413, POC:Laurel_Cooper]
+xref: OBO_SF2_PO:587
+is_a: PO:0004013 ! epidermal cell
+created_by: cooperl
+creation_date: 2014-04-10T12:34:56Z
 
 [Term]
 id: PO:0028001
