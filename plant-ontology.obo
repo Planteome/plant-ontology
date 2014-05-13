@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:04:2014 13:01
+date: 13:05:2014 14:02
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1058,7 +1058,7 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000146
 name: abscission zone
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is part of a plant structure that has as parts a separation layer (PO:0006211) and a protective layer (PO:0006212) and is involved in the abscission of the structure." [ISBN:047124529, POC:curators]
+def: "A portion of plant tissue (PO:0009007) that has as part a separation layer (PO:0006211) and a protective layer (PO:0006212), and is involved in the abscission (GO:0009838) of a fruit (PO:0009001), flower (PO:0009046), leaf (PO:0025034) or other plant structure (PO:0009011)." [ISBN:047124529, POC:curators, POC:Laurel_Cooper]
 synonym: "abscission layer" RELATED []
 synonym: "zona de absici&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "離層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3100,7 +3100,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004536
 name: fruit pedicel
 namespace: plant_anatomy
-def: "An infructescence branch that supports an individual fruit." [POC:Ramona_Walls]
+def: "An infructescence branch (PO:0025243) that supports an individual fruit (PO:0009001)." [POC:Ramona_Walls]
 comment: The ultimate branch in an infructescence.
 subset: Tomato
 synonym: "pedicelo del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -5578,10 +5578,11 @@ is_a: PO:0009013 ! portion of meristem tissue
 id: PO:0006211
 name: separation layer
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is part of an abscission zone (PO:0000146) and contains cells that develop an abnormal wall chemistry and swelling resulting in their easily being pulled apart along the pectin-rich middle lamella." [ISBN:0122151704]
+def: "A portion of plant tissue (PO:0009007) that is part of an abscission zone (PO:0000146) and contains cells that develop an abnormal wall chemistry and swelling resulting in their easily being pulled apart along the pectin-rich middle lamella (GO:0009519)." [ISBN:0122151704]
 comment: Directly involved in the weakening process of abscission.
 synonym: "capa de separaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "隔離層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: GO:0009519
 xref: OBO_SF2_PO:190
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0000146 ! abscission zone
@@ -6606,33 +6607,39 @@ relationship: part_of PO:0006349 ! ear sessile spikelet
 id: PO:0006501
 name: leaf abscission zone
 namespace: plant_anatomy
-def: "Zone at base of the leaf that contains an abscission (or separation) layer and a protective layer, both involved in the abscission of the leaf." [GR:Pankaj_Jaiswal]
+def: "An abscission zone (PO:0000146) at the base of a vascular leaf (PO:0009025) where it separates during leaf abscission (GO:0060866)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "zona de absici&#243n de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉離層帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: GO:0060866
+xref: OBO_SF2_PO:193
 is_a: PO:0000146 ! abscission zone
 relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
 id: PO:0006502
-name: flower abscission zone
+name: floral organ abscission zone
 namespace: plant_anatomy
-def: "Zone at base of the flower that contains an abscission (or separation) layer and a protective layer, both involved in the abscission of the flower and its parts." [GR:Pankaj_Jaiswal]
+def: "An abscission zone (PO:0000146) at the base of a flower (PO:0009001) where a floral organ (PO:0025395) separates during floral organ abscission (GO:0010227)." [GR:Pankaj_Jaiswal, PMID:18660431, POC:Laurel_Cooper]
 synonym: "zona de absici&#243n de la flor (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "落花帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: GO:0010227
+xref: OBO_SF2_PO:193
 is_a: PO:0000146 ! abscission zone
-relationship: part_of PO:0009046 ! flower
+relationship: part_of PO:0025395 ! floral organ
 
 [Term]
 id: PO:0006503
 name: fruit abscission zone
 namespace: plant_anatomy
-def: "Zone at base of the fruit that contains an abscission (or separation) layer and a protective layer, both involved in the abscission of the fruit." [GR:Pankaj_Jaiswal]
+def: "An abscission zone (PO:0000146) at the base of a fruit (PO:0009001) where the fruit separates from the fruit pedicel (PO:0004536) during fruit abscission (GO:0060867)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 subset: Maize
 subset: Poaceae
 subset: Rice
 subset: Tomato
 synonym: "zona de absici&#243n del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "落果実 (fruit shedding zone) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: GO:0060867
+xref: OBO_SF2_PO:193
 is_a: PO:0000146 ! abscission zone
 relationship: part_of PO:0009001 ! fruit
 
@@ -10749,14 +10756,14 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009052
 name: pedicel
 namespace: plant_anatomy
-def: "An inflorescence branch (PO:0009081) that supports an individual flower in an inflorescence (PO:0009049)." [ISBN:0716710072, POC:Laurel_Cooper]
+def: "An inflorescence branch (PO:0009081) that supports an individual flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, POC:Laurel_Cooper]
 comment: The bracteoles are borne on the pedicel, which terminates in a flower. A pedicel is the ultimate branch in an inflorescence.
 subset: Angiosperm
 subset: reference
 synonym: "pedicelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:89
 xref: OBO_SF_PO:2971884
-xref: OBO_SF_PO:2975275
 is_a: PO:0009081 ! inflorescence branch
 
 [Term]
@@ -21424,6 +21431,19 @@ xref: OBO_SF2_PO:587
 is_a: PO:0004013 ! epidermal cell
 created_by: cooperl
 creation_date: 2014-04-10T12:34:56Z
+
+[Term]
+id: PO:0025605
+name: fruit pedicel abscission zone
+namespace: plant_anatomy
+def: "An abscission zone (PO:0000146) that forms as a swelling or joint on the fruit pedicel (PO:0004536)." [PMID:22106095, POC:Laurel_Cooper]
+synonym: "fruit pedicel joint" EXACT []
+synonym: "pedicel joint" RELATED []
+xref: OBO_SF2_PO:590
+is_a: PO:0000146 ! abscission zone
+relationship: part_of PO:0004536 ! fruit pedicel
+created_by: cooperl
+creation_date: 2014-05-13T11:16:36Z
 
 [Term]
 id: PO:0028001
