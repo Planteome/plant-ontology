@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:05:2014 11:59
+date: 14:05:2014 16:26
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -43,7 +43,7 @@ name: anther wall
 namespace: plant_anatomy
 alt_id: PO:0006445
 alt_id: PO:0006477
-def: "A microsporangium wall that is part of an anther." [ISBN:0471244554, ISBN:9780003686647]
+def: "A microsporangium wall (PO:0025307) that is part of an anther (PO:0009066)." [ISBN:0471244554, ISBN:9780003686647]
 comment: Has an outer epidermis (exothecium) and an endothecium and may have additional layers. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
@@ -3251,7 +3251,7 @@ is_a: PO:0004543 ! shoot axis tuber
 id: PO:0004700
 name: anther wall middle layer
 namespace: plant_anatomy
-def: "A portion of ground tissue directly internal to an anther endothecium that develops from an anther wall parietal cell layer." [ISBN:9780003686647, POC:curators]
+def: "A portion of ground tissue (PO:0025059) directly internal to an anther wall endothecium (PO:0020002) that develops from an anther wall secondary parietal cell layer (PO:0006007)." [ISBN:9780003686647, POC:curators]
 comment: May be a single or double layer. Usually crushed by the endothecium and therefore almost invariably degenerates early during anther development. In some angiosperms, including <i>Arabidopsis</i>, it develops from an anther wall outer secondary parietal cell layer. In other angiosperms, it develops directly from an anther wall primary parietal cell layer, while in still others, two layers of the middle layer may develop from both an anther wall outer secondary parietal cell layer and an anther wall inner secondary parietal cell layer.
 subset: Angiosperm
 subset: reference
@@ -4587,13 +4587,13 @@ relationship: part_of PO:0000229 ! flower meristem
 id: PO:0006006
 name: anther wall primary parietal cell layer
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of an anther wall and has as parts a primary parietal cell and adjacent cells." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
+def: "A portion of ground tissue (PO:0025059) that is part of an anther wall (PO:0000002) and has as parts a primary parietal cell (PO:0006010) and adjacent plant cells." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
 subset: Angiosperm
 subset: reference
 synonym: "capa primaria de c&#233lulas parietales (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pollen sac primary parietal cell layer" EXACT []
 synonym: "葯壁一次側膜細胞層、壁細胞層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3298010
+xref: OBO_SF2_PO:359
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0000002 ! anther wall
 
@@ -4601,14 +4601,14 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0006007
 name: anther wall secondary parietal cell layer
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of an anther wall and develops from an anther wall primary parietal cell layer." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
+def: "A portion of ground tissue (PO:0025059) that is part of an anther wall (PO:0000002) and develops from an anther wall primary parietal cell layer (PO:0006006)." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
 comment: In many angiosperms, the cells of the anther wall primary parietal cell layer undergo a periclinal division, resulting in the formation of two anther wall secondary parietal layers.
 subset: Angiosperm
 subset: reference
 synonym: "capa secundaria de c&#233lulas parietales (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pollen sac secondary parietal cell layer" EXACT []
 synonym: "葯壁二次側膜細胞層、壁細胞層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3298010
+xref: OBO_SF2_PO:359
 is_a: PO:0025059 ! portion of ground tissue
 relationship: develops_from PO:0006006 ! anther wall primary parietal cell layer
 relationship: part_of PO:0000002 ! anther wall
@@ -4617,37 +4617,38 @@ relationship: part_of PO:0000002 ! anther wall
 id: PO:0006008
 name: anther wall inner secondary parietal cell layer
 namespace: plant_anatomy
-def: "An anther wall secondary parietal cell layer that is formed towards the inside after the cells of an anther wall primary parietal cell layer undergo a periclinal division." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
+def: "An anther wall secondary parietal cell layer (PO:0006007) that is formed towards the inside, after the cells of an anther wall primary parietal cell layer (PO:0006006) undergo a periclinal division." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
 comment: In many angiosperms, including <i>Arabidopsis</i>, it divides periclinally to form an anther wall middle layer externally and an anther wall tapetum internally. Alternatively, it may differentiate into a tapetum.
 subset: Angiosperm
 synonym: "capa interna secundaria de c&#233lulas parietales (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pollen sac inner secondary parietal cell layer" EXACT []
 synonym: "葯壁内二次側膜細胞層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3298010
+xref: OBO_SF2_PO:359
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
 [Term]
 id: PO:0006009
 name: anther wall outer secondary parietal cell layer
 namespace: plant_anatomy
-def: "An anther wall secondary parietal cell layer formed towards the outside after an anther wall primary parietal cell layer undergoes a periclinal division." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
+def: "An anther wall secondary parietal cell layer (PO:0006007) formed towards the outside, after an anther wall primary parietal cell layer (An anther wall secondary parietal cell layer (PO:0006006) undergoes a periclinal division." [GR:Pankaj_Jaiswal, ISBN:9780003686647, PMID:2476454]
 comment: In many angiosperms, including <i>Arabidopsis</i>, it differentiates into the anther wall endothecium. Alternatively, it may divide periclinally to form an anther wall endothecium externally and an anther wall middle layer internally.
 subset: Angiosperm
 synonym: "capa externa secundaria de c&#233lulas parietales (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pollen sac outer secondary parietal cell layer" EXACT []
 synonym: "葯壁外二次側膜細胞層、壁細胞層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3298010
+xref: OBO_SF2_PO:359
 is_a: PO:0006007 ! anther wall secondary parietal cell layer
 
 [Term]
 id: PO:0006010
 name: primary parietal cell
 namespace: plant_anatomy
-def: "It is formed by the division of a archesporial cell." [PMID:2476454]
+def: "A native plant cell (PO:0025606) which is formed by the division of a male archesporial cell (PO:0006014), and is part of the anther wall primary parietal cell layer (PO:0006006)." [PMID:2476454, POC:Laurel_Cooper]
 subset: CL
 synonym: "c&#233lula primaria parietal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次側膜細胞、壁細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:359
+is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
 relationship: part_of PO:0006006 ! anther wall primary parietal cell layer
 
@@ -4687,13 +4688,14 @@ relationship: part_of PO:0009086 ! endocarp
 id: PO:0006014
 name: male archesporial cell
 namespace: plant_anatomy
-def: "An archesporial cell that is part of a microsporangium and divides to gives rise to a microsporocyte." [PMID:10465788, POC:curators]
+def: "An archesporial cell (PO:0030056) that is part of a microsporangium (PO:0025202) and divides to gives rise to a microsporocyte (PO:0020047)." [PMID:10465788, POC:curators]
 comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In seed plants, a male archesporial cell undergoes periclinal division, giving rise to an inner primary sporogenous cell layer and an outer primary parietal cell.
 subset: CL
 synonym: "anther archesporial cell" NARROW []
 synonym: "c&#233lula masculina arquesporial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "male archesporial initial" EXACT []
 synonym: "雄性胞原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:328
 is_a: PO:0030056 ! archesporial cell
 relationship: part_of PO:0025202 ! microsporangium
 
@@ -4701,13 +4703,14 @@ relationship: part_of PO:0025202 ! microsporangium
 id: PO:0006015
 name: female archesporial cell
 namespace: plant_anatomy
-def: "An archesporial cell that is part of a megasporangium and divides to give rise to a megasporocyte." [PMID:10465788, POC:curators]
+def: "An archesporial cell (PO:0030056) that is part of a megasporangium (PO:0025201) and divides to give rise to a megasporocyte (PO:0000431)." [PMID:10465788, POC:curators]
 comment: Found in heterosporous ferns and seed plants. May also give rise to sterile cells. In the majority of flowering plants, including Arabidopsis, the female archesporial cell elongates and polarizes longitudinally, and directly differentiates into the megasporocyte or megaspore mother cell. In some flowering plants, it undergoes a periclinal division, and subsequently the inner cell differentiates into the megasporocyte.
 subset: CL
 synonym: "c&#233lula femenina arquesporial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "female archesporial initial" EXACT []
 synonym: "ovule archesporial cell" NARROW []
 synonym: "雌胞原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:328
 is_a: PO:0030056 ! archesporial cell
 relationship: part_of PO:0025201 ! megasporangium
 
@@ -5391,11 +5394,11 @@ is_obsolete: true
 id: PO:0006088
 name: primary sporogenous cell
 namespace: plant_anatomy
-def: "It is formed by the division of the male archesporial initial. After several mitotic divisions these cells differentiate into pollen mother cells." [PMID:12897248]
+def: "A native plant cell (PO:0025606) is formed by the division of the male archesporial initial. After several mitotic divisions these cells differentiate into pollen mother cells." [PMID:12897248]
 subset: CL
 synonym: "c&#233lula espor&#243gena primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次胞子形成細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
 
 [Term]
@@ -11669,7 +11672,7 @@ name: anther wall endothecium
 namespace: plant_anatomy
 alt_id: PO:0006446
 alt_id: PO:0006481
-def: "An microsporangium endothecium that part of an anther wall." [ISBN:9780003686647]
+def: "An microsporangium endothecium (PO:0025309) that part of an anther wall (PO:0000002)." [ISBN:9780003686647]
 comment: May have secondary thickening of walls of cells that are involved in anther dehiscence. There can be more than one layer in an anther endothecium. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
@@ -12651,15 +12654,17 @@ is_a: PO:0025525 ! spermatogenous cell
 
 [Term]
 id: PO:0020099
-name: vegetative cell
+name: microgametophyte vegetative cell
 namespace: plant_anatomy
-def: "A plant cell that is the larger cell of a male gametophyte in seed plants. It does not divide further and develops into a pollen tube cell." [POC:Ramona_Walls]
+def: "A native plant cell (PO:0025606) that is the larger cell of a microgametophyte (PO:0025280) in seed plants. It does not divide further and develops into a pollen tube cell (PO:0025195)." [POC:Ramona_Walls]
 subset: CL
 subset: reference
 synonym: "c&#233lula vegetativa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tube cell" RELATED [ISBN:0716710072]
 synonym: "栄養細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:192
+is_a: PO:0025606 ! native plant cell
+relationship: part_of PO:0025280 ! microgametophyte
 
 [Term]
 id: PO:0020100
@@ -14463,7 +14468,7 @@ id: PO:0025094
 name: sporangium
 namespace: plant_anatomy
 alt_id: PO:0025232
-def: "A plant organ in which spores are produced." [ISBN:0716710072, POC:curators]
+def: "A plant organ (PO:0009008) in which plant spores (PO:0025017) are produced." [ISBN:0716710072, POC:curators]
 comment: In bryophytes, particularly in mosses, a sporangium is referred to as a capsule. In seed plants, a sporangium is located in a sporophyll. In pteridophytes, a sporangium is located on the surface of a sporophyll or fertile leaf or borne on a sporangiophore. May be unicellular in some algae.
 subset: Bryophytes
 subset: TraitNet
@@ -15902,14 +15907,14 @@ creation_date: 2010-12-09T01:39:55Z
 id: PO:0025195
 name: pollen tube cell
 namespace: plant_anatomy
-def: "A plant cell that develops from a vegetative cell and forms a tubular extension of the pollen grain." [POC:Ramona_Walls]
-comment: Carries the male gametes to into or near the ovule. May be branched in gymnosperms. See GO for pollen tube (GO:0090406) or pollen tube tip (GO:0090404).
+def: "A native plant cell (PO:0025606) that develops from a microgametophyte vegetative cell (PO:0020099) and forms a tubular extension of the pollen (PO:0025281)." [POC:Laurel_Cooper, POC:Ramona_Walls]
+comment: Carries the male gametes (PO:0025006) into or near the plant ovule (PO:0020003). May be branched in gymnosperms. See GO for pollen tube (GO:0090406) or pollen tube tip (GO:0090404).
 subset: CL
 synonym: "c&#233lula del tubo pol&#237nico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花粉管細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3093226
-is_a: PO:0009002 ! plant cell
-relationship: develops_from PO:0020099 ! vegetative cell
+xref: OBO_SF2_PO:192
+is_a: PO:0025606 ! native plant cell
+relationship: develops_from PO:0020099 ! microgametophyte vegetative cell
 created_by: rwalls
 creation_date: 2010-12-09T02:11:17Z
 
@@ -15993,7 +15998,7 @@ creation_date: 2010-12-09T04:05:41Z
 id: PO:0025202
 name: microsporangium
 namespace: plant_anatomy
-def: "A sporangium in which microspores are produced." [ISBN:0716710072]
+def: "A sporangium (PO:0025094) in which microspores (PO:0020048) are produced." [ISBN:0716710072]
 synonym: "macrosporangia" RELATED Plural [FNA:6102371f-fcdd-47cd-b0fd-2d24e2d5c8cc]
 synonym: "macrosporangium" RELATED [FNA:7f9e3756-4ac4-495d-8fb6-fffed355a241]
 synonym: "megasporangia" EXACT Plural [FNA:39beb98a-e588-4996-8a2d-57c9967dc8ab]
@@ -17413,7 +17418,7 @@ creation_date: 2011-04-27T05:33:40Z
 id: PO:0025306
 name: sporangium wall
 namespace: plant_anatomy
-def: "A cardinal organ part that is composed of the outer layers of a sporangium and bounds the archesporium or spores." [ISBN:9780070588493]
+def: "A cardinal organ part (PO:0025001) that is composed of the outer layers of a sporangium (PO:0025094) and bounds the archesporium (PO:0030074) or plant spores (PO:0025017)." [ISBN:9780070588493]
 comment: May have multiple layers such as exothecium, endothecium and tapetum. Early in development, the sporangium wall bounds the archesporium. Later, after spores develop from the archesporium, it bounds the spore or spores.
 synonym: "pared del esporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporangium jacket layer" EXACT []
@@ -17428,7 +17433,7 @@ creation_date: 2011-05-02T09:14:26Z
 id: PO:0025307
 name: microsporangium wall
 namespace: plant_anatomy
-def: "A sporangium wall that is part of a microsporangium." [POC:Ramona_Walls]
+def: "A sporangium wall (PO:0025306) that is part of a microsporangium (PO:0025202)." [POC:Ramona_Walls]
 synonym: "pared del microsporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小胞子嚢壁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025306 ! sporangium wall
@@ -17452,7 +17457,7 @@ creation_date: 2011-05-03T09:42:36Z
 id: PO:0025309
 name: microsporangium endothecium
 namespace: plant_anatomy
-def: "An endothecium that is part of a microsporangium wall." [POC:curators]
+def: "A sporangium wall endothecium (PO:0030049) that is part of a microsporangium wall (PO:0025307)." [POC:curators]
 synonym: "endotecio del microsporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小胞子嚢内皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3298006
@@ -20532,10 +20537,10 @@ creation_date: 2012-12-14T11:55:04Z
 id: PO:0025533
 name: prothallial cell
 namespace: plant_anatomy
-def: "A vegetative plant cell (PO:0009002) that develops from the division of the microspore (PO:0020048) and is part of the microgametophyte of vascular plants other than angiosperms." [ISBN:9780879015329, ISBN:9783443140113, POC:Laurel_Cooper]
+def: "A native plant cell (PO:0025606) that is vegetative and develops from the division of the microspore (PO:0020048) and is part of the microgametophyte of vascular plants other than angiosperms." [ISBN:9780879015329, ISBN:9783443140113, POC:Laurel_Cooper]
 comment: The prothallial cell is believed to be the remnant of the vegetative tissue of the male gametophyte.
 xref: OBO_SF_PO:3597966
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 created_by: Laurel_Cooper
 creation_date: 2012-12-20T16:29:31Z
 
@@ -21212,11 +21217,11 @@ creation_date: 2013-06-27T12:02:35Z
 id: PO:0025586
 name: phyllome founder cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is part of the phyllome anlagen (PO:0025430)." [PMID:12610522, POC:Laurel_Cooper]
+def: "A native plant cell (PO:0025606) that is part of the phyllome anlagen (PO:0025430)." [PMID:12610522, POC:Laurel_Cooper]
 comment: As a group, the phyllome founder cells encompass several layers of the shoot apical meristem (PO:0020148) and form a phyllome anlagen (PO:0025430). Founder cells do not function as stem cells but rather have a determinate fate and can be defined by histological, clonal and molecular criteria.
 synonym: "phyllome anlagen cell" EXACT []
 xref: OBO_SF2_PO:575
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0025430 ! phyllome anlagen
 created_by: cooperl
 creation_date: 2013-10-02T11:58:41Z
@@ -22357,7 +22362,7 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030049
 name: sporangium wall endothecium
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the sub-epidermal layer of a sporangium wall." [ISBN:0471244554, ISBN:9780003686647]
+def: "A portion of ground tissue PO:0025059) that is the sub-epidermal layer of a sporangium wall (PO:0025306)." [ISBN:0471244554, ISBN:9780003686647]
 comment: Term used for vascular plants to describe the outermost layer of a sporangium wall that is internal to the exothecium.
 synonym: "endotecio de la pared del esporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "endothecium of sporangium wall" EXACT []
@@ -22779,7 +22784,7 @@ creation_date: 2011-05-02T09:46:49Z
 id: PO:0030074
 name: archesporium
 namespace: plant_anatomy
-def: "A portion of plant tissue that is the internal part of a sporangium, bounded by the sporangium wall, and has as parts archesporial cells." [ISBN:8122407927, ISBN:9780003686647]
+def: "A portion of plant tissue (PO:0009007) that is the internal part of a sporangium (PO:0025094), bounded by the sporangium wall (PO:0025306), and has as parts archesporial cells (PO:0030056)." [ISBN:8122407927, ISBN:9780003686647]
 comment: Gives rise to sporocytes and may give rise to other sterile cells such as elators.
 subset: Bryophytes
 subset: Gymnosperms
