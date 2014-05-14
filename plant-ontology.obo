@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:05:2014 18:06
+date: 14:05:2014 11:59
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1411,7 +1411,7 @@ subset: CL
 synonym: "idioblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "異形(型）細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3301116
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 
 [Term]
 id: PO:0000284
@@ -2652,7 +2652,7 @@ synonym: "c&#233lula meristem&#225tica (Spanish)" EXACT Spanish [POC:Maria_Aleja
 synonym: "stem cell" EXACT []
 synonym: "分裂組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CL:0000034
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 
 [Term]
 id: PO:0004011
@@ -2684,12 +2684,13 @@ is_obsolete: true
 id: PO:0004013
 name: epidermal cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is part of a portion of epidermis (PO:0005679)." [POC:curators]
+def: "A native plant cell (PO:0025606) that is part of a portion of epidermis (PO:0005679)." [POC:curators]
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula epid&#233rmica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "表皮細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:591
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0005679 ! epidermis
 
 [Term]
@@ -12771,7 +12772,7 @@ subset: CL
 synonym: "embryonic hypophysis" EXACT []
 synonym: "hip&#243fisis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚原根層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0020108 ! suspensor
 
 [Term]
@@ -13249,12 +13250,12 @@ creation_date: 2010-03-12T10:33:57Z
 id: PO:0025006
 name: gamete
 namespace: plant_anatomy
-def: "A plant cell that has half the chromosome complement of the sporophyte and is capable of fertilization to create a plant zygote (PO:0000423)." [POC:curators]
+def: "A native plant cell (PO:0025606) that has half the chromosome complement of the sporophyte and is capable of fertilization to create a plant zygote (PO:0000423)." [POC:curators]
 subset: CL
 synonym: "gameta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:2941267
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:58
+is_a: PO:0025606 ! native plant cell
 created_by: Laurel_Cooper
 creation_date: 2010-03-03T03:06:46Z
 
@@ -13529,14 +13530,15 @@ creation_date: 2010-07-01T02:11:26Z
 id: PO:0025026
 name: embryo sac cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is part of an embryo sac (PO:0025074)." [POC:Ramona_Walls]
+def: "A native plant cell (PO:0025606) that is part of an embryo sac (PO:0025074)." [POC:Ramona_Walls]
 subset: CL
 synonym: " 胚嚢細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "c&#233lula megagametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo sac cell" RELATED []
 synonym: "megagametophytic cell" EXACT []
-is_a: PO:0009002 ! plant cell
-intersection_of: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:508
+is_a: PO:0025606 ! native plant cell
+intersection_of: PO:0025606 ! native plant cell
 intersection_of: part_of PO:0025074 ! embryo sac
 created_by: rwalls
 creation_date: 2010-05-07T02:36:24Z
@@ -13590,15 +13592,15 @@ creation_date: 2010-07-01T03:46:35Z
 id: PO:0025030
 name: ground tissue cell
 namespace: plant_anatomy
-def: "A plant cell that is part of a portion of ground tissue." [POC:curators]
+def: "A native plant cell (PO:0025606) that is part of a portion of ground tissue (PO:0025059)." [POC:curators]
 comment: Includes parenchyma, collenchyma and sclerenchyma cells.
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula del tejido fundamental (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "fundamental tissue cell" EXACT []
 synonym: "基本組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3274184
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:321
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0025059 ! portion of ground tissue
 created_by: rwalls
 creation_date: 2010-05-07T02:47:45Z
@@ -13621,14 +13623,15 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
+def: "A native plant cell (PO:0025606)  that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
 comment: Hydroids are water and mineral conducting cells found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase.
 subset: Bryophytes
 subset: CL
 synonym: "hidroide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "hydroid cell" EXACT []
 synonym: "ハイドロイド、仮導管状細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:336
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0030047 ! hydrome
 created_by: rwalls
 creation_date: 2010-05-12T04:46:21Z
@@ -13637,14 +13640,15 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that resembles in structure the sieve elements (PO:0025406) of vascular plants." [ISBN:376821110, ISBN:962073342]
+def: "A native plant cell (PO:0025606) that resembles in structure the sieve elements (PO:0025406) of vascular plants." [ISBN:376821110, ISBN:962073342]
 comment: A carbohydrate and amino acid conducting cell found in bryophytes in axes and leaves in the gametophyte development stage (PO:0028003) and in the seta in the sporophytic phase. Leptoids have no nucleus at maturity. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
 subset: Bryophytes
 subset: CL
 synonym: "leptoid cell" EXACT []
 synonym: "leptoide (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "レプトイド、師管組織に相当する細胞群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:336
+is_a: PO:0025606 ! native plant cell
 disjoint_from: PO:0025406 ! sieve element
 relationship: part_of PO:0030048 ! leptome
 created_by: rwalls
@@ -20219,12 +20223,12 @@ creation_date: 2012-10-06T11:01:04Z
 id: PO:0025509
 name: archegonium central cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is the larger, distal cell arising from the first division of an archegonium initial cell (PO:0025510)." [PMID:17041880]
+def: "A native plant cell (PO:0025606) that is the larger, distal cell arising from the first division of an archegonium initial cell (PO:0025510)." [PMID:17041880]
 comment: The archegonium central cell divides asymmetrically to form a smaller ventral canal cell (PO:0025524) and a larger archegonium egg cell (PO:0025122). It is larger than the archegonium neck canal cell (PO:0030065), which also develops from the archegonium initial cell (PO:0025510). The archegonium central cell only occurs in gymnosperms.
 subset: Gymnosperms
 synonym: " 造卵器中央細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3080937
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:182
+is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: rwalls
 creation_date: 2012-10-15T15:24:16Z
@@ -22400,7 +22404,7 @@ creation_date: 2011-04-25T01:04:07Z
 id: PO:0030052
 name: antheridium jacket layer cell
 namespace: plant_anatomy
-def: "A plant cell that is part of an antheridium jacket layer." [ISBN:9780473067304]
+def: "A native plant cell (PO:0025606) that is part of an antheridium jacket layer (PO:0030053)." [ISBN:9780473067304]
 subset: Bryophytes
 subset: CL
 subset: Pteridophytes
@@ -22409,8 +22413,8 @@ synonym: "capa c&#233lular de la cubierta del anteridio (Spanish)" EXACT Spanish
 synonym: "jacket cell" BROAD [FNA:bd912db8-34fc-452c-b227-525571dec306]
 synonym: "sterile jacket cell" EXACT []
 synonym: "造精器被覆層細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293290
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:332
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0030053 ! antheridium jacket layer
 created_by: rwalls
 creation_date: 2011-04-29T08:13:39Z
@@ -22471,15 +22475,15 @@ creation_date: 2011-04-26T09:08:14Z
 id: PO:0030056
 name: archesporial cell
 namespace: plant_anatomy
-def: "A plant cell that divides to gives rise to a sporocyte and is part of a sporangium." [ISBN:9780070588493]
+def: "A native plant cell (PO:0025606) that divides to gives rise to a sporocyte (PO:0006204) and is part of a sporangium (PO:0025094)." [ISBN:9780070588493]
 comment: May also give rise to sterile cells such as elators (in liverworts) or tapetal cells. In most species outside seed plants, multiple archesporial cells are part of an archesporium or sporogenous tissue.
 subset: CL
 synonym: "archesporial initial" EXACT []
 synonym: "c&#233lula arquesporial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporogenous cell" EXACT []
 synonym: "胞原細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293208
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:328
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0025094 ! sporangium
 created_by: rwalls
 creation_date: 2011-04-28T08:31:02Z
@@ -22488,14 +22492,14 @@ creation_date: 2011-04-28T08:31:02Z
 id: PO:0030057
 name: alar cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) located at the base of a non-vascular leaf (PO:0025075) adjacent to where the leaf attaches to the stem (PO:0009047)." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
+def: "A native plant cell (PO:0025606) located at the base of a non-vascular leaf (PO:0025075) adjacent to where the leaf attaches to the stem (PO:0009047)." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
 comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness, or ornamentation from other cells in the leaf.
 subset: Bryophytes
 subset: CL
 synonym: "c&#233lula alar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "翼細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293209
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:329
+is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0020040 ! leaf base
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: rwalls
@@ -22513,7 +22517,7 @@ synonym: "braquicito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "brood cell" EXACT [ISBN:0962073342]
 synonym: "原糸体細胞の細胞壁を厚くした細胞、耐性細胞(brood cell?) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3293213
-is_a: PO:0009002 ! plant cell
+is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
 creation_date: 2011-04-28T09:14:10Z
@@ -22618,14 +22622,14 @@ creation_date: 2011-04-29T09:03:51Z
 id: PO:0030065
 name: archegonium neck canal cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is one of the axial row of cells in an immature archegonium neck (PO:0030039)." [ISBN:0962073342]
+def: "A native plant cell (PO:0025606) that is one of the axial row of cells in an immature archegonium neck (PO:0030039)." [ISBN:0962073342]
 comment: During archegonium development, the archegonium neck canal cells (PO:0030065) and the ventral canal cell (PO:0025524) disintegrate, creating a archegonium neck canal for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
 subset: CL
 synonym: "archegonial neck canal cell" EXACT []
 synonym: "c&#233lula del canal del cuello del arquegonio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器頚溝細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3234985
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:307
+is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0025510 ! archegonium initial cell
 relationship: part_of PO:0030039 ! archegonium neck
 created_by: rwalls
