@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:05:2014 14:02
+date: 13:05:2014 18:06
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -105,7 +105,7 @@ is_a: PO:0009011 ! plant structure
 id: PO:0000005
 name: cultured plant cell
 namespace: plant_anatomy
-def: "A plant cell that is grown or maintained in vitro." [POC:curators]
+def: "A plant cell (PO:0009002) that is grown or maintained in vitro." [POC:curators]
 comment: Includes isolated plant cells and small plant cell aggregates that proliferate while suspended in sterile liquid medium or spread on a solid agar medium.
 subset: CL
 synonym: "c&#233lula cultivada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1627,14 +1627,14 @@ relationship: part_of PO:0005043 ! secondary phloem
 id: PO:0000423
 name: plant zygote
 namespace: plant_anatomy
-def: "A single-celled whole plant that participates in the plant zygote stage." [POC:Ramona_Walls]
+def: "A native plant cell (PO:0025606) which is a whole plant (PO:0000003) in the plant zygote stage (PO:0001097)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: A plant zygote is a whole plant that is a single cell formed by fertilization (syngamy).
 subset: CL
 synonym: "cigoto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "zygote" BROAD []
 synonym: "植物接合子、接合体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000003 ! whole plant
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:417
+is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0001097 ! plant zygote stage
 
 [Term]
@@ -2309,13 +2309,14 @@ consider: PO:0025168
 id: PO:0002002
 name: embryo basal cell
 namespace: plant_anatomy
-def: "A plant cell that is the lower-most cell formed after the first division of the zygote and is part of an embryo." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) that is the lower-most cell formed after the first division of the plant zygote (PO:0000423) and is part of a plant embryo (PO:0009009)." [ISBN:0471245208]
 comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
 subset: CL
 synonym: "c&#233lula basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic basal cell" EXACT []
 synonym: "胚基底細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009002 ! plant cell
+xref: OBO_SF2_PO:281
+is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0000423 ! plant zygote
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -13556,15 +13557,15 @@ creation_date: 2010-05-07T02:36:55Z
 id: PO:0025028
 name: embryo plant cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is part of a plant embryo (PO:0009009)." [POC:curators]
+def: "A native plant cell (PO:0025606) that is part of a plant embryo (PO:0009009)." [POC:curators, POC:Laurel_Cooper]
 synonym: "c&#233lula embri&#243nica vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo cell" BROAD []
 synonym: "embryonic cell" BROAD []
 synonym: "embryonic plant cell" EXACT []
 synonym: "胚性植物細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3177665
+xref: OBO_SF2_PO:281
 is_a: PO:0025099 ! embryo plant structure
-intersection_of: PO:0009002 ! plant cell
+intersection_of: PO:0025606 ! native plant cell
 intersection_of: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2010-05-07T02:41:17Z
@@ -17096,6 +17097,7 @@ subset: CL
 synonym: "c&#233lula apical del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic meristematic apical cell" EXACT []
 synonym: "胚頂端細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:281
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: develops_from PO:0000423 ! plant zygote
 relationship: part_of PO:0009009 ! plant embryo
@@ -21444,6 +21446,16 @@ is_a: PO:0000146 ! abscission zone
 relationship: part_of PO:0004536 ! fruit pedicel
 created_by: cooperl
 creation_date: 2014-05-13T11:16:36Z
+
+[Term]
+id: PO:0025606
+name: native plant cell
+namespace: plant_anatomy
+def: "A plant cell (PO:0009002) that is either part of a multicellular whole plant (PO:0000003) 'in vivo' or a unicellular organism 'in_natura' (i.e. part of a natural environment)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:586
+is_a: PO:0009002 ! plant cell
+created_by: cooperl
+creation_date: 2014-05-13T16:51:47Z
 
 [Term]
 id: PO:0028001
