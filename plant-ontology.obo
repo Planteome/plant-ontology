@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:05:2014 16:38
+date: 15:05:2014 15:23
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1405,7 +1405,7 @@ relationship: part_of PO:0005679 ! epidermis
 id: PO:0000283
 name: idioblast
 namespace: plant_anatomy
-def: "A plant cell that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
 comment: Often contains deposit of minerals or products of secondary metabolism. May have a specialized function.
 subset: CL
 synonym: "idioblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2646,7 +2646,7 @@ is_a: PO:0004718 ! short cell
 id: PO:0004010
 name: meristematic cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula meristem&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem cell" EXACT []
@@ -12771,7 +12771,7 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020109
 name: embryo hypophysis
 namespace: plant_anatomy
-def: "A plant cell that is the uppermost cell of a suspensor and from which part of the root and root cap in a plant embryo of angiosperms are derived." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) that is the uppermost cell of a suspensor and from which part of the root and root cap in a plant embryo of angiosperms are derived." [ISBN:0471245208]
 subset: Angiosperm
 subset: CL
 synonym: "embryonic hypophysis" EXACT []
@@ -22514,14 +22514,14 @@ creation_date: 2011-04-28T08:50:00Z
 id: PO:0030058
 name: brachycyte
 namespace: plant_anatomy
-def: "A plant cell that develops from a cell in a protonema and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891]
-comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema may develop into brachycytes under stress. May form a chain or be separated by tmema cells.
+def: "A native plant cell (PO:0025606) that develops from a cell in a protonema (PO:0030003) and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891]
+comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema (PO:0030003) may develop into brachycytes under stress. May form a chain or be separated by tmema cells (PO:0030059).
 subset: Bryophytes
 subset: CL
 synonym: "braquicito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "brood cell" EXACT [ISBN:0962073342]
 synonym: "原糸体細胞の細胞壁を厚くした細胞、耐性細胞(brood cell?) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293213
+xref: OBO_SF2_PO:330
 is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
