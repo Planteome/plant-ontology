@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:05:2014 15:23
+date: 16:05:2014 11:30
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1405,12 +1405,12 @@ relationship: part_of PO:0005679 ! epidermis
 id: PO:0000283
 name: idioblast
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) that markedly differs in form, size, or contents from other cells in the same tissue." [ISBN:0471245208, POC:Laurel_Cooper]
 comment: Often contains deposit of minerals or products of secondary metabolism. May have a specialized function.
 subset: CL
 synonym: "idioblasto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "異形(型）細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3301116
+xref: OBO_SF2_PO:362
 is_a: PO:0025606 ! native plant cell
 
 [Term]
@@ -1652,6 +1652,7 @@ synonym: "MMC" EXACT []
 synonym: "Poaceae megasporocyte" NARROW []
 synonym: "Zea megasporocyte" NARROW []
 synonym: "大胞子母細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:361
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006015 ! female archesporial cell
 relationship: part_of PO:0025201 ! megasporangium
@@ -2309,7 +2310,7 @@ consider: PO:0025168
 id: PO:0002002
 name: embryo basal cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is the lower-most cell formed after the first division of the plant zygote (PO:0000423) and is part of a plant embryo (PO:0009009)." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) that is the lower-most cell formed after the first division of the plant zygote (PO:0000423) and is part of a plant embryo (PO:0009009)." [ISBN:0471245208, POC:Laurel_Cooper]
 comment: The zygote divides to form an embryo apical cell and an embryo basal cell.
 subset: CL
 synonym: "c&#233lula basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2646,12 +2647,13 @@ is_a: PO:0004718 ! short cell
 id: PO:0004010
 name: meristematic cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) synthesizing protoplasm and producing new cells by division and with only a primary cell wall." [ISBN:0471245208, POC:Laurel_Cooper]
 subset: CL
 synonym: "c&#233lula meristem&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem cell" EXACT []
 synonym: "分裂組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CL:0000034
+xref: OBO_SF2_PO:272
 is_a: PO:0025606 ! native plant cell
 
 [Term]
@@ -2684,7 +2686,7 @@ is_obsolete: true
 id: PO:0004013
 name: epidermal cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is part of a portion of epidermis (PO:0005679)." [POC:curators]
+def: "A native plant cell (PO:0025606) that is part of a portion of epidermis (PO:0005679)." [POC:curators, POC:Laurel_Cooper]
 subset: CL
 subset: TraitNet
 synonym: "c&#233lula epid&#233rmica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -5394,10 +5396,11 @@ is_obsolete: true
 id: PO:0006088
 name: primary sporogenous cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) is formed by the division of the male archesporial initial. After several mitotic divisions these cells differentiate into pollen mother cells." [PMID:12897248]
+def: "A native plant cell (PO:0025606) is formed by the division of the male archesporial initial. After several mitotic divisions these cells differentiate into pollen mother cells." [PMID:12897248, POC:Laurel_Cooper]
 subset: CL
 synonym: "c&#233lula espor&#243gena primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次胞子形成細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:328
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
 
@@ -5502,7 +5505,7 @@ synonym: "esporocito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "meiocyte" EXACT []
 synonym: "spore mother cell" EXACT []
 synonym: "胞子母細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3299941
+xref: OBO_SF2_PO:361
 is_a: PO:0009002 ! plant cell
 relationship: develops_from PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
@@ -12270,6 +12273,7 @@ synonym: "Poaceae microsporocyte" NARROW []
 synonym: "pollen mother cell" RELATED []
 synonym: "Zea microsporocyte" NARROW []
 synonym: "小胞子母細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:361
 is_a: PO:0006204 ! sporocyte
 relationship: develops_from PO:0006088 ! primary sporogenous cell
 relationship: part_of PO:0025202 ! microsporangium
@@ -12656,7 +12660,7 @@ is_a: PO:0025525 ! spermatogenous cell
 id: PO:0020099
 name: microgametophyte vegetative cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is the larger cell of a microgametophyte (PO:0025280) in seed plants. It does not divide further and develops into a pollen tube cell (PO:0025195)." [POC:Ramona_Walls]
+def: "A native plant cell (PO:0025606) that is the larger cell of a microgametophyte (PO:0025280) in seed plants. It does not divide further and develops into a pollen tube cell (PO:0025195)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 subset: CL
 subset: reference
 synonym: "c&#233lula vegetativa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -12771,12 +12775,13 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0020109
 name: embryo hypophysis
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is the uppermost cell of a suspensor and from which part of the root and root cap in a plant embryo of angiosperms are derived." [ISBN:0471245208]
+def: "A native plant cell (PO:0025606) that is the uppermost cell of a suspensor (PO:0020108) and from which part of the root (PO:0009005) and root cap (PO:0020123) in a plant embryo (PO:0009009) of angiosperms are derived." [ISBN:0471245208, POC:Laurel_Cooper]
 subset: Angiosperm
 subset: CL
 synonym: "embryonic hypophysis" EXACT []
 synonym: "hip&#243fisis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚原根層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:281
 is_a: PO:0025606 ! native plant cell
 relationship: part_of PO:0020108 ! suspensor
 
@@ -13255,7 +13260,7 @@ creation_date: 2010-03-12T10:33:57Z
 id: PO:0025006
 name: gamete
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that has half the chromosome complement of the sporophyte and is capable of fertilization to create a plant zygote (PO:0000423)." [POC:curators]
+def: "A native plant cell (PO:0025606) that has half the chromosome complement of the sporophyte and is capable of fertilization to create a plant zygote (PO:0000423)." [POC:curators, POC:Laurel_Cooper]
 subset: CL
 synonym: "gameta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13535,7 +13540,7 @@ creation_date: 2010-07-01T02:11:26Z
 id: PO:0025026
 name: embryo sac cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is part of an embryo sac (PO:0025074)." [POC:Ramona_Walls]
+def: "A native plant cell (PO:0025606) that is part of an embryo sac (PO:0025074)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 subset: CL
 synonym: " 胚嚢細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "c&#233lula megagametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13597,7 +13602,7 @@ creation_date: 2010-07-01T03:46:35Z
 id: PO:0025030
 name: ground tissue cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is part of a portion of ground tissue (PO:0025059)." [POC:curators]
+def: "A native plant cell (PO:0025606) that is part of a portion of ground tissue (PO:0025059)." [POC:curators, POC:Laurel_Cooper]
 comment: Includes parenchyma, collenchyma and sclerenchyma cells.
 subset: CL
 subset: TraitNet
@@ -13628,7 +13633,7 @@ creation_date: 2010-07-12T09:08:10Z
 id: PO:0025032
 name: hydroid
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110]
+def: "A native plant cell (PO:0025606) that is dead at maturity, lacks specialized wall thickenings or lignin, and has tapered ends that are thin and partially hydrolyzed." [ISBN:0962073342, ISBN:376821110, POC:Laurel_Cooper]
 comment: Hydroids are water and mineral conducting cells found in bryophytes in axes and leaves in the gametophytic phase and in the seta in the sporophytic phase.
 subset: Bryophytes
 subset: CL
@@ -13645,7 +13650,7 @@ creation_date: 2010-05-12T04:46:21Z
 id: PO:0025033
 name: leptoid
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that resembles in structure the sieve elements (PO:0025406) of vascular plants." [ISBN:376821110, ISBN:962073342]
+def: "A native plant cell (PO:0025606) that resembles in structure the sieve elements (PO:0025406) of vascular plants." [ISBN:376821110, ISBN:962073342, POC:Laurel_Cooper]
 comment: A carbohydrate and amino acid conducting cell found in bryophytes in axes and leaves in the gametophyte development stage (PO:0028003) and in the seta in the sporophytic phase. Leptoids have no nucleus at maturity. Carbohydrate and amino acid conducting cells in bryophytes range from conducting parenchyma cells that are indistinguishable from other parenchyma cells to 'leptoids sensu strictu' that are structurally comparable to sieve elements in vascular plants, as well as many intermediate forms. The term leptoid is used for cells that are distinguishable from other parenchyma cells, whether they be intermediate or leptoids sensu strictu.
 subset: Bryophytes
 subset: CL
@@ -20228,7 +20233,7 @@ creation_date: 2012-10-06T11:01:04Z
 id: PO:0025509
 name: archegonium central cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is the larger, distal cell arising from the first division of an archegonium initial cell (PO:0025510)." [PMID:17041880]
+def: "A native plant cell (PO:0025606) that is the larger, distal cell arising from the first division of an archegonium initial cell (PO:0025510)." [PMID:17041880, POC:Laurel_Cooper]
 comment: The archegonium central cell divides asymmetrically to form a smaller ventral canal cell (PO:0025524) and a larger archegonium egg cell (PO:0025122). It is larger than the archegonium neck canal cell (PO:0030065), which also develops from the archegonium initial cell (PO:0025510). The archegonium central cell only occurs in gymnosperms.
 subset: Gymnosperms
 synonym: " 造卵器中央細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -20537,9 +20542,9 @@ creation_date: 2012-12-14T11:55:04Z
 id: PO:0025533
 name: prothallial cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is vegetative and develops from the division of the microspore (PO:0020048) and is part of the microgametophyte of vascular plants other than angiosperms." [ISBN:9780879015329, ISBN:9783443140113, POC:Laurel_Cooper]
-comment: The prothallial cell is believed to be the remnant of the vegetative tissue of the male gametophyte.
-xref: OBO_SF_PO:3597966
+def: "A native plant cell (PO:0025606) which is vegetative and develops from the division of the microspore (PO:0020048) of vascular plants other than angiosperms." [ISBN:9780879015329, ISBN:9783443140113, POC:Laurel_Cooper]
+comment: The prothallial cell (PO:0025533) is part of the microgametophyte (PO:0025280) and is believed to be the remnant of the vegetative tissue of the male gametophyte.
+xref: OBO_SF2_PO:519
 is_a: PO:0025606 ! native plant cell
 created_by: Laurel_Cooper
 creation_date: 2012-12-20T16:29:31Z
@@ -22409,7 +22414,7 @@ creation_date: 2011-04-25T01:04:07Z
 id: PO:0030052
 name: antheridium jacket layer cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is part of an antheridium jacket layer (PO:0030053)." [ISBN:9780473067304]
+def: "A native plant cell (PO:0025606) that is part of an antheridium jacket layer (PO:0030053)." [ISBN:9780473067304, POC:Laurel_Cooper]
 subset: Bryophytes
 subset: CL
 subset: Pteridophytes
@@ -22480,7 +22485,7 @@ creation_date: 2011-04-26T09:08:14Z
 id: PO:0030056
 name: archesporial cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that divides to gives rise to a sporocyte (PO:0006204) and is part of a sporangium (PO:0025094)." [ISBN:9780070588493]
+def: "A native plant cell (PO:0025606) that divides to gives rise to a sporocyte (PO:0006204) and is part of a sporangium (PO:0025094)." [ISBN:9780070588493, POC:Laurel_Cooper]
 comment: May also give rise to sterile cells such as elators (in liverworts) or tapetal cells. In most species outside seed plants, multiple archesporial cells are part of an archesporium or sporogenous tissue.
 subset: CL
 synonym: "archesporial initial" EXACT []
@@ -22497,7 +22502,7 @@ creation_date: 2011-04-28T08:31:02Z
 id: PO:0030057
 name: alar cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) located at the base of a non-vascular leaf (PO:0025075) adjacent to where the leaf attaches to the stem (PO:0009047)." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304]
+def: "A native plant cell (PO:0025606) located at the base of a non-vascular leaf (PO:0025075) adjacent to where the leaf attaches to the stem (PO:0009047)." [ISBN:0029496608, ISBN:0962073342, ISBN:9780473067304, POC:Laurel_Cooper]
 comment: Found in mosses. Alar cells occur in an area at the base of a leaf that may be triangular, ovate or rectangular and is sometimes called the alar region. They are different in size, shape, color, thickness, or ornamentation from other cells in the leaf.
 subset: Bryophytes
 subset: CL
@@ -22514,7 +22519,7 @@ creation_date: 2011-04-28T08:50:00Z
 id: PO:0030058
 name: brachycyte
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that develops from a cell in a protonema (PO:0030003) and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891]
+def: "A native plant cell (PO:0025606) that develops from a cell in a protonema (PO:0030003) and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891, POC:Laurel_Cooper]
 comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema (PO:0030003) may develop into brachycytes under stress. May form a chain or be separated by tmema cells (PO:0030059).
 subset: Bryophytes
 subset: CL
@@ -22627,7 +22632,7 @@ creation_date: 2011-04-29T09:03:51Z
 id: PO:0030065
 name: archegonium neck canal cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is one of the axial row of cells in an immature archegonium neck (PO:0030039)." [ISBN:0962073342]
+def: "A native plant cell (PO:0025606) that is one of the axial row of cells in an immature archegonium neck (PO:0030039)." [ISBN:0962073342, POC:Laurel_Cooper]
 comment: During archegonium development, the archegonium neck canal cells (PO:0030065) and the ventral canal cell (PO:0025524) disintegrate, creating a archegonium neck canal for the plant sperm cells (PO:0000084) to enter the archegonium (PO:0025126).
 subset: CL
 synonym: "archegonial neck canal cell" EXACT []
