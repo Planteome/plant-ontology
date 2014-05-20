@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:05:2014 16:46
+date: 20:05:2014 11:43
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -160,7 +160,7 @@ relationship: derives_by_manipulation_from PO:0009005 ! root
 id: PO:0000009
 name: cultured plant callus
 namespace: plant_anatomy
-def: "A plant callus grown or maintained in vitro." [POC:curators]
+def: "A plant callus (PO:0005052) grown or maintained in vitro." [POC:curators]
 comment: Cultured plant callus may induced to form from plant protoplasts or cultured plant cells in suspension culture. After supplementation with the appropriate plant growth regulators, further differentiation may lead to the development of plant tissues, plant organs and ultimately, a whole plant.
 synonym: "callo cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cultured callus" BROAD []
@@ -4029,7 +4029,7 @@ relationship: part_of PO:0005708 ! cortex
 id: PO:0005052
 name: plant callus
 namespace: plant_anatomy
-def: "A portion of plant tissue that consists of mass of undifferentiated plant cells." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A portion of plant tissue (PO:0009007) that consists of mass of undifferentiated plant cells (PO:0009002)." [GR:Pankaj_Jaiswal, POC:curators]
 comment: Consists primarily of parenchyma cells but may contain other cell types as the callus begins to differentiate. May be formed as a result of wounding or may develop in culture.
 synonym: "callo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "callus" BROAD []
@@ -5431,7 +5431,7 @@ is_a: PO:0000009 ! cultured plant callus
 id: PO:0006091
 name: embryogenic callus
 namespace: plant_anatomy
-def: "A cultured plant callus that is capable of forming somatic embryos." [POC:curators]
+def: "A cultured plant callus (PO:0000009) that is capable of forming somatic embryos." [POC:curators]
 comment: Somatic embryos may be formed after the cultured plant callus is treated with plant growth regulators.
 synonym: "callo embriog&#233nico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚状カルス (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -21470,7 +21470,7 @@ creation_date: 2014-05-13T11:16:36Z
 id: PO:0025606
 name: native plant cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that is either part of a multicellular whole plant (PO:0000003) 'in vivo' or a unicellular organism 'in_natura' (i.e. part of a natural environment)." [POC:Laurel_Cooper]
+def: "A plant cell (PO:0009002) that is either part of a multicellular whole plant (PO:0000003) 'in vivo' or a unicellular organism 'in natura' (i.e. part of a natural environment)." [POC:Laurel_Cooper]
 xref: OBO_SF2_PO:586
 is_a: PO:0009002 ! plant cell
 created_by: cooperl
