@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:05:2014 11:43
+date: 20:05:2014 17:28
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -94,7 +94,7 @@ is_a: PO:0009011 ! plant structure
 id: PO:0000004
 name: in vitro plant structure
 namespace: plant_anatomy
-def: "A plant structure (PO:0009011) that is grown or maintained in vitro." [POC:curators]
+def: "A plant structure (PO:0009011) that is grown or maintained in vitro." [POC:curators, POC:Laurel_Cooper]
 comment: In vitro growth is defined as microbe-free growth in a sterile, culture environment, usually in the laboratory. An example of a sterile culture environment is growth on or in a nutrient medium in a Petri dish, culture flask or test tube. Microbes may be intentionally added to the culture environment, such as in co-culture with Agrobacterium.
 synonym: "estructura vegetal in vito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "培養下植物構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -21471,10 +21471,21 @@ id: PO:0025606
 name: native plant cell
 namespace: plant_anatomy
 def: "A plant cell (PO:0009002) that is either part of a multicellular whole plant (PO:0000003) 'in vivo' or a unicellular organism 'in natura' (i.e. part of a natural environment)." [POC:Laurel_Cooper]
+comment: A native plant cell is one that is not grown or maintained in vitro, nor part of an in vitro plant structure (PO:0000004).
 xref: OBO_SF2_PO:586
 is_a: PO:0009002 ! plant cell
 created_by: cooperl
 creation_date: 2014-05-13T16:51:47Z
+
+[Term]
+id: PO:0025607
+name: vegetative shoot system
+namespace: plant_anatomy
+def: "A shoot system (PO:0009006) that has as parts only vegetative tissues and organs." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:593
+is_a: PO:0009006 ! shoot system
+created_by: cooperl
+creation_date: 2014-05-20T15:20:24Z
 
 [Term]
 id: PO:0028001
