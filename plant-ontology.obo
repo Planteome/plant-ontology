@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:05:2014 17:28
+date: 21:05:2014 11:48
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -770,10 +770,10 @@ is_a: PO:0025084 ! reproductive bud
 id: PO:0000058
 name: vegetative bud
 namespace: plant_anatomy
-def: "A bud (PO:0000055) that develops into a shoot system that has as organ parts only vegetative organs." [POC:curators]
+def: "A bud (PO:0000055) that develops into a vegetative shoot system (PO:0025607)." [POC:curators, POC:Laurel_Cooper]
 synonym: "yema vegetativa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3020771
+xref: OBO_SF2_PO:463
 is_a: PO:0000055 ! bud
 
 [Term]
@@ -9454,7 +9454,6 @@ synonym: "vegetative meristem" RELATED []
 synonym: "栄養シュート頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:36
 is_a: PO:0020148 ! shoot apical meristem
-relationship: part_of PO:0025223 ! vegetative shoot apex
 
 [Term]
 id: PO:0008017
@@ -16288,10 +16287,12 @@ creation_date: 2010-12-20T08:47:03Z
 id: PO:0025223
 name: vegetative shoot apex
 namespace: plant_anatomy
-def: "A shoot apex that has as part a vegetative shoot apical meristem." [POC:Ramona_Walls]
+def: "A shoot apex PO:0000037) that has as part a vegetative shoot apical meristem (PO:0008016)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "&#225pice vegetativo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "栄養シュート頂、栄養枝頂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:234
 is_a: PO:0000037 ! shoot apex
+relationship: has_part PO:0008016 ! vegetative shoot apical meristem
 created_by: rwalls
 creation_date: 2010-12-20T08:47:03Z
 
@@ -21482,8 +21483,13 @@ id: PO:0025607
 name: vegetative shoot system
 namespace: plant_anatomy
 def: "A shoot system (PO:0009006) that has as parts only vegetative tissues and organs." [POC:Laurel_Cooper]
+synonym: "<new synonym>" RELATED []
+xref: OBO_SF2_PO:167
 xref: OBO_SF2_PO:593
 is_a: PO:0009006 ! shoot system
+relationship: develops_from PO:0000058 ! vegetative bud
+relationship: has_part PO:0008016 ! vegetative shoot apical meristem
+relationship: has_part PO:0025223 ! vegetative shoot apex
 created_by: cooperl
 creation_date: 2014-05-20T15:20:24Z
 
