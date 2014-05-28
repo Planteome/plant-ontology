@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:05:2014 11:46
+date: 27:05:2014 18:46
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -592,17 +592,19 @@ relationship: develops_from PO:0025480 ! shoot-borne root primordium
 id: PO:0000043
 name: crown root
 namespace: plant_anatomy
-def: "Adventitious root formed at the base of the growing stem (known as a crown)." [TAIR:Katica_Ilic]
+def: "A shoot-borne nodal root (PO:0003005) formed at a stem base (PO:0008039)." [POC:cooperl, TAIR:Katica_Ilic]
 subset: reference
+synonym: " adventitious root " BROAD []
 synonym: "ra&#237z en corona (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "冠根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:163
 is_a: PO:0003005 ! shoot-borne nodal root
 
 [Term]
 id: PO:0000044
 name: prop root
 namespace: plant_anatomy
-def: "Adventitious root formed at stem nodes above the ground and growing directly into the soil." [TAIR:Katica_Ilic]
+def: "A shoot-borne nodal root (PO:0003005) formed at a stem node above the ground, and growing directly into the soil." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: This term is perhaps best defined functionally to prop the plant up.
 subset: reference
 subset: TraitNet
@@ -610,30 +612,33 @@ synonym: "brace root" RELATED []
 synonym: "breathing root" BROAD []
 synonym: "ra&#237z de sost&#233n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "支柱根、支持根、支柱気根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:163
 is_a: PO:0003005 ! shoot-borne nodal root
 
 [Term]
 id: PO:0000045
 name: embryo root
 namespace: plant_anatomy
-def: "A root (PO:0000045) that is initiated in a developing plant embryo (PO:0009009)." [TAIR:Katica_Ilic]
+def: "A root (PO:0009005) that is initiated in a developing plant embryo (PO:0009009)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 subset: reference
 synonym: "embryonic root" EXACT []
 synonym: "ra&#237z embri&#243nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "初期の根、胚根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:594
 is_a: PO:0009005 ! root
 
 [Term]
 id: PO:0000046
 name: seminal root
 namespace: plant_anatomy
-def: "A root (PO:0009005) formed within the scutellar node (PO:0004708) of the plant embryo (PO:0009009) in some monocotyledonous plants." [TAIR:Katica_Ilic]
+def: "An embryo root (PO:0000045) formed within the scutellar node (PO:0004708) of the plant embryo (PO:0009009) in some monocotyledonous plants." [POC:cooperl, TAIR:Katica_Ilic]
 subset: reference
 synonym: "lateral seminal root" RELATED []
 synonym: "ra&#237z seminal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "scutellar nodal root" RELATED []
 synonym: "secondary root" RELATED []
 synonym: "種子根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:594
 is_a: PO:0000045 ! embryo root
 is_a: PO:0003005 ! shoot-borne nodal root
 
@@ -3531,13 +3536,13 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0004724
 name: hypocotyl-root junction
 namespace: plant_anatomy
-def: "A cardinal organ part that is the part of a plant axis where a radicle joins a hypocotyl." [ISBN:9780881928501, POC:Ramona_Walls]
+def: "A cardinal organ part (PO:0025001) that is the part of a plant axis (PO:0025004) where a radicle (PO:0020031) joins a hypocotyl (PO:0020100)." [ISBN:9780881928501, POC:Ramona_Walls]
 subset: reference
 synonym: "embryo axis transition zone" EXACT [ISBN:9780881928501]
 synonym: "Poaceae crown" NARROW []
 synonym: "union del hipoc&#243tile con la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸-根合流点 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3132568
+xref: OBO_SF2_PO:250
 is_a: PO:0025001 ! cardinal organ part
 
 [Term]
@@ -12082,7 +12087,7 @@ comment: May develop into the primary root (PO:0020127) and eventually the root 
 subset: reference
 synonym: "rad&#237cula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293781
+xref: OBO_SF2_PO:344
 is_a: PO:0000045 ! embryo root
 
 [Term]
@@ -17286,7 +17291,7 @@ subset: Citrus
 synonym: "embryonic radicle" EXACT []
 synonym: "rad&#237cula del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293781
+xref: OBO_SF2_PO:344
 is_a: PO:0020031 ! radicle
 relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
@@ -17300,7 +17305,7 @@ def: "A radicle (PO:0020031) that is part of a whole plant (PO:0000003) in the s
 comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
 synonym: "rad&#237cula de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293781
+xref: OBO_SF_PO:344
 is_a: PO:0020031 ! radicle
 relationship: develops_from PO:0025296 ! embryo radicle
 created_by: rwalls
@@ -17346,10 +17351,11 @@ creation_date: 2011-04-26T08:45:55Z
 id: PO:0025300
 name: embryo hypocotyl-root junction
 namespace: plant_anatomy
-def: "A hypocotyl-root junction that is part of an embryo axis." [POC:Ramona_Walls]
+def: "A hypocotyl-root junction (PO:0004724) that is part of an plant embryo axis (PO:0019018)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en el embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic hypocotyl-root junction" EXACT []
 synonym: "胚下胚軸-根合流点 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:250
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: part_of PO:0019018 ! plant embryo axis
 created_by: rwalls
@@ -17359,10 +17365,11 @@ creation_date: 2011-04-27T08:20:22Z
 id: PO:0025301
 name: seedling hypocotyl-root junction
 namespace: plant_anatomy
-def: "A hypocotyl-root junction that develops from an embryonic hypocotyl-root junction." [POC:curators]
-comment: Part of a whole plant in the seedling phase.
+def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) ." [POC:cooperl, POC:curators]
+comment: Part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸-根合流点 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:250
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: develops_from PO:0025300 ! embryo hypocotyl-root junction
 created_by: rwalls
@@ -20445,7 +20452,7 @@ creation_date: 2012-11-20T18:47:23Z
 id: PO:0025524
 name: ventral canal cell
 namespace: plant_anatomy
-def: "A plant cell (PO:0009002) that develops from the archegonium central cell (PO:0025509), and lies at the base of the archegonium neck (PO:0030039), above the archegonium egg cell (PO:0025122) in the venter (PO:0030038)." [ISBN:0521794331, PMID:17041880, POC:Laurel_Cooper]
+def: "A native plant cell (PO:0025606) that develops from the archegonium central cell (PO:0025509), and lies at the base of the archegonium neck (PO:0030039), above the archegonium egg cell (PO:0025122) in the venter (PO:0030038)." [ISBN:0521794331, PMID:17041880, POC:Laurel_Cooper]
 comment: The ventral canal cell is smaller than the archegonium egg cell (PO:0025122), which also develops from the asymmetric division of the archegonium central cell (PO:0025509). It lack a plant-type cell wall (GO:0009505) (ref? ). When the archegonium (PO:0025126) is mature, the ventral canal cell (along with the archegonium neck canal cells; PO:0030065), contributes to the formation of the archegonium neck canal (PO:0030066) by distintegrating and becoming mucilaginous. The canal cells and may produce chemicals to attract the male gamete, the antheridium sperm cells (PO:0025120).
 xref: OBO_SF2_PO:514
 is_a: PO:0025606 ! native plant cell
@@ -21409,8 +21416,6 @@ id: PO:0025601
 name: staminate inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) that includes as part only staminate flowers (PO:0025600)." [POC:Laurel_Cooper]
-synonym: "adenate inflorescence" RELATED []
-synonym: "inflorescence" RELATED []
 synonym: "male inflorescence" RELATED []
 xref: OBO_SF2_PO:585
 is_a: PO:0009049 ! inflorescence
