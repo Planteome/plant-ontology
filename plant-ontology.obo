@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 27:05:2014 18:46
+date: 28:05:2014 11:03
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -11595,13 +11595,14 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0019018
 name: plant embryo axis
 namespace: plant_anatomy
-def: "A plant axis that is the axial part of a plant embryo." [ISBN:0471245208, POC:Ramona_Walls]
+def: "A plant axis (PO:0025004) that is the axial part of a plant embryo (PO:0009009)." [ISBN:0471245208, POC:Ramona_Walls]
 comment: Has as parts a hypocotyl, a root meristem and a radicle, if any of these are present.
 synonym: "eje del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo axis" BROAD []
 synonym: "hypocotyl-root axis" EXACT []
 synonym: "zygotic plant embryo axis" NARROW []
 synonym: "植物胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:339
 is_a: PO:0025004 ! plant axis
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -12152,11 +12153,11 @@ relationship: part_of PO:0020034 ! coleorhiza
 id: PO:0020037
 name: mesocotyl
 namespace: plant_anatomy
-def: "A shoot internode that is the part of an embryo axis or the stem of a seedling above the scutellum and below the coleoptile." [ISBN:0471244554]
+def: "A stem internode (PO:0020142) that is the part of a plant embryo axis (PO:0019018) or a seedling stem (PO:0009047) above the scutellum (PO:0020110) and below the coleoptile (PO:0020033)." [ISBN:0471244554, POC:cooperl]
 comment: Occurs in grasses. In grasses, the hypocotyl and cotyledon may not be visible and may be represented by the scutellar node and scutellum, making the mesocotyl similar to the epicotyl in other taxa. Elongation of the mesocotyl during seedling growth pushes the coleoptile above the soil surface.
 synonym: "mesoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "中胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293779
+xref: OBO_SF2_PO:343
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -12683,8 +12684,8 @@ namespace: plant_anatomy
 def: "A stem internode (PO:0020142) below the cotyledonary node (PO:0025321) and transitional to a root (PO:0009005) of a plant embryo (PO:0009009) or a seedling (PO:0000003)." [APweb:Glossary, POC:curators]
 synonym: "hipoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:2971884
-xref: OBO_SF_PO:3293772
+xref: OBO_SF2_PO:341
+xref: OBO_SF2_PO:70
 is_a: PO:0020142 ! stem internode
 
 [Term]
@@ -17200,13 +17201,13 @@ creation_date: 2011-04-20T02:34:17Z
 id: PO:0025290
 name: embryo hypocotyl
 namespace: plant_anatomy
-def: "A hypocotyl (PO:0020100) that is part of a plant embryo (PO:0009009)." [POC:curators]
+def: "A hypocotyl (PO:0020100) that is part of a plant embryo axis (PO:0019018)." [POC:cooperl, POC:curators]
 synonym: "embryonic hypocotyl" EXACT []
 synonym: "hipoc&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚下胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293772
+xref: OBO_SF2_PO:341
 is_a: PO:0020100 ! hypocotyl
-relationship: part_of PO:0009009 ! plant embryo
+relationship: part_of PO:0019018 ! plant embryo axis
 created_by: rwalls
 creation_date: 2011-04-20T02:39:46Z
 
@@ -17218,7 +17219,7 @@ def: "A hypocotyl (PO:0020100) that is part of a whole plant (PO:0000003) in the
 comment: Develops from an embryo hypocotyl (PO:0025290). This term should only be used for seed plants.
 synonym: "hipoc&#243tile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293772
+xref: OBO_SF2_PO:341
 is_a: PO:0020100 ! hypocotyl
 relationship: develops_from PO:0025290 ! embryo hypocotyl
 relationship: participates_in PO:0007131 ! seedling development stage
@@ -17257,11 +17258,11 @@ creation_date: 2011-04-25T10:13:08Z
 id: PO:0025294
 name: embryo mesocotyl
 namespace: plant_anatomy
-def: "A mesocotyl that is part of a plant embryo." [POC:curators]
+def: "A mesocotyl (PO:0020037) that is part of a plant embryo (PO:0009009)." [POC:curators]
 synonym: "embryonic mesocotyl" EXACT []
 synonym: "mesoc&#243tile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚中茎、胚中胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293779
+xref: OBO_SF2_PO:343
 is_a: PO:0020037 ! mesocotyl
 relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
@@ -17271,11 +17272,11 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025295
 name: seedling mesocotyl
 namespace: plant_anatomy
-def: "A mesocotyl that develops from an embryonic mesocotyl." [POC:curators]
-comment: A seedling mesocotyl is an elongation of and embryonic mesocotyl that is part of a whole plant in the seedling phase.
+def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294)." [POC:cooperl, POC:curators]
+comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:0025294) and is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
 synonym: "mesoc&#243tile de la plantual (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生中胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3293779
+xref: OBO_SF2_PO:343
 is_a: PO:0020037 ! mesocotyl
 relationship: develops_from PO:0025294 ! embryo mesocotyl
 created_by: rwalls
