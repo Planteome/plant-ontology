@@ -973,7 +973,7 @@ comment: Appear to be specialized for short-distance transfer of solutes. Transf
 subset: CL
 synonym: "c&#233lula de transferencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "転送細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3172685
+xref: OBO_SF2_PO:275
 is_a: PO:0025030 ! ground tissue cell
 
 [Term]
@@ -1000,7 +1000,7 @@ subset: CL
 subset: TraitNet
 synonym: "c&#233lula axial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3481651
+xref: OBO_SF2_PO:438
 is_obsolete: true
 consider: PO:0000290
 consider: PO:0025406
@@ -1234,7 +1234,7 @@ def: "A shoot system meristem (PO:0006079) formed in an axil (PO:0025224)." [POC
 synonym: "axillary meristem" RELATED []
 synonym: "meristema de yema axilar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋芽分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3016498
+xref: OBO_SF2_PO:122
 is_a: PO:0006079 ! shoot system meristem
 
 [Term]
@@ -1275,7 +1275,7 @@ synonym: "endodermoid" RELATED []
 synonym: "portion of endodermal tissue" EXACT []
 synonym: "portion of epidermis tissue" EXACT []
 synonym: "内皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: SGF:3016668
+xref:OBO_SF2_PO:126
 is_a: PO:0025059 ! portion of ground tissue
 relationship: part_of PO:0005708 ! cortex
 
@@ -1342,7 +1342,7 @@ comment: Develops while the vascular tissue (PO:0009015) is still elongating. Wh
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原生木（質）部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3476729
+xref: OBO_SF2_PO:434
 is_a: PO:0005849 ! primary xylem
 
 [Term]
@@ -1355,7 +1355,7 @@ subset: CL
 subset: TraitNet
 synonym: "elemento del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木部要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3481658
+xref: OBO_SF2_PO:440
 is_obsolete: true
 consider: PO:0000274
 consider: PO:0000290
@@ -1370,7 +1370,7 @@ subset: CL
 subset: TraitNet
 synonym: "fibra del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "木部繊維細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3481665
+xref: OBO_SF2_PO:443
 is_a: PO:0025407 ! plant fiber cell
 intersection_of: PO:0025407 ! plant fiber cell
 intersection_of: part_of PO:0005352 ! xylem
@@ -1407,7 +1407,7 @@ synonym: "squamellae" NARROW Plural [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
 synonym: "squamule" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、毛 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3107521
+xref: OBO_SF2_PO:207
 is_a: PO:0009011 ! plant structure
 relationship: develops_from PO:0000349 ! epidermal initial cell
 relationship: part_of PO:0005679 ! epidermis
@@ -1537,7 +1537,7 @@ comment: May have sinuous anticlinal cell walls that overall give a jigsaw like 
 subset: CL
 synonym: "c&#233lula del pavimento epidermal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "表皮被蓋細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3139280
+xref: OBO_SF2_PO:256
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0008030 ! trichome cell
 relationship: develops_from PO:0000349 ! epidermal initial cell
@@ -1597,7 +1597,7 @@ subset: CL
 synonym: "fiber tracheid cell" EXACT []
 synonym: "fibrotraqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "繊維仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3481665
+xref: OBO_SF2_PO:443
 is_a: PO:0000274 ! xylem fiber cell
 
 [Term]
@@ -1609,7 +1609,7 @@ comment: Metaxylem has larger tracheary elements (PO:0000290) than the protoxyle
 synonym: "metaxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of metaxylem tissue" EXACT []
 synonym: "後生木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3476729
+xref: OBO_SF2_PO:434
 is_a: PO:0005849 ! primary xylem
 
 [Term]
@@ -1712,6 +1712,7 @@ id: PO:0001005
 name: A archesporial cells visible stage
 namespace: plant_structure_development_stage
 def: "An initial stage during which archesporial cells arise in four corners of L2 layer. Change in shape of primordia to more oval." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1720,6 +1721,7 @@ name: B enlarged microsporocyte stage
 namespace: plant_structure_development_stage
 def: "Stage during which the microsporocytes become conspicuous." [TAIR:Katica_Ilic]
 synonym: "pollen stage 2 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1739,6 +1741,7 @@ namespace: plant_structure_development_stage
 def: "Stage during which diploid pollen mother cells become separated from each other and from tapetum by a callose wall." [TAIR:Katica_Ilic]
 synonym: "pollen mother cell stage" RELATED []
 synonym: "pollen stage 3 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1747,6 +1750,7 @@ name: D pollen mother cell meiosis stage
 namespace: plant_structure_development_stage
 def: "Stage during which pollen mother cells undergo meiosis to form tetrads of microspores." [TAIR:Katica_Ilic]
 synonym: "pollen stage 4 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1755,6 +1759,7 @@ name: F microspore release stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the callose wall between the tetrads breaks down and haploid microspores are released and lie freely in locules." [TAIR:Katica_Ilic]
 synonym: "pollen stage 5 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1763,6 +1768,7 @@ name: A microsporogenous mass stage
 namespace: plant_structure_development_stage
 def: "An initial stage during which the archesporial cells divide to give rise to primary parietal and sporogenous cells." [TAIR:Katica_Ilic]
 synonym: "pollen stage 1 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1771,6 +1777,7 @@ name: G early unicellular microspore stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the microspores round up and small vacuoles appear in their cytoplasm. The microspore walls thicken due to the formation of the exine." [TAIR:Katica_Ilic]
 synonym: "pollen stage 6 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1779,6 +1786,7 @@ name: H late unicellular microspore stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which a large vacuole is formed in each microspore causing a rapid increase in size and a displacement of the nucleus to one side." [TAIR:Katica_Ilic]
 synonym: "pollen stage 7 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1787,6 +1795,7 @@ name: I first mitotic division stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the asymmetric, first mitotic division of the microspores occurs producing a large vegetative cell and small generative cell, located near pollen wall." [TAIR:Katica_Ilic]
 synonym: "pollen stage 8 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1798,7 +1807,7 @@ comment: In taxa with mature two-celled pollen (PO:0025281), the second mitotic 
 synonym: "pollen stage 9 in Arabidopsis" RELATED []
 synonym: "tricellular pollen development stage" EXACT []
 synonym: "tricellular pollen stage" EXACT []
-xref: OBO_SF_PO:3577699
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1808,6 +1817,7 @@ namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the pollen reaches mature stage and desiccates." [TAIR:Katica_Ilic]
 comment: Mature pollen stages is reached at three-celled pollen in some angiosperms (maize, rice and Arabidopsis), while in others, the maturepollen has two haploid cells (tobacco, snapdragon).
 synonym: "pollen stage 10 in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1816,6 +1826,7 @@ name: M germinated pollen stage
 namespace: plant_structure_development_stage
 def: "The final stage in the life cycle of the male gametophyte. Upon rehydration, mature pollen grain forms a tubular outgrowth, the pollen tube, which carries the male gametes." [TAIR:Katica_Ilic]
 synonym: "germinated pollen grain in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1823,6 +1834,7 @@ id: PO:0001018
 name: B formation of primary parietal and sporogenous cells stage
 namespace: plant_structure_development_stage
 def: "Stage during which the primary parietal and primary sporogenous layers are derived from archesporial cells." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1851,7 +1863,7 @@ name: formation of ligule primordium stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) when conical P3 leaf completely encloses SAM, and the ligule (PO:0020105) primordium is visible." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "P3 stage" RELATED []
-xref: OBO:SF2_PO\:563
+xref: OBO_SF2_PO:563
 is_a: PO:0001052 ! vascular leaf expansion stage
 
 [Term]
@@ -1878,6 +1890,7 @@ id: PO:0001025
 name: C four anther lobes formed stage
 namespace: plant_structure_development_stage
 def: "Stage during which the four-lobed anther pattern with two developing stomium regions (notch) are formed." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1886,6 +1899,7 @@ name: D locules established stage
 namespace: plant_structure_development_stage
 def: "Stage during which the four clearly defined locules are established. All anther cell types present and microspore mother cells appear." [TAIR:Katica_Ilic]
 synonym: "stage 8 flower in Arabidopsis" RELATED []
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1907,6 +1921,7 @@ id: PO:0001029
 name: E tetrad stage
 namespace: plant_structure_development_stage
 def: "Stage immediately following meiosis, during which the tetrads of microspores are still hold together, enclosed by the callose wall." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -1931,7 +1946,7 @@ name: E anther wall tapetum degeneration initiated stage
 namespace: plant_structure_development_stage
 def: "An anther development stage (PO:0001004) during which degeneration of the anther wall tapetum (PO:0009071) is initiated, as the deposition on the surface of the microspore (PO:0020048) primexine proceeds." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: Microspores within single locule are at unicellular stage.
-xref: OBO_SF_PO:3613820
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1939,6 +1954,7 @@ id: PO:0001034
 name: F bilocular anther stage
 namespace: plant_structure_development_stage
 def: "Stage during which anther becomes bilocular, after degeneration and breakage of septum below stomium." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1946,6 +1962,7 @@ id: PO:0001035
 name: G anther dehiscence stage
 namespace: plant_structure_development_stage
 def: "Stage during which the dehiscence of anthers occurs. Anther breaks along stomium and pollen is released." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -1953,6 +1970,7 @@ id: PO:0001036
 name: H anther senescence stage
 namespace: plant_structure_development_stage
 def: "Stage during which the senescence of anther and stamen occurs. Shrinkage of cells and anther structure takes place." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:539
 is_a: PO:0001004 ! anther development stage
 
 [Term]
@@ -2110,6 +2128,7 @@ id: PO:0001059
 name: J bicellular pollen stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the small generative cell moves inward, becoming completely surrounded by the cytoplasm of the vegetative cell." [TAIR:Katica_Ilic]
+xref: OBO_SF2_PO:509
 is_a: PO:0001007 ! pollen development stage
 
 [Term]
@@ -2183,7 +2202,7 @@ id: PO:0001083
 name: inflorescence development stage
 namespace: plant_structure_development_stage
 def: "A reproductive shoot system development stage (PO:0025530) that has as primary participant a inflorescence (PO:0009049)." [POC:Laurel_Cooper]
-xref: OBO_SF_PO:3595703
+xref: OBO_SF_PO:517
 is_a: PO:0025530 ! reproductive shoot system development stage
 
 [Term]
@@ -2192,6 +2211,7 @@ name: coleoptilar stage
 namespace: plant_structure_development_stage
 def: "The coleoptilar primordium, shoot apical meristem and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
 synonym: "SAM and radicle formation stage" RELATED []
+xref: OBO_SF2_PO:400
 is_a: PO:0004507 ! bilateral stage
 
 [Term]
@@ -2299,7 +2319,7 @@ synonym: "stomata" BROAD []
 synonym: "stomatal apparatus" EXACT [FNA:5def9af3-483f-41c5-93e3-fa66839b22f6]
 synonym: "stomate" EXACT [FNA:1d7d0bb6-be7e-43e4-8730-6e31b43915b4]
 synonym: "気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3132410
+xref: OBO_SF2_PO:231
 is_a: PO:0006035 ! shoot system epidermis
 
 [Term]
