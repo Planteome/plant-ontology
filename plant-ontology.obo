@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:06:2014 17:27
+date: 06:06:2014 17:32
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -855,6 +855,7 @@ synonym: "dispersed meristematic cell" EXACT [PMCID:PMC1550771]
 synonym: "DMC" EXACT [PMCID:PMC1550771]
 synonym: "leaf procambium cell" EXACT []
 synonym: "葉前形成層細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:12
 is_a: PO:0025258 ! procambial cell
 relationship: part_of PO:0025259 ! leaf procambium
 created_by: rwalls
@@ -3785,9 +3786,10 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0005015
 name: embryo endodermis
 namespace: plant_anatomy
-def: "A portion of endodermis that is part of an embryo." [PMID:16543410]
+def: "A portion of endodermis (PO:0000252) that is part of an plant embryo (PO:0009009)." [PMID:16543410]
 synonym: "endodermis del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚内胚葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:10
 is_a: PO:0000252 ! endodermis
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -4108,12 +4110,13 @@ consider: PO:0006222
 id: PO:0005057
 name: shoot axis hypodermis
 namespace: plant_anatomy
-def: "A portion of hypodermis that is part of a shoot axis cortex." [ISBN:0080374913, POC:curators]
+def: "A portion of hypodermis (PO:0005051) that is part of a shoot axis cortex (PO:0000223)." [ISBN:0080374913, POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch hypodermis" NARROW []
 synonym: "hipodermis del eje del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem hypodermis" NARROW []
 synonym: "シュート軸真皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:126
 is_a: PO:0005051 ! hypodermis
 relationship: part_of PO:0000223 ! shoot axis cortex
 
@@ -4121,12 +4124,13 @@ relationship: part_of PO:0000223 ! shoot axis cortex
 id: PO:0005058
 name: shoot axis endodermis
 namespace: plant_anatomy
-def: "A portion of endodermis that is part of a shoot axis cortex." [POC:curators]
+def: "A portion of endodermis (PO:0000252) that is part of a shoot axis cortex (PO:0000223)." [POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch endodermis" NARROW []
 synonym: "endodermis de eje del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem endodermis" NARROW []
 synonym: "シュート軸内胚葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:126
 is_a: PO:0000252 ! endodermis
 relationship: part_of PO:0000223 ! shoot axis cortex
 
@@ -5194,9 +5198,10 @@ relationship: part_of PO:0005022 ! ovary wall
 id: PO:0006065
 name: hypocotyl endodermis
 namespace: plant_anatomy
-def: "A portion of endodermis that is part of a hypocotyl." [POC:curators]
+def: "A portion of endodermis (PO:0000252) that is part of a hypocotyl (PO:0020100)." [POC:curators]
 synonym: "endodermis del hipoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸内胚葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:11
 is_a: PO:0000252 ! endodermis
 relationship: part_of PO:0020100 ! hypocotyl
 
