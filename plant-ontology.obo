@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:06:2014 17:32
+date: 13:06:2014 14:57
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3152,6 +3152,7 @@ synonym: "果柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:487
 xref: OBO_SF2_PO:49
 is_a: PO:0025243 ! infructescence branch
+relationship: develops_from PO:0009052 ! flower pedicel
 
 [Term]
 id: PO:0004537
@@ -3565,7 +3566,7 @@ synonym: "portion of pedicel cortex tissue" EXACT []
 synonym: "小花柄皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:115
 is_a: PO:0005708 ! cortex
-relationship: part_of PO:0009052 ! pedicel
+relationship: part_of PO:0009052 ! flower pedicel
 
 [Term]
 id: PO:0004723
@@ -3758,7 +3759,7 @@ def: "A shoot axis vascular system that includes the totality of the portions of
 synonym: "sistema vascular del pedicelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000039 ! shoot axis vascular system
-relationship: part_of PO:0009052 ! pedicel
+relationship: part_of PO:0009052 ! flower pedicel
 
 [Term]
 id: PO:0005013
@@ -5958,7 +5959,7 @@ def: "Inflorescence branch that terminates in a spikelet." [Poc:curators]
 comment: This is not a pedicel in the strict sense, but is the ultimate naked part of the inflorescence axis.
 synonym: "pedicelo de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小穂小花柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009052 ! pedicel
+is_a: PO:0009052 ! flower pedicel
 relationship: part_of PO:0009051 ! spikelet
 
 [Term]
@@ -10664,7 +10665,7 @@ synonym: "bracteola (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "bractlet" EXACT [FNA:9cce93dc-f233-440e-9163-97207fca71a4]
 synonym: "小苞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009042 ! prophyll
-relationship: part_of PO:0009052 ! pedicel
+relationship: part_of PO:0009052 ! flower pedicel
 
 [Term]
 id: PO:0009044
@@ -10824,12 +10825,13 @@ relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0009052
-name: pedicel
+name: flower pedicel
 namespace: plant_anatomy
 def: "An inflorescence branch (PO:0009081) that supports an individual flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, POC:Laurel_Cooper]
 comment: The bracteoles are borne on the pedicel, which terminates in a flower. A pedicel is the ultimate branch in an inflorescence.
 subset: Angiosperm
 subset: reference
+subset: Tomato
 synonym: "pedicelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:70
@@ -21524,10 +21526,12 @@ id: PO:0025605
 name: fruit pedicel abscission zone
 namespace: plant_anatomy
 def: "An abscission zone (PO:0000146) that forms as a swelling or joint on the fruit pedicel (PO:0004536)." [PMID:22106095, POC:Laurel_Cooper]
+subset: Tomato
 synonym: "fruit pedicel joint" EXACT []
 synonym: "pedicel joint" RELATED []
 xref: OBO_SF2_PO:590
 is_a: PO:0000146 ! abscission zone
+relationship: develops_from PO:0025608 ! flower pedicel abscission zone
 relationship: part_of PO:0004536 ! fruit pedicel
 created_by: cooperl
 creation_date: 2014-05-13T11:16:36Z
@@ -21556,6 +21560,18 @@ relationship: develops_from PO:0000058 ! vegetative bud
 relationship: has_part PO:0025223 ! vegetative shoot apex
 created_by: cooperl
 creation_date: 2014-05-20T15:20:24Z
+
+[Term]
+id: PO:0025608
+name: flower pedicel abscission zone
+namespace: plant_anatomy
+def: "An abscission zone (PO:0000146) that forms as a swelling or joint on the flower pedicel (PO:009052)." [PMID:24744429, POC:Laurel_Cooper]
+subset: Tomato
+xref: OBO_SF2_PO:590
+is_a: PO:0000146 ! abscission zone
+relationship: part_of PO:0009052 ! flower pedicel
+created_by: cooperl
+creation_date: 2014-06-13T14:09:26Z
 
 [Term]
 id: PO:0028001
