@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:06:2014 14:57
+date: 13:06:2014 17:44
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -1041,12 +1041,10 @@ relationship: develops_from PO:0025525 ! spermatogenous cell
 id: PO:0000112
 name: shoot axis epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of a shoot axis." [POC:curators]
+def: "A portion of shoot system epidermis (PO:0006035) that is part of a shoot axis (PO:0025029)." [POC:cooperl, POC:curators]
 comment: Can occur on a stem or branch.
 synonym: "branch epidermis" NARROW []
-synonym: "culm epidermis" RELATED []
 synonym: "epidermis del eje del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "stem epidermis" NARROW []
 synonym: "シュート軸表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006035 ! shoot system epidermis
 relationship: part_of PO:0025029 ! shoot axis
@@ -1157,7 +1155,6 @@ subset: TraitNet
 synonym: "branch cortex" NARROW []
 synonym: "cortex del eje del epiblasto (epiblastema) del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of shoot axis cortex tissue" EXACT []
-synonym: "stem cortex" NARROW []
 synonym: "シュート軸皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:115
 is_a: PO:0005708 ! cortex
@@ -4111,11 +4108,10 @@ consider: PO:0006222
 id: PO:0005057
 name: shoot axis hypodermis
 namespace: plant_anatomy
-def: "A portion of hypodermis (PO:0005051) that is part of a shoot axis cortex (PO:0000223)." [ISBN:0080374913, POC:curators]
+def: "A portion of shoot axis hypodermis (PO:0005057) that is part of a stem cortex (PO:0000223)." [ISBN:0080374913, POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch hypodermis" NARROW []
 synonym: "hipodermis del eje del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "stem hypodermis" NARROW []
 synonym: "シュート軸真皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:126
 is_a: PO:0005051 ! hypodermis
@@ -4932,7 +4928,6 @@ comment: Often interrupted by stomatal complexes (PO:0002000) and other structur
 synonym: "epidermis del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:111
-xref: OBO_SF_PO:3008016
 is_a: PO:0005679 ! epidermis
 relationship: develops_from PO:0009020 ! meristem L1 layer
 relationship: part_of PO:0009006 ! shoot system
@@ -15761,9 +15756,11 @@ creation_date: 2010-11-22T09:54:46Z
 id: PO:0025178
 name: stem epidermis
 namespace: plant_anatomy
-def: "A portion of shoot axis epidermis that is part of a stem." [POC:Ramona_Walls]
+def: "A portion of shoot axis epidermis (PO:0000112) that is part of a stem (PO:0009047)." [POC:cooperl, POC:Ramona_Walls]
+synonym: "culm epidermis" RELATED []
 synonym: "epidermis del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:111
 is_a: PO:0000112 ! shoot axis epidermis
 relationship: part_of PO:0009047 ! stem
 created_by: rwalls
@@ -21572,6 +21569,53 @@ is_a: PO:0000146 ! abscission zone
 relationship: part_of PO:0009052 ! flower pedicel
 created_by: cooperl
 creation_date: 2014-06-13T14:09:26Z
+
+[Term]
+id: PO:0025609
+name: shoot axis tegument layer
+namespace: plant_anatomy
+def: "A portion of plant tissue (PO:0009007) that forms a tough, protective outer layer on a shoot axis and includes as parts a shoot axis hypodermis (PO:0005057) and a shoot axis epidermis (PO:0000112)." [PMID:xyz, POC:Laurel_Cooper]
+synonym: "shoot axis rind" EXACT []
+xref: OBO_SF2_PO:596
+is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0000112 ! shoot axis epidermis
+relationship: has_part PO:0005057 ! shoot axis hypodermis
+created_by: cooperl
+creation_date: 2014-06-13T16:13:12Z
+
+[Term]
+id: PO:0025610
+name: stem hypodermis
+namespace: plant_anatomy
+def: "A portion of hypodermis (PO:0005051) that is part of a stem cortex (PO:0025612)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:126
+is_a: PO:0005057 ! shoot axis hypodermis
+relationship: part_of PO:0025612 ! stem cortex
+created_by: cooperl
+creation_date: 2014-06-13T16:39:50Z
+
+[Term]
+id: PO:0025611
+name: stem tegument layer
+namespace: plant_anatomy
+def: "A portion of shoot axis tegument layer (PO:0025609) that a tough, protective outer layer on a stem (PO:0009047) and includes as parts a stem hypodermis (PO:0025610) and a stem epidermis (PO:0025178)." [POC:Cooperl]
+synonym: "stem rind " EXACT []
+xref: OBO_SF2_PO:596
+is_a: PO:0025609 ! shoot axis tegument layer
+relationship: has_part PO:0025178 ! stem epidermis
+relationship: has_part PO:0025610 ! stem hypodermis
+created_by: cooperl
+creation_date: 2014-06-13T16:47:24Z
+
+[Term]
+id: PO:0025612
+name: stem cortex
+namespace: plant_anatomy
+def: "A portion of shoot axis cortex (PO:0000223) that is part of a stem (PO:0009047)." [POC:Laurel_Cooper]
+xref: OBO_SF2_PO:115
+is_a: PO:0000223 ! shoot axis cortex
+created_by: cooperl
+creation_date: 2014-06-13T16:51:52Z
 
 [Term]
 id: PO:0028001
