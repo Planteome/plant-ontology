@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:06:2014 15:55
+date: 02:07:2014 19:49
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -27,9 +27,9 @@ treat-xrefs-as-is_a: CARO
 
 [Term]
 id: PO:0000001
-name: embryo proper
+name: plant embryo proper
 namespace: plant_anatomy
-def: "An embryonic plant structure that is the body of a developing plant embryo attached to the maternal tissue in an ovule by a suspensor." [POC:Ramona_Walls]
+def: "An embryonic plant structure (PO:0025099) that is the body of a developing plant embryo (PO:0009009) attached to the maternal tissue in an plant ovule (PO:0020003) by a suspensor (PO:0020108)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: The embryo proper is the entire embryo exclusive of the suspensor.
 synonym: "embri&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚本体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2167,15 +2167,15 @@ is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001078
-name: expanded cotyledon stage
+name: plant embryo expanded cotyledon stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001076
-def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [TAIR:Katica_Ilic]
+def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0004507 ! bilateral stage
+is_a: PO:0007631 ! plant embryo development stage
+relationship: preceded_by PO:0004507 ! plant bilateral embryo stage
 
 [Term]
 id: PO:0001079
@@ -2186,14 +2186,14 @@ is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001081
-name: mature embryo stage
+name: mature plant embryo stage
 namespace: plant_structure_development_stage
-def: "Stage at which the embryo is fully developed." [APweb:Glossary, TAIR:Katica_Ilic]
+def: "Stage at which the embryo is fully developed." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001078 ! expanded cotyledon stage
+is_a: PO:0007631 ! plant embryo development stage
+relationship: preceded_by PO:0001078 ! plant embryo expanded cotyledon stage
 
 [Term]
 id: PO:0001083
@@ -2205,22 +2205,23 @@ is_a: PO:0025530 ! reproductive shoot system development stage
 
 [Term]
 id: PO:0001094
-name: coleoptilar stage
+name: plant embryo coleoptilar stage
 namespace: plant_structure_development_stage
-def: "The coleoptilar primordium, shoot apical meristem and radicle are formed in the embryo of grasses." [TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) during which a primordium (PO:0025127) of the plant embryo coleoptile (PO:0025286), a plant embryo shoot apical meristem (PO:0006362) and the plant embryo radicle (PO:0025296) are formed." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: This stage occurs in grasses and other monocots.
 synonym: "SAM and radicle formation stage" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0004507 ! bilateral stage
+is_a: PO:0004507 ! plant bilateral embryo stage
 
 [Term]
 id: PO:0001095
-name: true leaf formation stage
+name: plant embryo true leaf formation stage
 namespace: plant_structure_development_stage
-def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [TAIR:Katica_Ilic]
+def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
 xref: OBO_SF2_PO:400
-is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001081 ! mature embryo stage
+is_a: PO:0007631 ! plant embryo development stage
+relationship: preceded_by PO:0001081 ! mature plant embryo stage
 
 [Term]
 id: PO:0001096
@@ -2267,26 +2268,28 @@ is_a: PO:0025571 ! multi-tissue plant structure development stage
 
 [Term]
 id: PO:0001180
-name: proembryo stage
+name: plant proembryo stage
 namespace: plant_structure_development_stage
-def: "Early embryo development from two cell stage to a multicellular globular stage before three main tissue systems are differentiated." [APweb:Glossary, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and the onset of the plant globular embryo stage  (PO:0001185)." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: The plant proembryo stage occurs prior to the differentiation of the three main tissue systems (vascular system (PO:0000034) epidermis (PO:0005679); and the portion of ground tissue (PO:0025059)).
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0007631 ! plant embryo stage
+is_a: PO:0007631 ! plant embryo development stage
 
 [Term]
 id: PO:0001185
-name: globular stage
+name: plant globular embryo stage
 namespace: plant_structure_development_stage
-def: "During this stage the embryo proper retains radial symmetry (increasing in diameter), and three main tissue systems are established." [TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) during which a plant embryo proper (PO:0000001) increases in diameter through cell division, but retains radial symmetry." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: During the plant globular embryo stage, differentiation of the three main tissue systems (vascular system (PO:0000034); epidermis (PO:0005679); and the portion of ground tissue (PO:0025059)) occurs.
 synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001180 ! proembryo stage
+is_a: PO:0007631 ! plant embryo development stage
+relationship: preceded_by PO:0001180 ! plant proembryo stage
 
 [Term]
 id: PO:0001378
@@ -2787,18 +2790,18 @@ relationship: preceded_by PO:0007633 ! endosperm development stage
 
 [Term]
 id: PO:0004507
-name: bilateral stage
+name: plant bilateral embryo stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001043
 alt_id: PO:0001177
-def: "Change from radial to bilateral symmetry takes place during this embryonic stage." [TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) during which a plant embryo proper (PO:0000001) develops bilateral symmetry." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 synonym: "heart stage in Arabidopsis" RELATED []
 synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
 synonym: "triangle stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0007631 ! plant embryo stage
-relationship: preceded_by PO:0001185 ! globular stage
+is_a: PO:0007631 ! plant embryo development stage
+relationship: preceded_by PO:0001185 ! plant globular embryo stage
 
 [Term]
 id: PO:0004509
@@ -8746,7 +8749,6 @@ synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
 synonym: "vegetative in Arabidopsis" RELATED [TAIR:0000305]
 xref: OBO-SF2_PO:395
-xref: OBO_SF_PO:3437882
 is_a: PO:0028002 ! sporophyte development stage
 
 [Term]
@@ -9293,15 +9295,15 @@ is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
 id: PO:0007631
-name: plant embryo stage
+name: plant embryo development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007020
-def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators]
+def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators, POC:Laurel_Cooper]
 comment: Succeeds a plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa.
 synonym: "embryo development stage" RELATED []
 synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
-xref: OBO_SF_PO:3439459
+xref: OBO_SF2_PO:400
 is_a: PO:0007134 ! sporophyte vegetative stage
 intersection_of: PO:0028002 ! sporophyte development stage
 intersection_of: has_participant PO:0009009 ! plant embryo
@@ -17201,7 +17203,7 @@ creation_date: 2011-04-20T02:00:16Z
 
 [Term]
 id: PO:0025286
-name: embryo coleoptile
+name: plant embryo coleoptile
 namespace: plant_anatomy
 def: "A coleoptile (PO:0020033) that is part of a plant embryo (PO:0009009)." [POC:curators]
 synonym: "cole&#243ptile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17223,7 +17225,7 @@ synonym: "cole&#243ptile de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_
 synonym: "実生幼葉鞘 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3192359
 is_a: PO:0020033 ! coleoptile
-relationship: develops_from PO:0025286 ! embryo coleoptile
+relationship: develops_from PO:0025286 ! plant embryo coleoptile
 relationship: participates_in PO:0007131 ! seedling development stage
 created_by: rwalls
 creation_date: 2011-04-20T02:20:12Z
@@ -17343,7 +17345,7 @@ creation_date: 2011-04-25T10:21:58Z
 
 [Term]
 id: PO:0025296
-name: embryo radicle
+name: plant embryo radicle
 namespace: plant_anatomy
 def: "A radicle (PO:0020031) that is part of a plant embryo (PO:0009009)." [POC:curators]
 comment: May eventually develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
@@ -17367,7 +17369,7 @@ synonym: "rad&#237cula de la pl&#225ntula (Spanish)" EXACT Spanish [POC:Maria_Al
 synonym: "実生幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:344
 is_a: PO:0020031 ! radicle
-relationship: develops_from PO:0025296 ! embryo radicle
+relationship: develops_from PO:0025296 ! plant embryo radicle
 created_by: rwalls
 creation_date: 2011-04-25T10:41:48Z
 
