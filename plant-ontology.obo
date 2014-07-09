@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:07:2014 11:29
+date: 08:07:2014 22:24
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3
 subsetdef: Angiosperm "Term for angiosperms"
@@ -175,7 +175,7 @@ relationship: has_part PO:0000005 ! cultured plant cell
 id: PO:0000010
 name: cultured plant embryo
 namespace: plant_anatomy
-def: "A plant embryo that is grown or maintained in vitro." [POC:curators, TAIR:Katica_Ilic]
+def: "A plant embryo (PO:0009009) that is grown or maintained in vitro." [POC:curators, TAIR:Katica_Ilic]
 comment: Includes isolated and maintained mature or immature zygotic embryos, somatic embryos or haploid embryos (derived from male gametophyte).
 synonym: "cultured embryo" EXACT []
 synonym: "embri&#243n cultivado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -2170,7 +2170,7 @@ id: PO:0001078
 name: plant embryo expanded cotyledon stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001076
-def: "The stage during which embryo axis and cotyledons rapidly elongate as a result of cell division and cell expansion." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) during which a  plant embryo axis (PO:0019018) and embryo cotyledon (PO:0025470) rapidly elongates as a result of cell division (GO:0051301) and cell expansion (GO:0016049)." [GO:0016049, GO:0051301, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
@@ -2188,7 +2188,7 @@ is_a: PO:0001049 ! lodicule development stage
 id: PO:0001081
 name: mature plant embryo stage
 namespace: plant_structure_development_stage
-def: "Stage at which the embryo is fully developed." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) at which the plant embryo (PO:0009009) is fully developed." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
 synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
@@ -2217,7 +2217,7 @@ is_a: PO:0004507 ! plant embryo bilateral stage
 id: PO:0001095
 name: plant embryo true leaf formation stage
 namespace: plant_structure_development_stage
-def: "During this stage, the protrusion of the first leaf primordia takes place in succession." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) during which a vascular leaf primordium (PO:0000017) develops." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
@@ -2270,7 +2270,7 @@ is_a: PO:0025571 ! multi-tissue plant structure development stage
 id: PO:0001180
 name: plant proembryo stage
 namespace: plant_structure_development_stage
-def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and the onset of the plant globular embryo stage  (PO:0001185)." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and the onset of the plant globular embryo stage (PO:0001185)." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The plant proembryo stage occurs prior to the differentiation of the three main tissue systems (vascular system (PO:0000034) epidermis (PO:0005679); and the portion of ground tissue (PO:0025059)).
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
@@ -10349,6 +10349,7 @@ synonym: "sterile frond" NARROW [FNA:a4dc40f4-92f9-4ba5-b616-a84564f63fed]
 synonym: "trophophyll" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
 synonym: "vascular leaves" EXACT Plural [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
 synonym: "維管束のある葉, または維管束植物の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:137
 is_a: PO:0025034 ! leaf
 relationship: develops_from PO:0000017 ! vascular leaf primordium
 relationship: participates_in PO:0028002 ! sporophyte development stage
@@ -12132,7 +12133,7 @@ subset: TraitNet
 synonym: "cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "seed leaf" EXACT [FNA:2e1fc560-4493-47fe-b363-500a1189b27d]
 synonym: "子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3509898
+xref: OBO_SF2_PO:457
 is_a: PO:0009025 ! vascular leaf
 relationship: develops_from PO:0000015 ! cotyledon primordium
 
@@ -12169,7 +12170,7 @@ def: "A sheath-like plant organ (PO:0009008) that surrounds the plumule (PO:0020
 comment: The coleoptile is an outgrowth or part of the scutellum (PO:0020110) (which is a modified, haustorial cotyledon (PO:0020030)).  Develops separate from the shoot apical meristem (PO:0020148).  Found in Poaceae and other monocotyledons such as Zingiberaceae. Protects the emerging shoot system (PO:0009006) as it grows through the soil.
 synonym: "cole&#243ptile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉鞘、鞘葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3192359
+xref: OBO_SF2_PO:294
 is_a: PO:0009008 ! plant organ
 
 [Term]
@@ -13738,8 +13739,8 @@ def: "A phyllome (PO:0006001) that is not associated with a reproductive structu
 subset: TraitNet
 synonym: "hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3167333
-xref: OBO_SF_PO:3205370
+xref: OBO_SF2_PO:274
+xref: OBO_SF2_PO:301
 is_a: PO:0006001 ! phyllome
 created_by: rwalls
 creation_date: 2010-07-12T01:31:44Z
@@ -17209,7 +17210,7 @@ def: "A coleoptile (PO:0020033) that is part of a plant embryo (PO:0009009)." [P
 synonym: "cole&#243ptile del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryonic coleoptile" EXACT []
 synonym: "胚子葉鞘、胚鞘葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3192359
+xref: OBO_SF2_PO:294
 is_a: PO:0020033 ! coleoptile
 relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
@@ -17441,7 +17442,7 @@ creation_date: 2011-04-27T08:20:22Z
 id: PO:0025302
 name: somatic plant embryo
 namespace: plant_anatomy
-def: "A plant embryo that arises from previously differentiated somatic cells, rather than from fused gametes, i.e. the zygote." [POC:curators]
+def: "A plant embryo (PO:0009009) that arises from previously differentiated somatic cells, rather than from fused gametes, i.e. the plant zygote (PO:0000423)." [POC:curators, POC:Laurel_Cooper]
 comment: Somatic plant embryos may arise where embryos normally would not arise as a product of apomixis. They may occur on the edges of leaves on some species of Kalanchoe or some ferns.
 synonym: "apomictic plant embryo" EXACT []
 synonym: "embri&#243n som&#225tico vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17456,10 +17457,11 @@ creation_date: 2011-04-27T11:46:50Z
 id: PO:0025303
 name: zygotic plant embryo
 namespace: plant_anatomy
-def: "A plant embryo that forms as a result of the fusion of gametes." [POC:curators]
+def: "A plant embryo (PO:0009009) that forms as a result of the fusion of gametes." [POC:curators, POC:Laurel_Cooper]
 synonym: "embri&#243n som&#225tico cigotico (del cigote) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "zygotic embryo" BROAD []
 synonym: "接合体植物胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:92
 is_a: PO:0009009 ! plant embryo
 created_by: Laurel_Cooper
 creation_date: 2011-04-27T05:19:46Z
@@ -19809,9 +19811,10 @@ creation_date: 2012-03-14T02:14:09Z
 
 [Term]
 id: PO:0025470
-name: embryo cotyledon
+name: plant embryo cotyledon
 namespace: plant_anatomy
-def: "A cotyledon (PO:0020030) that is part of a plant embryo (PO:0009009)." [POC:curators]
+def: "A cotyledon (PO:0020030) that is part of a plant embryo (PO:0009009)." [POC:cooperl, POC:curators]
+xref: OBO_SF2_PO:457
 is_a: PO:0020030 ! cotyledon
 created_by: Laurel_Cooper
 creation_date: 2012-03-21T04:49:09Z
@@ -19823,7 +19826,7 @@ namespace: plant_anatomy
 def: "A cotyledon (PO:0020030) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
 comment: Develops from an embryo cotyledon (PO:0025470).
 is_a: PO:0020030 ! cotyledon
-relationship: develops_from PO:0025470 ! embryo cotyledon
+relationship: develops_from PO:0025470 ! plant embryo cotyledon
 created_by: Laurel_Cooper
 creation_date: 2012-03-21T04:49:15Z
 
