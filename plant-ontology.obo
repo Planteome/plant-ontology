@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 22:09:2014 14:56
+date: 20:11:2014 20:47
 saved-by: cooperl
-auto-generated-by: OBO-Edit 2.3
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -2167,10 +2167,11 @@ is_a: PO:0001049 ! lodicule development stage
 
 [Term]
 id: PO:0001078
-name: plant embryo expanded cotyledon stage
+name: plant embryo cotyledonary stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001076
-def: "A plant embryo development stage (PO:0007631) during which a plant embryo axis (PO:0019018) and embryo cotyledon (PO:0025470) rapidly elongates as a result of cell division (GO:0051301) and cell expansion (GO:0016049)." [GO:0016049, GO:0051301, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of rapid elongation of the plant embryo axis (PO:0019018) and plant embryo cotyledons (PO:0025470), and the onset of a plant embryo true leaf formation stage (PO:0001095), when present, or a mature plant embryo stage (PO:0001081)." [GO:0016049, GO:0051301, POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
+comment: During this stage, the plant embryo (PO:0009009) continues to undergo a process of developmental growth (as a result of both cell division (GO:0051301) and cell expansion (GO:0016049), which ends with the onset of a mature plant embryo stage (PO:0001081). For species that develop true leaves in the plant embryo, (vascular leaves (PO:0009025) that develop after the cotyledons (PO:0020030) or coleoptile (PO:0020033)), growth may continue in the plant embryo true leaf formation stage (PO:0001095). For other species, the plant embryo transitions directly from a plant embryo cotyledonary stage (PO:0001078) to a mature plant embryo stage (PO:0001081).
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
@@ -2188,12 +2189,13 @@ is_a: PO:0001049 ! lodicule development stage
 id: PO:0001081
 name: mature plant embryo stage
 namespace: plant_structure_development_stage
-def: "A plant embryo development stage (PO:0007631) at which the plant embryo (PO:0009009) is fully developed." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: In some taxa, this occurs some time after the ripe fruit stage and after the dispersal of the seed.
+def: "A plant embryo development stage (PO:0007631) during the interval between when a plant embryo (PO:0009009) has stopped developmental growth involved in morphogenesis (GO:0060560) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [APweb:Glossary, POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
+comment: In some seed plants, this occurs some time after the fruit ripening stage (PO:0025502) and after the dispersal of the seed (PO:0009010). This stage may be very short in plants that do not enter a plant embryo dormant stage (PO:0025377).
 synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
-relationship: preceded_by PO:0001078 ! plant embryo expanded cotyledon stage
+relationship: preceded_by PO:0001078 ! plant embryo cotyledonary stage
+relationship: preceded_by PO:0001094 ! plant embryo coleoptilar stage
 
 [Term]
 id: PO:0001083
@@ -2211,17 +2213,17 @@ def: "A plant embryo development stage (PO:0007631) during which a primordium (P
 comment: This stage occurs in grasses and other monocots.
 synonym: "SAM and radicle formation stage" RELATED []
 xref: OBO_SF2_PO:400
-is_a: PO:0004507 ! plant embryo bilateral stage
+is_a: PO:0007631 ! plant embryo development stage
+relationship: preceded_by PO:0004507 ! plant embryo bilateral stage
 
 [Term]
 id: PO:0001095
 name: plant embryo true leaf formation stage
 namespace: plant_structure_development_stage
-def: "A plant embryo development stage (PO:0007631) during which a vascular leaf primordium (PO:0000017) develops." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: Not all embryos form true leaves during the embryonic development; this occurs post-embryonically in some taxa.
+def: "A plant embryo development stage (PO:0007631) during the interval between the beginning of the formation of the first vascular leaf primordium (PO:0000017) after the embryo cotyledons (PO:0025470) or plant embryo coleoptile (PO:0025286), and the onset of a mature plant embryo stage (PO:0001081)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: A true leaf is vascular leaf (PO:0009025) that forms after the cotyledons (PO:0020030) or coleoptile (PO:0020033). Not all species form true leaves in the plant embryo. Preceded by a plant embryo cotyledonary stage (PO:0001078) or a plant embryo coleoptilar stage (PO:0001094), depending upon the species.
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
-relationship: preceded_by PO:0001081 ! mature plant embryo stage
 
 [Term]
 id: PO:0001096
@@ -2235,7 +2237,7 @@ id: PO:0001097
 name: plant zygote stage
 namespace: plant_structure_development_stage
 def: "A sporophyte development stage (PO:0007134) that occurs during the interval between fertilization and the first cell division of the plant zygote (PO:0000423)." [POC:curators]
-comment: Precedes the plant embyro development stage (PO:0007631). Refers to the GO biological process term fertilization (GO:0009566).
+comment: Precedes the sporophyte vegetative stage (PO:0007134). Refers to the GO biological process term fertilization (GO:0009566).
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
@@ -2794,7 +2796,8 @@ name: plant embryo bilateral stage
 namespace: plant_structure_development_stage
 alt_id: PO:0001043
 alt_id: PO:0001177
-def: "A plant embryo development stage (PO:0007631) during which a plant embryo proper (PO:0000001) develops bilateral symmetry." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the transition from radial to bilateral symmetry in a plant embryo proper (PO:0000001) and the onset of either the plant embryo cotyledonary stage (PO:0001078) or the plant embryo coleoptilar stage (PO:0001094)." [POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
+comment: A plant embryo bilateral stage is commonly known as the heart stage in dicotyledonous plants. Preceded by a plant embryo globular stage (PO:0001185).
 synonym: "heart stage in Arabidopsis" RELATED []
 synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
@@ -8745,7 +8748,7 @@ id: PO:0007134
 name: sporophyte vegetative stage
 namespace: plant_structure_development_stage
 def: "A sporophyte development stage (PO:0028002) that occurs during the interval between the first division of a plant zygote (PO:0000423) and the formation of a sporangium (PO:0025094)." [POC:curators]
-comment: A sporophyte may begin to senesce or die from other causes before producing sporangia. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
+comment: Succeeds a plant zygote stage (PO:0001097). A sporophyte may begin to senesce or die from other causes before producing sporangia. Developmental vegetative growth (GO:0080186) can also occur during the reproductive stage.
 synonym: "A vegetative growth in Solanaceae" RELATED [SGN:0000002]
 synonym: "A-vegetative stage in rice" RELATED [GRO:0007139]
 synonym: "vegetative in Arabidopsis" RELATED [TAIR:0000305]
@@ -9307,8 +9310,6 @@ synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007134 ! sporophyte vegetative stage
-intersection_of: PO:0028002 ! sporophyte development stage
-intersection_of: has_participant PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0007632
@@ -18500,6 +18501,7 @@ comment: A dormancy process (GO:0022611) is a developmental process in which dor
 synonym: "embryo dormant stage" BROAD []
 synonym: "植物胚休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3469817
+is_a: PO:0001081 ! mature plant embryo stage
 is_a: PO:0007132 ! sporophyte dormant stage
 relationship: has_participant PO:0009009 ! plant embryo
 created_by: rwalls
@@ -23169,7 +23171,6 @@ xref: RO:0002220
 [Typedef]
 id: derives_by_manipulation_from
 name: derives_by_manipulation_from
-namespace: plant_anatomy
 def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
 comment: The derives_by_manipulation_from relation, is a special case of the RO relation derives_from.  Derives_from implies an instance level derivation that holds between two distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later.  Likewise, derives_by_manipulation_from joins two plant structures before and after some manipulation.  Specifically, derives_by_manipulation_from is used to describe the relation between an in vitro plant structure and the in vivo plant structure that is its temporal precursor.
 created_by: rwalls
@@ -23226,6 +23227,7 @@ name: preceded_by
 def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [POC:cooperl]
 comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
 xref: BFO:0000062
+is_transitive: true
 created_by: Laurel_Cooper
 creation_date: 2013-07-09T14:29:15Z
 
