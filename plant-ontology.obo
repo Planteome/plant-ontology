@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:11:2014 20:47
+date: 02:12:2014 12:22
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5393,6 +5393,7 @@ id: PO:0006082
 name: abaxial protoderm
 namespace: plant_anatomy
 def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148) and gives rise to the leaf abaxial epidermis (PO:0006019)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:cooperl]
+synonym: "portion of abaxial protoderm tissue" EXACT []
 synonym: "protodermis abaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "背軸側前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:125
@@ -5403,6 +5404,7 @@ id: PO:0006083
 name: adaxial protoderm
 namespace: plant_anatomy
 def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148) and gives rise to the leaf adaxial epidermis (PO:0006018)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:Laurel_Cooper]
+synonym: "portion of adaxial protoderm tissue" EXACT []
 synonym: "protodermis adaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "向軸側前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:125
@@ -5633,13 +5635,13 @@ is_obsolete: true
 id: PO:0006210
 name: protoderm
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that develops from the outer layer of an apical meristem (PO:0020144) and gives rise to a portion of epidermis (PO:0005679)." [ISBN:047124529, POC:curators]
-comment: It may or may not arise from independent initials. Some researchers also call it an epidermis in meristematic state.
+def: "A portion of meristem tissue (PO:0009013) that is the outer layer of an apical meristem (PO:0020144), or the outer layer of a plant embryo (PO:0009009), and gives rise to a portion of epidermis (PO:0005679)." [ISBN:047124529, POC:curators]
+comment: A protoderm may or may not arise from independent initial cells (PO:0004011). Some researchers also refer to it as an epidermis in a  meristematic state.
 synonym: "dermatogen cell" RELATED []
+synonym: "portion of protoderm tissue" EXACT []
 synonym: "protodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "前表皮、原表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:125
-xref: OBO_SF_PO:3016651
 is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
