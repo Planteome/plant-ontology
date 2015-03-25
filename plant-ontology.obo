@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:03:2015 11:50
+date: 25:03:2015 13:49
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -502,6 +502,7 @@ id: PO:0000036
 name: leaf vascular system
 namespace: plant_anatomy
 def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf." [POC:Ramona_Walls]
+subset: Maize
 synonym: "leaf venation" RELATED []
 synonym: "sistema vascular de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -609,6 +610,7 @@ name: prop root
 namespace: plant_anatomy
 def: "A shoot-borne nodal root (PO:0003005) formed at a stem node above the ground, and growing directly into the soil." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: This term is perhaps best defined functionally to prop the plant up.
+subset: Maize
 subset: reference
 subset: TraitNet
 synonym: "brace root" RELATED []
@@ -1680,6 +1682,7 @@ name: fruit development stage
 namespace: plant_structure_development_stage
 def: "A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a single fruit (PO:0009001)." [POC:cooperl, POC:curators]
 comment: Defined by characteristic morphological, structural, histological or other visible features of a fruit. Includes as subclasses fruit formation stage (PO:0025501) and fruit ripening stage (PO:0025502). May have as part a seed development stage (PO:0001170). This stage applies to an individual fruit. For development stages of a whole plant (PO:0000003) based on fruit development, use whole plant fruit development stage (PO:0025500) or its subclasses.
+subset: Maize
 synonym: "stage 17 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 18 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 19 flower in Arabidopsis" RELATED [PMID:2152125]
@@ -2172,6 +2175,9 @@ namespace: plant_structure_development_stage
 alt_id: PO:0001076
 def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of rapid elongation of the plant embryo axis (PO:0019018) and plant embryo cotyledons (PO:0025470), and the onset of a plant embryo true leaf formation stage (PO:0001095), when present, or a mature plant embryo stage (PO:0001081)." [GO:0016049, GO:0051301, POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
 comment: During this stage, the plant embryo (PO:0009009) continues to undergo a process of developmental growth (as a result of both cell division (GO:0051301) and cell expansion (GO:0016049), which ends with the onset of a mature plant embryo stage (PO:0001081). For species that develop true leaves in the plant embryo, (vascular leaves (PO:0009025) that develop after the cotyledons (PO:0020030) or coleoptile (PO:0020033)), growth may continue in the plant embryo true leaf formation stage (PO:0001095). For other species, the plant embryo transitions directly from a plant embryo cotyledonary stage (PO:0001078) to a mature plant embryo stage (PO:0001081).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Tomato
 synonym: "curled cotyledon stage in Arabidopsis" RELATED []
 synonym: "torpedo stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
@@ -2191,6 +2197,11 @@ name: mature plant embryo stage
 namespace: plant_structure_development_stage
 def: "A plant embryo development stage (PO:0007631) during the interval between when a plant embryo (PO:0009009) has stopped developmental growth involved in morphogenesis (GO:0060560) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [APweb:Glossary, POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
 comment: In some seed plants, this occurs some time after the fruit ripening stage (PO:0025502) and after the dispersal of the seed (PO:0009010). This stage may be very short in plants that do not enter a plant embryo dormant stage (PO:0025377).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
@@ -2211,6 +2222,10 @@ name: plant embryo coleoptilar stage
 namespace: plant_structure_development_stage
 def: "A plant embryo development stage (PO:0007631) during which a primordium (PO:0025127) of the plant embryo coleoptile (PO:0025286), a plant embryo shoot apical meristem (PO:0006362) and the plant embryo radicle (PO:0025296) are formed." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: This stage occurs in grasses and other monocots.
+subset: Angiosperm
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "SAM and radicle formation stage" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
@@ -2222,6 +2237,10 @@ name: plant embryo true leaf formation stage
 namespace: plant_structure_development_stage
 def: "A plant embryo development stage (PO:0007631) during the interval between the beginning of the formation of the first vascular leaf primordium (PO:0000017) after the embryo cotyledons (PO:0025470) or plant embryo coleoptile (PO:0025286), and the onset of a mature plant embryo stage (PO:0001081)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: A true leaf is vascular leaf (PO:0009025) that forms after the cotyledons (PO:0020030) or coleoptile (PO:0020033). Not all species form true leaves in the plant embryo. Preceded by a plant embryo cotyledonary stage (PO:0001078) or a plant embryo coleoptilar stage (PO:0001094), depending upon the species.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Rice
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
 
@@ -2274,6 +2293,11 @@ name: plant proembryo stage
 namespace: plant_structure_development_stage
 def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and the onset of the plant globular embryo stage (PO:0001185)." [APweb:Glossary, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The plant proembryo stage occurs prior to the differentiation of the three main tissue systems (vascular system (PO:0000034) epidermis (PO:0005679); and the portion of ground tissue (PO:0025059)).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
@@ -2285,6 +2309,11 @@ name: plant embryo globular stage
 namespace: plant_structure_development_stage
 def: "A plant embryo development stage (PO:0007631) that occurs during the interval between when a plant embryo proper (PO:0000001) increases in diameter through cell division, but retains radial symmetry (with the concomitant formation of a protoderm (PO:0006210)), and the onset of a plant embryo bilateral stage (PO:0004507)." [POC:curators, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: During the plant globular embryo stage, differentiation of the three main tissue systems (vascular system (PO:0000034); epidermis (PO:0005679); and the portion of ground tissue (PO:0025059)) occurs.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
@@ -2798,6 +2827,11 @@ alt_id: PO:0001043
 alt_id: PO:0001177
 def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the transition from radial to bilateral symmetry in a plant embryo proper (PO:0000001) and the onset of either the plant embryo cotyledonary stage (PO:0001078) or the plant embryo coleoptilar stage (PO:0001094)." [POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
 comment: A plant embryo bilateral stage is commonly known as the heart stage in dicotyledonous plants. Preceded by a plant embryo globular stage (PO:0001185).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "heart stage in Arabidopsis" RELATED []
 synonym: "heart-shape stage" RELATED []
 synonym: "transition stage in maize" RELATED []
@@ -3196,6 +3230,7 @@ id: PO:0004540
 name: fruit columella
 namespace: plant_anatomy
 def: "A columella that forms the central axis of a fruit." [POC:curators]
+subset: Maize
 subset: Tomato
 synonym: "columela del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "fruit carpophore" EXACT [FNA:93b5938d-aeac-4e64-9190-db4c8a2ed341]
@@ -3399,6 +3434,7 @@ namespace: plant_anatomy
 def: "A dehiscence zone that is part of a fruit." [POC:curators]
 comment: Upon fruit maturation by drying, undergoes cell separation, allowing the valves to detach from the replum and seeds to be dispersed.
 subset: Arabidopsis
+subset: Maize
 synonym: "zona de dehiscencia del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "裂開果帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025092 ! dehiscence zone
@@ -5673,6 +5709,9 @@ id: PO:0006213
 name: root aerenchyma
 namespace: plant_anatomy
 def: "Parenchyma tissue containing particularly large intercellular spaces in the tissue of roots." [GR:Pankaj_Jaiswal]
+subset: Maize
+subset: Poaceae
+subset: Rice
 subset: TraitNet
 synonym: "aer&#233nquima de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根通気組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5919,6 +5958,7 @@ id: PO:0006313
 name: lower floret of pedicellate spikelet of tassel
 namespace: plant_anatomy
 def: "A tassel floret that is the lower of the two florets of a pedicellate spikelet of a tassel inflorescence." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "florete inferior de la espiguilla pedicelada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂の下位小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006310 ! tassel floret
@@ -5929,6 +5969,7 @@ id: PO:0006314
 name: upper floret of pedicellate spikelet of tassel
 namespace: plant_anatomy
 def: "A tassel floret that is one of the two florets placed above the lower floret on a pedicellate spikelet rachilla of a tassel inflorescence." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "florete superior de la espiguilla pedicelada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂の上位小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006310 ! tassel floret
@@ -5939,6 +5980,7 @@ id: PO:0006315
 name: lower floret of sessile spikelet of tassel
 namespace: plant_anatomy
 def: "A tassel floret that is the lower of the two florets of a sessile spikelet of a tassel inflorescence." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "florete inferior de la espiguilla s&#233sil (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂の下位小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006310 ! tassel floret
@@ -5949,6 +5991,7 @@ id: PO:0006316
 name: upper floret of sessile spikelet of tassel
 namespace: plant_anatomy
 def: "A tassel floret that is one of the two florets placed above the lower floret on a sessile spikelet rachilla of a tassel inflorescence." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "florete superior de la espiguilla s&#233sil (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂の上位小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006310 ! tassel floret
@@ -6009,6 +6052,7 @@ id: PO:0006323
 name: tassel inflorescence branch
 namespace: plant_anatomy
 def: "An inflorescence branch (PO:0009081) arising from an axillary bud (PO:0004709) on a first order inflorescence axis (PO:0025104) or from a higher order inflorescence branch that is part of a tassel inflorescence (PO:0020126)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+subset: Maize
 synonym: "rama del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3611296
@@ -6020,6 +6064,8 @@ id: PO:0006324
 name: central spike of tassel inflorescence
 namespace: plant_anatomy
 def: "A first order inflorescence axis (PO:0025104) that is the central axis of a tassel inflorescence (PO:0020126)." [POC:curators]
+subset: Angiosperm
+subset: Maize
 synonym: "espiga central del penacho (borla) de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tassel rachis" RELATED []
 synonym: "雄穂(花）中央の穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6162,6 +6208,15 @@ name: juvenile vascular leaf
 namespace: plant_anatomy
 def: "A vascular leaf that is distinct from adult leaves, being characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:Pankaj_Jaiswal, MaizeGDB:lv]
 comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. The first juvenile leaves in Poaceae are the embryonic leaves found in the grass kernel (caryopsis).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
 synonym: "hoja juvenil (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束系幼葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3324058
@@ -6173,6 +6228,13 @@ name: adult vascular leaf
 namespace: plant_anatomy
 def: "A vascular leaf characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:Pankaj_Jaiswal, MaizeGDB:lv]
 comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. In some plants the juvenile leaves may go on to establish as adult leaves.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Gymnosperms
+subset: Maize
+subset: Poaceae
+subset: Potato
 synonym: "hoja adulta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束系の成葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3324058
@@ -6183,6 +6245,9 @@ id: PO:0006341
 name: primary shoot system
 namespace: plant_anatomy
 def: "A shoot system (PO:0009006) that develops from an embryo shoot apical meristem (PO:0006362)." [POC:curators, UMSL:fz]
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "main stalk" RELATED []
 synonym: "sistema axilar primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次分げつ系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6275,6 +6340,7 @@ id: PO:0006348
 name: ear pedicellate spikelet
 namespace: plant_anatomy
 def: "Ultimate pedicellate inflorescence branch of the maize ear that develops from the spikelet pair meristem." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "espiga pedicelada de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）の有柄小穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006320 ! ear spikelet
@@ -6284,6 +6350,7 @@ id: PO:0006349
 name: ear sessile spikelet
 namespace: plant_anatomy
 def: "Ultimate sessile inflorescence branch of the maize ear that develops from the spikelet pair meristem." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "espiga s&#233sil de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂の無柄小穂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006320 ! ear spikelet
@@ -6338,6 +6405,7 @@ name: ear floret
 namespace: plant_anatomy
 def: "A small, pistillate flower (PO:0025599) that is part of a ear spikelet (PO:0006320)." [PMID:12015291, POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: The ear floret (PO:0006354) initiates both carpels (PO:0009030) and stamens (PO:0009029), but all stamens abort during development. Found in Zea spp.
+subset: Maize
 synonym: "florete de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂小花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:536
@@ -6362,6 +6430,7 @@ id: PO:0006360
 name: ear spikelet pair meristem
 namespace: plant_anatomy
 def: "An ear inflorescence branch meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136)." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "par de meristemas de la espiga de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂対分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006328 ! spikelet pair meristem
@@ -6396,6 +6465,7 @@ id: PO:0006368
 name: glume of tassel spikelet
 namespace: plant_anatomy
 def: "A glume that is part of a tassel spikelet." [POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂小穂の苞頴 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3400282
@@ -6419,6 +6489,7 @@ id: PO:0006370
 name: upper glume of tassel spikelet
 namespace: plant_anatomy
 def: "An upper glume that is part of a tassel spikelet." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma superior del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006004 ! upper glume
@@ -6439,6 +6510,7 @@ id: PO:0006372
 name: lower glume of tassel spikelet
 namespace: plant_anatomy
 def: "A lower glume that is part of a tassel spikelet." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma inferior del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006002 ! lower glume
@@ -6473,6 +6545,7 @@ id: PO:0006377
 name: tassel spikelet meristem
 namespace: plant_anatomy
 def: "Apical meristem that gives rise to the upper and lower florets of the maize tassel spikelets." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "meristema del penacho (borla) de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006327 ! spikelet meristem
@@ -6506,6 +6579,7 @@ id: PO:0006380
 name: ear spikelet rachilla
 namespace: plant_anatomy
 def: "The axis of the ear spikelet, above the glumes." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "raquilla de la espiga de la espiguilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂小軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009080 ! spikelet rachilla
@@ -6516,6 +6590,7 @@ id: PO:0006385
 name: lower glume of pedicellate spikelet of tassel
 namespace: plant_anatomy
 def: "A lower glume of tassel spikelet that is part of a tassel pedicellate spikelet." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma inferior de la espiguilla pedicelada del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006372 ! lower glume of tassel spikelet
@@ -6526,6 +6601,7 @@ id: PO:0006386
 name: lower glume of sessile spikelet of tassel
 namespace: plant_anatomy
 def: "A lower glume of tassel spikelet that is part of a tassel sessile spikelet." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma inferior de la espiguilla s&#233sil del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006372 ! lower glume of tassel spikelet
@@ -6536,6 +6612,7 @@ id: PO:0006387
 name: upper glume of sessile spikelet of tassel
 namespace: plant_anatomy
 def: "An upper glume of tassel spikelet that is part of a tassel sessile spikelet." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma superior de la espiguilla s&#233sil del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006370 ! upper glume of tassel spikelet
@@ -6546,6 +6623,7 @@ id: PO:0006388
 name: upper glume of pedicellate spikelet of tassel
 namespace: plant_anatomy
 def: "An upper glume of tassel spikelet that is part of a tassel pedicellate spikelet." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+subset: Maize
 synonym: "gluma superior de la espiguilla pedicelada del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006370 ! upper glume of tassel spikelet
@@ -6556,6 +6634,7 @@ id: PO:0006389
 name: rachilla of sessile spikelet of tassel
 namespace: plant_anatomy
 def: "The axis of the tassel sessile spikelet, above the glumes." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "raquilla de la espiguilla s&#233sil del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂の花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006379 ! tassel spikelet rachilla
@@ -6567,6 +6646,7 @@ id: PO:0006390
 name: rachilla of pedicellate spikelet of tassel
 namespace: plant_anatomy
 def: "The axis of the tassel pedicellate spikelet, above the glumes." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "raquilla de la espiguilla pedicelada del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂の花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006379 ! tassel spikelet rachilla
@@ -6587,6 +6667,7 @@ id: PO:0006416
 name: pedicel of tassel spikelet
 namespace: plant_anatomy
 def: "This is the ultimate branch of the pedicellate tassel spikelet." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "pedicelo de la espiguilla del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）小穂の小花柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006319 ! spikelet pedicel
@@ -6597,6 +6678,7 @@ id: PO:0006417
 name: tassel peduncle
 namespace: plant_anatomy
 def: "A peduncle of a maize tassel, below the lowest tassel node." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "ped&#250nculo del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂花梗 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009053 ! peduncle
@@ -6607,6 +6689,7 @@ id: PO:0006418
 name: ear peduncle
 namespace: plant_anatomy
 def: "A peduncle of a maize ear, below the lowest ear node." [GR:Pankaj_Jaiswal]
+subset: Maize
 synonym: "ped&#250nculo de la espiga (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "shank" RELATED []
 synonym: "Zea lateral branch" RELATED []
@@ -6733,6 +6816,7 @@ name: central spike of ear inflorescence
 namespace: plant_anatomy
 def: "A first order inflorescence axis (PO:0025104) that is the central axis of an ear inflorescence (PO:0020136)." [POC:curators]
 comment: Zea cob is different from the cob inflorescence found in Sorghum.
+subset: Maize
 synonym: "ear rachis" RELATED []
 synonym: "espiga central de la espiga de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Zea cob" RELATED []
@@ -6875,6 +6959,7 @@ namespace: plant_structure_development_stage
 def: "A whole plant fruit development stage (PO:0025500) that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) begins the process of ripening (GO:0009835) in a way which, in case there are other fruits, the majority of the other fruits start to ripen continuously therewith, and ends with earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [Poc:curators]
 comment: Succeeds a whole plant fruit formation stage (PO:0007042). This term is to be used for a stage of development of a whole plant. For the stages of development of an individual fruit, see fruit ripening stage (PO:0025502). Although individual fruits are undergoing fruit ripening (GO:0009835), which is a type of senescence, during this stage, the whole plant is not yet undergoing multicelluar organism senescence (GO:0010259). An iteroparous species generally will have only one fruit ripening stage in its life, while a semelparous species may have multiple fruit ripening stage in its life. A whole plant fruit ripening stage may be followed by a sporophyte senescent stage, as in case (1) or by a sporophyte dormant stage (PO:0007132), as in case (2). In evergreen species and species that fruit multiple times during a growing season, a plant may have multiple fruit development stages without entering dormancy or senescence, as in case (3). In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the whole plant fruit formation stage (PO:0007042) has ended. In some plants, fruit may continue to ripen after the whole plant has entered a sporophyte dormant stage or sporophyte senescent stage and left the whole plant fruit ripening stage. Some plants may never enter a whole plant fruit ripening stage, because fruits only begin to ripen after the plant has entered a sporophyte dormant stage or sporophyte senescent stage. Although the use of synonyms like "10-dough stage in sorghum" properly refer to the development of an individual fruit, they are used as here to extrapolate to a whole plant.
 subset: Angiosperm
+subset: Maize
 synonym: "08-dough stage in rice" RELATED [GRO:0007042]
 synonym: "09-dough development in barley" RELATED [GRO:0007110]
 synonym: "09-dough development in oat" RELATED [GRO:0007110]
@@ -6956,6 +7041,15 @@ namespace: plant_structure_development_stage
 def: "A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open." [POC:curators]
 comment: This term is to be used for a stage of development of a whole plant. For the stages of development of an individual flower, see flower development stage (PO:0007615).
 subset: Angiosperm
+subset: Arabidopsis
+subset: Bryophytes
+subset: Citrus
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
 synonym: "07-anthesis in barley" RELATED [GRO:0007101]
 synonym: "07-anthesis in oat" RELATED [GRO:0007101]
 synonym: "07-anthesis in wheat" RELATED [GRO:0007101]
@@ -7072,6 +7166,15 @@ name: FL.04 end of flowering stage
 namespace: plant_structure_development_stage
 def: "The stage at which flowering is complete." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
 synonym: "6.09 End of flowering in soybean" RELATED [SOY:0000076]
 synonym: "7.03-anthesis completed in barley" RELATED [GRO:0007104]
 synonym: "7.03-anthesis completed in oat" RELATED [GRO:0007104]
@@ -7107,6 +7210,13 @@ name: FL.00 first flower(s) open stage
 namespace: plant_structure_development_stage
 def: "The stage at which the first flower(s) open." [GR:Pankaj_Jaiswal]
 comment: These first flowers are not necessarily the oldest flowers in the inflorescence. In some cereal plants the flowering starts in the middle of the inflorescence. This stage refers to the whole plant.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Poaceae
+subset: Potato
+subset: Rice
 synonym: "6.00 1st flowers on main stem open in soybean" RELATED [SOY:0000072]
 synonym: "7.01-anthesis beginning in barley" RELATED [GRO:0007102]
 synonym: "7.01-anthesis beginning in oat" RELATED [GRO:0007102]
@@ -7251,6 +7361,7 @@ name: FL.01 1/4 of flowers open stage
 namespace: plant_structure_development_stage
 def: "The stage at which 1/4 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
+subset: Maize
 synonym: "6.02 1/4 of flowers on the main stem open in soybean" RELATED [SOY:0000073]
 synonym: "FL.01 1/4 of flowers open in Solanaceae" RELATED [SGN:0000036]
 is_a: PO:0007016 ! whole plant flowering stage
@@ -7358,6 +7469,7 @@ namespace: plant_structure_development_stage
 def: "A whole plant fruit development stage (PO:0025500) that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) that is not currently participating in a whole plant fruit development stage begins a fruit initiation stage (PO:0025503) and ends with the onset of a whole plant fruit ripening stage (PO:0007010)." [Poc:curators]
 comment: This term is to be used for a stage of development of a whole plant (PO:0000003). For the stages of development of an individual fruit, see fruit development stage (PO:0001002). An iteroparous plant will only have one fruit formation stage in its life,  while a semelparous plant may have multiple whole plant fruit formation stages during its life. In plants with continuous (i.e., indeterminate) fruit development (GO:0010154), new fruits may continue to develop after the first fruit has begun to ripen and the fruit ripening stage of whole plant (PO:0007042) has begun. Although the use of synonyms like "07-milk stage in rice" properly refer to the development of an individual fruits, they are used as here to extrapolate to a whole plant.
 subset: Angiosperm
+subset: Maize
 synonym: "07-milk stage in rice" RELATED [GRO:0007046]
 synonym: "08-milk development in barley" RELATED [GRO:0007105]
 synonym: "08-milk development in oat" RELATED [GRO:0007105]
@@ -7437,6 +7549,7 @@ alt_id: PO:0007012
 def: "A reproductive growth stage during which an inflorescence is detectable." [MaizeGDB:Mary_Schaeffer, POC:curators]
 comment: This includes the stage when an inflorescence starts to develop (and is detectable only by assay or with a microscope), to the stage where it is visible to the naked eye. This includes the booting stage in the grasses (Poaceae). There is no one-to-one correspondence between some of the phases of inflorescence formation in members of Poaceae (e.g., booting) with that of other families.
 subset: Angiosperm
+subset: Maize
 synonym: "3 inflorescence visible" RELATED []
 synonym: "3 inflorescence visible in Solanaceae" NARROW [SGN:0000033]
 synonym: "4 Inflorescence Formation in soybean" NARROW [SOY:0000005]
@@ -7543,6 +7656,8 @@ name: FL.03 3/4 of flowers open stage
 namespace: plant_structure_development_stage
 def: "The stage at which 3/4 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
+subset: Angiosperm
+subset: Maize
 synonym: "6.02 3/4 of flowers on main stem open in soybean" RELATED [SOY:0000074]
 synonym: "FL.03 3/4 of flowers open in Solanaceae" RELATED [SGN:0000038]
 synonym: "flowering finishing" RELATED []
@@ -7555,6 +7670,8 @@ name: FL.02 1/2 of flowers open stage
 namespace: plant_structure_development_stage
 def: "The stage at which 1/2 of flowers open." [GR:Anuradha_Pujar]
 comment: This stage refers to the whole plant.
+subset: Angiosperm
+subset: Maize
 synonym: "6.02 1/2 of flowers on main stem open in soybean" RELATED [SOY:0000094]
 synonym: "7.02-anthesis half-way in barley" RELATED [GRO:0007103]
 synonym: "7.02-anthesis half-way in oat" RELATED [GRO:0007103]
@@ -9189,6 +9306,16 @@ namespace: plant_structure_development_stage
 alt_id: PO:0007617
 def: "A flower development stage (PO:0007615) that begins when pollen (PO:0025281) is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856) and/or floral organ senescence (GO:0080187)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
 comment: In most species, flowering stage (anthesis) is when the flower is open and ends with pollination.  During this stage, the process of anther dehiscence (GO:0009901) usually occurs, defined as the dehiscence of an anther to release the pollen grains contained within it. This term applies to an individual flower (PO:000904).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
 synonym: "anthesis stage" NARROW []
 synonym: "post anthesis stage" NARROW []
 synonym: "stage 13 flower in Arabidopsis " RELATED [PMID:2152125]
@@ -9307,6 +9434,10 @@ namespace: plant_structure_development_stage
 alt_id: PO:0007020
 def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators, POC:Laurel_Cooper]
 comment: Succeeds a plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. No plant species undergoes all of the sub-stages of plant embryo development stage listed here.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Rice
 synonym: "embryo development stage" RELATED []
 synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
@@ -9338,6 +9469,7 @@ name: fruit distal end
 namespace: plant_anatomy
 def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is the end of a fruit (PO:0009001) distal from a fruit pedicel (PO:0004536)." [GR:Anuradha_Pujar, SGN:Naama_Menda]
 subset: Angiosperm
+subset: Maize
 subset: Tomato
 synonym: "blossom end" RELATED []
 synonym: "porci&#243n distal del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -9380,6 +9512,7 @@ id: PO:0008005
 name: fruit nucellus
 namespace: plant_anatomy
 def: "A nucellus that is part of a fruit." [GR:Anuradha_Pujar]
+subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "nucelo del fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -9537,6 +9670,12 @@ name: transition vascular leaf
 namespace: plant_anatomy
 def: "A vascular leaf that is part of an heteroblastic series, and is characterized by anatomical features that are intermediate between juvenile and adult leaves." [GR:Chih-Wei_Tung]
 comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. Transition leaves may have mosaics of juvenile and adult tissues, as in Brachypodium.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "hoja de transici&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束植物の幼葉と成熟葉の移行期の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3324058
@@ -10054,8 +10193,14 @@ namespace: plant_anatomy
 alt_id: PO:0003006
 def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately, and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
 comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the ground, and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually found underground, although there are many exceptions, such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
+subset: Angiosperm
+subset: Gymnosperms
 subset: Maize
+subset: Musa
+subset: Potato
 subset: reference
+subset: Rice
+subset: Tomato
 subset: TraitNet
 synonym: "aerial root" NARROW []
 synonym: "climbing root" NARROW [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
@@ -10331,9 +10476,16 @@ namespace: plant_anatomy
 def: "A leaf (PO:0025034) in a vascular plant." [POC:curators]
 comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud. Occurs in the sporophytic phase of a plant life cycle.
 subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
 subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Potato
 subset: Pteridophytes
 subset: reference
+subset: Rice
+subset: Tomato
 subset: TraitNet
 synonym: "ascidia" NARROW [FNA:06544712-db97-4208-b188-c4b756a53c72]
 synonym: "ascidium" NARROW [FNA:a97f1513-7684-49d4-92f5-934d1c8b3e1c]
@@ -11527,6 +11679,7 @@ id: PO:0009101
 name: long lateral tassel branch
 namespace: plant_anatomy
 def: "The long branch that arise from the central spike of tassel in maize." [GR:Pankaj_Jaiswal, MaizeGDB:lv]
+subset: Angiosperm
 subset: Maize
 synonym: "ramificaci&#243n lateral larga del penacho (borla) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order tassel branch" RELATED []
@@ -12788,6 +12941,8 @@ id: PO:0020103
 name: flag leaf
 namespace: plant_anatomy
 def: "The last mature leaf before the inflorescence in a cereal crop plant." [GR:Pankaj_Jaiswal]
+subset: Angiosperm
+subset: Maize
 synonym: "hoja en bandera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "止葉（boot leaf) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006340 ! adult vascular leaf
@@ -12874,6 +13029,14 @@ name: lateral root
 namespace: plant_anatomy
 def: "A root (PO:0009005) that develops from a lateral root primordium (PO:0000016) that is part of another root on the same plant." [ISBN:0521288959, ISRR:Richard_Zobel, POC:curators]
 comment: A lateral root primordium may develops on any root, including a primary root (PO:0020127), on an existing lateral root (PO:0020121), or a shoot-borne root (PO:0000042). In seed plants, a lateral root primordium generally develops from pericycle cells (PO:0025261), but cells of an endodermis (PO:0000252) may also participate in its formation in some species. In ferns, lateral root primordia develop from the endodermis.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Gymnosperms
+subset: Maize
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
 synonym: "ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3524773
@@ -13660,6 +13823,11 @@ name: shoot axis
 namespace: plant_anatomy
 def: "A plant axis (PO:0025004) that is part of a shoot system (PO:0009006)." [POC:curators]
 comment: Often bears leaves and branches. In vascular plants, has at least one node and one internode.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 subset: TraitNet
 synonym: "caullome" EXACT []
 synonym: "eje del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -18500,6 +18668,11 @@ name: plant embryo dormant stage
 namespace: plant_structure_development_stage
 def: "A sporophyte dormant stage during which a plant embryo participates in a dormancy process." [GO:0022611, POC:curators]
 comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. In seed plants, a plant embryo dormant stage may be part of a seed dormant stage.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "embryo dormant stage" BROAD []
 synonym: "植物胚休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF_PO:3469817
@@ -20217,6 +20390,8 @@ name: whole plant fruit development stage
 namespace: plant_structure_development_stage
 def: "A sporophyte reproductive stage that begins when a fruit (PO:0009001) on a whole plant (PO:0000003) that is not currently participating in a whole plant fruit development stage begins a fruit initiation stage (PO:0025503), and ends with the earliest of the following: (1) the whole plant begins a sporophyte senescent stage (PO:0007017), (2) the whole plant begins a sporophyte dormant stage (PO:0007132), or (3) all fruits on the whole plant are finished ripening." [POC:curators]
 comment: A whole plant fruit development stage begins with the beginning of whole plant fruit formation stage (PO:0007042) and ends with the end of a whole plant fruit ripening stage (PO:0007010). A whole plant fruit development stage can be thought of as a fruiting cycle for a whole plant that begins when the plant starts to produce fruit and ends when all of the fruit on the plant are ripe, unless the plant enters a sporophyte senescent stage or sporophyte dormant stage before all the fruit is ripe. An iteroparous plant will have a single whole plant fruit development stage during its life of whole plant (PO:0025337), while a semelparous plant may have multiple whole plant fruit development stages during its life, each of which will be part of the same instance of a sporophyte reproductive stage. Some plants retain their fruit after ripening and through dormancy, and thus may begin a new whole fruit development stage while fruits from the previous whole plant fruit development stage are still present.
+subset: Angiosperm
+subset: Maize
 xref: OBO-SF2_PO:502
 xref: OBO_SF_PO:3574905
 is_a: PO:0007130 ! sporophyte reproductive stage
@@ -20229,6 +20404,7 @@ name: fruit formation stage
 namespace: plant_structure_development_stage
 def: "A fruit development stage (PO:0001002) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when that fruit's fruit ripening stage (PO:0025502) begins." [POC:curators]
 comment: A fruit formation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage applies to an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage (PO:0007042).
+subset: Maize
 xref: OBO_SF_PO:3577355
 is_a: PO:0001002 ! fruit development stage
 relationship: has_participant PO:0009001 ! fruit
@@ -20252,6 +20428,7 @@ name: fruit initiation stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when the plant cells (PO:0009002) in the fruit begin to divide or expand." [POC:curators]
 comment: The fruit initiation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage ends as soon as plant cells (PO:0009002) in a developing fruit begin to divide or expand and may be very brief. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage up to 10% (PO:0007032).
+subset: Maize
 xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: rwalls
@@ -20274,6 +20451,7 @@ name: fruit size 10 to 30% stage
 namespace: plant_structure_development_stage
 def: "A fruit formation stage (PO:0025501) that spans the interval when a fruit (PO:0009001) has reached 10% to 30% of its final size." [POC:curators]
 comment: Succeeds a fruit size up to 10% stage (PO:0025504) and proceeds a fruit size 30 to 50% stage (PO:0025506). This term can only be used if the final size of the fruit is known. This stage is to be used for an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage 10 to 30% (PO:0007009).
+subset: Maize
 xref: OBO_SF_PO:3577359
 is_a: PO:0025501 ! fruit formation stage
 created_by: rwalls
@@ -21435,6 +21613,7 @@ id: PO:0025597
 name: ear infructescence
 namespace: plant_anatomy
 def: "An infructescence (PO:0006342) in Zea species that bears kernels (i.e. fruit; PO:0009001) on a compact infructescence axis (PO:0025242) and develops from the ear inflorescence (PO:0020136)." [POC:Laurel_Cooper]
+subset: Maize
 xref: OBO_SF2_PO:580
 is_a: PO:0006342 ! infructescence
 relationship: develops_from PO:0020136 ! ear inflorescence
@@ -21611,6 +21790,10 @@ id: PO:0025611
 name: stem tegument layer
 namespace: plant_anatomy
 def: "A portion of shoot axis tegument layer (PO:0025609) that a tough, protective outer layer on a stem (PO:0009047) and includes as parts a stem hypodermis (PO:0025610) and a stem epidermis (PO:0025178)." [POC:Cooperl]
+subset: Angiosperm
+subset: Maize
+subset: Poaceae
+subset: Rice
 synonym: "stem rind " EXACT []
 xref: OBO_SF2_PO:596
 is_a: PO:0025609 ! shoot axis tegument layer
