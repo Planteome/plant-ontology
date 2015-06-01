@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:03:2015 13:49
+date: 01:06:2015 12:28
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -9433,7 +9433,7 @@ name: plant embryo development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007020
 def: "A sporophyte vegetative stage (PO:0007134) that occurs during the interval between the first cell division of a plant zygote (PO:0000423) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [POC:curators, POC:Laurel_Cooper]
-comment: Succeeds a plant zygote stage (PO:0001097). The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. No plant species undergoes all of the sub-stages of plant embryo development stage listed here.
+comment: The plant embryo stage generally starts after the first division of a plant zygote (PO:0000423), but in the case of a nucellar (adventitious) plant embryo (PO:0004537), somatic plant embryo (PO:0025302), microspore-derived cultured plant embryo (PO:0025305), and other embryos that arise through apogamy, it begins after the division of a single cell that is not a zygote. The end of the embryo stage varies among taxa. No plant species undergoes all of the sub-stages of plant embryo development stage listed here.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -10278,8 +10278,9 @@ synonym: "embri&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "embryo" BROAD []
 synonym: "germ" RELATED []
 synonym: "植物胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:2982384
+xref: OBO_SF2_PO:92
 is_a: PO:0000003 ! whole plant
+relationship: has_part PO:0006210 ! protoderm
 
 [Term]
 id: PO:0009010
@@ -13329,6 +13330,7 @@ synonym: "promeristem" BROAD []
 synonym: "頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:579
 is_a: PO:0009013 ! portion of meristem tissue
+relationship: has_part PO:0006210 ! protoderm
 
 [Term]
 id: PO:0020145
