@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:06:2015 16:45
+date: 04:06:2015 18:53
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2183,6 +2183,7 @@ synonym: "torpedo stage in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: preceded_by PO:0004507 ! plant embryo bilateral stage
+relationship: precedes PO:0001081 ! mature plant embryo stage
 
 [Term]
 id: PO:0001079
@@ -2205,8 +2206,6 @@ subset: Rice
 synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
-relationship: preceded_by PO:0001078 ! plant embryo cotyledonary stage
-relationship: preceded_by PO:0001094 ! plant embryo coleoptilar stage
 
 [Term]
 id: PO:0001083
@@ -2220,7 +2219,7 @@ is_a: PO:0025530 ! reproductive shoot system development stage
 id: PO:0001094
 name: plant embryo coleoptilar stage
 namespace: plant_structure_development_stage
-def: "A plant embryo development stage (PO:0007631) during which a primordium (PO:0025127) of the plant embryo coleoptile (PO:0025286), a plant embryo shoot apical meristem (PO:0006362) and the plant embryo radicle (PO:0025296) are formed." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of elongation of the plant embryo axis (PO:0019018), with the formation of a plant embryo coleoptile (PO:0025286), a plant embryo shoot apical meristem (PO:0006362) and root apical meristem (PO:0020147), and ends with the onset of a plant embryo true leaf formation stage (PO:0001095), when present, or a mature plant embryo stage (PO:0001081)." [MaizeGDB:67376, PMID:20044449, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: This stage occurs in grasses and other monocots.
 subset: Angiosperm
 subset: Maize
@@ -2230,19 +2229,21 @@ synonym: "SAM and radicle formation stage" RELATED []
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: preceded_by PO:0004507 ! plant embryo bilateral stage
+relationship: precedes PO:0001081 ! mature plant embryo stage
 
 [Term]
 id: PO:0001095
 name: plant embryo true leaf formation stage
 namespace: plant_structure_development_stage
-def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of the formation of the first vascular leaf primordium (PO:0000017) in the plant embryo (PO:0009009) (after the development of the embryo cotyledons (PO:0025470) or plant embryo coleoptile (PO:0025286)), and the onset of a mature plant embryo stage (PO:0001081)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: A true leaf is vascular leaf (PO:0009025) that forms after the cotyledons (PO:0020030) or coleoptile (PO:0020033). Not all species form true leaves in the plant embryo (PO:0009009). Preceded by either a plant embryo cotyledonary stage (PO:0001078) or a plant embryo coleoptilar stage (PO:0001094), depending upon the species.
+def: "Propose revised definition:\nA plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of the formation of the first vascular leaf primordium (PO:0000017) in the plant embryo proper (PO:0000001), and the onset of a mature plant embryo stage (PO:0001081)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: A true leaf is vascular leaf (PO:0009025) that forms after the formation of the cotyledons (PO:0020030) or a coleoptile (PO:0020033). Not all species form true leaves in the plant embryo development stage (PO:0007631). If it occurs, a plant embryo true leaf formation stage is preceded by either a plant embryo cotyledonary stage (PO:0001078) or a plant embryo coleoptilar stage (PO:0001094), depending upon the species.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
 subset: Rice
 xref: OBO_SF2_PO:400
 is_a: PO:0007631 ! plant embryo development stage
+relationship: precedes PO:0001081 ! mature plant embryo stage
 
 [Term]
 id: PO:0001096
@@ -2826,7 +2827,7 @@ namespace: plant_structure_development_stage
 alt_id: PO:0001043
 alt_id: PO:0001177
 def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the transition from radial to bilateral symmetry in a plant embryo proper (PO:0000001) and the onset of either the plant embryo cotyledonary stage (PO:0001078) or the plant embryo coleoptilar stage (PO:0001094)." [PMID:24784759, POC:Laurel_Cooper, POC:Ramona_Walls, TAIR:Katica_Ilic]
-comment: A plant embryo bilateral stage is commonly known as the heart stage in dicotyledonous plants. Preceded by a plant embryo globular stage (PO:0001185).
+comment: A plant embryo bilateral stage is commonly known as the heart stage in dicotyledonous plants and the transition stage in monocots. Preceded by a plant embryo globular stage (PO:0001185).
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -5428,7 +5429,7 @@ relationship: part_of PO:0000026 ! primary root tip
 id: PO:0006082
 name: abaxial protoderm
 namespace: plant_anatomy
-def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148) and gives rise to the leaf abaxial epidermis (PO:0006019)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:cooperl]
+def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148), and gives rise to the leaf abaxial epidermis (PO:0006019)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:cooperl]
 synonym: "portion of abaxial protoderm tissue" EXACT []
 synonym: "protodermis abaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "背軸側前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5439,7 +5440,7 @@ is_a: PO:0006210 ! protoderm
 id: PO:0006083
 name: adaxial protoderm
 namespace: plant_anatomy
-def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148) and gives rise to the leaf adaxial epidermis (PO:0006018)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:Laurel_Cooper]
+def: "A portion of protoderm (PO:0006210) tissue that is the outermost layer of the shoot apical meristem (PO:0020148), and gives rise to the leaf adaxial epidermis (PO:0006018)." [GR:Pankaj_Jaiswal, ISBN:0080374913, POC:Laurel_Cooper]
 synonym: "portion of adaxial protoderm tissue" EXACT []
 synonym: "protodermis adaxial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "向軸側前表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5671,7 +5672,7 @@ is_obsolete: true
 id: PO:0006210
 name: protoderm
 namespace: plant_anatomy
-def: "A portion of meristem tissue (PO:0009013) that is the outer layer of an apical meristem (PO:0020144), or the outer layer of a plant embryo (PO:0009009), and gives rise to a portion of epidermis (PO:0005679)." [ISBN:047124529, POC:curators]
+def: "A portion of meristem tissue (PO:0009013) that is the outer layer of an apical meristem (PO:0020144), or the outer layer of a plant embryo proper (PO:0000001), and gives rise to a portion of epidermis (PO:0005679)." [ISBN:047124529, POC:laurel_cooper]
 comment: A protoderm may or may not arise from independent initial cells (PO:0004011). Some researchers also refer to it as an epidermis in a  meristematic state.
 synonym: "dermatogen cell" RELATED []
 synonym: "portion of protoderm tissue" EXACT []
@@ -10280,7 +10281,6 @@ synonym: "germ" RELATED []
 synonym: "植物胚 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:92
 is_a: PO:0000003 ! whole plant
-relationship: has_part PO:0006210 ! protoderm
 
 [Term]
 id: PO:0009010
@@ -23411,10 +23411,17 @@ holds_over_chain: part_of participates_in
 [Typedef]
 id: preceded_by
 name: preceded_by
-def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [POC:cooperl]
+def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [POC:laurel_cooper]
 comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
 xref: BFO:0000062
 is_transitive: true
 created_by: Laurel_Cooper
 creation_date: 2013-07-09T14:29:15Z
+
+[Typedef]
+id: precedes
+name: precedes
+xref: BFO:0000063
+created_by: cooperl
+creation_date: 2015-06-04T17:18:40Z
 
