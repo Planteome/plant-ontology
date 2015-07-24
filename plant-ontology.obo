@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:06:2015 18:53
+date: 24:07:2015 16:12
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -2235,7 +2235,7 @@ relationship: precedes PO:0001081 ! mature plant embryo stage
 id: PO:0001095
 name: plant embryo true leaf formation stage
 namespace: plant_structure_development_stage
-def: "Propose revised definition:\nA plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of the formation of the first vascular leaf primordium (PO:0000017) in the plant embryo proper (PO:0000001), and the onset of a mature plant embryo stage (PO:0001081)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+def: "A plant embryo development stage (PO:0007631) that occurs during the interval between the beginning of the formation of the first vascular leaf primordium (PO:0000017) in the plant embryo proper (PO:0000001), and the onset of a mature plant embryo stage (PO:0001081)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: A true leaf is vascular leaf (PO:0009025) that forms after the formation of the cotyledons (PO:0020030) or a coleoptile (PO:0020033). Not all species form true leaves in the plant embryo development stage (PO:0007631). If it occurs, a plant embryo true leaf formation stage is preceded by either a plant embryo cotyledonary stage (PO:0001078) or a plant embryo coleoptilar stage (PO:0001094), depending upon the species.
 subset: Angiosperm
 subset: Arabidopsis
@@ -18668,8 +18668,8 @@ creation_date: 2012-01-05T10:47:37Z
 id: PO:0025377
 name: plant embryo dormant stage
 namespace: plant_structure_development_stage
-def: "A sporophyte dormant stage during which a plant embryo participates in a dormancy process." [GO:0022611, POC:curators]
-comment: A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. In seed plants, a plant embryo dormant stage may be part of a seed dormant stage.
+def: "A mature plant embryo stage (PO:0001081) during the interval between when a plant embryo (PO:0009009) begins a dormancy process (GO:0022611) and one of the following: the beginning of the seed germination stage (PO:0007057) in seed plants, formation of the first vascular leaf (PO:0009025) in pteridophytes, the beginning of development of a sporangium (PO:0025094) in bryophytes, or the beginning of the formation of a plant organ (PO:0009008) such as a root (PO:0009005), shoot axis (PO:0025029), or vascular leaf (PO:0009025) in a cultured plant embryo (PO:0000010)." [GO:0022611, POC:curators]
+comment: During a plant embryo dormant stage, a plant embryo participates in a dormancy process, but not all plant embryos have a dormant stage. A dormancy process (GO:0022611) is a developmental process in which dormancy (sometimes called a dormant state) is induced, maintained or broken. Dormancy is a suspension of most physiological activity and growth that can be reactivated. In seed plants, a plant embryo dormant stage may be part of a seed dormant stage.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -18677,7 +18677,7 @@ subset: Poaceae
 subset: Rice
 synonym: "embryo dormant stage" BROAD []
 synonym: "植物胚休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF_PO:3469817
+xref: OBO_SF2_PO:426
 is_a: PO:0001081 ! mature plant embryo stage
 is_a: PO:0007132 ! sporophyte dormant stage
 relationship: has_participant PO:0009009 ! plant embryo
