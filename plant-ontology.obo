@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2015 16:12
+date: 24:07:2015 16:54
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -4992,13 +4992,15 @@ relationship: part_of PO:0025025 ! root system
 
 [Term]
 id: PO:0006039
-name: adventitious root epidermis
+name:  shoot-borne root epidermis
 namespace: plant_anatomy
 alt_id: PO:0006038
-def: "A portion of root epidermis that is part of an adventitious root." [POC:Ramona_Walls]
+def: "A portion of root epidermis (PO:0006036) that is part of a shoot-borne root (PO:0000042)." [POC:cooperl, POC:Ramona_Walls]
+synonym: "adventitious root epidermis" BROAD []
 synonym: "crown root epidermis" RELATED []
 synonym: "epidermis de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "不定根表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF2_PO:598
 is_a: PO:0006036 ! root epidermis
 relationship: part_of PO:0000042 ! shoot-borne root
 
