@@ -36,4 +36,4 @@ This file is created by filtering plant_ontology_assert.obo to contain only term
 Other files: 
 - Creative_Commons_License.txt
 - translations of terms in Spanish and English
-- text (tbl) format versions of the plant-onotlogy.obo files
+- text (tbl) format versions of the plant-ontology.obo files
