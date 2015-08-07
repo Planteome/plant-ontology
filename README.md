@@ -32,3 +32,8 @@ This file is created by filtering plant_ontology_assert.obo to contain only term
 
 - po_temporal.obo: 
 This file is created by filtering plant_ontology_assert.obo to contain only terms from the plant structure development stage branch. All cross-aspect relations have been removed.
+
+Other files: 
+- Creative_Commons_License.txt
+- translations of terms in Spanish and English
+- text (tbl) format versions of the plant-onotlogy.obo files
