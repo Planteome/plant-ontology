@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:08:2015 14:55
+date: 11:08:2015 15:39
 saved-by: austinmeier
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -947,6 +947,19 @@ synonym: "c&#233lular ??? (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo
 synonym: "被覆組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005660 ! hydathode
+
+[Term]
+id: PO:0000067
+name: proteoid root
+namespace: plant_anatomy
+def: "A root (PO:0009005) from any species that forms one or more clusters along its length. A cluster has closely spaced lateral roots (PO:0020121) of limited growth." [PO:austinmeier]
+comment: The terms proteoid root, cluster root, and root cluster have all been used in the literature to describe either the proteoid root axis or clusters of rootlets, and caution should be taken when comparing studies because the definitions of these terms vary.\n\n-from Watts and Evans, (Plant Physiology,1999)
+synonym: "cluster root " RELATED []
+synonym: "root cluster" RELATED []
+xref: PO_GIT:588
+is_a: PO:0009005 ! root
+created_by: austinmeier
+creation_date: 2015-08-11T15:05:12Z
 
 [Term]
 id: PO:0000071
@@ -24331,19 +24344,6 @@ is_a: PO:0004011 ! initial cell
 relationship: part_of PO:0030018 ! gametophore
 created_by: rwalls
 creation_date: 2011-05-23T09:00:21Z
-
-[Term]
-id: TO:0000001
-name: proteoid root
-namespace: plant_anatomy
-def: "a root (PO:0009005) from any species that forms one or more clusters along its length. A cluster has closely spaced lateral roots (PO:0020121) of limited growth" [PO:austinmeier]
-comment: The terms proteoid root, cluster root, and root cluster have all been used in the literature to describe either the proteoid root axis or clusters of rootlets, and caution should be taken when comparing studies because the definitions of these terms vary.\n\n-from Watts and Evans, (Plant Physiology,1999)
-synonym: "cluster root " RELATED []
-synonym: "root cluster" RELATED []
-xref: PO_GIT:588
-is_a: PO:0009005 ! root
-created_by: austinmeier
-creation_date: 2015-08-11T14:49:18Z
 
 [Typedef]
 id: adjacent_to
