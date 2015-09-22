@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:09:2015 14:58
+date: 21:09:2015 18:44
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -952,7 +952,7 @@ relationship: part_of PO:0005660 ! hydathode
 id: PO:0000067
 name: proteoid root
 namespace: plant_anatomy
-def: "A root (PO:0009005)  that forms one or more clusters of lateral roots (PO:0020121)." [PMID:10517822, PO:austin_meier]
+def: "A root (PO:0009005) that forms one or more clusters of lateral roots (PO:0020121)." [PMID:10517822, PO:austin_meier]
 comment: The terms proteoid root, cluster root, and root cluster have all been used in the literature to describe either the proteoid root axis or clusters of rootlets, and caution should be taken when comparing studies because the definitions of these terms vary.-from Watts and Evans, (Plant Physiology,1999)
 synonym: "cluster root " RELATED []
 synonym: "root cluster" RELATED []
@@ -1404,7 +1404,7 @@ relationship: develops_from PO:0000349 ! epidermal initial cell
 id: PO:0000272
 name: protoxylem
 namespace: plant_anatomy
-def: "A primary xylem (PO:0000272) tissue that has as part one or more protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laurel_cooper]
+def: "A portion of primary xylem (PO:0000272) tissue that has as part one or more protoxylem tracheary elements (PO:0025575) embedded in parenchyma (PO:0005421) tissue." [ISBN:047125208, ISBN:0471738433, POC:laurel_cooper]
 comment: Develops while the vascular tissue (PO:0009015) is still elongating. When protoxylem tracheary elements (PO:0025575) are destroyed they may become obliterated by surrounding parenchyma cells (PO:0000074). Protoxylem has smaller elements than the metaxylem (PO:0000372).
 synonym: "portion of protoxylem tissue" EXACT []
 synonym: "protoxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1681,7 +1681,7 @@ is_a: PO:0000274 ! xylem fiber cell
 id: PO:0000372
 name: metaxylem
 namespace: plant_anatomy
-def: "A primary xylem (PO:0005849) tissue that has as part one or more metaxylem tracheary elements (PO:0025576) embedded in parenchyma (PO:0005421) tissue and may contain xylem fiber cells (PO:0000274)." [ISBN:047125208, ISBN:0471738433, POC:curators]
+def: "A portion of primary xylem (PO:0005849) tissue that has as part one or more metaxylem tracheary elements (PO:0025576) embedded in parenchyma (PO:0005421) tissue and may contain xylem fiber cells (PO:0000274)." [ISBN:047125208, ISBN:0471738433, POC:curators]
 comment: Metaxylem has larger tracheary elements (PO:0000290) than the protoxylem (PO:0000272), and develops after the formation of the protoxylem, once elongation of the plant axis (PO:0025004) has completed.
 synonym: "metaxilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of metaxylem tissue" EXACT []
@@ -5115,7 +5115,7 @@ id: PO:0006020
 name: lateral root apical meristem
 namespace: plant_anatomy
 alt_id: PO:0003013
-def: "A root apical meristem (PO:0020147) gives rise to a lateral root (PO:0020121)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "A root apical meristem (PO:0020147) that gives rise to a lateral root (PO:0020121)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
 comment: This is different from root lateral meristem.
 synonym: "apical meristem of lateral root" RELATED []
 synonym: "lateral root meristem" RELATED []
@@ -10813,7 +10813,8 @@ synonym: "分裂組織 L1 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF2_PO:150
 xref: OBO_SF2_PO:\:576
 xref: PO_GIT:150
-xref: PO_GIT:is_a\: PO\:0009013
+xref: PO_GIT:576
+is_a: PO:0009013 ! portion of meristem tissue
 relationship: part_of PO:0020148 ! shoot apical meristem
 
 [Term]
@@ -22279,6 +22280,7 @@ synonym: "estado de desarrollo del filoma (Spanish)" EXACT Spanish [POC:Maria_Al
 xref: OBO_SF2_PO:548
 xref: PO_GIT:548
 is_a: PO:0025339 ! plant organ development stage
+relationship: part_of PO:0025527 ! shoot system development stage
 created_by: moorel
 creation_date: 2013-06-19T13:44:31Z
 
