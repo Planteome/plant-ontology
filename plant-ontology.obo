@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:09:2015 11:21
+date: 22:09:2015 16:11
 saved-by: meiera
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -4211,9 +4211,10 @@ relationship: develops_from PO:0025433 ! root anlagen
 id: PO:0005030
 name: lupulin gland
 namespace: plant_anatomy
-def: "A glandular trichome (PO:0004509) that synthesizes terpenophenolic resins and prenylflavonoids." [PMID:18223037]
+def: "A glandular trichome (PO:0004509) that synthesizes terpenophenolic resins and prenylflavonoids." [CHEBI:66331, PMID:18223037, PO:austin_meier]
+comment: One of the major chalconoids from hops is xanthohumol (CHEBI:66331).
+xref: PO_GIT:602
 is_a: PO:0004509 ! glandular trichome
-relationship: part_of PO:0025083 ! strobilus
 created_by: meiera
 creation_date: 2015-09-22T10:45:31Z
 
@@ -4221,10 +4222,11 @@ creation_date: 2015-09-22T10:45:31Z
 id: PO:0005031
 name: microsporangiate strobilus
 namespace: plant_anatomy
-def: "A strobilus (PO:0025083) that bears pollen." [PO:austin_meier]
-synonym: "male cone" RELATED []
-synonym: "microstrobilus" NARROW []
+def: "A strobilus (PO:0025083) that bears pollen (PO:0025281)." [PO:austin_meier]
+synonym: "male cone" RELATED [FNA:b2779296-b5a3-41ac-97a3-f53448d492d7]
+synonym: "microstrobilus" NARROW [FNA:ebda7bb0-bb12-4160-bbc6-a5edc4fb316c]
 synonym: "pollen cone" NARROW []
+xref: PO_GIT:601
 is_a: PO:0025083 ! strobilus
 created_by: meiera
 creation_date: 2015-09-22T10:51:43Z
@@ -4233,12 +4235,15 @@ creation_date: 2015-09-22T10:51:43Z
 id: PO:0005032
 name: megasporangiate strobilus
 namespace: plant_anatomy
-def: "A strobilus (PO:0025083) that bears ovules." [PO:austin_meier]
-synonym: "female cone" RELATED []
-synonym: "macrostrobili" RELATED []
+def: "A strobilus (PO:0025083) that bears plant ovules (PO:0020003)." [PO:austin_meier]
+synonym: "female cone" RELATED [FNA:c98ce1b1-9cda-4790-9149-799e9795b621]
+synonym: "hop cone" NARROW []
+synonym: "macrostrobili" RELATED Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
 synonym: "macrostrobilus" RELATED []
-synonym: "megastrobilus" RELATED []
+synonym: "megastrobili " RELATED Plural [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
+synonym: "megastrobilus" RELATED [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
 synonym: "ovulate cone" NARROW []
+xref: PO_GIT:601
 is_a: PO:0025083 ! strobilus
 created_by: meiera
 creation_date: 2015-09-22T10:51:48Z
@@ -15223,18 +15228,12 @@ synonym: "compound strobilus" NARROW []
 synonym: "cone" EXACT []
 synonym: "cono (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "estr&#243bilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "female cone" RELATED [FNA:c98ce1b1-9cda-4790-9149-799e9795b621]
 synonym: "macrostrobili" RELATED Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
 synonym: "macrostrobilus" RELATED [FNA:ed33e80e-12e2-41a3-8a0d-655a842189a6]
-synonym: "male cone" RELATED [FNA:b2779296-b5a3-41ac-97a3-f53448d492d7]
-synonym: "megastrobili" RELATED Plural [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
-synonym: "megastrobilus" RELATED [FNA:65823668-1ae4-47a9-bf43-b24f8a6f0e1e]
-synonym: "microstrobilus" NARROW [FNA:ebda7bb0-bb12-4160-bbc6-a5edc4fb316c]
-synonym: "ovulate cone" NARROW []
-synonym: "pollen cone" NARROW []
 synonym: "simple strobilus" NARROW []
 synonym: "strobili" EXACT Plural [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
 synonym: "胞子嚢穂,　球花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:601
 is_a: PO:0025082 ! reproductive shoot system
 created_by: rwalls
 creation_date: 2010-09-17T09:51:22Z
