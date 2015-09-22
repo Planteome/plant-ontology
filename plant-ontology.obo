@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 21:09:2015 18:44
-saved-by: cooperl
+date: 22:09:2015 11:21
+saved-by: meiera
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -405,7 +405,7 @@ relationship: part_of PO:0020127 ! primary root
 id: PO:0000027
 name: lateral root tip
 namespace: plant_anatomy
-def: "The portion of the lateral root including the meristem and root cap." [TAIR:Katica_Ilic]
+def: "A root tip (PO:0000025) of a lateral root (PO:0020121)." [TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000025 ! root tip
@@ -953,7 +953,7 @@ id: PO:0000067
 name: proteoid root
 namespace: plant_anatomy
 def: "A root (PO:0009005) that forms one or more clusters of lateral roots (PO:0020121)." [PMID:10517822, PO:austin_meier]
-comment: The terms proteoid root, cluster root, and root cluster have all been used in the literature to describe either the proteoid root axis or clusters of rootlets, and caution should be taken when comparing studies because the definitions of these terms vary.-from Watts and Evans, (Plant Physiology,1999)
+comment: The terms proteoid root, cluster root, and root cluster have all been used in the literature to describe either the proteoid root axis or clusters of rootlets, and caution should be taken when comparing studies because the definitions of these terms vary. -from Watts and Evans, (Plant Physiology,1999).
 synonym: "cluster root " RELATED []
 synonym: "root cluster" RELATED []
 xref: PO_GIT:588
@@ -4206,6 +4206,42 @@ xref: OBO_SF2_PO:467
 xref: PO_GIT:467
 is_a: PO:0025127 ! primordium
 relationship: develops_from PO:0025433 ! root anlagen
+
+[Term]
+id: PO:0005030
+name: lupulin gland
+namespace: plant_anatomy
+def: "A glandular trichome (PO:0004509) that synthesizes terpenophenolic resins and prenylflavonoids." [PMID:18223037]
+is_a: PO:0004509 ! glandular trichome
+relationship: part_of PO:0025083 ! strobilus
+created_by: meiera
+creation_date: 2015-09-22T10:45:31Z
+
+[Term]
+id: PO:0005031
+name: microsporangiate strobilus
+namespace: plant_anatomy
+def: "A strobilus (PO:0025083) that bears pollen." [PO:austin_meier]
+synonym: "male cone" RELATED []
+synonym: "microstrobilus" NARROW []
+synonym: "pollen cone" NARROW []
+is_a: PO:0025083 ! strobilus
+created_by: meiera
+creation_date: 2015-09-22T10:51:43Z
+
+[Term]
+id: PO:0005032
+name: megasporangiate strobilus
+namespace: plant_anatomy
+def: "A strobilus (PO:0025083) that bears ovules." [PO:austin_meier]
+synonym: "female cone" RELATED []
+synonym: "macrostrobili" RELATED []
+synonym: "macrostrobilus" RELATED []
+synonym: "megastrobilus" RELATED []
+synonym: "ovulate cone" NARROW []
+is_a: PO:0025083 ! strobilus
+created_by: meiera
+creation_date: 2015-09-22T10:51:48Z
 
 [Term]
 id: PO:0005039
