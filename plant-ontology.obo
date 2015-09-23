@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 23:09:2015 13:36
-saved-by: cooperl
+date: 23:09:2015 15:56
+saved-by: meiera
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -403,9 +403,10 @@ relationship: part_of PO:0020127 ! primary root
 id: PO:0000027
 name: lateral root tip
 namespace: plant_anatomy
-def: "A root tip (PO:0000025) of a lateral root (PO:0020121)." [TAIR:Katica_Ilic]
+def: "A root tip (PO:0000025) of a lateral root (PO:0020121)." [PO:austin_meier, TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "側根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:577
 is_a: PO:0000025 ! root tip
 relationship: part_of PO:0020121 ! lateral root
 
@@ -4239,8 +4240,6 @@ namespace: plant_anatomy
 def: "A strobilus (PO:0025083) that bears plant ovules (PO:0020003)." [PO:austin_meier]
 synonym: "female cone" RELATED [FNA:c98ce1b1-9cda-4790-9149-799e9795b621]
 synonym: "hop cone" NARROW []
-synonym: "macrostrobili" RELATED Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
-synonym: "macrostrobilus" RELATED []
 synonym: "megastrobili " RELATED Plural [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
 synonym: "megastrobilus" RELATED [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
 synonym: "ovulate cone" NARROW []
@@ -5869,18 +5868,22 @@ is_a: PO:0005421 ! parenchyma
 id: PO:0006200
 name: fascicular cambium
 namespace: plant_anatomy
-def: "Vascular cambium originating from procambium within vascular bundles or fascicles." [ISBN:047124529]
+def: "A portion of vascular cambium (PO:0005598) that develops from a procambium (PO:0025275) in a vascular bundle (PO:0005020) that is part of a shoot system (PO:0009006)." [ISBN:047124529, PO_REF:00014, POC:curators]
+comment: Found in shoot axes (PO:0025029) and vascular leaves (PO:0009025). Portions of fascicular cambium may merge with interfascular cambium (PO:0006201) or the fascicular cambium from adjacent vascular bundles to form a cylinder, or they may remain isolated.
 synonym: "cambium fascicular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束内形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:368
 is_a: PO:0005598 ! vascular cambium
 
 [Term]
 id: PO:0006201
 name: interfascicular cambium
 namespace: plant_anatomy
-def: "Vascular cambium arising between vascular bundles or fascicles, in the interfascicular parenchyma or pith." [ISBN:047124529]
+def: "A portion of vascular cambium (PO:00055980) that develops from cells in an interfascicular region (PO:0006202) that is part of a shoot system (PO:0009006)." [ISBN:047124529, PO_REF:00014, POC:curators]
+comment: Portions of interfascicular cambium may merge with fascicular cambium (PO:0006200) to form a cylinder of cambium or they may remain isolated. May develop from meristematic cells (PO:0004010) that have never differentiated into another cell type or from parenchyma cells (PO:0000074) that retain some meristematic ability.
 synonym: "cambium interfascicular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束間形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:368
 is_a: PO:0005598 ! vascular cambium
 
 [Term]
@@ -15229,8 +15232,8 @@ synonym: "compound strobilus" NARROW []
 synonym: "cone" EXACT []
 synonym: "cono (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "estr&#243bilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "macrostrobili" RELATED Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
-synonym: "macrostrobilus" RELATED [FNA:ed33e80e-12e2-41a3-8a0d-655a842189a6]
+synonym: "macrostrobili" BROAD Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
+synonym: "macrostrobilus" BROAD [FNA:ed33e80e-12e2-41a3-8a0d-655a842189a6]
 synonym: "simple strobilus" NARROW []
 synonym: "strobili" EXACT Plural [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
 synonym: "胞子嚢穂,　球花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -22771,11 +22774,30 @@ creation_date: 2014-06-13T16:51:52Z
 id: PO:0025613
 name: spine petiole
 namespace: plant_anatomy
-def: "A petiole (PO:0020038) that is sclerified and persistent." [PO:austin_meier]
+def: "A petiole (PO:0020038) that is sclerified and persistent." [POC:austin_meier]
+comment: The petiole (PO:0020038) abcisses longitudinally and the leaf lamina (PO:0020039) withers.
 xref: PO_GIT:535
 is_a: PO:0020038 ! petiole
 created_by: austinmeier
 creation_date: 2015-08-11T16:06:37Z
+
+[Term]
+id: PO:0025614
+name: gemma
+namespace: plant_anatomy
+def: "A portion of plant tissue (PO:0009007) which is a small ball of cells born on a thallus (PO:0030027) and is involved in asexual reproduction." [ISBN:1133170323, POC:curators]
+xref: PO_GIT:592
+is_a: PO:0009007 ! portion of plant tissue
+created_by: meiera
+creation_date: 2015-09-23T15:19:52Z
+
+[Term]
+id: PO:0025615
+name: rosette
+namespace: plant_anatomy
+is_a: PO:0025023 ! collective phyllome structure
+created_by: meiera
+creation_date: 2015-09-23T15:41:20Z
 
 [Term]
 id: PO:0028001
@@ -23881,7 +23903,7 @@ id: PO:0030058
 name: brachycyte
 namespace: plant_anatomy
 def: "A native plant cell (PO:0025606) that develops from a cell in a protonema (PO:0030003) and has a thick cell wall." [ISBN:0962073342, ISBN:9781405181891, POC:Laurel_Cooper]
-comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma and may give rise to a new plant. Cells of a protonema (PO:0030003) may develop into brachycytes under stress. May form a chain or be separated by tmema cells (PO:0030059).
+comment: Found in mosses. A brachycyte is a drought tolerant cell that can act as a gemma (PO:0025614) and may give rise to a new plant. Cells of a protonema (PO:0030003) may develop into brachycytes under stress. May form a chain or be separated by tmema cells (PO:0030059).
 subset: Bryophytes
 subset: CL
 synonym: "braquicito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -23898,8 +23920,8 @@ creation_date: 2011-04-28T09:14:10Z
 id: PO:0030059
 name: tmema cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) at the base of a gemma or adjacent to a brachycyte (PO:0030058) that breaks down to allow abscission of the gemma or brachycyte." [ISBN:0962073342, POC:Laurel_Cooper]
-comment: May be a single cell adjacent to a brachycyte or part of a portion of tmema tissue.
+def: "A native plant cell (PO:0025606) at the base of a gemma (PO:0025614) or adjacent to a brachycyte (PO:0030058) that breaks down to allow abscission of the gemma or brachycyte." [ISBN:0962073342, POC:Laurel_Cooper]
+comment: May be a single cell adjacent to a brachycyte (PO:0030058) or part of a portion of tmema tissue.
 subset: Bryophytes
 subset: CL
 synonym: "brachytmema cell" NARROW []
@@ -23935,7 +23957,7 @@ id: PO:0030061
 name: tmema
 namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that has as parts tmema cells (PO:0030059)." [ISBN:0962073342, ISBN:9780473067304, POC:Laurel_Cooper]
-comment: Found in bryophytes at the base of a gemma. Participates in abscission of the gemma.
+comment: Found in bryophytes at the base of a gemma (PO:0025614). Participates in abscission of the gemma.
 subset: Bryophytes
 synonym: "tmema (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "tmema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
