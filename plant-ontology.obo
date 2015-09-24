@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:09:2015 15:56
+date: 23:09:2015 17:07
 saved-by: meiera
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -235,7 +235,7 @@ is_a: PO:0009025 ! vascular leaf
 id: PO:0000014
 name: rosette leaf
 namespace: plant_anatomy
-def: "One of multiple leaves borne in a rosette - a group of leaves, generally borne at the base of the plant, that are separated by very short internodes." [TAIR:Katica_Ilic]
+def: "A vascular leaf (PO:0009025) born in a circular pattern around a stem with compressed internodes." [TAIR:Katica_Ilic]
 comment: Arabidopsis, vegetative development is characterized by the production of the rosette leaves.
 synonym: "hoja en roseta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ロゼット葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -22795,7 +22795,10 @@ creation_date: 2015-09-23T15:19:52Z
 id: PO:0025615
 name: rosette
 namespace: plant_anatomy
-is_a: PO:0025023 ! collective phyllome structure
+def: "A collective leaf structure (PO:0025022) consisting of a group of rosette leaves (PO:0000014), generally borne at the base of the plant, that are separated by very short internodes." [POC:austin_meier]
+xref: PO_GIT:302
+xref: PO_GIT:603
+is_a: PO:0025022 ! collective leaf structure
 created_by: meiera
 creation_date: 2015-09-23T15:41:20Z
 
