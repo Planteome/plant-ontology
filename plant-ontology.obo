@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 23:09:2015 17:12
-saved-by: meiera
+date: 24:09:2015 15:53
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -235,11 +235,10 @@ is_a: PO:0009025 ! vascular leaf
 id: PO:0000014
 name: rosette leaf
 namespace: plant_anatomy
-def: "A vascular leaf (PO:0009025) born in a circular pattern around a stem with compressed internodes." [TAIR:Katica_Ilic]
+def: "A vascular leaf (PO:0009025) born in a circular pattern around a stem (PO:0009047) with compressed stem internodes (PO:0020142)." [POC:curators, TAIR:Katica_Ilic]
 comment: Arabidopsis, vegetative development is characterized by the production of the rosette leaves.
 synonym: "hoja en roseta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "ロゼット葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO_SF2_PO:302
 xref: PO_GIT:302
 is_a: PO:0009025 ! vascular leaf
 relationship: part_of PO:0025615 ! rosette
@@ -9574,8 +9573,8 @@ synonym: "stage 2 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 3 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 4 flower in Arabidopsis" RELATED [PMID:2152125]
 synonym: "stage 5 flower in Arabidopsis" RELATED [PMID:2152125]
-xref: OBO_SF2_PO:500
 xref: PO_GIT:500
+xref: PO_GIT:604
 is_a: PO:0025585 ! floral organ formation stage
 relationship: preceded_by PO:0007601 ! floral organ meristem development stage
 
@@ -9678,13 +9677,14 @@ is_a: PO:0007605 ! androecium development stage
 id: PO:0007615
 name: flower development stage
 namespace: plant_structure_development_stage
-def: "A reproductive shoot system development stage (PO:0025530) which begins with the onset of the flower meristem transition stage (PO:0025588) and ends after the flowering stage (PO:0007616)." [POC:curators]
-comment: This term and its sub-classes apply to an individual flower (PO:000904). For the development stage of a whole plant (PO:0000003), use whole plant flowering stage (PO:0007016). During this stage, a flower undergoes the process of flower development (GO:0009908), defined as the process whose specific outcome is the progression of the flower over time, from its formation to the mature structure.
+def: "A reproductive shoot system development stage (PO:0025530) that occurs in an individual flower (PO:000904) during the interval between the onset of a flower meristem transition stage (PO:0025588) and the end of a flowering stage (PO:0007616)." [POC:curators]
+comment: This term and its sub-classes apply to an individual flower (PO:000904). During this stage, a flower undergoes the process of flower development (GO:0009908), defined as the process whose specific outcome is the progression of the flower over time, from its formation to the mature structure.  For the development stage of a whole plant (PO:0000003), use whole plant flowering stage (PO:0007016).
 subset: Angiosperm
 synonym: "flower development in Arabidopsis" RELATED [PMID:2152125]
-xref: OBO_SF2_PO:500
 xref: PO_GIT:500
+xref: PO_GIT:597
 is_a: PO:0025530 ! reproductive shoot system development stage
+relationship: has_participant PO:0009046 ! flower
 
 [Term]
 id: PO:0007616
@@ -11315,7 +11315,6 @@ xref: PO_GIT:160
 xref: PO_GIT:259
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0000229 ! flower meristem
-relationship: participates_in PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0009047
@@ -22400,11 +22399,11 @@ creation_date: 2013-06-26T15:12:58Z
 id: PO:0025585
 name: floral organ formation stage
 namespace: plant_structure_development_stage
-def: "A plant organ development stage (PO:0025339) which begins with the floral organ meristem development stage (PO:0007601) and ends with the onset of the flowering stage (PO:007616)." [POC:Laurel_Cooper]
-comment: During this stage, the processes of flower formation (GO:0048460; defined as the process that gives rise to the flower. This process pertains to the initial formation of a structure from unspecified parts) and flower morphogenesis (GO:0048439; defined as the process in which the anatomical structures of the flower are generated and organized) occur.
+def: "A flower development stage (PO:0007615) that occurs in an individual flower (PO:000904) during the interval between the onset of a floral organ meristem development stage (PO:0007601) and the onset of a flowering stage (PO:0007616)." [POC:curators]
+comment: During this stage, the process of floral organ development (GO:0048437) occurs. Floral organ development is defined as the process whose specific outcome is the progression of the floral organ over time, from its formation to the mature structure.
 synonym: "flower morphogenesis stage " EXACT []
-xref: OBO_SF2_PO:550
 xref: PO_GIT:550
+xref: PO_GIT:604
 is_a: PO:0025339 ! plant organ development stage
 relationship: part_of PO:0007615 ! flower development stage
 relationship: preceded_by PO:0025588 ! flower meristem transition stage
@@ -22796,7 +22795,7 @@ creation_date: 2015-09-23T15:19:52Z
 id: PO:0025615
 name: rosette
 namespace: plant_anatomy
-def: "A collective leaf structure (PO:0025022) consisting of a group of rosette leaves (PO:0000014), generally borne at the base of the plant, that are separated by very short internodes." [POC:austin_meier]
+def: "A collective leaf structure (PO:0025022) consisting of a group of rosette leaves (PO:0000014), generally borne at the base of the plant, that are separated by very short stem internodes (PO:0020142)." [POC:austin_meier]
 xref: PO_GIT:302
 xref: PO_GIT:603
 is_a: PO:0025022 ! collective leaf structure
