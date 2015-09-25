@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:09:2015 15:53
+date: 25:09:2015 11:40
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -19,7 +19,7 @@ subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
-synonymtypedef: Spanish "Spanish synonym" EXACT
+synonymtypedef: Spanish "Spanish synonym"
 default-namespace: plant_ontology
 ontology: po
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
@@ -4224,10 +4224,12 @@ creation_date: 2015-09-22T10:45:31Z
 id: PO:0005031
 name: microsporangiate strobilus
 namespace: plant_anatomy
-def: "A strobilus (PO:0025083) that bears pollen (PO:0025281)." [PO:austin_meier]
+def: "A strobilus (PO:0025083) that bears only pollen (PO:0025281)." [POC:austin_meier, POC:cooperl]
 synonym: "male cone" RELATED [FNA:b2779296-b5a3-41ac-97a3-f53448d492d7]
-synonym: "microstrobilus" NARROW [FNA:ebda7bb0-bb12-4160-bbc6-a5edc4fb316c]
-synonym: "pollen cone" NARROW []
+synonym: "microstrobili" RELATED Plural []
+synonym: "microstrobilus" RELATED [FNA:ebda7bb0-bb12-4160-bbc6-a5edc4fb316c]
+synonym: "pollen cone" RELATED []
+xref: PO_GIT:168
 xref: PO_GIT:601
 is_a: PO:0025083 ! strobilus
 created_by: meiera
@@ -4237,12 +4239,15 @@ creation_date: 2015-09-22T10:51:43Z
 id: PO:0005032
 name: megasporangiate strobilus
 namespace: plant_anatomy
-def: "A strobilus (PO:0025083) that bears plant ovules (PO:0020003)." [PO:austin_meier]
+def: "A strobilus (PO:0025083) that bears only plant ovules (PO:0020003)." [POC:austin_meier, POC:cooperl]
 synonym: "female cone" RELATED [FNA:c98ce1b1-9cda-4790-9149-799e9795b621]
-synonym: "hop cone" NARROW []
+synonym: "hop cone " RELATED []
+synonym: "macrostrobili" RELATED Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
+synonym: "macrostrobilus" RELATED [FNA:ed33e80e-12e2-41a3-8a0d-655a842189a6]
 synonym: "megastrobili " RELATED Plural [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
 synonym: "megastrobilus" RELATED [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
-synonym: "ovulate cone" NARROW []
+synonym: "ovulate cone" RELATED []
+xref: PO_GIT:168
 xref: PO_GIT:601
 is_a: PO:0025083 ! strobilus
 created_by: meiera
@@ -15225,18 +15230,17 @@ creation_date: 2010-09-17T09:49:10Z
 id: PO:0025083
 name: strobilus
 namespace: plant_anatomy
-def: "A reproductive shoot system consisting of a number of modified leaves (sporophylls) or ovule-bearing scales grouped terminally on a stem." [ISBN:0716710072, POC:curators]
+def: "A reproductive shoot system (PO:0025082) consisting of a number of sporophylls (PO:0009026) or plant ovule (PO:0020003)-bearing modified leaves (PO:0025034) grouped terminally on a stem (PO:0009047)." [ISBN:0716710072, POC:curators]
 comment: May be simple or compound. Found in lycophytes such as Selaginella and Lycopodium, sphenophytes such as Equisetum, gymnosperms such as cycad, conifers, gnetophytes and the pollen producing structures of Gingko. The term cone is often used for strobili that are woody. Flowers are sometimes considered bisexual strobili. Some flowering plants such as Alnus have inflorescences called catkins that resemble strobili, but are not.
 subset: TraitNet
 synonym: "compound strobilus" NARROW []
-synonym: "cone" EXACT []
-synonym: "cono (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cone" RELATED []
+synonym: "cono (Spanish)" RELATED Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "estr&#243bilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "macrostrobili" BROAD Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
-synonym: "macrostrobilus" BROAD [FNA:ed33e80e-12e2-41a3-8a0d-655a842189a6]
 synonym: "simple strobilus" NARROW []
 synonym: "strobili" EXACT Plural [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
 synonym: "胞子嚢穂,　球花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:168
 xref: PO_GIT:601
 is_a: PO:0025082 ! reproductive shoot system
 created_by: rwalls
