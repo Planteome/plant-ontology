@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:09:2015 13:04
+date: 06:10:2015 13:19
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -18,8 +18,8 @@ subsetdef: Rice "Term used for rice"
 subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: Japanese "Japanese synonym" EXACT
-synonymtypedef: Plural "Plural" 
-synonymtypedef: Spanish "Spanish synonym" 
+synonymtypedef: Plural "Plural"
+synonymtypedef: Spanish "Spanish synonym"
 default-namespace: plant_ontology
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
@@ -4840,7 +4840,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0006013
 name: juice sac
 namespace: plant_anatomy
-def: "As found in citrus the mature juice sac is a swollen sac with a slender stalk and a sac wall lined with layers of tightly arranged cells. It develops from a single cell of the endocarp. Endocarp develops from the carpellary inner epidermis." [GR:Pankaj_Jaiswal, web:http://www.chineseplantscience.com/earticle_read.asp?id=12171]
+def: "As found in citrus the mature juice sac is a swollen sac with a slender stalk and a sac wall lined with layers of tightly arranged cells. It develops from a single cell of the endocarp. Endocarp develops from the carpellary inner epidermis." [GR:Pankaj_Jaiswal, web:http\://www.chineseplantscience.com/earticle_read.asp?id=12171]
 subset: Citrus
 synonym: "juice vesicle" RELATED []
 synonym: "ves&#237cula contenedora de jugo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13890,9 +13890,9 @@ def: "OBSOLETE. A plant cell that is part of a male gametophyte." [POC:Ramona_Wa
 comment: This term was made obsolete because it is not appropriate for non-seed plants.
 synonym: "c&#233lula microgametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小配偶体細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_obsolete: true
 created_by: rwalls
 creation_date: 2010-05-07T02:36:55Z
-is_obsolete: true
 
 [Term]
 id: PO:0025028
@@ -17686,11 +17686,11 @@ synonym: "flower calyptra" EXACT []
 synonym: "flower operculum" EXACT []
 synonym: "蘚帽花蓋、花被  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:312
-created_by: rwalls
-creation_date: 2011-04-26T08:45:55Z
 is_obsolete: true
 consider: PO:0025329
 consider: PO:0025330
+created_by: rwalls
+creation_date: 2011-04-26T08:45:55Z
 
 [Term]
 id: PO:0025300
@@ -20960,7 +20960,7 @@ creation_date: 2013-04-05T14:36:22Z
 [Term]
 id: PO:0025535
 name: multicellular trichome tip
-namespace: plant_structure_development_stage
+namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome apex (PO:0025551)." [POC:Laurel_Cooper]
 comment: This term describes the apex region of a tip of a multicellular trichome (PO:0000282). The tip may be various shapes.  A tip of a unicellular trichome is a GO cellular component term; unicellular trichome tip (GO:0090553).
 synonym: "punta multicelular del tricoma (Spanish)" EXACT Spanish [POC:curators]
@@ -21987,9 +21987,9 @@ def: "OBSOLETE. A plant growth and development phase that begins with either mei
 comment: The life cycle of all plants is characterized by the alternation of phases (or generations). The sporophytic phase has twice the chromosome complement of the gametophytic phase.
 synonym: "fase del ciclo de vida de la plant (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物生活環段階 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_obsolete: true
 created_by: rwalls
 creation_date: 2010-07-15T02:54:57Z
-is_obsolete: true
 
 [Term]
 id: PO:0028002
@@ -23545,9 +23545,9 @@ id: developmentally_preceded_by
 name: developmentally_preceded_by
 def: "X developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p." [RO:0002258]
 xref: RO:0002258
+is_obsolete: true
 created_by: Laurel_Cooper
 creation_date: 2013-06-27T13:16:56Z
-is_obsolete: true
 
 [Typedef]
 id: develops_from
@@ -23583,8 +23583,8 @@ is_transitive: true
 id: participates_in
 name: participates_in
 xref: BFO:0000056
+holds_over_chain: part_of participates_in
 inverse_of: has_participant ! has_participant
-holds_over_chain: part_of participates_in ! participates_in
 
 [Typedef]
 id: preceded_by
