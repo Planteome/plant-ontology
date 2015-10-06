@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:09:2015 13:04
+date: 06:10:2015 12:08
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -20884,7 +20884,7 @@ creation_date: 2013-04-05T14:36:22Z
 [Term]
 id: PO:0025535
 name: multicellular trichome tip
-namespace: plant_structure_development_stage
+namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that is the apical most portion of a multicellular trichome apex (PO:0025551)." [POC:Laurel_Cooper]
 comment: This term describes the apex region of a tip of a multicellular trichome (PO:0000282). The tip may be various shapes.  A tip of a unicellular trichome is a GO cellular component term; unicellular trichome tip (GO:0090553).
 synonym: "punta multicelular del tricoma (Spanish)" EXACT Spanish [POC:curators]
@@ -23478,7 +23478,6 @@ id: has_participant
 name: has_participant
 xref: BFO:0000057
 
-
 [Typedef]
 id: located_in
 name: located_in
@@ -23495,10 +23494,9 @@ is_transitive: true
 [Typedef]
 id: participates_in
 name: participates_in
-holds_over_chain: part_of participates_in
 xref: BFO:0000056
-inverse_of: has_participant
-
+holds_over_chain: part_of participates_in
+inverse_of: has_participant ! has_participant
 
 [Typedef]
 id: preceded_by
