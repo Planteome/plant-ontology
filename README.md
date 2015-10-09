@@ -27,10 +27,10 @@ Files prepared for the current release (currently version 20):
 - plant_ontology_assert_basic.obo
 This version is the same as plant_ontology_assert.obo, but with only is_a and part_of relations. 
 
-- po_anatomy.obo: 
+- plant-ontology-anatomy.obo: 
 This file is created by filtering plant_ontology_assert.obo to contain only terms from the plant anatomical entity branch. All cross-aspect relations have been removed.
 
-- po_temporal.obo: 
+- plant-ontology-temporal.obo: 
 This file is created by filtering plant_ontology_assert.obo to contain only terms from the plant structure development stage branch. All cross-aspect relations have been removed.
 
 Other files: 
