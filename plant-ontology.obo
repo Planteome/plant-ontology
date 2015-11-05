@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 06:10:2015 12:08
-saved-by: cooperl
+date: 05:11:2015 15:37
+saved-by: meiera
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -1050,7 +1050,7 @@ synonym: "sperm cell" BROAD []
 synonym: "sperm nucleus" RELATED []
 synonym: "植物精子細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:141
-is_a: PO:0025006 ! gamete
+is_a: PO:0025006 ! plant gamete
 relationship: develops_from PO:0025525 ! spermatogenous cell
 
 [Term]
@@ -6242,7 +6242,7 @@ subset: TraitNet
 synonym: "micr&#243pila de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子珠孔 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025117 ! plant anatomical space
-relationship: develops_from PO:0020025 ! micropyle
+relationship: develops_from PO:0020025 ! plant ovule micropyle
 relationship: part_of PO:0009088 ! seed coat
 
 [Term]
@@ -12268,17 +12268,20 @@ relationship: part_of PO:0020022 ! inner integument
 
 [Term]
 id: PO:0020025
-name: micropyle
+name: plant ovule micropyle
 namespace: plant_anatomy
 alt_id: PO:0006461
-def: "A plant anatomical space that is enclosed by and forms an opening in an integument at the apex of an ovule." [POC:curators]
+def: "A plant anatomical space (PO:0025117) that is enclosed by and forms an opening in an integument at the apex of a plant ovule (PO:0020003)." [POC:curators]
 comment: The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac. In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
 synonym: "micr&#243pila (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "micropyle " NARROW []
 synonym: "ovular micropyle" EXACT []
+synonym: "plant ovular micropyle " NARROW []
 synonym: "Poaceae micropyle" NARROW []
 synonym: "孔 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:609
 is_a: PO:0025117 ! plant anatomical space
 relationship: part_of PO:0020021 ! integument
 
@@ -12902,7 +12905,7 @@ synonym: "non-mobile gamete" BROAD []
 synonym: "ooc&#233lula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物卵細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:140
-is_a: PO:0025006 ! gamete
+is_a: PO:0025006 ! plant gamete
 
 [Term]
 id: PO:0020095
@@ -13556,13 +13559,14 @@ creation_date: 2010-03-12T10:33:57Z
 
 [Term]
 id: PO:0025006
-name: gamete
+name: plant gamete
 namespace: plant_anatomy
 def: "A native plant cell (PO:0025606) that has half the chromosome complement of the sporophyte and is capable of fertilization to create a plant zygote (PO:0000423)." [POC:curators, POC:Laurel_Cooper]
 subset: CL
 synonym: "gameta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:58
+xref: PO_GIT:610
 is_a: PO:0025606 ! native plant cell
 created_by: Laurel_Cooper
 creation_date: 2010-03-03T03:06:46Z
@@ -21927,7 +21931,8 @@ synonym: "sporophytic development stage" EXACT []
 synonym: "sporophytic phase" EXACT []
 synonym: "sporphyte phase" EXACT []
 synonym: "胞子体発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO-SF2_PO:139
+xref: PO_GIT:139
+xref: PO_GIT:68
 is_a: PO:0007033 ! whole plant development stage
 relationship: part_of PO:0025337 ! life of whole plant stage
 created_by: rwalls
