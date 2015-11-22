@@ -1,6 +1,8 @@
 ## OBO Library prefix
 OBO=http://purl.obolibrary.org/obo
 
+#CAT=--catalog-xml catalog-v001.xml
+CAT=
 SRC=plant-ontology.obo
 
 all: plant-ontology-reasoned.obo target/po.obo
@@ -15,10 +17,10 @@ plant-ontology-reasoned.obo: plant-ontology-reasoned.owl
 	robot convert -i $< -f OBO -o $@
 
 reasoner-report.txt: plant-ontology.obo
-	owltools --use-catalog $< --run-reasoner -r elk -u > $@.tmp && egrep '(INFERENCE|UNSAT)' $@.tmp > $@
+	owltools $(CAT) $< --run-reasoner -r elk -u > $@.tmp && egrep '(INFERENCE|UNSAT)' $@.tmp > $@
 
 target/po.obo: $(SRC)
-	ontology-release-runner --catalog-xml catalog-v001.xml $< --reasoner elk --simple --skip-format owx --outdir target --run-obo-basic-dag-check
+	ontology-release-runner $(CAT)  $< --reasoner elk --simple --skip-format owx --outdir target --run-obo-basic-dag-check
 target/po.owl: target/po.obo
 
 po.owl: target/po.owl
@@ -27,5 +29,5 @@ po.owl: target/po.owl
 	cp $< $@
 
 subsets/po-basic.obo: target/po.obo
-	owltools --use-catalog $< --remove-imports-declarations  --make-subset-by-properties -f // --set-ontology-id $(OBO)/po/subsets/po-basic.owl -o -f obo $@
+	owltools $(CAT) $< --remove-imports-declarations  --make-subset-by-properties -f // --set-ontology-id $(OBO)/po/subsets/po-basic.owl -o -f obo $@
 
