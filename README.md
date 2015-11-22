@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Planteome/plant-ontology.svg?branch=master)](https://travis-ci.org/Planteome/plant-ontology)
+[![DOI](https://zenodo.org/badge/13996/Planteome/plant-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/Planteome/plant-ontology)
+
 # plant-ontology
 Repository for the Plant Ontology
 
