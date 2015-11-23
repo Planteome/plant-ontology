@@ -2,9 +2,21 @@
 [![DOI](https://zenodo.org/badge/13996/Planteome/plant-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/Planteome/plant-ontology)
 
 # plant-ontology
+
 Repository for the Plant Ontology
 
-What's in this folder?
+Note that if you are NOT a Planteome ontology developer then you are
+probably in the wrong place. The PO can be accessed via its official
+PURLs:
+
+ * http://purl.obolibrary.org/obo/po.owl
+ * http://purl.obolibrary.org/obo/po.obo
+ * http://purl.obolibrary.org/obo/po/subsets/po-basic.obo
+
+Or via http://planteome.org/
+
+# Ontology Editors Guide
+
 This folder contains the most current working version of the Plant Ontology editors' file: plant-ontology.obo.  
 All editing is done on the plant-ontology.obo file. New versions of the rest of the files are created only with new releases.
 
@@ -16,10 +28,9 @@ The editor's version of the plant ontology, in OBO format. Contains all relation
 
 Note that this file is subject to frequent changes, and may contain terms that will later destroyed (permanently deleted from the ontology, rather than made obsolete). Users should use this file with caution. 
 
-For stable files that correspond to the most current live release (featured on the PO webpage), go into the folder: po-release-files.   These are updated with each release.
- 	
-https://github.com/Planteome/plant-ontology/tree/master/po-release-files
-This folder contains copies of files prepared for the current release. 
+All releases can be found here:
+
+https://github.com/Planteome/plant-ontology/releases 	
 
 For more details of the PO Release procedures please see: http://wiki.plantontology.org/index.php/PO_Release_SOP_Page
 
