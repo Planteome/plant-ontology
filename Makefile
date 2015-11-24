@@ -16,7 +16,7 @@ test: all
 reasoner-report.txt: plant-ontology.obo
 	owltools $(CAT) $< --run-reasoner -r elk -u > $@.tmp && egrep '(INFERENCE|UNSAT)' $@.tmp > $@
 
-target/po.obo target/po.owl target/po-simpleobo: $(SRC)
+target/po.obo target/po.owl target/po-simple.obo: $(SRC)
 	ontology-release-runner $(CAT)  $<  --allow-overwrite --reasoner elk --simple --skip-format owx --outdir target --run-obo-basic-dag-check
 target/po.owl: target/po.obo
 
@@ -26,4 +26,4 @@ po.obo: target/po.obo
 	cp $< $@
 
 subsets/po-basic.obo: target/po-simple.obo
-	cp $< $@
+	owltools $(CAT) $< --make-subset-by-properties BFO:0000050 // --set-ontology-id $(OBO)/po/subsets/po-basic.owl -o -f obo $@
