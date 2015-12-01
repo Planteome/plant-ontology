@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 05:11:2015 15:37
-saved-by: meiera
+date: 30:11:2015 16:46
+saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -363,9 +363,10 @@ is_obsolete: true
 id: PO:0000025
 name: root tip
 namespace: plant_anatomy
-def: "The apical most portion of the root (PO:0009005) including the root apical meristem (PO:0020147) and root cap (PO:0020123)." [TAIR:Katica_Ilic]
+def: "A cardinal organ part (PO:0025001) which is the apical portion of the root (PO:0009005), and includes the root apical meristem (PO:0020147) and root cap (PO:0020123)." [POC:cooperl, TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:620
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009005 ! root
@@ -377,6 +378,7 @@ namespace: plant_anatomy
 def: "The portion of the primary root including the meristem and root cap." [TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:620
 is_a: PO:0000025 ! root tip
 relationship: part_of PO:0020127 ! primary root
 
@@ -10003,10 +10005,11 @@ relationship: develops_from PO:0025483 ! lodicule anlagen
 id: PO:0008041
 name: stem internode elongation zone
 namespace: plant_anatomy
-def: "A shoot internode elongation zone that is part of a stem internode." [POC:curators]
+def: "A shoot axis internode elongation zone  (PO:0025100) that is part of a stem internode (PO:0009047)." [POC:cooperl, POC:curators]
 synonym: "zona de elongaci&#243n del internodo del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025100 ! shoot internode elongation zone
+xref: PO_GIT:197
+is_a: PO:0025100 ! shoot axis internode elongation zone
 relationship: part_of PO:0020142 ! stem internode
 
 [Term]
@@ -13185,7 +13188,7 @@ id: PO:0020127
 name: primary root
 namespace: plant_anatomy
 alt_id: PO:0020089
-def: "A root (PO:0009005) that develops directly from an seedling radicle (PO:0020127)." [ISBN:0122151704, POC:curators]
+def: "A root (PO:0009005) that develops directly from a seedling radicle (PO:0020127)." [ISBN:0122151704, POC:curators]
 comment: The first root of a plant.  In dicots and gymnosperms  it becomes the tap root, the central axis of a root system (PO:0025025).
 subset: TraitNet
 synonym: "ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13425,6 +13428,7 @@ synonym: "根端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:577
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
+relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0020148
@@ -14634,7 +14638,7 @@ namespace: plant_anatomy
 def: "A shoot axis internode (PO:0005005) that is part of a branch (PO:0025073)." [POC:curators, POC:Laurel_Cooper]
 synonym: "internodo de una ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO-SF2_PO:146
+xref: PO_GIT:146
 is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0025073 ! branch
 created_by: rwalls
@@ -14861,11 +14865,12 @@ creation_date: 2010-11-05T01:36:24Z
 
 [Term]
 id: PO:0025100
-name: shoot internode elongation zone
+name: shoot axis internode elongation zone
 namespace: plant_anatomy
-def: "A plant axis elongation zone that is part of a shoot axis internode." [POC:Ramona_Walls]
+def: "A plant axis elongation zone (PO:0025180) that is part of a shoot axis internode (PO:0005005)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "zona de elongaci&#243n del internodo de epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025180 ! plant axis elongation zone
 relationship: part_of PO:0005005 ! shoot axis internode
 created_by: rwalls
@@ -14875,10 +14880,11 @@ creation_date: 2011-01-03T11:39:43Z
 id: PO:0025101
 name: branch internode elongation zone
 namespace: plant_anatomy
-def: "A shoot axis internode elongation zone that is part of a branch internode." [POC:Ramona_Walls]
+def: "A shoot axis internode elongation zone (PO:0025100) that is part of a branch internode (PO:0025080)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "zona de elongaci&#243n de la ramificaci&#243n del internodo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025100 ! shoot internode elongation zone
+xref: PO_GIT:197
+is_a: PO:0025100 ! shoot axis internode elongation zone
 relationship: part_of PO:0025080 ! branch internode
 created_by: rwalls
 creation_date: 2011-01-03T11:43:48Z
@@ -16018,9 +16024,10 @@ creation_date: 2010-11-22T09:58:06Z
 id: PO:0025180
 name: plant axis elongation zone
 namespace: plant_anatomy
-def: "A cardinal organ part that is part of a plant axis that is located directly behind an apical meristem, in which the cells are undergoing longitudinal expansion." [POC:curators]
+def: "A cardinal organ part (PO:0025001) which is part of a plant axis (PO:0025004), is located proximal to an apical meristem (PO:0020144), and in which plant cells (PO:0009002) are undergoing longitudinal expansion." [POC:cooperl, POC:curators]
 synonym: "zona de elongaci&#243n del eje de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物軸伸長帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025004 ! plant axis
 created_by: rwalls
@@ -16030,10 +16037,11 @@ creation_date: 2010-12-03T08:50:10Z
 id: PO:0025181
 name: root elongation zone
 namespace: plant_anatomy
-def: "A plant axis elongation zone that is part of a root tip and located directly behind the root apical meristem." [POC:curators]
+def: "A plant axis elongation zone (PO:0025180) that is part of a root tip (PO:0000025) and located proximal to a root apical meristem (PO:0020147)." [POC:cooperl, POC:curators]
 comment: The root elongation zone is only a few millimeters in length and is the only portion of the root in which cell elongation generally occurs. Root hairs are not yet produced in this region. Primary root tissues begin to differentiate in the root elongation zone. This term replaces elongation zone (PO:0020125).
 synonym: "zona de elongaci&#243n de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根伸長帯（層）  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025180 ! plant axis elongation zone
 relationship: part_of PO:0000025 ! root tip
 created_by: rwalls
@@ -16337,6 +16345,7 @@ synonym: "internodo del rizoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gan
 synonym: "根茎節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO-SF2_PO:146
 xref: PO_GIT:146
+xref: PO_GIT:28
 is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0004542 ! rhizome
 created_by: rwalls
@@ -17029,9 +17038,10 @@ creation_date: 2011-01-05T12:05:43Z
 id: PO:0025257
 name: primary root elongation zone
 namespace: plant_anatomy
-def: "A root elongation zone that is part of a primary root tip." [POC:Ramona_Walls]
+def: "A root elongation zone (PO:0025181) that is part of a primary root tip (PO:0000026)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "zona de elongaci&#243n de la ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025181 ! root elongation zone
 relationship: part_of PO:0000026 ! primary root tip
 created_by: rwalls
