@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:01:2016 09:54
+date: 05:01:2016 10:13
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3333,13 +3333,14 @@ is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
 id: PO:0004547
-name: subterranean tuber
+name: subterranean shoot axis tuber
 namespace: plant_anatomy
-def: "A shoot axis tuber (PO:0004543) that develops below ground." [POC:curators]
+def: "A shoot axis tuber (PO:0004543) that develops below ground." [PO:cooperl, POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:615
 is_a: PO:0004543 ! shoot axis tuber
 
 [Term]
@@ -14046,7 +14047,7 @@ synonym: "potato tuber flesh" NARROW []
 synonym: "地下塊茎 貯蔵柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:103
 is_a: PO:0025036 ! tuber storage parenchyma
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-25T04:38:30Z
 
@@ -14107,7 +14108,7 @@ synonym: "yema vegetativa axilar de tub&#233rculo subterr&#225neo (Spanish)" EXA
 synonym: "地下塊茎腋栄養芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:102
 is_a: PO:0025040 ! shoot axis tuber axillary vegetative bud
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-26T08:18:09Z
 
@@ -14146,7 +14147,7 @@ synonym: "mature potato tuber skin" NARROW []
 synonym: "peridermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎 周皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025043 ! shoot axis tuber periderm
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-27T09:31:12Z
 
@@ -14185,7 +14186,7 @@ synonym: "epidermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [P
 synonym: "young potato tuber skin" NARROW []
 synonym: "地下塊茎 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025046 ! shoot axis tuber epidermis
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-27T09:55:39Z
 
@@ -14492,7 +14493,7 @@ def: "A tuber axillary bud meristem that is part of a subterranean tuber." [POC:
 synonym: "meristema axilar de yema de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎腋芽 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025068 ! shoot axis tuber axillary bud meristem
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-06-15T01:03:59Z
 
@@ -14656,7 +14657,7 @@ synonym: "epiblasto (epiblastema) axilar de tub&#233rculo subterr&#225neo (Spani
 synonym: "tuber sprout" EXACT []
 synonym: "地下塊茎腋 分げつ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025003 ! tuber axillary shoot
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-09-16T03:18:48Z
 
