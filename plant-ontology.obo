@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:11:2015 16:46
+date: 05:01:2016 09:54
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3279,7 +3279,7 @@ is_a: PO:0025029 ! shoot axis
 id: PO:0004543
 name: shoot axis tuber
 namespace: plant_anatomy
-def: "A tuber (PO:0025522) that develops from a branch (PO:0025073)." [POC:curators]
+def: "A shoot axis (PO:0025029) that develops from a branch (PO:0025073) and is radially enlarged for storage." [PO:cooperl, POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 subset: reference
@@ -3290,6 +3290,7 @@ synonym: "tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber branch" EXACT []
 synonym: "シュート軸塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:127
+is_a: PO:0025029 ! shoot axis
 is_a: PO:0025522 ! tuber
 relationship: develops_from PO:0025073 ! branch
 
@@ -20128,7 +20129,7 @@ creation_date: 2012-03-22T03:42:34Z
 id: PO:0025476
 name: tuberous root tuber
 namespace: plant_anatomy
-def: "A tuber (PO:0004543) that develops from a tuberous root (PO:0025523) and is further radially enlarged." [POC:curators]
+def: "A root (PO:0009005) that develops from a tuberous root (PO:0025523) and is further radially enlarged for storage." [PO:cooperl, POC:curators]
 comment: Functions in storage. This term should be used for tubers derived from roots (PO:0009005), as found in Cassava or sweet potato (Ipomoea batatas), not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term shoot axis tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuberous root tuber may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch. A tuberous root tuber usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
 synonym: "ra&#237z tubercular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root tuber" EXACT []
@@ -20136,6 +20137,7 @@ synonym: "storage root" EXACT []
 synonym: "tuber root" RELATED []
 synonym: "塊茎根の塊茎(Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:47
+is_a: PO:0009005 ! root
 is_a: PO:0025522 ! tuber
 relationship: develops_from PO:0025523 ! tuberous root
 created_by: rwalls
@@ -23494,6 +23496,10 @@ name: has_participant
 xref: BFO:0000057
 
 [Typedef]
+id: isolated_from_germplasm
+name: isolated from germplasm
+
+[Typedef]
 id: located_in
 name: located_in
 xref: RO:0001025
@@ -23530,6 +23536,3 @@ xref: BFO:0000063
 created_by: Laurel_Cooper
 creation_date: 2015-06-04T17:18:40Z
 
-[Typedef]
-id: isolated_from_germplasm
-name: isolated from germplasm
