@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:01:2016 10:13
+date: 25:02:2016 14:16
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -3794,18 +3794,18 @@ consider: PO:0025272
 id: PO:0005010
 name: anther septum
 namespace: plant_anatomy
-def: "A septum that is present in an anther dehiscence zone." [GR:Chih-Wei_Tung, GR:Pankaj_Jaiswal]
+def: "A septum (PO:0000030) that is part of an anther dehiscence zone (PO:0005011)." [GR:Chih-Wei_Tung, GR:Pankaj_Jaiswal, PO:Cooperl]
 synonym: "anther dissepiment" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
 synonym: "septo de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯隔壁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000030 ! septum
-relationship: part_of PO:0009061 ! androecium
+relationship: part_of PO:0005011 ! anther dehiscence zone
 
 [Term]
 id: PO:0005011
 name: anther dehiscence zone
 namespace: plant_anatomy
-def: "A dehiscence zone that is part of an anther." [POC:curators]
+def: "A dehiscence zone (PO:0025092) that is part of an anther (PO:0009066)." [POC:curators]
 comment: Extends along the entire length of the anther and is observed as an indentation between the locules of each theca. Upon anther maturation, cell separation within the dehiscence zone allows the anther wall to break open and pollen to be released.
 synonym: "zona de dehiscencia de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "開葯帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
