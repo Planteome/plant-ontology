@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:02:2016 14:16
+date: 16:03:2016 14:54
 saved-by: cooperl
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
@@ -5005,13 +5005,14 @@ relationship: part_of PO:0009037 ! lemma
 
 [Term]
 id: PO:0006033
-name: paleal apiculus
+name: palea apiculus
 namespace: plant_anatomy
-def: "A short, abrupt, flexible point present at the apex of the palea." [GR:Pankaj_Jaiswal]
+def: "A cardinal organ part (PO:0025001) which is a short, abrupt, flexible point at the apex of the palea (PO:0009038)." [GR:Pankaj_Jaiswal, PO:cooperl]
 subset: reference
 synonym: "ap&#237culo de la palea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "apiculus" RELATED []
 synonym: "内頴頂端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:627
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009038 ! palea
@@ -10766,7 +10767,7 @@ alt_id: PO:0006431
 alt_id: PO:0006432
 alt_id: PO:0006433
 alt_id: PO:0006434
-def: "A flower bract (PO:0009034) that is the lower of the two bracts (PO:0009055) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
+def: "The lower, usually larger, of the pair of flower bracts (PO:0009034) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
 comment: A lemma (PO:0009037) and palea (PO:0009038) enclose an individual spikelet floret (PO:0009082). The lemma is usually the larger of the two. Since it is not clear what the lemma and palea correspond to in conventional flowers, no assumptions of homology are made. If you are annotating to this structure for Zea species an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). Found in  Found in Poaceae, Cyperaceae and other Poales.
 subset: Maize
 subset: Poaceae
@@ -10804,7 +10805,7 @@ alt_id: PO:0006427
 alt_id: PO:0006428
 alt_id: PO:0006429
 alt_id: PO:0006430
-def: "A flower bract (PO:0009034) that is the upper/distal of the two bracts (PO:0009055) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
+def: "The upper (distal), usually smaller, of the pair of flower bracts (PO:0009034) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
 comment: A lemma (PO:0009037) and palea (PO:0009038) enclose an individual spikelet floret (PO:0009082). The palea is usually the smaller of the two. Since it is not clear what the lemma and palea correspond to in conventional flowers, no assumptions of homology are made. If you are annotating to this structure for Zea species an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). Found in  Found in Poaceae, Cyperaceae and other Poales.
 subset: reference
 synonym: "pale" BROAD [FNA:3d284a17-79c6-40b0-84c5-1cd337f43e55]
@@ -21919,6 +21920,16 @@ xref: PO_GIT:603
 is_a: PO:0025022 ! collective leaf structure
 created_by: meiera
 creation_date: 2015-09-23T15:41:20Z
+
+[Term]
+id: PO:0025616
+name: lemma apiculus
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) which is a short, abrupt, flexible point at the apex of the lemma (PO:0009037)." [PO:cooperl]
+xref: PO_GIT:627
+is_a: PO:0025001 ! cardinal organ part
+created_by: cooperl
+creation_date: 2016-03-16T14:41:36Z
 
 [Term]
 id: PO:0028001
