@@ -1714,6 +1714,7 @@ def: "A vascular leaf initiation stage (PO:0007040) during which the vascular le
 comment: The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a vascular leaf primordium (PO:0000017), but the primordium is not yet morphologically distinguishable.
 synonym: "P0 stage" RELATED []
 synonym: "vascular leaf founder cell formation stage" EXACT []
+synonym: "leaf stage P0" RELATED [GRO:0007161]
 xref: PO_GIT:560
 xref: PO_GIT:573
 is_a: PO:0001051 ! vascular leaf initiation stage
@@ -1862,6 +1863,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which a vascular leaf primordium (PO:0000017) forms in the peripheral zone (PO:0000225) of the vegetative shoot apical meristem (PO:0020148)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The vascular leaf primordium (PO:0000017) develops from the vascular leaf anlagen (PO:0025431).
 synonym: "P1 stage" RELATED []
+synonym: "leaf stage P1" RELATED [GRO:0007164]
 xref: OBO-SF2_PO:561
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001003 ! vascular leaf anlagen formation stage
@@ -1872,6 +1874,7 @@ name: hood-shaped primordium stage
 namespace: plant_structure_development_stage
 def: "Stage of leaf development when a hood-shaped primordium is formed, partially enclosing P1 and SAM, as in Poaceae." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "P2 stage" RELATED []
+synonym: "leaf stage P2" RELATED [GRO:0007163]
 xref: PO_GIT:564
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -1881,6 +1884,7 @@ name: formation of ligule primordium stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) when conical P3 leaf completely encloses SAM, and the ligule (PO:0020105) primordium is visible." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "P3 stage" RELATED []
+synonym: "leaf stage P3" RELATED [GRO:0007166]
 xref: PO_GIT:563
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -1890,6 +1894,7 @@ name: rapid elongation of vascular leaf lamina stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) during which a rapid elongation of the leaf lamina (PO:0020039) occurs." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "P4 stage" RELATED []
+synonym: "leaf stage P4" RELATED [GRO:0007162]
 xref: PO_GIT:565
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -1900,6 +1905,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) during which a rapid elongation of the leaf sheath (PO:0020104) occurs." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: Occurs in the Poaceae.
 synonym: "P5 stage" RELATED []
+synonym: "leaf stage P5" RELATED [GRO:0007165]
 xref: PO_GIT:566
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -2067,6 +2073,7 @@ namespace: plant_structure_development_stage
 alt_id: PO:0007040
 def: "A phyllome development stage (PO:0025579) during which the development of vascular leaves (PO:0009025) and non-vascular leaves (PO:0025075) occurs." [POC:Brian_Atkinson, POC:curators, TAIR:Tanya_Berardini]
 synonym: "leaf development in Arabidopsis" RELATED []
+synonym: "leaf development" RELATED [GRO:0007138]
 xref: PO_GIT:555
 is_a: PO:0025579 ! phyllome development stage
 
@@ -2229,6 +2236,7 @@ id: PO:0001083
 name: inflorescence development stage
 namespace: plant_structure_development_stage
 def: "A reproductive shoot system development stage (PO:0025530) that has as primary participant a inflorescence (PO:0009049)." [POC:Laurel_Cooper]
+synonym: "panicle development" RELATED [GRO:0007157]
 xref: PO_GIT:517
 is_a: PO:0025530 ! reproductive shoot system development stage
 
@@ -6993,7 +7001,6 @@ synonym: "FF.03 fruit size 70% in Solanaceae" RELATED [SGN:0000044]
 synonym: "late milk" RELATED [GRO:0007109]
 synonym: "tomato immature green" RELATED [SGN:0000044]
 synonym: "Zadok scale-73, Haun scale-13" RELATED [GRO:0007107]
-synonym: "8.04-medium milk" RELATED [GRO:0007108]
 xref: PO_GIT:377
 is_a: PO:0007042 ! whole plant fruit formation stage
 
@@ -7022,7 +7029,6 @@ comment: This terms is best used for plant with more or less synchronous fruit d
 synonym: "7.02 Pod 30% of final length in soybean" RELATED [SOY:0000080]
 synonym: "FF.01 fruit size 30% in Solanaceae" RELATED [SGN:0000042]
 synonym: "tomato immature green" RELATED [SGN:0000042]
-synonym: "8.02-early milk" RELATED [GRO:0007107]
 xref: PO_GIT:377
 is_a: PO:0007042 ! whole plant fruit formation stage
 
@@ -7406,7 +7412,6 @@ synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
 synonym: "fruit setting" NARROW []
 synonym: "stage R3 in soybean" RELATED [SOY:0000079]
 synonym: "tomato immature green" RELATED [SGN:0000041]
-synonym: "8.01-kernel watery ripe" RELATED [GRO:0007106]
 xref: PO_GIT:377
 is_a: PO:0007042 ! whole plant fruit formation stage
 
@@ -7424,7 +7429,6 @@ synonym: "rice growth stage" RELATED [GRO:0007040]
 synonym: "Solanaceae whole plant growth stages" RELATED [SGN:0000001]
 synonym: "sorghum growth stage" RELATED [GRO:0007124]
 synonym: "wheat, barley and oat growth stage" RELATED [GRO:0007156]
-synonym: "rice growth stage" RELATED [GRO:0007040] 
 xref: OBO-SF2PO:390
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0000003 ! whole plant
@@ -7602,8 +7606,6 @@ def: "A sporophyte vegetative stage (PO:0007134) during which the coleoptile (PO
 comment: Occurs in Poaceae and some other monocotyledons.  May occur simultaneously with coleoptile emergence from the growth medium.  The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed (PO:0009010) is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 synonym: "0.3 coleoptile emergence from seed in maize" RELATED [MaizeGDB:67352]
 synonym: "BBCH growth stage 09" RELATED [ISBN:3826331524]
-synonym: "1.05-coleoptile emerged from seed" RELATED [GRO:0007056]
-synonym: "1.06-leaf just at coleoptile tip" RELATED [GRO:0007057]
 xref: PO_GIT:370
 is_a: PO:0007134 ! sporophyte vegetative stage
 relationship: part_of PO:0007057 ! seed germination stage
@@ -8624,6 +8626,7 @@ synonym: "maximum number of tillers visible" RELATED []
 synonym: "maximum number of tillers visible in rice" RELATED []
 synonym: "nine or more axillary shoots detectable" RELATED []
 synonym: "Zadok scale-29" RELATED [GRO:0007079]
+synonym: "vegetative lag phase" RELATED [GRO:0007146]
 is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
@@ -8926,11 +8929,6 @@ comment: A dormancy process (GO:0022611) is a developmental process in which dor
 synonym: "D dormancy in Solanaceae" NARROW [SGN:0000053]
 synonym: "sporophyte dormancy stage" EXACT []
 synonym: "sporophytic dormant stage" EXACT []
-synonym: "10.05-seed dormant" RELATED [GRO:0007119]
-synonym: "10.06-viable seed germination" RELATED [GRO:0007120]
-synonym: "10.07-seed not dormant" RELATED [GRO:0007121]
-synonym: "10.08-secondary dormancy induced" RELATED [GRO:0007122]
-synonym: "10.09-secondary dormancy lost" RELATED [GRO:0007123]
 xref: OBO-SF2_PO:394
 xref: PO_GIT:394
 is_a: PO:0028002 ! sporophyte development stage
@@ -8942,7 +8940,6 @@ namespace: plant_structure_development_stage
 def: "The stage at which the leaves produced by SAM are visible above the ground in a seedling or mature plant." [Poc:curators]
 comment: This stage is recommended over rosette growth or stem elongation as it is most easily observed and least ambiguous.
 synonym: "leaf production in Solanaceae" RELATED [SGN:0000012]
-synonym: "02-seedling" RELATED [GRO:0007047]
 is_a: PO:0007112 ! 1 main shoot growth stage
 
 [Term]
@@ -9305,6 +9302,7 @@ id: PO:0007605
 name: androecium development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant an androecium (PO:0009061)." [POC:curators, POC:Laura_Moore]
+synonym: "stamen development" RELATED [GRO:0007159]
 xref: PO_GIT:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -9314,6 +9312,7 @@ id: PO:0007606
 name: gynoecium development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has a primary participant a gynoecium (PO:0009062)." [POC:curators, POC:Laura_Moore]
+synonym: "ovule development" RELATED [GRO:0007160]
 xref: PO_GIT:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -9528,7 +9527,6 @@ subset: Rice
 synonym: "embryo development stage" RELATED []
 synonym: "embryo stage" BROAD []
 synonym: "embryonic in Arabidopsis" RELATED []
-synonym: "embryo development" RELATED [GRO:0007137]
 xref: PO_GIT:400
 is_a: PO:0007134 ! sporophyte vegetative stage
 
@@ -10416,7 +10414,6 @@ subset: TraitNet
 synonym: "Arabidopsis growth" RELATED [TAIR:0000205]
 synonym: "etapa de desarrollo de estructura vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "plant growth and development stage" EXACT []
-synonym: "rice plant part dev" RELATED [GRO:0007136]
 xref: PO_GIT:185
 
 [Term]
@@ -21399,6 +21396,7 @@ name: vascular leaf primordium polarity determination stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which the vascular leaf primordium (PO:0004725) develops an adaxial side (PO:0004726) and an abaxial side (PO:0004725)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
 comment: The vascular leaf primordium adaxial side (PO:0004726) is the side proximal to the axis of the vegetative shoot apical meristem (PO:0020148), while abaxial side (PO:0004725) is the distal side.
+
 xref: PO_GIT:569
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001019 ! vascular leaf primordium formation stage
