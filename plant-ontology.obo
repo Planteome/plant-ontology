@@ -2104,6 +2104,7 @@ name: vascular leaf post-expansion stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:0025570) that begins when the vascular leaf (PO:0009025) is fully expanded and ends with the onset of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "fully expanded leaf stage in Arabidopsis" RELATED []
+synonym: "leaf stage PX" RELATED [GRO:0007167]
 xref: PO_GIT:558
 is_a: PO:0025570 ! vascular leaf development stage
 relationship: preceded_by PO:0001052 ! vascular leaf expansion stage
@@ -2228,6 +2229,8 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "mature (stage) in Arabidopsis" RELATED []
+synonym: "embryo stage EM9" RELATED [GRO:0007176]
+synonym: "embryo stage EM10" RELATED [GRO:0007177]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 
@@ -2251,6 +2254,7 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "SAM and radicle formation stage" RELATED []
+synonym: "embryo stage EM5" RELATED [GRO:0007169]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: preceded_by PO:0004507 ! plant embryo bilateral stage
@@ -2266,6 +2270,7 @@ subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
 subset: Rice
+synonym: "embryo stage EM6" RELATED [GRO:0007172]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: precedes PO:0001081 ! mature plant embryo stage
@@ -2286,6 +2291,7 @@ comment: Precedes the sporophyte vegetative stage (PO:0007134). Refers to the GO
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
+synonym: "embryo stage EM1" RELATED [GRO:0007168]
 xref: PO_GIT:399
 is_a: PO:0028002 ! sporophyte development stage
 
@@ -2326,6 +2332,7 @@ subset: Poaceae
 subset: Rice
 synonym: "eight-celled stage in Arabidopsis" RELATED []
 synonym: "two-celled stage in Arabidopsis" RELATED []
+synonym: "embryo stage EM2" RELATED [GRO:0007171]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 
@@ -2344,6 +2351,8 @@ synonym: "dermatogen stage in Arabidopsis" RELATED []
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
+synonym: "embryo stage EM3" RELATED [GRO:0007170]
+synonym: "embryo stage EM4" RELATED [GRO:0007173]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: preceded_by PO:0001180 ! plant proembryo stage
@@ -2804,6 +2813,7 @@ id: PO:0004501
 name: gynoecium differentiation and expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development defined by differentiation and expansion of carpels." [TAIR:Katica_Ilic]
+synonym: "ovule stage OV1" RELATED [GRO:0007181]
 is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
@@ -9418,6 +9428,7 @@ id: PO:0007618
 name: carpel primordium visible stage
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development that begins when the carpel primordia arise." [POC:curators]
+synonym: "ovule stage OV0" RELATED [GRO:0007178]
 is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
@@ -9434,6 +9445,7 @@ name: ovule primordium visible stage
 namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the ovule primordia arise." [POC:curators]
 synonym: "ovule stage 1-I in Arabidopsis" RELATED []
+synonym: "ovule stage OV1" RELATED [GRO:0007181]
 is_a: PO:0007619 ! ovule development stage
 
 [Term]
@@ -9453,6 +9465,7 @@ namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the integument primordia are visible." [POC:curators]
 synonym: "ovule stage 2-II in Arabidopsis" RELATED []
 synonym: "ovule stage 2-III in Arabidopsis" RELATED []
+synonym: "ovule stage OV2" RELATED [GRO:0007180]
 is_a: PO:0004504 ! ovule differentiation and expansion stage
 
 [Term]
@@ -9461,6 +9474,7 @@ name: A megaspore mother cell enlarges stage
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell enlarges." [POC:curators]
 synonym: "ovule stage 2-I in Arabidopsis" RELATED []
+synonym: "ovule stage OV2" RELATED [GRO:0007180]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9469,6 +9483,7 @@ name: B meiosis of megaspore mother cell stage
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell undergoes meiosis." [POC:curators]
 synonym: "ovule stage 2-IV in Arabidopsis" RELATED []
+synonym: "ovule stage OV4" RELATED [GRO:0007179]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9477,6 +9492,7 @@ name: C tetrad of megaspores stage
 namespace: plant_structure_development_stage
 def: "The product of meiosis of the megaspore mother cell." [POC:curators]
 synonym: "ovule stage 2-V in Arabidopsis" RELATED []
+synonym: "ovule stage OV4" RELATED [GRO:0007179]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9486,6 +9502,7 @@ namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when non-functional megaspores degenerate." [POC:curators]
 comment: In some plants more than one megaspore contributes to the megametophyte.
 synonym: "ovule stage 3-I in Arabidopsis" RELATED []
+synonym: "ovule stage OV6" RELATED [GRO:0007184]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9536,6 +9553,7 @@ name: seed maturation stage
 namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequently, a desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
 synonym: "seed maturation in Arabidopsis" RELATED []
+synonym: "embryo stage EM10" RELATED [GRO:0007177]
 xref: PO_GIT:568
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0004506 ! developing seed stage
