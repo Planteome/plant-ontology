@@ -1,7 +1,5 @@
 format-version: 1.2
-date: 16:03:2016 16:25
 saved-by: cooperl
-auto-generated-by: OBO-Edit 2.3.1
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -21,9 +19,9 @@ synonymtypedef: Japanese "Japanese synonym" EXACT
 synonymtypedef: Plural "Plural"
 synonymtypedef: Spanish "Spanish synonym"
 default-namespace: plant_ontology
-ontology: po
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
+ontology: po
 
 [Term]
 id: PO:0000001
@@ -1712,9 +1710,9 @@ name: vascular leaf anlagen formation stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0007040) during which the vascular leaf founder cells (PO:0025592) of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a vascular leaf primordium (PO:0000017), but the primordium is not yet morphologically distinguishable.
+synonym: "leaf stage P0" RELATED [GRO:0007161]
 synonym: "P0 stage" RELATED []
 synonym: "vascular leaf founder cell formation stage" EXACT []
-synonym: "leaf stage P0" RELATED [GRO:0007161]
 xref: PO_GIT:560
 xref: PO_GIT:573
 is_a: PO:0001051 ! vascular leaf initiation stage
@@ -1862,8 +1860,8 @@ name: vascular leaf primordium formation stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which a vascular leaf primordium (PO:0000017) forms in the peripheral zone (PO:0000225) of the vegetative shoot apical meristem (PO:0020148)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The vascular leaf primordium (PO:0000017) develops from the vascular leaf anlagen (PO:0025431).
-synonym: "P1 stage" RELATED []
 synonym: "leaf stage P1" RELATED [GRO:0007164]
+synonym: "P1 stage" RELATED []
 xref: OBO-SF2_PO:561
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001003 ! vascular leaf anlagen formation stage
@@ -1873,8 +1871,8 @@ id: PO:0001020
 name: hood-shaped primordium stage
 namespace: plant_structure_development_stage
 def: "Stage of leaf development when a hood-shaped primordium is formed, partially enclosing P1 and SAM, as in Poaceae." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
-synonym: "P2 stage" RELATED []
 synonym: "leaf stage P2" RELATED [GRO:0007163]
+synonym: "P2 stage" RELATED []
 xref: PO_GIT:564
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -1883,8 +1881,8 @@ id: PO:0001021
 name: formation of ligule primordium stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) when conical P3 leaf completely encloses SAM, and the ligule (PO:0020105) primordium is visible." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
-synonym: "P3 stage" RELATED []
 synonym: "leaf stage P3" RELATED [GRO:0007166]
+synonym: "P3 stage" RELATED []
 xref: PO_GIT:563
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -1893,8 +1891,8 @@ id: PO:0001023
 name: rapid elongation of vascular leaf lamina stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) during which a rapid elongation of the leaf lamina (PO:0020039) occurs." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
-synonym: "P4 stage" RELATED []
 synonym: "leaf stage P4" RELATED [GRO:0007162]
+synonym: "P4 stage" RELATED []
 xref: PO_GIT:565
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -1904,8 +1902,8 @@ name: rapid elongation of leaf sheath stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) during which a rapid elongation of the leaf sheath (PO:0020104) occurs." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: Occurs in the Poaceae.
-synonym: "P5 stage" RELATED []
 synonym: "leaf stage P5" RELATED [GRO:0007165]
+synonym: "P5 stage" RELATED []
 xref: PO_GIT:566
 is_a: PO:0001052 ! vascular leaf expansion stage
 
@@ -2072,8 +2070,8 @@ name: leaf development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007040
 def: "A phyllome development stage (PO:0025579) during which the development of vascular leaves (PO:0009025) and non-vascular leaves (PO:0025075) occurs." [POC:Brian_Atkinson, POC:curators, TAIR:Tanya_Berardini]
-synonym: "leaf development in Arabidopsis" RELATED []
 synonym: "leaf development" RELATED [GRO:0007138]
+synonym: "leaf development in Arabidopsis" RELATED []
 xref: PO_GIT:555
 is_a: PO:0025579 ! phyllome development stage
 
@@ -2228,9 +2226,9 @@ subset: Arabidopsis
 subset: Maize
 subset: Poaceae
 subset: Rice
-synonym: "mature (stage) in Arabidopsis" RELATED []
-synonym: "embryo stage EM9" RELATED [GRO:0007176]
 synonym: "embryo stage EM10" RELATED [GRO:0007177]
+synonym: "embryo stage EM9" RELATED [GRO:0007176]
+synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 
@@ -2253,8 +2251,8 @@ subset: Angiosperm
 subset: Maize
 subset: Poaceae
 subset: Rice
-synonym: "SAM and radicle formation stage" RELATED []
 synonym: "embryo stage EM5" RELATED [GRO:0007169]
+synonym: "SAM and radicle formation stage" RELATED []
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: preceded_by PO:0004507 ! plant embryo bilateral stage
@@ -2288,10 +2286,10 @@ name: plant zygote stage
 namespace: plant_structure_development_stage
 def: "A sporophyte development stage (PO:0007134) that occurs during the interval between fertilization and the first cell division of the plant zygote (PO:0000423)." [POC:curators]
 comment: Precedes the sporophyte vegetative stage (PO:0007134). Refers to the GO biological process term fertilization (GO:0009566).
+synonym: "embryo stage EM1" RELATED [GRO:0007168]
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
-synonym: "embryo stage EM1" RELATED [GRO:0007168]
 xref: PO_GIT:399
 is_a: PO:0028002 ! sporophyte development stage
 
@@ -2331,8 +2329,8 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "eight-celled stage in Arabidopsis" RELATED []
-synonym: "two-celled stage in Arabidopsis" RELATED []
 synonym: "embryo stage EM2" RELATED [GRO:0007171]
+synonym: "two-celled stage in Arabidopsis" RELATED []
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 
@@ -2348,11 +2346,11 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "dermatogen stage in Arabidopsis" RELATED []
+synonym: "embryo stage EM3" RELATED [GRO:0007170]
+synonym: "embryo stage EM4" RELATED [GRO:0007173]
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
-synonym: "embryo stage EM3" RELATED [GRO:0007170]
-synonym: "embryo stage EM4" RELATED [GRO:0007173]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: preceded_by PO:0001180 ! plant proembryo stage
@@ -3484,10 +3482,11 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004708
 name: scutellar node
 namespace: plant_anatomy
-def: "A stem node that is the part of an embryo axis directly above the radicle where the scutellum is attached." [ISBN:0471244554]
+def: "A stem node (PO:0020141) that is part of a plant embryo axis (PO:0019018) where the scutellum (PO:0020110) is attached." [ISBN:0471244554, PO:cooperl]
 comment: Found in grasses where no hypocotyl is present. The scutellar node may represent a reduction of the hypocotyl and cotyledonary node.
 synonym: "nodo escutelar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0020141 ! stem node
 relationship: part_of PO:0019018 ! plant embryo axis
 
@@ -6165,11 +6164,12 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006325
-name: inflorescence node
+name: inflorescence axis node
 namespace: plant_anatomy
-def: "A shoot node that is part of an inflorescence axis and where a spikelet, flower, floret or inflorescence branch is attached." [GR:Pankaj_Jaiswal]
+def: "A shoot axis node (PO:0005004) that is part of an inflorescence axis (PO:0020122)." [GR:Pankaj_Jaiswal, PO:Cooperl]
 synonym: "nodo de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0020122 ! inflorescence axis
 
@@ -7504,6 +7504,7 @@ id: PO:0007038
 name: whole plant fruit ripening complete stage
 namespace: plant_structure_development_stage
 def: "The stage at which fruit ripening is complete." [GR:Anuradha_Pujar, ISBN:3826331524]
+synonym: "09-mature grain stage" RELATED [GRO:0007045]
 synonym: "10-ripening in barley" RELATED [GRO:0007114]
 synonym: "10-ripening in oat" RELATED [GRO:0007114]
 synonym: "10-ripening in Triticeae" RELATED [GRO:0007114]
@@ -7512,7 +7513,6 @@ synonym: "10.01-kernel medium hard" RELATED [GRO:0007115]
 synonym: "10.02-kernel hard" RELATED [GRO:0007116]
 synonym: "8.09 Final ripening in soybean" RELATED [SOY:0000089]
 synonym: "9.02 dry kernel in maize" RELATED [GRO:0007037]
-synonym: "09-mature grain stage" RELATED [GRO:0007045]
 synonym: "9.2 dry kernel in maize" RELATED [MaizeGDB:67381]
 synonym: "BBCH principal growth stage 89" RELATED [ISBN:3826331524]
 synonym: "dry kernel in maize" RELATED [MaizeGDB:67381]
@@ -8635,8 +8635,8 @@ synonym: "maximum number of tillers detectable in" RELATED []
 synonym: "maximum number of tillers visible" RELATED []
 synonym: "maximum number of tillers visible in rice" RELATED []
 synonym: "nine or more axillary shoots detectable" RELATED []
-synonym: "Zadok scale-29" RELATED [GRO:0007079]
 synonym: "vegetative lag phase" RELATED [GRO:0007146]
+synonym: "Zadok scale-29" RELATED [GRO:0007079]
 is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
 [Term]
@@ -9552,8 +9552,8 @@ id: PO:0007632
 name: seed maturation stage
 namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequently, a desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
-synonym: "seed maturation in Arabidopsis" RELATED []
 synonym: "embryo stage EM10" RELATED [GRO:0007177]
+synonym: "seed maturation in Arabidopsis" RELATED []
 xref: PO_GIT:568
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0004506 ! developing seed stage
@@ -10975,7 +10975,7 @@ id: PO:0009047
 name: stem
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is the primary axis of a plant." [POC:curators]
-comment: Often bears leaves and buds. It is usually above ground, more or less negatively geotropic, and exogenous in origin.
+comment: A stem often bears leaves and buds. It is usually above ground, and is more or less negatively geotropic.
 subset: reference
 subset: TraitNet
 synonym: "bole" NARROW [FNA:a5ba9e16-e0af-4430-a3a0-7aeb052fbffd]
@@ -10983,6 +10983,7 @@ synonym: "ca&#241a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cane" NARROW []
 synonym: "caudex" NARROW [FNA:cea24c10-d5ff-435f-aa40-db77dcbd27f0]
 synonym: "caudices" NARROW Plural [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
+synonym: "core" NARROW []
 synonym: "culm" EXACT []
 synonym: "eje primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary axis" EXACT []
@@ -13399,9 +13400,10 @@ is_a: PO:0020138 ! leaf lamina vein
 id: PO:0020141
 name: stem node
 namespace: plant_anatomy
-def: "A shoot node that is part of a stem." [APweb:Glossary]
+def: "A shoot axis node (PO:0005004) that is part of a stem (PO:0009047)." [APweb:Glossary, PO:cooperl]
 synonym: "nodo del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0009047 ! stem
 
@@ -13850,7 +13852,7 @@ creation_date: 2010-04-28T11:04:34Z
 id: PO:0025024
 name: branch node
 namespace: plant_anatomy
-def: "A shoot node (PO:0005004) that is part of a branch (PO:0025073)." [POC:curators]
+def: "A shoot axis node (PO:0005004) that is part of a branch (PO:0025073)." [POC:curators]
 synonym: "nodo ramificado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:145
@@ -17977,9 +17979,10 @@ creation_date: 2011-05-09T01:26:21Z
 id: PO:0025321
 name: cotyledonary node
 namespace: plant_anatomy
-def: "A stem node from which one or more cotyledons grow." [POC:Ramona_Walls]
+def: "A stem node (PO:0020141) from which cotyledons (PO:0020030) may develop." [PO:cooperl, POC:Ramona_Walls]
 synonym: "nodo del cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0020141 ! stem node
 created_by: rwalls
 creation_date: 2011-05-09T01:27:53Z
@@ -21414,7 +21417,6 @@ name: vascular leaf primordium polarity determination stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which the vascular leaf primordium (PO:0004725) develops an adaxial side (PO:0004726) and an abaxial side (PO:0004725)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
 comment: The vascular leaf primordium adaxial side (PO:0004726) is the side proximal to the axis of the vegetative shoot apical meristem (PO:0020148), while abaxial side (PO:0004725) is the distal side.
-
 xref: PO_GIT:569
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001019 ! vascular leaf primordium formation stage
