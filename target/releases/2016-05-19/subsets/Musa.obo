@@ -1,0 +1,602 @@
+format-version: 1.2
+subsetdef: Angiosperm "Term for angiosperms"
+subsetdef: Arabidopsis "Term used for Arabidopsis"
+subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
+subsetdef: Citrus "Term used for citrus"
+subsetdef: CL "plant cells"
+subsetdef: Gymnosperms "Term used for gymnosperms"
+subsetdef: Maize "Term used for maize"
+subsetdef: Musa "Terms used for banana"
+subsetdef: Poaceae "Term used for grasses"
+subsetdef: Potato "Term used for potato"
+subsetdef: Pteridophytes "Term used for ferns and allies"
+subsetdef: reference "reference plant structure term"
+subsetdef: Rice "Term used for rice"
+subsetdef: Tomato "Term used for tomato"
+subsetdef: TraitNet "Plant Functional Traits"
+synonymtypedef: Japanese "Japanese synonym" EXACT
+synonymtypedef: Plural "Plural"
+synonymtypedef: Spanish "Spanish synonym"
+ontology: po/subsets/Musa
+
+[Term]
+id: PO:0000057
+name: inflorescence bud
+namespace: plant_anatomy
+def: "A bud that develops into an inflorescence." [POC:curators]
+subset: Musa
+synonym: "male bud" NARROW [CO_125:0000049]
+synonym: "yema de inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花序芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:124
+xref: PO_GIT:259
+
+[Term]
+id: PO:0006339
+name: juvenile vascular leaf
+namespace: plant_anatomy
+def: "A vascular leaf that is distinct from adult leaves, being characterized by particular anatomical traits namely, wax and trichome distribution, presence or absence of epidermal cell types, cell wall shape and biochemistry." [GR:Pankaj_Jaiswal, MaizeGDB:lv]
+comment: Many species have juvenile leaves at the base of the stem, adult leaves at the apex, and transition leaves in between. In maize, juvenile leaves are at the tip of the stalk (stem), which differentiates first, with adult leaves at the base, while other grasses may have other arrangements. The first juvenile leaves in Poaceae are the embryonic leaves found in the grass kernel (caryopsis).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
+synonym: "hoja juvenil (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "維管束系幼葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:371
+is_a: PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0006342
+name: infructescence
+namespace: plant_anatomy
+def: "A reproductive shoot system (PO:0025082) that develops from an inflorescence (PO:0009049) and has as parts all of the shoot axes (PO:0025029) distal to the most distal foliage leaf (PO:0009025) of a shoot axis and all of the fruits (PO:0009001) borne by those axes." [POC:Laurel_Cooper, POC:Ramona_Walls]
+subset: Angiosperm
+subset: Musa
+synonym: "banana bunch" NARROW [CO_125:0000014]
+synonym: "fruit bunch" RELATED []
+synonym: "infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "果序 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:260
+xref: PO_GIT:261
+xref: PO_GIT:71
+
+[Term]
+id: PO:0006343
+name: axillary shoot system
+namespace: plant_anatomy
+def: "A shoot-borne shoot system (PO:0004545) that develops from an axillary bud (PO:0004709)." [POC:curators]
+subset: Musa
+synonym: "axillary branch" RELATED []
+synonym: "Musa sucker" NARROW [CO_125:0000042]
+synonym: "sistema axilar del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "腋苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:262
+xref: PO_GIT:518
+
+[Term]
+id: PO:0007016
+name: whole plant flowering stage
+namespace: plant_structure_development_stage
+def: "A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open." [POC:curators]
+comment: This term is to be used for a stage of development of a whole plant. For the stages of development of an individual flower, see flower development stage (PO:0007615).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
+synonym: "07-anthesis in barley" RELATED [GRO:0007101]
+synonym: "07-anthesis in oat" RELATED [GRO:0007101]
+synonym: "07-anthesis in wheat" RELATED [GRO:0007101]
+synonym: "09-flowering in sorghum" RELATED [GRO:0007153]
+synonym: "4 flowering in Solanaceae" RELATED [SGN:0000034]
+synonym: "5 flowering in maize" RELATED [MaizeGDB:13811]
+synonym: "5.01-anthesis in maize " RELATED [GRO:0007021]
+synonym: "5.02-silking in maize" RELATED [GRO:0007022]
+synonym: "5.1 anthesis in maize" RELATED [MaizeGDB:67361]
+synonym: "5.2 silking in maize" RELATED [MaizeGDB:67362]
+synonym: "6 Flowering in soybean" RELATED [SOY:0000006]
+synonym: "6.1-flowering stage in rice" RELATED [GRO:0007151]
+synonym: "anthesis in maize" RELATED [MaizeGDB:67361]
+synonym: "anthesis stage" RELATED [GRO:0007151]
+synonym: "BBCH principal growth stage 6" RELATED [ISBN:3826331524]
+synonym: "flowering in maize" RELATED [MaizeGDB:13811]
+synonym: "pollen shed in maize" RELATED [MaizeGDB:67361]
+synonym: "R1 in maize" RELATED [MaizeGDB:67362]
+synonym: "rice growth stage-6.1" RELATED [GRO:0007151]
+synonym: "silk emergence in maize" RELATED [MaizeGDB:67362]
+synonym: "sorghum growth stage 8" RELATED [GRO:0007153]
+synonym: "VT in maize" RELATED [MaizeGDB:67361]
+xref: OBO-SF2_PO:499
+
+[Term]
+id: PO:0007024
+name: FL.04 end of flowering stage
+namespace: plant_structure_development_stage
+def: "The stage at which flowering is complete." [GR:Anuradha_Pujar]
+comment: This stage refers to the whole plant.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
+synonym: "6.09 End of flowering in soybean" RELATED [SOY:0000076]
+synonym: "7.03-anthesis completed in barley" RELATED [GRO:0007104]
+synonym: "7.03-anthesis completed in oat" RELATED [GRO:0007104]
+synonym: "7.03-anthesis completed in wheat" RELATED [GRO:0007104]
+synonym: "anthesis completed" RELATED []
+synonym: "FL.04 end of flowering in Solanaceae" RELATED [SGN:0000039]
+synonym: "flowering complete" RELATED []
+synonym: "fruit set visible" RELATED []
+synonym: "late reproductive" RELATED []
+synonym: "Zadok scale-69, Haun scale-11.6" RELATED [GRO:0007104]
+is_a: PO:0007016 ! whole plant flowering stage
+
+[Term]
+id: PO:0007616
+name: flowering stage
+namespace: plant_structure_development_stage
+alt_id: PO:0007617
+def: "A flower development stage (PO:0007615) that begins when pollen (PO:0025281) is released by anther dehiscence (GO:0009901) and/or the stigma (PO:0009073) is receptive and ends with the process of pollination (GO:0009856) and/or floral organ senescence (GO:0080187)." [PMID:2152125, POC:curators, POC:Laurel_Cooper]
+comment: In most species, flowering stage (anthesis) is when the flower is open and ends with pollination.  During this stage, the process of anther dehiscence (GO:0009901) usually occurs, defined as the dehiscence of an anther to release the pollen grains contained within it. This term applies to an individual flower (PO:000904).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Poaceae
+subset: Potato
+subset: Rice
+subset: Tomato
+synonym: "anthesis stage" NARROW []
+synonym: "post anthesis stage" NARROW []
+synonym: "stage 13 flower in Arabidopsis " RELATED [PMID:2152125]
+synonym: "stage 14 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 15 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 16 flower in Arabidopsis" RELATED [PMID:2152125]
+synonym: "stage 17 flower in Arabidopsis" RELATED [PMID:2152125]
+xref: PO_GIT:551
+
+[Term]
+id: PO:0009005
+name: root
+namespace: plant_anatomy
+alt_id: PO:0003006
+def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately, and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
+comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the ground, and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually found underground, although there are many exceptions, such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
+subset: Angiosperm
+subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Potato
+subset: reference
+subset: Rice
+subset: Tomato
+subset: TraitNet
+synonym: "aerial root" NARROW []
+synonym: "climbing root" NARROW [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
+synonym: "ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "radices" EXACT Plural [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
+synonym: "radix" EXACT [FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd]
+synonym: "根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:578
+
+[Term]
+id: PO:0009025
+name: vascular leaf
+namespace: plant_anatomy
+def: "A leaf (PO:0025034) in a vascular plant." [POC:curators]
+comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud. Occurs in the sporophytic phase of a plant life cycle.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Potato
+subset: Pteridophytes
+subset: reference
+subset: Rice
+subset: Tomato
+subset: TraitNet
+synonym: "ascidia" NARROW [FNA:06544712-db97-4208-b188-c4b756a53c72]
+synonym: "ascidium" NARROW [FNA:a97f1513-7684-49d4-92f5-934d1c8b3e1c]
+synonym: "crozier" RELATED [FNA:87e7efa9-89d7-4249-be74-bc22a0466a05]
+synonym: "fiddlehead" NARROW [FNA:d894ba18-4523-484c-abab-26d1cac75bc4]
+synonym: "foliage leaf" EXACT []
+synonym: "frond" NARROW []
+synonym: "hoja vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "leaf, vascular" EXACT []
+synonym: "macrophyll" RELATED [FNA:c1142d9b-c42a-45e1-93ac-9cbe9575321e]
+synonym: "megaphyll" RELATED [FNA:c26c826a-30d6-494e-a2f1-05540465c9fc]
+synonym: "needle-like leaf" NARROW []
+synonym: "pitcher" NARROW [FNA:30d8bef3-ad1a-44ed-a995-24c3e342aefd]
+synonym: "pitcher blade" NARROW [FNA:d3928bf3-1d8a-4fe5-a728-95c13c3a0f90]
+synonym: "pitcher-blade" NARROW [FNA:30c47c20-f459-4518-8657-feed7eb92fe4]
+synonym: "scale-like leaf" NARROW []
+synonym: "sterile frond" NARROW [FNA:a4dc40f4-92f9-4ba5-b616-a84564f63fed]
+synonym: "trophophyll" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
+synonym: "vascular leaves" EXACT Plural [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
+synonym: "維管束のある葉, または維管束植物の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:137
+
+[Term]
+id: PO:0009053
+name: peduncle
+namespace: plant_anatomy
+def: "A shoot axis that extends from the last foliage leaf on a stem or branch until the next distal node." [ISBN:9781842464229, POC:curators]
+comment: In plants with single flowers, the peduncle ends with a flower. In plants with inflorescences, the peduncle is the basal end of the primary inflorescence axis, and it ends where the inflorescence begins to branch. The peduncle marks the axial transition from vegetative to reproductive growth. In branching inflorescences, the second order inflorescence axis from the point at which it leaves the main axis up to the point at which it branches again may be called the second order peduncle. Higher order peduncles are also possible.
+subset: Angiosperm
+subset: Musa
+subset: reference
+synonym: "inflorescence stem " RELATED []
+synonym: "ped&#250nculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花梗（総梗） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:79
+
+[Term]
+id: PO:0025010
+name: petiole margin
+namespace: plant_anatomy
+def: "The margin of a flattened petiole." [POC:curators]
+comment: Petiole margins may be found in flattened (laminar) petioles, but may also occur in laminar extensions of petioles that are rounded or c-shaped in cross section.
+subset: Musa
+synonym: "margen del pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉柄縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: CO_125:0000006
+xref: CO_125:0000016
+relationship: part_of PO:0025129 ! petiole lamina
+created_by: rwalls
+creation_date: 2010-03-25T10:04:37Z
+
+[Term]
+id: PO:0025129
+name: petiole lamina
+namespace: plant_anatomy
+def: "A lamina (PO:0025060) that is part of a petiole (PO:0020038)." [POC:curators]
+comment: The entire petiole may be laminar, or the petiole may be more or less rounded in cross section with laminar extensions.
+subset: Musa
+synonym: "l&#225mina (ala) del pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "petiole wing" NARROW [CO_125:0000005]
+synonym: "葉柄葉身、葉片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:428
+relationship: part_of PO:0009025 ! vascular leaf
+created_by: rwalls
+creation_date: 2010-11-15T10:28:38Z
+
+[Term]
+id: PO:0025130
+name: cigar leaf
+namespace: plant_anatomy
+def: "A leaf near the apex of a stem that is still rolled into a cylinder." [POC:curators]
+comment: Describes the phenotype of a vascular leaf during a leaf development phase in Musa and other monocots.
+subset: Musa
+synonym: "hoja en cigarro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉巻状葉  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: CO_125:0000008
+is_a: PO:0009025 ! vascular leaf
+created_by: rwalls
+creation_date: 2010-11-15T11:29:28Z
+
+[Term]
+id: PO:0025133
+name: petiole canal
+namespace: plant_anatomy
+def: "A canal that is part of a petiole." [POC:curators]
+comment: May occur on the surface or be internal.
+subset: Musa
+synonym: "canal de pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉柄の溝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+relationship: part_of PO:0009025 ! vascular leaf
+created_by: rwalls
+creation_date: 2010-11-15T11:54:00Z
+
+[Term]
+id: PO:0025134
+name: inflorescence branch crown
+namespace: plant_anatomy
+def: "A shoot system that forms the basal part of an inflorescence to which the pedicels are attached and in which the internodes do not elongate, giving the appearance of a ridge of raised tissue." [POC:curators]
+subset: Musa
+synonym: "banana crown" NARROW []
+synonym: "corona de la ramificaci&#243n de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Musa crown" NARROW [CO_125:0000023]
+synonym: "花序枝 冠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:259
+created_by: rwalls
+creation_date: 2010-11-15T12:54:56Z
+
+[Term]
+id: PO:0025137
+name: fused tepal
+namespace: plant_anatomy
+def: "A tepal (PO:0009033) that is part of a fused collective tepal structure (PO:0025138) in which it is fused to at least one other tepal." [POC:curators, POC:Laurel_Cooper]
+subset: Musa
+synonym: "t&#233palo fusionado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "融合花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:147
+created_by: rwalls
+creation_date: 2010-11-15T01:12:18Z
+
+[Term]
+id: PO:0025143
+name: tepal apex
+namespace: plant_anatomy
+def: "A phyllome apex PO:0025139) that is part of a tepal (PO:0009033)." [POC:Ramona_Walls]
+comment: It is not precisely defined how far toward the base from the tip a tepal apex extends. For the apical most portion of a tepal, use the term tepal tip.
+subset: Musa
+synonym: "&#225pice del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "compound tepal lobe" NARROW [CO_125:0000031]
+synonym: "free tepal apex" NARROW [CO_125:0000025]
+synonym: "花被片頂 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+created_by: rwalls
+creation_date: 2010-11-15T01:42:08Z
+
+[Term]
+id: PO:0025152
+name: peduncle epidermis
+namespace: plant_anatomy
+def: "A portion of branch epidermis that is part of a peduncle." [POC:curators]
+subset: Musa
+synonym: "epidermis del ped&#250nculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "peduncle surface" RELATED [CO_125:0000036]
+synonym: "花梗表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+relationship: part_of PO:0009053 ! peduncle
+created_by: rwalls
+creation_date: 2010-11-15T02:08:11Z
+
+[Term]
+id: PO:0025153
+name: peduncle trichome
+namespace: plant_anatomy
+def: "A shoot axis trichome that is part of a peduncle epidermis." [POC:Ramona_Walls]
+subset: Musa
+synonym: "peduncle hair" EXACT [CO_125:0000051]
+synonym: "tricoma del ped&#250nculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花梗毛（毛茸、糸状体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+relationship: part_of PO:0025152 ! peduncle epidermis
+created_by: rwalls
+creation_date: 2010-11-15T02:14:05Z
+
+[Term]
+id: PO:0025154
+name: bract apex
+namespace: plant_anatomy
+def: "A phyllome apex (PO:0025139) that is part of a bract (PO:0009055)." [POC:Ramona_Walls]
+comment: It is not precisely defined how far toward the base from the tip a bract apex extends. For the apical most portion of a bract, use the term bract tip.
+subset: Musa
+synonym: "&#225pice de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "苞頂端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: CO_125:0000053
+created_by: rwalls
+creation_date: 2010-11-15T02:21:05Z
+
+[Term]
+id: PO:0025155
+name: bract base
+namespace: plant_anatomy
+def: "A phyllome base (PO:0025140) that is part of a bract (PO:0009055)." [POC:Ramona_Walls]
+subset: Musa
+synonym: "base de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "苞基部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: CO_125:0000056
+created_by: rwalls
+creation_date: 2010-11-15T02:22:45Z
+
+[Term]
+id: PO:0025159
+name: bract abaxial epidermis
+namespace: plant_anatomy
+def: "A portion of bract epidermis that covers the abaxial/lower surface of a bract." [POC:Ramona_Walls]
+subset: Musa
+synonym: "bract external face" EXACT [CO_125:0000054]
+synonym: "epidermis abaxial de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "苞背軸側 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+created_by: rwalls
+creation_date: 2010-11-15T02:35:37Z
+
+[Term]
+id: PO:0025160
+name: bract adaxial epidermis
+namespace: plant_anatomy
+def: "A portion of bract epidermis that covers the adaxial/upper surface of a bract." [POC:Ramona_Walls]
+subset: Musa
+synonym: "bract internal face" EXACT [CO_125:0000055]
+synonym: "epidermis adaxail de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "苞向軸側 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+created_by: rwalls
+creation_date: 2010-11-15T02:35:37Z
+
+[Term]
+id: PO:0025241
+name: second order infructescence
+namespace: plant_anatomy
+def: "A reproductive shoot system that is part of an infructescence and has as parts a second order infructescence axis and any infructescence axes and fruits that arise from it." [POC:Ramona_Walls]
+subset: Angiosperm
+subset: Musa
+synonym: "hand of bananas" NARROW []
+synonym: "hand of fruit" EXACT [CO_125:.0000037]
+synonym: "infructescencia de segundo orden (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "secondary infructescence" EXACT []
+synonym: "第二果序 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:261
+relationship: part_of PO:0006342 ! infructescence
+created_by: rwalls
+creation_date: 2010-12-30T03:31:29Z
+
+[Term]
+id: PO:0025245
+name: persistent sepal
+namespace: plant_anatomy
+def: "A phyllome that develops from a sepal and remains attached to a fruit at maturity." [POC:Ramona_Walls]
+comment: May be alive or dead at maturity.
+subset: Musa
+synonym: "flower relict" BROAD [CO_125:0000045]
+synonym: "s&#233palo persistente (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "宿存がく片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:261
+created_by: rwalls
+creation_date: 2010-12-30T03:47:08Z
+
+[Term]
+id: PO:0025246
+name: persistent tepal
+namespace: plant_anatomy
+def: "A phyllome (PO:0006001) that develops from a tepal (PO:0009033) and remains attached to a fruit (PO:0009001) at maturity." [POC:Ramona_Walls]
+comment: May be alive or dead at maturity.
+subset: Musa
+synonym: "flower relict" BROAD [CO_125:0000045]
+synonym: "t&#233palo persistente (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "宿存花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:261
+created_by: rwalls
+creation_date: 2010-12-30T03:47:08Z
+
+[Term]
+id: PO:0025247
+name: persistent stamen
+namespace: plant_anatomy
+def: "A phyllome that develops from a stamen and remains attached to a fruit at maturity." [POC:Ramona_Walls]
+comment: May be alive or dead at maturity.
+subset: Musa
+synonym: "estambre persistente (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "flower relict" BROAD [CO_125:0000045]
+synonym: "宿存雄蕊 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:261
+created_by: rwalls
+creation_date: 2010-12-30T03:47:08Z
+
+[Term]
+id: PO:0025248
+name: pseudostem
+namespace: plant_anatomy
+def: "A collective organ part structure that forms a cylindrical false stem composed concentric leaf sheaths." [POC:Ramona_Walls]
+comment: The peduncle later grows up through the psuedostem. Common in Musa species and some other monocots.
+subset: Musa
+synonym: "pseudotallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "偽茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: CO_125:0000046
+xref: PO_GIT:262
+created_by: rwalls
+creation_date: 2010-12-30T03:53:09Z
+
+[Term]
+id: PO:0025250
+name: leaf sheath abaxial epidermis
+namespace: plant_anatomy
+def: "A portion of leaf sheath epidermis that covers the abaxial/lower surface of a leaf sheath." [POC:Ramona_Walls]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: Musa
+synonym: "epidermis abaxial de la vaina de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "pseudostem underlayers" NARROW [CO_125:0000047]
+synonym: "葉鞘背軸側表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:262
+relationship: part_of PO:0009025 ! vascular leaf
+created_by: rwalls
+creation_date: 2010-12-30T04:02:50Z
+
+[Typedef]
+id: adjacent_to
+name: adjacent_to
+namespace: plant_ontology
+xref: RO:0002220
+
+[Typedef]
+id: derives_by_manipulation_from
+name: derives_by_manipulation_from
+namespace: plant_ontology
+def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
+comment: The derives_by_manipulation_from relation, is a special case of the RO relation derives_from.  Derives_from implies an instance level derivation that holds between two distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later.  Likewise, derives_by_manipulation_from joins two plant structures before and after some manipulation.  Specifically, derives_by_manipulation_from is used to describe the relation between an in vitro plant structure and the in vivo plant structure that is its temporal precursor.
+created_by: rwalls
+creation_date: 2010-07-01T02:45:12Z
+
+[Typedef]
+id: developmentally_preceded_by
+name: developmentally_preceded_by
+namespace: plant_ontology
+def: "X developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p." [RO:0002258]
+xref: RO:0002258
+is_obsolete: true
+created_by: Laurel_Cooper
+creation_date: 2013-06-27T13:16:56Z
+
+[Typedef]
+id: develops_from
+name: develops_from
+namespace: plant_ontology
+xref: RO:0002202
+is_transitive: true
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: plant_ontology
+xref: BFO:0000051
+is_transitive: true
+
+[Typedef]
+id: has_participant
+name: has_participant
+namespace: plant_ontology
+xref: BFO:0000057
+
+[Typedef]
+id: isolated_from_germplasm
+name: isolated from germplasm
+namespace: plant_ontology
+
+[Typedef]
+id: located_in
+name: located_in
+namespace: plant_ontology
+xref: RO:0001025
+created_by: rwalls
+creation_date: 2012-05-23T09:52:02Z
+
+[Typedef]
+id: part_of
+name: part_of
+namespace: plant_ontology
+xref: BFO:0000050
+is_transitive: true
+
+[Typedef]
+id: participates_in
+name: participates_in
+namespace: plant_ontology
+xref: BFO:0000056
+holds_over_chain: part_of participates_in
+inverse_of: has_participant ! has_participant
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+namespace: plant_ontology
+def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [POC:Laurel_Cooper]
+comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
+xref: BFO:0000062
+is_transitive: true
+created_by: Laurel_Cooper
+creation_date: 2013-07-09T14:29:15Z
+
+[Typedef]
+id: precedes
+name: precedes
+namespace: plant_ontology
+xref: BFO:0000063
+created_by: Laurel_Cooper
+creation_date: 2015-06-04T17:18:40Z
+

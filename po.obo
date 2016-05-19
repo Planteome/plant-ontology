@@ -1,8 +1,6 @@
 format-version: 1.2
-data-version: releases/2015-11-23
-date: 05:11:2015 15:37
-saved-by: meiera
-auto-generated-by: OBO-Edit 2.3.1
+data-version: releases/2016-05-19
+saved-by: cooperl
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
 subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
@@ -364,9 +362,10 @@ is_obsolete: true
 id: PO:0000025
 name: root tip
 namespace: plant_anatomy
-def: "The apical most portion of the root (PO:0009005) including the root apical meristem (PO:0020147) and root cap (PO:0020123)." [TAIR:Katica_Ilic]
+def: "A cardinal organ part (PO:0025001) which is the apical portion of the root (PO:0009005), and includes the root apical meristem (PO:0020147) and root cap (PO:0020123)." [POC:cooperl, TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:620
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009005 ! root
@@ -378,6 +377,7 @@ namespace: plant_anatomy
 def: "The portion of the primary root including the meristem and root cap." [TAIR:Katica_Ilic]
 synonym: "punta de la ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:620
 is_a: PO:0000025 ! root tip
 relationship: part_of PO:0020127 ! primary root
 
@@ -1711,6 +1711,7 @@ name: vascular leaf anlagen formation stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0007040) during which the vascular leaf founder cells (PO:0025592) of the shoot apical meristem (PO:0020148) form a vascular leaf anlagen (PO:0025431)." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The initial stage of leaf development when cells in the shoot apical meristem (PO:0020148) are already determined to form a vascular leaf primordium (PO:0000017), but the primordium is not yet morphologically distinguishable.
+synonym: "leaf stage P0" RELATED [GRO:0007161]
 synonym: "P0 stage" RELATED []
 synonym: "vascular leaf founder cell formation stage" EXACT []
 xref: PO_GIT:560
@@ -1729,6 +1730,7 @@ id: PO:0001005
 name: A archesporial cells visible stage
 namespace: plant_structure_development_stage
 def: "An initial stage during which archesporial cells arise in four corners of L2 layer. Change in shape of primordia to more oval." [TAIR:Katica_Ilic]
+synonym: "stamen stage ST1" RELATED [GRO:0007211]
 xref: PO_GIT:539
 is_a: PO:0001004 ! anther development stage
 
@@ -1767,6 +1769,15 @@ name: D pollen mother cell meiosis stage
 namespace: plant_structure_development_stage
 def: "Stage during which pollen mother cells undergo meiosis to form tetrads of microspores." [TAIR:Katica_Ilic]
 synonym: "pollen stage 4 in Arabidopsis" RELATED []
+synonym: "stamen stage ST4" RELATED [GRO:0007213]
+synonym: "stamen stage ST5" RELATED [GRO:0007212]
+synonym: "stamen stage ST5-1" RELATED [GRO:0007217]
+synonym: "stamen stage ST5-2" RELATED [GRO:0007218]
+synonym: "stamen stage ST5-3" RELATED [GRO:0007219]
+synonym: "stamen stage ST5-4" RELATED [GRO:0007220]
+synonym: "stamen stage ST5-5" RELATED [GRO:0007221]
+synonym: "stamen stage ST5-6" RELATED [GRO:0007222]
+synonym: "stamen stage ST5-7" RELATED [GRO:0007223]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -1794,6 +1805,7 @@ name: G early unicellular microspore stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the microspores round up and small vacuoles appear in their cytoplasm. The microspore walls thicken due to the formation of the exine." [TAIR:Katica_Ilic]
 synonym: "pollen stage 6 in Arabidopsis" RELATED []
+synonym: "stamen stage ST6-1" RELATED [GRO:0007226]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -1803,6 +1815,7 @@ name: H late unicellular microspore stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which a large vacuole is formed in each microspore causing a rapid increase in size and a displacement of the nucleus to one side." [TAIR:Katica_Ilic]
 synonym: "pollen stage 7 in Arabidopsis" RELATED []
+synonym: "stamen stage ST6-1" RELATED [GRO:0007226]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -1812,6 +1825,7 @@ name: I first mitotic division stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the asymmetric, first mitotic division of the microspores occurs producing a large vegetative cell and small generative cell, located near pollen wall." [TAIR:Katica_Ilic]
 synonym: "pollen stage 8 in Arabidopsis" RELATED []
+synonym: "stamen stage ST6-2" RELATED [GRO:0007228]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -1822,6 +1836,7 @@ namespace: plant_structure_development_stage
 def: "A pollen development stage (PO:0001007) during which the generative cell (PO:0020097) undergoes mitotic division to form two male gametes, the pollen sperm cells (PO:0025121)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: In taxa with mature two-celled pollen (PO:0025281), the second mitotic division takes place after pollen germination (GO:0009846), in the germinating pollen tube cell (PO:0025195). Note: This term overlaps with the GO BP term: generative cell mitosis (GO:0055047): The process in which the generative cell divides by mitosis to form two haploid cells. These will subsequently differentiate into sperm cells.
 synonym: "pollen stage 9 in Arabidopsis" RELATED []
+synonym: "stamen stage ST6-4" RELATED [GRO:0007229]
 synonym: "tricellular pollen development stage" EXACT []
 synonym: "tricellular pollen stage" EXACT []
 xref: PO_GIT:509
@@ -1834,6 +1849,7 @@ namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the pollen reaches mature stage and desiccates." [TAIR:Katica_Ilic]
 comment: Mature pollen stages is reached at three-celled pollen in some angiosperms (maize, rice and Arabidopsis), while in others, the maturepollen has two haploid cells (tobacco, snapdragon).
 synonym: "pollen stage 10 in Arabidopsis" RELATED []
+synonym: "stamen stage ST6-5" RELATED [GRO:0007230]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -1851,6 +1867,7 @@ id: PO:0001018
 name: B formation of primary parietal and sporogenous cells stage
 namespace: plant_structure_development_stage
 def: "Stage during which the primary parietal and primary sporogenous layers are derived from archesporial cells." [TAIR:Katica_Ilic]
+synonym: "stamen stage ST2" RELATED [GRO:0007214]
 xref: PO_GIT:539
 is_a: PO:0001004 ! anther development stage
 
@@ -1860,6 +1877,7 @@ name: vascular leaf primordium formation stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which a vascular leaf primordium (PO:0000017) forms in the peripheral zone (PO:0000225) of the vegetative shoot apical meristem (PO:0020148)." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: The vascular leaf primordium (PO:0000017) develops from the vascular leaf anlagen (PO:0025431).
+synonym: "leaf stage P1" RELATED [GRO:0007164]
 synonym: "P1 stage" RELATED []
 xref: OBO-SF2_PO:561
 is_a: PO:0001051 ! vascular leaf initiation stage
@@ -1870,6 +1888,7 @@ id: PO:0001020
 name: hood-shaped primordium stage
 namespace: plant_structure_development_stage
 def: "Stage of leaf development when a hood-shaped primordium is formed, partially enclosing P1 and SAM, as in Poaceae." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
+synonym: "leaf stage P2" RELATED [GRO:0007163]
 synonym: "P2 stage" RELATED []
 xref: PO_GIT:564
 is_a: PO:0001052 ! vascular leaf expansion stage
@@ -1879,6 +1898,7 @@ id: PO:0001021
 name: formation of ligule primordium stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) when conical P3 leaf completely encloses SAM, and the ligule (PO:0020105) primordium is visible." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
+synonym: "leaf stage P3" RELATED [GRO:0007166]
 synonym: "P3 stage" RELATED []
 xref: PO_GIT:563
 is_a: PO:0001052 ! vascular leaf expansion stage
@@ -1888,6 +1908,7 @@ id: PO:0001023
 name: rapid elongation of vascular leaf lamina stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) during which a rapid elongation of the leaf lamina (PO:0020039) occurs." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
+synonym: "leaf stage P4" RELATED [GRO:0007162]
 synonym: "P4 stage" RELATED []
 xref: PO_GIT:565
 is_a: PO:0001052 ! vascular leaf expansion stage
@@ -1898,6 +1919,7 @@ name: rapid elongation of leaf sheath stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf expansion stage (PO:0001052) during which a rapid elongation of the leaf sheath (PO:0020104) occurs." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
 comment: Occurs in the Poaceae.
+synonym: "leaf stage P5" RELATED [GRO:0007165]
 synonym: "P5 stage" RELATED []
 xref: PO_GIT:566
 is_a: PO:0001052 ! vascular leaf expansion stage
@@ -1938,6 +1960,7 @@ id: PO:0001029
 name: E tetrad stage
 namespace: plant_structure_development_stage
 def: "Stage immediately following meiosis, during which the tetrads of microspores are still hold together, enclosed by the callose wall." [TAIR:Katica_Ilic]
+synonym: "stamen stage ST5-8" RELATED [GRO:0007224]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -2037,6 +2060,7 @@ id: PO:0001047
 name: lemma development stage
 namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lemma (PO:0009037)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:Laura_Moore]
+synonym: "spikelet stage SP3" RELATED [GRO:0007204]
 xref: PO_GIT:548
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -2046,6 +2070,7 @@ id: PO:0001048
 name: palea development stage
 namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a palea (PO:0009038)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:Laura_Moore]
+synonym: "spikelet stage SP4" RELATED [GRO:0007207]
 xref: PO_GIT:548
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -2055,6 +2080,7 @@ id: PO:0001049
 name: lodicule development stage
 namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lodicule (PO:0009036)." [GR:Anuradha_Pujar, POC:Felipe_Zapata, POC:Laura_Moore]
+synonym: "spikelet stage SP5" RELATED [GRO:0007203]
 xref: PO_GIT:548
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -2065,6 +2091,7 @@ name: leaf development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007040
 def: "A phyllome development stage (PO:0025579) during which the development of vascular leaves (PO:0009025) and non-vascular leaves (PO:0025075) occurs." [POC:Brian_Atkinson, POC:curators, TAIR:Tanya_Berardini]
+synonym: "leaf development" RELATED [GRO:0007138]
 synonym: "leaf development in Arabidopsis" RELATED []
 xref: PO_GIT:555
 is_a: PO:0025579 ! phyllome development stage
@@ -2096,6 +2123,7 @@ name: vascular leaf post-expansion stage
 namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:0025570) that begins when the vascular leaf (PO:0009025) is fully expanded and ends with the onset of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson, TAIR:Katica_Ilic]
 synonym: "fully expanded leaf stage in Arabidopsis" RELATED []
+synonym: "leaf stage PX" RELATED [GRO:0007167]
 xref: PO_GIT:558
 is_a: PO:0025570 ! vascular leaf development stage
 relationship: preceded_by PO:0001052 ! vascular leaf expansion stage
@@ -2145,6 +2173,7 @@ id: PO:0001059
 name: J bicellular pollen stage
 namespace: plant_structure_development_stage
 def: "Stage of microgametophyte development during which the small generative cell moves inward, becoming completely surrounded by the cytoplasm of the vegetative cell." [TAIR:Katica_Ilic]
+synonym: "stamen stage ST6-3" RELATED [GRO:0007227]
 xref: PO_GIT:509
 is_a: PO:0001007 ! pollen development stage
 
@@ -2219,6 +2248,8 @@ subset: Arabidopsis
 subset: Maize
 subset: Poaceae
 subset: Rice
+synonym: "embryo stage EM10" RELATED [GRO:0007177]
+synonym: "embryo stage EM9" RELATED [GRO:0007176]
 synonym: "mature (stage) in Arabidopsis" RELATED []
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
@@ -2228,6 +2259,7 @@ id: PO:0001083
 name: inflorescence development stage
 namespace: plant_structure_development_stage
 def: "A reproductive shoot system development stage (PO:0025530) that has as primary participant a inflorescence (PO:0009049)." [POC:Laurel_Cooper]
+synonym: "panicle development" RELATED [GRO:0007157]
 xref: PO_GIT:517
 is_a: PO:0025530 ! reproductive shoot system development stage
 
@@ -2241,6 +2273,7 @@ subset: Angiosperm
 subset: Maize
 subset: Poaceae
 subset: Rice
+synonym: "embryo stage EM5" RELATED [GRO:0007169]
 synonym: "SAM and radicle formation stage" RELATED []
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
@@ -2257,6 +2290,7 @@ subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
 subset: Rice
+synonym: "embryo stage EM6" RELATED [GRO:0007172]
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
 relationship: precedes PO:0001081 ! mature plant embryo stage
@@ -2274,6 +2308,7 @@ name: plant zygote stage
 namespace: plant_structure_development_stage
 def: "A sporophyte development stage (PO:0007134) that occurs during the interval between fertilization and the first cell division of the plant zygote (PO:0000423)." [POC:curators]
 comment: Precedes the sporophyte vegetative stage (PO:0007134). Refers to the GO biological process term fertilization (GO:0009566).
+synonym: "embryo stage EM1" RELATED [GRO:0007168]
 synonym: "one cell stage" RELATED []
 synonym: "zygote in Arabidopsis" RELATED []
 synonym: "zygote stage" BROAD []
@@ -2316,6 +2351,7 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "eight-celled stage in Arabidopsis" RELATED []
+synonym: "embryo stage EM2" RELATED [GRO:0007171]
 synonym: "two-celled stage in Arabidopsis" RELATED []
 xref: PO_GIT:400
 is_a: PO:0007631 ! plant embryo development stage
@@ -2332,6 +2368,8 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 synonym: "dermatogen stage in Arabidopsis" RELATED []
+synonym: "embryo stage EM3" RELATED [GRO:0007170]
+synonym: "embryo stage EM4" RELATED [GRO:0007173]
 synonym: "globular stage in Arabidopsis" RELATED []
 synonym: "late globular stage in Arabidopsis" RELATED []
 synonym: "mid-globular stage in Arabidopsis" RELATED []
@@ -2795,6 +2833,7 @@ id: PO:0004501
 name: gynoecium differentiation and expansion stage
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development defined by differentiation and expansion of carpels." [TAIR:Katica_Ilic]
+synonym: "ovule stage OV1" RELATED [GRO:0007181]
 is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
@@ -3278,7 +3317,7 @@ is_a: PO:0025029 ! shoot axis
 id: PO:0004543
 name: shoot axis tuber
 namespace: plant_anatomy
-def: "A tuber (PO:0025522) that develops from a branch (PO:0025073)." [POC:curators]
+def: "A shoot axis (PO:0025029) that develops from a branch (PO:0025073) and is radially enlarged for storage." [PO:cooperl, POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 subset: reference
@@ -3289,6 +3328,7 @@ synonym: "tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tuber branch" EXACT []
 synonym: "シュート軸塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:127
+is_a: PO:0025029 ! shoot axis
 is_a: PO:0025522 ! tuber
 relationship: develops_from PO:0025073 ! branch
 
@@ -3331,13 +3371,14 @@ is_a: PO:0004545 ! shoot-borne shoot system
 
 [Term]
 id: PO:0004547
-name: subterranean tuber
+name: subterranean shoot axis tuber
 namespace: plant_anatomy
-def: "A shoot axis tuber (PO:0004543) that develops below ground." [POC:curators]
+def: "A shoot axis tuber (PO:0004543) that develops below ground." [PO:cooperl, POC:curators]
 comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
 subset: Potato
 synonym: "tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:615
 is_a: PO:0004543 ! shoot axis tuber
 
 [Term]
@@ -3463,10 +3504,11 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004708
 name: scutellar node
 namespace: plant_anatomy
-def: "A stem node that is the part of an embryo axis directly above the radicle where the scutellum is attached." [ISBN:0471244554]
+def: "A stem node (PO:0020141) that is part of a plant embryo axis (PO:0019018) where the scutellum (PO:0020110) is attached." [ISBN:0471244554, PO:cooperl]
 comment: Found in grasses where no hypocotyl is present. The scutellar node may represent a reduction of the hypocotyl and cotyledonary node.
 synonym: "nodo escutelar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0020141 ! stem node
 is_a: PO:0025099 ! embryo plant structure
 relationship: part_of PO:0019018 ! plant embryo axis
@@ -3792,18 +3834,18 @@ consider: PO:0025272
 id: PO:0005010
 name: anther septum
 namespace: plant_anatomy
-def: "A septum that is present in an anther dehiscence zone." [GR:Chih-Wei_Tung, GR:Pankaj_Jaiswal]
+def: "A septum (PO:0000030) that is part of an anther dehiscence zone (PO:0005011)." [GR:Chih-Wei_Tung, GR:Pankaj_Jaiswal, PO:Cooperl]
 synonym: "anther dissepiment" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
 synonym: "septo de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯隔壁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000030 ! septum
-relationship: part_of PO:0009061 ! androecium
+relationship: part_of PO:0005011 ! anther dehiscence zone
 
 [Term]
 id: PO:0005011
 name: anther dehiscence zone
 namespace: plant_anatomy
-def: "A dehiscence zone that is part of an anther." [POC:curators]
+def: "A dehiscence zone (PO:0025092) that is part of an anther (PO:0009066)." [POC:curators]
 comment: Extends along the entire length of the anther and is observed as an indentation between the locules of each theca. Upon anther maturation, cell separation within the dehiscence zone allows the anther wall to break open and pollen to be released.
 synonym: "zona de dehiscencia de la antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "開葯帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5007,13 +5049,14 @@ relationship: part_of PO:0009037 ! lemma
 
 [Term]
 id: PO:0006033
-name: paleal apiculus
+name: palea apiculus
 namespace: plant_anatomy
-def: "A short, abrupt, flexible point present at the apex of the palea." [GR:Pankaj_Jaiswal]
+def: "A cardinal organ part (PO:0025001) which is a short, abrupt, flexible point at the apex of the palea (PO:0009038)." [GR:Pankaj_Jaiswal, PO:cooperl]
 subset: reference
 synonym: "ap&#237culo de la palea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "apiculus" RELATED []
 synonym: "内頴頂端 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:627
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009038 ! palea
@@ -6149,11 +6192,12 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006325
-name: inflorescence node
+name: inflorescence axis node
 namespace: plant_anatomy
-def: "A shoot node that is part of an inflorescence axis and where a spikelet, flower, floret or inflorescence branch is attached." [GR:Pankaj_Jaiswal]
+def: "A shoot axis node (PO:0005004) that is part of an inflorescence axis (PO:0020122)." [GR:Pankaj_Jaiswal, PO:Cooperl]
 synonym: "nodo de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0020122 ! inflorescence axis
 
@@ -7350,6 +7394,7 @@ def: "A whole plant fruit formation stage (PO:0007042) that spans the interval w
 comment: This terms is best used for plant with more or less synchronous fruit development and can only be used of the final size of the fruit is known. This stage is to be used for the development stage of a whole plant (PO:0000003). For an individual fruit, use fruit size 30 to 50% stage (PO:0025506).
 synonym: "7.01-blister stage in maize" RELATED [GRO:0007030]
 synonym: "7.03 Pod 50% of final length in soybean" RELATED [SOY:0000081]
+synonym: "7.2 milk stage/embryo 2" RELATED [MaizeGDB:67373]
 synonym: "8.01-kernel watery ripe in barley" RELATED [GRO:0007106]
 synonym: "8.01-kernel watery ripe in oat" RELATED [GRO:0007106]
 synonym: "8.01-kernel watery ripe in wheat" RELATED [GRO:0007106]
@@ -7407,7 +7452,9 @@ name: whole plant fruit formation stage up to 10%
 namespace: plant_structure_development_stage
 def: "A whole plant fruit formation stage (PO:0007042) that begins when the first fruit (PO:0009001) on a whole plant (PO:0000003) that has no other fruits as part enters a fruit initiation stage (PO:0025503) and ends when the average size of fruits (PO:0009001) on a whole plant (PO:0000003) has reached 10% of final size." [ISBN:3826331524, MaizeGDB:ms, POC:curators]
 comment: This terms is best used for plant with more or less synchronous fruit development and can only be used of the final size of the fruit is known. This stage is to be used for the development stage of a whole plant (PO:0000003). For an individual fruit, use fruit size up to 10% stage (PO:0025504).
+synonym: "7 linear grain-filling" RELATED [MaizeGDB:64632]
 synonym: "7.01 Pod 10% of final length in soybean" RELATED [SOY:0000079]
+synonym: "7.1 blister stage" RELATED [MaizeGDB:67372]
 synonym: "E-L 27" RELATED []
 synonym: "FF.00 fruit size 10% in Solanaceae" RELATED [SGN:0000041]
 synonym: "fruit setting" NARROW []
@@ -7495,6 +7542,7 @@ id: PO:0007038
 name: whole plant fruit ripening complete stage
 namespace: plant_structure_development_stage
 def: "The stage at which fruit ripening is complete." [GR:Anuradha_Pujar, ISBN:3826331524]
+synonym: "09-mature grain stage" RELATED [GRO:0007045]
 synonym: "10-ripening in barley" RELATED [GRO:0007114]
 synonym: "10-ripening in oat" RELATED [GRO:0007114]
 synonym: "10-ripening in Triticeae" RELATED [GRO:0007114]
@@ -7838,6 +7886,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which six nodes or six internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.06 6 nodes/internodes visible in soybean" RELATED [SOY:0000055]
+synonym: "3.2 late whorl stage" RELATED [MaizeGDB:67357]
 synonym: "4.07-sixth node detectable in barley" RELATED [GRO:0007087]
 synonym: "4.07-sixth node detectable in oat" RELATED [GRO:0007087]
 synonym: "4.07-sixth node detectable in wheat" RELATED [GRO:0007087]
@@ -7936,6 +7985,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which nine nodes or nine internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.09 9 nodes/internodes visible in soybean" RELATED [SOY:0000058]
+synonym: "3.3 mid-vegetative" RELATED [MaizeGDB:67359]
 synonym: "BBCH growth stage 39" RELATED [ISBN:3826331524]
 is_a: PO:0007089 ! stem elongation stage
 
@@ -7973,6 +8023,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which eight nodes or eight internodes are visible." [GR:Anuradha_Pujar]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.08 8 nodes/internodes visible in soybean" RELATED [SOY:0000057]
+synonym: "3.3 mid-vegetative" RELATED [MaizeGDB:67359]
 synonym: "BBCH growth stage 38" RELATED [ISBN:3826331524]
 is_a: PO:0007089 ! stem elongation stage
 
@@ -8040,6 +8091,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which fifteen nodes or fifteen internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.15 15 nodes/internodes visible in soybean" RELATED [SOY:0000064]
+synonym: "3.4 late vegetative" RELATED [MaizeGDB:67360]
 is_a: PO:0007089 ! stem elongation stage
 
 [Term]
@@ -8189,6 +8241,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which ten nodes or ten internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.10 10 nodes/internodes visible in soybean" RELATED [SOY:0000059]
+synonym: "3.4 late vegetative" RELATED [MaizeGDB:67360]
 is_a: PO:0007089 ! stem elongation stage
 
 [Term]
@@ -8216,6 +8269,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which five nodes or five internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.05 5 nodes/internodes visible in soybean" RELATED [SOY:0000054]
+synonym: "3.2 late whorl stage" RELATED [MaizeGDB:67357]
 synonym: "4.06-fifth node detectable in barley" RELATED [GRO:0007086]
 synonym: "4.06-fifth node detectable in oat" RELATED [GRO:0007086]
 synonym: "4.06-fifth node detectable in wheat" RELATED [GRO:0007086]
@@ -8293,6 +8347,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which thirteen nodes or thirteen internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.13 13 nodes/internodes visible in soybean" RELATED [SOY:0000062]
+synonym: "3.4 late vegetative" RELATED [MaizeGDB:67360]
 is_a: PO:0007089 ! stem elongation stage
 
 [Term]
@@ -8302,6 +8357,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which one node or one internode is visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.01 one node visible in soybean" RELATED [SOY:0000050]
+synonym: "3.1 ear initiation/mid-whorl stage" RELATED [MaizeGDB:67356]
 synonym: "4.02-first node detectable in barley" RELATED [GRO:0007082]
 synonym: "4.02-first node detectable in oat" RELATED [GRO:0007082]
 synonym: "4.02-first node detectable in wheat" RELATED [GRO:0007082]
@@ -8316,6 +8372,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which four nodes or four internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.04 4 nodes/internodes visible in soybean" RELATED [SOY:0000053]
+synonym: "3.2 late whorl stage" RELATED [MaizeGDB:67357]
 synonym: "4.05-fourth node detectable in barley" RELATED [GRO:0007085]
 synonym: "4.05-fourth node detectable in oat" RELATED [GRO:0007085]
 synonym: "4.05-fourth node detectable in wheat" RELATED [GRO:0007085]
@@ -8407,6 +8464,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which three nodes or three internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.03 3 nodes/internodes visible in soybean" RELATED [SOY:0000052]
+synonym: "3.1 ear initiation/mid-whorl stage" RELATED [MaizeGDB:67356]
 synonym: "4.04-third node detectable in barley" RELATED [GRO:0007084]
 synonym: "4.04-third node detectable in oat" RELATED [GRO:0007084]
 synonym: "4.04-third node detectable in wheat" RELATED [GRO:0007084]
@@ -8421,6 +8479,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which fourteen nodes or fourteen internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.14 14 nodes/internodes visible in soybean" RELATED [SOY:0000063]
+synonym: "3.4 late vegetative" RELATED [MaizeGDB:67360]
 is_a: PO:0007089 ! stem elongation stage
 
 [Term]
@@ -8585,6 +8644,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which seven nodes or seven internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.07 7 nodes/internodes visible in soybean" RELATED [SOY:0000056]
+synonym: "3.3 mid-vegetative" RELATED [MaizeGDB:67359]
 synonym: "BBCH growth stage 37" RELATED [ISBN:3826331524]
 is_a: PO:0007089 ! stem elongation stage
 
@@ -8625,6 +8685,7 @@ synonym: "maximum number of tillers detectable in" RELATED []
 synonym: "maximum number of tillers visible" RELATED []
 synonym: "maximum number of tillers visible in rice" RELATED []
 synonym: "nine or more axillary shoots detectable" RELATED []
+synonym: "vegetative lag phase" RELATED [GRO:0007146]
 synonym: "Zadok scale-29" RELATED [GRO:0007079]
 is_a: PO:0007073 ! 2 formation of axillary shoot stage
 
@@ -8635,6 +8696,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which twelve nodes or twelve internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.12 12 nodes/internodes visible in soybean" RELATED [SOY:0000061]
+synonym: "3.4 late vegetative" RELATED [MaizeGDB:67360]
 is_a: PO:0007089 ! stem elongation stage
 
 [Term]
@@ -8671,6 +8733,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which eleven nodes or eleven internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.11 11 nodes/internodes visible in soybean" RELATED [SOY:0000060]
+synonym: "3.4 late vegetative" RELATED [MaizeGDB:67360]
 is_a: PO:0007089 ! stem elongation stage
 
 [Term]
@@ -8684,6 +8747,7 @@ synonym: "03-four leaf stage in sorghum" RELATED [GRO:0007143]
 synonym: "1-4 leaf stage in rice" RELATED [GRO:0007142]
 synonym: "1.03-three to four leaves in maize" RELATED [GRO:0007010]
 synonym: "1.04 3rd trifoliolate leaf unfolded in soybean" RELATED [SOY:0000018]
+synonym: "1.3 3-4 leaves" RELATED [MaizeGDB:25331]
 synonym: "2 tassel initiation/early whorl stage in maize" RELATED [MaizeGDB:67306]
 synonym: "2.05-four leaves unfolded in Triticeae" RELATED [GRO:0007063]
 synonym: "4 leaves unfolded" RELATED []
@@ -8730,6 +8794,7 @@ namespace: plant_structure_development_stage
 def: "The stage at which two nodes or two internodes are visible." [GR:Pankaj_Jaiswal]
 comment: A measure of vegetative growth, but leaf production is to be preferred.
 synonym: "3.02 2 nodes/internode visible in soybean" RELATED [SOY:0000051]
+synonym: "3.1 ear initiation/mid-whorl stage" RELATED [MaizeGDB:67356]
 synonym: "4.03-second node detectable in barley" RELATED [GRO:0007083]
 synonym: "4.03-second node detectable in oat" RELATED [GRO:0007083]
 synonym: "4.03-second node detectable in wheat" RELATED [GRO:0007083]
@@ -8938,6 +9003,7 @@ name: leaf production stage
 namespace: plant_structure_development_stage
 def: "The stage at which the leaves produced by SAM are visible above the ground in a seedling or mature plant." [Poc:curators]
 comment: This stage is recommended over rosette growth or stem elongation as it is most easily observed and least ambiguous.
+synonym: "1 seedling" RELATED [MaizeGDB:1863]
 synonym: "leaf production in Solanaceae" RELATED [SGN:0000012]
 is_a: PO:0007112 ! 1 main shoot growth stage
 
@@ -9301,6 +9367,7 @@ id: PO:0007605
 name: androecium development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has as a primary participant an androecium (PO:0009061)." [POC:curators, POC:Laura_Moore]
+synonym: "stamen development" RELATED [GRO:0007159]
 xref: PO_GIT:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -9310,6 +9377,7 @@ id: PO:0007606
 name: gynoecium development stage
 namespace: plant_structure_development_stage
 def: "A collective phyllome structure development stage (PO:0025578) that has a primary participant a gynoecium (PO:0009062)." [POC:curators, POC:Laura_Moore]
+synonym: "ovule development" RELATED [GRO:0007160]
 xref: PO_GIT:547
 is_a: PO:0025578 ! collective phyllome structure development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
@@ -9367,6 +9435,7 @@ name: stamen primordium visible stage
 namespace: plant_structure_development_stage
 def: "Stage of androecium development that begins when the stamens or petal-stamen primordia arise." [POC:curators]
 synonym: "stage 7 flower in Arabidopsis" RELATED []
+synonym: "stamen stage ST0" RELATED [GRO:0007209]
 is_a: PO:0007605 ! androecium development stage
 
 [Term]
@@ -9415,6 +9484,7 @@ id: PO:0007618
 name: carpel primordium visible stage
 namespace: plant_structure_development_stage
 def: "Stage of gynoecium development that begins when the carpel primordia arise." [POC:curators]
+synonym: "ovule stage OV0" RELATED [GRO:0007178]
 is_a: PO:0007606 ! gynoecium development stage
 
 [Term]
@@ -9431,6 +9501,7 @@ name: ovule primordium visible stage
 namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the ovule primordia arise." [POC:curators]
 synonym: "ovule stage 1-I in Arabidopsis" RELATED []
+synonym: "ovule stage OV1" RELATED [GRO:0007181]
 is_a: PO:0007619 ! ovule development stage
 
 [Term]
@@ -9450,6 +9521,7 @@ namespace: plant_structure_development_stage
 def: "Stage of ovule development that begins when the integument primordia are visible." [POC:curators]
 synonym: "ovule stage 2-II in Arabidopsis" RELATED []
 synonym: "ovule stage 2-III in Arabidopsis" RELATED []
+synonym: "ovule stage OV2" RELATED [GRO:0007180]
 is_a: PO:0004504 ! ovule differentiation and expansion stage
 
 [Term]
@@ -9458,6 +9530,7 @@ name: A megaspore mother cell enlarges stage
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell enlarges." [POC:curators]
 synonym: "ovule stage 2-I in Arabidopsis" RELATED []
+synonym: "ovule stage OV2" RELATED [GRO:0007180]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9466,6 +9539,7 @@ name: B meiosis of megaspore mother cell stage
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when the megaspore mother cell undergoes meiosis." [POC:curators]
 synonym: "ovule stage 2-IV in Arabidopsis" RELATED []
+synonym: "ovule stage OV4" RELATED [GRO:0007179]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9474,6 +9548,7 @@ name: C tetrad of megaspores stage
 namespace: plant_structure_development_stage
 def: "The product of meiosis of the megaspore mother cell." [POC:curators]
 synonym: "ovule stage 2-V in Arabidopsis" RELATED []
+synonym: "ovule stage OV4" RELATED [GRO:0007179]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9483,6 +9558,7 @@ namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when non-functional megaspores degenerate." [POC:curators]
 comment: In some plants more than one megaspore contributes to the megametophyte.
 synonym: "ovule stage 3-I in Arabidopsis" RELATED []
+synonym: "ovule stage OV6" RELATED [GRO:0007184]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9491,6 +9567,7 @@ name: E two nucleate megagametophyte stage
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are two nuclei." [POC:curators]
 synonym: "ovule stage 3-II in Arabidopsis" RELATED []
+synonym: "ovule stage OV7" RELATED [GRO:0007185]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9499,6 +9576,7 @@ name: F four nucleate megagametophyte stage
 namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are four nuclei." [POC:curators]
 synonym: "ovule stage 3-IV in Arabidopsis" RELATED []
+synonym: "ovule stage OV8" RELATED [GRO:0007188]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9508,6 +9586,7 @@ namespace: plant_structure_development_stage
 def: "The stage of megagametophyte development when there are eight nuclei." [POC:curators]
 comment: Some plants do not form an eight nucleate megametophyte.
 synonym: "ovule stage 3-V in Arabidopsis" RELATED []
+synonym: "ovule stage OV9" RELATED [GRO:0007187]
 is_a: PO:0007621 ! megagametophyte development stage
 
 [Term]
@@ -9532,6 +9611,7 @@ id: PO:0007632
 name: seed maturation stage
 namespace: plant_structure_development_stage
 def: "Stage during which the seed storage products (storage proteins, lipids and starch) are being accumulated, either in the cotyledons or in the endosperm. Also, LEA proteins are accumulated and subsequently, a desiccation tolerant state is reached at the end of this stage." [TAIR:Katica_Ilic]
+synonym: "embryo stage EM10" RELATED [GRO:0007177]
 synonym: "seed maturation in Arabidopsis" RELATED []
 xref: PO_GIT:568
 is_a: PO:0001170 ! seed development stage
@@ -10019,10 +10099,11 @@ relationship: develops_from PO:0025483 ! lodicule anlagen
 id: PO:0008041
 name: stem internode elongation zone
 namespace: plant_anatomy
-def: "A shoot internode elongation zone that is part of a stem internode." [POC:curators]
+def: "A shoot axis internode elongation zone  (PO:0025100) that is part of a stem internode (PO:0009047)." [POC:cooperl, POC:curators]
 synonym: "zona de elongaci&#243n del internodo del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025100 ! shoot internode elongation zone
+xref: PO_GIT:197
+is_a: PO:0025100 ! shoot axis internode elongation zone
 relationship: part_of PO:0020142 ! stem internode
 
 [Term]
@@ -10785,7 +10866,7 @@ alt_id: PO:0006431
 alt_id: PO:0006432
 alt_id: PO:0006433
 alt_id: PO:0006434
-def: "A flower bract (PO:0009034) that is the lower of the two bracts (PO:0009055) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
+def: "The lower, usually larger, of the pair of flower bracts (PO:0009034) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
 comment: A lemma (PO:0009037) and palea (PO:0009038) enclose an individual spikelet floret (PO:0009082). The lemma is usually the larger of the two. Since it is not clear what the lemma and palea correspond to in conventional flowers, no assumptions of homology are made. If you are annotating to this structure for Zea species an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). Found in  Found in Poaceae, Cyperaceae and other Poales.
 subset: Maize
 subset: Poaceae
@@ -10823,7 +10904,7 @@ alt_id: PO:0006427
 alt_id: PO:0006428
 alt_id: PO:0006429
 alt_id: PO:0006430
-def: "A flower bract (PO:0009034) that is the upper/distal of the two bracts (PO:0009055) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
+def: "The upper (distal), usually smaller, of the pair of flower bracts (PO:0009034) enclosing a (PO:0009082) spikelet floret." [APweb:Glossary, POC:curators, POC:Laurel_Cooper]
 comment: A lemma (PO:0009037) and palea (PO:0009038) enclose an individual spikelet floret (PO:0009082). The palea is usually the smaller of the two. Since it is not clear what the lemma and palea correspond to in conventional flowers, no assumptions of homology are made. If you are annotating to this structure for Zea species an annotation can also be made to the more specific floret type, if known. Choose the most specific term possible from: ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). Found in  Found in Poaceae, Cyperaceae and other Poales.
 subset: reference
 synonym: "pale" BROAD [FNA:3d284a17-79c6-40b0-84c5-1cd337f43e55]
@@ -10963,7 +11044,7 @@ id: PO:0009047
 name: stem
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is the primary axis of a plant." [POC:curators]
-comment: Often bears leaves and buds. It is usually above ground, more or less negatively geotropic, and exogenous in origin.
+comment: A stem often bears leaves and buds. It is usually above ground, and is more or less negatively geotropic.
 subset: reference
 subset: TraitNet
 synonym: "bole" NARROW [FNA:a5ba9e16-e0af-4430-a3a0-7aeb052fbffd]
@@ -10971,6 +11052,7 @@ synonym: "ca&#241a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cane" NARROW []
 synonym: "caudex" NARROW [FNA:cea24c10-d5ff-435f-aa40-db77dcbd27f0]
 synonym: "caudices" NARROW Plural [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
+synonym: "core" NARROW []
 synonym: "culm" EXACT []
 synonym: "eje primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "primary axis" EXACT []
@@ -13215,7 +13297,7 @@ id: PO:0020127
 name: primary root
 namespace: plant_anatomy
 alt_id: PO:0020089
-def: "A root (PO:0009005) that develops directly from an seedling radicle (PO:0020127)." [ISBN:0122151704, POC:curators]
+def: "A root (PO:0009005) that develops directly from a seedling radicle (PO:0020127)." [ISBN:0122151704, POC:curators]
 comment: The first root of a plant.  In dicots and gymnosperms  it becomes the tap root, the central axis of a root system (PO:0025025).
 subset: TraitNet
 synonym: "ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13393,9 +13475,10 @@ is_a: PO:0020138 ! leaf lamina vein
 id: PO:0020141
 name: stem node
 namespace: plant_anatomy
-def: "A shoot node that is part of a stem." [APweb:Glossary]
+def: "A shoot axis node (PO:0005004) that is part of a stem (PO:0009047)." [APweb:Glossary, PO:cooperl]
 synonym: "nodo del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0005004 ! shoot axis node
 relationship: part_of PO:0009047 ! stem
 
@@ -13455,6 +13538,7 @@ synonym: "根端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:577
 is_a: PO:0006085 ! root meristem
 is_a: PO:0020144 ! apical meristem
+relationship: part_of PO:0009005 ! root
 
 [Term]
 id: PO:0020148
@@ -13507,6 +13591,7 @@ id: PO:0021004
 name: inflorescence initiation stage
 namespace: plant_structure_development_stage
 def: "Stage of inflorescence development marked by the formation of the inflorescence meristem on a vegetative branch." [POC:Felipe_Zapata]
+synonym: "panicle stage PA1" RELATED [GRO:0007189]
 synonym: "花序の開始期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0001083 ! inflorescence development stage
 
@@ -13844,7 +13929,7 @@ creation_date: 2010-04-28T11:04:34Z
 id: PO:0025024
 name: branch node
 namespace: plant_anatomy
-def: "A shoot node (PO:0005004) that is part of a branch (PO:0025073)." [POC:curators]
+def: "A shoot axis node (PO:0005004) that is part of a branch (PO:0025073)." [POC:curators]
 synonym: "nodo ramificado (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:145
@@ -14075,7 +14160,7 @@ synonym: "potato tuber flesh" NARROW []
 synonym: "地下塊茎 貯蔵柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:103
 is_a: PO:0025036 ! tuber storage parenchyma
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-25T04:38:30Z
 
@@ -14136,7 +14221,7 @@ synonym: "yema vegetativa axilar de tub&#233rculo subterr&#225neo (Spanish)" EXA
 synonym: "地下塊茎腋栄養芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:102
 is_a: PO:0025040 ! shoot axis tuber axillary vegetative bud
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-26T08:18:09Z
 
@@ -14175,7 +14260,7 @@ synonym: "mature potato tuber skin" NARROW []
 synonym: "peridermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎 周皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025043 ! shoot axis tuber periderm
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-27T09:31:12Z
 
@@ -14214,7 +14299,7 @@ synonym: "epidermis de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [P
 synonym: "young potato tuber skin" NARROW []
 synonym: "地下塊茎 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025046 ! shoot axis tuber epidermis
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-05-27T09:55:39Z
 
@@ -14521,7 +14606,7 @@ def: "A tuber axillary bud meristem that is part of a subterranean tuber." [POC:
 synonym: "meristema axilar de yema de tub&#233rculo subterr&#225neo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "地下塊茎腋芽 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025068 ! shoot axis tuber axillary bud meristem
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-06-15T01:03:59Z
 
@@ -14668,7 +14753,7 @@ namespace: plant_anatomy
 def: "A shoot axis internode (PO:0005005) that is part of a branch (PO:0025073)." [POC:curators, POC:Laurel_Cooper]
 synonym: "internodo de una ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OBO-SF2_PO:146
+xref: PO_GIT:146
 is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0025073 ! branch
 created_by: rwalls
@@ -14685,7 +14770,7 @@ synonym: "epiblasto (epiblastema) axilar de tub&#233rculo subterr&#225neo (Spani
 synonym: "tuber sprout" EXACT []
 synonym: "地下塊茎腋 分げつ (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025003 ! tuber axillary shoot
-relationship: part_of PO:0004547 ! subterranean tuber
+relationship: part_of PO:0004547 ! subterranean shoot axis tuber
 created_by: rwalls
 creation_date: 2010-09-16T03:18:48Z
 
@@ -14896,11 +14981,12 @@ creation_date: 2010-11-05T01:36:24Z
 
 [Term]
 id: PO:0025100
-name: shoot internode elongation zone
+name: shoot axis internode elongation zone
 namespace: plant_anatomy
-def: "A plant axis elongation zone that is part of a shoot axis internode." [POC:Ramona_Walls]
+def: "A plant axis elongation zone (PO:0025180) that is part of a shoot axis internode (PO:0005005)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "zona de elongaci&#243n del internodo de epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025180 ! plant axis elongation zone
 relationship: part_of PO:0005005 ! shoot axis internode
 created_by: rwalls
@@ -14910,10 +14996,11 @@ creation_date: 2011-01-03T11:39:43Z
 id: PO:0025101
 name: branch internode elongation zone
 namespace: plant_anatomy
-def: "A shoot axis internode elongation zone that is part of a branch internode." [POC:Ramona_Walls]
+def: "A shoot axis internode elongation zone (PO:0025100) that is part of a branch internode (PO:0025080)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "zona de elongaci&#243n de la ramificaci&#243n del internodo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝節間伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025100 ! shoot internode elongation zone
+xref: PO_GIT:197
+is_a: PO:0025100 ! shoot axis internode elongation zone
 relationship: part_of PO:0025080 ! branch internode
 created_by: rwalls
 creation_date: 2011-01-03T11:43:48Z
@@ -16055,9 +16142,10 @@ creation_date: 2010-11-22T09:58:06Z
 id: PO:0025180
 name: plant axis elongation zone
 namespace: plant_anatomy
-def: "A cardinal organ part that is part of a plant axis that is located directly behind an apical meristem, in which the cells are undergoing longitudinal expansion." [POC:curators]
+def: "A cardinal organ part (PO:0025001) which is part of a plant axis (PO:0025004), is located proximal to an apical meristem (PO:0020144), and in which plant cells (PO:0009002) are undergoing longitudinal expansion." [POC:cooperl, POC:curators]
 synonym: "zona de elongaci&#243n del eje de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物軸伸長帯 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025004 ! plant axis
 created_by: rwalls
@@ -16067,10 +16155,11 @@ creation_date: 2010-12-03T08:50:10Z
 id: PO:0025181
 name: root elongation zone
 namespace: plant_anatomy
-def: "A plant axis elongation zone that is part of a root tip and located directly behind the root apical meristem." [POC:curators]
+def: "A plant axis elongation zone (PO:0025180) that is part of a root tip (PO:0000025) and located proximal to a root apical meristem (PO:0020147)." [POC:cooperl, POC:curators]
 comment: The root elongation zone is only a few millimeters in length and is the only portion of the root in which cell elongation generally occurs. Root hairs are not yet produced in this region. Primary root tissues begin to differentiate in the root elongation zone. This term replaces elongation zone (PO:0020125).
 synonym: "zona de elongaci&#243n de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根伸長帯（層）  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025180 ! plant axis elongation zone
 relationship: part_of PO:0000025 ! root tip
 created_by: rwalls
@@ -16377,6 +16466,7 @@ synonym: "internodo del rizoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gan
 synonym: "根茎節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO-SF2_PO:146
 xref: PO_GIT:146
+xref: PO_GIT:28
 is_a: PO:0005005 ! shoot axis internode
 relationship: part_of PO:0004542 ! rhizome
 created_by: rwalls
@@ -17077,9 +17167,10 @@ creation_date: 2011-01-05T12:05:43Z
 id: PO:0025257
 name: primary root elongation zone
 namespace: plant_anatomy
-def: "A root elongation zone that is part of a primary root tip." [POC:Ramona_Walls]
+def: "A root elongation zone (PO:0025181) that is part of a primary root tip (PO:0000026)." [POC:cooperl, POC:Ramona_Walls]
 synonym: "zona de elongaci&#243n de la ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根伸長帯（層） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:197
 is_a: PO:0025181 ! root elongation zone
 relationship: part_of PO:0000026 ! primary root tip
 created_by: rwalls
@@ -17990,9 +18081,10 @@ creation_date: 2011-05-09T01:26:21Z
 id: PO:0025321
 name: cotyledonary node
 namespace: plant_anatomy
-def: "A stem node from which one or more cotyledons grow." [POC:Ramona_Walls]
+def: "A stem node (PO:0020141) from which cotyledons (PO:0020030) may develop." [PO:cooperl, POC:Ramona_Walls]
 synonym: "nodo del cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
 is_a: PO:0020141 ! stem node
 created_by: rwalls
 creation_date: 2011-05-09T01:27:53Z
@@ -20189,7 +20281,7 @@ creation_date: 2012-03-22T03:42:34Z
 id: PO:0025476
 name: tuberous root tuber
 namespace: plant_anatomy
-def: "A tuber (PO:0004543) that develops from a tuberous root (PO:0025523) and is further radially enlarged." [POC:curators]
+def: "A root (PO:0009005) that develops from a tuberous root (PO:0025523) and is further radially enlarged for storage." [PO:cooperl, POC:curators]
 comment: Functions in storage. This term should be used for tubers derived from roots (PO:0009005), as found in Cassava or sweet potato (Ipomoea batatas), not for tubers derived from branches (PO:0025073), as found in potatoes and yams. Use the term shoot axis tuber (PO:0004543), aerial tuber (PO:0004548), or subterranean tuber (PO:0004547) for tubers derived from branches. A tuberous root tuber may be distinguished from a tuber that is derived from a branch by the presence of a root cap (PO:0020123) early in development, or the presence of lateral roots (PO:0020121) or their remnants. Sometimes tuber roots bear vegetative buds (PO:0000058) like a tuber derived from a branch. A tuberous root tuber usually develops from a shoot-borne root (PO:0000042) or a lateral root (PO:0020121).
 synonym: "ra&#237z tubercular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root tuber" EXACT []
@@ -20197,6 +20289,7 @@ synonym: "storage root" EXACT []
 synonym: "tuber root" RELATED []
 synonym: "塊茎根の塊茎(Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:47
+is_a: PO:0009005 ! root
 is_a: PO:0025522 ! tuber
 relationship: develops_from PO:0025523 ! tuberous root
 created_by: rwalls
@@ -21985,6 +22078,17 @@ created_by: meiera
 creation_date: 2015-09-23T15:41:20Z
 
 [Term]
+id: PO:0025616
+name: lemma apiculus
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) which is a short, abrupt, flexible point at the apex of the lemma (PO:0009037)." [PO:cooperl]
+xref: PO_GIT:627
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009037 ! lemma
+created_by: cooperl
+creation_date: 2016-03-16T14:41:36Z
+
+[Term]
 id: PO:0028001
 name: plant life cycle phase
 namespace: plant_structure_development_stage
@@ -23571,6 +23675,10 @@ is_transitive: true
 id: has_participant
 name: has_participant
 xref: BFO:0000057
+
+[Typedef]
+id: isolated_from_germplasm
+name: isolated from germplasm
 
 [Typedef]
 id: located_in

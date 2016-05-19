@@ -1,0 +1,3010 @@
+format-version: 1.2
+subsetdef: Angiosperm "Term for angiosperms"
+subsetdef: Arabidopsis "Term used for Arabidopsis"
+subsetdef: Bryophytes "Term used for mosses, liverworts, and/or hornworts"
+subsetdef: Citrus "Term used for citrus"
+subsetdef: CL "plant cells"
+subsetdef: Gymnosperms "Term used for gymnosperms"
+subsetdef: Maize "Term used for maize"
+subsetdef: Musa "Terms used for banana"
+subsetdef: Poaceae "Term used for grasses"
+subsetdef: Potato "Term used for potato"
+subsetdef: Pteridophytes "Term used for ferns and allies"
+subsetdef: reference "reference plant structure term"
+subsetdef: Rice "Term used for rice"
+subsetdef: Tomato "Term used for tomato"
+subsetdef: TraitNet "Plant Functional Traits"
+synonymtypedef: Japanese "Japanese synonym" EXACT
+synonymtypedef: Plural "Plural"
+synonymtypedef: Spanish "Spanish synonym"
+ontology: po/subsets/TraitNet
+
+[Term]
+id: PO:0000003
+name: whole plant
+namespace: plant_anatomy
+def: "A plant structure (PO:0005679) which is a whole organism." [POC:curators]
+comment: Examples include plant embryo (PO:0009009), megagametophyte (PO:0025279) and microgametophyte (PO:0025280).
+subset: reference
+subset: TraitNet
+synonym: "bush" NARROW []
+synonym: "clonal colony" RELATED []
+synonym: "colony" RELATED []
+synonym: "frutex" NARROW [FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba]
+synonym: "frutices" NARROW Plural [FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b]
+synonym: "gametophyte" NARROW []
+synonym: "genet" BROAD []
+synonym: "herb" NARROW []
+synonym: "liana" NARROW []
+synonym: "planta entera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "prothalli" NARROW Plural [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
+synonym: "prothallium" NARROW []
+synonym: "prothallus" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
+synonym: "ramet" BROAD []
+synonym: "seedling" NARROW []
+synonym: "shrub" NARROW []
+synonym: "sporophyte" NARROW []
+synonym: "suffrutex" NARROW [FNA:99508f62-7116-4e2b-90c0-19ff55ebd967]
+synonym: "suffrutices" NARROW Plural [FNA:ba1b1bd5-75bd-4195-b11c-3aba08da08c2]
+synonym: "tree" NARROW []
+synonym: "vine" NARROW []
+synonym: "woody clump" NARROW [FNA:c1ccca7d-2a98-4a9d-8603-c34b551935e0]
+synonym: "植物体全体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:538
+xref: PO_GIT:69
+is_a: PO:0009011 ! plant structure
+
+[Term]
+id: PO:0000031
+name: lenticel
+namespace: plant_anatomy
+def: "A portion of ground tissue composed of a loosely-packed mass of cork cells occurring especially in the young stem, bark or even leaf of a plant, visible on the surface as a raised, often powdery-appearing spot." [ISBN:0471245208]
+comment: Gas can be exchanged through the lenticel.
+subset: TraitNet
+synonym: "lenticela (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "皮目 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025059 ! portion of ground tissue
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0000034
+name: vascular system
+namespace: plant_anatomy
+def: "A maximal portion of vascular tissue (PO:0009015) in a whole plant (PO:0000003), collective plant structure (PO:0025497), multi-tissue plant structure (PO:0025496), or cardinal part of multi-tissue plant structure (PO:0025498)." [ISBN:0471245208, ISBN:0716710072, POC:curators]
+comment: A vascular system consist of the totality of the portions of vascular tissue in their specific arrangement in a plant structure. May include other portions of plant tissue or plant cells (PO:0009002) of other types, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
+subset: TraitNet
+synonym: "sistema vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "vasculature" EXACT [FNA:caf918bf-f4c4-423c-8008-87c96e5399a0]
+synonym: "維管束系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OB_SF2_PO:50
+is_a: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0009002 ! plant cell
+disjoint_from: PO:0009008 ! plant organ
+disjoint_from: PO:0025001 ! cardinal organ part
+disjoint_from: PO:0025007 ! collective plant organ structure
+relationship: part_of PO:0000003 ! whole plant
+relationship: participates_in PO:0028002 ! sporophyte development stage
+
+[Term]
+id: PO:0000042
+name: shoot-borne root
+namespace: plant_anatomy
+alt_id: PO:0003007
+alt_id: PO:0020129
+def: "A root (PO:0009005) that develops from shoot axis (PO:0025029) tissue." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper, TAIR:Katica_Ilic]
+subset: reference
+subset: TraitNet
+synonym: "adventitious root" BROAD []
+synonym: "aerial root" NARROW []
+synonym: "climbing root" BROAD [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
+synonym: "epiblasto (epiblastema) que se origina en la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "stilt root" NARROW []
+synonym: "シュート細胞由来の根  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:163
+is_a: PO:0009005 ! root
+
+[Term]
+id: PO:0000044
+name: prop root
+namespace: plant_anatomy
+def: "A shoot-borne nodal root (PO:0003005) formed at a stem node above the ground, and growing directly into the soil." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: This term is perhaps best defined functionally to prop the plant up.
+subset: Maize
+subset: reference
+subset: TraitNet
+synonym: "brace root" RELATED []
+synonym: "breathing root" BROAD []
+synonym: "ra&#237z de sost&#233n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "支柱根、支持根、支柱気根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:163
+is_a: PO:0003005 ! shoot-borne nodal root
+
+[Term]
+id: PO:0000055
+name: bud
+namespace: plant_anatomy
+def: "An undeveloped shoot system (PO:0009006)." [POC:curators]
+subset: TraitNet
+synonym: "adventitious bud" NARROW [FNA:0eed275a-5dae-414a-bf36-81a08e6c6ba9]
+synonym: "yema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:124
+is_a: PO:0009006 ! shoot system
+relationship: participates_in PO:0009012 ! plant structure development stage
+
+[Term]
+id: PO:0000056
+name: flower bud
+namespace: plant_anatomy
+def: "A bud that develops into a flower." [POC:curators]
+subset: TraitNet
+synonym: "floral bud" EXACT []
+synonym: "yema floral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:124
+is_a: PO:0025084 ! reproductive bud
+
+[Term]
+id: PO:0000071
+name: companion cell
+namespace: plant_anatomy
+def: "A parenchyma cell (PO:0000074) that is adjacent to a sieve tube element (PO:0000289) and arises from the same phloem mother cell (PO:0000400) as the sieve tube element." [PO_REF:00011]
+comment: Companion cells are connected to sieve tube elements through plasmodesmata and function in phloem loading of small molecules, including photosynthate (either sucrose or raffinose-family oligosaccharides). May participate in phloem sucrose loading (GO:0009915). Molecules can be loaded into the companion cells from surrounding cells through either symplastic (via plasmodesmata) or apoplastic (transmembrane) transport. Unlike sieve tube elements, companion cells retain their nuclei and other organelles at maturity. A sieve tube element may have one or more or no companion cells associated with it. This term should not be used for other types of parenchyma cells (PO:0000074) that do not arise from the same phloem mother cell as a sieve tube element. Companion cells are found in angiosperms, as compared to albuminous cells (PO:0025412), which are found in non-angiosperm vascular plants. Companion cells may be specialized as transfer companion cells (PO:0025458), ordinary companion cells (PO:0025459), or intermediary companion cells (PO:0025460). Multiple types of companion cells may be found in the same plant.
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula acompa&#241iante (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "minor vein companion cell" EXACT []
+synonym: "伴細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:442
+is_a: PO:0000074 ! parenchyma cell
+relationship: adjacent_to PO:0000289 ! sieve tube element
+relationship: part_of PO:0005417 ! phloem
+
+[Term]
+id: PO:0000074
+name: parenchyma cell
+namespace: plant_anatomy
+def: "A relatively unspecialized ground tissue cell with a nucleate protoplast." [ISBN:0471245208]
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula parenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025030 ! ground tissue cell
+relationship: part_of PO:0005421 ! parenchyma
+
+[Term]
+id: PO:0000075
+name: collenchyma cell
+namespace: plant_anatomy
+def: "An elongated plant cell with unevenly thickened non-lignified primary walls that is alive at maturity." [ISBN:0471245208]
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula colenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "厚角組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025030 ! ground tissue cell
+relationship: part_of PO:0005423 ! collenchyma
+
+[Term]
+id: PO:0000076
+name: chlorenchyma cell
+namespace: plant_anatomy
+def: "A parenchyma cell containing chloroplasts; a component of leaf mesophyll and other green parenchyma tissue." [ISBN:0471245208]
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula clorenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "同化組織、葉緑組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000074 ! parenchyma cell
+relationship: part_of PO:0005426 ! chlorenchyma
+
+[Term]
+id: PO:0000077
+name: sclerenchyma cell
+namespace: plant_anatomy
+def: "A ground tissue cell (PO:0025030) with a lignified secondary cell wall." [ISBN:0471245208]
+comment: May be dead at maturity. The secondary cell wall of a sclerenchyma cell is often thicker than other cell types in the same plant structure, but it is not always easy to distinguish from tracheary elements (PO:0000290) or sclerified parenchyma cells (PO:0000074). Compare with collenchyma cells (PO:0000075) that are always alive at maturity, have irregularly thickened primary cell walls, and do not have lignified secondary cell walls. Collenchyma cells provides flexibility while sclerenchyma cells provide hardness. Sclerenchyma cells include plant fiber cells (PO:0025407) and sclerid cells (PO:0025418).
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula esclerenquim&#225tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "厚膜組織 細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025030 ! ground tissue cell
+
+[Term]
+id: PO:0000081
+name: axial cell
+namespace: plant_anatomy
+def: "OBSOLETE. A vascular cell derived from the fusiform cambial initial and oriented with its longest diameter parallel with the main axis of stem or root." [ISBN:0471245208]
+comment: This term was made obsolete because it is not appropriate. It is replaced by sieve element, tracheary element, and fiber cell.
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula axial (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "軸細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:438
+is_obsolete: true
+consider: PO:0000290
+consider: PO:0025406
+consider: PO:0025407
+
+[Term]
+id: PO:0000223
+name: shoot axis cortex
+namespace: plant_anatomy
+def: "A portion of cortex (PO:0005708) that is part of a shoot axis (PO:0025029)." [ISBN:047124529, POC:curators, POC:Laurel_Cooper]
+comment: Can occur in a stem or branch.
+subset: TraitNet
+synonym: "branch cortex" NARROW []
+synonym: "cortex del eje del epiblasto (epiblastema) del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of shoot axis cortex tissue" EXACT []
+synonym: "シュート軸皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:115
+is_a: PO:0005708 ! cortex
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0000256
+name: root hair cell
+namespace: plant_anatomy
+def: "A root epidermal cell (PO:0025164) that develops from a trichoblast (PO:0000262) and has as part a root hair (GO:0035618)." [ISBN:0471245208]
+comment: Compare with non-hair root epidermal cell (PO:0000263). This term is for an entire epidermal cell that contains a root hair extension. To describe only the cell extension, see root hair (GO:0035618) or root hair tip (GO:0035619).
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula del pelo de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "根毛細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0004013 ! epidermal cell
+relationship: develops_from PO:0004013 ! epidermal cell
+relationship: part_of PO:0025025 ! root system
+
+[Term]
+id: PO:0000258
+name: root cortex
+namespace: plant_anatomy
+alt_id: PO:0003010
+def: "A portion of cortex (PO:0005708) that is part of a root (PO:0009005)." [ISBN:047125208, POC:curators]
+comment: In dicots and gymnosperms, the cortex consists of mainly parenchyma cells. In monocots sclerenchyma develops in addition to parenchyma.
+subset: TraitNet
+synonym: "cortex de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of root cortex tissue" EXACT []
+synonym: "根皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:115
+is_a: PO:0005708 ! cortex
+relationship: part_of PO:0009005 ! root
+
+[Term]
+id: PO:0000273
+name: xylem element
+namespace: plant_anatomy
+def: "OBSOLETE. A cell making up xylem tissue." [ISBN:0471245208]
+comment: This term was made obsolete because it was not appropriate. Replaced by tracheary element (PO:0000290) and xylem fiber cell (PO:0000274).
+subset: CL
+subset: TraitNet
+synonym: "elemento del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "木部要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:440
+is_obsolete: true
+consider: PO:0000274
+consider: PO:0000290
+
+[Term]
+id: PO:0000274
+name: xylem fiber cell
+namespace: plant_anatomy
+def: "A fiber cell (PO:0025407) that is part of a portion of xylem (PO:0005352) tissue." [ISBN:0471245208]
+comment: It may be difficult to distinguish xylem fiber cells, especially fiber tracheids (PO:0000355), from tracheary elements (PO:0000290). Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading to the cell lumen through the cell wall.
+subset: CL
+subset: TraitNet
+synonym: "fibra del xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "木部繊維細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:443
+is_a: PO:0000077 ! sclerenchyma cell
+relationship: part_of PO:0005352 ! xylem
+
+[Term]
+id: PO:0000282
+name: trichome
+namespace: plant_anatomy
+alt_id: PO:0004510
+def: "A unicellular or multicellular plant structure (PO:0009011) that forms a non-sclerified outgrowth from the epidermis (PO:0005679)." [PMID:19939948, POC:curators]
+comment: This class is the union of unicellular trichome (PO:0025537) and multicellular trichome (PO:0025162). A trichome can vary in length and shape and may be branched or unbranched.  It may be glandular or non-secretory.
+subset: TraitNet
+synonym: "barb trichome" BROAD [FNA:aa191087-e979-486f-ad87-0e050a83090f]
+synonym: "bristle" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
+synonym: "capilli" NARROW Plural [FNA:602c5ee8-6634-4093-bd2c-016dde8a350e]
+synonym: "capillus" NARROW [FNA:43d66471-4955-4bc2-a70c-c88e33877c42]
+synonym: "cilia" NARROW Plural [FNA:c358e298-5926-42d6-8d49-a918cdc72406]
+synonym: "cilium" NARROW [FNA:12abd29b-5eae-47a2-baae-4059581e7eaa]
+synonym: "glochid" NARROW [FNA:881fcb45-5dfd-4d06-8d6f-a111ba5e220a]
+synonym: "glochidia" NARROW Plural [FNA:899a83bf-39bb-4128-b472-b0e27dcf5b35]
+synonym: "glochidium" NARROW [FNA:99a6f711-b4da-4231-8dce-9ed171b87e9c]
+synonym: "hair" NARROW [FNA:9ef3a0eb-f8e4-4a7b-911e-92952fc19956]
+synonym: "lepides" NARROW Plural [FNA:e6a34ceb-a3e7-49f7-a4ac-cf0ea1552dc4]
+synonym: "lepis" NARROW [FNA:bb12cad4-db12-4e59-a9fc-1676f2558a0a]
+synonym: "non-secretory trichome" NARROW []
+synonym: "scale" NARROW [FNA:8c618dea-f3dd-434f-bb13-23273ea6c143]
+synonym: "seta" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
+synonym: "setae" RELATED [FNA:93b95b97-0f1a-4d26-9c86-ebede4157269]
+synonym: "squama" NARROW [FNA:6cb9e7af-32a7-413a-8f80-9e40d3ae462a]
+synonym: "squamae" NARROW Plural [FNA:cbb9ceb5-a404-4b5c-9c8f-4cf0ca6bade2]
+synonym: "squamella" NARROW [FNA:ead20a1b-057b-4008-9466-bdb8e283aa82]
+synonym: "squamellae" NARROW Plural [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
+synonym: "squamule" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
+synonym: "tricoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "毛茸、糸状体、毛 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:207
+is_a: PO:0009011 ! plant structure
+relationship: develops_from PO:0009002 ! plant cell
+relationship: part_of PO:0005679 ! epidermis
+
+[Term]
+id: PO:0000289
+name: sieve tube element
+namespace: plant_anatomy
+alt_id: PO:0000286
+def: "A sieve element (PO:0025406) that is part of a sieve tube (PO:0025416) and has as parts sieve areas aggregated into sieve plates (GO:0097218)." [ISBN:0471245208]
+comment: Sieve tube elements have sieve areas that are specialized into those with wide pores in sieve plates and those with narrow pores in lateral sieve areas. Sieve tube elements may have inclined end walls with compound or simple sieve plates. Typical of angiosperms. Differ from sieve cells (PO:0025415), which have less pronounced specialization of sieve areas and no sieve plates.
+subset: Angiosperm
+subset: CL
+subset: TraitNet
+synonym: "miembro del tubo criboso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "sieve tube member" EXACT []
+synonym: "sieve tube segment" EXACT []
+synonym: "sieve-tube element" EXACT []
+synonym: "師(篩）管要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:439
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0005417 ! phloem
+
+[Term]
+id: PO:0000290
+name: tracheary element
+namespace: plant_anatomy
+def: "A native plant cell (PO:0025606) that has a lignified cell wall with secondary thickening and bordered pits." [ISBN:0471245208, POC:Laurel_Cooper]
+comment: Tracheary elements are dead at maturity, are more or less elongated, and have pits of various types in the cell wall. Tracheary elements function in the conduction of water and dissolved substances such as mineral nutrients from the roots to the shoot system. Tracheary elements can be distinguished from fiber cells (PO:0025407) by the presence of bordered pits, although there are intermediate forms called fiber tracheids (PO:0000355).
+subset: CL
+subset: TraitNet
+synonym: "elemento de traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:440
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0005352 ! xylem
+
+[Term]
+id: PO:0000293
+name: guard cell
+namespace: plant_anatomy
+def: "One of a pair of cells flanking the stomatal pore." [ISBN:0471245208]
+comment: They cause the opening and closing of the pore by changes in turgor.
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula guardiana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "occlusive cell" EXACT [PMID:16845829]
+synonym: "孔辺細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0004013 ! epidermal cell
+relationship: develops_from PO:0004013 ! epidermal cell
+relationship: part_of PO:0002000 ! stomatal complex
+
+[Term]
+id: PO:0000301
+name: tracheid
+namespace: plant_anatomy
+def: "A tracheary element (PO:0000290) that has no perforations in its cell wall." [ISBN:0471245208]
+comment: May have any of the kinds of secondary wall thickenings found in tracheary elements. The area of contact between two tracheids has only bordered pits, whereas in vessel members (PO:0002003), it has openings in the cell wall called perforations, organized into perforation plates (term has been requested in GO).
+subset: CL
+subset: TraitNet
+synonym: "traqueida (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "仮導管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:440
+is_a: PO:0000290 ! tracheary element
+
+[Term]
+id: PO:0002000
+name: stomatal complex
+namespace: plant_anatomy
+def: "A portion of shoot epidermis that has as parts two guard cells and a stomatal pore. May also contain subsidiary cells." [ISBN:0471245208]
+subset: TraitNet
+synonym: "complejo estom&#225tico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "stoma" BROAD []
+synonym: "stomata" BROAD []
+synonym: "stomatal apparatus" EXACT [FNA:5def9af3-483f-41c5-93e3-fa66839b22f6]
+synonym: "stomate" EXACT [FNA:1d7d0bb6-be7e-43e4-8730-6e31b43915b4]
+synonym: "気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:231
+is_a: PO:0005679 ! epidermis
+relationship: part_of PO:0009006 ! shoot system
+
+[Term]
+id: PO:0002003
+name: xylem vessel member
+namespace: plant_anatomy
+def: "A tracheary element (PO:0000290) that is part of a xylem vessel (PO:0025417) and has as parts perforation plates." [ISBN:0471245208]
+comment: Commonly thick walled, with pointed ends and bordered pits that have lenticular to slit-like apertures. If both libriform fibers (PO:0004520) and fiber tracheids are present, the libriform fibers usually have thicker walls. Fiber tracheids have bordered pits with smaller pit cavities than the vessel members (PO:0002003) or tracheids (PO:0000301) of the same wood and a distinct pit cavity leading from the pit cavity to the cell lumen through the thick cell wall.
+subset: CL
+subset: TraitNet
+synonym: "miembro de vaso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "vessel element" EXACT []
+synonym: "vessel member" EXACT []
+synonym: "vessel segment" EXACT []
+synonym: "木質部道管状要素 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:440
+is_a: PO:0000290 ! tracheary element
+
+[Term]
+id: PO:0003005
+name: shoot-borne nodal root
+namespace: plant_anatomy
+alt_id: PO:0003008
+alt_id: PO:0003009
+def: "A shoot-borne root (PO:0000042) that forms at a shoot axis node (PO:0005004)." [http://www.botgard.ucla.edu/html/botanytextbooks/generalbotany/typesofroots/, POC:Laurel_Cooper]
+subset: reference
+subset: TraitNet
+synonym: "adventitious nodal root " BROAD []
+synonym: "nodal root" RELATED []
+synonym: "ra&#237z nodosa (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "節根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:163
+is_a: PO:0000042 ! shoot-borne root
+
+[Term]
+id: PO:0003023
+name: root nodule
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is an outgrowth of a root (PO:0009005) and is inhabited by nitrogen-fixing bacteria." [POC:Ramona_Walls]
+comment: Root nodules are a symbiosis between a plant (often, but not exclusively, of the Fabaceae) and bacteria of the genus Rhizobium, Bradyrhizobium, or Azorhizobium.
+subset: TraitNet
+synonym: "n&#243dulo de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "nodule" BROAD [FNA:b62e2f23-dffc-474a-a7bd-f919ea99b51c]
+synonym: "根粒 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:235
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009005 ! root
+
+[Term]
+id: PO:0003024
+name: stolon
+namespace: plant_anatomy
+def: "A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes." [APweb:Glossary, POC:curators]
+comment: The stolon develops from an axillary bud and produces adventitious roots at the nodes and a terminal aerial stem. That stem then sends out one or more stolons from its axillary buds and the process is reiterated. A unique part of this process is that the first internode of a stolon is very long and then the shoot becomes an erect rosette.
+subset: reference
+subset: TraitNet
+synonym: "estol&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "runner" RELATED []
+synonym: "ストロン、ほふく茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:388
+is_a: PO:0025073 ! branch
+
+[Term]
+id: PO:0004006
+name: mesophyll cell
+namespace: plant_anatomy
+def: "A chlorenchyma cell that is part of a mesophyll." [POC:curators, TAIR:Katica_Ilic]
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula del mes&#243filo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉肉細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000076 ! chlorenchyma cell
+relationship: part_of PO:0006070 ! mesophyll
+
+[Term]
+id: PO:0004013
+name: epidermal cell
+namespace: plant_anatomy
+def: "A native plant cell (PO:0025606) that is part of a portion of epidermis (PO:0005679)." [POC:curators, POC:Laurel_Cooper]
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula epid&#233rmica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "表皮細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:591
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0005679 ! epidermis
+
+[Term]
+id: PO:0004511
+name: seed trichome
+namespace: plant_anatomy
+def: "A trichome that develops from seed coat epidermis." [POC:curators]
+subset: TraitNet
+synonym: "pubescence" RELATED []
+synonym: "seed hair" EXACT []
+synonym: "tricoma de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "種子毛（毛茸、糸状体、毛状突起体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000282 ! trichome
+relationship: part_of PO:0009088 ! seed coat
+
+[Term]
+id: PO:0004512
+name: heartwood
+namespace: plant_anatomy
+def: "A portion of secondary xylem (PO:0005848) that lacks living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:curators]
+comment: Heartwood has ceased to function in storage and conduction, and the reserve materials have been removed or converted into heartwood substances. It is generally darker colored than sapwood (PO:0004513) and is found in the center of a shoot axis (PO:0025029) or root (PO:0009005), interior to the sapwood. Heartwood forms at the end of a cell death stage of secondary xylem (PO:0025466).
+subset: TraitNet
+synonym: "duramen (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "心材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0025004 ! plant axis
+
+[Term]
+id: PO:0004513
+name: sapwood
+namespace: plant_anatomy
+def: "A portion of secondary xylem (PO:0005848) that has as parts living secondary xylem parenchyma cells (PO:0004525)." [ISBN:0471245208, POC:curators]
+comment: Sapwood contains reserve materials and may function in the conduction of water and minerals (xylem sap (PO:0025539)). It is generally lighter colored than the heartwood (PO:0004512) and is located between the heartwood and the vascular cambium (PO:0005598) of a shoot axis (PO:0025029) or root (PO:0009005). Sapwood forms during a secondary xylem development stage (PO:0025427).
+subset: TraitNet
+synonym: "albura (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "液材、辺材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0025004 ! plant axis
+
+[Term]
+id: PO:0004514
+name: growth ring
+namespace: plant_anatomy
+def: "A portion of secondary xylem (PO:0005848) that has as parts a single layer of early wood (PO:0004515) and a single layer of late wood (PO:0004516) from the same growth season and is part of a shoot axis (PO:0025029) or root (PO:0009005)." [ISBN:0471245208, POC:curators]
+comment: Appears as a ring in a transverse section of plant axis (PO:0025004). May be an annual ring (one growth ring per year) or a false annual ring (more or less than one growth ring per year).
+subset: TraitNet
+synonym: "anillo de crecimiento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "annual ring" NARROW []
+synonym: "false annual ring" NARROW []
+synonym: "growth layer" EXACT []
+synonym: "年輪（＝annual ring) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005848 ! secondary xylem
+
+[Term]
+id: PO:0004515
+name: early wood
+namespace: plant_anatomy
+def: "A portion of secondary xylem (PO:0005848) that is a part of a growth ring (PO:0004514) formed during the early part of a growing season, has lower density than late wood (PO:0004516) of the same growth ring, and has as parts early wood tracheary elements (PO:0025461) with generally larger lumens than the late wood tracheary elements (PO:0025462) of the same growth ring." [ISBN:0471245208, POC:curators]
+comment: The transition from early wood to late wood may be gradual and is not always easy to distinguish.
+subset: TraitNet
+synonym: "earlywood" EXACT []
+synonym: "madera temprana (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "spring wood" RELATED []
+synonym: "早材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:451
+is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0004514 ! growth ring
+
+[Term]
+id: PO:0004516
+name: late wood
+namespace: plant_anatomy
+def: "A portion of secondary xylem (PO:0005848) that is a part of a growth ring (PO:0004514) formed during the later part of a growing season, has higher density than early wood (PO:0004515) of the same growth ring, and has as parts late wood tracheary elements (PO:0025462) with generally smaller lumens than the early wood tracheary elements (PO:0025461) of the same growth ring." [ISBN:0471245208, POC:curators]
+comment: The transition from early wood to late wood may be gradual and is not always easy to distinguish.
+subset: Citrus
+subset: TraitNet
+synonym: "latewood" EXACT []
+synonym: "madera tard&#237a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "summer wood" RELATED []
+synonym: "晩材 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:451
+is_a: PO:0005848 ! secondary xylem
+relationship: part_of PO:0004514 ! growth ring
+
+[Term]
+id: PO:0004518
+name: bark
+namespace: plant_anatomy
+def: "All tissues outside the vascular cambium or the xylem; in older trees may be divided into dead outer bark and living inner bark, which consists of secondary phloem." [POC:curators]
+subset: TraitNet
+synonym: "corteza (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of bark tissue" EXACT []
+synonym: "樹皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009007 ! portion of plant tissue
+relationship: develops_from PO:0005043 ! secondary phloem
+
+[Term]
+id: PO:0004519
+name: phloem fiber cell
+namespace: plant_anatomy
+def: "A fiber cell (PO:0025407) that is part of a portion of phloem (PO:0005417) tissue." [ISBN:0471245208]
+subset: CL
+subset: TraitNet
+synonym: "fibra del floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "phloem fiber" EXACT []
+synonym: "師部繊維 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:443
+is_a: PO:0000077 ! sclerenchyma cell
+relationship: part_of PO:0005417 ! phloem
+
+[Term]
+id: PO:0004525
+name: secondary xylem parenchyma cell
+namespace: plant_anatomy
+def: "A parenchyma cell (PO:0000074) that is part of a portion of secondary xylem parenchyma (PO:0004532)." [ISBN:0471245208]
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula parenquim&#225tica de la madera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "wood parenchyma cell" EXACT []
+synonym: "二次木部柔組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:456
+is_a: PO:0000074 ! parenchyma cell
+relationship: part_of PO:0005848 ! secondary xylem
+
+[Term]
+id: PO:0004542
+name: rhizome
+namespace: plant_anatomy
+def: "A swollen shoot axis (PO:0025029) that grows horizontally at or below the substrate surface and produces shoots above and roots or rhizoids below." [POC:curators]
+comment: In ferns and many monocots, a rhizome is a primary axis (stem), while in other species, it is a branch. Usually produces scale-like leaves.
+subset: reference
+subset: TraitNet
+synonym: "rizoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "rootstock" RELATED [FNA:7a04b02c-8ac5-410a-99cd-b68ba80e8f14]
+synonym: "根茎=root stock (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:142
+is_a: PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0004543
+name: shoot axis tuber
+namespace: plant_anatomy
+def: "A shoot axis (PO:0025029) that develops from a branch (PO:0025073) and is radially enlarged for storage." [PO:cooperl, POC:curators]
+comment: Functions in storage of photosynthate metabolites. This term should be used for tubers derived from branches, as found in Solanum spp. (e.g. potato) or Dioscorea spp. (e.g. yam) and other species. Use the term tuberous root tuber (PO:0025476) for tubers derived from roots, such as those found in Cassava, Ipomoea, or Hemerocallis.
+subset: Potato
+subset: reference
+subset: TraitNet
+synonym: "diaspore" BROAD []
+synonym: "shoot axis branch tuber" EXACT [POC:curators]
+synonym: "tub&#233rculo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "tuber branch" EXACT []
+synonym: "シュート軸塊茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:127
+is_a: PO:0025029 ! shoot axis
+relationship: develops_from PO:0025073 ! branch
+
+[Term]
+id: PO:0004544
+name: root-borne shoot system
+namespace: plant_anatomy
+def: "A shoot system that is initiated from a root." [POC:curators]
+subset: TraitNet
+synonym: "sistema de epiblasto (epiblastema) que nace en la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "sucker" BROAD []
+synonym: "sucker shoot" RELATED []
+synonym: "turion" BROAD [FNA:da7c2bd5-34b4-42aa-a036-7b5f71f66d36]
+synonym: "根由来苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009006 ! shoot system
+
+[Term]
+id: PO:0005003
+name: shoot axis trichome
+namespace: plant_anatomy
+def: "A trichome that is part of a shoot axis epidermis." [PMID:17217456, POC:curators]
+comment: Can occur on a stem or branch.
+subset: TraitNet
+synonym: "branch trichome" NARROW []
+synonym: "eje de tricoma del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "stem trichome" NARROW []
+synonym: "シュート軸毛（毛茸、糸状体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000282 ! trichome
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0005004
+name: shoot axis node
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) where a bud (PO:0000055) may form and develop into a branch (PO:0025073), leaf (PO:0025034), flower (PO:0004541), inflorescence (PO:0009049) or nodal root (PO:0003005)." [GR:Pankaj_Jaiswal, POC:curators, POC:Laurel_Cooper]
+subset: reference
+subset: TraitNet
+synonym: "nodo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "シュート 節 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:145
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0005005
+name: shoot axis internode
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) of a shoot axis (PO:0025029) that is between two shoot axis nodes (PO:0005004)." [POC:curators, POC:Laurel_Cooper]
+subset: Potato
+subset: reference
+subset: TraitNet
+synonym: "internodo del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "シュート節間 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:146
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0005020
+name: vascular bundle
+namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that is a unit strand of the vascular system (PO:0000034) and has as part xylem (PO:0005352) or phloem (PO:0005417)." [POC:curators]
+comment: May also contain portions of ground tissue (PO:0025059). The bundle sheath (PO:0006023) can also be part of a vascular bundle, if it is present.
+subset: Maize
+subset: TraitNet
+synonym: "haz vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "vein" EXACT []
+synonym: "維管束 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:431
+is_a: PO:0009015 ! portion of vascular tissue
+
+[Term]
+id: PO:0005040
+name: root pith
+namespace: plant_anatomy
+def: "A portion of pith (PO:0006109) that is part of a root stele (PO:0020124)." [ISBN:0080280307]
+subset: TraitNet
+synonym: "m&#233dula de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "根髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:114
+is_a: PO:0006109 ! pith
+relationship: part_of PO:0020124 ! root stele
+
+[Term]
+id: PO:0005041
+name: shoot axis pith
+namespace: plant_anatomy
+def: "A portion of pith (PO:0006109) that is part of a shoot axis (PO:0025029)." [ISBN:0080280307]
+comment: Can occur in a stem or branch.
+subset: TraitNet
+synonym: "branch pith" NARROW []
+synonym: "m&#233dula del eje del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "stem pith" NARROW []
+synonym: "シュート軸髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006109 ! pith
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0005043
+name: secondary phloem
+namespace: plant_anatomy
+def: "A portion of phloem (PO:0005417) tissue that develops from a vascular cambium (PO:0005598)." [ISBN:0471245208]
+comment: Secondary phloem develops as part of secondary growth (GO:0080117).
+subset: TraitNet
+synonym: "floema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of secondary phloem tissue" EXACT []
+synonym: "二次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF3_PO:433
+is_a: PO:0005417 ! phloem
+relationship: develops_from PO:0005598 ! vascular cambium
+
+[Term]
+id: PO:0005046
+name: periderm
+namespace: plant_anatomy
+def: "A peripheral portion of ground tissue in a plant axis that is composed of phellogen, phellem, and phelloderm." [ISBN:047124529, POC:curators]
+comment: After secondary growth, the periderm may replace the epidermis in stems and roots, rarely in other organs. In some cases, the epidermis is retained after periderm development. Periderm is derived from lateral meristem and may contain secondary phloem.
+subset: TraitNet
+synonym: "peridermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of periderm tissue" EXACT []
+synonym: "portion of peridermal tissue" EXACT []
+synonym: "周皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:110
+is_a: PO:0025059 ! portion of ground tissue
+relationship: part_of PO:0025004 ! plant axis
+
+[Term]
+id: PO:0005352
+name: xylem
+namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that has as part one or more tracheary elements (PO:0000290)." [ISBN:0471245194]
+comment: Functions in the translocation of water and solutes from roots (PO:0009005) to the shoot system (PO:0009006) and in support. Tracheary elements have lignified cell walls with secondary thickening and are dead at maturity.
+subset: TraitNet
+synonym: "portion of xylem tissue" EXACT []
+synonym: "xilema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "木質部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:434
+is_a: PO:0009015 ! portion of vascular tissue
+
+[Term]
+id: PO:0005417
+name: phloem
+namespace: plant_anatomy
+def: "A portion of vascular tissue (PO:0009015) that has as parts sieve elements (PO:0025406)." [ISBN:0471245208, POC:curators]
+comment: Functions in the conduction of organic substances in vascular plants.
+subset: TraitNet
+synonym: "floema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of phloem tissue" EXACT []
+synonym: "師部、師管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF3_PO:433
+is_a: PO:0009015 ! portion of vascular tissue
+
+[Term]
+id: PO:0005421
+name: parenchyma
+namespace: plant_anatomy
+def: "A portion of ground tissue (PO:0025059) composed of polyhedral cells typically with thin, non-lignified cellulosic cell walls and nucleate, living protoplasts." [POC:curators]
+comment: Parenchyma contains relatively unspecialized cells.
+subset: TraitNet
+synonym: "par&#233nquima (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of parenchyma tissue" EXACT []
+synonym: "portion of parenchymatous tissue" EXACT []
+synonym: "柔組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:107
+is_a: PO:0025059 ! portion of ground tissue
+
+[Term]
+id: PO:0005423
+name: collenchyma
+namespace: plant_anatomy
+def: "Living tissue composed of more or less elongated cells with thick non-lignified primary cell walls." [GR:Pankaj_Jaiswal]
+subset: TraitNet
+synonym: "col&#233nquima (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of collenchyma tissue" EXACT []
+synonym: "supporting tissue" RELATED []
+synonym: "厚角組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025059 ! portion of ground tissue
+
+[Term]
+id: PO:0005426
+name: chlorenchyma
+namespace: plant_anatomy
+def: "Chloroplast-containing parenchyma tissue." [ISBN:0080374913]
+subset: TraitNet
+synonym: "clor&#233nquima (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of chlorenchyma tissue" EXACT []
+synonym: "同化組織、葉緑組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005421 ! parenchyma
+
+[Term]
+id: PO:0005427
+name: sclerenchyma
+namespace: plant_anatomy
+def: "A supporting tissue composed of fibers or sclereids." [ISBN:0080374913]
+subset: TraitNet
+synonym: "escler&#233nquima (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of sclerenchyma tissue" EXACT []
+synonym: "portion of sclerenchymatous tissue" EXACT []
+synonym: "厚膜組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025059 ! portion of ground tissue
+relationship: has_part PO:0000077 ! sclerenchyma cell
+
+[Term]
+id: PO:0005597
+name: cambium
+namespace: plant_anatomy
+def: "A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files." [ISBN:047125208]
+comment: This term is applied to only two types of meristems: vascular cambium (PO:0005598) and cork cambium/phellogen (PO:0005599).
+subset: TraitNet
+synonym: "cambium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:437
+is_a: PO:0020145 ! lateral meristem
+
+[Term]
+id: PO:0005598
+name: vascular cambium
+namespace: plant_anatomy
+def: "A cambium (PO:0005597) that is located between and gives rise to secondary xylem (PO:0005848) and secondary phloem (PO:0005043)." [ISBN:047125208]
+comment: A vascular cambium produces cells in both directions, centrifugally and centrifically, leading to an increase in the cross-sectional area of a plant axis (PO:0025004).
+subset: TraitNet
+synonym: "cambium vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "維管束形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:437
+is_a: PO:0005597 ! cambium
+
+[Term]
+id: PO:0005599
+name: cork cambium
+namespace: plant_anatomy
+def: "A cambium (PO:0005597) that is part of a periderm (PO:0005046) and produces phellem (PO:0004003) and phelloderm (PO:0005050)." [ISBN:047125208]
+comment: Cork cambium is located between the phellem and phelloderm and produces phellem toward the outside and phelloderm toward the inside of a plant axis (PO:0025004).
+subset: TraitNet
+synonym: "cambium de corcho (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "phellogen" EXACT []
+synonym: "コルク形成層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:437
+xref: PO_GIT:445
+is_a: PO:0005597 ! cambium
+relationship: part_of PO:0005046 ! periderm
+
+[Term]
+id: PO:0005645
+name: leaf mesophyll
+namespace: plant_anatomy
+def: "The chloroplast-containing, photosynthetic parenchymatous tissue situated between the two epidermal layers of the foliage leaf." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: TraitNet
+synonym: "foliage leaf mesophyll" RELATED []
+synonym: "leaf parenchyma" RELATED []
+synonym: "mes&#243filo de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉の葉肉 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006070 ! mesophyll
+relationship: part_of PO:0009006 ! shoot system
+relationship: part_of PO:0025034 ! leaf
+
+[Term]
+id: PO:0005647
+name: spongy mesophyll
+namespace: plant_anatomy
+def: "Leaf mesophyll parenchyma characterized by little elongated cells, that are not closely packed and have conspicuous intercellular spaces." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: TraitNet
+synonym: "mes&#243filo esponjoso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "spongy parenchyma" RELATED []
+synonym: "海綿状葉肉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006070 ! mesophyll
+relationship: part_of PO:0005645 ! leaf mesophyll
+relationship: part_of PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0005648
+name: palisade mesophyll
+namespace: plant_anatomy
+def: "Parenchyma containing closely packed elongated chlorenchymatous cells oriented perpendicular to the leaf surface and which are active in photosynthesis." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: TraitNet
+synonym: "mes&#243filo en empalizada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "palisade parenchyma" RELATED []
+synonym: "柵状葉肉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006070 ! mesophyll
+relationship: part_of PO:0005645 ! leaf mesophyll
+relationship: part_of PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0005656
+name: portion of secretory tissue
+namespace: plant_anatomy
+def: "Tissues that form specialized structures producing a secretion." [GR:Pankaj_Jaiswal, ISBN:047124529]
+comment: The synonym gland does not imply non-secretory 'glands'.
+subset: TraitNet
+synonym: "gland" RELATED []
+synonym: "porci&#243n del tejido secretor (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "分泌組織の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009007 ! portion of plant tissue
+
+[Term]
+id: PO:0005679
+name: epidermis
+namespace: plant_anatomy
+def: "A portion of plant tissue (PO:0009007) composed of epidermal cells (PO:0004013) that develops from the protoderm (PO:0006210) and covers the surface of a plant structure (PO:0009011)." [POC:curators]
+comment: The epidermis can be composed of one or more layers of cells. In some species of vascular plants, the epidermis, which is a primary tissue, is replaced by periderm, which is secondary tissue, later in development. The epidermis can also include trichomes, stomatal pores, root hairs, and rhizoids.
+subset: TraitNet
+synonym: "dermal tissue" EXACT []
+synonym: "epidermal layer" EXACT []
+synonym: "epidermides" EXACT Plural [FNA:35df04e5-fde5-465e-b79e-ae7d5e1537bb]
+synonym: "epidermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "epidermises" EXACT Plural [FNA:0d1bd0e6-c039-4de3-a162-68299a2f342a]
+synonym: "multiseriate epidermis" RELATED []
+synonym: "portion of epidermal tissue" EXACT []
+synonym: "表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:109
+is_a: PO:0009007 ! portion of plant tissue
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+
+[Term]
+id: PO:0005702
+name: aerenchyma
+namespace: plant_anatomy
+def: "A portion of parenchyma tissue containing particularly large intercellular spaces of schizogenous or lysigenous origin." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+comment: As applied to an intercellular space, originating by one or a combination of two processes, separation and degradation of cell walls.
+subset: TraitNet
+synonym: "aer&#233nquima (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of aerenchyma tissue" RELATED []
+synonym: "通気組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005421 ! parenchyma
+
+[Term]
+id: PO:0005708
+name: cortex
+namespace: plant_anatomy
+def: "A maximal portion of ground tissue (PO:0025059) between the vascular system (PO:0000034) and the epidermis (PO:0005679) in a plant." [POC:curators]
+subset: TraitNet
+synonym: "cortex (corteza) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of cortex tissue" EXACT []
+synonym: "皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:115
+is_a: PO:0025059 ! portion of ground tissue
+
+[Term]
+id: PO:0005848
+name: secondary xylem
+namespace: plant_anatomy
+def: "A portion of xylem (PO:0005352) tissue that develops from a vascular cambium (PO:0005598)." [ISBN:0471245194]
+comment: Secondary xylem develops as part of secondary growth (GO:0080117). Secondary xylem is the wood of gymnosperm and dicot angiosperm trees, shrubs, and lianas. May be organized into axial (PO:0025410) and ray (PO:0025411) systems. Secondary xylem is often part of a shoot axis (PO:0025029) or a root (PO:0009005) but may occur in other organs. Some monocots have a primary thickening meristem (PO:0005039), located near the shoot apical meristem (PO:0020148), that gives the appearance of secondary growth and may produce lignified tissue that appears woody but is not composed of secondary xylem. Tracheary elements in secondary xylem (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
+subset: TraitNet
+synonym: "portion of secondary xylem tissue" EXACT []
+synonym: "wood" EXACT []
+synonym: "xilema secundario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "二次木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:164
+xref: PO_GIT:434
+is_a: PO:0005352 ! xylem
+relationship: develops_from PO:0005598 ! vascular cambium
+
+[Term]
+id: PO:0005849
+name: primary xylem
+namespace: plant_anatomy
+def: "A portion of xylem (PO:0005352) tissue that develops from the procambium (PO:0025275)." [ISBN:0122151704, ISBN:0471245194]
+comment: Primary xylem develops as part of primary growth (request for primary growth has been made to GO) and is not differentiated into axial (PO:0025410) and ray (PO:0025411) systems. Tracheary elements (PO:0000290) have lignified cell walls with secondary thickening and are dead at maturity.
+subset: TraitNet
+synonym: "portion of primary xylem tissue" EXACT []
+synonym: "xilema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "一次木部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:434
+is_a: PO:0005352 ! xylem
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+
+[Term]
+id: PO:0006001
+name: phyllome
+namespace: plant_anatomy
+def: "A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)." [POC:curators]
+subset: reference
+subset: TraitNet
+synonym: "filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "フィロム、葉(的）器官 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009008 ! plant organ
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+relationship: part_of PO:0009006 ! shoot system
+
+[Term]
+id: PO:0006003
+name: scale leaf
+namespace: plant_anatomy
+def: "A phyllome that is reduced in size relative to a vascular leaf on the same plant and is often associated with a perennating or dormant bud or a vegetatively propagating organ such as a rhizome." [ISBN:0080374913]
+comment: May be photosynthetic or non-photosynthetic. Some species have vascular leaves that are scale-like (such as Juniperus, Thuja, and Chamaecyparis). Annotations for scale-like leaves should go under vascular leaf (PO:0009025), not scale leaf.
+subset: reference
+subset: TraitNet
+synonym: "cat&#225fila en escama (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cataphyll" RELATED []
+synonym: "鱗片葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:273
+is_a: PO:0006001 ! phyllome
+
+[Term]
+id: PO:0006070
+name: mesophyll
+namespace: plant_anatomy
+def: "The chloroplast-containing, photosynthetic parenchymatous tissue situated between the two epidermal layers of the leaf or leaf like organs." [GR:Pankaj_Jaiswal]
+subset: TraitNet
+synonym: "mes&#243filo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉肉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005426 ! chlorenchyma
+
+[Term]
+id: PO:0006073
+name: intercalary meristem
+namespace: plant_anatomy
+def: "A shoot system meristem (PO:0006079) that is intercalated between two portions of non-meristematic tissue and results in an increase in length as part of primary growth." [ISBN:0080374913, ISBN:0122151704, POC:curators]
+comment: See subtypes: leaf intercalary meristem (PO:0006346) and stem intercalary meristem (PO:0006347). Not known to occur in roots. Term for primary growth has been requested in GO.
+subset: TraitNet
+synonym: "meristema intercalar (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "節間分裂組織、介在分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:449
+is_a: PO:0006079 ! shoot system meristem
+
+[Term]
+id: PO:0006075
+name: primary phloem
+namespace: plant_anatomy
+def: "A portion of phloem (PO:0005417) tissue that develops from the procambium (PO:0025275)." [ISBN:0471245208]
+comment: In stem or root it is differentiated behind the apical meristem. Primary phloem develops as part of primary growth (GO term for primary growth has been requested).
+subset: TraitNet
+synonym: "floema primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of primary phloem tissue" EXACT []
+synonym: "一次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO_SF3_PO:433
+is_a: PO:0005417 ! phloem
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+
+[Term]
+id: PO:0006079
+name: shoot system meristem
+namespace: plant_anatomy
+def: "A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper]
+subset: TraitNet
+synonym: "meristema del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "シュート分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:472
+xref: PO_GIT:583
+is_a: PO:0009013 ! portion of meristem tissue
+relationship: part_of PO:0009006 ! shoot system
+
+[Term]
+id: PO:0006109
+name: pith
+namespace: plant_anatomy
+def: "A maximal portion of parenchyma (PO:0005421) in the center of a shoot axis (PO:0025029) or root (PO:0009005)." [ISBN:0080280307]
+subset: TraitNet
+synonym: "m&#233dula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "medulla" EXACT [ISBN:0471244554]
+synonym: "髄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:114
+is_a: PO:0005421 ! parenchyma
+
+[Term]
+id: PO:0006205
+name: spongy mesophyll cell
+namespace: plant_anatomy
+def: "Irregularly-shaped, chlorenchymatous cell, separated by large air spaces." [GR:Pankaj_Jaiswal]
+comment: Usually found in the abaxial/lower part of the leaf mesophyll as in a dorsiventral leaf, but between two palisade parenchyma layers in an isobilateral leaf. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula del mes&#243filo esponjoso (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "spongy parenchyma cell" RELATED []
+synonym: "海綿状葉肉細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0004006 ! mesophyll cell
+relationship: part_of PO:0005647 ! spongy mesophyll
+
+[Term]
+id: PO:0006206
+name: palisade mesophyll cell
+namespace: plant_anatomy
+def: "Elongated chlorenchymatous cell oriented perpendicular to the leaf surface and which is active in photosynthesis." [GR:Pankaj_Jaiswal]
+comment: Usually found in the adaxil/upper part of the leaf mesophyll. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula del mes&#243filo en empalizada (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "palisade parenchyma cell" RELATED []
+synonym: "柵状葉肉細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0004006 ! mesophyll cell
+relationship: part_of PO:0005648 ! palisade mesophyll
+
+[Term]
+id: PO:0006213
+name: root aerenchyma
+namespace: plant_anatomy
+def: "Parenchyma tissue containing particularly large intercellular spaces in the tissue of roots." [GR:Pankaj_Jaiswal]
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: TraitNet
+synonym: "aer&#233nquima de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "根通気組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005702 ! aerenchyma
+relationship: part_of PO:0009005 ! root
+
+[Term]
+id: PO:0006214
+name: stem aerenchyma
+namespace: plant_anatomy
+def: "A portion of aerenchyma that is part of a stem." [POC:curators]
+subset: TraitNet
+synonym: "aer&#233nquima del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "茎通気組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005702 ! aerenchyma
+relationship: part_of PO:0009047 ! stem
+
+[Term]
+id: PO:0006334
+name: seed micropyle
+namespace: plant_anatomy
+def: "A plant anatomical space that is enclosed by and forms an opening in a seed coat at the apex of a seed and is the remnant of a micropyle." [POC:curators]
+subset: TraitNet
+synonym: "micr&#243pila de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "種子珠孔 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+relationship: develops_from PO:0020025 ! plant ovule micropyle
+relationship: part_of PO:0009088 ! seed coat
+
+[Term]
+id: PO:0006345
+name: pollen tube
+namespace: plant_anatomy
+def: "OBSOLETE. A tubular cell extension formed by the germinating pollen grain; carries the male gametes into the ovule." [ISBN:0471245208]
+comment: This term was made obsolete because it is a subcellular component. See GO for the term pollen tube (GO:0090406). Since a pollen tube is part_of a pollen tube cell, annotations for pollen tube may also go to the more general term pollen tube cell (PO:0025195).
+subset: reference
+subset: TraitNet
+synonym: "tubo pol&#237nico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花粉管 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_obsolete: true
+consider: PO:0025195
+
+[Term]
+id: PO:0006504
+name: leaf trichome
+namespace: plant_anatomy
+def: "A phyllome trichome that is part of a leaf epidermis." [POC:Ramona_Walls]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: TraitNet
+synonym: "phyllid trichome" NARROW []
+synonym: "tricoma de hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉毛（毛茸、糸状体） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:232
+is_a: PO:0000282 ! trichome
+relationship: part_of PO:0009006 ! shoot system
+relationship: part_of PO:0025034 ! leaf
+
+[Term]
+id: PO:0007033
+name: whole plant development stage
+namespace: plant_structure_development_stage
+def: "A plant structure development stage (PO:0009012) that has as primary participant a whole plant (PO:0000003)." [POC:curators]
+subset: TraitNet
+synonym: "cereal plant ontology " RELATED [GRO:0080001]
+synonym: "maize growth stage" RELATED [GRO:0007002]
+synonym: "plant growth stage ontology" RELATED [GRO:0007199]
+synonym: "plant growth stages in Arabidopsis" RELATED [TAIR:0000021]
+synonym: "rice growth stage" RELATED [GRO:0007040]
+synonym: "Solanaceae whole plant growth stages" RELATED [SGN:0000001]
+synonym: "sorghum growth stage" RELATED [GRO:0007124]
+synonym: "wheat, barley and oat growth stage" RELATED [GRO:0007156]
+xref: OBO-SF2PO:390
+is_a: PO:0009012 ! plant structure development stage
+relationship: has_participant PO:0000003 ! whole plant
+
+[Term]
+id: PO:0008032
+name: stomatal pore
+namespace: plant_anatomy
+def: "A plant anatomical space that forms an opening in an epidermis, flanked by two guard cells." [POC:curators]
+comment: The size of the stomatal pore is variable and controlled by movement of the guard cells in response to environmental cues.
+subset: TraitNet
+synonym: "poro estom&#225tico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "stoma" BROAD []
+synonym: "stomata" BROAD []
+synonym: "stomatal aperture" RELATED []
+synonym: "気孔開口部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+relationship: part_of PO:0002000 ! stomatal complex
+
+[Term]
+id: PO:0009001
+name: fruit
+namespace: plant_anatomy
+alt_id: PO:0020067
+alt_id: PO:0020068
+alt_id: PO:0020069
+alt_id: PO:0020070
+alt_id: PO:0020071
+alt_id: PO:0020072
+alt_id: PO:0020073
+alt_id: PO:0020074
+alt_id: PO:0020076
+alt_id: PO:0020077
+alt_id: PO:0020078
+alt_id: PO:0020079
+alt_id: PO:0020080
+alt_id: PO:0020082
+alt_id: PO:0020083
+alt_id: PO:0020087
+alt_id: PO:0020107
+def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062) and may have as parts one or more seeds (PO:0009010)." [POC:curators]
+comment: A fruit may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds. Fruits only occur in angiosperms.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: TraitNet
+synonym: "accessory fruit" NARROW [FNA:dd7046cb-21f6-4631-b5a6-1aa46e149660]
+synonym: "achene" NARROW []
+synonym: "acorn" NARROW [FNA:dd455c86-ec50-45e3-81f8-3bcc5ad83bd7]
+synonym: "aggregate fruit" NARROW [FNA:853ed939-84ea-424c-9fbe-88e2c0dff4ff]
+synonym: "akene" NARROW [FNA:36a56913-88e9-4d72-8205-0ea14a215ae6]
+synonym: "anthocarp" NARROW [FNA:93db5e86-9dd3-43b5-9389-3f8a3308ce15]
+synonym: "berry" NARROW []
+synonym: "capsule" NARROW []
+synonym: "caryopsides" NARROW Plural [FNA:db69b5da-dc9d-4990-a77b-b8ce8d70a74b]
+synonym: "caryopsis" NARROW []
+synonym: "circumcissile capsule" NARROW []
+synonym: "citrus fruit" NARROW [FNA:6d21b6d9-25d9-4206-b285-a79b3b4fe432]
+synonym: "coenocarp" NARROW [FNA:c13b1312-1cc5-4ace-98e2-fde12aec09da]
+synonym: "cypsela" NARROW Plural [FNA:b15611f1-7317-4598-b03c-d265b2437d06]
+synonym: "diaspore" BROAD []
+synonym: "diclesia" NARROW Plural [FNA:f1b9229b-956e-4df1-a0ac-399b813bc534]
+synonym: "diclesium" NARROW [FNA:6ea25ab3-8a28-459d-9a97-26c849c31c1c]
+synonym: "diplotegia" NARROW Plural [FNA:f6900203-e2b1-4a60-8ac8-e740dda1e569]
+synonym: "diplotegium" NARROW [FNA:9a9b72d6-d703-43c4-92d9-f3e69345ecdb]
+synonym: "drupe" NARROW [FNA:355c3900-0afb-4b22-b78f-4cf4819a5122]
+synonym: "folliceta" NARROW Plural [FNA:5ab8ba51-688c-4168-b7b6-12219243a111]
+synonym: "follicetum" NARROW [FNA:7dcf2c80-ac86-43d1-a229-29f6166494e8]
+synonym: "follicle" NARROW []
+synonym: "fruit" NARROW [FNA:cbc8af47-46a0-496b-a9fc-678f071dcae8]
+synonym: "fruto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "glandes" NARROW Plural [FNA:f587085c-d589-42bc-86f0-4b2af856e18a]
+synonym: "glans" NARROW [FNA:749e1660-c475-427c-ac49-c8b5667e573e]
+synonym: "grain" NARROW []
+synonym: "hesperidia" NARROW Plural [FNA:0901d9fe-db80-42f9-963b-12ec2615901a]
+synonym: "hesperidium" NARROW [FNA:cdf9d9e2-d683-488b-a620-73daa15b7c25]
+synonym: "hip" NARROW [FNA:cbf08b9f-834a-497d-b46e-cef14fdbfc0c]
+synonym: "kernel" NARROW []
+synonym: "legume" NARROW []
+synonym: "loculicidal capsule" NARROW []
+synonym: "loment" NARROW [FNA:9e376fd5-ac74-4319-9b28-5ddfb1c5141b]
+synonym: "lomentum" NARROW []
+synonym: "multiple fruit" NARROW [FNA:bf3f5da4-5b0b-4fa7-a8cd-112f4c8b06f8]
+synonym: "nut" NARROW []
+synonym: "nutlet" NARROW [FNA:dbfe371e-f400-4cb5-bbc0-b457ab1e10a1]
+synonym: "pepo" NARROW [FNA:149ac152-f1fc-47d5-82e2-eeee7eadfc86]
+synonym: "pod" NARROW []
+synonym: "pome" NARROW []
+synonym: "poricidal capsule" NARROW []
+synonym: "pyxides" NARROW Plural [FNA:ab71ef94-a2f8-4441-9ede-f0a7da00c624]
+synonym: "pyxis" NARROW [FNA:9abb3dc4-5ac5-4492-a373-a7a4c5e37146]
+synonym: "samara" NARROW [FNA:b92ee2bf-9f99-4864-b1c5-5724ab76d749]
+synonym: "schizocarp" NARROW []
+synonym: "septicidal capsule" NARROW []
+synonym: "septifragal capsule" NARROW []
+synonym: "silicle" NARROW [FNA:8f7b5172-d7ed-4a04-b148-04b400ca4162]
+synonym: "silicula" NARROW []
+synonym: "siliqua" NARROW []
+synonym: "silique" NARROW []
+synonym: "stone fruit" NARROW [FNA:f8912e6a-2433-49c6-ae5e-f61769754bcf]
+synonym: "syconia" NARROW Plural [FNA:a392c33c-1238-4317-a392-92a52ed22faf]
+synonym: "syconium" NARROW [FNA:0179251b-9896-4974-abf5-6da4b92588bd]
+synonym: "syncarp" NARROW [FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a]
+synonym: "utricle" NARROW [FNA:79dd979c-c3e8-4197-bf22-cd14b8932901]
+synonym: "果実 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:76
+is_a: PO:0009011 ! plant structure
+relationship: develops_from PO:0009062 ! gynoecium
+
+[Term]
+id: PO:0009002
+name: plant cell
+namespace: plant_anatomy
+def: "A cell which is a plant structure (PO:0009011)." [GO:0005623, POC:curators]
+comment: Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope". GO:0009505. Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.
+subset: CL
+subset: reference
+subset: TraitNet
+synonym: "c&#233lula vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cell" BROAD []
+synonym: "植物細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: GO:0005623
+xref: PO_GIT:56
+is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0009007 ! portion of plant tissue
+disjoint_from: PO:0009008 ! plant organ
+disjoint_from: PO:0025001 ! cardinal organ part
+disjoint_from: PO:0025007 ! collective plant organ structure
+
+[Term]
+id: PO:0009005
+name: root
+namespace: plant_anatomy
+alt_id: PO:0003006
+def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately, and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
+comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the ground, and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually found underground, although there are many exceptions, such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
+subset: Angiosperm
+subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Potato
+subset: reference
+subset: Rice
+subset: Tomato
+subset: TraitNet
+synonym: "aerial root" NARROW []
+synonym: "climbing root" NARROW [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
+synonym: "ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "radices" EXACT Plural [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
+synonym: "radix" EXACT [FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd]
+synonym: "根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:578
+is_a: PO:0025004 ! plant axis
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+relationship: part_of PO:0025025 ! root system
+
+[Term]
+id: PO:0009006
+name: shoot system
+namespace: plant_anatomy
+def: "A collective plant organ structure (PO:0025007) that produces shoot-borne portions of meristem tissue (PO:0009013) and the plant structures (PO:0009011) that arise from them." [POC:curators, POC:Laurel_Cooper]
+comment: The shoot system is generally used to refer to the above-ground plant parts, although some plants have parts of their shoot system underground. For example, a rhizome (PO:0004542), bulb (PO:0025356), a corm (PO:0025355) or a subterranean tuber (PO:0004547), as in Solanum tuberosum (potato) or yam, are all part of the shoot system.
+subset: reference
+subset: TraitNet
+synonym: "Poaceae crown" RELATED []
+synonym: "shoot" RELATED []
+synonym: "sistema de epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "thalli" RELATED Plural [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
+synonym: "thallus" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
+synonym: "tree crown" NARROW []
+synonym: "シュート系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:135
+is_a: PO:0025007 ! collective plant organ structure
+disjoint_from: PO:0025025 ! root system
+
+[Term]
+id: PO:0009007
+name: portion of plant tissue
+namespace: plant_anatomy
+def: "A plant structure (PO:0009011) that consists predominantly of similarly specialized plant cells (PO:0009002) of one or more types." [POC:curators, TAIR:Leonore_Reiser]
+comment: A portion of plant tissue may contain one or several types of cells that are organized in a specific spatial arrangement into a structural unit (which includes a mass of callus) and may include an intercellular matrix. May include other types of isolated cells, such as idioblasts.
+subset: reference
+subset: TraitNet
+synonym: "plant tissue" RELATED []
+synonym: "porci&#243n de un tejido vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of tissue" BROAD []
+synonym: "tissue" BROAD []
+synonym: "植物組織の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:59
+is_a: PO:0009011 ! plant structure
+disjoint_from: PO:0009008 ! plant organ
+disjoint_from: PO:0025001 ! cardinal organ part
+disjoint_from: PO:0025007 ! collective plant organ structure
+
+[Term]
+id: PO:0009008
+name: plant organ
+namespace: plant_anatomy
+def: "A multi-tissue plant structure (PO:0025496) that is a functional unit, is a proper part of a whole plant (PO:0000003), and includes portions of plant tissue (PO:0009007) of at least two different types that derive from a common developmental path." [POC:curators]
+comment: Examples include stem (PO:0009047), leaf (PO:0025034), and root (PO:0009005). May include individual plant cells (PO:0009002) that are not part of a portion of plant tissue (e.g., idioblasts, PO:0000283). A plant organ may have one or more different plant organs as parts, such as a sporophyll (PO:0009026) that may have as part a sporangium (PO:0025094) or a carpel (PO:0009030) that may have as part a plant ovule (PO:0020003).
+subset: TraitNet
+synonym: "&#243rgano vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "compound plant organ" RELATED []
+synonym: "organ" BROAD []
+synonym: "simple plant organ" RELATED [PATO:01503]
+synonym: "植物 器官 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:55
+is_a: PO:0009011 ! plant structure
+
+[Term]
+id: PO:0009010
+name: seed
+namespace: plant_anatomy
+def: "A multi-tissue plant structure (PO:0025496) that develops from a plant ovule (PO:0020003) and has as parts a plant embryo (PO:0009009) enclosed in a seed coat (PO:0009088)." [POC:curators]
+comment: A seed generally develops from an ovule (PO:0020003) after fertilization, but may develop without fertilization in the case of apogamy (e.g., adventitious embryos or somatic embryos). A seed is a reproductive unit of seed plants (gymnosperms, angiosperms, and fossil pteridosperms).
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Gymnosperms
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: Tomato
+subset: TraitNet
+synonym: "diaspore" BROAD []
+synonym: "pyrene" NARROW [FNA:f5c50e73-61e3-48ec-b918-6f85b3f40738]
+synonym: "semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "種子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:405
+is_a: PO:0009011 ! plant structure
+relationship: develops_from PO:0020003 ! plant ovule
+relationship: has_part PO:0000003 ! whole plant
+
+[Term]
+id: PO:0009011
+name: plant structure
+namespace: plant_anatomy
+def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003, POC:curators]
+comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 anatomical structure is defined as: Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome.
+subset: TraitNet
+synonym: "estructura vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "植物 構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:57
+
+[Term]
+id: PO:0009012
+name: plant structure development stage
+namespace: plant_structure_development_stage
+alt_id: PO:0007021
+def: "A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes." [POC:curators]
+comment: Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.
+subset: TraitNet
+synonym: "Arabidopsis growth" RELATED [TAIR:0000205]
+synonym: "etapa de desarrollo de estructura vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plant growth and development stage" EXACT []
+xref: PO_GIT:185
+
+[Term]
+id: PO:0009013
+name: portion of meristem tissue
+namespace: plant_anatomy
+def: "A portion of plant tissue (PO:0009007) in which plant cells (PO:0009002) have retained their embryonic characteristics, or have reverted to them secondarily, and that divide to produce new cells that can undergo differentiation to form mature tissues, i.e. they have a capacity for morphogenesis and growth." [APweb:Glossary, GR:Pankaj_Jaiswal]
+subset: TraitNet
+synonym: "meristem" EXACT []
+synonym: "meristema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "meristematic tissue" EXACT []
+synonym: "分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:472
+is_a: PO:0009007 ! portion of plant tissue
+relationship: has_part PO:0009002 ! plant cell
+
+[Term]
+id: PO:0009015
+name: portion of vascular tissue
+namespace: plant_anatomy
+def: "A portion of plant tissue (PO:0009007) that has as part one or more tracheary elements (PO:0000290) or sieve elements (PO:0025406)." [POC:curators]
+comment: Functions in conduction and support. In shoot axes (PO:0025029), vascular tissue is often found as part of a shoot axis stele (PO:0025198) or as scattered vascular bundles (PO:0005020). May include other types of tissues or cells, such as parenchyma (PO:0005421) or fiber cells (PO:0025407).
+subset: TraitNet
+synonym: "porci&#243n de tejido vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "vascular system" RELATED []
+synonym: "vascular tissue" EXACT []
+synonym: "維管束細胞の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: BTO:0001432
+xref: PO_GIT:431
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0000034 ! vascular system
+
+[Term]
+id: PO:0009025
+name: vascular leaf
+namespace: plant_anatomy
+def: "A leaf (PO:0025034) in a vascular plant." [POC:curators]
+comment: Has vascular tissue. From APweb Glossary: In angiosperms, commonly thought of as one of the three basic parts of the seed plant body, a structure usually of determinate growth, without secondary thickening, and of superficial origin, often flattened and photosynthetic in part, and in the axil of which is found a bud. Occurs in the sporophytic phase of a plant life cycle.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Citrus
+subset: Gymnosperms
+subset: Maize
+subset: Musa
+subset: Potato
+subset: Pteridophytes
+subset: reference
+subset: Rice
+subset: Tomato
+subset: TraitNet
+synonym: "ascidia" NARROW [FNA:06544712-db97-4208-b188-c4b756a53c72]
+synonym: "ascidium" NARROW [FNA:a97f1513-7684-49d4-92f5-934d1c8b3e1c]
+synonym: "crozier" RELATED [FNA:87e7efa9-89d7-4249-be74-bc22a0466a05]
+synonym: "fiddlehead" NARROW [FNA:d894ba18-4523-484c-abab-26d1cac75bc4]
+synonym: "foliage leaf" EXACT []
+synonym: "frond" NARROW []
+synonym: "hoja vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "leaf, vascular" EXACT []
+synonym: "macrophyll" RELATED [FNA:c1142d9b-c42a-45e1-93ac-9cbe9575321e]
+synonym: "megaphyll" RELATED [FNA:c26c826a-30d6-494e-a2f1-05540465c9fc]
+synonym: "needle-like leaf" NARROW []
+synonym: "pitcher" NARROW [FNA:30d8bef3-ad1a-44ed-a995-24c3e342aefd]
+synonym: "pitcher blade" NARROW [FNA:d3928bf3-1d8a-4fe5-a728-95c13c3a0f90]
+synonym: "pitcher-blade" NARROW [FNA:30c47c20-f459-4518-8657-feed7eb92fe4]
+synonym: "scale-like leaf" NARROW []
+synonym: "sterile frond" NARROW [FNA:a4dc40f4-92f9-4ba5-b616-a84564f63fed]
+synonym: "trophophyll" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
+synonym: "vascular leaves" EXACT Plural [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
+synonym: "維管束のある葉, または維管束植物の葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:137
+is_a: PO:0025034 ! leaf
+relationship: participates_in PO:0028002 ! sporophyte development stage
+
+[Term]
+id: PO:0009026
+name: sporophyll
+namespace: plant_anatomy
+def: "A leaf-like organ on which one or more sporangia are borne." [APweb:Glossary]
+subset: reference
+subset: TraitNet
+synonym: "esporofilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "spore leaf" EXACT [FNA:301289d5-912b-4db3-af05-73579ecb9ef0]
+synonym: "胞子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0006001 ! phyllome
+
+[Term]
+id: PO:0009027
+name: megasporophyll
+namespace: plant_anatomy
+def: "A structure upon which (or in the axil of which) one or more megasporangia are borne; in flowering plants, a carpel." [APweb:Glossary]
+subset: TraitNet
+synonym: "cone scale" NARROW [FNA:ae5076ce-3553-419a-af95-07c2062ad4e0]
+synonym: "macrosporophyll" RELATED [FNA:c54df958-9c56-49e7-8ed8-64e36c9f42ed]
+synonym: "megasporofilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "ovuliferous scale" NARROW [FNA:8e8e55b5-2c05-4089-b43c-3bcf5692c2a2]
+synonym: "大胞子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009026 ! sporophyll
+
+[Term]
+id: PO:0009028
+name: microsporophyll
+namespace: plant_anatomy
+def: "A structure on which one or more microsporangia are borne; in flowering plants, the stamen." [APweb:Glossary]
+subset: TraitNet
+synonym: "microsporofilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "小胞子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009026 ! sporophyll
+
+[Term]
+id: PO:0009029
+name: stamen
+namespace: plant_anatomy
+alt_id: PO:0006441
+alt_id: PO:0006472
+def: "A microsporophyll bearing one or more microsporangia." [APweb:Glossary]
+comment: Part of tassel floret.
+subset: reference
+subset: TraitNet
+synonym: "estambre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae stamen" NARROW []
+synonym: "Zea stamen" NARROW []
+synonym: "雄蕊 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009028 ! microsporophyll
+relationship: part_of PO:0009061 ! androecium
+
+[Term]
+id: PO:0009030
+name: carpel
+namespace: plant_anatomy
+alt_id: PO:0006455
+alt_id: PO:0006470
+def: "A megasporophyll, almost always at the center of a flower, its margins more or less fused together or with other carpels to enclose the ovule(s)." [APweb:Glossary]
+comment: In some cases, a gynoecium (PO:0009062) may consist of only one carpel, in which case annotations should go on carpel (PO:0009030). The word pistil is used synonymously with gynoecium, but if a gynoecium consists of a single carpel, then pistil may be used synonymously with carpel. If carpels are fused, the gynoecium is a syncarpous gynoecium, as in Poaceae, Brassicaceae and Solanaceae. If carpels are free, the gynoecium is an apocarpous gynoecium, as in Fabaceae. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "pistil" BROAD []
+synonym: "Poaceae carpel" NARROW []
+synonym: "Zea carpel" NARROW []
+synonym: "心皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:470
+is_a: PO:0009027 ! megasporophyll
+relationship: part_of PO:0009062 ! gynoecium
+
+[Term]
+id: PO:0009031
+name: sepal
+namespace: plant_anatomy
+def: "A phyllome (PO:0006001) that is usually green, and is part of the calyx (PO:0009060)." [APweb:Glossary]
+comment: In some species the sepals (PO:0009031) may not be green for example many members of the Liliaceae family.
+subset: reference
+subset: TraitNet
+synonym: "s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "がく片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:543
+is_a: PO:0006001 ! phyllome
+relationship: part_of PO:0009060 ! calyx
+
+[Term]
+id: PO:0009032
+name: petal
+namespace: plant_anatomy
+def: "A phyllome (PO:0006001) that is part of the corolla (PO:0009059), and is usually colored (not green)." [APweb:Glossary, POC:curators]
+comment: In some species the petal (PO:0009032) may not be colored.
+subset: Angiosperm
+subset: reference
+subset: TraitNet
+synonym: "p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花弁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:542
+is_a: PO:0006001 ! phyllome
+relationship: part_of PO:0009059 ! corolla
+
+[Term]
+id: PO:0009033
+name: tepal
+namespace: plant_anatomy
+def: "A phyllome (PO:0006001) that is part of a perianth (PO:0009058) where it is not possible to distinguish between the petals (PO:0009032) and sepals (PO:0009031)." [POC:curators]
+comment: There is no differentiation between the petals (PO:0009032) and the sepals (PO:0009031) in color, placement, and size (e.g. some species of Magnolia).
+subset: reference
+subset: TraitNet
+synonym: "t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花被片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:83
+is_a: PO:0006001 ! phyllome
+relationship: part_of PO:0009058 ! perianth
+
+[Term]
+id: PO:0009034
+name: flower bract
+namespace: plant_anatomy
+def: "A bract (PO:0009055) that subtends a perianth (PO:0009058) that is part of a flower (PO:0009046)." [POC:curators]
+subset: reference
+subset: TraitNet
+synonym: "br&#225ctea floral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "chaff" RELATED []
+synonym: "floral bract" EXACT []
+synonym: "花苞（葉） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:84
+is_a: PO:0009055 ! bract
+relationship: part_of PO:0009046 ! flower
+
+[Term]
+id: PO:0009035
+name: nectary
+namespace: plant_anatomy
+def: "A multicellular glandular structure secreting a liquid containing organic substances especially sugars." [GR:Pankaj_Jaiswal]
+subset: reference
+subset: TraitNet
+synonym: "nectario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "蜜腺 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0005656 ! portion of secretory tissue
+relationship: part_of PO:0009006 ! shoot system
+
+[Term]
+id: PO:0009046
+name: flower
+namespace: plant_anatomy
+alt_id: PO:0004541
+def: "A determinate reproductive shoot system (PO:0025082) that has as part at least one carpel (PO:0009030) or at least one stamen (PO:0009029) and does not contain any other determinate shoot system (PO:0009006) as a part." [POC:curators]
+comment: The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain one or more pistillode (PO:0009078), staminode (PO:0009077) or other aborted organs that don't show up in mature form.
+subset: Angiosperm
+subset: reference
+subset: TraitNet
+synonym: "basal flower" NARROW [CO_125:0000019]
+synonym: "double flower" NARROW []
+synonym: "flor (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "floret" RELATED []
+synonym: "hermaphrodite flower" NARROW [CO_125:0000028]
+synonym: "monoclinous flower" NARROW []
+synonym: "perfect flower" NARROW []
+synonym: "花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:160
+xref: PO_GIT:259
+is_a: PO:0025082 ! reproductive shoot system
+relationship: develops_from PO:0020148 ! shoot apical meristem
+
+[Term]
+id: PO:0009047
+name: stem
+namespace: plant_anatomy
+def: "A shoot axis (PO:0025029) that is the primary axis of a plant." [POC:curators]
+comment: A stem often bears leaves and buds. It is usually above ground, and is more or less negatively geotropic.
+subset: reference
+subset: TraitNet
+synonym: "bole" NARROW [FNA:a5ba9e16-e0af-4430-a3a0-7aeb052fbffd]
+synonym: "ca&#241a (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "cane" NARROW []
+synonym: "caudex" NARROW [FNA:cea24c10-d5ff-435f-aa40-db77dcbd27f0]
+synonym: "caudices" NARROW Plural [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
+synonym: "core" NARROW []
+synonym: "culm" EXACT []
+synonym: "eje primario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "primary axis" EXACT []
+synonym: "primary stem" EXACT [FNA:e3b142f6-37cf-4c1f-be07-b64a90feb131]
+synonym: "primocane" NARROW [FNA:58fb080c-dd6b-4172-b564-737091c72980]
+synonym: "scape" NARROW [FNA:201dbd71-51cd-4138-8f61-3c3fdd55d02d]
+synonym: "stalk" NARROW []
+synonym: "tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "tronco (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "trunk" NARROW []
+synonym: "茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:52
+xref: PO_GIT:96
+is_a: PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0009049
+name: inflorescence
+namespace: plant_anatomy
+alt_id: PO:0009048
+alt_id: PO:0009050
+alt_id: PO:0020088
+alt_id: PO:0020111
+alt_id: PO:0020112
+alt_id: PO:0020113
+alt_id: PO:0020114
+alt_id: PO:0020115
+alt_id: PO:0020116
+alt_id: PO:0020117
+alt_id: PO:0020118
+alt_id: PO:0020119
+alt_id: PO:0020120
+def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) distal to the most distal foliage leaf (PO:0009025) of a shoot axis and all of the flowers (PO:0009046) borne by those axes. Must have two or more flowers as parts." [POC:Laurel_Cooper, POC:Ramona_Walls]
+comment: Some plants have only solitary flowers, e.g.<i> Magnolia</i>.
+subset: Angiosperm
+subset: reference
+subset: TraitNet
+synonym: "ament" NARROW [FNA:607abb62-30fc-43da-8ad4-bc947d70a404]
+synonym: "anthela" NARROW [FNA:72057d27-76d8-4729-82bb-785757a01d96]
+synonym: "anthelae" NARROW Plural [FNA:f22442e8-3d37-47e4-b1bc-64aeb8b0f9f7]
+synonym: "Asteraceae floret" NARROW []
+synonym: "bostryches" NARROW Plural [FNA:d644d4cc-43d7-4864-8b09-69af7abf3939]
+synonym: "bostryx" NARROW [FNA:71fb2017-f964-4745-9a48-b5235dd74e8d]
+synonym: "capitula" NARROW Plural [FNA:e71eddda-be79-457a-8b95-b6efda659f4b]
+synonym: "capitulum" NARROW []
+synonym: "catkin" NARROW []
+synonym: "cincinni" NARROW Plural [FNA:0f44b58c-1466-4417-8801-f269c2427097]
+synonym: "cincinnus" NARROW [FNA:31d62216-7ffd-48ce-826a-04847806eae7]
+synonym: "corymb" NARROW []
+synonym: "cyathia" NARROW Plural [FNA:805a5ca4-7ec1-48cc-a1ac-5cb20a1c25c2]
+synonym: "cyathium" NARROW [FNA:faf9253b-7097-4172-89a9-9470452bbd95]
+synonym: "cyme" NARROW []
+synonym: "cymule" NARROW [FNA:315d7cee-9b82-4c2f-b5d3-ea14760c7ca8]
+synonym: "dichasium" NARROW Plural [FNA:a10794b5-f1a8-4de4-9a1f-97fb4ef5f204]
+synonym: "drepanium" NARROW []
+synonym: "glome" NARROW [FNA:0a4e0d59-0dc0-49a7-8562-95f39090349d]
+synonym: "glomerule" NARROW [FNA:a55bbf2c-ab6b-4c58-8f74-aecf3de0b184]
+synonym: "head" NARROW [FNA:37d91956-ebe6-43d3-bed9-7418a528b850]
+synonym: "helicoid cyme" NARROW []
+synonym: "inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "monochasium" NARROW Plural [FNA:317b9221-6452-4027-ba2c-cdbe8cc7cb0d]
+synonym: "panicle" NARROW []
+synonym: "raceme" NARROW []
+synonym: "rhipidia" NARROW Plural [FNA:b75d3219-23d0-458c-a669-1d24bbf2de2a]
+synonym: "rhipidium" NARROW []
+synonym: "scorpioid cyme" NARROW []
+synonym: "Sorghum cob" NARROW []
+synonym: "spadices" NARROW Plural [FNA:0b2b2c72-422d-4782-9bae-2c8d36e25032]
+synonym: "spadix" NARROW [FNA:b4c1cb9d-88f4-4d61-bf44-801af1a76bb8]
+synonym: "spike" NARROW [FNA:98bf8a79-e56c-460b-a976-c9b16ddac7d4]
+synonym: "thyrse" NARROW [FNA:6b09f9b2-5244-4e77-9a1b-e983e6d8bfa6]
+synonym: "Triticeae spike" NARROW []
+synonym: "umbel" NARROW []
+synonym: "verticillaster" NARROW []
+synonym: "花序 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:260
+xref: PO_GIT:71
+is_a: PO:0025082 ! reproductive shoot system
+relationship: has_part PO:0009046 ! flower
+
+[Term]
+id: PO:0009054
+name: inflorescence bract
+namespace: plant_anatomy
+alt_id: PO:0006337
+def: "A bract (PO:0009055) subtending a branch of the inflorescence (PO:0009049) or borne on the inflorescence axis (PO:0020122) below any branch (PO:0025073) or flower (PO:0009046)." [APweb:Glossary]
+comment: Includes the leaf subtending and acting as outer envelope of an ear in Zea mays.
+subset: reference
+subset: TraitNet
+synonym: "br&#225ctea de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "corn husk" RELATED []
+synonym: "husk" RELATED []
+synonym: "husk leaf" RELATED []
+synonym: "inflorescence bract of ear" NARROW []
+synonym: "pale" BROAD [FNA:3290efb9-fde1-4c56-a813-37e62e665af2]
+synonym: "palea" BROAD [FNA:3d210af5-1709-4aee-91e5-ccc65f5fa7bd]
+synonym: "paleae" BROAD Plural [FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7]
+synonym: "paleas" BROAD Plural [FNA:c7715818-04d2-4e9f-b63f-8741b6e558f4]
+synonym: "palet " BROAD [FNA:c7612a78-aff8-478d-9a6e-866dac52f101]
+synonym: "spathe" NARROW [FNA:be285d91-a6e6-4e1b-8d89-fa3252201928]
+synonym: "squamella" NARROW [FNA:ead20a1b-057b-4008-9466-bdb8e283aa82]
+synonym: "squamellae" NARROW Plural [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
+synonym: "squamule" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
+synonym: "花序苞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:84
+is_a: PO:0009055 ! bract
+relationship: part_of PO:0009049 ! inflorescence
+
+[Term]
+id: PO:0009055
+name: bract
+namespace: plant_anatomy
+def: "A phyllome that subtends a reproductive structure." [POC:curators]
+comment: Usually different from leaves. Often used to refer to a floral bract, but includes other kinds of bracts.
+subset: reference
+subset: TraitNet
+synonym: "br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "bracteole" RELATED [FNA:9cce93dc-f233-440e-9163-97207fca71a4]
+synonym: "bractlet" RELATED [FNA:8968da77-e6b0-4302-baf9-1c8cb72a8b06]
+synonym: "hypsophyll" RELATED []
+synonym: "scale" NARROW [FNA:8c618dea-f3dd-434f-bb13-23273ea6c143]
+synonym: "苞葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:217
+is_a: PO:0006001 ! phyllome
+
+[Term]
+id: PO:0009057
+name: extrafloral nectary
+namespace: plant_anatomy
+def: "A multicellular glandular structure found in places other than flower secreting a liquid containing organic substances especially sugar." [ISBN:047124529]
+subset: TraitNet
+synonym: "nectario extrafloral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花外蜜腺 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009035 ! nectary
+
+[Term]
+id: PO:0009058
+name: perianth
+namespace: plant_anatomy
+def: "A collective phyllome structure (PO:0025023) that includes as parts the corolla (PO:0009059) and/or the calyx (PO:0009060); or one or more tepals (PO:0009033)." [POC:curators, POC:Laurel_Cooper]
+comment: The perianth can consist of only the corolla (PO:0009059), only the calyx (PO:0009060) or it may have both structures in a complete flower.  If the petals (PO:0009032) and sepals (PO:0009031) are indistinguishable from one another, the perianth consists of just a collective tepal structure  (PO:0025021), composed of one or more tepals (PO:0009033), for example in tulip or lily flowers.
+subset: reference
+subset: TraitNet
+synonym: "adnate perianth " NARROW []
+synonym: "calyptra perianth" NARROW []
+synonym: "connate perianth " RELATED []
+synonym: "perianto (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "花蓋、花被 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:71
+xref: PO_GIT:98
+is_a: PO:0025023 ! collective phyllome structure
+relationship: part_of PO:0009046 ! flower
+
+[Term]
+id: PO:0009059
+name: corolla
+namespace: plant_anatomy
+def: "A collective phyllome structure (PO:0025023) that is composed of one or more petals (PO:0009032), comprising the inner whorl of non-reproductive floral organs (PO:0025395) and surrounds the androecium (PO:0009061) and the gynoecium (PO:0009062)." [POC:curators, POC:Laurel_Cooper]
+comment: The corolla (PO:0009059) is part of the perianth (PO:0009058). This  definition is based on the complete flower, which has all four whorls. In many species, and in mutants one or more of the whorls may be missing. The corolla (PO:0009059) often functions to attract pollinators.
+subset: reference
+subset: TraitNet
+synonym: "corola (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "corollae" EXACT Plural [FNA:c458334a-b696-4a0a-a321-1b61117882f6]
+synonym: "corollas" EXACT Plural [FNA:791b8f53-16ba-448b-9a16-9ab841d947a9]
+synonym: "花冠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:541
+xref: PO_GIT:71
+xref: PO_GIT:98
+is_a: PO:0025023 ! collective phyllome structure
+relationship: part_of PO:0009058 ! perianth
+
+[Term]
+id: PO:0009060
+name: calyx
+namespace: plant_anatomy
+def: "A collective phyllome structure (PO:0025023) that is composed of one or more sepals (PO:0009031), and comprises the outer whorl of non-reproductive floral organs (PO:0025395)." [POC:curators, POC:Laurel_Cooper]
+comment: The calyx is part of the perianth (PO:0009058). This definition is based on the perfect flower, which has all four whorls. In many species, and in mutants one or more of the whorls are missing.
+subset: reference
+subset: TraitNet
+synonym: "c&#225lix (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "calyces" EXACT Plural [FNA:f250c45e-8348-4db4-aa9a-10dfa08bfd00]
+synonym: "がく (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:543
+xref: PO_GIT:71
+xref: PO_GIT:98
+is_a: PO:0025023 ! collective phyllome structure
+relationship: part_of PO:0009058 ! perianth
+
+[Term]
+id: PO:0009061
+name: androecium
+namespace: plant_anatomy
+alt_id: PO:0006355
+alt_id: PO:0006366
+alt_id: PO:0006383
+alt_id: PO:0006392
+alt_id: PO:0006393
+alt_id: PO:0006405
+alt_id: PO:0006406
+alt_id: PO:0006419
+alt_id: PO:0006420
+alt_id: PO:0006421
+alt_id: PO:0006422
+alt_id: PO:0006471
+def: "A collective phyllome structure (PO:0025023) composed all of the stamens (PO:0009029) in a flower (PO:0009046)." [POC:curators]
+comment: The androecium also has as parts any staminodes (PO:0009077) that may be present in a flower. If annotating gene expression to an androecium with a single stamen (PO:0009029), the annotation should go on stamen. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). The development of an androecium in an ear floret of a normal maize plant is aborted and is present in a rudimentary state, while the development of an androecium in a tassel floret leads to a functional androecium.
+subset: Maize
+subset: Poaceae
+subset: reference
+subset: TraitNet
+synonym: "androecia" EXACT Plural [FNA:522936d3-a948-44f3-b9dc-634e0d190f6f]
+synonym: "androecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "androecium column" NARROW [FNA:e0f4d402-3489-4a58-81bf-0fa5119a4db5]
+synonym: "androecium of ear floret" NARROW []
+synonym: "androecium of lower floret of pedicellate spikelet of ear" NARROW []
+synonym: "androecium of lower floret of sessile spikelet of ear" NARROW []
+synonym: "androecium of lower floret of sessile spikelet of tassel" NARROW []
+synonym: "androecium of tassel floret" EXACT []
+synonym: "androecium of upper floret of pedicellate spikelet of ear" NARROW []
+synonym: "androecium of upper floret of pedicellate spikelet of tassel" EXACT []
+synonym: "androecium of upper floret of sessile spikelet of ear" NARROW []
+synonym: "androecium of upper floret of sessile spikelet of tassel" NARROW []
+synonym: "Poaceae androecium" NARROW []
+synonym: "Zea androecium" NARROW []
+synonym: "雄蕊群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:71
+xref: PO_GIT:98
+is_a: PO:0025023 ! collective phyllome structure
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+relationship: part_of PO:0009046 ! flower
+
+[Term]
+id: PO:0009062
+name: gynoecium
+namespace: plant_anatomy
+alt_id: PO:0006317
+alt_id: PO:0006357
+alt_id: PO:0006365
+alt_id: PO:0006384
+alt_id: PO:0006391
+alt_id: PO:0006394
+alt_id: PO:0006403
+alt_id: PO:0006404
+alt_id: PO:0006423
+alt_id: PO:0006424
+alt_id: PO:0006425
+alt_id: PO:0006426
+alt_id: PO:0025089
+def: "A collective phyllome structure (PO:0025023) composed all of the carpels (PO:0009030) in a flower (PO:0009046)." [POC:curators]
+comment: If annotating gene expression to a gynoecium with a single carpel (PO:0009030), the annotation should go on carpel. A gynoecium with two or more carpels may be either syncarpous (carpels fused) or apopcarpous (carpels free) or the carpels may be partially fused. The word pistil is used synonymously with gynoecium for a synocarpous gynoecium, and synonymously with carpel for an apocarpous gynoecium, whether it has one or more carpels. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "apocarpous gynoecium" NARROW []
+synonym: "ginoecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "gynaecium" EXACT [FNA:03f034c5-6bd6-4846-8ef7-c5190d09008c]
+synonym: "gynoecia" EXACT Plural [FNA:226a743c-7988-4b66-b163-2ce80d7c8a70]
+synonym: "gynoecium of ear floret" NARROW []
+synonym: "gynoecium of lower floret of pedicellate spikelet of ear" NARROW []
+synonym: "gynoecium of lower floret of pedicellate spikelet of tassel" NARROW []
+synonym: "gynoecium of lower floret of sessile spikelet of ear" NARROW []
+synonym: "gynoecium of lower floret of sessile spikelet of tassel" NARROW []
+synonym: "gynoecium of tassel floret" NARROW []
+synonym: "gynoecium of upper floret of pedicellate spikelet of ear" NARROW []
+synonym: "gynoecium of upper floret of pedicellate spikelet of tassel" NARROW []
+synonym: "gynoecium of upper floret of sessile spikelet of ear" NARROW []
+synonym: "gynoecium of upper floret of sessile spikelet of tassel" NARROW []
+synonym: "pistil" BROAD []
+synonym: "Poaceae gynoecium" NARROW []
+synonym: "syncarpous gynoecium" NARROW []
+synonym: "Zea gynoecium" NARROW []
+synonym: "雌蕊群 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:470
+xref: PO_GIT:71
+xref: PO_GIT:98
+is_a: PO:0025023 ! collective phyllome structure
+relationship: part_of PO:0009046 ! flower
+
+[Term]
+id: PO:0009066
+name: anther
+namespace: plant_anatomy
+alt_id: PO:0006442
+alt_id: PO:0006473
+def: "A collective plant organ structure (PO:0025007) that is the pollen-bearing part of a stamen (PO:0009029)." [APweb:Glossary]
+comment: Generally consists of four pollen sacs (microsporangia) in two anther thecas. If you are annotating to anther or one of its parts for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "antera (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae anther" NARROW []
+synonym: "Zea anther" NARROW []
+synonym: "半葯,花粉のう (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:297
+xref: PO_GIT:70
+is_a: PO:0025007 ! collective plant organ structure
+relationship: has_part PO:0025277 ! pollen sac
+relationship: part_of PO:0009029 ! stamen
+
+[Term]
+id: PO:0009067
+name: filament
+namespace: plant_anatomy
+alt_id: PO:0006454
+alt_id: PO:0006474
+def: "A stalk that is part of a stamen." [GR:Pankaj_Jaiswal, MaizeGDB:lv]
+comment: Supports the anthers. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "filamento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae filament" NARROW []
+synonym: "Zea filament" NARROW []
+synonym: "花糸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025066 ! stalk
+relationship: part_of PO:0009029 ! stamen
+
+[Term]
+id: PO:0009070
+name: obsolete pollen sac
+namespace: plant_anatomy
+def: "OBSOLETE. A microsporangium in an angiosperm that is a cavity in an anther that contains pollen grains." [ISBN:0716710072]
+comment: This term was made obsolete because the definition was incorrect. Replaced by PO:0025277.
+subset: Angiosperm
+subset: reference
+subset: TraitNet
+synonym: "anther lobe" RELATED []
+synonym: "saco pol&#237nico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+xref: PO_GIT:255
+xref: PO_GIT:296
+is_obsolete: true
+replaced_by: PO:0025277
+
+[Term]
+id: PO:0009072
+name: plant ovary
+namespace: plant_anatomy
+alt_id: PO:0006456
+alt_id: PO:0006486
+def: "A plant structure (PO:0009011) that is the basal portion of a carpel (PO:0009030) or group of fused carpels and encloses the plant ovule(s) (PO:0020003)." [APweb:Glossary, TAIR:Leonore_Reiser]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+subset: Angiosperm
+subset: Maize
+subset: reference
+subset: TraitNet
+synonym: "ovario vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae ovary" NARROW []
+synonym: "Zea ovary" NARROW []
+synonym: "子房 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:280
+xref: PO_GIT:70
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0009062 ! gynoecium
+
+[Term]
+id: PO:0009073
+name: stigma
+namespace: plant_anatomy
+alt_id: PO:0006468
+alt_id: PO:0006487
+def: "A cardinal organ part that is part of a carpel or group of fused carpels on which the pollen germinates, usually apical." [APweb:Glossary, TAIR:Leonore_Reiser]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "estigma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae stigma" NARROW []
+synonym: "stigmas" EXACT Plural [FNA:21acc3ff-0dee-41c7-965c-88bdd48af2c1]
+synonym: "stigmata" EXACT Plural [FNA:e8a6ec07-521d-44e9-98da-cb0f18aa96a2]
+synonym: "Zea stigma" NARROW []
+synonym: "柱頭 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:70
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009030 ! carpel
+
+[Term]
+id: PO:0009074
+name: style
+namespace: plant_anatomy
+alt_id: PO:0006469
+alt_id: PO:0006488
+def: "An elongated part of a carpel or group of fused carpels between the ovary and the stigma, and through which the pollen tube grows." [APweb:Glossary, TAIR:Leonore_Reiser]
+comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "estilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae style" NARROW []
+synonym: "silk" NARROW []
+synonym: "Zea style" NARROW []
+synonym: "花柱 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:376
+xref: PO_GIT:70
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009030 ! carpel
+
+[Term]
+id: PO:0009088
+name: seed coat
+namespace: plant_anatomy
+def: "A portion of plant tissue that is the covering of a seed derived from ovular - mainly integumentary - tissue." [APweb:Glossary, GR:Pankaj_Jaiswal, TAIR:Leonore_Reiser]
+comment: Used only when not specified more precisely; see testa, tegmen.
+subset: TraitNet
+synonym: "cubierta de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "portion of seed coat tissue" EXACT []
+synonym: "種子種皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:149
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0009010 ! seed
+
+[Term]
+id: PO:0009089
+name: endosperm
+namespace: plant_anatomy
+def: "A maximal portion of nutritive plant tissue in a seed." [APweb:Glossary, GR:Pankaj_Jaiswal]
+comment: In angiosperms endosperm is usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus; sometimes diploid or polyploid.
+subset: TraitNet
+synonym: "albumen" EXACT [FNA:1ecc1a22-0b08-4979-ae5e-2de10f4dc4ba]
+synonym: "endosperma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "内胚乳、胚乳 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0009010 ! seed
+
+[Term]
+id: PO:0009090
+name: aril
+namespace: plant_anatomy
+def: "An arilloid that is an outgrowth of a seed from a seed funicle." [ISBN:9780881928501]
+comment: Usually envelopes most of the seed and is fleshy. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.
+subset: reference
+subset: TraitNet
+synonym: "arilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "仮種皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:242
+is_a: PO:0019022 ! arilloid
+relationship: develops_from PO:0025066 ! stalk
+
+[Term]
+id: PO:0019022
+name: arilloid
+namespace: plant_anatomy
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a fleshy outgrowth of a seed (PO:0009010)." [ISBN:9780881928501]
+comment: Often conspicuous and found on seeds with a hard testa that are dispersed by animals. There is some variation in how different sources define the subtypes of arilloids.
+subset: TraitNet
+synonym: "arilli" EXACT [FNA:a00de34e-9450-4e2a-bbed-9d2cd90ed843]
+synonym: "arillode" NARROW [FNA:2343b950-6cbd-4879-b15d-db6804ace6a0]
+synonym: "arillus" EXACT [FNA:a8b68c3e-3987-4e3b-b776-d180b8d99767]
+synonym: "arilodio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "種皮附属物,　アリロイド (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:243
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0009010 ! seed
+
+[Term]
+id: PO:0020003
+name: plant ovule
+namespace: plant_anatomy
+alt_id: PO:0006457
+alt_id: PO:0006491
+def: "A plant organ (PO:0009008) that has as parts a nucellus (PO:0020020) in which a female gametophyte (PO:0025279) is located, one or two integuments (PO:0020021), and a funicle (PO:0020006)." [POC:curators]
+comment: A seed (PO:0009010) develops from a plant ovule. In angiosperms, a plant ovule is part of a plant ovary (PO:0009072). In conifers, a plant ovule is part of an ovuliferous scale (add term). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+subset: reference
+subset: TraitNet
+synonym: "&#243vulo vegetal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae ovule" NARROW []
+synonym: "Zea ovule" NARROW []
+synonym: "胚珠 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:464
+xref: PO_GIT:70
+is_a: PO:0009008 ! plant organ
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+
+[Term]
+id: PO:0020020
+name: nucellus
+namespace: plant_anatomy
+alt_id: PO:0006462
+alt_id: PO:0006492
+def: "A megasporangium (PO:0025201) in a seed plant, composed of fleshy subepidermal tissue that is part of a plant ovule (PO:0020003) and surrounds a megasporocyte (PO:0000431)." [POC:curators]
+comment: In seed plants, the megaspores and megagametophyte are retained within the nucellus. If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+subset: reference
+subset: TraitNet
+synonym: "megasporangium" RELATED []
+synonym: "nucelli" NARROW Plural [FNA:6ba590f7-80b0-4cf1-a378-a8e1286b7d18]
+synonym: "nucelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae nucellus" NARROW []
+synonym: "Zea nucellus" NARROW []
+synonym: "珠心 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:253
+xref: PO_GIT:49
+is_a: PO:0025094 ! sporangium
+relationship: part_of PO:0020003 ! plant ovule
+
+[Term]
+id: PO:0020021
+name: integument
+namespace: plant_anatomy
+alt_id: PO:0006465
+alt_id: PO:0006507
+def: "A portion of plant tissue (PO:0009007) that usually covers a plant ovule (PO:0020003), enveloping a nucellus (PO:0020020) and forming a micropyle (PO:0020025) at the apex." [APweb:Glossary]
+comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+subset: reference
+subset: TraitNet
+synonym: "integumento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Poaceae integument" NARROW []
+synonym: "portion of integument tissue" EXACT []
+synonym: "Zea integument" NARROW []
+synonym: "珠皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009007 ! portion of plant tissue
+relationship: part_of PO:0020003 ! plant ovule
+
+[Term]
+id: PO:0020025
+name: plant ovule micropyle
+namespace: plant_anatomy
+alt_id: PO:0006461
+def: "A plant anatomical space (PO:0025117) that is enclosed by and forms an opening in an integument at the apex of a plant ovule (PO:0020003)." [POC:curators]
+comment: The micropyle originates as an opening in the integuments of an ovule through which the pollen tube usually enters the embryo sac. In a mature seed the micropyle may remain visible as an occluded pore or may be obliterated. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
+subset: reference
+subset: TraitNet
+synonym: "micr&#243pila (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "micropyle " NARROW []
+synonym: "ovular micropyle" EXACT []
+synonym: "plant ovular micropyle " NARROW []
+synonym: "Poaceae micropyle" NARROW []
+synonym: "孔 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:609
+relationship: part_of PO:0020021 ! integument
+
+[Term]
+id: PO:0020030
+name: cotyledon
+namespace: plant_anatomy
+def: "A vascular leaf (PO:0009025) formed at the first shoot node (PO:0005004) of a plant embryo (PO:0009009) or a seedling (PO:0000003)." [GR:Pankaj_Jaiswal, ISBN:9780879015329, POC:curators]
+subset: reference
+subset: TraitNet
+synonym: "cotiled&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "seed leaf" EXACT [FNA:2e1fc560-4493-47fe-b363-500a1189b27d]
+synonym: "子葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:457
+is_a: PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0020038
+name: petiole
+namespace: plant_anatomy
+def: "A stalk of a leaf." [APweb:Glossary, GR:Pankaj_Jaiswal]
+subset: TraitNet
+synonym: "pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025066 ! stalk
+relationship: part_of PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0020039
+name: leaf lamina
+namespace: plant_anatomy
+def: "A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present." [POC:curators]
+comment: A leaf lamina is usually dorsiventrally flattened, but may be flattened in a median plant (perpendicular to the axis) in the case of phyllodes (PO:0025335) or other ensiform leaves (PO:0025333). This term should not be used for leaves that are not laminar (flat), like round leaves in Allium or needle-like leaves in Pinus or some Proteaceae. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: TraitNet
+synonym: "l&#225mina de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "leaf blade" RELATED []
+synonym: "葉身（葉片） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:428
+xref: PO_GIT:70
+is_a: PO:0025001 ! cardinal organ part
+is_a: PO:0025060 ! lamina
+relationship: part_of PO:0009006 ! shoot system
+relationship: part_of PO:0025034 ! leaf
+
+[Term]
+id: PO:0020041
+name: stipule
+namespace: plant_anatomy
+def: "A cardinal organ part that is an appendage at the base of a vascular leaf." [POC:curators]
+comment: Usually one of a pair of appendages. May take the form of a spine (PO:0025174) or may be bristled or brush-like. Stipules may occur on the opposite side of the shoot axis from the leaf they are associated with, but they are still thought to arise from part of the leaf.
+subset: TraitNet
+synonym: "est&#237pula (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "托葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:223
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0020049
+name: leaflet
+namespace: plant_anatomy
+def: "One of the ultimate segments of a compound leaf." [APweb:Glossary]
+subset: TraitNet
+synonym: "fol&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "pinna" NARROW [FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44]
+synonym: "pinnae" NARROW Plural [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
+synonym: "pinnule" NARROW [FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c]
+synonym: "小葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:70
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0020055
+name: leaf rachis
+namespace: plant_anatomy
+def: "A stalk that is the main axis of a pinnate or more highly compound leaf, that bears leaflets or divisions of the axis." [APweb:Glossary]
+subset: TraitNet
+synonym: "leaf rhachis" EXACT [FNA:f76f9272-ef24-4be8-a9b3-3da4c06bd8cf]
+synonym: "raquis de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉軸  (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:70
+xref: PO_GIT:80
+is_a: PO:0025066 ! stalk
+relationship: part_of PO:0009025 ! vascular leaf
+
+[Term]
+id: PO:0020061
+name: coma
+namespace: plant_anatomy
+def: "A portion of seed coat epidermis that consists of multiple seed trichomes at the micropyle." [POC:curators]
+subset: TraitNet
+synonym: "brush" EXACT []
+synonym: "coma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "comae" EXACT Plural [FNA:1b327a72-9b83-4365-bab0-a302f1f1dbbf]
+synonym: "comas" EXACT Plural [FNA:596d8481-a186-4b7b-802b-aee2de4c4ad1]
+synonym: "tuft" BROAD [FNA:7c6c72f7-89f7-44d3-9cfb-8a0959c27927]
+synonym: "種髪 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:218
+is_a: PO:0005679 ! epidermis
+relationship: has_part PO:0004511 ! seed trichome
+
+[Term]
+id: PO:0020062
+name: elaiosome
+namespace: plant_anatomy
+def: "A cardinal organ part that is an oil-secreting outgrowth of a seed or fruit." [ISBN:9780881928501]
+comment: May be a modified arilloid (a type of strophiole or caruncle) or may be an outgrowth of a fruit. May be attractive to ants and aid in dispersal.
+subset: TraitNet
+synonym: "elaiosoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "油脂体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025001 ! cardinal organ part
+
+[Term]
+id: PO:0020091
+name: obsolete microgametophyte
+namespace: plant_anatomy
+alt_id: PO:0020007
+def: "OBSOLETE. A gametophyte that produces pollen sperm cells." [POC:curators]
+comment: This term was made obsolete because it only applied to angiosperms. Consider new term microgametophyte (PO:0025280) that can apply to all plants. Also consider pollen (PO:0025281) or antheridial microgametophyte (PO:0025283).
+subset: reference
+subset: TraitNet
+synonym: "male gametophyte" EXACT []
+synonym: "microgametofito (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "pollen" RELATED []
+synonym: "pollen grain" EXACT []
+xref: PO_GIT:318
+xref: PO_GIT:319
+is_obsolete: true
+consider: PO:0025280
+consider: PO:0025281
+consider: PO:0025283
+
+[Term]
+id: PO:0020122
+name: inflorescence axis
+namespace: plant_anatomy
+def: "A shoot axis (PO:0025029) that is part of an inflorescence (PO:0009049)." [POC:curators]
+subset: Angiosperm
+subset: TraitNet
+synonym: "eje de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "first order inflorescence branch" RELATED []
+synonym: "inflorescence rachis" RELATED []
+synonym: "花序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:260
+is_a: PO:0025029 ! shoot axis
+relationship: part_of PO:0009049 ! inflorescence
+
+[Term]
+id: PO:0020124
+name: root stele
+namespace: plant_anatomy
+alt_id: PO:0003012
+def: "A stele (PO:0025197) that is part of a root (PO:0009005)." [POC:Laurel_Cooper, POC:Ramona_Walls]
+comment: Includes the pericycle as the outermost layer of the stele.
+subset: Maize
+subset: reference
+subset: TraitNet
+synonym: "estela de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "root vascular cylinder" RELATED []
+synonym: "根中心柱 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:177
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009005 ! root
+
+[Term]
+id: PO:0020127
+name: primary root
+namespace: plant_anatomy
+alt_id: PO:0020089
+def: "A root (PO:0009005) that develops directly from a seedling radicle (PO:0020127)." [ISBN:0122151704, POC:curators]
+comment: The first root of a plant.  In dicots and gymnosperms  it becomes the tap root, the central axis of a root system (PO:0025025).
+subset: TraitNet
+synonym: "ra&#237z primaria (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "tap root" EXACT []
+synonym: "一次根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:161
+is_a: PO:0009005 ! root
+relationship: develops_from PO:0009005 ! root
+
+[Term]
+id: PO:0020128
+name: leaf margin
+namespace: plant_anatomy
+def: "A phyllome margin (PO:0025018) of any flattened part of a leaf (PO:0025034)." [POC:curators]
+comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
+subset: TraitNet
+synonym: "margen de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:85
+is_a: PO:0025018 ! phyllome margin
+intersection_of: PO:0025005 ! organ margin
+intersection_of: part_of PO:0025034 ! leaf
+relationship: part_of PO:0025034 ! leaf
+
+[Term]
+id: PO:0020138
+name: leaf lamina vein
+namespace: plant_anatomy
+def: "A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048)." [POC:curators]
+subset: TraitNet
+synonym: "leaf lamina vascular bundle" EXACT []
+synonym: "vena de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉身葉脈 ？   (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:410
+xref: PO_GIT:435
+is_a: PO:0005020 ! vascular bundle
+relationship: part_of PO:0009025 ! vascular leaf
+relationship: part_of PO:0020039 ! leaf lamina
+
+[Term]
+id: PO:0020144
+name: apical meristem
+namespace: plant_anatomy
+def: "A maximal portion of meristem tissue (PO:0009013) located at a shoot apex (PO:0000037) or root tip (PO:0000025)." [GR:Pankaj_Jaiswal, POC:curators, POC:Laurel_Cooper]
+subset: TraitNet
+synonym: "AM" EXACT []
+synonym: "meristema apical (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "primary meristem" RELATED []
+synonym: "promeristem" BROAD []
+synonym: "頂端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:579
+is_a: PO:0009013 ! portion of meristem tissue
+relationship: has_part PO:0009013 ! portion of meristem tissue
+
+[Term]
+id: PO:0020145
+name: lateral meristem
+namespace: plant_anatomy
+def: "A portion of meristem (PO:0009013) tissue located parallel to the sides of a shoot axis (PO:0025029) or root (PO:0009005) that participates in lateral growth." [ISBN:047125208]
+comment: A term for lateral growth has been requested in GO. Lateral meristems contribute to an increase in the cross-sectional area of a shoot axis or root. Examples of lateral meristems are: cambium (PO:0005597) (includes cork cambium (PO:0005599) and vascular cambium (PO:0005598)), shoot lateral meristem (PO:0006344) (includes primary thickening meristem (PO:0005039)), root lateral meristem (PO:0006308), and secondary thickening meristem (PO:0025414). Contrasts with apical meristem (PO:0020144), phyllome marginal meristem (PO:0025404), or intercalary meristem (PO:0006073).
+subset: TraitNet
+synonym: "lateral growth meristem" EXACT []
+synonym: "meristema lateral (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "secondary meristem" RELATED []
+synonym: "側 分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:437
+is_a: PO:0009013 ! portion of meristem tissue
+relationship: part_of PO:0025004 ! plant axis
+
+[Term]
+id: PO:0020147
+name: root apical meristem
+namespace: plant_anatomy
+def: "A root meristem (PO:0006085) located at the root tip (PO:0000025), behind the root cap (PO:0020123)." [GR:Pankaj_Jaiswal, POC:Laurel_Cooper, UMSL:fz]
+comment: In most cases, it is involved in root elongation.
+subset: TraitNet
+synonym: "meristema apical de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "promeristem" BROAD []
+synonym: "RAM" EXACT []
+synonym: "根端分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:577
+is_a: PO:0020144 ! apical meristem
+relationship: part_of PO:0009005 ! root
+
+[Term]
+id: PO:0020148
+name: shoot apical meristem
+namespace: plant_anatomy
+def: "A shoot system meristem (PO:0006079) formed at the apex of the shoot axis (PO:0025029), including those originating from an axillary bud meristem (PO:0000232)." [POC:Cooperl, UMSL:fz]
+subset: TraitNet
+synonym: "meristema apical del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "primary shoot meristem" RELATED []
+synonym: "promeristem" BROAD []
+synonym: "SAM" EXACT []
+synonym: "茎頂分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:472
+is_a: PO:0006079 ! shoot system meristem
+is_a: PO:0020144 ! apical meristem
+relationship: part_of PO:0025029 ! shoot axis
+
+[Term]
+id: PO:0025001
+name: cardinal organ part
+namespace: plant_anatomy
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a proper part of a plant organ (PO:0009008) and includes portions of plant tissue (PO:0009007) of at least two different types." [POC:curators]
+comment: Cardinal refers to the fact that these are biologically meaningful and not arbitrary parts. Examples include petiole (PO:0020038), lamina (PO:0025060), and leaflet (PO:0020049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs.
+subset: Arabidopsis
+subset: TraitNet
+synonym: "cardinal part of plant organ" EXACT []
+synonym: "parte de un &#243rgano cardinal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "基本的な（主要な）器官部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:52
+xref: PO_GIT:60
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0009008 ! plant organ
+created_by: rwalls
+creation_date: 2010-02-11T01:18:24Z
+
+[Term]
+id: PO:0025002
+name: basal root
+namespace: plant_anatomy
+def: "A shoot-borne internode root (PO:0025593) that arises from a part of the hypocotyl (PO:0020100)." [POC:curators, POC:Laurel_Cooper]
+subset: TraitNet
+synonym: "adventitious root" BROAD []
+synonym: "ra&#237z basal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "下胚軸由来の根、不定根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:162
+is_a: PO:0000042 ! shoot-borne root
+relationship: develops_from PO:0005005 ! shoot axis internode
+created_by: rwalls
+creation_date: 2010-09-16T03:03:49Z
+
+[Term]
+id: PO:0025004
+name: plant axis
+namespace: plant_anatomy
+def: "An axial plant organ (PO:0009008)." [POC:curators]
+comment: Includes roots and shoots.
+subset: TraitNet
+synonym: "eje de la planta (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plant axes" EXACT Plural [FNA:2355281f-ab10-4ae2-a3d8-672cace068a8]
+synonym: "植物軸（軸柱） (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009008 ! plant organ
+created_by: rwalls
+creation_date: 2010-07-01T03:44:41Z
+
+[Term]
+id: PO:0025005
+name: organ margin
+namespace: plant_anatomy
+def: "A cardinal organ part that is the edge of an organ and the area immediately internally adjacent to it." [POC:curators]
+comment: Only flattened or laminar organs or organ parts will have a margin.
+subset: TraitNet
+synonym: "margen de un &#243rgano (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "器官縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:52
+xref: PO_GIT:70
+xref: PO_GIT:72
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025001 ! cardinal organ part
+relationship: part_of PO:0025060 ! lamina
+created_by: rwalls
+creation_date: 2010-03-12T10:33:57Z
+
+[Term]
+id: PO:0025007
+name: collective plant organ structure
+namespace: plant_anatomy
+def: "A collective plant structure (PO:0025497) that is a proper part of a whole plant (PO:0000003), and is composed of two or more adjacent plant organs (PO:0009008) and the associated portions of plant tissue (PO:0009007)." [POC:curators]
+comment: Organs can be of the same type or different types. Examples include flower (PO:0009046), perianth (PO:0009058), and inflorescence (PO:0009049). See also collective organ part structure (PO:0025269), for plant structures composed of parts of multiple organs, but no complete plant organs. This was formerly named collective plant structure.
+subset: TraitNet
+synonym: "estructura vegetal colectiva de &#243rgano (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "集合植物器官構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:63
+is_a: PO:0009011 ! plant structure
+relationship: has_part PO:0009008 ! plant organ
+created_by: rwalls
+creation_date: 2010-02-09T04:12:11Z
+
+[Term]
+id: PO:0025018
+name: phyllome margin
+namespace: plant_anatomy
+def: "An organ margin (PO:0025005) that is part of a phyllome (PO:0006001)." [POC:curators]
+subset: TraitNet
+synonym: "margen del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "フィロム縁 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:70
+is_a: PO:0025005 ! organ margin
+intersection_of: PO:0025005 ! organ margin
+intersection_of: part_of PO:0006001 ! phyllome
+relationship: part_of PO:0006001 ! phyllome
+relationship: part_of PO:0009006 ! shoot system
+created_by: rwalls
+creation_date: 2010-04-02T10:51:16Z
+
+[Term]
+id: PO:0025023
+name: collective phyllome structure
+namespace: plant_anatomy
+alt_id: PO:0008033
+def: "A collective plant organ structure (PO:0025007) that consists of two or more phyllomes (PO:0006001) originating from the same node or from one or more adjacent nodes with compressed shoot internodes (PO:0005005)." [POC:curators]
+subset: TraitNet
+synonym: "cycle" BROAD [FNA:d42df0a9-60f4-4c24-9c0b-ba815272f2fe]
+synonym: "estructura colectiva del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "floral whorl" NARROW [GO:0048438, GO:0048457, GO:0048458, GO:0048459]
+synonym: "phyllome whorl" RELATED []
+synonym: "verticil" BROAD [FNA:12607624-3d2a-4113-bd86-0e2557f2f473]
+synonym: "whorl" NARROW []
+synonym: "葉的器官が集まった構造 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:90
+xref: PO_GIT:99
+is_a: PO:0025007 ! collective plant organ structure
+created_by: Laurel_Cooper
+creation_date: 2010-04-28T11:04:34Z
+
+[Term]
+id: PO:0025025
+name: root system
+namespace: plant_anatomy
+def: "A collective plant organ structure (PO:0025007) that produces root meristems (PO:0006085), the plant structures (PO:0009011) that arise from them and the parts thereof." [POC:curators, POC:Laurel_Cooper]
+comment: Generally the below ground portion of a vascular plant.
+subset: TraitNet
+synonym: "root" BROAD [FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9]
+synonym: "sistema de ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "根系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:136
+is_a: PO:0025007 ! collective plant organ structure
+relationship: participates_in PO:0028002 ! sporophyte development stage
+created_by: rwalls
+creation_date: 2010-07-01T02:11:26Z
+
+[Term]
+id: PO:0025029
+name: shoot axis
+namespace: plant_anatomy
+def: "A plant axis (PO:0025004) that is part of a shoot system (PO:0009006)." [POC:curators]
+comment: Often bears leaves and branches. In vascular plants, has at least one node and one internode.
+subset: Angiosperm
+subset: Arabidopsis
+subset: Maize
+subset: Poaceae
+subset: Rice
+subset: TraitNet
+synonym: "caullome" EXACT []
+synonym: "eje del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "shoot" RELATED []
+synonym: "シュート軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025004 ! plant axis
+relationship: part_of PO:0009006 ! shoot system
+created_by: rwalls
+creation_date: 2010-07-01T03:46:35Z
+
+[Term]
+id: PO:0025030
+name: ground tissue cell
+namespace: plant_anatomy
+def: "A native plant cell (PO:0025606) that is part of a portion of ground tissue (PO:0025059)." [POC:curators, POC:Laurel_Cooper]
+comment: Includes parenchyma, collenchyma and sclerenchyma cells.
+subset: CL
+subset: TraitNet
+synonym: "c&#233lula del tejido fundamental (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "fundamental tissue cell" EXACT []
+synonym: "基本組織細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:321
+is_a: PO:0009002 ! plant cell
+relationship: part_of PO:0025059 ! portion of ground tissue
+created_by: rwalls
+creation_date: 2010-05-07T02:47:45Z
+
+[Term]
+id: PO:0025034
+name: leaf
+namespace: plant_anatomy
+def: "A phyllome (PO:0006001) that is not associated with a reproductive structure." [POC:curators]
+subset: TraitNet
+synonym: "hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:274
+xref: PO_GIT:301
+is_a: PO:0006001 ! phyllome
+created_by: rwalls
+creation_date: 2010-07-12T01:31:44Z
+
+[Term]
+id: PO:0025059
+name: portion of ground tissue
+namespace: plant_anatomy
+def: "Any portion of plant tissue (PO:0009007) other than epidermis (PO:0005679) or vascular tissue (PO:0009015)." [ISBN:0471244554, ISBN:0716710072]
+comment: Develops from the ground meristem (PO:0025594).
+subset: TraitNet
+synonym: "fundamental tissue" EXACT [ISBN:0471244554]
+synonym: "porci&#243n del tejido fundamental (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "基本組織の一部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:106
+is_a: PO:0009007 ! portion of plant tissue
+relationship: develops_from PO:0009013 ! portion of meristem tissue
+created_by: Laurel_Cooper
+creation_date: 2009-12-17T03:06:13Z
+
+[Term]
+id: PO:0025060
+name: lamina
+namespace: plant_anatomy
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is thin and flat." [POC:curators]
+comment: PATO:0000407 (flat) and PATO:0000592 (thin).
+subset: TraitNet
+synonym: "blade" EXACT [FNA:7dd0c248-f531-4cfe-b196-882e99f4c32b]
+synonym: "l&#225mina (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "laminae" EXACT Plural [FNA:12cea564-84fd-40c9-9671-1db2ec4eac90]
+synonym: "葉身、葉片 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:428
+xref: PO_GIT:70
+is_a: PO:0009011 ! plant structure
+relationship: part_of PO:0009011 ! plant structure
+created_by: Laurel_Cooper
+creation_date: 2009-12-18T11:23:59Z
+
+[Term]
+id: PO:0025066
+name: stalk
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is elongated and sub-cylindrical to cylindrical and supports another cardinal organ part." [POC:curators]
+comment: Some stalks may be ridged or grooved.
+subset: TraitNet
+synonym: "stipe" RELATED [FNA:21cee2f5-016a-44c6-b7a5-1fff6adc7e35]
+synonym: "tallo de alto orden (secundario, terciario, etc) (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PATO:0001873
+xref: PATO:0002226
+xref: PO_GIT:52
+xref: PO_GIT:78
+is_a: PO:0025001 ! cardinal organ part
+created_by: Laurel_Cooper
+creation_date: 2009-12-18T10:09:17Z
+
+[Term]
+id: PO:0025073
+name: branch
+namespace: plant_anatomy
+def: "A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007)." [POC:curators]
+comment: In vascular plants, branches arise from an axillary bud meristem (PO:0000232) and from divisions of the meristematic apical cell (PO:0030007) in non-vascular plants.
+subset: TraitNet
+synonym: "<new synonym>" RELATED []
+synonym: "branchlet" NARROW [FNA:32d32293-adee-47ae-b1ba-bd9bd22230c2]
+synonym: "higher order axis" NARROW []
+synonym: "ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "secondary axis" NARROW []
+synonym: "shoot axis branch" EXACT [POC:curators]
+synonym: "tertiary axis" NARROW []
+synonym: "twig" NARROW []
+synonym: "枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:134
+is_a: PO:0025029 ! shoot axis
+created_by: rwalls
+creation_date: 2010-07-01T04:21:46Z
+
+[Term]
+id: PO:0025075
+name: non-vascular leaf
+namespace: plant_anatomy
+def: "A leaf (PO:0025034) in a non-vascular plant." [POC:curators]
+comment: Non-vascular leaves occur in the gametophyte development stage (PO:0028003) of Bryophytes, plants such as moss and liverwort.
+subset: Bryophytes
+subset: TraitNet
+synonym: "gametophyll" EXACT []
+synonym: "gametophyte leaf" EXACT []
+synonym: "gametophytic leaf" EXACT []
+synonym: "hoja no vascular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "non-vascular leaflet" RELATED []
+synonym: "phyllid" EXACT []
+synonym: "phyllidium" EXACT []
+synonym: "非維管束系葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:137
+is_a: PO:0025034 ! leaf
+relationship: part_of PO:0009006 ! shoot system
+created_by: rwalls
+creation_date: 2010-07-12T01:31:59Z
+
+[Term]
+id: PO:0025082
+name: reproductive shoot system
+namespace: plant_anatomy
+def: "A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094)." [POC:curators]
+subset: TraitNet
+synonym: "sistema de brote reproductivo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "生殖シュート 系、苗条系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0009006 ! shoot system
+relationship: participates_in PO:0009012 ! plant structure development stage
+created_by: rwalls
+creation_date: 2010-09-17T09:49:10Z
+
+[Term]
+id: PO:0025083
+name: strobilus
+namespace: plant_anatomy
+def: "A reproductive shoot system (PO:0025082) consisting of a number of sporophylls (PO:0009026) or plant ovule (PO:0020003)-bearing modified leaves (PO:0025034) grouped terminally on a stem (PO:0009047)." [ISBN:0716710072, POC:curators]
+comment: May be simple or compound. Found in lycophytes such as Selaginella and Lycopodium, sphenophytes such as Equisetum, gymnosperms such as cycad, conifers, gnetophytes and the pollen producing structures of Gingko. The term cone is often used for strobili that are woody. Flowers are sometimes considered bisexual strobili. Some flowering plants such as Alnus have inflorescences called catkins that resemble strobili, but are not.
+subset: TraitNet
+synonym: "compound strobilus" NARROW []
+synonym: "cone" RELATED []
+synonym: "cono (Spanish)" RELATED Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "estr&#243bilo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "simple strobilus" NARROW []
+synonym: "strobili" EXACT Plural [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
+synonym: "胞子嚢穂,　球花 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:168
+xref: PO_GIT:601
+is_a: PO:0025082 ! reproductive shoot system
+created_by: rwalls
+creation_date: 2010-09-17T09:51:22Z
+
+[Term]
+id: PO:0025084
+name: reproductive bud
+namespace: plant_anatomy
+def: "A bud that develops into a reproductive shoot system." [POC:curators]
+subset: TraitNet
+synonym: "yema reproductiva (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "生殖芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0000055 ! bud
+is_a: PO:0025082 ! reproductive shoot system
+created_by: rwalls
+creation_date: 2010-09-17T01:52:05Z
+
+[Term]
+id: PO:0025094
+name: sporangium
+namespace: plant_anatomy
+alt_id: PO:0025232
+def: "A plant organ (PO:0009008) in which plant spores (PO:0025017) are produced." [ISBN:0716710072, POC:curators]
+comment: In bryophytes, particularly in mosses, a sporangium is referred to as a capsule. In seed plants, a sporangium is located in a sporophyll. In pteridophytes, a sporangium is located on the surface of a sporophyll or fertile leaf or borne on a sporangiophore. May be unicellular in some algae.
+subset: Bryophytes
+subset: TraitNet
+synonym: "esporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "moss capsule" EXACT []
+synonym: "sporangia" EXACT Plural []
+synonym: "spore capsule" EXACT []
+synonym: "spore case" EXACT [FNA:808e89e2-7155-41e5-b7b9-a887000d1734]
+synonym: "胞子嚢 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:251
+xref: PO_GIT:257
+is_a: PO:0009008 ! plant organ
+relationship: participates_in PO:0028002 ! sporophyte development stage
+created_by: rwalls
+creation_date: 2010-10-27T11:28:21Z
+
+[Term]
+id: PO:0025277
+name: pollen sac
+namespace: plant_anatomy
+alt_id: PO:0006444
+alt_id: PO:0006476
+def: "A microsporangium that is part of a sporophyll and where the pollen grains develop and are located after they develop." [POC:curators]
+comment: A pollen sac is a microsporangium in seed plants. In angiosperms, a single, unfused pollen sac may contain an anther locule or several pollen sacs may fuse so they contain a single anther locule. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
+subset: reference
+subset: TraitNet
+synonym: "anther lobe" NARROW []
+synonym: "Poaceae microsporangium" NARROW []
+synonym: "saco pol&#237nico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "Zea microsporangium" NARROW []
+synonym: "花粉のう (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:255
+xref: PO_GIT:296
+is_a: PO:0025094 ! sporangium
+relationship: part_of PO:0009006 ! shoot system
+relationship: part_of PO:0009028 ! microsporophyll
+created_by: rwalls
+creation_date: 2011-02-25T09:17:11Z
+
+[Term]
+id: PO:0028002
+name: sporophyte development stage
+namespace: plant_structure_development_stage
+def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between fertilization (or apogamy) and death." [POC:curators]
+comment: A whole plant (PO:0000003) in the sporophyte development stage usually has twice the chromosome complement of a plant in the gametophytic phase, but may not in the case of apogamy. Examples of apogamy include both naturally occurring instances (such as sporophytes arising form haploid cells as in bryophytes or ferns) as well as in vitro instances (such as haploid embryo culture or in vitro fusion of non-gamete cells or protoplasts). During the sporophyte development stage, a plant may produce meiospores by meiosis.
+subset: TraitNet
+synonym: "fase esporof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "sporophytic development stage" EXACT []
+synonym: "sporophytic phase" EXACT []
+synonym: "sporphyte phase" EXACT []
+synonym: "胞子体発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:139
+xref: PO_GIT:68
+is_a: PO:0007033 ! whole plant development stage
+relationship: part_of PO:0007033 ! whole plant development stage
+created_by: rwalls
+creation_date: 2010-07-15T02:56:11Z
+
+[Term]
+id: PO:0028003
+name: gametophyte development stage
+namespace: plant_structure_development_stage
+def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between meiosis or apospory and the time that the whole plant ceases to exist." [POC:curators]
+comment: In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophyte development stage but bears the chromosome complement that would normally be found in the sporophyte development stage (PO:0028002). A whole plant in the gametophyte development stage usually has half the chromosome complement of a plant in the sporophyte development stage, but not in the case of apospory. A whole plant in the gametophyte development stage may cease to exist by death at any point in its development. In seed plants, the whole plant in the gametophyte development stage may cease to exists through transformation, such as when pollen (PO:0025281) releases its pollen sperm cells (PO:0025121) or when a plant embryo (PO:0009009) begins to develop within an embryo sac (PO:0025074) of an angiosperm. During the gametophytic phase, a plant may produce gametes (PO:0025006) by mitosis.
+subset: TraitNet
+synonym: "fase gametof&#237tica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "gametophyte phase" EXACT []
+synonym: "gametophytic development stage" EXACT []
+synonym: "gametophytic phase" EXACT []
+synonym: "配偶体発生過程 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: OBO-SF2_PO:139
+is_a: PO:0007033 ! whole plant development stage
+relationship: part_of PO:0007033 ! whole plant development stage
+created_by: rwalls
+creation_date: 2010-07-15T02:56:11Z
+
+[Typedef]
+id: adjacent_to
+name: adjacent_to
+namespace: plant_ontology
+xref: RO:0002220
+
+[Typedef]
+id: derives_by_manipulation_from
+name: derives_by_manipulation_from
+namespace: plant_ontology
+def: "A derives_by_manipulation_from B means: A is a type of in vitro plant structure, and every instance of A exists at a point in time later than some instance of B from which it was created through human manipulation, and every instance of A inherited a biologically significant portion of its matter from the instance of B from which it was derived." [POC:curators]
+comment: The derives_by_manipulation_from relation, is a special case of the RO relation derives_from.  Derives_from implies an instance level derivation that holds between two distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later.  Likewise, derives_by_manipulation_from joins two plant structures before and after some manipulation.  Specifically, derives_by_manipulation_from is used to describe the relation between an in vitro plant structure and the in vivo plant structure that is its temporal precursor.
+created_by: rwalls
+creation_date: 2010-07-01T02:45:12Z
+
+[Typedef]
+id: developmentally_preceded_by
+name: developmentally_preceded_by
+namespace: plant_ontology
+def: "X developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p." [RO:0002258]
+xref: RO:0002258
+is_obsolete: true
+created_by: Laurel_Cooper
+creation_date: 2013-06-27T13:16:56Z
+
+[Typedef]
+id: develops_from
+name: develops_from
+namespace: plant_ontology
+xref: RO:0002202
+is_transitive: true
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: plant_ontology
+xref: BFO:0000051
+is_transitive: true
+
+[Typedef]
+id: has_participant
+name: has_participant
+namespace: plant_ontology
+xref: BFO:0000057
+
+[Typedef]
+id: isolated_from_germplasm
+name: isolated from germplasm
+namespace: plant_ontology
+
+[Typedef]
+id: located_in
+name: located_in
+namespace: plant_ontology
+xref: RO:0001025
+created_by: rwalls
+creation_date: 2012-05-23T09:52:02Z
+
+[Typedef]
+id: part_of
+name: part_of
+namespace: plant_ontology
+xref: BFO:0000050
+is_transitive: true
+
+[Typedef]
+id: participates_in
+name: participates_in
+namespace: plant_ontology
+xref: BFO:0000056
+holds_over_chain: part_of participates_in
+inverse_of: has_participant ! has_participant
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+namespace: plant_ontology
+def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [POC:Laurel_Cooper]
+comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
+xref: BFO:0000062
+is_transitive: true
+created_by: Laurel_Cooper
+creation_date: 2013-07-09T14:29:15Z
+
+[Typedef]
+id: precedes
+name: precedes
+namespace: plant_ontology
+xref: BFO:0000063
+created_by: Laurel_Cooper
+creation_date: 2015-06-04T17:18:40Z
+
