@@ -1,6 +1,6 @@
 ## OBO Library prefix
 OBO=http://purl.obolibrary.org/obo
-
+BASE=$(OBO)/$(ONT)
 CAT=
 SRC=plant-ontology.obo
 ONT=po
