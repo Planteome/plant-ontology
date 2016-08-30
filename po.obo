@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2016-05-19
+data-version: releases/2016-08-30
 saved-by: cooperl
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -34,7 +34,6 @@ synonym: "embri&#243foro (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚本体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:246
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0000002
@@ -2437,7 +2436,6 @@ synonym: "胚基底細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:281
 is_a: PO:0025028 ! embryo plant cell
 relationship: develops_from PO:0000423 ! plant zygote
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0002003
@@ -3883,7 +3881,6 @@ synonym: "胚皮層 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:9
 is_a: PO:0005708 ! cortex
 is_a: PO:0025233 ! portion of embryo plant tissue
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0005015
@@ -3895,7 +3892,6 @@ synonym: "胚内胚葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:10
 is_a: PO:0000252 ! endodermis
 is_a: PO:0025233 ! portion of embryo plant tissue
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0005016
@@ -4156,7 +4152,6 @@ synonym: "二次師部 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF3_PO:433
 is_a: PO:0005417 ! phloem
 is_a: PO:0025409 ! secondary vascular tissue
-relationship: develops_from PO:0005598 ! vascular cambium
 
 [Term]
 id: PO:0005046
@@ -4685,7 +4680,6 @@ xref: PO_GIT:164
 xref: PO_GIT:434
 is_a: PO:0005352 ! xylem
 is_a: PO:0025409 ! secondary vascular tissue
-relationship: develops_from PO:0005598 ! vascular cambium
 
 [Term]
 id: PO:0005849
@@ -6249,7 +6243,6 @@ synonym: "hypogynium" EXACT [FNA:b19b39b0-9a57-4ab7-8cb5-3b0af680c9dc]
 synonym: "花被間柱、子房柄、雌蕊柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025029 ! shoot axis
 is_a: PO:0025395 ! floral organ
-relationship: part_of PO:0009046 ! flower
 
 [Term]
 id: PO:0006331
@@ -6320,7 +6313,6 @@ synonym: "hoja embri&#243nica (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gand
 synonym: "初期の葉、胚葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009025 ! vascular leaf
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0006339
@@ -6604,7 +6596,6 @@ synonym: "gluma inferior la espiga de la espiguilla (Spanish)" EXACT Spanish [PO
 synonym: "雌穂（花）小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006002 ! lower glume
 is_a: PO:0006367 ! glume of ear spikelet
-relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
 id: PO:0006370
@@ -6616,7 +6607,6 @@ synonym: "gluma superior del penacho (borla) de la espiguilla (Spanish)" EXACT S
 synonym: "雄穂（花）小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006004 ! upper glume
 is_a: PO:0006368 ! glume of tassel spikelet
-relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0006371
@@ -6627,7 +6617,6 @@ synonym: "gluma superior de la espiga de la espiguilla (Spanish)" EXACT Spanish 
 synonym: "雌穂（花）小穂の第二苞頴(second glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006004 ! upper glume
 is_a: PO:0006367 ! glume of ear spikelet
-relationship: part_of PO:0006320 ! ear spikelet
 
 [Term]
 id: PO:0006372
@@ -6639,7 +6628,6 @@ synonym: "gluma inferior del penacho (borla) de la espiguilla (Spanish)" EXACT S
 synonym: "雄穂（花）小穂の第一苞頴(first glume) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006002 ! lower glume
 is_a: PO:0006368 ! glume of tassel spikelet
-relationship: part_of PO:0006309 ! tassel spikelet
 
 [Term]
 id: PO:0006375
@@ -9758,7 +9746,6 @@ synonym: "sistema vascular del embri&#243n (Spanish)" EXACT Spanish [POC:Maria_A
 synonym: "胚維管系 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000034 ! vascular system
 is_a: PO:0025233 ! portion of embryo plant tissue
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0008012
@@ -10815,7 +10802,6 @@ xref: PO_GIT:84
 is_a: PO:0009055 ! bract
 is_a: PO:0025395 ! floral organ
 relationship: develops_from PO:0025488 ! flower bract primordium
-relationship: part_of PO:0009046 ! flower
 
 [Term]
 id: PO:0009035
@@ -11930,7 +11916,6 @@ synonym: "雄穂側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:437
 is_a: PO:0009105 ! inflorescence branch meristem
 is_a: PO:0009106 ! tassel meristem
-relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0009108
@@ -11967,7 +11952,6 @@ synonym: "雌穂側分裂組織 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBOS_SF_PO:3481640
 is_a: PO:0009105 ! inflorescence branch meristem
 is_a: PO:0009109 ! ear meristem
-relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0009111
@@ -11993,7 +11977,6 @@ synonym: "植物胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:339
 is_a: PO:0025004 ! plant axis
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0019022
@@ -12496,7 +12479,6 @@ synonym: "幼芽 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:339
 is_a: PO:0000037 ! shoot apex
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020033
@@ -12951,7 +12933,6 @@ synonym: "c&#233lula central (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gando
 synonym: "中央細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:182
 is_a: PO:0025026 ! embryo sac cell
-relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
 id: PO:0020091
@@ -13000,7 +12981,6 @@ subset: reference
 synonym: "c&#233lula antipodal (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "反足細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025026 ! embryo sac cell
-relationship: part_of PO:0025074 ! embryo sac
 
 [Term]
 id: PO:0020094
@@ -13172,7 +13152,6 @@ synonym: "胚柄 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:248
 is_a: PO:0025099 ! embryo plant structure
 relationship: develops_from PO:0002002 ! embryo basal cell
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020109
@@ -13199,7 +13178,6 @@ synonym: "haustorial cotyledon" RELATED []
 synonym: "胚盤 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:249
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
 id: PO:0020121
@@ -13842,7 +13820,6 @@ xref: PO_GIT:70
 is_a: PO:0025005 ! organ margin
 intersection_of: PO:0025005 ! organ margin
 intersection_of: part_of PO:0006001 ! phyllome
-relationship: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0025396 ! phyllome lamina
 created_by: rwalls
 creation_date: 2010-04-02T10:51:16Z
@@ -13999,7 +13976,6 @@ is_a: PO:0025099 ! embryo plant structure
 is_a: PO:0025606 ! native plant cell
 intersection_of: PO:0025606 ! native plant cell
 intersection_of: part_of PO:0009009 ! plant embryo
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2010-05-07T02:41:17Z
 
@@ -15889,7 +15865,6 @@ subset: CL
 synonym: "c&#233lula ramificada de tricoma multicelular (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "多細胞毛（毛茸、糸状体）分枝細胞 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0008030 ! trichome cell
-relationship: part_of PO:0025162 ! multicellular trichome
 created_by: rwalls
 creation_date: 2010-11-18T08:01:29Z
 
@@ -16082,7 +16057,6 @@ synonym: "葉刺状突起 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:220
 is_a: PO:0006016 ! leaf epidermis
 is_a: PO:0025169 ! prickle
-relationship: part_of PO:0025034 ! leaf
 created_by: rwalls
 creation_date: 2010-11-22T09:35:01Z
 
@@ -16190,7 +16164,6 @@ synonym: "leaf epidermis stomatal complex" EXACT []
 synonym: "葉気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006016 ! leaf epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0025034 ! leaf
 created_by: rwalls
 creation_date: 2010-12-09T11:47:55Z
 
@@ -16220,7 +16193,6 @@ synonym: "leaf lamina epidermis stomatal complex" EXACT []
 synonym: "葉身気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000047 ! leaf lamina epidermis
 is_a: PO:0025183 ! leaf stomatal complex
-relationship: part_of PO:0020039 ! leaf lamina
 created_by: rwalls
 creation_date: 2010-12-09T11:49:35Z
 
@@ -16270,7 +16242,6 @@ synonym: "petiole epidermis stomatal complex" EXACT []
 synonym: "葉柄 気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000051 ! petiole epidermis
 is_a: PO:0025183 ! leaf stomatal complex
-relationship: part_of PO:0020038 ! petiole
 created_by: rwalls
 creation_date: 2010-12-09T11:49:35Z
 
@@ -16629,7 +16600,6 @@ synonym: "complejo estom&#225tico de la br&#225ctea (Spanish)" EXACT Spanish [PO
 synonym: "苞気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025158 ! bract epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0009055 ! bract
 created_by: rwalls
 creation_date: 2010-12-20T08:27:52Z
 
@@ -16644,7 +16614,6 @@ synonym: "complejo estom&#225tico del carpelo (Spanish)" EXACT Spanish [POC:Mari
 synonym: "心皮気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025096 ! carpel epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0009030 ! carpel
 created_by: rwalls
 creation_date: 2010-12-20T08:27:52Z
 
@@ -16659,7 +16628,6 @@ synonym: "petal epidermis stomatal complex" EXACT []
 synonym: "花弁気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006041 ! petal epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0009032 ! petal
 created_by: rwalls
 creation_date: 2010-12-20T08:27:52Z
 
@@ -16674,7 +16642,6 @@ synonym: "sepal epidermis stomatal complex" EXACT []
 synonym: "がく片気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006040 ! sepal epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0009031 ! sepal
 created_by: rwalls
 creation_date: 2010-12-20T08:27:52Z
 
@@ -16689,7 +16656,6 @@ synonym: "stamen epidermis stomatal complex" EXACT []
 synonym: "雄蕊気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025097 ! stamen epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0009029 ! stamen
 created_by: rwalls
 creation_date: 2010-12-20T08:27:52Z
 
@@ -16704,7 +16670,6 @@ synonym: "tepal epidermis stomatal complex" EXACT []
 synonym: "花被片気孔装置 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025184 ! tepal epidermis
 is_a: PO:0025215 ! phyllome stomatal complex
-relationship: part_of PO:0009033 ! tepal
 created_by: rwalls
 creation_date: 2010-12-20T08:27:52Z
 
@@ -16847,7 +16812,6 @@ is_a: PO:0009007 ! portion of plant tissue
 is_a: PO:0025099 ! embryo plant structure
 intersection_of: PO:0009007 ! portion of plant tissue
 intersection_of: part_of PO:0009009 ! plant embryo
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2010-12-20T12:27:10Z
 
@@ -17557,7 +17521,6 @@ xref: PO_GIT:281
 is_a: PO:0025028 ! embryo plant cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: develops_from PO:0000423 ! plant zygote
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2011-04-12T09:05:04Z
 
@@ -17585,7 +17548,6 @@ synonym: "胚子葉鞘、胚鞘葉 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamaza
 xref: PO_GIT:294
 is_a: PO:0020033 ! coleoptile
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2011-04-20T02:20:11Z
 
@@ -17615,7 +17577,6 @@ synonym: "胚根鞘 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:340
 is_a: PO:0020034 ! coleorhiza
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2011-04-20T02:34:16Z
 
@@ -17674,7 +17635,6 @@ synonym: "胚上胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:342
 is_a: PO:0020035 ! epicotyl
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2011-04-25T10:13:08Z
 
@@ -17703,7 +17663,6 @@ synonym: "胚中茎、胚中胚軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamaza
 xref: PO_GIT:343
 is_a: PO:0020037 ! mesocotyl
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2011-04-25T10:21:58Z
 
@@ -17734,7 +17693,6 @@ synonym: "胚幼根 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:344
 is_a: PO:0020031 ! radicle
 is_a: PO:0025099 ! embryo plant structure
-relationship: part_of PO:0009009 ! plant embryo
 created_by: rwalls
 creation_date: 2011-04-25T10:41:14Z
 
@@ -18867,7 +18825,6 @@ synonym: "胞子休眠期 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:426
 is_a: PO:0025342 ! gametophyte dormant stage
 is_a: PO:0025375 ! plant spore stage
-relationship: has_participant PO:0025017 ! plant spore
 created_by: rwalls
 creation_date: 2012-01-05T10:47:37Z
 
@@ -19206,7 +19163,6 @@ xref: PO_GIT:415
 is_a: PO:0025380 ! leaf mesophyll intercellular space
 is_a: PO:0025398 ! phyllome substomatal cavity
 relationship: adjacent_to PO:0025235 ! leaf stomatal pore
-relationship: part_of PO:0005645 ! leaf mesophyll
 created_by: Laurel_Cooper
 creation_date: 2012-01-23T03:00:45Z
 
@@ -19681,7 +19637,6 @@ synonym: "子葉原基 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:407
 is_a: PO:0025233 ! portion of embryo plant tissue
 is_a: PO:0025430 ! phyllome anlagen
-relationship: part_of PO:0009009 ! plant embryo
 created_by: Laurel_Cooper
 creation_date: 2012-02-07T09:07:56Z
 
@@ -19884,7 +19839,6 @@ is_a: PO:0000301 ! tracheid
 is_a: PO:0025445 ! secondary xylem tracheary element
 intersection_of: PO:0000301 ! tracheid
 intersection_of: part_of PO:0005848 ! secondary xylem
-relationship: part_of PO:0005848 ! secondary xylem
 created_by: rwalls
 creation_date: 2012-03-05T11:06:18Z
 
@@ -19913,7 +19867,6 @@ is_a: PO:0002003 ! xylem vessel member
 is_a: PO:0025445 ! secondary xylem tracheary element
 intersection_of: PO:0002003 ! xylem vessel member
 intersection_of: part_of PO:0005848 ! secondary xylem
-relationship: part_of PO:0005848 ! secondary xylem
 created_by: rwalls
 creation_date: 2012-03-05T11:06:18Z
 
@@ -19987,7 +19940,6 @@ is_a: PO:0025415 ! sieve cell
 is_a: PO:0025452 ! primary phloem sieve element
 intersection_of: PO:0025415 ! sieve cell
 intersection_of: part_of PO:0006075 ! primary phloem
-relationship: part_of PO:0006075 ! primary phloem
 created_by: rwalls
 creation_date: 2012-03-12T02:41:15Z
 
@@ -20005,7 +19957,6 @@ is_a: PO:0000289 ! sieve tube element
 is_a: PO:0025452 ! primary phloem sieve element
 intersection_of: PO:0000289 ! sieve tube element
 intersection_of: part_of PO:0006075 ! primary phloem
-relationship: part_of PO:0006075 ! primary phloem
 created_by: rwalls
 creation_date: 2012-03-12T02:41:15Z
 
@@ -20021,7 +19972,6 @@ is_a: PO:0025415 ! sieve cell
 is_a: PO:0025453 ! secondary phloem sieve element
 intersection_of: PO:0025415 ! sieve cell
 intersection_of: part_of PO:0005043 ! secondary phloem
-relationship: part_of PO:0005043 ! secondary phloem
 created_by: rwalls
 creation_date: 2012-03-12T02:41:15Z
 
@@ -20039,7 +19989,6 @@ is_a: PO:0000289 ! sieve tube element
 is_a: PO:0025453 ! secondary phloem sieve element
 intersection_of: PO:0000289 ! sieve tube element
 intersection_of: part_of PO:0005043 ! secondary phloem
-relationship: part_of PO:0005043 ! secondary phloem
 created_by: rwalls
 creation_date: 2012-03-12T02:41:15Z
 
@@ -20783,7 +20732,6 @@ is_a: PO:0025001 ! cardinal organ part
 is_a: PO:0025060 ! lamina
 intersection_of: PO:0025060 ! lamina
 intersection_of: part_of PO:0009008 ! plant organ
-relationship: part_of PO:0009008 ! plant organ
 created_by: rwalls
 creation_date: 2012-10-17T15:51:02Z
 
@@ -21517,7 +21465,7 @@ creation_date: 2013-05-29T11:58:32Z
 id: PO:0025570
 name: vascular leaf development stage
 namespace: plant_structure_development_stage
-def: "A leaf development stage (PO:0001050) which begins with the onset of the vascular leaf initiation stage (PO:0001051) and ends with the termination of the vascular leaf senescence stage (PO:0001054)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
+def: "A leaf development stage (PO:0001050) that occurs during the interval between the onset of the vascular leaf initiation stage (PO:0001051) and the termination of the vascular leaf senescent stage (PO:0001054)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
 comment: In some plants, the leaf developmental stages may occur in the same leaf simultaneously.  For example, leaves maize (or other grasses) have various zones where stages are occurring along the length of the lamina.
 xref: PO_GIT:555
 is_a: PO:0001050 ! leaf development stage
@@ -22523,7 +22471,6 @@ synonym: "茎葉体枝 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:289
 is_a: PO:0025073 ! branch
 is_a: PO:0030020 ! gametophore axis
-relationship: part_of PO:0030018 ! gametophore
 created_by: rwalls
 creation_date: 2011-03-25T11:13:48Z
 
@@ -22542,7 +22489,6 @@ synonym: "茎葉体の茎 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:289
 is_a: PO:0009047 ! stem
 is_a: PO:0030020 ! gametophore axis
-relationship: part_of PO:0030018 ! gametophore
 created_by: rwalls
 creation_date: 2011-03-25T11:17:24Z
 
@@ -22583,7 +22529,6 @@ synonym: "維管束を持つシュート軸分裂組織の頂端細胞 (Japanese
 xref: PO_GIT:303
 is_a: PO:0030010 ! shoot axis meristematic apical cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
-relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: rwalls
 creation_date: 2011-03-25T11:46:56Z
 
