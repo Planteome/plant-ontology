@@ -7,7 +7,7 @@ ONT=po
 ROBOT=robot
 
 all: po.obo po.owl 
-test: all
+test: subsets/po-basic.obo
 release: all
 	echo "build successful. Now commit and push the derived files and make a release here: "
 
@@ -20,5 +20,5 @@ reasoner-report.txt: plant-ontology.obo
 	owltools $(CAT) $< --run-reasoner -r elk -u > $@.tmp && egrep '(INFERENCE|UNSAT)' $@.tmp > $@
 
 # TODO: switch to using robot
-subsets/po-basic.obo: target/po-simple.obo
+subsets/po-basic.obo: po.obo
 	owltools $(CAT) $< --make-subset-by-properties BFO:0000050 // --set-ontology-id $(OBO)/po/subsets/po-basic.owl -o -f obo $@
