@@ -1,28 +1,30 @@
 ## OBO Library prefix
 OBO=http://purl.obolibrary.org/obo
 BASE=$(OBO)/$(ONT)
-CAT=
+CAT=--use-catalog
 SRC=plant-ontology.obo
 ONT=po
 ROBOT=robot
 OWLTOOLS=owltools
 
-all: po.obo po.owl 
-test: subsets/po-basic.obo
+all: po.obo po.owl all_subsets
+all_subsets: subsets/po-basic.obo
+test: all_subsets
 release: all
 	echo "build successful. Now commit and push the derived files and make a release here: "
 
 $(ONT).owl: $(SRC)
-	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT)  reason -x true -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
-	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && grep -v '^owl-axioms:' $(ONT).obo.tmp > $@ && rm $(ONT).obo.tmp
+	$(OWLTOOLS) $(CAT) $< -o -f obo --no-check $(ONT).obo.tmp && grep -v '^owl-axioms:' $(ONT).obo.tmp > $@ && rm $(ONT).obo.tmp
+#	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && grep -v '^owl-axioms:' $(ONT).obo.tmp > $@ && rm $(ONT).obo.tmp
 
 reasoner-report.txt: plant-ontology.obo
 	owltools $(CAT) $< --run-reasoner -r elk -u > $@.tmp && egrep '(INFERENCE|UNSAT)' $@.tmp > $@
 
 # TODO: switch to using robot
 subsets/po-basic.obo: po.obo
-	owltools $(CAT) $< --make-subset-by-properties BFO:0000050 // --set-ontology-id $(OBO)/po/subsets/po-basic.owl -o -f obo $@
+	owltools $(CAT) $< --remove-imports-declarations --make-subset-by-properties -f BFO:0000050 // --set-ontology-id $(OBO)/po/subsets/po-basic.owl -o -f obo $@
 
 # ----------------------------------------
 # Imports
