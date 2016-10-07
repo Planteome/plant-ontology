@@ -22,7 +22,7 @@ default-namespace: plant_ontology
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
 ontology: po
-imports: http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl
+import: http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl
 
 [Term]
 id: PO:0000001
@@ -12666,7 +12666,6 @@ synonym: "Poaceae microspore" NARROW []
 synonym: "Zea microspore" NARROW []
 synonym: "小胞子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025017 ! plant spore
-relationship: only_in_taxon NCBITaxon:3398 {id="GO:0009556"} ! Magnoliophyta
 
 [Term]
 id: PO:0020049
