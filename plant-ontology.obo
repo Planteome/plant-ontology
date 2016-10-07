@@ -22,6 +22,7 @@ default-namespace: plant_ontology
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
 ontology: po
+imports: http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl
 
 [Term]
 id: PO:0000001
@@ -87,6 +88,7 @@ synonym: "植物体全体 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:538
 xref: PO_GIT:69
 is_a: PO:0009011 ! plant structure
+relationship: only_in_taxon NCBITaxon:33090 {source="cjm"} ! Viridiplantae
 
 [Term]
 id: PO:0000004
@@ -11548,6 +11550,7 @@ xref: PO_GIT:280
 xref: PO_GIT:70
 is_a: PO:0009011 ! plant structure
 relationship: part_of PO:0009062 ! gynoecium
+relationship: only_in_taxon NCBITaxon:3398 {source="GO:0035670"} ! Magnoliophyta
 
 [Term]
 id: PO:0009073
@@ -12663,6 +12666,7 @@ synonym: "Poaceae microspore" NARROW []
 synonym: "Zea microspore" NARROW []
 synonym: "小胞子 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025017 ! plant spore
+relationship: only_in_taxon NCBITaxon:3398 {id="GO:0009556"} ! Magnoliophyta
 
 [Term]
 id: PO:0020049
