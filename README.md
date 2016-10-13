@@ -5,7 +5,7 @@
 
 This is the repository for the Plant Ontology
 
-  The current release version of the PO can be accessed through its official PURLs:
+The current release version of the PO can be accessed through its official PURLs:
 
  * http://purl.obolibrary.org/obo/po.owl
  * http://purl.obolibrary.org/obo/po.obo
@@ -41,3 +41,6 @@ The current Release file of the Plant Ontology, in OBO format.  All relations th
 
 The current release file of the Plant Ontology, in OBO format. All relations that are inferred are asserted in the release process
 
+# Ontology Editors Guide
+
+See https://github.com/Planteome/plant-ontology/blob/master/README-po-editors.md 
