@@ -6,6 +6,8 @@ Note that if you are NOT a Planteome ontology developer then you are probably in
 
 All editing is done on the plant-ontology.obo file 
 
+** DO NOT EDIT po.obo OR po.owl **
+
 Files in this repository:
 
 * plant-ontology.obo: 
