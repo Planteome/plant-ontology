@@ -1,19 +1,10 @@
-[![Build Status](https://travis-ci.org/Planteome/plant-ontology.svg?branch=master)](https://travis-ci.org/Planteome/plant-ontology)
-[![DOI](https://zenodo.org/badge/13996/Planteome/plant-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/Planteome/plant-ontology)
+# Plant Ontology Editors' Guide
 
-# plant-ontology
+This repository contains the most current, working version of the Plant Ontology editors' file: plant-ontology.obo
 
-This is the repository for the Plant Ontology
+Note that if you are NOT a Planteome ontology developer then you are probably in the wrong place.
 
-  The current release version of the PO can be accessed through its official PURLs:
-
- * http://purl.obolibrary.org/obo/po.owl
- * http://purl.obolibrary.org/obo/po.obo
- * http://purl.obolibrary.org/obo/po/subsets/po-basic.obo
-
-Or at http://planteome.org/
-
-All releases can be found here:  https://github.com/Planteome/plant-ontology/releases 	
+All editing is done on the plant-ontology.obo file 
 
 Files in this repository:
 
@@ -35,4 +26,8 @@ The current release file of the Plant Ontology, in OBO format
 
 * po.owl
 The current release file of the Plant Ontology, in OBO format
+
+All releases can be found here:   https://github.com/Planteome/plant-ontology/releases 	
+
+
 
