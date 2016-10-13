@@ -22,10 +22,12 @@ An OWL version of the plant-ontology.obo editors' file, automatically created ni
 New versions of the following two files are created only with new releases:
 
 * po.obo
-The current release file of the Plant Ontology, in OBO format
+
+The current Release file of the Plant Ontology, in OBO format.  All relations that are inferred are asserted in the release process
 
 * po.owl
-The current release file of the Plant Ontology, in OBO format
+
+The current release file of the Plant Ontology, in OBO format. All relations that are inferred are asserted in the release process
 
 All releases can be found here:   https://github.com/Planteome/plant-ontology/releases 	
 
