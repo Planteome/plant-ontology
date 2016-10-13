@@ -33,5 +33,83 @@ The current release file of the Plant Ontology, in OBO format. All relations tha
 
 All releases can be found here:   https://github.com/Planteome/plant-ontology/releases 	
 
+## ID Ranges
+
+http://wiki.plantontology.org/index.php/Accession_IDS_Guide
+
+** Please only use IDs within your range!! **
+
+## Setting ID ranges in Protege
+
+Please see the guide on obofoundry.org
+ 
+## Git Quick Guide
+
+TODO add instructions here
+
+## Release Manager notes
+
+You should only attempt to make a release AFTER the edit version is
+committed and pushed, and the Travis build passes.
+
+to release, change into this directory, and type
+
+    make
+
+If this looks good type:
+
+    make prepare_release
+
+This generates derived files such as po.owl and po.obo. The version IRI
+will be added.
+
+Commit and push these files.
+
+    git commit -a
+
+And type a brief description of the release in the editor window
+
+Finally type
+
+    git push origin master
+
+IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
+
+ * https://github.com/Planteome/plant-trait-ontology/releases/
+ * https://github.com/Planteome/plant-trait-ontology/releases/new
+
+The value of the "Tag version" field MUST be
+
+    vYYYY-MM-DD
+
+The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match
+what is in the version IRI of the derived po.owl (data-version in
+po.obo).
+
+Release title should be YYYY-MM-DD, optionally followed by a title (e.g. "January release")
+
+Then click "publish release"
+
+__IMPORTANT__: NO MORE THAN ONE RELEASE PER DAY.
+
+The PURLs are already configured to pull from github. This means that
+BOTH ontology purls and versioned ontology purls will resolve to the
+correct ontologies. Try it!
+
+ * http://purl.obolibrary.org/obo/po.owl <-- current ontology PURL
+ * http://purl.obolibrary.org/obo/po/releases/YYYY-MM-DD.owl <-- change to the release you just made
+
+For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
+
+# Travis Continuous Integration System
+
+Check the build status here: [![Build Status](https://travis-ci.org/Planteome/to.svg?branch=master)](https://travis-ci.org/Planteome/po)
+
+This replaces Jenkins for this ontology
+
+## General Guidelines
+
+See:
+http://wiki.geneontology.org/index.php/Curator_Guide:_General_Conventions
 
 
