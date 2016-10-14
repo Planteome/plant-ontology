@@ -36,10 +36,13 @@ New versions of the following two files are created only with new releases:
 
 The current Release file of the Plant Ontology, in OBO format.  All relations that are inferred are asserted in the release process
 
-
 * po.owl
 
 The current release file of the Plant Ontology, in OWL format. All relations that are inferred are asserted in the release process
+
+* po-basic.obo
+
+The current Release file of the Plant Ontology, in OBO format, with only the is_a and part_of relations.
 
 # Ontology Editors Guide
 
