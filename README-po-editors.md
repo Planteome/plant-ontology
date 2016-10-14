@@ -19,6 +19,7 @@ Note that this file is subject to frequent changes, and may contain terms that w
 A text version of the plant-ontology.obo editors' file, automatically created nightly
 
 * plant-ontology.obo.owl
+
 An OWL version of the plant-ontology.obo editors' file, automatically created nightly
 
 New versions of the following two files are created only with new releases:
@@ -29,7 +30,7 @@ The current Release file of the Plant Ontology, in OBO format.  All relations th
 
 * po.owl
 
-The current release file of the Plant Ontology, in OBO format. All relations that are inferred are asserted in the release process
+The current release file of the Plant Ontology, in OWL format. All relations that are inferred are asserted in the release process
 
 All releases can be found here:   https://github.com/Planteome/plant-ontology/releases 	
 
@@ -75,8 +76,8 @@ Finally type
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com/Planteome/plant-trait-ontology/releases/
- * https://github.com/Planteome/plant-trait-ontology/releases/new
+ * https://github.com/Planteome/plant-ontology/releases/
+ * https://github.com/Planteome/plant-ontology/releases/new
 
 The value of the "Tag version" field MUST be
 
@@ -103,7 +104,8 @@ For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/Planteome/to.svg?branch=master)](https://travis-ci.org/Planteome/po)
+Check the build status here: [![Build Status] 
+(https://travis-ci.org/Planteome/to.svg?branch=master)](https://travis-ci.org/Planteome/plant-ontology)
 
 This replaces Jenkins for this ontology
 
