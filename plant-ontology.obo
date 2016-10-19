@@ -21,8 +21,8 @@ synonymtypedef: Spanish "Spanish synonym"
 default-namespace: plant_ontology
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
-ontology: po
 import: http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl
+ontology: po
 
 [Term]
 id: PO:0000001
@@ -6928,11 +6928,9 @@ id: PO:0006505
 name: central spike of ear inflorescence
 namespace: plant_anatomy
 def: "A first order inflorescence axis (PO:0025104) that is the central axis of an ear inflorescence (PO:0020136)." [POC:curators]
-comment: Zea cob is different from the cob inflorescence found in Sorghum.
 subset: Maize
 synonym: "ear rachis" RELATED []
 synonym: "espiga central de la espiga de la inflorescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "Zea cob" RELATED []
 synonym: "雌穂（花）中央の穂 (Japanese) " EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:536
 is_a: PO:0025104 ! first order inflorescence axis
@@ -11097,7 +11095,6 @@ synonym: "raceme" NARROW []
 synonym: "rhipidia" NARROW Plural [FNA:b75d3219-23d0-458c-a669-1d24bbf2de2a]
 synonym: "rhipidium" NARROW []
 synonym: "scorpioid cyme" NARROW []
-synonym: "Sorghum cob" NARROW []
 synonym: "spadices" NARROW Plural [FNA:0b2b2c72-422d-4782-9bae-2c8d36e25032]
 synonym: "spadix" NARROW [FNA:b4c1cb9d-88f4-4d61-bf44-801af1a76bb8]
 synonym: "spike" NARROW [FNA:98bf8a79-e56c-460b-a976-c9b16ddac7d4]
@@ -11549,8 +11546,8 @@ synonym: "子房 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
 xref: PO_GIT:70
 is_a: PO:0009011 ! plant structure
-relationship: part_of PO:0009062 ! gynoecium
 relationship: only_in_taxon NCBITaxon:3398 {source="GO:0035670"} ! Magnoliophyta
+relationship: part_of PO:0009062 ! gynoecium
 
 [Term]
 id: PO:0009073
@@ -16922,8 +16919,8 @@ id: PO:0025242
 name: infructescence axis
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an infructescence (PO:0006342)." [POC:Ramona_Walls]
+synonym: "cob" NARROW []
 synonym: "eje de la infructescencia (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "Maize cob " NARROW []
 synonym: "果序軸 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025029 ! shoot axis
 relationship: develops_from PO:0020122 ! inflorescence axis
@@ -23601,6 +23598,11 @@ created_by: rwalls
 creation_date: 2012-05-23T09:52:02Z
 
 [Typedef]
+id: only_in_taxon
+name: only_in_taxon
+xref: RO:0002160
+
+[Typedef]
 id: part_of
 name: part_of
 xref: BFO:0000050
@@ -23630,7 +23632,3 @@ xref: BFO:0000063
 created_by: Laurel_Cooper
 creation_date: 2015-06-04T17:18:40Z
 
-[Typedef]
-id: only_in_taxon
-name: only_in_taxon
-xref: RO:0002160
