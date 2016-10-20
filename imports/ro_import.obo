@@ -48,7 +48,7 @@ property_value: IAO:0000118 "part_of" xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
-is_a: RO:0002131
+is_a: RO:0002131 ! overlaps
 inverse_of: BFO:0000051 ! has part
 
 [Typedef]
@@ -65,7 +65,7 @@ property_value: IAO:0000116 "Parthood requires the part and the whole to have co
 property_value: IAO:0000118 "has_part" xsd:string
 property_value: RO:0001900 RO:0001901
 is_transitive: true
-is_a: RO:0002131
+is_a: RO:0002131 ! overlaps
 
 [Typedef]
 id: BFO:0000062
@@ -109,10 +109,15 @@ inverse_of: RO:0001025 ! located in
 
 [Typedef]
 id: RO:0001018
+name: contained in
 domain: BFO:0000040 ! material entity
 range: BFO:0000004 ! independent continuant
 holds_over_chain: RO:0001025 BFO:0000050
-inverse_of: RO:0001019
+inverse_of: RO:0001019 ! contains
+
+[Typedef]
+id: RO:0001019
+name: contains
 
 [Typedef]
 id: RO:0001025
@@ -138,35 +143,45 @@ is_a: RO:0002222 ! temporally related to
 
 [Typedef]
 id: RO:0002131
+name: overlaps
+def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
 holds_over_chain: BFO:0000050 BFO:0000050
 holds_over_chain: BFO:0000051 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
 holds_over_chain: BFO:0000051 RO:0002131
-is_a: RO:0002323
+is_a: RO:0002323 ! mereotopologically related to
 
 [Typedef]
 id: RO:0002163
-is_a: RO:0002323
+name: spatially disjoint from
+def: "A is spatially_disjoint_from B if and only if they have no parts in common" []
+is_a: RO:0002323 ! mereotopologically related to
 
 [Typedef]
 id: RO:0002202
+name: develops from
+def: "x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y" []
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
 is_transitive: true
-is_a: RO:0002258
-inverse_of: RO:0002203
+is_a: RO:0002258 ! developmentally preceded by
+inverse_of: RO:0002203 ! develops into
 
 [Typedef]
 id: RO:0002203
+name: develops into
+def: "inverse of develops from" []
 is_transitive: true
-is_a: RO:0002286
-is_a: RO:0002387
-is_a: RO:0002388
+is_a: RO:0002286 ! developmentally succeeded by
+is_a: RO:0002387 ! has potential to develop into
+is_a: RO:0002388 ! has potential to directly develop into
 
 [Typedef]
 id: RO:0002220
+name: adjacent to
+def: "x adjacent to y if and only if x and y share a boundary." []
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
-is_a: RO:0002163
+is_a: RO:0002163 ! spatially disjoint from
 
 [Typedef]
 id: RO:0002222
@@ -180,44 +195,72 @@ range: BFO:0000003 ! occurrent
 
 [Typedef]
 id: RO:0002254
+name: has developmental contribution from
+def: "x has developmental contribution from y iff x has some part z such that z develops from y" []
 domain: CARO:0000003 ! anatomical structure
 range: CARO:0000003 ! anatomical structure
 holds_over_chain: BFO:0000051 RO:0002202
-is_a: RO:0002258
-inverse_of: RO:0002255
+is_a: RO:0002258 ! developmentally preceded by
+inverse_of: RO:0002255 ! developmentally contributes to
 
 [Typedef]
 id: RO:0002255
+name: developmentally contributes to
+def: "inverse of has developmental contribution from" []
 holds_over_chain: RO:0002203 BFO:0000050
-is_a: RO:0002286
-is_a: RO:0002385
+is_a: RO:0002286 ! developmentally succeeded by
+is_a: RO:0002385 ! has potential to developmentally contribute to
 
 [Typedef]
 id: RO:0002258
-is_a: RO:0002324
-inverse_of: RO:0002286
+name: developmentally preceded by
+def: "Candidate definition: x developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p" []
+is_a: RO:0002324 ! developmentally related to
+inverse_of: RO:0002286 ! developmentally succeeded by
 
 [Typedef]
 id: RO:0002286
-is_a: RO:0002384
+name: developmentally succeeded by
+def: "Inverse of developmentally preceded by" []
+is_a: RO:0002384 ! has developmental potential involving
+
+[Typedef]
+id: RO:0002323
+name: mereotopologically related to
+def: "A mereological relationship or a topological relationship" []
+
+[Typedef]
+id: RO:0002324
+name: developmentally related to
+def: "A relationship that holds between entities participating in some developmental process (GO:0032502)" []
 
 [Typedef]
 id: RO:0002379
-is_a: RO:0002131
+name: spatially coextensive with
+def: "x spatially_coextensive_with y if and inly if x and y have the same location" []
+is_a: RO:0002131 ! overlaps
 
 [Typedef]
 id: RO:0002384
-is_a: RO:0002324
+name: has developmental potential involving
+def: "x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction)." []
+is_a: RO:0002324 ! developmentally related to
 
 [Typedef]
 id: RO:0002385
-is_a: RO:0002384
+name: has potential to developmentally contribute to
+def: "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y" []
+is_a: RO:0002384 ! has developmental potential involving
 
 [Typedef]
 id: RO:0002387
-is_a: RO:0002384
+name: has potential to develop into
+def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
+is_a: RO:0002384 ! has developmental potential involving
 
 [Typedef]
 id: RO:0002388
-is_a: RO:0002387
+name: has potential to directly develop into
+def: "x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y" []
+is_a: RO:0002387 ! has potential to develop into
 
