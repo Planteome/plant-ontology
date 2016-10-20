@@ -30,7 +30,7 @@ subsets/po-basic.obo: po.obo
 # Imports
 # ----------------------------------------
 
-IMPORTS = ncbitaxon
+IMPORTS = ncbitaxon ro
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
 # Make this target to regenerate ALL
@@ -42,11 +42,11 @@ imports/%_import.owl: mirror/%.owl imports/%_terms.txt
 .PRECIOUS: imports/%_import.owl
 
 imports/%_import.obo: imports/%_import.owl
-	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
+	$(OWLTOOLS) $(USECAT) $< -o -f obo temp.obo.tmp && grep -v '^owl-axioms:' temp.obo.tmp > $@ && rm temp.obo.tmp
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl: $(SRC)
-	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
+	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d -r --remove-dangling-annotations  -o $@
 .PRECIOUS: mirror/%.owl
 
 mirror/ncbitaxon.owl: 
