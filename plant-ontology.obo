@@ -659,7 +659,7 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "epidermis de la l&#225mina de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006016 ! leaf epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0006016 ! leaf epidermis
 intersection_of: part_of PO:0020039 ! leaf lamina
 relationship: part_of PO:0020039 ! leaf lamina
 
@@ -705,7 +705,7 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "epidermis del pec&#237olo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006016 ! leaf epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0006016 ! leaf epidermis
 intersection_of: part_of PO:0020038 ! petiole
 relationship: part_of PO:0020038 ! petiole
 
@@ -1065,6 +1065,8 @@ synonym: "branch epidermis" NARROW []
 synonym: "epidermis del eje del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート軸表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006035 ! shoot system epidermis
+intersection_of: PO:0006035 ! shoot system epidermis
+intersection_of: part_of PO:0025029 ! shoot axis
 relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
@@ -1157,10 +1159,12 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000207
 name: nectary epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of a nectary." [POC:Ramona_Walls]
+def: "A portion of shoot sytem epidermis (PO:0006035) that is part of a nectary (PO:0009035) ." [POC:Ramona_Walls]
 synonym: "epidermis del nectario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "蜜腺表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006035 ! shoot system epidermis
+intersection_of: PO:0006035 ! shoot system epidermis
+intersection_of: part_of PO:0009035 ! nectary
 relationship: part_of PO:0009035 ! nectary
 
 [Term]
@@ -2399,7 +2403,7 @@ is_a: PO:0001044 ! sepal differentiation and expansion stage
 id: PO:0002000
 name: stomatal complex
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that has as parts two guard cells and a stomatal pore. May also contain subsidiary cells." [ISBN:0471245208]
+def: "A portion of shoot sytem epidermis (PO:0006035) that has as parts two guard cells (PO:0000293) and a stomatal pore (PO:0008032). May also contain subsidiary cells (PO:0000284)." [ISBN:0471245208]
 subset: TraitNet
 synonym: "complejo estom&#225tico (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stoma" BROAD []
@@ -3869,7 +3873,7 @@ namespace: plant_anatomy
 def: "The outermost primary cell layer of the hypocotyl." [PMID:15368128, TAIR:Donghui_Li]
 synonym: "epidermis del hipoc&#243tile (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0006035 ! shoot system epidermis
+is_a: PO:0025178 ! stem epidermis
 relationship: part_of PO:0020100 ! hypocotyl
 
 [Term]
@@ -4928,7 +4932,7 @@ synonym: "foliage leaf epidermis" EXACT []
 synonym: "phyllid epidermis" EXACT []
 synonym: "葉表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0025034 ! leaf
 relationship: part_of PO:0025034 ! leaf
 
@@ -5078,6 +5082,8 @@ synonym: "epidermis del epiblasto (epiblastema) (Spanish)" EXACT Spanish [POC:Ma
 synonym: "シュート表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
 is_a: PO:0005679 ! epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009006 ! shoot system
 relationship: develops_from PO:0009020 ! meristem L1 layer
 relationship: part_of PO:0009006 ! shoot system
 
@@ -5086,7 +5092,7 @@ id: PO:0006036
 name: root epidermis
 namespace: plant_anatomy
 alt_id: PO:0006037
-def: "A portion of epidermis that is part of a root system." [ISBN:0080374913]
+def: "A portion of epidermis (PO:0005679) that is part of a root (PO:0009005)." [ISBN:0080374913]
 comment: The root epidermis is different from the shoot epidermis in its origin, function and structure.
 synonym: "epiblem" RELATED []
 synonym: "epidermis de la ra&#237z (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -5094,7 +5100,9 @@ synonym: "rhizodermis" RELATED []
 synonym: "根表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
 is_a: PO:0005679 ! epidermis
-relationship: part_of PO:0025025 ! root system
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of NCBITaxon:1 ! root
+relationship: part_of NCBITaxon:1 ! root
 
 [Term]
 id: PO:0006039
@@ -5108,6 +5116,8 @@ synonym: "epidermis de la ra&#237z adventicia (Spanish)" EXACT Spanish [POC:Mari
 synonym: "不定根表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:598
 is_a: PO:0006036 ! root epidermis
+intersection_of: PO:0006036 ! root epidermis
+intersection_of: part_of PO:0000042 ! shoot-borne root
 relationship: part_of PO:0000042 ! shoot-borne root
 
 [Term]
@@ -5118,7 +5128,7 @@ def: "A portion of phyllome epidermis that is part of a sepal." [POC:curators]
 synonym: "epidermis del s&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0009031 ! sepal
 relationship: part_of PO:0009031 ! sepal
 
@@ -5130,7 +5140,7 @@ def: "A portion of phyllome epidermis (PO:0025157) that is part of a petal (PO:0
 synonym: "epidermis del p&#233talo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0009032 ! petal
 relationship: part_of PO:0009032 ! petal
 
@@ -5150,12 +5160,14 @@ id: PO:0006043
 name: integument epidermis
 namespace: plant_anatomy
 alt_id: PO:0006508
-def: "A portion epidermis that is part of an integument." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
+def: "A portion of epidermis (PO:0005679) that is part of an integument (PO:0020021)." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae integument epidermis" NARROW []
 synonym: "珠皮表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005679 ! epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0020021 ! integument
 relationship: part_of PO:0020021 ! integument
 
 [Term]
@@ -5184,21 +5196,24 @@ relationship: part_of PO:0020023 ! outer integument
 id: PO:0006048
 name: seed coat epidermis
 namespace: plant_anatomy
-def: "A portion of epidermis that is part of a seed coat." [POC:Ramona_Walls]
+def: "A portion of epidermis  (PO:0005679) that is part of a seed coat (PO:0009088)." [POC:Ramona_Walls]
 synonym: "epidermis de la cubierta de la semilla (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子種皮表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
 is_a: PO:0005679 ! epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0009088 ! seed coat
 relationship: part_of PO:0009088 ! seed coat
 
 [Term]
 id: PO:0006049
 name: scutellum epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis that is part of the scutellum." [GR:Pankaj_Jaiswal]
+def: "A portion of shoot sytem epidermis (PO:0006035) that is part of the scutellum (PO:0020110)." [GR:Pankaj_Jaiswal]
 synonym: "epidermis del escutelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005679 ! epidermis
+intersection_of: PO:0006035 ! shoot system epidermis
+intersection_of: part_of PO:0020110 ! scutellum
 relationship: part_of PO:0020110 ! scutellum
 
 [Term]
@@ -5297,7 +5312,7 @@ def: "A portion of stamen epidermis that is part of a filament." [POC:Ramona_Wal
 synonym: "epidermis del filamento (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花糸表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025097 ! stamen epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025097 ! stamen epidermis
 intersection_of: part_of PO:0009067 ! filament
 relationship: part_of PO:0009067 ! filament
 
@@ -5333,12 +5348,14 @@ id: PO:0006063
 name: ovary epidermis
 namespace: plant_anatomy
 alt_id: PO:0006500
-def: "A portion of epidermis that is part of an ovary." [POC:Ramona_Walls]
+def: "A portion of epidermis (PO:0005679) that is part of an ovary wall (PO:0005022)." [POC:Ramona_Walls]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del ovario (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae ovary epidermis" NARROW []
 synonym: "子房表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005679 ! epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0005022 ! ovary wall
 relationship: part_of PO:0005022 ! ovary wall
 
 [Term]
@@ -14894,7 +14911,7 @@ def: "A portion of phyllome epidermis that is part of a carpel." [POC:Ramona_Wal
 synonym: "epidermis del carpelo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0009030 ! carpel
 relationship: part_of PO:0009030 ! carpel
 created_by: rwalls
@@ -14908,7 +14925,7 @@ def: "A portion of phyllome epidermis that is part of a stamen." [POC:Ramona_Wal
 synonym: "epidermis del estambre (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄蕊表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0009029 ! stamen
 relationship: part_of PO:0009029 ! stamen
 created_by: rwalls
@@ -15764,10 +15781,12 @@ creation_date: 2010-11-15T02:23:56Z
 id: PO:0025157
 name: phyllome epidermis
 namespace: plant_anatomy
-def: "A portion of shoot epidermis (PO:0006035) that is part of a phyllome (PO:0006001)." [POC:curators, POC:Laurel_Cooper]
+def: "A portion of shoot system epidermis (PO:0006035) that is part of a phyllome (PO:0006001)." [POC:curators, POC:Laurel_Cooper]
 synonym: "epidermis del filoma (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006035 ! shoot system epidermis
+intersection_of: PO:0006035 ! shoot system epidermis
+intersection_of: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0006001 ! phyllome
 created_by: rwalls
 creation_date: 2010-11-15T02:32:53Z
@@ -15780,7 +15799,7 @@ def: "A portion of phyllome epidermis (PO:0025157) that is part of a bract (PO:0
 synonym: "epidermis de la br&#225ctea (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "苞表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0009055 ! bract
 relationship: part_of PO:0009055 ! bract
 created_by: rwalls
@@ -15930,7 +15949,7 @@ creation_date: 2010-11-18T05:37:23Z
 id: PO:0025169
 name: prickle
 namespace: plant_anatomy
-def: "A portion of epidermis that is a sclerified outgrowth." [POC:curators]
+def: "A portion of epidermis (PO:0005679) that is a sclerified outgrowth." [POC:curators]
 comment: Often found on stems and leaves.
 synonym: "barb" BROAD [FNA:ac7a59be-2920-4e24-bf9a-53d66c7cad5d]
 synonym: "barbel" BROAD [FNA:ea8c8671-f661-42e1-8572-6b72fa98a3b9]
@@ -16083,7 +16102,9 @@ synonym: "culm epidermis" RELATED []
 synonym: "epidermis del tallo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
-is_a: PO:0000112 ! shoot axis epidermis
+is_a: PO:0025178 ! stem epidermis
+intersection_of: PO:0025178 ! stem epidermis
+intersection_of: part_of PO:0020100 ! hypocotyl
 relationship: part_of PO:0009047 ! stem
 created_by: rwalls
 creation_date: 2010-11-22T09:56:21Z
@@ -16092,10 +16113,12 @@ creation_date: 2010-11-22T09:56:21Z
 id: PO:0025179
 name: branch epidermis
 namespace: plant_anatomy
-def: "A portion of shoot axis epidermis that is part of a branch." [POC:Ramona_Walls]
+def: "A portion of shoot axis epidermis (PO:0006035) that is part of a branch (PO:0025073)." [POC:Ramona_Walls]
 synonym: "epidermis de la ramificaci&#243n (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "枝 表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000112 ! shoot axis epidermis
+intersection_of: PO:0000112 ! shoot axis epidermis
+intersection_of: part_of PO:0025073 ! branch
 relationship: part_of PO:0025073 ! branch
 created_by: rwalls
 creation_date: 2010-11-22T09:58:06Z
@@ -16163,7 +16186,7 @@ def: "A portion of phyllome epidermis that is part of a tepal (PO:0009033)." [PO
 synonym: "epidermis del t&#233palo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0025157 ! phyllome epidermis
 intersection_of: part_of PO:0009033 ! tepal
 relationship: part_of PO:0009033 ! tepal
 created_by: rwalls
@@ -17025,7 +17048,7 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "epidermis de la vaina de la hoja (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉鞘表皮 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006016 ! leaf epidermis
-intersection_of: PO:0005679 ! epidermis
+intersection_of: PO:0006016 ! leaf epidermis
 intersection_of: part_of PO:0020104 ! leaf sheath
 relationship: part_of PO:0020104 ! leaf sheath
 created_by: rwalls
@@ -23240,7 +23263,7 @@ creation_date: 2011-04-29T09:33:11Z
 id: PO:0030069
 name: paraphyllium
 namespace: plant_anatomy
-def: "A portion of epidermal tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis." [ISBN:0962073342]
+def: "A portion of epidermis (PO:0005679) tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis." [ISBN:0962073342]
 comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-like, or leaf-like. Found in pleurocarpous mosses and a few leafy liverworts.
 subset: Bryophytes
 synonym: "parafilium (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -23311,7 +23334,7 @@ creation_date: 2011-04-29T02:30:17Z
 id: PO:0030073
 name: exothecium
 namespace: plant_anatomy
-def: "A portion of epidermis that is the outermost layer of a sporangium wall." [ISBN:0962073342, ISBN:9780003686647]
+def: "A portion of epidermis (PO:0005679) that is the outermost layer of a sporangium wall (PO:0025306)." [ISBN:0962073342, ISBN:9780003686647]
 comment: Develops from the outermost layer of an amphithecium in bryophytes.
 synonym: "epithecium" EXACT []
 synonym: "exotecio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -23321,6 +23344,8 @@ synonym: "葯の表皮（外膜) (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki
 xref: PO_GIT:314
 xref: PO_GIT:355
 is_a: PO:0005679 ! epidermis
+intersection_of: PO:0005679 ! epidermis
+intersection_of: part_of PO:0025306 ! sporangium wall
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: rwalls
 creation_date: 2011-05-02T09:46:49Z
