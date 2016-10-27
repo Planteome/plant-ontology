@@ -435,8 +435,8 @@ is_a: PO:0025269 ! collective organ part structure
 id: PO:0000031
 name: lenticel
 namespace: plant_anatomy
-def: "A portion of ground tissue composed of a loosely-packed mass of cork cells occurring especially in the young stem, bark or even leaf of a plant, visible on the surface as a raised, often powdery-appearing spot." [ISBN:0471245208]
-comment: Gas can be exchanged through the lenticel.
+def: "A portion of the shoot axis periderm (PO:0005048) characterized by the presence of intercellular spaces between the cells of the phellem (PO:0004003) and phelloderm (PO:0005050)" [ISBN:0471245208, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Lenticels are produced by the cork cambium and facilitate gas exchange.
 subset: TraitNet
 synonym: "lenticela (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "皮目 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -23610,6 +23610,13 @@ namespace: plant_anatomy
 def: "A shoot-borne root (PO:0000042) that is sclerified, pointed, and lacks indeterminate growth and nutritive function." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO_REF:00015]
 xref: PO_GIT:632
 is_a: PO:0000042 ! shoot-borne root
+
+[Term]
+id: http://purl.obolibrary.org/obo/PO:0030090
+name: root periderm scar
+def: "A portion of root periderm (PO:0005047) formed in response to a disruption of the root epidermis (PO:0006036)." [ISBN:0471738433, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO_REF:00016]
+comment: Root periderm scars are lenticel-like structures on the tuberous roots (PO:0025523) and tuberous root tuber (PO:0025476) of sweet potato, parsnips, and carrots. Disruption of the epidermis by the emergence of a lateral roots initiates a wound response that results in the production of a root periderm scar. Gas exchanged does not occur through a root periderm scar.
+is_a: PO:0005047 ! root periderm
 
 [Typedef]
 id: adjacent_to
