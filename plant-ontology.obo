@@ -10232,8 +10232,8 @@ alt_id: PO:0020082
 alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
-def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062) and may have as parts one or more seeds (PO:0009010)." [POC:curators]
-comment: A fruit may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds. Fruits only occur in angiosperms.
+def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and may have as parts one or more seeds (PO:0009010)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
+comment: A fruit may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds. When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -10359,8 +10359,8 @@ id: PO:0009005
 name: root
 namespace: plant_anatomy
 alt_id: PO:0003006
-def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004), grows indeterminately, and is usually positively geotropic." [ISBN:978-0879015329, ISBN:9780964022157, POC:curators, POC:Laurel_Cooper]
-comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the ground, and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually found underground, although there are many exceptions, such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
+def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately." [ISBN:978-0879015329, ISBN:9780964022157, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
+comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the substrate and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually positively geotropic and found underground, although there are many exceptions such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
 subset: Angiosperm
 subset: Gymnosperms
 subset: Maize
@@ -23621,6 +23621,183 @@ def: "A portion of root periderm (PO:0005047) formed in response to a disruption
 comment: Root periderm scars are lenticel-like structures on the tuberous roots (PO:0025523), primary roots (PO:0020127), and/or tuberous root tubers (PO:0025476) of plants such as sweet potato, cassava, parsnips, and carrots. Disruption of the epidermis by the emergence of a lateral root initiates a wound response which results in the production of a root periderm scar. Gas exchange does not occur through a root periderm scar.
 xref: PO_GIT:635
 is_a: PO:0005047 ! root periderm
+
+[Term]
+id: PO:0030091
+name: capsule
+def: "A fruit derived from a gynoecium (PO:0009062) with a dry pericarp (PO:0009084) which dehisces at maturity." [PO:Brandon_Sinn, PO:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Capsules are divided into subcategories depending upon the location of sutures in the pericarp that the seeds are released through.
+xref: PO_GIT:642
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030092
+name: loculicidal capsule
+def: "A capsule (PO:0030091) which dehisces through the fruit locules (PO:0025270)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Gossypium raimondii (cotton), Hibiscus syriacus (rose of sharon or rose mallow).
+xref: PO_GIT:642
+is_a: PO:0030091 ! capsule
+
+[Term]
+id: PO:0030093
+name: septicidal capsule
+def: "A capsule (PO:0030091) which dehisces through the fruit septa (PO:0025268)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Aristolochia elegans (dutchman's pipe) and Populus trichocarpa (black cottonwood).
+synonym: "septifragal capsule" EXACT []
+xref: PO_GIT:642
+is_a: PO:0030091 ! capsule
+
+[Term]
+id: PO:0030094
+name: coccarium
+def: "A capsule (PO:0030091) which dehisces through the fruit septa (PO:0025268) and the fruit locules (PO:0025270)." [] {comment="NYBG:Dario_Cavaliere", comment="POC:Laurel_Cooper", comment="NYBG:Brandon_Sinn"}
+comment: Species whose fruit serve as examples of this fruit type include: Jatropha curcas (physic nut) and Manihot brachyloba.
+xref: PO_GIT:642
+is_a: PO:0030091 ! capsule
+
+[Term]
+id: PO:0030095
+name: poricidal capsule
+def: "A capsule (PO:0030091) which dehisces through pores on the pericarp (PO:0009084)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Papaver spp. (poppy).
+xref: PO_GIT:642
+is_a: PO:0030091 ! capsule
+
+[Term]
+id: PO:0030096
+name: circumscissile capsule
+def: "A capsule (PO:0030091) which dehisces through the release of a fruit operculum (PO:0025298)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Eucalyptus grandis (rose gum).
+synonym: "diplotegia" NARROW []
+synonym: "pyxidium" BROAD []
+synonym: "pyxis" EXACT []
+xref: PO_GIT:642
+is_a: PO:0030091 ! capsule
+
+[Term]
+id: PO:0030097
+name: urticle
+def: "A circumscissile capsule (PO:0030096) with one seed (PO:0009010) that is not attached to the pericarp (PO:0009084)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Amaranthus retroflexus (Amaranthaceae).
+xref: PO_GIT:642
+is_a: PO:0030096 ! circumscissile capsule
+
+[Term]
+id: PO:0030098
+name: schizocarp
+def: "A fruit (PO:0009001) derived from a gynoecium (PO:0009062) that separates into carpellate (PO:0009030) units that are surrounded by dry, hardened pericarp (PO:0009084) at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: The individual carpellate units of a schizocarp are often referred to as mericarps (PO:0020075; obsolete). Species whose fruit serve as examples of this fruit type include: Acer spp. (maple) and Manihot esculenta (cassava).
+synonym: "nutlet" EXACT []
+synonym: "pyrine" EXACT []
+xref: PO_GIT:643
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030099
+name: samara
+def: "A fruit (PO:0009001) derived from a single carpel (PO:0009030) with dry, wing-shaped pericarp (PO:0009084) which does not split at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Fraxinus pennsylvanicum (green ash) and Ailanthus altissima (tree of heaven).
+xref: PO_GIT:644
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030100
+name: legume
+def: "A fruit (PO:0009001) derived from a single carpel (PO:0009030) and has a dry pericarp (PO:0009084) which dehisces along two fruit valves (PO:0000033)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: members of Fabaceae, Cajanus cajan (pigeon pea), Cicer arietinum (chickpea), and Lens culinaris subsp. Culinaris (Lentils).
+synonym: "pod" BROAD []
+xref: PO_GIT:645
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030101
+name: loment
+def: "A legume (PO:0030100) which is constricted between each seed (PO:0009010)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: members of Fabaceae, including Glycine max (soybean).
+synonym: "lomentum" EXACT []
+xref: PO_GIT:645
+is_a: PO:0030100 ! legume
+
+[Term]
+id: PO:0030102
+name: nut
+def: "A fruit (PO:0009001) derived from a gynoecium (PO:0009062) with one seed (PO:0009010) surrounded by a hard pericarp (PO:0009084) at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Carya illinoinensis (pecan), Juglans regia (Walnut), Pistacia vera (pistachio), Nelumbo nucifera (lotus), and Quercus shumardii (acorn).
+synonym: "acorn" NARROW []
+synonym: "glandes" EXACT []
+synonym: "glans" EXACT []
+synonym: "nutlet" EXACT []
+xref: PO_GIT:646
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030103
+name: drupe
+def: "A fruit (PO:0009001) derived from a single carpel (PO:0009030) and is composed of one or more seeds (PO:0009010) surrounded by fleshy exocarp (PO:0009085) and mesocarp (PO:0009087), and a stony endocarp (PO:0009086)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: May develop from an inferior or superior  gynoecium (PO:0009062). Species whose fruit serve as examples of this fruit type include: Amborella trichopoda, Coffea canephora (coffee), Davidia spp. (Cornaceae), and Prunus spp. (peach and plum).
+synonym: "stone fruit" EXACT []
+xref: PO_GIT:647
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030104
+name: caryopsis
+def: "A fruit (PO:0009001) where the seed coat (PO:0009088) is fused to the dry pericarp (PO:0009084) which does not split at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Aegilops tauschii (Tausch’s goatgrass), Brachypodium distachyon (stiff brome), Hordeum vulgare (barley), Leersia perrieri (cutgrass), Oryza australiensis (rice), Oryza eichingeri (rice), Oryza longistaminata (rice), Oryza officinalis (rice), Oryza rufipogon (rice), Oryza sativa (rice), Setaria italica (foxtail millet), Sorghum bicolor (sorghum), Triticum aestivum (common wheat), Triticum monococcum (einkorn wheat), Triticum turgidum (rivet wheat), Triticum urartu (red wild einkorn), and Zea mays (corn).
+synonym: "caryopsides" EXACT []
+synonym: "grain" EXACT []
+synonym: "kernel" EXACT []
+xref: PO_GIT:648
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030105
+name: follicle
+def: "A fruit (PO:0009001) derived from a single carpel (PO:0009030) with a dry pericarp (PO:0009084) which dehisces along along a single fruit valve (PO:0000033) at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Asclepias syriaca (milkweed) and Delphinium carolinianum (carolina larkspur).
+synonym: "folliceta" EXACT []
+synonym: "pod" BROAD []
+xref: PO_GIT:649
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030106
+name: silique
+def: "A fruit (PO:0009001) derived from a gynoecium (PO:0009062), and has a dry pericarp (PO:0009084) dehiscing along two fruit valves (PO:0000033) separating from persistent, parietal placentae (PO:0025078) and the fruit replum (PO:0025267)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: members of Brassicaceae, including Arabidopsis lyrata (lyrate rockcress), Arabidopsis thaliana (mouse-ear cress), Brassica oleraceae (wild cabbage), Brassica rapa (field mustard), and Capsella rubella (pink shepherd's purse).
+synonym: "silicle" EXACT []
+synonym: "silicula" EXACT []
+synonym: "siliqua" EXACT []
+xref: PO_GIT:650
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030107
+name: achene
+def: "A fruit (PO:0009001) derived from a single carpel (PO:0009030) and is composed of a single fruit locule (PO:0025270) and a single seed (PO:0009010), which is attached to the dry, indehiscent pericarp (PO:0009084) at a single point at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+synonym: "akene" EXACT []
+xref: PO_GIT:651
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030108
+name: berry
+def: "A fruit (PO:0009001) which has a fleshy pericarp (PO:0009084) at maturity." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Species whose fruit serve as examples of this fruit type include: Capsicum annuum (peppers), Carica papaya (papaya), Malus domestica (apple), Musa acuminata (banana), Persea americana (avocado), Podophyllum peltatum (may apple), Phoenix dactylifera (date palm), Solanum lycopersicum (tomato), Solanum tuberosum (potato), Theobroma cacao (chocolate), Vaccinium spp. (blueberry), and Vitis vinifera (grape).
+synonym: "bacca" EXACT []
+synonym: "pepo" NARROW []
+synonym: "pome" NARROW []
+xref: PO_GIT:652
+is_a: PO:0009001 ! fruit
+
+[Term]
+id: PO:0030109
+name: hesperidium
+def: "A berry (PO:new) derived from a gynoecium (PO:0009062) with exocarp (PO:0009085) and mesocarp (PO:0009087) of increased thickness and with juice sacs (PO:0006013) on the carpel adaxial epidermis (PO:0025618)." [] {comment="NYBG:Dario_Cavaliere", comment="POC:Laurel_Cooper", comment="NYBG:Brandon_Sinn"}
+comment: A hesperidium develops from a superior gynoecium (PO:0009062). Species whose fruit serve as examples of this fruit type include: Citrus spp. (orange, grapefruit, lemon, and lime).
+synonym: "citrus fruit" EXACT []
+xref: PO_GIT:652
+is_a: PO:0030108 ! berry
 
 [Typedef]
 id: adjacent_to
