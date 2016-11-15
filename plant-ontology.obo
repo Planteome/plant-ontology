@@ -435,13 +435,13 @@ is_a: PO:0025269 ! collective organ part structure
 id: PO:0000031
 name: lenticel
 namespace: plant_anatomy
-def: "A portion of the shoot axis periderm (PO:0005048) characterized by the presence of intercellular spaces between the cells of the phellem (PO:0004003) and phelloderm (PO:0005050)" [ISBN:0471245208, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+def: "A portion of shoot axis periderm (PO:0005048) characterized by the presence of intercellular spaces between the cells of the phellem (PO:0004003) and phelloderm (PO:0005050)" [ISBN:0471245208, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 comment: Lenticels are produced by the cork cambium and facilitate gas exchange.
 subset: TraitNet
 synonym: "lenticela (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "皮目 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:633
-is_a: PO:0025059 ! portion of ground tissue
+is_a: PO:0005048 ! shoot axis periderm
 relationship: part_of PO:0025029 ! shoot axis
 
 [Term]
@@ -2697,7 +2697,7 @@ id: PO:0004003
 name: phellem
 namespace: plant_anatomy
 alt_id: PO:0005049
-def: "A portion of ground issue centrifugally derived from cork cambium, non-living at maturity, and having suberized walls." [ISBN:0471245208, POC:curators]
+def: "A portion of ground tissue (PO:0025059) centrifugally derived from cork cambium (PO:0005599), non-living at maturity, and having suberized walls." [ISBN:0471245208, POC:curators]
 comment: Protective in function because the walls are highly impervious to water.
 synonym: "cork" RELATED []
 synonym: "felema (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4164,7 +4164,7 @@ relationship: develops_from PO:0005598 ! vascular cambium
 id: PO:0005046
 name: periderm
 namespace: plant_anatomy
-def: "A peripheral portion of ground tissue in a plant axis that is composed of phellogen, phellem, and phelloderm." [ISBN:047124529, POC:curators]
+def: "A peripheral portion of ground tissue (PO:0025059) in a plant axis that is composed of phellogen, phellem, and phelloderm." [ISBN:047124529, POC:curators]
 comment: After secondary growth, the periderm may replace the epidermis in stems and roots, rarely in other organs. In some cases, the epidermis is retained after periderm development. Periderm is derived from lateral meristem and may contain secondary phloem.
 subset: TraitNet
 synonym: "peridermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -4207,7 +4207,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0005050
 name: phelloderm
 namespace: plant_anatomy
-def: "A portion of ground tissue often resembling cortical parenchyma produced centripetally by the cork cambium." [ISBN:0080374913]
+def: "A portion of ground tissue (PO:0025059) often resembling cortical parenchyma produced centripetally by the cork cambium." [ISBN:0080374913]
 subset: Rice
 synonym: "felodermis (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of phelloderm tissue" EXACT []
@@ -5699,7 +5699,7 @@ is_a: PO:0005598 ! vascular cambium
 id: PO:0006202
 name: interfascicular region
 namespace: plant_anatomy
-def: "A portion of ground tissue located between vascular bundles in a shoot axis." [ISBN:0471244554, ISBN:0716710072]
+def: "A portion of ground tissue (PO:0025059) located between vascular bundles in a shoot axis." [ISBN:0471244554, ISBN:0716710072]
 comment: Inapplicable for nearly all monocots.
 synonym: "medullary ray" EXACT [ISBN:0471244554]
 synonym: "pith ray" EXACT [ISBN:0716710072]
@@ -5713,7 +5713,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0006203
 name: pericycle
 namespace: plant_anatomy
-def: "A portion of ground tissue that is part of a root stele located between the phloem and endodermis." [ISBN:047124529]
+def: "A portion of ground tissue (PO:0025059) that is part of a root stele located between the phloem and endodermis." [ISBN:047124529]
 subset: reference
 synonym: "periciclo (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of pericycle tissue" EXACT []
@@ -13092,7 +13092,7 @@ id: PO:0020102
 name: portion of transmitting tissue
 namespace: plant_anatomy
 alt_id: PO:0006499
-def: "A portion of ground tissue in the style of a carpel through which a pollen tube grows; it connects a stigma and the inside of an ovary." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+def: "A portion of ground tissue (PO:0025059) in the style of a carpel through which a pollen tube grows; it connects a stigma and the inside of an ovary." [GR:Pankaj_Jaiswal, ISBN:0080374913]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "Poaceae transmitting tissue" NARROW []
@@ -23551,7 +23551,7 @@ creation_date: 2011-05-17T10:28:55Z
 id: PO:0030085
 name: protosporangium endothecium
 namespace: plant_anatomy
-def: "A portion of ground tissue that is the tissue internal to an amphithecium early in sporangium development." [ISBN:0962073342, ISBN:9780070588493, POC:curators]
+def: "A portion of ground tissue (PO:0025059) that is the tissue internal to an amphithecium early in sporangium development." [ISBN:0962073342, ISBN:9780070588493, POC:curators]
 comment: Term used for bryophytes. In liverworts an early sporangium endothecium produces sporogenous tissue. In Sphagnum, Andreaea, and hornworts, it produces columella and sporogenous tissue.
 subset: Bryophytes
 synonym: "endotecio del protoesporangio (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
