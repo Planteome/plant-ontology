@@ -435,14 +435,15 @@ is_a: PO:0025269 ! collective organ part structure
 id: PO:0000031
 name: lenticel
 namespace: plant_anatomy
-def: "A portion of shoot axis periderm (PO:0005048) characterized by the presence of intercellular spaces between the cells of the phellem (PO:0004003) and phelloderm (PO:0005050)" [ISBN:0471245208, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+def: "A portion of periderm (PO:0005046) characterized by the presence of intercellular spaces between the cells of the phellem (PO:0004003) and phelloderm (PO:0005050)" [ISBN:0471245208, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 comment: Lenticels are produced by the cork cambium (PO:0005599) and facilitate gas exchange.
 subset: TraitNet
 synonym: "lenticela (Spanish)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "皮目 (Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:633
-is_a: PO:0005048 ! shoot axis periderm
-relationship: part_of PO:0025029 ! shoot axis
+is_a: PO:0005046 ! periderm
+relationship: part_of PO:0005047 ! root periderm
+relationship: part_of PO:0005048 ! shoot axis periderm
 
 [Term]
 id: PO:0000032
