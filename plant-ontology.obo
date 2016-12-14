@@ -10254,7 +10254,7 @@ alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
 def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
-comment: A fruit may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds. When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.
+comment: A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -23601,7 +23601,7 @@ is_a: PO:0005047 ! root periderm
 id: PO:0030091
 name: capsule fruit
 def: "A fruit (PO:0009001) which develops from a gynoecium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that usually dehisce." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: Capsule fruits are divided into subcategories depending upon the location of sutures in the pericarp that the seeds are released through.
+comment: Capsule fruits (PO:0030091) are divided into subcategories depending upon the location of sutures in the pericarp (PO:0009084) that the seeds (PO:0009010) are released through.
 synonym: "capsule (exact)" EXACT []
 synonym: "cápsula (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "dehiscent fruit (broad)" BROAD []
@@ -23614,7 +23614,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030092
 name: loculicidal capsule fruit
 def: "A capsule fruit (PO:0030091) which at maturity dehisces through fruit locules (PO:0025270)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: When annotating to a capsule fruit which dehisces through both the fruit septa and fruit locules, annotate to coccarium capsule fruit. When annotating to a capsule fruit which only dehisces through the fruit septa, annotate to septicidal capsule fruit. Examples: cotton (Gossypium raimondii) and rose mallow (Hibiscus syriacus). Examples: cotton (Gossypium raimondii) and rose mallow (Hibiscus syriacus).
+comment: When annotating to a capsule fruit (PO:0030091) which dehisces through both the fruit septa (PO:0025268) and fruit locules (PO:0025270), annotate to coccarium capsule fruit (PO:0030094). When annotating to a capsule fruit which only dehisces through the fruit septa, annotate to septicidal capsule fruit (PO:0030093). Examples: cotton (Gossypium raimondii) and rose mallow (Hibiscus syriacus).
 synonym: "cápsula loculicida (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "dehiscent fruit (broad)" BROAD []
 synonym: "loculicidal capsule (exact)" EXACT []
@@ -23626,7 +23626,7 @@ is_a: PO:0030091 ! capsule fruit
 id: PO:0030093
 name: septicidal capsule fruit
 def: "A capsule fruit (PO:0030091) which dehisces through a fruit septa (PO:0025268)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: When annotating to a capsule fruit which dehisces through both the fruit septa and fruit locules, annotate to coccarium capsule fruit. When annotating to a capsule fruit which only dehisces through the fruit locules, annotate to loculicidal capsule fruit. Examples: dutchman's pipe (Aristolochia elegans) and black cottonwood (Populus trichocarpa).
+comment: When annotating to a capsule fruit (PO:0030091) which dehisces through both the fruit septa (PO:0025268) and fruit locules (PO:0025270), annotate to coccarium capsule fruit (PO:0030094). When annotating to a capsule fruit which only dehisces through the fruit locules, annotate to loculicidal capsule fruit (PO:0030092). Examples: dutchman's pipe (Aristolochia elegans) and black cottonwood (Populus trichocarpa).
 synonym: "cápsula septicida (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "cápsula septífraga (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "dehiscent fruit (broad)" BROAD []
@@ -23640,7 +23640,7 @@ is_a: PO:0030091 ! capsule fruit
 id: PO:0030094
 name: coccarium capsule fruit
 def: "A capsule fruit (PO:0030091) which at maturity dehisces through both the fruit septa (PO:0025268) and the fruit locules (PO:0025270)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: When annotating to a capsule fruit which only dehisces through the fruit septa, annotate to septicidal capsule fruit. When annotating to a capsule fruit which only dehisces through the fruit locules, annotate to loculicidal capsule fruit. Examples: physic nut (Jatropha curcas) and Manihot brachyloba.
+comment: When annotating to a capsule fruit (PO:0030091) which only dehisces through the fruit septa (PO:0025268), annotate to septicidal capsule fruit (PO:0030093). When annotating to a capsule fruit which only dehisces through the fruit locules (PO:0025270), annotate to loculicidal capsule fruit (PO:0030092). Examples: physic nut (Jatropha curcas) and Manihot brachyloba.
 synonym: "coccarium (exact)" EXACT []
 synonym: "cápsula bicida (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "dehiscent fruit (broad)" BROAD []
@@ -23691,7 +23691,7 @@ is_a: PO:0030096 ! circumscissile capsule fruit
 id: PO:0030098
 name: schizocarp fruit
 def: "A fruit (PO:0009001) which develops from a gynoecium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that separate into mericarps (PO:0020075)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: The individual carpellate units of a schizocarp are called mericarps (PO:0020075). Examples: maple (Acer spp.) and cassava (Manihot esculenta).
+comment: Each individual carpellate unit of a schizocarp fruit (PO:0030098) is a mericarp (PO:0020075). Examples: maple (Acer spp.) and cassava (Manihot esculenta).
 synonym: "doppelnuß (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "esquizocarpio (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "esquizocarpo (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
@@ -23707,7 +23707,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030099
 name: samara fruit
 def: "A fruit (PO:0009001) which develops from a carpel (PO:0009030) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that are elongated into a wing-like structure." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: The pericarp (PO:0009084) can be expanded laterally or radially. Examples: green ash (Fraxinus pennsylvanicum) and tree of heaven (Ailanthus altissima).
+comment: The pericarp (PO:0009084) can be expanded laterally or radially. The wing-shaped fruits of maples (Acer spp.) are often mistakenly identified as samara fruits (PO:0030099), but are instead schizocarp fruits (PO:0030098) with samaroid mericarps (PO:0020075).\nExamples: green ash (Fraxinus pennsylvanicum) and tree-of-heaven (Ailanthus altissima).
 synonym: "flügfrucht (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "indehiscent fruit (broad)" BROAD []
 synonym: "samara (exact)" EXACT []
@@ -23719,7 +23719,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030100
 name: legume fruit
 def: "A fruit (PO:0009001) which develops from a carpel (PO:0009030) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that dehisce along two fruit valves (PO:0000033)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: Legume fruit is characteristic of the plant family Fabaceae. Examples: pigeon pea (Cajanus cajan), chickpea (Cicer arietinum), peanut (Arachis hypogaea), soybean (Glycine max), and lentil (Lens culinaris subsp. culinaris).
+comment: Legume fruit (PO:0030100) is characteristic of the plant family Fabaceae. Examples: pigeon pea (Cajanus cajan), chickpea (Cicer arietinum), peanut (Arachis hypogaea), soybean (Glycine max), and lentil (Lens culinaris subsp. culinaris).
 synonym: "dehiscent fruit (broad)" BROAD []
 synonym: "hülse (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "legumbre (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
@@ -23732,7 +23732,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030101
 name: loment fruit
 def: "A legume fruit (PO:0030100) which at maturity separates into indehiscent, one-seeded segments." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: The pericarp of some legume fruits, such as peanuts, is constricted between each seed, but these constrictions are due to a lack of support of the pericarp in the space between the seeds. Contrastingly, the constrictions in the pericarp of loment fruits are sclerified and contain regions where cell death leads to disarticulation of the fruit. Examples: some members of Fabaceae, including Mimosa and Desmodium spp.
+comment: The pericarp (PO:0009084) of some legume fruit (PO:0030100), such as peanuts, is constricted between each seed, but these constrictions are due to a lack of support of the pericarp (PO:0009084) in the space between the seeds (PO:0009010). Contrastingly, the constrictions in the pericarp of loment fruits (PO:0030101) are sclerified and contain regions where cell death leads to disarticulation of the fruit (PO:0009001). Examples: some members of Fabaceae, including Mimosa and Desmodium spp.
 synonym: "gliederhülse (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "indehiscent fruit (broad)" BROAD []
 synonym: "loment (exact)" EXACT []
@@ -23745,7 +23745,7 @@ is_a: PO:0030100 ! legume fruit
 id: PO:0030102
 name: nut fruit
 def: "A fruit (PO:0009001) which develops from a gynoecium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that are not fused to a seed coat (PO:0009088)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: The common names of some species do not accurately reflect their fruit type. For example, the fruit the peanut plant is a legume fruit rather than a nut fruit. Example: pecan (Carya illinoinensis), walnut (Juglans regia), pistachio (Pistacia vera), lotus (Nelumbo nucifera), and acorn (Quercus spp.).
+comment: The common names of some species do not accurately reflect their fruit type. For example, the fruit (PO:0009001) of the peanut plant is a legume fruit (PO:0030100) rather than a nut fruit (PO:0030102). Example: pecan (Carya illinoinensis), walnut (Juglans regia), pistachio (Pistacia vera), lotus (Nelumbo nucifera), and acorn (Quercus spp.).
 synonym: "acorn (narrow)" NARROW []
 synonym: "glandes (exact)" EXACT []
 synonym: "glans (exact)" EXACT []
@@ -23761,7 +23761,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030103
 name: drupe fruit
 def: "A fruit (PO:0009001) which develops from a carpel (PO:0009030) and at maturity comprises a fleshy exocarp (PO:0009085), fleshy mesocarp (PO:0009087), and a stony endocarp (PO:0009086)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: May develop from an inferior or superior carpel and may contain one or more seeds. Examples: Amborella trichopoda (basal angiosperm), coffee (Coffea canephora), Cornaceae (Davidia spp.), cashew (Anacardium occidentale), coconut (Cocos nucifera), and almond, peach and plum (Prunus spp.).
+comment: May develop from an inferior or superior carpel (PO:0009030) and may contain one or more seeds (PO:0009010). Examples: Amborella trichopoda (basal angiosperm), coffee (Coffea canephora), Cornaceae (Davidia spp.), cashew (Anacardium occidentale), coconut (Cocos nucifera), and almond, peach and plum (Prunus spp.).
 synonym: "drupa (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "drupe (exact)" EXACT []
 synonym: "indehiscent fruit (broad)" BROAD []
@@ -23774,7 +23774,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030104
 name: caryopsis fruit
 def: "A fruit (PO:0009001) which develops from a gynoecium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that are fused to a seed coat (PO:0009088)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: Caryopsis fruit is characteristic of the Poaceae (the grass family). The pericarp of caryopsis fruits of some bamboo species is somewhat fleshy at maturity and is fused to the seed coat; these fruits are referred to in the literature as bacoid caryopses. \nExamples: barley (Hordeum vulgare), rice (Oryza spp.), wheat (Triticum spp.), \ncorn (Zea mays), sorghum (Sorghum bicolor), oat (Avena spp.), zebra grass (Miscanthus spp.), Tausch’s goatgrass (Aegilops tauschii), stiff brome (Brachypodium distachyon), cutgrass (Leersia perrieri), and foxtail millet (Setaria italica).
+comment: Caryopsis fruit (PO:0030104) is characteristic of the Poaceae (the grass family). Caryopsis fruits develop from a pseudomonomerous gyneocium (PO:0009062), and contain only a single seed due to the abortion of two of the three carpels (PO:0009030). The pericarp of caryopsis fruits of some bamboo species is somewhat fleshy at maturity and is fused to the seed coat; these fruits are referred to in the literature as bacoid caryopses. Examples: barley (Hordeum vulgare), rice (Oryza spp.), wheat (Triticum spp.), corn (Zea mays), sorghum (Sorghum bicolor), oat (Avena spp.), zebra grass (Miscanthus spp.), Tausch’s goatgrass (Aegilops tauschii), stiff brome (Brachypodium distachyon), cutgrass (Leersia perrieri), and foxtail millet (Setaria italica).
 synonym: "brown rice (exact)" EXACT []
 synonym: "cariopse (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "cariópside (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
@@ -23809,7 +23809,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030106
 name: silique fruit
 def: "A fruit (PO:0009001) which develops from a gynoecium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086), that dehisce along two fruit valves (PO:0000033) and separate from a persistent fruit replum (PO:0025267)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: In contrast to legume fruit, silique fruit develop from a syncarpous (multicarpellate) gynoecium separated by a false septum (replum), which persists through fruit maturity. Examples: members of Brassicaceae, lyrate rockcress (Arabidopsis lyrata), mouse-ear cress (Arabidopsis thaliana), wild cabbage (Brassica oleracea), field mustard (Brassica rapa), and pink shepherd's purse (Capsella rubella).
+comment: In contrast to legume fruit (PO:0030100), silique fruit develop from a syncarpous (multicarpellate) gynoecium (PO:0009062) separated by a false septum (replum, PO:0025267), which persists through fruit maturity. Examples: members of Brassicaceae, lyrate rockcress (Arabidopsis lyrata), mouse-ear cress (Arabidopsis thaliana), wild cabbage (Brassica oleracea), field mustard (Brassica rapa), and pink shepherd's purse (Capsella rubella).
 synonym: "dehiscent fruit (broad)" BROAD []
 synonym: "schote (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "silicle (exact)" EXACT []
@@ -23824,8 +23824,8 @@ is_a: PO:0009001 ! fruit
 [Term]
 id: PO:0030107
 name: achene fruit
-def: "A fruit (PO:0009001) which develops from a carpel (PO:0009030) and at maturity comprises a dry exocarp (PO:0009085), dry mesocarp (PO:0009087), and dry endocarp (PO:0009086) that are fused to a seed coat (PO:0009088) by a persistent funicle (PO:0020006)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: Commonly referenced fruit types such as accessory or multiple fruits (comprised of accrescent receptacle or infructescence tissue) containing as parts achenes are here treated as achene. For example, when annotating for a gene involved in strawberry development, any gene of interest that is involved in the development of the receptacle tissue would be mapped to receptacle (PO:0009064); genes involved in sepal (PO:0009031) persistence or accrescence would map to sepal (PO:0009031), and those involved in fruit characteristics would be mapped to achene (PO:0030107). Examples: sunflower (Helianthus annuus),  strawberry (Fragaria spp.), fig (Ficus sp.), and marijuana (Cannabis sativa).
+def: "A fruit (PO:0009001) which develops from a carpel (PO:0009030) or gyneocium (PO:0009062) and at maturity comprises a dry exocarp (PO:0009085), a dry mesocarp (PO:0009087), and a dry endocarp (PO:0009086) that are connected to a seed coat (PO:0009088) by a funicle (PO:0020006)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: Plant structures commonly referred to as ‘accessory’ (such as strawberry) or multiple fruits (such as figs..) which are comprised of accrescent receptacle (PO:0009064) or infructescence (PO:0006342) tissue, contain as parts achene fruits (PO:0030107). For example, when annotating for a gene involved in strawberry development, any gene of interest that is involved in the development of the receptacle tissue would be mapped to receptacle (PO:0009064); genes involved in sepal (PO:0009031) persistence or accrescence would map to sepal (PO:0009031), and those involved in fruit characteristics would be mapped to achene (PO:0030107). Examples: sunflower (Helianthus annuus),  strawberry (Fragaria spp.), fig (Ficus sp.), and marijuana (Cannabis sativa).
 synonym: "achene (exact)" EXACT []
 synonym: "achäne (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "akene (exact)" EXACT []
@@ -23852,7 +23852,7 @@ is_a: PO:0009001 ! fruit
 id: PO:0030109
 name: hesperidium fruit
 def: "A berry fruit (PO:0030108) which develops from a superior gynoecium (PO:0009062) and at maturity comprises a thickened exocarp (PO:0009085), thickened mesocarp (PO:0009087), and endocarp (PO:0009086), and has as parts juice sacs (PO:0006013) on a carpel adaxial epidermis (PO:0025618)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: A hesperidium fruit develops from a superior gynoecium, and therefore is not surrounded by receptacle tissue. Examples: orange, grapefruit, lemon, and lime (Citrus spp.).
+comment: A hesperidium fruit (PO:0030109) develops from a superior gynoecium (PO:0009062), and therefore is not surrounded by receptacle (PO:0009064) tissue. Examples: orange, grapefruit, lemon, and lime (Citrus spp.).
 synonym: "citrus fruit" EXACT []
 synonym: "hesperide (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "hesperidio (exact, Spanish)" EXACT Spanish [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
@@ -23866,7 +23866,7 @@ is_a: PO:0030108 ! berry fruit
 id: PO:0030110
 name: pome fruit
 def: "A berry fruit (PO:0030108) which develops from an inferior gynoecium (PO:0009062) and at maturity comprises a fleshy exocarp (PO:0009085), fleshy mesocarp (PO:0009087), and hardened endocarp (PO:0009086) and has as a part a fleshy hypanthium (PO:0009065) which is indistinct from the exocarp (PO:0009085)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: A pome fruit is a specialized type of berry fruit which is encapsuled in persistent, accrescent receptacle and/or hypanthium tissue. Examples: Apples, crab apples, and pears (Malus spp. and Pyrus spp.)
+comment: A pome fruit (PO:0030110) is a specialized type of berry fruit (PO:0030108) which is encapsuled in persistent, accrescent receptacle (PO:0009064) and/or hypanthium (PO:0009065) tissue. Examples: Apple, crab apple, and pear (Malus spp. and Pyrus spp.)
 synonym: "apfelfrucht (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "indehiscent fruit (broad)" BROAD []
 synonym: "kernfrucht (exact, German)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
@@ -23880,7 +23880,7 @@ is_a: PO:0030108 ! berry fruit
 id: PO:0030111
 name: pepo fruit
 def: "A berry fruit (PO:0030108) which develops from an inferior carpel (PO:0009030) and at maturity comprises a fleshy exocarp (PO:0009085), fleshy mesocarp (PO:0009087), and fleshy endocarp (PO:0009086), and has as a part a hard receptacle (PO:0009064) which surrounds, and is indistinct from, the exocarp (PO:0009085)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: A pepo fruit is specialized type of berry fruit which is encapsuled by persistent, accrescent receptacle tissue. The rind, or tough outer covering, of pepo fruits comprises receptical tissue and at least the exocarp layer of the pericarp. Examples: pumpkin (Cucurbita pepo), cucumber (Cucumis sativus), and watermelon (Citrullus lanatus).
+comment: A pepo fruit (PO:0030111) is specialized type of berry fruit (PO:0030108) which is encapsuled by persistent, accrescent receptacle (PO:0009064) tissue. The rind, or tough outer covering, of pepo fruits comprises receptical tissue and at least the exocarp (PO:0009085) layer of the pericarp (PO:0009084). Examples: pumpkin (Cucurbita pepo), cucumber (Cucumis sativus), and watermelon (Citrullus lanatus).
 synonym: "indehiscent fruit (broad)" BROAD []
 synonym: "kürbisfrucht (exact, German)" EXACT PO:0030112 [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 synonym: "panzerbeere (broad, German)" BROAD [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
