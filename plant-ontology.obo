@@ -613,8 +613,8 @@ is_a: PO:0003005 ! shoot-borne nodal root
 id: PO:0000044
 name: prop root
 namespace: plant_anatomy
-def: "A shoot-borne nodal root (PO:0003005) formed at a stem node above the ground, and growing directly into the soil." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
-comment: This term is perhaps best defined functionally to prop the plant up.
+def: "A shoot-borne nodal root (PO:0003005) formed at a stem node (PO:0020141) above the ground and growing directly into the soil." [POC:Laurel_Cooper, TAIR:Katica_Ilic]
+comment: This term is perhaps best defined functionally to prop the plant up, but sometimes prop roots may also act as breathing roots. Compare to pneumatophore (PO:0025357), which is a lateral root that grows upwards from below the soil or water surface.
 subset: Maize
 subset: reference
 subset: TraitNet
@@ -18423,8 +18423,8 @@ name: awn
 namespace: plant_anatomy
 def: "A cardinal organ part that is a slender, more or less straight and stiff, fine-pointed, terminal or subterminal appendage of a glume, lemma, or palea." [FNA:glossary]
 comment: Found in a spikelet of Poaceae. Sometimes the awn is a continuation of the bearing structure's central primary vein.
-synonym: "arista (exact)" EXACT [FNA:5e6f29b2-6a37-4663-888b-7cb315ef277e]
 synonym: "arista (exact)" EXACT [FNA:399ba59a-deb1-4bc9-b7e5-ed2b89700d5c]
+synonym: "arista (exact)" EXACT [FNA:5e6f29b2-6a37-4663-888b-7cb315ef277e]
 synonym: "arista (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "bristle (broad)" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
 synonym: "seta (related)" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
@@ -18538,11 +18538,12 @@ creation_date: 2011-11-16T03:39:15Z
 id: PO:0025357
 name: pneumatophore
 namespace: plant_anatomy
-def: "A lateral root that is erect and protrudes above the soil or water." [ISBN:9780881928501]
-comment: Pneumatophores are found in trees that live in flooded habitats such as mangroves and often have many lenticels. May provide oxygen to below ground roots growing in flooded soils. Sometime prop roots (PO:0000044) may act as breathing roots. In that case, the annotation should go to PO:0000044, whereas this term should be used for breathing roots arising at or below the soil or water surface. Knee roots are a type of pneumatophore in which the lateral root first grows upward, then turns and grows back down into the substrate, forming a knee-like bend.
+def: "A lateral root (PO:0020121) that is erect and protrudes above the surface of the soil or water." [ISBN:9780881928501]
+comment: Pneumatophores are found in trees that live in flooded habitats such as mangroves, and often have many lenticels (PO:0000031) which may provide oxygen to below-ground roots growing in flooded soils. Knee roots are a type of pneumatophore in which the lateral root first grows upward, then turns and grows back down into the substrate, forming a knee-like bend. Note that a pneumatophore differs from a prop root (PO:0000044), which is formed at a stem node above the ground, and grows downward into the soil.
 synonym: "breathing root (broad)" BROAD []
 synonym: "knee root (narrow)" NARROW []
 synonym: "通気根、呼吸根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:653
 is_a: PO:0020121 ! lateral root
 created_by: rwalls
 creation_date: 2011-11-16T03:57:20Z
