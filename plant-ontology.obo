@@ -16916,7 +16916,6 @@ id: PO:0025242
 name: infructescence axis
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an infructescence (PO:0006342)." [POC:Ramona_Walls]
-synonym: "cob (narrow)" NARROW []
 synonym: "eje de la infructescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果序軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025029 ! shoot axis
@@ -16942,7 +16941,7 @@ creation_date: 2010-12-30T03:37:08Z
 id: PO:0025244
 name: first order infructescence axis
 namespace: plant_anatomy
-def: "An infructescence axis that is the primary or main axis of an infructescence." [POC:Ramona_Walls]
+def: "An infructescence axis (PO:0025242) that is the primary or main axis of an infructescence (PO:0006342)." [POC:Ramona_Walls]
 synonym: "eje de la infructescencia de primer orden (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "infructescence rachis (exact)" EXACT []
 synonym: "第一果序軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -18050,7 +18049,7 @@ creation_date: 2011-05-11T01:48:37Z
 id: PO:0025323
 name: flower fascicle
 namespace: plant_anatomy
-def: "A reproductive shoot system that is a second or higher order inflorescence in which the second or higher order inflorescence branch bears two or more flowers but is not elongated." [PMID:12644644]
+def: "A reproductive shoot system (PO:0025082) that is a second order inflorescence (PO:0025240), or higher, in which the inflorescence branch (PO:0009081) bears two or more flowers (PO:0009046), but is not elongated." [PMID:12644644]
 comment: A fascicle appears to be a cluster of flowers in an axil of a single bract of the main inflorescence. Fascicles are common in some sections of the Fabaceae, where they are second order inflorescences.
 synonym: "bundle (related)" RELATED [FNA:a5e2072c-2c55-48d8-b540-6f8aa1c0b83b]
 synonym: "fasc&#237culo floral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -21768,7 +21767,7 @@ creation_date: 2013-11-23T13:38:49Z
 id: PO:0025597
 name: ear infructescence
 namespace: plant_anatomy
-def: "An infructescence (PO:0006342) in Zea species that bears kernels (i.e. fruit; PO:0009001) on a compact infructescence axis (PO:0025242) and develops from the ear inflorescence (PO:0020136)." [POC:Laurel_Cooper]
+def: "An infructescence (PO:0006342) in Zea species that bears kernels (i.e. caryopsis fruit; PO:0030104) on a compact ear infructescence axis (PO:0025623) and develops from the ear inflorescence (PO:0020136)." [POC:Laurel_Cooper]
 subset: Maize
 xref: PO_GIT:580
 is_a: PO:0006342 ! infructescence
@@ -22032,6 +22031,17 @@ xref: PO_GIT:639
 is_a: PO:0025096 ! carpel epidermis
 created_by: cooperl
 creation_date: 10-26-2016
+
+[Term]
+id: PO:0025623
+name: ear infructescence axis
+namespace: plant_anatomy
+def: "A first order infructescence axis (PO:0025244) in an ear infructescence (PO:0025597) that bears kernels (i.e. caryopsis fruit; PO:0030104)." [PO:Laurel_Cooper]
+synonym: "cob (exact)" EXACT []
+xref: PO_GIT:655
+is_a: PO:0025244 ! first order infructescence axis
+property_value: http://purl.org/dc/elements/1.1/creator "cooperl" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2016-12-17T00:26:05Z xsd:dateTime
 
 [Term]
 id: PO:0028001
