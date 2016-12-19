@@ -5,6 +5,7 @@ ontology: po/imports/ro_import
 id: BFO:0000002
 name: continuant
 def: "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." []
+disjoint_from: BFO:0000003 ! occurrent
 
 [Term]
 id: BFO:0000003
@@ -151,6 +152,23 @@ holds_over_chain: BFO:0000051 RO:0002131
 is_a: RO:0002323 ! mereotopologically related to
 
 [Typedef]
+id: RO:0002160
+name: only in taxon
+def: "x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z." []
+is_a: RO:0002162 ! in taxon
+
+[Typedef]
+id: RO:0002162
+name: in taxon
+def: "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." []
+range: BFO:0000004 ! independent continuant
+holds_over_chain: BFO:0000050 RO:0002162
+holds_over_chain: BFO:0000051 RO:0002162
+holds_over_chain: RO:0002202 RO:0002162
+holds_over_chain: RO:0002254 RO:0002162
+is_a: RO:0002320 ! evolutionarily related to
+
+[Typedef]
 id: RO:0002163
 name: spatially disjoint from
 def: "A is spatially_disjoint_from B if and only if they have no parts in common" []
@@ -223,6 +241,11 @@ id: RO:0002286
 name: developmentally succeeded by
 def: "Inverse of developmentally preceded by" []
 is_a: RO:0002384 ! has developmental potential involving
+
+[Typedef]
+id: RO:0002320
+name: evolutionarily related to
+def: "A relationship that holds via some environmental process" []
 
 [Typedef]
 id: RO:0002323
