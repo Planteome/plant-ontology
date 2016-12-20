@@ -2467,10 +2467,12 @@ relationship: part_of PO:0025417 ! xylem vessel
 id: PO:0002004
 name: silk scar
 namespace: plant_anatomy
-def: "The silk scar is composed of the shrivelled remains of the intercalary region of the silk, together with the base of the silk which is the true stylar tissue of the silk arising from the distal end of the developing kernel (caryopsis)." [GR:Chih-Wei_Tung]
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) which is composed of the shrivelled remains of the silk (PO:0006488), and the base of the style (PO:0009074), and is located on the distal end of a developing or mature kernel (caryopsis fruit; PO:0030104)." [GR:Chih-Wei_Tung, POC:Laurel_Cooper]
 synonym: "cicatriz sedosa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シルクの痕跡 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0008001 ! fruit distal end
+xref: PO_GIT:376
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
+relationship: part_of PO:0008001 ! fruit distal end
 relationship: part_of PO:0009084 ! pericarp
 
 [Term]
@@ -10261,7 +10263,7 @@ subset: Maize
 subset: Poaceae
 subset: Rice
 subset: TraitNet
-synonym: "aggregate fruit  (broad)" BROAD []
+synonym: "aggregate fruit  (broad)" BROAD [] {scope="broad"}
 synonym: "coenocarp (narrow)" NARROW [FNA:c13b1312-1cc5-4ace-98e2-fde12aec09da]
 synonym: "compound fruit  (broad)" BROAD []
 synonym: "dehiscent fruit  (broad)" BROAD []
@@ -10272,7 +10274,7 @@ synonym: "indehiscent fruit  (broad)" BROAD []
 synonym: "multiple fruit  (broad)" BROAD []
 synonym: "propagule  (broad)" BROAD []
 synonym: "syncarp (narrow)" NARROW [FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a]
-synonym: "果実 (exact, Japanese) (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "果実 (exact, Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:76
 is_a: PO:0025496 ! multi-tissue plant structure
 relationship: develops_from PO:0009062 ! gynoecium
