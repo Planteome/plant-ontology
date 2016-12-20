@@ -2467,10 +2467,10 @@ relationship: part_of PO:0025417 ! xylem vessel
 id: PO:0002004
 name: silk scar
 namespace: plant_anatomy
-def: "A cardinal part of multi-tissue plant structure (PO:0025498) which is composed of the shrivelled remains of the silk (PO:0006488), and the base of the style (PO:0009074), and is located on the distal end of a developing or mature kernel (caryopsis fruit; PO:0030104)." [GR:Chih-Wei_Tung, POC:Laurel_Cooper]
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) which is composed of the shriveled remains of the silk (PO:0006488), and the base of the style (PO:0009074), and is located on the distal end of a developing or mature kernel (caryopsis fruit; PO:0030104)." [GR:Chih-Wei_Tung, POC:Laurel_Cooper]
 synonym: "cicatriz sedosa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シルクの痕跡 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:376
+xref: PO_GIT:656
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: part_of PO:0008001 ! fruit distal end
 relationship: part_of PO:0009084 ! pericarp
@@ -3977,12 +3977,13 @@ relationship: part_of PO:0009031 ! sepal
 
 [Term]
 id: PO:0005022
-name: ovary wall
+name: plant ovary wall
 namespace: plant_anatomy
-def: "A wall of an ovary that is composed of abaxial (outer) and adaxial (inner) epidermis and a middle layer, composed of mesophyll cells and a distinct subepidermal adaxial cell layer (as found in Arabidopsis)." [GR:Pankaj_Jaiswal, PMID:10332605]
+def: "A portion of plant tissue (PO:0009007) that is composed of plant ovary abaxial (outer) epidermis (PO:0005023), plant ovary adaxial (inner) epidermis (PO:0005024), and a plant ovary wall middle layer (PO:0005025)" [GR:Pankaj_Jaiswal, PMID:10332605] {scope="POC:cooperl"}
 synonym: "pared del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025001 ! cardinal organ part
+xref: PO_GIT:280
+is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009072 ! plant ovary
 
 [Term]
@@ -4015,7 +4016,7 @@ synonym: "ovary wall middle layer (exact)" EXACT []
 synonym: "子房壁の中間層 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:49
 is_a: PO:0005426 ! chlorenchyma
-relationship: part_of PO:0005022 ! ovary wall
+relationship: part_of PO:0005022 ! plant ovary wall
 
 [Term]
 id: PO:0005026
@@ -5361,8 +5362,8 @@ synonym: "Poaceae ovary epidermis (narrow)" NARROW []
 synonym: "子房表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005679 ! epidermis
 intersection_of: PO:0005679 ! epidermis
-intersection_of: part_of PO:0005022 ! ovary wall
-relationship: part_of PO:0005022 ! ovary wall
+intersection_of: part_of PO:0005022 ! plant ovary wall
+relationship: part_of PO:0005022 ! plant ovary wall
 
 [Term]
 id: PO:0006065
@@ -6898,7 +6899,7 @@ name: silk
 namespace: plant_anatomy
 alt_id: PO:0006469
 def: "A collective organ part structure (PO:0025269) that has as parts an elongated stigma (PO:0009073) with stigma papilla (GO:0090397), and an elongated style (PO:0009074)." [PMID:21345919, POC:cooperl]
-comment: If you are annotating to this structure for Zea spp., please also add an annotation to the corresponding floret type. Choose the most specific term possible from: ear floret (PO:0006354), or one of the child terms: upper floret of pedicellate spikelet of ear (PO:0006350), or upper floret of sessile spikelet of ear (PO:0006352).
+comment: During pollination (GO:0009856), the pollen (PO:0025281) grows down through a portion of  transmitting tissue (PO:0020102) to a plant ovary ovule (PO:0025490) and a megagametophyte (PO:0025279) to effect fertilization (GO:0009566).  If you are annotating to this structure for Zea spp., please also add an annotation to the corresponding floret type. Choose the most specific term possible from: ear floret (PO:0006354), or one of the child terms: upper floret of pedicellate spikelet of ear (PO:0006350), or upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "Zea style (narrow)" NARROW [] {scope="narrow"}
 xref: PO_GIT:376
 is_a: PO:0025269 ! collective organ part structure
@@ -17189,7 +17190,7 @@ synonym: "septo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_
 synonym: "子房隔壁   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:277
 is_a: PO:0000030 ! septum
-relationship: develops_from PO:0005022 ! ovary wall
+relationship: develops_from PO:0005022 ! plant ovary wall
 relationship: part_of PO:0009062 ! gynoecium
 created_by: rwalls
 creation_date: 2011-02-09T10:31:04Z
@@ -17198,7 +17199,7 @@ creation_date: 2011-02-09T10:31:04Z
 id: PO:0025263
 name: locule
 namespace: plant_anatomy
-def: "A plant anatomical space that is a cavity a reproductive structure." [POC:curators]
+def: "A plant anatomical space (PO:0025117) that is a cavity a reproductive structure." [POC:curators]
 comment: May be a cavity in a sporophyll, within several fused sporophylls, or within a sporangium. In many instances, the locules are filled with seeds or other plant structures.
 synonym: "l&#243culo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "loculus (exact)" EXACT []
@@ -17228,9 +17229,10 @@ id: PO:0025265
 name: sporangium locule
 namespace: plant_anatomy
 alt_id: PO:0025271
-def: "A locule that is a cavity in a sporangium or several fused sporangia." [POC:curators]
+def: "A locule (PO:0025263) that is a cavity in a sporangium (PO:0025094) or several fused sporangia." [POC:curators]
 comment: May be filled with spores.
 synonym: "l&#243culo de la antera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "PO:0025265" BROAD []
 synonym: "spore capsule locule (exact)" EXACT []
 synonym: "胞子嚢室 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025263 ! locule
@@ -17240,14 +17242,15 @@ creation_date: 2011-02-09T10:44:53Z
 
 [Term]
 id: PO:0025266
-name: ovary locule
+name: plant ovary locule
 namespace: plant_anatomy
-def: "A locule that is a cavity in an ovary." [POC:curators]
+def: "A locule (PO:0025263) that is a cavity in a plant ovary (PO:0009072)." [POC:curators]
 comment: Generally contains at least one ovule. An ovary locule may be part of a single carpel, in the case of unicarpellate flowers. An ovary that is part of a syncarpous gynoecium may have multiple locules, or the anatomical spaces of multiple carpels may be fused to form a single locule.
 synonym: "l&#243culo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporophyll locule (broad)" BROAD []
 synonym: "子房室 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:271
+xref: PO_GIT:280
 is_a: PO:0025263 ! locule
 relationship: part_of PO:0009072 ! plant ovary
 created_by: rwalls
@@ -17306,13 +17309,13 @@ creation_date: 2011-02-09T02:57:59Z
 id: PO:0025270
 name: fruit locule
 namespace: plant_anatomy
-def: "A locule that is a cavity in a fruit and develops from an ovary locule." [POC:curators]
+def: "A locule (PO:0025263) that is a cavity in a fruit (PO:0009001) and develops from a plant ovary locule (PO:0025266)." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.
 synonym: "l&#243culo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実室 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:271
 is_a: PO:0025263 ! locule
-relationship: develops_from PO:0025266 ! ovary locule
+relationship: develops_from PO:0025266 ! plant ovary locule
 relationship: part_of PO:0009001 ! fruit
 created_by: rwalls
 creation_date: 2011-02-17T07:17:12Z
