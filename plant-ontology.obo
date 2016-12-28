@@ -1119,7 +1119,7 @@ relationship: part_of PO:0020096 ! egg apparatus
 id: PO:0000198
 name: free nuclear endosperm
 namespace: plant_anatomy
-def: "An endosperm in which at least the first karyokinesis is not followed by cytokinesis." [ISBN:0080374913, ISBN:0471245194]
+def: "A portion of endosperm (PO:0009089) tissue in which at least the first karyokinesis is not followed by cytokinesis." [ISBN:0080374913, ISBN:0471245194]
 synonym: "cenocytic endosperm (related)" RELATED []
 synonym: "coenocytic endosperm (related)" RELATED []
 synonym: "endosperma con n&#250cleos libres (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1131,7 +1131,7 @@ is_a: PO:0009089 ! endosperm
 id: PO:0000199
 name: cellular endosperm
 namespace: plant_anatomy
-def: "Endosperm in which the first karyokinesis event is accompanied by cytokinesis." [ISBN:0080374913, ISBN:0471245194]
+def: "A portion of endosperm (PO:0009089) in which the first karyokinesis event is accompanied by cytokinesis." [ISBN:0080374913, ISBN:0471245194]
 synonym: "endosperma c&#233lular (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "細胞性胚乳 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009089 ! endosperm
@@ -1153,7 +1153,7 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000201
 name: chalazal cyst
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is the part of the endosperm nearest the chalazal region of the ovule and forming a cyst-like structure." [ISBN:047124529, TAIR:Leonore_Reiser]
+def: "A portion of plant tissue (PO:0009007) that is the part of the endosperm (PO:0009089) nearest the chalazal region of the plant ovule (PO:0020003) and forming a cyst-like structure." [ISBN:047124529, TAIR:Leonore_Reiser]
 comment: Not in current literature. More like an attribute.
 synonym: "chalazal endosperm cyst (related)" RELATED []
 synonym: "ciste calazal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3020,7 +3020,7 @@ is_a: PO:0005848 ! secondary xylem
 id: PO:0004518
 name: bark
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) outside the vascular cambium or the xylem; in older trees may be divided into dead outer bark and living inner bark, which consists of secondary phloem." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) outside the vascular cambium (PO:0005598) or the xylem (PO:0005352); in older trees may be divided into dead outer bark and living inner bark, which consists of secondary phloem (PO:0005043)." [ISBN:0471245208, POC:curators]
 subset: TraitNet
 synonym: "corteza (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of bark tissue (exact)" EXACT []
@@ -4349,7 +4349,8 @@ id: PO:0005360
 name: aleurone layer
 namespace: plant_anatomy
 alt_id: PO:0008004
-def: "A portion of plant tissue (PO:0009007) that is the outermost layer of endosperm in a seed, its cells being characterized by presence of protein bodies containing seed storage proteins." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+def: "A portion of plant tissue (PO:0009007) that is the outermost layer of endosperm (PO:0009089) in a seed (PO:0009010), its cells being characterized by presence of protein bodies (GO:0042735)." [GR:Pankaj_Jaiswal, ISBN:0080374913]
+comment: Occurs in cereals and many other taxa. The protein bodies (GO:0042735) contain seed storage proteins and enzymes involved with endosperm digestion (Esau, 1977). {xref="ISBN:0471245208"}
 subset: Angiosperm
 synonym: "capa de aleurona (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "fruit aleurone layer (exact)" EXACT []
@@ -4404,7 +4405,7 @@ is_a: PO:0025059 ! portion of ground tissue
 id: PO:0005423
 name: collenchyma
 namespace: plant_anatomy
-def: "Living tissue composed of more or less elongated cells with thick non-lignified primary cell walls." [GR:Pankaj_Jaiswal]
+def: "A portion of ground tissue (PO:0025059) which comprises living tissue composed of more or less elongated cells with thick, non-lignified primary cell walls." [GR:Pankaj_Jaiswal]
 subset: TraitNet
 synonym: "col&#233nquima (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of collenchyma tissue (exact)" EXACT []
@@ -4427,7 +4428,7 @@ is_a: PO:0005421 ! parenchyma
 id: PO:0005427
 name: sclerenchyma
 namespace: plant_anatomy
-def: "A supporting tissue composed of fibers or sclereids." [ISBN:0080374913]
+def: "A portion of ground tissue (PO:0025059) which comprises supporting tissue composed of plant fiber cells (PO:0025407) or sclereid cells (PO:0025418)." [ISBN:0080374913]
 subset: TraitNet
 synonym: "escler&#233nquima (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of sclerenchyma tissue (exact)" EXACT []
@@ -4960,7 +4961,7 @@ relationship: part_of PO:0025034 ! leaf
 id: PO:0006017
 name: helobial endosperm
 namespace: plant_anatomy
-def: "An endosperm in which the first karyokinetic event is accompanied by the formation of a horizontal wall which divides the central cell into unequal regions. The larger one is the micropylar chamber in which cytokinesis does not occur and the smaller one is the chalazal chamber." [ISBN:0080374913]
+def: "A portion of endosperm (PO:0009089) tissue in which the first karyokinetic event is accompanied by the formation of a horizontal wall which divides the embryo sac central cell (PO:0020090) into unequal regions. The larger one is the micropylar chamber in which cytokinesis does not occur and the smaller one is the chalazal chamber." [ISBN:0080374913]
 synonym: "endosperma helobial (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "沼生目型胚乳 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009089 ! endosperm
@@ -5020,7 +5021,7 @@ relationship: part_of PO:0000042 ! shoot-borne root
 id: PO:0006022
 name: bundle sheath extension
 namespace: plant_anatomy
-def: "A strip of ground tissue present along the leaf veins and extending from the bundle sheath to the epidermis. It may be present on one or both sides of the vein and may consist of parenchyma or sclerenchyma." [ISBN:0080374913]
+def: "A portion of ground tissue (PO:0025059) which forms a strip along the leaf veins and extending from the bundle sheath (PO:0006023) to the epidermis. It may be present on one or both sides of the vein and may consist of parenchyma or sclerenchyma." [ISBN:0080374913]
 synonym: "extensi&#243n de la vaina vascular (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束鞘延長部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025059 ! portion of ground tissue
@@ -5029,7 +5030,7 @@ is_a: PO:0025059 ! portion of ground tissue
 id: PO:0006023
 name: bundle sheath
 namespace: plant_anatomy
-def: "A layer or layers of cells surrounding the vascular bundles of leaves. It may consist of parenchyma or sclerenchyma." [ISBN:0080374913]
+def: "A portion of ground tissue (PO:0025059) which comprises a layer or layers of cells surrounding the vascular bundles (PO:0005020) of leaves. It may consist of parenchyma (PO:0005421) or sclerenchyma (PO:0005427)." [ISBN:0080374913]
 synonym: "vaina del haz (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "維管束鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025059 ! portion of ground tissue
@@ -5194,7 +5195,7 @@ relationship: part_of PO:0020021 ! integument
 id: PO:0006044
 name: inner integument epidermis
 namespace: plant_anatomy
-def: "The epidermis of the inner integument in an ovule." [GR:Pankaj_Jaiswal]
+def: "A portion of integument epidermis (PO:0006043) of the inner integument (PO:0020022) in a plant ovule (PO:0020003)." [GR:Pankaj_Jaiswal]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento interior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内珠皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5205,7 +5206,7 @@ relationship: part_of PO:0020022 ! inner integument
 id: PO:0006045
 name: outer integument epidermis
 namespace: plant_anatomy
-def: "The epidermis of the outer integument in an ovule." [GR:Pankaj_Jaiswal]
+def: "A portion of integument epidermis (PO:0006043) of the outer integument (PO:0020023) in a plant ovule (PO:0020003)." [GR:Pankaj_Jaiswal]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento exterior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "外珠皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5240,7 +5241,7 @@ relationship: part_of PO:0020110 ! scutellum
 id: PO:0006050
 name: exotesta
 namespace: plant_anatomy
-def: "A portion of seed coat epidermis (PO:0006048) which is part of the seed coat, and develops from the outer surface of the outer integument (PO:0020023)." [GR:Pankaj_Jaiswal]
+def: "A portion of seed coat epidermis (PO:0006048) which is part of the seed coat (PO:0009088), and develops from the outer surface of the outer integument (PO:0020023)." [GR:Pankaj_Jaiswal]
 synonym: "exotesta/testa exterior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of exotesta tissue (exact)" EXACT []
 synonym: "seed coat outer epidermis (related)" RELATED []
@@ -5252,7 +5253,7 @@ relationship: part_of PO:0020057 ! testa
 id: PO:0006051
 name: endotesta
 namespace: plant_anatomy
-def: "A portion of seed coat epidermis (PO:0006048) which is part of a seed coat and that develops from the inner epidermis of the outer integument (PO:0020023)." [GR:Pankaj_Jaiswal]
+def: "A portion of seed coat epidermis (PO:0006048) which is part of a seed coat (PO:0009088) and develops from the inner epidermis of the outer integument (PO:0020023)." [GR:Pankaj_Jaiswal]
 synonym: "endotesta/testa interior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of endotesta tissue (exact)" EXACT []
 synonym: "seed coat inner epidermis (related)" RELATED []
@@ -5903,7 +5904,7 @@ is_a: PO:0006075 ! primary phloem
 id: PO:0006218
 name: exotegmen
 namespace: plant_anatomy
-def: "A portion of seed coat epidermis (PO:0006048) which is part of the seed coat and develops from the outer surface of the inner integument (PO:0020022)." [GR:Pankaj_Jaiswal]
+def: "A portion of seed coat epidermis (PO:0006048) which is part of the seed coat (PO:0009088) and develops from the outer surface of the inner integument (PO:0020022)." [GR:Pankaj_Jaiswal]
 synonym: "tegmen exterior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内珠皮の外側の表皮から発生する内種皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006048 ! seed coat epidermis
@@ -5913,7 +5914,7 @@ relationship: part_of PO:0020056 ! tegmen
 id: PO:0006219
 name: endotegmen
 namespace: plant_anatomy
-def: "A portion of seed coat epidermis (PO:0006048) which is part of the seed coat and develops from the inner epidermis of the inner integument (PO:0020022)." [GR:Pankaj_Jaiswal]
+def: "A portion of seed coat epidermis (PO:0006048) which is part of the seed coat (PO:0009088) and develops from the inner epidermis of the inner integument (PO:0020022)." [GR:Pankaj_Jaiswal]
 synonym: "tegmen interior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内珠皮の内側の表皮から発生する内種皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006048 ! seed coat epidermis
@@ -5923,7 +5924,7 @@ relationship: part_of PO:0020056 ! tegmen
 id: PO:0006220
 name: central endosperm
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is the central region of an endosperm, composed of cells that are significantly larger than those at the periphery, especially the aleurone and sub-aleurone layers." [TAIR:Katica_Ilic]
+def: "A portion of plant tissue (PO:0009007) that is the central region of an endosperm (PO:0009089), composed of cells that are significantly larger than those at the periphery, especially the aleurone and sub-aleurone layers." [TAIR:Katica_Ilic]
 comment: Also called starchy endosperm region (characteristic of some grasses).
 synonym: "endosperma central (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of central endosperm tissue (exact)" EXACT []
@@ -6510,7 +6511,7 @@ is_a: PO:0006320 ! ear spikelet
 id: PO:0006350
 name: upper floret of pedicellate spikelet of ear
 namespace: plant_anatomy
-def: "An ear floret that is the upper of the two florets of a pedicellate spikelet rachilla of an ear inflorescence." [GR:Pankaj_Jaiswal, POC:erw]
+def: "An ear floret that is the upper of the two florets of a pedicellate spikelet rachilla of an ear inflorescence." [GR:Pankaj_Jaiswal, POC:Ramona_Walls]
 comment: The upper floret on the ear usually develops into a functional one.
 synonym: "florete superior de la espiguilla pedicelada de la espiga (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）の有柄小穂の上位小花 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -9746,7 +9747,7 @@ relationship: part_of PO:0020020 ! nucellus
 id: PO:0008007
 name: nucellar projection
 namespace: plant_anatomy
-def: "A portion of plant tissue ((PO:0009007)) that is the morphologically distinct portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:Anuradha_Pujar]
+def: "A portion of plant tissue (PO:0009007) that is the morphologically distinct portion of the nucellus overlying the vascular strands in the grass caryopsis." [GR:Anuradha_Pujar]
 subset: Poaceae
 subset: Rice
 synonym: "<new synonym> (related)" RELATED []
@@ -9759,7 +9760,7 @@ relationship: part_of PO:0020020 ! nucellus
 id: PO:0008008
 name: modified aleurone
 namespace: plant_anatomy
-def: "A morphologically distinct aleurone layer located adjacent to the nucellar projection." [GR:Anuradha_Pujar]
+def: "A portion of aleurone layer (PO:0005360) which is morphologically distinct and is located adjacent to the nucellar projection (PO:0008007)." [GR:Anuradha_Pujar]
 subset: Poaceae
 subset: Rice
 synonym: "aleurona modificada (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -9771,7 +9772,7 @@ is_a: PO:0005360 ! aleurone layer
 id: PO:0008009
 name: abaxial nucellar projection
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is the abaxial/lower portion of the nucellus overlying vascular strands in a caryopsis fruit (PO:0030104)." [GR:Anuradha_Pujar]
+def: "A portion of plant tissue (PO:0009007) that is the abaxial/lower portion of the nucellus (PO:0020020) overlying vascular strands in a caryopsis fruit (PO:0030104)." [GR:Anuradha_Pujar]
 subset: Poaceae
 subset: Rice
 synonym: "proyecci&#243n nucelar abaxial (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -9784,7 +9785,7 @@ relationship: part_of PO:0008007 ! nucellar projection
 id: PO:0008010
 name: adaxial nucellar projection
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is the adaxial/upper portion of the nucellus overlying vascular strands in a caryopsis fruit (PO:0030104)." [GR:Anuradha_Pujar]
+def: "A portion of plant tissue (PO:0009007) that is the adaxial/upper portion of the nucellus (PO:0020020) overlying vascular strands in a caryopsis fruit (PO:0030104)." [GR:Anuradha_Pujar]
 subset: Poaceae
 subset: Rice
 synonym: "proyecci&#243n nucelar adaxial (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11577,7 +11578,6 @@ synonym: "stigmas (exact, plural)" EXACT [FNA:21acc3ff-0dee-41c7-965c-88bdd48af2
 synonym: "stigmata (exact, plural)" EXACT [FNA:e8a6ec07-521d-44e9-98da-cb0f18aa96a2]
 synonym: "Zea stigma (narrow)" NARROW []
 synonym: "柱頭 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT: XYZ
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009030 ! carpel
@@ -11788,8 +11788,8 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0009089
 name: endosperm
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) which is a maximal portion of nutritive plant tissue in a seed." [APweb:Glossary, GR:Pankaj_Jaiswal]
-comment: In angiosperms endosperm is usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus; sometimes diploid or polyploid.
+def: "A portion of plant tissue (PO:0009007) which is a maximal portion of nutritive plant tissue in a seed (PO:0009010)." [APweb:Glossary, GR:Pankaj_Jaiswal]
+comment: In angiosperms the endosperm is usually triploid and formed after fertilization by the fusion of one gamete with the polar nucleus (GO:0043078); sometimes diploid or polyploid.
 subset: TraitNet
 synonym: "albumen (exact)" EXACT [FNA:1ecc1a22-0b08-4979-ae5e-2de10f4dc4ba]
 synonym: "endosperma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -12524,7 +12524,7 @@ relationship: participates_in PO:0007054 ! epicotyl emergence stage
 id: PO:0020036
 name: epiblast
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is a flap-like projection of the coleorhiza, inserted opposite the scutellum." [ISBN:0471244554]
+def: "A portion of plant tissue (PO:0009007) that is a flap-like projection of the coleorhiza (PO:0020034), inserted opposite the scutellum (PO:0020110)." [ISBN:0471244554]
 comment: The parenchyma cells of both the coleorhiza and epiblast may function in storage. Some researchers consider the epiblast and coleorhiza independent structures that differentiate from the same proembryonic tissue.
 synonym: "epiblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "外胚葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12823,7 +12823,7 @@ is_a: PO:0019022 ! arilloid
 id: PO:0020061
 name: coma
 namespace: plant_anatomy
-def: "A portion of seed coat epidermis (PO:0006048) that consists of multiple seed trichomes at the micropyle." [POC:curators]
+def: "A portion of seed coat epidermis (PO:0006048) that consists of multiple seed trichomes (PO:0004511) at the seed micropyle (PO:0006334)." [POC:curators]
 subset: TraitNet
 synonym: "brush (exact)" EXACT []
 synonym: "coma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -15973,7 +15973,7 @@ creation_date: 2010-11-18T07:47:30Z
 id: PO:0025170
 name: root prickle
 namespace: plant_anatomy
-def: "A prickle (PO:0025169) that is part of a root." [POC:curators]
+def: "A prickle (PO:0025169) that is part of a root (PO:0009005)" [POC:curators]
 synonym: "espinilla de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根刺状突起 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:220
@@ -15986,7 +15986,7 @@ creation_date: 2010-11-18T07:47:30Z
 id: PO:0025171
 name: shoot axis prickle
 namespace: plant_anatomy
-def: "A prickle (PO:0025169) that is part of a shoot axis." [POC:curators]
+def: "A prickle (PO:0025169) that is part of a shoot axis (PO:0025029)." [POC:curators]
 synonym: "espinilla del eje del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート軸表皮のとげ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:220
@@ -16061,7 +16061,7 @@ creation_date: 2010-11-18T08:14:18Z
 id: PO:0025175
 name: leaf prickle
 namespace: plant_anatomy
-def: "A prickle (PO:0025169) that is part of a leaf." [POC:curators]
+def: "A prickle (PO:0025169) that is part of a leaf (PO:0025034)." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "espinilla de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉刺状突起 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16343,8 +16343,8 @@ creation_date: 2010-12-09T02:11:17Z
 id: PO:0025196
 name: basal endosperm transfer layer
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is part of an endosperm and is composed of basal endosperm transfer cells." [POC:Ramona_Walls]
-comment: Involved in transferring nutrients to an embryo.
+def: "A portion of plant tissue (PO:0009007) that is part of an endosperm (PO:0009089) and is composed of basal endosperm transfer cells (PO:0009018)." [POC:Ramona_Walls]
+comment: Involved in transferring nutrients to a plant embryo (PO:0009009).
 synonym: "capa de transferencia del endosperma basal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "基底胚乳転送層 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:240
@@ -16789,7 +16789,7 @@ creation_date: 2010-12-20T09:25:07Z
 id: PO:0025230
 name: columella
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that forms the central axis of a plant structure such as a fruit or moss capsule." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) that forms the central axis of a plant structure such as a fruit (PO:0009001) or moss capsule (sporangium; PO:0025094)." [POC:curators]
 synonym: "columela (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of columella tissue (exact)" EXACT []
 synonym: "軸柱、柱軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16816,7 +16816,7 @@ creation_date: 2010-12-20T09:34:34Z
 id: PO:0025233
 name: portion of embryo plant tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue that is part of a plant embryo." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) that is part of a plant embryo (PO:0009009)." [POC:curators]
 comment: This class is for tissues that only occur as part of an embryo.
 synonym: "portion of embryo tissue (broad)" BROAD []
 synonym: "portion of embryonic plant tissue (exact)" EXACT []
@@ -17902,7 +17902,7 @@ creation_date: 2011-05-03T11:13:31Z
 id: PO:0025310
 name: megasporangium endothecium
 namespace: plant_anatomy
-def: "An endothecium that is part of a megasporangium wall." [POC:curators]
+def: "A sporangium wall endothecium (PO:0030049) that is part of a megasporangium wall." [POC:curators]
 synonym: "endotecio del megasporangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "大胞子嚢内皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:357
@@ -18012,8 +18012,8 @@ creation_date: 2011-05-04T11:15:11Z
 id: PO:0025318
 name: axillary hair base
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is the basal part of an axillary hair, below the axillary hair terminal cell." [ISBN:9780473067304]
-comment: Consists of two or more cells.
+def: "A portion of plant tissue (PO:0009007) that is the basal part of an axillary hair (PO:0025316), below the axillary hair terminal cell (PO:0025317)." [ISBN:9780473067304]
+comment: Consists of two or more plant cells.
 synonym: "base del pelo axilar (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "腋毛基底 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:333
@@ -21952,7 +21952,7 @@ creation_date: 2014-06-13T14:09:26Z
 id: PO:0025609
 name: shoot axis tegument layer
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that forms a tough, protective outer layer on a shoot axis and includes as parts a shoot axis hypodermis (PO:0005057) and a shoot axis epidermis (PO:0000112)." [PMID:xyz, POC:Laurel_Cooper]
+def: "A portion of plant tissue (PO:0009007) that forms a tough, protective outer layer on a shoot axis and includes as parts a shoot axis hypodermis (PO:0005057) and a shoot axis epidermis (PO:0000112)." [POC:Laurel_Cooper]
 synonym: "shoot axis rind (exact)" EXACT []
 xref: PO_GIT:596
 is_a: PO:0009007 ! portion of plant tissue
@@ -22972,7 +22972,7 @@ creation_date: 2011-04-18T09:34:43Z
 id: PO:0030049
 name: sporangium wall endothecium
 namespace: plant_anatomy
-def: "A portion of ground tissue PO:0025059) that is the sub-epidermal layer of a sporangium wall (PO:0025306)." [ISBN:0471244554, ISBN:9780003686647]
+def: "A portion of ground tissue (PO:0025059) that is the sub-epidermal layer of a sporangium wall (PO:0025306)." [ISBN:0471244554, ISBN:9780003686647]
 comment: Term used for vascular plants to describe the outermost layer of a sporangium wall that is internal to the exothecium.
 synonym: "endotecio de la pared del esporangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "endothecium of sporangium wall (exact)" EXACT []
@@ -22989,7 +22989,7 @@ creation_date: 2011-05-02T09:46:49Z
 id: PO:0030050
 name: stereome
 namespace: plant_anatomy
-def: "A portion of ground tissue that has as parts stereid cells and no other cell types." [ISBN:376821110]
+def: "A portion of ground tissue (PO:0025059)  that has as parts stereid cells (PO:0030045) and no other cell types." [ISBN:376821110]
 comment: A stereome is composed of only stereids. Found only in bryophytes in gametophore axes or non-vascular leaves. May function in support.
 subset: Bryophytes
 synonym: "estereomo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -23003,7 +23003,7 @@ creation_date: 2011-04-25T11:39:57Z
 id: PO:0030051
 name: central strand
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is an axial strand in the center of a gametophore axis or seta and has as part a hydrome or a leptome." [ISBN:0029496608, ISBN:0962073342]
+def: "A portion of plant tissue (PO:0009007) that is an axial strand in the center of a gametophore axis (PO:0030020) or seta (PO:0030032) and has as part a hydrome (PO:0030047) or a leptome (PO:0030048)." [ISBN:0029496608, ISBN:0962073342]
 comment: Often contains both hydrome and leptome. Found in bryophytes. The term central strand is sometimes used to describe a protostele in vascular plants, but this ontology class should only be used for non-vascular plants. Analogous to a vein or vascular bundle in vascular plants.
 subset: Bryophytes
 synonym: "conducting cylinder (exact)" EXACT [ISBN:376821110]
@@ -23305,7 +23305,7 @@ creation_date: 2011-04-29T09:33:11Z
 id: PO:0030069
 name: paraphyllium
 namespace: plant_anatomy
-def: "A portion of epidermis (PO:0005679) tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis." [ISBN:0962073342]
+def: "A portion of epidermis (PO:0005679) tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis (PO:0030020)." [ISBN:0962073342]
 comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-like, or leaf-like. Found in pleurocarpous mosses and a few leafy liverworts.
 subset: Bryophytes
 synonym: "parafilium (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -23352,7 +23352,7 @@ creation_date: 2011-04-29T01:15:05Z
 id: PO:0030072
 name: costa
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is a single or double strand in the center of a non-vascular leaf and has as part hydrome (PO:0030047) or leptome (PO:0030048)." [ISBN:376821110]
+def: "A portion of plant tissue (PO:0009007) that is a single or double strand in the center of a non-vascular leaf (PO:0025075) and has as part hydrome (PO:0030047) or leptome (PO:0030048)." [ISBN:376821110]
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
 subset: Bryophytes
 synonym: "costa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -23555,7 +23555,7 @@ creation_date: 2011-05-17T09:10:08Z
 id: PO:0030084
 name: amphithecium
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is the outer layer or layers of a sporangium early in sporangium development." [ISBN:0962073342]
+def: "A portion of plant tissue (PO:0009007) that is the outer layer or layers of a sporangium (PO:0025094) early in sporangium development (GO:0043582)." [ISBN:0962073342]
 comment: Term used for bryophytes. May have one or more layers. An amphithecium may give rise to an exothecium and other layers of a sporangium wall (jacket layer or layers). In true mosses, the amphithecium gives rise to the sporangium wall and the peristome. In hornworts and peat mosses, it gives rise to the sporangium wall and sporogenous tissue.
 subset: Bryophytes
 synonym: "anfitecio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
