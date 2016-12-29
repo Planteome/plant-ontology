@@ -3242,12 +3242,13 @@ relationship: part_of PO:0025411 ! ray system
 id: PO:0004535
 name: fruit placenta
 namespace: plant_anatomy
-def: "A portion of placenta tissue that is part of a fruit and to which seeds are attached." [POC:curators]
+def: "A portion of placenta tissue (PO:0025078) that is part of a fruit (PO:0009001) and to which seeds (PO:0009010) are attached." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.
 subset: Tomato
 synonym: "placenta del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実の胎座 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020001 ! ovary placenta
+xref: PO_GIT:144
+is_a: PO:0020001 ! plant ovary placenta
 relationship: develops_from PO:0025078 ! placenta
 relationship: part_of PO:0009001 ! fruit
 
@@ -4000,7 +4001,7 @@ def: "A portion of ovary epidermis (PO:0006063) which is the outer surface of a 
 synonym: "epidermis abaxial del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房の裏側 背軸側の表皮 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
-is_a: PO:0006063 ! ovary epidermis
+is_a: PO:0006063 ! plant ovary epidermis
 
 [Term]
 id: PO:0005024
@@ -4010,7 +4011,7 @@ def: "A portion of ovary epidermis (PO:0006063) which is the inner surface of a 
 synonym: "epidermis adaxial del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房の表側、向軸側の表皮 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
-is_a: PO:0006063 ! ovary epidermis
+is_a: PO:0006063 ! plant ovary epidermis
 
 [Term]
 id: PO:0005025
@@ -5366,7 +5367,7 @@ relationship: part_of PO:0009074 ! style
 
 [Term]
 id: PO:0006063
-name: ovary epidermis
+name: plant ovary epidermis
 namespace: plant_anatomy
 alt_id: PO:0006500
 def: "A portion of epidermis (PO:0005679) that is part of an plant ovary wall (PO:0005022)." [POC:Ramona_Walls]
@@ -5374,6 +5375,7 @@ comment: If you are annotating to this structure for Zea mays or other grasses, 
 synonym: "epidermis del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae ovary epidermis (narrow)" NARROW []
 synonym: "子房表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:280
 is_a: PO:0005679 ! epidermis
 intersection_of: PO:0005679 ! epidermis
 intersection_of: part_of PO:0005022 ! plant ovary wall
@@ -12037,17 +12039,18 @@ relationship: part_of PO:0009010 ! seed
 
 [Term]
 id: PO:0020001
-name: ovary placenta
+name: plant ovary placenta
 namespace: plant_anatomy
 alt_id: PO:0006467
 alt_id: PO:0006490
-def: "A portion of placenta tissue that is part of an ovary and to which ovules are attached." [APweb:Glossary]
+def: "A portion of placenta tissue (PO:0025078) which is part of a plant ovary (PO:0009072), and to which plant ovary ovules (PO:0025490) are attached." [APweb:Glossary]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "placenta de ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae ovary placenta (narrow)" NARROW []
 synonym: "Zea ovary placenta (narrow)" NARROW []
 synonym: "子房胎座 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:144
 is_a: PO:0025078 ! placenta
 relationship: part_of PO:0009072 ! plant ovary
 
@@ -14715,6 +14718,7 @@ synonym: "placentae (exact, plural)" EXACT [FNA:2f9cc2ef-9943-4a58-8f0d-01214acd
 synonym: "placentas (exact, plural)" EXACT [FNA:3d86068e-4587-4b88-b73f-5fe663bc4d07]
 synonym: "portion of placenta tissue (exact)" EXACT []
 synonym: "胎座 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:144
 is_a: PO:0009007 ! portion of plant tissue
 created_by: rwalls
 creation_date: 2010-07-13T04:36:23Z
@@ -17207,10 +17211,10 @@ creation_date: 2011-02-02T11:52:49Z
 
 [Term]
 id: PO:0025262
-name: ovary septum
+name: plant ovary septum
 namespace: plant_anatomy
-def: "A septum that divides a multilocular ovary." [POC:curators]
-comment: Found in species with syncarpous gynoecia (fused carpels). An ovary septum is derived from the fused walls of two adjacent carpels, while a replum (PO:0005016) develops from early contact of placental tissue from opposite sides of the ovary. Annotations for Arabidopsis should go under replum, not under ovary septum.
+def: "A septum (PO:0000030) that divides a multilocular plant ovary (PO:0009072)." [POC:curators]
+comment: Found in species with syncarpous gynoecia (fused carpels). A plant ovary septum is derived from the fused walls of two adjacent carpels, while a replum (PO:0005016) develops from early contact of placental tissue from opposite sides of the plant ovary. Annotations for Arabidopsis should go under replum, not under plant ovary septum.
 synonym: "carpel synonym (related)" RELATED []
 synonym: "ovary dissepiment (broad)" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
 synonym: "ovary septa (exact, plural)" EXACT [FNA:4be9b3cd-7aae-4eee-a102-19a6b4dbc92b]
@@ -17288,7 +17292,7 @@ creation_date: 2011-02-09T01:39:52Z
 id: PO:0025267
 name: fruit replum
 namespace: plant_anatomy
-def: "A portion of fruit placenta tissue that divides a fruit into two or more chambers and develops from a replum." [POC:Ramona_Walls]
+def: "A portion of fruit placenta tissue  (PO:0004535) that divides a fruit (PO:0009001) into two or more chambers and develops from a plant ovary replum (PO:ID)." [POC:Ramona_Walls]
 comment: A fruit replum develops from the ovary replum and has no suture line in its center, while a fruit septum (PO:0025262) develops from an ovary septum via the fusion of two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis fruit should go here, and not under fruit septum. If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.
 subset: Arabidopsis
 synonym: "fruit dissepiment (broad)" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
@@ -17296,7 +17300,7 @@ synonym: "replum del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_
 synonym: "果実隔膜 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:279
 is_a: PO:0004535 ! fruit placenta
-relationship: develops_from PO:0025272 ! ovary replum
+relationship: develops_from PO:0025272 ! plant ovary replum
 created_by: rwalls
 creation_date: 2011-02-09T02:16:55Z
 
@@ -17312,7 +17316,7 @@ synonym: "果実隔壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PlantSystematics_image_archive:1597
 xref: PO_GIT:277
 is_a: PO:0000030 ! septum
-relationship: develops_from PO:0025262 ! ovary septum
+relationship: develops_from PO:0025262 ! plant ovary septum
 relationship: part_of PO:0009001 ! fruit
 created_by: rwalls
 creation_date: 2011-02-09T02:30:21Z
@@ -17350,9 +17354,9 @@ creation_date: 2011-02-17T07:17:12Z
 
 [Term]
 id: PO:0025272
-name: ovary replum
+name: plant ovary replum
 namespace: plant_anatomy
-def: "A portion of ovary placenta tissue that divides an ovary into two or more chambers and develops from contact of the placental tissue from opposite sides of the ovary early in gynoecium development." [ISBN:0387940898, POC:curators]
+def: "A portion of ovary placenta tissue (PO:0020001) which divides a plant ovary (PO:0009072) into two or more chambers, and develops from contact of the placental tissue from opposite sides of the plant ovary early in gynoecium development (GO:0048467)." [ISBN:0387940898, POC:curators]
 comment: An ovary replum develops along with the ovary and has no suture line in its center, while a true ovary septum (PO:0025262) is derived from the fusion two adjacent ovary walls. Common in Brassicaceae. Annotations for Arabidopsis should go here, and not under ovary septum.
 subset: Arabidopsis
 synonym: "false ovary septum (exact)" EXACT []
@@ -17361,7 +17365,7 @@ synonym: "placental septum (exact)" EXACT []
 synonym: "replo (replum) del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房隔膜  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:279
-is_a: PO:0020001 ! ovary placenta
+is_a: PO:0020001 ! plant ovary placenta
 created_by: rwalls
 creation_date: 2011-02-17T08:29:21Z
 
