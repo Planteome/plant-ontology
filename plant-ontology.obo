@@ -3804,7 +3804,7 @@ relationship: part_of PO:0025029 ! shoot axis
 id: PO:0005006
 name: articulated laticifer
 namespace: plant_anatomy
-def: "A portion of secretory tissue (PO:0005656) that has as parts articulated laticifer cells (PO:0006221)." [GR:Pankaj_Jaiswal, POC:curators]
+def: "A portion of secretory tissue (PO:0005656) that has as parts articulated laticifer cells (PO:0006221)." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC:curators]
 comment: The articulated laticifer cells are joined longitudinally to form a tube, with cross-walls that may be partially to fully perforated.
 synonym: "latic&#237fero articulado (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of articulated laticifer tissue (exact)" EXACT []
@@ -4555,12 +4555,13 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0005656
 name: portion of secretory tissue
 namespace: plant_anatomy
-def: "Tissues that form specialized structures producing a secretion." [GR:Pankaj_Jaiswal, ISBN:047124529]
+def: "A portion of plant tissue (PO:0009007) that form specialized structures producing a secretion." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC: Laurel_Cooper]
 comment: The synonym gland does not imply non-secretory 'glands'.
 subset: TraitNet
 synonym: "gland (related)" RELATED []
 synonym: "porci&#243n del tejido secretor (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分泌組織の一部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:659
 is_a: PO:0009007 ! portion of plant tissue
 
 [Term]
@@ -4578,7 +4579,7 @@ is_a: PO:0025001 ! cardinal organ part
 id: PO:0005661
 name: salt gland
 namespace: plant_anatomy
-def: "A specialized tissue where excess salt absorbed in water from the soil is concentrated, being stores or excreted." [GR:Pankaj_Jaiswal]
+def: "A specialized tissue where excess salt absorbed in water from the soil is concentrated, being stores or excreted." [GR:Pankaj_Jaiswal, ISBN:0471245208]
 comment: A crust of salt forms on leaves which tastes bad and the white surfaces act to reflect light. Example, as is Mangrove vegetation.
 synonym: "gl&#225ndula de sal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "塩腺 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4599,7 +4600,7 @@ is_a: PO:0025132 ! canal
 id: PO:0005669
 name: oil gland
 namespace: plant_anatomy
-def: "A gland or a cavity lined with cells that secrete oils." [GR:Pankaj_Jaiswal]
+def: "A gland or a cavity lined with cells that secrete oils." [GR:Pankaj_Jaiswal, ISBN:0471245208]
 comment: Oil glands are schizogenous.
 synonym: "gl&#225ndula aceitosa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "oil cavity (related)" RELATED []
@@ -10812,7 +10813,7 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009035
 name: nectary
 namespace: plant_anatomy
-def: "A multicellular glandular structure secreting a liquid containing organic substances especially sugars." [GR:Pankaj_Jaiswal]
+def: "A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC: Laurel_Cooper]
 subset: reference
 subset: TraitNet
 synonym: "nectario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11219,11 +11220,13 @@ relationship: develops_from PO:0025487 ! bract primordium
 id: PO:0009056
 name: flower nectary
 namespace: plant_anatomy
-def: "A multicellular glandular structure found in the flower secreting a liquid containing organic substances especially sugars." [ISBN:047124529]
+def: "A nectary (PO:0009035) occurring on a floral organ (PO:0025395) or other part of a flower (PO:0009046)." [ISBN:0471245208, POC: Laurel_Cooper]
+comment: A flower nectary may occur on a sepal (PO:0009031), petal (PO:0009032), stamen (PO:0009029), plant ovary (PO:0009072), or receptacle (PO:0009064).
 subset: reference
 synonym: "floral nectary (exact)" EXACT []
 synonym: "nectario floral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花蜜腺 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:659
 is_a: PO:0009035 ! nectary
 relationship: part_of PO:0009046 ! flower
 
@@ -11231,10 +11234,12 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009057
 name: extrafloral nectary
 namespace: plant_anatomy
-def: "A multicellular glandular structure found in places other than flower secreting a liquid containing organic substances especially sugar." [ISBN:047124529]
+def: "A nectary (PO:0009035) occurring on vegetative plant structures (PO:0009011) such as a stem (PO:0009047), leaf (PO:0009025), stipule (PO:0020041) or flower pedicel (PO:0009052)." [ISBN:0471245208, POC: Laurel_Cooper]
 subset: TraitNet
 synonym: "nectario extrafloral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "petiolar gland (narrow)" NARROW [PO_GIT:658]
 synonym: "花外蜜腺 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT: 659
 is_a: PO:0009035 ! nectary
 
 [Term]
@@ -12891,10 +12896,12 @@ is_obsolete: true
 id: PO:0020075
 name: mericarp
 namespace: plant_anatomy
-def: "One segment of a fruit of a schizocarp consisting of pericarp plus seed(s)." [APweb:Glossary]
+def: "One segment of a fruit of a schizocarp consisting of pericarp plus seed(s)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 synonym: "mericarpo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分果 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009030 ! carpel
+xref: PO_GIT:654
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
+relationship: part_of PO:0030098 ! schizocarp fruit
 
 [Term]
 id: PO:0020081
