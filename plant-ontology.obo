@@ -1550,7 +1550,7 @@ is_a: PO:0000290 ! tracheary element
 id: PO:0000309
 name: nectary parenchyma
 namespace: plant_anatomy
-def: "A portion of parenchyma tissue that is part of a nectary." [POC:Ramona_Walls]
+def: "A portion of parenchyma tissue (PO:0005421) that is part of a nectary (PO:0009035)." [POC:Ramona_Walls]
 synonym: "par&#233nquima nectarifero (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "蜜腺柔組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009035 ! nectary
@@ -4555,7 +4555,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 id: PO:0005656
 name: portion of secretory tissue
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that form specialized structures producing a secretion." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC: Laurel_Cooper]
+def: "A portion of plant tissue (PO:0009007) that form specialized structures producing a secretion." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC:Laurel_Cooper]
 comment: The synonym gland does not imply non-secretory 'glands'.
 subset: TraitNet
 synonym: "gland (related)" RELATED []
@@ -10813,11 +10813,12 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009035
 name: nectary
 namespace: plant_anatomy
-def: "A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC: Laurel_Cooper]
+def: "A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars." [GR:Pankaj_Jaiswal, ISBN:0471245208, POC:Laurel_Cooper]
 subset: reference
 subset: TraitNet
 synonym: "nectario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "蜜腺 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:659
 is_a: PO:0005656 ! portion of secretory tissue
 relationship: part_of PO:0009006 ! shoot system
 
@@ -11220,7 +11221,7 @@ relationship: develops_from PO:0025487 ! bract primordium
 id: PO:0009056
 name: flower nectary
 namespace: plant_anatomy
-def: "A nectary (PO:0009035) occurring on a floral organ (PO:0025395) or other part of a flower (PO:0009046)." [ISBN:0471245208, POC: Laurel_Cooper]
+def: "A nectary (PO:0009035) occurring on a floral organ (PO:0025395) or other part of a flower (PO:0009046)." [ISBN:0471245208, POC:Laurel_Cooper]
 comment: A flower nectary may occur on a sepal (PO:0009031), petal (PO:0009032), stamen (PO:0009029), plant ovary (PO:0009072), or receptacle (PO:0009064).
 subset: reference
 synonym: "floral nectary (exact)" EXACT []
@@ -11234,12 +11235,13 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0009057
 name: extrafloral nectary
 namespace: plant_anatomy
-def: "A nectary (PO:0009035) occurring on vegetative plant structures (PO:0009011) such as a stem (PO:0009047), leaf (PO:0009025), stipule (PO:0020041) or flower pedicel (PO:0009052)." [ISBN:0471245208, POC: Laurel_Cooper]
+def: "A nectary (PO:0009035), not occurring on a floral organ (PO:0025395) or other part of a flower (PO:0009046)." [ISBN:0471245208, POC:Laurel_Cooper]
+comment: An extrafloral nectary may occur on vegetative plant structures (PO:0009011) such as a stem (PO:0009047), leaf (PO:0009025), petiole (PO:0020038), stipule (PO:0020041) or  flower pedicel (PO:0009052).
 subset: TraitNet
 synonym: "nectario extrafloral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "petiolar gland (narrow)" NARROW [PO_GIT:658]
 synonym: "花外蜜腺 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT: 659
+xref: PO_GIT:659
 is_a: PO:0009035 ! nectary
 
 [Term]
@@ -12896,7 +12898,8 @@ is_obsolete: true
 id: PO:0020075
 name: mericarp
 namespace: plant_anatomy
-def: "One segment of a fruit of a schizocarp consisting of pericarp plus seed(s)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+def: "A cardinal part of multi-tissue plant structure (PO:0025498) which is one carpellate unit of a schizocarp fruit (PO:0030098) consisting of pericarp (PO:0009084) and one or more seeds (PO:0009010)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: A mericarp develops from one carpel of a syncarpous gynoecium. The pericarp of each carpel are fused together until maturity, at which point the carpellate units separate from one another.
 synonym: "mericarpo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "分果 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:654
