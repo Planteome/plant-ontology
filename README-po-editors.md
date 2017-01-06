@@ -55,11 +55,7 @@ committed and pushed, and the Travis build passes.
 
 to release, change into this directory, and type
 
-    make
-
-If this looks good type:
-
-    make prepare_release
+    make release
 
 This generates derived files such as po.owl and po.obo. The version IRI
 will be added.
