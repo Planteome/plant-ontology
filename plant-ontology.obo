@@ -3976,7 +3976,7 @@ is_a: PO:0009015 ! portion of vascular tissue
 id: PO:0005021
 name: sepal margin
 namespace: plant_anatomy
-def: "The margin of a sepal." [PMID:15269176, TAIR:Donghui_Li]
+def: "A phyllome margin (PO:0025018) which is part of a sepal (PO:0009031)." [PMID:15269176, POC:cooperl, TAIR:Donghui_Li]
 synonym: "margen del s&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -5088,11 +5088,11 @@ relationship: part_of PO:0009038 ! palea
 id: PO:0006034
 name: leaflet margin
 namespace: plant_anatomy
-def: "The margin of the leaflet." [POC:curators]
+def: "A cardinal organ part (PO:0025001) that is the edge of a leaflet (PO:0020049) and the area immediately internally adjacent to it." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "margen del fol&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小葉縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020128 ! leaf margin
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020049 ! leaflet
 
 [Term]
@@ -12698,7 +12698,7 @@ is_a: PO:0025017 ! plant spore
 id: PO:0020049
 name: leaflet
 namespace: plant_anatomy
-def: "One of the ultimate segments of a compound leaf." [APweb:Glossary]
+def: "A cardinal organ part (PO:0025001) that is one of the ultimate segments of a compound leaf (PO:0020043)." [APweb:Glossary, POC:laurel_cooper]
 subset: TraitNet
 synonym: "fol&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pinna (narrow)" NARROW [FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44]
@@ -13314,14 +13314,14 @@ relationship: develops_from PO:0025297 ! seedling radicle
 id: PO:0020128
 name: leaf margin
 namespace: plant_anatomy
-def: "A phyllome margin (PO:0025018) of any flattened part of a leaf (PO:0025034)." [POC:curators]
+def: "A phyllome margin (PO:0025018) that is part of a leaf (PO:0025034)." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
 synonym: "margen de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:85
 is_a: PO:0025018 ! phyllome margin
-intersection_of: PO:0025005 ! organ margin
+intersection_of: PO:0025018 ! phyllome margin
 intersection_of: part_of PO:0025034 ! leaf
 relationship: part_of PO:0025034 ! leaf
 
@@ -13659,10 +13659,10 @@ creation_date: 2010-07-01T03:44:41Z
 
 [Term]
 id: PO:0025005
-name: organ margin
+name: plant organ margin
 namespace: plant_anatomy
-def: "A cardinal organ part that is the edge of an organ and the area immediately internally adjacent to it." [POC:curators]
-comment: Only flattened or laminar organs or organ parts will have a margin.
+def: "A cardinal organ part (PO:0025001) that is the edge of a plant organ (PO:0009008) and the area immediately internally adjacent to it." [POC:curators, POC:laurel_cooper]
+comment: Only flattened or laminar plant organs or organ parts will have a margin.
 subset: TraitNet
 synonym: "margen de un &#243rgano (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "器官縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13670,7 +13670,7 @@ xref: PO_GIT:52
 xref: PO_GIT:70
 xref: PO_GIT:72
 is_a: PO:0025001 ! cardinal organ part
-relationship: part_of PO:0025513 ! organ lamina
+relationship: part_of PO:0025513 ! plant organ lamina
 created_by: rwalls
 creation_date: 2010-03-12T10:33:57Z
 
@@ -13707,7 +13707,7 @@ creation_date: 2010-02-09T04:12:11Z
 id: PO:0025008
 name: petal margin
 namespace: plant_anatomy
-def: "A phyllome margin (PO:0025018) of a petal (PO:0009032)." [POC:curators]
+def: "A phyllome margin (PO:0025018) which is part of a petal (PO:0009032)." [POC:curators, POC:laurel_cooper]
 synonym: "margen del p&#233talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁周縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13719,7 +13719,7 @@ creation_date: 2010-03-12T10:49:36Z
 id: PO:0025009
 name: leaf lamina margin
 namespace: plant_anatomy
-def: "The margin of a leaf lamina." [POC:curators]
+def: "A leaf margin (PO:0020128) that is part of a leaf lamina (PO:0020039)." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "margen de la l&#225mina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -13732,14 +13732,14 @@ creation_date: 2010-03-25T10:04:37Z
 id: PO:0025010
 name: petiole margin
 namespace: plant_anatomy
-def: "The margin of a flattened petiole." [POC:curators]
+def: "A cardinal organ part (PO:0025001) that is the edge of a petiole lamina (PO:0025129) and the area immediately internally adjacent to it." [POC:curators, POC:laurel_cooper]
 comment: Petiole margins may be found in flattened (laminar) petioles, but may also occur in laminar extensions of petioles that are rounded or c-shaped in cross section.
 subset: Musa
 synonym: "margen del pec&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: CO_125:0000006
 xref: CO_125:0000016
-is_a: PO:0020128 ! leaf margin
+is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025129 ! petiole lamina
 created_by: rwalls
 creation_date: 2010-03-25T10:04:37Z
@@ -13760,10 +13760,10 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025012
 name: cotyledon margin
 namespace: plant_anatomy
-def: "The margin of a cotyledon." [POC:curators]
+def: "A leaf margin (PO:0020128) that is part of a cotyledon (PO:0020030)." [POC:curators, POC:laurel_cooper]
 synonym: "margen del cotiled&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0025018 ! phyllome margin
+is_a: PO:0020128 ! leaf margin
 relationship: part_of PO:0020030 ! cotyledon
 created_by: rwalls
 creation_date: 2010-03-25T10:15:35Z
@@ -13772,7 +13772,7 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025013
 name: prophyll margin
 namespace: plant_anatomy
-def: "The margin of a prophyll." [POC:curators]
+def: "A phyllome margin (PO:0025018) that is part of a prophyll (PO:0009042)." [POC:curators, POC:laurel_cooper]
 synonym: "margen del profilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "前葉縁、前出葉縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13784,7 +13784,7 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025014
 name: scale leaf margin
 namespace: plant_anatomy
-def: "The margin of a scale leaf." [POC:curators]
+def: "A phyllome margin (PO:0025018) that is part of scale leaf (PO:0006003)." [POC:curators, POC:laurel_cooper]
 synonym: "margen de la hoja escamosa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "鱗片葉縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13796,7 +13796,7 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025015
 name: tepal margin
 namespace: plant_anatomy
-def: "The margin of a tepal (PO:0009033)." [POC:curators]
+def: "A phyllome margin (PO:0025018) that is part of a tepal (PO:0009033)." [POC:curators, POC:laurel_cooper]
 synonym: "margen del t&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13808,7 +13808,7 @@ creation_date: 2010-03-25T10:15:35Z
 id: PO:0025016
 name: sporophyll margin
 namespace: plant_anatomy
-def: "The margin of a sporophyll." [POC:curators]
+def: "A phyllome margin (PO:0025018) that is part of a sporophyll (PO:0009026)." [POC:curators, POC:laurel_cooper]
 synonym: "margen del esporofilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "芽胞葉、実葉、胞子葉　縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025018 ! phyllome margin
@@ -13836,14 +13836,14 @@ creation_date: 2010-04-02T09:53:48Z
 id: PO:0025018
 name: phyllome margin
 namespace: plant_anatomy
-def: "An organ margin (PO:0025005) that is part of a phyllome (PO:0006001)." [POC:curators]
+def: "A plant organ margin (PO:0025005) that is part of a phyllome lamina (PO:0025396)." [POC:curators, POC:laurel_cooper]
 subset: TraitNet
 synonym: "margen del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム縁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:70
-is_a: PO:0025005 ! organ margin
-intersection_of: PO:0025005 ! organ margin
-intersection_of: part_of PO:0006001 ! phyllome
+is_a: PO:0025005 ! plant organ margin
+intersection_of: PO:0025005 ! plant organ margin
+intersection_of: part_of PO:0025396 ! phyllome lamina
 relationship: part_of PO:0025396 ! phyllome lamina
 created_by: rwalls
 creation_date: 2010-04-02T10:51:16Z
@@ -19143,12 +19143,12 @@ creation_date: 2012-01-19T11:44:36Z
 id: PO:0025396
 name: phyllome lamina
 namespace: plant_anatomy
-def: "An organ lamina (PO:0025513) that is part of a phyllome (PO:0006001)." [POC:Ramona_Walls]
+def: "A plant organ lamina (PO:0025513) that is part of a phyllome (PO:0006001)." [POC:Ramona_Walls]
 synonym: "filoma laminar (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム葉身 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:428
-is_a: PO:0025513 ! organ lamina
-intersection_of: PO:0025060 ! lamina
+is_a: PO:0025513 ! plant organ lamina
+intersection_of: PO:0025513 ! plant organ lamina
 intersection_of: part_of PO:0006001 ! phyllome
 created_by: rwalls
 creation_date: 2012-01-19T12:56:11Z
@@ -20746,7 +20746,7 @@ creation_date: 2012-10-17T11:03:21Z
 
 [Term]
 id: PO:0025513
-name: organ lamina
+name: plant organ lamina
 namespace: plant_anatomy
 def: "A lamina (PO:0025060) that is part of a plant organ (PO:0009008)." [POC:curators]
 synonym: "lámina órgano (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -22076,6 +22076,16 @@ xref: PO_GIT:639
 is_a: PO:0025096 ! carpel epidermis
 created_by: cooperl
 creation_date: 10-26-2016
+
+[Term]
+id: PO:0025619
+name: leaf sheath margin
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is the edge of a leaf sheath (PO:0020104) and the area immediately internally adjacent to it." [POC:laurel_cooper]
+xref: PO_GIT:661
+is_a: PO:0025001 ! cardinal organ part
+property_value: http://purl.org/dc/elements/1.1/creator "cooperl" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-01-24T21:15:54Z xsd:dateTime
 
 [Term]
 id: PO:0025623
