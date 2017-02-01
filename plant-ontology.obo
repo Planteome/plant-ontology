@@ -3839,7 +3839,7 @@ consider: PO:0025268
 id: PO:0005009
 name: carpel septum
 namespace: plant_anatomy
-def: "OBSOLETE. A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [Gramene:Pankaj_Jaiswal, Gramene:Chih-Wei_Tung]
+def: "OBSOLETE. A thin partition or membrane that divides multilocular ovary. Often found in species with syncarpous (multiple carpels fused) pistil." [Gramene:Chih-Wei_Tung, Gramene:Pankaj_Jaiswal]
 comment: Carpel septum was made obsolete because it was ambiguous. It has been replaced by the more precise terms ovary septum (PO:0025262) and ovary replum (PO:0025272). Annotations for Arabidopsis should go to ovary replum (PO:0025272).
 synonym: "septo del carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮隔壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3851,7 +3851,7 @@ consider: PO:0025272
 id: PO:0005010
 name: anther septum
 namespace: plant_anatomy
-def: "A septum (PO:0000030) that is part of an anther dehiscence zone (PO:0005011)." [Gramene:Pankaj_Jaiswal, Gramene:Chih-Wei_Tung, POC:Laurel_Cooper]
+def: "A septum (PO:0000030) that is part of an anther dehiscence zone (PO:0005011)." [Gramene:Chih-Wei_Tung, Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "anther dissepiment (broad)" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
 synonym: "septo de la antera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯隔壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6181,6 +6181,7 @@ name: primary inflorescence branch
 namespace: plant_anatomy
 def: "An inflorescence branch (PO:0009081) arising from a first order inflorescence axis (PO:0025104)." [POC:Laurel_Cooper, POC:Ramona_Walls]
 subset: Angiosperm
+synonym: "first order inflorescence branch (exact)" EXACT []
 synonym: "first order paraclade (exact)" EXACT []
 synonym: "rama de la inflorescencia principal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order inflorescence axis (exact)" EXACT []
@@ -6205,7 +6206,7 @@ is_a: PO:0009081 ! inflorescence branch
 id: PO:0006323
 name: tassel inflorescence branch
 namespace: plant_anatomy
-def: "An inflorescence branch (PO:0009081) arising from an axillary bud (PO:0004709) on a first order inflorescence axis (PO:0025104) or from a higher order inflorescence branch that is part of a tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "An inflorescence branch (PO:0009081) arising on a first order tassel inflorescence axis (PO:0006324) or from a higher order inflorescence branch (PO:0009081) that is part of a tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
 subset: Maize
 synonym: "rama del penacho (borla) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6215,13 +6216,14 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0006324
-name: central spike of tassel inflorescence
+name: first order tassel inflorescence axis
 namespace: plant_anatomy
-def: "A first order inflorescence axis (PO:0025104) that is the central axis of a tassel inflorescence (PO:0020126)." [POC:curators]
+def: "A first order inflorescence axis (PO:0025104) that is the primary axis of a tassel inflorescence (PO:0020126)." [POC:curators] {comment="POC:Laurel_Cooper"}
 subset: Angiosperm
 subset: Maize
+synonym: "central axis of tassel inflorescence (exact)" EXACT []
 synonym: "espiga central del penacho (borla) de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "tassel rachis (related)" RELATED []
+synonym: "tassel rachis (exact)" EXACT []
 synonym: "雄穂(花）中央の穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:537
 is_a: PO:0025104 ! first order inflorescence axis
@@ -6681,7 +6683,7 @@ synonym: "meristema apical de la espiga (Spanish, exact)" EXACT Spanish [POC:Mar
 synonym: "雌穂頂分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009108 ! inflorescence apical meristem
 is_a: PO:0009109 ! ear meristem
-relationship: part_of PO:0006505 ! central spike of ear inflorescence
+relationship: part_of PO:0006505 ! first order ear inflorescence axis
 
 [Term]
 id: PO:0006376
@@ -6693,7 +6695,7 @@ synonym: "meristema apical del penacho (borla) (Spanish, exact)" EXACT Spanish [
 synonym: "雄穂頂分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009106 ! tassel meristem
 is_a: PO:0009108 ! inflorescence apical meristem
-relationship: part_of PO:0006324 ! central spike of tassel inflorescence
+relationship: part_of PO:0006324 ! first order tassel inflorescence axis
 
 [Term]
 id: PO:0006377
@@ -6981,13 +6983,14 @@ relationship: part_of PO:0006016 ! leaf epidermis
 
 [Term]
 id: PO:0006505
-name: central spike of ear inflorescence
+name: first order ear inflorescence axis
 namespace: plant_anatomy
-def: "A first order inflorescence axis (PO:0025104) that is the central axis of an ear inflorescence (PO:0020136)." [POC:curators]
+def: "A first order inflorescence axis (PO:0025104) that is the primary axis of an ear inflorescence (PO:0020136)." [POC:curators] {comment="POC:Laurel_Cooper"}
 subset: Maize
-synonym: "ear rachis (related)" RELATED []
+synonym: "central axis of ear inflorescence (exact)" EXACT []
+synonym: "ear inflorescence rachis (exact)" EXACT []
 synonym: "espiga central de la espiga de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "雌穂（花）中央の穂 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "雌穂（花）中央の穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:536
 is_a: PO:0025104 ! first order inflorescence axis
 relationship: part_of PO:0020136 ! ear inflorescence
@@ -11879,7 +11882,7 @@ synonym: "short branch meristem (related)" RELATED []
 synonym: "third order tassel branch meristem (related)" RELATED []
 synonym: "雄穂短枝分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009107 ! tassel inflorescence branch meristem
-relationship: part_of PO:0006324 ! central spike of tassel inflorescence
+relationship: part_of PO:0006324 ! first order tassel inflorescence axis
 relationship: part_of PO:0009101 ! long lateral tassel branch
 
 [Term]
@@ -11893,7 +11896,7 @@ synonym: "meristema de la ramificaci&#243n larga del penacho (borla) (Spanish, e
 synonym: "second order tassel branch meristem (related)" RELATED []
 synonym: "雄穂の長側枝の分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009107 ! tassel inflorescence branch meristem
-relationship: part_of PO:0006324 ! central spike of tassel inflorescence
+relationship: part_of PO:0006324 ! first order tassel inflorescence axis
 
 [Term]
 id: PO:0009105
