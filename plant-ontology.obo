@@ -6582,19 +6582,19 @@ subset: Maize
 synonym: "par de meristemas del penacho (borla) de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂対分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006328 ! spikelet pair meristem
-is_a: PO:0009107 ! tassel inflorescence branch meristem
+is_a: PO:0009107 ! tassel inflorescence axillary meristem
 relationship: part_of PO:0009102 ! short tassel branch
 
 [Term]
 id: PO:0006360
 name: ear spikelet pair meristem
 namespace: plant_anatomy
-def: "An ear inflorescence branch meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls]
+def: "An ear inflorescence axillary meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls] {comment="NYBG:Brandon_Sinn"}
 subset: Maize
 synonym: "par de meristemas de la espiga de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂対分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006328 ! spikelet pair meristem
-is_a: PO:0009110 ! ear inflorescence branch meristem
+is_a: PO:0009110 ! ear inflorescence axillary meristem
 
 [Term]
 id: PO:0006362
@@ -11888,7 +11888,7 @@ synonym: "meristema de la ramificaci&#243n corta del penacho (borla) (Spanish, e
 synonym: "short branch meristem (related)" RELATED []
 synonym: "third order tassel branch meristem (related)" RELATED []
 synonym: "雄穂短枝分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009107 ! tassel inflorescence branch meristem
+is_a: PO:0009107 ! tassel inflorescence axillary meristem
 relationship: part_of PO:0006324 ! first order tassel inflorescence axis
 relationship: part_of PO:0009101 ! long lateral tassel branch
 
@@ -11902,16 +11902,16 @@ synonym: "long lateral branch meristem (related)" RELATED []
 synonym: "meristema de la ramificaci&#243n larga del penacho (borla) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order tassel branch meristem (related)" RELATED []
 synonym: "雄穂の長側枝の分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009107 ! tassel inflorescence branch meristem
+is_a: PO:0009107 ! tassel inflorescence axillary meristem
 relationship: part_of PO:0006324 ! first order tassel inflorescence axis
 
 [Term]
 id: PO:0009105
-name: inflorescence branch meristem
+name: inflorescence axillary meristem
 namespace: plant_anatomy
-def: "An inflorescence meristem (PO:0009108) that gives rise to an inflorescence branch (PO:0009081)." [MaizeGDB_curator:Leszek_Vincent, POC:curators]
+def: "An inflorescence meristem (PO:0009108) that gives rise to a higher order inflorescence axis (PO:0009081)." [MaizeGDB_curator:Leszek_Vincent, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
 synonym: "meristema lateral de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "花序側部（側方）分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "花序側部（側方）分裂組織 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:437
 is_a: PO:0000230 ! inflorescence meristem
 
@@ -11930,14 +11930,14 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
 id: PO:0009107
-name: tassel inflorescence branch meristem
+name: tassel inflorescence axillary meristem
 namespace: plant_anatomy
-def: "An inflorescence branch meristem (PO:0009105) that gives rise to the long lateral tassel branch (PO:0009101), short tassel branch (PO:0009102), and tassel spikelets (PO:0006309) in a tassel inflorescence (PO:0020126)." [MaizeGDB_curator:Leszek_Vincent, POC:Ramona_Walls]
+def: "An inflorescence axillary meristem (PO:0009105) that gives rise to the long lateral tassel branch (PO:0009101), short tassel branch (PO:0009102), and tassel spikelets (PO:0006309) in a tassel inflorescence (PO:0020126)." [MaizeGDB_curator:Leszek_Vincent, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Ramona_Walls]
 subset: Maize
 synonym: "meristema lateral del penacho (borla) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "雄穂側分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "雄穂側分裂組織 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:437
-is_a: PO:0009105 ! inflorescence branch meristem
+is_a: PO:0009105 ! inflorescence axillary meristem
 relationship: part_of PO:0020126 ! tassel inflorescence
 
 [Term]
@@ -11966,14 +11966,14 @@ relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
 id: PO:0009110
-name: ear inflorescence branch meristem
+name: ear inflorescence axillary meristem
 namespace: plant_anatomy
-def: "An inflorescence branch meristem (PO:0009105) that gives rise to a branch of an ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls]
+def: "An inflorescence axillary meristem (PO:0009105) that gives rise to a higher order inflorescence axis (PO:0009081) of an ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 subset: Maize
 synonym: "meristema de la espiga lateral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "雌穂側分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "雌穂側分裂組織 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: OBOS_SF_PO:3481640
-is_a: PO:0009105 ! inflorescence branch meristem
+is_a: PO:0009105 ! inflorescence axillary meristem
 relationship: part_of PO:0020136 ! ear inflorescence
 
 [Term]
@@ -13146,6 +13146,7 @@ def: "A cardinal organ part (PO:0025001) that is the lower part of a vascular le
 comment: A leaf sheath is usually tubular shaped, and is found in the Poaceae family and other monocots.
 synonym: "vaina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:661
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0009025 ! vascular leaf
@@ -13239,7 +13240,7 @@ id: PO:0020122
 name: inflorescence axis
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an inflorescence (PO:0009049)." [POC:curators]
-comment: An inflorescence axis (PO:0020122) has either a determinate apex, which terminates in a flower meristem (PO:0000229), or has an indeterminate apex, which terminates in an inflorescence apical meristem (PO:0009108).  An inflorescence pedicel (PO:0009052) is the simplest example of a determinate inflorescence axis. {comment="POC:Laurel_Cooper", xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
+comment: An inflorescence axis (PO:0020122) has either a determinate apex, which terminates in a flower meristem (PO:0000229), or has an indeterminate apex, which terminates in an inflorescence apical meristem (PO:0009108).  An inflorescence pedicel (PO:0009052) is the simplest example of a determinate inflorescence axis. {xref="NYBG:Brandon_Sinn", comment="POC:Laurel_Cooper", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 subset: TraitNet
 synonym: "eje de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
