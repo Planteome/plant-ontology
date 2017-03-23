@@ -3254,7 +3254,7 @@ relationship: part_of PO:0009001 ! fruit
 
 [Term]
 id: PO:0004536
-name: infructescence pedicel
+name: infructescence fruit pedicel
 namespace: plant_anatomy
 def: "A pedicel (PO:0030112) that terminates in a fruit (PO:0009001) in an infructescence (PO:0006342)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: An infructescence pedicel is the ultimate axis in an infructescence.
@@ -3263,8 +3263,8 @@ synonym: "pedicelo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandr
 synonym: "果柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:487
 xref: PO_GIT:49
-is_a: PO:0030112 ! pedicel
-relationship: develops_from PO:0009052 ! inflorescence pedicel
+is_a: PO:0030114 ! fruit pedicel
+relationship: develops_from PO:0009052 ! inflorescence flower pedicel
 relationship: part_of PO:0006342 ! infructescence
 
 [Term]
@@ -3685,7 +3685,7 @@ synonym: "portion of pedicel cortex tissue (exact)" EXACT []
 synonym: "小花柄皮層 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:115
 is_a: PO:0005708 ! cortex
-relationship: part_of PO:0009052 ! inflorescence pedicel
+relationship: part_of PO:0009052 ! inflorescence flower pedicel
 
 [Term]
 id: PO:0004723
@@ -3878,7 +3878,7 @@ def: "A shoot axis vascular system that includes the totality of the portions of
 synonym: "sistema vascular del pedicelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000039 ! shoot axis vascular system
-relationship: part_of PO:0009052 ! inflorescence pedicel
+relationship: part_of PO:0009052 ! inflorescence flower pedicel
 
 [Term]
 id: PO:0005013
@@ -6160,7 +6160,7 @@ def: "Inflorescence branch that terminates in a spikelet." [Poc:curators]
 comment: This is not a pedicel in the strict sense, but is the ultimate naked part of the inflorescence axis.
 synonym: "pedicelo de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小穂小花柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0009052 ! inflorescence pedicel
+is_a: PO:0009081 ! higher order inflorescence axis
 relationship: part_of PO:0009051 ! spikelet
 
 [Term]
@@ -10987,7 +10987,7 @@ synonym: "bracteola (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "bractlet (exact)" EXACT [FNA:9cce93dc-f233-440e-9163-97207fca71a4]
 synonym: "小苞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009042 ! prophyll
-relationship: part_of PO:0009052 ! inflorescence pedicel
+relationship: part_of PO:0009052 ! inflorescence flower pedicel
 
 [Term]
 id: PO:0009044
@@ -11147,7 +11147,7 @@ relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
 id: PO:0009052
-name: inflorescence pedicel
+name: inflorescence flower pedicel
 namespace: plant_anatomy
 def: "A pedicel (PO:0030112) that terminates in a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 comment: An inflorescence pedicel is the ultimate axis in an inflorescence. {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
@@ -11158,7 +11158,7 @@ synonym: "pedicelo (Spanish, broad)" BROAD [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:70
 xref: PO_GIT:89
-is_a: PO:0030112 ! pedicel
+is_a: PO:0030113 ! flower pedicel
 relationship: part_of PO:0009049 ! inflorescence
 
 [Term]
@@ -21943,7 +21943,7 @@ synonym: "pedicel joint (related)" RELATED []
 xref: PO_GIT:590
 is_a: PO:0000146 ! abscission zone
 relationship: develops_from PO:0025608 ! flower pedicel abscission zone
-relationship: part_of PO:0004536 ! infructescence pedicel
+relationship: part_of PO:0004536 ! infructescence fruit pedicel
 created_by: Laurel_Cooper
 creation_date: 2014-05-13T11:16:36Z
 
@@ -21979,7 +21979,7 @@ def: "An abscission zone (PO:0000146) that forms as a swelling or joint on the f
 subset: Tomato
 xref: PO_GIT:590
 is_a: PO:0000146 ! abscission zone
-relationship: part_of PO:0009052 ! inflorescence pedicel
+relationship: part_of PO:0009052 ! inflorescence flower pedicel
 created_by: Laurel_Cooper
 creation_date: 2014-06-13T14:09:26Z
 
@@ -24003,8 +24003,8 @@ is_a: PO:0030108 ! berry fruit
 [Term]
 id: PO:0030112
 name: pedicel
-def: "A shoot axis that terminates in a flower (PO:0009046) or a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: All flowers and fruits terminate shoots called pedicels, although the highly reduced pedicels of sessile flowers and fruits can be rather inconspicuous. If possible, use the most specific subclass of pedicel available when mapping annotations to this term. The development of a flower or fruit at the apex of a pedicel means that all pedicels have a single internode, have determinate growth, and are the ultimate axes of a plant.
+def: "A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:672
 is_a: PO:0025029 ! shoot axis
