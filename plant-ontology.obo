@@ -3679,13 +3679,13 @@ relationship: part_of PO:0009081 ! higher order inflorescence axis
 id: PO:0004722
 name: pedicel cortex
 namespace: plant_anatomy
-def: "A portion of cortex (PO:0005708) that is part of a pedicel (PO:0009052)." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of a pedicel (PO:0030112)." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
 synonym: "cortex (corteza) del pedicelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of pedicel cortex tissue (exact)" EXACT []
 synonym: "小花柄皮層 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:115
 is_a: PO:0005708 ! cortex
-relationship: part_of PO:0009052 ! inflorescence flower pedicel
+relationship: part_of PO:0030112 ! pedicel
 
 [Term]
 id: PO:0004723
@@ -3878,7 +3878,7 @@ def: "A shoot axis vascular system that includes the totality of the portions of
 synonym: "sistema vascular del pedicelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000039 ! shoot axis vascular system
-relationship: part_of PO:0009052 ! inflorescence flower pedicel
+relationship: part_of PO:0030112 ! pedicel
 
 [Term]
 id: PO:0005013
@@ -10987,7 +10987,7 @@ synonym: "bracteola (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "bractlet (exact)" EXACT [FNA:9cce93dc-f233-440e-9163-97207fca71a4]
 synonym: "小苞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009042 ! prophyll
-relationship: part_of PO:0009052 ! inflorescence flower pedicel
+relationship: part_of PO:0030112 ! pedicel
 
 [Term]
 id: PO:0009044
@@ -21975,11 +21975,11 @@ creation_date: 2014-05-20T15:20:24Z
 id: PO:0025608
 name: flower pedicel abscission zone
 namespace: plant_anatomy
-def: "An abscission zone (PO:0000146) that forms as a swelling or joint on the flower pedicel (PO:009052)." [PMID:24744429, POC:Laurel_Cooper]
+def: "An abscission zone (PO:0000146) that forms as a swelling or joint on the flower pedicel (PO:0030113)." [PMID:24744429, POC:Laurel_Cooper]
 subset: Tomato
 xref: PO_GIT:590
 is_a: PO:0000146 ! abscission zone
-relationship: part_of PO:0009052 ! inflorescence flower pedicel
+relationship: part_of PO:0030113 ! flower pedicel
 created_by: Laurel_Cooper
 creation_date: 2014-06-13T14:09:26Z
 
@@ -24004,7 +24004,7 @@ is_a: PO:0030108 ! berry fruit
 id: PO:0030112
 name: pedicel
 def: "A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
+comment: All pedicels have a single internode, have determinate growth, and are the ultimate axes of a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:672
 is_a: PO:0025029 ! shoot axis
