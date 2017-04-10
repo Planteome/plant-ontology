@@ -3256,7 +3256,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004536
 name: infructescence fruit pedicel
 namespace: plant_anatomy
-def: "A pedicel (PO:0030112) that terminates in a fruit (PO:0009001) in an infructescence (PO:0006342)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
+def: "A pedicel (PO:0030112) that bears a fruit (PO:0009001) in an infructescence (PO:0006342)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: An infructescence pedicel is the ultimate axis in an infructescence.
 subset: Tomato
 synonym: "pedicelo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11082,7 +11082,7 @@ alt_id: PO:0020117
 alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
-def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Brandon_Sinn", comment="NYBG:Dario_Cavaliere"}
+def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
 comment: Inflorescences are reproductive shoot systems from which at least two flowers develop.\nThe growth pattern of an Inflorescences may be monopodial (single main shoot axis), or sympodial (growth occurs from axillary meristems).  The axes of an inflorescence can be determinate or indeterminate. Many plants, for example Magnolia, have solitary flowers (PO:0009046).
 subset: Angiosperm
 subset: reference
@@ -11149,7 +11149,7 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009052
 name: inflorescence flower pedicel
 namespace: plant_anatomy
-def: "A pedicel (PO:0030112) that terminates in a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+def: "A pedicel (PO:0030112) that bears a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 comment: An inflorescence pedicel is the ultimate axis in an inflorescence. {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 subset: reference
@@ -24004,7 +24004,7 @@ is_a: PO:0030108 ! berry fruit
 id: PO:0030112
 name: pedicel
 def: "A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: All pedicels have a single internode, have determinate growth, and are the ultimate axes of a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
+comment: A pedicel has a single internode, determinate growth, and is the ultimate axis of a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:672
 is_a: PO:0025029 ! shoot axis
@@ -24014,7 +24014,7 @@ property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:43:36Z xsd:da
 [Term]
 id: PO:0030113
 name: flower pedicel
-def: "A pedicel (PO:0030112) that terminates in a flower (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+def: "A pedicel (PO:0030112) that bears a flower (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:673
 is_a: PO:0030112 ! pedicel
@@ -24024,7 +24024,7 @@ property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:49:32Z xsd:da
 [Term]
 id: PO:0030114
 name: fruit pedicel
-def: "A pedicel (PO:0030112) that terminates in a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+def: "A pedicel (PO:0030112) that bears a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 synonym: "pedicelo del fruto (Spanish, broad)" BROAD []
 xref: PO_GIT:487
 is_a: PO:0030112 ! pedicel
