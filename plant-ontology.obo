@@ -3256,8 +3256,8 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0004536
 name: infructescence fruit pedicel
 namespace: plant_anatomy
-def: "A pedicel (PO:0030112) that bears a fruit (PO:0009001) in an infructescence (PO:0006342)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
-comment: An infructescence pedicel is the ultimate axis in an infructescence.
+def: "A fruit pedicel (PO:0030114) that bears a fruit (PO:0009001) in an infructescence (PO:0006342)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
+comment: An infructescence fruit pedicel is the ultimate shoot axis (PO:0025029) in an infructescence (PO:0006342).
 subset: Tomato
 synonym: "pedicelo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11149,8 +11149,8 @@ relationship: part_of PO:0009049 ! inflorescence
 id: PO:0009052
 name: inflorescence flower pedicel
 namespace: plant_anatomy
-def: "A pedicel (PO:0030112) that bears a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: An inflorescence pedicel is the ultimate axis in an inflorescence. {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
+def: "A flower pedicel (PO:0030113) that bears a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
+comment: An inflorescence flower pedicel is the ultimate shoot axis (PO:0025029) in an inflorescence (PO:0009049). {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 subset: reference
 subset: Tomato
@@ -24004,7 +24004,7 @@ is_a: PO:0030108 ! berry fruit
 id: PO:0030112
 name: pedicel
 def: "A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: A pedicel has a single internode, determinate growth, and is the ultimate axis of a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
+comment: A pedicel has a single internode, determinate growth, and is the ultimate shoot axis (PO:0025029) in a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:672
 is_a: PO:0025029 ! shoot axis
