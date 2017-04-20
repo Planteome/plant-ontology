@@ -11083,7 +11083,7 @@ alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
 def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
-comment: Inflorescences are reproductive shoot systems from which at least two flowers develop.\nThe growth pattern of an Inflorescences may be monopodial (single main shoot axis), or sympodial (growth occurs from axillary meristems).  The axes of an inflorescence can be determinate or indeterminate. Many plants, for example Magnolia, have solitary flowers (PO:0009046).
+comment: Inflorescences are reproductive shoot systems from which at least two flowers develop. The growth pattern of an inflorescence may be monopodial (single main shoot axis), sympodial (growth only occurs from axillary meristems), or both. The axes of an inflorescence can be determinate or indeterminate. Inflorescence flower pedicels (PO:0009052) are the ultimate axis in an inflorescence. Many plants, for example Magnolia spp., have solitary flowers (PO:0009046).
 subset: Angiosperm
 subset: reference
 subset: TraitNet
@@ -24003,6 +24003,7 @@ is_a: PO:0030108 ! berry fruit
 [Term]
 id: PO:0030112
 name: pedicel
+namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that bears only a flower (PO:0009046) or a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 comment: A pedicel has a single internode, determinate growth, and is the ultimate shoot axis (PO:0025029) in a plant. When annotating to this term, use the most specific subclass of pedicel: flower pedicel (PO:0030113), inflorescence flower pedicel (PO:0009052), fruit pedicel (PO:0030114), or infructescence fruit pedicel (PO:0004536).
 synonym: "pedicelo (Spanish, broad)" BROAD []
@@ -24014,6 +24015,7 @@ property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:43:36Z xsd:da
 [Term]
 id: PO:0030113
 name: flower pedicel
+namespace: plant_anatomy
 def: "A pedicel (PO:0030112) that bears a flower (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:673
@@ -24024,12 +24026,158 @@ property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:49:32Z xsd:da
 [Term]
 id: PO:0030114
 name: fruit pedicel
+namespace: plant_anatomy
 def: "A pedicel (PO:0030112) that bears a fruit (PO:0009001)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
 synonym: "pedicelo del fruto (Spanish, broad)" BROAD []
 xref: PO_GIT:487
 is_a: PO:0030112 ! pedicel
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
 property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T01:01:13Z xsd:dateTime
+
+[Term]
+id: PO:0030115
+name: raceme inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on an indeterminate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include mouse-ear cress (Arabidopsis thaliana, Brassicaceae), wild black cherry (Prunus serotina, Rosaceae), and pokeweeds (Phytolacca spp., Phytolaccaceae).
+synonym: "raceme (exact)" EXACT []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:29:10Z xsd:dateTime
+
+[Term]
+id: PO:0030116
+name: compound raceme inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and pedicellate (PATO:0001438) flowers (PO:0009046) on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include many species Brassicaceae, such as pepperweeds (Lepidium spp.), and Fabaceae, such as melilot (Melilotus officinialis) and hop trefoil (Trifolium campestre) species, as well as bananas (Musa spp.; Musaceae).
+synonym: "compound raceme (exact)" EXACT []
+synonym: "double raceme (exact)" EXACT []
+synonym: "heterothetic compound raceme (narrow)" NARROW []
+synonym: "heterothetic double raceme (narrow)" NARROW []
+synonym: "homothetic compound raceme (narrow)" NARROW []
+synonym: "homothetic double raceme (narrow)" NARROW []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:34:46Z xsd:dateTime
+
+[Term]
+id: PO:0030117
+name: spike inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on an indeterminate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: The basal-most flowers of some spike inflorescences have short inflorescence flower pedicels (PO:0009052), such as in ladies'-tresses orchids (Spiranthes; Orchidaceae). Examples include black pepper (Piper nigrum; Piperaceae).
+synonym: "spike (exact)" EXACT []
+synonym: "stachyoid (narrow)" NARROW []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:38:28Z xsd:dateTime
+
+[Term]
+id: PO:0030118
+name: compound spike inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436) flowers (PO:0009046), or spikelets (PO:0009051), on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include some amaranth species (Amaranthus spp., Amaranthaceae).
+synonym: "compound spike (exact)" EXACT []
+synonym: "double spike (exact)" EXACT []
+synonym: "heterothetic compound spike (exact)" EXACT []
+synonym: "heterothetic double spike (narrow)" NARROW []
+synonym: "homothetic compound spike (narrow)" NARROW []
+synonym: "homothetic double spike (narrow)" NARROW []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:41:00Z xsd:dateTime
+
+[Term]
+id: PO:0030119
+name: catkin inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of  indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436), unisexual flowers (PO:0009046) that are each subtended by conspicuous (PATO:0000463) inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include poplars (including Populus trichocarpa, Salicaceae) and birches (Betula spp., Betulaceae). Catkin inflorescences are often pendulate.
+synonym: "ament (exact)" EXACT []
+synonym: "catkin (exact)" EXACT []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:48:27Z xsd:dateTime
+
+[Term]
+id: PO:0030120
+name: spadix inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, indeterminate first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include aroids (Araceae), palms (Arecaceae).
+synonym: "spadix (exact)" EXACT []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:50:40Z xsd:dateTime
+
+[Term]
+id: PO:0030121
+name: capitulum inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, determinate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
+synonym: "calathidium (exact)" EXACT []
+synonym: "capitulum (exact)" EXACT []
+synonym: "hypanthodium (narrow)" NARROW []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:53:49Z xsd:dateTime
+
+[Term]
+id: PO:0030122
+name: compound capitulum inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a radially enlarged inflorescence axis (PO:0020122) and sessile (PATO:0001436) flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include many species of daisy family (Asteraceae). The second order inflorescences (PO:0025240) of compound capitulum inflorescences are often called glomerules.
+synonym: "compound capitulum (exact)" EXACT []
+synonym: "double capitulum (exact)" EXACT []
+synonym: "heterothetic compound capitulum (narrow)" NARROW []
+synonym: "heterothetic double capitulum (narrow)" NARROW []
+synonym: "homothetic compound capitulum (narrow)" NARROW []
+synonym: "homothetic double capitulum (narrow)" NARROW []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:58:48Z xsd:dateTime
+
+[Term]
+id: PO:0030123
+name: panicle inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (PO:ID) is composed of pedicellate (PATO:0001438) flowers (PO:0009046), or spikelets (PO:0009051), on determinate inflorescence axes (PO:0020122)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Panicle inflorescences are most often conical in shape. Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), bromes (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rices (Oryza spp.), foxgrasses (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae).
+synonym: "panicle (exact)" EXACT []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:04:46Z xsd:dateTime
+
+[Term]
+id: PO:0030124
+name: corymb inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a convex plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include highbush blueberry (Vaccinium corymbosum; Ericaceae).
+synonym: "compound corymb (exact)" EXACT []
+synonym: "corymb (exact)" EXACT []
+synonym: "double corymb (exact)" EXACT []
+synonym: "monochasium (broad)" BROAD []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:07:50Z xsd:dateTime
+
+[Term]
+id: PO:0030125
+name: anthela inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a concave plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+comment: Examples include species of Filipendula (Rosaceae).
+synonym: "anthela (exact)" EXACT []
+synonym: "anthelae (narrow)" NARROW []
+synonym: "monochasium (broad)" BROAD []
+is_a: PO:0009049 ! inflorescence
+property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:12:21Z xsd:dateTime
 
 [Typedef]
 id: adjacent_to
