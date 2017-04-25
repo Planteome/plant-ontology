@@ -11023,6 +11023,7 @@ comment: The characteristic reproductive structure of angiosperms. May have as p
 subset: Angiosperm
 subset: reference
 subset: TraitNet
+synonym: "Asteraceae floret (narrow)" NARROW []
 synonym: "basal flower (narrow)" NARROW [CO_125:0000019]
 synonym: "double flower (narrow)" NARROW []
 synonym: "flor (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11083,46 +11084,12 @@ alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
 def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
-comment: Inflorescences are reproductive shoot systems from which at least two flowers develop. The growth pattern of an inflorescence may be monopodial (single main shoot axis), sympodial (growth only occurs from axillary meristems), or both. The axes of an inflorescence can be determinate or indeterminate. Inflorescence flower pedicels (PO:0009052) are the ultimate axis in an inflorescence. Many plants, for example Magnolia spp., have solitary flowers (PO:0009046).
+comment: An inflorescence is a reproductive shoot system from which at least two flowers develop. The growth pattern of an inflorescence may be monopodial (single main shoot axis), sympodial (growth only occurs from axillary meristems), or both. An inflorescence axis (PO:0020122) can be determinate or indeterminate. An inflorescence flower pedicel (PO:0009052) is the ultimate axis in an inflorescence. The flower (PO:0009046) of many plants, for example Magnolia spp., is solitary.
 subset: Angiosperm
 subset: reference
 subset: TraitNet
-synonym: "ament (narrow)" NARROW [FNA:607abb62-30fc-43da-8ad4-bc947d70a404]
-synonym: "anthela (narrow)" NARROW [FNA:72057d27-76d8-4729-82bb-785757a01d96]
-synonym: "anthelae (narrow)" NARROW Plural [FNA:f22442e8-3d37-47e4-b1bc-64aeb8b0f9f7]
-synonym: "Asteraceae floret (narrow)" NARROW []
-synonym: "bostryches (narrow)" NARROW Plural [FNA:d644d4cc-43d7-4864-8b09-69af7abf3939]
-synonym: "bostryx (narrow)" NARROW [FNA:71fb2017-f964-4745-9a48-b5235dd74e8d]
-synonym: "capitula (narrow)" NARROW Plural [FNA:e71eddda-be79-457a-8b95-b6efda659f4b]
-synonym: "capitulum (narrow)" NARROW []
-synonym: "catkin (narrow)" NARROW []
-synonym: "cincinni (narrow)" NARROW Plural [FNA:0f44b58c-1466-4417-8801-f269c2427097]
-synonym: "cincinnus (narrow)" NARROW [FNA:31d62216-7ffd-48ce-826a-04847806eae7]
-synonym: "corymb (narrow)" NARROW []
-synonym: "cyathia (narrow)" NARROW Plural [FNA:805a5ca4-7ec1-48cc-a1ac-5cb20a1c25c2]
-synonym: "cyathium (narrow)" NARROW [FNA:faf9253b-7097-4172-89a9-9470452bbd95]
-synonym: "cyme (narrow)" NARROW []
-synonym: "cymule (narrow)" NARROW [FNA:315d7cee-9b82-4c2f-b5d3-ea14760c7ca8]
-synonym: "dichasium (narrow)" NARROW Plural [FNA:a10794b5-f1a8-4de4-9a1f-97fb4ef5f204]
-synonym: "drepanium (narrow)" NARROW []
-synonym: "glome (narrow)" NARROW [FNA:0a4e0d59-0dc0-49a7-8562-95f39090349d]
-synonym: "glomerule (narrow)" NARROW [FNA:a55bbf2c-ab6b-4c58-8f74-aecf3de0b184]
-synonym: "head (narrow)" NARROW [FNA:37d91956-ebe6-43d3-bed9-7418a528b850]
-synonym: "helicoid cyme (narrow)" NARROW []
 synonym: "inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "monochasium (narrow)" NARROW Plural [FNA:317b9221-6452-4027-ba2c-cdbe8cc7cb0d]
-synonym: "panicle (narrow)" NARROW []
-synonym: "raceme (narrow)" NARROW []
-synonym: "rhipidia (narrow)" NARROW Plural [FNA:b75d3219-23d0-458c-a669-1d24bbf2de2a]
-synonym: "rhipidium (narrow)" NARROW []
-synonym: "scorpioid cyme (narrow)" NARROW []
-synonym: "spadices (narrow)" NARROW Plural [FNA:0b2b2c72-422d-4782-9bae-2c8d36e25032]
-synonym: "spadix (narrow)" NARROW [FNA:b4c1cb9d-88f4-4d61-bf44-801af1a76bb8]
-synonym: "spike (narrow)" NARROW [FNA:98bf8a79-e56c-460b-a976-c9b16ddac7d4]
-synonym: "thyrse (narrow)" NARROW [FNA:6b09f9b2-5244-4e77-9a1b-e983e6d8bfa6]
 synonym: "Triticeae spike (narrow)" NARROW []
-synonym: "umbel (narrow)" NARROW []
-synonym: "verticillaster (narrow)" NARROW []
 synonym: "花序 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:260
 xref: PO_GIT:71
@@ -24107,6 +24074,7 @@ name: spadix inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, indeterminate first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Examples include aroids (Araceae), palms (Arecaceae).
+synonym: "spadices (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "spadix (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
@@ -24119,7 +24087,9 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, determinate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
 synonym: "calathidium (exact)" EXACT []
+synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "capitulum (exact)" EXACT []
+synonym: "head (broad)" BROAD []
 synonym: "hypanthodium (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
@@ -24133,6 +24103,8 @@ def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at an
 comment: Examples include many species of daisy family (Asteraceae). The second order inflorescences (PO:0025240) of compound capitulum inflorescences are often called glomerules.
 synonym: "compound capitulum (exact)" EXACT []
 synonym: "double capitulum (exact)" EXACT []
+synonym: "glome (narrow)" NARROW []
+synonym: "glomerule (narrow)" NARROW []
 synonym: "heterothetic compound capitulum (narrow)" NARROW []
 synonym: "heterothetic double capitulum (narrow)" NARROW []
 synonym: "homothetic compound capitulum (narrow)" NARROW []
@@ -24173,7 +24145,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a concave plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Examples include species of Filipendula (Rosaceae).
 synonym: "anthela (exact)" EXACT []
-synonym: "anthelae (narrow)" NARROW []
+synonym: "anthelae (exact)" NARROW [] {synonymtypedef="Plural"}
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
@@ -24185,10 +24157,14 @@ name: cyme inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and pedicellate (PATO:0001438) flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Cyme inflorescence is used here to treat inflorescences that are commonly referred to as dichasial, pleiochasial, or polychasial cymes; each of which are named according to the number of higher order inflorescence axes at a single axis. Cyme is not used here to treat monochasial cymose inflorescences, which contain at least one repeating sympodial unit, such as cincinnus inflorescence (PO:0030132), compound cincinnus inflorescence (PO:0030133), bostryx (PO:0030134), rhipidium inflorescence (PO:0030131), drepanium inflorescence (PO:0030135), and compound drepanium inflorescence (PO:0030136). Examples include many species of the Figwort family (Scrophulariaceae, including green figwort Scrophularia umbrosa) and the Verbena family (Verbenaceae).
+synonym: "cyathia (narrow)" NARROW [] {synonymtypedef="Plural"}
+synonym: "cyathium (narrow)" NARROW []
 synonym: "cyme (exact)" EXACT []
+synonym: "cymule (narrow)" NARROW []
 synonym: "dichasium (narrow)" NARROW []
 synonym: "pleiochasium (narrow)" NARROW []
 synonym: "polychasium (narrow)" NARROW []
+synonym: "verticillaster (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
 property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:36:16Z xsd:dateTime
@@ -24208,7 +24184,7 @@ synonym: "heterocladic thyrse (exact)" EXACT []
 synonym: "indeterminate thyrse (exact)" EXACT []
 synonym: "monothyrsic inflorescence (exact)" EXACT []
 synonym: "pleiothyrsoid (exact)" EXACT []
-synonym: "thyrse (exact)" EXACT []
+synonym: "thyrse (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
 property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:52:57Z xsd:dateTime
@@ -24221,6 +24197,7 @@ def: "An inflorescence (PO:0009049), which at anthesis is composed of an determi
 comment: The higher order inflorescence axes (PO:0009081) of an determinate thyrse inflorescence may have either a monopodial or sympodial growth habit depending on whether single or paired inflorescence axillary meristems (PO:0009105) develop at each axis. Examples include lilacs (Syringia spp.; Oleaceae), buckeyes (Aesculus spp.; Hippocastanaceae) and hydrangea (Hydrangea paniculata; Hydrangeaceae).
 synonym: "determinate thyrse (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
+synonym: "thyrse (broad)" BROAD []
 synonym: "thyrsoid (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
@@ -24260,6 +24237,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) that bear pedicellate (PATO:0001438) flowers (PO:0009046) in a single plane, with the latest-developing flowers on the highest order inflorescence axis which is found at the center of the inflorescence." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Examples include species of the Iris family (Iridaceae).
 synonym: "monochasium (broad)" BROAD []
+synonym: "rhipidia (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "rhipidium (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
@@ -24272,6 +24250,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Examples include species of the Dayflower family (Commelinaceae).
 synonym: "boragoid (exact)" EXACT []
+synonym: "cincinni (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "cincinnus (exact)" EXACT []
 synonym: "congenital cincinnus (exact)" EXACT []
 synonym: "homaxone (exact)" EXACT []
@@ -24300,6 +24279,7 @@ name: bostryx inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle (PATO:1000009) of approximately 90 degree angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
+synonym: "bostryches (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "bostryx (exact)" EXACT []
 synonym: "helicoid cyme (broad)" BROAD []
 synonym: "monochasium (broad)" BROAD []
