@@ -485,8 +485,8 @@ subset: TraitNet
 synonym: "sistema vascular (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "vasculature (exact)" EXACT [FNA:caf918bf-f4c4-423c-8008-87c96e5399a0]
 synonym: "維管束系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OB_SF2_PO:50
-is_a: PO:0009007 ! portion of plant tissue
+xref: PO_GIT:50
+is_a: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009008 ! plant organ
 disjoint_from: PO:0025001 ! cardinal organ part
@@ -499,10 +499,10 @@ relationship: participates_in PO:0028002 ! sporophyte development stage
 id: PO:0000035
 name: cotyledon vascular system
 namespace: plant_anatomy
-def: "A vascular system that is part of a cotyledon." [TAIR_curator:Katica_Ilic]
+def: "A vascular system (PO:0000034) that is part of a cotyledon (PO:0020030)." [TAIR_curator:Katica_Ilic]
 synonym: "sistema vascular del cotiled&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: OB_SF2_PO:50
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0020030 ! cotyledon
 
@@ -510,12 +510,13 @@ relationship: part_of PO:0020030 ! cotyledon
 id: PO:0000036
 name: leaf vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a vascular leaf (PO:0009025)." [POC:Ramona_Walls]
 subset: Maize
 synonym: "leaf venation (related)" RELATED []
 synonym: "sistema vascular de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OB_SF2_PO:50
+xref: PO_GIT:41
 is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0009025 ! vascular leaf
 
@@ -545,12 +546,13 @@ relationship: part_of PO:0009089 ! endosperm
 id: PO:0000039
 name: shoot axis vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a shoot axis." [POC:curators]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue in their specific arrangement in a shoot axis (PO:0025029)." [POC:curators]
 comment: Can occur in a stem or branch.
 synonym: "branch vascular system (narrow)" NARROW []
 synonym: "sistema vascular del eje del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stem vascular system (narrow)" NARROW []
 synonym: "シュート軸維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 xref: PO_GIT:50
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0025198 ! shoot axis stele
@@ -673,9 +675,10 @@ relationship: part_of PO:0020039 ! leaf lamina
 id: PO:0000048
 name: leaf lamina vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf lamina." [POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf lamina (PO:0020039)." [POC:Ramona_Walls]
 synonym: "sistema vascular de la l&#225mina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0000036 ! leaf vascular system
 relationship: part_of PO:0020039 ! leaf lamina
@@ -719,9 +722,10 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000052
 name: petiole vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a leaf petiole." [POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue in their specific arrangement in a petiole (PO:0020038)." [POC:Ramona_Walls]
 synonym: "sistema vascular del pec&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0000036 ! leaf vascular system
 relationship: part_of PO:0020038 ! petiole
@@ -745,6 +749,7 @@ namespace: plant_anatomy
 def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a petal (PO:0025218)." [POC:Ramona_Walls]
 synonym: "sistema vascular de p&#233talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009032 ! petal
@@ -2533,11 +2538,12 @@ is_a: PO:0000042 ! shoot-borne root
 id: PO:0003011
 name: root vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a root." [ISBN:0471245208, POC:curators]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue in their specific arrangement in a root (PO:0009005)." [ISBN:0471245208, POC:curators]
 comment: This term was brought back from OBSOLETE node (original reason for OBSOLETE: synonym of term stele). Since stele encompasses both vascular system and the pith, in roots with pith, vascular system and stele are not synonymous.
 synonym: "root vein (related)" RELATED []
 synonym: "sistema vascular de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0020124 ! root stele
 
@@ -3691,9 +3697,10 @@ relationship: part_of PO:0030112 ! pedicel
 id: PO:0004723
 name: sepal vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a sepal." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a sepal (PO:0009031)." [POC:Ramona_Walls]
 synonym: "sistema vascular del s&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009031 ! sepal
@@ -3874,9 +3881,10 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0005012
 name: pedicel vascular system
 namespace: plant_anatomy
-def: "A shoot axis vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a pedicel." [PMID:17217456, POC:Ramona_Walls]
+def: "A shoot axis vascular system (PO:0000039) that includes the totality of the portions of vascular tissue in their specific arrangement in a pedicel (PO:0030112)." [PMID:17217456, POC:Ramona_Walls]
 synonym: "sistema vascular del pedicelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小花柄維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000039 ! shoot axis vascular system
 relationship: part_of PO:0030112 ! pedicel
 
@@ -3931,10 +3939,11 @@ consider: PO:0025272
 id: PO:0005017
 name: flower vascular system
 namespace: plant_anatomy
-def: "A shoot system vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a flower." [POC:Ramona_Walls]
+def: "A shoot system vascular system (PO:0025205) that includes the totality of the portions of vascular tissue in their specific arrangement in a flower (PO:0009046)." [POC:Ramona_Walls]
 comment: Because a vascular system is defined as the totality of the portions of vascular tissue in a plant structure, the vascular systems of floral parts are part of the flower vascular system.
 synonym: "sistema vascular de la flor (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花維管 系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025205 ! shoot system vascular system
 relationship: part_of PO:0009046 ! flower
 
@@ -3942,9 +3951,10 @@ relationship: part_of PO:0009046 ! flower
 id: PO:0005018
 name: stamen vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a stamen." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a stamen (PO:0009029)." [POC:Ramona_Walls]
 synonym: "sistema vascular del estambre (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄蕊維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009029 ! stamen
@@ -3953,9 +3963,10 @@ relationship: part_of PO:0009029 ! stamen
 id: PO:0005019
 name: carpel vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a carpel." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a carpel (PO:0009030)." [POC:Ramona_Walls]
 synonym: "sistema vascular del carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0009030 ! carpel
 
@@ -4057,9 +4068,10 @@ relationship: part_of PO:0003011 ! root vascular system
 id: PO:0005028
 name: inflorescence vascular system
 namespace: plant_anatomy
-def: "A shoot system vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in an inflorescence." [POC:Ramona_Walls]
+def: "A shoot system vascular system  (PO:0025205) that includes the totality of the portions of vascular tissue in their specific arrangement in an inflorescence (PO:0009049)." [POC:Ramona_Walls]
 synonym: "sistema vascular de inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025205 ! shoot system vascular system
 relationship: part_of PO:0009049 ! inflorescence
 
@@ -9708,7 +9720,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008003
 name: fruit vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a fruit." [Gramene:Anuradha_Pujar, POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue (PO:0009015) in their specific arrangement in a fruit (PO:0009001)." [Gramene:Anuradha_Pujar, POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.
 subset: Arabidopsis
 subset: Maize
@@ -9717,6 +9729,7 @@ subset: Rice
 subset: Tomato
 synonym: "sistema vascular del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実維管 系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0009001 ! fruit
 
@@ -9804,11 +9817,12 @@ relationship: part_of PO:0008007 ! nucellar projection
 
 [Term]
 id: PO:0008011
-name: embryo vascular system
+name: plant embryo vascular system
 namespace: plant_anatomy
-def: "Vascular system of embryo." [Gramene:Chih-Wei_Tung]
+def: "A vascular system (PO:0000034) that is part of a plant embryo (PO:0009009) ." [Gramene:Chih-Wei_Tung]
 synonym: "sistema vascular del embri&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0009009 ! plant embryo
 
@@ -9816,10 +9830,11 @@ relationship: part_of PO:0009009 ! plant embryo
 id: PO:0008012
 name: stigma vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a stigma." [POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue in their specific arrangement in a stigma (PO:0009073)." [POC:Ramona_Walls]
 synonym: "sistema vascular del estigma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stigma vein (related)" RELATED []
 synonym: "柱頭維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0005019 ! carpel vascular system
 relationship: part_of PO:0009073 ! stigma
@@ -9828,10 +9843,11 @@ relationship: part_of PO:0009073 ! stigma
 id: PO:0008013
 name: anther vascular system
 namespace: plant_anatomy
-def: "A phyllome vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a anther." [POC:Ramona_Walls]
+def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in an anther (PO:0009066)." [POC:Ramona_Walls]
 synonym: "sistema vascular de la antera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葯維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000034 ! vascular system
+xref: PO_GIT:41
+is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0005018 ! stamen vascular system
 relationship: part_of PO:0009066 ! anther
 
@@ -9839,10 +9855,11 @@ relationship: part_of PO:0009066 ! anther
 id: PO:0008014
 name: filament vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a filament." [POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue (PO:0009015) in their specific arrangement in a filament (PO:0009067)." [POC:Ramona_Walls]
 synonym: "filament vein (related)" RELATED []
 synonym: "sistema vascular del filamento (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花糸維管 系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0005018 ! stamen vascular system
 relationship: part_of PO:0009067 ! filament
@@ -9851,11 +9868,12 @@ relationship: part_of PO:0009067 ! filament
 id: PO:0008015
 name: hypocotyl vascular system
 namespace: plant_anatomy
-def: "Vascular system of the hypocotyl." [Gramene:Chih-Wei_Tung]
+def: "A vascular system (PO:0000034) that is part of a hypocotyl (PO:0020100)." [Gramene:Chih-Wei_Tung]
 synonym: "sistema vascular del hipoc&#243tile (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
-relationship: part_of PO:0008011 ! embryo vascular system
+relationship: part_of PO:0008011 ! plant embryo vascular system
 relationship: part_of PO:0020100 ! hypocotyl
 
 [Term]
@@ -10223,14 +10241,15 @@ consider: PO:0008032
 
 [Term]
 id: PO:0008047
-name: scutellar vascular system
+name: scutellum vascular system
 namespace: plant_anatomy
-def: "A vascular system in a scutellum." [Gramene:Chih-Wei_Tung]
+def: "A vascular system (PO:0000034) that is part of a scutellum (PO:0020110)." [Gramene:Chih-Wei_Tung]
 synonym: "scutellum vascular system (related)" RELATED []
 synonym: "sistema vascular de escutelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚盤維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
-relationship: part_of PO:0008011 ! embryo vascular system
+relationship: part_of PO:0008011 ! plant embryo vascular system
 relationship: part_of PO:0020110 ! scutellum
 
 [Term]
@@ -16464,7 +16483,7 @@ creation_date: 2010-12-17T09:22:47Z
 id: PO:0025205
 name: shoot system vascular system
 namespace: plant_anatomy
-def: "A vascular system that is part of a shoot system." [POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that is part of a shoot system (PO:0009006)." [POC:Ramona_Walls]
 synonym: "sistema vascular del sistema del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート系維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:41
@@ -16477,9 +16496,10 @@ creation_date: 2010-12-17T09:34:58Z
 id: PO:0025206
 name: phyllome vascular system
 namespace: plant_anatomy
-def: "A vascular system that includes the totality of the portions of vascular tissue in their specific arrangement in a phyllome." [POC:Ramona_Walls]
+def: "A vascular system (PO:0000034) that includes the totality of the portions of vascular tissue in their specific arrangement in a phyllome (PO:0006001)." [POC:Ramona_Walls]
 synonym: "sistema vascular del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0000034 ! vascular system
 relationship: part_of PO:0006001 ! phyllome
 relationship: part_of PO:0025205 ! shoot system vascular system
@@ -16493,6 +16513,7 @@ namespace: plant_anatomy
 def: "A phyllome vascular system (PO:0025206) that includes the totality of the portions of vascular tissue in their specific arrangement in a tepal (PO:0009033)." [POC:curators]
 synonym: "sistema vascular del t&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片維管系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+xref: PO_GIT:41
 is_a: PO:0025206 ! phyllome vascular system
 relationship: part_of PO:0005017 ! flower vascular system
 relationship: part_of PO:0009033 ! tepal
