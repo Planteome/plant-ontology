@@ -19895,6 +19895,7 @@ name: primary xylem vessel member
 namespace: plant_anatomy
 def: "A xylem vessel member (PO:0002003) that is part of a primary xylem tissue (PO:0005849)." [POC:curators]
 synonym: "elemento vaso del xilema primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "primary xylem vessel element (exact)" EXACT []
 synonym: "一次木質部導管状要素 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0002003 ! xylem vessel member
 intersection_of: PO:0002003 ! xylem vessel member
@@ -22111,6 +22112,37 @@ is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020104 ! leaf sheath
 created_by: Laurel_Cooper
 creation_date: 1-24-2017
+
+[Term]
+id: PO:0025620
+name: metaxylem vessel
+namespace: plant_anatomy
+def: "A primary xylem vessel (PO:0025450) which is part of the metaxylem (PO:0000372)." [ISBN:0471738433, PMID:1186185, PO:Laurel_Cooper]
+comment: Metaxylem vessels are composed of metaxylem vessel elements and metaxylem tracheids.
+xref: PO_GIT:XYZ
+is_a: PO:0025450 ! primary xylem vessel
+relationship: part_of PO:0005849 ! primary xylem
+creation_date: 2017-08-17
+
+[Term]
+id: PO:0025621
+name: metaxylem tracheid
+namespace: plant_anatomy
+def: "A primary xylem tracheid (PO:0025446) that is part of the metaxylem (PO:0000372)." [ISBN:0471738433, PO:Laurel_Cooper]
+xref: PO_GIT:XYZ
+is_a: PO:0025446 ! primary xylem tracheid
+relationship: part_of PO:0025620 ! metaxylem vessel
+creation_date: 2017-08-17
+
+[Term]
+id: PO:0025622
+name: metaxylem vessel member
+def: "A primary xylem vessel member (PO:0025448) that is part of the metaxylem (PO:0000372)." [PO:Laurel_Cooper]
+synonym: "metaxylem vessel element (exact)" EXACT []
+xref: PO_GIT:XYZ
+is_a: PO:0025448 ! primary xylem vessel member
+relationship: part_of PO:0025620 ! metaxylem vessel
+creation_date: 2017-08-17
 
 [Term]
 id: PO:0025623
