@@ -20088,13 +20088,13 @@ creation_date: 2012-03-12T03:06:09Z
 id: PO:0025461
 name: early wood tracheary element
 namespace: plant_anatomy
-def: "A tracheary element that is part of a portion of early wood (PO:0004515)." [POC:curators]
+def: "A secondary xylem tracheary element (PO:0025445) that is part of a portion of early wood (PO:0004515)." [POC:curators]
 comment: Early wood tracheary elements generally have larger cell lumens than late wood tracheary elements (PO:0025462) of the same growth ring (PO:0004514).
 synonym: "earlywood tracheary element (exact)" EXACT []
 synonym: "早材管状要素 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:451
-is_a: PO:0000290 ! tracheary element
-intersection_of: PO:0000290 ! tracheary element
+is_a: PO:0025445 ! secondary xylem tracheary element
+intersection_of: PO:0025445 ! secondary xylem tracheary element
 intersection_of: part_of PO:0004515 ! early wood
 relationship: part_of PO:0004515 ! early wood
 created_by: rwalls
@@ -20104,14 +20104,14 @@ creation_date: 2012-03-14T11:05:40Z
 id: PO:0025462
 name: late wood tracheary element
 namespace: plant_anatomy
-def: "A tracheary element that is part of a portion of late wood (PO:0004516)." [POC:curators]
+def: "A secondary xylem tracheary element (PO:0025445) that is part of a portion of late wood (PO:0004516)." [POC:curators]
 comment: Late wood tracheary elements generally have smaller cell lumens than early wood tracheary elements (PO:0025461) of the same growth ring (PO:0004514).
 synonym: "elemento de tr&#225quea de madera temprana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "latewood tracheary element (exact)" EXACT []
 synonym: "晩材管状要素 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:451
-is_a: PO:0000290 ! tracheary element
-intersection_of: PO:0000290 ! tracheary element
+is_a: PO:0025445 ! secondary xylem tracheary element
+intersection_of: PO:0025445 ! secondary xylem tracheary element
 intersection_of: part_of PO:0004516 ! late wood
 relationship: part_of PO:0004516 ! late wood
 created_by: rwalls
@@ -22118,7 +22118,7 @@ id: PO:0025620
 name: metaxylem vessel
 namespace: plant_anatomy
 def: "A primary xylem vessel (PO:0025450) which is part of the metaxylem (PO:0000372)." [ISBN:0471738433, PMID:1186185, PO:Laurel_Cooper]
-comment: Metaxylem vessels are composed of metaxylem vessel elements and metaxylem tracheids.
+comment: Metaxylem vessels are composed of metaxylem vessel members (elements; PO:0025622).
 xref: PO_GIT:678
 is_a: PO:0025450 ! primary xylem vessel
 relationship: part_of PO:0005849 ! primary xylem
@@ -22131,7 +22131,6 @@ namespace: plant_anatomy
 def: "A primary xylem tracheid (PO:0025446) that is part of the metaxylem (PO:0000372)." [ISBN:0471738433, PO:Laurel_Cooper]
 xref: PO_GIT:678
 is_a: PO:0025446 ! primary xylem tracheid
-relationship: part_of PO:0025620 ! metaxylem vessel
 creation_date: 2017-08-17
 
 [Term]
