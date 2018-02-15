@@ -522,7 +522,7 @@ relationship: part_of PO:0009025 ! vascular leaf
 
 [Term]
 id: PO:0000037
-name: shoot apex
+name: shoot axis apex
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is the most distal part of a shoot system (PO:0009006) and has as parts a shoot apical meristem (PO:0020148) and the youngest primordia (PO:0025127)." [POC:curators]
 subset: reference
@@ -12493,7 +12493,7 @@ synonym: "embryonic shoot (related)" RELATED []
 synonym: "pl&#250mula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "幼芽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:339
-is_a: PO:0000037 ! shoot apex
+is_a: PO:0000037 ! shoot axis apex
 relationship: part_of PO:0009009 ! plant embryo
 
 [Term]
@@ -13558,7 +13558,7 @@ synonym: "茎頂分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamaz
 xref: PO_GIT:472
 is_a: PO:0006079 ! shoot system meristem
 is_a: PO:0020144 ! apical meristem
-relationship: part_of PO:0000037 ! shoot apex
+relationship: part_of PO:0000037 ! shoot axis apex
 
 [Term]
 id: PO:0020149
@@ -15412,7 +15412,7 @@ synonym: "フィロム原基（可視的）  (Japanese, exact)" EXACT Japanese [
 xref: PO_GIT:466
 is_a: PO:0025127 ! primordium
 relationship: develops_from PO:0025430 ! phyllome anlagen
-relationship: part_of PO:0000037 ! shoot apex
+relationship: part_of PO:0000037 ! shoot axis apex
 created_by: rwalls
 creation_date: 2010-11-15T09:27:11Z
 
@@ -16725,7 +16725,7 @@ namespace: plant_anatomy
 def: "A shoot apex that has as part a reproductive shoot apical meristem." [POC:Ramona_Walls]
 synonym: "&#225pice reproductivo del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生殖シュート頂、茎頂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0000037 ! shoot apex
+is_a: PO:0000037 ! shoot axis apex
 created_by: rwalls
 creation_date: 2010-12-20T08:47:03Z
 
@@ -16737,7 +16737,7 @@ def: "A shoot apex PO:0000037) that has as part a vegetative shoot apical merist
 synonym: "&#225pice vegetativo del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "栄養シュート頂、栄養枝頂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:234
-is_a: PO:0000037 ! shoot apex
+is_a: PO:0000037 ! shoot axis apex
 relationship: has_part PO:0008016 ! vegetative shoot apical meristem
 created_by: rwalls
 creation_date: 2010-12-20T08:47:03Z
@@ -22205,6 +22205,18 @@ created_by: rwalls
 creation_date: 2010-07-15T02:56:11Z
 
 [Term]
+id: PO:0028004
+name: branch apex
+namespace: plant_anatomy
+def: "A shoot axis apex (PO:0000037) that is part of a branch (PO:0025073)." [PO:cooperl]
+synonym: "branch tip (exact)" EXACT []
+xref: PO_GIT:XYZ
+is_a: PO:0000037 ! shoot axis apex
+relationship: part_of PO:0025073 ! branch
+property_value: http://purl.org/dc/elements/1.1/date 2018-02-15T17:24:36Z xsd:dateTime
+created_by: Laurel_Cooper
+
+[Term]
 id: PO:0030001
 name: chloronema cell
 namespace: plant_anatomy
@@ -22374,7 +22386,7 @@ synonym: "shoot axis apical initial (exact)" EXACT []
 synonym: "シュート軸分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030009 ! shoot meristematic apical cell
-relationship: part_of PO:0000037 ! shoot apex
+relationship: part_of PO:0000037 ! shoot axis apex
 created_by: rwalls
 creation_date: 2011-03-25T09:42:10Z
 
