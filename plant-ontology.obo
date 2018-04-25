@@ -11460,7 +11460,7 @@ name: filament
 namespace: plant_anatomy
 alt_id: PO:0006454
 alt_id: PO:0006474
-def: "A stalk that is part of a stamen." [Gramene:Pankaj_Jaiswal, MaizeGDB_curator:Leszek_Vincent]
+def: "A stalk  (PO:0025066) that is part of a stamen (PO:0009029)." [Gramene:Pankaj_Jaiswal, MaizeGDB_curator:Leszek_Vincent]
 comment: Supports the anthers. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: reference
 subset: TraitNet
@@ -11654,7 +11654,7 @@ name: higher order inflorescence axis
 namespace: plant_anatomy
 alt_id: PO:0004720
 def: "An inflorescence axis (PO:0020122) that develops from an inflorescence axillary meristem (PO:0009105) of an inflorescence axis (PO:0020122)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: A higher order inflorescence axis is any inflorescence axis (PO:0020122) that develops from another inflorescence axis (PO:0020122), and is named according to its position in an inflorescence (PO:0009049). Tenth order inflorescence axis (PO:0025111) is the greatest specific inflorescence axis order in the PO; when mapping annotations to inflorescence axes which are of an order greater than ten, or when order is ambiguous or unknown, annotate directly to higher order inflorescence axis. 
+comment: A higher order inflorescence axis is any inflorescence axis (PO:0020122) that develops from another inflorescence axis (PO:0020122), and is named according to its position in an inflorescence (PO:0009049). Tenth order inflorescence axis (PO:0025111) is the greatest specific inflorescence axis order in the PO; when mapping annotations to inflorescence axes which are of an order greater than ten, or when order is ambiguous or unknown, annotate directly to higher order inflorescence axis.
 subset: Angiosperm
 synonym: "coflorescence (related)" RELATED []
 synonym: "conflorescencia (Spanish, broad)" BROAD [POC:Maria_Alejandra_Gandolfo]
@@ -12557,7 +12557,7 @@ is_a: PO:0020142 ! stem internode
 id: PO:0020038
 name: petiole
 namespace: plant_anatomy
-def: "A stalk of a leaf." [APweb:Glossary, Gramene:Pankaj_Jaiswal]
+def: "A stalk (PO:0025066) of a vascular leaf (PO:0009025)." [APweb:Glossary, Gramene:Pankaj_Jaiswal]
 subset: TraitNet
 synonym: "pec&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12712,7 +12712,7 @@ relationship: part_of PO:0020043 ! compound leaf
 id: PO:0020050
 name: petiolule
 namespace: plant_anatomy
-def: "A stalk of a leaflet." [APweb:Glossary]
+def: "A stalk (PO:0009025) of a leaflet (PO:0020049)." [APweb:Glossary]
 synonym: "peciolulo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小葉柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025066 ! stalk
@@ -12761,7 +12761,7 @@ is_a: PO:0006003 ! scale leaf
 id: PO:0020055
 name: leaf rachis
 namespace: plant_anatomy
-def: "A stalk that is the main axis of a pinnate or more highly compound leaf, that bears leaflets or divisions of the axis." [APweb:Glossary]
+def: "A stalk (PO:0025066) that is the main axis of a pinnate or more highly compound leaf, that bears leaflets or divisions of the axis." [APweb:Glossary]
 subset: TraitNet
 synonym: "leaf rhachis (exact)" EXACT [FNA:f76f9272-ef24-4be8-a9b3-3da4c06bd8cf]
 synonym: "raquis de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -18728,7 +18728,7 @@ creation_date: 2011-11-16T05:07:56Z
 id: PO:0025366
 name: leaf rachis tendril
 namespace: plant_anatomy
-def: "A leaf rachis that is slender and coiling and lacks a lamina." [ISBN:9780881928501]
+def: "A leaf rachis (PO:0020055) that is slender and coiling and lacks a lamina." [ISBN:9780881928501]
 comment: Aids plant in climbing. Differs from a leaf tendril, in that a leaf rachis tendril bear leaflets. See also leaf tendril (PO:0025361), leaflet tendril (PO:0025362), leaf apex tendril (PO:0025363), branch tendril (PO:0025364), stem apex tendril (PO:0025365), and prophyll tendril (PO:0025366). Careful observation is required to correctly classify some tendrils.
 synonym: "raquis en zarzillo de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tendril (broad)" BROAD []
@@ -22229,6 +22229,13 @@ is_a: PO:0025007 ! collective plant organ structure
 relationship: part_of PO:0030018 ! gametophore
 
 [Term]
+id: PO:0028006
+name: stipe
+def: "In progress.." []
+is_a: PO:0025066 ! stalk
+property_value: http://purl.org/dc/elements/1.1/date 2018-04-25T23:29:50Z xsd:dateTime
+
+[Term]
 id: PO:0030001
 name: chloronema cell
 namespace: plant_anatomy
@@ -22856,7 +22863,7 @@ creation_date: 2011-04-12T10:39:46Z
 id: PO:0030036
 name: archegonium stalk
 namespace: plant_anatomy
-def: "A stalk that the basal part of an archegonium." [ISBN:9780070588493]
+def: "A stalk (PO:0025066) that the basal part of an archegonium (PO:0025126)." [ISBN:9780070588493]
 comment: Raises the venter above the rest of the gametophyte.
 subset: Bryophytes
 subset: Pteridophytes
