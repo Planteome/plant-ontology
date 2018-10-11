@@ -24113,7 +24113,7 @@ synonym: "heterothetic compound raceme (narrow)" NARROW []
 synonym: "heterothetic double raceme (narrow)" NARROW []
 synonym: "homothetic compound raceme (narrow)" NARROW []
 synonym: "homothetic double raceme (narrow)" NARROW []
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0030115 ! raceme inflorescence
 created_by: NYBG:Brandon_Sinn
 creation_date: 2017-04-20T12:34:46Z
 
@@ -24141,7 +24141,7 @@ synonym: "heterothetic compound spike (exact)" EXACT []
 synonym: "heterothetic double spike (narrow)" NARROW []
 synonym: "homothetic compound spike (narrow)" NARROW []
 synonym: "homothetic double spike (narrow)" NARROW []
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0030117 ! spike inflorescence
 created_by: NYBG:Brandon_Sinn
 creation_date: 2017-04-20T12:41:00Z
 
@@ -24149,7 +24149,7 @@ creation_date: 2017-04-20T12:41:00Z
 id: PO:0030119
 name: catkin inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of  indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436), unisexual flowers (PO:0009046) that are each subtended by conspicuous (PATO:0000463) inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (flowering stage; PO:0007616) is composed of indeterminate first order inflorescence axis (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include poplars (including Populus trichocarpa, Salicaceae) and birches (Betula spp., Betulaceae). Catkin inflorescences are often pendulate.
 synonym: "ament (exact)" EXACT []
 synonym: "catkin (exact)" EXACT []
@@ -24173,7 +24173,7 @@ creation_date: 2017-04-20T12:50:40Z
 id: PO:0030121
 name: capitulum inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, determinate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (flowering stage; PO:0007616) is composed of a radially-enlarged, determinate first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
 synonym: "calathidium (exact)" EXACT []
 synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
@@ -24188,7 +24188,7 @@ creation_date: 2017-04-20T12:53:49Z
 id: PO:0030122
 name: compound capitulum inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a radially enlarged inflorescence axis (PO:0020122) and sessile (PATO:0001436) flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "A capitulum inflorescence (PO:0030121), which at anthesis (flowering stage; PO:0007616) has sessile flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere] {comment="PO:cooperl"}
 comment: Examples include many species of daisy family (Asteraceae). The second order inflorescences (PO:0025240) of compound capitulum inflorescences are often called glomerules.
 synonym: "compound capitulum (exact)" EXACT []
 synonym: "double capitulum (exact)" EXACT []
@@ -24198,7 +24198,7 @@ synonym: "heterothetic compound capitulum (narrow)" NARROW []
 synonym: "heterothetic double capitulum (narrow)" NARROW []
 synonym: "homothetic compound capitulum (narrow)" NARROW []
 synonym: "homothetic double capitulum (narrow)" NARROW []
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0030121 ! capitulum inflorescence
 property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
 property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:58:48Z xsd:dateTime
 
@@ -24206,8 +24206,8 @@ property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:58:48Z xsd:da
 id: PO:0030123
 name: panicle inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (PO:ID) is composed of pedicellate (PATO:0001438) flowers (PO:0009046), or spikelets (PO:0009051), on determinate inflorescence axes (PO:0020122)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
-comment: Panicle inflorescences are most often conical in shape. Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), bromes (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rices (Oryza spp.), foxgrasses (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae).
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (flowering stage; PO:0007616) is composed of pedicellate (PATO:0001438) flowers (PO:0009046), or spikelets (PO:0009051), on determinate inflorescence axes (PO:0020122)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
+comment: Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), brome (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rice (Oryza spp.), foxgrass (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae). Panicle inflorescences are most often conical in shape.
 synonym: "panicle (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
 created_by: NYBG:Brandon_Sinn
@@ -24231,7 +24231,7 @@ creation_date: 2017-04-20T13:07:50Z
 id: PO:0030125
 name: anthela inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a concave plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis (flowering stage; PO:0007616) is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a concave plane of flowers." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of Filipendula (Rosaceae).
 synonym: "anthela (exact)" EXACT []
 synonym: "anthelae (exact)" NARROW [] {synonymtypedef="Plural"}
@@ -24315,7 +24315,7 @@ synonym: "heterothetic compound umbel (narrow)" NARROW []
 synonym: "heterothetic double umbel (narrow)" NARROW []
 synonym: "homothetic compound umbel (narrow)" NARROW []
 synonym: "homothetic double umbel (narrow)" NARROW []
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0030129 ! umbel inflorescence
 created_by: NYBG:Brandon_Sinn
 creation_date: 2017-04-20T22:44:03Z
 
@@ -24336,7 +24336,7 @@ creation_date: 2017-04-20T22:47:43Z
 id: PO:0030132
 name: cincinnus inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis (flowering stage; PO:0007616) is composed of determinate inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Dayflower family (Commelinaceae).
 synonym: "boragoid (exact)" EXACT []
 synonym: "cincinni (exact)" EXACT [] {synonymtypedef="Plural"}
@@ -24358,7 +24358,7 @@ comment: Examples include some species of the Forget-me-not family (Boraginaceae
 synonym: "compound cincinnus (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
 synonym: "double cincinnus (exact)" EXACT []
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0030132 ! cincinnus inflorescence
 created_by: NYBG:Brandon_Sinn
 creation_date: 2017-04-20T22:55:44Z
 
@@ -24366,7 +24366,7 @@ creation_date: 2017-04-20T22:55:44Z
 id: PO:0030134
 name: bostryx inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle (PATO:1000009) of approximately 90 degree angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis (flowering stage; PO:0007616) is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle of approximately 90 degrees from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "bostryches (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "bostryx (exact)" EXACT []
@@ -24399,7 +24399,7 @@ synonym: "dichasium (broad)" BROAD []
 synonym: "drepanium (exact)" EXACT []
 synonym: "helicoid (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
-is_a: PO:0009049 ! inflorescence
+is_a: PO:0030135 ! drepanium inflorescence
 created_by: NYBG:Brandon_Sinn
 creation_date: 2017-04-20T23:03:24Z
 
