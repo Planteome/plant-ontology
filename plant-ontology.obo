@@ -3672,7 +3672,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0004721
 name: paraclade cortex
 namespace: plant_anatomy
-def: "A portion of cortex (PO:0005708) that is part of an inflorescence branch (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of a higher order inflorescence axis (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
 synonym: "cortex (corteza) del paraclado (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "inflorescence branch cortex (exact)" EXACT []
 synonym: "portion of paraclade cortex tissue (exact)" EXACT []
@@ -6105,7 +6105,8 @@ relationship: part_of PO:0006309 ! tassel spikelet
 id: PO:0006311
 name: tassel sessile spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel without a pedicel, developing from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "A tassel spikelet (PO:0006309) which is the ultimate, sessile, higher order inflorescence axis (PO:0009081) of the maize tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the tassel spikelet pair meristem (PO:0006358).
 subset: Maize
 synonym: "penacho (borla) s&#233sil del florete (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6115,7 +6116,8 @@ is_a: PO:0006309 ! tassel spikelet
 id: PO:0006312
 name: tassel pedicellate spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel with a pedicel, developing from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "A tassel spikelet (PO:0006309) which is the ultimate, pedicellate, higher order inflorescence axis (PO:0009081) of the maize tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the tassel spikelet pair meristem (PO:0006358).
 subset: Maize
 synonym: "penacho (borla) pedicelada del florete (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6512,7 +6514,8 @@ relationship: part_of PO:0020142 ! stem internode
 id: PO:0006348
 name: ear pedicellate spikelet
 namespace: plant_anatomy
-def: "Ultimate pedicellate inflorescence branch of the maize ear that develops from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "An ear spikelet (PO:0006320) which is the ultimate, pedicellate, higher order inflorescence axis (PO:0009081) of the maize ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the ear spikelet pair meristem (PO:0006360).
 subset: Maize
 synonym: "espiga pedicelada de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）の有柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6522,7 +6525,8 @@ is_a: PO:0006320 ! ear spikelet
 id: PO:0006349
 name: ear sessile spikelet
 namespace: plant_anatomy
-def: "Ultimate sessile inflorescence branch of the maize ear that develops from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "An ear spikelet (PO:0006320) which is the ultimate, sessile, higher order inflorescence axis (PO:0009081) of the maize ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the ear spikelet pair meristem (PO:0006360).
 subset: Maize
 synonym: "espiga s&#233sil de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂の無柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11122,8 +11126,8 @@ relationship: participates_in PO:0001083 ! inflorescence development stage
 id: PO:0009051
 name: spikelet
 namespace: plant_anatomy
-def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested inflorescence branch (PO:0009081) of the grasses." [APweb:Glossary]
-comment: It consists of one to many closely-packed flowers and associated glumes etc.
+def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested, higher order inflorescence axis (PO:0009081) of the grasses." [APweb:Glossary, PO:cooperl]
+comment: It consists of one to many closely-packed spikelet florets (PO:0009082) and associated glumes (PO:0009039).
 subset: Poaceae
 subset: reference
 synonym: "espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
