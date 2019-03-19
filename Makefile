@@ -1,3 +1,4 @@
+
 ## OBO Library prefix
 OBO=http://purl.obolibrary.org/obo
 BASE=$(OBO)/$(ONT)
@@ -9,7 +10,7 @@ OWLTOOLS=owltools
 
 all: po.obo po.owl all_subsets
 all_subsets: subsets/po-basic.obo
-test: all_subsets
+test: $(ONT).owl
 release: all
 	echo "build successful. Now commit and push the derived files and make a release here: "
 
