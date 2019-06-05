@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2018-09-25
+data-version: releases/2019-06-05
 saved-by: cooperl
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -24,6 +24,7 @@ default-namespace: plant_ontology
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
 treat-xrefs-as-is_a: CARO
 import: http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl
+import: http://purl.obolibrary.org/obo/po/imports/ro_import.owl
 ontology: po
 
 [Term]
@@ -194,6 +195,7 @@ comment: Cultured somatic plant embryos are commonly induced after the formation
 synonym: "cultured somatic embryo (broad)" BROAD []
 synonym: "embri&#243n som&#225tico cultivado (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "培養植物体細胞不定胚 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0000010 ! cultured plant embryo
 is_a: PO:0025302 ! somatic plant embryo
 relationship: develops_from PO:0006091 ! embryogenic callus
@@ -208,6 +210,7 @@ synonym: "gancho apical (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gan
 synonym: "hypocotyl hook (related)" RELATED []
 synonym: "頂端かぎ状屈曲構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:70
+is_a: BFO:0000004
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0020100 ! hypocotyl
 relationship: part_of PO:0006341 ! primary shoot system
@@ -337,6 +340,7 @@ synonym: "cut&#237cula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gand
 synonym: "cuticle (broad)" BROAD []
 synonym: "植物クチクラ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:416
+is_a: BFO:0000004
 is_a: PO:0025161 ! portion of plant substance
 relationship: adjacent_to PO:0005679 ! epidermis
 
@@ -457,6 +461,7 @@ subset: reference
 synonym: "t&#233trada de las microsporas (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小胞子の四分子   小胞子四分子 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:236
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020047 ! microsporocyte
 relationship: has_part PO:0020048 ! microspore
@@ -485,6 +490,7 @@ synonym: "sistema vascular (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_
 synonym: "vasculature (exact)" EXACT [FNA:caf918bf-f4c4-423c-8008-87c96e5399a0]
 synonym: "維管束系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:50
+is_a: BFO:0000002
 is_a: PO:0009015 ! portion of vascular tissue
 disjoint_from: PO:0009002 ! plant cell
 disjoint_from: PO:0009008 ! plant organ
@@ -763,6 +769,7 @@ synonym: "adventitious bud (narrow)" NARROW [FNA:0eed275a-5dae-414a-bf36-81a08e6
 synonym: "yema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "芽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:124
+is_a: BFO:0000002
 is_a: PO:0009006 ! shoot system
 relationship: participates_in PO:0025528 ! bud development stage
 
@@ -941,6 +948,7 @@ synonym: "c&#233lula acompa&#241iante (Spanish, exact)" EXACT Spanish [POC:Maria
 synonym: "minor vein companion cell (exact)" EXACT []
 synonym: "伴細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:442
+is_a: BFO:0000004
 is_a: PO:0000074 ! parenchyma cell
 relationship: adjacent_to PO:0000289 ! sieve tube element
 relationship: part_of PO:0005417 ! phloem
@@ -1062,6 +1070,7 @@ synonym: "sperm cell (broad)" BROAD []
 synonym: "sperm nucleus (related)" RELATED []
 synonym: "植物精子細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:141
+is_a: BFO:0000004
 is_a: PO:0025006 ! plant gamete
 relationship: develops_from PO:0025525 ! spermatogenous cell
 
@@ -1090,6 +1099,7 @@ synonym: "cell located at the base of the trichome (related)" RELATED []
 synonym: "trichome support cell (related)" RELATED []
 synonym: "ソケット細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:8
+is_a: BFO:0000004
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0000349 ! epidermal initial cell
@@ -1321,6 +1331,7 @@ subset: CL
 subset: TraitNet
 synonym: "c&#233lula del pelo de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根毛細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000262 ! trichoblast
 
@@ -1348,6 +1359,7 @@ subset: CL
 synonym: "hair cell (related)" RELATED []
 synonym: "tricoblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根毛形成細胞、トリコブラスト (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial cell
 
@@ -1362,6 +1374,7 @@ synonym: "atrichoblast (exact)" EXACT []
 synonym: "atricoblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "non-hair cell (broad)" BROAD []
 synonym: "非毛根形成細胞、アトリコブラスト (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025164 ! root epidermal cell
 relationship: develops_from PO:0000349 ! epidermal initial cell
 
@@ -1440,6 +1453,7 @@ synonym: "squamule (narrow)" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、毛 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:207
+is_a: BFO:0000004
 is_a: PO:0009011 ! plant structure
 relationship: develops_from PO:0000349 ! epidermal initial cell
 relationship: part_of PO:0005679 ! epidermis
@@ -1515,6 +1529,7 @@ subset: TraitNet
 synonym: "c&#233lula guardiana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "occlusive cell (exact)" EXACT [PMID:16845829]
 synonym: "孔辺細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0000332 ! epidermal pavement cell
 relationship: develops_from PO:0000351 ! guard mother cell
@@ -1570,6 +1585,7 @@ subset: CL
 synonym: "c&#233lula del pavimento epidermal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "表皮被蓋細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:256
+is_a: BFO:0000004
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0008030 ! trichome cell
 relationship: develops_from PO:0000349 ! epidermal initial cell
@@ -1596,6 +1612,7 @@ def: "A shoot epidermal cell that divides to produce the guard cells." [ISBN:047
 subset: CL
 synonym: "c&#233lula madre de la c&#233lula guardiana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "孔辺母細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025165 ! shoot epidermal cell
 relationship: develops_from PO:0000062 ! stomatal initial cell
 
@@ -1677,6 +1694,7 @@ synonym: "cigoto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "zygote (broad)" BROAD []
 synonym: "植物接合子、接合体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:417
+is_a: BFO:0000002
 is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0001097 ! plant zygote stage
 
@@ -1897,6 +1915,7 @@ comment: The vascular leaf primordium (PO:0000017) develops from the vascular le
 synonym: "leaf stage P1 (related)" RELATED [GRO:0007164]
 synonym: "P1 stage (related)" RELATED []
 xref: OBO-SF2_PO:561
+is_a: BFO:0000003
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001003 ! vascular leaf anlagen formation stage
 
@@ -2041,6 +2060,7 @@ synonym: "1.01-dry seed in Triticeae (related)" RELATED [GRO:0007052]
 synonym: "BBCH growth stage 00 (related)" RELATED [ISBN:3826331524]
 synonym: "dry seed in Arabidopsis (related)" RELATED [TAIR:0000213]
 xref: PO_GIT:568
+is_a: BFO:0000003
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0007632 ! seed maturation stage
 
@@ -2079,6 +2099,7 @@ namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lemma (PO:0009037)." [Gramene:Anuradha_Pujar, POC:Felipe_Zapata, POC:Laura_Moore]
 synonym: "spikelet stage SP3 (related)" RELATED [GRO:0007204]
 xref: PO_GIT:548
+is_a: BFO:0000003
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
 
@@ -2089,6 +2110,7 @@ namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a palea (PO:0009038)." [Gramene:Anuradha_Pujar, POC:Felipe_Zapata, POC:Laura_Moore]
 synonym: "spikelet stage SP4 (related)" RELATED [GRO:0007207]
 xref: PO_GIT:548
+is_a: BFO:0000003
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
 
@@ -2099,6 +2121,7 @@ namespace: plant_structure_development_stage
 def: "A phyllome development stage (PO:0025579) that has as a primary participant a lodicule (PO:0009036)." [Gramene:Anuradha_Pujar, POC:Felipe_Zapata, POC:Laura_Moore]
 synonym: "spikelet stage SP5 (related)" RELATED [GRO:0007203]
 xref: PO_GIT:548
+is_a: BFO:0000003
 is_a: PO:0025579 ! phyllome development stage
 relationship: part_of PO:0007600 ! floral organ differentiation stage
 
@@ -2131,6 +2154,7 @@ def: "A vascular leaf development stage (PO:0025570) during which vascular leaf 
 comment: During this stage leaf shaping (GO:0010358) occurs which is defined as the developmental process that pertains to the organization of a leaf in three-dimensional space once the structure has initially formed.
 synonym: "leaf expansion stage in Arabidopsis (related)" RELATED []
 xref: PO_GIT:557
+is_a: BFO:0000003
 is_a: PO:0025570 ! vascular leaf development stage
 relationship: preceded_by PO:0025574 ! vascular leaf differentiation stage
 
@@ -2142,6 +2166,7 @@ def: "A vascular leaf development stage (PO:0025570) that begins when the vascul
 synonym: "fully expanded leaf stage in Arabidopsis (related)" RELATED []
 synonym: "leaf stage PX (related)" RELATED [GRO:0007167]
 xref: PO_GIT:558
+is_a: BFO:0000003
 is_a: PO:0025570 ! vascular leaf development stage
 relationship: preceded_by PO:0001052 ! vascular leaf expansion stage
 
@@ -2152,6 +2177,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:0025570) that begins with the formation of a abscission zone at the base of a vascular leaf (PO:0009025) and ends with leaf separation and death." [POC:Brian_Atkinson, POC:Laurel_Cooper, TAIR_curator:Tanya_Berardini]
 synonym: "leaf senescence stage in Arabidopsis (related)" RELATED []
 xref: PO_GIT:559
+is_a: BFO:0000003
 is_a: PO:0025570 ! vascular leaf development stage
 relationship: preceded_by PO:0001053 ! vascular leaf post-expansion stage
 
@@ -2452,6 +2478,7 @@ synonym: "c&#233lula basal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_
 synonym: "embryonic basal cell (exact)" EXACT []
 synonym: "胚基底細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:281
+is_a: BFO:0000004
 is_a: PO:0025028 ! embryo plant cell
 relationship: develops_from PO:0000423 ! plant zygote
 
@@ -2652,6 +2679,7 @@ synonym: "n&#243dulo de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_A
 synonym: "nodule (broad)" BROAD [FNA:b62e2f23-dffc-474a-a7bd-f919ea99b51c]
 synonym: "根粒 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:235
+is_a: BFO:0000004
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0025194 ! root nodule meristem
 relationship: part_of PO:0009005 ! root
@@ -2891,6 +2919,7 @@ name: developing seed stage
 namespace: plant_structure_development_stage
 def: "Stage of seed development characterized by seed growth and differentiation." [TAIR_curator:Katica_Ilic]
 xref: PO_GIT:568
+is_a: BFO:0000003
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0007633 ! endosperm development stage
 
@@ -3030,6 +3059,7 @@ subset: TraitNet
 synonym: "corteza (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of bark tissue (exact)" EXACT []
 synonym: "樹皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0005043 ! secondary phloem
 
@@ -3129,6 +3159,7 @@ synonym: "axial wood parenchyma cell (exact)" EXACT []
 synonym: "c&#233lula parenquim&#225tica axial de la madera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "軸方向二次木部柔組織細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:456
+is_a: BFO:0000004
 is_a: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: part_of PO:0004533 ! axial secondary xylem parenchyma
@@ -3145,6 +3176,7 @@ synonym: "c&#233lula parenquim&#225tica de rayo de la madera (Spanish, exact)" E
 synonym: "ray wood parenchyma cell (exact)" EXACT []
 synonym: "放射状二次木部柔組織細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:456
+is_a: BFO:0000004
 is_a: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: part_of PO:0004534 ! ray secondary xylem parenchyma
@@ -3253,6 +3285,7 @@ subset: Tomato
 synonym: "placenta del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実の胎座 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:144
+is_a: BFO:0000004
 is_a: PO:0020001 ! plant ovary placenta
 relationship: develops_from PO:0025078 ! placenta
 relationship: part_of PO:0009001 ! fruit
@@ -3268,6 +3301,7 @@ synonym: "pedicelo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandr
 synonym: "果柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:487
 xref: PO_GIT:49
+is_a: BFO:0000004
 is_a: PO:0030114 ! fruit pedicel
 relationship: develops_from PO:0009052 ! inflorescence flower pedicel
 relationship: part_of PO:0006342 ! infructescence
@@ -3352,6 +3386,7 @@ synonym: "tub&#233rculo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gan
 synonym: "tuber branch (exact)" EXACT []
 synonym: "シュート軸塊茎 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:127
+is_a: BFO:0000004
 is_a: PO:0025029 ! shoot axis
 is_a: PO:0025522 ! tuber
 relationship: develops_from PO:0025073 ! branch
@@ -3672,7 +3707,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0004721
 name: paraclade cortex
 namespace: plant_anatomy
-def: "A portion of cortex (PO:0005708) that is part of an inflorescence branch (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of a higher order inflorescence axis (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
 synonym: "cortex (corteza) del paraclado (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "inflorescence branch cortex (exact)" EXACT []
 synonym: "portion of paraclade cortex tissue (exact)" EXACT []
@@ -3999,7 +4034,7 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0005022
 name: plant ovary wall
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is composed of plant ovary abaxial (outer) epidermis (PO:0005023), plant ovary adaxial (inner) epidermis (PO:0005024), and a plant ovary wall middle layer (PO:0005025)" [Gramene:Pankaj_Jaiswal, PMID:10332605, POC:Laurel_Cooper]
+def: "A portion of plant tissue (PO:0009007) that is composed of plant ovary outer epidermis (PO:0005023), plant ovary inner epidermis (PO:0005024), and a plant ovary wall middle layer (PO:0005025)" [Gramene:Pankaj_Jaiswal, PMID:10332605, POC:Laurel_Cooper]
 synonym: "pared del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
@@ -4008,21 +4043,23 @@ relationship: part_of PO:0009072 ! plant ovary
 
 [Term]
 id: PO:0005023
-name: plant ovary abaxial epidermis
+name: plant ovary outer epidermis
 namespace: plant_anatomy
-def: "A portion of ovary epidermis (PO:0006063) which is the outer surface of a plant ovary (PO:0009072).." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
-synonym: "epidermis abaxial del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子房の裏側 背軸側の表皮 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+def: "A portion of ovary epidermis (PO:0006063) which is the outer surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
+synonym: "epidermis externo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plant ovary abaxial epidermis (related)" RELATED []
+synonym: "子房の裏側 背軸側の表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
 is_a: PO:0006063 ! plant ovary epidermis
 
 [Term]
 id: PO:0005024
-name: plant ovary adaxial epidermis
+name: plant ovary inner epidermis
 namespace: plant_anatomy
 def: "A portion of ovary epidermis (PO:0006063) which is the inner surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
-synonym: "epidermis adaxial del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子房の表側、向軸側の表皮 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "epidermis interno del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plant ovary adaxial epidermis (related)" RELATED []
+synonym: "子房の表側、向軸側の表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
 is_a: PO:0006063 ! plant ovary epidermis
 
@@ -4087,6 +4124,7 @@ synonym: "primordio de ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Aleja
 synonym: "root primordia (exact, plural)" EXACT []
 synonym: "根原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:467
+is_a: BFO:0000004
 is_a: PO:0025127 ! primordium
 relationship: develops_from PO:0025433 ! root anlagen
 
@@ -4146,6 +4184,7 @@ synonym: "meristematic cap (related)" RELATED []
 synonym: "PTM (exact)" EXACT []
 synonym: "一次 肥厚（膜）分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:437
+is_a: BFO:0000004
 is_a: PO:0006344 ! shoot lateral meristem
 relationship: develops_from PO:0000225 ! peripheral zone
 relationship: part_of PO:0009047 ! stem
@@ -4637,6 +4676,7 @@ synonym: "multiseriate epidermis (related)" RELATED []
 synonym: "portion of epidermal tissue (exact)" EXACT []
 synonym: "表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:109
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0006210 ! protoderm
 
@@ -4732,6 +4772,7 @@ synonym: "portion of primary xylem tissue (exact)" EXACT []
 synonym: "xilema primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次木部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:434
+is_a: BFO:0000004
 is_a: PO:0005352 ! xylem
 relationship: develops_from PO:0025275 ! procambium
 
@@ -4747,6 +4788,7 @@ synonym: "pl&#250mula de Poaceae (Spanish, exact)" EXACT Spanish [POC:Maria_Alej
 synonym: "Poaceae hull (exact)" EXACT []
 synonym: "イネ科植物 籾殻、外皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:239
+is_a: BFO:0000004
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0009037 ! lemma
 relationship: develops_from PO:0009038 ! palea
@@ -4761,6 +4803,7 @@ subset: reference
 subset: TraitNet
 synonym: "filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム、葉(的）器官 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0009008 ! plant organ
 relationship: develops_from PO:0025128 ! phyllome primordium
 relationship: part_of PO:0009006 ! shoot system
@@ -4889,6 +4932,7 @@ subset: CL
 synonym: "c&#233lula primaria parietal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次側膜細胞、壁細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:359
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
 relationship: part_of PO:0006006 ! anther wall primary parietal cell layer
@@ -5516,6 +5560,7 @@ synonym: "floema primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_G
 synonym: "portion of primary phloem tissue (exact)" EXACT []
 synonym: "一次師部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OBO_SF3_PO:433
+is_a: BFO:0000004
 is_a: PO:0005417 ! phloem
 relationship: develops_from PO:0025275 ! procambium
 
@@ -5663,6 +5708,7 @@ subset: CL
 synonym: "c&#233lula espor&#243gena primaria (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次胞子形成細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:328
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0006014 ! male archesporial cell
 
@@ -5773,6 +5819,7 @@ synonym: "spore mother cell (exact)" EXACT []
 synonym: "胞子母細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: GO:0007126
 xref: PO_GIT:361
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
@@ -6085,6 +6132,7 @@ subset: Maize
 synonym: "penacho (borla) de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:537
+is_a: BFO:0000004
 is_a: PO:0009051 ! spikelet
 relationship: develops_from PO:0006358 ! tassel spikelet pair meristem
 relationship: part_of PO:0020126 ! tassel inflorescence
@@ -6107,7 +6155,8 @@ relationship: part_of PO:0006309 ! tassel spikelet
 id: PO:0006311
 name: tassel sessile spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel without a pedicel, developing from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "A tassel spikelet (PO:0006309) which is the ultimate, sessile, higher order inflorescence axis (PO:0009081) of the maize tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the tassel spikelet pair meristem (PO:0006358).
 subset: Maize
 synonym: "penacho (borla) s&#233sil del florete (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6117,7 +6166,8 @@ is_a: PO:0006309 ! tassel spikelet
 id: PO:0006312
 name: tassel pedicellate spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel with a pedicel, developing from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "A tassel spikelet (PO:0006309) which is the ultimate, pedicellate, higher order inflorescence axis (PO:0009081) of the maize tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the tassel spikelet pair meristem (PO:0006358).
 subset: Maize
 synonym: "penacho (borla) pedicelada del florete (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6210,7 +6260,7 @@ is_a: PO:0009081 ! higher order inflorescence axis
 id: PO:0006322
 name: third order inflorescence axis
 namespace: plant_anatomy
-def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a second order inflorescence axis (PO:0006322)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a second order inflorescence axis (PO:0006322)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "eje de tercero orden de la inflorescencia  (Spanish, exact)" EXACT Spanish []
 synonym: "second order inflorescence branch (exact)" EXACT []
 synonym: "second order paraclade (exact)" EXACT []
@@ -6236,7 +6286,7 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 id: PO:0006324
 name: first order tassel inflorescence axis
 namespace: plant_anatomy
-def: "A first order inflorescence axis (PO:0025104) that is the primary axis of a tassel inflorescence (PO:0020126)." [POC:curators] {comment="POC:Laurel_Cooper"}
+def: "A first order inflorescence axis (PO:0025104) that is the primary axis of a tassel inflorescence (PO:0020126)." [POC:curators, POC:Laurel_Cooper]
 subset: Angiosperm
 subset: Maize
 synonym: "central axis of tassel inflorescence (exact)" EXACT []
@@ -6314,6 +6364,7 @@ namespace: plant_anatomy
 def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a ridge on a seed (PO:0009010) that develops from a raphe (PO:0020027)." [ISBN:0471245208, POC:curators]
 synonym: "rafe de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子背線、縫線 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: develops_from PO:0020027 ! raphe
 relationship: part_of PO:0009010 ! seed
@@ -6325,6 +6376,7 @@ namespace: plant_anatomy
 def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is attached to a seed (PO:0009010) and is the remnants of a funicle (PO:0020006)." [POC:curators]
 synonym: "fun&#237culo de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子種柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
@@ -6337,6 +6389,7 @@ def: "A remnant of the ovular chalaza that is part of the seed." [POC:curators]
 synonym: "calaza de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of seed chalaza (exact)" EXACT []
 synonym: "種子 カラザ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020026 ! chalaza
 relationship: part_of PO:0009010 ! seed
@@ -6349,6 +6402,7 @@ def: "A plant anatomical space that is enclosed by and forms an opening in a see
 subset: TraitNet
 synonym: "micr&#243pila de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子珠孔 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025117 ! plant anatomical space
 relationship: develops_from PO:0020025 ! plant ovule micropyle
 relationship: part_of PO:0009088 ! seed coat
@@ -6361,6 +6415,7 @@ def: "An outgrowth of the seed funicle, that forms a bridge between the seed mic
 synonym: "obturador de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of seed obturator tissue (exact)" EXACT []
 synonym: "種子閉塞組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020029 ! obturator
 relationship: part_of PO:0006332 ! seed funicle
@@ -6442,6 +6497,7 @@ synonym: "果序 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:260
 xref: PO_GIT:261
 xref: PO_GIT:71
+is_a: CARO:0000000
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0009049 ! inflorescence
 relationship: has_part PO:0009001 ! fruit
@@ -6458,6 +6514,7 @@ synonym: "sistema axilar del epiblasto (epiblastema) (Spanish, exact)" EXACT Spa
 synonym: "腋苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:262
 xref: PO_GIT:518
+is_a: BFO:0000004
 is_a: PO:0004545 ! shoot-borne shoot system
 relationship: develops_from PO:0004709 ! axillary bud
 
@@ -6514,7 +6571,8 @@ relationship: part_of PO:0020142 ! stem internode
 id: PO:0006348
 name: ear pedicellate spikelet
 namespace: plant_anatomy
-def: "Ultimate pedicellate inflorescence branch of the maize ear that develops from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "An ear spikelet (PO:0006320) which is the ultimate, pedicellate, higher order inflorescence axis (PO:0009081) of the maize ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the ear spikelet pair meristem (PO:0006360).
 subset: Maize
 synonym: "espiga pedicelada de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）の有柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6524,7 +6582,8 @@ is_a: PO:0006320 ! ear spikelet
 id: PO:0006349
 name: ear sessile spikelet
 namespace: plant_anatomy
-def: "Ultimate sessile inflorescence branch of the maize ear that develops from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "An ear spikelet (PO:0006320) which is the ultimate, sessile, higher order inflorescence axis (PO:0009081) of the maize ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the ear spikelet pair meristem (PO:0006360).
 subset: Maize
 synonym: "espiga s&#233sil de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂の無柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6939,7 +6998,7 @@ namespace: plant_anatomy
 alt_id: PO:0006469
 def: "A collective organ part structure (PO:0025269) that has as parts an elongated stigma (PO:0009073) with stigma papilla (GO:0090397), and an elongated style (PO:0009074)." [PMID:21345919, POC:Laurel_Cooper]
 comment: During pollination (GO:0009856), the pollen (PO:0025281) grows down through a portion of  transmitting tissue (PO:0020102) to a plant ovary ovule (PO:0025490) and a megagametophyte (PO:0025279) to effect fertilization (GO:0009566).  If you are annotating to this structure for Zea spp., please also add an annotation to the corresponding floret type. Choose the most specific term possible from: ear floret (PO:0006354), or one of the child terms: upper floret of pedicellate spikelet of ear (PO:0006350), or upper floret of sessile spikelet of ear (PO:0006352).
-synonym: "Zea style (narrow)" NARROW [] {scope="narrow"}
+synonym: "Zea style (narrow)" NARROW []
 xref: PO_GIT:376
 is_a: PO:0025269 ! collective organ part structure
 created_by: cooperl
@@ -7004,7 +7063,7 @@ relationship: part_of PO:0006016 ! leaf epidermis
 id: PO:0006505
 name: first order ear inflorescence axis
 namespace: plant_anatomy
-def: "A first order inflorescence axis (PO:0025104) that is the primary axis of an ear inflorescence (PO:0020136)." [POC:curators] {comment="POC:Laurel_Cooper"}
+def: "A first order inflorescence axis (PO:0025104) that is the primary axis of an ear inflorescence (PO:0020136)." [POC:curators, POC:Laurel_Cooper]
 subset: Maize
 synonym: "central axis of ear inflorescence (exact)" EXACT []
 synonym: "ear inflorescence rachis (exact)" EXACT []
@@ -7220,6 +7279,7 @@ synonym: "radicle emergence in Arabidopsis (related)" RELATED [TAIR:T0000395]
 synonym: "radicle emergence in Solanaceae (related)" RELATED [SGN:0000006]
 synonym: "Zadok scale-5 (related)" RELATED [GRO:0007055]
 xref: PO_GIT:386
+is_a: BFO:0000003
 is_a: PO:0007520 ! root development stage
 relationship: part_of PO:0007057 ! seed germination stage
 
@@ -7541,6 +7601,7 @@ synonym: "Solanaceae whole plant growth stages (SGN:0000001) (related)" RELATED 
 synonym: "sorghum growth stage (GRO:0007124) (related)" RELATED []
 synonym: "wheat, barley and oat growth stage (GRO:0007156) (related)" RELATED []
 xref: PO_GIT:390
+is_a: BFO:0000003
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0000003 ! whole plant
 
@@ -9677,6 +9738,7 @@ def: "Stage during which the seed storage products (storage proteins, lipids and
 synonym: "embryo stage EM10 (related)" RELATED [GRO:0007177]
 synonym: "seed maturation in Arabidopsis (related)" RELATED []
 xref: PO_GIT:568
+is_a: BFO:0000003
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0004506 ! developing seed stage
 
@@ -9686,6 +9748,7 @@ name: endosperm development stage
 namespace: plant_structure_development_stage
 def: "Stages of development of the endosperm." [TAIR_curator:Katica_Ilic]
 xref: PO_GIT:568
+is_a: BFO:0000003
 is_a: PO:0001170 ! seed development stage
 relationship: preceded_by PO:0004505 ! fertilized ovule stage
 
@@ -10058,6 +10121,7 @@ subset: CL
 synonym: "c&#233lula del tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛（毛茸、糸状体）細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:207
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0004013 ! epidermal cell
 relationship: part_of PO:0025162 ! multicellular trichome
@@ -10327,6 +10391,7 @@ synonym: "propagule  (broad)" BROAD []
 synonym: "syncarp (narrow)" NARROW [FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a]
 synonym: "果実 (exact, Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:76
+is_a: BFO:0000004
 is_a: PO:0025496 ! multi-tissue plant structure
 relationship: develops_from PO:0009062 ! gynoecium
 
@@ -10404,6 +10469,7 @@ synonym: "radices (exact, plural)" EXACT [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b1
 synonym: "radix (exact)" EXACT [FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd]
 synonym: "根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:578
+is_a: BFO:0000004
 is_a: PO:0025004 ! plant axis
 relationship: develops_from PO:0005029 ! root primordium
 relationship: part_of PO:0025025 ! root system
@@ -10495,6 +10561,7 @@ synonym: "pyrene (narrow)" NARROW [FNA:f5c50e73-61e3-48ec-b918-6f85b3f40738]
 synonym: "semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:405
+is_a: BFO:0000004
 is_a: PO:0025496 ! multi-tissue plant structure
 relationship: develops_from PO:0020003 ! plant ovule
 relationship: has_part PO:0009009 ! plant embryo
@@ -10503,8 +10570,8 @@ relationship: has_part PO:0009009 ! plant embryo
 id: PO:0009011
 name: plant structure
 namespace: plant_anatomy
-def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003, POC:curators]
-comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 anatomical structure is defined as: Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome.
+def: "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant." [CARO:0000003, POC:curators]
+comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 'connected anatomical structure' is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism's own genome. {xref="PO:cooperl"}
 subset: TraitNet
 synonym: "estructura vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物 構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -10516,8 +10583,8 @@ id: PO:0009012
 name: plant structure development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007021
-def: "A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes." [POC:curators]
-comment: Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.
+def: "A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes." [BFO:0000003, GO:0032502, POC:curators]
+comment: Refers to GO:0032502 'developmental process', which includies growth, differentiation, and senescence, and BFO:0000003 'ocurrent'.
 subset: TraitNet
 synonym: "Arabidopsis growth (related)" RELATED [TAIR:0000205]
 synonym: "etapa de desarrollo de estructura vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11066,6 +11133,7 @@ synonym: "perfect flower (narrow)" NARROW []
 synonym: "花 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:160
 xref: PO_GIT:259
+is_a: BFO:0000004
 is_a: PO:0025082 ! reproductive shoot system
 relationship: develops_from PO:0000229 ! flower meristem
 
@@ -11115,7 +11183,7 @@ alt_id: PO:0020117
 alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
-def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: An inflorescence is a reproductive shoot system from which at least two flowers develop. The growth pattern of an inflorescence may be monopodial (single main shoot axis), sympodial (growth only occurs from axillary meristems), or both. An inflorescence axis (PO:0020122) can be determinate or indeterminate. An inflorescence flower pedicel (PO:0009052) is the ultimate axis in an inflorescence. The flower (PO:0009046) of many plants, for example Magnolia spp., is solitary.
 subset: Angiosperm
 subset: reference
@@ -11125,6 +11193,7 @@ synonym: "Triticeae spike (narrow)" NARROW []
 synonym: "花序 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:260
 xref: PO_GIT:71
+is_a: CARO:0000000
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009046 ! flower
 relationship: participates_in PO:0001083 ! inflorescence development stage
@@ -11133,8 +11202,8 @@ relationship: participates_in PO:0001083 ! inflorescence development stage
 id: PO:0009051
 name: spikelet
 namespace: plant_anatomy
-def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested inflorescence branch (PO:0009081) of the grasses." [APweb:Glossary]
-comment: It consists of one to many closely-packed flowers and associated glumes etc.
+def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested, higher order inflorescence axis (PO:0009081) of the grasses." [APweb:Glossary, PO:cooperl]
+comment: It consists of one to many closely-packed spikelet florets (PO:0009082) and associated glumes (PO:0009039).
 subset: Poaceae
 subset: reference
 synonym: "espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11149,7 +11218,7 @@ id: PO:0009052
 name: inflorescence flower pedicel
 namespace: plant_anatomy
 def: "A flower pedicel (PO:0030113) that bears a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: An inflorescence flower pedicel is the ultimate shoot axis (PO:0025029) in an inflorescence (PO:0009049). {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
+comment: An inflorescence flower pedicel is the ultimate shoot axis (PO:0025029) in an inflorescence (PO:0009049).
 subset: Angiosperm
 subset: reference
 subset: Tomato
@@ -11343,6 +11412,7 @@ synonym: "Zea androecium (narrow)" NARROW []
 synonym: "雄蕊群 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:71
 xref: PO_GIT:98
+is_a: BFO:0000004
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0025478 ! androecium primordium
 relationship: part_of PO:0009046 ! flower
@@ -11390,6 +11460,7 @@ synonym: "雌蕊群 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:470
 xref: PO_GIT:71
 xref: PO_GIT:98
+is_a: BFO:0000004
 is_a: PO:0025023 ! collective phyllome structure
 relationship: develops_from PO:0000019 ! gynoecium primordium
 relationship: part_of PO:0009046 ! flower
@@ -11459,6 +11530,7 @@ synonym: "Zea anther (narrow)" NARROW []
 synonym: "半葯,花粉のう (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:297
 xref: PO_GIT:70
+is_a: BFO:0000004
 is_a: PO:0025007 ! collective plant organ structure
 relationship: develops_from PO:0006089 ! anther primordium
 relationship: has_part PO:0025277 ! pollen sac
@@ -11668,14 +11740,13 @@ comment: A higher order inflorescence axis is any inflorescence axis (PO:0020122
 subset: Angiosperm
 synonym: "coflorescence (related)" RELATED []
 synonym: "conflorescencia (Spanish, broad)" BROAD [POC:Maria_Alejandra_Gandolfo]
-synonym: "inflorescence branch (exact)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+synonym: "inflorescence branch (exact)" EXACT []
 synonym: "paraclade (broad)" BROAD []
 synonym: "paraclado (Spanish, broad)" BROAD [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序枝 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:264
 xref: PO_GIT:667
 is_a: PO:0020122 ! inflorescence axis
-is_a: PO:0025073 ! branch
 
 [Term]
 id: PO:0009082
@@ -11827,6 +11898,7 @@ subset: TraitNet
 synonym: "arilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "仮種皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:242
+is_a: BFO:0000004
 is_a: PO:0019022 ! arilloid
 relationship: develops_from PO:0020006 ! funicle
 
@@ -11862,6 +11934,7 @@ subset: Maize
 synonym: "ramificaci&#243n lateral larga del penacho (borla) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "second order tassel branch (related)" RELATED []
 synonym: "雄穂の長側枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0006323 ! tassel inflorescence branch
 relationship: develops_from PO:0009104 ! long lateral tassel branch meristem
 
@@ -11874,6 +11947,7 @@ subset: Maize
 synonym: "ramificaci&#243n corta del penacho (borla) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "third order tassel branch (related)" RELATED []
 synonym: "雄穂短枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0006323 ! tassel inflorescence branch
 relationship: develops_from PO:0009103 ! short tassel branch meristem
 
@@ -11946,6 +12020,7 @@ namespace: plant_anatomy
 def: "A reproductive shoot apical meristem that gives rise to the apical growth of the inflorescence. It develops from the shoot apical meristem (SAM) after it undergoes transition from vegetative to reproductive phase." [Gramene:Pankaj_Jaiswal, MaizeGDB_curator:Leszek_Vincent]
 synonym: "meristema apical de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序頂端分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0000230 ! inflorescence meristem
 is_a: PO:0008028 ! reproductive shoot apical meristem
 relationship: develops_from PO:0008016 ! vegetative shoot apical meristem
@@ -12049,6 +12124,7 @@ comment: Found some taxa, such as Phaseolus.
 synonym: "barra de la traqueida (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "仮導管の筋、縞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:434
+is_a: BFO:0000004
 is_a: PO:0005352 ! xylem
 relationship: adjacent_to PO:0020063 ! hilum
 relationship: part_of PO:0009010 ! seed
@@ -12108,6 +12184,7 @@ synonym: "Zea ovule (narrow)" NARROW []
 synonym: "胚珠 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:464
 xref: PO_GIT:70
+is_a: BFO:0000004
 is_a: PO:0009008 ! plant organ
 relationship: develops_from PO:0000018 ! ovule primordium
 
@@ -12465,6 +12542,7 @@ subset: reference
 synonym: "obturador (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of obturator tissue (exact)" EXACT []
 synonym: "閉塞組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0020006 ! funicle
 
@@ -12537,6 +12615,7 @@ def: "The first stem internode (PO:0020142) above the cotyledonary node (PO:0025
 synonym: "epic&#243tile (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "上胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:342
+is_a: BFO:0000002
 is_a: PO:0020142 ! stem internode
 relationship: participates_in PO:0007054 ! epicotyl emergence stage
 
@@ -12852,6 +12931,7 @@ synonym: "comas (exact, plural)" EXACT [FNA:596d8481-a186-4b7b-802b-aee2de4c4ad1
 synonym: "tuft (broad)" BROAD [FNA:7c6c72f7-89f7-44d3-9cfb-8a0959c27927]
 synonym: "種髪 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:218
+is_a: CARO:0000000
 is_a: PO:0006048 ! seed coat epidermis
 relationship: has_part PO:0004511 ! seed trichome
 
@@ -13182,6 +13262,7 @@ comment: The suspensor often allows the embryo to penetrate deep into the endosp
 synonym: "suspensor (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:248
+is_a: BFO:0000004
 is_a: PO:0025099 ! embryo plant structure
 relationship: develops_from PO:0002002 ! embryo basal cell
 
@@ -13236,7 +13317,7 @@ id: PO:0020122
 name: inflorescence axis
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an inflorescence (PO:0009049)." [POC:curators]
-comment: An inflorescence axis (PO:0020122) has either a determinate apex, which terminates in a flower meristem (PO:0000229), or has an indeterminate apex, which terminates in an inflorescence apical meristem (PO:0009108).  An inflorescence pedicel (PO:0009052) is the simplest example of a determinate inflorescence axis. {xref="NYBG:Brandon_Sinn", comment="POC:Laurel_Cooper", xref="NYBG:Dario_Cavaliere"}
+comment: An inflorescence axis (PO:0020122) has either a determinate apex, which terminates in a flower meristem (PO:0000229), or has an indeterminate apex, which terminates in an inflorescence apical meristem (PO:0009108).  An inflorescence pedicel (PO:0009052) is the simplest example of a determinate inflorescence axis. {xref="NYBG:Brandon_Sinn", xref="POC:Laurel_Cooper", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 subset: TraitNet
 synonym: "eje de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -13368,6 +13449,7 @@ def: "Cell that constitutes the central part of the root cap, arranged in longit
 subset: CL
 synonym: "c&#233lula de la columela del caliptra de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "柱軸根冠細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025030 ! ground tissue cell
 relationship: develops_from PO:0020133 ! columella root cap initial cell
 
@@ -13959,6 +14041,7 @@ synonym: "root (broad)" BROAD [FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9]
 synonym: "sistema de ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:136
+is_a: BFO:0000002
 is_a: PO:0025007 ! collective plant organ structure
 relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: rwalls
@@ -14464,6 +14547,7 @@ synonym: "fundamental tissue (exact)" EXACT [ISBN:0471244554]
 synonym: "porci&#243n del tejido fundamental (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "基本組織の一部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:106
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0025594 ! ground meristem
 created_by: Laurel_Cooper
@@ -14676,6 +14760,7 @@ subset: Angiosperm
 synonym: "saco embrionario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚嚢 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:130
+is_a: BFO:0000040
 is_a: PO:0025279 ! megagametophyte
 relationship: develops_from PO:0020019 ! megaspore
 relationship: located_in PO:0025490 ! plant ovary ovule
@@ -14792,6 +14877,7 @@ def: "A shoot system (PO:0009006) in the sporophytic phase that has as part at l
 subset: TraitNet
 synonym: "sistema de brote reproductivo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "生殖シュート 系、苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000002
 is_a: PO:0009006 ! shoot system
 relationship: participates_in PO:0025530 ! reproductive shoot system development stage
 created_by: rwalls
@@ -14913,6 +14999,7 @@ synonym: "spore case (exact)" EXACT [FNA:808e89e2-7155-41e5-b7b9-a887000d1734]
 synonym: "胞子嚢 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:251
 xref: PO_GIT:257
+is_a: BFO:0000002
 is_a: PO:0009008 ! plant organ
 relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: rwalls
@@ -15045,13 +15132,13 @@ id: PO:0025104
 name: first order inflorescence axis
 namespace: plant_anatomy
 def: "An inflorescence axis (PO:0020122) that is the primary or main axis of an inflorescence (PO:0009049)." [POC:Ramona_Walls]
-comment: Monopodial inflorescences, such as a raceme, have a centrally-located main axis; this axis is a first order inflorescence axis. In contrast, sympodial inflorescences, such as the riphidium, do not have a centrally-located main axis. The basal-most portion of a first order inflorescence axis is referred to as a peduncle (PO:0009053). {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
+comment: Monopodial inflorescences, such as a raceme inflorescence (PO:0030115), have a centrally-located main axis; this axis is a first order inflorescence axis. In contrast, sympodial inflorescences, such as the riphidium inflorescence (PO:0030131), do not have a centrally-located main axis. The basal-most portion of a first order inflorescence axis is referred to as a peduncle (PO:0009053). {xref="NYBG:Brandon_Sinn", xref="PO:cooperl", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 synonym: "inflorescence rachis (exact)" EXACT [FNA:78c2e094-f6db-4d95-b8bb-3e2bdaebf764]
 synonym: "inflorescence rhachis (exact)" EXACT [FNA:f76f9272-ef24-4be8-a9b3-3da4c06bd8cf]
 synonym: "primary inflorescence axis (exact)" EXACT []
 synonym: "primer orden del eje de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "第一花序軸 (Japanese, exact)" EXACT JAPANESE [NIG:Yukiko_Yamazaki]
+synonym: "第一花序軸 (Japanese, exact)" EXACT [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:260
 xref: PO_GIT:667
 is_a: PO:0020122 ! inflorescence axis
@@ -15063,7 +15150,7 @@ creation_date: 2011-01-05T08:41:49Z
 id: PO:0025105
 name: fourth order inflorescence axis
 namespace: plant_anatomy
-def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a third order inflorescence axis (PO:0025105)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a third order inflorescence axis (PO:0025105)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "eje de cuarto orden de la inflorescencia (Spanish, exact)" EXACT Spanish []
 synonym: "tertiary inflorescence branch (exact)" EXACT []
 synonym: "third order inflorescence branch (exact)" EXACT []
@@ -15079,7 +15166,7 @@ creation_date: 2011-01-05T08:56:27Z
 id: PO:0025106
 name: fifth order inflorescence axis
 namespace: plant_anatomy
-def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a fourth order inflorescence axis (PO:0025106)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a fourth order inflorescence axis (PO:0025106)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "eje de quinto orden de la inflorescencia (Spanish, exact)" EXACT Spanish []
 synonym: "fourth order inflorescence branch (exact)" EXACT []
 synonym: "第四花序分枝 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
@@ -15228,7 +15315,7 @@ id: PO:0025117
 name: plant anatomical space
 namespace: plant_anatomy
 def: "An anatomical space that is part of a plant." [CARO:0000005, POC:curators]
-comment: CARO:0000005 anatomical space is defined as: Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.
+comment: CARO:0000005 'anatomical space' is defined as: An immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes, and is bounded by an anatomical surface. {xref="PO:cooperl"}
 synonym: "espacio anat&#243mico vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lacuna (narrow)" NARROW [FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042]
 synonym: "lacunae (narrow)" NARROW Plural [FNA:322646fb-30bf-422d-8373-9f91f48fd28b]
@@ -15319,6 +15406,7 @@ synonym: "archegonial egg cell (exact)" EXACT []
 synonym: "ooc&#233lula del arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器卵細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:140
+is_a: BFO:0000040
 is_a: PO:0020094 ! plant egg cell
 relationship: develops_from PO:0025509 ! archegonium central cell
 relationship: located_in PO:0030038 ! venter
@@ -15355,6 +15443,7 @@ synonym: "gametangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "gametangium (broad)" BROAD []
 synonym: "多細胞植物配偶子嚢  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:513
+is_a: BFO:0000002
 is_a: PO:0009008 ! plant organ
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -15389,6 +15478,7 @@ synonym: "archegonia (exact, plural)" EXACT []
 synonym: "arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:211
+is_a: BFO:0000004
 is_a: PO:0025124 ! multicellular plant gametangium
 relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: rwalls
@@ -15421,6 +15511,7 @@ synonym: "portion of phyllome primordium tissue (exact)" EXACT []
 synonym: "primordio del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:466
+is_a: BFO:0000004
 is_a: PO:0025127 ! primordium
 relationship: develops_from PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0000037 ! shoot axis apex
@@ -15463,8 +15554,8 @@ creation_date: 2010-11-15T11:29:28Z
 id: PO:0025131
 name: plant anatomical entity
 namespace: plant_anatomy
-def: "An anatomical entity that is or was part of a plant." [CARO:0000000, POC:curators]
-comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 anatomical entity is defined as: Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
+def: "An anatomical entity that is or was part of a plant." [BFO:0000004, CARO:0000000, POC:curators]
+comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 'anatomical entity' is defined as: A part of a cellular organism that is either an immaterial entity or a material entity with granularity aboove the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.  Refers to BFO:0000004 'independent continuant'. {xref="CAROC:Brownsville2014"}
 synonym: "entidad anat&#243mica vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物 解剖学（形態）的実体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:224
@@ -15880,7 +15971,7 @@ id: PO:0025161
 name: portion of plant substance
 namespace: plant_anatomy
 def: "A portion of organism substance that is or was part of a plant." [CARO:0000004, POC:curators]
-comment: Refers to portion of organism substance (CARO:0000004) which is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body. For plants, the word "body" refers to a whole plant or part thereof.  Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin.
+comment: Refers to organism substance (CARO:0000004) which is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism's own genome. For plants, the word "body" refers to a whole plant, or part thereof.  Includes substances such as latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, and sporopollenin.
 synonym: "porci&#243n de sustancia vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物を構成する物質の一部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:206
@@ -16373,6 +16464,7 @@ subset: CL
 synonym: "c&#233lula del tubo pol&#237nico (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花粉管細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:192
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0020099 ! microgametophyte vegetative cell
 created_by: rwalls
@@ -16794,6 +16886,7 @@ def: "A portion of plant tissue consisting of four megaspores that remained join
 comment: Usually only one of the four megaspores develops and the other three die.
 synonym: "t&#233trada de megasporas (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "大胞子の四分子 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0009007 ! portion of plant tissue
 relationship: develops_from PO:0000431 ! megasporocyte
 relationship: has_part PO:0020019 ! megaspore
@@ -16956,6 +17049,7 @@ subset: Angiosperm
 synonym: "inflorescencia de segundo orden (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "secondary inflorescence (exact)" EXACT []
 synonym: "第二花序 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: CARO:0000000
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0006321 ! second order inflorescence axis
 relationship: has_part PO:0009046 ! flower
@@ -16976,6 +17070,7 @@ synonym: "infructescencia de segundo orden (Spanish, exact)" EXACT Spanish [POC:
 synonym: "secondary infructescence (exact)" EXACT []
 synonym: "第二果序 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:261
+is_a: CARO:0000000
 is_a: PO:0025082 ! reproductive shoot system
 relationship: has_part PO:0009001 ! fruit
 relationship: has_part PO:0025112 ! second order infructescence axis
@@ -16990,6 +17085,7 @@ namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an infructescence (PO:0006342)." [POC:Ramona_Walls]
 synonym: "eje de la infructescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果序軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000004
 is_a: PO:0025029 ! shoot axis
 relationship: develops_from PO:0020122 ! inflorescence axis
 relationship: part_of PO:0006342 ! infructescence
@@ -17266,6 +17362,7 @@ synonym: "ovary septa (exact, plural)" EXACT [FNA:4be9b3cd-7aae-4eee-a102-19a6b4
 synonym: "septo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房隔壁   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:277
+is_a: BFO:0000004
 is_a: PO:0000030 ! septum
 relationship: develops_from PO:0005022 ! plant ovary wall
 relationship: part_of PO:0009062 ! gynoecium
@@ -17360,6 +17457,7 @@ synonym: "septo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_G
 synonym: "果実隔壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PlantSystematics_image_archive:1597
 xref: PO_GIT:277
+is_a: BFO:0000004
 is_a: PO:0000030 ! septum
 relationship: develops_from PO:0025262 ! plant ovary septum
 relationship: part_of PO:0009001 ! fruit
@@ -17390,6 +17488,7 @@ comment: If you are annotating to this term, please add an additional annotation
 synonym: "l&#243culo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果実室 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:271
+is_a: BFO:0000004
 is_a: PO:0025263 ! locule
 relationship: develops_from PO:0025266 ! plant ovary locule
 relationship: part_of PO:0009001 ! fruit
@@ -17535,6 +17634,7 @@ synonym: "polen (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pollen grain (exact)" EXACT []
 synonym: "花粉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:319
+is_a: BFO:0000040
 is_a: PO:0025280 ! microgametophyte
 relationship: develops_from PO:0020048 ! microspore
 relationship: located_in PO:0025277 ! pollen sac
@@ -17552,6 +17652,7 @@ subset: Pteridophytes
 synonym: "archegonial megagametophyte (exact)" EXACT []
 synonym: "arquegonio del megagametofito (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器大配偶体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: CARO:0000000
 is_a: PO:0025279 ! megagametophyte
 relationship: has_part PO:0025126 ! archegonium
 created_by: rwalls
@@ -17584,6 +17685,7 @@ synonym: "c&#233lula apical del embri&#243n (Spanish, exact)" EXACT Spanish [POC
 synonym: "embryonic meristematic apical cell (exact)" EXACT []
 synonym: "胚頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:281
+is_a: BFO:0000004
 is_a: PO:0025028 ! embryo plant cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: develops_from PO:0000423 ! plant zygote
@@ -17626,6 +17728,7 @@ comment: A seedling coleoptile  develops from an embryo coleoptile (PO:0025286).
 synonym: "cole&#243ptile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼葉鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:294
+is_a: BFO:0000004
 is_a: PO:0020033 ! coleoptile
 relationship: develops_from PO:0025286 ! plant embryo coleoptile
 relationship: participates_in PO:0007131 ! seedling development stage
@@ -17655,6 +17758,7 @@ comment: Develops from an embryo coleorhiza (PO:0025288).
 synonym: "coleorriza de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生根鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:340
+is_a: BFO:0000004
 is_a: PO:0020034 ! coleorhiza
 relationship: develops_from PO:0025288 ! embryo coleorhiza
 created_by: rwalls
@@ -17684,6 +17788,7 @@ comment: Develops from an embryo hypocotyl (PO:0025290). This term should only b
 synonym: "hipoc&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:341
+is_a: BFO:0000004
 is_a: PO:0020100 ! hypocotyl
 relationship: develops_from PO:0025290 ! embryo hypocotyl
 relationship: participates_in PO:0007131 ! seedling development stage
@@ -17713,6 +17818,7 @@ comment: Develops from an embryo epicotyl (PO:0025292).
 synonym: "epic&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生上胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:342
+is_a: BFO:0000004
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryo epicotyl
 created_by: rwalls
@@ -17741,6 +17847,7 @@ comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:002529
 synonym: "mesoc&#243tile de la plantual (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生中胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:343
+is_a: BFO:0000004
 is_a: PO:0020037 ! mesocotyl
 relationship: develops_from PO:0025294 ! embryo mesocotyl
 created_by: rwalls
@@ -17836,6 +17943,7 @@ comment: Part of a whole plant (PO:0000003) in the seedling development stage (P
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸-根合流点 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:250
+is_a: BFO:0000004
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: develops_from PO:0025300 ! embryo hypocotyl-root junction
 created_by: rwalls
@@ -18359,6 +18467,7 @@ comment: Includes flower development stage (PO:0007615), corolla development sta
 synonym: "etapa de desarrollo de una estructura colectiva de la planta (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "集合的植物構造の発生過程 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:391
+is_a: BFO:0000003
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0025007 ! collective plant organ structure
 created_by: rwalls
@@ -18504,8 +18613,7 @@ name: awn
 namespace: plant_anatomy
 def: "A cardinal organ part that is a slender, more or less straight and stiff, fine-pointed, terminal or subterminal appendage of a glume, lemma, or palea." [FNA:glossary]
 comment: Found in a spikelet of Poaceae. Sometimes the awn is a continuation of the bearing structure's central primary vein.
-synonym: "arista (exact)" EXACT [FNA:399ba59a-deb1-4bc9-b7e5-ed2b89700d5c]
-synonym: "arista (exact)" EXACT [FNA:5e6f29b2-6a37-4663-888b-7cb315ef277e]
+synonym: "arista (exact)" EXACT [FNA:399ba59a-deb1-4bc9-b7e5-ed2b89700d5c, FNA:5e6f29b2-6a37-4663-888b-7cb315ef277e]
 synonym: "arista (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "bristle (broad)" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
 synonym: "seta (related)" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
@@ -18771,6 +18879,7 @@ def: "A plant structure development stage (PO:0009012) that has as primary parti
 synonym: "etapa de desarrollo del tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛発生過程 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:401
+is_a: BFO:0000003
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0000282 ! trichome
 created_by: Laurel_Cooper
@@ -18857,6 +18966,7 @@ synonym: "etapa latente de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria
 synonym: "種子休眠期 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:424
 xref: PO_GIT:568
+is_a: BFO:0000003
 is_a: PO:0001170 ! seed development stage
 relationship: has_part PO:0025377 ! plant embryo dormant stage
 relationship: preceded_by PO:0001040 ! dry seed stage
@@ -18978,6 +19088,7 @@ def: "An intercellular space that is located directly below and contiguous with 
 synonym: "cavidad subestom&#225tica (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "気孔下腔、呼吸腔 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:415
+is_a: BFO:0000004
 is_a: PO:0025379 ! intercellular space
 relationship: adjacent_to PO:0008032 ! stomatal pore
 created_by: Laurel_Cooper
@@ -19063,6 +19174,7 @@ comment: Epicuticular waxes may take a variety of forms, such as plates, ribbons
 synonym: "cera epicuticular (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "エピクチクラワックス (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:416
+is_a: BFO:0000004
 is_a: PO:0025386 ! cuticular wax
 relationship: adjacent_to PO:0025387 ! plant cuticle proper
 created_by: Laurel_Cooper
@@ -19321,6 +19433,7 @@ synonym: "leaf margin blastozone  (exact)" EXACT []
 synonym: "leaf margin meristem (exact)" EXACT []
 synonym: "葉縁分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:412
+is_a: BFO:0000002
 is_a: PO:0025404 ! phyllome marginal meristem
 relationship: part_of PO:0009025 ! vascular leaf
 relationship: part_of PO:0025009 ! leaf lamina margin
@@ -19367,6 +19480,7 @@ comment: Forms as part of primary growth (GO term for primary growth has been re
 synonym: "tejido vascular primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次維管組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:432
+is_a: BFO:0000004
 is_a: PO:0009015 ! portion of vascular tissue
 relationship: develops_from PO:0025275 ! procambium
 created_by: rwalls
@@ -19381,6 +19495,7 @@ comment: Forms as part of secondary growth (GO:0080117) in vascular plants. Ofte
 synonym: "tejido vascular secundario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "二次維管組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:432
+is_a: BFO:0000004
 is_a: PO:0009015 ! portion of vascular tissue
 intersection_of: PO:0009015 ! portion of vascular tissue
 intersection_of: develops_from PO:0005598 ! vascular cambium
@@ -19427,6 +19542,7 @@ comment: May be found in the ray system (PO:0025411) and sometimes the axial sys
 synonym: "c&#233lula albuminosa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "有胚乳細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:442
+is_a: BFO:0000004
 is_a: PO:0000074 ! parenchyma cell
 relationship: adjacent_to PO:0025415 ! sieve cell
 relationship: part_of PO:0005417 ! phloem
@@ -19580,6 +19696,7 @@ def: "A plant structure development stage (PO:0009012) that has as primary parti
 synonym: "etapa de desarrollo de tejido vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tissue development stage (broad)" BROAD []
 synonym: "植物細胞発生過程 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: BFO:0000003
 is_a: PO:0009012 ! plant structure development stage
 relationship: has_participant PO:0009007 ! portion of plant tissue
 created_by: rwalls
@@ -19660,6 +19777,7 @@ comment: The activity of a leaf plate meristem results in increase in the surfac
 synonym: "meristema en placa de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉の板状分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:413
+is_a: BFO:0000002
 is_a: PO:0025428 ! phyllome plate meristem
 relationship: part_of PO:0009025 ! vascular leaf
 relationship: participates_in PO:0001052 ! vascular leaf expansion stage
@@ -20290,6 +20408,7 @@ namespace: plant_structure_development_stage
 def: "A root development stage (PO:0007520) during which a coleorhiza (PO:0020034) emerges from the seed coat (PO:0009088)." [POC:curators]
 comment: Occurs in Poaceae and some other monocotyledons. May occur simultaneously with coleoptile emergence from the growth medium.  The actual point of emergence from the seed coat (PO:0009088) may not be observed if the seed (PO:0009010) is underneath a growth medium. In a fruit (PO:0009001) with a persistent pericarp (PO:0009084), emergence from the seed coat may not be observed. If the fruit is a caryopsis, the dry pericarp is fused with the seed coat, and emergence from the pericarp is simultaneous with emergence from the seed coat. This terms is used only for seed plants.
 xref: PO_GIT:370
+is_a: BFO:0000003
 is_a: PO:0007520 ! root development stage
 relationship: part_of PO:0007057 ! seed germination stage
 created_by: Laurel_Cooper
@@ -20579,7 +20698,7 @@ id: PO:0025496
 name: multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." [CARO:0000055, POC:curators]
-comment: Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).
+comment: Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).  Refers to CARO:0000055 multi-tissue structure, def'n: Anatomical structure that has as parts two or more portions of tissue of at least two different types, and which through specific morphogenetic processes, form a single distinct structural unit demarcated by bona-fide boundries from other structural units of differnt types.
 synonym: "estructura vegetal con m&#250ltiples tejidos (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "複数の組織からなる植物構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:480
@@ -20650,6 +20769,7 @@ def: "A fruit development stage (PO:0001002) that begins with the formation of a
 comment: A fruit formation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage applies to an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage (PO:0007042).
 subset: Maize
 xref: PO_GIT:504
+is_a: BFO:0000003
 is_a: PO:0001002 ! fruit development stage
 relationship: has_participant PO:0009001 ! fruit
 created_by: rwalls
@@ -20743,6 +20863,7 @@ comment: The archegonium central cell divides asymmetrically to form a smaller v
 subset: Gymnosperms
 synonym: "造卵器中央細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:182
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: rwalls
@@ -20915,6 +21036,7 @@ subset: CL
 synonym: "gametangium (broad)" BROAD []
 synonym: "単細胞植物配偶子嚢 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:513
+is_a: BFO:0000002
 is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: Laurel_Cooper
@@ -20952,6 +21074,7 @@ namespace: plant_anatomy
 def: "A native plant cell (PO:0025606) that develops from the archegonium central cell (PO:0025509), and lies at the base of the archegonium neck (PO:0030039), above the archegonium egg cell (PO:0025122) in the venter (PO:0030038)." [ISBN:0521794331, PMID:17041880, POC:Laurel_Cooper]
 comment: The ventral canal cell is smaller than the archegonium egg cell (PO:0025122), which also develops from the asymmetric division of the archegonium central cell (PO:0025509). It lack a plant-type cell wall (GO:0009505) (ref? ). When the archegonium (PO:0025126) is mature, the ventral canal cell (along with the archegonium neck canal cells; PO:0030065), contributes to the formation of the archegonium neck canal (PO:0030066) by distintegrating and becoming mucilaginous. The canal cells and may produce chemicals to attract the male gamete, the antheridium sperm cells (PO:0025120).
 xref: PO_GIT:514
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0025509 ! archegonium central cell
 relationship: part_of PO:0030038 ! venter
@@ -21067,6 +21190,7 @@ def: "A shoot axis (PO:00025029) that develops in an unusual place." [POC:Laurel
 synonym: "eje adventicio del epiblasto (Spanish, exact) (related)" RELATED []
 synonym: "不定シュート軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:527
+is_a: BFO:0000004
 is_a: PO:0025029 ! shoot axis
 relationship: develops_from PO:0000055 ! bud
 created_by: Laurel_Cooper
@@ -21233,7 +21357,7 @@ creation_date: 2013-04-08T14:37:38Z
 id: PO:0025546
 name: accessory paraclade
 namespace: plant_anatomy
-def: "A primary inflorescence branch (PO:0006321) borne in the same axil (PO:0025224) as an existing primary inflorescence branch (PO:0006321)." [PMID:7555701, PO:curators]
+def: "A second order inflorescence axis (PO:0006321) borne in the same axil (PO:0025224) as an existing second order inflorescence axis." [PMID:7555701, PO:cooperl, PO:curators]
 synonym: "accessory second order inflorescence axis (exact)" EXACT []
 synonym: "paraclado accesorio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "副（補助）側生分枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -21246,7 +21370,7 @@ creation_date: 2013-04-18T15:34:19Z
 id: PO:0025547
 name: cauline paraclade
 namespace: plant_anatomy
-def: "A primary inflorescence branch (PO:0006321) borne on the elongated first order inflorescence axis (PO:0025104)." [PMID:7555701, POC:curators]
+def: "A second order inflorescence axis (PO:0006321) borne on an elongated first order inflorescence axis (PO:0025104)." [PMID:7555701, POC:curators]
 synonym: "paraclado caulinar (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎側生分枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:526
@@ -21258,7 +21382,7 @@ creation_date: 2013-04-18T15:45:59Z
 id: PO:0025548
 name: rosette paraclade
 namespace: plant_anatomy
-def: "A primary inflorescence branch (PO:0006321) borne on the compacted first order inflorescence axis (PO:0025104), forming the rosette." [PMID:755701, POC:curators]
+def: "A second order inflorescence axis (PO:0006321) borne on a compacted first order inflorescence axis (PO:0025104), forming the rosette." [PMID:755701, PO:cooperl, POC:curators]
 synonym: "paraclado en roseta (Spanish, exact)  (related)" RELATED [POC:Maria_Alejandra_Gandolfo]
 synonym: "ロゼット側生分枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:526
@@ -21558,6 +21682,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf initiation stage (PO:0001051) during which the vascular leaf primordium (PO:0004725) develops an adaxial side (PO:0004726) and an abaxial side (PO:0004725)." [POC:Brian_Atkinson, POC:Laurel_Cooper]
 comment: The vascular leaf primordium adaxial side (PO:0004726) is the side proximal to the axis of the vegetative shoot apical meristem (PO:0020148), while abaxial side (PO:0004725) is the distal side.
 xref: PO_GIT:569
+is_a: BFO:0000003
 is_a: PO:0001051 ! vascular leaf initiation stage
 relationship: preceded_by PO:0001019 ! vascular leaf primordium formation stage
 created_by: brianatkinson
@@ -21580,6 +21705,7 @@ namespace: plant_structure_development_stage
 def: "A vascular leaf development stage (PO:0025570) that begins with the formation of procambium (PO:0025275) and protoderm (PO:0006210) and ends with the formation and differentiation of the leaf epidermis (PO:0006016) and leaf vascular system (PO:0000036) and all the specialized cells of the vascular leaf." [POC:Laurel_Cooper]
 synonym: "vascular leaf morphogenesis stage (exact)" EXACT []
 xref: PO_GIT:572
+is_a: BFO:0000003
 is_a: PO:0025570 ! vascular leaf development stage
 relationship: preceded_by PO:0001051 ! vascular leaf initiation stage
 created_by: Laurel_Cooper
@@ -21724,6 +21850,7 @@ comment: During this stage, the process of floral organ development (GO:0048437)
 synonym: "flower morphogenesis stage  (exact)" EXACT []
 xref: PO_GIT:550
 xref: PO_GIT:604
+is_a: BFO:0000003
 is_a: PO:0025339 ! plant organ development stage
 relationship: part_of PO:0007615 ! flower development stage
 relationship: preceded_by PO:0025588 ! flower meristem transition stage
@@ -21968,6 +22095,7 @@ subset: Tomato
 synonym: "fruit pedicel joint (exact)" EXACT []
 synonym: "pedicel joint (related)" RELATED []
 xref: PO_GIT:590
+is_a: BFO:0000004
 is_a: PO:0000146 ! abscission zone
 relationship: develops_from PO:0025608 ! flower pedicel abscission zone
 relationship: part_of PO:0004536 ! infructescence fruit pedicel
@@ -21992,6 +22120,7 @@ namespace: plant_anatomy
 def: "A shoot system (PO:0009006) that has as parts only vegetative tissues and organs." [POC:Laurel_Cooper]
 xref: PO_GIT:167
 xref: PO_GIT:593
+is_a: BFO:0000004
 is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0000058 ! vegetative bud
 relationship: has_part PO:0025223 ! vegetative shoot apex
@@ -22017,6 +22146,7 @@ namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) that forms a tough, protective outer layer on a shoot axis and includes as parts a shoot axis hypodermis (PO:0005057) and a shoot axis epidermis (PO:0000112)." [POC:Laurel_Cooper]
 synonym: "shoot axis rind (exact)" EXACT []
 xref: PO_GIT:596
+is_a: CARO:0000000
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0000112 ! shoot axis epidermis
 relationship: has_part PO:0005057 ! shoot axis hypodermis
@@ -22138,7 +22268,7 @@ xref: PO_GIT:661
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020104 ! leaf sheath
 created_by: Laurel_Cooper
-creation_date: 2017-1-24T14:41:36Z
+creation_date: 2017-01-24T14:41:36Z
 
 [Term]
 id: PO:0025620
@@ -22238,8 +22368,8 @@ synonym: "branch tip (exact)" EXACT []
 xref: PO_GIT:XYZ
 is_a: PO:0000037 ! shoot axis apex
 relationship: part_of PO:0025073 ! branch
-property_value: http://purl.org/dc/elements/1.1/date 2018-02-15T17:24:36Z xsd:dateTime
 created_by: Laurel_Cooper
+creation_date: 2018-02-15T17:24:36Z
 
 [Term]
 id: PO:0028005
@@ -22460,7 +22590,6 @@ synonym: "vascular leaf apical initial (exact)" EXACT []
 synonym: "維管束を持つ葉の分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030011 ! leaf meristematic apical cell
-is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: rwalls
 creation_date: 2011-03-25T09:44:45Z
@@ -22480,6 +22609,7 @@ synonym: "phyllid apical cell (exact)" EXACT []
 synonym: "phyllid apical initial (exact)" EXACT []
 synonym: "維管束を持たない葉の分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
+is_a: BFO:0000004
 is_a: PO:0030011 ! leaf meristematic apical cell
 is_a: PO:0030019 ! gametophore meristematic apical cell
 relationship: develops_from PO:0030087 ! non-vascular leaf initial cell
@@ -22502,6 +22632,7 @@ synonym: "gametophyte apical initial (exact)" EXACT []
 synonym: "gametophytic meristematic apical cell (exact)" EXACT []
 synonym: "配偶体分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
+is_a: BFO:0000002
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
 intersection_of: participates_in PO:0028003 ! gametophyte development stage
@@ -22524,6 +22655,7 @@ synonym: "sporophyte apical initial (related)" RELATED []
 synonym: "sporophytic meristematic apical cell (exact)" EXACT []
 synonym: "胞子体分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
+is_a: BFO:0000002
 is_a: PO:0030007 ! meristematic apical cell
 intersection_of: PO:0030007 ! meristematic apical cell
 intersection_of: participates_in PO:0028002 ! sporophyte development stage
@@ -22545,7 +22677,6 @@ synonym: "seta apical initial (exact)" EXACT []
 synonym: "柄分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030010 ! shoot axis meristematic apical cell
-is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0030032 ! seta
 created_by: rwalls
 creation_date: 2011-04-26T07:56:36Z
@@ -22577,6 +22708,7 @@ synonym: "gamet&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Ga
 synonym: "ramet (broad)" BROAD []
 synonym: "茎葉体, 蘚苔類の配偶体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:287
+is_a: BFO:0000004
 is_a: PO:0009006 ! shoot system
 relationship: develops_from PO:0030026 ! gametophore bud
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -22597,7 +22729,6 @@ synonym: "gametophore apical initial (exact)" EXACT []
 synonym: "茎葉体分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030009 ! shoot meristematic apical cell
-is_a: PO:0030014 ! gametophyte meristematic apical cell
 intersection_of: PO:0030009 ! shoot meristematic apical cell
 intersection_of: part_of PO:0030018 ! gametophore
 relationship: part_of PO:0030018 ! gametophore
@@ -22729,6 +22860,7 @@ synonym: "brown bud (exact)" EXACT []
 synonym: "yema del gamet&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎葉体芽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:288
+is_a: BFO:0000004
 is_a: PO:0000058 ! vegetative bud
 relationship: develops_from PO:0030083 ! gametophore bud initial cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -22748,6 +22880,7 @@ synonym: "talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "thalli (exact, plural)" EXACT []
 synonym: "葉状体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:317
+is_a: BFO:0000002
 is_a: PO:0000003 ! whole plant
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -22781,6 +22914,7 @@ subset: Pteridophytes
 synonym: "pie del esporofito (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胞子体あし (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:304
+is_a: BFO:0000002
 is_a: PO:0009008 ! plant organ
 relationship: has_part PO:0000078 ! transfer cell
 relationship: participates_in PO:0028002 ! sporophyte development stage
@@ -22815,6 +22949,7 @@ subset: Pteridophytes
 synonym: "gametophytic perianth (exact)" EXACT []
 synonym: "perianto del grametofito (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "配偶体花蓋、花被  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: CARO:0000000
 is_a: PO:0025023 ! collective phyllome structure
 relationship: has_part PO:0030030 ! perichaetal bract
 relationship: part_of PO:0030018 ! gametophore
@@ -22832,6 +22967,7 @@ synonym: "seta (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "setae (related)" RELATED Plural []
 synonym: "とげ、剛毛、コケの柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:292
+is_a: BFO:0000002
 is_a: PO:0025066 ! stalk
 relationship: participates_in PO:0028002 ! sporophyte development stage
 created_by: rwalls
@@ -22847,6 +22983,7 @@ subset: Bryophytes
 synonym: "anteridi&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄器床柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:320
+is_a: BFO:0000002
 is_a: PO:0025066 ! stalk
 relationship: has_part PO:0030075 ! antheridium head
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -22863,6 +23000,7 @@ subset: Bryophytes
 synonym: "arquegoni&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌器床柄、雌器托 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OB_SF_PO:3272612
+is_a: CARO:0000000
 is_a: PO:0025066 ! stalk
 relationship: has_part PO:0030076 ! archegonium head
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -22914,6 +23052,7 @@ synonym: "caliptra de la c&#225psula productora de esporas (Spanish, exact)" EXA
 synonym: "spore capsule calyptrae (exact, plural)" EXACT [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
 synonym: "コケ類　蘚帽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:305
+is_a: BFO:0000004
 is_a: PO:0025001 ! cardinal organ part
 relationship: develops_from PO:0025126 ! archegonium
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -23270,6 +23409,7 @@ synonym: "braquicito (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "brood cell (exact)" EXACT [ISBN:0962073342]
 synonym: "原糸体細胞の細胞壁を厚くした細胞、耐性細胞(brood cell?) (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:330
+is_a: BFO:0000002
 is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -23288,6 +23428,7 @@ synonym: "c&#233lula del tmema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "dlichotmema cell (narrow)" NARROW []
 synonym: "tmema細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:331
+is_a: BFO:0000002
 is_a: PO:0025606 ! native plant cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -23319,6 +23460,7 @@ subset: Bryophytes
 synonym: "tmema (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 synonym: "tmema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 xref: PO_GIT:331
+is_a: BFO:0000002
 is_a: PO:0009007 ! portion of plant tissue
 relationship: has_part PO:0030059 ! tmema cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
@@ -23382,6 +23524,7 @@ synonym: "archegonial neck canal cell (exact)" EXACT []
 synonym: "c&#233lula del canal del cuello del arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器頚溝細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:307
+is_a: BFO:0000004
 is_a: PO:0025606 ! native plant cell
 relationship: develops_from PO:0025510 ! archegonium initial cell
 relationship: part_of PO:0030039 ! archegonium neck
@@ -23481,6 +23624,7 @@ comment: Found in bryophytes and pteridophytes growing from the epidermis of a g
 synonym: "rizoide epid&#233rmico (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "表皮仮根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:347
+is_a: BFO:0000004
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030068 ! epidermal rhizoid initial cell
 created_by: rwalls
@@ -23577,6 +23721,7 @@ synonym: "archegonial head (exact)" EXACT []
 synonym: "cabeza del arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器頭部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: OB_SF_PO:3272612
+is_a: CARO:0000000
 is_a: PO:0025001 ! cardinal organ part
 relationship: has_part PO:0025126 ! archegonium
 created_by: rwalls
@@ -23621,6 +23766,7 @@ subset: Bryophytes
 synonym: "rizoide proton&#233mico (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原糸体仮根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:347
+is_a: BFO:0000004
 is_a: PO:0030078 ! rhizoid
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial cell
 created_by: rwalls
@@ -24100,8 +24246,8 @@ comment: A pedicel has a single internode, determinate growth, and is the ultima
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:672
 is_a: PO:0025029 ! shoot axis
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:43:36Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-03-17T00:43:36Z
 
 [Term]
 id: PO:0030113
@@ -24111,8 +24257,8 @@ def: "A pedicel (PO:0030112) that bears a flower (PO:0009046)." [NYBG:Brandon_Si
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:673
 is_a: PO:0030112 ! pedicel
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:49:32Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-03-17T00:49:32Z
 
 [Term]
 id: PO:0030114
@@ -24122,25 +24268,25 @@ def: "A pedicel (PO:0030112) that bears a fruit (PO:0009001)." [NYBG:Brandon_Sin
 synonym: "pedicelo del fruto (Spanish, broad)" BROAD []
 xref: PO_GIT:487
 is_a: PO:0030112 ! pedicel
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T01:01:13Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-03-17T01:01:13Z
 
 [Term]
 id: PO:0030115
 name: raceme inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on an indeterminate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on an indeterminate, first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include mouse-ear cress (Arabidopsis thaliana, Brassicaceae), wild black cherry (Prunus serotina, Rosaceae), and pokeweeds (Phytolacca spp., Phytolaccaceae).
 synonym: "raceme (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:29:10Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:29:10Z
 
 [Term]
 id: PO:0030116
 name: compound raceme inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and pedicellate (PATO:0001438) flowers (PO:0009046) on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of an indeterminate, first order inflorescence axis (PO:0025104) and pedicellate flowers (PO:0009046) on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include many species Brassicaceae, such as pepperweeds (Lepidium spp.), and Fabaceae, such as melilot (Melilotus officinialis) and hop trefoil (Trifolium campestre) species, as well as bananas (Musa spp.; Musaceae).
 synonym: "compound raceme (exact)" EXACT []
 synonym: "double raceme (exact)" EXACT []
@@ -24149,26 +24295,26 @@ synonym: "heterothetic double raceme (narrow)" NARROW []
 synonym: "homothetic compound raceme (narrow)" NARROW []
 synonym: "homothetic double raceme (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:34:46Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:34:46Z
 
 [Term]
 id: PO:0030117
 name: spike inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on an indeterminate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of sessile flowers (PO:0009046) on an indeterminate, first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The basal-most flowers of some spike inflorescences have short inflorescence flower pedicels (PO:0009052), such as in ladies'-tresses orchids (Spiranthes; Orchidaceae). Examples include black pepper (Piper nigrum; Piperaceae).
 synonym: "spike (exact)" EXACT []
 synonym: "stachyoid (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:38:28Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:38:28Z
 
 [Term]
 id: PO:0030118
 name: compound spike inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436) flowers (PO:0009046), or spikelets (PO:0009051), on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436) flowers (PO:0009046), or spikelets (PO:0009051), on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some amaranth species (Amaranthus spp., Amaranthaceae).
 synonym: "compound spike (exact)" EXACT []
 synonym: "double spike (exact)" EXACT []
@@ -24177,38 +24323,38 @@ synonym: "heterothetic double spike (narrow)" NARROW []
 synonym: "homothetic compound spike (narrow)" NARROW []
 synonym: "homothetic double spike (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:41:00Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:41:00Z
 
 [Term]
 id: PO:0030119
 name: catkin inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of  indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436), unisexual flowers (PO:0009046) that are each subtended by conspicuous (PATO:0000463) inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include poplars (including Populus trichocarpa, Salicaceae) and birches (Betula spp., Betulaceae). Catkin inflorescences are often pendulate.
 synonym: "ament (exact)" EXACT []
 synonym: "catkin (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:48:27Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:48:27Z
 
 [Term]
 id: PO:0030120
 name: spadix inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, indeterminate first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of sessile flowers (PO:0009046) on a radially-enlarged, indeterminate, first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include aroids (Araceae), palms (Arecaceae).
 synonym: "spadices (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "spadix (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:50:40Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:50:40Z
 
 [Term]
 id: PO:0030121
 name: capitulum inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, determinate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged, determinate, first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
 synonym: "calathidium (exact)" EXACT []
 synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
@@ -24216,14 +24362,14 @@ synonym: "capitulum (exact)" EXACT []
 synonym: "head (broad)" BROAD []
 synonym: "hypanthodium (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:53:49Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:53:49Z
 
 [Term]
 id: PO:0030122
 name: compound capitulum inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a radially enlarged inflorescence axis (PO:0020122) and sessile (PATO:0001436) flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged inflorescence axis (PO:0020122), and sessile flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere] {comment="PO:cooperl"}
 comment: Examples include many species of daisy family (Asteraceae). The second order inflorescences (PO:0025240) of compound capitulum inflorescences are often called glomerules.
 synonym: "compound capitulum (exact)" EXACT []
 synonym: "double capitulum (exact)" EXACT []
@@ -24234,52 +24380,52 @@ synonym: "heterothetic double capitulum (narrow)" NARROW []
 synonym: "homothetic compound capitulum (narrow)" NARROW []
 synonym: "homothetic double capitulum (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:58:48Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:58:48Z
 
 [Term]
 id: PO:0030123
 name: panicle inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (PO:ID) is composed of pedicellate (PATO:0001438) flowers (PO:0009046), or spikelets (PO:0009051), on determinate inflorescence axes (PO:0020122)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
-comment: Panicle inflorescences are most often conical in shape. Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), bromes (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rices (Oryza spp.), foxgrasses (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae).
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) or spikelets (PO:0009051) on determinate inflorescence axes (PO:0020122).," [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
+comment: Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), brome (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rice (Oryza spp.), foxgrass (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae). Panicle inflorescences are most often conical in shape.
 synonym: "panicle (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:04:46Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T13:04:46Z
 
 [Term]
 id: PO:0030124
 name: corymb inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a convex plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with both monopodial and sympodial growth habits, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104), and determinate higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a convex plane of flowers." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include highbush blueberry (Vaccinium corymbosum; Ericaceae).
 synonym: "compound corymb (exact)" EXACT []
 synonym: "corymb (exact)" EXACT []
 synonym: "double corymb (exact)" EXACT []
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:07:50Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T13:07:50Z
 
 [Term]
 id: PO:0030125
 name: anthela inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a concave plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with both monopodial and sympodial growth habits, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and determinate, higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a concave plane of flowers." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of Filipendula (Rosaceae).
 synonym: "anthela (exact)" EXACT []
 synonym: "anthelae (exact)" NARROW [] {synonymtypedef="Plural"}
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:12:21Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T13:12:21Z
 
 [Term]
 id: PO:0030126
 name: cyme inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and pedicellate (PATO:0001438) flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and pedicellate flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Cyme inflorescence is used here to treat inflorescences that are commonly referred to as dichasial, pleiochasial, or polychasial cymes; each of which are named according to the number of higher order inflorescence axes at a single axis. Cyme is not used here to treat monochasial cymose inflorescences, which contain at least one repeating sympodial unit, such as cincinnus inflorescence (PO:0030132), compound cincinnus inflorescence (PO:0030133), bostryx (PO:0030134), rhipidium inflorescence (PO:0030131), drepanium inflorescence (PO:0030135), and compound drepanium inflorescence (PO:0030136). Examples include many species of the Figwort family (Scrophulariaceae, including green figwort Scrophularia umbrosa) and the Verbena family (Verbenaceae).
 synonym: "cyathia (narrow)" NARROW [] {synonymtypedef="Plural"}
 synonym: "cyathium (narrow)" NARROW []
@@ -24290,14 +24436,14 @@ synonym: "pleiochasium (narrow)" NARROW []
 synonym: "polychasium (narrow)" NARROW []
 synonym: "verticillaster (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:36:16Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T17:36:16Z
 
 [Term]
 id: PO:0030127
 name: indeterminate thyrse inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049) which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and dichasial second order inflorescences (PO:0025240) with pedicellate (PATO:0001438) flowers (PO:0009046) and determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) which at flowering stage (PO:0007616), is composed of an indeterminate, first order inflorescence axis (PO:0025104) and dichasial second order inflorescences (PO:0025240) with pedicellate  flowers (PO:0009046), and determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The higher order inflorescence axes (PO:0009081) of an indeterminate thyrse inflorescence may have either a monopodial or sympodial growth habit depending on whether single or paired inflorescence axillary meristems (PO:0009105) develop at each axis. Examples include beardtongues (Penstemon spp.; Plantaginaceae).
 synonym: "conjunct-hetercladic thyrse (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
@@ -24310,39 +24456,39 @@ synonym: "monothyrsic inflorescence (exact)" EXACT []
 synonym: "pleiothyrsoid (exact)" EXACT []
 synonym: "thyrse (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:52:57Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T17:52:57Z
 
 [Term]
 id: PO:0030128
 name: determinate thyrse inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), which at anthesis is composed of an determinate first order inflorescence axis (PO:0025104) and dichasial second order inflorescences with pedicellate (PATO:0001438) flowers (PO:0009046) and determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) which at flowering stage (PO:0007616) is composed of a determinate, first order inflorescence axis (PO:0025104) and dichasial second order inflorescences with pedicellate flowers (PO:0009046) and determinate, higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The higher order inflorescence axes (PO:0009081) of an determinate thyrse inflorescence may have either a monopodial or sympodial growth habit depending on whether single or paired inflorescence axillary meristems (PO:0009105) develop at each axis. Examples include lilacs (Syringia spp.; Oleaceae), buckeyes (Aesculus spp.; Hippocastanaceae) and hydrangea (Hydrangea paniculata; Hydrangeaceae).
 synonym: "determinate thyrse (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
 synonym: "thyrse (broad)" BROAD []
 synonym: "thyrsoid (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:57:44Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T17:57:44Z
 
 [Term]
 id: PO:0030129
 name: umbel inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
-comment: The flowers (PO:0009046) of an umbel inflorescence appear as clusters originating from a single point, due to compression of the inflorescence axis internodes (PO:0006326) of the first order inflorescence axis (PO:0025104). Umbel inflorescences are characteristic of the the Ivy family (Apiaceae or Umbelliferae), including english ivy (Hedera helix) and ginseng (Panax ginseng), as well as the Onion family (Alliaceae).
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
+comment: The flowers (PO:0009046) of an umbel inflorescence appear as clusters originating from a single point, due to compression of the inflorescence axis internodes (PO:0006326) of the first order inflorescence axis (PO:0025104). Umbel inflorescences are characteristic of the the Ivy family (Apiaceae or Umbelliferae), including english ivy (Hedera helix), ginseng (Panax ginseng), and the onion family (Alliaceae).
 synonym: "umbel (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:41:27Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:41:27Z
 
 [Term]
 id: PO:0030130
 name: compound umbel inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326) and pedicellate (PATO:0001438) flowers (PO:0009046) on higher order inflorescence axes with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326), and pedicellate flowers (PO:0009046) on higher order inflorescence axes, with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The flowers (PO:0009046) of a compound umbel inflorescence appear as clusters originating from a single point, due to compression of inflorescence axis internodes (PO:0006326) of the higher order inflorescence axes (PO:0009081). Examples include species of the Ivy family (Apiaceae or Umbelliferae), including dill (Anethum graveolens), fennel (Foeniculum vulgare, Apiaceae) and poison hemlock (Conium maculatum, Apiaceae).
 synonym: "compound umbel (exact)" EXACT []
 synonym: "double umbel (exact)" EXACT []
@@ -24351,27 +24497,27 @@ synonym: "heterothetic double umbel (narrow)" NARROW []
 synonym: "homothetic compound umbel (narrow)" NARROW []
 synonym: "homothetic double umbel (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:44:03Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:44:03Z
 
 [Term]
 id: PO:0030131
 name: rhipidium inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) that bear pedicellate (PATO:0001438) flowers (PO:0009046) in a single plane, with the latest-developing flowers on the highest order inflorescence axis which is found at the center of the inflorescence." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) that bear pedicellate flowers (PO:0009046) in a single plane, with the latest-developing flowers on the highest order inflorescence axis, found at the center of the inflorescence." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Iris family (Iridaceae).
 synonym: "monochasium (broad)" BROAD []
 synonym: "rhipidia (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "rhipidium (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:47:43Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:47:43Z
 
 [Term]
 id: PO:0030132
 name: cincinnus inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Dayflower family (Commelinaceae).
 synonym: "boragoid (exact)" EXACT []
 synonym: "cincinni (exact)" EXACT [] {synonymtypedef="Plural"}
@@ -24381,62 +24527,62 @@ synonym: "homaxone (exact)" EXACT []
 synonym: "monochasium (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:50:44Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:50:44Z
 
 [Term]
 id: PO:0030133
 name: compound cincinnus inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with sympodial and monopodial growth habits, which at anthesis is composed of determinate inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axes of the second order inflorescences (PO:0025240)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with sympodial and monopodial growth habits, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axes of the second order inflorescences (PO:0025240)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "compound cincinnus (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
 synonym: "double cincinnus (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:55:44Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:55:44Z
 
 [Term]
 id: PO:0030134
 name: bostryx inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle (PATO:1000009) of approximately 90 degree angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle of approximately 90 degrees from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "bostryches (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "bostryx (exact)" EXACT []
 synonym: "helicoid cyme (broad)" BROAD []
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:58:12Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:58:12Z
 
 [Term]
 id: PO:0030135
 name: drepanium inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute (PATO:0000389) angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include tomato (Lycopersicum esculentum; Solanaceae).
 synonym: "drepanium (exact)" EXACT []
 synonym: "monochasium (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T23:00:30Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T23:00:30Z
 
 [Term]
 id: PO:0030136
 name: compound drepanium inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both sympodial and monopodial growth habits, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute (PATO:0000389) angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with both sympodial and monopodial growth habits, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "dichasium (broad)" BROAD []
 synonym: "drepanium (exact)" EXACT []
 synonym: "helicoid (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T23:03:24Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T23:03:24Z
 
 [Typedef]
 id: adjacent_to
@@ -24456,7 +24602,6 @@ id: developmentally_preceded_by
 name: developmentally_preceded_by
 def: "X developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p." [RO:0002258]
 xref: RO:0002258
-is_obsolete: true
 created_by: Laurel_Cooper
 creation_date: 2013-06-27T13:16:56Z
 
@@ -24475,7 +24620,7 @@ is_transitive: true
 [Typedef]
 id: has_participant
 name: has_participant
-xref: BFO:0000057
+xref: RO:0000057
 
 [Typedef]
 id: isolated_from_germplasm
@@ -24502,8 +24647,7 @@ is_transitive: true
 [Typedef]
 id: participates_in
 name: participates_in
-xref: BFO:0000056
-holds_over_chain: part_of participates_in
+xref: RO:0000056
 inverse_of: has_participant ! has_participant
 
 [Typedef]

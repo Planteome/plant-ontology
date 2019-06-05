@@ -3617,7 +3617,7 @@ relationship: part_of PO:0009010 ! seed
 id: PO:0004721
 name: paraclade cortex
 namespace: plant_anatomy
-def: "A portion of cortex (PO:0005708) that is part of an inflorescence branch (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
+def: "A portion of cortex (PO:0005708) that is part of a higher order inflorescence axis (PO:0009081), also called a paraclade." [POC:curators, POC:Laurel_Cooper, TAIR_curator:Katica_Ilic]
 synonym: "cortex (corteza) del paraclado (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "inflorescence branch cortex (exact)" EXACT []
 synonym: "portion of paraclade cortex tissue (exact)" EXACT []
@@ -3944,7 +3944,7 @@ relationship: part_of PO:0009031 ! sepal
 id: PO:0005022
 name: plant ovary wall
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) that is composed of plant ovary abaxial (outer) epidermis (PO:0005023), plant ovary adaxial (inner) epidermis (PO:0005024), and a plant ovary wall middle layer (PO:0005025)" [Gramene:Pankaj_Jaiswal, PMID:10332605, POC:Laurel_Cooper]
+def: "A portion of plant tissue (PO:0009007) that is composed of plant ovary outer epidermis (PO:0005023), plant ovary inner epidermis (PO:0005024), and a plant ovary wall middle layer (PO:0005025)" [Gramene:Pankaj_Jaiswal, PMID:10332605, POC:Laurel_Cooper]
 synonym: "pared del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
@@ -3953,21 +3953,23 @@ relationship: part_of PO:0009072 ! plant ovary
 
 [Term]
 id: PO:0005023
-name: plant ovary abaxial epidermis
+name: plant ovary outer epidermis
 namespace: plant_anatomy
-def: "A portion of ovary epidermis (PO:0006063) which is the outer surface of a plant ovary (PO:0009072).." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
-synonym: "epidermis abaxial del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子房の裏側 背軸側の表皮 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+def: "A portion of ovary epidermis (PO:0006063) which is the outer surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
+synonym: "epidermis externo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plant ovary abaxial epidermis (related)" RELATED []
+synonym: "子房の裏側 背軸側の表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
 is_a: PO:0006063 ! plant ovary epidermis
 
 [Term]
 id: PO:0005024
-name: plant ovary adaxial epidermis
+name: plant ovary inner epidermis
 namespace: plant_anatomy
 def: "A portion of ovary epidermis (PO:0006063) which is the inner surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
-synonym: "epidermis adaxial del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "子房の表側、向軸側の表皮 (Japanese, exact)  (exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+synonym: "epidermis interno del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plant ovary adaxial epidermis (related)" RELATED []
+synonym: "子房の表側、向軸側の表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
 is_a: PO:0006063 ! plant ovary epidermis
 
@@ -6036,7 +6038,8 @@ relationship: part_of PO:0006309 ! tassel spikelet
 id: PO:0006311
 name: tassel sessile spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel without a pedicel, developing from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "A tassel spikelet (PO:0006309) which is the ultimate, sessile, higher order inflorescence axis (PO:0009081) of the maize tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the tassel spikelet pair meristem (PO:0006358).
 subset: Maize
 synonym: "penacho (borla) s&#233sil del florete (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の無柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6046,7 +6049,8 @@ is_a: PO:0006309 ! tassel spikelet
 id: PO:0006312
 name: tassel pedicellate spikelet
 namespace: plant_anatomy
-def: "Ultimate inflorescence branch of the maize tassel with a pedicel, developing from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "A tassel spikelet (PO:0006309) which is the ultimate, pedicellate, higher order inflorescence axis (PO:0009081) of the maize tassel inflorescence (PO:0020126)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the tassel spikelet pair meristem (PO:0006358).
 subset: Maize
 synonym: "penacho (borla) pedicelada del florete (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雄穂（花）の有柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6139,7 +6143,7 @@ is_a: PO:0009081 ! higher order inflorescence axis
 id: PO:0006322
 name: third order inflorescence axis
 namespace: plant_anatomy
-def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a second order inflorescence axis (PO:0006322)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a second order inflorescence axis (PO:0006322)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "eje de tercero orden de la inflorescencia  (Spanish, exact)" EXACT Spanish []
 synonym: "second order inflorescence branch (exact)" EXACT []
 synonym: "second order paraclade (exact)" EXACT []
@@ -6165,7 +6169,7 @@ relationship: part_of PO:0020126 ! tassel inflorescence
 id: PO:0006324
 name: first order tassel inflorescence axis
 namespace: plant_anatomy
-def: "A first order inflorescence axis (PO:0025104) that is the primary axis of a tassel inflorescence (PO:0020126)." [POC:curators] {comment="POC:Laurel_Cooper"}
+def: "A first order inflorescence axis (PO:0025104) that is the primary axis of a tassel inflorescence (PO:0020126)." [POC:curators, POC:Laurel_Cooper]
 subset: Angiosperm
 subset: Maize
 synonym: "central axis of tassel inflorescence (exact)" EXACT []
@@ -6435,7 +6439,8 @@ relationship: part_of PO:0020142 ! stem internode
 id: PO:0006348
 name: ear pedicellate spikelet
 namespace: plant_anatomy
-def: "Ultimate pedicellate inflorescence branch of the maize ear that develops from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "An ear spikelet (PO:0006320) which is the ultimate, pedicellate, higher order inflorescence axis (PO:0009081) of the maize ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the ear spikelet pair meristem (PO:0006360).
 subset: Maize
 synonym: "espiga pedicelada de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）の有柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6445,7 +6450,8 @@ is_a: PO:0006320 ! ear spikelet
 id: PO:0006349
 name: ear sessile spikelet
 namespace: plant_anatomy
-def: "Ultimate sessile inflorescence branch of the maize ear that develops from the spikelet pair meristem." [Gramene:Pankaj_Jaiswal]
+def: "An ear spikelet (PO:0006320) which is the ultimate, sessile, higher order inflorescence axis (PO:0009081) of the maize ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
+comment: Develops from the ear spikelet pair meristem (PO:0006360).
 subset: Maize
 synonym: "espiga s&#233sil de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂の無柄小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -6860,7 +6866,7 @@ namespace: plant_anatomy
 alt_id: PO:0006469
 def: "A collective organ part structure (PO:0025269) that has as parts an elongated stigma (PO:0009073) with stigma papilla (GO:0090397), and an elongated style (PO:0009074)." [PMID:21345919, POC:Laurel_Cooper]
 comment: During pollination (GO:0009856), the pollen (PO:0025281) grows down through a portion of  transmitting tissue (PO:0020102) to a plant ovary ovule (PO:0025490) and a megagametophyte (PO:0025279) to effect fertilization (GO:0009566).  If you are annotating to this structure for Zea spp., please also add an annotation to the corresponding floret type. Choose the most specific term possible from: ear floret (PO:0006354), or one of the child terms: upper floret of pedicellate spikelet of ear (PO:0006350), or upper floret of sessile spikelet of ear (PO:0006352).
-synonym: "Zea style (narrow)" NARROW [] {scope="narrow"}
+synonym: "Zea style (narrow)" NARROW []
 xref: PO_GIT:376
 is_a: PO:0025269 ! collective organ part structure
 created_by: cooperl
@@ -6925,7 +6931,7 @@ relationship: part_of PO:0006016 ! leaf epidermis
 id: PO:0006505
 name: first order ear inflorescence axis
 namespace: plant_anatomy
-def: "A first order inflorescence axis (PO:0025104) that is the primary axis of an ear inflorescence (PO:0020136)." [POC:curators] {comment="POC:Laurel_Cooper"}
+def: "A first order inflorescence axis (PO:0025104) that is the primary axis of an ear inflorescence (PO:0020136)." [POC:curators, POC:Laurel_Cooper]
 subset: Maize
 synonym: "central axis of ear inflorescence (exact)" EXACT []
 synonym: "ear inflorescence rachis (exact)" EXACT []
@@ -10409,8 +10415,8 @@ is_a: PO:0025496 ! multi-tissue plant structure
 id: PO:0009011
 name: plant structure
 namespace: plant_anatomy
-def: "An anatomical structure that is or was part of a plant, or was derived from a part of a plant." [CARO:0000003, POC:curators]
-comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 anatomical structure is defined as: Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome.
+def: "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant." [CARO:0000003, POC:curators]
+comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 'connected anatomical structure' is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism's own genome. {xref="PO:cooperl"}
 subset: TraitNet
 synonym: "estructura vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物 構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -10422,8 +10428,8 @@ id: PO:0009012
 name: plant structure development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007021
-def: "A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes." [POC:curators]
-comment: Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.
+def: "A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes." [BFO:0000003, GO:0032502, POC:curators]
+comment: Refers to GO:0032502 'developmental process', which includies growth, differentiation, and senescence, and BFO:0000003 'ocurrent'.
 subset: TraitNet
 synonym: "Arabidopsis growth (related)" RELATED [TAIR:0000205]
 synonym: "etapa de desarrollo de estructura vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11011,7 +11017,7 @@ alt_id: PO:0020117
 alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
-def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: An inflorescence is a reproductive shoot system from which at least two flowers develop. The growth pattern of an inflorescence may be monopodial (single main shoot axis), sympodial (growth only occurs from axillary meristems), or both. An inflorescence axis (PO:0020122) can be determinate or indeterminate. An inflorescence flower pedicel (PO:0009052) is the ultimate axis in an inflorescence. The flower (PO:0009046) of many plants, for example Magnolia spp., is solitary.
 subset: Angiosperm
 subset: reference
@@ -11027,8 +11033,8 @@ is_a: PO:0025082 ! reproductive shoot system
 id: PO:0009051
 name: spikelet
 namespace: plant_anatomy
-def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested inflorescence branch (PO:0009081) of the grasses." [APweb:Glossary]
-comment: It consists of one to many closely-packed flowers and associated glumes etc.
+def: "A reproductive shoot system (PO:0025082) that is the ultimate and congested, higher order inflorescence axis (PO:0009081) of the grasses." [APweb:Glossary, PO:cooperl]
+comment: It consists of one to many closely-packed spikelet florets (PO:0009082) and associated glumes (PO:0009039).
 subset: Poaceae
 subset: reference
 synonym: "espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11043,7 +11049,7 @@ id: PO:0009052
 name: inflorescence flower pedicel
 namespace: plant_anatomy
 def: "A flower pedicel (PO:0030113) that bears a flower (PO:0009046) in an inflorescence (PO:0009049)." [ISBN:0716710072, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper]
-comment: An inflorescence flower pedicel is the ultimate shoot axis (PO:0025029) in an inflorescence (PO:0009049). {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
+comment: An inflorescence flower pedicel is the ultimate shoot axis (PO:0025029) in an inflorescence (PO:0009049).
 subset: Angiosperm
 subset: reference
 subset: Tomato
@@ -11554,14 +11560,13 @@ comment: A higher order inflorescence axis is any inflorescence axis (PO:0020122
 subset: Angiosperm
 synonym: "coflorescence (related)" RELATED []
 synonym: "conflorescencia (Spanish, broad)" BROAD [POC:Maria_Alejandra_Gandolfo]
-synonym: "inflorescence branch (exact)" EXACT [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+synonym: "inflorescence branch (exact)" EXACT []
 synonym: "paraclade (broad)" BROAD []
 synonym: "paraclado (Spanish, broad)" BROAD [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序枝 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:264
 xref: PO_GIT:667
 is_a: PO:0020122 ! inflorescence axis
-is_a: PO:0025073 ! branch
 
 [Term]
 id: PO:0009082
@@ -13108,7 +13113,7 @@ id: PO:0020122
 name: inflorescence axis
 namespace: plant_anatomy
 def: "A shoot axis (PO:0025029) that is part of an inflorescence (PO:0009049)." [POC:curators]
-comment: An inflorescence axis (PO:0020122) has either a determinate apex, which terminates in a flower meristem (PO:0000229), or has an indeterminate apex, which terminates in an inflorescence apical meristem (PO:0009108).  An inflorescence pedicel (PO:0009052) is the simplest example of a determinate inflorescence axis. {xref="NYBG:Brandon_Sinn", comment="POC:Laurel_Cooper", xref="NYBG:Dario_Cavaliere"}
+comment: An inflorescence axis (PO:0020122) has either a determinate apex, which terminates in a flower meristem (PO:0000229), or has an indeterminate apex, which terminates in an inflorescence apical meristem (PO:0009108).  An inflorescence pedicel (PO:0009052) is the simplest example of a determinate inflorescence axis. {xref="NYBG:Brandon_Sinn", xref="POC:Laurel_Cooper", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 subset: TraitNet
 synonym: "eje de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -14906,13 +14911,13 @@ id: PO:0025104
 name: first order inflorescence axis
 namespace: plant_anatomy
 def: "An inflorescence axis (PO:0020122) that is the primary or main axis of an inflorescence (PO:0009049)." [POC:Ramona_Walls]
-comment: Monopodial inflorescences, such as a raceme, have a centrally-located main axis; this axis is a first order inflorescence axis. In contrast, sympodial inflorescences, such as the riphidium, do not have a centrally-located main axis. The basal-most portion of a first order inflorescence axis is referred to as a peduncle (PO:0009053). {xref="NYBG:Brandon_Sinn", xref="NYBG:Dario_Cavaliere"}
+comment: Monopodial inflorescences, such as a raceme inflorescence (PO:0030115), have a centrally-located main axis; this axis is a first order inflorescence axis. In contrast, sympodial inflorescences, such as the riphidium inflorescence (PO:0030131), do not have a centrally-located main axis. The basal-most portion of a first order inflorescence axis is referred to as a peduncle (PO:0009053). {xref="NYBG:Brandon_Sinn", xref="PO:cooperl", xref="NYBG:Dario_Cavaliere"}
 subset: Angiosperm
 synonym: "inflorescence rachis (exact)" EXACT [FNA:78c2e094-f6db-4d95-b8bb-3e2bdaebf764]
 synonym: "inflorescence rhachis (exact)" EXACT [FNA:f76f9272-ef24-4be8-a9b3-3da4c06bd8cf]
 synonym: "primary inflorescence axis (exact)" EXACT []
 synonym: "primer orden del eje de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "第一花序軸 (Japanese, exact)" EXACT JAPANESE [NIG:Yukiko_Yamazaki]
+synonym: "第一花序軸 (Japanese, exact)" EXACT [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:260
 xref: PO_GIT:667
 is_a: PO:0020122 ! inflorescence axis
@@ -14923,7 +14928,7 @@ creation_date: 2011-01-05T08:41:49Z
 id: PO:0025105
 name: fourth order inflorescence axis
 namespace: plant_anatomy
-def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a third order inflorescence axis (PO:0025105)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a third order inflorescence axis (PO:0025105)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "eje de cuarto orden de la inflorescencia (Spanish, exact)" EXACT Spanish []
 synonym: "tertiary inflorescence branch (exact)" EXACT []
 synonym: "third order inflorescence branch (exact)" EXACT []
@@ -14939,7 +14944,7 @@ creation_date: 2011-01-05T08:56:27Z
 id: PO:0025106
 name: fifth order inflorescence axis
 namespace: plant_anatomy
-def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a fourth order inflorescence axis (PO:0025106)." [POC:Laurel_Cooper, POC:Ramona_Walls] {comment="NYBG:Dario_Cavaliere", comment="NYBG:Brandon_Sinn"}
+def: "A higher order inflorescence axis (PO:0009081) that develops from an inflorescence axillary meristem (PO:0009105) of a fourth order inflorescence axis (PO:0025106)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 synonym: "eje de quinto orden de la inflorescencia (Spanish, exact)" EXACT Spanish []
 synonym: "fourth order inflorescence branch (exact)" EXACT []
 synonym: "第四花序分枝 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
@@ -15088,7 +15093,7 @@ id: PO:0025117
 name: plant anatomical space
 namespace: plant_anatomy
 def: "An anatomical space that is part of a plant." [CARO:0000005, POC:curators]
-comment: CARO:0000005 anatomical space is defined as: Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.
+comment: CARO:0000005 'anatomical space' is defined as: An immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes, and is bounded by an anatomical surface. {xref="PO:cooperl"}
 synonym: "espacio anat&#243mico vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lacuna (narrow)" NARROW [FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042]
 synonym: "lacunae (narrow)" NARROW Plural [FNA:322646fb-30bf-422d-8373-9f91f48fd28b]
@@ -15315,8 +15320,8 @@ creation_date: 2010-11-15T11:29:28Z
 id: PO:0025131
 name: plant anatomical entity
 namespace: plant_anatomy
-def: "An anatomical entity that is or was part of a plant." [CARO:0000000, POC:curators]
-comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 anatomical entity is defined as: Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
+def: "An anatomical entity that is or was part of a plant." [BFO:0000004, CARO:0000000, POC:curators]
+comment: Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 'anatomical entity' is defined as: A part of a cellular organism that is either an immaterial entity or a material entity with granularity aboove the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.  Refers to BFO:0000004 'independent continuant'. {xref="CAROC:Brownsville2014"}
 synonym: "entidad anat&#243mica vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物 解剖学（形態）的実体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:224
@@ -15731,7 +15736,7 @@ id: PO:0025161
 name: portion of plant substance
 namespace: plant_anatomy
 def: "A portion of organism substance that is or was part of a plant." [CARO:0000004, POC:curators]
-comment: Refers to portion of organism substance (CARO:0000004) which is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body. For plants, the word "body" refers to a whole plant or part thereof.  Can include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, sporopollenin.
+comment: Refers to organism substance (CARO:0000004) which is defined as: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism's own genome. For plants, the word "body" refers to a whole plant, or part thereof.  Includes substances such as latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, and sporopollenin.
 synonym: "porci&#243n de sustancia vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "植物を構成する物質の一部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:206
@@ -18321,8 +18326,7 @@ name: awn
 namespace: plant_anatomy
 def: "A cardinal organ part that is a slender, more or less straight and stiff, fine-pointed, terminal or subterminal appendage of a glume, lemma, or palea." [FNA:glossary]
 comment: Found in a spikelet of Poaceae. Sometimes the awn is a continuation of the bearing structure's central primary vein.
-synonym: "arista (exact)" EXACT [FNA:399ba59a-deb1-4bc9-b7e5-ed2b89700d5c]
-synonym: "arista (exact)" EXACT [FNA:5e6f29b2-6a37-4663-888b-7cb315ef277e]
+synonym: "arista (exact)" EXACT [FNA:399ba59a-deb1-4bc9-b7e5-ed2b89700d5c, FNA:5e6f29b2-6a37-4663-888b-7cb315ef277e]
 synonym: "arista (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "bristle (broad)" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
 synonym: "seta (related)" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
@@ -20364,7 +20368,7 @@ id: PO:0025496
 name: multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." [CARO:0000055, POC:curators]
-comment: Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).
+comment: Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).  Refers to CARO:0000055 multi-tissue structure, def'n: Anatomical structure that has as parts two or more portions of tissue of at least two different types, and which through specific morphogenetic processes, form a single distinct structural unit demarcated by bona-fide boundries from other structural units of differnt types.
 synonym: "estructura vegetal con m&#250ltiples tejidos (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "複数の組織からなる植物構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:480
@@ -21011,7 +21015,7 @@ creation_date: 2013-04-08T14:37:38Z
 id: PO:0025546
 name: accessory paraclade
 namespace: plant_anatomy
-def: "A primary inflorescence branch (PO:0006321) borne in the same axil (PO:0025224) as an existing primary inflorescence branch (PO:0006321)." [PMID:7555701, PO:curators]
+def: "A second order inflorescence axis (PO:0006321) borne in the same axil (PO:0025224) as an existing second order inflorescence axis." [PMID:7555701, PO:cooperl, PO:curators]
 synonym: "accessory second order inflorescence axis (exact)" EXACT []
 synonym: "paraclado accesorio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "副（補助）側生分枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -21024,7 +21028,7 @@ creation_date: 2013-04-18T15:34:19Z
 id: PO:0025547
 name: cauline paraclade
 namespace: plant_anatomy
-def: "A primary inflorescence branch (PO:0006321) borne on the elongated first order inflorescence axis (PO:0025104)." [PMID:7555701, POC:curators]
+def: "A second order inflorescence axis (PO:0006321) borne on an elongated first order inflorescence axis (PO:0025104)." [PMID:7555701, POC:curators]
 synonym: "paraclado caulinar (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "茎側生分枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:526
@@ -21036,7 +21040,7 @@ creation_date: 2013-04-18T15:45:59Z
 id: PO:0025548
 name: rosette paraclade
 namespace: plant_anatomy
-def: "A primary inflorescence branch (PO:0006321) borne on the compacted first order inflorescence axis (PO:0025104), forming the rosette." [PMID:755701, POC:curators]
+def: "A second order inflorescence axis (PO:0006321) borne on a compacted first order inflorescence axis (PO:0025104), forming the rosette." [PMID:755701, PO:cooperl, POC:curators]
 synonym: "paraclado en roseta (Spanish, exact)  (related)" RELATED [POC:Maria_Alejandra_Gandolfo]
 synonym: "ロゼット側生分枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:526
@@ -21902,7 +21906,7 @@ xref: PO_GIT:661
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020104 ! leaf sheath
 created_by: Laurel_Cooper
-creation_date: 2017-1-24T14:41:36Z
+creation_date: 2017-01-24T14:41:36Z
 
 [Term]
 id: PO:0025620
@@ -22002,8 +22006,8 @@ synonym: "branch tip (exact)" EXACT []
 xref: PO_GIT:XYZ
 is_a: PO:0000037 ! shoot axis apex
 relationship: part_of PO:0025073 ! branch
-property_value: http://purl.org/dc/elements/1.1/date 2018-02-15T17:24:36Z xsd:dateTime
 created_by: Laurel_Cooper
+creation_date: 2018-02-15T17:24:36Z
 
 [Term]
 id: PO:0028005
@@ -22222,7 +22226,6 @@ synonym: "vascular leaf apical initial (exact)" EXACT []
 synonym: "維管束を持つ葉の分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030011 ! leaf meristematic apical cell
-is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0009025 ! vascular leaf
 created_by: rwalls
 creation_date: 2011-03-25T09:44:45Z
@@ -22300,7 +22303,6 @@ synonym: "seta apical initial (exact)" EXACT []
 synonym: "柄分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030010 ! shoot axis meristematic apical cell
-is_a: PO:0030015 ! sporophyte meristematic apical cell
 relationship: part_of PO:0030032 ! seta
 created_by: rwalls
 creation_date: 2011-04-26T07:56:36Z
@@ -22350,7 +22352,6 @@ synonym: "gametophore apical initial (exact)" EXACT []
 synonym: "茎葉体分裂組織の頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:303
 is_a: PO:0030009 ! shoot meristematic apical cell
-is_a: PO:0030014 ! gametophyte meristematic apical cell
 intersection_of: PO:0030009 ! shoot meristematic apical cell
 intersection_of: part_of PO:0030018 ! gametophore
 relationship: part_of PO:0030018 ! gametophore
@@ -23828,8 +23829,8 @@ comment: A pedicel has a single internode, determinate growth, and is the ultima
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:672
 is_a: PO:0025029 ! shoot axis
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:43:36Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-03-17T00:43:36Z
 
 [Term]
 id: PO:0030113
@@ -23839,8 +23840,8 @@ def: "A pedicel (PO:0030112) that bears a flower (PO:0009046)." [NYBG:Brandon_Si
 synonym: "pedicelo (Spanish, broad)" BROAD []
 xref: PO_GIT:673
 is_a: PO:0030112 ! pedicel
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T00:49:32Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-03-17T00:49:32Z
 
 [Term]
 id: PO:0030114
@@ -23850,25 +23851,25 @@ def: "A pedicel (PO:0030112) that bears a fruit (PO:0009001)." [NYBG:Brandon_Sin
 synonym: "pedicelo del fruto (Spanish, broad)" BROAD []
 xref: PO_GIT:487
 is_a: PO:0030112 ! pedicel
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-03-17T01:01:13Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-03-17T01:01:13Z
 
 [Term]
 id: PO:0030115
 name: raceme inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on an indeterminate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on an indeterminate, first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include mouse-ear cress (Arabidopsis thaliana, Brassicaceae), wild black cherry (Prunus serotina, Rosaceae), and pokeweeds (Phytolacca spp., Phytolaccaceae).
 synonym: "raceme (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:29:10Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:29:10Z
 
 [Term]
 id: PO:0030116
 name: compound raceme inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and pedicellate (PATO:0001438) flowers (PO:0009046) on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of an indeterminate, first order inflorescence axis (PO:0025104) and pedicellate flowers (PO:0009046) on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include many species Brassicaceae, such as pepperweeds (Lepidium spp.), and Fabaceae, such as melilot (Melilotus officinialis) and hop trefoil (Trifolium campestre) species, as well as bananas (Musa spp.; Musaceae).
 synonym: "compound raceme (exact)" EXACT []
 synonym: "double raceme (exact)" EXACT []
@@ -23877,26 +23878,26 @@ synonym: "heterothetic double raceme (narrow)" NARROW []
 synonym: "homothetic compound raceme (narrow)" NARROW []
 synonym: "homothetic double raceme (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:34:46Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:34:46Z
 
 [Term]
 id: PO:0030117
 name: spike inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on an indeterminate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of sessile flowers (PO:0009046) on an indeterminate, first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The basal-most flowers of some spike inflorescences have short inflorescence flower pedicels (PO:0009052), such as in ladies'-tresses orchids (Spiranthes; Orchidaceae). Examples include black pepper (Piper nigrum; Piperaceae).
 synonym: "spike (exact)" EXACT []
 synonym: "stachyoid (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:38:28Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:38:28Z
 
 [Term]
 id: PO:0030118
 name: compound spike inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436) flowers (PO:0009046), or spikelets (PO:0009051), on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436) flowers (PO:0009046), or spikelets (PO:0009051), on indeterminate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some amaranth species (Amaranthus spp., Amaranthaceae).
 synonym: "compound spike (exact)" EXACT []
 synonym: "double spike (exact)" EXACT []
@@ -23905,38 +23906,38 @@ synonym: "heterothetic double spike (narrow)" NARROW []
 synonym: "homothetic compound spike (narrow)" NARROW []
 synonym: "homothetic double spike (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:41:00Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:41:00Z
 
 [Term]
 id: PO:0030119
 name: catkin inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of  indeterminate first order inflorescence axis (PO:0025104) and sessile (PATO:0001436), unisexual flowers (PO:0009046) that are each subtended by conspicuous (PATO:0000463) inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include poplars (including Populus trichocarpa, Salicaceae) and birches (Betula spp., Betulaceae). Catkin inflorescences are often pendulate.
 synonym: "ament (exact)" EXACT []
 synonym: "catkin (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:48:27Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:48:27Z
 
 [Term]
 id: PO:0030120
 name: spadix inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, indeterminate first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of sessile flowers (PO:0009046) on a radially-enlarged, indeterminate, first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include aroids (Araceae), palms (Arecaceae).
 synonym: "spadices (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "spadix (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:50:40Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:50:40Z
 
 [Term]
 id: PO:0030121
 name: capitulum inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of sessile (PATO:0001436) flowers (PO:0009046) on a radially-enlarged, determinate first order inflorescence axis (PO:0025104)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged, determinate, first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
 synonym: "calathidium (exact)" EXACT []
 synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
@@ -23944,14 +23945,14 @@ synonym: "capitulum (exact)" EXACT []
 synonym: "head (broad)" BROAD []
 synonym: "hypanthodium (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:53:49Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:53:49Z
 
 [Term]
 id: PO:0030122
 name: compound capitulum inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a radially enlarged inflorescence axis (PO:0020122) and sessile (PATO:0001436) flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged inflorescence axis (PO:0020122), and sessile flowers (PO:0009046) on determinate higher order inflorescence axes (PO:0009081) with basal involucral bracts (PO:0009045)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere] {comment="PO:cooperl"}
 comment: Examples include many species of daisy family (Asteraceae). The second order inflorescences (PO:0025240) of compound capitulum inflorescences are often called glomerules.
 synonym: "compound capitulum (exact)" EXACT []
 synonym: "double capitulum (exact)" EXACT []
@@ -23962,52 +23963,52 @@ synonym: "heterothetic double capitulum (narrow)" NARROW []
 synonym: "homothetic compound capitulum (narrow)" NARROW []
 synonym: "homothetic double capitulum (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T12:58:48Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:58:48Z
 
 [Term]
 id: PO:0030123
 name: panicle inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis (PO:ID) is composed of pedicellate (PATO:0001438) flowers (PO:0009046), or spikelets (PO:0009051), on determinate inflorescence axes (PO:0020122)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
-comment: Panicle inflorescences are most often conical in shape. Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), bromes (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rices (Oryza spp.), foxgrasses (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae).
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) or spikelets (PO:0009051) on determinate inflorescence axes (PO:0020122).," [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
+comment: Examples include the majority of species in the grass family Poaceae including oats (Avena spp.), brome (Brachypodium spp.), barley (Hordeum vulgare), cutgrass (Leersia perrieri), rice (Oryza spp.), foxgrass (Setaria spp.), wheat (Triticum aestivum), wild rice (Zizania palustris), and the staminate inflorescence of cultivated corn (Zea mays), as well as grapes (Vitis spp.; Vitaceae), and Polemonium caeruleum (Polemoniaceae). Panicle inflorescences are most often conical in shape.
 synonym: "panicle (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:04:46Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T13:04:46Z
 
 [Term]
 id: PO:0030124
 name: corymb inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a convex plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with both monopodial and sympodial growth habits, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104), and determinate higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a convex plane of flowers." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include highbush blueberry (Vaccinium corymbosum; Ericaceae).
 synonym: "compound corymb (exact)" EXACT []
 synonym: "corymb (exact)" EXACT []
 synonym: "double corymb (exact)" EXACT []
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:07:50Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T13:07:50Z
 
 [Term]
 id: PO:0030125
 name: anthela inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both monopodial and sympodial growth habits, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and determinate higher order inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046) that collectively form a concave plane of flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with both monopodial and sympodial growth habits, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and determinate, higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a concave plane of flowers." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of Filipendula (Rosaceae).
 synonym: "anthela (exact)" EXACT []
 synonym: "anthelae (exact)" NARROW [] {synonymtypedef="Plural"}
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T13:12:21Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T13:12:21Z
 
 [Term]
 id: PO:0030126
 name: cyme inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a determinate first order inflorescence axis (PO:0025104) and pedicellate (PATO:0001438) flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and pedicellate flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Cyme inflorescence is used here to treat inflorescences that are commonly referred to as dichasial, pleiochasial, or polychasial cymes; each of which are named according to the number of higher order inflorescence axes at a single axis. Cyme is not used here to treat monochasial cymose inflorescences, which contain at least one repeating sympodial unit, such as cincinnus inflorescence (PO:0030132), compound cincinnus inflorescence (PO:0030133), bostryx (PO:0030134), rhipidium inflorescence (PO:0030131), drepanium inflorescence (PO:0030135), and compound drepanium inflorescence (PO:0030136). Examples include many species of the Figwort family (Scrophulariaceae, including green figwort Scrophularia umbrosa) and the Verbena family (Verbenaceae).
 synonym: "cyathia (narrow)" NARROW [] {synonymtypedef="Plural"}
 synonym: "cyathium (narrow)" NARROW []
@@ -24018,14 +24019,14 @@ synonym: "pleiochasium (narrow)" NARROW []
 synonym: "polychasium (narrow)" NARROW []
 synonym: "verticillaster (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:36:16Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T17:36:16Z
 
 [Term]
 id: PO:0030127
 name: indeterminate thyrse inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049) which at anthesis is composed of an indeterminate first order inflorescence axis (PO:0025104) and dichasial second order inflorescences (PO:0025240) with pedicellate (PATO:0001438) flowers (PO:0009046) and determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) which at flowering stage (PO:0007616), is composed of an indeterminate, first order inflorescence axis (PO:0025104) and dichasial second order inflorescences (PO:0025240) with pedicellate  flowers (PO:0009046), and determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The higher order inflorescence axes (PO:0009081) of an indeterminate thyrse inflorescence may have either a monopodial or sympodial growth habit depending on whether single or paired inflorescence axillary meristems (PO:0009105) develop at each axis. Examples include beardtongues (Penstemon spp.; Plantaginaceae).
 synonym: "conjunct-hetercladic thyrse (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
@@ -24038,39 +24039,39 @@ synonym: "monothyrsic inflorescence (exact)" EXACT []
 synonym: "pleiothyrsoid (exact)" EXACT []
 synonym: "thyrse (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:52:57Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T17:52:57Z
 
 [Term]
 id: PO:0030128
 name: determinate thyrse inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), which at anthesis is composed of an determinate first order inflorescence axis (PO:0025104) and dichasial second order inflorescences with pedicellate (PATO:0001438) flowers (PO:0009046) and determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) which at flowering stage (PO:0007616) is composed of a determinate, first order inflorescence axis (PO:0025104) and dichasial second order inflorescences with pedicellate flowers (PO:0009046) and determinate, higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The higher order inflorescence axes (PO:0009081) of an determinate thyrse inflorescence may have either a monopodial or sympodial growth habit depending on whether single or paired inflorescence axillary meristems (PO:0009105) develop at each axis. Examples include lilacs (Syringia spp.; Oleaceae), buckeyes (Aesculus spp.; Hippocastanaceae) and hydrangea (Hydrangea paniculata; Hydrangeaceae).
 synonym: "determinate thyrse (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
 synonym: "thyrse (broad)" BROAD []
 synonym: "thyrsoid (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T17:57:44Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T17:57:44Z
 
 [Term]
 id: PO:0030129
 name: umbel inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
-comment: The flowers (PO:0009046) of an umbel inflorescence appear as clusters originating from a single point, due to compression of the inflorescence axis internodes (PO:0006326) of the first order inflorescence axis (PO:0025104). Umbel inflorescences are characteristic of the the Ivy family (Apiaceae or Umbelliferae), including english ivy (Hedera helix) and ginseng (Panax ginseng), as well as the Onion family (Alliaceae).
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
+comment: The flowers (PO:0009046) of an umbel inflorescence appear as clusters originating from a single point, due to compression of the inflorescence axis internodes (PO:0006326) of the first order inflorescence axis (PO:0025104). Umbel inflorescences are characteristic of the the Ivy family (Apiaceae or Umbelliferae), including english ivy (Hedera helix), ginseng (Panax ginseng), and the onion family (Alliaceae).
 synonym: "umbel (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:41:27Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:41:27Z
 
 [Term]
 id: PO:0030130
 name: compound umbel inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a monopodial growth habit, which at anthesis is composed of a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326) and pedicellate (PATO:0001438) flowers (PO:0009046) on higher order inflorescence axes with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of a first order inflorescence axis (PO:0025104) with compressed inflorescence axis internodes (PO:0006326), and pedicellate flowers (PO:0009046) on higher order inflorescence axes, with compressed inflorescence axis internodes (PO:0006326)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: The flowers (PO:0009046) of a compound umbel inflorescence appear as clusters originating from a single point, due to compression of inflorescence axis internodes (PO:0006326) of the higher order inflorescence axes (PO:0009081). Examples include species of the Ivy family (Apiaceae or Umbelliferae), including dill (Anethum graveolens), fennel (Foeniculum vulgare, Apiaceae) and poison hemlock (Conium maculatum, Apiaceae).
 synonym: "compound umbel (exact)" EXACT []
 synonym: "double umbel (exact)" EXACT []
@@ -24079,27 +24080,27 @@ synonym: "heterothetic double umbel (narrow)" NARROW []
 synonym: "homothetic compound umbel (narrow)" NARROW []
 synonym: "homothetic double umbel (narrow)" NARROW []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:44:03Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:44:03Z
 
 [Term]
 id: PO:0030131
 name: rhipidium inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) that bear pedicellate (PATO:0001438) flowers (PO:0009046) in a single plane, with the latest-developing flowers on the highest order inflorescence axis which is found at the center of the inflorescence." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) that bear pedicellate flowers (PO:0009046) in a single plane, with the latest-developing flowers on the highest order inflorescence axis, found at the center of the inflorescence." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Iris family (Iridaceae).
 synonym: "monochasium (broad)" BROAD []
 synonym: "rhipidia (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "rhipidium (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:47:43Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:47:43Z
 
 [Term]
 id: PO:0030132
 name: cincinnus inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of determinate inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Dayflower family (Commelinaceae).
 synonym: "boragoid (exact)" EXACT []
 synonym: "cincinni (exact)" EXACT [] {synonymtypedef="Plural"}
@@ -24109,62 +24110,62 @@ synonym: "homaxone (exact)" EXACT []
 synonym: "monochasium (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:50:44Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:50:44Z
 
 [Term]
 id: PO:0030133
 name: compound cincinnus inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with sympodial and monopodial growth habits, which at anthesis is composed of determinate inflorescence axes (PO:0020122) with pedicellate (PATO:0001438) flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axes of the second order inflorescences (PO:0025240)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with sympodial and monopodial growth habits, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axes of the second order inflorescences (PO:0025240)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "compound cincinnus (exact)" EXACT []
 synonym: "dichasium (broad)" BROAD []
 synonym: "double cincinnus (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:55:44Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:55:44Z
 
 [Term]
 id: PO:0030134
 name: bostryx inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle (PATO:1000009) of approximately 90 degree angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle of approximately 90 degrees from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "bostryches (exact)" EXACT [] {synonymtypedef="Plural"}
 synonym: "bostryx (exact)" EXACT []
 synonym: "helicoid cyme (broad)" BROAD []
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T22:58:12Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T22:58:12Z
 
 [Term]
 id: PO:0030135
 name: drepanium inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with a sympodial growth habit, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute (PATO:0000389) angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include tomato (Lycopersicum esculentum; Solanaceae).
 synonym: "drepanium (exact)" EXACT []
 synonym: "monochasium (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T23:00:30Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T23:00:30Z
 
 [Term]
 id: PO:0030136
 name: compound drepanium inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049), with both sympodial and monopodial growth habits, which at anthesis is composed of pedicellate (PATO:0001438) flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute (PATO:0000389) angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere]
+def: "An inflorescence (PO:0009049) with both sympodial and monopodial growth habits, which at flowering stage (PO:0007616) is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develops at progressively more acute angles from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
 synonym: "dichasium (broad)" BROAD []
 synonym: "drepanium (exact)" EXACT []
 synonym: "helicoid (broad)" BROAD []
 synonym: "scorpioid (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
-property_value: http://purl.org/dc/elements/1.1/creator NYBG:Brandon_Sinn xsd:string
-property_value: http://purl.org/dc/elements/1.1/date 2017-04-20T23:03:24Z xsd:dateTime
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T23:03:24Z
 
 [Typedef]
 id: part_of
