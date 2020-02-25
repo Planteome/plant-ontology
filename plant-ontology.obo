@@ -25,6 +25,7 @@ treat-xrefs-as-is_a: CARO
 import: http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl
 import: http://purl.obolibrary.org/obo/po/imports/ro_import.owl
 ontology: po
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\n\n\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0000020> \"\")\n)
 
 [Term]
 id: PO:0000001
@@ -2636,7 +2637,7 @@ relationship: part_of PO:0003017 ! root cap of primary root
 id: PO:0003022
 name: lateral root cap of primary root
 namespace: plant_anatomy
-def: "A central root cap that is part of a root cap of primary root." [POC:curators, TAIR_curator:Katica_Ilic]
+def: "A lateral root cap (PO:0020131) that is part of a root cap (PO:0020123) of a primary root (PO:0020127)." [PO:cooperl, POC:curators, TAIR_curator:Katica_Ilic]
 synonym: "caliptra de la ra&#237z lateral de la ra&#237z primaria (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根の側根冠 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:194
@@ -14932,7 +14933,7 @@ id: PO:0025096
 name: carpel epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis (PO:0025157) that is part of a carpel (PO:0009030)." [POC:Ramona_Walls]
-synonym: "A portion of carpel epidermis (PO:0025096) that covers the abaxial surface of a carpel (PO:0009030). \" (broad)" BROAD []
+synonym: "A portion of carpel epidermis (PO:0025096) that covers the abaxial surface of a carpel (PO:0009030). (broad)" BROAD []
 synonym: "epidermis del carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
@@ -16537,7 +16538,7 @@ creation_date: 2010-12-17T10:28:52Z
 id: PO:0025208
 name: carpel trichome
 namespace: plant_anatomy
-def: "A phyllome trichome that is part of a bract epidermis." [POC:Ramona_Walls]
+def: "A phyllome trichome (PO:0025186) that is part of a carpel epidermis (PO:0025096)." [PO:cooperl, POC:Ramona_Walls]
 synonym: "tricoma del carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮毛（毛茸、糸状体） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
