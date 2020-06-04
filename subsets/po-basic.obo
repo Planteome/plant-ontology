@@ -2594,7 +2594,7 @@ relationship: part_of PO:0003017 ! root cap of primary root
 id: PO:0003022
 name: lateral root cap of primary root
 namespace: plant_anatomy
-def: "A central root cap that is part of a root cap of primary root." [POC:curators, TAIR_curator:Katica_Ilic]
+def: "A lateral root cap (PO:0020131) that is part of a root cap (PO:0020123) of a primary root (PO:0020127)." [PO:cooperl, POC:curators, TAIR_curator:Katica_Ilic]
 synonym: "caliptra de la ra&#237z lateral de la ra&#237z primaria (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "一次根の側根冠 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:194
@@ -2619,8 +2619,8 @@ relationship: part_of PO:0009005 ! root
 id: PO:0003024
 name: stolon
 namespace: plant_anatomy
-def: "A branch that is slender, prostrate or trailing and above-ground and produces roots and sometimes erect shoots at its nodes." [APweb:Glossary, POC:curators]
-comment: The stolon develops from an axillary bud and produces adventitious roots at the nodes and a terminal aerial stem. That stem then sends out one or more stolons from its axillary buds and the process is reiterated. A unique part of this process is that the first internode of a stolon is very long and then the shoot becomes an erect rosette.
+def: "A branch (PO:0025073) that is prostrate or trailing, and produces  adventitious nodal roots (PO:0003005) and sometimes erect shoots." [APweb:Glossary, POC:curators]
+comment: The stolon develops from an axillary bud (PO:0004709) and produces adventitious roots (PO:0003005) at the nodes and a terminal aerial stem. That stem then sends out one or more stolons from its axillary buds and the process is reiterated. Stolons may be above ground, as with strawberries, or below ground as in potatoes.
 subset: reference
 subset: TraitNet
 synonym: "estol&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10429,7 +10429,7 @@ name: plant structure development stage
 namespace: plant_structure_development_stage
 alt_id: PO:0007021
 def: "A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes." [BFO:0000003, GO:0032502, POC:curators]
-comment: Refers to GO:0032502 'developmental process', which includies growth, differentiation, and senescence, and BFO:0000003 'ocurrent'.
+comment: Refers to GO:0032502 'developmental process', which includes growth, differentiation, and senescence, and BFO:0000003 'ocurrent'.
 subset: TraitNet
 synonym: "Arabidopsis growth (related)" RELATED [TAIR:0000205]
 synonym: "etapa de desarrollo de estructura vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -14802,7 +14802,7 @@ id: PO:0025096
 name: carpel epidermis
 namespace: plant_anatomy
 def: "A portion of phyllome epidermis (PO:0025157) that is part of a carpel (PO:0009030)." [POC:Ramona_Walls]
-synonym: "A portion of carpel epidermis (PO:0025096) that covers the abaxial surface of a carpel (PO:0009030). \" (broad)" BROAD []
+synonym: "A portion of carpel epidermis (PO:0025096) that covers the abaxial surface of a carpel (PO:0009030). (broad)" BROAD []
 synonym: "epidermis del carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025157 ! phyllome epidermis
@@ -16396,7 +16396,7 @@ creation_date: 2010-12-17T10:28:52Z
 id: PO:0025208
 name: carpel trichome
 namespace: plant_anatomy
-def: "A phyllome trichome that is part of a bract epidermis." [POC:Ramona_Walls]
+def: "A phyllome trichome (PO:0025186) that is part of a carpel epidermis (PO:0025096)." [PO:cooperl, POC:Ramona_Walls]
 synonym: "tricoma del carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮毛（毛茸、糸状体） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025186 ! phyllome trichome
@@ -16919,7 +16919,7 @@ id: PO:0025248
 name: pseudostem
 namespace: plant_anatomy
 def: "A collective organ part structure that forms a cylindrical false stem composed concentric leaf sheaths." [POC:Ramona_Walls]
-comment: The peduncle later grows up through the psuedostem. Common in Musa species and some other monocots.
+comment: The peduncle later grows up through the pseudostem. Common in Musa species and some other monocots.
 subset: Musa
 synonym: "pseudotallo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "偽茎 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -21930,6 +21930,7 @@ creation_date: 2017-08-17T14:41:36Z
 [Term]
 id: PO:0025622
 name: metaxylem vessel member
+namespace: plant_anatomy
 def: "A primary xylem vessel member (PO:0025448) that is part of the metaxylem (PO:0000372)." [PO:Laurel_Cooper]
 synonym: "metaxylem vessel element (exact)" EXACT []
 xref: PO_GIT:678
@@ -23502,6 +23503,7 @@ is_a: PO:0000042 ! shoot-borne root
 [Term]
 id: PO:0030090
 name: root periderm scar
+namespace: plant_anatomy
 def: "A portion of root periderm (PO:0005047) formed in response to a disruption of the root epidermis (PO:0006036)." [ISBN:0471738433, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO_REF:00016]
 comment: Root periderm scars are lenticel-like structures on the tuberous roots (PO:0025523), primary roots (PO:0020127), and/or tuberous root tubers (PO:0025476) of plants such as sweet potato, cassava, parsnips, and carrots. Disruption of the epidermis by the emergence of a lateral root initiates a wound response which results in the production of a root periderm scar. Gas exchange does not occur through a root periderm scar.
 xref: PO_GIT:635
