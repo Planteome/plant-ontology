@@ -244,6 +244,7 @@ property_value: RO:0001900 RO:0001901
 domain: BFO:0000004 {http://purl.obolibrary.org/obo/IAO_0000116="This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."} ! independent continuant
 range: BFO:0000004 {http://purl.obolibrary.org/obo/IAO_0000116="This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."} ! independent continuant
 is_transitive: true
+transitive_over: BFO:0000050 ! part of
 
 [Typedef]
 id: RO:0002013
@@ -280,13 +281,6 @@ range: BFO:0000015 ! process
 is_a: RO:0002180 ! has component
 
 [Typedef]
-id: RO:0002019
-name: has ligand
-def: "A relationship that holds between between a receptor and an chemical entity, typically a small molecule or peptide, that carries information between cells or compartments of a cell and which binds the receptor and regulates its effector function." []
-domain: GO:0004872
-is_a: RO:0002233 ! has input
-
-[Typedef]
 id: RO:0002022
 name: directly regulated by
 is_a: RO:0002334 ! regulated by
@@ -312,7 +306,6 @@ name: has effector activity
 def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [GOC:dos]
 is_functional: true
 is_a: RO:0002017 ! has component activity
-is_a: RO:0002211 ! regulates
 
 [Typedef]
 id: RO:0002086
@@ -348,6 +341,7 @@ holds_over_chain: BFO:0000050 BFO:0000050
 holds_over_chain: BFO:0000051 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
 holds_over_chain: BFO:0000051 RO:0002131
 is_a: RO:0002323 ! mereotopologically related to
+transitive_over: BFO:0000050 ! part of
 
 [Typedef]
 id: RO:0002160
@@ -364,7 +358,6 @@ holds_over_chain: BFO:0000050 RO:0002162
 holds_over_chain: BFO:0000051 RO:0002162
 holds_over_chain: RO:0002202 RO:0002162
 holds_over_chain: RO:0002215 RO:0002162
-holds_over_chain: RO:0002217 RO:0002162
 holds_over_chain: RO:0002254 RO:0002162
 is_a: RO:0002320 ! evolutionarily related to
 
@@ -409,6 +402,7 @@ holds_over_chain: RO:0002578 RO:0002578
 is_transitive: true
 is_a: RO:0002411 ! causally upstream of
 inverse_of: RO:0002334 ! regulated by
+transitive_over: RO:0002025 ! has effector activity
 
 [Typedef]
 id: RO:0002212
@@ -443,20 +437,6 @@ def: "c stands in this relationship to p if and only if there exists some p' suc
 holds_over_chain: RO:0002215 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002217
-name: actively participates in
-def: "x actively participates in y if and only if x participates in y and x realizes some active role" []
-is_a: RO:0000056 ! participates in
-inverse_of: RO:0002218 ! obsolete has active participant
-
-[Typedef]
-id: RO:0002218
-name: obsolete has active participant
-def: "x has participant y if and only if x realizes some active role that inheres in y" []
-is_a: RO:0000057 ! has participant
-is_obsolete: true
 
 [Typedef]
 id: RO:0002220
@@ -584,7 +564,7 @@ id: RO:0002331
 name: involved in
 def: "c involved_in p if and only if c enables some process p', and p' is part of p" []
 holds_over_chain: RO:0002327 BFO:0000050
-is_a: RO:0002217 ! actively participates in
+is_a: RO:0000056 ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
 transitive_over: BFO:0000050 ! part of
 
@@ -771,25 +751,31 @@ is_a: RO:0002436 ! molecularly interacts with
 
 [Typedef]
 id: RO:0002448
-name: activity directly regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B." []
+name: directly regulates activity of
+def: "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B." []
 synonym: "molecularly controls" EXACT []
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
 is_a: RO:0002436 ! molecularly interacts with
-is_a: RO:0002566 ! causally influences
+is_a: RO:0011002 ! regulates activity of
 
 [Typedef]
 id: RO:0002449
-name: activity directly negatively regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so negatively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
+name: directly negatively regulates activity of
+def: "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
 synonym: "molecularly decreases activity of" EXACT []
-is_a: RO:0002448 ! activity directly regulates activity of
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002448 ! directly regulates activity of
 
 [Typedef]
 id: RO:0002450
-name: activity directly positively regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so positively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
+name: directly positively regulates activity of
+def: "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
 synonym: "molecularly increases activity of" EXACT []
-is_a: RO:0002448 ! activity directly regulates activity of
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002448 ! directly regulates activity of
 
 [Typedef]
 id: RO:0002464
@@ -825,15 +811,15 @@ is_a: RO:0002410 ! causally related to
 
 [Typedef]
 id: RO:0002506
-name: causal relation between material entities
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
+name: causal relation between entities
+domain: BFO:0000002 ! continuant
+range: BFO:0000002 ! continuant
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
 id: RO:0002559
 name: causally influenced by
-is_a: RO:0002506 ! causal relation between material entities
+is_a: RO:0002506 ! causal relation between entities
 inverse_of: RO:0002566 ! causally influences
 
 [Typedef]
@@ -849,8 +835,10 @@ is_a: RO:0002563 ! interaction relation helper property
 [Typedef]
 id: RO:0002566
 name: causally influences
-def: "Holds between materal entities a and b if the activity of a is causally upstream of the activity of b, or causally upstream of a an activity that modifies b" []
-is_a: RO:0002506 ! causal relation between material entities
+def: "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size)." []
+domain: BFO:0000002 ! continuant
+range: BFO:0000002 ! continuant
+is_a: RO:0002506 ! causal relation between entities
 
 [Typedef]
 id: RO:0002578
@@ -960,4 +948,12 @@ is_a: RO:0002418 ! causally upstream of or within
 id: RO:0004047
 name: causally upstream of or within, positive effect
 is_a: RO:0002418 ! causally upstream of or within
+
+[Typedef]
+id: RO:0011002
+name: regulates activity of
+def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002566 ! causally influences
 
