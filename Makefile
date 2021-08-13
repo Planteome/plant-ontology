@@ -15,7 +15,7 @@ release: all
 	echo "build successful. Now commit and push the derived files and make a release here: "
 
 $(ONT).owl: $(SRC)
-	$(ROBOT)  reason -x true -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT)  reason -x true -t true -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
 	$(OWLTOOLS) $(CAT) $< -o -f obo --no-check $(ONT).obo.tmp && grep -v '^owl-axioms:' $(ONT).obo.tmp > $@ && rm $(ONT).obo.tmp
 #	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && grep -v '^owl-axioms:' $(ONT).obo.tmp > $@ && rm $(ONT).obo.tmp
