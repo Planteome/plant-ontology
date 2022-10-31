@@ -22845,9 +22845,11 @@ creation_date: 2016-12-17T14:41:36Z
 id: PO:0025624
 name: endodermis cell
 namespace: plant_anatomy
-def: "A native plant cell (PO:0025606) that is part of a portion of endodermis (PO:0000252)." [PO:Cooperl]
+def: "A ground tissue cell (PO:0025030) that is part of a portion of endodermis (PO:0000252)." [PO:Cooperl]
 xref: PO_GIT:618
-is_a: PO:0025606 ! native plant cell
+is_a: PO:0025030 ! ground tissue cell
+relationship: develops_from PO:0000060 ! root cortex-endodermis initial cell
+relationship: part_of PO:0000252 ! endodermis
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-6379-8932
 property_value: http://purl.org/dc/elements/1.1/date 2022-10-27T20:32:02Z xsd:dateTime
 created_by: Cooperl
