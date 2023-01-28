@@ -4,59 +4,35 @@ ontology: po/imports/ncbitaxon_import
 [Term]
 id: NCBITaxon:1
 name: root
-synonym: "all" RELATED synonym []
 
 [Term]
 id: NCBITaxon:131221
 name: Streptophytina
-synonym: "Charophyta/Embryophyta group" RELATED synonym []
-synonym: "charophyte/embryophyte group" RELATED synonym []
 is_a: NCBITaxon:35493 ! Streptophyta
 
 [Term]
 id: NCBITaxon:131567
 name: cellular organisms
-synonym: "biota" RELATED synonym []
 is_a: NCBITaxon:1 ! root
 
 [Term]
 id: NCBITaxon:2759
 name: Eukaryota
-synonym: "Eucarya" RELATED synonym []
-synonym: "Eucaryotae" RELATED synonym []
-synonym: "eucaryotes" EXACT genbank_common_name []
-synonym: "Eukarya" RELATED synonym []
-synonym: "Eukaryotae" RELATED synonym []
-synonym: "eukaryotes" EXACT common_name []
-synonym: "eukaryotes" RELATED blast_name []
 is_a: NCBITaxon:131567 ! cellular organisms
 
 [Term]
 id: NCBITaxon:3193
 name: Embryophyta
-synonym: "higher plants" EXACT common_name []
-synonym: "land plants" EXACT common_name []
-synonym: "land plants" RELATED blast_name []
-synonym: "plants" EXACT common_name []
 is_a: NCBITaxon:131221 ! Streptophytina
 
 [Term]
 id: NCBITaxon:33090
 name: Viridiplantae
-synonym: "Chlorobionta" RELATED synonym []
-synonym: "Chlorophyta/Embryophyta group" RELATED synonym []
-synonym: "chlorophyte/embryophyte group" RELATED synonym []
-synonym: "green plants" EXACT common_name []
-synonym: "green plants" RELATED blast_name []
 is_a: NCBITaxon:2759 ! Eukaryota
 
 [Term]
 id: NCBITaxon:3398
-name: Magnoliophyta
-synonym: "Angiospermae" RELATED synonym []
-synonym: "angiosperms" EXACT common_name []
-synonym: "flowering plants" EXACT genbank_common_name []
-synonym: "flowering plants" RELATED blast_name []
+name: Magnoliopsida
 is_a: NCBITaxon:58024 ! Spermatophyta
 
 [Term]
@@ -67,20 +43,15 @@ is_a: NCBITaxon:33090 ! Viridiplantae
 [Term]
 id: NCBITaxon:58023
 name: Tracheophyta
-synonym: "vascular plants" EXACT common_name []
-synonym: "vascular plants" RELATED blast_name []
 is_a: NCBITaxon:3193 ! Embryophyta
 
 [Term]
 id: NCBITaxon:58024
 name: Spermatophyta
-synonym: "seed plants" EXACT common_name []
-synonym: "seed plants" RELATED blast_name []
 is_a: NCBITaxon:78536 ! Euphyllophyta
 
 [Term]
 id: NCBITaxon:78536
 name: Euphyllophyta
-synonym: "euphyllophytes" RELATED synonym []
 is_a: NCBITaxon:58023 ! Tracheophyta
 
