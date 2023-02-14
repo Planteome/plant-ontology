@@ -22849,10 +22849,21 @@ synonym: "endodermal cell (exact)" EXACT []
 synonym: "plant endodermal cell (exact)" EXACT []
 xref: PO_GIT:618
 is_a: PO:0025030 ! ground tissue cell
+relationship: develops_from PO:0025625 ! cortex-endodermis initial cell
 relationship: part_of PO:0000252 ! endodermis
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-6379-8932
 property_value: http://purl.org/dc/elements/1.1/date 2022-10-27T20:32:02Z xsd:dateTime
 created_by: Cooperl
+
+[Term]
+id: PO:0025625
+name: cortex-endodermis initial cell
+namespace: plant_anatomy
+def: "An initial cell (PO:0004011) that produces cortex (PO:0005708) and endodermis (PO:0000252)." [PO:cooperl]
+xref: PO_GIT:618
+is_a: PO:0004011 ! initial cell
+created_by: http://orcid.org/0000-0002-6379-8932
+creation_date: 2023-02-14T23:15:02Z
 
 [Term]
 id: PO:0028001
