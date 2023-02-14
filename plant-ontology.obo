@@ -820,7 +820,7 @@ is_a: PO:0000055 ! bud
 id: PO:0000059
 name: root initial cell
 namespace: plant_anatomy
-def: "An initial cell that is part of a root apical meristem and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR_curator:Katica_Ilic]
+def: "An initial cell (PO:0004011) that is part of a root apical meristem (PO:0020147) and by division gives rise to two cells, one of which remains in the meristem, while the other is produces different root cells." [TAIR_curator:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root initial (exact)" EXACT []
@@ -831,13 +831,12 @@ disjoint_from: PO:0000295 ! cambial initial cell
 disjoint_from: PO:0000349 ! epidermal initial cell
 disjoint_from: PO:0030067 ! protonema side branch initial cell
 disjoint_from: PO:0030086 ! protonema sub-apical initial cell
-relationship: part_of PO:0020149 ! quiescent center
 
 [Term]
 id: PO:0000060
 name: root cortex-endodermis initial cell
 namespace: plant_anatomy
-def: "A root initial cell that produces root cortex and endodermis. In direct contact with quiescent center." [TAIR_curator:Katica_Ilic]
+def: "A root initial cell (PO:0000059) that produces root cortex (PO:0000258) and root endodermis (PO:0005059). In direct contact with quiescent center (PO:0020149)." [TAIR_curator:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial del cortex/endodermis de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "root cortex-endodermis initial (exact)" EXACT []
@@ -847,9 +846,9 @@ is_a: PO:0000059 ! root initial cell
 
 [Term]
 id: PO:0000061
-name: lateral root-cap epidermal initial cell
+name: lateral root cap epidermal initial cell
 namespace: plant_anatomy
-def: "A root initial cell that produces lateral root-cap cells and root epidermis." [POC:curators]
+def: "A root initial cell (PO:0000059) that produces lateral root cap cells and root epidermis (PO:0006036)." [POC:curators]
 subset: CL
 synonym: "c&#233lula inicial del caliptra de la ra&#237z lateral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lateral root-cap epidermal initial (exact)" EXACT []
@@ -13985,7 +13984,7 @@ relationship: develops_from PO:0020133 ! columella root cap initial cell
 id: PO:0020133
 name: columella root cap initial cell
 namespace: plant_anatomy
-def: "A root initial cell that produces columella cells in the root cap. In direct contact with quiescent center." [ISBN:0471245208, TAIR_curator:Katica_Ilic]
+def: "A root initial cell (PO:0000059) that produces columella cells in the root cap (PO:0020123). In direct contact with quiescent center (PO:0020149)." [ISBN:0471245208, TAIR_curator:Katica_Ilic]
 subset: CL
 synonym: "c&#233lula inicial de la columela del caliptra de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "columella root cap initial (exact)" EXACT []
