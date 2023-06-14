@@ -349,7 +349,7 @@ synonym: "cuticle (broad)" BROAD []
 synonym: "植物クチクラ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:416
 is_a: PO:0025161 ! portion of plant substance
-relationship: adjacent_to PO:0005679 ! epidermis
+relationship: adjacent_to PO:0005679 ! plant epidermis
 
 [Term]
 id: PO:0000023
@@ -828,7 +828,7 @@ synonym: "root stem cell (related)" RELATED []
 synonym: "根始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0000295 ! cambial initial cell
-disjoint_from: PO:0000349 ! epidermal initial cell
+disjoint_from: PO:0000349 ! plant epidermal initial cell
 disjoint_from: PO:0030067 ! protonema side branch initial cell
 disjoint_from: PO:0030086 ! protonema sub-apical initial cell
 
@@ -867,7 +867,7 @@ synonym: "stomatal initial (exact)" EXACT []
 synonym: "stomatal meristemoid (exact)" EXACT []
 synonym: "気孔始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:214
-is_a: PO:0000349 ! epidermal initial cell
+is_a: PO:0000349 ! plant epidermal initial cell
 created_by: rwalls
 creation_date: 2011-02-02T09:01:50Z
 
@@ -1104,8 +1104,8 @@ synonym: "trichome support cell (related)" RELATED []
 synonym: "ソケット細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:8
 is_a: PO:0025165 ! shoot epidermal cell
-disjoint_from: PO:0000332 ! epidermal pavement cell
-relationship: develops_from PO:0000349 ! epidermal initial cell
+disjoint_from: PO:0000332 ! shoot epidermal pavement cell
+relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
 [Term]
 id: PO:0000146
@@ -1356,13 +1356,13 @@ relationship: part_of PO:0009005 ! root
 id: PO:0000262
 name: trichoblast
 namespace: plant_anatomy
-def: "A root epidermal cell that is the smaller cell produced by the asymmetric division of an epidermal intial and gives rise to a root hair." [ISBN:0471245208]
+def: "A root epidermal cell (PO:0025164) that is the smaller cell produced by the asymmetric division of an epidermal intial cell (PO:0000349) and gives rise to a root hair (GO:0035618)." [ISBN:0471245208]
 subset: CL
 synonym: "hair cell (related)" RELATED []
 synonym: "tricoblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根毛形成細胞、トリコブラスト (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
-relationship: develops_from PO:0000349 ! epidermal initial cell
+relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
 [Term]
 id: PO:0000263
@@ -1376,7 +1376,7 @@ synonym: "atricoblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gand
 synonym: "non-hair cell (broad)" BROAD []
 synonym: "非毛根形成細胞、アトリコブラスト (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
-relationship: develops_from PO:0000349 ! epidermal initial cell
+relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
 [Term]
 id: PO:0000272
@@ -1474,8 +1474,8 @@ xref: FNA:ead20a1b-057b-4008-9466-bdb8e283aa82
 xref: FNA:f18da584-2b0b-4b03-a614-40140a1cb89e
 xref: PO_GIT:207
 is_a: PO:0009011 ! plant structure
-relationship: develops_from PO:0000349 ! epidermal initial cell
-relationship: part_of PO:0005679 ! epidermis
+relationship: develops_from PO:0000349 ! plant epidermal initial cell
+relationship: part_of PO:0005679 ! plant epidermis
 
 [Term]
 id: PO:0000283
@@ -1494,13 +1494,13 @@ id: PO:0000284
 name: subsidiary cell
 namespace: plant_anatomy
 alt_id: PO:0000296
-def: "An epidermal cell associated with a stoma and at least morphologically distinguishable from the other epidermal cells." [ISBN:047124520]
+def: "A shoot epidermal cell (PO:0025165) associated with a stomatal pore (PO:0008032) and at least morphologically distinguishable from the other epidermal cells." [ISBN:047124520]
 subset: CL
 synonym: "accessory cell (related)" RELATED []
 synonym: "c&#233lula subsididaria (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "助細胞,副細胞（気孔）(auxiliary cell, synergid) (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025165 ! shoot epidermal cell
-disjoint_from: PO:0000332 ! epidermal pavement cell
+disjoint_from: PO:0000332 ! shoot epidermal pavement cell
 relationship: part_of PO:0002000 ! stomatal complex
 
 [Term]
@@ -1541,7 +1541,7 @@ relationship: part_of PO:0005352 ! xylem
 id: PO:0000293
 name: guard cell
 namespace: plant_anatomy
-def: "One of a pair of cells flanking the stomatal pore." [ISBN:0471245208]
+def: "A shoot epidermal cell (PO:0025165) that is one of a pair of cells flanking the stomatal pore (PO:0008032)." [ISBN:0471245208]
 comment: They cause the opening and closing of the pore by changes in turgor.
 subset: CL
 subset: TraitNet
@@ -1549,7 +1549,7 @@ synonym: "c&#233lula guardiana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "occlusive cell (exact)" EXACT [PMID:16845829]
 synonym: "孔辺細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025165 ! shoot epidermal cell
-disjoint_from: PO:0000332 ! epidermal pavement cell
+disjoint_from: PO:0000332 ! shoot epidermal pavement cell
 relationship: develops_from PO:0000351 ! guard mother cell
 relationship: part_of PO:0002000 ! stomatal complex
 
@@ -1565,7 +1565,7 @@ synonym: "cambial cell (exact)" EXACT []
 synonym: "cambial initial (exact)" EXACT []
 synonym: "形成層始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0004011 ! initial cell
-disjoint_from: PO:0000349 ! epidermal initial cell
+disjoint_from: PO:0000349 ! plant epidermal initial cell
 disjoint_from: PO:0030067 ! protonema side branch initial cell
 disjoint_from: PO:0030086 ! protonema sub-apical initial cell
 relationship: part_of PO:0005597 ! cambium
@@ -1595,9 +1595,9 @@ relationship: part_of PO:0005421 ! parenchyma
 
 [Term]
 id: PO:0000332
-name: epidermal pavement cell
+name: shoot epidermal pavement cell
 namespace: plant_anatomy
-def: "A shoot epidermal cell that is relatively unspecialized at maturity." [POC:curators]
+def: "A shoot epidermal cell (PO:0025165) that is relatively unspecialized at maturity." [POC:curators]
 comment: May have sinuous anticlinal cell walls that overall give a jigsaw like appearance to the epidermis. Pavement cells are epidermal cells that are not directly associated with a stomatal complex or trichome at maturity, but they share similar developmental origins.
 subset: CL
 synonym: "c&#233lula del pavimento epidermal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -1605,7 +1605,7 @@ synonym: "表皮被蓋細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamaz
 xref: PO_GIT:256
 is_a: PO:0025165 ! shoot epidermal cell
 disjoint_from: PO:0008030 ! trichome cell
-relationship: develops_from PO:0000349 ! epidermal initial cell
+relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
 [Term]
 id: PO:0000349
@@ -1619,13 +1619,13 @@ synonym: "表皮始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamaz
 is_a: PO:0004011 ! initial cell
 disjoint_from: PO:0030067 ! protonema side branch initial cell
 disjoint_from: PO:0030086 ! protonema sub-apical initial cell
-relationship: part_of PO:0005679 ! epidermis
+relationship: part_of PO:0005679 ! plant epidermis
 
 [Term]
 id: PO:0000351
 name: guard mother cell
 namespace: plant_anatomy
-def: "A shoot epidermal cell that divides to produce the guard cells." [ISBN:0471245208]
+def: "A shoot epidermal cell (PO:0025165) that divides to produce the guard cells (PO:0000293)." [ISBN:0471245208]
 subset: CL
 synonym: "c&#233lula madre de la c&#233lula guardiana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "孔辺母細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2915,7 +2915,7 @@ synonym: "c&#233lula epid&#233rmica (Spanish, exact)" EXACT Spanish [POC:Maria_A
 synonym: "表皮細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:591
 is_a: PO:0025606 ! native plant cell
-relationship: part_of PO:0005679 ! epidermis
+relationship: part_of PO:0005679 ! plant epidermis
 
 [Term]
 id: PO:0004500
@@ -5210,8 +5210,8 @@ comment: Often interrupted by stomatal complexes (PO:0002000) and other structur
 synonym: "epidermis del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
-is_a: PO:0005679 ! epidermis
-intersection_of: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
+intersection_of: PO:0005679 ! plant epidermis
 intersection_of: part_of PO:0009006 ! shoot system
 relationship: develops_from PO:0009020 ! meristem L1 layer
 relationship: part_of PO:0009006 ! shoot system
@@ -5228,8 +5228,8 @@ synonym: "epidermis de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Al
 synonym: "rhizodermis (related)" RELATED []
 synonym: "根表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
-is_a: PO:0005679 ! epidermis
-intersection_of: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
+intersection_of: PO:0005679 ! plant epidermis
 intersection_of: part_of PO:0009005 ! root
 relationship: part_of PO:0009005 ! root
 
@@ -5294,8 +5294,8 @@ comment: If you are annotating to this structure for Zea mays or other grasses, 
 synonym: "epidermis del integumento (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae integument epidermis (narrow)" NARROW []
 synonym: "珠皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0005679 ! epidermis
-intersection_of: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
+intersection_of: PO:0005679 ! plant epidermis
 intersection_of: part_of PO:0020021 ! integument
 relationship: part_of PO:0020021 ! integument
 
@@ -5329,8 +5329,8 @@ def: "A portion of epidermis (PO:0005679) that is part of a seed coat (PO:000908
 synonym: "epidermis de la cubierta de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子種皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
-is_a: PO:0005679 ! epidermis
-intersection_of: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
+intersection_of: PO:0005679 ! plant epidermis
 intersection_of: part_of PO:0009088 ! seed coat
 relationship: part_of PO:0009088 ! seed coat
 
@@ -5483,8 +5483,8 @@ synonym: "epidermis del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "Poaceae ovary epidermis (narrow)" NARROW []
 synonym: "子房表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:280
-is_a: PO:0005679 ! epidermis
-intersection_of: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
+intersection_of: PO:0005679 ! plant epidermis
 intersection_of: part_of PO:0005022 ! plant ovary wall
 relationship: part_of PO:0005022 ! plant ovary wall
 
@@ -10617,7 +10617,7 @@ synonym: "c&#233lula del tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alej
 synonym: "毛（毛茸、糸状体）細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:207
 is_a: PO:0025606 ! native plant cell
-relationship: develops_from PO:0004013 ! epidermal cell
+relationship: develops_from PO:0004013 ! plant epidermal cell
 relationship: part_of PO:0025162 ! multicellular trichome
 
 [Term]
@@ -16539,7 +16539,7 @@ synonym: "多細胞毛（毛茸、糸状体） (Japanese, exact)" EXACT Japanese
 xref: PO_GIT:207
 is_a: PO:0000282 ! trichome
 is_a: PO:0009007 ! portion of plant tissue
-relationship: develops_from PO:0005679 ! epidermis
+relationship: develops_from PO:0005679 ! plant epidermis
 created_by: rwalls
 creation_date: 2010-11-18T07:46:34Z
 
@@ -16561,11 +16561,11 @@ creation_date: 2010-11-18T08:01:29Z
 id: PO:0025164
 name: root epidermal cell
 namespace: plant_anatomy
-def: "An epidermal cell that is part of a root epidermis." [POC:curators]
+def: "A plant epidermal cell (PO:0004013) that is part of a root epidermis (PO:0006036)." [POC:curators]
 subset: CL
 synonym: "c&#233lula epid&#233rmica de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根表皮細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0004013 ! plant epidermal cell
 relationship: part_of PO:0006036 ! root epidermis
 created_by: rwalls
 creation_date: 2010-11-18T10:29:44Z
@@ -16574,11 +16574,11 @@ creation_date: 2010-11-18T10:29:44Z
 id: PO:0025165
 name: shoot epidermal cell
 namespace: plant_anatomy
-def: "An epidermal cell that is part of a shoot epidermis." [POC:curators]
+def: "A plant epidermal cell (PO:0004013) that is part of a shoot axis epidermis (PO:0000112)." [POC:curators]
 subset: CL
 synonym: "c&#233lula epid&#233rmica del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0004013 ! plant epidermal cell
 relationship: part_of PO:0006035 ! shoot system epidermis
 created_by: rwalls
 creation_date: 2010-11-18T10:29:44Z
@@ -16593,7 +16593,7 @@ subset: CL
 synonym: "c&#233lula papilosa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "乳頭細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:219
-is_a: PO:0000332 ! epidermal pavement cell
+is_a: PO:0000332 ! shoot epidermal pavement cell
 created_by: rwalls
 creation_date: 2010-11-18T05:25:37Z
 
@@ -16650,7 +16650,7 @@ xref: FNA:ca4dbc82-d782-4808-9149-3d39804d0d7f
 xref: FNA:ea8c8671-f661-42e1-8572-6b72fa98a3b9
 xref: FNA:fb4ced27-a2c5-4dbf-8588-d2fc702bb02c
 xref: PO_GIT:220
-is_a: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
 created_by: rwalls
 creation_date: 2010-11-18T07:47:30Z
 
@@ -17266,7 +17266,7 @@ subset: CL
 synonym: "c&#233lula de pavimento de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉被蓋細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:256
-is_a: PO:0000332 ! epidermal pavement cell
+is_a: PO:0000332 ! shoot epidermal pavement cell
 relationship: part_of PO:0006016 ! leaf epidermis
 created_by: rwalls
 creation_date: 2010-12-17T02:47:25Z
@@ -21288,7 +21288,7 @@ comment: Compare to other epidermal pavement cells that are approximately one hu
 synonym: "giant cell (broad)" BROAD []
 synonym: "がく片表皮巨大細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:191
-is_a: PO:0000332 ! epidermal pavement cell
+is_a: PO:0000332 ! shoot epidermal pavement cell
 relationship: part_of PO:0006040 ! sepal epidermis
 created_by: rwalls
 creation_date: 2012-10-01T11:39:23Z
@@ -21778,7 +21778,7 @@ xref: PMID:19939948
 xref: PO_GIT:207
 is_a: PO:0000282 ! trichome
 is_a: PO:0025606 ! native plant cell
-relationship: develops_from PO:0004013 ! epidermal cell
+relationship: develops_from PO:0004013 ! plant epidermal cell
 created_by: Laurel_Cooper
 creation_date: 2013-04-19T15:12:31Z
 
@@ -22614,9 +22614,9 @@ creation_date: 2014-04-10T09:51:14Z
 id: PO:0025604
 name: resin cell
 namespace: plant_anatomy
-def: "An epidermal cell (PO:0004013) that secretes plant resin (PO:0025603), and may line resin canals (PO:0005665) and/or be associated with resin blisters (or cysts)." [PMID:11337413, POC:Laurel_Cooper]
+def: "A plant epidermal cell (PO:0004013) that secretes plant resin (PO:0025603), and may line resin canals (PO:0005665) and/or be associated with resin blisters (or cysts)." [PMID:11337413, POC:Laurel_Cooper]
 xref: PO_GIT:587
-is_a: PO:0004013 ! epidermal cell
+is_a: PO:0004013 ! plant epidermal cell
 created_by: Laurel_Cooper
 creation_date: 2014-04-10T12:34:56Z
 
@@ -24113,7 +24113,7 @@ synonym: "epidermal rhizoid initial (exact)" EXACT []
 synonym: "rizoide inicial epid&#233rmico (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "表皮仮根始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:335
-is_a: PO:0000349 ! epidermal initial cell
+is_a: PO:0000349 ! plant epidermal initial cell
 created_by: rwalls
 creation_date: 2011-04-29T09:33:11Z
 
@@ -24128,7 +24128,7 @@ synonym: "parafilium (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "paraphyllia (exact, plural)" EXACT []
 synonym: "毛葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:345
-is_a: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
 relationship: part_of PO:0030020 ! gametophore axis
 created_by: rwalls
 creation_date: 2011-04-29T01:01:17Z
@@ -24201,8 +24201,8 @@ synonym: "sporangium wall exothecium (exact)" EXACT []
 synonym: "葯の表皮（外膜) (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:314
 xref: PO_GIT:355
-is_a: PO:0005679 ! epidermis
-intersection_of: PO:0005679 ! epidermis
+is_a: PO:0005679 ! plant epidermis
+intersection_of: PO:0005679 ! plant epidermis
 intersection_of: part_of PO:0025306 ! sporangium wall
 relationship: part_of PO:0025306 ! sporangium wall
 created_by: rwalls
