@@ -5289,15 +5289,15 @@ id: PO:0006043
 name: integument epidermis
 namespace: plant_anatomy
 alt_id: PO:0006508
-def: "A portion of plant epidermis (PO:0005679) that is part of an integument (PO:0020021)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls]
+def: "A portion of plant epidermis (PO:0005679) that is part of an plant ovule integument (PO:0020021)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae integument epidermis (narrow)" NARROW []
 synonym: "珠皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0005679 ! plant epidermis
 intersection_of: PO:0005679 ! plant epidermis
-intersection_of: part_of PO:0020021 ! integument
-relationship: part_of PO:0020021 ! integument
+intersection_of: part_of PO:0020021 ! plant ovule integument
+relationship: part_of PO:0020021 ! plant ovule integument
 
 [Term]
 id: PO:0006044
@@ -5308,7 +5308,7 @@ comment: If you are annotating to this structure for Zea mays or other grasses, 
 synonym: "epidermis del integumento interior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "内珠皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006043 ! integument epidermis
-relationship: part_of PO:0020022 ! inner integument
+relationship: part_of PO:0020022 ! plant ovule inner integument
 
 [Term]
 id: PO:0006045
@@ -5319,7 +5319,7 @@ comment: If you are annotating to this structure for Zea mays or other grasses, 
 synonym: "epidermis del integumento exterior (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "外珠皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006043 ! integument epidermis
-relationship: part_of PO:0020023 ! outer integument
+relationship: part_of PO:0020023 ! plant ovule outer integument
 
 [Term]
 id: PO:0006048
@@ -12935,11 +12935,11 @@ relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020021
-name: integument
+name: plant ovule integument
 namespace: plant_anatomy
 alt_id: PO:0006465
 alt_id: PO:0006507
-def: "A portion of plant tissue (PO:0009007) that usually covers a plant ovule (PO:0020003), enveloping a nucellus (PO:0020020) and forming a micropyle (PO:0020025) at the apex." [APweb:Glossary]
+def: "A portion of plant tissue (PO:0009007) that covers a plant ovule (PO:0020003), enveloping a nucellus (PO:0020020) and forming a micropyle (PO:0020025) at the apex." [APweb:Glossary, PO:cooperl]
 comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 subset: TraitNet
@@ -12954,27 +12954,27 @@ relationship: part_of PO:0020003 ! plant ovule
 
 [Term]
 id: PO:0020022
-name: inner integument
+name: plant ovule inner integument
 namespace: plant_anatomy
 alt_id: PO:0006460
-def: "An integument (PO:0020021) which is the innermost of the two layers of tissue that usually cover the ovule, contiguous to the nucellus and usually contributing to the formation of the micropyle at the apex." [APweb:Glossary]
+def: "A plant ovule integument (PO:0020021) which is the innermost of the two layers of tissue that usually cover the plant ovule (PO:0020003), contiguous to the nucellus (PO:0020020) and usually contributing to the formation of the plant ovule micropyle (PO:0020025) at the apex." [APweb:Glossary, PO:cooperl]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "integumento interno (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae inner integument (narrow)" NARROW []
 synonym: "内珠皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020021 ! integument
+is_a: PO:0020021 ! plant ovule integument
 
 [Term]
 id: PO:0020023
-name: outer integument
+name: plant ovule outer integument
 namespace: plant_anatomy
 alt_id: PO:0006459
-def: "An integument (PO:0020021) which is one of the two layers of tissue that usually cover the ovule, contiguous to the inner integument and usually involved in forming the micropyle at the apex." [APweb:Glossary]
+def: "A plant ovule integument (PO:0020021) which is the outermost the two layers of tissue that usually cover the plant ovule (PO:0020003), contiguous to the nucellus (PO:0020020) and usually contributing to the formation of the plant ovule micropyle (PO:0020025) at the apex." [APweb:Glossary, PO:cooperl]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "integumento externo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae outer integument (narrow)" NARROW []
 synonym: "外珠皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-is_a: PO:0020021 ! integument
+is_a: PO:0020021 ! plant ovule integument
 
 [Term]
 id: PO:0020024
@@ -12985,7 +12985,7 @@ synonym: "endotelio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "portion of endothelium (exact)" EXACT []
 synonym: "内皮（？）  endothecium?  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
-relationship: part_of PO:0020022 ! inner integument
+relationship: part_of PO:0020022 ! plant ovule inner integument
 
 [Term]
 id: PO:0020025
@@ -13004,7 +13004,7 @@ synonym: "Poaceae micropyle (narrow)" NARROW []
 synonym: "孔 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:609
 is_a: PO:0025117 ! plant anatomical space
-relationship: part_of PO:0020021 ! integument
+relationship: part_of PO:0020021 ! plant ovule integument
 
 [Term]
 id: PO:0020026
