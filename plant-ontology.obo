@@ -674,7 +674,7 @@ is_a: PO:0003005 ! shoot-borne nodal root
 id: PO:0000047
 name: leaf lamina epidermis
 namespace: plant_anatomy
-def: "A portion of leaf epidermis that is part of a leaf lamina." [POC:curators]
+def: "A portion of leaf epidermis (PO:0006016) that is part of a leaf lamina (PO:0020039)." [POC:curators]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis de la l&#225mina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -699,7 +699,7 @@ relationship: part_of PO:0020039 ! leaf lamina
 id: PO:0000049
 name: leaf lamina abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf lamina epidermis that covers the abaxial/lower surface of a leaf lamina." [POC:Ramona_Walls]
+def: "A portion of leaf lamina epidermis (PO:0000047) that covers the abaxial/lower surface of a leaf lamina (PO:0020039)." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis abaxial de la l&#225mina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身背軸側表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -710,7 +710,7 @@ is_a: PO:0006019 ! leaf abaxial epidermis
 id: PO:0000050
 name: leaf lamina adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf lamina epidermis that covers the adaxial/upper surface of a leaf lamina." [POC:Ramona_Walls]
+def: "A portion of leaf lamina epidermis (PO:0000047) that covers the adaxial/upper surface of a leaf lamina (PO:0020039)." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis adaxial de la l&#225mina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉身向軸側表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -721,7 +721,7 @@ is_a: PO:0006018 ! leaf adaxial epidermis
 id: PO:0000051
 name: petiole epidermis
 namespace: plant_anatomy
-def: "A portion of leaf epidermis that is part of a petiole." [POC:Ramona_Walls, TAIR_curator:Katica_Ilic]
+def: "A portion of leaf epidermis (PO:0006016) that is part of a petiole (PO:0020038)." [POC:Ramona_Walls, TAIR_curator:Katica_Ilic]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis del pec&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -860,7 +860,7 @@ is_a: PO:0000059 ! root initial cell
 id: PO:0000062
 name: stomatal initial cell
 namespace: plant_anatomy
-def: "An epidermal initial cell (PO:0000349) that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell (PO:0004010) differentiates into a guard mother cell (PO:0000351)." [POC:Ramona_Walls]
+def: "An plant epidermal initial cell (PO:0000349) that undergoes several rounds of uneven division, each time giving rise to a larger daughter cell that differentiates into an epidermal ground cell and a smaller daughter cell that remains meristematic, until the meristematic cell (PO:0004010) differentiates into a guard mother cell (PO:0000351)." [POC:Ramona_Walls]
 subset: CL
 synonym: "inicial estom&#225tica (meristemoide inicial) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stomatal initial (exact)" EXACT []
@@ -1611,7 +1611,7 @@ relationship: develops_from PO:0000349 ! plant epidermal initial cell
 id: PO:0000349
 name: plant epidermal initial cell
 namespace: plant_anatomy
-def: "An initial cell (PO:0004011) that is part of an epidermis (PO:0005679) and gives rise to specialized cell types of the epidermis." [TAIR_curator:Leonore_Reiser]
+def: "An initial cell (PO:0004011) that is part of an plant epidermis (PO:0005679) and gives rise to specialized cells." [PO:cooperl, TAIR_curator:Leonore_Reiser]
 subset: CL
 synonym: "c&#233lula inicial de la epidermis (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "epidermal initial (exact)" EXACT []
@@ -3977,7 +3977,7 @@ relationship: part_of PO:0030112 ! pedicel
 id: PO:0005013
 name: hypocotyl epidermis
 namespace: plant_anatomy
-def: "The outermost primary cell layer of the hypocotyl." [PMID:15368128, TAIR_curator:Donghui_Li]
+def: "A portion of stem epidermis (PO:0025178) which is the  outermost primary cell layer of the hypocotyl (PO:0020100)." [PMID:15368128, TAIR_curator:Donghui_Li]
 synonym: "epidermis del hipoc&#243tile (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "胚軸 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025178 ! stem epidermis
@@ -4094,7 +4094,7 @@ relationship: part_of PO:0009072 ! plant ovary
 id: PO:0005023
 name: plant ovary outer epidermis
 namespace: plant_anatomy
-def: "A portion of ovary epidermis (PO:0006063) which is the outer surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "A portion of plant ovary epidermis (PO:0006063) which is the outer surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "epidermis externo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "plant ovary abaxial epidermis (related)" RELATED []
 synonym: "子房の裏側 背軸側の表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4105,7 +4105,7 @@ is_a: PO:0006063 ! plant ovary epidermis
 id: PO:0005024
 name: plant ovary inner epidermis
 namespace: plant_anatomy
-def: "A portion of ovary epidermis (PO:0006063) which is the inner surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
+def: "A portion of plant ovary epidermis (PO:0006063) which is the inner surface of a plant ovary (PO:0009072)." [Gramene:Pankaj_Jaiswal, POC:Laurel_Cooper]
 synonym: "epidermis interno del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "plant ovary adaxial epidermis (related)" RELATED []
 synonym: "子房の表側、向軸側の表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4717,7 +4717,7 @@ is_a: PO:0005656 ! portion of secretory tissue
 id: PO:0005679
 name: plant epidermis
 namespace: plant_anatomy
-def: "A portion of plant tissue (PO:0009007) composed of epidermal cells (PO:0004013) that develops from the protoderm (PO:0006210) and covers the surface of a plant structure (PO:0009011)." [POC:curators]
+def: "A portion of plant tissue (PO:0009007) composed of plant epidermal cells (PO:0004013) that develops from the protoderm (PO:0006210) and covers the surface of a plant structure (PO:0009011)." [POC:curators]
 comment: The epidermis can be composed of one or more layers of cells. In some species of vascular plants, the epidermis, which is a primary tissue, is replaced by periderm, which is secondary tissue, later in development. The epidermis can also include trichomes, stomatal pores, root hairs, and rhizoids.
 subset: TraitNet
 synonym: "dermal tissue (exact)" EXACT []
@@ -5078,7 +5078,7 @@ is_a: PO:0009089 ! endosperm
 id: PO:0006018
 name: leaf adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf." [POC:Ramona_Walls]
+def: "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf (PO:0025034)." [POC:Ramona_Walls]
 comment: Used to refer to an adaxial epidermis of an entire leaf. More specific terms exist for leaf lamina adaxial epidermis and petiole adaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis adaxial de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "upper epidermis (related)" RELATED []
@@ -5089,7 +5089,7 @@ is_a: PO:0006016 ! leaf epidermis
 id: PO:0006019
 name: leaf abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf." [POC:curators, POC:Laurel_Cooper]
+def: "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf (PO:0025034)." [POC:curators, POC:Laurel_Cooper]
 comment: Used to refer to an abaxial epidermis of an entire leaf. More specific terms exist for leaf lamina abaxial epidermis and petiole abaxial epidermis. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis abaxial de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lower epidermis (related)" RELATED []
@@ -5205,7 +5205,7 @@ relationship: part_of PO:0020049 ! leaflet
 id: PO:0006035
 name: shoot system epidermis
 namespace: plant_anatomy
-def: "A portion of epidermis (PO:0005679) that is part of a shoot system (PO:0009006) and arises from the meristem L1 layer (PO:0009020)." [ISBN:0471245208, POC:curators, POC:Laurel_Cooper]
+def: "A portion of plant epidermis (PO:0005679) that is part of a shoot system (PO:0009006) and arises from the meristem L1 layer (PO:0009020)." [ISBN:0471245208, POC:curators, POC:Laurel_Cooper]
 comment: Often interrupted by stomatal complexes (PO:0002000) and other structures. The shoot system epidermis is different from the root epidermis (PO:0006036) in its origin, function and structure.
 synonym: "epidermis del epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "シュート表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5221,7 +5221,7 @@ id: PO:0006036
 name: root epidermis
 namespace: plant_anatomy
 alt_id: PO:0006037
-def: "A portion of epidermis (PO:0005679) that is part of a root (PO:0009005)." [ISBN:0080374913]
+def: "A portion of plant epidermis (PO:0005679) that is part of a root (PO:0009005)." [ISBN:0080374913]
 comment: The root epidermis is different from the shoot epidermis in its origin, function and structure.
 synonym: "epiblem (related)" RELATED []
 synonym: "epidermis de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -5289,7 +5289,7 @@ id: PO:0006043
 name: integument epidermis
 namespace: plant_anatomy
 alt_id: PO:0006508
-def: "A portion of epidermis (PO:0005679) that is part of an integument (PO:0020021)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls]
+def: "A portion of plant epidermis (PO:0005679) that is part of an integument (PO:0020021)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del integumento (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae integument epidermis (narrow)" NARROW []
@@ -5325,7 +5325,7 @@ relationship: part_of PO:0020023 ! outer integument
 id: PO:0006048
 name: seed coat epidermis
 namespace: plant_anatomy
-def: "A portion of epidermis (PO:0005679) that is part of a seed coat (PO:0009088)." [POC:Ramona_Walls]
+def: "A portion of plant epidermis (PO:0005679) that is part of a seed coat (PO:0009088)." [POC:Ramona_Walls]
 synonym: "epidermis de la cubierta de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子種皮表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:111
@@ -5373,7 +5373,7 @@ relationship: part_of PO:0020057 ! testa
 id: PO:0006052
 name: petal abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of petal epidermis that covers the abaxial/lower surface of a petal." [POC:Ramona_Walls]
+def: "A portion of petal epidermis (PO:0006041) that covers the abaxial/lower surface of a petal (PO:0009032)." [POC:Ramona_Walls]
 synonym: "epidermis abaxial del p&#233talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁背軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006041 ! petal epidermis
@@ -5382,7 +5382,7 @@ is_a: PO:0006041 ! petal epidermis
 id: PO:0006053
 name: petal adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of petal epidermis that covers the adaxial/upper surface of a petal." [POC:Ramona_Walls]
+def: "A portion of petal epidermis (PO:0006041) that covers the adaxial/upper surface of a petal (PO:0009032)." [POC:Ramona_Walls]
 synonym: "epidermis adaxial del p&#233talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁向軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006041 ! petal epidermis
@@ -5391,7 +5391,7 @@ is_a: PO:0006041 ! petal epidermis
 id: PO:0006054
 name: sepal abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of sepal epidermis that covers the abaxial/lower surface of a sepal." [POC:Ramona_Walls]
+def: "A portion of sepal epidermis (PO:0006040) that covers the abaxial/lower surface of a sepal (PO:0009031)." [POC:Ramona_Walls]
 synonym: "epidermis abaxial del s&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片背軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006040 ! sepal epidermis
@@ -5400,7 +5400,7 @@ is_a: PO:0006040 ! sepal epidermis
 id: PO:0006055
 name: sepal adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of sepal epidermis that covers the adaxial/upper surface of a sepal." [POC:Ramona_Walls]
+def: "A portion of sepal epidermis (PO:0006040) that covers the adaxial/upper surface of a sepal (PO:0009031)." [POC:Ramona_Walls]
 synonym: "epidermis adaxial del s&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "がく片向軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006040 ! sepal epidermis
@@ -5409,7 +5409,7 @@ is_a: PO:0006040 ! sepal epidermis
 id: PO:0006056
 name: cotyledon epidermis
 namespace: plant_anatomy
-def: "A leaf epidermis that is part of a cotyledon." [POC:Ramona_Walls]
+def: "A portion of leaf epidermis (PO:0006016) that is part of a cotyledon (PO:0020030)." [POC:Ramona_Walls]
 synonym: "epidermis del cotiled&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006016 ! leaf epidermis
@@ -5419,7 +5419,7 @@ relationship: part_of PO:0020030 ! cotyledon
 id: PO:0006057
 name: cotyledon abaxial epidermis
 namespace: plant_anatomy
-def: "The abaxial/lower epidermal cell layer of the cotyledon." [Gramene:Pankaj_Jaiswal]
+def: "A portion of leaf epidermis (PO:0006016) which is the abaxial/lower epidermis of the cotyledon (PO:0020030)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
 synonym: "epidermis abaxial de cotiled&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉 背軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006056 ! cotyledon epidermis
@@ -5428,7 +5428,7 @@ is_a: PO:0006056 ! cotyledon epidermis
 id: PO:0006058
 name: cotyledon adaxial epidermis
 namespace: plant_anatomy
-def: "The adaxial/upper epidermal cell layer of the cotyledon." [Gramene:Pankaj_Jaiswal]
+def: "A portion of leaf epidermis (PO:0006016) which is the adaxial/upper epidermis of the cotyledon (PO:0020030)." [Gramene:Pankaj_Jaiswal, PO:cooperl]
 synonym: "epidermis adaxial de cotiled&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉 向軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006056 ! cotyledon epidermis
@@ -5437,7 +5437,7 @@ is_a: PO:0006056 ! cotyledon epidermis
 id: PO:0006060
 name: filament epidermis
 namespace: plant_anatomy
-def: "A portion of stamen epidermis that is part of a filament." [POC:Ramona_Walls]
+def: "A portion of stamen epidermis (PO:0025097) that is part of a filament (PO:0009067)." [POC:Ramona_Walls]
 synonym: "epidermis del filamento (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花糸表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025097 ! stamen epidermis
@@ -5477,7 +5477,7 @@ id: PO:0006063
 name: plant ovary epidermis
 namespace: plant_anatomy
 alt_id: PO:0006500
-def: "A portion of epidermis (PO:0005679) that is part of an plant ovary wall (PO:0005022)." [POC:Ramona_Walls]
+def: "A portion of plant epidermis (PO:0005679) that is part of an plant ovary wall (PO:0005022)." [POC:Ramona_Walls]
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 synonym: "epidermis del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae ovary epidermis (narrow)" NARROW []
@@ -10312,7 +10312,7 @@ relationship: part_of PO:0009001 ! fruit
 id: PO:0008006
 name: nucellar epidermis
 namespace: plant_anatomy
-def: "A portion of plant tissue that is the morphologically distinct outer layer of the nucellus." [Gramene:Anuradha_Pujar]
+def: "A megasporangium exothecium (PO:0025312) that is the morphologically distinct outer layer of the nucellus (PO:0020020)." [Gramene:Anuradha_Pujar]
 subset: Poaceae
 subset: Rice
 synonym: "epidermis nucelar (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -10582,7 +10582,7 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0008027
 name: petiole adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of petiole epidermis that covers the adaxial/upper surface of a petiole." [POC:Ramona_Walls]
+def: "A portion of petiole epidermis (PO:0000051) that covers the adaxial/upper surface of a petiole (PO:0020038)." [POC:Ramona_Walls]
 synonym: "epidermis adaxial del pec&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄向軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000051 ! petiole epidermis
@@ -10602,7 +10602,7 @@ relationship: part_of PO:0025222 ! reproductive shoot apex
 id: PO:0008029
 name: petiole abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of petiole epidermis that covers the abaxial/lower surface of a petiole." [POC:Ramona_Walls]
+def: "A portion of petiole epidermis (PO:0000051) that covers the abaxial/lower surface of a petiole (PO:0020038)." [POC:Ramona_Walls]
 synonym: "epidermis abaxial del pec&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉柄背軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000051 ! petiole epidermis
@@ -12718,7 +12718,7 @@ namespace: plant_anatomy
 alt_id: PO:0006059
 alt_id: PO:0006447
 alt_id: PO:0006482
-def: "An microsporangium exothecium that is part of an anther wall." [ISBN:0471244554, ISBN:9780003686647]
+def: "An microsporangium exothecium (PO:0025311) that is part of an anther wall (PO:0000002)." [ISBN:0471244554, ISBN:9780003686647]
 comment: Often with thickened cell walls. Involved in anther dehiscence. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
@@ -14912,7 +14912,7 @@ creation_date: 2010-05-27T09:37:30Z
 id: PO:0025047
 name: aerial tuber epidermis
 namespace: plant_anatomy
-def: "A portion of tuber epidermis that is part of an aerial tuber." [POC:curators]
+def: "A portion of shoot axis tuber epidermis (PO:0025046) that is part of an aerial tuber (PO:0004548)." [POC:curators]
 synonym: "epidermis de tub&#233rculo a&#233reo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "むかご（珠芽）表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025046 ! shoot axis tuber epidermis
@@ -14924,7 +14924,7 @@ creation_date: 2010-05-27T09:55:39Z
 id: PO:0025048
 name: subterranean tuber epidermis
 namespace: plant_anatomy
-def: "A tuber epidermis that is part of a subterranean tuber." [POC:curators]
+def: "A shoot axis tuber epidermis (PO:0025046) that is part of a subterranean shoot axis tuber (PO:0004547)." [POC:curators]
 comment: The skin of young potatoes is epidermis while the skin of mature potatoes is periderm.
 synonym: "epidermis de tub&#233rculo subterr&#225neo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "young potato tuber skin (narrow)" NARROW []
@@ -16167,7 +16167,7 @@ creation_date: 2010-11-15T12:54:56Z
 id: PO:0025135
 name: cigar leaf lamina abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf lamina abaxial epidermis that covers the abaxial surface of a cigar leaf." [CGP:curators, POC:Ramona_Walls]
+def: "A portion of leaf lamina abaxial epidermis PO:0000049) that covers the abaxial surface of a cigar leaf (PO:0025130)." [CGP:curators, POC:Ramona_Walls]
 synonym: "cigar leaf dorsal surface (exact)" EXACT [CO_125:0000017]
 synonym: "epidermis abaxial de la l&#225mina de la hoja en cigarro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉巻状葉の葉身背軸側表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16394,7 +16394,7 @@ creation_date: 2010-11-15T01:49:37Z
 id: PO:0025152
 name: peduncle epidermis
 namespace: plant_anatomy
-def: "A portion of branch epidermis that is part of a peduncle." [POC:curators]
+def: "A portion of branch epidermis (PO:0025179) that is part of a peduncle (PO:0009053)." [POC:curators]
 subset: Musa
 synonym: "epidermis del ped&#250nculo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "peduncle surface (related)" RELATED [CO_125:0000036]
@@ -16491,7 +16491,7 @@ creation_date: 2010-11-15T02:34:14Z
 id: PO:0025159
 name: bract abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of bract epidermis that covers the abaxial/lower surface of a bract." [POC:Ramona_Walls]
+def: "A portion of bract epidermis (PO:0025158) that covers the abaxial/lower surface of a bract (PO:0009055)." [POC:Ramona_Walls]
 subset: Musa
 synonym: "bract external face (exact)" EXACT [CO_125:0000054]
 synonym: "epidermis abaxial de la br&#225ctea (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -16504,7 +16504,7 @@ creation_date: 2010-11-15T02:35:37Z
 id: PO:0025160
 name: bract adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of bract epidermis that covers the adaxial/upper surface of a bract." [POC:Ramona_Walls]
+def: "A portion of bract epidermis (PO:0025158) that covers the adaxial/upper surface of a bract (PO:0009055)." [POC:Ramona_Walls]
 subset: Musa
 synonym: "bract internal face (exact)" EXACT [CO_125:0000055]
 synonym: "epidermis adaxail de la br&#225ctea (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17000,7 +17000,7 @@ creation_date: 2010-12-17T03:01:55Z
 id: PO:0025192
 name: tepal abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of tepal epidermis that covers the abaxial/lower surface of a tepal." [POC:Ramona_Walls]
+def: "A portion of tepal epidermis (PO:0025184) that covers the abaxial/lower surface of a tepal (PO:0009033)." [POC:Ramona_Walls]
 synonym: "epidermis abaxial del t&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片背軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025184 ! tepal epidermis
@@ -17011,7 +17011,7 @@ creation_date: 2010-12-20T07:49:04Z
 id: PO:0025193
 name: tepal adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of tepal epidermis that covers the adaxial/upper surface of a tepal." [POC:Ramona_Walls]
+def: "A portion of tepal epidermis (PO:0025184) that covers the adaxial/upper surface of a tepal (PO:0009033)." [POC:Ramona_Walls]
 synonym: "epidermis adaxail del t&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花被片向軸側 表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025184 ! tepal epidermis
@@ -17757,7 +17757,7 @@ creation_date: 2010-12-30T03:53:09Z
 id: PO:0025249
 name: leaf sheath epidermis
 namespace: plant_anatomy
-def: "A portion of leaf epidermis that is part of a leaf sheath." [POC:Ramona_Walls]
+def: "A portion of leaf epidermis (PO:0006016) that is part of a leaf sheath (PO:0020104)." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis de la vaina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉鞘表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -17772,7 +17772,7 @@ creation_date: 2010-12-30T03:58:22Z
 id: PO:0025250
 name: leaf sheath abaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf sheath epidermis that covers the abaxial/lower surface of a leaf sheath." [POC:Ramona_Walls]
+def: "A portion of leaf sheath epidermis (PO:0025249) that covers the abaxial/lower surface of a leaf sheath (PO:0020104)." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: Musa
 synonym: "epidermis abaxial de la vaina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -17787,7 +17787,7 @@ creation_date: 2010-12-30T04:02:50Z
 id: PO:0025251
 name: leaf sheath adaxial epidermis
 namespace: plant_anatomy
-def: "A portion of leaf sheath epidermis that covers the adaxial/upper surface of a leaf sheath." [POC:Ramona_Walls]
+def: "A portion of leaf sheath epidermis (PO:0025249) that covers the adaxial/upper surface of a leaf sheath (PO:0020104)." [POC:Ramona_Walls]
 comment: If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 synonym: "epidermis adaxial de la vaina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉鞘向軸側表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -18635,7 +18635,7 @@ creation_date: 2011-05-03T11:13:31Z
 id: PO:0025311
 name: microsporangium exothecium
 namespace: plant_anatomy
-def: "An exothecium that is part of a microsporangium wall." [POC:curators]
+def: "A portion of exothecium (PO:0030073) that is part of a microsporangium wall (PO:0025307)." [POC:curators]
 synonym: "exotecio del microsporangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "microsporangial exothecium (exact)" EXACT []
 synonym: "microsporangium epidermis (exact)" EXACT []
@@ -18650,7 +18650,7 @@ creation_date: 2011-05-03T11:19:36Z
 id: PO:0025312
 name: megasporangium exothecium
 namespace: plant_anatomy
-def: "An exothecium that is part of a megasporangium wall." [POC:curators]
+def: "A portion of exothecium (PO:0030073) that is part of a megasporangium wall (PO:0025308)." [POC:curators]
 synonym: "exotecio del megasporangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "megapsorangial exothecium (exact)" EXACT []
 synonym: "megasporangium epidermis (exact)" EXACT []
@@ -21283,7 +21283,7 @@ creation_date: 2012-06-11T15:28:44Z
 id: PO:0025499
 name: sepal epidermis giant cell
 namespace: plant_anatomy
-def: "An epidermal pavement cell (PO:0000332) that is part of sepal epidermis (PO:0006040) and is approximately one fifth the length of a sepal." [PMID:20485493, TAIR_curator:Tanya_Berardini]
+def: "An shoot epidermal pavement cell (PO:0000332) that is part of sepal epidermis (PO:0006040) and is approximately one fifth the length of a sepal (PO:0009031)." [PMID:20485493, TAIR_curator:Tanya_Berardini]
 comment: Compare to other epidermal pavement cells that are approximately one hundredth of the length of a sepal (PO:0009031). In Arabidopsis, sepal giant epidermal cells arise by DNA endoreplication (GO:0042023) and have high DNA content (up to 16C).
 synonym: "giant cell (broad)" BROAD []
 synonym: "がく片表皮巨大細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -24106,7 +24106,7 @@ creation_date: 2011-04-29T09:25:26Z
 id: PO:0030068
 name: epidermal rhizoid initial cell
 namespace: plant_anatomy
-def: "An epidermal initial cell (PO:0000349) that gives rise to an epidermal rhizoid (PO:0030071)." [PMID:12917289]
+def: "A plant epidermal initial cell (PO:0000349) that gives rise to an epidermal rhizoid (PO:0030071)." [PMID:12917289]
 comment: Part of the epidermis of a thallus or gametophore of a bryophyte or pteridophyte in the gametophytic phase or the stem of a monocot in the sporophytic phase.
 subset: CL
 synonym: "epidermal rhizoid initial (exact)" EXACT []
@@ -24121,7 +24121,7 @@ creation_date: 2011-04-29T09:33:11Z
 id: PO:0030069
 name: paraphyllium
 namespace: plant_anatomy
-def: "A portion of epidermis (PO:0005679) tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis (PO:0030020)." [ISBN:0962073342]
+def: "A portion of plant epidermis (PO:0005679) tissue that is an outgrowth from the epidermis between the leaves of a gametophore axis (PO:0030020)." [ISBN:0962073342]
 comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-like, or leaf-like. Found in pleurocarpous mosses and a few leafy liverworts.
 subset: Bryophytes
 synonym: "parafilium (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -24192,7 +24192,7 @@ creation_date: 2011-04-29T02:30:17Z
 id: PO:0030073
 name: exothecium
 namespace: plant_anatomy
-def: "A portion of epidermis (PO:0005679) that is the outermost layer of a sporangium wall (PO:0025306)." [ISBN:0962073342, ISBN:9780003686647]
+def: "A portion of plant epidermis (PO:0005679) that is the outermost layer of a sporangium wall (PO:0025306)." [ISBN:0962073342, ISBN:9780003686647]
 comment: Develops from the outermost layer of an amphithecium in bryophytes.
 synonym: "epithecium (exact)" EXACT []
 synonym: "exotecio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
