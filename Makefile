@@ -8,7 +8,7 @@ ONT=po
 ROBOT=robot
 OWLTOOLS=owltools
 
-all: po.obo po.owl all_subsets
+all: all_imports po.obo po.owl all_subsets
 all_subsets: subsets/po-basic.obo
 test: $(ONT).owl
 release: all
