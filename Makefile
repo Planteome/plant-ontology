@@ -51,5 +51,5 @@ mirror/%.owl: $(SRC)
 .PRECIOUS: mirror/%.owl
 
 mirror/ncbitaxon.owl: 
-	$(OWLTOOLS) $(OBO)/ncbitaxon/subsets/taxslim.obo --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
+	$(OWLTOOLS) $(OBO)/ncbitaxon/subsets/taxslim.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
 .PRECIOUS: mirror/ncbitaxon.owl
