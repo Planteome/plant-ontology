@@ -22,6 +22,9 @@ while(<TERM>) {
 		if($line !~ /^PO/) {
 				next;
 		}
+                if($line =~ /OBSOLETE/) {
+                        next;
+                }
 		
 		my ($id, $name, $defn, $synonyms, $isaid, $isaname) = split("\t", $line);
 		print OUTFILE "   [ \"$name\", \"<a href=\\\"https://browser.planteome.org/amigo/term/$id\\\">$id</a>\", \"$defn\" ],\n";
