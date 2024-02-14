@@ -10678,14 +10678,14 @@ is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
 id: PO:0008037
-name: OBSOLETE seedling
+name: seedling
 namespace: plant_anatomy
-def: "OBSOLETE. A young plant derived from a newly germinated seed." [Gramene:Chih-Wei_Tung]
-comment: This term was made obsolete. Replaced by whole plant growth stage seedling growth (PO:0007131) and whole plant (PO:0000003).
+def: "A whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [Gramene:Chih-Wei_Tung] {comment="PO:cooperl"}
+comment: A young plant derived from a newly germinated seed, up until the development of the first true leaf.
 synonym: "v&#225stago (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "芽生え、実生 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:82
-is_obsolete: true
+is_a: PO:0000003 ! whole plant
 replaced_by: PO:0000003
 replaced_by: PO:0007131
 
@@ -22865,6 +22865,15 @@ xref: PO_GIT:618
 is_a: PO:0004011 ! initial cell
 created_by: http://orcid.org/0000-0002-6379-8932
 creation_date: 2023-02-14T23:15:02Z
+
+[Term]
+id: PO:0025626
+name: plant gall
+def: "A portion of plant tissue (PO:0009007) that develops in response an organism for the benefit of that organism." [PO:cooperl]
+xref: PO_GIT:641
+is_a: PO:0009007 ! portion of plant tissue
+created_by: https://orcid.org/0000-0002-6379-8932
+creation_date: 2024-02-14T18:01:56Z
 
 [Term]
 id: PO:0028001
