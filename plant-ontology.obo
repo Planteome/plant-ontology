@@ -83,7 +83,6 @@ synonym: "prothalli (narrow, plural)" NARROW OMO:0003004 [FNA:4b610104-1bb0-4c6b
 synonym: "prothallium (narrow)" NARROW []
 synonym: "prothallus (narrow)" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
 synonym: "ramet (broad)" BROAD []
-synonym: "seedling (narrow)" NARROW []
 synonym: "shrub (narrow)" NARROW []
 synonym: "sporophyte (narrow)" NARROW []
 synonym: "suffrutex (narrow)" NARROW [FNA:99508f62-7116-4e2b-90c0-19ff55ebd967]
@@ -18298,6 +18297,7 @@ synonym: "実生幼葉鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki
 xref: PO_GIT:294
 is_a: PO:0020033 ! coleoptile
 relationship: develops_from PO:0025286 ! plant embryo coleoptile
+relationship: part_of PO:0008037 ! seedling
 relationship: participates_in PO:0007131 ! seedling development stage
 created_by: rwalls
 creation_date: 2011-04-20T02:20:12Z
@@ -18327,6 +18327,7 @@ synonym: "実生根鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:340
 is_a: PO:0020034 ! coleorhiza
 relationship: develops_from PO:0025288 ! embryo coleorhiza
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-20T02:34:17Z
 
@@ -18355,6 +18356,7 @@ synonym: "実生胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:341
 is_a: PO:0020100 ! hypocotyl
 relationship: develops_from PO:0025290 ! embryo hypocotyl
+relationship: part_of PO:0008037 ! seedling
 relationship: participates_in PO:0007131 ! seedling development stage
 created_by: rwalls
 creation_date: 2011-04-20T02:39:56Z
@@ -18384,6 +18386,7 @@ synonym: "実生上胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki
 xref: PO_GIT:342
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryo epicotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:13:08Z
 
@@ -18405,13 +18408,14 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025295
 name: seedling mesocotyl
 namespace: plant_anatomy
-def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294)." [PO:Laurel_Cooper, POC:curators]
+def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294) and is part of a seedling (PO:0008037)." [PO:Laurel_Cooper, POC:curators]
 comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:0025294) and is part of a seedling (PO:0008037)..
 synonym: "mesoc&#243tile de la plantual (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生中胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:343
 is_a: PO:0020037 ! mesocotyl
 relationship: develops_from PO:0025294 ! embryo mesocotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:21:58Z
 
@@ -18436,12 +18440,13 @@ id: PO:0025297
 name: seedling radicle
 namespace: plant_anatomy
 def: "A radicle (PO:0020031) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
-comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
+comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025) of an adult plant.
 synonym: "rad&#237cula de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:344
 is_a: PO:0020031 ! radicle
 relationship: develops_from PO:0025296 ! plant embryo radicle
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:41:48Z
 
@@ -18499,13 +18504,14 @@ creation_date: 2011-04-27T08:20:22Z
 id: PO:0025301
 name: seedling hypocotyl-root junction
 namespace: plant_anatomy
-def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) ." [PO:Laurel_Cooper, POC:curators]
+def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) and is part of a seedling (PO:0008037)." [PO:Laurel_Cooper, POC:curators]
 comment: Part of a seedling (PO:0008037).
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸-根合流点 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:250
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: develops_from PO:0025300 ! embryo hypocotyl-root junction
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-27T08:20:22Z
 
@@ -20912,6 +20918,7 @@ def: "A cotyledon (PO:0020030) that is part of a seedling (PO:0008037)." [PO:coo
 comment: Develops from an embryo cotyledon (PO:0025470).
 is_a: PO:0020030 ! cotyledon
 relationship: develops_from PO:0025470 ! plant embryo cotyledon
+relationship: part_of PO:0008037 ! seedling
 created_by: Laurel_Cooper
 creation_date: 2012-03-21T04:49:15Z
 
