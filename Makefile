@@ -31,7 +31,7 @@ subsets/po-basic.obo: po.obo
 # Imports
 # ----------------------------------------
 
-IMPORTS = ncbitaxon ro
+IMPORTS = ncbitaxon
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
 # Make this target to regenerate ALL
