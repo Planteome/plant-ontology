@@ -17,7 +17,7 @@ subsetdef: Tomato "Term used for tomato"
 subsetdef: TraitNet "Plant Functional Traits"
 synonymtypedef: German "German synonym (exact)" EXACT
 synonymtypedef: Japanese "Japanese synonym (exact)" EXACT
-synonymtypedef: Plural "Plural"
+synonymtypedef: OMO:0003004 "plural form"
 synonymtypedef: Spanish "Spanish synonym (exact)" EXACT
 default-namespace: plant_ontology
 treat-xrefs-as-genus-differentia: CL part_of NCBITaxon:33090
@@ -70,21 +70,20 @@ synonym: "bush (narrow)" NARROW []
 synonym: "clonal colony (related)" RELATED []
 synonym: "colony (related)" RELATED []
 synonym: "frutex (narrow)" NARROW [FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba]
-synonym: "frutices (narrow)" NARROW Plural [FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b]
+synonym: "frutices (narrow, plural)" NARROW OMO:0003004 [FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b]
 synonym: "gametophyte (narrow)" NARROW []
 synonym: "genet (broad)" BROAD []
 synonym: "herb (narrow)" NARROW []
 synonym: "liana (narrow)" NARROW []
 synonym: "planta entera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "prothalli (narrow)" NARROW Plural [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
+synonym: "prothalli (narrow, plural)" NARROW OMO:0003004 [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
 synonym: "prothallium (narrow)" NARROW []
 synonym: "prothallus (narrow)" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
 synonym: "ramet (broad)" BROAD []
-synonym: "seedling (narrow)" NARROW []
 synonym: "shrub (narrow)" NARROW []
 synonym: "sporophyte (narrow)" NARROW []
 synonym: "suffrutex (narrow)" NARROW [FNA:99508f62-7116-4e2b-90c0-19ff55ebd967]
-synonym: "suffrutices (narrow)" NARROW Plural [FNA:ba1b1bd5-75bd-4195-b11c-3aba08da08c2]
+synonym: "suffrutices (narrow, plural)" NARROW OMO:0003004 [FNA:ba1b1bd5-75bd-4195-b11c-3aba08da08c2]
 synonym: "tree (narrow)" NARROW []
 synonym: "vine (narrow)" NARROW []
 synonym: "woody clump (narrow)" NARROW [FNA:c1ccca7d-2a98-4a9d-8603-c34b551935e0]
@@ -243,7 +242,7 @@ id: PO:0000015
 name: cotyledon primordium
 namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025128) that develops from a cotyledon anlagen (PO:0025432) and is part of a vegetative shoot apex (PO:0025223) and is committed to the development of a cotyledon (PO:0020030)." [POC:curators]
-synonym: "cotyledon primordia (exact, plural)" EXACT []
+synonym: "cotyledon primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of cotyledon primordium tissue (exact)" EXACT []
 synonym: "primordio de cotiled&#243n (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子葉原基（可視的）(Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -272,7 +271,7 @@ def: "A phyllome primordium (PO:0025128) that develops from a vascular leaf anla
 synonym: "leaf primordium (exact)" EXACT []
 synonym: "portion of vascular leaf primordium tissue (exact)" EXACT []
 synonym: "primordio de hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "vascular leaf primordia (exact, plural)" EXACT []
+synonym: "vascular leaf primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "葉原基 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:466
 is_a: PO:0025128 ! phyllome primordium
@@ -318,7 +317,7 @@ id: PO:0000021
 name: petal primordium
 namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025128) that develops from a petal anlagen (PO:0025484) and is committed to the development of a petal (PO:0009032)." [POC:curators]
-synonym: "petal primordia (exact, plural)" EXACT []
+synonym: "petal primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of petal primordium tissue (exact)" EXACT []
 synonym: "primordio de p&#233talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花弁原基（可視的） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -425,7 +424,7 @@ namespace: plant_anatomy
 def: "A collective organ part structure composed of two or more layers of various tissues that is a partition that divides a cavity formed by the fusion of two or more organs." [POC:curators]
 comment: A septum is formed by the fusion of the walls of two adjacent organs (ovary walls or anther walls), for example, the partition between two sections of an orange, seen in cross-section.
 synonym: "dissepiment (broad)" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
-synonym: "septa (exact, plural)" EXACT [FNA:28e5096f-fc90-4b10-9079-9a60068a7967]
+synonym: "septa (exact, plural)" EXACT OMO:0003004 [FNA:28e5096f-fc90-4b10-9079-9a60068a7967]
 synonym: "septo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "隔壁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4
@@ -1408,24 +1407,24 @@ comment: This class is the union of unicellular trichome (PO:0025537) and multic
 subset: TraitNet
 synonym: "barb trichome (broad)" BROAD [FNA:aa191087-e979-486f-ad87-0e050a83090f]
 synonym: "bristle (broad)" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
-synonym: "capilli (narrow)" NARROW Plural [FNA:602c5ee8-6634-4093-bd2c-016dde8a350e]
+synonym: "capilli (narrow, plural)" NARROW OMO:0003004 [FNA:602c5ee8-6634-4093-bd2c-016dde8a350e]
 synonym: "capillus (narrow)" NARROW [FNA:43d66471-4955-4bc2-a70c-c88e33877c42]
-synonym: "cilia (narrow)" NARROW Plural [FNA:c358e298-5926-42d6-8d49-a918cdc72406]
+synonym: "cilia (narrow, plural)" NARROW OMO:0003004 [FNA:c358e298-5926-42d6-8d49-a918cdc72406]
 synonym: "cilium (narrow)" NARROW [FNA:12abd29b-5eae-47a2-baae-4059581e7eaa]
 synonym: "glochid (narrow)" NARROW [FNA:881fcb45-5dfd-4d06-8d6f-a111ba5e220a]
-synonym: "glochidia (narrow)" NARROW Plural [FNA:899a83bf-39bb-4128-b472-b0e27dcf5b35]
+synonym: "glochidia (narrow, plural)" NARROW OMO:0003004 [FNA:899a83bf-39bb-4128-b472-b0e27dcf5b35]
 synonym: "glochidium (narrow)" NARROW [FNA:99a6f711-b4da-4231-8dce-9ed171b87e9c]
 synonym: "hair (narrow)" NARROW [FNA:9ef3a0eb-f8e4-4a7b-911e-92952fc19956]
-synonym: "lepides (narrow)" NARROW Plural [FNA:e6a34ceb-a3e7-49f7-a4ac-cf0ea1552dc4]
+synonym: "lepides (narrow, plural)" NARROW OMO:0003004 [FNA:e6a34ceb-a3e7-49f7-a4ac-cf0ea1552dc4]
 synonym: "lepis (narrow)" NARROW [FNA:bb12cad4-db12-4e59-a9fc-1676f2558a0a]
 synonym: "non-secretory trichome (narrow)" NARROW []
 synonym: "scale (narrow)" NARROW [FNA:8c618dea-f3dd-434f-bb13-23273ea6c143]
 synonym: "seta (related)" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
 synonym: "setae (related)" RELATED [FNA:93b95b97-0f1a-4d26-9c86-ebede4157269]
 synonym: "squama (narrow)" NARROW [FNA:6cb9e7af-32a7-413a-8f80-9e40d3ae462a]
-synonym: "squamae (narrow)" NARROW Plural [FNA:cbb9ceb5-a404-4b5c-9c8f-4cf0ca6bade2]
+synonym: "squamae (narrow, plural)" NARROW OMO:0003004 [FNA:cbb9ceb5-a404-4b5c-9c8f-4cf0ca6bade2]
 synonym: "squamella (narrow)" NARROW [FNA:ead20a1b-057b-4008-9466-bdb8e283aa82]
-synonym: "squamellae (narrow)" NARROW Plural [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
+synonym: "squamellae (narrow, plural)" NARROW OMO:0003004 [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
 synonym: "squamule (narrow)" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、毛 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3344,8 +3343,8 @@ subset: Maize
 subset: Tomato
 synonym: "columela del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "fruit carpophore (exact)" EXACT [FNA:93b5938d-aeac-4e64-9190-db4c8a2ed341]
-synonym: "fruit columellae (narrow)" NARROW Plural [FNA:8712ee90-8b17-4bb5-b929-35644b8b4ff6]
-synonym: "fruit columellas (narrow)" NARROW Plural [FNA:7024e4e1-69de-473c-94b9-e184f1576141]
+synonym: "fruit columellae (narrow, plural)" NARROW OMO:0003004 [FNA:8712ee90-8b17-4bb5-b929-35644b8b4ff6]
+synonym: "fruit columellas (narrow, plural)" NARROW OMO:0003004 [FNA:7024e4e1-69de-473c-94b9-e184f1576141]
 synonym: "果実柱軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:7024e4e1-69de-473c-94b9-e184f1576141
 xref: FNA:8712ee90-8b17-4bb5-b929-35644b8b4ff6
@@ -3489,7 +3488,7 @@ id: PO:0004703
 name: carpel primordium
 namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025128) that develops from a carpel anlagen (PO:0006005) and is committed to the development of a carpel (PO:0009030)." [POC:curators]
-synonym: "carpel primordia (exact, plural)" EXACT []
+synonym: "carpel primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of carpel primordium tissue (exact)" EXACT []
 synonym: "primordio de carpelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "心皮原基(可視的） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3505,7 +3504,7 @@ namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025128) that develops from a sepal anlagen (PO:0025485) and is committed to the development of a sepal (PO:0009031)." [POC:curators]
 synonym: "portion of sepal primordium tissue (exact)" EXACT []
 synonym: "primordio de s&#233palo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "sepal primordia (exact, plural)" EXACT []
+synonym: "sepal primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "がく片原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:465
 xref: PO_GIT:466
@@ -3519,7 +3518,7 @@ namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025128) that develops from a stamen anlagen (PO:0025486) and is committed to the development of a stamen (PO:0009029)." [POC:curators]
 synonym: "portion of stamen primordium tissue (exact)" EXACT []
 synonym: "primordio de estambre (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "stamen primordia (exact, plural)" EXACT []
+synonym: "stamen primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "雄蕊原基（可視的） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:465
 xref: PO_GIT:466
@@ -3956,7 +3955,7 @@ name: OBSOLETE replum
 namespace: plant_anatomy
 def: "OBSOLETE. A false septum formed by the ingrowth from the placenta of an ovary rather than from the carpel walls. This is formed post fertilization." [Gramene:Pankaj_Jaiswal, PMID:13678595, PMID:15035986]
 comment: This term was made obsolete to avoid confusion with the new terms fruit replum and ovary replum. Consider ovary replum (PO:0025272) or fruit replum (PO:0025267).
-synonym: "repla (exact, plural)" EXACT [FNA:b859a80d-5ce9-421f-a5c9-a64cdb01860b]
+synonym: "repla (exact, plural)" EXACT OMO:0003004 [FNA:b859a80d-5ce9-421f-a5c9-a64cdb01860b]
 synonym: "replum (replo) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "隔膜 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:279
@@ -4114,7 +4113,7 @@ def: "A primordium (PO:0025127) that develops from a root anlagen (PO:0025433) a
 comment: A root primordium may arise from cells of a pericycle (PO:0006203) in a root in most seed plant (pericyclic lateral root primordium; PO:0025492), from cells of an endodermis (PO:0000252) in ferns and some seed plants (non-pericyclic lateral root primordium: PO:0025493), or from cells of a shoot axis (PO:0025029), in the case of a basal root primordium (PO:0025479) or shoot-borne root primordium (PO:0025480). Transition from root primordium to root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147).
 synonym: "portion of root primordium tissue (exact)" EXACT []
 synonym: "primordio de ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "root primordia (exact, plural)" EXACT []
+synonym: "root primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "根原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:467
 is_a: PO:0025127 ! primordium
@@ -4136,7 +4135,7 @@ name: microsporangiate strobilus
 namespace: plant_anatomy
 def: "A strobilus (PO:0025083) that bears only pollen (PO:0025281)." [POC:austin_meier, POC:Laurel_Cooper]
 synonym: "male cone (related)" RELATED [FNA:b2779296-b5a3-41ac-97a3-f53448d492d7]
-synonym: "microstrobili (related)" RELATED Plural []
+synonym: "microstrobili (related, plural)" RELATED OMO:0003004 []
 synonym: "microstrobilus (related)" RELATED [FNA:ebda7bb0-bb12-4160-bbc6-a5edc4fb316c]
 synonym: "pollen cone (related)" RELATED []
 xref: FNA:b2779296-b5a3-41ac-97a3-f53448d492d7
@@ -4154,9 +4153,9 @@ namespace: plant_anatomy
 def: "A strobilus (PO:0025083) that bears only plant ovules (PO:0020003)." [POC:austin_meier, POC:Laurel_Cooper]
 synonym: "female cone (related)" RELATED [FNA:c98ce1b1-9cda-4790-9149-799e9795b621]
 synonym: "hop cone  (related)" RELATED []
-synonym: "macrostrobili (related)" RELATED Plural [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
+synonym: "macrostrobili (related, plural)" RELATED OMO:0003004 [FNA:ff4b92f1-d0aa-4d75-89ba-934aa07fba2d]
 synonym: "macrostrobilus (related)" RELATED [FNA:ed33e80e-12e2-41a3-8a0d-655a842189a6]
-synonym: "megastrobili  (related)" RELATED Plural [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
+synonym: "megastrobili  (related, plural)" RELATED OMO:0003004 [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
 synonym: "megastrobilus (related)" RELATED [FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107]
 synonym: "ovulate cone (related)" RELATED []
 xref: FNA:a116a573-2ca8-4bda-b3e7-d0d89e6e2107
@@ -4662,9 +4661,9 @@ comment: The epidermis can be composed of one or more layers of cells. In some s
 subset: TraitNet
 synonym: "dermal tissue (exact)" EXACT []
 synonym: "epidermal layer (exact)" EXACT []
-synonym: "epidermides (exact, plural)" EXACT [FNA:35df04e5-fde5-465e-b79e-ae7d5e1537bb]
+synonym: "epidermides (exact, plural)" EXACT OMO:0003004 [FNA:35df04e5-fde5-465e-b79e-ae7d5e1537bb]
 synonym: "epidermis (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "epidermises (exact, plural)" EXACT [FNA:0d1bd0e6-c039-4de3-a162-68299a2f342a]
+synonym: "epidermises (exact, plural)" EXACT OMO:0003004 [FNA:0d1bd0e6-c039-4de3-a162-68299a2f342a]
 synonym: "multiseriate epidermis (related)" RELATED []
 synonym: "portion of epidermal tissue (exact)" EXACT []
 synonym: "表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -5212,7 +5211,7 @@ namespace: plant_anatomy
 def: "A  multiseriate portion of root epidermis (PO:0006036) found in aerial roots of some monocots. Most of its cells are dead and store water like a sponge." [ISBN:0080374913]
 synonym: "velamen (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "velamen radicum (related)" RELATED []
-synonym: "velamina (exact, plural)" EXACT [FNA:176b1f82-00fa-4854-8365-28fc0a6e969a]
+synonym: "velamina (exact, plural)" EXACT OMO:0003004 [FNA:176b1f82-00fa-4854-8365-28fc0a6e969a]
 synonym: "根被（套被） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006036 ! root epidermis
 
@@ -6320,10 +6319,10 @@ comment: A gynophore is only present when there is an elongation of the axis bet
 subset: reference
 synonym: "carpophore (broad)" BROAD [FNA:93b5938d-aeac-4e64-9190-db4c8a2ed341]
 synonym: "flower columella (related)" RELATED [FNA:ee5dd9e2-1f92-4215-a02a-ce91ac29f58d]
-synonym: "flower columellae (related)" RELATED Plural [FNA:8712ee90-8b17-4bb5-b929-35644b8b4ff6]
-synonym: "flower columellas (related)" RELATED Plural [FNA:7024e4e1-69de-473c-94b9-e184f1576141]
+synonym: "flower columellae (related, plural)" RELATED OMO:0003004 [FNA:8712ee90-8b17-4bb5-b929-35644b8b4ff6]
+synonym: "flower columellas (related, plural)" RELATED OMO:0003004 [FNA:7024e4e1-69de-473c-94b9-e184f1576141]
 synonym: "gin&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "hypogynia (exact, plural)" EXACT [FNA:afcc169c-9f01-4a56-955f-7ca1d7f5d104]
+synonym: "hypogynia (exact, plural)" EXACT OMO:0003004 [FNA:afcc169c-9f01-4a56-955f-7ca1d7f5d104]
 synonym: "hypogynium (exact)" EXACT [FNA:b19b39b0-9a57-4ab7-8cb5-3b0af680c9dc]
 synonym: "peg (narrow)" NARROW []
 synonym: "花被間柱、子房柄、雌蕊柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -7595,7 +7594,7 @@ is_a: PO:0007042 ! whole plant fruit formation stage
 id: PO:0007030
 name: seedling shoot emergence stage
 namespace: plant_structure_development_stage
-def: "Shoot or leaf breaks through soil surface." [Gramene:Anuradha_Pujar, ISBN:3826331524]
+def: "A seedling development stage (PO:0007131) during which a seedling (PO:0008037) breaks through soil surface." [Gramene:Anuradha_Pujar, ISBN:3826331524, PO:cooperl]
 synonym: "07 shoot emergence in soybean (related)" RELATED [SOY:0000012]
 synonym: "BBCH growth stage 09 (related)" RELATED [ISBN:3826331524]
 synonym: "shoot emergence in Solanaceae (related)" RELATED [SGN:0000007]
@@ -10592,16 +10591,14 @@ is_a: PO:0009013 ! portion of meristem tissue
 
 [Term]
 id: PO:0008037
-name: OBSOLETE seedling
+name: seedling
 namespace: plant_anatomy
-def: "OBSOLETE. A young plant derived from a newly germinated seed." [Gramene:Chih-Wei_Tung]
-comment: This term was made obsolete. Replaced by whole plant growth stage seedling growth (PO:0007131) and whole plant (PO:0000003).
+def: "A whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [PO:cooperl]
+comment: A young plant derived from a newly germinated seed, up until the development of the first true leaf.
 synonym: "v&#225stago (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "芽生え、実生 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:82
-is_obsolete: true
-replaced_by: PO:0000003
-replaced_by: PO:0007131
+is_a: PO:0000003 ! whole plant
 
 [Term]
 id: PO:0008038
@@ -10631,7 +10628,7 @@ id: PO:0008040
 name: lodicule primordium
 namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025128)that develops from a lodicule anlagen (PO:0025483) and is committed to the development of a lodicule (PO:0009036)." [POC:curators]
-synonym: "lodicule primordia (exact, plural)" EXACT []
+synonym: "lodicule primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of lodicule primordium tissue (exact)" EXACT []
 synonym: "primordio del lod&#237culo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "鱗被原基（可視的）   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -10748,7 +10745,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) at the apex or base of a petiole, petiolule, leaf sheath, or branch that is differentiated from the remaining organ parts by its enlarged cross section." [POC:curators]
 comment: Often glandular. Often involved in movement of a plant structure in response to touch, gravity or light. In panicoid grasses a swollen region in the stem above the intercalary meristem. Such a definition would also include stems of Chloranthaceae, Acanthaceae, Caryophyllaceae, Amaranthaceae, etc. [source: APweb:Glossary].
 synonym: "pulv&#237nulo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "pulvini (exact, plural)" EXACT [FNA:8fa72a9e-0eeb-4ecd-a965-0b1133fcd921]
+synonym: "pulvini (exact, plural)" EXACT OMO:0003004 [FNA:8fa72a9e-0eeb-4ecd-a965-0b1133fcd921]
 synonym: "葉枕 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PATO:0000586
 xref: PO_GIT:70
@@ -10872,7 +10869,7 @@ subset: TraitNet
 synonym: "aerial root (narrow)" NARROW []
 synonym: "climbing root (narrow)" NARROW [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
 synonym: "ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "radices (exact, plural)" EXACT [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
+synonym: "radices (exact, plural)" EXACT OMO:0003004 [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
 synonym: "radix (exact)" EXACT [FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd]
 synonym: "根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f
@@ -10891,7 +10888,7 @@ subset: TraitNet
 synonym: "Poaceae crown (related)" RELATED []
 synonym: "shoot (related)" RELATED []
 synonym: "sistema de epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "thalli (related)" RELATED Plural [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
+synonym: "thalli (related, plural)" RELATED OMO:0003004 [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
 synonym: "thallus (related)" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
 synonym: "tree crown (narrow)" NARROW []
 synonym: "シュート系、苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11171,7 +11168,7 @@ synonym: "pitcher-blade (narrow)" NARROW [FNA:30c47c20-f459-4518-8657-feed7eb92f
 synonym: "scale-like leaf (narrow)" NARROW []
 synonym: "sterile frond (narrow)" NARROW [FNA:a4dc40f4-92f9-4ba5-b616-a84564f63fed]
 synonym: "trophophyll (narrow)" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
-synonym: "vascular leaves (exact, plural)" EXACT [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
+synonym: "vascular leaves (exact, plural)" EXACT OMO:0003004 [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
 synonym: "維管束のある葉, または維管束植物の葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:06544712-db97-4208-b188-c4b756a53c72
 xref: FNA:30c47c20-f459-4518-8657-feed7eb92fe4
@@ -11351,7 +11348,7 @@ synonym: "lodicule of ear floret (narrow)" NARROW []
 synonym: "lodicule of tassel floret (narrow)" NARROW []
 synonym: "lodiculus (exact)" EXACT []
 synonym: "squamella (exact)" EXACT [FNA:ead20a1b-057b-4008-9466-bdb8e283aa82]
-synonym: "squamellae (exact, plural)" EXACT [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
+synonym: "squamellae (exact, plural)" EXACT OMO:0003004 [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
 synonym: "squamule (exact)" EXACT [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "鱗被 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:241
@@ -11390,8 +11387,8 @@ synonym: "lemma of upper floret of pedicellate spikelet of ear (narrow)" NARROW 
 synonym: "lemma of upper floret of pedicellate spikelet of tassel (narrow)" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of ear (narrow)" NARROW []
 synonym: "lemma of upper floret of sessile spikelet of tassel (narrow)" NARROW []
-synonym: "lemmas (exact, plural)" EXACT [FNA:95b70500-2969-4d99-801e-9367ba2db50e]
-synonym: "lemmata (exact, plural)" EXACT [FNA:874598c1-dd20-4ab3-ac36-3180873df1bc]
+synonym: "lemmas (exact, plural)" EXACT OMO:0003004 [FNA:95b70500-2969-4d99-801e-9367ba2db50e]
+synonym: "lemmata (exact, plural)" EXACT OMO:0003004 [FNA:874598c1-dd20-4ab3-ac36-3180873df1bc]
 synonym: "外頴 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:381
 is_a: PO:0009034 ! flower bract
@@ -11426,8 +11423,8 @@ synonym: "palea of upper floret of pedicellate spikelet of ear (narrow)" NARROW 
 synonym: "palea of upper floret of pedicellate spikelet of tassel (narrow)" NARROW []
 synonym: "palea of upper floret of sessile spikelet of ear (narrow)" NARROW []
 synonym: "palea of upper floret of sessile spikelet of tassel (narrow)" NARROW []
-synonym: "paleae (broad)" BROAD Plural [FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7]
-synonym: "paleas (broad)" BROAD Plural [FNA:c7715818-04d2-4e9f-b63f-8741b6e558f4]
+synonym: "paleae (broad, plural)" BROAD OMO:0003004 [FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7]
+synonym: "paleas (broad, plural)" BROAD OMO:0003004 [FNA:c7715818-04d2-4e9f-b63f-8741b6e558f4]
 synonym: "palet (broad)" BROAD [FNA:c7612a78-aff8-478d-9a6e-866dac52f101]
 synonym: "内頴 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7
@@ -11485,8 +11482,8 @@ def: "A phyllome that is the first organ or one of the first two organs formed a
 comment: A prophyll is not classified as a vascular leaf, because it may not have a fully developed vascular system.
 subset: reference
 synonym: "profilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "prophylla (exact, plural)" EXACT [FNA:52d7303f-4b62-4ab6-9e8d-926dd18d4a82]
-synonym: "prophylls (exact, plural)" EXACT [FNA:22aa8cb2-6f8d-43f4-97a1-0ae61f5e4873]
+synonym: "prophylla (exact, plural)" EXACT OMO:0003004 [FNA:52d7303f-4b62-4ab6-9e8d-926dd18d4a82]
+synonym: "prophylls (exact, plural)" EXACT OMO:0003004 [FNA:22aa8cb2-6f8d-43f4-97a1-0ae61f5e4873]
 synonym: "prophyllum (exact)" EXACT [FNA:8b0e72b0-2545-4329-b60d-4c4750b397e8]
 synonym: "前葉、前出葉   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:273
@@ -11509,7 +11506,7 @@ name: perigynium
 namespace: plant_anatomy
 def: "Sac-like bract subtending the pistillate flower, as in <i>Carex</i>." [Gramene:Pankaj_Jaiswal]
 synonym: "perigeneo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "perigynia (exact, plural)" EXACT [FNA:bd158398-9aea-49d9-8f78-655b0f424680]
+synonym: "perigynia (exact, plural)" EXACT OMO:0003004 [FNA:bd158398-9aea-49d9-8f78-655b0f424680]
 synonym: "ペリギニウム、果胞、造卵器群やそれから発生した胞子体の周辺の組織が発達し肉厚で筒状となった構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009042 ! prophyll
 
@@ -11521,7 +11518,7 @@ def: "An inflorescence bract (PO:0009054) of an involucre (PO:0009100)." [] {com
 comment: Involucre are found in plant families such as Asteraceae or Compositeae.
 subset: reference
 synonym: "br&#225ctea involucral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "perigynia (narrow)" NARROW Plural [FNA:bd158398-9aea-49d9-8f78-655b0f424680]
+synonym: "perigynia (narrow, plural)" NARROW OMO:0003004 [FNA:bd158398-9aea-49d9-8f78-655b0f424680]
 synonym: "perigynium (narrow)" NARROW [FNA:5d57bd0a-f64e-469a-a87f-644a4c002926]
 synonym: "phyllary (related)" RELATED []
 synonym: "総苞片 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -11566,7 +11563,7 @@ synonym: "bole (narrow)" NARROW [FNA:a5ba9e16-e0af-4430-a3a0-7aeb052fbffd]
 synonym: "ca&#241a (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cane (narrow)" NARROW []
 synonym: "caudex (narrow)" NARROW [FNA:cea24c10-d5ff-435f-aa40-db77dcbd27f0]
-synonym: "caudices (narrow)" NARROW Plural [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
+synonym: "caudices (narrow, plural)" NARROW OMO:0003004 [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
 synonym: "core (narrow)" NARROW []
 synonym: "culm (exact)" EXACT []
 synonym: "eje primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -11680,12 +11677,12 @@ synonym: "husk leaf (related)" RELATED []
 synonym: "inflorescence bract of ear (narrow)" NARROW []
 synonym: "pale (broad)" BROAD [FNA:3290efb9-fde1-4c56-a813-37e62e665af2]
 synonym: "palea (broad)" BROAD [FNA:3d210af5-1709-4aee-91e5-ccc65f5fa7bd]
-synonym: "paleae (broad)" BROAD Plural [FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7]
-synonym: "paleas (broad)" BROAD Plural [FNA:c7715818-04d2-4e9f-b63f-8741b6e558f4]
+synonym: "paleae (broad, plural)" BROAD OMO:0003004 [FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7]
+synonym: "paleas (broad, plural)" BROAD OMO:0003004 [FNA:c7715818-04d2-4e9f-b63f-8741b6e558f4]
 synonym: "palet  (broad)" BROAD [FNA:c7612a78-aff8-478d-9a6e-866dac52f101]
 synonym: "spathe (narrow)" NARROW [FNA:be285d91-a6e6-4e1b-8d89-fa3252201928]
 synonym: "squamella (narrow)" NARROW [FNA:ead20a1b-057b-4008-9466-bdb8e283aa82]
-synonym: "squamellae (narrow)" NARROW Plural [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
+synonym: "squamellae (narrow, plural)" NARROW OMO:0003004 [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
 synonym: "squamule (narrow)" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "花序苞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:28b8e135-e4b9-4419-9f14-68d68bbc80c7
@@ -11777,8 +11774,8 @@ comment: The corolla (PO:0009059) is part of the perianth (PO:0009058). This  de
 subset: reference
 subset: TraitNet
 synonym: "corola (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "corollae (exact, plural)" EXACT [FNA:c458334a-b696-4a0a-a321-1b61117882f6]
-synonym: "corollas (exact, plural)" EXACT [FNA:791b8f53-16ba-448b-9a16-9ab841d947a9]
+synonym: "corollae (exact, plural)" EXACT OMO:0003004 [FNA:c458334a-b696-4a0a-a321-1b61117882f6]
+synonym: "corollas (exact, plural)" EXACT OMO:0003004 [FNA:791b8f53-16ba-448b-9a16-9ab841d947a9]
 synonym: "花冠 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:541
 xref: PO_GIT:71
@@ -11795,7 +11792,7 @@ comment: The calyx is part of the perianth (PO:0009058). This definition is base
 subset: reference
 subset: TraitNet
 synonym: "c&#225lix (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "calyces (exact, plural)" EXACT [FNA:f250c45e-8348-4db4-aa9a-10dfa08bfd00]
+synonym: "calyces (exact, plural)" EXACT OMO:0003004 [FNA:f250c45e-8348-4db4-aa9a-10dfa08bfd00]
 synonym: "がく (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:543
 xref: PO_GIT:71
@@ -11825,7 +11822,7 @@ subset: Maize
 subset: Poaceae
 subset: reference
 subset: TraitNet
-synonym: "androecia (exact, plural)" EXACT [FNA:522936d3-a948-44f3-b9dc-634e0d190f6f]
+synonym: "androecia (exact, plural)" EXACT OMO:0003004 [FNA:522936d3-a948-44f3-b9dc-634e0d190f6f]
 synonym: "androecio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "androecium column (narrow)" NARROW [FNA:e0f4d402-3489-4a58-81bf-0fa5119a4db5]
 synonym: "androecium of ear floret (narrow)" NARROW []
@@ -11870,7 +11867,7 @@ subset: TraitNet
 synonym: "apocarpous gynoecium (narrow)" NARROW []
 synonym: "ginoecio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gynaecium (exact)" EXACT [FNA:03f034c5-6bd6-4846-8ef7-c5190d09008c]
-synonym: "gynoecia (exact, plural)" EXACT [FNA:226a743c-7988-4b66-b163-2ce80d7c8a70]
+synonym: "gynoecia (exact, plural)" EXACT OMO:0003004 [FNA:226a743c-7988-4b66-b163-2ce80d7c8a70]
 synonym: "gynoecium of ear floret (narrow)" NARROW []
 synonym: "gynoecium of lower floret of pedicellate spikelet of ear (narrow)" NARROW []
 synonym: "gynoecium of lower floret of pedicellate spikelet of tassel (narrow)" NARROW []
@@ -11898,10 +11895,10 @@ name: epicalyx
 namespace: plant_anatomy
 def: "A collective phyllome structure (PO:0025023) composed of two or more phyllomes immediately outside the calyx (PO:0009060)." [POC:curators]
 subset: reference
-synonym: "calyculi (exact, plural)" EXACT [FNA:ca2bac8b-bf83-4d65-8ad5-90dab57684c3]
+synonym: "calyculi (exact, plural)" EXACT OMO:0003004 [FNA:ca2bac8b-bf83-4d65-8ad5-90dab57684c3]
 synonym: "calyculus (exact)" EXACT [FNA:f8892653-cf01-42a0-8ed2-d6206c2eb7dc]
 synonym: "epic&#225lix (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "epicalyces (exact, plural)" EXACT [FNA:5c4a0546-9e0d-4c95-b6f9-695f76fc8b98]
+synonym: "epicalyces (exact, plural)" EXACT OMO:0003004 [FNA:5c4a0546-9e0d-4c95-b6f9-695f76fc8b98]
 synonym: "がく状総苞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:71
 xref: PO_GIT:98
@@ -11917,7 +11914,7 @@ comment: The fleshy part of a strawberry develops from a receptacle.
 subset: reference
 synonym: "flower receptacle (exact)" EXACT [FNA:1fd506b2-d80f-4b52-be88-4da3114a3237]
 synonym: "recept&#225culo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "tori (exact, plural)" EXACT [FNA:2ccd7360-62ad-4fb6-87bc-78811ac77fa4]
+synonym: "tori (exact, plural)" EXACT OMO:0003004 [FNA:2ccd7360-62ad-4fb6-87bc-78811ac77fa4]
 synonym: "torus (exact)" EXACT [FNA:5eff5207-47cc-4137-82cc-ea32569cf60f]
 synonym: "花床（花托） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:70
@@ -11933,7 +11930,7 @@ comment: Only bears stamens or perianth segments if they are present in the flow
 subset: reference
 synonym: "floral cup (broad)" BROAD [FNA:fef1e834-960a-45ae-b4d8-b9454313c2bf]
 synonym: "hipantio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "hypanthia (exact, plural)" EXACT [FNA:0d70e812-f442-4e40-95b7-7d2541db063d]
+synonym: "hypanthia (exact, plural)" EXACT OMO:0003004 [FNA:0d70e812-f442-4e40-95b7-7d2541db063d]
 synonym: "花床筒 、いちじく状花序 i.e.hypanthodium (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:fef1e834-960a-45ae-b4d8-b9454313c2bf
 xref: PATO:0001873
@@ -12005,7 +12002,7 @@ def: "A collective plant organ structure (PO:0025007) that is part of an anther 
 comment: If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).
 subset: Angiosperm
 subset: reference
-synonym: "anther thecae (exact, plural)" EXACT [FNA:c8ecb666-42e6-465e-b8fc-822b4ea9e10d]
+synonym: "anther thecae (exact, plural)" EXACT OMO:0003004 [FNA:c8ecb666-42e6-465e-b8fc-822b4ea9e10d]
 synonym: "Poaceae theca (narrow)" NARROW []
 synonym: "teca (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Zea theca (narrow)" NARROW []
@@ -12083,8 +12080,8 @@ subset: reference
 subset: TraitNet
 synonym: "estigma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae stigma (narrow)" NARROW []
-synonym: "stigmas (exact, plural)" EXACT [FNA:21acc3ff-0dee-41c7-965c-88bdd48af2c1]
-synonym: "stigmata (exact, plural)" EXACT [FNA:e8a6ec07-521d-44e9-98da-cb0f18aa96a2]
+synonym: "stigmas (exact, plural)" EXACT OMO:0003004 [FNA:21acc3ff-0dee-41c7-965c-88bdd48af2c1]
+synonym: "stigmata (exact, plural)" EXACT OMO:0003004 [FNA:e8a6ec07-521d-44e9-98da-cb0f18aa96a2]
 synonym: "Zea stigma (narrow)" NARROW []
 synonym: "柱頭 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:70
@@ -12123,7 +12120,7 @@ name: staminode
 namespace: plant_anatomy
 def: "Sterile stamen." [APweb:Glossary, Gramene:Pankaj_Jaiswal]
 synonym: "estaminodio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "staminodia (exact, plural)" EXACT [FNA:55cc4338-cb83-4f69-b915-8738717442d0]
+synonym: "staminodia (exact, plural)" EXACT OMO:0003004 [FNA:55cc4338-cb83-4f69-b915-8738717442d0]
 synonym: "staminodium (exact)" EXACT [FNA:3fd89fab-a53f-4771-b7d6-7fafadbf2c9a]
 synonym: "仮雄蕊 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009028 ! microsporophyll
@@ -12136,7 +12133,7 @@ name: pistillode
 namespace: plant_anatomy
 def: "A sterile pistil, often rudimentary." [APweb:Glossary]
 subset: reference
-synonym: "pistillodia (exact, plural)" EXACT [FNA:c6b2329a-fc6b-4fc6-ab59-8515296c39be]
+synonym: "pistillodia (exact, plural)" EXACT OMO:0003004 [FNA:c6b2329a-fc6b-4fc6-ab59-8515296c39be]
 synonym: "pistillodium (exact)" EXACT [FNA:f7baaf70-f05c-4c6b-a661-2e7101fdc056]
 synonym: "pistilodio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "不稔の雌蕊、退化雌蕊 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -12526,7 +12523,7 @@ def: "A plug-like structure formed in the micropylar region of the seed coat." [
 synonym: "op&#233rculo de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of seed operculum tissue (exact)" EXACT []
 synonym: "seed lid (exact)" EXACT [FNA:c162800f-7ac5-4f02-8ff3-679d247a5c15]
-synonym: "seed opercula (exact, plural)" EXACT [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
+synonym: "seed opercula (exact, plural)" EXACT OMO:0003004 [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
 synonym: "種子蘚蓋   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009010 ! seed
@@ -12649,7 +12646,7 @@ def: "A stalk (PO:0025066) that attaches a plant ovule (PO:0020003) to a placent
 comment: If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "fun&#237culo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "funiculi (exact, plural)" EXACT [FNA:a5184efd-42a0-4372-aabf-8ae590f8a7e0]
+synonym: "funiculi (exact, plural)" EXACT OMO:0003004 [FNA:a5184efd-42a0-4372-aabf-8ae590f8a7e0]
 synonym: "funiculus (related)" RELATED []
 synonym: "Poaceae funicle (narrow)" NARROW []
 synonym: "Zea funicle (narrow)" NARROW []
@@ -12810,7 +12807,7 @@ comment: In seed plants, the megaspores and megagametophyte are retained within 
 subset: reference
 subset: TraitNet
 synonym: "megasporangium (related)" RELATED []
-synonym: "nucelli (narrow)" NARROW Plural [FNA:6ba590f7-80b0-4cf1-a378-a8e1286b7d18]
+synonym: "nucelli (narrow, plural)" NARROW OMO:0003004 [FNA:6ba590f7-80b0-4cf1-a378-a8e1286b7d18]
 synonym: "nucelo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae nucellus (narrow)" NARROW []
 synonym: "Zea nucellus (narrow)" NARROW []
@@ -12905,8 +12902,8 @@ def: "A portion of plant tissue (PO:0009007) that is the region in a plant ovule
 comment: The chalaza is recognized as the region which initiates the two integuments at its flank. If you are annotating to this structure for an angiosperm, please add an additional annotation to plant ovary ovule (PO:0025490). If you are annotating to this structure for an gymnosperm, please add an additional annotation to ovuliferous scale ovule (PO:0025491). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).
 subset: reference
 synonym: "calaza (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "chalazae (exact, plural)" EXACT [FNA:cfff25ca-2b7f-46fa-970e-2a7fcdab1dbf]
-synonym: "chalazas (exact, plural)" EXACT [FNA:42ee5390-43e4-4615-a56e-99b678d17d7d]
+synonym: "chalazae (exact, plural)" EXACT OMO:0003004 [FNA:cfff25ca-2b7f-46fa-970e-2a7fcdab1dbf]
+synonym: "chalazas (exact, plural)" EXACT OMO:0003004 [FNA:42ee5390-43e4-4615-a56e-99b678d17d7d]
 synonym: "ovular chlaza (exact)" EXACT []
 synonym: "Poaceae chalaza (narrow)" NARROW []
 synonym: "portion of chalaza tissue (exact)" EXACT []
@@ -13198,7 +13195,7 @@ def: "A cardinal organ part (PO:0025001) that is one of the ultimate segments of
 subset: TraitNet
 synonym: "fol&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pinna (narrow)" NARROW [FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44]
-synonym: "pinnae (narrow)" NARROW Plural [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
+synonym: "pinnae (narrow, plural)" NARROW OMO:0003004 [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
 synonym: "pinnule (narrow)" NARROW [FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c]
 synonym: "小葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:1d6bb560-f346-409b-b078-9bd2fd30e472
@@ -13289,7 +13286,7 @@ namespace: plant_anatomy
 def: "That part of the seed coat that develops from the outer integument, or from the single integument when there is only one." [APweb:Glossary, ISBN:0080374913]
 synonym: "portion of testa tissue (exact)" EXACT []
 synonym: "testa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "testae (exact, plural)" EXACT [FNA:271264d4-e973-4a84-8b5e-7744c5bc9514]
+synonym: "testae (exact, plural)" EXACT OMO:0003004 [FNA:271264d4-e973-4a84-8b5e-7744c5bc9514]
 synonym: "外種皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
 relationship: part_of PO:0009088 ! seed coat
@@ -13336,8 +13333,8 @@ def: "A portion of seed coat epidermis (PO:0006048) that consists of multiple se
 subset: TraitNet
 synonym: "brush (exact)" EXACT []
 synonym: "coma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "comae (exact, plural)" EXACT [FNA:1b327a72-9b83-4365-bab0-a302f1f1dbbf]
-synonym: "comas (exact, plural)" EXACT [FNA:596d8481-a186-4b7b-802b-aee2de4c4ad1]
+synonym: "comae (exact, plural)" EXACT OMO:0003004 [FNA:1b327a72-9b83-4365-bab0-a302f1f1dbbf]
+synonym: "comas (exact, plural)" EXACT OMO:0003004 [FNA:596d8481-a186-4b7b-802b-aee2de4c4ad1]
 synonym: "tuft (broad)" BROAD [FNA:7c6c72f7-89f7-44d3-9cfb-8a0959c27927]
 synonym: "種髪 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:7c6c72f7-89f7-44d3-9cfb-8a0959c27927
@@ -13360,7 +13357,7 @@ id: PO:0020063
 name: hilum
 namespace: plant_anatomy
 def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a scar on a seed (PO:0009010) at the place where it was attached to a funicle (PO:0020006)." [POC:curators]
-synonym: "hila (exact, plural)" EXACT [FNA:7ad77ba7-72b8-4447-ad0e-b0214ef133de]
+synonym: "hila (exact, plural)" EXACT OMO:0003004 [FNA:7ad77ba7-72b8-4447-ad0e-b0214ef133de]
 synonym: "hilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "核（デンプン粒）、へそ（種子） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
@@ -13594,7 +13591,7 @@ comment: Pollen may be released through the stomium. If you are annotating to th
 subset: reference
 synonym: "estomio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "Poaceae stomium (narrow)" NARROW []
-synonym: "stomia (exact, plural)" EXACT [FNA:67cecc4d-8a5b-4884-9aba-e9f775e5c06b]
+synonym: "stomia (exact, plural)" EXACT OMO:0003004 [FNA:67cecc4d-8a5b-4884-9aba-e9f775e5c06b]
 synonym: "Zea stomium (narrow)" NARROW []
 synonym: "口辺細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025117 ! plant anatomical space
@@ -13948,7 +13945,7 @@ synonym: "mid rib (broad)" BROAD []
 synonym: "mid-rib (broad)" BROAD []
 synonym: "midrib (broad)" BROAD []
 synonym: "vascular leaf costa (related)" RELATED [FNA:e05450e0-b820-465a-ba99-ced17c5a34b0]
-synonym: "vascular leaf costae (related)" RELATED Plural [FNA:d0ce6c67-625d-4187-bd50-3af01e6e68a6]
+synonym: "vascular leaf costae (related, plural)" RELATED OMO:0003004 [FNA:d0ce6c67-625d-4187-bd50-3af01e6e68a6]
 synonym: "vascular leaf midvein (exact)" EXACT []
 synonym: "vena media (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "葉主脈、中央脈、中脈 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -14148,7 +14145,7 @@ def: "An axial plant organ (PO:0009008)." [POC:curators]
 comment: Includes roots and shoots.
 subset: TraitNet
 synonym: "eje de la planta (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "plant axes (exact, plural)" EXACT [FNA:2355281f-ab10-4ae2-a3d8-672cace068a8]
+synonym: "plant axes (exact, plural)" EXACT OMO:0003004 [FNA:2355281f-ab10-4ae2-a3d8-672cace068a8]
 synonym: "植物軸（軸柱） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
 created_by: rwalls
@@ -14973,7 +14970,7 @@ comment: PATO:0000407 (flat) and PATO:0000592 (thin).
 subset: TraitNet
 synonym: "blade (exact)" EXACT [FNA:7dd0c248-f531-4cfe-b196-882e99f4c32b]
 synonym: "l&#225mina (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "laminae (exact, plural)" EXACT [FNA:12cea564-84fd-40c9-9671-1db2ec4eac90]
+synonym: "laminae (exact, plural)" EXACT OMO:0003004 [FNA:12cea564-84fd-40c9-9671-1db2ec4eac90]
 synonym: "葉身、葉片 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:428
 xref: PO_GIT:70
@@ -15230,8 +15227,8 @@ namespace: plant_anatomy
 def: "A portion of plant tissue (PO:0009007) at the interface between two plant structures, one of which is in a gametophyte development stage (PO:0028003) and one of which is in a sporophyte development stage (PO:0028002), and that has as parts transfer cells (PO:0000078)." [ISBN:0716710072]
 comment: The transfer cells aid in nutrient transport. Examples include ovary placenta (PO:0020001) and fruit placenta (PO:0004535).
 synonym: "placenta (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "placentae (exact, plural)" EXACT [FNA:2f9cc2ef-9943-4a58-8f0d-01214acd0b4e]
-synonym: "placentas (exact, plural)" EXACT [FNA:3d86068e-4587-4b88-b73f-5fe663bc4d07]
+synonym: "placentae (exact, plural)" EXACT OMO:0003004 [FNA:2f9cc2ef-9943-4a58-8f0d-01214acd0b4e]
+synonym: "placentas (exact, plural)" EXACT OMO:0003004 [FNA:3d86068e-4587-4b88-b73f-5fe663bc4d07]
 synonym: "portion of placenta tissue (exact)" EXACT []
 synonym: "胎座 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:144
@@ -15303,7 +15300,7 @@ synonym: "cone (related)" RELATED []
 synonym: "cono (Spanish, exact) (related)" RELATED Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "estr&#243bilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "simple strobilus (narrow)" NARROW []
-synonym: "strobili (exact, plural)" EXACT [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
+synonym: "strobili (exact, plural)" EXACT OMO:0003004 [FNA:1fdafc26-bb42-444a-97e8-b6c0df728998]
 synonym: "胞子嚢穂,　球花 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:168
 xref: PO_GIT:601
@@ -15383,7 +15380,7 @@ comment: Found in bryophytes. The capsule annulus is located at the base of an o
 subset: Bryophytes
 synonym: "anillo de la c&#225psula de musgos (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "capsule dehiscence zone (exact)" EXACT []
-synonym: "spore capusule annuli (exact, plural)" EXACT [FNA:1a843329-df37-4234-8174-fcc6bf89bcad]
+synonym: "spore capusule annuli (exact, plural)" EXACT OMO:0003004 [FNA:1a843329-df37-4234-8174-fcc6bf89bcad]
 synonym: "胞子蒴（さく）環帯 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025092 ! dehiscence zone
 relationship: part_of PO:0025094 ! sporangium
@@ -15401,7 +15398,7 @@ subset: Bryophytes
 subset: TraitNet
 synonym: "esporangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "moss capsule (exact)" EXACT []
-synonym: "sporangia (exact, plural)" EXACT []
+synonym: "sporangia (exact, plural)" EXACT OMO:0003004 []
 synonym: "spore capsule (exact)" EXACT []
 synonym: "spore case (exact)" EXACT [FNA:808e89e2-7155-41e5-b7b9-a887000d1734]
 synonym: "胞子嚢 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -15723,9 +15720,9 @@ def: "An anatomical space that is part of a plant." [CARO:0000005, PO:cooperl, P
 comment: CARO:0000005 'anatomical space' is defined as: An immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes, and is bounded by an anatomical surface.
 synonym: "espacio anat&#243mico vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lacuna (narrow)" NARROW [FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042]
-synonym: "lacunae (narrow)" NARROW Plural [FNA:322646fb-30bf-422d-8373-9f91f48fd28b]
+synonym: "lacunae (narrow, plural)" NARROW OMO:0003004 [FNA:322646fb-30bf-422d-8373-9f91f48fd28b]
 synonym: "lumen (narrow)" NARROW [FNA:b069a022-2be0-43b4-8efa-4ad13ff17639]
-synonym: "lumina (narrow)" NARROW Plural [FNA:e3941c37-b2f0-468f-b857-0c3d095d71b1]
+synonym: "lumina (narrow, plural)" NARROW OMO:0003004 [FNA:e3941c37-b2f0-468f-b857-0c3d095d71b1]
 synonym: "植物 解剖学（形態）的空間 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:322646fb-30bf-422d-8373-9f91f48fd28b
 xref: FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042
@@ -15859,7 +15856,7 @@ comment: The antheridium (PO:0025125) occurs in bryophytes and pteridophytes, bu
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "anteridio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "antheridia (exact, plural)" EXACT [FNA:40b5fa5d-a75b-49d8-8328-b4c28d54ea66]
+synonym: "antheridia (exact, plural)" EXACT OMO:0003004 [FNA:40b5fa5d-a75b-49d8-8328-b4c28d54ea66]
 synonym: "造精器 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:211
 is_a: PO:0025124 ! multicellular plant gametangium
@@ -15875,7 +15872,7 @@ comment: At maturity, the archegonium produces an archegonium egg cell (PO:00251
 subset: Bryophytes
 subset: Gymnosperms
 subset: Pteridophytes
-synonym: "archegonia (exact, plural)" EXACT []
+synonym: "archegonia (exact, plural)" EXACT OMO:0003004 []
 synonym: "arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "造卵器 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:211
@@ -15891,7 +15888,7 @@ def: "A portion of meristem tissue (PO:0009013) that has as parts protoderm (PO:
 comment: A primordium appears as a protrusion and is the first distinct form of a plant organ (PO:0009008), cardinal organ part (PO:0025001), or collective plant organ structure (PO:0025007). The transition from a primordium to the plant structure it develops into is marked by the development of non-meristematic cells, although meristematic cells may be present after the transition.
 synonym: "portion of primordial tissue (exact)" EXACT []
 synonym: "portion of primordium tissue (exact)" EXACT []
-synonym: "primordia (exact, plural)" EXACT []
+synonym: "primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "primordio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:186
@@ -15905,7 +15902,7 @@ name: phyllome primordium
 namespace: plant_anatomy
 def: "A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) and is part of a shoot apex (PO:0000037) and is committed to the development of a phyllome (PO:0006001)." [PMID:11572953, POC:curators]
 comment: The transition from phyllome primordium to phyllome occurs when the first non-meristematic tissue develops begins to develop.
-synonym: "phyllome primordia (exact, plural)" EXACT []
+synonym: "phyllome primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of phyllome primordium tissue (exact)" EXACT []
 synonym: "primordio del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -15967,16 +15964,16 @@ def: "A plant anatomical space (PO:0025117) that is either a groove on the surfa
 comment: May be cylindrical (PATO:0001203) in shape, with a circular, D-shaped or other irregularly-shaped cross-section.
 synonym: "canal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "channel (related)" RELATED [FNA:ec645f00-04c0-4c38-9ca6-6ebf76908163]
-synonym: "colpi (narrow)" NARROW Plural [FNA:89c9a56b-12d4-47fd-81fe-eeaaa4e519e2]
+synonym: "colpi (narrow, plural)" NARROW OMO:0003004 [FNA:89c9a56b-12d4-47fd-81fe-eeaaa4e519e2]
 synonym: "colpus (narrow)" NARROW [FNA:49b6f163-e6ae-44cd-a021-83f0e618d738]
 synonym: "fossula (narrow)" NARROW [FNA:a2f919dc-5e42-4bdf-a945-db660c433f02]
-synonym: "fossulae (narrow)" NARROW Plural [FNA:55e4bd46-9eff-423a-8929-7f8453b4002a]
+synonym: "fossulae (narrow, plural)" NARROW OMO:0003004 [FNA:55e4bd46-9eff-423a-8929-7f8453b4002a]
 synonym: "furrow (narrow)" NARROW [FNA:f51d1b9c-0a76-44f9-aacb-f0ac7191d786]
 synonym: "groove (narrow)" NARROW [FNA:5cae4318-760e-414a-9e7a-d9224b63dd95]
-synonym: "sulci (narrow)" NARROW Plural [FNA:eb5b8ab1-f470-4ec7-af85-1aebb3c6cfdb]
+synonym: "sulci (narrow, plural)" NARROW OMO:0003004 [FNA:eb5b8ab1-f470-4ec7-af85-1aebb3c6cfdb]
 synonym: "sulcus (narrow)" NARROW [FNA:1349af86-f437-43f7-8d89-922f8f8cbb4b]
 synonym: "vallecula (narrow)" NARROW [FNA:1ff40e83-d673-479e-8e07-db94025934ce]
-synonym: "valleculae (narrow)" NARROW Plural [FNA:096605b7-f4f5-43b4-a0c1-c29a9e3fb65d]
+synonym: "valleculae (narrow, plural)" NARROW OMO:0003004 [FNA:096605b7-f4f5-43b4-a0c1-c29a9e3fb65d]
 synonym: "溝   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:096605b7-f4f5-43b4-a0c1-c29a9e3fb65d
 xref: FNA:1349af86-f437-43f7-8d89-922f8f8cbb4b
@@ -16494,9 +16491,9 @@ comment: Often found on stems and leaves.
 synonym: "barb (broad)" BROAD [FNA:ac7a59be-2920-4e24-bf9a-53d66c7cad5d]
 synonym: "barbel (broad)" BROAD [FNA:ea8c8671-f661-42e1-8572-6b72fa98a3b9]
 synonym: "barbella (broad)" BROAD [FNA:1f0e37d5-db79-4b3f-abba-eabd63380f67]
-synonym: "barbellae (broad)" BROAD Plural [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
+synonym: "barbellae (broad, plural)" BROAD OMO:0003004 [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
 synonym: "barbellula (broad)" BROAD [FNA:ca4dbc82-d782-4808-9149-3d39804d0d7f]
-synonym: "barbellulae (broad)" BROAD Plural [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
+synonym: "barbellulae (broad, plural)" BROAD OMO:0003004 [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
 synonym: "barbellule (broad)" BROAD [FNA:fb4ced27-a2c5-4dbf-8588-d2fc702bb02c]
 synonym: "espinilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "いが、刺状突起 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16547,9 +16544,9 @@ comment: A thorn is a short, pointed (PATO:0002258) woody structure, may be bran
 synonym: "barb (broad)" BROAD [FNA:ac7a59be-2920-4e24-bf9a-53d66c7cad5d]
 synonym: "barbel (broad)" BROAD [FNA:ea8c8671-f661-42e1-8572-6b72fa98a3b9]
 synonym: "barbella (broad)" BROAD [FNA:1f0e37d5-db79-4b3f-abba-eabd63380f67]
-synonym: "barbellae (broad)" BROAD Plural [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
+synonym: "barbellae (broad, plural)" BROAD OMO:0003004 [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
 synonym: "barbellula (broad)" BROAD [FNA:ca4dbc82-d782-4808-9149-3d39804d0d7f]
-synonym: "barbellulae (broad)" BROAD Plural [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
+synonym: "barbellulae (broad, plural)" BROAD OMO:0003004 [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
 synonym: "barbellule (broad)" BROAD [FNA:fb4ced27-a2c5-4dbf-8588-d2fc702bb02c]
 synonym: "espina (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "とげ（spine, prickle) (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -16574,9 +16571,9 @@ comment: See also stipule spine (PO:0025174).
 synonym: "barb (broad)" BROAD [FNA:ac7a59be-2920-4e24-bf9a-53d66c7cad5d]
 synonym: "barbel (broad)" BROAD [FNA:ea8c8671-f661-42e1-8572-6b72fa98a3b9]
 synonym: "barbella (broad)" BROAD [FNA:1f0e37d5-db79-4b3f-abba-eabd63380f67]
-synonym: "barbellae (broad)" BROAD Plural [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
+synonym: "barbellae (broad, plural)" BROAD OMO:0003004 [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
 synonym: "barbellula (broad)" BROAD [FNA:ca4dbc82-d782-4808-9149-3d39804d0d7f]
-synonym: "barbellulae (broad)" BROAD Plural [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
+synonym: "barbellulae (broad, plural)" BROAD OMO:0003004 [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
 synonym: "barbellule (broad)" BROAD [FNA:fb4ced27-a2c5-4dbf-8588-d2fc702bb02c]
 synonym: "espina de hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf spine (exact)" EXACT []
@@ -16602,9 +16599,9 @@ comment: See also leaf spine (PO:0025173).
 synonym: "barb (broad)" BROAD [FNA:ac7a59be-2920-4e24-bf9a-53d66c7cad5d]
 synonym: "barbel (broad)" BROAD [FNA:ea8c8671-f661-42e1-8572-6b72fa98a3b9]
 synonym: "barbella (broad)" BROAD [FNA:1f0e37d5-db79-4b3f-abba-eabd63380f67]
-synonym: "barbellae (broad)" BROAD Plural [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
+synonym: "barbellae (broad, plural)" BROAD OMO:0003004 [FNA:00e30ce4-70bc-489c-86df-73030c9ece1e]
 synonym: "barbellula (broad)" BROAD [FNA:ca4dbc82-d782-4808-9149-3d39804d0d7f]
-synonym: "barbellulae (broad)" BROAD Plural [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
+synonym: "barbellulae (broad, plural)" BROAD OMO:0003004 [FNA:5c74e2ca-6f38-4366-9342-0908638f6939]
 synonym: "barbellule (broad)" BROAD [FNA:fb4ced27-a2c5-4dbf-8588-d2fc702bb02c]
 synonym: "espina de est&#237pula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "stipule spine (exact)" EXACT []
@@ -16983,10 +16980,10 @@ id: PO:0025202
 name: microsporangium
 namespace: plant_anatomy
 def: "A sporangium (PO:0025094) in which microspores (PO:0020048) are produced." [ISBN:0716710072]
-synonym: "macrosporangia (related)" RELATED Plural [FNA:6102371f-fcdd-47cd-b0fd-2d24e2d5c8cc]
+synonym: "macrosporangia (related, plural)" RELATED OMO:0003004 [FNA:6102371f-fcdd-47cd-b0fd-2d24e2d5c8cc]
 synonym: "macrosporangium (related)" RELATED [FNA:7f9e3756-4ac4-495d-8fb6-fffed355a241]
-synonym: "megasporangia (exact, plural)" EXACT [FNA:39beb98a-e588-4996-8a2d-57c9967dc8ab]
-synonym: "microsporangia (exact, plural)" EXACT [FNA:067d82bc-0218-4f34-b021-f1c3acadd136]
+synonym: "megasporangia (exact, plural)" EXACT OMO:0003004 [FNA:39beb98a-e588-4996-8a2d-57c9967dc8ab]
+synonym: "microsporangia (exact, plural)" EXACT OMO:0003004 [FNA:067d82bc-0218-4f34-b021-f1c3acadd136]
 synonym: "microsporangio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小胞子嚢 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:6102371f-fcdd-47cd-b0fd-2d24e2d5c8cc
@@ -17776,7 +17773,7 @@ def: "A septum (PO:0000030) that divides a multilocular plant ovary (PO:0009072)
 comment: Found in species with syncarpous gynoecia (fused carpels). A plant ovary septum is derived from the fused walls of two adjacent carpels, while a replum (PO:0005016) develops from early contact of placental tissue from opposite sides of the plant ovary. Annotations for Arabidopsis should go under replum, not under plant ovary septum.
 synonym: "carpel synonym (related)" RELATED []
 synonym: "ovary dissepiment (broad)" BROAD [FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4]
-synonym: "ovary septa (exact, plural)" EXACT [FNA:4be9b3cd-7aae-4eee-a102-19a6b4dbc92b]
+synonym: "ovary septa (exact, plural)" EXACT OMO:0003004 [FNA:4be9b3cd-7aae-4eee-a102-19a6b4dbc92b]
 synonym: "septo del ovario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "子房隔壁   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4
@@ -18128,12 +18125,13 @@ creation_date: 2011-04-20T02:20:11Z
 id: PO:0025287
 name: seedling coleoptile
 namespace: plant_anatomy
-def: "A coleoptile (PO:0020033) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
-comment: A seedling coleoptile  develops from an embryo coleoptile (PO:0025286).
+def: "A coleoptile (PO:0020033) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
+comment: A seedling coleoptile develops from an embryo coleoptile (PO:0025286).
 synonym: "cole&#243ptile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼葉鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:294
 is_a: PO:0020033 ! coleoptile
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-20T02:20:12Z
 
@@ -18155,12 +18153,13 @@ creation_date: 2011-04-20T02:34:16Z
 id: PO:0025289
 name: seedling coleorhiza
 namespace: plant_anatomy
-def: "A coleorhiza (PO:0020034) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "A coleorhiza (PO:0020034) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo coleorhiza (PO:0025288).
 synonym: "coleorriza de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生根鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:340
 is_a: PO:0020034 ! coleorhiza
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-20T02:34:17Z
 
@@ -18183,12 +18182,13 @@ creation_date: 2011-04-20T02:39:46Z
 id: PO:0025291
 name: seedling hypocotyl
 namespace: plant_anatomy
-def: "A hypocotyl (PO:0020100) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "A hypocotyl (PO:0020100) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo hypocotyl (PO:0025290). This term should only be used for seed plants.
 synonym: "hipoc&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:341
 is_a: PO:0020100 ! hypocotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-20T02:39:56Z
 
@@ -18210,12 +18210,13 @@ creation_date: 2011-04-25T10:13:08Z
 id: PO:0025293
 name: seedling epicotyl
 namespace: plant_anatomy
-def: "An epicotyl (PO:0020035) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "An epicotyl (PO:0020035) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo epicotyl (PO:0025292).
 synonym: "epic&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生上胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:342
 is_a: PO:0020035 ! epicotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:13:08Z
 
@@ -18237,12 +18238,13 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025295
 name: seedling mesocotyl
 namespace: plant_anatomy
-def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294)." [POC:curators, POC:Laurel_Cooper]
-comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:0025294) and is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
+def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294) and is part of a seedling (PO:0008037)." [PO:Laurel_Cooper, POC:curators]
+comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:0025294) and is part of a seedling (PO:0008037)..
 synonym: "mesoc&#243tile de la plantual (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生中胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:343
 is_a: PO:0020037 ! mesocotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:21:58Z
 
@@ -18266,12 +18268,13 @@ creation_date: 2011-04-25T10:41:14Z
 id: PO:0025297
 name: seedling radicle
 namespace: plant_anatomy
-def: "A radicle (PO:0020031) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
-comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
+def: "A radicle (PO:0020031) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
+comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025) of an adult plant.
 synonym: "rad&#237cula de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:344
 is_a: PO:0020031 ! radicle
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:41:48Z
 
@@ -18282,7 +18285,7 @@ namespace: plant_anatomy
 def: "A collective organ part structure that is the apical part of a circumsessile capsular fruit that separates from the rest of the capsule during dehiscence." [POC:curators]
 comment: Develops from the apical portion of a gynoecium, and is commonly found as part of the fruit of species of Myrtaceae, such as Eucalyptus spp. If you are annotating to this term, please add an additional annotation to the specific type of fruit (PO:0009001), such as achene fruit (PO:0030107), berry fruit (PO:0030108), capsule fruit (PO:0030091), caryopsis fruit (PO:0030104), drupe fruit (PO:0030103), follicle fruit (PO:0030105), legume fruit (PO:0030100), nut fruit (PO:0030102), samara fruit (PO:0030099), schizocarp fruit (PO:0030098), silique fruit (PO:0030106), or their subclasses, depending on the species.
 synonym: "fruit lid (exact)" EXACT [FNA:c162800f-7ac5-4f02-8ff3-679d247a5c15]
-synonym: "fruit opercula (exact, plural)" EXACT [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
+synonym: "fruit opercula (exact, plural)" EXACT OMO:0003004 [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
 synonym: "op&#233rculo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果蓋 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025269 ! collective organ part structure
@@ -18330,12 +18333,13 @@ creation_date: 2011-04-27T08:20:22Z
 id: PO:0025301
 name: seedling hypocotyl-root junction
 namespace: plant_anatomy
-def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) ." [POC:curators, POC:Laurel_Cooper]
-comment: Part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
+def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) and is part of a seedling (PO:0008037)." [PO:Laurel_Cooper, POC:curators]
+comment: Part of a seedling (PO:0008037).
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸-根合流点 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:250
 is_a: PO:0004724 ! hypocotyl-root junction
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-27T08:20:22Z
 
@@ -18650,7 +18654,7 @@ comment: Usually larger than the adjacent wing petals. Found in the flowers of s
 synonym: "banner (broad)" BROAD [FNA:462b3746-d46d-47e1-9c69-8e94d2223769]
 synonym: "p&#233talo estandarte (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "standard (broad)" BROAD []
-synonym: "vexilla (exact, plural)" EXACT [FNA:f488d9e7-15a7-43b3-ba69-9f2670bb2083]
+synonym: "vexilla (exact, plural)" EXACT OMO:0003004 [FNA:f488d9e7-15a7-43b3-ba69-9f2670bb2083]
 synonym: "vexillum (exact)" EXACT [ISBN:9780023681905]
 synonym: "旗弁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:462b3746-d46d-47e1-9c69-8e94d2223769
@@ -18665,7 +18669,7 @@ namespace: plant_anatomy
 def: "One of two lateral petals (PO:0009032) that is adjacent to the banner petal of a papilionaceous corolla (PO:0009059)." [ISBN:9780023681905]
 comment: The wing petals are usually much smaller than the banner petal and the corolla keel. Found in the flowers of some Fabaceae.
 synonym: "ala (exact)" EXACT [FNA:6766d43e-3533-4b2a-8c28-7a2a8c067889]
-synonym: "alae (exact, plural)" EXACT [FNA:b38c80fb-e887-4918-9e2d-92172e393916]
+synonym: "alae (exact, plural)" EXACT OMO:0003004 [FNA:b38c80fb-e887-4918-9e2d-92172e393916]
 synonym: "p&#233talo ala (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "翼弁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009032 ! petal
@@ -18679,7 +18683,7 @@ namespace: plant_anatomy
 def: "A petal (PO:0009032) that is one of the two lowest petals of a papilionaceous corolla (PO:0025324)." [ISBN:9780023681905]
 comment: The keel petals are usually larger than the adjacent wing petals. They are often partially fused to each other. Each petal is shaped like half a boat and projects toward the front of the flower.
 synonym: "carina (exact)" EXACT [FNA:6c272247-ef5f-4043-b326-db4e6473d972]
-synonym: "carinae (exact, plural)" EXACT [FNA:06194d31-c067-4d1a-a91a-75028069bbf5]
+synonym: "carinae (exact, plural)" EXACT OMO:0003004 [FNA:06194d31-c067-4d1a-a91a-75028069bbf5]
 synonym: "p&#233talo quilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "杯状花弁、竜骨弁 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009032 ! petal
@@ -18722,7 +18726,7 @@ def: "A fused calyx (PO:0025582) that is composed of fused sepals (PO:0025584)."
 comment: Sometimes found in Eucalyptus and other Myrtaceae, covering an inner operculum or calyptra corolla. The sepals are generally completely fused. Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development. Not the same structure as a spore capsule calyptra or fruit operculum. Sometimes erroneously referred to as part of a fruit.
 synonym: "caliptra c&#225liz (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "calycine operculum (exact)" EXACT []
-synonym: "calyx calyptrae (exact, plural)" EXACT [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
+synonym: "calyx calyptrae (exact, plural)" EXACT OMO:0003004 [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
 synonym: "operculum calyx (exact)" EXACT []
 synonym: "outer operculum (exact)" EXACT []
 synonym: "蘚帽がく (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -18737,7 +18741,7 @@ namespace: plant_anatomy
 def: "A fused corolla (PO:0025581) that is composed of fused petals (PO:0025583)." [POC:curators]
 comment: Often found in Eucalyptus and other Myrtaceae. The petals are generally completely fused. If an outer operculum (calyptra calyx) is present, it covers the inner operculum (calyptra corolla). Species of the subgenus Monocalyptrus have only a calyptra corolla (inner operculum) while in most other species, a calyptra calyx is also present, at least early in flower development. Not the same structure as a spore capsule calyptra or fruit operculum. Sometimes erroneously referred to as part of a fruit.
 synonym: "caliptra corola (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "corolla calyptrae (exact, plural)" EXACT [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
+synonym: "corolla calyptrae (exact, plural)" EXACT OMO:0003004 [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
 synonym: "corolline operculum (exact)" EXACT []
 synonym: "inner operculum (exact)" EXACT []
 synonym: "operculum corolla (exact)" EXACT []
@@ -18814,7 +18818,7 @@ synonym: "adult phyllode leaf (exact)" EXACT []
 synonym: "filodio (exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "filodio EXACT Spanish [POC:Maria_Alejandra_Gandolfo] (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "phyllode (exact)" EXACT []
-synonym: "phyllodia (exact, plural)" EXACT [FNA:36fdb894-18a0-4086-95e9-8bb40559c1c7]
+synonym: "phyllodia (exact, plural)" EXACT OMO:0003004 [FNA:36fdb894-18a0-4086-95e9-8bb40559c1c7]
 synonym: "phyllodium (exact)" EXACT [FNA:30da8e22-663c-49b3-8d4d-60f89bfbdbcd]
 synonym: "葉化葉？ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006340 ! adult vascular leaf
@@ -19005,7 +19009,7 @@ synonym: "arista (exact)" EXACT [FNA:399ba59a-deb1-4bc9-b7e5-ed2b89700d5c, FNA:5
 synonym: "arista (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "bristle (broad)" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
 synonym: "seta (related)" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
-synonym: "setae (related)" RELATED Plural [FNA:93b95b97-0f1a-4d26-9c86-ebede4157269]
+synonym: "setae (related, plural)" RELATED OMO:0003004 [FNA:93b95b97-0f1a-4d26-9c86-ebede4157269]
 synonym: "芒 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:78121d02-e7db-45eb-b1b7-011d5026beae
 xref: FNA:93b95b97-0f1a-4d26-9c86-ebede4157269
@@ -19045,7 +19049,7 @@ name: tubercle
 namespace: plant_anatomy
 def: "An enlarged leaf base (PO:0020040) that is fused with adjacent shoot axis (PO:0025029) tissue." [ISBN:9780881928501, JSTOR:3093870]
 comment: Found in cacti and other succulents. The upper part of a leaf from which a tubercle develops is usually shed early in development. Tubercles are often conical, but they may merge with those directly above and below to form ribs, as in saguaro (Carnegiea), or they may elongate, as in species of pincushion cacti (Mammillaria). In species with tubercles, the areole bud (PO:0025353) is often found at the distal end of the tubercle. The areole bud originates in the leaf axil (PO:0009023) of the leaf that becomes the tubercle, but is displaced to the tip through elongation of the tubercle.
-synonym: "podaria (exact, plural)" EXACT []
+synonym: "podaria (exact, plural)" EXACT OMO:0003004 []
 synonym: "podarium (exact)" EXACT [JSTOR:3093870]
 synonym: "小塊茎、塊根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:175
@@ -19134,7 +19138,7 @@ name: pneumatorhiza
 namespace: plant_anatomy
 def: "A small lateral root that grows from a prop root and has a mealy surface texture." [ISBN:9780881928501]
 comment: Found in some palms and other species growing in flooded habitats. Pneumatorhiza appear as small outgrowths on the surface of a prop root. Similar, but distinct from, pneumatophores.
-synonym: "pneumatorhizae (exact, plural)" EXACT []
+synonym: "pneumatorhizae (exact, plural)" EXACT OMO:0003004 []
 synonym: "支持根から出る側根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0020121 ! lateral root
 created_by: rwalls
@@ -19148,7 +19152,7 @@ def: "A collective plant organ structure (PO:0025007) on the surface of a vascul
 subset: Gymnosperms
 subset: Poaceae
 subset: Pteridophytes
-synonym: "sori (exact, plural)" EXACT []
+synonym: "sori (exact, plural)" EXACT OMO:0003004 []
 synonym: "生殖器群、造精器群、胞子嚢群 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025007 ! collective plant organ structure
 relationship: part_of PO:0009025 ! vascular leaf
@@ -19161,7 +19165,7 @@ name: ceonosorus
 namespace: plant_anatomy
 def: "A collective plant organ structure (PO:0025007) on the surface of a vascular leaf that has as parts two or more fused sori (PO:0025359)." [POC:curators]
 synonym: "ceonosoro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "coenosori (exact, plural)" EXACT []
+synonym: "coenosori (exact, plural)" EXACT OMO:0003004 []
 synonym: "融合胞子嚢を有する維管束葉表面の集合構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025007 ! collective plant organ structure
 relationship: part_of PO:0009025 ! vascular leaf
@@ -19618,7 +19622,7 @@ name: pappus
 namespace: plant_anatomy
 def: "A collective organ part structure that has a parts one or more pappus elements (scales, awns, or bristles) at the apex of an inferior ovary just beneath or outside the corolla." [FNA:glossary, ISBN:0964022168]
 comment: Found in flowers and fruits (cypsela) of the Asteraceae. May aid in dispersal by wind or animals. Considered by some to be an evolutionarily modified upper calyx portion, the lower portion having been incorporated into the floral tube casing adnate to the ovary wall; considered by others to be an outgrowth from the ovary wall.
-synonym: "pappi (exact, plural)" EXACT []
+synonym: "pappi (exact, plural)" EXACT OMO:0003004 []
 synonym: "冠毛 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PlantSystematics_image_archive:14891
 xref: PlantSystematics_image_archive:8662
@@ -20716,9 +20720,10 @@ creation_date: 2012-03-21T04:49:09Z
 id: PO:0025471
 name: seedling cotyledon
 namespace: plant_anatomy
-def: "A cotyledon (PO:0020030) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "A cotyledon (PO:0020030) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo cotyledon (PO:0025470).
 is_a: PO:0020030 ! cotyledon
+relationship: part_of PO:0008037 ! seedling
 created_by: Laurel_Cooper
 creation_date: 2012-03-21T04:49:15Z
 
@@ -20790,7 +20795,7 @@ namespace: plant_anatomy
 def: "A primordium (PO:0025127) that is committed to the development of a floral organ (PO:0025395) and is part of a reproductive shoot apex (PO:0025222)." [POC:curators]
 comment: If annotating to a primordium of a floral structure, it is better to use the more specific term, such as petal primordium (PO:0000021) or anther primordium (PO:0006089).
 subset: Angiosperm
-synonym: "floral structure primordia (exact, plural)" EXACT []
+synonym: "floral structure primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of floral structure primordium tissue (exact)" EXACT []
 synonym: "primordio de organo floral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花器官原基 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -20850,7 +20855,7 @@ name: leaflet primordium
 namespace: plant_anatomy
 def: "A primordium (PO:0025127) that develops as part of a leaf primordium (PO:0000017) of a compound leaf (PO:0020043) and is committed to the development of a leaflet (PO:0020049)." [ISBN:0521288959, POC:curators]
 comment: Leaflets of palms does not develop from leaflet primordia but by separation of segments of a leaf lamina (PO:0020039).
-synonym: "leaflet primordia (exact, plural)" EXACT []
+synonym: "leaflet primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of leaflet primordium tissue (exact)" EXACT []
 synonym: "primordio del fol&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "小葉原基（可視的） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -20920,7 +20925,7 @@ id: PO:0025487
 name: bract primordium
 namespace: plant_anatomy
 def: "A phyllome primordium (PO:0025487) that is committed to the development of a flower bract (PO:0009055)." [POC:curators]
-synonym: "bract primordia (exact, plural)" EXACT []
+synonym: "bract primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of bract primordium tissue (exact)" EXACT []
 synonym: "primordio de la br&#225ctea (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "苞原基（可視的） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -20935,7 +20940,7 @@ id: PO:0025488
 name: flower bract primordium
 namespace: plant_anatomy
 def: "A bract primordium (PO:0025128) is committed to the development of a flower bract (PO:0009034)." [POC:Ramona_Walls]
-synonym: "flower bract primordia (exact, plural)" EXACT []
+synonym: "flower bract primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of flower bract primordium tissue (exact)" EXACT []
 synonym: "primordio de la br&#225ctea floral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花苞（葉）原基（可視的） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -20950,7 +20955,7 @@ id: PO:0025489
 name: inflorescence bract primordium
 namespace: plant_anatomy
 def: "A bract primordium (PO:0025128) is committed to the development of an inflorescence bract (PO:0009054)." [POC:Ramona_Walls]
-synonym: "inflorescence bract primordia (exact, plural)" EXACT []
+synonym: "inflorescence bract primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of inflorescence bract primordium tissue (related)" RELATED []
 synonym: "primordio de la br&#225ctea de la inflorescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花序苞原基 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -21286,7 +21291,7 @@ name: phyllome lamina tooth
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is an angular projection on a phyllome margin (PO:0025018) for which the corresponding phyllome sinus (PO:0025383) extends less than one quarter of the distance to the center of the long axis of the phyllome lamina (PO:0025396)." [JSTOR:2441319]
 comment: See phyllome lamina crena (PO:0025516) for a small rounded projection. The corresponding phyllome sinus may be rounded or angular.
-synonym: "phyllome lamina teeth (exact, plural)" EXACT []
+synonym: "phyllome lamina teeth (exact, plural)" EXACT OMO:0003004 []
 synonym: "フィロム葉身tooth (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025396 ! phyllome lamina
@@ -21299,7 +21304,7 @@ name: phyllome lamina crena
 namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is a rounded projection on a phyllome margin (PO:0025018) for which the corresponding phyllome sinus (PO:0025383) extends less than one quarter of the distance to the center of the long axis of the phyllome lamina (PO:0025396)." [JSTOR:2441319]
 comment: See phyllome lamina tooth (PO:0025515) for a small angular projection. The corresponding phyllome sinus may be rounded or angular.
-synonym: "phyllome lamina crenae (exact, plural)" EXACT []
+synonym: "phyllome lamina crenae (exact, plural)" EXACT OMO:0003004 []
 synonym: "フィロム葉身鈍鋸歯状 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0025396 ! phyllome lamina
@@ -21328,7 +21333,7 @@ namespace: plant_anatomy
 def: "A phyllome lamina tooth (PO:0025515) that is an angular projection on a leaf margin (PO:0020128) for which the corresponding leaf sinus (PO:0025384) extends less than one quarter of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
 comment: See leaf lamina crena (PO:0025519) for a small rounded projection. The corresponding leaf sinus may be rounded or angular.
 synonym: "diente de la lámina de la hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "leaf lamina teeth (exact, plural)" EXACT []
+synonym: "leaf lamina teeth (exact, plural)" EXACT OMO:0003004 []
 synonym: "葉身歯 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025515 ! phyllome lamina tooth
 intersection_of: PO:0025515 ! phyllome lamina tooth
@@ -21344,7 +21349,7 @@ namespace: plant_anatomy
 def: "A phyllome lamina crena (PO:0025516) that is a rounded projection on a leaf margin (PO:0020128) for which the corresponding leaf sinus (PO:0025384) extends less than one quarter of the distance to the center of the long axis of the leaf lamina (PO:0020039)." [JSTOR:2441319]
 comment: See leaf lamina tooth (PO:0025518) for a small angular projection. The corresponding leaf sinus may be rounded or angular.
 synonym: "crena de la lámina de la hoja (Spanish, exact)" EXACT Japanese []
-synonym: "leaf lamina crenae (exact, plural)" EXACT []
+synonym: "leaf lamina crenae (exact, plural)" EXACT OMO:0003004 []
 synonym: "leaf lamina crenule (narrow)" NARROW [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf lamina scallop (exact)" EXACT []
 synonym: "葉身鈍鋸歯 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -22652,6 +22657,15 @@ created_by: http://orcid.org/0000-0002-6379-8932
 creation_date: 2023-02-14T23:15:02Z
 
 [Term]
+id: PO:0025626
+name: plant gall
+def: "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000011)." [PO:cooperl]
+xref: PO_GIT:641
+is_a: PO:0025496 ! multi-tissue plant structure
+created_by: https://orcid.org/0000-0002-6379-8932
+creation_date: 2024-02-14T18:01:56Z
+
+[Term]
 id: PO:0028001
 name: OBSOLETE plant life cycle phase
 namespace: plant_structure_development_stage
@@ -22717,7 +22731,7 @@ name: gametophyte coma
 namespace: plant_anatomy
 def: "A collective plant organ structure (PO:0025007) which is a cluster of gametophore branches (PO:0030021) or non-vascular leaves (PO:0025075) at the top of the gametophore axis (PO:0030020), forming a tuft." [ISBN:9780958222471, PO:annikalsmith]
 comment: In the moss genus Sphagnum, the gametophore coma is always composed of gametophore branches, but in all other mosses, it is composed of non-vascular leaves.
-synonym: "comae (broad, plural)" BROAD []
+synonym: "comae (broad, plural)" BROAD OMO:0003004 []
 xref: ISBN:9780958222471
 xref: PO_GIT:682
 is_a: PO:0025007 ! collective plant organ structure
@@ -22765,7 +22779,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "portion of protonema tissue (exact)" EXACT []
 synonym: "protonema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "protonemata (exact, plural)" EXACT []
+synonym: "protonemata (exact, plural)" EXACT OMO:0003004 []
 synonym: "原糸体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:300
 is_a: PO:0005426 ! chlorenchyma
@@ -22796,7 +22810,7 @@ def: "A portion of protonema tissue that consists of only caulonema cells." [POC
 comment: Generally, the development of caulonema follows the development of chloronema. Only the caulonema, and not the chloronema, initiates gametophore buds.
 subset: Bryophytes
 synonym: "caulonema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "caulonemata (exact, plural)" EXACT []
+synonym: "caulonemata (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of caulonema tissue (exact)" EXACT []
 synonym: "カウロネマ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:300
@@ -23199,7 +23213,7 @@ subset: Bryophytes
 subset: Pteridophytes
 synonym: "prothallium (broad)" BROAD []
 synonym: "talo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "thalli (exact, plural)" EXACT []
+synonym: "thalli (exact, plural)" EXACT OMO:0003004 []
 synonym: "葉状体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:317
 is_a: PO:0000003 ! whole plant
@@ -23279,7 +23293,7 @@ def: "A stalk (PO:0025066) that supports a spore capsule, the sporangium (PO:002
 comment: Found in some bryophytes, especially mosses and liverworts.
 subset: Bryophytes
 synonym: "seta (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "setae (related)" RELATED Plural []
+synonym: "setae (related, plural)" RELATED OMO:0003004 []
 synonym: "とげ、剛毛、コケの柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:292
 is_a: PO:0025066 ! stalk
@@ -23356,7 +23370,7 @@ def: "A cardinal organ part (PO:0025001) that develops from an archegonium (PO:0
 comment: Found in bryophytes. The spore capsule calyptra is a membranous or hairy cap or hood, composed of gametophytic tissue (venter; PO:0030038) that protects the embryonic sporophyte within the archegonium (PO:0025126). In some species, it may persist after the sporophyte develops and gets carried upward as the seta (PO:0030032) elongates. The spore capsule calyptra is usually lost before the spores are released, and its shape can be used for identification purposes.
 subset: Bryophytes
 synonym: "caliptra de la c&#225psula productora de esporas (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "spore capsule calyptrae (exact, plural)" EXACT [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
+synonym: "spore capsule calyptrae (exact, plural)" EXACT OMO:0003004 [FNA:50f48ec3-3dcd-4e7f-b065-b68f92ec5636]
 synonym: "コケ類　蘚帽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:305
 is_a: PO:0025001 ! cardinal organ part
@@ -23475,7 +23489,7 @@ subset: Bryophytes
 synonym: "op&#233rculo de la c&#225psula productora de esporas (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "sporangium lid (exact)" EXACT []
 synonym: "spore capsule lid (exact)" EXACT []
-synonym: "spore capsule opercula (exact, plural)" EXACT [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
+synonym: "spore capsule opercula (exact, plural)" EXACT OMO:0003004 [FNA:1020bdb1-00b7-444e-b8d0-ee3bc404f817]
 synonym: "胞子嚢蓋 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:311
 is_a: PO:0025001 ! cardinal organ part
@@ -23660,7 +23674,7 @@ namespace: plant_anatomy
 def: "A gametophore axis that is a leafless extension of a gametophore stem or branch on which a sporophyte is borne." [ISBN:0029496608, ISBN:0962073342]
 comment: Raises the sporophyte above the perichaetial bracts. Found in Sphagnum and Andreaea.
 subset: Bryophytes
-synonym: "pseudopodia (exact, plural)" EXACT []
+synonym: "pseudopodia (exact, plural)" EXACT OMO:0003004 []
 synonym: "pseudopodio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "擬子柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:315
@@ -23886,7 +23900,7 @@ def: "A portion of plant epidermis (PO:0005679) tissue that is an outgrowth from
 comment: Paraphyllia are much smaller than leaves and may be filamentous, scale-like, or leaf-like. Found in pleurocarpous mosses and a few leafy liverworts.
 subset: Bryophytes
 synonym: "parafilium (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "paraphyllia (exact, plural)" EXACT []
+synonym: "paraphyllia (exact, plural)" EXACT OMO:0003004 []
 synonym: "毛葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:345
 is_a: PO:0000112 ! shoot axis epidermis
@@ -23903,7 +23917,7 @@ comment: Found in bryophytes and pteridophytes, especially in mosses.
 subset: Bryophytes
 subset: Pteridophytes
 synonym: "par&#225fisis (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "paraphyses (exact, plural)" EXACT []
+synonym: "paraphyses (exact, plural)" EXACT OMO:0003004 []
 synonym: "側糸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:346
 is_a: PO:0025162 ! multicellular trichome
@@ -23931,7 +23945,7 @@ def: "A portion of plant tissue (PO:0009007) that is a single or double strand i
 comment: Found in bryophytes. Often contains both hydrome and leptome. Functions in support and conduction in a phyllid. The term costa is sometimes used for the midrib of monocot leaves, but this ontology class should only be used for non-vascular leaves.
 subset: Bryophytes
 synonym: "costa (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "costae (exact, plural)" EXACT [FNA:d0ce6c67-625d-4187-bd50-3af01e6e68a6]
+synonym: "costae (exact, plural)" EXACT OMO:0003004 [FNA:d0ce6c67-625d-4187-bd50-3af01e6e68a6]
 synonym: "mid rib (broad)" BROAD []
 synonym: "midrib (broad)" BROAD []
 synonym: "non-vascular leaf midrib (exact)" EXACT []
@@ -24630,7 +24644,7 @@ name: spadix inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of sessile flowers (PO:0009046) on a radially-enlarged, indeterminate, first order inflorescence axis (PO:0025104), and a basal, enveloping inflorescence bract (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include aroids (Araceae), palms (Arecaceae).
-synonym: "spadices (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "spadices (exact, plural)" EXACT OMO:0003004 []
 synonym: "spadix (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
 created_by: NYBG:Brandon_Sinn
@@ -24643,7 +24657,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged, determinate, first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
 synonym: "calathidium (exact)" EXACT []
-synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "capitula (exact, plural)" EXACT OMO:0003004 []
 synonym: "capitulum (exact)" EXACT []
 synonym: "head (broad)" BROAD []
 synonym: "hypanthodium (narrow)" NARROW []
@@ -24701,7 +24715,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with both monopodial and sympodial growth habits, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and determinate, higher order inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046) that collectively form a concave plane of flowers." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of Filipendula (Rosaceae).
 synonym: "anthela (exact)" EXACT []
-synonym: "anthelae (exact)" NARROW [] {synonymtypedef="Plural"}
+synonym: "anthelae (exact, plural)" NARROW OMO:0003004 []
 synonym: "monochasium (broad)" BROAD []
 is_a: PO:0009049 ! inflorescence
 created_by: NYBG:Brandon_Sinn
@@ -24713,7 +24727,7 @@ name: cyme inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and pedicellate flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Cyme inflorescence is used here to treat inflorescences that are commonly referred to as dichasial, pleiochasial, or polychasial cymes; each of which are named according to the number of higher order inflorescence axes at a single axis. Cyme is not used here to treat monochasial cymose inflorescences, which contain at least one repeating sympodial unit, such as cincinnus inflorescence (PO:0030132), compound cincinnus inflorescence (PO:0030133), bostryx (PO:0030134), rhipidium inflorescence (PO:0030131), drepanium inflorescence (PO:0030135), and compound drepanium inflorescence (PO:0030136). Examples include many species of the Figwort family (Scrophulariaceae, including green figwort Scrophularia umbrosa) and the Verbena family (Verbenaceae).
-synonym: "cyathia (narrow)" NARROW [] {synonymtypedef="Plural"}
+synonym: "cyathia (narrow, plural)" NARROW OMO:0003004 []
 synonym: "cyathium (narrow)" NARROW []
 synonym: "cyme (exact)" EXACT []
 synonym: "cymule (narrow)" NARROW []
@@ -24793,7 +24807,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) that bear pedicellate flowers (PO:0009046) in a single plane, with the latest-developing flowers on the highest order inflorescence axis, found at the center of the inflorescence." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Iris family (Iridaceae).
 synonym: "monochasium (broad)" BROAD []
-synonym: "rhipidia (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "rhipidia (exact, plural)" EXACT OMO:0003004 []
 synonym: "rhipidium (exact)" EXACT []
 is_a: PO:0009049 ! inflorescence
 created_by: NYBG:Brandon_Sinn
@@ -24806,7 +24820,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of determinate inflorescence axes (PO:0020122) with pedicellate flowers (PO:0009046), with the latest-developing flowers on the highest order inflorescence axis." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include species of the Dayflower family (Commelinaceae).
 synonym: "boragoid (exact)" EXACT []
-synonym: "cincinni (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "cincinni (exact, plural)" EXACT OMO:0003004 []
 synonym: "cincinnus (exact)" EXACT []
 synonym: "congenital cincinnus (exact)" EXACT []
 synonym: "homaxone (exact)" EXACT []
@@ -24835,7 +24849,7 @@ name: bostryx inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a sympodial growth habit, which at flowering stage (PO:0007616), is composed of pedicellate flowers (PO:0009046) on determinate inflorescence axes (PO:0020122), each of which develop at a branch angle of approximately 90 degrees from each higher inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include some species of the Forget-me-not family (Boraginaceae).
-synonym: "bostryches (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "bostryches (exact, plural)" EXACT OMO:0003004 []
 synonym: "bostryx (exact)" EXACT []
 synonym: "helicoid cyme (broad)" BROAD []
 synonym: "monochasium (broad)" BROAD []

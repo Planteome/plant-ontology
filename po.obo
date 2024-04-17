@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-02-16
+data-version: releases/2024-04-17
 saved-by: cooperl
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -83,7 +83,6 @@ synonym: "prothalli (narrow, plural)" NARROW OMO:0003004 [FNA:4b610104-1bb0-4c6b
 synonym: "prothallium (narrow)" NARROW []
 synonym: "prothallus (narrow)" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
 synonym: "ramet (broad)" BROAD []
-synonym: "seedling (narrow)" NARROW []
 synonym: "shrub (narrow)" NARROW []
 synonym: "sporophyte (narrow)" NARROW []
 synonym: "suffrutex (narrow)" NARROW [FNA:99508f62-7116-4e2b-90c0-19ff55ebd967]
@@ -7676,7 +7675,7 @@ is_a: PO:0007042 ! whole plant fruit formation stage
 id: PO:0007030
 name: seedling shoot emergence stage
 namespace: plant_structure_development_stage
-def: "Shoot or leaf breaks through soil surface." [Gramene:Anuradha_Pujar, ISBN:3826331524]
+def: "A seedling development stage (PO:0007131) during which a seedling (PO:0008037) breaks through soil surface." [Gramene:Anuradha_Pujar, ISBN:3826331524, PO:cooperl]
 synonym: "07 shoot emergence in soybean (related)" RELATED [SOY:0000012]
 synonym: "BBCH growth stage 09 (related)" RELATED [ISBN:3826331524]
 synonym: "shoot emergence in Solanaceae (related)" RELATED [SGN:0000007]
@@ -18308,13 +18307,14 @@ creation_date: 2011-04-20T02:20:11Z
 id: PO:0025287
 name: seedling coleoptile
 namespace: plant_anatomy
-def: "A coleoptile (PO:0020033) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
-comment: A seedling coleoptile  develops from an embryo coleoptile (PO:0025286).
+def: "A coleoptile (PO:0020033) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
+comment: A seedling coleoptile develops from an embryo coleoptile (PO:0025286).
 synonym: "cole&#243ptile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼葉鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:294
 is_a: PO:0020033 ! coleoptile
 relationship: develops_from PO:0025286 ! plant embryo coleoptile
+relationship: part_of PO:0008037 ! seedling
 relationship: participates_in PO:0007131 ! seedling development stage
 created_by: rwalls
 creation_date: 2011-04-20T02:20:12Z
@@ -18337,13 +18337,14 @@ creation_date: 2011-04-20T02:34:16Z
 id: PO:0025289
 name: seedling coleorhiza
 namespace: plant_anatomy
-def: "A coleorhiza (PO:0020034) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "A coleorhiza (PO:0020034) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo coleorhiza (PO:0025288).
 synonym: "coleorriza de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生根鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:340
 is_a: PO:0020034 ! coleorhiza
 relationship: develops_from PO:0025288 ! embryo coleorhiza
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-20T02:34:17Z
 
@@ -18366,13 +18367,14 @@ creation_date: 2011-04-20T02:39:46Z
 id: PO:0025291
 name: seedling hypocotyl
 namespace: plant_anatomy
-def: "A hypocotyl (PO:0020100) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "A hypocotyl (PO:0020100) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo hypocotyl (PO:0025290). This term should only be used for seed plants.
 synonym: "hipoc&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:341
 is_a: PO:0020100 ! hypocotyl
 relationship: develops_from PO:0025290 ! embryo hypocotyl
+relationship: part_of PO:0008037 ! seedling
 relationship: participates_in PO:0007131 ! seedling development stage
 created_by: rwalls
 creation_date: 2011-04-20T02:39:56Z
@@ -18395,13 +18397,14 @@ creation_date: 2011-04-25T10:13:08Z
 id: PO:0025293
 name: seedling epicotyl
 namespace: plant_anatomy
-def: "An epicotyl (PO:0020035) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "An epicotyl (PO:0020035) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo epicotyl (PO:0025292).
 synonym: "epic&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生上胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:342
 is_a: PO:0020035 ! epicotyl
 relationship: develops_from PO:0025292 ! embryo epicotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:13:08Z
 
@@ -18423,13 +18426,14 @@ creation_date: 2011-04-25T10:21:58Z
 id: PO:0025295
 name: seedling mesocotyl
 namespace: plant_anatomy
-def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294)." [POC:curators, POC:Laurel_Cooper]
-comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:0025294) and is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
+def: "A mesocotyl (PO:0020037) that develops from an embryo mesocotyl (PO:0025294) and is part of a seedling (PO:0008037)." [PO:Laurel_Cooper, POC:curators]
+comment: A seedling mesocotyl is an elongation of an embryo mesocotyl (PO:0025294) and is part of a seedling (PO:0008037)..
 synonym: "mesoc&#243tile de la plantual (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生中胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:343
 is_a: PO:0020037 ! mesocotyl
 relationship: develops_from PO:0025294 ! embryo mesocotyl
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:21:58Z
 
@@ -18453,13 +18457,14 @@ creation_date: 2011-04-25T10:41:14Z
 id: PO:0025297
 name: seedling radicle
 namespace: plant_anatomy
-def: "A radicle (PO:0020031) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
-comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025)  of an adult plant. Sometimes is abortive.
+def: "A radicle (PO:0020031) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
+comment: Develops from an embryo radicle (PO:0025296). May develop into the root system (PO:0025025) of an adult plant.
 synonym: "rad&#237cula de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生幼根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:344
 is_a: PO:0020031 ! radicle
 relationship: develops_from PO:0025296 ! plant embryo radicle
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-25T10:41:48Z
 
@@ -18518,13 +18523,14 @@ creation_date: 2011-04-27T08:20:22Z
 id: PO:0025301
 name: seedling hypocotyl-root junction
 namespace: plant_anatomy
-def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) ." [POC:curators, POC:Laurel_Cooper]
-comment: Part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131).
+def: "A hypocotyl-root junction (PO:0004724) that develops from an embryo hypocotyl-root junction (PO:0025300) and is part of a seedling (PO:0008037)." [PO:Laurel_Cooper, POC:curators]
+comment: Part of a seedling (PO:0008037).
 synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "実生胚軸-根合流点 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:250
 is_a: PO:0004724 ! hypocotyl-root junction
 relationship: develops_from PO:0025300 ! embryo hypocotyl-root junction
+relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
 creation_date: 2011-04-27T08:20:22Z
 
@@ -20933,10 +20939,11 @@ creation_date: 2012-03-21T04:49:09Z
 id: PO:0025471
 name: seedling cotyledon
 namespace: plant_anatomy
-def: "A cotyledon (PO:0020030) that is part of a whole plant (PO:0000003) in the seedling development stage (PO:0007131)." [POC:curators]
+def: "A cotyledon (PO:0020030) that is part of a seedling (PO:0008037)." [PO:cooperl, POC:curators]
 comment: Develops from an embryo cotyledon (PO:0025470).
 is_a: PO:0020030 ! cotyledon
 relationship: develops_from PO:0025470 ! plant embryo cotyledon
+relationship: part_of PO:0008037 ! seedling
 created_by: Laurel_Cooper
 creation_date: 2012-03-21T04:49:15Z
 
@@ -22899,9 +22906,9 @@ creation_date: 2023-02-14T23:15:02Z
 [Term]
 id: PO:0025626
 name: plant gall
-def: "A portion of plant tissue (PO:0009007) that develops in response an organism for the benefit of that organism." [PO:cooperl]
+def: "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000011)." [PO:cooperl]
 xref: PO_GIT:641
-is_a: PO:0009007 ! portion of plant tissue
+is_a: PO:0025496 ! multi-tissue plant structure
 created_by: https://orcid.org/0000-0002-6379-8932
 creation_date: 2024-02-14T18:01:56Z
 
