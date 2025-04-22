@@ -26,8 +26,8 @@ while(<TERM>) {
                         next;
                 }
 		
-		my ($id, $name, $defn, $synonyms, $isaid, $isaname) = split("\t", $line);
-		print OUTFILE "   [ \"$name\", \"<a href=\\\"https://browser.planteome.org/amigo/term/$id\\\">$id</a>\", \"$defn\" ],\n";
+		my ($id, $name, $namespace, $defn, $synonyms, $isaid, $isaname) = split("\t", $line);
+		print OUTFILE "   [ \"$name\", \"$namespace\", \"<a href=\\\"https://browser.planteome.org/amigo/term/$id\\\">$id</a>\", \"$defn\" ],\n";
 }
 print OUTFILE "];\n";
 close(OUTFILE);

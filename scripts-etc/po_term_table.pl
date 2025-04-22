@@ -21,10 +21,11 @@ chomp $version;
 my $date = strftime "%m-%d-%Y", localtime;
 print OUTFILE "$date\t$version\n";
 
-print OUTFILE "id\tname\tdefn\tsynonyms\tis_a id\tis_a name\n";
+print OUTFILE "id\tname\tnamespace\tdefn\tsynonyms\tis_a id\tis_a name\n";
 
 my $id = "";
 my $name = "";
+my $namespace = "";
 my $def = "";
 my $synonym = "";
 my $isa_id = "";
@@ -38,7 +39,7 @@ while (my $line = <OBO>) {
 		
 		if ($line =~ m/^id:/) {
 				if ($id ne "") {
-						print OUTFILE "$id\t$name\t$def\t$synonym\t$isa_id\t$isa_name\n";
+						print OUTFILE "$id\t$name\t$namespace\t$def\t$synonym\t$isa_id\t$isa_name\n";
 				}
 				$id = "";
 				$name = "";
@@ -51,6 +52,13 @@ while (my $line = <OBO>) {
 		}elsif ($line =~ m/^name:/) {
 				$line =~ s/^name: //;
 				$name = $line;
+		}elsif ($line =~ m/^namespace:/) {
+				$line =~ s/^namespace: //;
+				if ($line =~ 'plant_anatomy') {
+					$namespace = "Anatomy";
+				}else{
+					$namespace = "Growth Stage"
+				}
 		}elsif ($line =~ m/^def:/) {
 				$line =~ s/^def: //;
 				$def = $line;
@@ -76,7 +84,7 @@ while (my $line = <OBO>) {
 		}
 }
 
-print OUTFILE "$id\t$name\t$def\t$synonym\t$isa_id\t$isa_name\n";
+print OUTFILE "$id\t$name\t$namespace\t$def\t$synonym\t$isa_id\t$isa_name\n";
 
 close (OBO);
 close (OUTFILE);
