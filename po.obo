@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-04-17
+data-version: releases/2025-10-31
 saved-by: cooperl
 subsetdef: Angiosperm "Term for angiosperms"
 subsetdef: Arabidopsis "Term used for Arabidopsis"
@@ -206,6 +206,7 @@ synonym: "embri&#243n som&#225tico cultivado (Spanish, exact)" EXACT Spanish [PO
 synonym: "培養植物体細胞不定胚 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000010 ! cultured plant embryo
 is_a: PO:0025302 ! somatic plant embryo
+is_a: UBERON:0001062
 relationship: develops_from PO:0006091 ! embryogenic callus
 
 [Term]
@@ -219,6 +220,7 @@ synonym: "hypocotyl hook (related)" RELATED []
 synonym: "頂端かぎ状屈曲構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
+is_a: UBERON:0001062
 relationship: develops_from PO:0020100 ! hypocotyl
 relationship: part_of PO:0006341 ! primary shoot system
 
@@ -469,6 +471,7 @@ synonym: "t&#233trada de las microsporas (Spanish, exact)" EXACT Spanish [POC:Ma
 synonym: "小胞子の四分子   小胞子四分子 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:236
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0020047 ! microsporocyte
 relationship: has_part PO:0020048 ! microspore
 
@@ -1075,6 +1078,7 @@ synonym: "sperm nucleus (related)" RELATED []
 synonym: "植物精子細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:141
 is_a: PO:0025006 ! plant gamete
+is_a: UBERON:0001062
 relationship: develops_from PO:0025525 ! spermatogenous cell
 
 [Term]
@@ -1103,6 +1107,7 @@ synonym: "trichome support cell (related)" RELATED []
 synonym: "ソケット細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:8
 is_a: PO:0025165 ! shoot epidermal cell
+is_a: UBERON:0001062
 disjoint_from: PO:0000332 ! shoot epidermal pavement cell
 relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
@@ -1334,6 +1339,7 @@ subset: TraitNet
 synonym: "c&#233lula del pelo de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根毛細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0000262 ! trichoblast
 
 [Term]
@@ -1361,6 +1367,7 @@ synonym: "hair cell (related)" RELATED []
 synonym: "tricoblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "根毛形成細胞、トリコブラスト (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
 [Term]
@@ -1375,6 +1382,7 @@ synonym: "atricoblasto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gand
 synonym: "non-hair cell (broad)" BROAD []
 synonym: "非毛根形成細胞、アトリコブラスト (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025164 ! root epidermal cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
 [Term]
@@ -1473,6 +1481,7 @@ xref: FNA:ead20a1b-057b-4008-9466-bdb8e283aa82
 xref: FNA:f18da584-2b0b-4b03-a614-40140a1cb89e
 xref: PO_GIT:207
 is_a: PO:0009011 ! plant structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0000349 ! plant epidermal initial cell
 relationship: part_of PO:0005679 ! plant epidermis
 
@@ -1548,6 +1557,7 @@ synonym: "c&#233lula guardiana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "occlusive cell (exact)" EXACT [PMID:16845829]
 synonym: "孔辺細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025165 ! shoot epidermal cell
+is_a: UBERON:0001062
 disjoint_from: PO:0000332 ! shoot epidermal pavement cell
 relationship: develops_from PO:0000351 ! guard mother cell
 relationship: part_of PO:0002000 ! stomatal complex
@@ -1603,6 +1613,7 @@ synonym: "c&#233lula del pavimento epidermal (Spanish, exact)" EXACT Spanish [PO
 synonym: "表皮被蓋細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:256
 is_a: PO:0025165 ! shoot epidermal cell
+is_a: UBERON:0001062
 disjoint_from: PO:0008030 ! trichome cell
 relationship: develops_from PO:0000349 ! plant epidermal initial cell
 
@@ -1629,6 +1640,7 @@ subset: CL
 synonym: "c&#233lula madre de la c&#233lula guardiana (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "孔辺母細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025165 ! shoot epidermal cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0000062 ! stomatal initial cell
 
 [Term]
@@ -2528,6 +2540,7 @@ synonym: "embryonic basal cell (exact)" EXACT []
 synonym: "胚基底細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:281
 is_a: PO:0025028 ! embryo plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0000423 ! plant zygote
 
 [Term]
@@ -2729,6 +2742,7 @@ synonym: "根粒 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:b62e2f23-dffc-474a-a7bd-f919ea99b51c
 xref: PO_GIT:235
 is_a: PO:0025001 ! cardinal organ part
+is_a: UBERON:0001062
 relationship: develops_from PO:0025194 ! root nodule meristem
 relationship: part_of PO:0009005 ! root
 
@@ -3108,6 +3122,7 @@ synonym: "corteza (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "portion of bark tissue (exact)" EXACT []
 synonym: "樹皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0005043 ! secondary phloem
 
 [Term]
@@ -3207,6 +3222,7 @@ synonym: "c&#233lula parenquim&#225tica axial de la madera (Spanish, exact)" EXA
 synonym: "軸方向二次木部柔組織細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:456
 is_a: PO:0004525 ! secondary xylem parenchyma cell
+is_a: UBERON:0001062
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: part_of PO:0004533 ! axial secondary xylem parenchyma
 relationship: develops_from PO:0000079 ! fusiform initial cell
@@ -3223,6 +3239,7 @@ synonym: "ray wood parenchyma cell (exact)" EXACT []
 synonym: "放射状二次木部柔組織細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:456
 is_a: PO:0004525 ! secondary xylem parenchyma cell
+is_a: UBERON:0001062
 intersection_of: PO:0004525 ! secondary xylem parenchyma cell
 intersection_of: part_of PO:0004534 ! ray secondary xylem parenchyma
 relationship: develops_from PO:0000082 ! ray initial cell
@@ -3331,6 +3348,7 @@ synonym: "placenta del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandr
 synonym: "果実の胎座 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:144
 is_a: PO:0020001 ! plant ovary placenta
+is_a: UBERON:0001062
 relationship: develops_from PO:0025078 ! placenta
 relationship: part_of PO:0009001 ! fruit
 
@@ -3346,6 +3364,7 @@ synonym: "果柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:487
 xref: PO_GIT:49
 is_a: PO:0030114 ! fruit pedicel
+is_a: UBERON:0001062
 relationship: develops_from PO:0009052 ! inflorescence flower pedicel
 relationship: part_of PO:0006342 ! infructescence
 
@@ -3434,6 +3453,7 @@ synonym: "シュート軸塊茎 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Ya
 xref: PO_GIT:127
 is_a: PO:0025029 ! shoot axis
 is_a: PO:0025522 ! tuber
+is_a: UBERON:0001062
 relationship: develops_from PO:0025073 ! branch
 
 [Term]
@@ -4173,6 +4193,7 @@ synonym: "root primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "根原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:467
 is_a: PO:0025127 ! primordium
+is_a: UBERON:0001062
 relationship: develops_from PO:0025433 ! root anlagen
 
 [Term]
@@ -4238,6 +4259,7 @@ synonym: "PTM (exact)" EXACT []
 synonym: "一次 肥厚（膜）分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:437
 is_a: PO:0006344 ! shoot lateral meristem
+is_a: UBERON:0001062
 relationship: develops_from PO:0000225 ! peripheral zone
 relationship: part_of PO:0009047 ! stem
 
@@ -4729,6 +4751,7 @@ synonym: "portion of epidermal tissue (exact)" EXACT []
 synonym: "表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:109
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0006210 ! protoderm
 
 [Term]
@@ -4824,6 +4847,7 @@ synonym: "xilema primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_G
 synonym: "一次木部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:434
 is_a: PO:0005352 ! xylem
+is_a: UBERON:0001062
 relationship: develops_from PO:0025275 ! procambium
 
 [Term]
@@ -4839,6 +4863,7 @@ synonym: "Poaceae hull (exact)" EXACT []
 synonym: "イネ科植物 籾殻、外皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:239
 is_a: PO:0025023 ! collective phyllome structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0009037 ! lemma
 relationship: develops_from PO:0009038 ! palea
 relationship: part_of PO:0006342 ! infructescence
@@ -4853,6 +4878,7 @@ subset: TraitNet
 synonym: "filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム、葉(的）器官 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
+is_a: UBERON:0001062
 relationship: develops_from PO:0025128 ! phyllome primordium
 relationship: part_of PO:0009006 ! shoot system
 
@@ -4981,6 +5007,7 @@ synonym: "c&#233lula primaria parietal (Spanish, exact)" EXACT Spanish [POC:Mari
 synonym: "一次側膜細胞、壁細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:359
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0006014 ! male archesporial cell
 relationship: part_of PO:0006006 ! anther wall primary parietal cell layer
 
@@ -5608,6 +5635,7 @@ synonym: "portion of primary phloem tissue (exact)" EXACT []
 synonym: "一次師部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:433
 is_a: PO:0005417 ! phloem
+is_a: UBERON:0001062
 relationship: develops_from PO:0025275 ! procambium
 
 [Term]
@@ -5755,6 +5783,7 @@ synonym: "c&#233lula espor&#243gena primaria (Spanish, exact)" EXACT Spanish [PO
 synonym: "一次胞子形成細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:328
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0006014 ! male archesporial cell
 
 [Term]
@@ -5865,6 +5894,7 @@ synonym: "胞子母細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki
 xref: GO:0007126
 xref: PO_GIT:361
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0030056 ! archesporial cell
 relationship: part_of PO:0025094 ! sporangium
 
@@ -6177,6 +6207,7 @@ synonym: "penacho (borla) de la espiguilla (Spanish, exact)" EXACT Spanish [POC:
 synonym: "雄穂（花）の小穂 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:537
 is_a: PO:0009051 ! spikelet
+is_a: UBERON:0001062
 relationship: develops_from PO:0006358 ! tassel spikelet pair meristem
 relationship: part_of PO:0020126 ! tassel inflorescence
 
@@ -6413,6 +6444,7 @@ def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is a rid
 synonym: "rafe de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子背線、縫線 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0020027 ! raphe
 relationship: part_of PO:0009010 ! seed
 
@@ -6424,6 +6456,7 @@ def: "A cardinal part of multi-tissue plant structure (PO:0025498) that is attac
 synonym: "fun&#237culo de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子種柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0020006 ! funicle
 relationship: part_of PO:0009010 ! seed
 
@@ -6436,6 +6469,7 @@ synonym: "calaza de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "portion of seed chalaza (exact)" EXACT []
 synonym: "種子 カラザ (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0020026 ! chalaza
 relationship: part_of PO:0009010 ! seed
 
@@ -6448,6 +6482,7 @@ subset: TraitNet
 synonym: "micr&#243pila de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "種子珠孔 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025117 ! plant anatomical space
+is_a: UBERON:0001062
 relationship: develops_from PO:0020025 ! plant ovule micropyle
 relationship: part_of PO:0009088 ! seed coat
 
@@ -6460,6 +6495,7 @@ synonym: "obturador de la semilla (Spanish, exact)" EXACT Spanish [POC:Maria_Ale
 synonym: "portion of seed obturator tissue (exact)" EXACT []
 synonym: "種子閉塞組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0020029 ! obturator
 relationship: part_of PO:0006332 ! seed funicle
 
@@ -6558,6 +6594,7 @@ synonym: "腋苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:262
 xref: PO_GIT:518
 is_a: PO:0004545 ! shoot-borne shoot system
+is_a: UBERON:0001062
 relationship: develops_from PO:0004709 ! axillary bud
 
 [Term]
@@ -6705,7 +6742,7 @@ relationship: part_of PO:0009102 ! short tassel branch
 id: PO:0006360
 name: ear spikelet pair meristem
 namespace: plant_anatomy
-def: "An ear inflorescence axillary meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, POC:Ramona_Walls] {comment="NYBG:Brandon_Sinn"}
+def: "An ear inflorescence axillary meristem (PO:0009110) that produces two ear spikelet meristems (PO:0006378), each of which produces two flower meristems (PO:0000229) in an ear inflorescence (PO:0020136)." [Gramene:Pankaj_Jaiswal, NYBG:Brandon_Sinn, POC:Ramona_Walls]
 subset: Maize
 synonym: "par de meristemas de la espiga de la espiguilla (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "雌穂（花）小穂対分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -10621,6 +10658,7 @@ synonym: "c&#233lula del tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alej
 synonym: "毛（毛茸、糸状体）細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:207
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0004013 ! plant epidermal cell
 relationship: part_of PO:0025162 ! multicellular trichome
 
@@ -10890,6 +10928,7 @@ xref: FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a
 xref: FNA:c13b1312-1cc5-4ace-98e2-fde12aec09da
 xref: PO_GIT:76
 is_a: PO:0025496 ! multi-tissue plant structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0009062 ! gynoecium
 
 [Term]
@@ -10968,6 +11007,7 @@ synonym: "根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f
 xref: PO_GIT:578
 is_a: PO:0025004 ! plant axis
+is_a: UBERON:0001062
 relationship: develops_from PO:0005029 ! root primordium
 relationship: part_of PO:0025025 ! root system
 
@@ -11063,6 +11103,7 @@ synonym: "種子 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:f5c50e73-61e3-48ec-b918-6f85b3f40738
 xref: PO_GIT:405
 is_a: PO:0025496 ! multi-tissue plant structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0020003 ! plant ovule
 relationship: has_part PO:0009009 ! plant embryo
 
@@ -11656,6 +11697,7 @@ synonym: "花 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:160
 xref: PO_GIT:259
 is_a: PO:0025082 ! reproductive shoot system
+is_a: UBERON:0001062
 relationship: develops_from PO:0000229 ! flower meristem
 
 [Term]
@@ -11953,6 +11995,7 @@ xref: FNA:e0f4d402-3489-4a58-81bf-0fa5119a4db5
 xref: PO_GIT:71
 xref: PO_GIT:98
 is_a: PO:0025023 ! collective phyllome structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0025478 ! androecium primordium
 relationship: part_of PO:0009046 ! flower
 
@@ -12000,6 +12043,7 @@ xref: PO_GIT:470
 xref: PO_GIT:71
 xref: PO_GIT:98
 is_a: PO:0025023 ! collective phyllome structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0000019 ! gynoecium primordium
 relationship: part_of PO:0009046 ! flower
 
@@ -12070,6 +12114,7 @@ synonym: "半葯,花粉のう (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yama
 xref: PO_GIT:297
 xref: PO_GIT:70
 is_a: PO:0025007 ! collective plant organ structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0006089 ! anther primordium
 relationship: has_part PO:0025277 ! pollen sac
 relationship: part_of PO:0009029 ! stamen
@@ -12437,6 +12482,7 @@ synonym: "arilo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "仮種皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:242
 is_a: PO:0019022 ! arilloid
+is_a: UBERON:0001062
 relationship: develops_from PO:0020006 ! funicle
 
 [Term]
@@ -12472,6 +12518,7 @@ synonym: "ramificaci&#243n lateral larga del penacho (borla) (Spanish, exact)" E
 synonym: "second order tassel branch (related)" RELATED []
 synonym: "雄穂の長側枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006323 ! tassel inflorescence branch
+is_a: UBERON:0001062
 relationship: develops_from PO:0009104 ! long lateral tassel branch meristem
 
 [Term]
@@ -12484,6 +12531,7 @@ synonym: "ramificaci&#243n corta del penacho (borla) (Spanish, exact)" EXACT Spa
 synonym: "third order tassel branch (related)" RELATED []
 synonym: "雄穂短枝 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0006323 ! tassel inflorescence branch
+is_a: UBERON:0001062
 relationship: develops_from PO:0009103 ! short tassel branch meristem
 
 [Term]
@@ -12557,6 +12605,7 @@ synonym: "meristema apical de la inflorescencia (Spanish, exact)" EXACT Spanish 
 synonym: "花序頂端分裂組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0000230 ! inflorescence meristem
 is_a: PO:0008028 ! reproductive shoot apical meristem
+is_a: UBERON:0001062
 relationship: develops_from PO:0008016 ! vegetative shoot apical meristem
 
 [Term]
@@ -12719,6 +12768,7 @@ synonym: "胚珠 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:464
 xref: PO_GIT:70
 is_a: PO:0009008 ! plant organ
+is_a: UBERON:0001062
 relationship: develops_from PO:0000018 ! ovule primordium
 
 [Term]
@@ -13078,6 +13128,7 @@ synonym: "obturador (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "portion of obturator tissue (exact)" EXACT []
 synonym: "閉塞組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0020006 ! funicle
 
 [Term]
@@ -13469,7 +13520,6 @@ synonym: "種髪 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:7c6c72f7-89f7-44d3-9cfb-8a0959c27927
 xref: PO_GIT:218
 is_a: PO:0006048 ! seed coat epidermis
-is_a: UBERON:0001062
 relationship: has_part PO:0004511 ! seed trichome
 
 [Term]
@@ -13801,6 +13851,7 @@ synonym: "suspensor (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolf
 synonym: "胚柄 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:248
 is_a: PO:0025099 ! embryo plant structure
+is_a: UBERON:0001062
 relationship: develops_from PO:0002002 ! embryo basal cell
 
 [Term]
@@ -13987,6 +14038,7 @@ subset: CL
 synonym: "c&#233lula de la columela del caliptra de la ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "柱軸根冠細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025030 ! ground tissue cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0020133 ! columella root cap initial cell
 
 [Term]
@@ -15097,6 +15149,7 @@ synonym: "porci&#243n del tejido fundamental (Spanish, exact)" EXACT Spanish [PO
 synonym: "基本組織の一部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:106
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0025594 ! ground meristem
 created_by: Laurel_Cooper
 creation_date: 2009-12-17T03:06:13Z
@@ -15311,6 +15364,7 @@ synonym: "saco embrionario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_
 synonym: "胚嚢 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:130
 is_a: PO:0025279 ! megagametophyte
+is_a: UBERON:0001062
 relationship: develops_from PO:0020019 ! megaspore
 relationship: located_in PO:0025490 ! plant ovary ovule
 created_by: rwalls
@@ -15958,6 +16012,7 @@ synonym: "ooc&#233lula del arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria
 synonym: "造卵器卵細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:140
 is_a: PO:0020094 ! plant egg cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0025509 ! archegonium central cell
 relationship: located_in PO:0030038 ! venter
 created_by: rwalls
@@ -16028,6 +16083,7 @@ synonym: "arquegonio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandol
 synonym: "造卵器 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:211
 is_a: PO:0025124 ! multicellular plant gametangium
+is_a: UBERON:0001062
 relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: rwalls
 creation_date: 2010-11-15T08:58:31Z
@@ -16060,6 +16116,7 @@ synonym: "primordio del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "フィロム原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:466
 is_a: PO:0025127 ! primordium
+is_a: UBERON:0001062
 relationship: develops_from PO:0025430 ! phyllome anlagen
 relationship: part_of PO:0000037 ! shoot axis apex
 created_by: rwalls
@@ -17052,6 +17109,7 @@ synonym: "c&#233lula del tubo pol&#237nico (Spanish, exact)" EXACT Spanish [POC:
 synonym: "花粉管細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:192
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0020099 ! microgametophyte vegetative cell
 created_by: rwalls
 creation_date: 2010-12-09T02:11:17Z
@@ -17474,6 +17532,7 @@ comment: Usually only one of the four megaspores develops and the other three di
 synonym: "t&#233trada de megasporas (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "大胞子の四分子 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009007 ! portion of plant tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0000431 ! megasporocyte
 relationship: has_part PO:0020019 ! megaspore
 created_by: rwalls
@@ -17672,6 +17731,7 @@ def: "A shoot axis (PO:0025029) that is part of an infructescence (PO:0006342)."
 synonym: "eje de la infructescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "果序軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0025029 ! shoot axis
+is_a: UBERON:0001062
 relationship: develops_from PO:0020122 ! inflorescence axis
 relationship: part_of PO:0006342 ! infructescence
 created_by: rwalls
@@ -17683,7 +17743,7 @@ name: higher order infructescence axis
 namespace: plant_anatomy
 def: "An infructescence axis (PO:0025242), which is a branch (PO:0025073) in an infructescence (PO:0006342), that develops from a higher order inflorescence axis (PO:0009081)." [NYBG:Brandon_Sinn, POC:Ramona_Walls]
 comment: A higher order infructescence axis is named according to its position in an infructescence (PO:0006342). Tenth order infructescence axis (PO:0025112) is the greatest specific infructescence axis (PO:0025242) order in the PO; when mapping annotations to an infructescence axis which is of an order higher than ten, or when order is ambiguous or unknown, annotate directly to higher order infructescence axis (PO:0025243).
-synonym: "ejen de la infructescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo] {comment="NYBG:Brandon_Sinn"}
+synonym: "ejen de la infructescencia (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "infructescence branch (exact)" EXACT []
 synonym: "果序枝 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:264
@@ -17825,7 +17885,7 @@ creation_date: 2011-01-05T09:16:29Z
 id: PO:0025253
 name: eighth order infructescence axis
 namespace: plant_anatomy
-def: "A higher order infructescence axis (PO:0025243) which arises from a seventh order infructescence axis (PO:0025252) and develops from an eighth order inflorescence axis (PO:0025109)." [POC:Laura_Moore, POC:Ramona_Walls] {comment="NYBG:Brandon_Sinn"}
+def: "A higher order infructescence axis (PO:0025243) which arises from a seventh order infructescence axis (PO:0025252) and develops from an eighth order inflorescence axis (PO:0025109)." [NYBG:Brandon_Sinn, POC:Laura_Moore, POC:Ramona_Walls]
 synonym: "eje de octavo orden de la infructescencia (Spanish, exact)" EXACT Spanish [NYBG:Brandon_Sinn, POC:curators]
 synonym: "seventh order infructescence branch (exact)" EXACT []
 synonym: "第七果序分枝 (Japanese, related)" RELATED [NIG:Yukiko_Yamazaki]
@@ -17949,6 +18009,7 @@ synonym: "子房隔壁   (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4
 xref: PO_GIT:277
 is_a: PO:0000030 ! septum
+is_a: UBERON:0001062
 relationship: develops_from PO:0005022 ! plant ovary wall
 relationship: part_of PO:0009062 ! gynoecium
 created_by: rwalls
@@ -18045,6 +18106,7 @@ xref: FNA:978c1c40-4dee-4bb1-99f6-b2360d1b77b4
 xref: PlantSystematics_image_archive:1597
 xref: PO_GIT:277
 is_a: PO:0000030 ! septum
+is_a: UBERON:0001062
 relationship: develops_from PO:0025262 ! plant ovary septum
 relationship: part_of PO:0009001 ! fruit
 created_by: rwalls
@@ -18075,6 +18137,7 @@ synonym: "l&#243culo del fruto (Spanish, exact)" EXACT Spanish [POC:Maria_Alejan
 synonym: "果実室 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:271
 is_a: PO:0025263 ! locule
+is_a: UBERON:0001062
 relationship: develops_from PO:0025266 ! plant ovary locule
 relationship: part_of PO:0009001 ! fruit
 created_by: rwalls
@@ -18221,6 +18284,7 @@ synonym: "pollen grain (exact)" EXACT []
 synonym: "花粉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:319
 is_a: PO:0025280 ! microgametophyte
+is_a: UBERON:0001062
 relationship: develops_from PO:0020048 ! microspore
 relationship: located_in PO:0025277 ! pollen sac
 created_by: rwalls
@@ -18272,6 +18336,7 @@ synonym: "胚頂端細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki
 xref: PO_GIT:281
 is_a: PO:0025028 ! embryo plant cell
 is_a: PO:0030015 ! sporophyte meristematic apical cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0000423 ! plant zygote
 created_by: rwalls
 creation_date: 2011-04-12T09:05:04Z
@@ -18313,6 +18378,7 @@ synonym: "cole&#243ptile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC
 synonym: "実生幼葉鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:294
 is_a: PO:0020033 ! coleoptile
+is_a: UBERON:0001062
 relationship: develops_from PO:0025286 ! plant embryo coleoptile
 relationship: part_of PO:0008037 ! seedling
 relationship: participates_in PO:0007131 ! seedling development stage
@@ -18343,6 +18409,7 @@ synonym: "coleorriza de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:Mar
 synonym: "実生根鞘 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:340
 is_a: PO:0020034 ! coleorhiza
+is_a: UBERON:0001062
 relationship: develops_from PO:0025288 ! embryo coleorhiza
 relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
@@ -18373,6 +18440,7 @@ synonym: "hipoc&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC
 synonym: "実生胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:341
 is_a: PO:0020100 ! hypocotyl
+is_a: UBERON:0001062
 relationship: develops_from PO:0025290 ! embryo hypocotyl
 relationship: part_of PO:0008037 ! seedling
 relationship: participates_in PO:0007131 ! seedling development stage
@@ -18403,6 +18471,7 @@ synonym: "epic&#243tile de la pl&#225ntula (Spanish, exact)" EXACT Spanish [POC:
 synonym: "実生上胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:342
 is_a: PO:0020035 ! epicotyl
+is_a: UBERON:0001062
 relationship: develops_from PO:0025292 ! embryo epicotyl
 relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
@@ -18432,6 +18501,7 @@ synonym: "mesoc&#243tile de la plantual (Spanish, exact)" EXACT Spanish [POC:Mar
 synonym: "実生中胚軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:343
 is_a: PO:0020037 ! mesocotyl
+is_a: UBERON:0001062
 relationship: develops_from PO:0025294 ! embryo mesocotyl
 relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
@@ -18529,6 +18599,7 @@ synonym: "conjunci&#243n del hipoc&#243tile-ra&#237z en la pl&#225ntula (Spanish
 synonym: "実生胚軸-根合流点 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:250
 is_a: PO:0004724 ! hypocotyl-root junction
+is_a: UBERON:0001062
 relationship: develops_from PO:0025300 ! embryo hypocotyl-root junction
 relationship: part_of PO:0008037 ! seedling
 created_by: rwalls
@@ -20063,6 +20134,7 @@ synonym: "tejido vascular primario (Spanish, exact)" EXACT Spanish [POC:Maria_Al
 synonym: "一次維管組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:432
 is_a: PO:0009015 ! portion of vascular tissue
+is_a: UBERON:0001062
 relationship: develops_from PO:0025275 ! procambium
 created_by: rwalls
 creation_date: 2012-02-01T10:53:46Z
@@ -20077,6 +20149,7 @@ synonym: "tejido vascular secundario (Spanish, exact)" EXACT Spanish [POC:Maria_
 synonym: "二次維管組織 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:432
 is_a: PO:0009015 ! portion of vascular tissue
+is_a: UBERON:0001062
 intersection_of: PO:0009015 ! portion of vascular tissue
 intersection_of: develops_from PO:0005598 ! vascular cambium
 relationship: develops_from PO:0005598 ! vascular cambium
@@ -21439,6 +21512,7 @@ subset: Gymnosperms
 synonym: "造卵器中央細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:182
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0025510 ! archegonium initial cell
 created_by: rwalls
 creation_date: 2012-10-15T15:24:16Z
@@ -21648,6 +21722,7 @@ def: "A native plant cell (PO:0025606) that develops from the archegonium centra
 comment: The ventral canal cell is smaller than the archegonium egg cell (PO:0025122), which also develops from the asymmetric division of the archegonium central cell (PO:0025509). It lack a plant-type cell wall (GO:0009505) (ref? ). When the archegonium (PO:0025126) is mature, the ventral canal cell (along with the archegonium neck canal cells; PO:0030065), contributes to the formation of the archegonium neck canal (PO:0030066) by distintegrating and becoming mucilaginous. The canal cells and may produce chemicals to attract the male gamete, the antheridium sperm cells (PO:0025120).
 xref: PO_GIT:514
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0025509 ! archegonium central cell
 relationship: part_of PO:0030038 ! venter
 created_by: Laurel_Cooper
@@ -21763,6 +21838,7 @@ synonym: "eje adventicio del epiblasto (Spanish, exact) (related)" RELATED []
 synonym: "不定シュート軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:527
 is_a: PO:0025029 ! shoot axis
+is_a: UBERON:0001062
 relationship: develops_from PO:0000055 ! bud
 created_by: Laurel_Cooper
 creation_date: 2013-04-05T14:36:22Z
@@ -22665,6 +22741,7 @@ synonym: "fruit pedicel joint (exact)" EXACT []
 synonym: "pedicel joint (related)" RELATED []
 xref: PO_GIT:590
 is_a: PO:0000146 ! abscission zone
+is_a: UBERON:0001062
 relationship: develops_from PO:0025608 ! flower pedicel abscission zone
 relationship: part_of PO:0004536 ! infructescence fruit pedicel
 created_by: Laurel_Cooper
@@ -22689,6 +22766,7 @@ def: "A shoot system (PO:0009006) that has as parts only vegetative tissues and 
 xref: PO_GIT:167
 xref: PO_GIT:593
 is_a: PO:0009006 ! shoot system
+is_a: UBERON:0001062
 relationship: develops_from PO:0000058 ! vegetative bud
 relationship: has_part PO:0025223 ! vegetative shoot apex
 created_by: Laurel_Cooper
@@ -22887,6 +22965,7 @@ synonym: "endodermal cell (exact)" EXACT []
 synonym: "plant endodermal cell (exact)" EXACT []
 xref: PO_GIT:618
 is_a: PO:0025030 ! ground tissue cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0025625 ! cortex-endodermis initial cell
 relationship: part_of PO:0000252 ! endodermis
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-6379-8932
@@ -22906,6 +22985,7 @@ creation_date: 2023-02-14T23:15:02Z
 [Term]
 id: PO:0025626
 name: plant gall
+namespace: plant_anatomy
 def: "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000011)." [PO:cooperl]
 xref: PO_GIT:641
 is_a: PO:0025496 ! multi-tissue plant structure
@@ -23212,6 +23292,7 @@ synonym: "維管束を持たない葉の分裂組織の頂端細胞 (Japanese, e
 xref: PO_GIT:303
 is_a: PO:0030011 ! leaf meristematic apical cell
 is_a: PO:0030019 ! gametophore meristematic apical cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0030087 ! non-vascular leaf initial cell
 relationship: part_of PO:0025075 ! non-vascular leaf
 created_by: rwalls
@@ -23307,6 +23388,7 @@ synonym: "ramet (broad)" BROAD []
 synonym: "茎葉体, 蘚苔類の配偶体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:287
 is_a: PO:0009006 ! shoot system
+is_a: UBERON:0001062
 relationship: develops_from PO:0030026 ! gametophore bud
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -23458,6 +23540,7 @@ synonym: "yema del gamet&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Ale
 synonym: "茎葉体芽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:288
 is_a: PO:0000058 ! vegetative bud
+is_a: UBERON:0001062
 relationship: develops_from PO:0030083 ! gametophore bud initial cell
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -23645,6 +23728,7 @@ synonym: "spore capsule calyptrae (exact, plural)" EXACT OMO:0003004 [FNA:50f48e
 synonym: "コケ類　蘚帽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:305
 is_a: PO:0025001 ! cardinal organ part
+is_a: UBERON:0001062
 relationship: develops_from PO:0025126 ! archegonium
 relationship: participates_in PO:0028003 ! gametophyte development stage
 created_by: rwalls
@@ -24115,6 +24199,7 @@ synonym: "c&#233lula del canal del cuello del arquegonio (Spanish, exact)" EXACT
 synonym: "造卵器頚溝細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:307
 is_a: PO:0025606 ! native plant cell
+is_a: UBERON:0001062
 relationship: develops_from PO:0025510 ! archegonium initial cell
 relationship: part_of PO:0030039 ! archegonium neck
 created_by: rwalls
@@ -24214,6 +24299,7 @@ synonym: "rizoide epid&#233rmico (Spanish, exact)" EXACT Spanish [POC:Maria_Alej
 synonym: "表皮仮根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:347
 is_a: PO:0030078 ! rhizoid
+is_a: UBERON:0001062
 relationship: develops_from PO:0030068 ! epidermal rhizoid initial cell
 created_by: rwalls
 creation_date: 2011-04-29T01:15:05Z
@@ -24354,6 +24440,7 @@ synonym: "rizoide proton&#233mico (Spanish, exact)" EXACT Spanish [POC:Maria_Ale
 synonym: "原糸体仮根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:347
 is_a: PO:0030078 ! rhizoid
+is_a: UBERON:0001062
 relationship: develops_from PO:0030077 ! protonemal side branch rhizoid initial cell
 created_by: rwalls
 creation_date: 2011-05-04T03:13:26Z
