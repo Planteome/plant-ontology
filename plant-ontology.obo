@@ -10861,7 +10861,7 @@ alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
 def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
-comment: A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.
+comment: A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.
 subset: Angiosperm
 subset: Arabidopsis
 subset: Maize
@@ -22889,6 +22889,17 @@ is_a: PO:0000074 ! parenchyma cell
 relationship: part_of PO:0005417 ! phloem
 created_by: https://orcid.org/0000-0002-6379-8932
 creation_date: 2025-11-05T22:18:27Z
+
+[Term]
+id: PO:0025628
+name: aggregate fruit
+def: "A fruit (PO:0009001) that develops from the merger of several plant ovaries (PO:0009072) that were separated in a single flower (PO:0009046)." [PO:cooperl, Wikipedia:Aggregate_fruit]
+comment: Examples of aggregate fruits include the raspberry (Rubus spp.), which is a collection drupelets.
+synonym: "aggregate of fruit (exact)" EXACT []
+xref: PO_GIT:702
+is_a: PO:0009001 ! fruit
+created_by: https://orcid.org/0000-0002-6379-8932
+creation_date: 2026-01-09T18:24:21Z
 
 [Term]
 id: PO:0028001
