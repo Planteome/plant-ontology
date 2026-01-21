@@ -53,3 +53,28 @@ mirror/%.owl: $(SRC)
 mirror/ncbitaxon.owl: 
 	$(OWLTOOLS) $(OBO)/ncbitaxon/subsets/taxslim.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  --set-ontology-id $(OBO)/ncbitaxon -o $@
 .PRECIOUS: mirror/ncbitaxon.owl
+
+# ----------------------------------------
+# MINING DEAD SIMPLE DESIGN PATTERNS
+# ----------------------------------------
+MODDIR=modules
+PATTERNDIR=patterns
+
+#MODS = luminal_space_of gland_duct gland_acinus endochondral_bone endochondral_cartilage
+MODS = cortex
+
+# OWL->CSV
+PSRC = plant-ontology.obo
+
+# reverse engineer CSV from uberon axioms and DOSDPs
+modules/%-ldef.csv: $(PSRC)
+	blip-findall -debug odp -i $<  -u odputil -i $(PATTERNDIR)/po_patterns.pro "write_tuple($*)" > $@.tmp && mv $@.tmp $@
+.PRECIOUS: modules/%.csv
+modules/%-lex.csv: $(PSRC)
+	blip-findall -debug odp -i $<  -u odputil -i $(PATTERNDIR)/po_patterns.pro "write_tuple_lex($*)" > $@.tmp && mv $@.tmp $@
+.PRECIOUS: modules/%.csv
+
+# currently, the pattern source is prolog - generate dosdp yaml from this
+$(PATTERNDIR)/%.yaml: patterns/po_patterns.pro
+	blip-findall -i $(PSRC)  -u odputil -i $(PATTERNDIR)/po_patterns.pro "write_yaml($*),fail" > $@.tmp && mv $@.tmp $@
+.PRECIOUS: $(PATTERNDIR)/%.yaml
