@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Planteome/plant-ontology.svg?branch=master)](https://travis-ci.org/Planteome/plant-ontology)
+
 [![DOI](https://zenodo.org/badge/13996/Planteome/plant-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/Planteome/plant-ontology)
 [![NSF-1340112](https://img.shields.io/badge/NSF-1340112-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1340112)
 
