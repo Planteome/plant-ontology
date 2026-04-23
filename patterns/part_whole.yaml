@@ -1,0 +1,37 @@
+pattern_name: part_whole
+
+classes: []
+
+relations: 
+  part_of: BFO:0000050
+
+vars:
+  part: "Thing"
+  whole: "Thing"
+
+name:
+  text: "%s %s"
+  vars:
+   - whole
+   - part
+
+annotations:
+  - property: oio:hasExactSynonym
+    text: "%s of %s"
+    vars:
+     - part
+     - whole
+
+def:
+  text: "A portion of %s that is part of a %s."
+  vars:
+    - part
+    - whole
+
+equivalentTo:
+  text: "%s and 'part_of' some %s"
+  vars:
+    - part
+    - whole
+
+
