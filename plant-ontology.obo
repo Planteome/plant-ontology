@@ -78,7 +78,9 @@ synonym: "gametophyte (narrow)" NARROW []
 synonym: "genet (broad)" BROAD []
 synonym: "herb (narrow)" NARROW []
 synonym: "liana (narrow)" NARROW []
+synonym: "plant (exact)" EXACT []
 synonym: "planta entera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plants (exact, plural)" EXACT OMO:0003004 []
 synonym: "prothalli (narrow, plural)" NARROW OMO:0003004 [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
 synonym: "prothallium (narrow)" NARROW []
 synonym: "prothallus (narrow)" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
@@ -10977,7 +10979,6 @@ synonym: "shoot (related)" RELATED []
 synonym: "sistema de epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "thalli (related, plural)" RELATED OMO:0003004 [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
 synonym: "thallus (related)" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
-synonym: "tree crown (narrow)" NARROW []
 synonym: "シュート系、苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:02756ad4-a09c-48d7-8754-903254e557a9
 xref: FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85
@@ -23040,6 +23041,15 @@ synonym: "cyathia (exact, plural)" EXACT OMO:0003004 []
 is_a: PO:0009049 ! inflorescence
 relationship: has_part PO:0009100 ! involucre
 relationship: has_part PO:0025600 ! staminate flower
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026015
+name: tree crown
+namespace: plant_anatomy
+def: "A shoot system (PO:0009006) that is part of a tree and comprises the branches and foliage borne above the lowest principal branch of the trunk (PO:0026010)." [https://ausflora.net/wp-content/uploads/2017/06/flora-of-australia-glossary-e28094-ferns-cycads-conifers-and-vascular-plants.pdf]
+is_a: PO:0009006 ! shoot system
 created_by: https://orcid.org/0000-0001-8149-5890
 creation_date: 2026-09-18T00:00:00Z
 
