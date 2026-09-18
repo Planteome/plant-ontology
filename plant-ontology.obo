@@ -78,7 +78,9 @@ synonym: "gametophyte (narrow)" NARROW []
 synonym: "genet (broad)" BROAD []
 synonym: "herb (narrow)" NARROW []
 synonym: "liana (narrow)" NARROW []
+synonym: "plant (exact)" EXACT []
 synonym: "planta entera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "plants (exact, plural)" EXACT OMO:0003004 []
 synonym: "prothalli (narrow, plural)" NARROW OMO:0003004 [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
 synonym: "prothallium (narrow)" NARROW []
 synonym: "prothallus (narrow)" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
@@ -10977,7 +10979,6 @@ synonym: "shoot (related)" RELATED []
 synonym: "sistema de epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "thalli (related, plural)" RELATED OMO:0003004 [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
 synonym: "thallus (related)" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
-synonym: "tree crown (narrow)" NARROW []
 synonym: "シュート系、苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:02756ad4-a09c-48d7-8754-903254e557a9
 xref: FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85
@@ -11247,7 +11248,6 @@ synonym: "ascidium (narrow)" NARROW [FNA:a97f1513-7684-49d4-92f5-934d1c8b3e1c]
 synonym: "crozier (related)" RELATED [FNA:87e7efa9-89d7-4249-be74-bc22a0466a05]
 synonym: "fiddlehead (narrow)" NARROW [FNA:d894ba18-4523-484c-abab-26d1cac75bc4]
 synonym: "foliage leaf (exact)" EXACT []
-synonym: "frond (narrow)" NARROW []
 synonym: "hoja vascular (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "leaf, vascular (exact)" EXACT []
 synonym: "macrophyll (related)" RELATED [FNA:c1142d9b-c42a-45e1-93ac-9cbe9575321e]
@@ -11668,7 +11668,6 @@ synonym: "scape (narrow)" NARROW [FNA:201dbd71-51cd-4138-8f61-3c3fdd55d02d]
 synonym: "stalk (narrow)" NARROW []
 synonym: "tallo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "tronco (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "trunk (narrow)" NARROW []
 synonym: "茎 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:201dbd71-51cd-4138-8f61-3c3fdd55d02d
 xref: FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8
@@ -13308,13 +13307,7 @@ namespace: plant_anatomy
 def: "A cardinal organ part (PO:0025001) that is one of the ultimate segments of a compound leaf (PO:0020043)." [APweb:Glossary, POC:laurel_cooper]
 subset: TraitNet
 synonym: "fol&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "pinna (narrow)" NARROW [FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44]
-synonym: "pinnae (narrow, plural)" NARROW OMO:0003004 [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
-synonym: "pinnule (narrow)" NARROW [FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c]
 synonym: "小葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: FNA:1d6bb560-f346-409b-b078-9bd2fd30e472
-xref: FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c
-xref: FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
 relationship: part_of PO:0020043 ! compound leaf
@@ -22904,6 +22897,163 @@ created_by: https://orcid.org/0000-0002-6379-8932
 creation_date: 2026-01-09T18:24:21Z
 
 [Term]
+id: PO:0026001
+name: orchid labellum
+namespace: plant_anatomy
+def: "A petal (PO:0009032) that is the specialized median member of the inner perianth whorl of a flower (PO:0009046) of Orchidaceae, differing from the two lateral petals in size, shape, colour or ornamentation." [https://pmc.ncbi.nlm.nih.gov/articles/PMC6795766/, https://www.aos.org/orchids/orchid-basics/orchid-glossary]
+synonym: "labellum (related)" RELATED []
+synonym: "lip (related)" RELATED []
+is_a: PO:0009032 ! petal
+relationship: part_of PO:0009059 ! corolla
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026002
+name: corolla lip
+namespace: plant_anatomy
+def: "A collective organ part structure (PO:0025269) composed of the distal portions of adjacent fused petals (PO:0025583) that together form one side of a bilabiate fused corolla (PO:0025581)." [https://pmc.ncbi.nlm.nih.gov/articles/PMC2735325/]
+synonym: "lip (related)" RELATED []
+is_a: PO:0025269 ! collective organ part structure
+relationship: part_of PO:0025581 ! fused corolla
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026003
+name: corolla tube
+namespace: plant_anatomy
+def: "A collective organ part structure (PO:0025269) composed of the proximal fused portions of two or more petals in a fused corolla (PO:0025581), extending distally to where the petal portions diverge or become free." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=1937, https://www.upov.int/documents/d/upov/tgp-documents-en-tgp_14.pdf]
+is_a: PO:0025269 ! collective organ part structure
+relationship: part_of PO:0025581 ! fused corolla
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026004
+name: parasitic plant haustorium
+namespace: plant_anatomy
+def: "A plant organ (PO:0009008) of a parasitic plant that penetrates host tissue and forms a connection through which water or nutrients can be transferred between host and parasite." [https://pmc.ncbi.nlm.nih.gov/articles/PMC10752351/]
+synonym: "haustorium (related)" RELATED []
+is_a: PO:0009008 ! plant organ
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026005
+name: floral corona
+namespace: plant_anatomy
+def: "A collective organ part structure (PO:0025269) that is a ring or series of floral appendages situated between the corolla (PO:0009059) and the androecium (PO:0009061) and derived from the corolla, the androecium, or both." [https://doi.org/10.1590/0102-33062016abb0424, https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=2259]
+synonym: "corona (related)" RELATED []
+is_a: PO:0025269 ! collective organ part structure
+relationship: part_of PO:0009046 ! flower
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026006
+name: corolline corona
+namespace: plant_anatomy
+def: "A floral corona (PO:0026005) whose appendages develop from the corolla (PO:0009059)." [https://doi.org/10.1590/0102-33062016abb0424]
+is_a: PO:0026005 ! floral corona
+relationship: part_of PO:0009059 ! corolla
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026007
+name: staminal corona
+namespace: plant_anatomy
+def: "A floral corona (PO:0026005) whose appendages develop from stamen filaments (PO:0009067) or a filament tube." [https://doi.org/10.1590/0102-33062016abb0424]
+is_a: PO:0026005 ! floral corona
+relationship: part_of PO:0009061 ! androecium
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026008
+name: plant organ apex
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is the distal region of a plant organ (PO:0009008)." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=290]
+is_a: PO:0025001 ! cardinal organ part
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026009
+name: plant organ base
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is the proximal region of a plant organ (PO:0009008)." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=342]
+is_a: PO:0025001 ! cardinal organ part
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026010
+name: trunk
+namespace: plant_anatomy
+def: "A stem (PO:0009047) that is the single dominant, persistent, self-supporting main axis of a tree-form plant, extending from ground level and bearing the principal branches." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=130, https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=1740]
+is_a: PO:0009047 ! stem
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026011
+name: frond
+namespace: plant_anatomy
+def: "A vascular leaf (PO:0009025) of a fern, cycad, or palm, including its lamina and stipe or petiole when present." [https://ausflora.net/wp-content/uploads/2017/06/flora-of-australia-glossary-e28094-ferns-cycads-conifers-and-vascular-plants.pdf, https://plantatlas.usf.edu/flip/glossary.aspx, https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?glossary=yes&page=nswfl&alpha=F-H, https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=3106]
+is_a: PO:0009025 ! vascular leaf
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026012
+name: pinna
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is a primary division of a pinnately compound leaf (PO:0020043)." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=1228]
+synonym: "pinnae (exact, plural)" EXACT OMO:0003004 [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
+xref: FNA:1d6bb560-f346-409b-b078-9bd2fd30e472
+xref: FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0020043 ! compound leaf
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026013
+name: pinnule
+namespace: plant_anatomy
+def: "A cardinal organ part (PO:0025001) that is a secondary or higher-order division of a pinna (PO:0026012) of a pinnately compound leaf (PO:0020043)." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=2382]
+synonym: "pinnules (exact, plural)" EXACT OMO:0003004 []
+xref: FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0020043 ! compound leaf
+relationship: part_of PO:0026012 ! pinna
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026014
+name: cyathium
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049) consisting of several naked staminate flowers (PO:0025600), usually one naked pistillate flower (PO:0025599), and a subtending cup-shaped involucre (PO:0009100)." [https://sweetgum.nybg.org/science/glossary/glossary-details/?irn=568]
+synonym: "cyathia (exact, plural)" EXACT OMO:0003004 []
+is_a: PO:0009049 ! inflorescence
+relationship: has_part PO:0009100 ! involucre
+relationship: has_part PO:0025600 ! staminate flower
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
+id: PO:0026015
+name: tree crown
+namespace: plant_anatomy
+def: "A shoot system (PO:0009006) that is part of a tree and comprises the branches and foliage borne above the lowest principal branch of the trunk (PO:0026010)." [https://ausflora.net/wp-content/uploads/2017/06/flora-of-australia-glossary-e28094-ferns-cycads-conifers-and-vascular-plants.pdf]
+is_a: PO:0009006 ! shoot system
+created_by: https://orcid.org/0000-0001-8149-5890
+creation_date: 2026-09-18T00:00:00Z
+
+[Term]
 id: PO:0028001
 name: OBSOLETE plant life cycle phase
 namespace: plant_structure_development_stage
@@ -24995,8 +25145,6 @@ name: cyme inflorescence
 namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616), is composed of a determinate, first order inflorescence axis (PO:0025104) and pedicellate flowers (PO:0009046) on paired, determinate higher order inflorescence axes (PO:0009081)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Cyme inflorescence is used here to treat inflorescences that are commonly referred to as dichasial, pleiochasial, or polychasial cymes; each of which are named according to the number of higher order inflorescence axes at a single axis. Cyme is not used here to treat monochasial cymose inflorescences, which contain at least one repeating sympodial unit, such as cincinnus inflorescence (PO:0030132), compound cincinnus inflorescence (PO:0030133), bostryx (PO:0030134), rhipidium inflorescence (PO:0030131), drepanium inflorescence (PO:0030135), and compound drepanium inflorescence (PO:0030136). Examples include many species of the Figwort family (Scrophulariaceae, including green figwort Scrophularia umbrosa) and the Verbena family (Verbenaceae).
-synonym: "cyathia (narrow, plural)" NARROW OMO:0003004 []
-synonym: "cyathium (narrow)" NARROW []
 synonym: "cyme (exact)" EXACT []
 synonym: "cymule (narrow)" NARROW []
 synonym: "dichasium (narrow)" NARROW []
